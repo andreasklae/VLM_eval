@@ -52,6 +52,7 @@ Open the URL shown in the terminal (e.g. http://127.0.0.1:5000) to use the human
 - **210 images** (tourist/travel, with GPS EXIF); **150** are fully evaluated, 60 skipped.
 - Each image is run with **8 approaches** in two modes: **with GPS** and **without GPS** (13 evaluation sections per image).
 - Main evaluation output: **Evaluation/human_evaluation.json**. Per-image source files: **results/.eval_work/inputs/eval_input_*.json**.
+- The images have not been uploaded to this repository as they are private and the photographers do not want them shered. The eval notebook and the human_evaluation.json are based on them though, but a rerun of a new set of images will overwrite this file and the eval notebook accordingly.
 
 Details on ground truth, rubrics, and scoring are in [Evaluation/DATASET_DESCRIPTION.md](Evaluation/DATASET_DESCRIPTION.md).
 
