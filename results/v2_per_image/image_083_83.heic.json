@@ -1,0 +1,995 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "83.heic",
+      "timestamp": "2026-01-28T07:08:15.020627",
+      "processing_time_seconds": 61.710264,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -27.466738888888887,
+        "gps_longitude": 153.03137222222225,
+        "location": {
+          "formatted_address": "4 Jetty, Brisbane City QLD 4000, Australia",
+          "city": "Brisbane City",
+          "county": "Brisbane City",
+          "country": "Australia"
+        },
+        "datetime_original": "2024:04:13 17:17:27",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Story Bridge, Brisbane River, Brisbane, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The bridge's design and location are characteristic of the Story Bridge in Brisbane. The urban setting and river match the known geography of the area.",
+            "detailed_description": "The image shows the Story Bridge, a prominent steel cantilever bridge in Brisbane, Australia, spanning the Brisbane River. The bridge is a key landmark and is known for its distinctive design and historical significance. Surrounding the bridge are modern high-rise buildings, typical of urban architecture in Brisbane. The river is visible in the foreground, reflecting the cityscape and the sky.",
+            "identification": {
+              "primary": [
+                "Story Bridge",
+                "Brisbane River"
+              ],
+              "location": "Brisbane, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Story Bridge",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Brisbane River",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "bridge",
+              "river",
+              "urban",
+              "modern_architecture",
+              "Australia"
+            ],
+            "location": "Brisbane, Australia",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Story Bridge\", \"Brisbane River\"],\n        \"location\": \"Brisbane, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Story Bridge\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Brisbane River\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"bridge\", \"river\", \"urban\", \"modern_architecture\", \"Australia\"],\n    \"description\": \"The image shows the Story Bridge, a prominent steel cantilever bridge in Brisbane, Australia, spanning the Brisbane River. The bridge is a key landmark and is known for its distinctive design and historical significance. Surrounding the bridge are modern high-rise buildings, typical of urban architecture in Brisbane. The river is visible in the foreground, reflecting the cityscape and the sky.\",\n    \"reasoning\": \"The bridge's design and location are characteristic of the Story Bridge in Brisbane. The urban setting and river match the known geography of the area.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": -27.466738888888887,
+              "longitude": 153.03137222222225
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "4 Jetty, Brisbane City QLD 4000, Australia",
+              "city": "Brisbane City",
+              "county": "Brisbane City",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2024:04:13 17:17:27",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 9.863844156265259
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a vibrant urban scene along the Brisbane River, featuring a mix of modern high-rise buildings and a prominent bridge. On the left side, several skyscrapers dominate the skyline, showcasing contemporary architectural styles characterized by glass facades and sleek, vertical lines. These buildings vary in height, with some having distinctive features such as balconies and varied window arrangements. The architectural style is modern, with an emphasis on verticality and the use of",
+            "description": "The image depicts a vibrant urban scene along the Brisbane River, featuring a mix of modern high-rise buildings and a prominent bridge. On the left side, several skyscrapers dominate the skyline, showcasing contemporary architectural styles characterized by glass facades and sleek, vertical lines. These buildings vary in height, with some having distinctive features such as balconies and varied window arrangements. The architectural style is modern, with an emphasis on verticality and the use of",
+            "architectural_style": "Modern",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": -27.466738888888887,
+              "longitude": 153.03137222222225
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "4 Jetty, Brisbane City QLD 4000, Australia",
+              "city": "Brisbane City",
+              "county": "Brisbane City",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2024:04:13 17:17:27",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 50.79383993148804
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Apartment (Brisbane City, Australia)",
+          "confidence": 0.5389200448989868,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Apartment",
+            "artist_name": null,
+            "museum_or_location": "Brisbane City, Australia",
+            "art_style": null,
+            "art_era": null,
+            "confidence": 0.5389200448989868,
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.5621337890625
+              },
+              {
+                "name": "Apartment",
+                "score": 0.5389200448989868
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.4525018632411957
+              },
+              {
+                "name": "Tower",
+                "score": 0.40459999442100525
+              },
+              {
+                "name": "Building",
+                "score": 0.34929999709129333
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": -27.466738888888887,
+              "longitude": 153.03137222222225
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "4 Jetty, Brisbane City QLD 4000, Australia",
+              "city": "Brisbane City",
+              "county": "Brisbane City",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2024:04:13 17:17:27",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 20.46100616455078
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Brisbane City, Australia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Brisbane City, Australia",
+            "coordinates": {
+              "latitude": -27.466738888888887,
+              "longitude": 153.03137222222225
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Old Windmill Observatory: The Tower Mill",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 200,
+                  "vicinity": "Spring Hill",
+                  "place_id": "ChIJJc_GUwJakWsR1pxpa0kh6iQ",
+                  "location": {
+                    "lat": -27.4658296,
+                    "lng": 153.0231123
+                  }
+                },
+                {
+                  "name": "Saint Stephen’s Cathedral",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1660,
+                  "vicinity": "249 Elizabeth Street, Brisbane City",
+                  "place_id": "ChIJEze8jxxakWsRre7rv3s6K5c",
+                  "location": {
+                    "lat": -27.4687648,
+                    "lng": 153.0290513
+                  }
+                },
+                {
+                  "name": "Brisbane City Hall",
+                  "types": [
+                    "city_hall",
+                    "local_government_office",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1018,
+                  "vicinity": "64 Adelaide Street, Brisbane City",
+                  "place_id": "ChIJ10LrOO1ZkWsR58WugSps4oE",
+                  "location": {
+                    "lat": -27.4686893,
+                    "lng": 153.0238365
+                  }
+                },
+                {
+                  "name": "Museum of Brisbane",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 3183,
+                  "vicinity": "Level 3, Brisbane City Hall, 64 Adelaide Street, Brisbane City",
+                  "place_id": "ChIJPbZTLX9akWsRB3KZOZSp5gg",
+                  "location": {
+                    "lat": -27.4686797,
+                    "lng": 153.0238277
+                  }
+                },
+                {
+                  "name": "Judith Wright Arts Centre",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 209,
+                  "vicinity": "420 Brunswick St & Cnr, Berwick Street, Fortitude Valley",
+                  "place_id": "ChIJ9UMaafNZkWsRbSVI0J17prE",
+                  "location": {
+                    "lat": -27.45967449999999,
+                    "lng": 153.0367734
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Museum of Brisbane",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 3183,
+                  "vicinity": "Level 3, Brisbane City Hall, 64 Adelaide Street, Brisbane City",
+                  "place_id": "ChIJPbZTLX9akWsRB3KZOZSp5gg",
+                  "location": {
+                    "lat": -27.4686797,
+                    "lng": 153.0238277
+                  }
+                },
+                {
+                  "name": "MacArthur Museum Brisbane",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 123,
+                  "vicinity": "Macarthur Chambers, Level 8/201 Edward Street, Brisbane City",
+                  "place_id": "ChIJ9932uhxakWsRb0g7BFb5pGg",
+                  "location": {
+                    "lat": -27.4685418,
+                    "lng": 153.0272217
+                  }
+                },
+                {
+                  "name": "Queensland Holocaust Museum",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 111,
+                  "vicinity": "168 Charlotte Street, Brisbane City",
+                  "place_id": "ChIJbXepqDdbkWsRPtafSdSiwQU",
+                  "location": {
+                    "lat": -27.4693502,
+                    "lng": 153.0287162
+                  }
+                },
+                {
+                  "name": "Shrine of Memories",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 17,
+                  "vicinity": "ANZAC Square, Brisbane City",
+                  "place_id": "ChIJN-tEkvNbkWsReLoH4u3MltA",
+                  "location": {
+                    "lat": -27.4664773,
+                    "lng": 153.0266235
+                  }
+                },
+                {
+                  "name": "Brisbane Picture Hanging",
+                  "types": [
+                    "art_gallery",
+                    "museum",
+                    "general_contractor",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 6,
+                  "vicinity": "21 Chester Street, Highgate Hill",
+                  "place_id": "ChIJXb6SI5pbkWsRsUFFvBb-W-A",
+                  "location": {
+                    "lat": -27.4717862,
+                    "lng": 153.0301305
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Adina Apartment Hotel Brisbane Anzac Square",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 617,
+                  "vicinity": "255 Ann Street, Brisbane City",
+                  "place_id": "ChIJ_y2xXPRZkWsR2_U0DdS8vUg",
+                  "location": {
+                    "lat": -27.4667266,
+                    "lng": 153.0259317
+                  }
+                },
+                {
+                  "name": "Stamford Plaza Brisbane",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 2900,
+                  "vicinity": "39 Edward Street, Brisbane City",
+                  "place_id": "ChIJJ9_amBtakWsR5vV9XlS8sEE",
+                  "location": {
+                    "lat": -27.4716559,
+                    "lng": 153.0307435
+                  }
+                },
+                {
+                  "name": "Treasury Hotel Brisbane",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 9408,
+                  "vicinity": "130 William Street, Brisbane City",
+                  "place_id": "ChIJVQ1_WANakWsR8ORfvZHivn8",
+                  "location": {
+                    "lat": -27.4726783,
+                    "lng": 153.0246408
+                  }
+                },
+                {
+                  "name": "Spicers Balfour Hotel",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 504,
+                  "vicinity": "37 Balfour Street, New Farm",
+                  "place_id": "ChIJRep-G4tZkWsRT6qLSMHZryQ",
+                  "location": {
+                    "lat": -27.46387959999999,
+                    "lng": 153.0404057
+                  }
+                },
+                {
+                  "name": "The Metropolitan Spring Hill",
+                  "types": [
+                    "cafe",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 499,
+                  "vicinity": "106 Leichhardt Street, Spring Hill",
+                  "place_id": "ChIJw5gcZvhZkWsRi8pK5Lk4vuM",
+                  "location": {
+                    "lat": -27.4624054,
+                    "lng": 153.0243699
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Queen Street Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 19,
+                  "vicinity": "427B Queen Street, Brisbane City",
+                  "place_id": "ChIJG6vs9h1akWsRfbPZdBUcSfg",
+                  "location": {
+                    "lat": -27.4652477,
+                    "lng": 153.0314073
+                  }
+                },
+                {
+                  "name": "Dave the Trainer",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Goodlife Health Clubs Elizabeth Street, 300 Elizabeth Street, Brisbane City",
+                  "place_id": "ChIJjarF4tNqkWsRuP5upPeHDIE",
+                  "location": {
+                    "lat": -27.4676979,
+                    "lng": 153.0289851
+                  }
+                },
+                {
+                  "name": "James Warner Park Fenced Dog Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 9,
+                  "vicinity": "33 Annie Street, Kangaroo Point",
+                  "place_id": "ChIJ85nfPh5akWsRtSlviaE8ym4",
+                  "location": {
+                    "lat": -27.4667744,
+                    "lng": 153.0341753
+                  }
+                },
+                {
+                  "name": "Captain Burke Park (John Burke Park)",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1674,
+                  "vicinity": "117 Holman Street, Kangaroo Point",
+                  "place_id": "ChIJeeRx0x9akWsRULUh11ujAg8",
+                  "location": {
+                    "lat": -27.4654645,
+                    "lng": 153.0351276
+                  }
+                },
+                {
+                  "name": "Eagle Place",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 9,
+                  "vicinity": "118A Eagle Street, Brisbane City",
+                  "place_id": "ChIJobBcVhxakWsR6ugyENsf7OQ",
+                  "location": {
+                    "lat": -27.4677962,
+                    "lng": 153.0296159
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Saint Stephen’s Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1660,
+                  "vicinity": "249 Elizabeth Street, Brisbane City",
+                  "place_id": "ChIJEze8jxxakWsRre7rv3s6K5c",
+                  "location": {
+                    "lat": -27.4687648,
+                    "lng": 153.0290513
+                  }
+                },
+                {
+                  "name": "The Salvation Army Brisbane City Temple",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 54,
+                  "vicinity": "167 Ann Street, Brisbane City",
+                  "place_id": "ChIJXZZ_FgNakWsR4OL04jOao4Q",
+                  "location": {
+                    "lat": -27.4674442,
+                    "lng": 153.0248413
+                  }
+                },
+                {
+                  "name": "Catholic Regional Tribunal Brisbane",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.5,
+                  "user_ratings_total": 2,
+                  "vicinity": "172 Charlotte Street, Brisbane City",
+                  "place_id": "ChIJ83tVhRxakWsR27UHelOcpWY",
+                  "location": {
+                    "lat": -27.4692923,
+                    "lng": 153.0289335
+                  }
+                },
+                {
+                  "name": "Anglican Records & Archives Centre",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "417 Ann Street, Brisbane City",
+                  "place_id": "ChIJpdEvp-tZkWsRRt1qspzQabE",
+                  "location": {
+                    "lat": -27.4634072,
+                    "lng": 153.030096
+                  }
+                },
+                {
+                  "name": "All Saints' Wickham Terrace",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 26,
+                  "vicinity": "32 Wickham Terrace Cnr, Wharf, Spring Hill",
+                  "place_id": "ChIJ_2fLWR1akWsRtgQ6foI6R3o",
+                  "location": {
+                    "lat": -27.4645164,
+                    "lng": 153.0278973
+                  }
+                },
+                {
+                  "name": "Brisbane CBD Musallah",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 110,
+                  "vicinity": "1/138 Albert Street, Brisbane City",
+                  "place_id": "ChIJwUkaaw1bkWsRn0soKq2Xjpw",
+                  "location": {
+                    "lat": -27.471099,
+                    "lng": 153.0260545
+                  }
+                },
+                {
+                  "name": "The Brisbane Synagogue",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 28,
+                  "vicinity": "98 Margaret Street, Brisbane City",
+                  "place_id": "ChIJ-ZVeyRpakWsR4tzcasLJbUo",
+                  "location": {
+                    "lat": -27.4733134,
+                    "lng": 153.0269494
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Judith Wright Arts Centre",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 209,
+                  "vicinity": "420 Brunswick St & Cnr, Berwick Street, Fortitude Valley",
+                  "place_id": "ChIJ9UMaafNZkWsRbSVI0J17prE",
+                  "location": {
+                    "lat": -27.45967449999999,
+                    "lng": 153.0367734
+                  }
+                },
+                {
+                  "name": "Shøøting Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "105 Bowen Street, Spring Hill",
+                  "place_id": "ChIJHQrynvdZkWsRI49qNdGxpqU",
+                  "location": {
+                    "lat": -27.4617518,
+                    "lng": 153.0277682
+                  }
+                },
+                {
+                  "name": "The Model Shoppe",
+                  "types": [
+                    "art_gallery",
+                    "book_store",
+                    "home_goods_store",
+                    "cafe",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 11,
+                  "vicinity": "Brisbane Arcade, Shop 10 gallery, 160 Queen Street, Brisbane City",
+                  "place_id": "ChIJBfvWXgNakWsRAl1Z85BZ0Ek",
+                  "location": {
+                    "lat": -27.4691311,
+                    "lng": 153.0255818
+                  }
+                },
+                {
+                  "name": "The Creative Collective Brisbane, New Farm",
+                  "types": [
+                    "art_gallery",
+                    "furniture_store",
+                    "home_goods_store",
+                    "clothing_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 30,
+                  "vicinity": "19 Malt Street, Fortitude Valley",
+                  "place_id": "ChIJd2k0m4BXkWsRjSgvYjUNBNE",
+                  "location": {
+                    "lat": -27.4611652,
+                    "lng": 153.0378744
+                  }
+                },
+                {
+                  "name": "Hutton Lane Outdoor Art Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Workcover Queensland, 280 Adelaide Street, Brisbane City",
+                  "place_id": "ChIJl0VQKgBbkWsR-SuXNmN4vq0",
+                  "location": {
+                    "lat": -27.4655179,
+                    "lng": 153.0283252
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Brisbane",
+                  "types": [
+                    "colloquial_area",
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Brisbane",
+                  "place_id": "ChIJM9KTrJpXkWsRQK_e81qjAgQ",
+                  "location": {
+                    "lat": -27.4704528,
+                    "lng": 153.0260341
+                  }
+                },
+                {
+                  "name": "Royal On The Park Brisbane",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1840,
+                  "vicinity": "152 Alice Street, Brisbane City",
+                  "place_id": "ChIJ1SHx8BpakWsRDhqFTjXpAPE",
+                  "location": {
+                    "lat": -27.472858,
+                    "lng": 153.029187
+                  }
+                },
+                {
+                  "name": "The Sebel Brisbane",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1128,
+                  "vicinity": "Cnr Albert And, Charlotte Street, Brisbane City",
+                  "place_id": "ChIJ58qGMxtakWsRpIRT7qC9-ms",
+                  "location": {
+                    "lat": -27.4711552,
+                    "lng": 153.0271657
+                  }
+                },
+                {
+                  "name": "Il Mondo Boutique Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 163,
+                  "vicinity": "25/35 Rotherham Street, Kangaroo Point",
+                  "place_id": "ChIJh_zdDx9akWsR-6ni6c9pHzo",
+                  "location": {
+                    "lat": -27.4694197,
+                    "lng": 153.0364441
+                  }
+                },
+                {
+                  "name": "Meriton Suites Adelaide Street, Brisbane",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 2015,
+                  "vicinity": "485 Adelaide Street, Brisbane City",
+                  "place_id": "ChIJa00p1fVZkWsRxzo9rGrITmc",
+                  "location": {
+                    "lat": -27.4623301,
+                    "lng": 153.0325566
+                  }
+                }
+              ]
+            },
+            "total_places_found": 37,
+            "photo_timestamp": "2024:04:13 17:17:27",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.4712827205657959
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/83.heic"
+    },
+    {
+      "image_filename": "83.heic",
+      "timestamp": "2026-01-28T07:09:16.767344",
+      "processing_time_seconds": 61.493729,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Story Bridge, Brisbane River, Brisbane, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The bridge's distinctive steel lattice structure and location by the Brisbane River are characteristic of the Story Bridge in Brisbane. The urban skyline with modern high-rise buildings further supports the identification.",
+            "detailed_description": "The image features the Story Bridge, a prominent steel cantilever bridge in Brisbane, Australia, spanning the Brisbane River. The bridge is an iconic structure known for its lattice design and connects the northern and southern suburbs of the city. Surrounding the river are modern high-rise buildings, showcasing contemporary urban architecture with glass facades and varied geometric designs. The scene is set against a backdrop of a clear sky with scattered clouds, highlighting the vibrant urban landscape.",
+            "identification": {
+              "primary": [
+                "Story Bridge",
+                "Brisbane River"
+              ],
+              "location": "Brisbane, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Story Bridge",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Brisbane River",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "bridge",
+              "river",
+              "urban",
+              "modern_architecture",
+              "Australia"
+            ],
+            "location": "Brisbane, Australia",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Story Bridge\", \"Brisbane River\"],\n        \"location\": \"Brisbane, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Story Bridge\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Brisbane River\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"bridge\", \"river\", \"urban\", \"modern_architecture\", \"Australia\"],\n    \"description\": \"The image features the Story Bridge, a prominent steel cantilever bridge in Brisbane, Australia, spanning the Brisbane River. The bridge is an iconic structure known for its lattice design and connects the northern and southern suburbs of the city. Surrounding the river are modern high-rise buildings, showcasing contemporary urban architecture with glass facades and varied geometric designs. The scene is set against a backdrop of a clear sky with scattered clouds, highlighting the vibrant urban landscape.\",\n    \"reasoning\": \"The bridge's distinctive steel lattice structure and location by the Brisbane River are characteristic of the Story Bridge in Brisbane. The urban skyline with modern high-rise buildings further supports the identification.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 8.961377143859863
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a cityscape featuring a prominent river in the foreground, reflecting the light of the sky above. On the left side, there are several modern high-rise buildings with a variety of architectural designs. The tallest building has a sleek, glass facade, typical of contemporary skyscrapers, with numerous windows reflecting the sky. Adjacent to it are other high-rise structures, each with distinctive features such as balconies and varied window arrangements, contributing to a dynamic",
+            "description": "The image depicts a cityscape featuring a prominent river in the foreground, reflecting the light of the sky above. On the left side, there are several modern high-rise buildings with a variety of architectural designs. The tallest building has a sleek, glass facade, typical of contemporary skyscrapers, with numerous windows reflecting the sky. Adjacent to it are other high-rise structures, each with distinctive features such as balconies and varied window arrangements, contributing to a dynamic",
+            "architectural_style": "Modern",
+            "search_backends_used": [],
+            "processing_time_seconds": 52.31010365486145
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Apartment",
+          "confidence": 0.5446850657463074,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Apartment",
+            "artist_name": null,
+            "museum_or_location": null,
+            "art_style": null,
+            "art_era": null,
+            "confidence": 0.5446850657463074,
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.56516033411026
+              },
+              {
+                "name": "Apartment",
+                "score": 0.5446850657463074
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.4542105197906494
+              },
+              {
+                "name": "Tower",
+                "score": 0.4083000123500824
+              },
+              {
+                "name": "Building",
+                "score": 0.35019999742507935
+              }
+            ],
+            "processing_time_seconds": 20.796624898910522
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/83.heic"
+    }
+  ]
+}

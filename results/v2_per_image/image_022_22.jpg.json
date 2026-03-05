@@ -1,0 +1,1011 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "22.jpg",
+      "timestamp": "2026-01-28T05:02:04.794003",
+      "processing_time_seconds": 38.439128,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 40.68326944444444,
+        "gps_longitude": -74.03484722222223,
+        "location": {
+          "formatted_address": "MXM8+83 New York, NY, USA",
+          "city": "New York",
+          "county": "New York",
+          "country": "United States"
+        },
+        "datetime_original": "2019:09:30 18:45:30",
+        "camera_make": "Xiaomi",
+        "camera_model": "Mi MIX 3"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "One World Trade Center, Lower Manhattan Skyline, New York, United States",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of One World Trade Center, along with the distinctive arrangement of skyscrapers, confirms the identification of Lower Manhattan. The location metadata supports this identification.",
+            "detailed_description": "The image shows the skyline of Lower Manhattan in New York City, prominently featuring One World Trade Center, the tallest building in the image. The skyline includes a variety of modern skyscrapers with glass facades, reflecting the city's urban and architectural development. The view is taken from across the water, likely from the Hudson River, providing a panoramic perspective of the city's iconic skyline.",
+            "identification": {
+              "primary": [
+                "One World Trade Center",
+                "Lower Manhattan Skyline"
+              ],
+              "location": "New York, United States",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "One World Trade Center",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Lower Manhattan Skyline",
+                "type": "viewpoint",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "skyscrapers",
+              "urban_landscape",
+              "New_York",
+              "skyline"
+            ],
+            "location": "New York, United States",
+            "type": "viewpoint",
+            "search_range_meters": 2000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"One World Trade Center\", \"Lower Manhattan Skyline\"],\n        \"location\": \"New York, United States\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"One World Trade Center\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Lower Manhattan Skyline\",\n            \"type\": \"viewpoint\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"skyscrapers\", \"urban_landscape\", \"New_York\", \"skyline\"],\n    \"description\": \"The image shows the skyline of Lower Manhattan in New York City, prominently featuring One World Trade Center, the tallest building in the image. The skyline includes a variety of modern skyscrapers with glass facades, reflecting the city's urban and architectural development. The view is taken from across the water, likely from the Hudson River, providing a panoramic perspective of the city's iconic skyline.\",\n    \"reasoning\": \"The presence of One World Trade Center, along with the distinctive arrangement of skyscrapers, confirms the identification of Lower Manhattan. The location metadata supports this identification.\",\n    \"type\": \"viewpoint\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": []\n}",
+            "gps_coordinates": {
+              "latitude": 40.68326944444444,
+              "longitude": -74.03484722222223
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "MXM8+83 New York, NY, USA",
+              "city": "New York",
+              "county": "New York",
+              "country": "United States"
+            },
+            "photo_timestamp": "2019:09:30 18:45:30",
+            "camera": {
+              "make": "Xiaomi",
+              "model": "Mi MIX 3"
+            },
+            "processing_time_seconds": 7.435931205749512
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a panoramic view of the New York City skyline as seen from across the water, likely from a vantage point on the Hudson River or New York Harbor. The skyline is dominated by a variety of skyscrapers, showcasing a mix of architectural styles. The most prominent building is a tall, slender tower with a spire, which is characteristic of modern skyscraper design. This building is likely constructed with glass and steel, reflecting the surrounding cityscape and sky. Other buildings i",
+            "description": "The image depicts a panoramic view of the New York City skyline as seen from across the water, likely from a vantage point on the Hudson River or New York Harbor. The skyline is dominated by a variety of skyscrapers, showcasing a mix of architectural styles. The most prominent building is a tall, slender tower with a spire, which is characteristic of modern skyscraper design. This building is likely constructed with glass and steel, reflecting the surrounding cityscape and sky. Other buildings i",
+            "architectural_style": "Modern and contemporary",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 40.68326944444444,
+              "longitude": -74.03484722222223
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "MXM8+83 New York, NY, USA",
+              "city": "New York",
+              "county": "New York",
+              "country": "United States"
+            },
+            "photo_timestamp": "2019:09:30 18:45:30",
+            "camera": {
+              "make": "Xiaomi",
+              "model": "Mi MIX 3"
+            },
+            "processing_time_seconds": 30.416691303253174
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Skyscraper",
+          "confidence": 0.9882510304450989,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Skyscraper",
+                "score": 0.9882510304450989
+              },
+              {
+                "source": "label",
+                "name": "Water resources",
+                "score": 0.9819936156272888
+              },
+              {
+                "source": "label",
+                "name": "Body of water",
+                "score": 0.9790822267532349
+              },
+              {
+                "source": "web",
+                "name": "Skyscraper",
+                "score": 0.5197402238845825
+              },
+              {
+                "source": "web",
+                "name": "Birds",
+                "score": 0.445499986410141
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.5197402238845825
+              },
+              {
+                "name": "Water",
+                "score": 0.46935001015663147
+              },
+              {
+                "name": "Birds",
+                "score": 0.445499986410141
+              },
+              {
+                "name": "sea-m",
+                "score": 0.4198000133037567
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.36091819405555725
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.9932429194450378
+              },
+              {
+                "name": "Skyscraper",
+                "score": 0.9882510304450989
+              },
+              {
+                "name": "Water resources",
+                "score": 0.9819936156272888
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9819731116294861
+              },
+              {
+                "name": "Body of water",
+                "score": 0.9790822267532349
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 40.68326944444444,
+              "longitude": -74.03484722222223
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "MXM8+83 New York, NY, USA",
+              "city": "New York",
+              "county": "New York",
+              "country": "United States"
+            },
+            "photo_timestamp": "2019:09:30 18:45:30",
+            "camera": {
+              "make": "Xiaomi",
+              "model": "Mi MIX 3"
+            },
+            "processing_time_seconds": 6.517244100570679
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "New York, United States",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "New York, United States",
+            "coordinates": {
+              "latitude": 40.68326944444444,
+              "longitude": -74.03484722222223
+            },
+            "search_range_meters": 2000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Statue of Liberty",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 111517,
+                  "vicinity": "New York",
+                  "place_id": "ChIJPTacEpBQwokRKwIlDXelxkA",
+                  "location": {
+                    "lat": 40.6892494,
+                    "lng": -74.04450039999999
+                  }
+                },
+                {
+                  "name": "Louis Valentino, Jr. Park and Pier",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1301,
+                  "vicinity": "Ferris St &, Coffey Street, Brooklyn",
+                  "place_id": "ChIJq3mMh4hawokR1Rl_U7p-K5c",
+                  "location": {
+                    "lat": 40.6784075,
+                    "lng": -74.0181413
+                  }
+                },
+                {
+                  "name": "Hammock Grove",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 378,
+                  "vicinity": "Brooklyn",
+                  "place_id": "ChIJ7wOtAntawokRD9hIRQh1944",
+                  "location": {
+                    "lat": 40.6887049,
+                    "lng": -74.0204742
+                  }
+                },
+                {
+                  "name": "Governors Island National Monument",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 3096,
+                  "vicinity": "10 South Street, New York",
+                  "place_id": "ChIJ2_ey6W9awokRxng4fzLDbPo",
+                  "location": {
+                    "lat": 40.6902132,
+                    "lng": -74.0172006
+                  }
+                },
+                {
+                  "name": "Castle Williams",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 124,
+                  "vicinity": "New York",
+                  "place_id": "ChIJvY6AOnBawokRtgGd-0ZLAfM",
+                  "location": {
+                    "lat": 40.69283280000001,
+                    "lng": -74.0193374
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Ellis Island Hospital",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 193,
+                  "vicinity": "Liberty Island - Ellis Island, Jersey City",
+                  "place_id": "ChIJ4z2165BQwokRakVY5cNwZ4M",
+                  "location": {
+                    "lat": 40.69766550000001,
+                    "lng": -74.0424781
+                  }
+                },
+                {
+                  "name": "Ellis Island Immigrant Building",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1362,
+                  "vicinity": "New York",
+                  "place_id": "ChIJV1NmVpdQwokRcVLFkMhlOSw",
+                  "location": {
+                    "lat": 40.6991343,
+                    "lng": -74.0395588
+                  }
+                },
+                {
+                  "name": "Fort Jay",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 350,
+                  "vicinity": "Andes Road, Brooklyn",
+                  "place_id": "ChIJfa9tmm9awokRLTlL6sTX5B0",
+                  "location": {
+                    "lat": 40.6913721,
+                    "lng": -74.01598059999999
+                  }
+                },
+                {
+                  "name": "MARY A. WHALEN",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 17,
+                  "vicinity": "Pier 11, Brooklyn",
+                  "place_id": "ChIJSej0AWJawokRUk0IjPlzMh0",
+                  "location": {
+                    "lat": 40.6805041,
+                    "lng": -74.0128373
+                  }
+                },
+                {
+                  "name": "Waterfront Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 90,
+                  "vicinity": "290 Conover Street, Brooklyn",
+                  "place_id": "ChIJgUieT49awokRnXp7BX88Y14",
+                  "location": {
+                    "lat": 40.675219,
+                    "lng": -74.0183687
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Brooklyn Crab",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 2974,
+                  "vicinity": "24 Reed Street, Brooklyn",
+                  "place_id": "ChIJZ6MGOI9awokRL_wHVV0nxUg",
+                  "location": {
+                    "lat": 40.6752185,
+                    "lng": -74.01658549999999
+                  }
+                },
+                {
+                  "name": "The Good Fork Pub",
+                  "types": [
+                    "restaurant",
+                    "bar",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 463,
+                  "vicinity": "391 Van Brunt Street, Brooklyn",
+                  "place_id": "ChIJqdPcMIlawokRnjb0RFy_o7s",
+                  "location": {
+                    "lat": 40.6759676,
+                    "lng": -74.01424759999999
+                  }
+                },
+                {
+                  "name": "Hometown Bar-B-Que",
+                  "types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 4339,
+                  "vicinity": "454 Van Brunt Street, Brooklyn",
+                  "place_id": "ChIJ0VWwJI9awokRoiFWFqYZMQ8",
+                  "location": {
+                    "lat": 40.6749167,
+                    "lng": -74.0161583
+                  }
+                },
+                {
+                  "name": "Statue of Liberty Crown Cafe",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 2270,
+                  "vicinity": "Liberty Island, BOWLING GREEN",
+                  "place_id": "ChIJOw_d1I5QwokRlC7hA3MBvFs",
+                  "location": {
+                    "lat": 40.68999249999999,
+                    "lng": -74.04629349999999
+                  }
+                },
+                {
+                  "name": "Governors Island Beer Co",
+                  "types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 5,
+                  "vicinity": "Brooklyn",
+                  "place_id": "ChIJiyKQ0npawokR8KxNGf5zb4Q",
+                  "location": {
+                    "lat": 40.6903684,
+                    "lng": -74.0196145
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Governors Island Picnic Point",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 702,
+                  "vicinity": "910 Gresham Road, Brooklyn",
+                  "place_id": "ChIJozrGZ2VawokRhCYCtqZjo2E",
+                  "location": {
+                    "lat": 40.6854942,
+                    "lng": -74.02597279999999
+                  }
+                },
+                {
+                  "name": "Louis Valentino, Jr. Park and Pier",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1301,
+                  "vicinity": "Ferris St &, Coffey Street, Brooklyn",
+                  "place_id": "ChIJq3mMh4hawokR1Rl_U7p-K5c",
+                  "location": {
+                    "lat": 40.6784075,
+                    "lng": -74.0181413
+                  }
+                },
+                {
+                  "name": "Governors Island Outlook Hill",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 157,
+                  "vicinity": "946-950 Craig Road North, New York",
+                  "place_id": "ChIJu5ePs35awokRcu64QN2RFMc",
+                  "location": {
+                    "lat": 40.68676800000001,
+                    "lng": -74.0245573
+                  }
+                },
+                {
+                  "name": "Hammock Grove",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 378,
+                  "vicinity": "Brooklyn",
+                  "place_id": "ChIJ7wOtAntawokRD9hIRQh1944",
+                  "location": {
+                    "lat": 40.6887049,
+                    "lng": -74.0204742
+                  }
+                },
+                {
+                  "name": "Statue Of Liberty Vista",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 30,
+                  "vicinity": "946-950 Craig Road North, Brooklyn",
+                  "place_id": "ChIJFwHvPpJbwokRLA19SOruhYA",
+                  "location": {
+                    "lat": 40.6866588,
+                    "lng": -74.0256848
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "st agnes church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "260 Conover Street #326, Brooklyn",
+                  "place_id": "ChIJLV-5eABbwokRTCpNZZAxoGg",
+                  "location": {
+                    "lat": 40.6769444,
+                    "lng": -74.0194444
+                  }
+                },
+                {
+                  "name": "Building 309 (Formerly Our Lady Star of the Sea)",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "309 Clayton Road, New York",
+                  "place_id": "ChIJu9n7K7dbwokRBmD96gyQ6Bc",
+                  "location": {
+                    "lat": 40.6880438,
+                    "lng": -74.01643299999999
+                  }
+                },
+                {
+                  "name": "St. Cornelius Chapel",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 11,
+                  "vicinity": "12 Evans Road, New York",
+                  "place_id": "ChIJWcwxrmVawokRDefLUeL2ZCE",
+                  "location": {
+                    "lat": 40.68834399999999,
+                    "lng": -74.0146383
+                  }
+                },
+                {
+                  "name": "River of God Christian Center",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 5,
+                  "vicinity": "110 Wolcott Street, Brooklyn",
+                  "place_id": "ChIJ82sLeIlawokR63lsFlFvNGo",
+                  "location": {
+                    "lat": 40.6777695,
+                    "lng": -74.01313929999999
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Look North Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 3,
+                  "vicinity": "275 Conover Street, Brooklyn",
+                  "place_id": "ChIJhY7UXY9awokRedgaR-d-xGg",
+                  "location": {
+                    "lat": 40.67491,
+                    "lng": -74.017875
+                  }
+                },
+                {
+                  "name": "Hot Wood Arts",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 8,
+                  "vicinity": "481 Van Brunt Street, Brooklyn",
+                  "place_id": "ChIJ18k8I49awokRmJhU4emcvh8",
+                  "location": {
+                    "lat": 40.6740832,
+                    "lng": -74.0158179
+                  }
+                },
+                {
+                  "name": "BWAC Brooklyn Waterfront Artists Coalition",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 129,
+                  "vicinity": "481 Van Brunt Street Door #7A, Brooklyn",
+                  "place_id": "ChIJx6sWKI9awokRZOGT5o5CeRk",
+                  "location": {
+                    "lat": 40.6736885,
+                    "lng": -74.01656249999999
+                  }
+                },
+                {
+                  "name": "Yankee Hanger",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Brooklyn",
+                  "place_id": "ChIJMSQP445bwokR_-UzgjcEaAI",
+                  "location": {
+                    "lat": 40.6882376,
+                    "lng": -74.0189417
+                  }
+                },
+                {
+                  "name": "Duckworth Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "169 Coffey Street, Brooklyn",
+                  "place_id": "ChIJK22Ko4JbwokRTSLNsSRnTZA",
+                  "location": {
+                    "lat": 40.67752859999999,
+                    "lng": -74.0162296
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "New York",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "New York",
+                  "place_id": "ChIJOwg_06VPwokRYv534QaPC8g",
+                  "location": {
+                    "lat": 40.7127753,
+                    "lng": -74.0059728
+                  }
+                },
+                {
+                  "name": "Brooklyn Crab",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 2974,
+                  "vicinity": "24 Reed Street, Brooklyn",
+                  "place_id": "ChIJZ6MGOI9awokRL_wHVV0nxUg",
+                  "location": {
+                    "lat": 40.6752185,
+                    "lng": -74.01658549999999
+                  }
+                },
+                {
+                  "name": "The Liberty Warehouse",
+                  "types": [
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 419,
+                  "vicinity": "260 Conover Street, Brooklyn",
+                  "place_id": "ChIJiyNCHYZawokRhzFsEOO1pso",
+                  "location": {
+                    "lat": 40.6769444,
+                    "lng": -74.0194444
+                  }
+                },
+                {
+                  "name": "Statue of Liberty",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 111517,
+                  "vicinity": "New York",
+                  "place_id": "ChIJPTacEpBQwokRKwIlDXelxkA",
+                  "location": {
+                    "lat": 40.6892494,
+                    "lng": -74.04450039999999
+                  }
+                },
+                {
+                  "name": "FOOD BAZAAR",
+                  "types": [
+                    "supermarket",
+                    "grocery_or_supermarket",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 3783,
+                  "vicinity": "480-500 Van Brunt Street, Brooklyn",
+                  "place_id": "ChIJX8DHbY9awokR6Fph5fQATlU",
+                  "location": {
+                    "lat": 40.6742174,
+                    "lng": -74.01702159999999
+                  }
+                }
+              ]
+            },
+            "total_places_found": 34,
+            "photo_timestamp": "2019:09:30 18:45:30",
+            "camera": {
+              "make": "Xiaomi",
+              "model": "Mi MIX 3"
+            },
+            "processing_time_seconds": 0.3772852420806885
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/22.jpg"
+    },
+    {
+      "image_filename": "22.jpg",
+      "timestamp": "2026-01-28T05:02:43.264366",
+      "processing_time_seconds": 54.295803,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "One World Trade Center, Lower Manhattan Skyline, New York City, USA",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of One World Trade Center, along with the recognizable skyline of Lower Manhattan, makes the identification of New York City highly confident. The architectural style and urban setting are consistent with this location.",
+            "detailed_description": "The image depicts the skyline of Lower Manhattan in New York City, USA. The most prominent building is One World Trade Center, identifiable by its height and distinctive design. The skyline features a mix of modern skyscrapers, showcasing contemporary architectural styles. The view is taken from across the water, likely from the Hudson River, emphasizing the urban density and iconic nature of New York City's architecture.",
+            "identification": {
+              "primary": [
+                "One World Trade Center",
+                "Lower Manhattan Skyline"
+              ],
+              "location": "New York City, USA",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "One World Trade Center",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Lower Manhattan Skyline",
+                "type": "viewpoint",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "skyscrapers",
+              "urban",
+              "New_York_City",
+              "skyline"
+            ],
+            "location": "New York City, USA",
+            "type": "viewpoint",
+            "search_range_meters": 2000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"One World Trade Center\", \"Lower Manhattan Skyline\"],\n        \"location\": \"New York City, USA\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"One World Trade Center\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Lower Manhattan Skyline\",\n            \"type\": \"viewpoint\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"skyscrapers\", \"urban\", \"New_York_City\", \"skyline\"],\n    \"description\": \"The image depicts the skyline of Lower Manhattan in New York City, USA. The most prominent building is One World Trade Center, identifiable by its height and distinctive design. The skyline features a mix of modern skyscrapers, showcasing contemporary architectural styles. The view is taken from across the water, likely from the Hudson River, emphasizing the urban density and iconic nature of New York City's architecture.\",\n    \"reasoning\": \"The presence of One World Trade Center, along with the recognizable skyline of Lower Manhattan, makes the identification of New York City highly confident. The architectural style and urban setting are consistent with this location.\",\n    \"type\": \"viewpoint\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 7.056685924530029
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a city skyline viewed from across a body of water, likely a river or harbor. The skyline is dominated by a variety of modern skyscrapers, characterized by their glass facades and steel structures. The tallest building in the center features a sleek, tapering design with a spire at the top, suggesting a contemporary architectural style. Surrounding this central skyscraper are numerous other high-rise buildings, varying in height and design, with some exhibiting rectangular shape",
+            "description": "The image depicts a city skyline viewed from across a body of water, likely a river or harbor. The skyline is dominated by a variety of modern skyscrapers, characterized by their glass facades and steel structures. The tallest building in the center features a sleek, tapering design with a spire at the top, suggesting a contemporary architectural style. Surrounding this central skyscraper are numerous other high-rise buildings, varying in height and design, with some exhibiting rectangular shape",
+            "architectural_style": "Contemporary",
+            "search_backends_used": [],
+            "processing_time_seconds": 47.23789072036743
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Skyscraper",
+          "confidence": 0.9882510304450989,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Skyscraper",
+                "score": 0.9882510304450989
+              },
+              {
+                "source": "label",
+                "name": "Water resources",
+                "score": 0.9819936156272888
+              },
+              {
+                "source": "label",
+                "name": "Body of water",
+                "score": 0.9790822267532349
+              },
+              {
+                "source": "web",
+                "name": "Skyscraper",
+                "score": 0.4940725266933441
+              },
+              {
+                "source": "web",
+                "name": "Birds",
+                "score": 0.44130000472068787
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.4940725266933441
+              },
+              {
+                "name": "Water",
+                "score": 0.4664999842643738
+              },
+              {
+                "name": "Birds",
+                "score": 0.44130000472068787
+              },
+              {
+                "name": "sea-m",
+                "score": 0.4221999943256378
+              },
+              {
+                "name": "Tower",
+                "score": 0.3725000023841858
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.9932429194450378
+              },
+              {
+                "name": "Skyscraper",
+                "score": 0.9882510304450989
+              },
+              {
+                "name": "Water resources",
+                "score": 0.9819936156272888
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9819731116294861
+              },
+              {
+                "name": "Body of water",
+                "score": 0.9790822267532349
+              }
+            ],
+            "processing_time_seconds": 5.932849884033203
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/22.jpg"
+    }
+  ]
+}

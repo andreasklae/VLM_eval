@@ -1,0 +1,686 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "79.heic",
+      "timestamp": "2026-01-28T07:00:04.146420",
+      "processing_time_seconds": 66.806141,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -44.689338888888884,
+        "gps_longitude": 169.04959166666666,
+        "location": {
+          "formatted_address": "Roys Peak Track, Glendhu Bay 9382, New Zealand",
+          "city": "Glendhu Bay",
+          "county": "Otago Region",
+          "country": "New Zealand"
+        },
+        "datetime_original": "2023:11:25 08:15:48",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Roys Peak, Wanaka, New Zealand",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Glendhu Bay, which is near Wanaka. The distinctive landscape features, such as the grassy ridges and view of Lake Wanaka, are characteristic of Roys Peak, a well-known viewpoint in the area.",
+            "detailed_description": "The image shows a stunning landscape view from Roys Peak, a popular hiking destination near Wanaka, New Zealand. The foreground features grassy mountain ridges leading to a viewpoint, with Lake Wanaka visible in the background. The scene is characterized by clear blue skies and expansive views of surrounding mountains and valleys, typical of the Otago Region's dramatic scenery.",
+            "identification": {
+              "primary": [
+                "Roys Peak"
+              ],
+              "location": "Wanaka, New Zealand",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Roys Peak",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Lake Wanaka",
+                "type": "natural_feature",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "mountain",
+              "lake",
+              "New_Zealand",
+              "landscape"
+            ],
+            "location": "Wanaka, New Zealand",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Mount Aspiring National Park",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "The area is known for its proximity to Mount Aspiring National Park, which features similar landscapes."
+              },
+              {
+                "guess": "Southern Alps",
+                "specificity_level": "general",
+                "confidence": 0.5,
+                "reasoning": "The Southern Alps are a prominent mountain range in New Zealand, and the landscape resembles typical alpine scenery."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Roys Peak\"],\n        \"location\": \"Wanaka, New Zealand\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Roys Peak\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Lake Wanaka\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"mountain\", \"lake\", \"New_Zealand\", \"landscape\"],\n    \"description\": \"The image shows a stunning landscape view from Roys Peak, a popular hiking destination near Wanaka, New Zealand. The foreground features grassy mountain ridges leading to a viewpoint, with Lake Wanaka visible in the background. The scene is characterized by clear blue skies and expansive views of surrounding mountains and valleys, typical of the Otago Region's dramatic scenery.\",\n    \"reasoning\": \"The location metadata indicates Glendhu Bay, which is near Wanaka. The distinctive landscape features, such as the grassy ridges and view of Lake Wanaka, are characteristic of Roys Peak, a well-known viewpoint in the area.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Mount Aspiring National Park\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The area is known for its proximity to Mount Aspiring National Park, which features similar landscapes.\"\n        },\n        {\n            \"guess\": \"Southern Alps\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.5,\n            \"reasoning\": \"The Southern Alps are a prominent mountain range in New Zealand, and the landscape resembles typical alpine scenery.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": -44.689338888888884,
+              "longitude": 169.04959166666666
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Roys Peak Track, Glendhu Bay 9382, New Zealand",
+              "city": "Glendhu Bay",
+              "county": "Otago Region",
+              "country": "New Zealand"
+            },
+            "photo_timestamp": "2023:11:25 08:15:48",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 14.391088247299194
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image captures a stunning panoramic view of a mountainous landscape in the Otago Region of New Zealand. The foreground features a ridge covered in tussock grass, characterized by its golden-brown hue, typical of alpine environments. The ridge leads the eye towards the background, where a series of peaks create a dramatic skyline. These mountains are rugged and steep, with some snow-capped summits visible, indicating a higher altitude. Below the mountains, a large lake stretches across the sc",
+            "description": "The image captures a stunning panoramic view of a mountainous landscape in the Otago Region of New Zealand. The foreground features a ridge covered in tussock grass, characterized by its golden-brown hue, typical of alpine environments. The ridge leads the eye towards the background, where a series of peaks create a dramatic skyline. These mountains are rugged and steep, with some snow-capped summits visible, indicating a higher altitude. Below the mountains, a large lake stretches across the sc",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": -44.689338888888884,
+              "longitude": 169.04959166666666
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Roys Peak Track, Glendhu Bay 9382, New Zealand",
+              "city": "Glendhu Bay",
+              "county": "Otago Region",
+              "country": "New Zealand"
+            },
+            "photo_timestamp": "2023:11:25 08:15:48",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 51.622881174087524
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Mountain",
+          "confidence": 0.9881256818771362,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Mountain",
+                "score": 0.9881256818771362
+              },
+              {
+                "source": "label",
+                "name": "Mountainous landforms",
+                "score": 0.9866947531700134
+              },
+              {
+                "source": "label",
+                "name": "Hill",
+                "score": 0.9617552161216736
+              },
+              {
+                "source": "label",
+                "name": "Highland",
+                "score": 0.9524099230766296
+              },
+              {
+                "source": "label",
+                "name": "Mountain range",
+                "score": 0.9413354992866516
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Alps",
+                "score": 0.4508652687072754
+              },
+              {
+                "name": "5SG",
+                "score": 0.3163999915122986
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Mountain",
+                "score": 0.9881256818771362
+              },
+              {
+                "name": "Mountainous landforms",
+                "score": 0.9866947531700134
+              },
+              {
+                "name": "Hill",
+                "score": 0.9617552161216736
+              },
+              {
+                "name": "Highland",
+                "score": 0.9524099230766296
+              },
+              {
+                "name": "Mountain range",
+                "score": 0.9413354992866516
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": -44.689338888888884,
+              "longitude": 169.04959166666666
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Roys Peak Track, Glendhu Bay 9382, New Zealand",
+              "city": "Glendhu Bay",
+              "county": "Otago Region",
+              "country": "New Zealand"
+            },
+            "photo_timestamp": "2023:11:25 08:15:48",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 19.01890516281128
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Glendhu Bay, Otago Region, New Zealand",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Glendhu Bay, Otago Region, New Zealand",
+            "coordinates": {
+              "latitude": -44.689338888888884,
+              "longitude": 169.04959166666666
+            },
+            "search_range_meters": 5000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Roys Peak Lookout",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 982,
+                  "vicinity": "2, Glendhu Bay",
+                  "place_id": "ChIJo_9KhxdE1akReEAcaeL3Yrw",
+                  "location": {
+                    "lat": -44.6885076,
+                    "lng": 169.0499737
+                  }
+                },
+                {
+                  "name": "Lookout point",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 11,
+                  "vicinity": "Roys Peak Track, Glendhu Bay",
+                  "place_id": "ChIJsceeGgBF1akREKalgP47ap8",
+                  "location": {
+                    "lat": -44.69051899999999,
+                    "lng": 169.0488967
+                  }
+                },
+                {
+                  "name": "Coromandel Peak",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 23,
+                  "vicinity": "Glendhu Bay",
+                  "place_id": "ChIJKVBjkm5E1akR_Q3yk_fKRIM",
+                  "location": {
+                    "lat": -44.6735692,
+                    "lng": 169.0502292
+                  }
+                },
+                {
+                  "name": "Glendhu Bay Lookout",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 206,
+                  "vicinity": "44°40'07.0\"S 169°02'02., 6, Mount Aspiring National Park",
+                  "place_id": "ChIJ7eX9e4hD1akRSqugr9yPzZQ",
+                  "location": {
+                    "lat": -44.6687001,
+                    "lng": 169.0335936
+                  }
+                },
+                {
+                  "name": "Glendhu Bay Track",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 5,
+                  "vicinity": "Te Araroa Trl, Glendhu Bay",
+                  "place_id": "ChIJD3LKfwBD1akRMnHRwhfgQkc",
+                  "location": {
+                    "lat": -44.6654107,
+                    "lng": 169.0316621
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Glendhu Bay Café & Store",
+                  "types": [
+                    "meal_takeaway",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 5,
+                  "vicinity": "Wanaka Mount Aspiring Road Glendhu Bay, Wānaka",
+                  "place_id": "ChIJ8cmfgLVD1akRz6WjPCxox7E",
+                  "location": {
+                    "lat": -44.6745357,
+                    "lng": 169.0191288
+                  }
+                },
+                {
+                  "name": "Velo Café & Beer Garden",
+                  "types": [
+                    "cafe",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 31,
+                  "vicinity": "42 Motatapu Road, Glendhu Bay",
+                  "place_id": "ChIJL9loWi9D1akR-GO88xiEjjU",
+                  "location": {
+                    "lat": -44.6734726,
+                    "lng": 169.0040401
+                  }
+                },
+                {
+                  "name": "The Chef's Table",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 42,
+                  "vicinity": "246 Wanaka Mount Aspiring Road, Wānaka",
+                  "place_id": "ChIJ8Tu-2OZF1akRO6O2OFjQUnU",
+                  "location": {
+                    "lat": -44.69503350000001,
+                    "lng": 169.1046172
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Rotary Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 31,
+                  "vicinity": "1215 Wanaka Mount Aspiring Road, Glendhu Bay",
+                  "place_id": "ChIJCVMak8ZD1akRxoJpDPJmFfY",
+                  "location": {
+                    "lat": -44.67088749999999,
+                    "lng": 169.0103724
+                  }
+                },
+                {
+                  "name": "Ruby Island Car Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Ruby Island Road, Wānaka",
+                  "place_id": "ChIJ_7ZfNwBF1akRYf2dytf18ng",
+                  "location": {
+                    "lat": -44.68674769999999,
+                    "lng": 169.0972813
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Wānaka",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Wānaka",
+                  "place_id": "ChIJby3suR1G1akR4MF5hIbvAAU",
+                  "location": {
+                    "lat": -44.6942992,
+                    "lng": 169.1417356
+                  }
+                },
+                {
+                  "name": "Mt Aspiring Holiday Park",
+                  "types": [
+                    "rv_park",
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 731,
+                  "vicinity": "217 Wanaka Mount Aspiring Road, Wānaka",
+                  "place_id": "ChIJueZRWeFF1akRaqziJTDEB8o",
+                  "location": {
+                    "lat": -44.69908499999999,
+                    "lng": 169.101161
+                  }
+                },
+                {
+                  "name": "Club Wyndham Wanaka, Trademark Collection by Wyndham",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 609,
+                  "vicinity": "109 Wanaka Mount Aspiring Road, Lake Wanaka, Wānaka",
+                  "place_id": "ChIJfwAaUfxF1akRbJiFlnqxzmA",
+                  "location": {
+                    "lat": -44.7008854,
+                    "lng": 169.1101383
+                  }
+                },
+                {
+                  "name": "Whare Kea Lodge & Chalet - Wanaka",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 16,
+                  "vicinity": "494 Wanaka Mount Aspiring Road, Wānaka",
+                  "place_id": "ChIJiXJKNbVF1akRbCNmclYlocU",
+                  "location": {
+                    "lat": -44.6802716,
+                    "lng": 169.0793193
+                  }
+                },
+                {
+                  "name": "Hampshire Holiday Parks - Glendhu Bay",
+                  "types": [
+                    "rv_park",
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 661,
+                  "vicinity": "1127 Wanaka Mount Aspiring Road, Glendhu Bay",
+                  "place_id": "ChIJn8z0D5ND1akRFHf1dokD4qA",
+                  "location": {
+                    "lat": -44.6746563,
+                    "lng": 169.0190805
+                  }
+                }
+              ]
+            },
+            "total_places_found": 15,
+            "photo_timestamp": "2023:11:25 08:15:48",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.35895705223083496
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/79.heic"
+    },
+    {
+      "image_filename": "79.heic",
+      "timestamp": "2026-01-28T07:01:10.977671",
+      "processing_time_seconds": 58.820901,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Roys Peak, Wanaka, New Zealand",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive landscape and viewpoint are characteristic of Roys Peak, a well-known hiking spot offering panoramic views of Lake Wanaka and the surrounding mountains.",
+            "detailed_description": "The image depicts a stunning landscape view from Roys Peak, a popular hiking destination near Wanaka, New Zealand. The foreground features a ridge covered with tussock grass leading to a viewpoint with hikers. In the background, Lake Wanaka is visible, surrounded by rugged mountains. The scene is characterized by clear blue skies and expansive vistas, typical of the Southern Alps region.",
+            "identification": {
+              "primary": [
+                "Roys Peak"
+              ],
+              "location": "Wanaka, New Zealand",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Roys Peak",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Lake Wanaka",
+                "type": "natural_feature",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "mountain",
+              "lake",
+              "New_Zealand",
+              "landscape"
+            ],
+            "location": "Wanaka, New Zealand",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Mount Aspiring National Park",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "The landscape resembles areas within Mount Aspiring National Park, which is nearby and features similar terrain."
+              },
+              {
+                "guess": "Southern Alps",
+                "specificity_level": "general",
+                "confidence": 0.5,
+                "reasoning": "The mountainous backdrop is typical of the Southern Alps, a prominent mountain range in New Zealand."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Roys Peak\"],\n        \"location\": \"Wanaka, New Zealand\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Roys Peak\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Lake Wanaka\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"mountain\", \"lake\", \"New_Zealand\", \"landscape\"],\n    \"description\": \"The image depicts a stunning landscape view from Roys Peak, a popular hiking destination near Wanaka, New Zealand. The foreground features a ridge covered with tussock grass leading to a viewpoint with hikers. In the background, Lake Wanaka is visible, surrounded by rugged mountains. The scene is characterized by clear blue skies and expansive vistas, typical of the Southern Alps region.\",\n    \"reasoning\": \"The distinctive landscape and viewpoint are characteristic of Roys Peak, a well-known hiking spot offering panoramic views of Lake Wanaka and the surrounding mountains.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Mount Aspiring National Park\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The landscape resembles areas within Mount Aspiring National Park, which is nearby and features similar terrain.\"\n        },\n        {\n            \"guess\": \"Southern Alps\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.5,\n            \"reasoning\": \"The mountainous backdrop is typical of the Southern Alps, a prominent mountain range in New Zealand.\"\n        }\n    ]\n}",
+            "processing_time_seconds": 11.591001987457275
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a stunning mountainous landscape under a clear blue sky. The foreground features a ridge covered with tufts of grass, leading the eye towards a distant viewpoint. The ridge is composed of rocky terrain with patches of grass, creating a rugged yet serene atmosphere. In the background, a large lake is visible, surrounded by a series of mountain ranges. The mountains display varying shades of green and brown, indicating diverse vegetation and geological formations. Snow-capped pea",
+            "description": "The image depicts a stunning mountainous landscape under a clear blue sky. The foreground features a ridge covered with tufts of grass, leading the eye towards a distant viewpoint. The ridge is composed of rocky terrain with patches of grass, creating a rugged yet serene atmosphere. In the background, a large lake is visible, surrounded by a series of mountain ranges. The mountains display varying shades of green and brown, indicating diverse vegetation and geological formations. Snow-capped pea",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "processing_time_seconds": 46.96832203865051
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Mountain",
+          "confidence": 0.9881256818771362,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Mountain",
+                "score": 0.9881256818771362
+              },
+              {
+                "source": "label",
+                "name": "Mountainous landforms",
+                "score": 0.9866947531700134
+              },
+              {
+                "source": "label",
+                "name": "Hill",
+                "score": 0.9617552161216736
+              },
+              {
+                "source": "label",
+                "name": "Highland",
+                "score": 0.9524099230766296
+              },
+              {
+                "source": "label",
+                "name": "Mountain range",
+                "score": 0.9413354992866516
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Alps",
+                "score": 0.45050662755966187
+              },
+              {
+                "name": "5SG",
+                "score": 0.3163999915122986
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Mountain",
+                "score": 0.9881256818771362
+              },
+              {
+                "name": "Mountainous landforms",
+                "score": 0.9866947531700134
+              },
+              {
+                "name": "Hill",
+                "score": 0.9617552161216736
+              },
+              {
+                "name": "Highland",
+                "score": 0.9524099230766296
+              },
+              {
+                "name": "Mountain range",
+                "score": 0.9413354992866516
+              }
+            ],
+            "processing_time_seconds": 19.634016036987305
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/79.heic"
+    }
+  ]
+}

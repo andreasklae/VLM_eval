@@ -1,0 +1,871 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "65.jpg",
+      "timestamp": "2026-01-28T06:29:26.865999",
+      "processing_time_seconds": 61.685976,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 45.492511111111114,
+        "gps_longitude": 10.607930555555555,
+        "location": {
+          "formatted_address": "Via Vittorio Emanuele, 2, 25019 Sirmione BS, Italy",
+          "city": "Sirmione",
+          "county": "Provincia di Brescia",
+          "country": "Italy"
+        },
+        "datetime_original": "2023:06:17 15:11:33",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Rooftops of Sirmione, Scaliger Castle, Sirmione, Italy",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Sirmione, and the visible castle matches the architectural style and features of Scaliger Castle, a well-known landmark in the area.",
+            "detailed_description": "The image shows a view of Sirmione, Italy, featuring the rooftops of the town with terracotta tiles typical of Italian architecture. In the background, the Scaliger Castle is visible, characterized by its medieval architecture and distinctive crenellated towers. The castle is a prominent landmark in Sirmione, known for its historical significance and picturesque setting on Lake Garda.",
+            "identification": {
+              "primary": [
+                "Rooftops of Sirmione",
+                "Scaliger Castle"
+              ],
+              "location": "Sirmione, Italy",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Scaliger Castle",
+                "type": "landmark",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "medieval",
+              "castle",
+              "architecture",
+              "Italy",
+              "Sirmione"
+            ],
+            "location": "Sirmione, Italy",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Rooftops of Sirmione\", \"Scaliger Castle\"],\n        \"location\": \"Sirmione, Italy\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Scaliger Castle\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"medieval\", \"castle\", \"architecture\", \"Italy\", \"Sirmione\"],\n    \"description\": \"The image shows a view of Sirmione, Italy, featuring the rooftops of the town with terracotta tiles typical of Italian architecture. In the background, the Scaliger Castle is visible, characterized by its medieval architecture and distinctive crenellated towers. The castle is a prominent landmark in Sirmione, known for its historical significance and picturesque setting on Lake Garda.\",\n    \"reasoning\": \"The location metadata indicates Sirmione, and the visible castle matches the architectural style and features of Scaliger Castle, a well-known landmark in the area.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 45.492511111111114,
+              "longitude": 10.607930555555555
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Via Vittorio Emanuele, 2, 25019 Sirmione BS, Italy",
+              "city": "Sirmione",
+              "county": "Provincia di Brescia",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2023:06:17 15:11:33",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 9.088721990585327
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a picturesque street scene in Sirmione, a town in the Province of Brescia, Italy. The view is dominated by a series of charming buildings with distinct architectural features. The structures exhibit a traditional Italian style, characterized by terracotta roof tiles and pastel-colored facades. The building in the foreground has a warm orange hue with a prominent sign displaying text, possibly indicating a business or establishment. Adjacent to it is a building with a beige faca",
+            "description": "The image depicts a picturesque street scene in Sirmione, a town in the Province of Brescia, Italy. The view is dominated by a series of charming buildings with distinct architectural features. The structures exhibit a traditional Italian style, characterized by terracotta roof tiles and pastel-colored facades. The building in the foreground has a warm orange hue with a prominent sign displaying text, possibly indicating a business or establishment. Adjacent to it is a building with a beige faca",
+            "architectural_style": "Traditional Italian",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 45.492511111111114,
+              "longitude": 10.607930555555555
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Via Vittorio Emanuele, 2, 25019 Sirmione BS, Italy",
+              "city": "Sirmione",
+              "county": "Provincia di Brescia",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2023:06:17 15:11:33",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 52.008098125457764
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Neighbourhood",
+          "confidence": 0.9346807599067688,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Neighbourhood",
+                "score": 0.9346807599067688
+              },
+              {
+                "source": "label",
+                "name": "Urban design",
+                "score": 0.9029971957206726
+              },
+              {
+                "source": "object",
+                "name": "Building",
+                "score": 0.5012433528900146
+              },
+              {
+                "source": "web",
+                "name": "Apartment",
+                "score": 0.3134288489818573
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Apartment",
+                "score": 0.3134288489818573
+              },
+              {
+                "name": "Urban area",
+                "score": 0.27630001306533813
+              },
+              {
+                "name": "House",
+                "score": 0.039765000343322754
+              }
+            ],
+            "objects": [
+              {
+                "name": "Building",
+                "score": 0.5012433528900146
+              }
+            ],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9889159202575684
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9813634157180786
+              },
+              {
+                "name": "Wall",
+                "score": 0.975090742111206
+              },
+              {
+                "name": "Neighbourhood",
+                "score": 0.9346807599067688
+              },
+              {
+                "name": "Urban design",
+                "score": 0.9029971957206726
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 45.492511111111114,
+              "longitude": 10.607930555555555
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Via Vittorio Emanuele, 2, 25019 Sirmione BS, Italy",
+              "city": "Sirmione",
+              "county": "Provincia di Brescia",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2023:06:17 15:11:33",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 18.380358934402466
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Sirmione, Provincia di Brescia, Italy",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Sirmione, Provincia di Brescia, Italy",
+            "coordinates": {
+              "latitude": 45.492511111111114,
+              "longitude": 10.607930555555555
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Palazzo Callas Exhibitions",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 88,
+                  "vicinity": "Piazza Giosuè Carducci, Sirmione",
+                  "place_id": "ChIJeSvelVOTgUcROlcWHSL5YIY",
+                  "location": {
+                    "lat": 45.4925238,
+                    "lng": 10.6072044
+                  }
+                },
+                {
+                  "name": "Parrocchia di Santa Maria Maggiore",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 361,
+                  "vicinity": "Via Santa Maria Maggiore, 17, Sirmione",
+                  "place_id": "ChIJz9nrkVOTgUcRfis7inemWrs",
+                  "location": {
+                    "lat": 45.49318580000001,
+                    "lng": 10.6079092
+                  }
+                },
+                {
+                  "name": "Pink Crocodile",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.6,
+                  "user_ratings_total": 17,
+                  "vicinity": "Piazza Castello, 31, Sirmione",
+                  "place_id": "ChIJo7YBSQCTgUcRekLFEebHenQ",
+                  "location": {
+                    "lat": 45.4924819,
+                    "lng": 10.6080067
+                  }
+                },
+                {
+                  "name": "Castello Scaligero di Sirmione",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 70145,
+                  "vicinity": "Piazza Castello, 34, Sirmione",
+                  "place_id": "ChIJtyf7mVOTgUcRodx6WP1MGjQ",
+                  "location": {
+                    "lat": 45.4925187,
+                    "lng": 10.6081892
+                  }
+                },
+                {
+                  "name": "Zamek Scaligero",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 15,
+                  "vicinity": "Via Dante, 25-17, Sirmione",
+                  "place_id": "ChIJ954tRgCTgUcRvtl5n53cTaU",
+                  "location": {
+                    "lat": 45.492644,
+                    "lng": 10.6084377
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Palazzo Callas Exhibitions",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 88,
+                  "vicinity": "Piazza Giosuè Carducci, Sirmione",
+                  "place_id": "ChIJeSvelVOTgUcROlcWHSL5YIY",
+                  "location": {
+                    "lat": 45.4925238,
+                    "lng": 10.6072044
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Hotel Ideal Sirmione",
+                  "types": [
+                    "cafe",
+                    "lodging",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 474,
+                  "vicinity": "Via Caio Valerio Catullo, 31, Sirmione",
+                  "place_id": "ChIJv6Tpbk6TgUcRgydTk9aVNTk",
+                  "location": {
+                    "lat": 45.4994551,
+                    "lng": 10.605077
+                  }
+                },
+                {
+                  "name": "Ristorante Caruso",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 1207,
+                  "vicinity": "Via Romagnoli, 23, Sirmione",
+                  "place_id": "ChIJmVsYxFOTgUcRyU2YSljCDRY",
+                  "location": {
+                    "lat": 45.4926774,
+                    "lng": 10.6063862
+                  }
+                },
+                {
+                  "name": "Ristorante L’Orangerie",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 526,
+                  "vicinity": "Viale Guglielmo Marconi, 7, Sirmione",
+                  "place_id": "ChIJcbQ4eVOTgUcRrqDVpkSmkVs",
+                  "location": {
+                    "lat": 45.4912962,
+                    "lng": 10.6087647
+                  }
+                },
+                {
+                  "name": "Osteria del Vecchio Fossato",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 573,
+                  "vicinity": "Via Antiche Mura, 16, Sirmione",
+                  "place_id": "ChIJH4FwtlOTgUcRoFnDlilVXro",
+                  "location": {
+                    "lat": 45.49328999999999,
+                    "lng": 10.60745
+                  }
+                },
+                {
+                  "name": "Ristorante Quattro Stagioni",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3,
+                  "user_ratings_total": 3,
+                  "vicinity": "Viale Guglielmo Marconi, 11, Sirmione",
+                  "place_id": "ChIJKS-8flOTgUcRLJJle38lquM",
+                  "location": {
+                    "lat": 45.4905716,
+                    "lng": 10.6088115
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "B&B Villa Paradiso",
+                  "types": [
+                    "park",
+                    "parking",
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 111,
+                  "vicinity": "Via Cesare Arici, 7, Sirmione",
+                  "place_id": "ChIJkZrWPU6TgUcRmhEd7sUrZ2g",
+                  "location": {
+                    "lat": 45.4976127,
+                    "lng": 10.6050468
+                  }
+                },
+                {
+                  "name": "Velvet Tree",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 14,
+                  "vicinity": "Vicolo Carpentini, 3, Sirmione",
+                  "place_id": "ChIJNeDcDACTgUcRR3_x0kCp1J8",
+                  "location": {
+                    "lat": 45.49369249999999,
+                    "lng": 10.6068938
+                  }
+                },
+                {
+                  "name": "Alberi di olivo secolari",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 4,
+                  "vicinity": "Sirmione",
+                  "place_id": "ChIJqSGT9fCTgUcRRe9py4EQUlE",
+                  "location": {
+                    "lat": 45.49423279999999,
+                    "lng": 10.6081588
+                  }
+                },
+                {
+                  "name": "Giardino Pubblico",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 20,
+                  "vicinity": "Sirmione",
+                  "place_id": "ChIJk9zBIlKTgUcRRHBCaMN8QGg",
+                  "location": {
+                    "lat": 45.4946032,
+                    "lng": 10.6078212
+                  }
+                },
+                {
+                  "name": "Tulipanomania",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 10,
+                  "vicinity": "Viale Guglielmo Marconi, 17, Sirmione",
+                  "place_id": "ChIJ03nT2HWTgUcReIfBnRWB4Xo",
+                  "location": {
+                    "lat": 45.4900119,
+                    "lng": 10.6080337
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Parrocchia di Santa Maria Maggiore",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 361,
+                  "vicinity": "Via Santa Maria Maggiore, 17, Sirmione",
+                  "place_id": "ChIJz9nrkVOTgUcRfis7inemWrs",
+                  "location": {
+                    "lat": 45.49318580000001,
+                    "lng": 10.6079092
+                  }
+                },
+                {
+                  "name": "Chiesa di Sant'Anna della Rocca",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 191,
+                  "vicinity": "Piazza Castello, 1, Sirmione",
+                  "place_id": "ChIJbbqenlOTgUcRO4deFiHY_-E",
+                  "location": {
+                    "lat": 45.4920807,
+                    "lng": 10.6081244
+                  }
+                },
+                {
+                  "name": "Capela santanna",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Piazza Castello, 19, Sirmione",
+                  "place_id": "ChIJCzz_NgCTgUcRzUX9rAa5Cww",
+                  "location": {
+                    "lat": 45.4920584,
+                    "lng": 10.6072821
+                  }
+                },
+                {
+                  "name": "Shrine for Maria",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3,
+                  "user_ratings_total": 1,
+                  "vicinity": "Via Giuseppe Piana, 30, Sirmione",
+                  "place_id": "ChIJ0QyzGQCTgUcR48J9d87NyhU",
+                  "location": {
+                    "lat": 45.4944135,
+                    "lng": 10.608136
+                  }
+                },
+                {
+                  "name": "Chiesa di San Pietro in Mavino",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 916,
+                  "vicinity": "Via San Pietro in Mavino, Sirmione",
+                  "place_id": "ChIJ0e2nq0-TgUcR0Wl9ijstJ2c",
+                  "location": {
+                    "lat": 45.4981981,
+                    "lng": 10.6048558
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Galleria Civica Dante Alighieri",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 4,
+                  "vicinity": "Piazza Flaminia, 1, Sirmione",
+                  "place_id": "ChIJiYyE0iiTgUcRwTsKtY8Fj6I",
+                  "location": {
+                    "lat": 45.493161,
+                    "lng": 10.6070445
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Sirmione",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Sirmione",
+                  "place_id": "ChIJy2NkqknrgUcRkifP0xijNBM",
+                  "location": {
+                    "lat": 45.4650403,
+                    "lng": 10.6067412
+                  }
+                },
+                {
+                  "name": "Hotel Sirmione Terme",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1569,
+                  "vicinity": "Piazza Castello, 19, Sirmione",
+                  "place_id": "ChIJa6SimVOTgUcR8qSEJS42Dx4",
+                  "location": {
+                    "lat": 45.4918585,
+                    "lng": 10.6074465
+                  }
+                },
+                {
+                  "name": "Villa Cortine",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 516,
+                  "vicinity": "Viale Gennari, 2, Sirmione",
+                  "place_id": "ChIJ9fce8FGTgUcRE8ry76PSaa0",
+                  "location": {
+                    "lat": 45.49548349999999,
+                    "lng": 10.6072891
+                  }
+                },
+                {
+                  "name": "Grand Hotel Terme",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 939,
+                  "vicinity": "Viale Guglielmo Marconi, 7, Sirmione",
+                  "place_id": "ChIJa6SimVOTgUcRZX4HGit2Rlw",
+                  "location": {
+                    "lat": 45.49141689999999,
+                    "lng": 10.6087636
+                  }
+                },
+                {
+                  "name": "Hotel Eden",
+                  "types": [
+                    "spa",
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 453,
+                  "vicinity": "Piazza Giosuè Carducci, 17/21, Sirmione",
+                  "place_id": "ChIJMRZuv1OTgUcR41YTcggon2M",
+                  "location": {
+                    "lat": 45.4925952,
+                    "lng": 10.6067451
+                  }
+                }
+              ]
+            },
+            "total_places_found": 27,
+            "photo_timestamp": "2023:06:17 15:11:33",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.3654000759124756
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/65.jpg"
+    },
+    {
+      "image_filename": "65.jpg",
+      "timestamp": "2026-01-28T06:30:28.588376",
+      "processing_time_seconds": 55.268089,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Scaliger Castle, Sirmione, Italy",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive crenellated towers and stone construction are characteristic of Scaliger Castle in Sirmione, Italy. The location near Lake Garda further supports this identification.",
+            "detailed_description": "The image shows Scaliger Castle, a medieval fortress located in Sirmione, Italy. The castle is characterized by its crenellated towers and stone construction typical of medieval architecture. The surrounding area includes colorful buildings with terracotta roofs, indicative of Italian architectural style. The castle is situated near Lake Garda, which is visible in the background.",
+            "identification": {
+              "primary": [
+                "Scaliger Castle"
+              ],
+              "location": "Sirmione, Italy",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Scaliger Castle",
+                "type": "landmark",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "medieval",
+              "castle",
+              "Italy",
+              "architecture",
+              "historical"
+            ],
+            "location": "Sirmione, Italy",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Scaliger Castle\"],\n        \"location\": \"Sirmione, Italy\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Scaliger Castle\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"medieval\", \"castle\", \"Italy\", \"architecture\", \"historical\"],\n    \"description\": \"The image shows Scaliger Castle, a medieval fortress located in Sirmione, Italy. The castle is characterized by its crenellated towers and stone construction typical of medieval architecture. The surrounding area includes colorful buildings with terracotta roofs, indicative of Italian architectural style. The castle is situated near Lake Garda, which is visible in the background.\",\n    \"reasoning\": \"The distinctive crenellated towers and stone construction are characteristic of Scaliger Castle in Sirmione, Italy. The location near Lake Garda further supports this identification.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 9.732274293899536
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a charming urban scene with a focus on traditional architecture and a distant tower. The foreground features several buildings with classic European architectural styles, characterized by their tiled roofs and colorful facades. The buildings are primarily two to three stories high, with the one closest to the viewer displaying a vibrant orange facade and a sign reading 'Ristorante' on the side. The windows are framed with dark shutters, adding to the traditional aesthetic. Adja",
+            "description": "The image depicts a charming urban scene with a focus on traditional architecture and a distant tower. The foreground features several buildings with classic European architectural styles, characterized by their tiled roofs and colorful facades. The buildings are primarily two to three stories high, with the one closest to the viewer displaying a vibrant orange facade and a sign reading 'Ristorante' on the side. The windows are framed with dark shutters, adding to the traditional aesthetic. Adja",
+            "architectural_style": "Mediterranean, traditional European",
+            "search_backends_used": [],
+            "processing_time_seconds": 45.53245186805725
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Neighbourhood",
+          "confidence": 0.9346807599067688,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Neighbourhood",
+                "score": 0.9346807599067688
+              },
+              {
+                "source": "label",
+                "name": "Urban design",
+                "score": 0.9029971957206726
+              },
+              {
+                "source": "object",
+                "name": "Building",
+                "score": 0.5012433528900146
+              },
+              {
+                "source": "web",
+                "name": "Apartment",
+                "score": 0.3134288489818573
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Apartment",
+                "score": 0.3134288489818573
+              },
+              {
+                "name": "Urban area",
+                "score": 0.27630001306533813
+              },
+              {
+                "name": "House",
+                "score": 0.039765000343322754
+              }
+            ],
+            "objects": [
+              {
+                "name": "Building",
+                "score": 0.5012433528900146
+              }
+            ],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9889159202575684
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9813634157180786
+              },
+              {
+                "name": "Wall",
+                "score": 0.975090742111206
+              },
+              {
+                "name": "Neighbourhood",
+                "score": 0.9346807599067688
+              },
+              {
+                "name": "Urban design",
+                "score": 0.9029971957206726
+              }
+            ],
+            "processing_time_seconds": 17.640011072158813
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/65.jpg"
+    }
+  ]
+}

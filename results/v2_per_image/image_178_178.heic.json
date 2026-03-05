@@ -1,0 +1,1060 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "178.heic",
+      "timestamp": "2026-01-28T03:42:21.366110",
+      "processing_time_seconds": 67.163883,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -27.473402777777775,
+        "gps_longitude": 153.02578611111113,
+        "location": {
+          "formatted_address": "100 George St, Brisbane City QLD 4000, Australia",
+          "city": "Brisbane City",
+          "county": "Brisbane City",
+          "country": "Australia"
+        },
+        "datetime_original": "2025:06:29 17:59:37",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Suburban street scene with city skyline, Brisbane, Australia",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The suburban houses and the city skyline suggest a typical urban landscape scene. The painting style and the context of Brisbane, Australia, align with the visual elements observed.",
+            "detailed_description": "The image depicts a suburban street scene with a row of houses in the foreground, painted in an impressionistic style. The houses have pitched roofs and are surrounded by greenery, typical of suburban architecture. In the background, there is a blurred city skyline, likely representing Brisbane, Australia. The painting uses a warm color palette with shades of green and blue, creating a contrast between the suburban area and the distant urban skyline.",
+            "identification": {
+              "primary": [
+                "Suburban street scene with city skyline"
+              ],
+              "location": "Brisbane, Australia",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Suburban houses",
+                "type": "building",
+                "confidence": 0.9
+              },
+              {
+                "name": "City skyline",
+                "type": "landmark",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "urban_landscape",
+              "suburban",
+              "city_skyline",
+              "impressionistic_style",
+              "Australia"
+            ],
+            "location": "Brisbane, Australia",
+            "type": "painting",
+            "search_range_meters": 2000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Suburban street scene with city skyline\"],\n        \"location\": \"Brisbane, Australia\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Suburban houses\",\n            \"type\": \"building\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"City skyline\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"urban_landscape\", \"suburban\", \"city_skyline\", \"impressionistic_style\", \"Australia\"],\n    \"description\": \"The image depicts a suburban street scene with a row of houses in the foreground, painted in an impressionistic style. The houses have pitched roofs and are surrounded by greenery, typical of suburban architecture. In the background, there is a blurred city skyline, likely representing Brisbane, Australia. The painting uses a warm color palette with shades of green and blue, creating a contrast between the suburban area and the distant urban skyline.\",\n    \"reasoning\": \"The suburban houses and the city skyline suggest a typical urban landscape scene. The painting style and the context of Brisbane, Australia, align with the visual elements observed.\",\n    \"type\": \"painting\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": []\n}",
+            "gps_coordinates": {
+              "latitude": -27.473402777777775,
+              "longitude": 153.02578611111113
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "100 George St, Brisbane City QLD 4000, Australia",
+              "city": "Brisbane City",
+              "county": "Brisbane City",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:06:29 17:59:37",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 21.556302070617676
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([artsandculture.google.com]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image is a painting depicting a suburban street scene in Brisbane, Australia, with a focus on traditional Queenslander-style houses. These houses are characterized by their elevated structures, corrugated iron roofs, and wide verandas, typical of the architectural style found in Queensland. The houses are painted in cool tones of blue and green, creating a serene and somewhat melancholic atmosphere. In the foreground, several cars are parked along the street, which is bathed in dappled sunli",
+            "description": "The image is a painting depicting a suburban street scene in Brisbane, Australia, with a focus on traditional Queenslander-style houses. These houses are characterized by their elevated structures, corrugated iron roofs, and wide verandas, typical of the architectural style found in Queensland. The houses are painted in cool tones of blue and green, creating a serene and somewhat melancholic atmosphere. In the foreground, several cars are parked along the street, which is bathed in dappled sunli",
+            "architectural_style": "Queenslander",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": -27.473402777777775,
+              "longitude": 153.02578611111113
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "100 George St, Brisbane City QLD 4000, Australia",
+              "city": "Brisbane City",
+              "county": "Brisbane City",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:06:29 17:59:37",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 44.12183403968811
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Visual Arts (Brisbane City, Australia)",
+          "confidence": 0.5141379237174988,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Visual Arts",
+            "artist_name": null,
+            "museum_or_location": "Brisbane City, Australia",
+            "art_style": "Modern art",
+            "art_era": "Modern art",
+            "confidence": 0.5141379237174988,
+            "web_entities": [
+              {
+                "name": "Car",
+                "score": 0.5354022979736328
+              },
+              {
+                "name": "Visual Arts",
+                "score": 0.5141379237174988
+              },
+              {
+                "name": "Painting",
+                "score": 0.4265311360359192
+              },
+              {
+                "name": "Art",
+                "score": 0.3546000123023987
+              },
+              {
+                "name": "Tree",
+                "score": 0.31584441661834717
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": -27.473402777777775,
+              "longitude": 153.02578611111113
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "100 George St, Brisbane City QLD 4000, Australia",
+              "city": "Brisbane City",
+              "county": "Brisbane City",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:06:29 17:59:37",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 21.635554790496826
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Brisbane City, Australia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Brisbane City, Australia",
+            "coordinates": {
+              "latitude": -27.473402777777775,
+              "longitude": 153.02578611111113
+            },
+            "search_range_meters": 2000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Old Windmill Observatory: The Tower Mill",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 200,
+                  "vicinity": "Spring Hill",
+                  "place_id": "ChIJJc_GUwJakWsR1pxpa0kh6iQ",
+                  "location": {
+                    "lat": -27.4658296,
+                    "lng": 153.0231123
+                  }
+                },
+                {
+                  "name": "William Jolly Bridge",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 127,
+                  "vicinity": "Grey Street, Brisbane City",
+                  "place_id": "ChIJr6CsQgdakWsRSxtphQkHHPE",
+                  "location": {
+                    "lat": -27.4686036,
+                    "lng": 153.0155158
+                  }
+                },
+                {
+                  "name": "Brisbane City Hall",
+                  "types": [
+                    "city_hall",
+                    "tourist_attraction",
+                    "local_government_office",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1018,
+                  "vicinity": "64 Adelaide Street, Brisbane City",
+                  "place_id": "ChIJ10LrOO1ZkWsR58WugSps4oE",
+                  "location": {
+                    "lat": -27.4686893,
+                    "lng": 153.0238365
+                  }
+                },
+                {
+                  "name": "Saint Stephen’s Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1660,
+                  "vicinity": "249 Elizabeth Street, Brisbane City",
+                  "place_id": "ChIJEze8jxxakWsRre7rv3s6K5c",
+                  "location": {
+                    "lat": -27.4687648,
+                    "lng": 153.0290513
+                  }
+                },
+                {
+                  "name": "Queensland Police Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 101,
+                  "vicinity": "200 Roma Street, Brisbane City",
+                  "place_id": "ChIJ_TXUIwFakWsR97pnYGXXTbI",
+                  "location": {
+                    "lat": -27.4666381,
+                    "lng": 153.0180179
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Queensland Police Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 101,
+                  "vicinity": "200 Roma Street, Brisbane City",
+                  "place_id": "ChIJ_TXUIwFakWsR97pnYGXXTbI",
+                  "location": {
+                    "lat": -27.4666381,
+                    "lng": 153.0180179
+                  }
+                },
+                {
+                  "name": "Museum of Brisbane",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 3183,
+                  "vicinity": "Level 3, Brisbane City Hall, 64 Adelaide Street, Brisbane City",
+                  "place_id": "ChIJPbZTLX9akWsRB3KZOZSp5gg",
+                  "location": {
+                    "lat": -27.4686797,
+                    "lng": 153.0238277
+                  }
+                },
+                {
+                  "name": "QUT Art Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 149,
+                  "vicinity": "U Queensland University of Technology, 2 George Street, Brisbane City",
+                  "place_id": "ChIJQR1yTBBakWsRKWGkjTj2_y0",
+                  "location": {
+                    "lat": -27.4766363,
+                    "lng": 153.0288958
+                  }
+                },
+                {
+                  "name": "Gallery of Modern Art",
+                  "types": [
+                    "art_gallery",
+                    "movie_theater",
+                    "cafe",
+                    "museum",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 9424,
+                  "vicinity": "Stanley Place, South Brisbane",
+                  "place_id": "ChIJeT87OwZakWsRMni5L396BlU",
+                  "location": {
+                    "lat": -27.47056,
+                    "lng": 153.0171334
+                  }
+                },
+                {
+                  "name": "HMAS Diamantina",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 54,
+                  "vicinity": "Australia",
+                  "place_id": "ChIJ4XwsVwxakWsRb0U96ZdoVFE",
+                  "location": {
+                    "lat": -27.4819057,
+                    "lng": 153.0262693
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Adina Apartment Hotel Brisbane Anzac Square",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 617,
+                  "vicinity": "255 Ann Street, Brisbane City",
+                  "place_id": "ChIJ_y2xXPRZkWsR2_U0DdS8vUg",
+                  "location": {
+                    "lat": -27.4667266,
+                    "lng": 153.0259317
+                  }
+                },
+                {
+                  "name": "Treasury Hotel Brisbane",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 9408,
+                  "vicinity": "130 William Street, Brisbane City",
+                  "place_id": "ChIJVQ1_WANakWsR8ORfvZHivn8",
+                  "location": {
+                    "lat": -27.4726783,
+                    "lng": 153.0246408
+                  }
+                },
+                {
+                  "name": "Hotel Diana Woolloongabba",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 849,
+                  "vicinity": "12 Annerley Road, Woolloongabba",
+                  "place_id": "ChIJ0Wa8MhNakWsR6A2T1j92vgM",
+                  "location": {
+                    "lat": -27.4866111,
+                    "lng": 153.0294306
+                  }
+                },
+                {
+                  "name": "Stamford Plaza Brisbane",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 2900,
+                  "vicinity": "39 Edward Street, Brisbane City",
+                  "place_id": "ChIJJ9_amBtakWsR5vV9XlS8sEE",
+                  "location": {
+                    "lat": -27.4716559,
+                    "lng": 153.0307435
+                  }
+                },
+                {
+                  "name": "Mercure Brisbane Spring Hill",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 1332,
+                  "vicinity": "345 Wickham Terrace, Spring Hill",
+                  "place_id": "ChIJTbCcigFakWsRP0oSlsoVKu0",
+                  "location": {
+                    "lat": -27.4642838,
+                    "lng": 153.0211123
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Miller Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 11,
+                  "vicinity": "12 Queens Wharf Road, Brisbane City",
+                  "place_id": "ChIJH7lncwVakWsRcGE65RR7kj8",
+                  "location": {
+                    "lat": -27.473057,
+                    "lng": 153.0239954
+                  }
+                },
+                {
+                  "name": "Dave the Trainer",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Goodlife Health Clubs Elizabeth Street, 300 Elizabeth Street, Brisbane City",
+                  "place_id": "ChIJjarF4tNqkWsRuP5upPeHDIE",
+                  "location": {
+                    "lat": -27.4676979,
+                    "lng": 153.0289851
+                  }
+                },
+                {
+                  "name": "Queen Street Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 19,
+                  "vicinity": "427B Queen Street, Brisbane City",
+                  "place_id": "ChIJG6vs9h1akWsRfbPZdBUcSfg",
+                  "location": {
+                    "lat": -27.4652477,
+                    "lng": 153.0314073
+                  }
+                },
+                {
+                  "name": "James Warner Park Fenced Dog Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 9,
+                  "vicinity": "33 Annie Street, Kangaroo Point",
+                  "place_id": "ChIJ85nfPh5akWsRtSlviaE8ym4",
+                  "location": {
+                    "lat": -27.4667744,
+                    "lng": 153.0341753
+                  }
+                },
+                {
+                  "name": "Roma Street Parkland",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 10630,
+                  "vicinity": "1 Parkland Boulevard, Brisbane City",
+                  "place_id": "ChIJeSeo9gFakWsRuITQQsDsPGs",
+                  "location": {
+                    "lat": -27.4630081,
+                    "lng": 153.0189415
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Saint Stephen’s Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1660,
+                  "vicinity": "249 Elizabeth Street, Brisbane City",
+                  "place_id": "ChIJEze8jxxakWsRre7rv3s6K5c",
+                  "location": {
+                    "lat": -27.4687648,
+                    "lng": 153.0290513
+                  }
+                },
+                {
+                  "name": "The Salvation Army Brisbane City Temple",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 54,
+                  "vicinity": "167 Ann Street, Brisbane City",
+                  "place_id": "ChIJXZZ_FgNakWsR4OL04jOao4Q",
+                  "location": {
+                    "lat": -27.4674442,
+                    "lng": 153.0248413
+                  }
+                },
+                {
+                  "name": "Catholic Regional Tribunal Brisbane",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.5,
+                  "user_ratings_total": 2,
+                  "vicinity": "172 Charlotte Street, Brisbane City",
+                  "place_id": "ChIJ83tVhRxakWsR27UHelOcpWY",
+                  "location": {
+                    "lat": -27.4692923,
+                    "lng": 153.0289335
+                  }
+                },
+                {
+                  "name": "Ann Street Presbyterian Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 59,
+                  "vicinity": "141 Ann Street, Brisbane City",
+                  "place_id": "ChIJH3PebgNakWsRIt2D2wR1Ubc",
+                  "location": {
+                    "lat": -27.4679638,
+                    "lng": 153.0244311
+                  }
+                },
+                {
+                  "name": "Hillsong City Campus | Brisbane",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 123,
+                  "vicinity": "346 George Street, Brisbane City",
+                  "place_id": "ChIJz_oORvJZkWsRAShZWu44NoE",
+                  "location": {
+                    "lat": -27.4691688,
+                    "lng": 153.0216353
+                  }
+                },
+                {
+                  "name": "Brisbane CBD Musallah",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 110,
+                  "vicinity": "1/138 Albert Street, Brisbane City",
+                  "place_id": "ChIJwUkaaw1bkWsRn0soKq2Xjpw",
+                  "location": {
+                    "lat": -27.471099,
+                    "lng": 153.0260545
+                  }
+                },
+                {
+                  "name": "QUT Muslim Prayer Room",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 31,
+                  "vicinity": "G-H Block Link, Gardens Point, 209",
+                  "place_id": "ChIJNcf0ahBakWsRgBhhLu0Q4ek",
+                  "location": {
+                    "lat": -27.4766846,
+                    "lng": 153.0278225
+                  }
+                },
+                {
+                  "name": "Masjid Al Madinah - West End",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 182,
+                  "vicinity": "12 Princhester Street, West End",
+                  "place_id": "ChIJiUTU40ZRkWsR17pbh3PySBY",
+                  "location": {
+                    "lat": -27.4812808,
+                    "lng": 153.010752
+                  }
+                },
+                {
+                  "name": "Islamic Center",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 15,
+                  "vicinity": "12 Princhester Street, West End",
+                  "place_id": "ChIJI2DMxqFQkWsRweTmxGR6H4I",
+                  "location": {
+                    "lat": -27.48126839999999,
+                    "lng": 153.0107312
+                  }
+                },
+                {
+                  "name": "The Brisbane Synagogue",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 28,
+                  "vicinity": "98 Margaret Street, Brisbane City",
+                  "place_id": "ChIJ-ZVeyRpakWsR4tzcasLJbUo",
+                  "location": {
+                    "lat": -27.4733134,
+                    "lng": 153.0269494
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "QUT Art Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 149,
+                  "vicinity": "U Queensland University of Technology, 2 George Street, Brisbane City",
+                  "place_id": "ChIJQR1yTBBakWsRKWGkjTj2_y0",
+                  "location": {
+                    "lat": -27.4766363,
+                    "lng": 153.0288958
+                  }
+                },
+                {
+                  "name": "Gallery of Modern Art",
+                  "types": [
+                    "art_gallery",
+                    "museum",
+                    "cafe",
+                    "movie_theater",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 9424,
+                  "vicinity": "Stanley Place, South Brisbane",
+                  "place_id": "ChIJeT87OwZakWsRMni5L396BlU",
+                  "location": {
+                    "lat": -27.47056,
+                    "lng": 153.0171334
+                  }
+                },
+                {
+                  "name": "Judith Wright Arts Centre",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 209,
+                  "vicinity": "420 Brunswick St & Cnr, Berwick Street, Fortitude Valley",
+                  "place_id": "ChIJ9UMaafNZkWsRbSVI0J17prE",
+                  "location": {
+                    "lat": -27.45967449999999,
+                    "lng": 153.0367734
+                  }
+                },
+                {
+                  "name": "Shøøting Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "105 Bowen Street, Spring Hill",
+                  "place_id": "ChIJHQrynvdZkWsRI49qNdGxpqU",
+                  "location": {
+                    "lat": -27.4617518,
+                    "lng": 153.0277682
+                  }
+                },
+                {
+                  "name": "The Model Shoppe",
+                  "types": [
+                    "art_gallery",
+                    "book_store",
+                    "cafe",
+                    "home_goods_store",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 11,
+                  "vicinity": "Brisbane Arcade, Shop 10 gallery, 160 Queen Street, Brisbane City",
+                  "place_id": "ChIJBfvWXgNakWsRAl1Z85BZ0Ek",
+                  "location": {
+                    "lat": -27.4691311,
+                    "lng": 153.0255818
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Brisbane",
+                  "types": [
+                    "colloquial_area",
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Brisbane",
+                  "place_id": "ChIJM9KTrJpXkWsRQK_e81qjAgQ",
+                  "location": {
+                    "lat": -27.4704528,
+                    "lng": 153.0260341
+                  }
+                },
+                {
+                  "name": "Royal On The Park Brisbane",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1840,
+                  "vicinity": "152 Alice Street, Brisbane City",
+                  "place_id": "ChIJ1SHx8BpakWsRDhqFTjXpAPE",
+                  "location": {
+                    "lat": -27.472858,
+                    "lng": 153.029187
+                  }
+                },
+                {
+                  "name": "Rydges South Bank Brisbane",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 2686,
+                  "vicinity": "9 Glenelg Street, South Brisbane",
+                  "place_id": "ChIJM9dcjwhGkWsRUxBOVDxgo3E",
+                  "location": {
+                    "lat": -27.4773488,
+                    "lng": 153.0203962
+                  }
+                },
+                {
+                  "name": "The Sebel Brisbane",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1128,
+                  "vicinity": "Cnr Albert And, Charlotte Street, Brisbane City",
+                  "place_id": "ChIJ58qGMxtakWsRpIRT7qC9-ms",
+                  "location": {
+                    "lat": -27.4711552,
+                    "lng": 153.0271657
+                  }
+                },
+                {
+                  "name": "Mantra South Bank Brisbane",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 1091,
+                  "vicinity": "161 Grey Street, South Brisbane",
+                  "place_id": "ChIJn2PDwghakWsRVGcSfQxr3xI",
+                  "location": {
+                    "lat": -27.47805809999999,
+                    "lng": 153.0208724
+                  }
+                }
+              ]
+            },
+            "total_places_found": 40,
+            "photo_timestamp": "2025:06:29 17:59:37",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.8215999603271484
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/178.heic"
+    },
+    {
+      "image_filename": "178.heic",
+      "timestamp": "2026-01-28T03:43:28.573484",
+      "processing_time_seconds": 63.7951,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Urban landscape painting",
+          "confidence": 0.7,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The painting's style and composition suggest an impressionistic approach, focusing on light and color to convey mood rather than detailed realism. The urban setting is evident from the juxtaposition of residential houses and a distant skyline.",
+            "detailed_description": "The image is a painting depicting an urban landscape with a row of houses in the foreground and a distant city skyline in the background. The style appears impressionistic, characterized by loose brushwork and a focus on light and atmosphere. The houses have pitched roofs and are painted in cool tones, while the skyline is rendered in warm, diffused colors, suggesting a sunset or sunrise. The painting captures the contrast between the residential area and the looming cityscape, with telephone poles adding vertical elements to the composition.",
+            "identification": {
+              "primary": [
+                "Urban landscape painting"
+              ],
+              "location": null,
+              "confidence": 0.7
+            },
+            "artifacts": [
+              {
+                "name": "Urban landscape with houses and skyline",
+                "type": "painting",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "urban_landscape",
+              "painting",
+              "impressionistic_style",
+              "modern_era"
+            ],
+            "location": null,
+            "type": "painting",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Impressionistic urban landscape painting",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The style and subject matter align with impressionistic depictions of urban environments, focusing on light and atmosphere."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Urban landscape painting\"],\n        \"location\": null,\n        \"confidence\": 0.7\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Urban landscape with houses and skyline\",\n            \"type\": \"painting\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"urban_landscape\", \"painting\", \"impressionistic_style\", \"modern_era\"],\n    \"description\": \"The image is a painting depicting an urban landscape with a row of houses in the foreground and a distant city skyline in the background. The style appears impressionistic, characterized by loose brushwork and a focus on light and atmosphere. The houses have pitched roofs and are painted in cool tones, while the skyline is rendered in warm, diffused colors, suggesting a sunset or sunrise. The painting captures the contrast between the residential area and the looming cityscape, with telephone poles adding vertical elements to the composition.\",\n    \"reasoning\": \"The painting's style and composition suggest an impressionistic approach, focusing on light and color to convey mood rather than detailed realism. The urban setting is evident from the juxtaposition of residential houses and a distant skyline.\",\n    \"type\": \"painting\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Impressionistic urban landscape painting\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The style and subject matter align with impressionistic depictions of urban environments, focusing on light and atmosphere.\"\n        }\n    ]\n}",
+            "processing_time_seconds": 20.228639841079712
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*Source*: ([wizzley.com]())",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a painting of a suburban street scene, characterized by a row of houses with pitched roofs and a series of utility poles. The houses are painted in shades of blue and green, suggesting the play of light and shadow across their surfaces. The street is lined with parked cars, rendered in muted tones that blend with the overall color palette. The foreground is dominated by deep blues and greens, creating a sense of early morning or late afternoon light. In the background, a dense ",
+            "description": "The image depicts a painting of a suburban street scene, characterized by a row of houses with pitched roofs and a series of utility poles. The houses are painted in shades of blue and green, suggesting the play of light and shadow across their surfaces. The street is lined with parked cars, rendered in muted tones that blend with the overall color palette. The foreground is dominated by deep blues and greens, creating a sense of early morning or late afternoon light. In the background, a dense ",
+            "architectural_style": "Suburban residential",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 43.280949115753174
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Visual Arts",
+          "confidence": 0.5141379237174988,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Visual Arts",
+            "artist_name": null,
+            "museum_or_location": null,
+            "art_style": "Modern art",
+            "art_era": "Modern art",
+            "confidence": 0.5141379237174988,
+            "web_entities": [
+              {
+                "name": "Car",
+                "score": 0.5348700881004333
+              },
+              {
+                "name": "Visual Arts",
+                "score": 0.5141379237174988
+              },
+              {
+                "name": "Painting",
+                "score": 0.42662379145622253
+              },
+              {
+                "name": "Art",
+                "score": 0.3546000123023987
+              },
+              {
+                "name": "Tree",
+                "score": 0.31554412841796875
+              }
+            ],
+            "processing_time_seconds": 22.60215711593628
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/178.heic"
+    }
+  ]
+}

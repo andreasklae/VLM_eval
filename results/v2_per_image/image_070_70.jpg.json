@@ -1,0 +1,791 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "70.jpg",
+      "timestamp": "2026-01-28T06:40:50.125311",
+      "processing_time_seconds": 64.412786,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 44.09813333333334,
+        "gps_longitude": 9.737599999999999,
+        "location": {
+          "formatted_address": "Via San Giacomo, 200, 19017 Riomaggiore SP, Italy",
+          "city": "Riomaggiore",
+          "county": "Provincia della Spezia",
+          "country": "Italy"
+        },
+        "datetime_original": "2023:06:23 12:26:03",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Riomaggiore village, Riomaggiore, Italy",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive colorful buildings and coastal setting are characteristic of Riomaggiore, one of the villages in Cinque Terre. The architectural style and location metadata support this identification.",
+            "detailed_description": "The image depicts the colorful buildings of Riomaggiore, a village in the Cinque Terre region of Italy. The buildings are characterized by their vibrant facades in shades of red, yellow, and orange, typical of Mediterranean architecture. They are densely packed along the rugged coastline, creating a picturesque view. The scene includes narrow streets and terraces, with the sea visible in the background.",
+            "identification": {
+              "primary": [
+                "Riomaggiore village"
+              ],
+              "location": "Riomaggiore, Italy",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Colorful buildings of Riomaggiore",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Mediterranean_architecture",
+              "coastal_village",
+              "colorful_buildings",
+              "Cinque_Terre",
+              "Italy"
+            ],
+            "location": "Riomaggiore, Italy",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Riomaggiore village\"],\n        \"location\": \"Riomaggiore, Italy\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Colorful buildings of Riomaggiore\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Mediterranean_architecture\", \"coastal_village\", \"colorful_buildings\", \"Cinque_Terre\", \"Italy\"],\n    \"description\": \"The image depicts the colorful buildings of Riomaggiore, a village in the Cinque Terre region of Italy. The buildings are characterized by their vibrant facades in shades of red, yellow, and orange, typical of Mediterranean architecture. They are densely packed along the rugged coastline, creating a picturesque view. The scene includes narrow streets and terraces, with the sea visible in the background.\",\n    \"reasoning\": \"The distinctive colorful buildings and coastal setting are characteristic of Riomaggiore, one of the villages in Cinque Terre. The architectural style and location metadata support this identification.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 44.09813333333334,
+              "longitude": 9.737599999999999
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Via San Giacomo, 200, 19017 Riomaggiore SP, Italy",
+              "city": "Riomaggiore",
+              "county": "Provincia della Spezia",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2023:06:23 12:26:03",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 11.36385989189148
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a picturesque view of Riomaggiore, a village in the Cinque Terre region of Italy. The scene is dominated by a cluster of colorful buildings, typical of the Ligurian coastal architecture. The buildings are stacked closely together on a steep hillside, showcasing a vibrant palette of reds, yellows, oranges, and pinks, which contrast beautifully against the lush greenery of the surrounding landscape. The architecture is characterized by narrow, multi-story structures with flat roo",
+            "description": "The image depicts a picturesque view of Riomaggiore, a village in the Cinque Terre region of Italy. The scene is dominated by a cluster of colorful buildings, typical of the Ligurian coastal architecture. The buildings are stacked closely together on a steep hillside, showcasing a vibrant palette of reds, yellows, oranges, and pinks, which contrast beautifully against the lush greenery of the surrounding landscape. The architecture is characterized by narrow, multi-story structures with flat roo",
+            "architectural_style": "Traditional Ligurian coastal architecture",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 44.09813333333334,
+              "longitude": 9.737599999999999
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Via San Giacomo, 200, 19017 Riomaggiore SP, Italy",
+              "city": "Riomaggiore",
+              "county": "Provincia della Spezia",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2023:06:23 12:26:03",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 52.43706703186035
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Neighbourhood",
+          "confidence": 0.9390670657157898,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Neighbourhood",
+                "score": 0.9390670657157898
+              },
+              {
+                "source": "label",
+                "name": "Residential area",
+                "score": 0.9206885695457458
+              },
+              {
+                "source": "label",
+                "name": "Urban design",
+                "score": 0.8932977318763733
+              },
+              {
+                "source": "web",
+                "name": "Cinque Terre",
+                "score": 0.6187499761581421
+              },
+              {
+                "source": "object",
+                "name": "Building",
+                "score": 0.617083728313446
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Cinque Terre",
+                "score": 0.6187499761581421
+              },
+              {
+                "name": "House",
+                "score": 0.5695362091064453
+              },
+              {
+                "name": "Apartment",
+                "score": 0.34675997495651245
+              },
+              {
+                "name": "Starter home",
+                "score": 0.30390000343322754
+              },
+              {
+                "name": "Show house",
+                "score": 0.29269999265670776
+              }
+            ],
+            "objects": [
+              {
+                "name": "Building",
+                "score": 0.617083728313446
+              },
+              {
+                "name": "Building",
+                "score": 0.5753341317176819
+              }
+            ],
+            "labels": [
+              {
+                "name": "Neighbourhood",
+                "score": 0.9390670657157898
+              },
+              {
+                "name": "Residential area",
+                "score": 0.9206885695457458
+              },
+              {
+                "name": "Urban design",
+                "score": 0.8932977318763733
+              },
+              {
+                "name": "Bird's-eye view",
+                "score": 0.6267388463020325
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 44.09813333333334,
+              "longitude": 9.737599999999999
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Via San Giacomo, 200, 19017 Riomaggiore SP, Italy",
+              "city": "Riomaggiore",
+              "county": "Provincia della Spezia",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2023:06:23 12:26:03",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 23.0995831489563
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Riomaggiore, Provincia della Spezia, Italy",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Riomaggiore, Provincia della Spezia, Italy",
+            "coordinates": {
+              "latitude": 44.09813333333334,
+              "longitude": 9.737599999999999
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Terra di Bargòn",
+                  "types": [
+                    "tourist_attraction",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 36,
+                  "vicinity": "Via Antonio Gramsci, 11, Riomaggiore",
+                  "place_id": "ChIJJ5ufCon61BIRcnbh2v10IF8",
+                  "location": {
+                    "lat": 44.09915460000001,
+                    "lng": 9.738488900000002
+                  }
+                },
+                {
+                  "name": "Santuario di Nostra Signora di Montenero",
+                  "types": [
+                    "church",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 359,
+                  "vicinity": "Riomaggiore",
+                  "place_id": "ChIJjdz6AGD61BIRXPRuZQvDNgw",
+                  "location": {
+                    "lat": 44.0960459,
+                    "lng": 9.745425600000003
+                  }
+                },
+                {
+                  "name": "Ave Maria",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 3,
+                  "vicinity": "Via di Loca, 296, Riomaggiore",
+                  "place_id": "ChIJYWJtd1_71BIRcfMFc3ymm9c",
+                  "location": {
+                    "lat": 44.09898399999999,
+                    "lng": 9.739359999999998
+                  }
+                },
+                {
+                  "name": "Castello di Riomaggiore",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 3325,
+                  "vicinity": "Salita Castello, Riomaggiore",
+                  "place_id": "ChIJnU-SHIn61BIRmchyYQiiAgA",
+                  "location": {
+                    "lat": 44.0999299,
+                    "lng": 9.7375256
+                  }
+                },
+                {
+                  "name": "Church of San Giovanni Battista of Riomaggiore",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 277,
+                  "vicinity": "Via Pecunia, 47, Riomaggiore",
+                  "place_id": "ChIJz_QlX4n61BIRyftXxS8QUdw",
+                  "location": {
+                    "lat": 44.1004651,
+                    "lng": 9.739764100000002
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Dau Cila",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 1269,
+                  "vicinity": "Via San Giacomo, 65, Riomaggiore",
+                  "place_id": "ChIJr4kBp4n61BIR1Qq3xL48uQM",
+                  "location": {
+                    "lat": 44.0987573,
+                    "lng": 9.737847499999999
+                  }
+                },
+                {
+                  "name": "PIZZERIA KEPRIS",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 1541,
+                  "vicinity": "Via Telemaco Signorini, 673/b, Riomaggiore",
+                  "place_id": "ChIJO-OmxYj61BIRYGDFDo4c7DQ",
+                  "location": {
+                    "lat": 44.1009997,
+                    "lng": 9.7363533
+                  }
+                },
+                {
+                  "name": "Ristorante Ripa del Sole Riomaggiore",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 86,
+                  "vicinity": "Via De Gasperi, 282, Riomaggiore",
+                  "place_id": "ChIJY7o0GYn61BIR3PWyj-TqfCk",
+                  "location": {
+                    "lat": 44.10090969999999,
+                    "lng": 9.7405592
+                  }
+                },
+                {
+                  "name": "Trattoria Via dell'Amore",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 408,
+                  "vicinity": "Piazza Rio Finale, 8, Riomaggiore",
+                  "place_id": "ChIJf9LswIj61BIRZ4ALV02wMvA",
+                  "location": {
+                    "lat": 44.1008781,
+                    "lng": 9.735841899999999
+                  }
+                },
+                {
+                  "name": "Bar e Vini a Pié de Ma",
+                  "types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1288,
+                  "vicinity": "Via dell'Amore, 55, Riomaggiore",
+                  "place_id": "ChIJGf5ok4j61BIRFxEO2KnZRT0",
+                  "location": {
+                    "lat": 44.1005147,
+                    "lng": 9.7356732
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Santuario di Nostra Signora di Montenero",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 359,
+                  "vicinity": "Riomaggiore",
+                  "place_id": "ChIJjdz6AGD61BIRXPRuZQvDNgw",
+                  "location": {
+                    "lat": 44.0960459,
+                    "lng": 9.745425600000003
+                  }
+                },
+                {
+                  "name": "Oratorio di San Rocco",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 21,
+                  "vicinity": "Riomaggiore",
+                  "place_id": "ChIJ0SeuG4n61BIRNCbvMT94Bjo",
+                  "location": {
+                    "lat": 44.1000294,
+                    "lng": 9.737748900000001
+                  }
+                },
+                {
+                  "name": "Church of San Giovanni Battista of Riomaggiore",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 277,
+                  "vicinity": "Via Pecunia, 47, Riomaggiore",
+                  "place_id": "ChIJz_QlX4n61BIRyftXxS8QUdw",
+                  "location": {
+                    "lat": 44.1004651,
+                    "lng": 9.739764100000002
+                  }
+                },
+                {
+                  "name": "Oratorio di Santa Maria Assunta",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 37,
+                  "vicinity": "Via Colombo, Riomaggiore",
+                  "place_id": "ChIJS0166Yv61BIRteQwKCX92j0",
+                  "location": {
+                    "lat": 44.1002753,
+                    "lng": 9.7410258
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Galleria D'Arte Sciaccheart Riomaggiore",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.4,
+                  "user_ratings_total": 16,
+                  "vicinity": "Via San Giacomo, 51, Riomaggiore",
+                  "place_id": "ChIJI4sIr4n61BIRqSa8bawiG2Q",
+                  "location": {
+                    "lat": 44.09898620000001,
+                    "lng": 9.7379488
+                  }
+                },
+                {
+                  "name": "Chiaressenza",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Salita Castello, 195, Riomaggiore",
+                  "place_id": "ChIJKzR_co_71BIRFftBphrcHEw",
+                  "location": {
+                    "lat": 44.0986783,
+                    "lng": 9.7373402
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Riomaggiore",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Riomaggiore",
+                  "place_id": "ChIJB4uscYn61BIRgGX4h7QPnhE",
+                  "location": {
+                    "lat": 44.1001801,
+                    "lng": 9.7376008
+                  }
+                },
+                {
+                  "name": "Hotel la Zorza",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 204,
+                  "vicinity": "Italy",
+                  "place_id": "ChIJpfzfCon61BIR6-ow237o6Zw",
+                  "location": {
+                    "lat": 44.09930079999999,
+                    "lng": 9.7385206
+                  }
+                },
+                {
+                  "name": "Locanda Ca 'dei Duxi",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 121,
+                  "vicinity": "Via Colombo, 36, Via Pecunia, 19, Riomaggiore",
+                  "place_id": "ChIJ1Zj33Yv61BIRsHUD3mUeJuM",
+                  "location": {
+                    "lat": 44.10021339999999,
+                    "lng": 9.740143999999997
+                  }
+                },
+                {
+                  "name": "Hotel del Sole",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 125,
+                  "vicinity": "via Santuario, 114, Riomaggiore",
+                  "place_id": "ChIJ-5fToYv61BIRxTn-Zzx0Cz8",
+                  "location": {
+                    "lat": 44.10015419999999,
+                    "lng": 9.742258899999998
+                  }
+                },
+                {
+                  "name": "Affittacamere Ca dei Lisci",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 35,
+                  "vicinity": "Via Colombo, 36, Riomaggiore",
+                  "place_id": "ChIJywfoj0_s1BIR6Roo4O7oXTU",
+                  "location": {
+                    "lat": 44.1002885,
+                    "lng": 9.740283000000002
+                  }
+                }
+              ]
+            },
+            "total_places_found": 21,
+            "photo_timestamp": "2023:06:23 12:26:03",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.3589050769805908
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/70.jpg"
+    },
+    {
+      "image_filename": "70.jpg",
+      "timestamp": "2026-01-28T06:41:54.566883",
+      "processing_time_seconds": 66.135015,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Riomaggiore, Cinque Terre, Italy",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive colorful buildings and coastal setting are characteristic of Riomaggiore in Cinque Terre, Italy. The architectural style and vibrant colors are typical of this region.",
+            "detailed_description": "The image depicts the village of Riomaggiore, one of the five villages in Cinque Terre, Italy. The scene showcases a cluster of colorful, multi-story buildings typical of Mediterranean architecture, perched on a steep hillside. The buildings are painted in vibrant hues such as red, yellow, and orange, and feature green shutters. The setting is coastal, with the sea visible near the base of the buildings, and the landscape includes rugged cliffs and lush greenery.",
+            "identification": {
+              "primary": [
+                "Riomaggiore"
+              ],
+              "location": "Cinque Terre, Italy",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Colorful buildings",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Mediterranean",
+              "coastal",
+              "architecture",
+              "Italy",
+              "Cinque_Terre"
+            ],
+            "location": "Cinque Terre, Italy",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Riomaggiore\"],\n        \"location\": \"Cinque Terre, Italy\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Colorful buildings\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Mediterranean\", \"coastal\", \"architecture\", \"Italy\", \"Cinque_Terre\"],\n    \"description\": \"The image depicts the village of Riomaggiore, one of the five villages in Cinque Terre, Italy. The scene showcases a cluster of colorful, multi-story buildings typical of Mediterranean architecture, perched on a steep hillside. The buildings are painted in vibrant hues such as red, yellow, and orange, and feature green shutters. The setting is coastal, with the sea visible near the base of the buildings, and the landscape includes rugged cliffs and lush greenery.\",\n    \"reasoning\": \"The distinctive colorful buildings and coastal setting are characteristic of Riomaggiore in Cinque Terre, Italy. The architectural style and vibrant colors are typical of this region.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 13.372308015823364
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a picturesque coastal village characterized by a dense cluster of colorful buildings perched on a rugged cliffside. The architecture is typical of Mediterranean coastal towns, with narrow, multi-story buildings painted in vibrant hues such as red, yellow, orange, and pink. The facades feature shuttered windows and small balconies, adding to the charm and character of the scene. The buildings are tightly packed, creating a visually striking mosaic of colors against the natural b",
+            "description": "The image depicts a picturesque coastal village characterized by a dense cluster of colorful buildings perched on a rugged cliffside. The architecture is typical of Mediterranean coastal towns, with narrow, multi-story buildings painted in vibrant hues such as red, yellow, orange, and pink. The facades feature shuttered windows and small balconies, adding to the charm and character of the scene. The buildings are tightly packed, creating a visually striking mosaic of colors against the natural b",
+            "architectural_style": "Mediterranean",
+            "search_backends_used": [],
+            "processing_time_seconds": 52.760318994522095
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Neighbourhood",
+          "confidence": 0.9390670657157898,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Neighbourhood",
+                "score": 0.9390670657157898
+              },
+              {
+                "source": "label",
+                "name": "Residential area",
+                "score": 0.9206885695457458
+              },
+              {
+                "source": "label",
+                "name": "Urban design",
+                "score": 0.8932977318763733
+              },
+              {
+                "source": "object",
+                "name": "Building",
+                "score": 0.617083728313446
+              },
+              {
+                "source": "object",
+                "name": "Building",
+                "score": 0.5753341317176819
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "House",
+                "score": 0.5388143062591553
+              },
+              {
+                "name": "Apartment",
+                "score": 0.3467300236225128
+              },
+              {
+                "name": "Starter home",
+                "score": 0.2849000096321106
+              },
+              {
+                "name": "Home",
+                "score": 0.2433999925851822
+              },
+              {
+                "name": "Vacation",
+                "score": 0.23929999768733978
+              }
+            ],
+            "objects": [
+              {
+                "name": "Building",
+                "score": 0.617083728313446
+              },
+              {
+                "name": "Building",
+                "score": 0.5753341317176819
+              }
+            ],
+            "labels": [
+              {
+                "name": "Neighbourhood",
+                "score": 0.9390670657157898
+              },
+              {
+                "name": "Residential area",
+                "score": 0.9206885695457458
+              },
+              {
+                "name": "Urban design",
+                "score": 0.8932977318763733
+              },
+              {
+                "name": "Bird's-eye view",
+                "score": 0.6267388463020325
+              }
+            ],
+            "processing_time_seconds": 21.67354393005371
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/70.jpg"
+    }
+  ]
+}

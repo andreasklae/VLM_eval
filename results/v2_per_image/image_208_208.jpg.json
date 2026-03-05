@@ -1,0 +1,703 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "208.jpg",
+      "timestamp": "2026-01-28T04:52:28.506555",
+      "processing_time_seconds": 69.435009,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 59.945277777777775,
+        "gps_longitude": 10.611205555555555,
+        "location": {
+          "formatted_address": "Eikskollen 10, 1361 Østerås, Norway",
+          "city": null,
+          "county": "Bærum",
+          "country": "Norway"
+        },
+        "datetime_original": "2025:12:25 14:14:24",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Painting of children in winter clothing, Painting of children in casual clothing, Bærum, Norway",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The expressive brushwork and focus on color suggest a style reminiscent of modern or expressionist art, common in the 20th century. The setting in Bærum, Norway, aligns with the cultural context of Scandinavian art.",
+            "detailed_description": "The image shows two paintings placed on a table. The top painting depicts two children dressed in winter clothing, with colorful jackets and hats. The style is expressive, with bold brushstrokes and a focus on color and texture. The bottom painting portrays two children in casual clothing, with one wearing a striped shirt. The background is abstract, with a mix of pastel colors and dynamic brushwork, suggesting a modern or expressionist style.",
+            "identification": {
+              "primary": [
+                "Painting of children in winter clothing",
+                "Painting of children in casual clothing"
+              ],
+              "location": "Bærum, Norway",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Painting of children in winter clothing",
+                "type": "painting",
+                "confidence": 0.85
+              },
+              {
+                "name": "Painting of children in casual clothing",
+                "type": "painting",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "expressionism",
+              "20th_century",
+              "canvas",
+              "Norway",
+              "artwork"
+            ],
+            "location": "Bærum, Norway",
+            "type": "artwork",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Contemporary Norwegian artist",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.75,
+                "reasoning": "The style and location suggest a local artist, possibly contemporary, working in an expressionist manner."
+              },
+              {
+                "guess": "Expressionist style painting",
+                "specificity_level": "general",
+                "confidence": 0.85,
+                "reasoning": "The brushwork and color usage are characteristic of expressionism, a common style in the 20th century."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Painting of children in winter clothing\", \"Painting of children in casual clothing\"],\n        \"location\": \"Bærum, Norway\",\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Painting of children in winter clothing\",\n            \"type\": \"painting\",\n            \"confidence\": 0.85\n        },\n        {\n            \"name\": \"Painting of children in casual clothing\",\n            \"type\": \"painting\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"expressionism\", \"20th_century\", \"canvas\", \"Norway\", \"artwork\"],\n    \"description\": \"The image shows two paintings placed on a table. The top painting depicts two children dressed in winter clothing, with colorful jackets and hats. The style is expressive, with bold brushstrokes and a focus on color and texture. The bottom painting portrays two children in casual clothing, with one wearing a striped shirt. The background is abstract, with a mix of pastel colors and dynamic brushwork, suggesting a modern or expressionist style.\",\n    \"reasoning\": \"The expressive brushwork and focus on color suggest a style reminiscent of modern or expressionist art, common in the 20th century. The setting in Bærum, Norway, aligns with the cultural context of Scandinavian art.\",\n    \"type\": \"artwork\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Contemporary Norwegian artist\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.75,\n            \"reasoning\": \"The style and location suggest a local artist, possibly contemporary, working in an expressionist manner.\"\n        },\n        {\n            \"guess\": \"Expressionist style painting\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.85,\n            \"reasoning\": \"The brushwork and color usage are characteristic of expressionism, a common style in the 20th century.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": 59.945277777777775,
+              "longitude": 10.611205555555555
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Eikskollen 10, 1361 Østerås, Norway",
+              "city": null,
+              "county": "Bærum",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:12:25 14:14:24",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 15.711238861083984
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image features two framed paintings placed on a wooden table. The painting in the foreground depicts two figures, a girl and a boy, standing side by side. The girl is wearing a white dress, and the boy is dressed in a striped shirt with shades of blue and white. The background consists of abstract brushstrokes in soft pastel colors, primarily greens, blues, and hints of purple, creating a textured and dynamic backdrop. The style appears to be modern and impressionistic, characterized by loos",
+            "description": "The image features two framed paintings placed on a wooden table. The painting in the foreground depicts two figures, a girl and a boy, standing side by side. The girl is wearing a white dress, and the boy is dressed in a striped shirt with shades of blue and white. The background consists of abstract brushstrokes in soft pastel colors, primarily greens, blues, and hints of purple, creating a textured and dynamic backdrop. The style appears to be modern and impressionistic, characterized by loos",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 59.945277777777775,
+              "longitude": 10.611205555555555
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Eikskollen 10, 1361 Østerås, Norway",
+              "city": null,
+              "county": "Bærum",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:12:25 14:14:24",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 53.1479868888855
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Visual arts",
+          "confidence": 0.9294370412826538,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Visual arts",
+                "score": 0.9294370412826538
+              },
+              {
+                "source": "label",
+                "name": "Art Paint",
+                "score": 0.9284111857414246
+              },
+              {
+                "source": "label",
+                "name": "Painting",
+                "score": 0.899240255355835
+              },
+              {
+                "source": "label",
+                "name": "Drawing",
+                "score": 0.838900625705719
+              },
+              {
+                "source": "label",
+                "name": "Paint",
+                "score": 0.8364562392234802
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Art",
+                "score": 0.6004875302314758
+              },
+              {
+                "name": "Painting",
+                "score": 0.4671122133731842
+              },
+              {
+                "name": "Artwork",
+                "score": 0.38359999656677246
+              }
+            ],
+            "objects": [
+              {
+                "name": "Painting",
+                "score": 0.7748103737831116
+              },
+              {
+                "name": "Painting",
+                "score": 0.6602700352668762
+              },
+              {
+                "name": "Tableware",
+                "score": 0.5510868430137634
+              }
+            ],
+            "labels": [
+              {
+                "name": "Visual arts",
+                "score": 0.9294370412826538
+              },
+              {
+                "name": "Art Paint",
+                "score": 0.9284111857414246
+              },
+              {
+                "name": "Painting",
+                "score": 0.899240255355835
+              },
+              {
+                "name": "Drawing",
+                "score": 0.838900625705719
+              },
+              {
+                "name": "Paint",
+                "score": 0.8364562392234802
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 59.945277777777775,
+              "longitude": 10.611205555555555
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Eikskollen 10, 1361 Østerås, Norway",
+              "city": null,
+              "county": "Bærum",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:12:25 14:14:24",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 19.490181922912598
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Bærum, Norway",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Bærum, Norway",
+            "coordinates": {
+              "latitude": 59.945277777777775,
+              "longitude": 10.611205555555555
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "museums": [
+                {
+                  "name": "LHK-144 Galleriet",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Nadderudveien 144, Eiksmarka",
+                  "place_id": "ChIJFbJWRABtQUYRFFAWfWVCYZQ",
+                  "location": {
+                    "lat": 59.939834,
+                    "lng": 10.6160561
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "La Pinsa",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 84,
+                  "vicinity": "Niels Leuchs vei 50, Eiksmarka",
+                  "place_id": "ChIJhSz6r0RtQUYR__NmT1ywVIA",
+                  "location": {
+                    "lat": 59.94675299999999,
+                    "lng": 10.6215758
+                  }
+                },
+                {
+                  "name": "Sabi Sushi Eiksmarka",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.6,
+                  "user_ratings_total": 60,
+                  "vicinity": "Niels Leuchs vei 50, Eiksmarka",
+                  "place_id": "ChIJDeveppptQUYRMLiKc_a_yiA",
+                  "location": {
+                    "lat": 59.94688530000001,
+                    "lng": 10.6218947
+                  }
+                },
+                {
+                  "name": "Domino's Pizza Eiksmarka",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.1,
+                  "user_ratings_total": 179,
+                  "vicinity": "Niels Leuchs vei 46, Eiksmarka",
+                  "place_id": "ChIJJXsHObJtQUYRvad0ezGtgGs",
+                  "location": {
+                    "lat": 59.9470264,
+                    "lng": 10.622103
+                  }
+                },
+                {
+                  "name": "Leo's Lekeland",
+                  "types": [
+                    "amusement_park",
+                    "cafe",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 1097,
+                  "vicinity": "Grini Næringspark 8, Østerås",
+                  "place_id": "ChIJAT1iHzZtQUYRMcTA_AwKoVs",
+                  "location": {
+                    "lat": 59.94746960000001,
+                    "lng": 10.5995611
+                  }
+                },
+                {
+                  "name": "Grini Kontorfellesskap",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Norway",
+                  "place_id": "ChIJJXArDDZtQUYRogz13d02FBE",
+                  "location": {
+                    "lat": 59.94678459999999,
+                    "lng": 10.5973219
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Lauritz Sand Statue",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 6,
+                  "vicinity": "Listuveien 1, Eiksmarka",
+                  "place_id": "ChIJdQOkMUFtQUYR4lo9Fb0JChA",
+                  "location": {
+                    "lat": 59.9481942,
+                    "lng": 10.6177443
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Eiksmarka Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 17,
+                  "vicinity": "Grinilunden 10, Eiksmarka",
+                  "place_id": "ChIJWcs9tEFtQUYR3PBsNgrb7R4",
+                  "location": {
+                    "lat": 59.9490067,
+                    "lng": 10.6228163
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Wenche Landaas",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 5,
+                  "vicinity": "Konglefaret 45A, Eiksmarka",
+                  "place_id": "ChIJAZblvj9tQUYRPzdaTN_1Cbk",
+                  "location": {
+                    "lat": 59.9442334,
+                    "lng": 10.6207591
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Voll",
+                  "types": [
+                    "sublocality_level_1",
+                    "sublocality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Voll",
+                  "place_id": "ChIJN-EymxhtQUYR1zzNf502FWI",
+                  "location": {
+                    "lat": 59.9337858,
+                    "lng": 10.6228005
+                  }
+                },
+                {
+                  "name": "Østerås doctor's office",
+                  "types": [
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.1,
+                  "user_ratings_total": 19,
+                  "vicinity": "Otto Ruges vei 80, Østerås",
+                  "place_id": "ChIJ2R9TsTltQUYR21_l_WcfNcg",
+                  "location": {
+                    "lat": 59.9434589,
+                    "lng": 10.6077765
+                  }
+                },
+                {
+                  "name": "Sprell AS - Head Office",
+                  "types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 7,
+                  "vicinity": "Grini Næringspark 12, Østerås",
+                  "place_id": "ChIJi2Nw8wttQUYR3YVRYAWTWUA",
+                  "location": {
+                    "lat": 59.9483418,
+                    "lng": 10.6019825
+                  }
+                },
+                {
+                  "name": "BL Gifts & Profiling AS",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 8,
+                  "vicinity": "Grini Næringspark 8, Østerås",
+                  "place_id": "ChIJ290vhgttQUYRpE0mqMHPF4g",
+                  "location": {
+                    "lat": 59.9478278,
+                    "lng": 10.5992937
+                  }
+                },
+                {
+                  "name": "Østerås Center",
+                  "types": [
+                    "shopping_mall",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 479,
+                  "vicinity": "Otto Ruges vei 80, Østerås",
+                  "place_id": "ChIJ2R9TsTltQUYRELm3DkvK9Y0",
+                  "location": {
+                    "lat": 59.94366360000001,
+                    "lng": 10.6073923
+                  }
+                }
+              ]
+            },
+            "total_places_found": 14,
+            "photo_timestamp": "2025:12:25 14:14:24",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.3487839698791504
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/208.jpg"
+    },
+    {
+      "image_filename": "208.jpg",
+      "timestamp": "2026-01-28T04:53:37.986531",
+      "processing_time_seconds": 62.995323,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Portrait of children in winter clothing, Portrait of children in casual clothing",
+          "confidence": 0.75,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The expressive brushwork and focus on color and form suggest a modern or expressionist style. The subject matter of children in different attire is clear, but specific identification of the artist or title is not possible from the image alone.",
+            "detailed_description": "The image shows two framed paintings placed on a table. The upper painting depicts two children wearing winter clothing, including colorful hoods and gloves. The style is expressive, with bold brushstrokes and a focus on color contrast. The lower painting portrays two children in casual clothing, with one wearing a striped shirt and the other in a white dress. The background features abstract, colorful brushstrokes, suggesting a modern or expressionist style.",
+            "identification": {
+              "primary": [
+                "Portrait of children in winter clothing",
+                "Portrait of children in casual clothing"
+              ],
+              "location": null,
+              "confidence": 0.75
+            },
+            "artifacts": [
+              {
+                "name": "Portrait of children in winter clothing",
+                "type": "painting",
+                "confidence": 0.8
+              },
+              {
+                "name": "Portrait of children in casual clothing",
+                "type": "painting",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "expressionism",
+              "20th_century",
+              "painting",
+              "portrait"
+            ],
+            "location": null,
+            "type": "painting",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Expressionist portraits of children",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The style and subject matter are consistent with expressionist art, focusing on emotional representation through color and form."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Portrait of children in winter clothing\", \"Portrait of children in casual clothing\"],\n        \"location\": null,\n        \"confidence\": 0.75\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Portrait of children in winter clothing\",\n            \"type\": \"painting\",\n            \"confidence\": 0.8\n        },\n        {\n            \"name\": \"Portrait of children in casual clothing\",\n            \"type\": \"painting\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"expressionism\", \"20th_century\", \"painting\", \"portrait\"],\n    \"description\": \"The image shows two framed paintings placed on a table. The upper painting depicts two children wearing winter clothing, including colorful hoods and gloves. The style is expressive, with bold brushstrokes and a focus on color contrast. The lower painting portrays two children in casual clothing, with one wearing a striped shirt and the other in a white dress. The background features abstract, colorful brushstrokes, suggesting a modern or expressionist style.\",\n    \"reasoning\": \"The expressive brushwork and focus on color and form suggest a modern or expressionist style. The subject matter of children in different attire is clear, but specific identification of the artist or title is not possible from the image alone.\",\n    \"type\": \"painting\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Expressionist portraits of children\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The style and subject matter are consistent with expressionist art, focusing on emotional representation through color and form.\"\n        }\n    ]\n}",
+            "processing_time_seconds": 10.967005968093872
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image showcases two framed paintings placed on a wooden table, surrounded by chairs. The painting in the foreground depicts two children standing side by side. The child on the left is wearing a white dress with a sleeveless design, and the child on the right is wearing a striped shirt with blue and white horizontal stripes. The background of this painting is abstract, featuring a mix of pastel colors such as green, blue, and hints of purple and orange, applied in broad, expressive brushstro",
+            "description": "The image showcases two framed paintings placed on a wooden table, surrounded by chairs. The painting in the foreground depicts two children standing side by side. The child on the left is wearing a white dress with a sleeveless design, and the child on the right is wearing a striped shirt with blue and white horizontal stripes. The background of this painting is abstract, featuring a mix of pastel colors such as green, blue, and hints of purple and orange, applied in broad, expressive brushstro",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "processing_time_seconds": 52.026516914367676
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Visual arts",
+          "confidence": 0.9294370412826538,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Visual arts",
+                "score": 0.9294370412826538
+              },
+              {
+                "source": "label",
+                "name": "Art Paint",
+                "score": 0.9284111857414246
+              },
+              {
+                "source": "label",
+                "name": "Painting",
+                "score": 0.899240255355835
+              },
+              {
+                "source": "label",
+                "name": "Drawing",
+                "score": 0.838900625705719
+              },
+              {
+                "source": "label",
+                "name": "Paint",
+                "score": 0.8364562392234802
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Art",
+                "score": 0.6004875302314758
+              },
+              {
+                "name": "Painting",
+                "score": 0.4668565094470978
+              },
+              {
+                "name": "Artwork",
+                "score": 0.38359999656677246
+              }
+            ],
+            "objects": [
+              {
+                "name": "Painting",
+                "score": 0.7748103737831116
+              },
+              {
+                "name": "Painting",
+                "score": 0.6602700352668762
+              },
+              {
+                "name": "Tableware",
+                "score": 0.5510868430137634
+              }
+            ],
+            "labels": [
+              {
+                "name": "Visual arts",
+                "score": 0.9294370412826538
+              },
+              {
+                "name": "Art Paint",
+                "score": 0.9284111857414246
+              },
+              {
+                "name": "Painting",
+                "score": 0.899240255355835
+              },
+              {
+                "name": "Drawing",
+                "score": 0.838900625705719
+              },
+              {
+                "name": "Paint",
+                "score": 0.8364562392234802
+              }
+            ],
+            "processing_time_seconds": 20.222864866256714
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/208.jpg"
+    }
+  ]
+}

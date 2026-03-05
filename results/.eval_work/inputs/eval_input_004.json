@@ -1,0 +1,979 @@
+{
+  "image_id": 4,
+  "filename": "4.jpg",
+  "ground_truth": {
+    "description": "Photo from Salzburg castle, Hohensalzburg fortress in the background, ground level buildings in foreground.",
+    "photographer_description": "Photo from Salzburg castle, Hohensalzburg fortress in the background, ground level buildings in foreground. Impressive if it can get the exact location without metadata, but it should at least be able to recognize buildings in the foreground and a castle in the background. Daytime, foggy.",
+    "locations": [
+      {
+        "name": "Altstadt (Old Town), Salzburg, Salzburg, Austria",
+        "hierarchy": {
+          "country": "Austria",
+          "region": "Salzburg",
+          "city": "Salzburg",
+          "exact": "Altstadt (Old Town)"
+        }
+      }
+    ],
+    "entities": [
+      {
+        "name": "Hohensalzburg Fortress",
+        "type": "landmark",
+        "notes": null,
+        "max_specificity": 5,
+        "importance": "high"
+      },
+      {
+        "name": "Salzburg Cathedral (Dom zu Salzburg)",
+        "type": "religious_site",
+        "notes": "",
+        "max_specificity": 5,
+        "added_by": "human_evaluator",
+        "importance": "high"
+      },
+      {
+        "name": "Collegiate Church (Kollegienkirche)",
+        "type": "religious_site",
+        "notes": "",
+        "max_specificity": 5,
+        "added_by": "human_evaluator",
+        "importance": "high"
+      },
+      {
+        "name": "Franciscan Church",
+        "type": "religious_site",
+        "notes": "",
+        "max_specificity": 5,
+        "added_by": "human_evaluator",
+        "importance": "medium"
+      }
+    ],
+    "scene_type": [
+      "architecture",
+      "cityscape",
+      "landmark"
+    ],
+    "key_visual_elements": [
+      "Castle/fortress on hilltop",
+      "Ground level historic buildings",
+      "Foggy atmosphere"
+    ],
+    "max_specificity": "Specific",
+    "difficulty": "Medium (impressive if exact location without metadata)",
+    "notes": "Should at least recognize buildings and castle. Daytime, foggy.",
+    "gps_metadata": {
+      "gps_latitude": 47.801806944444444,
+      "gps_longitude": 13.042211944444444,
+      "reverse_geocoded": {
+        "formatted_address": "Marko-Feingold-Steg, Marko-Feingold-Steg, 5020 Salzburg, Austria",
+        "city": "Salzburg",
+        "county": "Salzburg",
+        "country": "Austria"
+      }
+    },
+    "image_categories": [
+      "landmark",
+      "urban"
+    ],
+    "difficulty_with_gps": "easy",
+    "difficulty_without_gps": "medium"
+  },
+  "model_runs": [
+    {
+      "image_filename": "4.jpg",
+      "use_gps": true,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "Panoramic cityscape of Salzburg on an overcast day. In the background, the massive Hohensalzburg Fortress crowns a steep, wooded hill with curtain walls, towers and bastions silhouetted against a pale sky. Below it spreads the historic city with pastel-toned townhouses of 4–6 stories along the riverfront, their slate roofs dusted with light snow. Distinct Baroque church architecture punctuates the skyline: a large dark copper dome with lantern (likely the Holy Trinity Church) and, further left, a tall slender Gothic spire (probable Franciscan Church). A green copper dome is also visible to the far left, consistent with the Salzburg Cathedral. Foreground elements include riverside streets and railings along the Salzach, with winter-bare trees and low light creating a subdued, wintry atmosphere.",
+            "photographer_location": [
+              {
+                "name": "Kaipromenade (south bank of the Salzach), near Staatsbrücke/Mozartsteg, Salzburg",
+                "confidence": 0.65
+              },
+              {
+                "name": "Rudolfskai quay, south-bank riverside, Salzburg Old Town",
+                "confidence": 0.6
+              },
+              {
+                "name": "Makartsteg area (north-bank side), Salzburg",
+                "confidence": 0.35
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Fortress Hohensalzburg on the Festungsberg, Salzburg",
+                "confidence": 0.98
+              },
+              {
+                "name": "North-bank skyline around Makartplatz/Dreifaltigkeitskirche, Salzburg",
+                "confidence": 0.7
+              },
+              {
+                "name": "Salzburg Altstadt (historic center) viewed across the Salzach",
+                "confidence": 0.8
+              }
+            ],
+            "entities": [
+              {
+                "name": "Fortress Hohensalzburg",
+                "type": "landmark",
+                "confidence": 0.98,
+                "notes": "Medieval hilltop fortress above Salzburg; key landmark on Festungsberg."
+              },
+              {
+                "name": "Festungsberg",
+                "type": "natural_feature",
+                "confidence": 0.9,
+                "notes": "Hill on which Hohensalzburg Fortress stands."
+              },
+              {
+                "name": "Salzburg Altstadt (Old Town)",
+                "type": "district",
+                "confidence": 0.85,
+                "notes": "Historic city center with Baroque and medieval fabric, UNESCO World Heritage Site."
+              },
+              {
+                "name": "Dreifaltigkeitskirche (Holy Trinity Church), Salzburg",
+                "type": "religious_site",
+                "confidence": 0.75,
+                "notes": "Baroque church with large central dome near Makartplatz; façade bears a Holy Trinity sculpture group."
+              },
+              {
+                "name": "Franziskanerkirche (Franciscan Church) spire",
+                "type": "religious_site",
+                "confidence": 0.6,
+                "notes": "Tall slender Gothic spire rising near the cathedral."
+              },
+              {
+                "name": "Salzburg Cathedral (Dom zu Salzburg) dome",
+                "type": "religious_site",
+                "confidence": 0.65,
+                "notes": "Green copper central dome visible at far left of skyline."
+              },
+              {
+                "name": "Baroque architecture",
+                "type": "architectural_style",
+                "confidence": 0.9,
+                "notes": "Dominant style of Salzburg’s churches and many façades visible."
+              },
+              {
+                "name": "Salzach River",
+                "type": "natural_feature",
+                "confidence": 0.6,
+                "notes": "Major river through Salzburg; implied by riverside railings and quays in the foreground."
+              },
+              {
+                "name": "Mönchsberg",
+                "type": "natural_feature",
+                "confidence": 0.5,
+                "notes": "Rocky ridge adjoining the Festungsberg; forms part of the backdrop of the Old Town."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "A panoramic view of Salzburg's historic old town. In the foreground, rows of pastel-colored residential buildings line the Salzach riverbank, with bare trees along the promenade and a soft, overcast sky above. In the mid-ground, church towers punctuate the skyline. The most prominent feature is the white fortress perched on the hill (Hohensalzburg Fortress) rising behind the city. To the right, the Baroque Salzburg Cathedral is visible with a large green copper dome and ornate detailing, accompanied by a spired church silhouette. The overall scene exudes a quiet, wintry atmosphere with diffuse light and subdued colors typical of an overcast day.",
+            "photographer_location": [
+              {
+                "name": "Salzburg Old Town area, along the Salzach riverbank (across from the historic center)",
+                "confidence": 0.6
+              },
+              {
+                "name": "South bank of the Salzach River near Makartplatz, Salzburg",
+                "confidence": 0.4
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Hohensalzburg Fortress (Festungsberg)",
+                "confidence": 0.9
+              },
+              {
+                "name": "Salzburg Cathedral (Dom zu Salzburg) and its dome",
+                "confidence": 0.8
+              }
+            ],
+            "entities": [
+              {
+                "name": "Hohensalzburg Fortress",
+                "type": "landmark",
+                "confidence": 0.92,
+                "notes": "Medieval fortress perched on Festungsberg; dominant silhouette in distance."
+              },
+              {
+                "name": "Salzburg Cathedral",
+                "type": "landmark",
+                "confidence": 0.85,
+                "notes": "Baroque cathedral with a prominent green dome visible in the skyline."
+              },
+              {
+                "name": "Altstadt Salzburg (Old Town)",
+                "type": "district",
+                "confidence": 0.7,
+                "notes": "Historic core with pastel townhouses along the Salzach River."
+              },
+              {
+                "name": "Festungsberg",
+                "type": "natural_feature",
+                "confidence": 0.6,
+                "notes": "Hill on which Hohensalzburg Fortress sits."
+              },
+              {
+                "name": "Salzburg Cathedral Dome",
+                "type": "building",
+                "confidence": 0.75,
+                "notes": "Dome component of the cathedral visible in the skyline."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A cityscape view of the historic center of Salzburg, Austria, taken on an overcast day. The image captures the iconic skyline of the Old Town (Altstadt) viewed from across the Salzach River. In the background, the massive Hohensalzburg Fortress sits atop the Festungsberg hill, dominating the scene with its medieval fortifications. Below the fortress, the city's baroque architecture is prominent. To the left, the large green copper dome of the Salzburg Cathedral (Dom) is visible. In the center, the slender gothic spire of the Franciscan Church rises above the rooftops. To the right, the distinctive dome and towers of the Collegiate Church (Kollegienkirche) can be seen. The foreground features a row of multi-story buildings with pastel-colored facades (yellow, pink, white) along the riverbank (Griesgasse area), with bare trees indicating the season is likely late autumn or winter. A small structure with a dark roof is visible in the immediate bottom right corner.",
+            "photographer_location": [
+              {
+                "name": "Franz-Josef-Kai",
+                "confidence": 0.95
+              },
+              {
+                "name": "Near Herbert von Karajan Statue",
+                "confidence": 0.9
+              },
+              {
+                "name": "Salzburg Neustadt (Right Bank)",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Salzburg Old Town",
+                "confidence": 1.0
+              },
+              {
+                "name": "Altstadt Salzburg",
+                "confidence": 1.0
+              },
+              {
+                "name": "Festungsberg",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "Hohensalzburg Fortress",
+                "type": "landmark",
+                "confidence": 1.0,
+                "notes": "Medieval fortress on Festungsberg hill"
+              },
+              {
+                "name": "Salzburg Cathedral",
+                "type": "religious_site",
+                "confidence": 0.95,
+                "notes": "Dom zu Salzburg; large green dome on the left"
+              },
+              {
+                "name": "Collegiate Church",
+                "type": "religious_site",
+                "confidence": 0.95,
+                "notes": "Kollegienkirche; baroque church on the right"
+              },
+              {
+                "name": "Franciscan Church",
+                "type": "religious_site",
+                "confidence": 0.9,
+                "notes": "Franziskanerkirche; gothic spire in the center"
+              },
+              {
+                "name": "Festungsberg",
+                "type": "natural_feature",
+                "confidence": 1.0,
+                "notes": "Hill upon which the fortress stands"
+              },
+              {
+                "name": "Salzburg Old Town",
+                "type": "district",
+                "confidence": 1.0,
+                "notes": "UNESCO World Heritage site"
+              },
+              {
+                "name": "Griesgasse buildings",
+                "type": "building",
+                "confidence": 0.85,
+                "notes": "Row of buildings in the foreground along the riverfront"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A wide-angle view of the Salzburg skyline across the Salzach river under an overcast sky. The dominant feature is the Hohensalzburg Fortress (Festung Hohensalzburg) perched atop the Festungsberg hill in the background. In the mid-ground, several prominent religious structures are visible, including the green dome of the Salzburg Cathedral (Salzburger Dom) on the left, the slender spire of the Franciscan Church (Franziskanerkirche), and the large dark dome of the Collegiate Church (Kollegienkirche) on the right. The foreground consists of a row of traditional multi-story buildings with pastel-colored facades lining the riverbank. Bare trees and a few streetlights are visible along the promenade in front of these buildings.",
+            "photographer_location": [
+              {
+                "name": "Right bank of the Salzach River, Salzburg",
+                "confidence": 0.95
+              },
+              {
+                "name": "Elisabethkai, Salzburg",
+                "confidence": 0.85
+              },
+              {
+                "name": "Giselakai, Salzburg",
+                "confidence": 0.8
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Salzburg Old Town (Altstadt)",
+                "confidence": 1.0
+              },
+              {
+                "name": "Hohensalzburg Fortress",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "Hohensalzburg Fortress",
+                "type": "landmark",
+                "confidence": 1.0,
+                "notes": "Medieval fortress atop the Festungsberg"
+              },
+              {
+                "name": "Salzburg Cathedral",
+                "type": "religious_site",
+                "confidence": 1.0,
+                "notes": "17th-century Baroque cathedral"
+              },
+              {
+                "name": "Collegiate Church (Kollegienkirche)",
+                "type": "religious_site",
+                "confidence": 0.95,
+                "notes": "Baroque church designed by Johann Bernhard Fischer von Erlach"
+              },
+              {
+                "name": "Franciscan Church (Franziskanerkirche)",
+                "type": "religious_site",
+                "confidence": 0.9,
+                "notes": "One of the oldest churches in Salzburg, featuring a Gothic spire"
+              },
+              {
+                "name": "Salzburg Old Town (Altstadt)",
+                "type": "district",
+                "confidence": 1.0,
+                "notes": "UNESCO World Heritage site"
+              },
+              {
+                "name": "Festungsberg",
+                "type": "natural_feature",
+                "confidence": 0.95,
+                "notes": "The hill on which the fortress is built"
+              },
+              {
+                "name": "Salzach River",
+                "type": "natural_feature",
+                "confidence": 0.95,
+                "notes": "The river flowing through Salzburg"
+              },
+              {
+                "name": "Baroque architecture",
+                "type": "architectural_style",
+                "confidence": 0.95,
+                "notes": "Dominant style of the city's major landmarks"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "Mozart Residence",
+                "type": "landmark",
+                "confidence": 0.6425061821937561,
+                "notes": null
+              },
+              {
+                "name": "Café Bazar",
+                "type": "landmark",
+                "confidence": 0.5885210037231445,
+                "notes": null
+              },
+              {
+                "name": "Fortress Hohensalzburg",
+                "type": "landmark",
+                "confidence": 0.5875661969184875,
+                "notes": null
+              },
+              {
+                "name": "SHOLTERINZAGTE",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              }
+            ],
+            "landmark_name": "Mozart Residence"
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "Overcast winter view of Salzburg, Austria, taken from the Marko‑Feingold‑Steg (Makartsteg) footbridge across the Salzach. The skyline is dominated by the hilltop Hohensalzburg Fortress on the Festungsberg. Below, the UNESCO‑listed historic center shows rows of pastel baroque townhouses along the riverfront and several church silhouettes, including a tall Gothic spire and multiple green‑copper domes typical of Salzburg’s Old Town. Leafless trees and wet, lightly dusted rooftops suggest cold, damp weather.",
+            "photographer_location": [
+              {
+                "name": "Marko‑Feingold‑Steg (Makartsteg), Salzburg, Austria",
+                "confidence": 0.88
+              },
+              {
+                "name": "Right bank of the Salzach River (Neustadt), Salzburg",
+                "confidence": 0.72
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Hohensalzburg Fortress, Festungsberg, Salzburg, Austria",
+                "confidence": 0.96
+              },
+              {
+                "name": "Historic Centre (Altstadt), Salzburg, Austria",
+                "confidence": 0.86
+              },
+              {
+                "name": "Festungsberg hill, Salzburg",
+                "confidence": 0.78
+              }
+            ],
+            "entities": [
+              {
+                "name": "Hohensalzburg Fortress",
+                "type": "landmark",
+                "confidence": 0.96,
+                "notes": "Medieval fortress crowning Festungsberg; begun in 1077 under Archbishop Gebhard and expanded through the 15th–17th centuries."
+              },
+              {
+                "name": "Festungsberg",
+                "type": "natural_feature",
+                "confidence": 0.78,
+                "notes": "Rocky hill in Salzburg on which Hohensalzburg Fortress stands."
+              },
+              {
+                "name": "Historic Centre of the City of Salzburg (Altstadt)",
+                "type": "cultural_site",
+                "confidence": 0.86,
+                "notes": "UNESCO World Heritage Site since 1996; baroque urban fabric along the Salzach."
+              },
+              {
+                "name": "Baroque architecture",
+                "type": "architectural_style",
+                "confidence": 0.72,
+                "notes": "Characteristic domes and facades visible across the Old Town."
+              },
+              {
+                "name": "Salzach River",
+                "type": "natural_feature",
+                "confidence": 0.56,
+                "notes": "Major river flowing through Salzburg; viewpoint is on a footbridge over it."
+              },
+              {
+                "name": "Franciscan Church (Franziskanerkirche), Salzburg",
+                "type": "religious_site",
+                "confidence": 0.6,
+                "notes": "Likely the tall Gothic spire seen near the center-right of the skyline."
+              },
+              {
+                "name": "Salzburg Cathedral (Dom zu Salzburg)",
+                "type": "religious_site",
+                "confidence": 0.55,
+                "notes": "Baroque cathedral whose dome/towers may be partially visible among the domes."
+              },
+              {
+                "name": "Kollegienkirche (University Church), Salzburg",
+                "type": "religious_site",
+                "confidence": 0.5,
+                "notes": "One of the prominent baroque domes possibly visible in the cluster of churches."
+              },
+              {
+                "name": "Dreifaltigkeitskirche (Holy Trinity Church), Salzburg",
+                "type": "religious_site",
+                "confidence": 0.45,
+                "notes": "Large copper‑clad dome on the right bank; may correspond to the prominent dome at right."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "A panoramic riverside cityscape of Salzburg, Austria. In the foreground, a row of pastel-colored townhouses lines the Salzach River. Behind them rises the imposing Hohensalzburg Fortress atop Festungsberg, dominating the skyline with its medieval walls and towers. To the right, a large domed baroque church (Salzburg Cathedral) is visible among other spires and architectural details of the old town, all under a cloudy sky.",
+            "photographer_location": [
+              {
+                "name": "Marko-Feingold-Steg, Marko-Feingold-Steg, 5020 Salzburg, Austria",
+                "confidence": 0.9
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Salzburg, Austria (Altstadt, Salzach River)",
+                "confidence": 0.95
+              }
+            ],
+            "entities": [
+              {
+                "name": "Hohensalzburg Fortress",
+                "type": "landmark",
+                "confidence": 0.92,
+                "notes": "Medieval fortress perched on Festungsberg overlooking Salzburg."
+              },
+              {
+                "name": "Salzburg Cathedral",
+                "type": "landmark",
+                "confidence": 0.85,
+                "notes": "Baroque cathedral with a prominent central dome visible in the skyline."
+              }
+            ],
+            "landmark_name": null
+          }
+        }
+      ]
+    },
+    {
+      "image_filename": "4.jpg",
+      "use_gps": false,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "Panoramic view of Salzburg’s historic center on an overcast day. In the background, a massive medieval hilltop fortress dominates the skyline, with crenellated walls and towers set on a dark, wooded ridge. Below it spreads the Baroque old town: pastel stucco townhouses with uniform window rhythms and steep roofs line the riverfront. Distinct church silhouettes rise above the roofs—twin onion-domed towers and a central dome of a grand Baroque cathedral to the left, a very slender Gothic spire near center-right, and a large dark copper-clad dome with a white Baroque façade and sculptural cresting at far right. Leafless trees and riverside railings indicate a winter scene viewed from across the Salzach River.",
+            "photographer_location": [
+              {
+                "name": "North bank of the Salzach River (Franz-Josef-Kai / Giselakai area), Salzburg, Austria",
+                "confidence": 0.7
+              },
+              {
+                "name": "Near Makartsteg footbridge, Salzburg",
+                "confidence": 0.6
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Hohensalzburg Fortress on the Festungsberg, Salzburg, Austria",
+                "confidence": 0.95
+              },
+              {
+                "name": "Salzburg Altstadt (south bank of the Salzach), Salzburg, Austria",
+                "confidence": 0.85
+              },
+              {
+                "name": "Salzburg Cathedral (Dom zu Salzburg), Residenzplatz area",
+                "confidence": 0.8
+              },
+              {
+                "name": "Franciscan Church (Franziskanerkirche), Salzburg",
+                "confidence": 0.7
+              },
+              {
+                "name": "Kollegienkirche (University Church), Universitätsplatz, Salzburg",
+                "confidence": 0.7
+              }
+            ],
+            "entities": [
+              {
+                "name": "Hohensalzburg Fortress",
+                "type": "landmark",
+                "confidence": 0.96,
+                "notes": "Hilltop fortress begun 11th century; expanded in late medieval/early modern periods; symbol of Salzburg."
+              },
+              {
+                "name": "Festungsberg",
+                "type": "natural_feature",
+                "confidence": 0.9,
+                "notes": "Limestone hill supporting Hohensalzburg Fortress."
+              },
+              {
+                "name": "Salzburg Altstadt (Historic Centre of the City of Salzburg)",
+                "type": "district",
+                "confidence": 0.9,
+                "notes": "UNESCO World Heritage Site; Baroque urban fabric along the Salzach River."
+              },
+              {
+                "name": "Salzburg Cathedral (Dom zu Salzburg)",
+                "type": "religious_site",
+                "confidence": 0.82,
+                "notes": "Early 17th‑century Baroque cathedral; architect Santino Solari; identifiable by twin onion-domed towers and central dome."
+              },
+              {
+                "name": "Franciscan Church (Franziskanerkirche)",
+                "type": "religious_site",
+                "confidence": 0.75,
+                "notes": "Medieval church with a very tall Gothic spire; Romanesque origins, later Gothic/Baroque elements."
+              },
+              {
+                "name": "Kollegienkirche (University Church)",
+                "type": "religious_site",
+                "confidence": 0.74,
+                "notes": "Early 18th‑century Baroque church by Johann Bernhard Fischer von Erlach; large copper-clad dome and sculpted façade."
+              },
+              {
+                "name": "Salzach River",
+                "type": "natural_feature",
+                "confidence": 0.8,
+                "notes": "River running through Salzburg; viewpoint is from its north bank."
+              },
+              {
+                "name": "Baroque architecture of Salzburg’s Old Town",
+                "type": "architectural_style",
+                "confidence": 0.85,
+                "notes": "Stuccoed façades, domes, volutes, and uniform townhouses typical of 17th–18th centuries in Salzburg."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "A cityscape of Salzburg, Austria. In the foreground, pastel-colored classic townhouses line a riverbank with leafless trees and a low skyline, suggesting a winter scene. Across the river sits the Hohensalzburg Fortress perched high on Festungsberg, its whitewashed walls and multiple towers dominating the hillside. To the right, a Baroque church with a large green copper dome and an ornate façade anchors the skyline, indicative of Salzburg's Cathedral vicinity. The overall lighting is diffuse due to overcast skies, softening contrasts between the buildings and the hill.",
+            "photographer_location": [
+              {
+                "name": "Across the Salzach River, Salzburg, Austria",
+                "confidence": 0.8
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Hohensalzburg Fortress, Festungsberg, Salzburg, Austria",
+                "confidence": 0.85
+              }
+            ],
+            "entities": [
+              {
+                "name": "Hohensalzburg Fortress",
+                "type": "landmark",
+                "confidence": 0.9,
+                "notes": "Medieval fortress atop Festungsberg; a defining feature of Salzburg's skyline."
+              },
+              {
+                "name": "Salzburg Cathedral (Dom zu Salzburg)",
+                "type": "religious_site",
+                "confidence": 0.85,
+                "notes": "Baroque cathedral with a prominent green copper dome visible on the right."
+              },
+              {
+                "name": "Old Town of Salzburg (Altstadt)",
+                "type": "district",
+                "confidence": 0.75,
+                "notes": "Historic city center along the Salzach River."
+              },
+              {
+                "name": "Salzach River",
+                "type": "natural_feature",
+                "confidence": 0.65,
+                "notes": "River forming the foreground boundary of the scene."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A cityscape view of Salzburg, Austria, captured on an overcast day. The dominant feature is the Hohensalzburg Fortress (Festung Hohensalzburg), a large medieval castle complex with white walls sitting atop the steep, wooded Festungsberg hill in the background. Below the fortress, the skyline of the historic Old Town (Altstadt) is visible, characterized by Baroque architecture. Key landmarks include the large green copper dome of the Salzburg Cathedral (Salzburger Dom) on the left, the slender Gothic spire of the Franciscan Church (Franziskanerkirche) in the center, and the prominent dome and towers of the Collegiate Church (Kollegienkirche) on the right. In the foreground, a row of multi-story residential and commercial buildings with traditional pastel-colored facades (yellow, cream, white) lines the riverfront, partially obscured by the bare branches of deciduous trees. A street with cars is visible at the base of the buildings.",
+            "photographer_location": [
+              {
+                "name": "Right bank of the Salzach River",
+                "confidence": 0.9
+              },
+              {
+                "name": "Salzburg",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Salzburg Old Town",
+                "confidence": 1.0
+              },
+              {
+                "name": "Festungsberg",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "Hohensalzburg Fortress",
+                "type": "landmark",
+                "confidence": 1.0,
+                "notes": "Medieval fortress atop Festungsberg"
+              },
+              {
+                "name": "Salzburg Cathedral",
+                "type": "religious_site",
+                "confidence": 0.95,
+                "notes": "Baroque cathedral with green dome"
+              },
+              {
+                "name": "Collegiate Church",
+                "type": "religious_site",
+                "confidence": 0.95,
+                "notes": "Kollegienkirche, Baroque style"
+              },
+              {
+                "name": "Franciscan Church",
+                "type": "religious_site",
+                "confidence": 0.9,
+                "notes": "Franziskanerkirche, Gothic spire"
+              },
+              {
+                "name": "Festungsberg",
+                "type": "natural_feature",
+                "confidence": 1.0,
+                "notes": "Hill on which the fortress stands"
+              },
+              {
+                "name": "Salzburg Old Town",
+                "type": "district",
+                "confidence": 1.0,
+                "notes": "UNESCO World Heritage Site"
+              },
+              {
+                "name": "Baroque Architecture",
+                "type": "architectural_style",
+                "confidence": 0.9,
+                "notes": null
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A view of the Salzburg skyline in Austria under a flat, overcast sky. The dominant feature is the Hohensalzburg Fortress (Festung Hohensalzburg) perched atop the Festungsberg hill in the background. In the foreground, a row of traditional multi-story buildings with pastel-colored facades and dark roofs lines the riverbank. To the right, the large green dome and ornate towers of the Salzburg Cathedral (Salzburger Dom) are visible. The architecture is primarily Baroque, characteristic of the city's historic center. Bare deciduous trees are visible in front of the buildings, and the overall lighting is soft and diffused.",
+            "photographer_location": [
+              {
+                "name": "Right bank of the Salzach river, Salzburg, Austria",
+                "confidence": 0.95
+              },
+              {
+                "name": "Giselakai, Salzburg",
+                "confidence": 0.85
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Altstadt (Old Town), Salzburg, Austria",
+                "confidence": 1.0
+              },
+              {
+                "name": "Hohensalzburg Fortress",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "Hohensalzburg Fortress",
+                "type": "landmark",
+                "confidence": 1.0,
+                "notes": "A large medieval fortress sitting atop the Festungsberg."
+              },
+              {
+                "name": "Salzburg Cathedral",
+                "type": "religious_site",
+                "confidence": 0.98,
+                "notes": "17th-century Baroque cathedral dedicated to Saint Rupert and Saint Vergilius."
+              },
+              {
+                "name": "Altstadt Salzburg",
+                "type": "district",
+                "confidence": 1.0,
+                "notes": "The historic center of Salzburg, a UNESCO World Heritage site."
+              },
+              {
+                "name": "Festungsberg",
+                "type": "natural_feature",
+                "confidence": 0.95,
+                "notes": "The hill in the center of Salzburg."
+              },
+              {
+                "name": "Baroque architecture",
+                "type": "architectural_style",
+                "confidence": 0.95,
+                "notes": "The predominant style of the city's historic buildings."
+              },
+              {
+                "name": "Salzach",
+                "type": "natural_feature",
+                "confidence": 0.9,
+                "notes": "The river that flows through the city, located in the immediate foreground."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "Mozart Residence",
+                "type": "landmark",
+                "confidence": 0.6406850218772888,
+                "notes": null
+              },
+              {
+                "name": "Fortress Hohensalzburg",
+                "type": "landmark",
+                "confidence": 0.5884376764297485,
+                "notes": null
+              },
+              {
+                "name": "Café Bazar",
+                "type": "landmark",
+                "confidence": 0.5871707797050476,
+                "notes": null
+              },
+              {
+                "name": "SHOLTERINZAGTE",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              }
+            ],
+            "landmark_name": "Mozart Residence"
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "Overcast cityscape of Salzburg, Austria, showing pastel Baroque townhouses and church spires in the foreground with a large medieval hilltop fortress dominating the skyline. The fortress complex sits on a wooded ridge above the old town. Distinctive copper-domed churches and ornate facades identify the historic Altstadt district along the Salzach riverbank. The scene suggests winter or late autumn, with bare trees and light snow on rooftops.",
+            "photographer_location": [
+              {
+                "name": "Right (north) bank of the Salzach River near the city center, Salzburg, Austria",
+                "confidence": 0.55
+              },
+              {
+                "name": "Salzburg, Austria",
+                "confidence": 0.9
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Hohensalzburg Fortress on the Festungsberg, Salzburg, Austria",
+                "confidence": 0.92
+              },
+              {
+                "name": "Salzburg Old Town (Altstadt), south bank of the Salzach River",
+                "confidence": 0.85
+              }
+            ],
+            "entities": [
+              {
+                "name": "Hohensalzburg Fortress",
+                "type": "landmark",
+                "confidence": 0.92,
+                "notes": "Medieval hilltop fortress above Salzburg; origins in the 11th century with major expansions in the 15th–17th centuries; one of the largest preserved castle complexes in Europe."
+              },
+              {
+                "name": "Festungsberg",
+                "type": "natural_feature",
+                "confidence": 0.65,
+                "notes": "Rocky hill on which Hohensalzburg Fortress stands."
+              },
+              {
+                "name": "Salzburg Altstadt (Old Town)",
+                "type": "district",
+                "confidence": 0.8,
+                "notes": "Historic center of Salzburg, noted for Baroque architecture and listed as a UNESCO World Heritage Site."
+              },
+              {
+                "name": "Kollegienkirche (University Church)",
+                "type": "religious_site",
+                "confidence": 0.55,
+                "notes": "Baroque church with a prominent dark dome, designed by Johann Bernhard Fischer von Erlach."
+              },
+              {
+                "name": "Salzburg Cathedral (Dom zu Salzburg)",
+                "type": "religious_site",
+                "confidence": 0.55,
+                "notes": "Baroque cathedral identifiable by green copper domes and towers near the city center."
+              },
+              {
+                "name": "Baroque architecture",
+                "type": "architectural_style",
+                "confidence": 0.75,
+                "notes": "Dominant architectural style visible in church domes, facades, and ornamentation."
+              },
+              {
+                "name": "Salzach River",
+                "type": "natural_feature",
+                "confidence": 0.5,
+                "notes": "River running through Salzburg; viewpoint appears to be from its opposite bank."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "A wide-angle cityscape of a European town with pastel-colored apartment blocks along a river in the foreground. Leafless trees line the riverbank. In the middle ground several church towers and a domed building peek above the rooftops, all in muted tones. In the background sits a large white fortress perched on a steep hill, with crenellated walls and multiple towers, dominating the skyline. The sky is overcast with soft gray clouds, giving the scene a subdued, late-autumn atmosphere.",
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "Hilltop fortress",
+                "type": "monument",
+                "confidence": 0.55,
+                "notes": "Large fortress on a hill dominating the skyline; historic fortification."
+              },
+              {
+                "name": "Baroque church with green dome",
+                "type": "building",
+                "confidence": 0.5,
+                "notes": "Prominent domed church structure visible among the city rooftops."
+              },
+              {
+                "name": "Colorful residential buildings along riverfront",
+                "type": "building",
+                "confidence": 0.4,
+                "notes": "Row of pastel-colored, multi-story houses at the foreground."
+              }
+            ],
+            "landmark_name": null
+          }
+        }
+      ]
+    }
+  ]
+}

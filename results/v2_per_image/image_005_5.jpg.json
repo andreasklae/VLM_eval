@@ -1,0 +1,218 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "5.jpg",
+      "timestamp": "2026-01-28T05:57:07.675315",
+      "processing_time_seconds": 124.659511,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Colorful hanging decorations",
+          "confidence": 0.7,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The hanging decorations are the most prominent feature, indicating an art installation. The brick building suggests an urban environment, possibly a repurposed industrial space.",
+            "detailed_description": "The image features a series of colorful hanging decorations suspended across an urban walkway. These decorations are made of vibrant materials in shades of blue, pink, red, and yellow, creating a festive atmosphere. The setting includes a brick building with large windows, suggesting a modern or repurposed industrial style. The decorations are part of an outdoor art installation, enhancing the visual appeal of the area.",
+            "identification": {
+              "primary": [
+                "Colorful hanging decorations"
+              ],
+              "location": null,
+              "confidence": 0.7
+            },
+            "artifacts": [
+              {
+                "name": "Colorful hanging decorations",
+                "type": "artwork",
+                "confidence": 0.8
+              },
+              {
+                "name": "Brick building",
+                "type": "building",
+                "confidence": 0.7
+              }
+            ],
+            "tags": [
+              "installation_art",
+              "urban",
+              "brick",
+              "modern"
+            ],
+            "location": null,
+            "type": "artwork",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Urban art installation in a city center",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The style and setting suggest a public art installation commonly found in city centers."
+              },
+              {
+                "guess": "Decorative installation in a cultural district",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.5,
+                "reasoning": "The presence of art and modern architecture indicates a cultural or artistic district."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Colorful hanging decorations\"],\n        \"location\": null,\n        \"confidence\": 0.7\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Colorful hanging decorations\",\n            \"type\": \"artwork\",\n            \"confidence\": 0.8\n        },\n        {\n            \"name\": \"Brick building\",\n            \"type\": \"building\",\n            \"confidence\": 0.7\n        }\n    ],\n    \"tags\": [\"installation_art\", \"urban\", \"brick\", \"modern\"],\n    \"description\": \"The image features a series of colorful hanging decorations suspended across an urban walkway. These decorations are made of vibrant materials in shades of blue, pink, red, and yellow, creating a festive atmosphere. The setting includes a brick building with large windows, suggesting a modern or repurposed industrial style. The decorations are part of an outdoor art installation, enhancing the visual appeal of the area.\",\n    \"reasoning\": \"The hanging decorations are the most prominent feature, indicating an art installation. The brick building suggests an urban environment, possibly a repurposed industrial space.\",\n    \"type\": \"artwork\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Urban art installation in a city center\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The style and setting suggest a public art installation commonly found in city centers.\"\n        },\n        {\n            \"guess\": \"Decorative installation in a cultural district\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.5,\n            \"reasoning\": \"The presence of art and modern architecture indicates a cultural or artistic district.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 20.969441175460815
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts an urban street scene featuring a vibrant installation of hanging decorations. These decorations are composed of colorful tassels or pom-poms, arranged in clusters and suspended from wires above the street. The tassels are in various shades including blue, pink, red, and yellow, creating a lively and festive atmosphere. The street is flanked by tall brick buildings, which exhibit a modern industrial architectural style characterized by large windows and metal framework. The bri",
+            "description": "The image depicts an urban street scene featuring a vibrant installation of hanging decorations. These decorations are composed of colorful tassels or pom-poms, arranged in clusters and suspended from wires above the street. The tassels are in various shades including blue, pink, red, and yellow, creating a lively and festive atmosphere. The street is flanked by tall brick buildings, which exhibit a modern industrial architectural style characterized by large windows and metal framework. The bri",
+            "architectural_style": "Modern industrial",
+            "search_backends_used": [],
+            "processing_time_seconds": 103.68567085266113
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Public space",
+          "confidence": 0.9373929500579834,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Public space",
+                "score": 0.9373929500579834
+              },
+              {
+                "source": "label",
+                "name": "Pedestrian",
+                "score": 0.9003378748893738
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.7698763608932495
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.7634077668190002
+              },
+              {
+                "source": "object",
+                "name": "Top",
+                "score": 0.699851393699646
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Public space",
+                "score": 0.40792638063430786
+              },
+              {
+                "name": "Public",
+                "score": 0.3467000126838684
+              },
+              {
+                "name": "Apartment",
+                "score": 0.333761066198349
+              },
+              {
+                "name": "Pedestrian",
+                "score": 0.30926644802093506
+              },
+              {
+                "name": "Snow",
+                "score": 0.3003000020980835
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.7698763608932495
+              },
+              {
+                "name": "Person",
+                "score": 0.7634077668190002
+              },
+              {
+                "name": "Top",
+                "score": 0.699851393699646
+              },
+              {
+                "name": "Person",
+                "score": 0.694507360458374
+              },
+              {
+                "name": "Person",
+                "score": 0.681216299533844
+              }
+            ],
+            "labels": [
+              {
+                "name": "Public space",
+                "score": 0.9373929500579834
+              },
+              {
+                "name": "Pedestrian",
+                "score": 0.9003378748893738
+              },
+              {
+                "name": "Umbrella",
+                "score": 0.6566283702850342
+              },
+              {
+                "name": "Walking",
+                "score": 0.6365668177604675
+              },
+              {
+                "name": "Winter",
+                "score": 0.6162602305412292
+              }
+            ],
+            "processing_time_seconds": 7.4521870613098145
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/5.jpg"
+    }
+  ]
+}

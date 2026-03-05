@@ -1,0 +1,952 @@
+{
+  "image_id": 173,
+  "filename": "173.jpg",
+  "ground_truth": {
+    "description": "Photo from top of building (Siloene) in Grunerløkka, Oslo. Ila Skole visible in background (might get), Holmenkollen in vast distance (very impressive if identified). Should recognize Scandinavian town, hills indicate Oslo.",
+    "photographer_description": "Photo from the top of a building (Siloene) in Grunerløkka, Oslo. In the background you can see Ila Skole (which it might get) and Holmenkollen in the vast distance (would be very impressive to get). It should at least recognize a Scandinavian town, and the hills behind should give away that it is Oslo.",
+    "locations": [
+      {
+        "name": "Grunerløkka (Siloene building), Oslo, Oslo, Norway",
+        "hierarchy": {
+          "country": "Norway",
+          "region": "Oslo",
+          "city": "Oslo",
+          "exact": "Grunerløkka (Siloene building)"
+        }
+      }
+    ],
+    "entities": [
+      {
+        "name": "Ila Skole",
+        "type": "landmark",
+        "notes": "might identify",
+        "importance": "medium",
+        "max_specificity": 5
+      },
+      {
+        "name": "Holmenkollen",
+        "type": "landmark",
+        "notes": "very impressive if seen",
+        "importance": "low",
+        "max_specificity": 5
+      },
+      {
+        "name": "Kuba parken",
+        "type": "public_space",
+        "notes": "",
+        "max_specificity": 5,
+        "importance": "high",
+        "added_by": "human_evaluator"
+      },
+      {
+        "name": "view of St.hanshaugen/grunerløkka/vulkan",
+        "type": "district",
+        "notes": "",
+        "max_specificity": 4,
+        "importance": "high",
+        "added_by": "human_evaluator"
+      },
+      {
+        "name": "Top of Silo",
+        "type": "landmark",
+        "notes": "",
+        "max_specificity": 5,
+        "importance": "medium",
+        "added_by": "human_evaluator"
+      }
+    ],
+    "scene_type": [
+      "cityscape",
+      "viewpoint"
+    ],
+    "key_visual_elements": [
+      "Oslo rooftops",
+      "Hills/forest in background",
+      "Holmenkollen (distant)"
+    ],
+    "max_specificity": "Specific",
+    "difficulty": "Easy (Oslo from hills), Hard (specific landmarks)",
+    "notes": "Hills behind should give away Oslo.",
+    "gps_metadata": {
+      "gps_latitude": 59.92299444444444,
+      "gps_longitude": 10.753688888888888,
+      "reverse_geocoded": {
+        "formatted_address": "Fisketrappen Nedre Foss, Nordre gate 25, 0551 Oslo, Norway",
+        "city": null,
+        "county": "Oslo",
+        "country": "Norway"
+      }
+    },
+    "image_categories": [
+      "urban"
+    ],
+    "difficulty_with_gps": "easy",
+    "difficulty_without_gps": "hard"
+  },
+  "model_runs": [
+    {
+      "image_filename": "173.jpg",
+      "use_gps": true,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "Elevated rooftop view over inner Oslo at dusk. In the foreground is a flat bitumen roof with temporary scaffolding wrapped in white sheeting. Below, a green urban park with winding paths, benches and lampposts spreads out among dense trees. Beyond the park is a mix of mid‑rise brick and plaster apartment blocks and institutional buildings typical of early– to mid‑20th‑century Oslo. On a ridge in the background stands a prominent long, yellow masonry complex with small corner turrets. Forested hills form the far horizon under a dramatic overcast sky.",
+            "photographer_location": [
+              {
+                "name": "Fisketrappen, Nedre Foss, Nordre gate 25, Grünerløkka, Oslo, Norway",
+                "confidence": 0.82
+              },
+              {
+                "name": "Rooftop near the Vulkan/Mathallen area at Nedre Foss, Grünerløkka, Oslo",
+                "confidence": 0.62
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Kuba Park (Kuba-parken), along the Akerselva at Grünerløkka, Oslo",
+                "confidence": 0.66
+              },
+              {
+                "name": "Oslo Prison (Botsfengselet), Åkebergveien, Oslo",
+                "confidence": 0.6
+              },
+              {
+                "name": "Vulkan / Nedre Foss area along the Akerselva, Oslo",
+                "confidence": 0.68
+              },
+              {
+                "name": "Grünerløkka district, Oslo",
+                "confidence": 0.9
+              },
+              {
+                "name": "Ekebergåsen ridge (distant horizon), Oslo",
+                "confidence": 0.45
+              }
+            ],
+            "entities": [
+              {
+                "name": "Grünerløkka",
+                "type": "district",
+                "confidence": 0.95,
+                "notes": "Inner-city district of Oslo, visible as the surrounding urban fabric."
+              },
+              {
+                "name": "Kuba Park (Kuba-parken)",
+                "type": "public_space",
+                "confidence": 0.66,
+                "notes": "Lawned park with curving paths on/near the Kuba island of the Akerselva."
+              },
+              {
+                "name": "Akerselva River",
+                "type": "natural_feature",
+                "confidence": 0.6,
+                "notes": "Tree-lined river corridor running just beyond the park."
+              },
+              {
+                "name": "Oslo Prison (Botsfengselet)",
+                "type": "building",
+                "confidence": 0.6,
+                "notes": "Historic yellow-brick prison complex known as 'Botsen' on Åkebergveien; 19th century."
+              },
+              {
+                "name": "Vulkan",
+                "type": "district",
+                "confidence": 0.6,
+                "notes": "Redeveloped former industrial area around Nedre Foss and Mathallen."
+              },
+              {
+                "name": "Mathallen Oslo",
+                "type": "building",
+                "confidence": 0.55,
+                "notes": "Food hall in a former industrial hall at Vulkan; roofline likely at lower left."
+              },
+              {
+                "name": "Ekebergåsen",
+                "type": "natural_feature",
+                "confidence": 0.45,
+                "notes": "Forested ridge forming the distant horizon southeast of central Oslo."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "Two women stand at the edge of a rooftop with white protective cladding and scaffolding, posing and looking toward a broad Oslo cityscape. The foreground shows dark roofing panels and a metal safety railing. Beyond, a park and a network of winding pathways are interspersed with dense trees. The midground features a mix of low- to mid-rise brick and concrete buildings, while the distance reveals a gentle hillscape under a moody, overcast sky. The lighting is soft and diffused, suggesting late afternoon or early evening. The overall scene conveys a high urban vantage point over Oslo, near the Nedre Foss area.",
+            "photographer_location": [
+              {
+                "name": "Fisketrappen Nedre Foss, Nordre gate 25, 0551 Oslo, Norway",
+                "confidence": 0.85
+              },
+              {
+                "name": "Oslo city center vicinity (Nordre gate / Grünerløkka area)",
+                "confidence": 0.6
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Rooftop terrace on a high-rise/building in Oslo, near Nedre Foss",
+                "confidence": 0.75
+              },
+              {
+                "name": "Oslo city center / Grünerløkka district",
+                "confidence": 0.55
+              }
+            ],
+            "entities": [
+              {
+                "name": "Oslo cityscape",
+                "type": "landmark",
+                "confidence": 0.65,
+                "notes": "Distant skyline of Oslo as seen from a rooftop vantage."
+              },
+              {
+                "name": "Grünerløkka district",
+                "type": "district",
+                "confidence": 0.6,
+                "notes": "Midground urban area with mixed architecture."
+              },
+              {
+                "name": "Rooftop safety railing with white protective cladding",
+                "type": "infrastructure",
+                "confidence": 0.75,
+                "notes": "Perimeter railing and temporary covering visible on the rooftop."
+              },
+              {
+                "name": "Two women posing on rooftop",
+                "type": "other",
+                "confidence": 0.4,
+                "notes": "Unidentified individuals; one wearing a light dress."
+              },
+              {
+                "name": "Park-like public space visible in mid-ground",
+                "type": "public_space",
+                "confidence": 0.45,
+                "notes": "Green space with curved paths and trees."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "High-angle rooftop view at dusk over a green urban park and surrounding neighborhood consistent with central Oslo. Two people stand in the foreground on a flat roof beside white-wrapped scaffolding and a safety rail. Below is a park with curving walking paths, lawns, benches, and dense trees. Beyond are mid-rise brick and plaster apartment blocks and institutional buildings; one prominent large yellow, turreted historic building stands out. Forested hills line the distant horizon under dramatic blue-gray clouds.",
+            "photographer_location": [
+              {
+                "name": "Rooftop near Nedre Foss, Grünerløkka, Oslo, Norway",
+                "confidence": 0.55
+              },
+              {
+                "name": "Fisketrappen Nedre Foss, Nordre gate 25, 0551 Oslo, Norway",
+                "confidence": 0.45
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Grünerløkka district, Oslo, Norway",
+                "confidence": 0.7
+              },
+              {
+                "name": "Park area near Nedre Foss (possibly Grünerhagen/Kuba Park), Oslo",
+                "confidence": 0.35
+              }
+            ],
+            "entities": [
+              {
+                "name": "Grünerløkka",
+                "type": "district",
+                "confidence": 0.7,
+                "notes": "Central Oslo neighborhood along the Akerselva; visible mix of parks and late-19th/20th-century urban blocks."
+              },
+              {
+                "name": "Unidentified city park near Nedre Foss",
+                "type": "public_space",
+                "confidence": 0.45,
+                "notes": "Curved footpaths, lawns, benches, and mature trees just below the rooftop viewpoint."
+              },
+              {
+                "name": "Rooftop viewpoint above Nedre Foss/Vulkan area",
+                "type": "viewpoint",
+                "confidence": 0.6,
+                "notes": "Flat roof with temporary white-wrapped scaffolding and guardrail."
+              },
+              {
+                "name": "Oslo urban skyline and surrounding forested hills",
+                "type": "district",
+                "confidence": 0.6,
+                "notes": "Mid-rise residential blocks with a prominent yellow historic building; wooded hills on the horizon."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "A rooftop view in Oslo featuring two women standing near the edge, posing for a photo. They wear light dresses and stand close together, with a protective railing and white covering along the roof edge. In the background is a expansive urban landscape with a green park in the foreground, a mix of brick and light-colored buildings, and distant hills under an overcast sky. The photo appears to be taken from a high vantage point, consistent with Fisketrappen Nedre Foss / Nordre gate 25 in Oslo, Norway.",
+            "photographer_location": [
+              {
+                "name": "Fisketrappen Nedre Foss, Nordre gate 25, 0551 Oslo, Norway",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Rooftop edge / outdoor rooftop on a tall building",
+                "confidence": 0.78
+              }
+            ],
+            "entities": [
+              {
+                "name": "Rooftop infrastructure with safety railing and scaffolding",
+                "type": "infrastructure",
+                "confidence": 0.72,
+                "notes": "white protective covering along the edge; visible scaffolding on the rooftop"
+              },
+              {
+                "name": "Oslo cityscape viewpoint",
+                "type": "viewpoint",
+                "confidence": 0.5,
+                "notes": "overlooking park, residential blocks, and hills in the distance"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A high-angle photograph taken from a rooftop at dusk or under heavy cloud cover. In the immediate foreground, two young women pose on a dark asphalt roof surface next to a white protective tarp secured by metal scaffolding. Below them lies an urban park, identified as Kubaparken, featuring green lawns, mature trees, and a distinctive circular paved plaza with winding pathways. To the left, the dark, flat roof of a modern industrial-style building (part of the Vulkan complex, likely near Mathallen) is visible. In the background, the cityscape of Oslo rises towards a hill, dominated by a large, monumental yellow building with a central spire, which is the Ila School (Ila skole). The surrounding architecture includes a mix of brick apartment blocks and modern developments. The sky is filled with dramatic, textured blue-grey clouds.",
+            "photographer_location": [
+              {
+                "name": "Vulkan",
+                "confidence": 0.95
+              },
+              {
+                "name": "Nordre gate 25",
+                "confidence": 0.9
+              },
+              {
+                "name": "Oslo",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Kubaparken",
+                "confidence": 0.98
+              },
+              {
+                "name": "Vulkan",
+                "confidence": 0.95
+              },
+              {
+                "name": "Ila",
+                "confidence": 0.9
+              },
+              {
+                "name": "Oslo",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "Kubaparken",
+                "type": "public_space",
+                "confidence": 0.98,
+                "notes": "Urban park visible in the mid-ground with circular plaza"
+              },
+              {
+                "name": "Ila Skole",
+                "type": "building",
+                "confidence": 0.95,
+                "notes": "Large yellow monumental building on the hill in the background"
+              },
+              {
+                "name": "Vulkan",
+                "type": "district",
+                "confidence": 0.95,
+                "notes": "The mixed-use development area where the photo is taken"
+              },
+              {
+                "name": "Mathallen Oslo",
+                "type": "building",
+                "confidence": 0.85,
+                "notes": "Likely the building with the dark roof and vents to the left"
+              },
+              {
+                "name": "Scaffolding",
+                "type": "infrastructure",
+                "confidence": 1.0,
+                "notes": "Construction structure in foreground"
+              },
+              {
+                "name": "Oslo",
+                "type": "district",
+                "confidence": 1.0,
+                "notes": "City"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A high-angle, vertical photograph taken from a rooftop, likely the Grünerløkka Studenthus (The Silo), looking northwest over the Grünerløkka district in Oslo, Norway. In the immediate foreground, two young women pose on a flat, dark-colored roof that is partially covered with white protective sheeting and metal scaffolding. Below the roof, the green expanse of Grünerhagen park is visible, featuring winding paved paths and a circular clearing. Beyond the park, the urban landscape of Oslo unfolds with a mix of residential and institutional buildings. A prominent large yellow building with a dark gabled roof, identified as Oslo Katedralskole, stands out in the background. The sky is filled with heavy, dark blue and grey clouds, suggesting twilight or an approaching storm. The distant horizon shows the forested hills surrounding the city.",
+            "photographer_location": [
+              {
+                "name": "Rooftop of Grünerløkka Studenthus (The Silo), Nordre gate 25, Oslo",
+                "confidence": 0.95
+              },
+              {
+                "name": "Fisketrappen Nedre Foss",
+                "confidence": 0.9
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Grünerløkka, Oslo",
+                "confidence": 1.0
+              },
+              {
+                "name": "Grünerhagen, Oslo",
+                "confidence": 0.98
+              }
+            ],
+            "entities": [
+              {
+                "name": "Grünerløkka Studenthus (The Silo)",
+                "type": "building",
+                "confidence": 0.95,
+                "notes": "A former grain silo converted into student housing, providing a high vantage point over the district."
+              },
+              {
+                "name": "Grünerhagen",
+                "type": "public_space",
+                "confidence": 0.98,
+                "notes": "A public park in the Grünerløkka district, visible directly below the photographer."
+              },
+              {
+                "name": "Oslo Katedralskole",
+                "type": "building",
+                "confidence": 0.9,
+                "notes": "A historic secondary school in Oslo, visible as the large yellow building in the background."
+              },
+              {
+                "name": "Grünerløkka",
+                "type": "district",
+                "confidence": 1.0,
+                "notes": "The neighborhood depicted in the image."
+              },
+              {
+                "name": "Akerselva",
+                "type": "natural_feature",
+                "confidence": 0.85,
+                "notes": "The river flowing through the area, located just to the left of the park in this view."
+              },
+              {
+                "name": "Oslo",
+                "type": "other",
+                "confidence": 1.0,
+                "notes": "The capital city of Norway."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "TICO",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "TATO",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "CNOOCION",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "ΕΕΕΕΕ",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "FEEL",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              }
+            ],
+            "landmark_name": null
+          }
+        }
+      ]
+    },
+    {
+      "image_filename": "173.jpg",
+      "use_gps": false,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "Oblique rooftop view over a dense Nordic city neighborhood at dusk. The foreground shows a flat bitumen roof with temporary scaffolding wrapped in white sheeting; two people stand by the edge holding drinks. Immediately below is a small urban park or square with intersecting, radial footpaths and mature trees. Beyond are blocks of 4–6 story brick and stucco apartment buildings typical of late‑19th/early‑20th‑century Scandinavian architecture. In the far distance are wooded hills and a sliver of water under a cloudy evening sky.",
+            "photographer_location": [
+              {
+                "name": "On a scaffolded rooftop overlooking a park, likely in Grünerløkka, Oslo, Norway",
+                "confidence": 0.45
+              },
+              {
+                "name": "Oslo, Norway",
+                "confidence": 0.6
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Schous plass (public square/park), Grünerløkka, Oslo (approximate)",
+                "confidence": 0.35
+              },
+              {
+                "name": "Sofienbergparken area, Grünerløkka, Oslo (alternative)",
+                "confidence": 0.25
+              },
+              {
+                "name": "Olaf Ryes plass, Grünerløkka, Oslo (alternative)",
+                "confidence": 0.2
+              },
+              {
+                "name": "Grünerløkka district, Oslo, Norway",
+                "confidence": 0.55
+              }
+            ],
+            "entities": [
+              {
+                "name": "Grünerløkka",
+                "type": "district",
+                "confidence": 0.55,
+                "notes": "Historic inner-city neighborhood in Oslo with late-19th-century tenement blocks"
+              },
+              {
+                "name": "Schous plass",
+                "type": "public_space",
+                "confidence": 0.35,
+                "notes": "Triangular square with radial pathways; identification uncertain"
+              },
+              {
+                "name": "Sofienbergparken",
+                "type": "public_space",
+                "confidence": 0.25,
+                "notes": "Large park in Grünerløkka; alternative to Schous plass"
+              },
+              {
+                "name": "Olaf Ryes plass",
+                "type": "public_space",
+                "confidence": 0.2,
+                "notes": "Rectangular square with diagonal paths; alternative identification"
+              },
+              {
+                "name": "Rooftop scaffolding/temporary safety rails",
+                "type": "infrastructure",
+                "confidence": 0.99,
+                "notes": "White-wrapped sheeting and metal guardrails along roof edge"
+              },
+              {
+                "name": "Late 19th–early 20th century Scandinavian tenement architecture",
+                "type": "architectural_style",
+                "confidence": 0.7,
+                "notes": "Brick and stucco facades, 4–6 stories, regular window bays"
+              },
+              {
+                "name": "Oslofjord (distant water body)",
+                "type": "natural_feature",
+                "confidence": 0.3,
+                "notes": "Visible as a light band on the horizon; tentative"
+              },
+              {
+                "name": "Oslo cityscape",
+                "type": "landmark",
+                "confidence": 0.55,
+                "notes": "General panorama toward wooded hills surrounding the city"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "An elevated view shows a dense hillside city with pastel and brick buildings and red-tiled roofs, set against a moody, cloud-covered sky and distant mountains. In the foreground a white-covered rooftop edge or terrace with scaffolding is visible. Two women in light wedding attire stand on the rooftop, embracing and smiling, barefoot; one wears a white gown and the other a pale dress, and they appear to be posing for a wedding photo. Below, a green park with winding paths and trees sits amid the urban fabric.",
+            "photographer_location": [
+              {
+                "name": "Rooftop terrace/observation deck above the hillside town",
+                "confidence": 0.75
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Rooftop edge with white protective wrap and scaffolding where the couple stands",
+                "confidence": 0.85
+              }
+            ],
+            "entities": [
+              {
+                "name": "Two women posing in wedding attire",
+                "type": "other",
+                "confidence": 0.8,
+                "notes": "Barefoot on rooftop edge; one in a white gown, the other in a pale dress; smiling; pink item held by one may be bouquet or accessory."
+              },
+              {
+                "name": "Scaffolding and white protective wrap along rooftop edge",
+                "type": "infrastructure",
+                "confidence": 0.82,
+                "notes": "Temporary rigging for rooftop platform."
+              },
+              {
+                "name": "Rooftop edge/railing",
+                "type": "infrastructure",
+                "confidence": 0.7,
+                "notes": "Barrier along the platform; part of the viewing area."
+              },
+              {
+                "name": "European hillside city center with pastel buildings",
+                "type": "district",
+                "confidence": 0.78,
+                "notes": "Dense urban block with multi-story structures and red-tiled roofs."
+              },
+              {
+                "name": "Park with winding paths",
+                "type": "public_space",
+                "confidence": 0.6,
+                "notes": "Green space visible between buildings, with curved walkways."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "High-angle view from the edge of a flat rooftop that is under renovation, with white plastic-wrapped scaffolding and safety lines along the parapet. Two people stand near the edge holding drinks. Below, an urban park with curving paths, lawns, benches, and mature trees is surrounded by mid-rise residential and institutional buildings with mixed modern and traditional European architecture (red and yellow facades, pitched roofs). In the distance are wooded hills and a broad cityscape under a cloudy evening sky.",
+            "photographer_location": [
+              {
+                "name": "Rooftop of a mid-rise building beside an urban park",
+                "confidence": 0.9
+              },
+              {
+                "name": "Northern Europe (likely Scandinavia)",
+                "confidence": 0.5
+              },
+              {
+                "name": "Oslo, Norway (tentative)",
+                "confidence": 0.2
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Urban park and surrounding neighborhood directly below the rooftop",
+                "confidence": 0.9
+              },
+              {
+                "name": "A Northern European city district",
+                "confidence": 0.5
+              }
+            ],
+            "entities": [
+              {
+                "name": "Plastic-wrapped scaffolding and safety lines on rooftop edge",
+                "type": "infrastructure",
+                "confidence": 0.95,
+                "notes": "Temporary construction/renovation setup along the roof parapet"
+              },
+              {
+                "name": "Urban park with curvilinear paths and lawns",
+                "type": "public_space",
+                "confidence": 0.9,
+                "notes": "Trees, benches, and intersecting walkways visible below"
+              },
+              {
+                "name": "Mid-rise residential and institutional blocks",
+                "type": "building",
+                "confidence": 0.85,
+                "notes": "Mix of modern and traditional European styles with red/yellow facades"
+              },
+              {
+                "name": "Hilly, forested backdrop",
+                "type": "natural_feature",
+                "confidence": 0.7,
+                "notes": "Tree-covered hills beyond the city"
+              },
+              {
+                "name": "Rooftop vantage point over the city",
+                "type": "viewpoint",
+                "confidence": 0.9,
+                "notes": "Photo captured from roof edge providing a sweeping panorama"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "A high-angle cityscape shows a hillside cluster of colorful buildings, a green park with winding paths, and dense trees. In the foreground, a long white scaffolded platform or temporary structure runs along a dark paved surface. A woman in a light-colored strapless dress stands at the edge of the platform, with a pink item in hand, while other figures and the urban landscape recede into the distance beneath a cloudy sky.",
+            "photographer_location": [
+              {
+                "name": "on or near an elevated viewing platform or rooftop overlooking the city",
+                "confidence": 0.25
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "standing on a white scaffolded platform at the edge of a roof or terrace",
+                "confidence": 0.25
+              }
+            ],
+            "entities": [
+              {
+                "name": "urban hillside cityscape",
+                "type": "viewpoint",
+                "confidence": 0.6,
+                "notes": "dense apartment blocks along a hillside"
+              },
+              {
+                "name": "white scaffolded platform with protective tarpaulin",
+                "type": "infrastructure",
+                "confidence": 0.7,
+                "notes": "temporary structure on a roof/terrace"
+              },
+              {
+                "name": "adult female in light dress",
+                "type": "other",
+                "confidence": 0.5,
+                "notes": "foreground subject wearing a light-colored dress"
+              },
+              {
+                "name": "urban park with winding paths",
+                "type": "public_space",
+                "confidence": 0.45,
+                "notes": "green space visible among buildings"
+              },
+              {
+                "name": "trees",
+                "type": "natural_feature",
+                "confidence": 0.6,
+                "notes": "large trees in the park area"
+              },
+              {
+                "name": "cloudy sky",
+                "type": "natural_feature",
+                "confidence": 0.6,
+                "notes": "overcast weather"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A high-angle, wide shot taken from a rooftop, showing two women posing next to a large white temporary roofing structure or scaffolding cover. The image is rotated 90 degrees counter-clockwise relative to the horizon. When oriented correctly, the view looks northwards over the St. Hanshaugen district in Oslo, Norway. Below the rooftop, the winding paths and green slopes of St. Hanshaugen Park are clearly visible. To the left (west) of the park, a large, prominent yellow building with a red hipped roof, identified as Ila Skole, stands out among the dense urban fabric of residential blocks. In the background, the cityscape extends towards the forested hills of Nordmarka under a dramatic, cloudy sky. The rooftop in the foreground is covered in dark bitumen felt.",
+            "photographer_location": [
+              {
+                "name": "St. Hanshaugen",
+                "confidence": 0.95
+              },
+              {
+                "name": "Waldemar Thranes gate",
+                "confidence": 0.8
+              },
+              {
+                "name": "Oslo",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "St. Hanshaugen Park",
+                "confidence": 0.95
+              },
+              {
+                "name": "Ila",
+                "confidence": 0.9
+              },
+              {
+                "name": "Oslo",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "St. Hanshaugen Park",
+                "type": "public_space",
+                "confidence": 0.95,
+                "notes": "Public park with winding paths and hills"
+              },
+              {
+                "name": "Ila Skole",
+                "type": "building",
+                "confidence": 0.9,
+                "notes": "Large yellow school building with red roof"
+              },
+              {
+                "name": "Nordmarka",
+                "type": "natural_feature",
+                "confidence": 0.85,
+                "notes": "Forested hills in the background"
+              },
+              {
+                "name": "Scaffolding cover",
+                "type": "infrastructure",
+                "confidence": 0.95,
+                "notes": "White temporary roof structure (tak-over-tak)"
+              },
+              {
+                "name": "Rooftop",
+                "type": "infrastructure",
+                "confidence": 0.95,
+                "notes": "Bitumen roof where subjects are standing"
+              },
+              {
+                "name": "Oslo",
+                "type": "district",
+                "confidence": 1.0,
+                "notes": "City context"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A high-angle, slightly tilted shot taken from a rooftop overlooking a city. In the foreground, two young women are standing on a flat, dark-colored roof, partially sheltered by a white plastic tarp supported by metal scaffolding. Below them lies a large urban park with lush green trees and winding gravel paths. In the mid-ground, a prominent yellow neoclassical building with a grey roof is visible, identified as the Royal Palace of Oslo. The background shows a dense cityscape with a mix of historical and modern architecture, extending towards distant hills under a heavy, overcast sky. The lighting is soft and diffused, typical of a cloudy day.",
+            "photographer_location": [
+              {
+                "name": "Rooftop near Holbergs plass, Oslo, Norway",
+                "confidence": 0.85
+              },
+              {
+                "name": "Sentrum, Oslo, Norway",
+                "confidence": 0.95
+              },
+              {
+                "name": "Oslo, Norway",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Rooftop in Sentrum, Oslo, Norway",
+                "confidence": 0.9
+              },
+              {
+                "name": "Oslo, Norway",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "Royal Palace, Oslo",
+                "type": "landmark",
+                "confidence": 0.98,
+                "notes": "The official residence of the Norwegian monarch, built in the first half of the 19th century in neoclassical style."
+              },
+              {
+                "name": "Slottsparken",
+                "type": "public_space",
+                "confidence": 0.98,
+                "notes": "The Palace Park surrounding the Royal Palace in Oslo."
+              },
+              {
+                "name": "Oslo",
+                "type": "district",
+                "confidence": 1.0,
+                "notes": "Capital city of Norway."
+              },
+              {
+                "name": "Neoclassical architecture",
+                "type": "architectural_style",
+                "confidence": 0.95,
+                "notes": "The architectural style of the Royal Palace."
+              },
+              {
+                "name": "Scaffolding",
+                "type": "infrastructure",
+                "confidence": 0.9,
+                "notes": "Temporary structure on the roof where the people are standing."
+              },
+              {
+                "name": "Radisson Blu Scandinavia Hotel, Oslo",
+                "type": "building",
+                "confidence": 0.7,
+                "notes": "Possible location of the photographer given the height and perspective."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "NOCIO",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "ΕΕΕΕΕ",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "FEEL",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              }
+            ],
+            "landmark_name": null
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1164 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "101.jpg",
+      "timestamp": "2026-01-28T00:46:37.734966",
+      "processing_time_seconds": 60.495804,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 52.50143333333333,
+        "gps_longitude": 13.445030555555556,
+        "location": {
+          "formatted_address": "Oberbaum Bridge, Oberbaumbrücke, 10243 Berlin, Germany",
+          "city": "Berlin",
+          "county": "Berlin",
+          "country": "Germany"
+        },
+        "datetime_original": "2024:10:10 15:44:37",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Oberbaum Bridge, Berlin, Germany",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive red brick towers and Neo-Gothic style are characteristic of the Oberbaum Bridge, a well-known Berlin landmark. The location metadata supports this identification.",
+            "detailed_description": "The image shows the Oberbaum Bridge, a prominent landmark in Berlin, Germany. It is characterized by its Neo-Gothic architectural style, featuring red brick construction and distinctive towers with conical roofs. The bridge spans the River Spree and serves as a connection between the districts of Friedrichshain and Kreuzberg. The structure is known for its historical significance and striking design, with decorative elements such as arches and turrets.",
+            "identification": {
+              "primary": [
+                "Oberbaum Bridge"
+              ],
+              "location": "Berlin, Germany",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Oberbaum Bridge",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Neo-Gothic",
+              "19th_century",
+              "brick",
+              "Berlin",
+              "bridge"
+            ],
+            "location": "Berlin, Germany",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Oberbaum Bridge\"],\n        \"location\": \"Berlin, Germany\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Oberbaum Bridge\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Neo-Gothic\", \"19th_century\", \"brick\", \"Berlin\", \"bridge\"],\n    \"description\": \"The image shows the Oberbaum Bridge, a prominent landmark in Berlin, Germany. It is characterized by its Neo-Gothic architectural style, featuring red brick construction and distinctive towers with conical roofs. The bridge spans the River Spree and serves as a connection between the districts of Friedrichshain and Kreuzberg. The structure is known for its historical significance and striking design, with decorative elements such as arches and turrets.\",\n    \"reasoning\": \"The distinctive red brick towers and Neo-Gothic style are characteristic of the Oberbaum Bridge, a well-known Berlin landmark. The location metadata supports this identification.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 52.50143333333333,
+              "longitude": 13.445030555555556
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Oberbaum Bridge, Oberbaumbrücke, 10243 Berlin, Germany",
+              "city": "Berlin",
+              "county": "Berlin",
+              "country": "Germany"
+            },
+            "photo_timestamp": "2024:10:10 15:44:37",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 12.259000062942505
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Oberbaum Bridge, Berlin, Germany",
+          "confidence": 0.75,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The search results consistently identify the bridge as the Oberbaum Bridge in Berlin, Germany, matching the description's architectural style and features. The Gothic Revival style, red brick construction, and distinctive towers are characteristic of the Oberbaum Bridge, which is a well-known landmark in Berlin. The presence of a modern building in the background aligns with the urban setting described.",
+            "identification": {
+              "primary": [
+                "Oberbaum Bridge"
+              ],
+              "location": "Berlin, Germany",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Oberbaum Bridge",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Modern building with geometric facade",
+                "type": "building",
+                "confidence": 0.7
+              }
+            ],
+            "tags": [
+              "Gothic Revival",
+              "brick",
+              "Berlin",
+              "bridge",
+              "urban"
+            ],
+            "sources_used": [
+              "web"
+            ],
+            "all_candidates": [
+              "Snippet:* The Oberbaum Bridge is a double-deck bridge crossing Berlin's River Spree, linking the districts of Friedrichshain and Kreuzberg. Constructed in 1896, it features North German Brick Gothic e",
+              "Snippet:* This article delves into the history and architectural features of the Oberbaum Bridge, highlighting its Gothic Revival design and its role as a city gate and toll bridge in the 18th century",
+              "Snippet:* This gallery provides images and a brief overview of the Oberbaum Bridge, emphasizing its Gothic Revival architecture and its role as a symbol of Berlin's unity. The bridge spans the River S",
+              "Snippet:* This Pinterest post features a photograph of the Oberbaum Bridge, showcasing its Gothic Revival architecture and the surrounding urban landscape. The image captures the bridge's distinctive ",
+              "Snippet:* This guide provides information about the Oberbaum Bridge, highlighting its Gothic Revival and Brick Architecture styles. It discusses the bridge's historical significance, including its rol"
+            ],
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image prominently features a historic bridge with distinctive architectural elements. The bridge is constructed from red brick, showcasing a Gothic Revival style characterized by pointed arches and ornate detailing. Two prominent towers rise from the bridge, each topped with a conical roof and adorned with decorative elements such as finials and small windows. The towers are cylindrical and feature a series of small arches around their circumference. The bridge itself has a series of large, ",
+            "description": "The image prominently features a historic bridge with distinctive architectural elements. The bridge is constructed from red brick, showcasing a Gothic Revival style characterized by pointed arches and ornate detailing. Two prominent towers rise from the bridge, each topped with a conical roof and adorned with decorative elements such as finials and small windows. The towers are cylindrical and feature a series of small arches around their circumference. The bridge itself has a series of large, ",
+            "architectural_style": "Gothic Revival",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 52.50143333333333,
+              "longitude": 13.445030555555556
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Oberbaum Bridge, Oberbaumbrücke, 10243 Berlin, Germany",
+              "city": "Berlin",
+              "county": "Berlin",
+              "country": "Germany"
+            },
+            "photo_timestamp": "2024:10:10 15:44:37",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 46.609699964523315
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Car",
+          "confidence": 0.928712785243988,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "object",
+            "all_candidates": [
+              {
+                "source": "object",
+                "name": "Car",
+                "score": 0.928712785243988
+              },
+              {
+                "source": "label",
+                "name": "Steeple",
+                "score": 0.9090189933776855
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.8993796110153198
+              },
+              {
+                "source": "label",
+                "name": "Spire",
+                "score": 0.8986108899116516
+              },
+              {
+                "source": "object",
+                "name": "Van",
+                "score": 0.8322128653526306
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "ArchitectureM RIBA Chartered Practice",
+                "score": 0.3052000105381012
+              },
+              {
+                "name": "Architecture",
+                "score": 0.24897107481956482
+              }
+            ],
+            "objects": [
+              {
+                "name": "Car",
+                "score": 0.928712785243988
+              },
+              {
+                "name": "Person",
+                "score": 0.8993796110153198
+              },
+              {
+                "name": "Van",
+                "score": 0.8322128653526306
+              },
+              {
+                "name": "Car",
+                "score": 0.7281694412231445
+              },
+              {
+                "name": "Car",
+                "score": 0.722357988357544
+              }
+            ],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.9888472557067871
+              },
+              {
+                "name": "Steeple",
+                "score": 0.9090189933776855
+              },
+              {
+                "name": "Spire",
+                "score": 0.8986108899116516
+              },
+              {
+                "name": "Turret",
+                "score": 0.8270778656005859
+              },
+              {
+                "name": "Family car",
+                "score": 0.7923597097396851
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 52.50143333333333,
+              "longitude": 13.445030555555556
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Oberbaum Bridge, Oberbaumbrücke, 10243 Berlin, Germany",
+              "city": "Berlin",
+              "county": "Berlin",
+              "country": "Germany"
+            },
+            "photo_timestamp": "2024:10:10 15:44:37",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 17.51480197906494
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Berlin, Germany",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Berlin, Germany",
+            "coordinates": {
+              "latitude": 52.50143333333333,
+              "longitude": 13.445030555555556
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "East Side Gallery",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "landmark",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 63178,
+                  "vicinity": "Mühlenstraße, Berlin",
+                  "place_id": "ChIJS6_t9aZHqEcRGCiRSnvpm94",
+                  "location": {
+                    "lat": 52.50502239999999,
+                    "lng": 13.4396953
+                  }
+                },
+                {
+                  "name": "Urban Spree",
+                  "types": [
+                    "bar",
+                    "tourist_attraction",
+                    "art_gallery",
+                    "book_store",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2929,
+                  "vicinity": "Revaler Straße 99, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJlbANTVpOqEcRmYuZzOrj6M8",
+                  "location": {
+                    "lat": 52.507828,
+                    "lng": 13.4516096
+                  }
+                },
+                {
+                  "name": "Black Light Mini Golf Berlin",
+                  "types": [
+                    "tourist_attraction",
+                    "amusement_park",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.6,
+                  "user_ratings_total": 1137,
+                  "vicinity": "im Görlitzer Park, Görlitzer Straße 1/Haus 1, Berlin",
+                  "place_id": "ChIJjc74IU1OqEcR9uDoOKSh3bI",
+                  "location": {
+                    "lat": 52.4983833,
+                    "lng": 13.4336923
+                  }
+                },
+                {
+                  "name": "The Wall Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 1986,
+                  "vicinity": "Mühlenstraße 78-80, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJO8pczFFOqEcRLvo9iiZJnM4",
+                  "location": {
+                    "lat": 52.5026556,
+                    "lng": 13.4452639
+                  }
+                },
+                {
+                  "name": "Spreebalkon",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 82,
+                  "vicinity": "Brommystraße 1, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJxYmuwUhOqEcRFGVJFD9I06U",
+                  "location": {
+                    "lat": 52.50533749999999,
+                    "lng": 13.436038
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "The Wall Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 1986,
+                  "vicinity": "Mühlenstraße 78-80, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJO8pczFFOqEcRLvo9iiZJnM4",
+                  "location": {
+                    "lat": 52.5026556,
+                    "lng": 13.4452639
+                  }
+                },
+                {
+                  "name": "Murales di Nomad",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Oppelner Straße 3, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJY9Oj089PqEcRQmmhH8odZGk",
+                  "location": {
+                    "lat": 52.5000861,
+                    "lng": 13.4407646
+                  }
+                },
+                {
+                  "name": "Cuongs Creative Market",
+                  "types": [
+                    "art_gallery",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 71,
+                  "vicinity": "Wrangelstraße 76, Berlin",
+                  "place_id": "ChIJtw6u-xVPqEcR5roDeOeHi24",
+                  "location": {
+                    "lat": 52.49807349999999,
+                    "lng": 13.443484
+                  }
+                },
+                {
+                  "name": "ideal – Motorräder & Seitenwagen GmbH",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 59,
+                  "vicinity": "Köpenicker Straße 8, Berlin",
+                  "place_id": "ChIJJ2gICRxPqEcR-qFAEcmi1hw",
+                  "location": {
+                    "lat": 52.50273000000001,
+                    "lng": 13.43929
+                  }
+                },
+                {
+                  "name": "Zweiradmuseum",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 15,
+                  "vicinity": "Köpenicker Straße 8, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJS9XRn3ZPqEcRBcUruMFuxG0",
+                  "location": {
+                    "lat": 52.50273000000001,
+                    "lng": 13.43929
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Michelberger Hotel",
+                  "types": [
+                    "cafe",
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2500,
+                  "vicinity": "Warschauer Straße 39-40, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJGcZbblBOqEcR5cTGTkNfGlw",
+                  "location": {
+                    "lat": 52.5045667,
+                    "lng": 13.4478541
+                  }
+                },
+                {
+                  "name": "Burgermeister Schlesisches Tor",
+                  "types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 16732,
+                  "vicinity": "U1 Schlesisches Tor, Oberbaumstraße 8, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJ2Uh9Bk5OqEcREoy9N1LxImw",
+                  "location": {
+                    "lat": 52.501092,
+                    "lng": 13.4424249
+                  }
+                },
+                {
+                  "name": "Urban Spree",
+                  "types": [
+                    "bar",
+                    "art_gallery",
+                    "tourist_attraction",
+                    "book_store",
+                    "restaurant",
+                    "point_of_interest",
+                    "store",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2929,
+                  "vicinity": "Revaler Straße 99, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJlbANTVpOqEcRmYuZzOrj6M8",
+                  "location": {
+                    "lat": 52.507828,
+                    "lng": 13.4516096
+                  }
+                },
+                {
+                  "name": "Restaurant Jolesch",
+                  "types": [
+                    "liquor_store",
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "store",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1703,
+                  "vicinity": "Muskauer Straße 1, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJkUK660tOqEcRuCui4omy28c",
+                  "location": {
+                    "lat": 52.500732,
+                    "lng": 13.4340017
+                  }
+                },
+                {
+                  "name": "Cassiopeia",
+                  "types": [
+                    "night_club",
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 2926,
+                  "vicinity": "Revaler Straße 99, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJsdkMp1lOqEcRnfv0Hibk2JI",
+                  "location": {
+                    "lat": 52.5072762,
+                    "lng": 13.4547738
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Görlitzer Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 6736,
+                  "vicinity": "Görlitzer Straße 3, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJZ7MZiExPqEcRG1LUMlDEr-0",
+                  "location": {
+                    "lat": 52.49659279999999,
+                    "lng": 13.4374489
+                  }
+                },
+                {
+                  "name": "Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 5,
+                  "vicinity": "Warschauer Straße 48, Berlin",
+                  "place_id": "ChIJwWlFM41PqEcRDLqniyuwsuo",
+                  "location": {
+                    "lat": 52.5032636,
+                    "lng": 13.4465431
+                  }
+                },
+                {
+                  "name": "Uferweg",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 22,
+                  "vicinity": "Unnamed Road, Berlin",
+                  "place_id": "ChIJdYpmkhdPqEcRs3stOOt9Xas",
+                  "location": {
+                    "lat": 52.5034248,
+                    "lng": 13.4432014
+                  }
+                },
+                {
+                  "name": "Hundeplatz",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 1,
+                  "user_ratings_total": 1,
+                  "vicinity": "Stralauer Allee, Berlin",
+                  "place_id": "ChIJkf_fWgBPqEcRMch5FEPymMw",
+                  "location": {
+                    "lat": 52.5021058,
+                    "lng": 13.450093
+                  }
+                },
+                {
+                  "name": "Spreespeicher Promenade",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Stralauer Allee 3, Berlin",
+                  "place_id": "ChIJkYbuQgBPqEcRW0GhgYYvyAQ",
+                  "location": {
+                    "lat": 52.5008365,
+                    "lng": 13.4507773
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Ev. Kirchengemeinde Boxhagen-Stralau, Zwinglikirche",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 3,
+                  "vicinity": "Rudolfstraße 14, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJg2tXaVdOqEcRJn1WkQbmiZo",
+                  "location": {
+                    "lat": 52.5036028,
+                    "lng": 13.454726
+                  }
+                },
+                {
+                  "name": "Mosaik Berlin - Kirche für dich",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 54,
+                  "vicinity": "Magazin in der Heeresbäckerei, Köpenicker Straße 16, Berlin",
+                  "place_id": "ChIJ08yhR9RRqEcRyv6llhXrA2g",
+                  "location": {
+                    "lat": 52.5048086,
+                    "lng": 13.4349707
+                  }
+                },
+                {
+                  "name": "Kath. Gemeinde St. Marien Liebfrauen",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 52,
+                  "vicinity": "Wrangelstraße 50, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJv0JknohaqEcR5gs_VPhEO0U",
+                  "location": {
+                    "lat": 52.4987889,
+                    "lng": 13.441209
+                  }
+                },
+                {
+                  "name": "Taborkirche",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 29,
+                  "vicinity": "Taborstraße 17, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJp-jsGlNOqEcRbDK-NMmXvrw",
+                  "location": {
+                    "lat": 52.4969304,
+                    "lng": 13.4460112
+                  }
+                },
+                {
+                  "name": "Emmaus-Kirche - Ev. Kirchengemeinde Kreuzberg",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 106,
+                  "vicinity": "Lausitzer Platz 8 A, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJkwjgUkpOqEcRMwzQI0yUVJM",
+                  "location": {
+                    "lat": 52.49983,
+                    "lng": 13.43106
+                  }
+                },
+                {
+                  "name": "Fatih Mosque",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 161,
+                  "vicinity": "Falckensteinstraße 12, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJGZMpgU1OqEcRpaiub8_5gLE",
+                  "location": {
+                    "lat": 52.4982439,
+                    "lng": 13.4418582
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "East Side Gallery",
+                  "types": [
+                    "art_gallery",
+                    "landmark",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 63178,
+                  "vicinity": "Mühlenstraße, Berlin",
+                  "place_id": "ChIJS6_t9aZHqEcRGCiRSnvpm94",
+                  "location": {
+                    "lat": 52.50502239999999,
+                    "lng": 13.4396953
+                  }
+                },
+                {
+                  "name": "Urban Spree",
+                  "types": [
+                    "bar",
+                    "art_gallery",
+                    "tourist_attraction",
+                    "book_store",
+                    "restaurant",
+                    "point_of_interest",
+                    "store",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2929,
+                  "vicinity": "Revaler Straße 99, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJlbANTVpOqEcRmYuZzOrj6M8",
+                  "location": {
+                    "lat": 52.507828,
+                    "lng": 13.4516096
+                  }
+                },
+                {
+                  "name": "Wander Atelier ~ Jeanne Fredac",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 6,
+                  "vicinity": "Falckensteinstraße 45, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJO5ZNHFJOqEcR0FrNEPFFja8",
+                  "location": {
+                    "lat": 52.5003201,
+                    "lng": 13.4443125
+                  }
+                },
+                {
+                  "name": "TAPE OVER // Tape Art Crew from Berlin",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Cuvrystraße 16, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJW5WNXlJOqEcRIi-eQywXhw4",
+                  "location": {
+                    "lat": 52.4981801,
+                    "lng": 13.4439713
+                  }
+                },
+                {
+                  "name": "Friedrichshain Photo Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 73,
+                  "vicinity": "Helsingforser Platz 1, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJVdwTIFtOqEcRSwiDca6AUgU",
+                  "location": {
+                    "lat": 52.5083713,
+                    "lng": 13.448468
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Berlin",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Berlin",
+                  "place_id": "ChIJAVkDPzdOqEcRcDteW0YgIQQ",
+                  "location": {
+                    "lat": 52.52000659999999,
+                    "lng": 13.404954
+                  }
+                },
+                {
+                  "name": "Hotel nhow Berlin",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 5309,
+                  "vicinity": "Stralauer Allee 3, Berlin",
+                  "place_id": "ChIJo94FP1FOqEcRnSmAefiYb6o",
+                  "location": {
+                    "lat": 52.5012788,
+                    "lng": 13.4507934
+                  }
+                },
+                {
+                  "name": "Michelberger Hotel",
+                  "types": [
+                    "cafe",
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2500,
+                  "vicinity": "Warschauer Straße 39-40, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJGcZbblBOqEcR5cTGTkNfGlw",
+                  "location": {
+                    "lat": 52.5045667,
+                    "lng": 13.4478541
+                  }
+                },
+                {
+                  "name": "Hotel Klassik Berlin",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 443,
+                  "vicinity": "Revaler Straße 6, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJA36_pVtOqEcRLVgE63euEKo",
+                  "location": {
+                    "lat": 52.50863,
+                    "lng": 13.45166
+                  }
+                },
+                {
+                  "name": "Industriepalast Hostel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 2560,
+                  "vicinity": "Warschauer Straße 43, Berlin",
+                  "place_id": "ChIJP3g2QlBOqEcRY58S9DdsjOQ",
+                  "location": {
+                    "lat": 52.50407939999999,
+                    "lng": 13.4474454
+                  }
+                }
+              ]
+            },
+            "total_places_found": 36,
+            "photo_timestamp": "2024:10:10 15:44:37",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 1.3614587783813477
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/101.jpg"
+    },
+    {
+      "image_filename": "101.jpg",
+      "timestamp": "2026-01-28T00:47:38.266869",
+      "processing_time_seconds": 60.016128,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Oberbaum Bridge, Berlin, Germany",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive twin towers and red brick construction are characteristic of the Oberbaum Bridge in Berlin. Its Neo-Gothic style and historical significance make it recognizable.",
+            "detailed_description": "The image shows the Oberbaum Bridge, a prominent landmark in Berlin, Germany. This bridge is known for its distinctive Neo-Gothic architecture, featuring twin towers and a series of arches. Constructed primarily from red brick, it serves as both a road and pedestrian bridge over the River Spree. The bridge is a symbol of Berlin's reunification and is a popular tourist attraction.",
+            "identification": {
+              "primary": [
+                "Oberbaum Bridge"
+              ],
+              "location": "Berlin, Germany",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Oberbaum Bridge",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Neo-Gothic",
+              "19th_century",
+              "brick",
+              "Berlin",
+              "bridge"
+            ],
+            "location": "Berlin, Germany",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Oberbaum Bridge\"],\n        \"location\": \"Berlin, Germany\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Oberbaum Bridge\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Neo-Gothic\", \"19th_century\", \"brick\", \"Berlin\", \"bridge\"],\n    \"description\": \"The image shows the Oberbaum Bridge, a prominent landmark in Berlin, Germany. This bridge is known for its distinctive Neo-Gothic architecture, featuring twin towers and a series of arches. Constructed primarily from red brick, it serves as both a road and pedestrian bridge over the River Spree. The bridge is a symbol of Berlin's reunification and is a popular tourist attraction.\",\n    \"reasoning\": \"The distinctive twin towers and red brick construction are characteristic of the Oberbaum Bridge in Berlin. Its Neo-Gothic style and historical significance make it recognizable.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 15.078752040863037
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Oberbaum Bridge, Berlin, Germany",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the Oberbaum Bridge, known for its Gothic Revival style, cylindrical towers, and conical roofs. Search results strongly support this identification with high confidence scores, and the urban setting with modern buildings aligns with Berlin.",
+            "identification": {
+              "primary": [
+                "Oberbaum Bridge"
+              ],
+              "location": "Berlin, Germany",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Oberbaum Bridge",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Cylindrical towers with conical roofs",
+                "type": "architectural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "Gothic Revival",
+              "19th-century",
+              "brick",
+              "Berlin",
+              "bridge"
+            ],
+            "sources_used": [
+              "en.wikipedia.org",
+              "tile.loc.gov"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([tile.loc.gov]())",
+              "*URL*: ([pa.gov]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 3,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a striking brick bridge with two prominent towers. The bridge features a series of rounded arches and is constructed primarily from red brick, showcasing a Gothic Revival architectural style. Each tower is cylindrical with a conical roof, adorned with decorative elements such as small turrets and pointed spires. The towers have narrow windows and are topped with sculptures, adding to their ornate appearance. The bridge spans across a road, with vehicles parked along the side, i",
+            "description": "The image depicts a striking brick bridge with two prominent towers. The bridge features a series of rounded arches and is constructed primarily from red brick, showcasing a Gothic Revival architectural style. Each tower is cylindrical with a conical roof, adorned with decorative elements such as small turrets and pointed spires. The towers have narrow windows and are topped with sculptures, adding to their ornate appearance. The bridge spans across a road, with vehicles parked along the side, i",
+            "architectural_style": "Gothic Revival",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 44.934635162353516
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Car",
+          "confidence": 0.928712785243988,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "object",
+            "all_candidates": [
+              {
+                "source": "object",
+                "name": "Car",
+                "score": 0.928712785243988
+              },
+              {
+                "source": "label",
+                "name": "Steeple",
+                "score": 0.9090189933776855
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.8993796110153198
+              },
+              {
+                "source": "label",
+                "name": "Spire",
+                "score": 0.8986108899116516
+              },
+              {
+                "source": "object",
+                "name": "Van",
+                "score": 0.8322128653526306
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "ArchitectureM RIBA Chartered Practice",
+                "score": 0.3052000105381012
+              },
+              {
+                "name": "Architecture",
+                "score": 0.24896490573883057
+              }
+            ],
+            "objects": [
+              {
+                "name": "Car",
+                "score": 0.928712785243988
+              },
+              {
+                "name": "Person",
+                "score": 0.8993796110153198
+              },
+              {
+                "name": "Van",
+                "score": 0.8322128653526306
+              },
+              {
+                "name": "Car",
+                "score": 0.7281694412231445
+              },
+              {
+                "name": "Car",
+                "score": 0.722357988357544
+              }
+            ],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.9888472557067871
+              },
+              {
+                "name": "Steeple",
+                "score": 0.9090189933776855
+              },
+              {
+                "name": "Spire",
+                "score": 0.8986108899116516
+              },
+              {
+                "name": "Turret",
+                "score": 0.8270778656005859
+              },
+              {
+                "name": "Family car",
+                "score": 0.7923597097396851
+              }
+            ],
+            "processing_time_seconds": 17.515421152114868
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/101.jpg"
+    }
+  ]
+}

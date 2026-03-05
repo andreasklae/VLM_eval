@@ -1,0 +1,197 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "4.jpg",
+      "timestamp": "2026-01-28T05:37:16.219676",
+      "processing_time_seconds": 70.281524,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Hohensalzburg Fortress, Salzburg Cathedral, Salzburg, Austria",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The fortress is a well-known landmark in Salzburg, identifiable by its distinctive hilltop position and medieval architecture. The cathedral's Baroque style and dome are characteristic of Salzburg's historic architecture.",
+            "detailed_description": "The image shows the Hohensalzburg Fortress, a large medieval fortress located on a hilltop, overlooking the city of Salzburg. It is characterized by its robust stone construction and fortified walls. Below the fortress, the Salzburg Cathedral is visible, featuring Baroque architecture with a prominent dome and ornate facade. The cityscape includes traditional European buildings with pastel facades.",
+            "identification": {
+              "primary": [
+                "Hohensalzburg Fortress",
+                "Salzburg Cathedral"
+              ],
+              "location": "Salzburg, Austria",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Hohensalzburg Fortress",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Salzburg Cathedral",
+                "type": "landmark",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "Baroque",
+              "Medieval",
+              "stone",
+              "Salzburg",
+              "landmark"
+            ],
+            "location": "Salzburg, Austria",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Hohensalzburg Fortress\", \"Salzburg Cathedral\"],\n        \"location\": \"Salzburg, Austria\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Hohensalzburg Fortress\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Salzburg Cathedral\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.90\n        }\n    ],\n    \"tags\": [\"Baroque\", \"Medieval\", \"stone\", \"Salzburg\", \"landmark\"],\n    \"description\": \"The image shows the Hohensalzburg Fortress, a large medieval fortress located on a hilltop, overlooking the city of Salzburg. It is characterized by its robust stone construction and fortified walls. Below the fortress, the Salzburg Cathedral is visible, featuring Baroque architecture with a prominent dome and ornate facade. The cityscape includes traditional European buildings with pastel facades.\",\n    \"reasoning\": \"The fortress is a well-known landmark in Salzburg, identifiable by its distinctive hilltop position and medieval architecture. The cathedral's Baroque style and dome are characteristic of Salzburg's historic architecture.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 10.774343967437744
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a cityscape dominated by a large fortress situated on a hill, overlooking a collection of buildings below. The fortress is characterized by its robust stone construction, featuring multiple towers and a crenellated parapet, indicative of medieval military architecture. The fortress appears to be built from light-colored stone, giving it a prominent presence against the darker hill. Below the fortress, the cityscape includes several notable buildings. A large dome, likely part o",
+            "description": "The image depicts a cityscape dominated by a large fortress situated on a hill, overlooking a collection of buildings below. The fortress is characterized by its robust stone construction, featuring multiple towers and a crenellated parapet, indicative of medieval military architecture. The fortress appears to be built from light-colored stone, giving it a prominent presence against the darker hill. Below the fortress, the cityscape includes several notable buildings. A large dome, likely part o",
+            "architectural_style": "Medieval for the fortress, Baroque for the dome",
+            "search_backends_used": [],
+            "processing_time_seconds": 59.50493907928467
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Mozart Residence (47.8026, 13.0439)",
+          "confidence": 0.6445337533950806,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Mozart Residence",
+            "coordinates": {
+              "latitude": 47.8026282,
+              "longitude": 13.043867899999999
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 3626,
+                "y": 0
+              },
+              {
+                "x": 3626,
+                "y": 2432
+              },
+              {
+                "x": 0,
+                "y": 2432
+              }
+            ],
+            "context_labels": [
+              "Building",
+              "City",
+              "Urban area",
+              "Town",
+              "Roof"
+            ],
+            "context_objects": [
+              "Building",
+              "Building",
+              "Building"
+            ],
+            "web_entities": [
+              {
+                "name": "Middle Ages",
+                "score": 0.48315000534057617
+              },
+              {
+                "name": "Local government",
+                "score": 0.42160001397132874
+              },
+              {
+                "name": "Medieval architecture",
+                "score": 0.41504862904548645
+              },
+              {
+                "name": "Architecture",
+                "score": 0.40209999680519104
+              },
+              {
+                "name": "Town hall",
+                "score": 0.3346000015735626
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Mozart Residence",
+                "score": 0.6445337533950806,
+                "location": {
+                  "lat": 47.8026282,
+                  "lng": 13.043867899999999
+                }
+              },
+              {
+                "name": "Fortress Hohensalzburg",
+                "score": 0.5863837003707886,
+                "location": {
+                  "lat": 47.794948299999994,
+                  "lng": 13.0476583
+                }
+              },
+              {
+                "name": "Café Bazar",
+                "score": 0.5862195491790771,
+                "location": {
+                  "lat": 47.8018,
+                  "lng": 13.043777799999999
+                }
+              }
+            ],
+            "processing_time_seconds": 26.586813926696777
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/4.jpg"
+    }
+  ]
+}

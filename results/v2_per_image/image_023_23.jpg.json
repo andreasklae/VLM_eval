@@ -1,0 +1,1152 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "23.jpg",
+      "timestamp": "2026-01-28T05:03:37.599466",
+      "processing_time_seconds": 53.753644,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 40.75855,
+        "gps_longitude": -73.985325,
+        "location": {
+          "formatted_address": "W. 46th St. &, 7th Ave, New York, NY 10036, USA",
+          "city": "New York",
+          "county": "New York County",
+          "country": "United States"
+        },
+        "datetime_original": "2019:09:30 20:03:45",
+        "camera_make": "Xiaomi",
+        "camera_model": "Mi MIX 3"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Times Square, New York, United States",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of numerous digital billboards, neon lights, and the recognizable architecture of Times Square, along with the location metadata, confirm the identification.",
+            "detailed_description": "The image depicts Times Square, a major commercial and tourist hub in New York City, known for its bright neon lights and large digital billboards. Prominent buildings include One Times Square, which is famous for the New Year's Eve ball drop. The area is bustling with people and surrounded by tall skyscrapers, including the Marriott Marquis and various retail stores.",
+            "identification": {
+              "primary": [
+                "Times Square"
+              ],
+              "location": "New York, United States",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Times Square",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "One Times Square",
+                "type": "building",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "neon_lights",
+              "advertisements",
+              "urban",
+              "commercial",
+              "New_York"
+            ],
+            "location": "New York, United States",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Times Square\"],\n        \"location\": \"New York, United States\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Times Square\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"One Times Square\",\n            \"type\": \"building\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"neon_lights\", \"advertisements\", \"urban\", \"commercial\", \"New_York\"],\n    \"description\": \"The image depicts Times Square, a major commercial and tourist hub in New York City, known for its bright neon lights and large digital billboards. Prominent buildings include One Times Square, which is famous for the New Year's Eve ball drop. The area is bustling with people and surrounded by tall skyscrapers, including the Marriott Marquis and various retail stores.\",\n    \"reasoning\": \"The presence of numerous digital billboards, neon lights, and the recognizable architecture of Times Square, along with the location metadata, confirm the identification.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 40.75855,
+              "longitude": -73.985325
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "W. 46th St. &, 7th Ave, New York, NY 10036, USA",
+              "city": "New York",
+              "county": "New York County",
+              "country": "United States"
+            },
+            "photo_timestamp": "2019:09:30 20:03:45",
+            "camera": {
+              "make": "Xiaomi",
+              "model": "Mi MIX 3"
+            },
+            "processing_time_seconds": 7.198786020278931
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image captures a vibrant and bustling scene in Times Square, New York City, at night. Dominating the view are several towering skyscrapers adorned with bright, colorful advertisements and digital billboards. The most prominent building features a large vertical sign for H&M, with its logo illuminated in pink at the top of the structure. Adjacent to it is another tall building with a spire, also lit in pink, adding to the lively atmosphere. To the right, the Marriott Marquis is visible, showc",
+            "description": "The image captures a vibrant and bustling scene in Times Square, New York City, at night. Dominating the view are several towering skyscrapers adorned with bright, colorful advertisements and digital billboards. The most prominent building features a large vertical sign for H&M, with its logo illuminated in pink at the top of the structure. Adjacent to it is another tall building with a spire, also lit in pink, adding to the lively atmosphere. To the right, the Marriott Marquis is visible, showc",
+            "architectural_style": "Contemporary",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 40.75855,
+              "longitude": -73.985325
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "W. 46th St. &, 7th Ave, New York, NY 10036, USA",
+              "city": "New York",
+              "county": "New York County",
+              "country": "United States"
+            },
+            "photo_timestamp": "2019:09:30 20:03:45",
+            "camera": {
+              "make": "Xiaomi",
+              "model": "Mi MIX 3"
+            },
+            "processing_time_seconds": 45.563953161239624
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Times Square (40.7580, -73.9855)",
+          "confidence": 0.47232261300086975,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Times Square",
+            "coordinates": {
+              "latitude": 40.7579747,
+              "longitude": -73.98554260000002
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 4032
+              },
+              {
+                "x": 0,
+                "y": 4032
+              }
+            ],
+            "context_labels": [
+              "Urban area",
+              "Skyscraper",
+              "Building",
+              "City",
+              "Metropolitan area"
+            ],
+            "context_objects": [
+              "Person",
+              "Person",
+              "Person"
+            ],
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.574000895023346
+              },
+              {
+                "name": "Apartment",
+                "score": 0.46230944991111755
+              },
+              {
+                "name": "Tower",
+                "score": 0.42882636189460754
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.427119642496109
+              },
+              {
+                "name": "Building",
+                "score": 0.3425999879837036
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Times Square",
+                "score": 0.47232261300086975,
+                "location": {
+                  "lat": 40.7579747,
+                  "lng": -73.98554260000002
+                }
+              },
+              {
+                "name": "Pongsri Thai Restaurant",
+                "score": 0.45132625102996826,
+                "location": {
+                  "lat": 40.760728,
+                  "lng": -73.9865143
+                }
+              },
+              {
+                "name": "Hard Rock Cafe",
+                "score": 0.4239383339881897,
+                "location": {
+                  "lat": 40.7570352,
+                  "lng": -73.9866112
+                }
+              }
+            ],
+            "processing_time_seconds": 16.425318002700806
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "New York, New York County, United States",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "New York, New York County, United States",
+            "coordinates": {
+              "latitude": 40.75855,
+              "longitude": -73.985325
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Times Square",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 238200,
+                  "vicinity": "Manhattan",
+                  "place_id": "ChIJmQJIxlVYwokRLgeuocVOGVU",
+                  "location": {
+                    "lat": 40.7579747,
+                    "lng": -73.9855426
+                  }
+                },
+                {
+                  "name": "Radio City Music Hall",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 27143,
+                  "vicinity": "1260 6th Avenue, New York",
+                  "place_id": "ChIJPS8b1vhYwokRldqq2YHmxJI",
+                  "location": {
+                    "lat": 40.75997599999999,
+                    "lng": -73.9799772
+                  }
+                },
+                {
+                  "name": "Rockefeller Center",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 198850,
+                  "vicinity": "45 Rockefeller Plaza, New York",
+                  "place_id": "ChIJ9U1mz_5YwokRosza1aAk0jM",
+                  "location": {
+                    "lat": 40.7587402,
+                    "lng": -73.9786736
+                  }
+                },
+                {
+                  "name": "The Museum of Modern Art",
+                  "types": [
+                    "art_gallery",
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 58017,
+                  "vicinity": "11 West 53rd Street, New York",
+                  "place_id": "ChIJKxDbe_lYwokRVf__s8CPn-o",
+                  "location": {
+                    "lat": 40.7614327,
+                    "lng": -73.97762159999999
+                  }
+                },
+                {
+                  "name": "Madame Tussauds New York",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 29293,
+                  "vicinity": "234 West 42nd Street, New York",
+                  "place_id": "ChIJ8VOfr1RYwokRhil9_pcMKuc",
+                  "location": {
+                    "lat": 40.7564752,
+                    "lng": -73.9883888
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "The Museum of Modern Art",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 58017,
+                  "vicinity": "11 West 53rd Street, New York",
+                  "place_id": "ChIJKxDbe_lYwokRVf__s8CPn-o",
+                  "location": {
+                    "lat": 40.7614327,
+                    "lng": -73.97762159999999
+                  }
+                },
+                {
+                  "name": "Madame Tussauds New York",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 29293,
+                  "vicinity": "234 West 42nd Street, New York",
+                  "place_id": "ChIJ8VOfr1RYwokRhil9_pcMKuc",
+                  "location": {
+                    "lat": 40.7564752,
+                    "lng": -73.9883888
+                  }
+                },
+                {
+                  "name": "The Paley Center For Media NYC",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 624,
+                  "vicinity": "25 West 52nd Street, New York",
+                  "place_id": "ChIJF5e1QvlYwokRcVF6x1CEcQk",
+                  "location": {
+                    "lat": 40.7605642,
+                    "lng": -73.9775578
+                  }
+                },
+                {
+                  "name": "New York Transit Museum Gallery & Store",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "museum",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 456,
+                  "vicinity": "89 East 42nd Street, New York",
+                  "place_id": "ChIJPfEQoU5awokRNdBwGAHP83E",
+                  "location": {
+                    "lat": 40.7531532,
+                    "lng": -73.97797589999999
+                  }
+                },
+                {
+                  "name": "Cafe 2",
+                  "types": [
+                    "cafe",
+                    "museum",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.6,
+                  "user_ratings_total": 170,
+                  "vicinity": "11 West 53rd Street, New York",
+                  "place_id": "ChIJT-fae_lYwokRMRwwteCl448",
+                  "location": {
+                    "lat": 40.76112029999999,
+                    "lng": -73.9769396
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Connolly's",
+                  "types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 5039,
+                  "vicinity": "121 West 45th Street, New York",
+                  "place_id": "ChIJAS6GeVVYwokRPfg8xt4nH-I",
+                  "location": {
+                    "lat": 40.7573681,
+                    "lng": -73.9835798
+                  }
+                },
+                {
+                  "name": "Carmine's - Time Square",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 18413,
+                  "vicinity": "200 West 44th Street, New York",
+                  "place_id": "ChIJR9So-lRYwokRX1xEjA0rChA",
+                  "location": {
+                    "lat": 40.757498,
+                    "lng": -73.986654
+                  }
+                },
+                {
+                  "name": "Bryant Park Grill",
+                  "types": [
+                    "restaurant",
+                    "bar",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 3270,
+                  "vicinity": "25 West 40th Street, New York",
+                  "place_id": "ChIJqTF1eABZwokR3ZMQ2obIW4w",
+                  "location": {
+                    "lat": 40.7531999,
+                    "lng": -73.982957
+                  }
+                },
+                {
+                  "name": "Blue Fin",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 1203,
+                  "vicinity": "1567 Broadway, New York",
+                  "place_id": "ChIJzz-PyFVYwokRwp5z0KduYls",
+                  "location": {
+                    "lat": 40.75937589999999,
+                    "lng": -73.98532519999999
+                  }
+                },
+                {
+                  "name": "Shake Shack Theater District",
+                  "types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 14852,
+                  "vicinity": "691 8th Avenue, New York",
+                  "place_id": "ChIJhXAgf1NYwokRBzdqc2TRX_I",
+                  "location": {
+                    "lat": 40.7584105,
+                    "lng": -73.98921899999999
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Paley Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 868,
+                  "vicinity": "3 East 53rd Street, New York",
+                  "place_id": "ChIJcUYGvftYwokRXvGL1B_cN2o",
+                  "location": {
+                    "lat": 40.7602157,
+                    "lng": -73.9751349
+                  }
+                },
+                {
+                  "name": "Bryant Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 105284,
+                  "vicinity": "New York",
+                  "place_id": "ChIJvbGg56pZwokRp_E3JbivnLQ",
+                  "location": {
+                    "lat": 40.7535367,
+                    "lng": -73.9829529
+                  }
+                },
+                {
+                  "name": "I D & Allc",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "295 Madison Avenue, New York",
+                  "place_id": "ChIJywfGBQFZwokRPVfXK5F6LAs",
+                  "location": {
+                    "lat": 40.7517291,
+                    "lng": -73.97949229999999
+                  }
+                },
+                {
+                  "name": "Hell's Kitchen Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 650,
+                  "vicinity": "10th Avenue, New York",
+                  "place_id": "ChIJHQSnvFFYwokRG2WLe6w6Sxs",
+                  "location": {
+                    "lat": 40.7629601,
+                    "lng": -73.9925514
+                  }
+                },
+                {
+                  "name": "Father Duffy Square",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 2996,
+                  "vicinity": "7th Ave &, West 47th Street, New York",
+                  "place_id": "ChIJk-utwVVYwokRx--LhLcP2cA",
+                  "location": {
+                    "lat": 40.75900769999999,
+                    "lng": -73.9850222
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "St. Patrick's Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 41129,
+                  "vicinity": "5th Avenue, New York",
+                  "place_id": "ChIJUW4vEPxYwokRW6o24DU0YIg",
+                  "location": {
+                    "lat": 40.7586117,
+                    "lng": -73.9761953
+                  }
+                },
+                {
+                  "name": "Times Square Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1451,
+                  "vicinity": "237 West 51st Street, New York",
+                  "place_id": "ChIJVUGHS1ZYwokRx39CH6zNL5M",
+                  "location": {
+                    "lat": 40.7624398,
+                    "lng": -73.9841342
+                  }
+                },
+                {
+                  "name": "United Spiritualists Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "244 West 54th Street #1210, New York",
+                  "place_id": "ChIJBeQnDlhYwokRprYsuIMt90Q",
+                  "location": {
+                    "lat": 40.76417669999999,
+                    "lng": -73.9833744
+                  }
+                },
+                {
+                  "name": "St. Thomas Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 1053,
+                  "vicinity": "1 West 53rd Street, New York",
+                  "place_id": "ChIJQxcQwftYwokRKy-FqagoB7g",
+                  "location": {
+                    "lat": 40.7607327,
+                    "lng": -73.9758992
+                  }
+                },
+                {
+                  "name": "Descubriendo El Siglo/ 21 Discovering 21 Century, Inc.",
+                  "types": [
+                    "book_store",
+                    "church",
+                    "place_of_worship",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 6,
+                  "vicinity": "493 9th Avenue suite 2A, New York",
+                  "place_id": "ChIJH-z7PK1ZwokRws-tWnnmuJg",
+                  "location": {
+                    "lat": 40.75567169999999,
+                    "lng": -73.9948723
+                  }
+                },
+                {
+                  "name": "Masjid Awliya of Allah",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 393,
+                  "vicinity": "327 West 36th Street, New York",
+                  "place_id": "ChIJFeAUdq1ZwokRAfbM6aIysCc",
+                  "location": {
+                    "lat": 40.7542225,
+                    "lng": -73.9937345
+                  }
+                },
+                {
+                  "name": "beth chabbad",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "233 West 49th Street, New York",
+                  "place_id": "ChIJGQFiVwBZwokRX1NgtXVzLik",
+                  "location": {
+                    "lat": 40.76143769999999,
+                    "lng": -73.9855281
+                  }
+                },
+                {
+                  "name": "Chabad of the Diamond District",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 9,
+                  "vicinity": "31 West 46th Street 3rd floor, New York",
+                  "place_id": "ChIJaReSqv9YwokRFCTZ-ihNQnQ",
+                  "location": {
+                    "lat": 40.75684429999999,
+                    "lng": -73.9801852
+                  }
+                },
+                {
+                  "name": "Beit Midrash Beth Gavriel",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 6,
+                  "vicinity": "20 West 47th Street suite 204, New York",
+                  "place_id": "ChIJR0GWLf9ZwokRgpM1KktHf-s",
+                  "location": {
+                    "lat": 40.7569548,
+                    "lng": -73.9798235
+                  }
+                },
+                {
+                  "name": "HNB HAPPY MEAL",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "New York",
+                  "place_id": "ChIJablmBQBZwokRACIwTDLuQTQ",
+                  "location": {
+                    "lat": 40.758177,
+                    "lng": -73.9926156
+                  }
+                },
+                {
+                  "name": "Chabad Torah Center",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 42,
+                  "vicinity": "393 5th Avenue, New York",
+                  "place_id": "ChIJpavGt6lZwokRPUGPlFX8U3k",
+                  "location": {
+                    "lat": 40.7499348,
+                    "lng": -73.98328939999999
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "The Museum of Modern Art",
+                  "types": [
+                    "art_gallery",
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 58017,
+                  "vicinity": "11 West 53rd Street, New York",
+                  "place_id": "ChIJKxDbe_lYwokRVf__s8CPn-o",
+                  "location": {
+                    "lat": 40.7614327,
+                    "lng": -73.97762159999999
+                  }
+                },
+                {
+                  "name": "Tower 49 Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 50,
+                  "vicinity": "12 East 49th Street, New York",
+                  "place_id": "ChIJM2o4JPxYwokRof90Wc157Dg",
+                  "location": {
+                    "lat": 40.75724949999999,
+                    "lng": -73.9769973
+                  }
+                },
+                {
+                  "name": "The Art Students League of New York",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 178,
+                  "vicinity": "215 West 57th Street Suite 1, New York",
+                  "place_id": "ChIJLfifovdYwokR1ddIX26VPwQ",
+                  "location": {
+                    "lat": 40.7661038,
+                    "lng": -73.9806712
+                  }
+                },
+                {
+                  "name": "Contemporary Art Partners LLC",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1,
+                  "vicinity": "1412 Broadway Fl 21, New York",
+                  "place_id": "ChIJddPYBqxZwokRf83sVnAxYzY",
+                  "location": {
+                    "lat": 40.7536186,
+                    "lng": -73.9865552
+                  }
+                },
+                {
+                  "name": "Austrian Cultural Forum New York",
+                  "types": [
+                    "art_gallery",
+                    "library",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 38,
+                  "vicinity": "11 East 52nd Street, New York",
+                  "place_id": "ChIJ9_r7kftYwokRJWPGDd1glgA",
+                  "location": {
+                    "lat": 40.75957200000001,
+                    "lng": -73.975261
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "New York",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "New York",
+                  "place_id": "ChIJOwg_06VPwokRYv534QaPC8g",
+                  "location": {
+                    "lat": 40.7127753,
+                    "lng": -74.0059728
+                  }
+                },
+                {
+                  "name": "New York Marriott Marquis",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 15772,
+                  "vicinity": "1535 Broadway, New York",
+                  "place_id": "ChIJiVXoAFVYwokREqPijh-d8xg",
+                  "location": {
+                    "lat": 40.7585862,
+                    "lng": -73.98582019999999
+                  }
+                },
+                {
+                  "name": "Times Square",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 238200,
+                  "vicinity": "Manhattan",
+                  "place_id": "ChIJmQJIxlVYwokRLgeuocVOGVU",
+                  "location": {
+                    "lat": 40.7579747,
+                    "lng": -73.9855426
+                  }
+                },
+                {
+                  "name": "The Muse New York",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1376,
+                  "vicinity": "130 West 46th Street, New York",
+                  "place_id": "ChIJCSBig1VYwokRGLqXYWMv74w",
+                  "location": {
+                    "lat": 40.7577985,
+                    "lng": -73.9837623
+                  }
+                },
+                {
+                  "name": "Millennium Hotel Broadway Times Square",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.6,
+                  "user_ratings_total": 6514,
+                  "vicinity": "145 West 44th Street, New York",
+                  "place_id": "ChIJZzUSDFVYwokR4lM11cyBpxE",
+                  "location": {
+                    "lat": 40.7571942,
+                    "lng": -73.98466549999999
+                  }
+                }
+              ]
+            },
+            "total_places_found": 41,
+            "photo_timestamp": "2019:09:30 20:03:45",
+            "camera": {
+              "make": "Xiaomi",
+              "model": "Mi MIX 3"
+            },
+            "processing_time_seconds": 0.641880989074707
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/23.jpg"
+    },
+    {
+      "image_filename": "23.jpg",
+      "timestamp": "2026-01-28T05:04:31.394334",
+      "processing_time_seconds": 51.915107,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Times Square, New York City, USA",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of numerous digital billboards, neon lights, and recognizable buildings such as One Times Square and the Marriott Marquis strongly indicate that this is Times Square in New York City.",
+            "detailed_description": "The image depicts Times Square in New York City, a bustling commercial and tourist hub known for its bright neon lights and large digital billboards. Prominent buildings include One Times Square, recognizable by its electronic displays, and the Marriott Marquis hotel. The area is characterized by its vibrant advertisements and is a popular location for visitors.",
+            "identification": {
+              "primary": [
+                "Times Square"
+              ],
+              "location": "New York City, USA",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Times Square",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "One Times Square",
+                "type": "building",
+                "confidence": 0.85
+              },
+              {
+                "name": "Marriott Marquis",
+                "type": "building",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "neon_lights",
+              "advertisements",
+              "urban",
+              "architecture",
+              "New_York_City"
+            ],
+            "location": "New York City, USA",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Times Square\"],\n        \"location\": \"New York City, USA\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Times Square\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"One Times Square\",\n            \"type\": \"building\",\n            \"confidence\": 0.85\n        },\n        {\n            \"name\": \"Marriott Marquis\",\n            \"type\": \"building\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"neon_lights\", \"advertisements\", \"urban\", \"architecture\", \"New_York_City\"],\n    \"description\": \"The image depicts Times Square in New York City, a bustling commercial and tourist hub known for its bright neon lights and large digital billboards. Prominent buildings include One Times Square, recognizable by its electronic displays, and the Marriott Marquis hotel. The area is characterized by its vibrant advertisements and is a popular location for visitors.\",\n    \"reasoning\": \"The presence of numerous digital billboards, neon lights, and recognizable buildings such as One Times Square and the Marriott Marquis strongly indicate that this is Times Square in New York City.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 9.084244012832642
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image captures a vibrant urban scene at night, characterized by towering skyscrapers and an array of bright, colorful advertisements. The central focus is a bustling city square, likely a famous commercial area known for its illuminated billboards. The buildings are modern, with glass facades reflecting the lights from the advertisements. Prominent among the structures is a tall building with a spire, illuminated in purple, and branded with a large 'H&M' logo. Another building features the '",
+            "description": "The image captures a vibrant urban scene at night, characterized by towering skyscrapers and an array of bright, colorful advertisements. The central focus is a bustling city square, likely a famous commercial area known for its illuminated billboards. The buildings are modern, with glass facades reflecting the lights from the advertisements. Prominent among the structures is a tall building with a spire, illuminated in purple, and branded with a large 'H&M' logo. Another building features the '",
+            "architectural_style": "Modern",
+            "search_backends_used": [],
+            "processing_time_seconds": 42.826252937316895
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Times Square (40.7580, -73.9855)",
+          "confidence": 0.47232261300086975,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Times Square",
+            "coordinates": {
+              "latitude": 40.7579747,
+              "longitude": -73.98554260000002
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 4032
+              },
+              {
+                "x": 0,
+                "y": 4032
+              }
+            ],
+            "context_labels": [
+              "Urban area",
+              "Skyscraper",
+              "Building",
+              "City",
+              "Metropolitan area"
+            ],
+            "context_objects": [
+              "Person",
+              "Person",
+              "Person"
+            ],
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.5757625699043274
+              },
+              {
+                "name": "Apartment",
+                "score": 0.466018944978714
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.4037071168422699
+              },
+              {
+                "name": "Cityscape",
+                "score": 0.3573727309703827
+              },
+              {
+                "name": "Building",
+                "score": 0.33559998869895935
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Times Square",
+                "score": 0.47232261300086975,
+                "location": {
+                  "lat": 40.7579747,
+                  "lng": -73.98554260000002
+                }
+              },
+              {
+                "name": "Pongsri Thai Restaurant",
+                "score": 0.45132625102996826,
+                "location": {
+                  "lat": 40.760728,
+                  "lng": -73.9865143
+                }
+              },
+              {
+                "name": "Hard Rock Cafe",
+                "score": 0.4239383339881897,
+                "location": {
+                  "lat": 40.7570352,
+                  "lng": -73.9866112
+                }
+              }
+            ],
+            "processing_time_seconds": 16.470630884170532
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/23.jpg"
+    }
+  ]
+}

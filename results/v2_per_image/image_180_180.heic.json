@@ -1,0 +1,1104 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "180.heic",
+      "timestamp": "2026-01-28T03:48:41.065382",
+      "processing_time_seconds": 69.187206,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -37.80975833333333,
+        "gps_longitude": 144.9655,
+        "location": {
+          "formatted_address": "328 Swanston St, Melbourne VIC 3000, Australia",
+          "city": "Melbourne",
+          "county": "Melbourne City",
+          "country": "Australia"
+        },
+        "datetime_original": "2025:06:30 15:22:40",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "State Library Victoria, Melbourne, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style, layout, and location metadata strongly suggest this is the State Library Victoria in Melbourne, known for its distinctive reading room.",
+            "detailed_description": "The image shows the interior of the State Library Victoria, specifically the La Trobe Reading Room. This iconic space features a large, domed ceiling with skylights, providing ample natural light. The room is characterized by its symmetrical design, with multiple levels of bookshelves and reading desks arranged in a radial pattern. The architecture is Victorian, with ornate details and a grand, open space that emphasizes the library's historical significance.",
+            "identification": {
+              "primary": [
+                "State Library Victoria"
+              ],
+              "location": "Melbourne, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "State Library Victoria Reading Room",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Victorian_architecture",
+              "library",
+              "reading_room",
+              "Melbourne"
+            ],
+            "location": "Melbourne, Australia",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"State Library Victoria\"],\n        \"location\": \"Melbourne, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"State Library Victoria Reading Room\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Victorian_architecture\", \"library\", \"reading_room\", \"Melbourne\"],\n    \"description\": \"The image shows the interior of the State Library Victoria, specifically the La Trobe Reading Room. This iconic space features a large, domed ceiling with skylights, providing ample natural light. The room is characterized by its symmetrical design, with multiple levels of bookshelves and reading desks arranged in a radial pattern. The architecture is Victorian, with ornate details and a grand, open space that emphasizes the library's historical significance.\",\n    \"reasoning\": \"The architectural style, layout, and location metadata strongly suggest this is the State Library Victoria in Melbourne, known for its distinctive reading room.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": -37.80975833333333,
+              "longitude": 144.9655
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "328 Swanston St, Melbourne VIC 3000, Australia",
+              "city": "Melbourne",
+              "county": "Melbourne City",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:06:30 15:22:40",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 26.62677788734436
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "La Trobe Reading Room, Melbourne, Australia",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description of the grand interior space with a circular layout, domed ceiling, and neoclassical architectural features matches the La Trobe Reading Room. The search results confirm its location in Melbourne and its architectural style, supporting a high confidence identification.",
+            "identification": {
+              "primary": [
+                "La Trobe Reading Room"
+              ],
+              "location": "Melbourne, Australia",
+              "confidence": 1.0
+            },
+            "artifacts": [
+              {
+                "name": "La Trobe Reading Room",
+                "type": "landmark",
+                "confidence": 1.0
+              },
+              {
+                "name": "Green reading lamps",
+                "type": "other",
+                "confidence": 0.95
+              },
+              {
+                "name": "Domed ceiling with skylights",
+                "type": "architectural_feature",
+                "confidence": 0.95
+              },
+              {
+                "name": "Ornate moldings",
+                "type": "architectural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "neoclassical",
+              "architecture",
+              "library",
+              "Melbourne",
+              "reading room"
+            ],
+            "sources_used": [
+              "web"
+            ],
+            "all_candidates": [
+              "**La Trobe Reading Room**: Opened in 1913, this magnificent octagonal domed reading room is six storeys high and can house 32,000 books and 320 readers at its desks. Designed by Norman G. Peebles, it ",
+              "**Redmond Barry Reading Room**: This heritage space features a mezzanine design and a skylit galleried ceiling. Refurbished in 2004, it houses the Library's general nonfiction and journals collections"
+            ],
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 2,
+              "unique_titles": 2,
+              "avg_score": 0.95,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "Few search results (2)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a grand interior space, likely a library or reading room, characterized by its impressive architectural features and layout. The room is circular with a high domed ceiling, featuring large skylights that allow natural light to illuminate the space. The ceiling is supported by robust beams, adding to the structural elegance. The walls are adorned with intricate moldings and decorative elements, showcasing a blend of classical and neoclassical architectural styles. The central ar",
+            "description": "The image depicts a grand interior space, likely a library or reading room, characterized by its impressive architectural features and layout. The room is circular with a high domed ceiling, featuring large skylights that allow natural light to illuminate the space. The ceiling is supported by robust beams, adding to the structural elegance. The walls are adorned with intricate moldings and decorative elements, showcasing a blend of classical and neoclassical architectural styles. The central ar",
+            "architectural_style": "Neoclassical",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": -37.80975833333333,
+              "longitude": 144.9655
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "328 Swanston St, Melbourne VIC 3000, Australia",
+              "city": "Melbourne",
+              "county": "Melbourne City",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:06:30 15:22:40",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 41.06347966194153
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "State Library Victoria (Melbourne, Australia)",
+          "confidence": 1.887679100036621,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "State Library Victoria",
+            "artist_name": null,
+            "museum_or_location": "Melbourne, Australia",
+            "art_style": null,
+            "art_era": null,
+            "confidence": 1.887679100036621,
+            "web_entities": [
+              {
+                "name": "State Library Victoria",
+                "score": 1.887679100036621
+              },
+              {
+                "name": "Image",
+                "score": 0.41920000314712524
+              },
+              {
+                "name": "",
+                "score": 0.3738779127597809
+              },
+              {
+                "name": "",
+                "score": 0.3733455240726471
+              },
+              {
+                "name": "Therry Street",
+                "score": 0.3589707016944885
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": -37.80975833333333,
+              "longitude": 144.9655
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "328 Swanston St, Melbourne VIC 3000, Australia",
+              "city": "Melbourne",
+              "county": "Melbourne City",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:06:30 15:22:40",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 20.727383136749268
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Melbourne, Melbourne City, Australia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Melbourne, Melbourne City, Australia",
+            "coordinates": {
+              "latitude": -37.80975833333333,
+              "longitude": 144.9655
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Shot Tower Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 153,
+                  "vicinity": "Melbourne Central/211 La Trobe Street, Melbourne",
+                  "place_id": "ChIJx18s48pC1moRPwB-wTgc7kg",
+                  "location": {
+                    "lat": -37.8103869,
+                    "lng": 144.9629577
+                  }
+                },
+                {
+                  "name": "Queen Victoria Market",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 58057,
+                  "vicinity": "Queen Street, Melbourne",
+                  "place_id": "ChIJsVeQNzRd1moRUNQyBXZWBA8",
+                  "location": {
+                    "lat": -37.8075798,
+                    "lng": 144.956785
+                  }
+                },
+                {
+                  "name": "State Library Victoria",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "library",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 4067,
+                  "vicinity": "328 Swanston Street, Melbourne",
+                  "place_id": "ChIJ6RxLlctC1moReA6DqUtnh_E",
+                  "location": {
+                    "lat": -37.8097255,
+                    "lng": 144.9654504
+                  }
+                },
+                {
+                  "name": "Old Melbourne Gaol",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 3628,
+                  "vicinity": "377 Russell Street, Melbourne",
+                  "place_id": "ChIJYUcwasxC1moResepeNQs7Z0",
+                  "location": {
+                    "lat": -37.807832,
+                    "lng": 144.9653171
+                  }
+                },
+                {
+                  "name": "Melbourne Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 18783,
+                  "vicinity": "11 Nicholson Street, Carlton",
+                  "place_id": "ChIJn97JQNpC1moRIcJsVMEQLI8",
+                  "location": {
+                    "lat": -37.803273,
+                    "lng": 144.9717408
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Shot Tower Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 153,
+                  "vicinity": "Melbourne Central/211 La Trobe Street, Melbourne",
+                  "place_id": "ChIJx18s48pC1moRPwB-wTgc7kg",
+                  "location": {
+                    "lat": -37.8103869,
+                    "lng": 144.9629577
+                  }
+                },
+                {
+                  "name": "Old Melbourne Gaol",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 3628,
+                  "vicinity": "377 Russell Street, Melbourne",
+                  "place_id": "ChIJYUcwasxC1moResepeNQs7Z0",
+                  "location": {
+                    "lat": -37.807832,
+                    "lng": 144.9653171
+                  }
+                },
+                {
+                  "name": "Melbourne Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 18783,
+                  "vicinity": "11 Nicholson Street, Carlton",
+                  "place_id": "ChIJn97JQNpC1moRIcJsVMEQLI8",
+                  "location": {
+                    "lat": -37.803273,
+                    "lng": 144.9717408
+                  }
+                },
+                {
+                  "name": "Museum of Chinese Australian History",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 357,
+                  "vicinity": "level 1/22 Cohen Place, Melbourne",
+                  "place_id": "ChIJt7zSJ8lC1moRIqMuY1-bRIk",
+                  "location": {
+                    "lat": -37.8107775,
+                    "lng": 144.969144
+                  }
+                },
+                {
+                  "name": "ACMI",
+                  "types": [
+                    "art_gallery",
+                    "movie_theater",
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 6091,
+                  "vicinity": "Federation Square, Flinders Street, Melbourne",
+                  "place_id": "ChIJT8T86bZC1moRpBiRUC3lABM",
+                  "location": {
+                    "lat": -37.8175974,
+                    "lng": 144.9686881
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Stamford Plaza Melbourne",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 1978,
+                  "vicinity": "111 Little Collins Street, Melbourne",
+                  "place_id": "ChIJc-7BSMhC1moRJadN_SH7-PM",
+                  "location": {
+                    "lat": -37.8135163,
+                    "lng": 144.9699388
+                  }
+                },
+                {
+                  "name": "Oriental Teahouse Melbourne CBD",
+                  "types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1010,
+                  "vicinity": "378 Little Collins Street, Melbourne",
+                  "place_id": "ChIJd5kNx7RC1moR-pM_GKr9bKQ",
+                  "location": {
+                    "lat": -37.8155739,
+                    "lng": 144.9620832
+                  }
+                },
+                {
+                  "name": "Ginza Teppanyaki",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1489,
+                  "vicinity": "Level 1/139 Little Bourke Street, Melbourne",
+                  "place_id": "ChIJ5XpydclC1moR7UUgWI3KRTI",
+                  "location": {
+                    "lat": -37.8117282,
+                    "lng": 144.9684233
+                  }
+                },
+                {
+                  "name": "Japanese Teppanyaki Inn",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 468,
+                  "vicinity": "182 Collins Street, Melbourne",
+                  "place_id": "ChIJ4zzLEbZC1moRzkG67FkQbt8",
+                  "location": {
+                    "lat": -37.8149706,
+                    "lng": 144.9674068
+                  }
+                },
+                {
+                  "name": "Flower Drum Restaurant Melbourne",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1413,
+                  "vicinity": "17 Market Lane, Melbourne",
+                  "place_id": "ChIJr1N1BMlC1moR6aJLe1nHgPQ",
+                  "location": {
+                    "lat": -37.8118772,
+                    "lng": 144.9692458
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "The Nature Conservancy",
+                  "types": [
+                    "point_of_interest",
+                    "park",
+                    "establishment"
+                  ],
+                  "rating": 3.1,
+                  "user_ratings_total": 7,
+                  "vicinity": "The 60L Green Building, Leicester Street, Carlton",
+                  "place_id": "ChIJjV4jJDNd1moRRw0GV7FTvfk",
+                  "location": {
+                    "lat": -37.80491840000001,
+                    "lng": 144.9603597
+                  }
+                },
+                {
+                  "name": "Morton Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "7/388 Bourke Street, Melbourne",
+                  "place_id": "ChIJ50znJrVC1moRcr7Wpz_Tovo",
+                  "location": {
+                    "lat": -37.8143385,
+                    "lng": 144.9620968
+                  }
+                },
+                {
+                  "name": "Living Legacy Forest",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "f4/349 Collins Street, Melbourne",
+                  "place_id": "ChIJgRXO-rRC1moRWhgTu2bMh8o",
+                  "location": {
+                    "lat": -37.8169688,
+                    "lng": 144.9628399
+                  }
+                },
+                {
+                  "name": "Flagstaff Gardens",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 7972,
+                  "vicinity": "309-311 William Street, West Melbourne",
+                  "place_id": "ChIJnQHt6Uld1moRgIUxBXZWBA8",
+                  "location": {
+                    "lat": -37.8105577,
+                    "lng": 144.9545199
+                  }
+                },
+                {
+                  "name": "Luminova",
+                  "types": [
+                    "electronics_store",
+                    "home_goods_store",
+                    "store",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "140 Bourke Street, Melbourne",
+                  "place_id": "ChIJX0nYqMlC1moR3JaU1CqoS1w",
+                  "location": {
+                    "lat": -37.8122757,
+                    "lng": 144.9689195
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "St Francis’ Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1125,
+                  "vicinity": "326 Lonsdale Street, Melbourne",
+                  "place_id": "ChIJF604vcpC1moREpFwYJGJbA8",
+                  "location": {
+                    "lat": -37.81165680000001,
+                    "lng": 144.9623958
+                  }
+                },
+                {
+                  "name": "Saint Patrick's Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 3992,
+                  "vicinity": "1 Cathedral Place, East Melbourne",
+                  "place_id": "ChIJq5z0TsRC1moRoPbHvgub8is",
+                  "location": {
+                    "lat": -37.8100833,
+                    "lng": 144.9764167
+                  }
+                },
+                {
+                  "name": "ICC Melbourne",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 37,
+                  "vicinity": "156 Collins Street, Melbourne",
+                  "place_id": "ChIJsxcWIrZC1moRMuKBpgq2zbQ",
+                  "location": {
+                    "lat": -37.81458979999999,
+                    "lng": 144.9685261
+                  }
+                },
+                {
+                  "name": "Scots’ Church Melbourne",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 179,
+                  "vicinity": "77 Russell Street, Melbourne",
+                  "place_id": "ChIJsxcWIrZC1moRJ8W6FBQ_gO8",
+                  "location": {
+                    "lat": -37.8146546,
+                    "lng": 144.9686359
+                  }
+                },
+                {
+                  "name": "St Paul's Cathedral, Melbourne",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 3660,
+                  "vicinity": "200 Flinders Street, Melbourne",
+                  "place_id": "ChIJbVDLhrZC1moRV4a7bU8smmI",
+                  "location": {
+                    "lat": -37.817029,
+                    "lng": 144.967687
+                  }
+                },
+                {
+                  "name": "Melbourne Madinah",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 172,
+                  "vicinity": "359 Exhibition Street, Melbourne",
+                  "place_id": "ChIJ-_oYIrJC1moRQh_iqGoc-k4",
+                  "location": {
+                    "lat": -37.8074,
+                    "lng": 144.9682305
+                  }
+                },
+                {
+                  "name": "RMIT international Campus Musalla",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 9,
+                  "vicinity": "3000/265 Bourke Street, Melbourne",
+                  "place_id": "ChIJ0WH297VC1moRCkzYEDSoTho",
+                  "location": {
+                    "lat": -37.8136194,
+                    "lng": 144.9659915
+                  }
+                },
+                {
+                  "name": "Musalla - University of Melbourne Islamic Society",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 98,
+                  "vicinity": "Pelham Street, Carlton",
+                  "place_id": "ChIJ1ZPqstJC1moRx8iRGftqsE4",
+                  "location": {
+                    "lat": -37.80195990000001,
+                    "lng": 144.9612737
+                  }
+                },
+                {
+                  "name": "University Of Melbourne Musalla (Prayer Rooms)",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 16,
+                  "vicinity": "Parkville VIC 3010",
+                  "place_id": "ChIJbR_8stJC1moRJdx8IdLrlFI",
+                  "location": {
+                    "lat": -37.80192729999999,
+                    "lng": 144.9613333
+                  }
+                },
+                {
+                  "name": "Muslimin.Melbourne Mosques",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 52,
+                  "vicinity": "17 Victoria Street, Melbourne",
+                  "place_id": "ChIJnZ0lyM5D1moRYs3O-d1MCK8",
+                  "location": {
+                    "lat": -37.8074272,
+                    "lng": 144.9680903
+                  }
+                },
+                {
+                  "name": "East Melbourne Hebrew Congregation",
+                  "types": [
+                    "synagogue",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 57,
+                  "vicinity": "488 Albert Street, East Melbourne",
+                  "place_id": "ChIJSf2_B8VC1moRE9uJb5NE9bA",
+                  "location": {
+                    "lat": -37.80906239999999,
+                    "lng": 144.974214
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "State Library Victoria",
+                  "types": [
+                    "tourist_attraction",
+                    "library",
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 4067,
+                  "vicinity": "328 Swanston Street, Melbourne",
+                  "place_id": "ChIJ6RxLlctC1moReA6DqUtnh_E",
+                  "location": {
+                    "lat": -37.8097255,
+                    "lng": 144.9654504
+                  }
+                },
+                {
+                  "name": "Fed Square",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2922,
+                  "vicinity": "Swanston St & Flinders St, Melbourne",
+                  "place_id": "ChIJT8T86bZC1moRqw7W6kVH5zg",
+                  "location": {
+                    "lat": -37.8179789,
+                    "lng": 144.9690576
+                  }
+                },
+                {
+                  "name": "ACMI",
+                  "types": [
+                    "tourist_attraction",
+                    "movie_theater",
+                    "art_gallery",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 6091,
+                  "vicinity": "Federation Square, Flinders Street, Melbourne",
+                  "place_id": "ChIJT8T86bZC1moRpBiRUC3lABM",
+                  "location": {
+                    "lat": -37.8175974,
+                    "lng": 144.9686881
+                  }
+                },
+                {
+                  "name": "Outré Gallery",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 340,
+                  "vicinity": "249 Elizabeth Street, Melbourne",
+                  "place_id": "ChIJlWuMXLVC1moRPheZvqV8P3E",
+                  "location": {
+                    "lat": -37.812839,
+                    "lng": 144.962309
+                  }
+                },
+                {
+                  "name": "Craft Victoria",
+                  "types": [
+                    "art_gallery",
+                    "jewelry_store",
+                    "home_goods_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 90,
+                  "vicinity": "Craft, Watson Place, Melbourne",
+                  "place_id": "ChIJy7Tlw8dC1moRnqcyPeBCW4w",
+                  "location": {
+                    "lat": -37.8158241,
+                    "lng": 144.9682385
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Melbourne",
+                  "types": [
+                    "colloquial_area",
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Melbourne",
+                  "place_id": "ChIJ90260rVG1moRkM2MIXVWBAQ",
+                  "location": {
+                    "lat": -37.8136276,
+                    "lng": 144.9630576
+                  }
+                },
+                {
+                  "name": "Mantra on Russell Melbourne",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1177,
+                  "vicinity": "222 Russell Street, Melbourne",
+                  "place_id": "ChIJXccYcclC1moRFzEzURPX3m8",
+                  "location": {
+                    "lat": -37.8112795,
+                    "lng": 144.9679488
+                  }
+                },
+                {
+                  "name": "Hotel Grand Chancellor Melbourne",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 1474,
+                  "vicinity": "131 Lonsdale Street, Melbourne",
+                  "place_id": "ChIJ53vEPslC1moRaeD68DDwOfk",
+                  "location": {
+                    "lat": -37.8107074,
+                    "lng": 144.9684061
+                  }
+                },
+                {
+                  "name": "ibis Melbourne - Hotel & Apartments",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1978,
+                  "vicinity": "15-21 Therry Street, Melbourne",
+                  "place_id": "ChIJiaMVrcxC1moRvEVeeAq_JSM",
+                  "location": {
+                    "lat": -37.8069565,
+                    "lng": 144.9613627
+                  }
+                },
+                {
+                  "name": "The Victoria Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 2951,
+                  "vicinity": "215 Little Collins Street, Melbourne",
+                  "place_id": "ChIJ62M5mrRC1moR6NLAe6ezBHI",
+                  "location": {
+                    "lat": -37.8142903,
+                    "lng": 144.9671311
+                  }
+                }
+              ]
+            },
+            "total_places_found": 41,
+            "photo_timestamp": "2025:06:30 15:22:40",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.9340143203735352
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/180.heic"
+    },
+    {
+      "image_filename": "180.heic",
+      "timestamp": "2026-01-28T03:49:50.294516",
+      "processing_time_seconds": 65.921448,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "State Library Victoria, Melbourne, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style, layout, and distinctive dome are characteristic of the State Library Victoria's reading room, a well-known landmark in Melbourne.",
+            "detailed_description": "The image depicts the interior of the State Library Victoria in Melbourne, Australia. This is the library's iconic reading room, known for its grand design featuring a large central dome. The architecture is Victorian, characterized by ornate detailing, arches, and a symmetrical layout. The room is filled with bookshelves along the walls and wooden desks arranged in a radial pattern, illuminated by green reading lamps. The upper levels have balconies with additional bookshelves, and the ceiling features large skylights that allow natural light to flood the space.",
+            "identification": {
+              "primary": [
+                "State Library Victoria"
+              ],
+              "location": "Melbourne, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Reading Room",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Victorian_architecture",
+              "library",
+              "dome",
+              "Australia"
+            ],
+            "location": "Melbourne, Australia",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"State Library Victoria\"],\n        \"location\": \"Melbourne, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Reading Room\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Victorian_architecture\", \"library\", \"dome\", \"Australia\"],\n    \"description\": \"The image depicts the interior of the State Library Victoria in Melbourne, Australia. This is the library's iconic reading room, known for its grand design featuring a large central dome. The architecture is Victorian, characterized by ornate detailing, arches, and a symmetrical layout. The room is filled with bookshelves along the walls and wooden desks arranged in a radial pattern, illuminated by green reading lamps. The upper levels have balconies with additional bookshelves, and the ceiling features large skylights that allow natural light to flood the space.\",\n    \"reasoning\": \"The architectural style, layout, and distinctive dome are characteristic of the State Library Victoria's reading room, a well-known landmark in Melbourne.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "processing_time_seconds": 25.815998315811157
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*Description*: The Main Reading Room in the Thomas Jefferson Building is renowned for its neoclassical architecture, featuring a coffered ceiling and harmonious colors that create a grand and inspirin",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts an impressive interior of a library reading room characterized by its grand architectural design and spacious layout. The room is dominated by a large, central octagonal desk surrounded by multiple wooden tables arranged radially, each equipped with classic green reading lamps. The seating is designed for individual study, with wooden chairs providing a traditional and scholarly atmosphere. The walls are lined with bookshelves filled with a vast collection of books, contributin",
+            "description": "The image depicts an impressive interior of a library reading room characterized by its grand architectural design and spacious layout. The room is dominated by a large, central octagonal desk surrounded by multiple wooden tables arranged radially, each equipped with classic green reading lamps. The seating is designed for individual study, with wooden chairs providing a traditional and scholarly atmosphere. The walls are lined with bookshelves filled with a vast collection of books, contributin",
+            "architectural_style": "Neoclassical",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 39.84577918052673
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "State Library Victoria",
+          "confidence": 2.1609020233154297,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "State Library Victoria",
+            "artist_name": null,
+            "museum_or_location": null,
+            "art_style": null,
+            "art_era": null,
+            "confidence": 2.1609020233154297,
+            "web_entities": [
+              {
+                "name": "State Library Victoria",
+                "score": 2.1609020233154297
+              },
+              {
+                "name": "Image",
+                "score": 0.4214000105857849
+              },
+              {
+                "name": "Therry Street",
+                "score": 0.40582191944122314
+              },
+              {
+                "name": "Library",
+                "score": 0.3903999924659729
+              },
+              {
+                "name": "",
+                "score": 0.3859900236129761
+              }
+            ],
+            "processing_time_seconds": 19.752053022384644
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/180.heic"
+    }
+  ]
+}

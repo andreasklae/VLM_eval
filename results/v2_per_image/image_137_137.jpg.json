@@ -1,0 +1,761 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "137.jpg",
+      "timestamp": "2026-01-28T02:08:13.476715",
+      "processing_time_seconds": 71.500537,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 59.96313888888889,
+        "gps_longitude": 10.668297222222222,
+        "location": {
+          "formatted_address": "Kongeveien 5, 0787 Oslo, Norway",
+          "city": null,
+          "county": "Oslo",
+          "country": "Norway"
+        },
+        "datetime_original": "2024:12:31 12:43:08",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Holmenkollen Ski Jump, Oslo, Norway",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive shape and location in Oslo strongly suggest this is the Holmenkollen Ski Jump, a famous sports facility known for its modern design.",
+            "detailed_description": "The image shows the Holmenkollen Ski Jump, a prominent landmark in Oslo, Norway. It features a modern architectural design with a distinctive curved structure that rises prominently against the sky. The ski jump is surrounded by stadium seating and is a well-known venue for ski jumping competitions. The design is sleek and contemporary, utilizing materials like steel and concrete, and is set against a backdrop of trees.",
+            "identification": {
+              "primary": [
+                "Holmenkollen Ski Jump"
+              ],
+              "location": "Oslo, Norway",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Holmenkollen Ski Jump",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "ski_jump",
+              "sports_facility",
+              "Oslo"
+            ],
+            "location": "Oslo, Norway",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Holmenkollen Ski Jump\"],\n        \"location\": \"Oslo, Norway\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Holmenkollen Ski Jump\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"ski_jump\", \"sports_facility\", \"Oslo\"],\n    \"description\": \"The image shows the Holmenkollen Ski Jump, a prominent landmark in Oslo, Norway. It features a modern architectural design with a distinctive curved structure that rises prominently against the sky. The ski jump is surrounded by stadium seating and is a well-known venue for ski jumping competitions. The design is sleek and contemporary, utilizing materials like steel and concrete, and is set against a backdrop of trees.\",\n    \"reasoning\": \"The distinctive shape and location in Oslo strongly suggest this is the Holmenkollen Ski Jump, a famous sports facility known for its modern design.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "gps_coordinates": {
+              "latitude": 59.96313888888889,
+              "longitude": 10.668297222222222
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Kongeveien 5, 0787 Oslo, Norway",
+              "city": null,
+              "county": "Oslo",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2024:12:31 12:43:08",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 32.602598905563354
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Holmenkollen Ski Jump, Oslo, Norway",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The search results strongly support the identification of the Holmenkollen Ski Jump, with high confidence scores and a match to the description's architectural features and location. The ski jump's modern design, lattice framework, and tiered seating are consistent with the description, and the location in Oslo aligns perfectly with the metadata provided.",
+            "identification": {
+              "primary": [
+                "Holmenkollen Ski Jump"
+              ],
+              "location": "Oslo, Norway",
+              "confidence": 1.0
+            },
+            "artifacts": [
+              {
+                "name": "Holmenkollen Ski Jump",
+                "type": "landmark",
+                "confidence": 1.0
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "ski_jump",
+              "Oslo",
+              "Norway",
+              "winter_sports"
+            ],
+            "sources_used": [
+              "en.wikipedia.org",
+              "holmenkollen.com",
+              "lonelyplanet.com"
+            ],
+            "all_candidates": [
+              "## [Holmenkollen Ski Jump]()",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([holmenkollen.com]())",
+              "*URL*: ([holmenkollen.com]())",
+              "*URL*: ([lonelyplanet.com]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a large ski jump structure, characterized by its modern architectural design. The ski jump features a prominent, elongated ramp that ascends steeply, culminating in a curved, aerodynamic profile at the top. The structure is composed primarily of metal and concrete, with a lattice-like framework visible along the sides, providing both structural support and aesthetic appeal. The ramp is flanked by tiered seating areas, which are constructed from concrete and arranged in a steppe",
+            "description": "The image depicts a large ski jump structure, characterized by its modern architectural design. The ski jump features a prominent, elongated ramp that ascends steeply, culminating in a curved, aerodynamic profile at the top. The structure is composed primarily of metal and concrete, with a lattice-like framework visible along the sides, providing both structural support and aesthetic appeal. The ramp is flanked by tiered seating areas, which are constructed from concrete and arranged in a steppe",
+            "architectural_style": "Modern",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 59.96313888888889,
+              "longitude": 10.668297222222222
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Kongeveien 5, 0787 Oslo, Norway",
+              "city": null,
+              "county": "Oslo",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2024:12:31 12:43:08",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 38.17171597480774
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Composite material",
+          "confidence": 0.8828681707382202,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Composite material",
+                "score": 0.8828681707382202
+              },
+              {
+                "source": "label",
+                "name": "Iron",
+                "score": 0.7813029289245605
+              },
+              {
+                "source": "web",
+                "name": "Façade",
+                "score": 0.3204493522644043
+              },
+              {
+                "source": "web",
+                "name": "ArchitectureM RIBA Chartered Practice",
+                "score": 0.3052999973297119
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Architecture",
+                "score": 0.34137752652168274
+              },
+              {
+                "name": "Façade",
+                "score": 0.3204493522644043
+              },
+              {
+                "name": "ArchitectureM RIBA Chartered Practice",
+                "score": 0.3052999973297119
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Composite material",
+                "score": 0.8828681707382202
+              },
+              {
+                "name": "Iron",
+                "score": 0.7813029289245605
+              },
+              {
+                "name": "Meteorological phenomenon",
+                "score": 0.6188801527023315
+              },
+              {
+                "name": "Conifers",
+                "score": 0.5814130306243896
+              },
+              {
+                "name": "Steel",
+                "score": 0.5788183212280273
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 59.96313888888889,
+              "longitude": 10.668297222222222
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Kongeveien 5, 0787 Oslo, Norway",
+              "city": null,
+              "county": "Oslo",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2024:12:31 12:43:08",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 19.707486152648926
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Oslo, Norway",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Oslo, Norway",
+            "coordinates": {
+              "latitude": 59.96313888888889,
+              "longitude": 10.668297222222222
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Holmenkollen Ski Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 8095,
+                  "vicinity": "Kongeveien 5, Oslo",
+                  "place_id": "ChIJAVYeCn9tQUYR-b71kdo6ySs",
+                  "location": {
+                    "lat": 59.9640897,
+                    "lng": 10.6664141
+                  }
+                },
+                {
+                  "name": "Skisimulator",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 2.9,
+                  "user_ratings_total": 69,
+                  "vicinity": "Kongeveien 5, Oslo",
+                  "place_id": "ChIJAVYeCn9tQUYREh5yngL6LvY",
+                  "location": {
+                    "lat": 59.9646494,
+                    "lng": 10.6671184
+                  }
+                },
+                {
+                  "name": "Kollensvevet Zipline & activities in Holmenkollen",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 376,
+                  "vicinity": "Kongeveien 5, Oslo",
+                  "place_id": "ChIJC4eGFBNuQUYR8OLMLtU6rNk",
+                  "location": {
+                    "lat": 59.9643766,
+                    "lng": 10.6660077
+                  }
+                },
+                {
+                  "name": "Holmenkollen Chapel",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 404,
+                  "vicinity": "Oslo",
+                  "place_id": "ChIJp0V68X9yQUYRkzQSHaNrkJs",
+                  "location": {
+                    "lat": 59.96568819999999,
+                    "lng": 10.6723642
+                  }
+                },
+                {
+                  "name": "Holmenkollbakken",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 13107,
+                  "vicinity": "Kongeveien 5, Oslo",
+                  "place_id": "ChIJL6W97n9tQUYRYXKbabAIBis",
+                  "location": {
+                    "lat": 59.9650094,
+                    "lng": 10.6646572
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Holmenkollen Ski Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 8095,
+                  "vicinity": "Kongeveien 5, Oslo",
+                  "place_id": "ChIJAVYeCn9tQUYR-b71kdo6ySs",
+                  "location": {
+                    "lat": 59.9640897,
+                    "lng": 10.6664141
+                  }
+                },
+                {
+                  "name": "Holmenkollbakken",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 13107,
+                  "vicinity": "Kongeveien 5, Oslo",
+                  "place_id": "ChIJL6W97n9tQUYRYXKbabAIBis",
+                  "location": {
+                    "lat": 59.9650094,
+                    "lng": 10.6646572
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Holmenkollen Restaurant",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 750,
+                  "vicinity": "Holmenkollveien 119, Oslo",
+                  "place_id": "ChIJmSDjNX9tQUYR-64zlo-4wPQ",
+                  "location": {
+                    "lat": 59.9605918,
+                    "lng": 10.6666859
+                  }
+                },
+                {
+                  "name": "Holmekollen Park bistro",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 3.3,
+                  "user_ratings_total": 3,
+                  "vicinity": "Kongeveien 26, Oslo",
+                  "place_id": "ChIJFzC_WABtQUYRO9gcJKaPDcE",
+                  "location": {
+                    "lat": 59.9625496,
+                    "lng": 10.663164
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Holmenkollen Chapel",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 404,
+                  "vicinity": "Oslo",
+                  "place_id": "ChIJp0V68X9yQUYRkzQSHaNrkJs",
+                  "location": {
+                    "lat": 59.96568819999999,
+                    "lng": 10.6723642
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Galleri Gude Deberitz",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Voksenkollveien 16, Oslo",
+                  "place_id": "ChIJabm7gowVQUYRROgvt_QpRfI",
+                  "location": {
+                    "lat": 59.9701872,
+                    "lng": 10.663914
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Oslo",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Oslo",
+                  "place_id": "ChIJOfBn8mFuQUYRmh4j019gkn4",
+                  "location": {
+                    "lat": 59.9121746,
+                    "lng": 10.7312704
+                  }
+                },
+                {
+                  "name": "Scandic Holmenkollen Park Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 2768,
+                  "vicinity": "Kongeveien 26, Oslo",
+                  "place_id": "ChIJKzFg8H5tQUYR_WIV8fvQyXQ",
+                  "location": {
+                    "lat": 59.9627894,
+                    "lng": 10.6628325
+                  }
+                },
+                {
+                  "name": "Holmenkollen Ski Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 8095,
+                  "vicinity": "Kongeveien 5, Oslo",
+                  "place_id": "ChIJAVYeCn9tQUYR-b71kdo6ySs",
+                  "location": {
+                    "lat": 59.9640897,
+                    "lng": 10.6664141
+                  }
+                },
+                {
+                  "name": "Sykkelbussen",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 3,
+                  "vicinity": "Kongeveien 5, Oslo",
+                  "place_id": "ChIJAVYeCn9tQUYRzEcWX84IIgY",
+                  "location": {
+                    "lat": 59.9625856,
+                    "lng": 10.6672055
+                  }
+                },
+                {
+                  "name": "Jan Grosch AS",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Doktor Holms vei 21C, Oslo",
+                  "place_id": "ChIJ0c5HhIFtQUYRWxYJ4Zh57pQ",
+                  "location": {
+                    "lat": 59.960017,
+                    "lng": 10.6706447
+                  }
+                }
+              ]
+            },
+            "total_places_found": 16,
+            "photo_timestamp": "2024:12:31 12:43:08",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.43734002113342285
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/137.jpg"
+    },
+    {
+      "image_filename": "137.jpg",
+      "timestamp": "2026-01-28T02:09:25.022029",
+      "processing_time_seconds": 66.403394,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Holmenkollen Ski Jump, Oslo, Norway",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive design and structure of the ski jump, along with the surrounding seating and natural environment, strongly suggest that this is the Holmenkollen Ski Jump in Oslo, Norway.",
+            "detailed_description": "The image shows the Holmenkollen Ski Jump, a prominent ski jumping hill located in Oslo, Norway. It features a distinctive modern architectural design with a sleek, curved structure made primarily of steel and concrete. The ski jump is surrounded by stadium seating and is set against a backdrop of trees, indicating its location in a natural setting. The facility is known for hosting international ski jumping competitions and is a significant landmark in Oslo.",
+            "identification": {
+              "primary": [
+                "Holmenkollen Ski Jump"
+              ],
+              "location": "Oslo, Norway",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Holmenkollen Ski Jump",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "ski_jump",
+              "Norway",
+              "sports_facility"
+            ],
+            "location": "Oslo, Norway",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Holmenkollen Ski Jump\"],\n        \"location\": \"Oslo, Norway\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Holmenkollen Ski Jump\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"ski_jump\", \"Norway\", \"sports_facility\"],\n    \"description\": \"The image shows the Holmenkollen Ski Jump, a prominent ski jumping hill located in Oslo, Norway. It features a distinctive modern architectural design with a sleek, curved structure made primarily of steel and concrete. The ski jump is surrounded by stadium seating and is set against a backdrop of trees, indicating its location in a natural setting. The facility is known for hosting international ski jumping competitions and is a significant landmark in Oslo.\",\n    \"reasoning\": \"The distinctive design and structure of the ski jump, along with the surrounding seating and natural environment, strongly suggest that this is the Holmenkollen Ski Jump in Oslo, Norway.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 29.17925500869751
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Holmenkollen Ski Jump, Oslo, Norway",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the Holmenkollen Ski Jump, known for its modern design and prominent ramp structure. The search results strongly suggest this identification, with high confidence scores from multiple sources. The presence of tiered seating and floodlights further supports this identification, as these are characteristic features of the Holmenkollen venue.",
+            "identification": {
+              "primary": [
+                "Holmenkollen Ski Jump"
+              ],
+              "location": "Oslo, Norway",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Holmenkollen Ski Jump",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Tiered seating",
+                "type": "building",
+                "confidence": 0.85
+              },
+              {
+                "name": "Floodlights",
+                "type": "other",
+                "confidence": 0.8
+              },
+              {
+                "name": "Coniferous trees",
+                "type": "natural_feature",
+                "confidence": 0.75
+              }
+            ],
+            "tags": [
+              "modern",
+              "ski jump",
+              "metal",
+              "Oslo",
+              "Norway",
+              "sports venue"
+            ],
+            "sources_used": [
+              "en.wikipedia.org",
+              "archdaily.com"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([archdaily.com]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 2,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a large ski jump structure, prominently featuring a steep, elongated ramp that curves upwards. The ramp is supported by a lattice framework, likely made of metal, which gives it a modern and industrial appearance. The ski jump is surrounded by a series of tiered seating areas, constructed from concrete, which suggests it is designed to accommodate spectators during events. The seating is arranged in a semi-circular fashion around the base of the ramp, enhancing the view of the ",
+            "description": "The image depicts a large ski jump structure, prominently featuring a steep, elongated ramp that curves upwards. The ramp is supported by a lattice framework, likely made of metal, which gives it a modern and industrial appearance. The ski jump is surrounded by a series of tiered seating areas, constructed from concrete, which suggests it is designed to accommodate spectators during events. The seating is arranged in a semi-circular fashion around the base of the ramp, enhancing the view of the ",
+            "architectural_style": "Modern",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 37.22248411178589
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Composite material",
+          "confidence": 0.8828681707382202,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Composite material",
+                "score": 0.8828681707382202
+              },
+              {
+                "source": "label",
+                "name": "Iron",
+                "score": 0.7813029289245605
+              },
+              {
+                "source": "web",
+                "name": "Façade",
+                "score": 0.3204493522644043
+              },
+              {
+                "source": "web",
+                "name": "ArchitectureM RIBA Chartered Practice",
+                "score": 0.3052999973297119
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Architecture",
+                "score": 0.34137752652168274
+              },
+              {
+                "name": "Façade",
+                "score": 0.3204493522644043
+              },
+              {
+                "name": "ArchitectureM RIBA Chartered Practice",
+                "score": 0.3052999973297119
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Composite material",
+                "score": 0.8828681707382202
+              },
+              {
+                "name": "Iron",
+                "score": 0.7813029289245605
+              },
+              {
+                "name": "Meteorological phenomenon",
+                "score": 0.6188801527023315
+              },
+              {
+                "name": "Conifers",
+                "score": 0.5814130306243896
+              },
+              {
+                "name": "Steel",
+                "score": 0.5788183212280273
+              }
+            ],
+            "processing_time_seconds": 19.148688077926636
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/137.jpg"
+    }
+  ]
+}

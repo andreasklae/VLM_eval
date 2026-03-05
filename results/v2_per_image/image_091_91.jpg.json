@@ -1,0 +1,803 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "91.jpg",
+      "timestamp": "2026-01-28T07:22:52.917771",
+      "processing_time_seconds": 64.675162,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 36.51504166666667,
+        "gps_longitude": -5.036033333333333,
+        "location": {
+          "formatted_address": "GX87+2H Benahavís, Spain",
+          "city": "Benahavís",
+          "county": "Málaga",
+          "country": "Spain"
+        },
+        "datetime_original": "2024:08:10 14:11:53",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Natural rock formation, Benahavís, Málaga, Spain",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata suggests a natural setting in Benahavís, Málaga, Spain. The visible rock formation and water indicate a natural feature, possibly part of a canyon or river.",
+            "detailed_description": "The image shows a natural rock formation with a rugged surface, partially submerged in water. The rock appears to be part of a cliff or canyon, with vegetation visible on the top edge. The water is calm and has a greenish tint, suggesting it may be part of a river or stream. The scene is likely a natural setting in Benahavís, Málaga, Spain.",
+            "identification": {
+              "primary": [
+                "Natural rock formation"
+              ],
+              "location": "Benahavís, Málaga, Spain",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Rock formation",
+                "type": "natural_feature",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "rock",
+              "water",
+              "Spain"
+            ],
+            "location": "Benahavís, Málaga, Spain",
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Canyon or river in Benahavís",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.75,
+                "reasoning": "The rock formation and water suggest a canyon or river, common in the area."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Natural rock formation\"],\n        \"location\": \"Benahavís, Málaga, Spain\",\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Rock formation\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"rock\", \"water\", \"Spain\"],\n    \"description\": \"The image shows a natural rock formation with a rugged surface, partially submerged in water. The rock appears to be part of a cliff or canyon, with vegetation visible on the top edge. The water is calm and has a greenish tint, suggesting it may be part of a river or stream. The scene is likely a natural setting in Benahavís, Málaga, Spain.\",\n    \"reasoning\": \"The location metadata suggests a natural setting in Benahavís, Málaga, Spain. The visible rock formation and water indicate a natural feature, possibly part of a canyon or river.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Canyon or river in Benahavís\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.75,\n            \"reasoning\": \"The rock formation and water suggest a canyon or river, common in the area.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": 36.51504166666667,
+              "longitude": -5.036033333333333
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "GX87+2H Benahavís, Spain",
+              "city": "Benahavís",
+              "county": "Málaga",
+              "country": "Spain"
+            },
+            "photo_timestamp": "2024:08:10 14:11:53",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 9.581932067871094
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a natural setting with a rocky cliff face on the left side, characterized by rugged and textured stone surfaces. The cliff appears to be composed of sedimentary rock, possibly limestone, which is common in the region of Málaga, Spain. The rock surface has a variety of textures, including rough patches and smoother areas, indicative of erosion and weathering over time. Adjacent to the cliff is a body of water with a greenish hue, suggesting the presence of algae or minerals affe",
+            "description": "The image depicts a natural setting with a rocky cliff face on the left side, characterized by rugged and textured stone surfaces. The cliff appears to be composed of sedimentary rock, possibly limestone, which is common in the region of Málaga, Spain. The rock surface has a variety of textures, including rough patches and smoother areas, indicative of erosion and weathering over time. Adjacent to the cliff is a body of water with a greenish hue, suggesting the presence of algae or minerals affe",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 36.51504166666667,
+              "longitude": -5.036033333333333
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "GX87+2H Benahavís, Spain",
+              "city": "Benahavís",
+              "county": "Málaga",
+              "country": "Spain"
+            },
+            "photo_timestamp": "2024:08:10 14:11:53",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 54.46291780471802
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Summer",
+          "confidence": 0.9298895001411438,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Summer",
+                "score": 0.9298895001411438
+              },
+              {
+                "source": "label",
+                "name": "Recreation",
+                "score": 0.9102838039398193
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.8714076280593872
+              },
+              {
+                "source": "label",
+                "name": "Fun",
+                "score": 0.8090395927429199
+              },
+              {
+                "source": "label",
+                "name": "Leisure",
+                "score": 0.7595021724700928
+              }
+            ],
+            "web_entities": [],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.8714076280593872
+              },
+              {
+                "name": "Person",
+                "score": 0.5597951412200928
+              }
+            ],
+            "labels": [
+              {
+                "name": "Summer",
+                "score": 0.9298895001411438
+              },
+              {
+                "name": "Recreation",
+                "score": 0.9102838039398193
+              },
+              {
+                "name": "Fun",
+                "score": 0.8090395927429199
+              },
+              {
+                "name": "Leisure",
+                "score": 0.7595021724700928
+              },
+              {
+                "name": "Vacation",
+                "score": 0.7309913039207458
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 36.51504166666667,
+              "longitude": -5.036033333333333
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "GX87+2H Benahavís, Spain",
+              "city": "Benahavís",
+              "county": "Málaga",
+              "country": "Spain"
+            },
+            "photo_timestamp": "2024:08:10 14:11:53",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 20.78267502784729
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Benahavís, Málaga, Spain",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Benahavís, Málaga, Spain",
+            "coordinates": {
+              "latitude": 36.51504166666667,
+              "longitude": -5.036033333333333
+            },
+            "search_range_meters": 2000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Acequia trail Guadalmina",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 739,
+                  "vicinity": "Benahavís",
+                  "place_id": "ChIJt9tKYGbVcg0RCBAnmeL4yow",
+                  "location": {
+                    "lat": 36.5115924,
+                    "lng": -5.0349923
+                  }
+                },
+                {
+                  "name": "Canyon of the Angosturas",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 380,
+                  "vicinity": "Benahavís",
+                  "place_id": "ChIJAwc6ZULVcg0R1eGXfZrigOs",
+                  "location": {
+                    "lat": 36.5172039,
+                    "lng": -5.03992
+                  }
+                },
+                {
+                  "name": "Parque Torre Leonera",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 695,
+                  "vicinity": "Benahavís",
+                  "place_id": "ChIJw7ML8UPVcg0RmlpioD3w7dE",
+                  "location": {
+                    "lat": 36.5183383,
+                    "lng": -5.043501199999999
+                  }
+                },
+                {
+                  "name": "La banca",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "GX5C+V8, Benahavís",
+                  "place_id": "ChIJD08OJgDVcg0ROPN1NEf3-eM",
+                  "location": {
+                    "lat": 36.5096459,
+                    "lng": -5.029172699999999
+                  }
+                },
+                {
+                  "name": "Rebosadero de la Acequia",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 6,
+                  "vicinity": "Benahavís",
+                  "place_id": "ChIJaVhiV2nVcg0RupC56vE-sL4",
+                  "location": {
+                    "lat": 36.5062778,
+                    "lng": -5.0282387
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Venancio Sánchez",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Calle Malaga, 15, 5, Benahavís",
+                  "place_id": "ChIJ4b6laEfVcg0RKcpMa0dt1Qg",
+                  "location": {
+                    "lat": 36.5238199,
+                    "lng": -5.0458361
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Hotel and Restaurant Amanhavis",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 285,
+                  "vicinity": "Calle el pilar, 3, Benahavís",
+                  "place_id": "ChIJD7YpijjVcg0RGz7myXxIBF4",
+                  "location": {
+                    "lat": 36.52459109999999,
+                    "lng": -5.046866800000001
+                  }
+                },
+                {
+                  "name": "Restaurante Amigos",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 175,
+                  "vicinity": "Calle Malaga, 3, Benahavís",
+                  "place_id": "ChIJs-d0nDjVcg0R365nRkM8RgM",
+                  "location": {
+                    "lat": 36.5240757,
+                    "lng": -5.045903099999999
+                  }
+                },
+                {
+                  "name": "Escuela Hostelería",
+                  "types": [
+                    "restaurant",
+                    "school",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 94,
+                  "vicinity": "Avenida de Andalucia, 23, Benahavís",
+                  "place_id": "ChIJAQf82kbVcg0RmxumM0p4JxY",
+                  "location": {
+                    "lat": 36.5218391,
+                    "lng": -5.045226599999999
+                  }
+                },
+                {
+                  "name": "Rufino",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 820,
+                  "vicinity": "Calle Montemayor, 4, Benahavís",
+                  "place_id": "ChIJpTpWa0fVcg0RnNiauOuOIGU",
+                  "location": {
+                    "lat": 36.5229339,
+                    "lng": -5.045888199999999
+                  }
+                },
+                {
+                  "name": "Legends Bar & Restaurant",
+                  "types": [
+                    "restaurant",
+                    "bar",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 213,
+                  "vicinity": "Avenida de Andalucia, 7, Benahavís",
+                  "place_id": "ChIJMdqTFkfVcg0R6bdKRXEyuKY",
+                  "location": {
+                    "lat": 36.52354640000001,
+                    "lng": -5.0459516
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Parque Torre Leonera",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 695,
+                  "vicinity": "Benahavís",
+                  "place_id": "ChIJw7ML8UPVcg0RmlpioD3w7dE",
+                  "location": {
+                    "lat": 36.5183383,
+                    "lng": -5.043501199999999
+                  }
+                },
+                {
+                  "name": "Plaza del Patriarca Harry",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Calle el pilar, 10, Benahavís",
+                  "place_id": "ChIJRwKHRQDVcg0RbJk8uCYFwAs",
+                  "location": {
+                    "lat": 36.5250589,
+                    "lng": -5.046853200000001
+                  }
+                },
+                {
+                  "name": "Parque Canino (Hundeauslauf)",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 3,
+                  "vicinity": "Parque Infantil Benahavís, 3, Avenida La Moraleda, 2, Benahavís",
+                  "place_id": "ChIJnbpQo4nVcg0RrbZRPKLB77I",
+                  "location": {
+                    "lat": 36.5261412,
+                    "lng": -5.0453371
+                  }
+                },
+                {
+                  "name": "Parque Calistenia",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Calle la Rivera, 2, Benahavís",
+                  "place_id": "ChIJc9WdegDVcg0RMA_pESBTgLQ",
+                  "location": {
+                    "lat": 36.5266257,
+                    "lng": -5.0446154
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Iglesia Virgen del Rosario",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 12,
+                  "vicinity": "Plaza de la Iglesia, 1, Benahavís",
+                  "place_id": "ChIJg8XedkfVcg0R55YgVlnt57M",
+                  "location": {
+                    "lat": 36.5237349,
+                    "lng": -5.0464951
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "SLC Abstract",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Calle Malaga, 16, Benahavís",
+                  "place_id": "ChIJpZ1QpirVcg0RXkYCRm3C8ls",
+                  "location": {
+                    "lat": 36.52362419999999,
+                    "lng": -5.0457642
+                  }
+                },
+                {
+                  "name": "Galería David Marshall",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 21,
+                  "vicinity": "Calle Estepona, Benahavís",
+                  "place_id": "ChIJF_hmTxcqcw0RjhqmfiVl7mU",
+                  "location": {
+                    "lat": 36.5242595,
+                    "lng": -5.046844500000001
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Benahavís",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Benahavís",
+                  "place_id": "ChIJFffGQ0fVcg0ReCGEqx44f6w",
+                  "location": {
+                    "lat": 36.5204891,
+                    "lng": -5.0455575
+                  }
+                },
+                {
+                  "name": "Hotel and Restaurant Amanhavis",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 285,
+                  "vicinity": "Calle el pilar, 3, Benahavís",
+                  "place_id": "ChIJD7YpijjVcg0RGz7myXxIBF4",
+                  "location": {
+                    "lat": 36.52459109999999,
+                    "lng": -5.046866800000001
+                  }
+                },
+                {
+                  "name": "Restaurante Amigos",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 175,
+                  "vicinity": "Calle Malaga, 3, Benahavís",
+                  "place_id": "ChIJs-d0nDjVcg0R365nRkM8RgM",
+                  "location": {
+                    "lat": 36.5240757,
+                    "lng": -5.045903099999999
+                  }
+                },
+                {
+                  "name": "Apartamento Los Naranjos",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 10,
+                  "vicinity": "Urbanización La Pacheca, Avenida de Andalucia, s/n, Benahavís",
+                  "place_id": "ChIJLUZ5AkTVcg0RtYeodnOSUhQ",
+                  "location": {
+                    "lat": 36.5191116,
+                    "lng": -5.044765
+                  }
+                },
+                {
+                  "name": "Benahavis Penthouse Apartment",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 13,
+                  "vicinity": "Avenida La Moraleda, Edificio Ribera de Guadalmina, Apartamento 2A, Benahavís",
+                  "place_id": "ChIJ61_85kDVcg0REldHDPO31wA",
+                  "location": {
+                    "lat": 36.5220373,
+                    "lng": -5.0428086
+                  }
+                }
+              ]
+            },
+            "total_places_found": 23,
+            "photo_timestamp": "2024:08:10 14:11:53",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.40253281593322754
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/91.jpg"
+    },
+    {
+      "image_filename": "91.jpg",
+      "timestamp": "2026-01-28T07:23:57.644809",
+      "processing_time_seconds": 60.067248,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Natural rock formation",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The identification is based on the visible characteristics of the rock formation and the surrounding natural environment, which suggests a typical outdoor setting with geological features.",
+            "detailed_description": "The image shows a natural rock formation adjacent to a body of water. The rock surface is rugged and textured, with visible layers and crevices. Surrounding the rock are patches of greenery, including grass and small plants. The water appears to be shallow and has a greenish tint, likely due to reflections and natural elements.",
+            "identification": {
+              "primary": [
+                "Natural rock formation"
+              ],
+              "location": null,
+              "confidence": 0.8
+            },
+            "artifacts": [
+              {
+                "name": "Rock formation",
+                "type": "natural_feature",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "rock",
+              "water",
+              "outdoor"
+            ],
+            "location": null,
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Canyon or riverbank",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The presence of water and rock formations suggests a canyon or riverbank setting."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Natural rock formation\"],\n        \"location\": null,\n        \"confidence\": 0.8\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Rock formation\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"rock\", \"water\", \"outdoor\"],\n    \"description\": \"The image shows a natural rock formation adjacent to a body of water. The rock surface is rugged and textured, with visible layers and crevices. Surrounding the rock are patches of greenery, including grass and small plants. The water appears to be shallow and has a greenish tint, likely due to reflections and natural elements.\",\n    \"reasoning\": \"The identification is based on the visible characteristics of the rock formation and the surrounding natural environment, which suggests a typical outdoor setting with geological features.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Canyon or riverbank\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The presence of water and rock formations suggests a canyon or riverbank setting.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 9.71654486656189
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a natural setting featuring a rocky cliff face and a body of water. The cliff is composed of rugged, textured stone with visible cracks and crevices, suggesting erosion over time. The rock surface is predominantly light brown with darker patches, indicating variations in mineral composition. Adjacent to the cliff is a lush area with dense greenery, including grasses and small shrubs, thriving in the sunlight. The water appears to be a shallow stream or river, with a greenish ti",
+            "description": "The image depicts a natural setting featuring a rocky cliff face and a body of water. The cliff is composed of rugged, textured stone with visible cracks and crevices, suggesting erosion over time. The rock surface is predominantly light brown with darker patches, indicating variations in mineral composition. Adjacent to the cliff is a lush area with dense greenery, including grasses and small shrubs, thriving in the sunlight. The water appears to be a shallow stream or river, with a greenish ti",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "processing_time_seconds": 50.34869885444641
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Summer",
+          "confidence": 0.9298895001411438,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Summer",
+                "score": 0.9298895001411438
+              },
+              {
+                "source": "label",
+                "name": "Recreation",
+                "score": 0.9102838039398193
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.8714076280593872
+              },
+              {
+                "source": "label",
+                "name": "Fun",
+                "score": 0.8090395927429199
+              },
+              {
+                "source": "label",
+                "name": "Leisure",
+                "score": 0.7595021724700928
+              }
+            ],
+            "web_entities": [],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.8714076280593872
+              },
+              {
+                "name": "Person",
+                "score": 0.5597951412200928
+              }
+            ],
+            "labels": [
+              {
+                "name": "Summer",
+                "score": 0.9298895001411438
+              },
+              {
+                "name": "Recreation",
+                "score": 0.9102838039398193
+              },
+              {
+                "name": "Fun",
+                "score": 0.8090395927429199
+              },
+              {
+                "name": "Leisure",
+                "score": 0.7595021724700928
+              },
+              {
+                "name": "Vacation",
+                "score": 0.7309913039207458
+              }
+            ],
+            "processing_time_seconds": 21.361032962799072
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/91.jpg"
+    }
+  ]
+}

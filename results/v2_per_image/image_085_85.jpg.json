@@ -1,0 +1,990 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "85.jpg",
+      "timestamp": "2026-01-28T07:10:18.285380",
+      "processing_time_seconds": 48.978193,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 59.92792222222222,
+        "gps_longitude": 10.695819444444444,
+        "location": {
+          "formatted_address": "WMHW+58 Oslo, Norway",
+          "city": "Oslo",
+          "county": "Oslo",
+          "country": "Norway"
+        },
+        "datetime_original": "2024:06:23 15:22:50",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Monolith at Vigeland Park, Oslo, Norway",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive design and location in Oslo strongly suggest this is the Monolith at Vigeland Park, a well-known sculpture by Gustav Vigeland.",
+            "detailed_description": "The image shows the Monolith, a prominent sculpture located in Vigeland Park, Oslo, Norway. This granite sculpture is part of a larger installation by Gustav Vigeland, created in the early 20th century. The Monolith is characterized by its towering height and intricate design, featuring numerous intertwined human figures. The park is known for its collection of sculptures, all designed by Vigeland, and is a significant cultural landmark in Oslo.",
+            "identification": {
+              "primary": [
+                "Monolith at Vigeland Park"
+              ],
+              "location": "Oslo, Norway",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Monolith",
+                "type": "sculpture",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "sculpture",
+              "Vigeland_Park",
+              "20th_century",
+              "granite",
+              "Oslo"
+            ],
+            "location": "Oslo, Norway",
+            "type": "sculpture",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Monolith at Vigeland Park\"],\n        \"location\": \"Oslo, Norway\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Monolith\",\n            \"type\": \"sculpture\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"sculpture\", \"Vigeland_Park\", \"20th_century\", \"granite\", \"Oslo\"],\n    \"description\": \"The image shows the Monolith, a prominent sculpture located in Vigeland Park, Oslo, Norway. This granite sculpture is part of a larger installation by Gustav Vigeland, created in the early 20th century. The Monolith is characterized by its towering height and intricate design, featuring numerous intertwined human figures. The park is known for its collection of sculptures, all designed by Vigeland, and is a significant cultural landmark in Oslo.\",\n    \"reasoning\": \"The distinctive design and location in Oslo strongly suggest this is the Monolith at Vigeland Park, a well-known sculpture by Gustav Vigeland.\",\n    \"type\": \"sculpture\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "gps_coordinates": {
+              "latitude": 59.92792222222222,
+              "longitude": 10.695819444444444
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "WMHW+58 Oslo, Norway",
+              "city": "Oslo",
+              "county": "Oslo",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2024:06:23 15:22:50",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 8.262511014938354
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image prominently features a tall, intricately carved stone monolith set against a backdrop of a bright blue sky with scattered clouds. The monolith is composed of numerous intertwined human figures, creating a complex and dynamic texture across its surface. This sculptural work is highly detailed, with each figure appearing to be in motion, contributing to a sense of fluidity and unity. Surrounding the monolith are lush green trees, providing a natural contrast to the stone structure. In th",
+            "description": "The image prominently features a tall, intricately carved stone monolith set against a backdrop of a bright blue sky with scattered clouds. The monolith is composed of numerous intertwined human figures, creating a complex and dynamic texture across its surface. This sculptural work is highly detailed, with each figure appearing to be in motion, contributing to a sense of fluidity and unity. Surrounding the monolith are lush green trees, providing a natural contrast to the stone structure. In th",
+            "architectural_style": "Modern",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 59.92792222222222,
+              "longitude": 10.695819444444444
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "WMHW+58 Oslo, Norway",
+              "city": "Oslo",
+              "county": "Oslo",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2024:06:23 15:22:50",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 40.06059193611145
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Cumulus",
+          "confidence": 0.8973086476325989,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Cumulus",
+                "score": 0.8973086476325989
+              },
+              {
+                "source": "object",
+                "name": "Sculpture",
+                "score": 0.6292362213134766
+              },
+              {
+                "source": "web",
+                "name": "Tree",
+                "score": 0.34993818402290344
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Tree",
+                "score": 0.34993818402290344
+              },
+              {
+                "name": "Sunlight",
+                "score": 0.28820377588272095
+              },
+              {
+                "name": "M-tree",
+                "score": 0.260699987411499
+              }
+            ],
+            "objects": [
+              {
+                "name": "Sculpture",
+                "score": 0.6292362213134766
+              }
+            ],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.9921609163284302
+              },
+              {
+                "name": "Blue",
+                "score": 0.9890826344490051
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9819164276123047
+              },
+              {
+                "name": "Cloud",
+                "score": 0.9681024551391602
+              },
+              {
+                "name": "Cumulus",
+                "score": 0.8973086476325989
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 59.92792222222222,
+              "longitude": 10.695819444444444
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "WMHW+58 Oslo, Norway",
+              "city": "Oslo",
+              "county": "Oslo",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2024:06:23 15:22:50",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 11.98868203163147
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Oslo, Norway",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Oslo, Norway",
+            "coordinates": {
+              "latitude": 59.92792222222222,
+              "longitude": 10.695819444444444
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Monolith",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1136,
+                  "vicinity": "Rolf E. Stenersens allé 85",
+                  "place_id": "ChIJMSHMochtQUYRVHjax0HNGfU",
+                  "location": {
+                    "lat": 59.92767389999999,
+                    "lng": 10.6989019
+                  }
+                },
+                {
+                  "name": "Frognerparken",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 22161,
+                  "vicinity": "Kirkeveien, Oslo",
+                  "place_id": "ChIJn5IXQ89tQUYRqXaN0mEtOw0",
+                  "location": {
+                    "lat": 59.92645829999999,
+                    "lng": 10.7034734
+                  }
+                },
+                {
+                  "name": "The Vigeland Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 23561,
+                  "vicinity": "Oslo",
+                  "place_id": "ChIJsV__us5tQUYRlsdVNqT4Ywg",
+                  "location": {
+                    "lat": 59.927029,
+                    "lng": 10.700865
+                  }
+                },
+                {
+                  "name": "The Vigeland Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 817,
+                  "vicinity": "Nobels gate 32, Oslo",
+                  "place_id": "ChIJbcBYus5tQUYRAQVENosTVKQ",
+                  "location": {
+                    "lat": 59.92275419999999,
+                    "lng": 10.7000867
+                  }
+                },
+                {
+                  "name": "Oslo City Museum (Oslo Bymuseum)",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 630,
+                  "vicinity": "Halvdan Svartes gate 58, Oslo",
+                  "place_id": "ChIJGz5l5M5tQUYRLaB1udUWVJE",
+                  "location": {
+                    "lat": 59.92389429999999,
+                    "lng": 10.7030618
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "The Vigeland Park",
+                  "types": [
+                    "park",
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 23561,
+                  "vicinity": "Oslo",
+                  "place_id": "ChIJsV__us5tQUYRlsdVNqT4Ywg",
+                  "location": {
+                    "lat": 59.927029,
+                    "lng": 10.700865
+                  }
+                },
+                {
+                  "name": "The Vigeland Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 817,
+                  "vicinity": "Nobels gate 32, Oslo",
+                  "place_id": "ChIJbcBYus5tQUYRAQVENosTVKQ",
+                  "location": {
+                    "lat": 59.92275419999999,
+                    "lng": 10.7000867
+                  }
+                },
+                {
+                  "name": "Oslo City Museum (Oslo Bymuseum)",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 630,
+                  "vicinity": "Halvdan Svartes gate 58, Oslo",
+                  "place_id": "ChIJGz5l5M5tQUYRLaB1udUWVJE",
+                  "location": {
+                    "lat": 59.92389429999999,
+                    "lng": 10.7030618
+                  }
+                },
+                {
+                  "name": "Norwegian Sculpture Biennial | Norwegian Sculpture Biennial",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Nobels gate 32, Oslo",
+                  "place_id": "ChIJsV__us5tQUYRSM2nQqeTY8w",
+                  "location": {
+                    "lat": 59.922806,
+                    "lng": 10.7004736
+                  }
+                },
+                {
+                  "name": "Henriette Wegner Pavilion",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 5,
+                  "vicinity": "Oslo",
+                  "place_id": "ChIJZQA7AQBtQUYRnLSFnrGXJII",
+                  "location": {
+                    "lat": 59.9232212,
+                    "lng": 10.705109
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Nabo Kitchen & Bar",
+                  "types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 426,
+                  "vicinity": "Essendrops gate 9, Oslo",
+                  "place_id": "ChIJgwcC1dptQUYRV2micgO-bnM",
+                  "location": {
+                    "lat": 59.92962089999999,
+                    "lng": 10.7119074
+                  }
+                },
+                {
+                  "name": "À L’aise",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 235,
+                  "vicinity": "Essendrops gate 6, Oslo",
+                  "place_id": "ChIJPRbmLsVtQUYRmtW-ik-mAgY",
+                  "location": {
+                    "lat": 59.92916630000001,
+                    "lng": 10.7097209
+                  }
+                },
+                {
+                  "name": "Mini Thai & Sushi",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 264,
+                  "vicinity": "Middelthuns gate 17, Oslo",
+                  "place_id": "ChIJ5SRX1tptQUYR5tCUbNE7fyY",
+                  "location": {
+                    "lat": 59.92801349999999,
+                    "lng": 10.7109632
+                  }
+                },
+                {
+                  "name": "Herregårdskroen",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 340,
+                  "vicinity": "Frognerveien 67, Oslo",
+                  "place_id": "ChIJFV4hyM9tQUYRFcATsFZyo64",
+                  "location": {
+                    "lat": 59.92451140000001,
+                    "lng": 10.7024944
+                  }
+                },
+                {
+                  "name": "Domino's Pizza Majorstuen",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 479,
+                  "vicinity": "Sørkedalsveien 9, Oslo",
+                  "place_id": "ChIJ2S9OvMRtQUYR0-KEVoI4b-Y",
+                  "location": {
+                    "lat": 59.931474,
+                    "lng": 10.710125
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Frognerparken",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 22161,
+                  "vicinity": "Kirkeveien, Oslo",
+                  "place_id": "ChIJn5IXQ89tQUYRqXaN0mEtOw0",
+                  "location": {
+                    "lat": 59.92645829999999,
+                    "lng": 10.7034734
+                  }
+                },
+                {
+                  "name": "The Vigeland Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 23561,
+                  "vicinity": "Oslo",
+                  "place_id": "ChIJsV__us5tQUYRlsdVNqT4Ywg",
+                  "location": {
+                    "lat": 59.927029,
+                    "lng": 10.700865
+                  }
+                },
+                {
+                  "name": "Canisbanen",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 13,
+                  "vicinity": "Monolitveien 6, Oslo",
+                  "place_id": "ChIJC0s_-8dtQUYRMm4NFmSxTn8",
+                  "location": {
+                    "lat": 59.92868910000001,
+                    "lng": 10.6926807
+                  }
+                },
+                {
+                  "name": "Skøyenparken",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 161,
+                  "vicinity": "Oslo",
+                  "place_id": "ChIJR7Y_5rdtQUYRnD1s3y055OY",
+                  "location": {
+                    "lat": 59.9252371,
+                    "lng": 10.6861296
+                  }
+                },
+                {
+                  "name": "Hundejordet",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 222,
+                  "vicinity": "Oslo",
+                  "place_id": "ChIJaVeFOMZtQUYRQ-PWStGt5js",
+                  "location": {
+                    "lat": 59.92741389999999,
+                    "lng": 10.6961185
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Vestre Gravlund - Gravlundskapellet",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 13,
+                  "vicinity": "WMJW+4G, Sørkedalsveien 66, Oslo",
+                  "place_id": "ChIJx4JkE91tQUYRer9XzhptNws",
+                  "location": {
+                    "lat": 59.931564,
+                    "lng": 10.6970911
+                  }
+                },
+                {
+                  "name": "Skøyen Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 45,
+                  "vicinity": "Skøyenveien 43, Oslo",
+                  "place_id": "ChIJh0KYK7htQUYR0awcivnwlAc",
+                  "location": {
+                    "lat": 59.9292524,
+                    "lng": 10.6875575
+                  }
+                },
+                {
+                  "name": "Vestre Graveyard - Old Chapel",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 9,
+                  "vicinity": "Sørkedalsveien 66, Oslo",
+                  "place_id": "ChIJ_yz9FeBtQUYR7eXKlNYHhxs",
+                  "location": {
+                    "lat": 59.9339166,
+                    "lng": 10.6966972
+                  }
+                },
+                {
+                  "name": "Heimdalsgata",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Oslo",
+                  "place_id": "ChIJrUL_XABtQUYREpqouEuSMi0",
+                  "location": {
+                    "lat": 59.92923500000001,
+                    "lng": 10.7079802
+                  }
+                },
+                {
+                  "name": "Noor Mosque",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 9,
+                  "vicinity": "Frognerveien 53, Oslo",
+                  "place_id": "ChIJEY97DM5tQUYR8TUMp6eUOqc",
+                  "location": {
+                    "lat": 59.9218413,
+                    "lng": 10.7059876
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Fineart Frames - Majorstuen",
+                  "types": [
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3,
+                  "user_ratings_total": 3,
+                  "vicinity": "Kirkeveien 49, Oslo",
+                  "place_id": "ChIJC2nFkNptQUYRwvlXXfZTIIk",
+                  "location": {
+                    "lat": 59.9275581,
+                    "lng": 10.7135736
+                  }
+                },
+                {
+                  "name": "8 LAG KUNSTFORENING",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Halvdan Svartes gate 6A, Oslo",
+                  "place_id": "ChIJHZkIawBtQUYRZkKvmR9vbsY",
+                  "location": {
+                    "lat": 59.9206434,
+                    "lng": 10.6934979
+                  }
+                },
+                {
+                  "name": "Tad Galleri",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "Drammensveien 130, Bygg B, inngang 13, Oslo",
+                  "place_id": "ChIJ-XuysNNtQUYRTnf-J4Ag84E",
+                  "location": {
+                    "lat": 59.92093990000001,
+                    "lng": 10.6882622
+                  }
+                },
+                {
+                  "name": "Locarto AS",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Drammensveien 130B, Oslo",
+                  "place_id": "ChIJAQA8vYduQUYRuF4PYyPviq8",
+                  "location": {
+                    "lat": 59.92048589999999,
+                    "lng": 10.6882193
+                  }
+                },
+                {
+                  "name": "Galleri Fotoblikk",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Kirkeveien 44, Oslo",
+                  "place_id": "ChIJs5X6Dr1tQUYR4tKvuFmAKgU",
+                  "location": {
+                    "lat": 59.9274217,
+                    "lng": 10.7125542
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Oslo",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Oslo",
+                  "place_id": "ChIJOfBn8mFuQUYRmh4j019gkn4",
+                  "location": {
+                    "lat": 59.9121746,
+                    "lng": 10.7312704
+                  }
+                },
+                {
+                  "name": "Monolith",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1136,
+                  "vicinity": "Rolf E. Stenersens allé 85",
+                  "place_id": "ChIJMSHMochtQUYRVHjax0HNGfU",
+                  "location": {
+                    "lat": 59.92767389999999,
+                    "lng": 10.6989019
+                  }
+                },
+                {
+                  "name": "Unilabs Røntgen Majorstuen",
+                  "types": [
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.2,
+                  "user_ratings_total": 133,
+                  "vicinity": "Middelthuns gate 23, Oslo",
+                  "place_id": "ChIJSUzRRcVtQUYRVjSmtpxh678",
+                  "location": {
+                    "lat": 59.9280516,
+                    "lng": 10.7094982
+                  }
+                },
+                {
+                  "name": "Frognerparken",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 22161,
+                  "vicinity": "Kirkeveien, Oslo",
+                  "place_id": "ChIJn5IXQ89tQUYRqXaN0mEtOw0",
+                  "location": {
+                    "lat": 59.92645829999999,
+                    "lng": 10.7034734
+                  }
+                },
+                {
+                  "name": "NFkino Colosseum Cinema",
+                  "types": [
+                    "movie_theater",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 4456,
+                  "vicinity": "Fridtjof Nansens vei 6, Oslo",
+                  "place_id": "ChIJDSGMi31uQUYRwxXuuR24uxI",
+                  "location": {
+                    "lat": 59.9296686,
+                    "lng": 10.7104408
+                  }
+                }
+              ]
+            },
+            "total_places_found": 35,
+            "photo_timestamp": "2024:06:23 15:22:50",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.4035027027130127
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/85.jpg"
+    },
+    {
+      "image_filename": "85.jpg",
+      "timestamp": "2026-01-28T07:11:07.305246",
+      "processing_time_seconds": 52.522498,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Monolith in Vigeland Park, Oslo, Norway",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive style and composition of intertwined human figures are characteristic of the Monolith in Vigeland Park, a well-known landmark in Oslo.",
+            "detailed_description": "The image shows the Monolith, a prominent sculpture located in Vigeland Park, Oslo, Norway. This towering granite structure is composed of intertwined human figures and is a central piece of the park's collection of sculptures by Gustav Vigeland. The Monolith is surrounded by other sculptures and greenery, contributing to its dramatic presence against the sky.",
+            "identification": {
+              "primary": [
+                "Monolith in Vigeland Park"
+              ],
+              "location": "Oslo, Norway",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Monolith",
+                "type": "sculpture",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "sculpture",
+              "20th_century",
+              "granite",
+              "Oslo",
+              "artwork"
+            ],
+            "location": "Oslo, Norway",
+            "type": "sculpture",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Monolith in Vigeland Park\"],\n        \"location\": \"Oslo, Norway\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Monolith\",\n            \"type\": \"sculpture\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"sculpture\", \"20th_century\", \"granite\", \"Oslo\", \"artwork\"],\n    \"description\": \"The image shows the Monolith, a prominent sculpture located in Vigeland Park, Oslo, Norway. This towering granite structure is composed of intertwined human figures and is a central piece of the park's collection of sculptures by Gustav Vigeland. The Monolith is surrounded by other sculptures and greenery, contributing to its dramatic presence against the sky.\",\n    \"reasoning\": \"The distinctive style and composition of intertwined human figures are characteristic of the Monolith in Vigeland Park, a well-known landmark in Oslo.\",\n    \"type\": \"sculpture\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "processing_time_seconds": 7.598721981048584
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image features a tall, intricately carved monolith that stands prominently against a backdrop of a partly cloudy sky. This sculpture is composed of numerous intertwined human figures, creating a complex and dynamic visual texture. The figures appear to be carved in a realistic style, showcasing detailed anatomical features and varied poses, suggesting movement and interaction. The sculpture is made of a light gray stone, possibly granite or marble, which gives it a solid and enduring presenc",
+            "description": "The image features a tall, intricately carved monolith that stands prominently against a backdrop of a partly cloudy sky. This sculpture is composed of numerous intertwined human figures, creating a complex and dynamic visual texture. The figures appear to be carved in a realistic style, showcasing detailed anatomical features and varied poses, suggesting movement and interaction. The sculpture is made of a light gray stone, possibly granite or marble, which gives it a solid and enduring presenc",
+            "architectural_style": "Modern",
+            "search_backends_used": [],
+            "processing_time_seconds": 44.91798114776611
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Cumulus",
+          "confidence": 0.8973086476325989,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Cumulus",
+                "score": 0.8973086476325989
+              },
+              {
+                "source": "object",
+                "name": "Sculpture",
+                "score": 0.6292362213134766
+              },
+              {
+                "source": "web",
+                "name": "Tree",
+                "score": 0.34977516531944275
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Tree",
+                "score": 0.34977516531944275
+              },
+              {
+                "name": "Sunlight",
+                "score": 0.2884122431278229
+              },
+              {
+                "name": "M-tree",
+                "score": 0.260699987411499
+              }
+            ],
+            "objects": [
+              {
+                "name": "Sculpture",
+                "score": 0.6292362213134766
+              }
+            ],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.9921609163284302
+              },
+              {
+                "name": "Blue",
+                "score": 0.9890826344490051
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9819164276123047
+              },
+              {
+                "name": "Cloud",
+                "score": 0.9681024551391602
+              },
+              {
+                "name": "Cumulus",
+                "score": 0.8973086476325989
+              }
+            ],
+            "processing_time_seconds": 12.26244568824768
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/85.jpg"
+    }
+  ]
+}

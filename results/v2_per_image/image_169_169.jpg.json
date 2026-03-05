@@ -1,0 +1,1147 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "169.jpg",
+      "timestamp": "2026-01-28T03:20:48.618283",
+      "processing_time_seconds": 70.162104,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 38.71923888888889,
+        "gps_longitude": -9.133005555555556,
+        "location": {
+          "formatted_address": "R. Damasceno Monteiro 60D, 1170-206 Lisboa, Portugal",
+          "city": "Lisboa",
+          "county": "Lisboa",
+          "country": "Portugal"
+        },
+        "datetime_original": "2025:06:09 13:18:31",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "25 de Abril Bridge, Christ the King Statue, Lisboa, Portugal",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The bridge's distinctive design and the statue's recognizable form are iconic features of Lisbon's skyline, allowing for confident identification.",
+            "detailed_description": "The image shows a panoramic view of Lisbon, Portugal, featuring the 25 de Abril Bridge in the background, which is a suspension bridge resembling the Golden Gate Bridge in San Francisco. The Christ the King Statue is visible in the distance, a prominent monument overlooking the city. The foreground includes typical Lisbon architecture with red-tiled roofs and densely packed buildings.",
+            "identification": {
+              "primary": [
+                "25 de Abril Bridge",
+                "Christ the King Statue"
+              ],
+              "location": "Lisboa, Portugal",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "25 de Abril Bridge",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Christ the King Statue",
+                "type": "landmark",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "bridge",
+              "statue",
+              "Lisboa",
+              "Portugal",
+              "urban_landscape"
+            ],
+            "location": "Lisboa, Portugal",
+            "type": "viewpoint",
+            "search_range_meters": 2000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"25 de Abril Bridge\", \"Christ the King Statue\"],\n        \"location\": \"Lisboa, Portugal\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"25 de Abril Bridge\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Christ the King Statue\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.90\n        }\n    ],\n    \"tags\": [\"bridge\", \"statue\", \"Lisboa\", \"Portugal\", \"urban_landscape\"],\n    \"description\": \"The image shows a panoramic view of Lisbon, Portugal, featuring the 25 de Abril Bridge in the background, which is a suspension bridge resembling the Golden Gate Bridge in San Francisco. The Christ the King Statue is visible in the distance, a prominent monument overlooking the city. The foreground includes typical Lisbon architecture with red-tiled roofs and densely packed buildings.\",\n    \"reasoning\": \"The bridge's distinctive design and the statue's recognizable form are iconic features of Lisbon's skyline, allowing for confident identification.\",\n    \"type\": \"viewpoint\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 38.71923888888889,
+              "longitude": -9.133005555555556
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "R. Damasceno Monteiro 60D, 1170-206 Lisboa, Portugal",
+              "city": "Lisboa",
+              "county": "Lisboa",
+              "country": "Portugal"
+            },
+            "photo_timestamp": "2025:06:09 13:18:31",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 32.32546401023865
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "25 de Abril Bridge, Lisbon cityscape, Lisbon, Portugal",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the iconic 25 de Abril Bridge in Lisbon, known for its suspension design similar to famous bridges in other major cities. The urban landscape with terracotta rooftops and traditional Portuguese architecture further supports the identification as Lisbon. The search results from Lisbon-related sources confirm the location and features described.",
+            "identification": {
+              "primary": [
+                "25 de Abril Bridge",
+                "Lisbon cityscape"
+              ],
+              "location": "Lisbon, Portugal",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "25 de Abril Bridge",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Terracotta rooftops",
+                "type": "architectural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Wrought iron railing",
+                "type": "architectural_feature",
+                "confidence": 0.85
+              },
+              {
+                "name": "Sparse foliage tree",
+                "type": "natural_feature",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "traditional_portuguese",
+              "modern_elements",
+              "urban_landscape",
+              "suspension_bridge",
+              "terracotta_rooftops",
+              "Lisbon"
+            ],
+            "sources_used": [
+              "lisbonlisticles.com",
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "*URL*: ([lisbonlisticles.com]())",
+              "*URL*: ([lisbonlisticles.com]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 2000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 2,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image presents a panoramic view of Lisbon, Portugal, showcasing a sprawling urban landscape characterized by densely packed buildings with terracotta rooftops. The architecture predominantly features traditional Portuguese styles, with a mix of modern and historical elements. The buildings vary in height and design, reflecting a blend of older, more ornate structures and newer constructions. In the distance, a prominent suspension bridge spans across the Tagus River, identifiable by its tall",
+            "description": "The image presents a panoramic view of Lisbon, Portugal, showcasing a sprawling urban landscape characterized by densely packed buildings with terracotta rooftops. The architecture predominantly features traditional Portuguese styles, with a mix of modern and historical elements. The buildings vary in height and design, reflecting a blend of older, more ornate structures and newer constructions. In the distance, a prominent suspension bridge spans across the Tagus River, identifiable by its tall",
+            "architectural_style": "Traditional Portuguese with modern elements",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 38.71923888888889,
+              "longitude": -9.133005555555556
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "R. Damasceno Monteiro 60D, 1170-206 Lisboa, Portugal",
+              "city": "Lisboa",
+              "county": "Lisboa",
+              "country": "Portugal"
+            },
+            "photo_timestamp": "2025:06:09 13:18:31",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 36.96779012680054
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Cumulus",
+          "confidence": 0.7359806895256042,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Cumulus",
+                "score": 0.7359806895256042
+              },
+              {
+                "source": "web",
+                "name": "Tree",
+                "score": 0.33400601148605347
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Tree",
+                "score": 0.33400601148605347
+              },
+              {
+                "name": "M-tree",
+                "score": 0.259799987077713
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9881534576416016
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9819157123565674
+              },
+              {
+                "name": "Cloud",
+                "score": 0.9304394721984863
+              },
+              {
+                "name": "Cumulus",
+                "score": 0.7359806895256042
+              },
+              {
+                "name": "Meteorological phenomenon",
+                "score": 0.6452128291130066
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 38.71923888888889,
+              "longitude": -9.133005555555556
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "R. Damasceno Monteiro 60D, 1170-206 Lisboa, Portugal",
+              "city": "Lisboa",
+              "county": "Lisboa",
+              "country": "Portugal"
+            },
+            "photo_timestamp": "2025:06:09 13:18:31",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 18.81375217437744
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Lisboa, Portugal",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Lisboa, Portugal",
+            "coordinates": {
+              "latitude": 38.71923888888889,
+              "longitude": -9.133005555555556
+            },
+            "search_range_meters": 2000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Arco da Rua Augusta",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 26141,
+                  "vicinity": "Rua Augusta 2, Lisboa",
+                  "place_id": "ChIJ5fcMh3k0GQ0RsEli_Fck5sQ",
+                  "location": {
+                    "lat": 38.7084447,
+                    "lng": -9.1368243
+                  }
+                },
+                {
+                  "name": "Igreja de Santo Estêvão",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 99,
+                  "vicinity": "Largo de Santo Estêvão, Lisboa",
+                  "place_id": "ChIJV2bOyHU0GQ0Rrwpgzf93sXo",
+                  "location": {
+                    "lat": 38.7122141,
+                    "lng": -9.127963000000001
+                  }
+                },
+                {
+                  "name": "Teatro Eden",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 205,
+                  "vicinity": "Praça dos Restauradores 9, Lisboa",
+                  "place_id": "ChIJ9RDR5IAzGQ0Rv_lrNJep9VI",
+                  "location": {
+                    "lat": 38.7153286,
+                    "lng": -9.141990900000001
+                  }
+                },
+                {
+                  "name": "Castelo de São Jorge",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 98312,
+                  "vicinity": "Rua de Santa Cruz do Castelo, Lisboa",
+                  "place_id": "ChIJm8MOtHc0GQ0R1zPkmUFwwLQ",
+                  "location": {
+                    "lat": 38.7139092,
+                    "lng": -9.1334762
+                  }
+                },
+                {
+                  "name": "Santa Justa Lift",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 57302,
+                  "vicinity": "Rua de Santa Justa, Lisboa",
+                  "place_id": "ChIJL42Kt3g0GQ0RfGlw4GJ8FOE",
+                  "location": {
+                    "lat": 38.7121301,
+                    "lng": -9.139429699999999
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Castelo de São Jorge",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 98312,
+                  "vicinity": "Rua de Santa Cruz do Castelo, Lisboa",
+                  "place_id": "ChIJm8MOtHc0GQ0R1zPkmUFwwLQ",
+                  "location": {
+                    "lat": 38.7139092,
+                    "lng": -9.1334762
+                  }
+                },
+                {
+                  "name": "National Pantheon",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 12029,
+                  "vicinity": "Campo de Santa Clara, Lisboa",
+                  "place_id": "ChIJfZ_qo4ozGQ0RN07tPE-K274",
+                  "location": {
+                    "lat": 38.71499439999999,
+                    "lng": -9.124683499999998
+                  }
+                },
+                {
+                  "name": "Water Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 931,
+                  "vicinity": "Rua do Alviela 12, Lisboa",
+                  "place_id": "ChIJJZHhEvQzGQ0Rcn7dEYYdTtc",
+                  "location": {
+                    "lat": 38.71982500000001,
+                    "lng": -9.119935
+                  }
+                },
+                {
+                  "name": "Fado Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 5764,
+                  "vicinity": "Alfama, Largo do Chafariz de Dentro 1, Lisboa",
+                  "place_id": "ChIJeZYlNnQ0GQ0RU4WDGSc3yDg",
+                  "location": {
+                    "lat": 38.7111258,
+                    "lng": -9.127616000000002
+                  }
+                },
+                {
+                  "name": "The National Museum of Contemporary Art",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1839,
+                  "vicinity": "Rua Serpa Pinto 4, Lisboa",
+                  "place_id": "ChIJ-Vj5lX40GQ0RsfhyV8aPkR0",
+                  "location": {
+                    "lat": 38.7083293,
+                    "lng": -9.1410103
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Hotel Florida",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 1131,
+                  "vicinity": "Rua Duque de Palmela 34, Lisboa",
+                  "place_id": "ChIJf2wJR3czGQ0R6GZfVBreu60",
+                  "location": {
+                    "lat": 38.7240543,
+                    "lng": -9.150283600000002
+                  }
+                },
+                {
+                  "name": "Estrela da Bica",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1388,
+                  "vicinity": "Travessa do Cabral 33, Lisboa",
+                  "place_id": "ChIJuXNwmoA0GQ0RptjQxJ1Bis8",
+                  "location": {
+                    "lat": 38.70935540000001,
+                    "lng": -9.1462821
+                  }
+                },
+                {
+                  "name": "The Art Inn Lisbon",
+                  "types": [
+                    "bar",
+                    "clothing_store",
+                    "cafe",
+                    "lodging",
+                    "restaurant",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 538,
+                  "vicinity": "Rua 1º de Dezembro 31, Lisboa",
+                  "place_id": "ChIJITS6qng0GQ0RYMBD2MNlQwE",
+                  "location": {
+                    "lat": 38.7130722,
+                    "lng": -9.140006600000001
+                  }
+                },
+                {
+                  "name": "Grapes & Bites",
+                  "types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1506,
+                  "vicinity": "Rua do Norte 85, Lisboa",
+                  "place_id": "ChIJEcDMln80GQ0RweCVwP8NxHk",
+                  "location": {
+                    "lat": 38.71206429999999,
+                    "lng": -9.143842399999999
+                  }
+                },
+                {
+                  "name": "Trindade",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 7950,
+                  "vicinity": "Rua Nova da Trindade 20C, Lisboa",
+                  "place_id": "ChIJbymNeX80GQ0ROXnZMyq-WxM",
+                  "location": {
+                    "lat": 38.712541,
+                    "lng": -9.142476000000002
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Principe Real Garden",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 12704,
+                  "vicinity": "Praça do Príncipe Real, Lisboa",
+                  "place_id": "ChIJAVcy4X4zGQ0RAU4hP9Ou6tQ",
+                  "location": {
+                    "lat": 38.7162998,
+                    "lng": -9.1487171
+                  }
+                },
+                {
+                  "name": "Garden of the Castle of São Jorge",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 431,
+                  "vicinity": "Rua do Espírito Santo, Lisboa",
+                  "place_id": "ChIJV53w4Hc0GQ0RlNW3HXHt4hg",
+                  "location": {
+                    "lat": 38.71350529999999,
+                    "lng": -9.1334917
+                  }
+                },
+                {
+                  "name": "Parque Hortícola da Graça",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1,
+                  "vicinity": "Calçada do Monte, Lisboa",
+                  "place_id": "ChIJFcqobgAzGQ0RAKovPmXAg9A",
+                  "location": {
+                    "lat": 38.7180541,
+                    "lng": -9.1316077
+                  }
+                },
+                {
+                  "name": "Jardim da Cerca da Graça",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1754,
+                  "vicinity": "Calçada do Monte, Lisboa",
+                  "place_id": "ChIJ41Lk44gzGQ0Rs69StMfTQo8",
+                  "location": {
+                    "lat": 38.71746350000001,
+                    "lng": -9.132069399999999
+                  }
+                },
+                {
+                  "name": "Labirinto di panchine",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Largo do Intendente Pina Manique 17, Lisboa",
+                  "place_id": "ChIJq1CbBwAzGQ0R4XvFQtFN4Jw",
+                  "location": {
+                    "lat": 38.7208997,
+                    "lng": -9.134879399999999
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Igreja de Santo Estêvão",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 99,
+                  "vicinity": "Largo de Santo Estêvão, Lisboa",
+                  "place_id": "ChIJV2bOyHU0GQ0Rrwpgzf93sXo",
+                  "location": {
+                    "lat": 38.7122141,
+                    "lng": -9.127963000000001
+                  }
+                },
+                {
+                  "name": "Lisbon Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 33449,
+                  "vicinity": "Largo da Sé 1, Lisboa",
+                  "place_id": "ChIJm9xRPnc0GQ0RGWK34RwdbpI",
+                  "location": {
+                    "lat": 38.7098339,
+                    "lng": -9.1329535
+                  }
+                },
+                {
+                  "name": "Igreja de São Roque",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 6219,
+                  "vicinity": "Largo Trindade Coelho, Lisboa",
+                  "place_id": "ChIJG_BHeYAzGQ0R735A3WMtiFA",
+                  "location": {
+                    "lat": 38.71351600000001,
+                    "lng": -9.143469399999999
+                  }
+                },
+                {
+                  "name": "Capela de Nossa Senhora da Saúde",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 47,
+                  "vicinity": "Rua da Mouraria 38, Lisboa",
+                  "place_id": "ChIJ_eBoyYczGQ0R_SJv1wflpyo",
+                  "location": {
+                    "lat": 38.7157796,
+                    "lng": -9.135704299999999
+                  }
+                },
+                {
+                  "name": "Church Nossa Senhora da Conceição Velha",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 534,
+                  "vicinity": "Rua da Alfândega 108, Lisboa",
+                  "place_id": "ChIJ6_BPUnc0GQ0RS43SiReJFaY",
+                  "location": {
+                    "lat": 38.7088055,
+                    "lng": -9.1341817
+                  }
+                },
+                {
+                  "name": "Baitul Mukarram Masjid, Centro Islâmico Do Bangladesh - CIB",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 162,
+                  "vicinity": "Calçada Agostinho de Carvalho 13 C, Lisboa",
+                  "place_id": "ChIJybraoYgzGQ0R15wTSndmTmg",
+                  "location": {
+                    "lat": 38.7176186,
+                    "lng": -9.1343674
+                  }
+                },
+                {
+                  "name": "Martim Moniz Jam - E - Masjid",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 165,
+                  "vicinity": "Rua do Terreirinho 86, Lisboa",
+                  "place_id": "ChIJMcTqIIYzGQ0RwQXEkCStk_s",
+                  "location": {
+                    "lat": 38.71744959999999,
+                    "lng": -9.1345971
+                  }
+                },
+                {
+                  "name": "Baitur Rahman Jame Masjid Graca",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 30,
+                  "vicinity": "Travessa Senhora Glória 21a, Lisboa",
+                  "place_id": "ChIJWQlOy1szGQ0R8zKL4T_SbGY",
+                  "location": {
+                    "lat": 38.72000349999999,
+                    "lng": -9.127859599999999
+                  }
+                },
+                {
+                  "name": "Hazrat Khadijah (R.A.) Jame Masjid - Mosque🕌",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 104,
+                  "vicinity": "Rua Palmira 64B, Lisboa",
+                  "place_id": "ChIJLfX7AcYzGQ0RZYan0Io5X5w",
+                  "location": {
+                    "lat": 38.7250495,
+                    "lng": -9.133859500000002
+                  }
+                },
+                {
+                  "name": "Mesquita Al Farouk Omar",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 13,
+                  "vicinity": "Rua Passos Manuel, Lisboa",
+                  "place_id": "ChIJ3wEVFwAzGQ0R9J2I9dIoa54",
+                  "location": {
+                    "lat": 38.72758809999999,
+                    "lng": -9.136713
+                  }
+                },
+                {
+                  "name": "Shaare Tikvah Synagogue",
+                  "types": [
+                    "synagogue",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 334,
+                  "vicinity": "Rua Alexandre Herculano 59, Lisboa",
+                  "place_id": "ChIJdTUhUnozGQ0RaCzAfXuqFGg",
+                  "location": {
+                    "lat": 38.72034829999999,
+                    "lng": -9.153334
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Casa da Achada - Centro Mário Dionísio",
+                  "types": [
+                    "tourist_attraction",
+                    "library",
+                    "art_gallery",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 25,
+                  "vicinity": "Rua da Achada 11, Lisboa",
+                  "place_id": "ChIJncohBng0GQ0ReY032ft52Gw",
+                  "location": {
+                    "lat": 38.71338130000001,
+                    "lng": -9.1352867
+                  }
+                },
+                {
+                  "name": "Roca Lisboa Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 167,
+                  "vicinity": "Praça dos Restauradores 46, Lisboa",
+                  "place_id": "ChIJixnTGYEzGQ0RUe1zKHwIjMc",
+                  "location": {
+                    "lat": 38.71643299999999,
+                    "lng": -9.1416486
+                  }
+                },
+                {
+                  "name": "Perve-global-objectos Artísticos Lda",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Rua das Escolas Gerais 13, Lisboa",
+                  "place_id": "ChIJGVuGwXU0GQ0RfeGZl_Dt2YM",
+                  "location": {
+                    "lat": 38.7126993,
+                    "lng": -9.127917499999999
+                  }
+                },
+                {
+                  "name": "Atelier Teresa Lacerda",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 5,
+                  "vicinity": "Rua da Rosa 162A, Lisboa",
+                  "place_id": "ChIJiQYmHYAzGQ0RLYQAxGXznwk",
+                  "location": {
+                    "lat": 38.7135567,
+                    "lng": -9.1454505
+                  }
+                },
+                {
+                  "name": "Hangar",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 155,
+                  "vicinity": "Rua Damasceno Monteiro 12, Lisboa",
+                  "place_id": "ChIJ2YuZ0IgzGQ0RaGw7N_CLfkQ",
+                  "location": {
+                    "lat": 38.718489,
+                    "lng": -9.1322327
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Lisbon",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Lisbon",
+                  "place_id": "ChIJO_PkYRozGQ0R0DaQ5L3rAAQ",
+                  "location": {
+                    "lat": 38.7222524,
+                    "lng": -9.1393366
+                  }
+                },
+                {
+                  "name": "B&B Albergaria Senhora Do Monte",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 200,
+                  "vicinity": "Calçada do Monte 39, Lisboa",
+                  "place_id": "ChIJ68ef0YgzGQ0Rm_hVOZ00UUw",
+                  "location": {
+                    "lat": 38.7185856,
+                    "lng": -9.132216999999999
+                  }
+                },
+                {
+                  "name": "Lisbon Poets Inn",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 565,
+                  "vicinity": "Rua Heliodoro Salgado 4, Lisboa",
+                  "place_id": "ChIJaxMVA380GQ0Rf7oJPECIKA4",
+                  "location": {
+                    "lat": 38.72380700000001,
+                    "lng": -9.131564
+                  }
+                },
+                {
+                  "name": "This is Lisbon Hostel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 535,
+                  "vicinity": "Costa do Castelo 63, Lisboa",
+                  "place_id": "ChIJFdgdFIgzGQ0Rj8NDIqR8_g4",
+                  "location": {
+                    "lat": 38.7149111,
+                    "lng": -9.133663899999998
+                  }
+                },
+                {
+                  "name": "Pouso dos Anjos",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 223,
+                  "vicinity": "Rua dos Anjos 31, Lisboa",
+                  "place_id": "ChIJxebxSYUzGQ0R31bSOC6X1QU",
+                  "location": {
+                    "lat": 38.72369419999999,
+                    "lng": -9.1359127
+                  }
+                }
+              ]
+            },
+            "total_places_found": 41,
+            "photo_timestamp": "2025:06:09 13:18:31",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.5774669647216797
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/169.jpg"
+    },
+    {
+      "image_filename": "169.jpg",
+      "timestamp": "2026-01-28T03:21:58.842983",
+      "processing_time_seconds": 61.034239,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "25 de Abril Bridge, Lisbon cityscape, Lisbon, Portugal",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of the 25 de Abril Bridge, along with the distinctive red-tiled roofs and urban density, strongly indicates that this is a view of Lisbon, Portugal.",
+            "detailed_description": "The image shows a panoramic view of Lisbon, Portugal, with the prominent 25 de Abril Bridge in the background. The cityscape features traditional Portuguese architecture with red-tiled roofs and densely packed buildings. The bridge is a suspension bridge that spans the Tagus River, resembling the Golden Gate Bridge in San Francisco. The urban landscape is typical of Lisbon, showcasing its historical and architectural richness.",
+            "identification": {
+              "primary": [
+                "25 de Abril Bridge",
+                "Lisbon cityscape"
+              ],
+              "location": "Lisbon, Portugal",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "25 de Abril Bridge",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Lisbon cityscape",
+                "type": "viewpoint",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "bridge",
+              "cityscape",
+              "Lisbon",
+              "Portugal",
+              "urban"
+            ],
+            "location": "Lisbon, Portugal",
+            "type": "viewpoint",
+            "search_range_meters": 2000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"25 de Abril Bridge\", \"Lisbon cityscape\"],\n        \"location\": \"Lisbon, Portugal\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"25 de Abril Bridge\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Lisbon cityscape\",\n            \"type\": \"viewpoint\",\n            \"confidence\": 0.90\n        }\n    ],\n    \"tags\": [\"bridge\", \"cityscape\", \"Lisbon\", \"Portugal\", \"urban\"],\n    \"description\": \"The image shows a panoramic view of Lisbon, Portugal, with the prominent 25 de Abril Bridge in the background. The cityscape features traditional Portuguese architecture with red-tiled roofs and densely packed buildings. The bridge is a suspension bridge that spans the Tagus River, resembling the Golden Gate Bridge in San Francisco. The urban landscape is typical of Lisbon, showcasing its historical and architectural richness.\",\n    \"reasoning\": \"The presence of the 25 de Abril Bridge, along with the distinctive red-tiled roofs and urban density, strongly indicates that this is a view of Lisbon, Portugal.\",\n    \"type\": \"viewpoint\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 25.50780987739563
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*Snippet*: Valletta, the capital of Malta, is renowned for its 16th-century Baroque architecture, including St John's Co-Cathedral and the Auberge de Castille. The city is a UNESCO World Heritage Site",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a panoramic view of a cityscape characterized by a dense array of red-tiled rooftops, typical of Mediterranean architecture. The buildings are closely packed, showcasing a variety of architectural styles, predominantly featuring traditional European elements such as terracotta roofs and pastel-colored facades. In the distance, a large suspension bridge spans across a body of water, likely a river or estuary, with a design reminiscent of modern engineering, featuring tall towers",
+            "description": "The image depicts a panoramic view of a cityscape characterized by a dense array of red-tiled rooftops, typical of Mediterranean architecture. The buildings are closely packed, showcasing a variety of architectural styles, predominantly featuring traditional European elements such as terracotta roofs and pastel-colored facades. In the distance, a large suspension bridge spans across a body of water, likely a river or estuary, with a design reminiscent of modern engineering, featuring tall towers",
+            "architectural_style": "Mediterranean, European",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 35.52373671531677
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Cumulus",
+          "confidence": 0.7359806895256042,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Cumulus",
+                "score": 0.7359806895256042
+              },
+              {
+                "source": "web",
+                "name": "Tree",
+                "score": 0.3342175781726837
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Tree",
+                "score": 0.3342175781726837
+              },
+              {
+                "name": "M-tree",
+                "score": 0.259799987077713
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9881534576416016
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9819157123565674
+              },
+              {
+                "name": "Cloud",
+                "score": 0.9304394721984863
+              },
+              {
+                "name": "Cumulus",
+                "score": 0.7359806895256042
+              },
+              {
+                "name": "Meteorological phenomenon",
+                "score": 0.6452128291130066
+              }
+            ],
+            "processing_time_seconds": 17.520533084869385
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/169.jpg"
+    }
+  ]
+}

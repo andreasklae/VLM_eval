@@ -1,0 +1,1070 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "153.heic",
+      "timestamp": "2026-01-28T02:45:08.319624",
+      "processing_time_seconds": 71.703702,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -27.462325,
+        "gps_longitude": 153.0178527777778,
+        "location": {
+          "formatted_address": "Roma Street Parkland, 1 Parkland Blvd, Brisbane City QLD 4000, Australia",
+          "city": "Brisbane City",
+          "county": "Brisbane City",
+          "country": "Australia"
+        },
+        "datetime_original": "2025:03:22 17:55:18",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Brisbane skyline, Parkland with fountain, Brisbane, Australia",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Brisbane, and the skyline matches known features of the city. The modern architectural style and park setting are consistent with urban areas in Brisbane.",
+            "detailed_description": "The image shows a section of the Brisbane skyline featuring modern skyscrapers. The tallest building has a distinctive cylindrical shape with a patterned facade. In the foreground, there is a park with a large fountain, surrounded by greenery and a boardwalk. The scene captures a blend of urban architecture and natural elements, typical of city parks.",
+            "identification": {
+              "primary": [
+                "Brisbane skyline",
+                "Parkland with fountain"
+              ],
+              "location": "Brisbane, Australia",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Modern skyscraper",
+                "type": "building",
+                "confidence": 0.85
+              },
+              {
+                "name": "Fountain in park",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "urban_park",
+              "water_feature",
+              "Brisbane"
+            ],
+            "location": "Brisbane, Australia",
+            "type": "viewpoint",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "South Bank Parklands",
+                "specificity_level": "very_specific",
+                "confidence": 0.75,
+                "reasoning": "The presence of a park and fountain suggests a location like South Bank Parklands, known for similar features."
+              },
+              {
+                "guess": "Brisbane River",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.65,
+                "reasoning": "The water feature and urban setting could be near the Brisbane River, a central part of the city."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Brisbane skyline\", \"Parkland with fountain\"],\n        \"location\": \"Brisbane, Australia\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Modern skyscraper\",\n            \"type\": \"building\",\n            \"confidence\": 0.85\n        },\n        {\n            \"name\": \"Fountain in park\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"urban_park\", \"water_feature\", \"Brisbane\"],\n    \"description\": \"The image shows a section of the Brisbane skyline featuring modern skyscrapers. The tallest building has a distinctive cylindrical shape with a patterned facade. In the foreground, there is a park with a large fountain, surrounded by greenery and a boardwalk. The scene captures a blend of urban architecture and natural elements, typical of city parks.\",\n    \"reasoning\": \"The location metadata indicates Brisbane, and the skyline matches known features of the city. The modern architectural style and park setting are consistent with urban areas in Brisbane.\",\n    \"type\": \"viewpoint\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"South Bank Parklands\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.75,\n            \"reasoning\": \"The presence of a park and fountain suggests a location like South Bank Parklands, known for similar features.\"\n        },\n        {\n            \"guess\": \"Brisbane River\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.65,\n            \"reasoning\": \"The water feature and urban setting could be near the Brisbane River, a central part of the city.\"\n        }\n    ]\n}",
+            "gps_coordinates": {
+              "latitude": -27.462325,
+              "longitude": 153.0178527777778
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Roma Street Parkland, 1 Parkland Blvd, Brisbane City QLD 4000, Australia",
+              "city": "Brisbane City",
+              "county": "Brisbane City",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:03:22 17:55:18",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 34.891031980514526
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([en.wikipedia.org]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 2,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a modern urban scene in Brisbane City, Australia, featuring a skyline dominated by contemporary high-rise buildings. The tallest structure in the center is a cylindrical skyscraper with a distinctive facade characterized by vertical lines and a pattern that appears to be a mix of glass and metal. Surrounding this central tower are several other high-rise buildings, each with a modern architectural style, featuring balconies and large windows. The buildings are primarily compose",
+            "description": "The image depicts a modern urban scene in Brisbane City, Australia, featuring a skyline dominated by contemporary high-rise buildings. The tallest structure in the center is a cylindrical skyscraper with a distinctive facade characterized by vertical lines and a pattern that appears to be a mix of glass and metal. Surrounding this central tower are several other high-rise buildings, each with a modern architectural style, featuring balconies and large windows. The buildings are primarily compose",
+            "architectural_style": "Contemporary",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": -27.462325,
+              "longitude": 153.0178527777778
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Roma Street Parkland, 1 Parkland Blvd, Brisbane City QLD 4000, Australia",
+              "city": "Brisbane City",
+              "county": "Brisbane City",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:03:22 17:55:18",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 35.775984048843384
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Apartment (Brisbane City, Australia)",
+          "confidence": 0.5160570740699768,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Apartment",
+            "artist_name": null,
+            "museum_or_location": "Brisbane City, Australia",
+            "art_style": null,
+            "art_era": null,
+            "confidence": 0.5160570740699768,
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.5596619248390198
+              },
+              {
+                "name": "Apartment",
+                "score": 0.5160570740699768
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.47574180364608765
+              },
+              {
+                "name": "Tower",
+                "score": 0.43164750933647156
+              },
+              {
+                "name": "Building",
+                "score": 0.3650999963283539
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": -27.462325,
+              "longitude": 153.0178527777778
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Roma Street Parkland, 1 Parkland Blvd, Brisbane City QLD 4000, Australia",
+              "city": "Brisbane City",
+              "county": "Brisbane City",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:03:22 17:55:18",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 14.784076929092407
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Brisbane City, Australia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Brisbane City, Australia",
+            "coordinates": {
+              "latitude": -27.462325,
+              "longitude": 153.0178527777778
+            },
+            "search_range_meters": 2000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Old Windmill Observatory: The Tower Mill",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 200,
+                  "vicinity": "Spring Hill",
+                  "place_id": "ChIJJc_GUwJakWsR1pxpa0kh6iQ",
+                  "location": {
+                    "lat": -27.4658296,
+                    "lng": 153.0231123
+                  }
+                },
+                {
+                  "name": "William Jolly Bridge",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 127,
+                  "vicinity": "Grey Street, Brisbane City",
+                  "place_id": "ChIJr6CsQgdakWsRSxtphQkHHPE",
+                  "location": {
+                    "lat": -27.4686036,
+                    "lng": 153.0155158
+                  }
+                },
+                {
+                  "name": "Brisbane City Hall",
+                  "types": [
+                    "city_hall",
+                    "tourist_attraction",
+                    "local_government_office",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1018,
+                  "vicinity": "64 Adelaide Street, Brisbane City",
+                  "place_id": "ChIJ10LrOO1ZkWsR58WugSps4oE",
+                  "location": {
+                    "lat": -27.4686893,
+                    "lng": 153.0238365
+                  }
+                },
+                {
+                  "name": "Saint Stephen’s Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1660,
+                  "vicinity": "249 Elizabeth Street, Brisbane City",
+                  "place_id": "ChIJEze8jxxakWsRre7rv3s6K5c",
+                  "location": {
+                    "lat": -27.4687648,
+                    "lng": 153.0290513
+                  }
+                },
+                {
+                  "name": "Queensland Police Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 101,
+                  "vicinity": "200 Roma Street, Brisbane City",
+                  "place_id": "ChIJ_TXUIwFakWsR97pnYGXXTbI",
+                  "location": {
+                    "lat": -27.4666381,
+                    "lng": 153.0180179
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Queensland Police Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 101,
+                  "vicinity": "200 Roma Street, Brisbane City",
+                  "place_id": "ChIJ_TXUIwFakWsR97pnYGXXTbI",
+                  "location": {
+                    "lat": -27.4666381,
+                    "lng": 153.0180179
+                  }
+                },
+                {
+                  "name": "Museum of Brisbane",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 3183,
+                  "vicinity": "Level 3, Brisbane City Hall, 64 Adelaide Street, Brisbane City",
+                  "place_id": "ChIJPbZTLX9akWsRB3KZOZSp5gg",
+                  "location": {
+                    "lat": -27.4686797,
+                    "lng": 153.0238277
+                  }
+                },
+                {
+                  "name": "Gallery of Modern Art",
+                  "types": [
+                    "art_gallery",
+                    "movie_theater",
+                    "cafe",
+                    "museum",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 9424,
+                  "vicinity": "Stanley Place, South Brisbane",
+                  "place_id": "ChIJeT87OwZakWsRMni5L396BlU",
+                  "location": {
+                    "lat": -27.47056,
+                    "lng": 153.0171334
+                  }
+                },
+                {
+                  "name": "QUT Art Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 149,
+                  "vicinity": "U Queensland University of Technology, 2 George Street, Brisbane City",
+                  "place_id": "ChIJQR1yTBBakWsRKWGkjTj2_y0",
+                  "location": {
+                    "lat": -27.4766363,
+                    "lng": 153.0288958
+                  }
+                },
+                {
+                  "name": "Army Museum South Queensland - Victoria Barracks",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 26,
+                  "vicinity": "Petrie Terrace",
+                  "place_id": "ChIJ_RUtf6pQkWsRfFpp3Lqymc4",
+                  "location": {
+                    "lat": -27.4647125,
+                    "lng": 153.0145576
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Adina Apartment Hotel Brisbane Anzac Square",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 617,
+                  "vicinity": "255 Ann Street, Brisbane City",
+                  "place_id": "ChIJ_y2xXPRZkWsR2_U0DdS8vUg",
+                  "location": {
+                    "lat": -27.4667266,
+                    "lng": 153.0259317
+                  }
+                },
+                {
+                  "name": "Treasury Hotel Brisbane",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 9408,
+                  "vicinity": "130 William Street, Brisbane City",
+                  "place_id": "ChIJVQ1_WANakWsR8ORfvZHivn8",
+                  "location": {
+                    "lat": -27.4726783,
+                    "lng": 153.0246408
+                  }
+                },
+                {
+                  "name": "Mercure Brisbane Spring Hill",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 1332,
+                  "vicinity": "345 Wickham Terrace, Spring Hill",
+                  "place_id": "ChIJTbCcigFakWsRP0oSlsoVKu0",
+                  "location": {
+                    "lat": -27.4642838,
+                    "lng": 153.0211123
+                  }
+                },
+                {
+                  "name": "Stamford Plaza Brisbane",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 2900,
+                  "vicinity": "39 Edward Street, Brisbane City",
+                  "place_id": "ChIJJ9_amBtakWsR5vV9XlS8sEE",
+                  "location": {
+                    "lat": -27.4716559,
+                    "lng": 153.0307435
+                  }
+                },
+                {
+                  "name": "Hotel Grand Chancellor Brisbane",
+                  "types": [
+                    "cafe",
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 2112,
+                  "vicinity": "23 Leichhardt Street, Spring Hill",
+                  "place_id": "ChIJh1m9u_hZkWsRsvVpfs7zttw",
+                  "location": {
+                    "lat": -27.46243,
+                    "lng": 153.0218355
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Victoria Park Driving Range",
+                  "types": [
+                    "park",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 3749,
+                  "vicinity": "309 Herston Road, Herston",
+                  "place_id": "ChIJVWVPWvtZkWsRQKUg11ujAg8",
+                  "location": {
+                    "lat": -27.4504172,
+                    "lng": 153.0213294
+                  }
+                },
+                {
+                  "name": "McCaskie Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 154,
+                  "vicinity": "20 Musk Avenue, Kelvin Grove",
+                  "place_id": "ChIJSU4AUFZXkWsRoLIh11ujAg8",
+                  "location": {
+                    "lat": -27.45383619999999,
+                    "lng": 153.0127343
+                  }
+                },
+                {
+                  "name": "Synergy Natural Therapies",
+                  "types": [
+                    "park",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "3/175 Given Terrace, Paddington",
+                  "place_id": "ChIJccO0kqxQkWsR_-Pphz-pDaQ",
+                  "location": {
+                    "lat": -27.461859,
+                    "lng": 153.007467
+                  }
+                },
+                {
+                  "name": "Roma Street Parkland",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 10630,
+                  "vicinity": "1 Parkland Boulevard, Brisbane City",
+                  "place_id": "ChIJeSeo9gFakWsRuITQQsDsPGs",
+                  "location": {
+                    "lat": -27.4630081,
+                    "lng": 153.0189415
+                  }
+                },
+                {
+                  "name": "Grey Gums Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 76,
+                  "vicinity": "22 Robinson Place, Kelvin Grove",
+                  "place_id": "ChIJhRTd61dXkWsRcGYh11ujAg8",
+                  "location": {
+                    "lat": -27.4517395,
+                    "lng": 153.0135857
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Saint Stephen’s Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1660,
+                  "vicinity": "249 Elizabeth Street, Brisbane City",
+                  "place_id": "ChIJEze8jxxakWsRre7rv3s6K5c",
+                  "location": {
+                    "lat": -27.4687648,
+                    "lng": 153.0290513
+                  }
+                },
+                {
+                  "name": "The Salvation Army Brisbane City Temple",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 54,
+                  "vicinity": "167 Ann Street, Brisbane City",
+                  "place_id": "ChIJXZZ_FgNakWsR4OL04jOao4Q",
+                  "location": {
+                    "lat": -27.4674442,
+                    "lng": 153.0248413
+                  }
+                },
+                {
+                  "name": "Milton Anglican Parish",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 6,
+                  "vicinity": "Chapel of the Holy Spirit, St. Francis College, 233 Milton Road, Milton",
+                  "place_id": "ChIJyYYnWalQkWsRq59_gjzaqpA",
+                  "location": {
+                    "lat": -27.4673488,
+                    "lng": 153.0036315
+                  }
+                },
+                {
+                  "name": "Brisbane Christadelphian ecclesia",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 6,
+                  "vicinity": "134 Petrie Terrace",
+                  "place_id": "ChIJRSznmqpQkWsRGTgaoXLVAXM",
+                  "location": {
+                    "lat": -27.463368,
+                    "lng": 153.014182
+                  }
+                },
+                {
+                  "name": "Brisbane Central Seventh-day Adventist Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 21,
+                  "vicinity": "10 Quay Street, Brisbane City",
+                  "place_id": "ChIJjSQZ-alQkWsREVP2YhdpFWA",
+                  "location": {
+                    "lat": -27.4670605,
+                    "lng": 153.0142164
+                  }
+                },
+                {
+                  "name": "Muslim Friday Prayer - QUT Kelvin Grove",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "27 Blamey Street, Kelvin Grove",
+                  "place_id": "ChIJA8nAkiBXkWsRa7Qa168Vcj4",
+                  "location": {
+                    "lat": -27.4537538,
+                    "lng": 153.0131556
+                  }
+                },
+                {
+                  "name": "Brisbane CBD Musallah",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 110,
+                  "vicinity": "1/138 Albert Street, Brisbane City",
+                  "place_id": "ChIJwUkaaw1bkWsRn0soKq2Xjpw",
+                  "location": {
+                    "lat": -27.471099,
+                    "lng": 153.0260545
+                  }
+                },
+                {
+                  "name": "QUT Muslim Prayer Room",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 31,
+                  "vicinity": "G-H Block Link, Gardens Point, 209",
+                  "place_id": "ChIJNcf0ahBakWsRgBhhLu0Q4ek",
+                  "location": {
+                    "lat": -27.4766846,
+                    "lng": 153.0278225
+                  }
+                },
+                {
+                  "name": "The Brisbane Synagogue",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 28,
+                  "vicinity": "98 Margaret Street, Brisbane City",
+                  "place_id": "ChIJ-ZVeyRpakWsR4tzcasLJbUo",
+                  "location": {
+                    "lat": -27.4733134,
+                    "lng": 153.0269494
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Gallery of Modern Art",
+                  "types": [
+                    "art_gallery",
+                    "movie_theater",
+                    "cafe",
+                    "museum",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 9424,
+                  "vicinity": "Stanley Place, South Brisbane",
+                  "place_id": "ChIJeT87OwZakWsRMni5L396BlU",
+                  "location": {
+                    "lat": -27.47056,
+                    "lng": 153.0171334
+                  }
+                },
+                {
+                  "name": "Judith Wright Arts Centre",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 209,
+                  "vicinity": "420 Brunswick St & Cnr, Berwick Street, Fortitude Valley",
+                  "place_id": "ChIJ9UMaafNZkWsRbSVI0J17prE",
+                  "location": {
+                    "lat": -27.45967449999999,
+                    "lng": 153.0367734
+                  }
+                },
+                {
+                  "name": "QUT Art Museum",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 149,
+                  "vicinity": "U Queensland University of Technology, 2 George Street, Brisbane City",
+                  "place_id": "ChIJQR1yTBBakWsRKWGkjTj2_y0",
+                  "location": {
+                    "lat": -27.4766363,
+                    "lng": 153.0288958
+                  }
+                },
+                {
+                  "name": "Shøøting Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "105 Bowen Street, Spring Hill",
+                  "place_id": "ChIJHQrynvdZkWsRI49qNdGxpqU",
+                  "location": {
+                    "lat": -27.4617518,
+                    "lng": 153.0277682
+                  }
+                },
+                {
+                  "name": "Royal Queensland Art Society",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 49,
+                  "vicinity": "3/162 Petrie Terrace, Brisbane City",
+                  "place_id": "ChIJsa8k6hsSbAERYxLuqoPVrVM",
+                  "location": {
+                    "lat": -27.4628201,
+                    "lng": 153.014231
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Brisbane",
+                  "types": [
+                    "colloquial_area",
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Brisbane",
+                  "place_id": "ChIJM9KTrJpXkWsRQK_e81qjAgQ",
+                  "location": {
+                    "lat": -27.4704528,
+                    "lng": 153.0260341
+                  }
+                },
+                {
+                  "name": "Royal On The Park Brisbane",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1840,
+                  "vicinity": "152 Alice Street, Brisbane City",
+                  "place_id": "ChIJ1SHx8BpakWsRDhqFTjXpAPE",
+                  "location": {
+                    "lat": -27.472858,
+                    "lng": 153.029187
+                  }
+                },
+                {
+                  "name": "Rydges South Bank Brisbane",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 2686,
+                  "vicinity": "9 Glenelg Street, South Brisbane",
+                  "place_id": "ChIJM9dcjwhGkWsRUxBOVDxgo3E",
+                  "location": {
+                    "lat": -27.4773488,
+                    "lng": 153.0203962
+                  }
+                },
+                {
+                  "name": "The Sebel Brisbane",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1128,
+                  "vicinity": "Cnr Albert And, Charlotte Street, Brisbane City",
+                  "place_id": "ChIJ58qGMxtakWsRpIRT7qC9-ms",
+                  "location": {
+                    "lat": -27.4711552,
+                    "lng": 153.0271657
+                  }
+                },
+                {
+                  "name": "Meriton Suites Herschel Street, Brisbane",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2432,
+                  "vicinity": "43 Herschel Street, Brisbane City",
+                  "place_id": "ChIJa00p1fVZkWsR7_SzbVxjr6Q",
+                  "location": {
+                    "lat": -27.4677141,
+                    "lng": 153.0194461
+                  }
+                }
+              ]
+            },
+            "total_places_found": 39,
+            "photo_timestamp": "2025:03:22 17:55:18",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.5782506465911865
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/153.heic"
+    },
+    {
+      "image_filename": "153.heic",
+      "timestamp": "2026-01-28T02:46:20.062390",
+      "processing_time_seconds": 64.614962,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Modern skyscrapers, Urban park with fountain, Brisbane, Australia",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and urban park setting suggest a modern cityscape typical of Brisbane, Australia. The distinctive skyscrapers and the fountain in the park are characteristic of this location.",
+            "detailed_description": "The image features a modern urban landscape in Brisbane, Australia. Prominent skyscrapers with contemporary architectural designs are visible, characterized by glass facades and varied geometric shapes. In the foreground, there is a park with a large fountain, adding a natural element to the urban setting. The buildings reflect a modern architectural style typical of the 21st century, and the park provides a serene environment amidst the cityscape.",
+            "identification": {
+              "primary": [
+                "Modern skyscrapers",
+                "Urban park with fountain"
+              ],
+              "location": "Brisbane, Australia",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Modern skyscrapers",
+                "type": "building",
+                "confidence": 0.9
+              },
+              {
+                "name": "Fountain in urban park",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "21st_century",
+              "glass",
+              "urban_park",
+              "Brisbane"
+            ],
+            "location": "Brisbane, Australia",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "South Bank Parklands",
+                "specificity_level": "very_specific",
+                "confidence": 0.8,
+                "reasoning": "The presence of a park and fountain in an urban setting is typical of South Bank Parklands in Brisbane."
+              },
+              {
+                "guess": "Modern cityscape in Australia",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The architectural style and urban park setting are common in Australian cities."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Modern skyscrapers\", \"Urban park with fountain\"],\n        \"location\": \"Brisbane, Australia\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Modern skyscrapers\",\n            \"type\": \"building\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Fountain in urban park\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"21st_century\", \"glass\", \"urban_park\", \"Brisbane\"],\n    \"description\": \"The image features a modern urban landscape in Brisbane, Australia. Prominent skyscrapers with contemporary architectural designs are visible, characterized by glass facades and varied geometric shapes. In the foreground, there is a park with a large fountain, adding a natural element to the urban setting. The buildings reflect a modern architectural style typical of the 21st century, and the park provides a serene environment amidst the cityscape.\",\n    \"reasoning\": \"The architectural style and urban park setting suggest a modern cityscape typical of Brisbane, Australia. The distinctive skyscrapers and the fountain in the park are characteristic of this location.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"South Bank Parklands\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.8,\n            \"reasoning\": \"The presence of a park and fountain in an urban setting is typical of South Bank Parklands in Brisbane.\"\n        },\n        {\n            \"guess\": \"Modern cityscape in Australia\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The architectural style and urban park setting are common in Australian cities.\"\n        }\n    ]\n}",
+            "processing_time_seconds": 29.216893196105957
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "**URL**: ([en.wikipedia.org]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts an urban landscape featuring a modern city skyline with several high-rise buildings. The tallest building in the center has a distinctive cylindrical shape with a facade characterized by vertical lines and a pattern that creates a textured appearance. Surrounding this central skyscraper are several other buildings with varying architectural designs, including rectangular forms and balconies, indicative of contemporary urban residential architecture. The buildings are primarily ",
+            "description": "The image depicts an urban landscape featuring a modern city skyline with several high-rise buildings. The tallest building in the center has a distinctive cylindrical shape with a facade characterized by vertical lines and a pattern that creates a textured appearance. Surrounding this central skyscraper are several other buildings with varying architectural designs, including rectangular forms and balconies, indicative of contemporary urban residential architecture. The buildings are primarily ",
+            "architectural_style": "Contemporary",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 35.19278693199158
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Apartment",
+          "confidence": 0.507709264755249,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Apartment",
+            "artist_name": null,
+            "museum_or_location": null,
+            "art_style": null,
+            "art_era": null,
+            "confidence": 0.507709264755249,
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.5962786078453064
+              },
+              {
+                "name": "Apartment",
+                "score": 0.507709264755249
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.4656495451927185
+              },
+              {
+                "name": "Tower",
+                "score": 0.42509332299232483
+              },
+              {
+                "name": "Metropolitan area",
+                "score": 0.3520578145980835
+              }
+            ],
+            "processing_time_seconds": 14.009842872619629
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/153.heic"
+    }
+  ]
+}

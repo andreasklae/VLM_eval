@@ -1,0 +1,1098 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "146.jpg",
+      "timestamp": "2026-01-28T02:29:21.082398",
+      "processing_time_seconds": 61.71796,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 29.97136944444444,
+        "gps_longitude": 31.12133888888889,
+        "location": {
+          "formatted_address": "X4CC+GG Al Haram, Egypt",
+          "city": null,
+          "county": "Al Haram",
+          "country": "Egypt"
+        },
+        "datetime_original": "2025:02:16 13:07:48",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Desert landscape near Giza, Giza, Egypt",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates proximity to Giza, Egypt, which is known for desert landscapes and camel rides. The sandy terrain and camels are characteristic of this region.",
+            "detailed_description": "The image depicts a desert landscape near Giza, Egypt. The scene includes several camels and riders, suggesting a camel ride experience typical in this region. The terrain is sandy and flat, with a clear sky overhead. This area is known for its proximity to the Giza Plateau, famous for the pyramids.",
+            "identification": {
+              "primary": [
+                "Desert landscape near Giza"
+              ],
+              "location": "Giza, Egypt",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Camel ride in desert",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "desert",
+              "camel",
+              "Egypt",
+              "landscape"
+            ],
+            "location": "Giza, Egypt",
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Giza Plateau",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.75,
+                "reasoning": "The desert setting and camel rides are typical of the area surrounding the Giza Plateau."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Desert landscape near Giza\"],\n        \"location\": \"Giza, Egypt\",\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Camel ride in desert\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"desert\", \"camel\", \"Egypt\", \"landscape\"],\n    \"description\": \"The image depicts a desert landscape near Giza, Egypt. The scene includes several camels and riders, suggesting a camel ride experience typical in this region. The terrain is sandy and flat, with a clear sky overhead. This area is known for its proximity to the Giza Plateau, famous for the pyramids.\",\n    \"reasoning\": \"The location metadata indicates proximity to Giza, Egypt, which is known for desert landscapes and camel rides. The sandy terrain and camels are characteristic of this region.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Giza Plateau\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.75,\n            \"reasoning\": \"The desert setting and camel rides are typical of the area surrounding the Giza Plateau.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": 29.97136944444444,
+              "longitude": 31.12133888888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "X4CC+GG Al Haram, Egypt",
+              "city": null,
+              "county": "Al Haram",
+              "country": "Egypt"
+            },
+            "photo_timestamp": "2025:02:16 13:07:48",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 19.372467041015625
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Desert landscape near the Pyramids of Giza, Giza, Egypt",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the typical tourist experience near the Pyramids of Giza, where camel rides are common. The location metadata supports this identification, as Al Haram is near Giza. The search results confirm the presence of camels and sandy terrain, which are characteristic of this area.",
+            "identification": {
+              "primary": [
+                "Desert landscape near the Pyramids of Giza"
+              ],
+              "location": "Giza, Egypt",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Camel with colorful blankets and saddles",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Sandy terrain",
+                "type": "natural_feature",
+                "confidence": 0.85
+              },
+              {
+                "name": "Parked vehicle",
+                "type": "other",
+                "confidence": 0.7
+              }
+            ],
+            "tags": [
+              "desert",
+              "camel",
+              "tourism",
+              "Giza",
+              "Egypt"
+            ],
+            "sources_used": [
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "natural_feature",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a desert landscape, characteristic of the area surrounding the pyramids in Giza, Egypt. The terrain is sandy and flat, with a few scattered rocks visible on the ground. In the foreground, there is a camel being ridden by a person, and the perspective suggests the photo was taken from another camel. The camels are adorned with colorful blankets and saddles, featuring traditional patterns and designs. The sky is mostly clear with a few scattered clouds, indicating a sunny day. In",
+            "description": "The image depicts a desert landscape, characteristic of the area surrounding the pyramids in Giza, Egypt. The terrain is sandy and flat, with a few scattered rocks visible on the ground. In the foreground, there is a camel being ridden by a person, and the perspective suggests the photo was taken from another camel. The camels are adorned with colorful blankets and saddles, featuring traditional patterns and designs. The sky is mostly clear with a few scattered clouds, indicating a sunny day. In",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 29.97136944444444,
+              "longitude": 31.12133888888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "X4CC+GG Al Haram, Egypt",
+              "city": null,
+              "county": "Al Haram",
+              "country": "Egypt"
+            },
+            "photo_timestamp": "2025:02:16 13:07:48",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 41.7010817527771
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Working animal",
+          "confidence": 0.9656962752342224,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Working animal",
+                "score": 0.9656962752342224
+              },
+              {
+                "source": "label",
+                "name": "Pack animal",
+                "score": 0.8724355697631836
+              },
+              {
+                "source": "label",
+                "name": "Camel",
+                "score": 0.8449164628982544
+              },
+              {
+                "source": "object",
+                "name": "Clothing",
+                "score": 0.8058003187179565
+              },
+              {
+                "source": "label",
+                "name": "Travel",
+                "score": 0.8027852773666382
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Vacation",
+                "score": 0.4346100091934204
+              },
+              {
+                "name": "National Lampoon's Vacation",
+                "score": 0.0
+              }
+            ],
+            "objects": [
+              {
+                "name": "Clothing",
+                "score": 0.8058003187179565
+              },
+              {
+                "name": "Camel",
+                "score": 0.7202736139297485
+              },
+              {
+                "name": "Animal",
+                "score": 0.6475296020507812
+              },
+              {
+                "name": "Person",
+                "score": 0.609605610370636
+              },
+              {
+                "name": "Top",
+                "score": 0.6086393594741821
+              }
+            ],
+            "labels": [
+              {
+                "name": "Working animal",
+                "score": 0.9656962752342224
+              },
+              {
+                "name": "Pack animal",
+                "score": 0.8724355697631836
+              },
+              {
+                "name": "Camel",
+                "score": 0.8449164628982544
+              },
+              {
+                "name": "Travel",
+                "score": 0.8027852773666382
+              },
+              {
+                "name": "Aeolian landform",
+                "score": 0.797147274017334
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 29.97136944444444,
+              "longitude": 31.12133888888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "X4CC+GG Al Haram, Egypt",
+              "city": null,
+              "county": "Al Haram",
+              "country": "Egypt"
+            },
+            "photo_timestamp": "2025:02:16 13:07:48",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 21.706101894378662
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Al Haram, Egypt",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Al Haram, Egypt",
+            "coordinates": {
+              "latitude": 29.97136944444444,
+              "longitude": 31.12133888888889
+            },
+            "search_range_meters": 2000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Great Sphinx of Giza",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 25297,
+                  "vicinity": "",
+                  "place_id": "ChIJeamuo2JPWBQRqb1mQKbw08k",
+                  "location": {
+                    "lat": 29.9752687,
+                    "lng": 31.1375674
+                  }
+                },
+                {
+                  "name": "Giza Necropolis",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 109227,
+                  "vicinity": "Al Haram",
+                  "place_id": "ChIJzbs54n1PWBQRizZuWjV0dMo",
+                  "location": {
+                    "lat": 29.9772962,
+                    "lng": 31.1324955
+                  }
+                },
+                {
+                  "name": "The Great Pyramid of Giza",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 31133,
+                  "vicinity": "Al Haram, Nazlet El-Semman, Al Haram",
+                  "place_id": "ChIJGymPrIdFWBQRJCSloj8vDIE",
+                  "location": {
+                    "lat": 29.97918079999999,
+                    "lng": 31.13426280000001
+                  }
+                },
+                {
+                  "name": "Pyramids of Queens",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 535,
+                  "vicinity": "X4CH+J9R, Al Haram",
+                  "place_id": "ChIJI2G64XhPWBQRPJSQnKpYhKY",
+                  "location": {
+                    "lat": 29.9716241,
+                    "lng": 31.12839209999999
+                  }
+                },
+                {
+                  "name": "Mastaba of Hemiunu",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 118,
+                  "vicinity": "X4HH+QX4, Al Ahram, Nazlet El-Semman, Al Haram",
+                  "place_id": "ChIJN1aUxoBFWBQRnEfgEmdbsJY",
+                  "location": {
+                    "lat": 29.97937999999999,
+                    "lng": 31.1299539
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Giza Necropolis",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 109227,
+                  "vicinity": "Al Haram",
+                  "place_id": "ChIJzbs54n1PWBQRizZuWjV0dMo",
+                  "location": {
+                    "lat": 29.9772962,
+                    "lng": 31.1324955
+                  }
+                },
+                {
+                  "name": "The Great Pyramid of Giza",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 31133,
+                  "vicinity": "Al Haram, Nazlet El-Semman, Al Haram",
+                  "place_id": "ChIJGymPrIdFWBQRJCSloj8vDIE",
+                  "location": {
+                    "lat": 29.97918079999999,
+                    "lng": 31.13426280000001
+                  }
+                },
+                {
+                  "name": "Pyramids of Queens",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 535,
+                  "vicinity": "X4CH+J9R, Al Haram",
+                  "place_id": "ChIJI2G64XhPWBQRPJSQnKpYhKY",
+                  "location": {
+                    "lat": 29.9716241,
+                    "lng": 31.12839209999999
+                  }
+                },
+                {
+                  "name": "Cheops Hall",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 11,
+                  "vicinity": "El Remaya Sq., EL HARAM, Al Giza",
+                  "place_id": "ChIJPSQGzXhFWBQRLCdK0zjLfas",
+                  "location": {
+                    "lat": 29.9846309,
+                    "lng": 31.1228558
+                  }
+                },
+                {
+                  "name": "Pyramid of Khafre",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1498,
+                  "vicinity": "X4GJ+99V, Al Haram",
+                  "place_id": "ChIJO6TPdX5PWBQRkC1MF1gAvsE",
+                  "location": {
+                    "lat": 29.9759954,
+                    "lng": 31.1309285
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Teta Restaurant",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.6,
+                  "user_ratings_total": 5,
+                  "vicinity": "الهرم",
+                  "place_id": "ChIJ63fEG4lPWBQReIDHI1tQnQo",
+                  "location": {
+                    "lat": 29.9793885,
+                    "lng": 31.1104191
+                  }
+                },
+                {
+                  "name": "Elsawy restaurant",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 697,
+                  "vicinity": "X475+H2X, First 6th of October",
+                  "place_id": "ChIJydAwJ4hGWBQR1CtMyj9ARxY",
+                  "location": {
+                    "lat": 29.963996,
+                    "lng": 31.10760299999999
+                  }
+                },
+                {
+                  "name": "Casse",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 40,
+                  "vicinity": "X4J4+76G, Street 1",
+                  "place_id": "ChIJuZs9pItPWBQRDxvV_LhocOM",
+                  "location": {
+                    "lat": 29.9806848,
+                    "lng": 31.1055753
+                  }
+                },
+                {
+                  "name": "مطعم وكافيه الهضبة",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 1330,
+                  "vicinity": "2ش أبوعزيزة من شارع أبوالهول السياحي الصوت والضوء 2nd Abu Aziza st., Ext Abul Houl, Pyramids",
+                  "place_id": "ChIJGewCSmJPWBQRJeV39EeoMCM",
+                  "location": {
+                    "lat": 29.9726975,
+                    "lng": 31.14094669999999
+                  }
+                },
+                {
+                  "name": "المدينة للمأكولات الليبية في مصر",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 12,
+                  "vicinity": "X4H3+QG7, Pyramids Hill Road",
+                  "place_id": "ChIJibbmn4xPWBQR6jgW6YQ6WHY",
+                  "location": {
+                    "lat": 29.979415,
+                    "lng": 31.1037988
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "شارع سنترال الرمايه",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "X4M7+W2, Al Haram",
+                  "place_id": "ChIJx4ao4K9FWBQR30_RixSvZGU",
+                  "location": {
+                    "lat": 29.985539,
+                    "lng": 31.11299829999999
+                  }
+                },
+                {
+                  "name": "عبده العرباوي",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "X4C2+FG9, Al Haram",
+                  "place_id": "ChIJGRbrdgBPWBQRW-8RsCn9EqM",
+                  "location": {
+                    "lat": 29.97115100000001,
+                    "lng": 31.10135420000001
+                  }
+                },
+                {
+                  "name": "نجمة الحدائق",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 7,
+                  "vicinity": "2 الضغط العالي",
+                  "place_id": "ChIJ0RuMheJPWBQR9qtd-XYIwK4",
+                  "location": {
+                    "lat": 29.965694,
+                    "lng": 31.1021863
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Mishom36",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "حدائق الهرم 165د متفرع من, جاردينيا",
+                  "place_id": "ChIJcyL7SkpPWBQRp9gPs0sSffY",
+                  "location": {
+                    "lat": 29.9751263,
+                    "lng": 31.10957959999999
+                  }
+                },
+                {
+                  "name": "Alremaiah alharam",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "X4PC+2GJ, Masaken Al Dobat, Al Haram",
+                  "place_id": "ChIJPVatdQBFWBQR-gV4O3Fmka8",
+                  "location": {
+                    "lat": 29.9850873,
+                    "lng": 31.1212624
+                  }
+                },
+                {
+                  "name": "Misr Language School Mosque",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 17,
+                  "vicinity": "X4JC+6H7, Al Haram",
+                  "place_id": "ChIJnd35JH5FWBQRkXPHrs1QlcM",
+                  "location": {
+                    "lat": 29.9805455,
+                    "lng": 31.1214109
+                  }
+                },
+                {
+                  "name": "مسجد بر الوالدين",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.3,
+                  "user_ratings_total": 3,
+                  "vicinity": "X4G6+XQJ حدائق الأهرام، الظهير الصحراوى لمحافظة الجيزة، الهرم،",
+                  "place_id": "ChIJTX-fjV5PWBQRyCZzFmyM3CQ",
+                  "location": {
+                    "lat": 29.9775251,
+                    "lng": 31.1118486
+                  }
+                },
+                {
+                  "name": "El ghoufran rahma",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 27,
+                  "vicinity": "X4F5+F9R, Branched from Khaled Amin, Al Haram",
+                  "place_id": "ChIJLT5OD45PWBQRE6e9tF3xn34",
+                  "location": {
+                    "lat": 29.97372589999999,
+                    "lng": 31.1083829
+                  }
+                },
+                {
+                  "name": "مسجد رب العالمين",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 4,
+                  "vicinity": "X4G5+299, Al Haram",
+                  "place_id": "ChIJ_RpGeo5PWBQRK3b0dBYRuqk",
+                  "location": {
+                    "lat": 29.9750348,
+                    "lng": 31.10847799999999
+                  }
+                },
+                {
+                  "name": "مسجد الصفا",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 3,
+                  "vicinity": "صيدلية العزبي, ٦٤ ج حدائق الاهرام البوابة ١ بجوار",
+                  "place_id": "ChIJcRqQH4lPWBQRfhZmHkgm5bc",
+                  "location": {
+                    "lat": 29.97892509999999,
+                    "lng": 31.11070519999999
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "khemit shop",
+                  "types": [
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 14,
+                  "vicinity": "gamal abd el naser -nazlet el samman, Cairo",
+                  "place_id": "ChIJ03pJ5IlFWBQRMx9hhzwaPyg",
+                  "location": {
+                    "lat": 29.9751914,
+                    "lng": 31.1414899
+                  }
+                },
+                {
+                  "name": "نيو ديزاين للألوميتال",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 20,
+                  "vicinity": "22 شارع جاردينيا فيلا 4، الظهير الصحراوى لمحافظة الجيزة،",
+                  "place_id": "ChIJFz7wP0pPWBQRFwfPmmspv64",
+                  "location": {
+                    "lat": 29.973388,
+                    "lng": 31.1068548
+                  }
+                },
+                {
+                  "name": "معرض السعد",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "X474+JRQ, البوابه الثانيه، الظهير الصحراوى لمحافظة الجيزة،, First 6th of October",
+                  "place_id": "ChIJ2SOGbLlPWBQRo6YHJ6GGzN0",
+                  "location": {
+                    "lat": 29.9640831,
+                    "lng": 31.1071082
+                  }
+                },
+                {
+                  "name": "…",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 5,
+                  "vicinity": "٣٢٠ أ, Street 1",
+                  "place_id": "ChIJmVI-KsxPWBQRYzQ-pXNmTa8",
+                  "location": {
+                    "lat": 29.9813068,
+                    "lng": 31.1086471
+                  }
+                },
+                {
+                  "name": "Abugrain Art gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 8,
+                  "vicinity": "B - AAhmed bedair, Pyramids gardens, الثروة المعدنية",
+                  "place_id": "ChIJE8aM759PWBQRy-KKgCRqDJY",
+                  "location": {
+                    "lat": 29.9779254,
+                    "lng": 31.1056645
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Al Omraneya",
+                  "types": [
+                    "sublocality_level_1",
+                    "sublocality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Al Omraneya",
+                  "place_id": "ChIJnRYqp49FWBQR7tfBlyOrJ0M",
+                  "location": {
+                    "lat": 29.9975754,
+                    "lng": 31.1976404
+                  }
+                },
+                {
+                  "name": "Great Sphinx of Giza",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 25297,
+                  "vicinity": "",
+                  "place_id": "ChIJeamuo2JPWBQRqb1mQKbw08k",
+                  "location": {
+                    "lat": 29.9752687,
+                    "lng": 31.1375674
+                  }
+                },
+                {
+                  "name": "Sphinx Palace Pyramids View inn",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 153,
+                  "vicinity": "الجيزة EG, Abu el houl, Nazlet El-Semman, Al Haram",
+                  "place_id": "ChIJR3qk4IlFWBQRB6e3lMHKr2A",
+                  "location": {
+                    "lat": 29.9759395,
+                    "lng": 31.1412986
+                  }
+                },
+                {
+                  "name": "Giza Necropolis",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 109227,
+                  "vicinity": "Al Haram",
+                  "place_id": "ChIJzbs54n1PWBQRizZuWjV0dMo",
+                  "location": {
+                    "lat": 29.9772962,
+                    "lng": 31.1324955
+                  }
+                },
+                {
+                  "name": "Guardian Guest House",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 301,
+                  "vicinity": "1 Abou al hool street",
+                  "place_id": "ChIJp0tg4IlFWBQRm7JyPmKGB50",
+                  "location": {
+                    "lat": 29.9749171,
+                    "lng": 31.1410524
+                  }
+                }
+              ]
+            },
+            "total_places_found": 35,
+            "photo_timestamp": "2025:02:16 13:07:48",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.41531801223754883
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/146.jpg"
+    },
+    {
+      "image_filename": "146.jpg",
+      "timestamp": "2026-01-28T02:30:22.873033",
+      "processing_time_seconds": 64.322005,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Desert landscape, Giza, Egypt",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of camels and the desert setting suggest a location near Giza, Egypt, which is known for such activities. The sandy terrain and clear sky further support this identification.",
+            "detailed_description": "The image depicts a desert landscape, likely near Giza, Egypt. The scene includes several camels being ridden, suggesting a camel ride activity. The terrain is sandy and flat, typical of desert environments. The sky is clear with a few clouds, indicating a sunny day.",
+            "identification": {
+              "primary": [
+                "Desert landscape"
+              ],
+              "location": "Giza, Egypt",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Camel ride",
+                "type": "activity",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "desert",
+              "camel",
+              "Egypt",
+              "landscape",
+              "activity"
+            ],
+            "location": "Giza, Egypt",
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Sahara Desert",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The desert environment could be part of the larger Sahara Desert region."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Desert landscape\"],\n        \"location\": \"Giza, Egypt\",\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Camel ride\",\n            \"type\": \"activity\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"desert\", \"camel\", \"Egypt\", \"landscape\", \"activity\"],\n    \"description\": \"The image depicts a desert landscape, likely near Giza, Egypt. The scene includes several camels being ridden, suggesting a camel ride activity. The terrain is sandy and flat, typical of desert environments. The sky is clear with a few clouds, indicating a sunny day.\",\n    \"reasoning\": \"The presence of camels and the desert setting suggest a location near Giza, Egypt, which is known for such activities. The sandy terrain and clear sky further support this identification.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Sahara Desert\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The desert environment could be part of the larger Sahara Desert region.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 22.758450984954834
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([shamanictales.bandcamp.com]())",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a desert landscape with several camels being ridden by people, suggesting a camel ride experience. The foreground shows a camel's head and neck, adorned with colorful textiles and ropes, indicating traditional camel riding gear. The camel in the foreground is being led by a person whose hand is visible holding the reins. The ground is sandy and barren, typical of desert terrain, with scattered rocks and a few patches of sparse vegetation. In the background, more camels can be s",
+            "description": "The image depicts a desert landscape with several camels being ridden by people, suggesting a camel ride experience. The foreground shows a camel's head and neck, adorned with colorful textiles and ropes, indicating traditional camel riding gear. The camel in the foreground is being led by a person whose hand is visible holding the reins. The ground is sandy and barren, typical of desert terrain, with scattered rocks and a few patches of sparse vegetation. In the background, more camels can be s",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 41.56140995025635
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Working animal",
+          "confidence": 0.9656962752342224,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Working animal",
+                "score": 0.9656962752342224
+              },
+              {
+                "source": "label",
+                "name": "Pack animal",
+                "score": 0.8724355697631836
+              },
+              {
+                "source": "label",
+                "name": "Camel",
+                "score": 0.8449164628982544
+              },
+              {
+                "source": "object",
+                "name": "Clothing",
+                "score": 0.8058003187179565
+              },
+              {
+                "source": "label",
+                "name": "Travel",
+                "score": 0.8027852773666382
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Vacation",
+                "score": 0.4346100091934204
+              },
+              {
+                "name": "National Lampoon's Vacation",
+                "score": 0.0
+              }
+            ],
+            "objects": [
+              {
+                "name": "Clothing",
+                "score": 0.8058003187179565
+              },
+              {
+                "name": "Camel",
+                "score": 0.7202736139297485
+              },
+              {
+                "name": "Animal",
+                "score": 0.6475296020507812
+              },
+              {
+                "name": "Person",
+                "score": 0.609605610370636
+              },
+              {
+                "name": "Top",
+                "score": 0.6086393594741821
+              }
+            ],
+            "labels": [
+              {
+                "name": "Working animal",
+                "score": 0.9656962752342224
+              },
+              {
+                "name": "Pack animal",
+                "score": 0.8724355697631836
+              },
+              {
+                "name": "Camel",
+                "score": 0.8449164628982544
+              },
+              {
+                "name": "Travel",
+                "score": 0.8027852773666382
+              },
+              {
+                "name": "Aeolian landform",
+                "score": 0.797147274017334
+              }
+            ],
+            "processing_time_seconds": 21.21460199356079
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/146.jpg"
+    }
+  ]
+}

@@ -1,0 +1,1042 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "145.jpg",
+      "timestamp": "2026-01-28T02:27:19.577228",
+      "processing_time_seconds": 61.504546,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 29.98099722222222,
+        "gps_longitude": 31.133111111111113,
+        "location": {
+          "formatted_address": "Giza Pyramids, Nazlet El-Semman, Al Haram, Giza Governorate 3512201, Egypt",
+          "city": null,
+          "county": "Al Haram",
+          "country": "Egypt"
+        },
+        "datetime_original": "2025:02:16 12:15:56",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 14 Pro Max"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Great Pyramid of Giza, Giza, Egypt",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The pyramid's distinctive shape and location in Giza, Egypt, match the characteristics of the Great Pyramid of Giza, making it a highly recognizable landmark.",
+            "detailed_description": "The image shows the Great Pyramid of Giza, one of the most iconic landmarks in Egypt. It is the largest of the three pyramids in the Giza pyramid complex and is made of limestone blocks. The pyramid is a testament to ancient Egyptian engineering and is one of the Seven Wonders of the Ancient World.",
+            "identification": {
+              "primary": [
+                "Great Pyramid of Giza"
+              ],
+              "location": "Giza, Egypt",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Great Pyramid of Giza",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "ancient_egyptian",
+              "pyramid",
+              "stone",
+              "Giza",
+              "landmark"
+            ],
+            "location": "Giza, Egypt",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Great Pyramid of Giza\"],\n        \"location\": \"Giza, Egypt\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Great Pyramid of Giza\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"ancient_egyptian\", \"pyramid\", \"stone\", \"Giza\", \"landmark\"],\n    \"description\": \"The image shows the Great Pyramid of Giza, one of the most iconic landmarks in Egypt. It is the largest of the three pyramids in the Giza pyramid complex and is made of limestone blocks. The pyramid is a testament to ancient Egyptian engineering and is one of the Seven Wonders of the Ancient World.\",\n    \"reasoning\": \"The pyramid's distinctive shape and location in Giza, Egypt, match the characteristics of the Great Pyramid of Giza, making it a highly recognizable landmark.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 29.98099722222222,
+              "longitude": 31.133111111111113
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Giza Pyramids, Nazlet El-Semman, Al Haram, Giza Governorate 3512201, Egypt",
+              "city": null,
+              "county": "Al Haram",
+              "country": "Egypt"
+            },
+            "photo_timestamp": "2025:02:16 12:15:56",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 14 Pro Max"
+            },
+            "processing_time_seconds": 14.335375785827637
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Great Pyramid of Giza, Giza, Egypt",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the characteristics of the Great Pyramid of Giza, including its location in Al Haram, Egypt, and its construction from limestone blocks. The search results strongly support this identification, with high confidence scores from reliable sources such as Wikipedia and AP News.",
+            "identification": {
+              "primary": [
+                "Great Pyramid of Giza"
+              ],
+              "location": "Giza, Egypt",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Great Pyramid of Giza",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "ancient_egyptian",
+              "limestone",
+              "pyramid",
+              "historical_site",
+              "Giza"
+            ],
+            "sources_used": [
+              "en.wikipedia.org",
+              "apnews.com"
+            ],
+            "all_candidates": [
+              "*URL*: ([apnews.com]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([pyramidsgiza.com]())",
+              "*URL*: ([evendo.com]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image prominently features a large pyramid, which is likely one of the famous pyramids located in Giza, Egypt. The pyramid is constructed from large limestone blocks, giving it a rugged and textured appearance. The structure exhibits a classic geometric shape with a square base and four triangular sides converging at a single point at the top. The pyramid's surface is weathered, showing signs of age and erosion, which is typical for such ancient structures. The color of the pyramid is a sand",
+            "description": "The image prominently features a large pyramid, which is likely one of the famous pyramids located in Giza, Egypt. The pyramid is constructed from large limestone blocks, giving it a rugged and textured appearance. The structure exhibits a classic geometric shape with a square base and four triangular sides converging at a single point at the top. The pyramid's surface is weathered, showing signs of age and erosion, which is typical for such ancient structures. The color of the pyramid is a sand",
+            "architectural_style": "Ancient Egyptian",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 29.98099722222222,
+              "longitude": 31.133111111111113
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Giza Pyramids, Nazlet El-Semman, Al Haram, Giza Governorate 3512201, Egypt",
+              "city": null,
+              "county": "Al Haram",
+              "country": "Egypt"
+            },
+            "photo_timestamp": "2025:02:16 12:15:56",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 14 Pro Max"
+            },
+            "processing_time_seconds": 46.51886320114136
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Pyramid",
+          "confidence": 0.9721236824989319,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Pyramid",
+                "score": 0.9721236824989319
+              },
+              {
+                "source": "label",
+                "name": "Smile",
+                "score": 0.9694328308105469
+              },
+              {
+                "source": "label",
+                "name": "Happiness",
+                "score": 0.9403270483016968
+              },
+              {
+                "source": "label",
+                "name": "Vacation",
+                "score": 0.9094853401184082
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.8958273530006409
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Monument",
+                "score": 0.37310001254081726
+              },
+              {
+                "name": "Tourism",
+                "score": 0.33649998903274536
+              },
+              {
+                "name": "Wonders of the World",
+                "score": 0.3334405720233917
+              },
+              {
+                "name": "National monument",
+                "score": 0.32141193747520447
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.8958273530006409
+              },
+              {
+                "name": "Top",
+                "score": 0.8840766549110413
+              },
+              {
+                "name": "Top",
+                "score": 0.8772834539413452
+              },
+              {
+                "name": "Top",
+                "score": 0.8470377326011658
+              },
+              {
+                "name": "Top",
+                "score": 0.8470321297645569
+              }
+            ],
+            "labels": [
+              {
+                "name": "Pyramid",
+                "score": 0.9721236824989319
+              },
+              {
+                "name": "Smile",
+                "score": 0.9694328308105469
+              },
+              {
+                "name": "Happiness",
+                "score": 0.9403270483016968
+              },
+              {
+                "name": "Vacation",
+                "score": 0.9094853401184082
+              },
+              {
+                "name": "Luggage & bags",
+                "score": 0.8897973895072937
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 29.98099722222222,
+              "longitude": 31.133111111111113
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Giza Pyramids, Nazlet El-Semman, Al Haram, Giza Governorate 3512201, Egypt",
+              "city": null,
+              "county": "Al Haram",
+              "country": "Egypt"
+            },
+            "photo_timestamp": "2025:02:16 12:15:56",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 14 Pro Max"
+            },
+            "processing_time_seconds": 6.409379005432129
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Al Haram, Egypt",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Al Haram, Egypt",
+            "coordinates": {
+              "latitude": 29.98099722222222,
+              "longitude": 31.133111111111113
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Great Sphinx of Giza",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 25297,
+                  "vicinity": "",
+                  "place_id": "ChIJeamuo2JPWBQRqb1mQKbw08k",
+                  "location": {
+                    "lat": 29.9752687,
+                    "lng": 31.1375674
+                  }
+                },
+                {
+                  "name": "Giza Necropolis",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 109227,
+                  "vicinity": "Al Haram",
+                  "place_id": "ChIJzbs54n1PWBQRizZuWjV0dMo",
+                  "location": {
+                    "lat": 29.9772962,
+                    "lng": 31.1324955
+                  }
+                },
+                {
+                  "name": "The Great Pyramid of Giza",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 31133,
+                  "vicinity": "Al Haram, Nazlet El-Semman, Al Haram",
+                  "place_id": "ChIJGymPrIdFWBQRJCSloj8vDIE",
+                  "location": {
+                    "lat": 29.97918079999999,
+                    "lng": 31.13426280000001
+                  }
+                },
+                {
+                  "name": "Mastaba of Hemiunu",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 118,
+                  "vicinity": "X4HH+QX4, Al Ahram, Nazlet El-Semman, Al Haram",
+                  "place_id": "ChIJN1aUxoBFWBQRnEfgEmdbsJY",
+                  "location": {
+                    "lat": 29.97937999999999,
+                    "lng": 31.1299539
+                  }
+                },
+                {
+                  "name": "Pyramid of Khafre",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1498,
+                  "vicinity": "X4GJ+99V, Al Haram",
+                  "place_id": "ChIJO6TPdX5PWBQRkC1MF1gAvsE",
+                  "location": {
+                    "lat": 29.9759954,
+                    "lng": 31.1309285
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Giza Necropolis",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 109227,
+                  "vicinity": "Al Haram",
+                  "place_id": "ChIJzbs54n1PWBQRizZuWjV0dMo",
+                  "location": {
+                    "lat": 29.9772962,
+                    "lng": 31.1324955
+                  }
+                },
+                {
+                  "name": "The Great Pyramid of Giza",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 31133,
+                  "vicinity": "Al Haram, Nazlet El-Semman, Al Haram",
+                  "place_id": "ChIJGymPrIdFWBQRJCSloj8vDIE",
+                  "location": {
+                    "lat": 29.97918079999999,
+                    "lng": 31.13426280000001
+                  }
+                },
+                {
+                  "name": "Pyramid of Khafre",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1498,
+                  "vicinity": "X4GJ+99V, Al Haram",
+                  "place_id": "ChIJO6TPdX5PWBQRkC1MF1gAvsE",
+                  "location": {
+                    "lat": 29.9759954,
+                    "lng": 31.1309285
+                  }
+                },
+                {
+                  "name": "استراحة الملك فاروق بالهرم",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 4,
+                  "vicinity": "Parking lot, Al Haram, Nazlet El-Semman, Al Haram",
+                  "place_id": "ChIJGeKzSgBFWBQRnOhtY_YTcGs",
+                  "location": {
+                    "lat": 29.9802359,
+                    "lng": 31.1360224
+                  }
+                },
+                {
+                  "name": "Tomb of Qar",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 12,
+                  "vicinity": "X4HP+MM3, Nazlet El-Semman, Al Haram",
+                  "place_id": "ChIJNVI35LFFWBQRr2NKuZGzGm4",
+                  "location": {
+                    "lat": 29.9791444,
+                    "lng": 31.1366621
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Caviar Restaurant - Pyramids",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 876,
+                  "vicinity": "13 Cairo-Alex Road (Infront of Mena House), Cairo-Alex Desert Road, Cairo",
+                  "place_id": "ChIJOUCp0oRFWBQRPyZn35mhWkk",
+                  "location": {
+                    "lat": 29.9869352,
+                    "lng": 31.13369900000001
+                  }
+                },
+                {
+                  "name": "KFC",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3,
+                  "user_ratings_total": 528,
+                  "vicinity": "Nazlet El-Semman, Al Haram",
+                  "place_id": "ChIJvQQu5olFWBQRY3s4I9J-P1Q",
+                  "location": {
+                    "lat": 29.9754375,
+                    "lng": 31.1411875
+                  }
+                },
+                {
+                  "name": "139 Pavilion",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 711,
+                  "vicinity": "6 Pyramids Road",
+                  "place_id": "ChIJnV6OY5ZFWBQROcOtaWpkfZs",
+                  "location": {
+                    "lat": 29.9854594,
+                    "lng": 31.13387530000001
+                  }
+                },
+                {
+                  "name": "The Moghul Room",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 304,
+                  "vicinity": "6 Pyramids Road, الهرم",
+                  "place_id": "ChIJ9z5wA4pBWBQRUuvMJTWOxgs",
+                  "location": {
+                    "lat": 29.9854166,
+                    "lng": 31.1342155
+                  }
+                },
+                {
+                  "name": "Cheristo Seafood Restaurant",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 1342,
+                  "vicinity": "طريق الأسكندريه الصحراوي،, Al Haram",
+                  "place_id": "ChIJy_w-QIVFWBQRd7dYOjnEkrU",
+                  "location": {
+                    "lat": 29.9850422,
+                    "lng": 31.1358637
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Pineapple Garden",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.6,
+                  "user_ratings_total": 7,
+                  "vicinity": "X4MQ+M66, Nazlet El-Semman, Al Haram",
+                  "place_id": "ChIJZUua8ElFWBQROIVH4y-07YY",
+                  "location": {
+                    "lat": 29.9841506,
+                    "lng": 31.1380246
+                  }
+                },
+                {
+                  "name": "NASR OMAR FARM",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Al Mansoureya Road",
+                  "place_id": "ChIJZfI-AlFFWBQRrEg2cP0XHz4",
+                  "location": {
+                    "lat": 29.9865389,
+                    "lng": 31.1408456
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "كنيسة مارجرجس السمان",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 22,
+                  "vicinity": "X4MR+5GG, Al Haram, Oula Al Haram, El Omraniya",
+                  "place_id": "ChIJQ4-uaABFWBQRl0y9qK6YbIs",
+                  "location": {
+                    "lat": 29.9829406,
+                    "lng": 31.1413157
+                  }
+                },
+                {
+                  "name": "مسجد قسم شرطة الاهرام",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 6,
+                  "vicinity": "X4MM+C8, Al Haram",
+                  "place_id": "ChIJfygn0zVFWBQRJZNaXnoZ7As",
+                  "location": {
+                    "lat": 29.9836162,
+                    "lng": 31.1332656
+                  }
+                },
+                {
+                  "name": "مسجد عمر بن الخطاب",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 19,
+                  "vicinity": "X4PP+Q33, Kafr Nassar, Al Haram",
+                  "place_id": "ChIJQ8RjiIFFWBQRzyO5ce-hns8",
+                  "location": {
+                    "lat": 29.98690000000001,
+                    "lng": 31.13516280000001
+                  }
+                },
+                {
+                  "name": "Abdul Samad El Gabry Masjid",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 21,
+                  "vicinity": "X4GR+W47, El-Malek Fouad, Nazlet El-Semman, Al Haram",
+                  "place_id": "ChIJwx-OpYlFWBQRRTzzvGoDPAM",
+                  "location": {
+                    "lat": 29.9772765,
+                    "lng": 31.1402965
+                  }
+                },
+                {
+                  "name": "Al Mahdy Mosque",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 6,
+                  "vicinity": "27 Al Remaya, Kafr Nassar, Al Haram",
+                  "place_id": "ChIJW__aDNFFWBQRo3vSdB9d210",
+                  "location": {
+                    "lat": 29.9882891,
+                    "lng": 31.1316228
+                  }
+                },
+                {
+                  "name": "Masjed El Salhen",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 42,
+                  "vicinity": "X4MV+C2J, Al Haram, Nazlet El-Semman, Al Haram",
+                  "place_id": "ChIJaSjD341FWBQRU01S1ZcvqvE",
+                  "location": {
+                    "lat": 29.9835953,
+                    "lng": 31.14250119999999
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Local Bazaar Market",
+                  "types": [
+                    "art_gallery",
+                    "clothing_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 39,
+                  "vicinity": "18 Hadayek Al Ahram, Kafr Nassar, Al Haram",
+                  "place_id": "ChIJIffVYjZFWBQRca7PCkLs-dk",
+                  "location": {
+                    "lat": 29.9875639,
+                    "lng": 31.1339933
+                  }
+                },
+                {
+                  "name": "Egypt Papyrus Institute",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 934,
+                  "vicinity": "X4PR+CF4, Abu El Houl El Siahei st, الهرم",
+                  "place_id": "ChIJQeD1Fs9FWBQR89dyzr2N8rc",
+                  "location": {
+                    "lat": 29.9860241,
+                    "lng": 31.1411972
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Al Omraneya",
+                  "types": [
+                    "sublocality_level_1",
+                    "sublocality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Al Omraneya",
+                  "place_id": "ChIJnRYqp49FWBQR7tfBlyOrJ0M",
+                  "location": {
+                    "lat": 29.9975754,
+                    "lng": 31.1976404
+                  }
+                },
+                {
+                  "name": "Le Méridien Pyramids Hotel & Spa",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 6502,
+                  "vicinity": "X4QJ+G34, El Remaya Square 25 Pyramids Cairo, Kafr Nassar, Al Haram",
+                  "place_id": "ChIJVX2IvZxFWBQRT24qzfjYMwA",
+                  "location": {
+                    "lat": 29.989175,
+                    "lng": 31.1302143
+                  }
+                },
+                {
+                  "name": "Sphinx Palace Pyramids View inn",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 153,
+                  "vicinity": "الجيزة EG, Abu el houl, Nazlet El-Semman, Al Haram",
+                  "place_id": "ChIJR3qk4IlFWBQRB6e3lMHKr2A",
+                  "location": {
+                    "lat": 29.9759395,
+                    "lng": 31.1412986
+                  }
+                },
+                {
+                  "name": "Great Sphinx of Giza",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 25297,
+                  "vicinity": "",
+                  "place_id": "ChIJeamuo2JPWBQRqb1mQKbw08k",
+                  "location": {
+                    "lat": 29.9752687,
+                    "lng": 31.1375674
+                  }
+                },
+                {
+                  "name": "H100 Pyramids View",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 124,
+                  "vicinity": "2 Mina, Street, Al Haram",
+                  "place_id": "ChIJwXZEczdHWBQRkhe_3BNs120",
+                  "location": {
+                    "lat": 29.9876537,
+                    "lng": 31.1332382
+                  }
+                }
+              ]
+            },
+            "total_places_found": 30,
+            "photo_timestamp": "2025:02:16 12:15:56",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 14 Pro Max"
+            },
+            "processing_time_seconds": 0.4113938808441162
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/145.jpg"
+    },
+    {
+      "image_filename": "145.jpg",
+      "timestamp": "2026-01-28T02:28:21.103406",
+      "processing_time_seconds": 59.952616,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Great Pyramid of Giza, Giza, Egypt",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The pyramid's distinctive shape and location are recognizable as the Great Pyramid of Giza, one of the most famous landmarks in Egypt.",
+            "detailed_description": "The image shows the Great Pyramid of Giza, one of the Seven Wonders of the Ancient World. It is a monumental pyramid structure made of limestone, located in Giza, Egypt. The pyramid is characterized by its massive size and precise geometric shape, with a square base and four triangular sides converging to a point at the top. It was built during the Fourth Dynasty of the Old Kingdom of Egypt, around 2580–2560 BC.",
+            "identification": {
+              "primary": [
+                "Great Pyramid of Giza"
+              ],
+              "location": "Giza, Egypt",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Great Pyramid of Giza",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "ancient_egypt",
+              "pyramid",
+              "stone",
+              "Giza",
+              "landmark"
+            ],
+            "location": "Giza, Egypt",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Great Pyramid of Giza\"],\n        \"location\": \"Giza, Egypt\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Great Pyramid of Giza\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"ancient_egypt\", \"pyramid\", \"stone\", \"Giza\", \"landmark\"],\n    \"description\": \"The image shows the Great Pyramid of Giza, one of the Seven Wonders of the Ancient World. It is a monumental pyramid structure made of limestone, located in Giza, Egypt. The pyramid is characterized by its massive size and precise geometric shape, with a square base and four triangular sides converging to a point at the top. It was built during the Fourth Dynasty of the Old Kingdom of Egypt, around 2580–2560 BC.\",\n    \"reasoning\": \"The pyramid's distinctive shape and location are recognizable as the Great Pyramid of Giza, one of the most famous landmarks in Egypt.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 15.087759971618652
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Great Pyramid of Giza, Giza, Egypt",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the iconic features of the Great Pyramid of Giza, including its construction from large limestone blocks, geometric shape, and location in a desert setting. The search results strongly support this identification with high confidence scores.",
+            "identification": {
+              "primary": [
+                "Great Pyramid of Giza"
+              ],
+              "location": "Giza, Egypt",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Great Pyramid of Giza",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Ancient Egyptian",
+              "limestone",
+              "pyramid",
+              "Giza",
+              "tourist_site"
+            ],
+            "sources_used": [
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image prominently features a large pyramid, likely one of the famous pyramids of Giza in Egypt. The pyramid is constructed from large limestone blocks, which are weathered and have a sandy color. The structure has a classic geometric shape with a broad base tapering to a point at the top. The surface of the pyramid is rough and uneven, indicative of its ancient construction methods. The pyramid is set against a clear sky, with some scattered clouds visible, suggesting a sunny day. The surrou",
+            "description": "The image prominently features a large pyramid, likely one of the famous pyramids of Giza in Egypt. The pyramid is constructed from large limestone blocks, which are weathered and have a sandy color. The structure has a classic geometric shape with a broad base tapering to a point at the top. The surface of the pyramid is rough and uneven, indicative of its ancient construction methods. The pyramid is set against a clear sky, with some scattered clouds visible, suggesting a sunny day. The surrou",
+            "architectural_style": "Ancient Egyptian",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 44.86275386810303
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Pyramid",
+          "confidence": 0.9721236824989319,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Pyramid",
+                "score": 0.9721236824989319
+              },
+              {
+                "source": "label",
+                "name": "Smile",
+                "score": 0.9694328308105469
+              },
+              {
+                "source": "label",
+                "name": "Happiness",
+                "score": 0.9403270483016968
+              },
+              {
+                "source": "label",
+                "name": "Vacation",
+                "score": 0.9094853401184082
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.8958273530006409
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Monument",
+                "score": 0.37299999594688416
+              },
+              {
+                "name": "Tourism",
+                "score": 0.33649998903274536
+              },
+              {
+                "name": "Wonders of the World",
+                "score": 0.3334405720233917
+              },
+              {
+                "name": "National monument",
+                "score": 0.3213377296924591
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.8958273530006409
+              },
+              {
+                "name": "Top",
+                "score": 0.8840766549110413
+              },
+              {
+                "name": "Top",
+                "score": 0.8772834539413452
+              },
+              {
+                "name": "Top",
+                "score": 0.8470377326011658
+              },
+              {
+                "name": "Top",
+                "score": 0.8470321297645569
+              }
+            ],
+            "labels": [
+              {
+                "name": "Pyramid",
+                "score": 0.9721236824989319
+              },
+              {
+                "name": "Smile",
+                "score": 0.9694328308105469
+              },
+              {
+                "name": "Happiness",
+                "score": 0.9403270483016968
+              },
+              {
+                "name": "Vacation",
+                "score": 0.9094853401184082
+              },
+              {
+                "name": "Luggage & bags",
+                "score": 0.8897973895072937
+              }
+            ],
+            "processing_time_seconds": 6.170162916183472
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/145.jpg"
+    }
+  ]
+}

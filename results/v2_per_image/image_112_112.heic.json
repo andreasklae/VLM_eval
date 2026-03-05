@@ -1,0 +1,914 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "112.heic",
+      "timestamp": "2026-01-28T01:10:50.475124",
+      "processing_time_seconds": 60.995212,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 11.310147222222223,
+        "gps_longitude": 119.41740555555556,
+        "location": {
+          "formatted_address": "8C69+C4H, Bucana, El Nido, Palawan, Philippines",
+          "city": "El Nido",
+          "county": "Palawan",
+          "country": "Philippines"
+        },
+        "datetime_original": "2024:11:25 17:35:42",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Sunset view over the ocean with silhouetted rock formations, El Nido, Palawan, Philippines",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The silhouette of the rock formations and the sunset colors are characteristic of coastal views in El Nido, Palawan. The natural beauty and tranquility of the scene align with the known features of this location.",
+            "detailed_description": "The image captures a serene sunset over the ocean, with the sky displaying a gradient of colors from blue to orange. In the foreground, there are silhouetted rock formations that add depth to the scene. The calm waters reflect the colors of the sky, creating a tranquil atmosphere. The location is El Nido, Palawan, known for its stunning coastal landscapes and dramatic rock formations.",
+            "identification": {
+              "primary": [
+                "Sunset view over the ocean with silhouetted rock formations"
+              ],
+              "location": "El Nido, Palawan, Philippines",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Silhouetted rock formations",
+                "type": "natural_feature",
+                "confidence": 0.95
+              },
+              {
+                "name": "Ocean view",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "sunset",
+              "natural_feature",
+              "ocean",
+              "silhouette",
+              "El_Nido"
+            ],
+            "location": "El Nido, Palawan, Philippines",
+            "type": "viewpoint",
+            "search_range_meters": 5000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Sunset view over the ocean with silhouetted rock formations\"],\n        \"location\": \"El Nido, Palawan, Philippines\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Silhouetted rock formations\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Ocean view\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"sunset\", \"natural_feature\", \"ocean\", \"silhouette\", \"El_Nido\"],\n    \"description\": \"The image captures a serene sunset over the ocean, with the sky displaying a gradient of colors from blue to orange. In the foreground, there are silhouetted rock formations that add depth to the scene. The calm waters reflect the colors of the sky, creating a tranquil atmosphere. The location is El Nido, Palawan, known for its stunning coastal landscapes and dramatic rock formations.\",\n    \"reasoning\": \"The silhouette of the rock formations and the sunset colors are characteristic of coastal views in El Nido, Palawan. The natural beauty and tranquility of the scene align with the known features of this location.\",\n    \"type\": \"viewpoint\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 11.310147222222223,
+              "longitude": 119.41740555555556
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "8C69+C4H, Bucana, El Nido, Palawan, Philippines",
+              "city": "El Nido",
+              "county": "Palawan",
+              "country": "Philippines"
+            },
+            "photo_timestamp": "2024:11:25 17:35:42",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 23.929977893829346
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Bacuit Bay, Cadlao Island, El Nido, Palawan, Philippines",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the typical sunset views in Bacuit Bay, El Nido, known for its picturesque islands such as Cadlao Island. The search results from sources focused on El Nido strongly support this identification, and the location metadata confirms the photographer was in El Nido, Palawan, Philippines.",
+            "identification": {
+              "primary": [
+                "Bacuit Bay",
+                "Cadlao Island"
+              ],
+              "location": "El Nido, Palawan, Philippines",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Bacuit Bay",
+                "type": "natural_feature",
+                "confidence": 0.95
+              },
+              {
+                "name": "Cadlao Island",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "coastal_landscape",
+              "sunset",
+              "islands",
+              "natural_beauty",
+              "Philippines"
+            ],
+            "sources_used": [
+              "elnido.ph",
+              "richestph.com",
+              "tripadvisor.com"
+            ],
+            "all_candidates": [
+              "*Source*: ([elnido.ph]())",
+              "*Source*: ([elnido.ph]())",
+              "*Source*: ([elnido.ph]())",
+              "*Source*: ([richestph.com]())",
+              "*Source*: ([tripadvisor.com]())"
+            ],
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Bacuit Bay",
+                "specificity_level": "very_specific",
+                "confidence": 0.95,
+                "reasoning": "Bacuit Bay is a well-known location in El Nido for its stunning coastal landscapes and sunsets, matching the description."
+              },
+              {
+                "guess": "Cadlao Island",
+                "specificity_level": "very_specific",
+                "confidence": 0.9,
+                "reasoning": "Cadlao Island is one of the largest and most prominent islands in Bacuit Bay, fitting the description of a large silhouetted island."
+              },
+              {
+                "guess": "El Nido coastal landscape",
+                "specificity_level": "general",
+                "confidence": 0.85,
+                "reasoning": "The description fits the general characteristics of El Nido's coastal landscapes, known for their beauty and island silhouettes."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 3,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image captures a serene coastal landscape at sunset in El Nido, Palawan, Philippines. The foreground features gentle waves lapping against the shore, with the water reflecting the soft hues of the sunset. The horizon is marked by several silhouetted landforms, including rugged islands and rocky outcrops. The largest silhouette on the right side of the image is a prominent rocky formation with a rounded peak, possibly covered with sparse vegetation. Further in the distance, smaller islands ar",
+            "description": "The image captures a serene coastal landscape at sunset in El Nido, Palawan, Philippines. The foreground features gentle waves lapping against the shore, with the water reflecting the soft hues of the sunset. The horizon is marked by several silhouetted landforms, including rugged islands and rocky outcrops. The largest silhouette on the right side of the image is a prominent rocky formation with a rounded peak, possibly covered with sparse vegetation. Further in the distance, smaller islands ar",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 11.310147222222223,
+              "longitude": 119.41740555555556
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "8C69+C4H, Bucana, El Nido, Palawan, Philippines",
+              "city": "El Nido",
+              "county": "Palawan",
+              "country": "Philippines"
+            },
+            "photo_timestamp": "2024:11:25 17:35:42",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 35.9178249835968
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Horizon",
+          "confidence": 0.9809327721595764,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Horizon",
+                "score": 0.9809327721595764
+              },
+              {
+                "source": "label",
+                "name": "Water resources",
+                "score": 0.9786432385444641
+              },
+              {
+                "source": "label",
+                "name": "Afterglow",
+                "score": 0.9638582468032837
+              },
+              {
+                "source": "label",
+                "name": "Fluid",
+                "score": 0.9554821848869324
+              },
+              {
+                "source": "web",
+                "name": "sea-m",
+                "score": 0.43070000410079956
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "sea-m",
+                "score": 0.43070000410079956
+              },
+              {
+                "name": "Sunset",
+                "score": 0.4153224527835846
+              },
+              {
+                "name": "Red sky at morning",
+                "score": 0.3687320649623871
+              },
+              {
+                "name": "Evening",
+                "score": 0.3364511728286743
+              },
+              {
+                "name": "Beach",
+                "score": 0.32435548305511475
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Water",
+                "score": 0.9854978322982788
+              },
+              {
+                "name": "Horizon",
+                "score": 0.9809327721595764
+              },
+              {
+                "name": "Water resources",
+                "score": 0.9786432385444641
+              },
+              {
+                "name": "Afterglow",
+                "score": 0.9638582468032837
+              },
+              {
+                "name": "Fluid",
+                "score": 0.9554821848869324
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 11.310147222222223,
+              "longitude": 119.41740555555556
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "8C69+C4H, Bucana, El Nido, Palawan, Philippines",
+              "city": "El Nido",
+              "county": "Palawan",
+              "country": "Philippines"
+            },
+            "photo_timestamp": "2024:11:25 17:35:42",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 11.229058980941772
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "El Nido, Palawan, Philippines",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "El Nido, Palawan, Philippines",
+            "coordinates": {
+              "latitude": 11.310147222222223,
+              "longitude": 119.41740555555556
+            },
+            "search_range_meters": 5000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Nacpan Smal Beach",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 8,
+                  "vicinity": "8C59+99H, El Nido",
+                  "place_id": "ChIJyz0aRb0HtzMRSWAUW5u8YKg",
+                  "location": {
+                    "lat": 11.3084454,
+                    "lng": 119.4184936
+                  }
+                },
+                {
+                  "name": "Punta Cali Sunset View",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "8C59+7GJ, El Nido",
+                  "place_id": "ChIJQ5sWOQAHtzMRynFiSIhsURI",
+                  "location": {
+                    "lat": 11.3081686,
+                    "lng": 119.4185345
+                  }
+                },
+                {
+                  "name": "Klaudia & Silver Viewpoint",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "8C77+H3, El Nido",
+                  "place_id": "ChIJsUL3EgCptzMRkijEvkLkvEw",
+                  "location": {
+                    "lat": 11.3139661,
+                    "lng": 119.4127433
+                  }
+                },
+                {
+                  "name": "Jess & Tommy Viewpoint",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 4,
+                  "vicinity": "8C89+X6, El Nido",
+                  "place_id": "ChIJrXBzXwAHtzMRKpvhRX6F9Q4",
+                  "location": {
+                    "lat": 11.3174598,
+                    "lng": 119.4180578
+                  }
+                },
+                {
+                  "name": "Barlie’s Head",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "8C86+M9, El Nido",
+                  "place_id": "ChIJV2biAQCptzMRmvBhh_pKlhI",
+                  "location": {
+                    "lat": 11.3167428,
+                    "lng": 119.4108949
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Fisherman’s Restaurant",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 266,
+                  "vicinity": "Nacpan Twin Beach, El Nido",
+                  "place_id": "ChIJwzk6qxmptzMRPGLkk1ib_GE",
+                  "location": {
+                    "lat": 11.310968,
+                    "lng": 119.4176855
+                  }
+                },
+                {
+                  "name": "Froyliza restaurant",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "so calitang before nacpan beach, Brgy, Bucana, El Nido",
+                  "place_id": "ChIJu1N-WQAHtzMReH0TrtLYbLA",
+                  "location": {
+                    "lat": 11.3094725,
+                    "lng": 119.4180383
+                  }
+                },
+                {
+                  "name": "Combine Restaurant",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 184,
+                  "vicinity": "Calitang, Bucana, El Nido",
+                  "place_id": "ChIJf79L5vaptzMRLUMdPDCQcBY",
+                  "location": {
+                    "lat": 11.3110506,
+                    "lng": 119.4178556
+                  }
+                },
+                {
+                  "name": "NACPAN GRILL RESTOBAR",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 171,
+                  "vicinity": "Twin beach Nacpan, Unnamed Road, El Nido",
+                  "place_id": "ChIJicoIyGWptzMRycZ1J0a_pcI",
+                  "location": {
+                    "lat": 11.3111427,
+                    "lng": 119.418129
+                  }
+                },
+                {
+                  "name": "Phoenix Bar & Restaurant",
+                  "types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 22,
+                  "vicinity": "8C59+998, El Nido",
+                  "place_id": "ChIJBWPDlSgHtzMRNSoSLblU1rU",
+                  "location": {
+                    "lat": 11.3084231,
+                    "lng": 119.4184534
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Celiteng Beach",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 2.5,
+                  "user_ratings_total": 4,
+                  "vicinity": "8C59+99H, El Nido",
+                  "place_id": "ChIJIxwUfQAHtzMRgTmxeldNvYA",
+                  "location": {
+                    "lat": 11.3087683,
+                    "lng": 119.4183468
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "San Rafael Chapel, Calitang Beach near Nacpan Beach",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "8C59+MG3, El Nido",
+                  "place_id": "ChIJe_hUOQgHtzMR6nNUcJcYkiI",
+                  "location": {
+                    "lat": 11.3091336,
+                    "lng": 119.4188118
+                  }
+                },
+                {
+                  "name": "JMCIM proper Calitang Outreach",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "8C4C+8W, El Nido",
+                  "place_id": "ChIJAU3sGwAHtzMRSLH-JEL2fYs",
+                  "location": {
+                    "lat": 11.305765,
+                    "lng": 119.4222668
+                  }
+                },
+                {
+                  "name": "JESUS MIRACLE CRUSADE INTERNATIONAL MINISTRY UPPER CALITANG OUTREACH",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Brgy, St.Calitang, Bucana",
+                  "place_id": "ChIJy7jipzgHtzMROEQ1FsOnY8I",
+                  "location": {
+                    "lat": 11.2986573,
+                    "lng": 119.4291937
+                  }
+                },
+                {
+                  "name": "Kingdom Hall Of Jehovah's Witnesses",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "7CWW+X8C, El Nido",
+                  "place_id": "ChIJvXhE_ycHtzMR10CwEExAlI4",
+                  "location": {
+                    "lat": 11.2974358,
+                    "lng": 119.4457589
+                  }
+                },
+                {
+                  "name": "ADVENTIST CHURCH",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "8C3X+GM6, 490: El Nido-Jct New Ibahay Road, El Nido",
+                  "place_id": "ChIJDXqLLV4HtzMR1cjiH1NGlpo",
+                  "location": {
+                    "lat": 11.3037989,
+                    "lng": 119.4491456
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "El Nido",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "El Nido",
+                  "place_id": "ChIJD55c7xVVtjMRVQSbWVtmTvw",
+                  "location": {
+                    "lat": 11.1989164,
+                    "lng": 119.4231658
+                  }
+                },
+                {
+                  "name": "Valine Grace Beach & Cottages",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 29,
+                  "vicinity": "8C59+MF2, El Nido",
+                  "place_id": "ChIJoVH5O58HtzMRsh9ZLe4LEH0",
+                  "location": {
+                    "lat": 11.309126,
+                    "lng": 119.4186438
+                  }
+                },
+                {
+                  "name": "Catian Beach Resort",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.6,
+                  "user_ratings_total": 9,
+                  "vicinity": "8CCH+F4C, Nacpan Calitang, El Nido",
+                  "place_id": "ChIJgUNBToMHtzMRimpDuwmdm-E",
+                  "location": {
+                    "lat": 11.3211895,
+                    "lng": 119.427758
+                  }
+                },
+                {
+                  "name": "Dandal Bay View Inn",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 71,
+                  "vicinity": "Sitio Calitang, El Nido",
+                  "place_id": "ChIJYyBMhmIHtzMRDDiM6MQG0ro",
+                  "location": {
+                    "lat": 11.3079009,
+                    "lng": 119.4188603
+                  }
+                },
+                {
+                  "name": "Angela's Inn Calitang",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 9,
+                  "vicinity": "8C4C+WFW, El Nido",
+                  "place_id": "ChIJuRRNq2MHtzMRjB6utMjTZhw",
+                  "location": {
+                    "lat": 11.307362,
+                    "lng": 119.4212076
+                  }
+                }
+              ]
+            },
+            "total_places_found": 21,
+            "photo_timestamp": "2024:11:25 17:35:42",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.8224856853485107
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/112.heic"
+    },
+    {
+      "image_filename": "112.heic",
+      "timestamp": "2026-01-28T01:11:51.511238",
+      "processing_time_seconds": 58.831169,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Coastal landscape at sunset",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The silhouette of the rocks and the distant islands suggest a coastal setting. The warm colors of the sky indicate a sunset scene, which is typical for coastal landscapes.",
+            "detailed_description": "The image depicts a coastal landscape during sunset. The foreground features the silhouette of rocky formations, while the background includes distant islands. The sky is painted with warm hues of orange and yellow, transitioning to a soft blue as it moves upward. The calm sea reflects the colors of the sky, adding to the serene atmosphere.",
+            "identification": {
+              "primary": [
+                "Coastal landscape at sunset"
+              ],
+              "location": null,
+              "confidence": 0.8
+            },
+            "artifacts": [
+              {
+                "name": "Silhouette of rocky formations",
+                "type": "natural_feature",
+                "confidence": 0.85
+              },
+              {
+                "name": "Distant islands",
+                "type": "natural_feature",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "sunset",
+              "coastline",
+              "natural_feature",
+              "silhouette",
+              "islands"
+            ],
+            "location": null,
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Tropical coastal area",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The presence of islands and the warm sunset colors are characteristic of tropical coastal regions."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Coastal landscape at sunset\"],\n        \"location\": null,\n        \"confidence\": 0.8\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Silhouette of rocky formations\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.85\n        },\n        {\n            \"name\": \"Distant islands\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"sunset\", \"coastline\", \"natural_feature\", \"silhouette\", \"islands\"],\n    \"description\": \"The image depicts a coastal landscape during sunset. The foreground features the silhouette of rocky formations, while the background includes distant islands. The sky is painted with warm hues of orange and yellow, transitioning to a soft blue as it moves upward. The calm sea reflects the colors of the sky, adding to the serene atmosphere.\",\n    \"reasoning\": \"The silhouette of the rocks and the distant islands suggest a coastal setting. The warm colors of the sky indicate a sunset scene, which is typical for coastal landscapes.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Tropical coastal area\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The presence of islands and the warm sunset colors are characteristic of tropical coastal regions.\"\n        }\n    ]\n}",
+            "processing_time_seconds": 25.386106967926025
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Landscape painting depicting a coastal sunset",
+          "confidence": 0.6000000000000001,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the search results for a landscape painting featuring a sunset over the ocean. The abstract landscape painting from magnacanvas.com aligns with the description of vibrant sunset colors and coastal features, making it the most plausible identification.",
+            "identification": {
+              "primary": [
+                "Landscape painting depicting a coastal sunset"
+              ],
+              "location": null,
+              "confidence": 0.8
+            },
+            "artifacts": [
+              {
+                "name": "Coastal landscape during sunset",
+                "type": "painting",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "sunset",
+              "coastal",
+              "landscape",
+              "painting",
+              "impressionist"
+            ],
+            "sources_used": [
+              "magnacanvas.com"
+            ],
+            "all_candidates": [
+              "An 18th-century painting by Claude-Joseph Vernet, depicting a harbor scene with fishermen returning at sunset. ([en.wikipedia.org]())",
+              "A signed 6\"x4.5\" landscape painting by artist Goughl, capturing coastal cliffs during twilight. ([babukhanproperties.com]())",
+              "An abstract landscape painting featuring a sunset over the ocean, available as a printed canvas. ([magnacanvas.com]())",
+              "A British Impressionist oil painting from circa 1930, showcasing a coastal scene illuminated by sunset light. ([richardtaylorfineart.com]())",
+              "An original oil painting from 2024, depicting a contemporary abstract landscape with a vibrant sunset over the sea. ([saatchiart.com]())"
+            ],
+            "type": "painting",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "18th-century painting by Claude-Joseph Vernet",
+                "specificity_level": "very_specific",
+                "confidence": 0.5,
+                "reasoning": "While the Vernet painting depicts a sunset scene, it focuses on a harbor with fishermen, which does not match the description of rock formations and distant islands."
+              },
+              {
+                "guess": "British Impressionist oil painting from circa 1930",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "This painting showcases a coastal scene illuminated by sunset light, which aligns well with the description, but lacks specific details about rock formations."
+              },
+              {
+                "guess": "Contemporary abstract landscape painting from 2024",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The contemporary painting features a vibrant sunset over the sea, matching the description's emphasis on colors and atmosphere."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.8,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a serene coastal landscape during sunset. The foreground features gentle waves lapping against the shore, with the water reflecting the soft hues of the sky. The horizon is dominated by a silhouette of rugged rock formations and distant islands, creating a dramatic contrast against the vibrant colors of the sunset. The sky transitions from a deep blue at the top to warm shades of orange and yellow near the horizon, indicating the setting sun. The rock formations are irregularly",
+            "description": "The image depicts a serene coastal landscape during sunset. The foreground features gentle waves lapping against the shore, with the water reflecting the soft hues of the sky. The horizon is dominated by a silhouette of rugged rock formations and distant islands, creating a dramatic contrast against the vibrant colors of the sunset. The sky transitions from a deep blue at the top to warm shades of orange and yellow near the horizon, indicating the setting sun. The rock formations are irregularly",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 33.266648054122925
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Horizon",
+          "confidence": 0.9809327721595764,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Horizon",
+                "score": 0.9809327721595764
+              },
+              {
+                "source": "label",
+                "name": "Water resources",
+                "score": 0.9786432385444641
+              },
+              {
+                "source": "label",
+                "name": "Afterglow",
+                "score": 0.9638582468032837
+              },
+              {
+                "source": "label",
+                "name": "Fluid",
+                "score": 0.9554821848869324
+              },
+              {
+                "source": "web",
+                "name": "sea-m",
+                "score": 0.43309998512268066
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "sea-m",
+                "score": 0.43309998512268066
+              },
+              {
+                "name": "Sunset",
+                "score": 0.3968430161476135
+              },
+              {
+                "name": "Red sky at morning",
+                "score": 0.3724099397659302
+              },
+              {
+                "name": "Evening",
+                "score": 0.337586373090744
+              },
+              {
+                "name": "Beach",
+                "score": 0.3240838348865509
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Water",
+                "score": 0.9854978322982788
+              },
+              {
+                "name": "Horizon",
+                "score": 0.9809327721595764
+              },
+              {
+                "name": "Water resources",
+                "score": 0.9786432385444641
+              },
+              {
+                "name": "Afterglow",
+                "score": 0.9638582468032837
+              },
+              {
+                "name": "Fluid",
+                "score": 0.9554821848869324
+              }
+            ],
+            "processing_time_seconds": 10.186553239822388
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/112.heic"
+    }
+  ]
+}

@@ -1,0 +1,1053 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "164.heic",
+      "timestamp": "2026-01-28T03:10:17.822919",
+      "processing_time_seconds": 61.006516,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -28.08695277777778,
+        "gps_longitude": 153.4526361111111,
+        "location": {
+          "formatted_address": "WF73+63 Burleigh Heads QLD, Australia",
+          "city": "Burleigh Heads",
+          "county": "City of Gold Coast",
+          "country": "Australia"
+        },
+        "datetime_original": "2025:04:27 15:51:38",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Gold Coast skyline, Gold Coast, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Burleigh Heads, which is a known vantage point for viewing the Gold Coast skyline. The distinctive high-rise buildings match the architectural style typical of the Gold Coast.",
+            "detailed_description": "The image shows the skyline of the Gold Coast, Australia, viewed from Burleigh Heads. The skyline features a collection of modern high-rise buildings, including several prominent skyscrapers. The scene is set against a clear blue sky, with the beach and ocean in the foreground, creating a contrast between the natural and urban environments.",
+            "identification": {
+              "primary": [
+                "Gold Coast skyline"
+              ],
+              "location": "Gold Coast, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Gold Coast skyline",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "urban",
+              "beach",
+              "Australia"
+            ],
+            "location": "Gold Coast, Australia",
+            "type": "landmark",
+            "search_range_meters": 5000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Gold Coast skyline\"],\n        \"location\": \"Gold Coast, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Gold Coast skyline\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"urban\", \"beach\", \"Australia\"],\n    \"description\": \"The image shows the skyline of the Gold Coast, Australia, viewed from Burleigh Heads. The skyline features a collection of modern high-rise buildings, including several prominent skyscrapers. The scene is set against a clear blue sky, with the beach and ocean in the foreground, creating a contrast between the natural and urban environments.\",\n    \"reasoning\": \"The location metadata indicates Burleigh Heads, which is a known vantage point for viewing the Gold Coast skyline. The distinctive high-rise buildings match the architectural style typical of the Gold Coast.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": -28.08695277777778,
+              "longitude": 153.4526361111111
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "WF73+63 Burleigh Heads QLD, Australia",
+              "city": "Burleigh Heads",
+              "county": "City of Gold Coast",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:04:27 15:51:38",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 21.745527982711792
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Q1 Tower, Gold Coast skyline, Gold Coast, Australia",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the Gold Coast skyline, known for its modern high-rise buildings and the Q1 Tower, which is a distinctive skyscraper with a spire. The location metadata from Burleigh Heads supports this identification, as it is a vantage point for viewing the Gold Coast skyline.",
+            "identification": {
+              "primary": [
+                "Q1 Tower",
+                "Gold Coast skyline"
+              ],
+              "location": "Gold Coast, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Q1 Tower",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Gold Coast skyline",
+                "type": "landmark",
+                "confidence": 0.9
+              },
+              {
+                "name": "Sandy beach",
+                "type": "natural_feature",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "coastal_city",
+              "skyscraper",
+              "beach",
+              "urban_silhouette"
+            ],
+            "sources_used": [
+              "wallpaper.com",
+              "placeprojects.com.au"
+            ],
+            "all_candidates": [
+              "*URL*: ([wallpaper.com]())",
+              "*URL*: ([placeprojects.com.au]())",
+              "*URL*: ([aloca.com.au]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Surfers Paradise skyline",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.8,
+                "reasoning": "Surfers Paradise is a well-known area within the Gold Coast featuring similar modern skyscrapers."
+              },
+              {
+                "guess": "Modern skyscraper in Gold Coast",
+                "specificity_level": "general",
+                "confidence": 0.75,
+                "reasoning": "The description fits the general style of modern skyscrapers found in the Gold Coast area."
+              },
+              {
+                "guess": "Coastal city skyline",
+                "specificity_level": "very_general",
+                "confidence": 0.7,
+                "reasoning": "The image depicts a typical coastal city skyline with modern architecture and a beach."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image captures a scenic view of a coastal area with a prominent skyline in the background. The foreground features a sandy beach with gentle waves lapping at the shore, creating a reflective surface on the wet sand. The skyline is composed of numerous high-rise buildings, showcasing a variety of modern architectural styles. The tallest building in the center is particularly striking, with a sleek, tapering design that likely includes a spire or antenna at the top. Surrounding this central sk",
+            "description": "The image captures a scenic view of a coastal area with a prominent skyline in the background. The foreground features a sandy beach with gentle waves lapping at the shore, creating a reflective surface on the wet sand. The skyline is composed of numerous high-rise buildings, showcasing a variety of modern architectural styles. The tallest building in the center is particularly striking, with a sleek, tapering design that likely includes a spire or antenna at the top. Surrounding this central sk",
+            "architectural_style": "Modern",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": -28.08695277777778,
+              "longitude": 153.4526361111111
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "WF73+63 Burleigh Heads QLD, Australia",
+              "city": "Burleigh Heads",
+              "county": "City of Gold Coast",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:04:27 15:51:38",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 38.316742181777954
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Body of water",
+          "confidence": 0.9805790781974792,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Body of water",
+                "score": 0.9805790781974792
+              },
+              {
+                "source": "label",
+                "name": "Beach",
+                "score": 0.9712463617324829
+              },
+              {
+                "source": "web",
+                "name": "sea-m",
+                "score": 0.4366999864578247
+              },
+              {
+                "source": "web",
+                "name": "Beach",
+                "score": 0.41320040822029114
+              },
+              {
+                "source": "web",
+                "name": "Sand",
+                "score": 0.37017643451690674
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "sea-m",
+                "score": 0.4366999864578247
+              },
+              {
+                "name": "Beach",
+                "score": 0.41320040822029114
+              },
+              {
+                "name": "Sand",
+                "score": 0.37017643451690674
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.9908554553985596
+              },
+              {
+                "name": "Water",
+                "score": 0.9811735153198242
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9811691641807556
+              },
+              {
+                "name": "Body of water",
+                "score": 0.9805790781974792
+              },
+              {
+                "name": "Beach",
+                "score": 0.9712463617324829
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": -28.08695277777778,
+              "longitude": 153.4526361111111
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "WF73+63 Burleigh Heads QLD, Australia",
+              "city": "Burleigh Heads",
+              "county": "City of Gold Coast",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:04:27 15:51:38",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 11.882871150970459
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Burleigh Heads, City of Gold Coast, Australia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Burleigh Heads, City of Gold Coast, Australia",
+            "coordinates": {
+              "latitude": -28.08695277777778,
+              "longitude": 153.4526361111111
+            },
+            "search_range_meters": 5000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Burleigh Heads Mowbray Park SLSC",
+                  "types": [
+                    "restaurant",
+                    "tourist_attraction",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 1829,
+                  "vicinity": "Goodwin Terrace &, Gold Coast Highway, Burleigh Heads",
+                  "place_id": "ChIJr7VJ_ZMDkWsRJoufoylGk1A",
+                  "location": {
+                    "lat": -28.0890739,
+                    "lng": 153.4532489
+                  }
+                },
+                {
+                  "name": "Burleigh Head National Park",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 3866,
+                  "vicinity": "Goodwin Terrace, Burleigh Heads",
+                  "place_id": "ChIJ-WvtxLADkWsRPVRT3wIDlG4",
+                  "location": {
+                    "lat": -28.0918206,
+                    "lng": 153.4591743
+                  }
+                },
+                {
+                  "name": "Jellurgal Aboriginal Cultural Centre",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 433,
+                  "vicinity": "1711 Gold Coast Highway, Burleigh Heads",
+                  "place_id": "ChIJV08sxb0DkWsR9SrJQ0h1RD0",
+                  "location": {
+                    "lat": -28.0965719,
+                    "lng": 153.4551939
+                  }
+                },
+                {
+                  "name": "BOUNCEinc Gold Coast",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1940,
+                  "vicinity": "5 Sunlight Drive, Burleigh Waters",
+                  "place_id": "ChIJEfw0xggDkWsRV2VAlg9Noms",
+                  "location": {
+                    "lat": -28.100337,
+                    "lng": 153.4339457
+                  }
+                },
+                {
+                  "name": "Tickets and Tours",
+                  "types": [
+                    "amusement_park",
+                    "tourist_attraction",
+                    "travel_agency",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "11/76 Township Drive, Burleigh Heads",
+                  "place_id": "ChIJxwLyRvwEkWsR8j5Vpk7eYG4",
+                  "location": {
+                    "lat": -28.1105946,
+                    "lng": 153.4342373
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Varsity Lakes Tavern",
+                  "types": [
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2415,
+                  "vicinity": "2 Santa Maria Court, Burleigh Waters",
+                  "place_id": "ChIJY7sd0mUDkWsRFHlR78CesqU",
+                  "location": {
+                    "lat": -28.0749084,
+                    "lng": 153.4222125
+                  }
+                },
+                {
+                  "name": "Subway Burleigh Waters",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 92,
+                  "vicinity": "Treetops Plaza Shopping Centre, 4/3 - 5 Classic Way, Burleigh Waters",
+                  "place_id": "ChIJma57YxoDkWsRG3MTuEZldgs",
+                  "location": {
+                    "lat": -28.10073849999999,
+                    "lng": 153.4243811
+                  }
+                },
+                {
+                  "name": "Subway",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 105,
+                  "vicinity": "Shop 14, 221 Christine Avenue, Varsity Lakes",
+                  "place_id": "ChIJZXynvW0DkWsR6W4oO1A2b3s",
+                  "location": {
+                    "lat": -28.0856991,
+                    "lng": 153.4238695
+                  }
+                },
+                {
+                  "name": "Subway Burleigh Heads",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 68,
+                  "vicinity": "Shop 107/149 West Burleigh Road, Burleigh Heads",
+                  "place_id": "ChIJrT0E0aADkWsRji-6VmrSkKw",
+                  "location": {
+                    "lat": -28.0974937,
+                    "lng": 153.4405313
+                  }
+                },
+                {
+                  "name": "Subway",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 70,
+                  "vicinity": "Market Square Centre, Shop A9/201 Varsity Parade, Varsity Lakes",
+                  "place_id": "ChIJ6YqozkIDkWsRtYKKCs9ZYxg",
+                  "location": {
+                    "lat": -28.07851299999999,
+                    "lng": 153.4147322
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Burleigh Head National Park",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 3866,
+                  "vicinity": "Goodwin Terrace, Burleigh Heads",
+                  "place_id": "ChIJ-WvtxLADkWsRPVRT3wIDlG4",
+                  "location": {
+                    "lat": -28.0918206,
+                    "lng": 153.4591743
+                  }
+                },
+                {
+                  "name": "Ed Harry Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 78,
+                  "vicinity": "Kratzmann Avenue, Miami",
+                  "place_id": "ChIJgQgooJoDkWsRcr5uu3ZzxOM",
+                  "location": {
+                    "lat": -28.085,
+                    "lng": 153.4502778
+                  }
+                },
+                {
+                  "name": "Fleays Wildlife Conservation Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 222,
+                  "vicinity": "Loman Lane, Burleigh Heads",
+                  "place_id": "ChIJk-eHJqkDkWsRLteQLHeES1Y",
+                  "location": {
+                    "lat": -28.1093902,
+                    "lng": 153.4443032
+                  }
+                },
+                {
+                  "name": "Varsity Waters",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 16,
+                  "vicinity": "Brier Crescent, Varsity Lakes",
+                  "place_id": "ChIJt94wJT0DkWsRcMiatYNag4w",
+                  "location": {
+                    "lat": -28.096842,
+                    "lng": 153.4131761
+                  }
+                },
+                {
+                  "name": "David Fleay Wildlife Park",
+                  "types": [
+                    "zoo",
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1009,
+                  "vicinity": "Loman Lane, Burleigh Heads",
+                  "place_id": "ChIJoSJ6OakDkWsRMAci11ujAg8",
+                  "location": {
+                    "lat": -28.109762,
+                    "lng": 153.444218
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Burleigh Heads Anglican Church (St John's)",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 17,
+                  "vicinity": "14 Park Avenue, Burleigh Heads",
+                  "place_id": "ChIJyTJe6JkDkWsRQyrE-nGQJHU",
+                  "location": {
+                    "lat": -28.0905588,
+                    "lng": 153.4499321
+                  }
+                },
+                {
+                  "name": "Burleigh Church of Christ",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 33,
+                  "vicinity": "174 West Burleigh Road, Burleigh Heads",
+                  "place_id": "ChIJ1zMk7KYDkWsRmN8gV0DN4Y0",
+                  "location": {
+                    "lat": -28.100218,
+                    "lng": 153.4431615
+                  }
+                },
+                {
+                  "name": "1 Church Consulting",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "3/2172 Gold Coast Highway, Miami",
+                  "place_id": "ChIJDbyVEYcEkWsRLS3xYwNlmWo",
+                  "location": {
+                    "lat": -28.06271,
+                    "lng": 153.4370861
+                  }
+                },
+                {
+                  "name": "Salt Church Robina",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 20,
+                  "vicinity": "2 University Drive, Robina",
+                  "place_id": "ChIJo8ACVFADkWsRzY4K5RDyWxM",
+                  "location": {
+                    "lat": -28.0688117,
+                    "lng": 153.4124796
+                  }
+                },
+                {
+                  "name": "Elevation Church Gold Coast",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 46,
+                  "vicinity": "4/7-9 Ern Harley Drive, Burleigh Heads",
+                  "place_id": "ChIJ1ZuUxSUDkWsRMgj8X2Dktwc",
+                  "location": {
+                    "lat": -28.1032733,
+                    "lng": 153.4101535
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "sean scott photography",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 34,
+                  "vicinity": "21c James Street, Burleigh Heads",
+                  "place_id": "ChIJ38yPFKEDkWsRyr2EDoDtFKM",
+                  "location": {
+                    "lat": -28.0891514,
+                    "lng": 153.4510389
+                  }
+                },
+                {
+                  "name": "Jellurgal Aboriginal Cultural Centre",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 433,
+                  "vicinity": "1711 Gold Coast Highway, Burleigh Heads",
+                  "place_id": "ChIJV08sxb0DkWsR9SrJQ0h1RD0",
+                  "location": {
+                    "lat": -28.0965719,
+                    "lng": 153.4551939
+                  }
+                },
+                {
+                  "name": "FINEPRINTCO Burleigh Showroom",
+                  "types": [
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 11,
+                  "vicinity": "Shop 13/110 Kortum Drive, Burleigh Heads",
+                  "place_id": "ChIJdbFyOgUDkWsRP1AH2msbFew",
+                  "location": {
+                    "lat": -28.1025763,
+                    "lng": 153.4276092
+                  }
+                },
+                {
+                  "name": "Thinking Hand Studios",
+                  "types": [
+                    "art_gallery",
+                    "jewelry_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 9,
+                  "vicinity": "Unit 2/53 Township Drive, Burleigh Heads",
+                  "place_id": "ChIJ92WD7AEDkWsRAFO0Y7_Fxi8",
+                  "location": {
+                    "lat": -28.1116821,
+                    "lng": 153.4345317
+                  }
+                },
+                {
+                  "name": "Gold Coast Printing & Framing",
+                  "types": [
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 43,
+                  "vicinity": "3/3 Hampton Road, Burleigh Heads",
+                  "place_id": "ChIJ2UGwq_0EkWsRRm9Y9EHSjhc",
+                  "location": {
+                    "lat": -28.1035518,
+                    "lng": 153.4233298
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Gold Coast",
+                  "types": [
+                    "colloquial_area",
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Gold Coast",
+                  "place_id": "ChIJt2BdK0cakWsRcK_e81qjAgM",
+                  "location": {
+                    "lat": -27.9769248,
+                    "lng": 153.380936
+                  }
+                },
+                {
+                  "name": "Spindrift Beachfront Apartments",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 186,
+                  "vicinity": "37 Albatross Avenue, Mermaid Beach",
+                  "place_id": "ChIJDd7I5GIEkWsRD9LbzkmX3ko",
+                  "location": {
+                    "lat": -28.0580864,
+                    "lng": 153.4414673
+                  }
+                },
+                {
+                  "name": "Gemini Court Holiday Apartments",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 239,
+                  "vicinity": "45 Hayle Street, Burleigh Heads",
+                  "place_id": "ChIJV2wHoZYDkWsRjfKkXFA-3pk",
+                  "location": {
+                    "lat": -28.0913059,
+                    "lng": 153.4560724
+                  }
+                },
+                {
+                  "name": "Grande Florida Beachside Resort",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 504,
+                  "vicinity": "7 Redondo Avenue, Miami",
+                  "place_id": "ChIJ9zpa734EkWsR89ZFi9KKghw",
+                  "location": {
+                    "lat": -28.068237,
+                    "lng": 153.442702
+                  }
+                },
+                {
+                  "name": "Hillhaven Holiday Apartments",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 69,
+                  "vicinity": "2 Goodwin Terrace, Burleigh Heads",
+                  "place_id": "ChIJxS8u9pMDkWsRRPCep-RvU6Q",
+                  "location": {
+                    "lat": -28.0904542,
+                    "lng": 153.4576315
+                  }
+                }
+              ]
+            },
+            "total_places_found": 30,
+            "photo_timestamp": "2025:04:27 15:51:38",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.4307248592376709
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/164.heic"
+    },
+    {
+      "image_filename": "164.heic",
+      "timestamp": "2026-01-28T03:11:18.872678",
+      "processing_time_seconds": 60.551267,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Gold Coast skyline, Gold Coast, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The skyline's distinctive modern high-rise buildings and coastal setting are characteristic of the Gold Coast, a well-known city in Australia.",
+            "detailed_description": "The image shows the skyline of the Gold Coast, Australia, viewed from a beach. The skyline features modern high-rise buildings, including several skyscrapers, set against a clear blue sky. The beach in the foreground is sandy and stretches along the coastline, with waves gently rolling in. The scene captures the juxtaposition of urban development and natural beauty, characteristic of the Gold Coast.",
+            "identification": {
+              "primary": [
+                "Gold Coast skyline"
+              ],
+              "location": "Gold Coast, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Gold Coast skyline",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "urban",
+              "beach",
+              "Australia"
+            ],
+            "location": "Gold Coast, Australia",
+            "type": "landmark",
+            "search_range_meters": 5000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Gold Coast skyline\"],\n        \"location\": \"Gold Coast, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Gold Coast skyline\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"urban\", \"beach\", \"Australia\"],\n    \"description\": \"The image shows the skyline of the Gold Coast, Australia, viewed from a beach. The skyline features modern high-rise buildings, including several skyscrapers, set against a clear blue sky. The beach in the foreground is sandy and stretches along the coastline, with waves gently rolling in. The scene captures the juxtaposition of urban development and natural beauty, characteristic of the Gold Coast.\",\n    \"reasoning\": \"The skyline's distinctive modern high-rise buildings and coastal setting are characteristic of the Gold Coast, a well-known city in Australia.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 25.80648183822632
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Dubai Marina Skyline, Dubai, United Arab Emirates",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the Dubai Marina skyline, known for its cluster of modern high-rise buildings and beachfront location. The tallest building with a sleek design and spire is consistent with the architectural features found in Dubai Marina. Search results strongly suggest this identification based on the architectural style and setting.",
+            "identification": {
+              "primary": [
+                "Dubai Marina Skyline"
+              ],
+              "location": "Dubai, United Arab Emirates",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Dubai Marina Skyline",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Tall skyscrapers with modern glass facades",
+                "type": "building",
+                "confidence": 0.9
+              },
+              {
+                "name": "Beachfront setting",
+                "type": "natural_feature",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "skyscrapers",
+              "beachfront",
+              "Dubai",
+              "urban"
+            ],
+            "sources_used": [
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Miami Beach Skyline",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "Miami Beach also features modern skyscrapers and a beachfront setting, but the architectural style and specific building features are less consistent with the description."
+              },
+              {
+                "guess": "Gold Coast Skyline",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.55,
+                "reasoning": "Gold Coast in Australia has a similar beachfront and modern skyline, but the specific architectural features described are more aligned with Dubai Marina."
+              },
+              {
+                "guess": "Hong Kong Skyline",
+                "specificity_level": "general",
+                "confidence": 0.5,
+                "reasoning": "Hong Kong has a dense skyline with modern buildings, but the beachfront setting is less typical."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a coastal city skyline viewed from a sandy beach. The skyline is characterized by a cluster of modern high-rise buildings, with several prominent skyscrapers dominating the view. The tallest building in the center features a sleek, pointed design, possibly with a spire or antenna extending upwards. Surrounding this central skyscraper are various other tall buildings, each with a modern architectural style, including glass facades and geometric shapes. The skyline is set against",
+            "description": "The image depicts a coastal city skyline viewed from a sandy beach. The skyline is characterized by a cluster of modern high-rise buildings, with several prominent skyscrapers dominating the view. The tallest building in the center features a sleek, pointed design, possibly with a spire or antenna extending upwards. Surrounding this central skyscraper are various other tall buildings, each with a modern architectural style, including glass facades and geometric shapes. The skyline is set against",
+            "architectural_style": "Modern",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 34.47930598258972
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Body of water",
+          "confidence": 0.9805466532707214,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Body of water",
+                "score": 0.9805466532707214
+              },
+              {
+                "source": "label",
+                "name": "Beach",
+                "score": 0.9713112115859985
+              },
+              {
+                "source": "web",
+                "name": "sea-m",
+                "score": 0.4366999864578247
+              },
+              {
+                "source": "web",
+                "name": "Beach",
+                "score": 0.41320040822029114
+              },
+              {
+                "source": "web",
+                "name": "Sand",
+                "score": 0.37017643451690674
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "sea-m",
+                "score": 0.4366999864578247
+              },
+              {
+                "name": "Beach",
+                "score": 0.41320040822029114
+              },
+              {
+                "name": "Sand",
+                "score": 0.37017643451690674
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.9909175038337708
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9812008142471313
+              },
+              {
+                "name": "Water",
+                "score": 0.9809261560440063
+              },
+              {
+                "name": "Body of water",
+                "score": 0.9805466532707214
+              },
+              {
+                "name": "Beach",
+                "score": 0.9713112115859985
+              }
+            ],
+            "processing_time_seconds": 11.074682235717773
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/164.heic"
+    }
+  ]
+}

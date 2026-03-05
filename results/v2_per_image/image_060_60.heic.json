@@ -1,0 +1,854 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "60.heic",
+      "timestamp": "2026-01-28T06:19:23.248090",
+      "processing_time_seconds": 56.998804,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -31.996633333333335,
+        "gps_longitude": 115.54170277777777,
+        "location": {
+          "formatted_address": "2 Henderson Ave, Rottnest Island WA 6161, Australia",
+          "city": "Rottnest Island",
+          "county": "City of Cockburn",
+          "country": "Australia"
+        },
+        "datetime_original": "2023:04:15 17:35:36",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Thomson Bay, Rottnest Island, Australia",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Rottnest Island, and the presence of boats and coastal vegetation suggests Thomson Bay, a well-known area on the island.",
+            "detailed_description": "The image depicts Thomson Bay on Rottnest Island, Australia. The bay is filled with various boats, including sailboats and motorboats, anchored in the calm waters. The foreground features coastal vegetation and a sandy path leading towards the water. The sky is mostly clear with some clouds, indicating a pleasant weather condition. The scene captures the tranquil and picturesque nature of this popular destination.",
+            "identification": {
+              "primary": [
+                "Thomson Bay"
+              ],
+              "location": "Rottnest Island, Australia",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Thomson Bay",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "coastal",
+              "bay",
+              "boats",
+              "Australia",
+              "Rottnest_Island"
+            ],
+            "location": "Rottnest Island, Australia",
+            "type": "natural_feature",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Thomson Bay\"],\n        \"location\": \"Rottnest Island, Australia\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Thomson Bay\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"coastal\", \"bay\", \"boats\", \"Australia\", \"Rottnest_Island\"],\n    \"description\": \"The image depicts Thomson Bay on Rottnest Island, Australia. The bay is filled with various boats, including sailboats and motorboats, anchored in the calm waters. The foreground features coastal vegetation and a sandy path leading towards the water. The sky is mostly clear with some clouds, indicating a pleasant weather condition. The scene captures the tranquil and picturesque nature of this popular destination.\",\n    \"reasoning\": \"The location metadata indicates Rottnest Island, and the presence of boats and coastal vegetation suggests Thomson Bay, a well-known area on the island.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "gps_coordinates": {
+              "latitude": -31.996633333333335,
+              "longitude": 115.54170277777777
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "2 Henderson Ave, Rottnest Island WA 6161, Australia",
+              "city": "Rottnest Island",
+              "county": "City of Cockburn",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2023:04:15 17:35:36",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 9.572137832641602
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image captures a serene coastal scene on Rottnest Island, Australia. The foreground features a lush area of dense green vegetation, including grasses and shrubs, bordered by a wooden fence that follows a sandy path leading towards the beach. The midground reveals a tranquil bay populated with numerous boats, including sailboats and motorboats, anchored in the calm waters. The boats vary in size and design, with some having visible cabins and others featuring tall masts. The water reflects th",
+            "description": "The image captures a serene coastal scene on Rottnest Island, Australia. The foreground features a lush area of dense green vegetation, including grasses and shrubs, bordered by a wooden fence that follows a sandy path leading towards the beach. The midground reveals a tranquil bay populated with numerous boats, including sailboats and motorboats, anchored in the calm waters. The boats vary in size and design, with some having visible cabins and others featuring tall masts. The water reflects th",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": -31.996633333333335,
+              "longitude": 115.54170277777777
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "2 Henderson Ave, Rottnest Island WA 6161, Australia",
+              "city": "Rottnest Island",
+              "county": "City of Cockburn",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2023:04:15 17:35:36",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 46.44207310676575
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Boat",
+          "confidence": 0.9864000082015991,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Boat",
+                "score": 0.9864000082015991
+              },
+              {
+                "source": "object",
+                "name": "Boat",
+                "score": 0.6428209543228149
+              },
+              {
+                "source": "web",
+                "name": "sea-m",
+                "score": 0.39309999346733093
+              },
+              {
+                "source": "web",
+                "name": "Sailboat",
+                "score": 0.36243996024131775
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "sea-m",
+                "score": 0.39309999346733093
+              },
+              {
+                "name": "Sailboat",
+                "score": 0.36243996024131775
+              }
+            ],
+            "objects": [
+              {
+                "name": "Boat",
+                "score": 0.6428209543228149
+              }
+            ],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.9918588399887085
+              },
+              {
+                "name": "Blue",
+                "score": 0.9887962341308594
+              },
+              {
+                "name": "Boat",
+                "score": 0.9864000082015991
+              },
+              {
+                "name": "Cloud",
+                "score": 0.983226478099823
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9808707237243652
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": -31.996633333333335,
+              "longitude": 115.54170277777777
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "2 Henderson Ave, Rottnest Island WA 6161, Australia",
+              "city": "Rottnest Island",
+              "county": "City of Cockburn",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2023:04:15 17:35:36",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 14.071659088134766
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Rottnest Island, City of Cockburn, Australia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Rottnest Island, City of Cockburn, Australia",
+            "coordinates": {
+              "latitude": -31.996633333333335,
+              "longitude": 115.54170277777777
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Rottnest Island Train Station",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 230,
+                  "vicinity": "Brand Way, Rottnest Island",
+                  "place_id": "ChIJc8tSCGtaLSoR9GvNzBXTJIs",
+                  "location": {
+                    "lat": -31.99959300000001,
+                    "lng": 115.541608
+                  }
+                },
+                {
+                  "name": "Quokka spot",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 21,
+                  "vicinity": "Indian Ocean, Rottnest Island",
+                  "place_id": "ChIJhQZKBwBbLSoRJlzeAiM7Mfc",
+                  "location": {
+                    "lat": -31.9961082,
+                    "lng": 115.5414651
+                  }
+                },
+                {
+                  "name": "Rottnest Island Visitor Centre",
+                  "types": [
+                    "tourist_attraction",
+                    "travel_agency",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1885,
+                  "vicinity": "1 Henderson Avenue, Rottnest Island",
+                  "place_id": "ChIJAdUoVmxaLSoR7FYF8FxFFew",
+                  "location": {
+                    "lat": -31.995644,
+                    "lng": 115.541353
+                  }
+                },
+                {
+                  "name": "Rottnest Whale Statue",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 10,
+                  "vicinity": "1 Henderson Avenue, Rottnest Island",
+                  "place_id": "ChIJ_RYtgvRbLSoRSshx_E_er-o",
+                  "location": {
+                    "lat": -31.99549369999999,
+                    "lng": 115.5418034
+                  }
+                },
+                {
+                  "name": "Thomson Bay Settlement",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 175,
+                  "vicinity": "Rottnest Island",
+                  "place_id": "ChIJMV3laWxaLSoRT3-5S1mLIao",
+                  "location": {
+                    "lat": -31.9958335,
+                    "lng": 115.5405626
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Wadjemup Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 67,
+                  "vicinity": "Digby Drive, Rottnest Island",
+                  "place_id": "ChIJQfBYSGxaLSoRzy_-JLL5RI8",
+                  "location": {
+                    "lat": -31.9959867,
+                    "lng": 115.5401659
+                  }
+                },
+                {
+                  "name": "Pilot Boathouse",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 6,
+                  "vicinity": "Rottnest Island",
+                  "place_id": "ChIJha7sum1aLSoRvfUyA75n9Aw",
+                  "location": {
+                    "lat": -31.9945442,
+                    "lng": 115.5406023
+                  }
+                },
+                {
+                  "name": "Wadjemup Museum for Children",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 5,
+                  "vicinity": "Somerville Drive, Rottnest Island",
+                  "place_id": "ChIJjy3tyG1aLSoR2C3TuJyfxt8",
+                  "location": {
+                    "lat": -31.9949361,
+                    "lng": 115.5397673
+                  }
+                },
+                {
+                  "name": "Rottnest Island Cemetery",
+                  "types": [
+                    "cemetery",
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 11,
+                  "vicinity": "Digby Drive, Rottnest Island",
+                  "place_id": "ChIJ68hcH2xaLSoRp_GDQ4AJsB0",
+                  "location": {
+                    "lat": -31.9971659,
+                    "lng": 115.5387111
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Dôme Café - Rottnest Island",
+                  "types": [
+                    "cafe",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.2,
+                  "user_ratings_total": 878,
+                  "vicinity": "Colebatch Avenue, Rottnest Island",
+                  "place_id": "ChIJP_b_ZmxaLSoRNxkkHHf9Czs",
+                  "location": {
+                    "lat": -31.9969228,
+                    "lng": 115.5412291
+                  }
+                },
+                {
+                  "name": "Subway",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 193,
+                  "vicinity": "Central Mall Thomson Bay, Rottnest Island",
+                  "place_id": "ChIJzUvZamxaLSoRvCvIbOcinUY",
+                  "location": {
+                    "lat": -31.9956129,
+                    "lng": 115.5406444
+                  }
+                },
+                {
+                  "name": "Isola Bar e Cibo",
+                  "types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1900,
+                  "vicinity": "Corner Bedford Ave &, Colebatch Avenue, Rottnest Island",
+                  "place_id": "ChIJeYJlKdxbLSoRTui5VSi_dY0",
+                  "location": {
+                    "lat": -31.99733539999999,
+                    "lng": 115.5419029
+                  }
+                },
+                {
+                  "name": "Rottnest Cruises",
+                  "types": [
+                    "travel_agency",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 81,
+                  "vicinity": "Thomson Bay Fuel Jetty, Rottnest Island",
+                  "place_id": "ChIJ8xAOpNpbLSoRE--WM_dTQAQ",
+                  "location": {
+                    "lat": -31.9965634,
+                    "lng": 115.5426361
+                  }
+                },
+                {
+                  "name": "Water drink station Rottnest marathon",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 3,
+                  "vicinity": "Rottnest Island",
+                  "place_id": "ChIJd22YJwBbLSoRpgNIlML2RV0",
+                  "location": {
+                    "lat": -31.9968201,
+                    "lng": 115.5402907
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Outdoor Ping Pong Table by POPP",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "2 Henderson Avenue, Rottnest Island",
+                  "place_id": "ChIJJ8XdtYxbLSoRZIGmdBlnPQQ",
+                  "location": {
+                    "lat": -31.9972927,
+                    "lng": 115.5413824
+                  }
+                },
+                {
+                  "name": "Quokka habitat",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "11022 Henderson Avenue, Rottnest Island",
+                  "place_id": "ChIJb9kbRgBbLSoRuKqPupj3gvM",
+                  "location": {
+                    "lat": -31.9965609,
+                    "lng": 115.5405826
+                  }
+                },
+                {
+                  "name": "Bayseeker",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "11022 Henderson Avenue, Rottnest Island",
+                  "place_id": "ChIJocisOwBbLSoRvX7IXqgRUQ4",
+                  "location": {
+                    "lat": -31.9962914,
+                    "lng": 115.5400356
+                  }
+                },
+                {
+                  "name": "Zugang zur Pinky Beach, Fahrrad Parkplatz",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Rottnest Island",
+                  "place_id": "ChIJNReUFQBbLSoRtJgDPGK3mYA",
+                  "location": {
+                    "lat": -31.9898087,
+                    "lng": 115.5403999
+                  }
+                },
+                {
+                  "name": "Rottnest island",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 4,
+                  "vicinity": "Rottnest Island",
+                  "place_id": "ChIJ7ffANABbLSoRAu_VWsstdpY",
+                  "location": {
+                    "lat": -31.9986041,
+                    "lng": 115.5332495
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Holy Trinity Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 26,
+                  "vicinity": "Henderson Avenue, Rottnest Island",
+                  "place_id": "ChIJh0DSzTtaLSoRo3PF31vtR1o",
+                  "location": {
+                    "lat": -31.9974417,
+                    "lng": 115.5403386
+                  }
+                },
+                {
+                  "name": "The Chapel",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 6,
+                  "vicinity": "Rottnest Island",
+                  "place_id": "ChIJi8npvtxbLSoRPpogxMfCQeQ",
+                  "location": {
+                    "lat": -31.996044,
+                    "lng": 115.5397053
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Rottnest Island",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Rottnest Island",
+                  "place_id": "ChIJ_bdmpVBXLSoRIFDfNbXwBAU",
+                  "location": {
+                    "lat": -31.9965027,
+                    "lng": 115.5398997
+                  }
+                },
+                {
+                  "name": "Hotel Rottnest",
+                  "types": [
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1816,
+                  "vicinity": "Thompson Bay, 1 Bedford Avenue, Rottnest Island",
+                  "place_id": "ChIJ02ZLcWtaLSoR64OflDTHgMM",
+                  "location": {
+                    "lat": -31.9983802,
+                    "lng": 115.5423572
+                  }
+                },
+                {
+                  "name": "Vlamingh Lookout",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 54,
+                  "vicinity": "Vlamingh Memorial Heritage Trail, Rottnest Island",
+                  "place_id": "ChIJgcgDxm5aLSoRXvqFqGgDr-0",
+                  "location": {
+                    "lat": -31.99814589999999,
+                    "lng": 115.5366943
+                  }
+                },
+                {
+                  "name": "IGA Xpress Rottnest Island",
+                  "types": [
+                    "grocery_or_supermarket",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 44,
+                  "vicinity": "Digby Drive, Rottnest Island",
+                  "place_id": "ChIJ165nncBaLSoRr9H1cTJVJGU",
+                  "location": {
+                    "lat": -31.9958998,
+                    "lng": 115.5404361
+                  }
+                },
+                {
+                  "name": "Simmo's",
+                  "types": [
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 115,
+                  "vicinity": "Central Mall Thomson Bay, Rottnest Island",
+                  "place_id": "ChIJNWnZamxaLSoRcHhJeo7fTN4",
+                  "location": {
+                    "lat": -31.9955728,
+                    "lng": 115.5405952
+                  }
+                }
+              ]
+            },
+            "total_places_found": 26,
+            "photo_timestamp": "2023:04:15 17:35:36",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.36076784133911133
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/60.heic"
+    },
+    {
+      "image_filename": "60.heic",
+      "timestamp": "2026-01-28T06:20:20.281817",
+      "processing_time_seconds": 56.980659,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Coastal harbor with boats",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of multiple boats and a pier indicates a harbor setting. The vegetation and sandy path suggest a coastal environment. The lighting and cloud formation provide clues about the time of day.",
+            "detailed_description": "The image depicts a coastal harbor with several boats anchored in the water. The scene includes a mix of sailboats and motorboats, suggesting a recreational area. The sky is clear with some clouds, and the lighting indicates it might be early morning or late afternoon. The foreground features a sandy path bordered by vegetation, leading towards the water. A wooden pier is visible on the right side, extending into the harbor.",
+            "identification": {
+              "primary": [
+                "Coastal harbor with boats"
+              ],
+              "location": null,
+              "confidence": 0.8
+            },
+            "artifacts": [
+              {
+                "name": "Boats in a harbor",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "coastal",
+              "harbor",
+              "boats",
+              "natural_feature",
+              "water"
+            ],
+            "location": null,
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Rottnest Island, Australia",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "The style of boats and coastal vegetation resemble those found in Rottnest Island, known for its harbors and recreational boating."
+              },
+              {
+                "guess": "Generic coastal harbor",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The image shows typical features of a coastal harbor, which could be found in various locations around the world."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Coastal harbor with boats\"],\n        \"location\": null,\n        \"confidence\": 0.8\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Boats in a harbor\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"coastal\", \"harbor\", \"boats\", \"natural_feature\", \"water\"],\n    \"description\": \"The image depicts a coastal harbor with several boats anchored in the water. The scene includes a mix of sailboats and motorboats, suggesting a recreational area. The sky is clear with some clouds, and the lighting indicates it might be early morning or late afternoon. The foreground features a sandy path bordered by vegetation, leading towards the water. A wooden pier is visible on the right side, extending into the harbor.\",\n    \"reasoning\": \"The presence of multiple boats and a pier indicates a harbor setting. The vegetation and sandy path suggest a coastal environment. The lighting and cloud formation provide clues about the time of day.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Rottnest Island, Australia\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The style of boats and coastal vegetation resemble those found in Rottnest Island, known for its harbors and recreational boating.\"\n        },\n        {\n            \"guess\": \"Generic coastal harbor\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The image shows typical features of a coastal harbor, which could be found in various locations around the world.\"\n        }\n    ]\n}",
+            "processing_time_seconds": 11.050688982009888
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a serene coastal scene with a collection of boats anchored in a calm bay. The water is gently rippling, reflecting the soft light of the early evening or morning sky. The sky is predominantly clear with a vibrant blue hue, though large, fluffy clouds are visible on the left side of the image, adding texture and depth to the sky. The boats vary in size, with some being small sailboats and others larger motorboats, suggesting a mix of recreational and possibly fishing vessels. Th",
+            "description": "The image depicts a serene coastal scene with a collection of boats anchored in a calm bay. The water is gently rippling, reflecting the soft light of the early evening or morning sky. The sky is predominantly clear with a vibrant blue hue, though large, fluffy clouds are visible on the left side of the image, adding texture and depth to the sky. The boats vary in size, with some being small sailboats and others larger motorboats, suggesting a mix of recreational and possibly fishing vessels. Th",
+            "architectural_style": "None",
+            "search_backends_used": [],
+            "processing_time_seconds": 45.693572759628296
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Boat",
+          "confidence": 0.9864000082015991,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Boat",
+                "score": 0.9864000082015991
+              },
+              {
+                "source": "object",
+                "name": "Boat",
+                "score": 0.6428209543228149
+              },
+              {
+                "source": "web",
+                "name": "sea-m",
+                "score": 0.39309999346733093
+              },
+              {
+                "source": "web",
+                "name": "Sailboat",
+                "score": 0.36243996024131775
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "sea-m",
+                "score": 0.39309999346733093
+              },
+              {
+                "name": "Sailboat",
+                "score": 0.36243996024131775
+              }
+            ],
+            "objects": [
+              {
+                "name": "Boat",
+                "score": 0.6428209543228149
+              }
+            ],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.9918588399887085
+              },
+              {
+                "name": "Blue",
+                "score": 0.9887962341308594
+              },
+              {
+                "name": "Boat",
+                "score": 0.9864000082015991
+              },
+              {
+                "name": "Cloud",
+                "score": 0.983226478099823
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9808707237243652
+              }
+            ],
+            "processing_time_seconds": 13.36679983139038
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/60.heic"
+    }
+  ]
+}

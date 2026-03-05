@@ -1,0 +1,184 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "8.jpg",
+      "timestamp": "2026-01-28T07:02:09.845115",
+      "processing_time_seconds": 63.157279,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "St. Mary's Basilica, Kraków, Poland",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and twin towers are distinctive features of St. Mary's Basilica in Kraków. The presence of horse-drawn carriages is typical in this area, enhancing the identification.",
+            "detailed_description": "The image shows St. Mary's Basilica, a prominent Gothic church located in Kraków, Poland. The basilica is characterized by its distinctive twin towers, with the taller tower featuring a spire and the shorter one topped with a dome. The facade is made of brick with decorative white stone elements. In front of the church, there is a horse-drawn carriage, which is a common sight in the historic center of Kraków.",
+            "identification": {
+              "primary": [
+                "St. Mary's Basilica"
+              ],
+              "location": "Kraków, Poland",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "St. Mary's Basilica",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Horse-drawn carriage",
+                "type": "other",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "Gothic",
+              "church",
+              "brick",
+              "Kraków",
+              "landmark"
+            ],
+            "location": "Kraków, Poland",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"St. Mary's Basilica\"],\n        \"location\": \"Kraków, Poland\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"St. Mary's Basilica\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Horse-drawn carriage\",\n            \"type\": \"other\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"Gothic\", \"church\", \"brick\", \"Kraków\", \"landmark\"],\n    \"description\": \"The image shows St. Mary's Basilica, a prominent Gothic church located in Kraków, Poland. The basilica is characterized by its distinctive twin towers, with the taller tower featuring a spire and the shorter one topped with a dome. The facade is made of brick with decorative white stone elements. In front of the church, there is a horse-drawn carriage, which is a common sight in the historic center of Kraków.\",\n    \"reasoning\": \"The architectural style and twin towers are distinctive features of St. Mary's Basilica in Kraków. The presence of horse-drawn carriages is typical in this area, enhancing the identification.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "processing_time_seconds": 9.56214189529419
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image prominently features a large Gothic-style brick church with two distinct towers. The taller tower has a spire topped with a cross, while the shorter tower is adorned with a dome-like structure. The facade of the church is characterized by vertical lines and pointed arches typical of Gothic architecture. The brickwork is detailed with lighter stone accents around the windows and arches. Below the towers, there is a large, ornate entrance with a pointed arch and intricate stonework, incl",
+            "description": "The image prominently features a large Gothic-style brick church with two distinct towers. The taller tower has a spire topped with a cross, while the shorter tower is adorned with a dome-like structure. The facade of the church is characterized by vertical lines and pointed arches typical of Gothic architecture. The brickwork is detailed with lighter stone accents around the windows and arches. Below the towers, there is a large, ornate entrance with a pointed arch and intricate stonework, incl",
+            "architectural_style": "Gothic",
+            "search_backends_used": [],
+            "processing_time_seconds": 53.592442989349365
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Rynek Główny (50.0619, 19.9368)",
+          "confidence": 0.5819901823997498,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Rynek Główny",
+            "coordinates": {
+              "latitude": 50.0618971,
+              "longitude": 19.936756
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 2433,
+                "y": 0
+              },
+              {
+                "x": 2433,
+                "y": 3573
+              },
+              {
+                "x": 0,
+                "y": 3573
+              }
+            ],
+            "context_labels": [
+              "City",
+              "Public space",
+              "Facade",
+              "Landmark",
+              "Pedestrian"
+            ],
+            "context_objects": [
+              "Wheel",
+              "Clothing",
+              "Wheel"
+            ],
+            "web_entities": [
+              {
+                "name": "Horse",
+                "score": 0.7642911672592163
+              },
+              {
+                "name": "Buggy",
+                "score": 0.45743387937545776
+              },
+              {
+                "name": "Building",
+                "score": 0.3245045840740204
+              },
+              {
+                "name": "Tourism",
+                "score": 0.3068000078201294
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Rynek Główny",
+                "score": 0.5819901823997498,
+                "location": {
+                  "lat": 50.0618971,
+                  "lng": 19.936756
+                }
+              },
+              {
+                "name": "Bugle Tower",
+                "score": 0.5119684934616089,
+                "location": {
+                  "lat": 50.061848499999996,
+                  "lng": 19.9390361
+                }
+              }
+            ],
+            "processing_time_seconds": 22.795614004135132
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/8.jpg"
+    }
+  ]
+}

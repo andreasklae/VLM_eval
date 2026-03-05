@@ -1,0 +1,652 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "190.jpg",
+      "timestamp": "2026-01-28T04:13:07.866049",
+      "processing_time_seconds": 67.505561,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 60.19421111111111,
+        "gps_longitude": 11.099027777777778,
+        "location": {
+          "formatted_address": "Postboks 201, 2030 Gardermoen, Norway",
+          "city": null,
+          "county": "Ullensaker",
+          "country": "Norway"
+        },
+        "datetime_original": "2025:09:22 18:42:29",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Oslo Airport Terminal, Ullensaker, Norway",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata and visible architectural features, such as the modern design and signage for international gates, strongly suggest this is Oslo Airport Terminal.",
+            "detailed_description": "The image shows the interior of Oslo Airport Terminal, located in Ullensaker, Norway. The architecture features modern design elements with exposed beams and columns, a high ceiling, and extensive use of glass and metal. The signage indicates international gates, contributing to the functional and contemporary aesthetic typical of major transportation hubs.",
+            "identification": {
+              "primary": [
+                "Oslo Airport Terminal"
+              ],
+              "location": "Ullensaker, Norway",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Oslo Airport Terminal",
+                "type": "building",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "airport",
+              "Norway",
+              "transportation"
+            ],
+            "location": "Ullensaker, Norway",
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Oslo Airport Terminal\"],\n        \"location\": \"Ullensaker, Norway\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Oslo Airport Terminal\",\n            \"type\": \"building\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"airport\", \"Norway\", \"transportation\"],\n    \"description\": \"The image shows the interior of Oslo Airport Terminal, located in Ullensaker, Norway. The architecture features modern design elements with exposed beams and columns, a high ceiling, and extensive use of glass and metal. The signage indicates international gates, contributing to the functional and contemporary aesthetic typical of major transportation hubs.\",\n    \"reasoning\": \"The location metadata and visible architectural features, such as the modern design and signage for international gates, strongly suggest this is Oslo Airport Terminal.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 60.19421111111111,
+              "longitude": 11.099027777777778
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Postboks 201, 2030 Gardermoen, Norway",
+              "city": null,
+              "county": "Ullensaker",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:09:22 18:42:29",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 16.184597969055176
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Oslo Airport Terminal, Ullensaker, Norway",
+          "confidence": 0.75,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the architectural features and design elements of Oslo Airport Terminal, which is located in Ullensaker, Norway. The search results confirm the use of sustainable materials and modern design, consistent with the image description. The signage 'Utland International' and gates D, E, F, G further support this identification as they are typical of a major international airport terminal.",
+            "identification": {
+              "primary": [
+                "Oslo Airport Terminal"
+              ],
+              "location": "Ullensaker, Norway",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Automated gates for international departures",
+                "type": "other",
+                "confidence": 0.9
+              },
+              {
+                "name": "Exposed beams and trusses",
+                "type": "architectural_feature",
+                "confidence": 0.85
+              },
+              {
+                "name": "Marbled flooring",
+                "type": "architectural_feature",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "modern_industrial",
+              "airport_terminal",
+              "sustainable_materials",
+              "energy_efficiency",
+              "passenger_flow"
+            ],
+            "sources_used": [
+              "newatlas.com",
+              "officeinsight.com"
+            ],
+            "all_candidates": [
+              "**Expansion and Capacity**: The terminal expansion, completed in 2017, added 115,000 square meters, doubling the airport's capacity to approximately 30 million passengers annually. ([newatlas.com]())",
+              "**Sustainable Materials**: The new pier is constructed with curved glulam beams and clad in oak sourced from Scandinavian forests, promoting sustainability. ([officeinsight.com]())",
+              "**Energy Efficiency**: The terminal has achieved Passive House-level performance standards, reducing energy consumption by more than 50% compared to the existing terminal. ([officeinsight.com]())",
+              "**Passenger Flow**: The design ensures a maximum walking distance of 450 meters, enhancing passenger comfort and efficiency. ([officeinsight.com]())",
+              "**Integration with Public Transport**: The updated train station at the heart of the airport enables 70% of all passengers to access the airport by public transit. ([officeinsight.com]())"
+            ],
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts the interior of an airport terminal, characterized by a modern architectural design. The ceiling is high and expansive, featuring exposed beams and trusses made of wood and metal, which contribute to a contemporary industrial aesthetic. The lighting is provided by a series of spotlights embedded within the ceiling structure, casting a bright and evenly distributed illumination across the space. The flooring is made of polished stone with a marbled pattern, adding a sense of ele",
+            "description": "The image depicts the interior of an airport terminal, characterized by a modern architectural design. The ceiling is high and expansive, featuring exposed beams and trusses made of wood and metal, which contribute to a contemporary industrial aesthetic. The lighting is provided by a series of spotlights embedded within the ceiling structure, casting a bright and evenly distributed illumination across the space. The flooring is made of polished stone with a marbled pattern, adding a sense of ele",
+            "architectural_style": "Modern industrial",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 60.19421111111111,
+              "longitude": 11.099027777777778
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Postboks 201, 2030 Gardermoen, Norway",
+              "city": null,
+              "county": "Ullensaker",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:09:22 18:42:29",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 49.828341007232666
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Person",
+          "confidence": 0.8851369023323059,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "object",
+            "all_candidates": [
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.8851369023323059
+              },
+              {
+                "source": "object",
+                "name": "Jeans",
+                "score": 0.8073809146881104
+              },
+              {
+                "source": "label",
+                "name": "Metal",
+                "score": 0.7952806353569031
+              },
+              {
+                "source": "label",
+                "name": "Glass",
+                "score": 0.7508092522621155
+              },
+              {
+                "source": "object",
+                "name": "Clothing",
+                "score": 0.6939660906791687
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "light-hearted",
+                "score": 0.4343000054359436
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.8851369023323059
+              },
+              {
+                "name": "Jeans",
+                "score": 0.8073809146881104
+              },
+              {
+                "name": "Clothing",
+                "score": 0.6939660906791687
+              },
+              {
+                "name": "Person",
+                "score": 0.665035605430603
+              },
+              {
+                "name": "Top",
+                "score": 0.6625409722328186
+              }
+            ],
+            "labels": [
+              {
+                "name": "Metal",
+                "score": 0.7952806353569031
+              },
+              {
+                "name": "Glass",
+                "score": 0.7508092522621155
+              },
+              {
+                "name": "Steel",
+                "score": 0.5661401748657227
+              },
+              {
+                "name": "Cleanliness",
+                "score": 0.5374957919120789
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 60.19421111111111,
+              "longitude": 11.099027777777778
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Postboks 201, 2030 Gardermoen, Norway",
+              "city": null,
+              "county": "Ullensaker",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:09:22 18:42:29",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 17.469915866851807
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Ullensaker, Norway",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Ullensaker, Norway",
+            "coordinates": {
+              "latitude": 60.19421111111111,
+              "longitude": 11.099027777777778
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "restaurants": [
+                {
+                  "name": "JOE & THE JUICE",
+                  "types": [
+                    "cafe",
+                    "meal_takeaway",
+                    "restaurant",
+                    "point_of_interest",
+                    "store",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 2.4,
+                  "user_ratings_total": 186,
+                  "vicinity": "Oslo lufthavn, Oslo",
+                  "place_id": "ChIJ8UnrN5CDQUYRXgUYUcbRfHw",
+                  "location": {
+                    "lat": 60.19352550000001,
+                    "lng": 11.0990822
+                  }
+                },
+                {
+                  "name": "Peppes Pizza - Oslo Lufthavn",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 2.8,
+                  "user_ratings_total": 189,
+                  "vicinity": "Oslo lufthavn",
+                  "place_id": "ChIJX6SJ3JCDQUYRlu6UsYppRzg",
+                  "location": {
+                    "lat": 60.19348819999999,
+                    "lng": 11.0996538
+                  }
+                },
+                {
+                  "name": "O'Learys Oslo Airport International Terminal",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 2.5,
+                  "user_ratings_total": 224,
+                  "vicinity": "Oslo lufthavn, Gardermoen",
+                  "place_id": "ChIJ7UnrN5CDQUYR4nKnlEgN6ik",
+                  "location": {
+                    "lat": 60.1940444,
+                    "lng": 11.1023768
+                  }
+                },
+                {
+                  "name": "Select Service Partner AS",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 7,
+                  "vicinity": "Flyporten, Henrik Ibsens veg 7, Gardermoen",
+                  "place_id": "ChIJEydZg5aDQUYR-0RZNeq9l6w",
+                  "location": {
+                    "lat": 60.1897123,
+                    "lng": 11.1022071
+                  }
+                },
+                {
+                  "name": "O'Learys Oslo Airport Domestic Terminal",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 2.4,
+                  "user_ratings_total": 36,
+                  "vicinity": "Oslo lufthavn, Edvard Munchs veg, Gardermoen",
+                  "place_id": "ChIJ0fFSwVKDQUYR-zghDBBRS3s",
+                  "location": {
+                    "lat": 60.19424420000001,
+                    "lng": 11.0995384
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Gardermoen, Norway",
+                  "types": [
+                    "sublocality_level_2",
+                    "sublocality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Gardermoen, Norway",
+                  "place_id": "ChIJ-THM4XyDQUYRrJ3hW7SOpoc",
+                  "location": {
+                    "lat": 60.1853739,
+                    "lng": 11.0893517
+                  }
+                },
+                {
+                  "name": "Radisson Blu Airport Hotel, Oslo Gardermoen",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 4283,
+                  "vicinity": "Hotellvegen, Gardermoen",
+                  "place_id": "ChIJN4hjZZeDQUYRomvwjuHwwp8",
+                  "location": {
+                    "lat": 60.1925774,
+                    "lng": 11.0953116
+                  }
+                },
+                {
+                  "name": "Radisson Hotel & Conference Centre Oslo Airport",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 1893,
+                  "vicinity": "Henrik Ibsens veg (B, Gardermoen",
+                  "place_id": "ChIJOQFaKaaDQUYR-sIPMX6GcFc",
+                  "location": {
+                    "lat": 60.1901605,
+                    "lng": 11.1023454
+                  }
+                },
+                {
+                  "name": "Oslo lufthavn",
+                  "types": [
+                    "airport",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 20549,
+                  "vicinity": "Edvard Munchs veg, Gardermoen",
+                  "place_id": "ChIJvxyKJIuDQUYRglvrp9StoMw",
+                  "location": {
+                    "lat": 60.1978446,
+                    "lng": 11.0963701
+                  }
+                },
+                {
+                  "name": "AVIS Leiebil - Oslo Gardermoen flyplass",
+                  "types": [
+                    "car_rental",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 2.8,
+                  "user_ratings_total": 499,
+                  "vicinity": "Oslo lufthavn, Sigrid Undseths plass Pob 167, Gardermoen",
+                  "place_id": "ChIJaVSP4Y-DQUYR-mxEkWPQAgg",
+                  "location": {
+                    "lat": 60.1941667,
+                    "lng": 11.0997222
+                  }
+                }
+              ]
+            },
+            "total_places_found": 10,
+            "photo_timestamp": "2025:09:22 18:42:29",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 1.2295541763305664
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/190.jpg"
+    },
+    {
+      "image_filename": "190.jpg",
+      "timestamp": "2026-01-28T04:14:15.423140",
+      "processing_time_seconds": 64.084411,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Oslo Airport, Gardermoen, Oslo, Norway",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The signage indicating 'Utland International' and the gate letters match the layout and design of Oslo Airport, Gardermoen. The architectural style and materials are consistent with modern airport design.",
+            "detailed_description": "The image shows the interior of Oslo Airport, Gardermoen, characterized by modern architectural elements. The ceiling features exposed wooden beams and metal supports, creating a spacious and airy environment. The flooring is made of polished stone, and there are clear signs indicating international gates. The design emphasizes functionality and openness, typical of contemporary airport architecture.",
+            "identification": {
+              "primary": [
+                "Oslo Airport, Gardermoen"
+              ],
+              "location": "Oslo, Norway",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Oslo Airport, Gardermoen interior",
+                "type": "building",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "airport",
+              "Norway"
+            ],
+            "location": "Oslo, Norway",
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Another modern airport terminal",
+                "specificity_level": "general",
+                "confidence": 0.5,
+                "reasoning": "The architectural style and materials are typical of modern airport terminals, but the signage suggests Oslo Airport."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Oslo Airport, Gardermoen\"],\n        \"location\": \"Oslo, Norway\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Oslo Airport, Gardermoen interior\",\n            \"type\": \"building\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"airport\", \"Norway\"],\n    \"description\": \"The image shows the interior of Oslo Airport, Gardermoen, characterized by modern architectural elements. The ceiling features exposed wooden beams and metal supports, creating a spacious and airy environment. The flooring is made of polished stone, and there are clear signs indicating international gates. The design emphasizes functionality and openness, typical of contemporary airport architecture.\",\n    \"reasoning\": \"The signage indicating 'Utland International' and the gate letters match the layout and design of Oslo Airport, Gardermoen. The architectural style and materials are consistent with modern airport design.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Another modern airport terminal\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.5,\n            \"reasoning\": \"The architectural style and materials are typical of modern airport terminals, but the signage suggests Oslo Airport.\"\n        }\n    ]\n}",
+            "processing_time_seconds": 14.21741509437561
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([en.wikipedia.org]())",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a modern airport terminal interior, characterized by its expansive and open design. The ceiling is high and features exposed wooden beams, which are supported by large, cylindrical concrete columns. The beams are arranged in a grid-like pattern, contributing to the spacious and airy feel of the terminal. The ceiling also includes large, rectangular panels that appear to be made of a light-colored material, possibly fabric or acoustic tiles, designed to enhance sound absorption ",
+            "description": "The image depicts a modern airport terminal interior, characterized by its expansive and open design. The ceiling is high and features exposed wooden beams, which are supported by large, cylindrical concrete columns. The beams are arranged in a grid-like pattern, contributing to the spacious and airy feel of the terminal. The ceiling also includes large, rectangular panels that appear to be made of a light-colored material, possibly fabric or acoustic tiles, designed to enhance sound absorption ",
+            "architectural_style": "Modern",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 49.8647301197052
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Person",
+          "confidence": 0.8851369023323059,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "object",
+            "all_candidates": [
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.8851369023323059
+              },
+              {
+                "source": "object",
+                "name": "Jeans",
+                "score": 0.8073809146881104
+              },
+              {
+                "source": "label",
+                "name": "Metal",
+                "score": 0.7952806353569031
+              },
+              {
+                "source": "label",
+                "name": "Glass",
+                "score": 0.7508092522621155
+              },
+              {
+                "source": "object",
+                "name": "Clothing",
+                "score": 0.6939660906791687
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "light-hearted",
+                "score": 0.4343000054359436
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.8851369023323059
+              },
+              {
+                "name": "Jeans",
+                "score": 0.8073809146881104
+              },
+              {
+                "name": "Clothing",
+                "score": 0.6939660906791687
+              },
+              {
+                "name": "Person",
+                "score": 0.665035605430603
+              },
+              {
+                "name": "Top",
+                "score": 0.6625409722328186
+              }
+            ],
+            "labels": [
+              {
+                "name": "Metal",
+                "score": 0.7952806353569031
+              },
+              {
+                "name": "Glass",
+                "score": 0.7508092522621155
+              },
+              {
+                "name": "Steel",
+                "score": 0.5661401748657227
+              },
+              {
+                "name": "Cleanliness",
+                "score": 0.5374957919120789
+              }
+            ],
+            "processing_time_seconds": 18.669190883636475
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/190.jpg"
+    }
+  ]
+}

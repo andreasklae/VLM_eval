@@ -1,0 +1,819 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "86.heic",
+      "timestamp": "2026-01-28T07:11:59.880228",
+      "processing_time_seconds": 53.847634,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -28.07218611111111,
+        "gps_longitude": 153.44674722222223,
+        "location": {
+          "formatted_address": "LOT 207 The Esplanade, Miami QLD 4220, Australia",
+          "city": "Miami",
+          "county": "City of Gold Coast",
+          "country": "Australia"
+        },
+        "datetime_original": "2024:07:05 12:21:25",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Miami Beach, Rainbow Bay, Gold Coast, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Miami, Gold Coast, Australia, which matches the visual characteristics of the beach and surrounding area. The presence of residential buildings and the natural landscape are consistent with this region.",
+            "detailed_description": "The image shows Miami Beach on the Gold Coast, Australia. The beach is characterized by its wide sandy shore and gentle waves. In the background, there are residential buildings nestled against a lush, green hill, which is typical of the coastal landscape in this area. A rainbow is visible in the sky, adding a colorful element to the scene.",
+            "identification": {
+              "primary": [
+                "Miami Beach",
+                "Rainbow Bay"
+              ],
+              "location": "Gold Coast, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Miami Beach",
+                "type": "natural_feature",
+                "confidence": 0.95
+              },
+              {
+                "name": "Rainbow Bay",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "beach",
+              "coastline",
+              "natural_feature",
+              "Gold_Coast",
+              "Australia"
+            ],
+            "location": "Gold Coast, Australia",
+            "type": "natural_feature",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Burleigh Heads Beach",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "The landscape and beach style are similar to Burleigh Heads, which is nearby."
+              },
+              {
+                "guess": "Surfers Paradise Beach",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "Surfers Paradise is a well-known beach in the Gold Coast area, but the buildings and hill suggest a different location."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Miami Beach\", \"Rainbow Bay\"],\n        \"location\": \"Gold Coast, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Miami Beach\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Rainbow Bay\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.90\n        }\n    ],\n    \"tags\": [\"beach\", \"coastline\", \"natural_feature\", \"Gold_Coast\", \"Australia\"],\n    \"description\": \"The image shows Miami Beach on the Gold Coast, Australia. The beach is characterized by its wide sandy shore and gentle waves. In the background, there are residential buildings nestled against a lush, green hill, which is typical of the coastal landscape in this area. A rainbow is visible in the sky, adding a colorful element to the scene.\",\n    \"reasoning\": \"The location metadata indicates Miami, Gold Coast, Australia, which matches the visual characteristics of the beach and surrounding area. The presence of residential buildings and the natural landscape are consistent with this region.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Burleigh Heads Beach\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.70,\n            \"reasoning\": \"The landscape and beach style are similar to Burleigh Heads, which is nearby.\"\n        },\n        {\n            \"guess\": \"Surfers Paradise Beach\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.60,\n            \"reasoning\": \"Surfers Paradise is a well-known beach in the Gold Coast area, but the buildings and hill suggest a different location.\"\n        }\n    ]\n}",
+            "gps_coordinates": {
+              "latitude": -28.07218611111111,
+              "longitude": 153.44674722222223
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "LOT 207 The Esplanade, Miami QLD 4220, Australia",
+              "city": "Miami",
+              "county": "City of Gold Coast",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2024:07:05 12:21:25",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 11.591099739074707
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a scenic coastal view in Miami, City of Gold Coast, Australia. The foreground features a wide sandy beach stretching along the shoreline, with gentle waves lapping against it. The sand is light beige, and the beach is mostly empty, with a few scattered signs and flags indicating swimming areas or safety zones. The ocean is a vibrant blue-green, with small whitecaps visible on the waves. In the midground, a series of modern high-rise buildings line the coast, characterized by th",
+            "description": "The image depicts a scenic coastal view in Miami, City of Gold Coast, Australia. The foreground features a wide sandy beach stretching along the shoreline, with gentle waves lapping against it. The sand is light beige, and the beach is mostly empty, with a few scattered signs and flags indicating swimming areas or safety zones. The ocean is a vibrant blue-green, with small whitecaps visible on the waves. In the midground, a series of modern high-rise buildings line the coast, characterized by th",
+            "architectural_style": "Contemporary",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": -28.07218611111111,
+              "longitude": 153.44674722222223
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "LOT 207 The Esplanade, Miami QLD 4220, Australia",
+              "city": "Miami",
+              "county": "City of Gold Coast",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2024:07:05 12:21:25",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 41.47206783294678
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Burleigh Beach (-28.0850, 153.4520)",
+          "confidence": 0.44161874055862427,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Burleigh Beach",
+            "coordinates": {
+              "latitude": -28.0849919241135,
+              "longitude": 153.45197817921996
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 4032
+              },
+              {
+                "x": 0,
+                "y": 4032
+              }
+            ],
+            "context_labels": [
+              "Blue",
+              "Water",
+              "Daytime",
+              "Body of water",
+              "Water resources"
+            ],
+            "context_objects": [],
+            "web_entities": [
+              {
+                "name": "Beach ridge",
+                "score": 0.47246578335762024
+              },
+              {
+                "name": "Sand",
+                "score": 0.4546116590499878
+              },
+              {
+                "name": "Beach",
+                "score": 0.41499999165534973
+              },
+              {
+                "name": "sea-m",
+                "score": 0.40549999475479126
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Burleigh Beach",
+                "score": 0.44161874055862427,
+                "location": {
+                  "lat": -28.0849919241135,
+                  "lng": 153.45197817921996
+                }
+              },
+              {
+                "name": "Ed Harry Park",
+                "score": 0.384973406791687,
+                "location": {
+                  "lat": -28.085,
+                  "lng": 153.45027779999998
+                }
+              }
+            ],
+            "processing_time_seconds": 12.37456202507019
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Miami, City of Gold Coast, Australia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Miami, City of Gold Coast, Australia",
+            "coordinates": {
+              "latitude": -28.07218611111111,
+              "longitude": 153.44674722222223
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "North Burleigh Surf Life Saving Supporters Club",
+                  "types": [
+                    "restaurant",
+                    "tourist_attraction",
+                    "bar",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 2334,
+                  "vicinity": "293 The Esplanade, Miami",
+                  "place_id": "ChIJ-6mWIocDkWsR1oPsktAH02o",
+                  "location": {
+                    "lat": -28.0743171,
+                    "lng": 153.4464054
+                  }
+                },
+                {
+                  "name": "Mick Schamburg Park Lookout",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 179,
+                  "vicinity": "LOT 207 The Esplanade, Miami",
+                  "place_id": "ChIJp37WYYcDkWsR99gCRfNkysY",
+                  "location": {
+                    "lat": -28.0721587,
+                    "lng": 153.4467936
+                  }
+                },
+                {
+                  "name": "Mick Schamburg Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 515,
+                  "vicinity": "Kelly Avenue, Miami",
+                  "place_id": "ChIJsXZ-rn4EkWsRMAoi11ujAg8",
+                  "location": {
+                    "lat": -28.071949,
+                    "lng": 153.445639
+                  }
+                },
+                {
+                  "name": "North Burleigh Lookout (Little Burleigh)",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 343,
+                  "vicinity": "Miami",
+                  "place_id": "ChIJiw9zpXgEkWsRXIG9LvtKyIg",
+                  "location": {
+                    "lat": -28.0713241,
+                    "lng": 153.4457328
+                  }
+                },
+                {
+                  "name": "Lifeguard Tower 20 (North Burleigh SLSC)",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "North Burleigh Surf Life Saving Club, 293 The Esplanade, Miami",
+                  "place_id": "ChIJR3o9RgADkWsRDggoHPUIH1g",
+                  "location": {
+                    "lat": -28.0747499,
+                    "lng": 153.4468845
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Commune Cafe",
+                  "types": [
+                    "cafe",
+                    "bakery",
+                    "grocery_or_supermarket",
+                    "restaurant",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 980,
+                  "vicinity": "1844 Gold Coast Highway, Burleigh Heads",
+                  "place_id": "ChIJLWor7IQDkWsRtSEqctc5ufo",
+                  "location": {
+                    "lat": -28.0810532,
+                    "lng": 153.4468581
+                  }
+                },
+                {
+                  "name": "Caffeine Kings",
+                  "types": [
+                    "cafe",
+                    "restaurant",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 405,
+                  "vicinity": "1920 Gold Coast Highway, Miami",
+                  "place_id": "ChIJkbKRM4EDkWsR9L7VZ2Q2EI4",
+                  "location": {
+                    "lat": -28.0752713,
+                    "lng": 153.4448688
+                  }
+                },
+                {
+                  "name": "Paddock Bakery",
+                  "types": [
+                    "bakery",
+                    "cafe",
+                    "restaurant",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 3867,
+                  "vicinity": "20 Hibiscus Haven, Burleigh Heads",
+                  "place_id": "ChIJ3cFf_YMDkWsRfsG_jpV8XxI",
+                  "location": {
+                    "lat": -28.076974,
+                    "lng": 153.44423
+                  }
+                },
+                {
+                  "name": "Sushi Train Miami",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 346,
+                  "vicinity": "Shop 6&7, Miami One Shopping Centre, 1930 Gold Coast Highway, Miami",
+                  "place_id": "ChIJUWbLKYEDkWsRKSrHlTNyWjs",
+                  "location": {
+                    "lat": -28.074284,
+                    "lng": 153.444463
+                  }
+                },
+                {
+                  "name": "North Burleigh Surf Life Saving Supporters Club",
+                  "types": [
+                    "restaurant",
+                    "bar",
+                    "tourist_attraction",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 2334,
+                  "vicinity": "293 The Esplanade, Miami",
+                  "place_id": "ChIJ-6mWIocDkWsR1oPsktAH02o",
+                  "location": {
+                    "lat": -28.0743171,
+                    "lng": 153.4464054
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "North Burleigh Lookout",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "North Burleigh lookout, Miami",
+                  "place_id": "ChIJ22eMRAADkWsRW-xzVzmxFhY",
+                  "location": {
+                    "lat": -28.07212669999999,
+                    "lng": 153.4467014
+                  }
+                },
+                {
+                  "name": "Mick Shamburg Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Miami",
+                  "place_id": "ChIJAQBAYocDkWsR2mVDRsiBME0",
+                  "location": {
+                    "lat": -28.0721777,
+                    "lng": 153.4468478
+                  }
+                },
+                {
+                  "name": "Ed Hardy Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 30,
+                  "vicinity": "The Esplanade, Miami",
+                  "place_id": "ChIJOzMabWUDkWsRNoRAliLRj88",
+                  "location": {
+                    "lat": -28.072479,
+                    "lng": 153.445728
+                  }
+                },
+                {
+                  "name": "Mick Schamburg Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 515,
+                  "vicinity": "Kelly Avenue, Miami",
+                  "place_id": "ChIJsXZ-rn4EkWsRMAoi11ujAg8",
+                  "location": {
+                    "lat": -28.071949,
+                    "lng": 153.445639
+                  }
+                },
+                {
+                  "name": "Miami Rainbow Stairs",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 100,
+                  "vicinity": "Gold Coast Oceanway, Miami",
+                  "place_id": "ChIJx_KwbAAFkWsRQEqm4K1gE8w",
+                  "location": {
+                    "lat": -28.0708652,
+                    "lng": 153.4454274
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Calvary Catholic Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 27,
+                  "vicinity": "50 Redondo Avenue, Miami",
+                  "place_id": "ChIJRz6G2n0EkWsRmJ4ET4QcoSA",
+                  "location": {
+                    "lat": -28.0649151,
+                    "lng": 153.4412289
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Wayne Sorensen Photo Gallery",
+                  "types": [
+                    "art_gallery",
+                    "electronics_store",
+                    "home_goods_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 6,
+                  "vicinity": "40 Lemana Lane, Miami",
+                  "place_id": "ChIJ_fNQGXwDkWsRSLrLNsacBd4",
+                  "location": {
+                    "lat": -28.076648,
+                    "lng": 153.4427697
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Gold Coast",
+                  "types": [
+                    "colloquial_area",
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Gold Coast",
+                  "place_id": "ChIJt2BdK0cakWsRcK_e81qjAgM",
+                  "location": {
+                    "lat": -27.9769248,
+                    "lng": 153.380936
+                  }
+                },
+                {
+                  "name": "Grande Florida Beachside Resort",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 504,
+                  "vicinity": "7 Redondo Avenue, Miami",
+                  "place_id": "ChIJ9zpa734EkWsR89ZFi9KKghw",
+                  "location": {
+                    "lat": -28.068237,
+                    "lng": 153.442702
+                  }
+                },
+                {
+                  "name": "Outrigger Resort",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 344,
+                  "vicinity": "2007 Gold Coast Highway, Miami",
+                  "place_id": "ChIJcZFL0IYDkWsRJjFZCU_L9Hs",
+                  "location": {
+                    "lat": -28.0751127,
+                    "lng": 153.4454093
+                  }
+                },
+                {
+                  "name": "Burleigh Surf Apartments",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 249,
+                  "vicinity": "238 The Esplanade, Burleigh Heads",
+                  "place_id": "ChIJIe7RlIYDkWsRvnyxBqu8BBI",
+                  "location": {
+                    "lat": -28.076106,
+                    "lng": 153.4463833
+                  }
+                },
+                {
+                  "name": "Sunshine Beach Resort",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.6,
+                  "user_ratings_total": 281,
+                  "vicinity": "2004 Gold Coast Highway, Miami",
+                  "place_id": "ChIJM2rbfH8EkWsRH7Nw_n9ywJI",
+                  "location": {
+                    "lat": -28.0710278,
+                    "lng": 153.4425659
+                  }
+                }
+              ]
+            },
+            "total_places_found": 22,
+            "photo_timestamp": "2024:07:05 12:21:25",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.34893107414245605
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/86.heic"
+    },
+    {
+      "image_filename": "86.heic",
+      "timestamp": "2026-01-28T07:12:53.771291",
+      "processing_time_seconds": 51.750916,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Rainbow Bay, Gold Coast, Australia",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive features of the beach and the surrounding area, along with the visible hill and residential buildings, match the characteristics of Rainbow Bay in the Gold Coast.",
+            "detailed_description": "The image depicts Rainbow Bay, a popular beach located in the Gold Coast, Australia. The bay is characterized by its sandy shores and clear blue waters. In the background, Greenmount Hill is visible, covered in lush greenery. Several residential buildings are situated along the coastline, indicating a developed area. A rainbow is faintly visible in the sky, adding a colorful element to the scene.",
+            "identification": {
+              "primary": [
+                "Rainbow Bay"
+              ],
+              "location": "Gold Coast, Australia",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Rainbow Bay",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Greenmount Hill",
+                "type": "natural_feature",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "beach",
+              "coastal",
+              "natural_feature",
+              "Australia",
+              "Gold_Coast"
+            ],
+            "location": "Gold Coast, Australia",
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Coolangatta Beach",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "Coolangatta Beach is nearby and shares similar coastal features."
+              },
+              {
+                "guess": "Snapper Rocks",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "Snapper Rocks is another well-known location in the vicinity with similar coastal views."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Rainbow Bay\"],\n        \"location\": \"Gold Coast, Australia\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Rainbow Bay\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Greenmount Hill\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"beach\", \"coastal\", \"natural_feature\", \"Australia\", \"Gold_Coast\"],\n    \"description\": \"The image depicts Rainbow Bay, a popular beach located in the Gold Coast, Australia. The bay is characterized by its sandy shores and clear blue waters. In the background, Greenmount Hill is visible, covered in lush greenery. Several residential buildings are situated along the coastline, indicating a developed area. A rainbow is faintly visible in the sky, adding a colorful element to the scene.\",\n    \"reasoning\": \"The distinctive features of the beach and the surrounding area, along with the visible hill and residential buildings, match the characteristics of Rainbow Bay in the Gold Coast.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Coolangatta Beach\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"Coolangatta Beach is nearby and shares similar coastal features.\"\n        },\n        {\n            \"guess\": \"Snapper Rocks\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"Snapper Rocks is another well-known location in the vicinity with similar coastal views.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 10.454986095428467
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a coastal landscape with a wide sandy beach stretching along the shoreline. The beach is characterized by its light tan sand and gentle waves lapping against the shore. In the background, there is a prominent headland covered in lush green vegetation, suggesting a subtropical climate. Several modern high-rise buildings are visible along the coastline, indicating a developed urban area. These buildings have a contemporary architectural style, with glass facades and balconies. Th",
+            "description": "The image depicts a coastal landscape with a wide sandy beach stretching along the shoreline. The beach is characterized by its light tan sand and gentle waves lapping against the shore. In the background, there is a prominent headland covered in lush green vegetation, suggesting a subtropical climate. Several modern high-rise buildings are visible along the coastline, indicating a developed urban area. These buildings have a contemporary architectural style, with glass facades and balconies. Th",
+            "architectural_style": "Contemporary",
+            "search_backends_used": [],
+            "processing_time_seconds": 41.08251214027405
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Burleigh Beach (-28.0850, 153.4520)",
+          "confidence": 0.44161874055862427,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Burleigh Beach",
+            "coordinates": {
+              "latitude": -28.0849919241135,
+              "longitude": 153.45197817921996
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 4032
+              },
+              {
+                "x": 0,
+                "y": 4032
+              }
+            ],
+            "context_labels": [
+              "Blue",
+              "Water",
+              "Daytime",
+              "Body of water",
+              "Water resources"
+            ],
+            "context_objects": [],
+            "web_entities": [
+              {
+                "name": "Beach ridge",
+                "score": 0.47246578335762024
+              },
+              {
+                "name": "Sand",
+                "score": 0.4546116590499878
+              },
+              {
+                "name": "Beach",
+                "score": 0.41499999165534973
+              },
+              {
+                "name": "sea-m",
+                "score": 0.40549999475479126
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Burleigh Beach",
+                "score": 0.44161874055862427,
+                "location": {
+                  "lat": -28.0849919241135,
+                  "lng": 153.45197817921996
+                }
+              },
+              {
+                "name": "Ed Harry Park",
+                "score": 0.384973406791687,
+                "location": {
+                  "lat": -28.085,
+                  "lng": 153.45027779999998
+                }
+              }
+            ],
+            "processing_time_seconds": 12.423067092895508
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/86.heic"
+    }
+  ]
+}

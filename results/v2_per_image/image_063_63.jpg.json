@@ -1,0 +1,948 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "63.jpg",
+      "timestamp": "2026-01-28T06:25:42.312736",
+      "processing_time_seconds": 62.46894,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 45.431752777777774,
+        "gps_longitude": 12.328997222222222,
+        "location": {
+          "formatted_address": "Ponte dell'Accademia, Campo S. Vidal, 30124 Venezia VE, Italy",
+          "city": "Venezia",
+          "county": "Città Metropolitana di Venezia",
+          "country": "Italy"
+        },
+        "datetime_original": "2023:06:14 17:17:21",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Basilica di Santa Maria della Salute, Venice, Italy",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive dome and architectural style of the Basilica di Santa Maria della Salute are recognizable, along with its location at the entrance of the Grand Canal in Venice.",
+            "detailed_description": "The image prominently features the Basilica di Santa Maria della Salute, a renowned Baroque church in Venice, Italy. It is characterized by its large dome and intricate architectural details, typical of the Baroque style from the 17th century. The basilica is situated at the entrance of the Grand Canal, which is also visible in the image. The canal is lined with historic buildings and is a significant waterway in Venice.",
+            "identification": {
+              "primary": [
+                "Basilica di Santa Maria della Salute"
+              ],
+              "location": "Venice, Italy",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Basilica di Santa Maria della Salute",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Grand Canal",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "Baroque",
+              "17th_century",
+              "stone",
+              "Venice",
+              "architecture"
+            ],
+            "location": "Venice, Italy",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Basilica di Santa Maria della Salute\"],\n        \"location\": \"Venice, Italy\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Basilica di Santa Maria della Salute\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Grand Canal\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.90\n        }\n    ],\n    \"tags\": [\"Baroque\", \"17th_century\", \"stone\", \"Venice\", \"architecture\"],\n    \"description\": \"The image prominently features the Basilica di Santa Maria della Salute, a renowned Baroque church in Venice, Italy. It is characterized by its large dome and intricate architectural details, typical of the Baroque style from the 17th century. The basilica is situated at the entrance of the Grand Canal, which is also visible in the image. The canal is lined with historic buildings and is a significant waterway in Venice.\",\n    \"reasoning\": \"The distinctive dome and architectural style of the Basilica di Santa Maria della Salute are recognizable, along with its location at the entrance of the Grand Canal in Venice.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 45.431752777777774,
+              "longitude": 12.328997222222222
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Ponte dell'Accademia, Campo S. Vidal, 30124 Venezia VE, Italy",
+              "city": "Venezia",
+              "county": "Città Metropolitana di Venezia",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2023:06:14 17:17:21",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 11.79971694946289
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a stunning view of Venice, Italy, focusing on the iconic architecture along the Grand Canal. The most prominent feature is a large domed church, showcasing Baroque architectural style. The church has a massive white dome with smaller domes and spires surrounding it, typical of Baroque design with its grandeur and ornate details. The facade is adorned with intricate carvings and columns, emphasizing symmetry and decorative elements. Surrounding the church are traditional Venetia",
+            "description": "The image depicts a stunning view of Venice, Italy, focusing on the iconic architecture along the Grand Canal. The most prominent feature is a large domed church, showcasing Baroque architectural style. The church has a massive white dome with smaller domes and spires surrounding it, typical of Baroque design with its grandeur and ornate details. The facade is adorned with intricate carvings and columns, emphasizing symmetry and decorative elements. Surrounding the church are traditional Venetia",
+            "architectural_style": "Baroque",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 45.431752777777774,
+              "longitude": 12.328997222222222
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Ponte dell'Accademia, Campo S. Vidal, 30124 Venezia VE, Italy",
+              "city": "Venezia",
+              "county": "Città Metropolitana di Venezia",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2023:06:14 17:17:21",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 49.718708992004395
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Apartment (Venezia, Italy)",
+          "confidence": 0.516577422618866,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Apartment",
+            "artist_name": null,
+            "museum_or_location": "Venezia, Italy",
+            "art_style": null,
+            "art_era": null,
+            "confidence": 0.516577422618866,
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.5460290312767029
+              },
+              {
+                "name": "Apartment",
+                "score": 0.516577422618866
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.4297078549861908
+              },
+              {
+                "name": "Tower",
+                "score": 0.4056999981403351
+              },
+              {
+                "name": "Building",
+                "score": 0.34860000014305115
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 45.431752777777774,
+              "longitude": 12.328997222222222
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Ponte dell'Accademia, Campo S. Vidal, 30124 Venezia VE, Italy",
+              "city": "Venezia",
+              "county": "Città Metropolitana di Venezia",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2023:06:14 17:17:21",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 19.171532154083252
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Venezia, Città Metropolitana di Venezia, Italy",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Venezia, Città Metropolitana di Venezia, Italy",
+            "coordinates": {
+              "latitude": 45.431752777777774,
+              "longitude": 12.328997222222222
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Portrait of the Four Tetrarchs",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 217,
+                  "vicinity": "Piazza San Marco, 328, Venezia",
+                  "place_id": "ChIJmbjXhNexfkcRdQd9zM9rpZ8",
+                  "location": {
+                    "lat": 45.4342558,
+                    "lng": 12.3397052
+                  }
+                },
+                {
+                  "name": "Ponte Tron",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 33,
+                  "vicinity": "Venice",
+                  "place_id": "ChIJHcDkUtexfkcRmIByCoCJ-rg",
+                  "location": {
+                    "lat": 45.4345893,
+                    "lng": 12.3363768
+                  }
+                },
+                {
+                  "name": "Grand Canal",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 4103,
+                  "vicinity": "Venice",
+                  "place_id": "ChIJfwNXbMOxfkcR3fggw8fOvfE",
+                  "location": {
+                    "lat": 45.4363568,
+                    "lng": 12.3322494
+                  }
+                },
+                {
+                  "name": "Teatro La Fenice",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 15223,
+                  "vicinity": "Campo San Fantin, 1965, Venezia",
+                  "place_id": "ChIJr24y6dCxfkcRGiZJP4wZoig",
+                  "location": {
+                    "lat": 45.4336376,
+                    "lng": 12.3337579
+                  }
+                },
+                {
+                  "name": "Clock Tower",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1920,
+                  "vicinity": "Piazza San Marco, Venezia",
+                  "place_id": "ChIJLbrmd9exfkcR4YVP0azgB4g",
+                  "location": {
+                    "lat": 45.4347587,
+                    "lng": 12.3389668
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Peggy Guggenheim Collection",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 14103,
+                  "vicinity": "Dorsoduro, 701, Venezia",
+                  "place_id": "ChIJxf6409OxfkcR7UmjymSPxuM",
+                  "location": {
+                    "lat": 45.4308209,
+                    "lng": 12.3315374
+                  }
+                },
+                {
+                  "name": "Gallerie dell'Accademia",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 10790,
+                  "vicinity": "Calle della Carità, 1050, Venezia",
+                  "place_id": "ChIJc8AdAs6xfkcRaxen7t_aOcs",
+                  "location": {
+                    "lat": 45.4310784,
+                    "lng": 12.3281394
+                  }
+                },
+                {
+                  "name": "Grassi Palace",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2742,
+                  "vicinity": "Campo San Samuele, 3231, Venezia",
+                  "place_id": "ChIJFbiHNc6xfkcRoiiN1jD-Lbs",
+                  "location": {
+                    "lat": 45.4338015,
+                    "lng": 12.3279463
+                  }
+                },
+                {
+                  "name": "Scuola Grande di San Rocco",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 5653,
+                  "vicinity": "Campo San Rocco, 3052, Venezia",
+                  "place_id": "ChIJLS-2B8axfkcRYcksJO3KDpw",
+                  "location": {
+                    "lat": 45.43665489999999,
+                    "lng": 12.3254746
+                  }
+                },
+                {
+                  "name": "Museo Correr",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 2767,
+                  "vicinity": "Piazza San Marco, 52, Venezia",
+                  "place_id": "ChIJ1a1MDdexfkcR2H65Jv-LxhI",
+                  "location": {
+                    "lat": 45.43379239999999,
+                    "lng": 12.3372059
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Bauer Hotel",
+                  "types": [
+                    "spa",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1078,
+                  "vicinity": "Piazza San Marco, 1459, Venezia",
+                  "place_id": "ChIJ-XXSnSqufkcR7ruXKvoYjO4",
+                  "location": {
+                    "lat": 45.43221379999999,
+                    "lng": 12.3362477
+                  }
+                },
+                {
+                  "name": "Baglioni Hotel Luna",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 635,
+                  "vicinity": "Piazza San Marco, 1243, Venezia",
+                  "place_id": "ChIJFUjqGNexfkcRzQ8s8CU2ukY",
+                  "location": {
+                    "lat": 45.4330357,
+                    "lng": 12.3371697
+                  }
+                },
+                {
+                  "name": "Bistrot de Venise",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 2552,
+                  "vicinity": "Calle dei Fabbri, 4685, Venezia",
+                  "place_id": "ChIJAYrmAtqxfkcRcn-5TVq_z34",
+                  "location": {
+                    "lat": 45.4355689,
+                    "lng": 12.3364874
+                  }
+                },
+                {
+                  "name": "Hotel Violino D'Oro",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 506,
+                  "vicinity": "Piazza San Marco, 2091, Venezia",
+                  "place_id": "ChIJk1sP1dCxfkcR11GEciUZYZ0",
+                  "location": {
+                    "lat": 45.4327827,
+                    "lng": 12.3354811
+                  }
+                },
+                {
+                  "name": "Albergo San Marco",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 858,
+                  "vicinity": "San Marco, 877, Venezia",
+                  "place_id": "ChIJAe_nGNU-fkcR0pahF9mY0Ys",
+                  "location": {
+                    "lat": 45.4345261,
+                    "lng": 12.3377327
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Giardini Reali",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2392,
+                  "vicinity": "Piazza San Marco, Venezia",
+                  "place_id": "ChIJMasuBtexfkcRJCxPSAYJlVY",
+                  "location": {
+                    "lat": 45.4329839,
+                    "lng": 12.3382915
+                  }
+                },
+                {
+                  "name": "rio de Santa Maria Zobenigo",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Fondamenta Narisi, 2506, Venezia",
+                  "place_id": "ChIJh1_pDNGxfkcRFe8oeFFNMGM",
+                  "location": {
+                    "lat": 45.4319828,
+                    "lng": 12.3325205
+                  }
+                },
+                {
+                  "name": "Giardini di Ca' Rezzonico",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 70,
+                  "vicinity": "Fondamenta Rezzonico, Venezia",
+                  "place_id": "ChIJC5Nv-c6xfkcRSN1wy2n769c",
+                  "location": {
+                    "lat": 45.43358680000001,
+                    "lng": 12.3257559
+                  }
+                },
+                {
+                  "name": "Campiello delle Erbe",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 9,
+                  "vicinity": "San Polo, Venice",
+                  "place_id": "ChIJE7NVSMWxfkcR6ySS0V24uE8",
+                  "location": {
+                    "lat": 45.43676,
+                    "lng": 12.330411
+                  }
+                },
+                {
+                  "name": "Venice Ice Skating",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 12,
+                  "vicinity": "San Polo, Venice",
+                  "place_id": "ChIJg_3comyxfkcRK7-b_apoHp0",
+                  "location": {
+                    "lat": 45.43774579999999,
+                    "lng": 12.3299365
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Basilica Santa Maria della Salute",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 12834,
+                  "vicinity": "Dorsoduro, 1, Venezia",
+                  "place_id": "ChIJ241oDzOwfkcRXyfdym_t-ck",
+                  "location": {
+                    "lat": 45.430675,
+                    "lng": 12.3347626
+                  }
+                },
+                {
+                  "name": "Basilica S.Maria Gloriosa dei Frari",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 12292,
+                  "vicinity": "San Polo, 3072, Venezia",
+                  "place_id": "ChIJm6Zpg8WxfkcRC_yc4Q1GulQ",
+                  "location": {
+                    "lat": 45.4369864,
+                    "lng": 12.3266004
+                  }
+                },
+                {
+                  "name": "Saint Mark's Basilica",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 27415,
+                  "vicinity": "Piazza San Marco, 328, Venezia",
+                  "place_id": "ChIJv2xSZNexfkcRBaKsgyfVEgo",
+                  "location": {
+                    "lat": 45.4345606,
+                    "lng": 12.3397125
+                  }
+                },
+                {
+                  "name": "Chiesa del Santissimo Redentore",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 958,
+                  "vicinity": "Giudecca, 194, Venezia",
+                  "place_id": "ChIJL5LLXiuwfkcRyx4enzr3v2g",
+                  "location": {
+                    "lat": 45.4252894,
+                    "lng": 12.3324601
+                  }
+                },
+                {
+                  "name": "Parrocchia dei Santi Gervasio e Protasio (San Trovaso)",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 127,
+                  "vicinity": "Dorsoduro, Venice",
+                  "place_id": "ChIJWwqFz82xfkcRIlgJql2ukqM",
+                  "location": {
+                    "lat": 45.4306037,
+                    "lng": 12.3258464
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Marco Polo International Glass Art Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 325,
+                  "vicinity": "Calle Frezzaria, 1644, Venezia",
+                  "place_id": "ChIJU0VhS9exfkcRO9eIIMnffCw",
+                  "location": {
+                    "lat": 45.43414039999999,
+                    "lng": 12.3362178
+                  }
+                },
+                {
+                  "name": "Marco Missiaja Venezia",
+                  "types": [
+                    "art_gallery",
+                    "electronics_store",
+                    "home_goods_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 184,
+                  "vicinity": "Calle dei Fuseri, 4367, Venezia",
+                  "place_id": "ChIJcdwAsNCxfkcRedd4_RDUpmQ",
+                  "location": {
+                    "lat": 45.4349298,
+                    "lng": 12.3353291
+                  }
+                },
+                {
+                  "name": "Caos Art Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 56,
+                  "vicinity": "Calle Lunga San Barnaba, 2687, Venezia",
+                  "place_id": "ChIJiQnkss6xfkcRj8nKdRVwRYI",
+                  "location": {
+                    "lat": 45.4325306,
+                    "lng": 12.3230577
+                  }
+                },
+                {
+                  "name": "San Gregorio Art Gallery SAS Venezia",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 9,
+                  "vicinity": "Dorsoduro, 165, Venezia",
+                  "place_id": "ChIJo0hAX9GxfkcRuKVOPpsXACI",
+                  "location": {
+                    "lat": 45.4307042,
+                    "lng": 12.3331597
+                  }
+                },
+                {
+                  "name": "Schola San Zaccaria Missiaja By G. & C. Snc",
+                  "types": [
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 22,
+                  "vicinity": "Calle Zaguri, 2667, Venezia",
+                  "place_id": "ChIJ4UrYddGxfkcRto71mEylTg8",
+                  "location": {
+                    "lat": 45.4328971,
+                    "lng": 12.33176
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Venice",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Venice",
+                  "place_id": "ChIJiT3W8dqxfkcRLxCSvfDGo3s",
+                  "location": {
+                    "lat": 45.440379,
+                    "lng": 12.3159547
+                  }
+                },
+                {
+                  "name": "Hotel Monaco & Grand Canal",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1474,
+                  "vicinity": "Piazza San Marco, 1332/1238, Venezia",
+                  "place_id": "ChIJD2h0ONexfkcRs8TbnXfZ1DU",
+                  "location": {
+                    "lat": 45.43231910000001,
+                    "lng": 12.3369444
+                  }
+                },
+                {
+                  "name": "Bauer Hotel",
+                  "types": [
+                    "lodging",
+                    "spa",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1078,
+                  "vicinity": "Piazza San Marco, 1459, Venezia",
+                  "place_id": "ChIJ-XXSnSqufkcR7ruXKvoYjO4",
+                  "location": {
+                    "lat": 45.43221379999999,
+                    "lng": 12.3362477
+                  }
+                },
+                {
+                  "name": "Hotel Cavalletto & Doge Orseolo",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1412,
+                  "vicinity": "Sotoportego del Cavalletto, 1107, Venezia",
+                  "place_id": "ChIJxVErW9exfkcRLEW6tAAtapU",
+                  "location": {
+                    "lat": 45.43444460000001,
+                    "lng": 12.3369438
+                  }
+                },
+                {
+                  "name": "UNAHOTELS Ala Venezia",
+                  "types": [
+                    "cafe",
+                    "lodging",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1120,
+                  "vicinity": "Campo Santa Maria del Giglio, 2494, Venezia",
+                  "place_id": "ChIJaxxvD9GxfkcR1H72Cd-CAXw",
+                  "location": {
+                    "lat": 45.4323389,
+                    "lng": 12.3327018
+                  }
+                }
+              ]
+            },
+            "total_places_found": 35,
+            "photo_timestamp": "2023:06:14 17:17:21",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.703214168548584
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/63.jpg"
+    },
+    {
+      "image_filename": "63.jpg",
+      "timestamp": "2026-01-28T06:26:44.803225",
+      "processing_time_seconds": 58.117169,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Basilica di Santa Maria della Salute, Venice, Italy",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive dome and architectural style are characteristic of the Basilica di Santa Maria della Salute, a well-known landmark in Venice. The presence of the Grand Canal further confirms the location.",
+            "detailed_description": "The image shows the Basilica di Santa Maria della Salute, a prominent Baroque church located in Venice, Italy. It features a large, distinctive dome and is situated at the entrance of the Grand Canal. The church is known for its ornate architecture and historical significance, built in the 17th century. The Grand Canal is visible, lined with traditional Venetian buildings and boats navigating the waterway.",
+            "identification": {
+              "primary": [
+                "Basilica di Santa Maria della Salute"
+              ],
+              "location": "Venice, Italy",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Basilica di Santa Maria della Salute",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Grand Canal",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "Baroque",
+              "17th_century",
+              "Venice",
+              "architecture",
+              "canal"
+            ],
+            "location": "Venice, Italy",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Basilica di Santa Maria della Salute\"],\n        \"location\": \"Venice, Italy\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Basilica di Santa Maria della Salute\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Grand Canal\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.90\n        }\n    ],\n    \"tags\": [\"Baroque\", \"17th_century\", \"Venice\", \"architecture\", \"canal\"],\n    \"description\": \"The image shows the Basilica di Santa Maria della Salute, a prominent Baroque church located in Venice, Italy. It features a large, distinctive dome and is situated at the entrance of the Grand Canal. The church is known for its ornate architecture and historical significance, built in the 17th century. The Grand Canal is visible, lined with traditional Venetian buildings and boats navigating the waterway.\",\n    \"reasoning\": \"The distinctive dome and architectural style are characteristic of the Basilica di Santa Maria della Salute, a well-known landmark in Venice. The presence of the Grand Canal further confirms the location.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 10.101782083511353
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a scenic view of a grand architectural structure situated along a waterway. The central focus is a large domed building, characterized by its striking white facade and ornate detailing. The dome is prominently large and rounded, with smaller domes flanking it, showcasing Baroque architectural elements. The building features intricate stonework and classical columns, contributing to its majestic appearance. Surrounding the main structure are several other buildings with red-tile",
+            "description": "The image depicts a scenic view of a grand architectural structure situated along a waterway. The central focus is a large domed building, characterized by its striking white facade and ornate detailing. The dome is prominently large and rounded, with smaller domes flanking it, showcasing Baroque architectural elements. The building features intricate stonework and classical columns, contributing to its majestic appearance. Surrounding the main structure are several other buildings with red-tile",
+            "architectural_style": "Baroque",
+            "search_backends_used": [],
+            "processing_time_seconds": 48.013410806655884
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Apartment",
+          "confidence": 0.5149073004722595,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Apartment",
+            "artist_name": null,
+            "museum_or_location": null,
+            "art_style": null,
+            "art_era": null,
+            "confidence": 0.5149073004722595,
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.5439260601997375
+              },
+              {
+                "name": "Apartment",
+                "score": 0.5149073004722595
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.42756617069244385
+              },
+              {
+                "name": "Tower",
+                "score": 0.40610000491142273
+              },
+              {
+                "name": "Building",
+                "score": 0.34860000014305115
+              }
+            ],
+            "processing_time_seconds": 17.225942850112915
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/63.jpg"
+    }
+  ]
+}

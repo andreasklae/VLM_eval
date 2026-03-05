@@ -1,0 +1,837 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "35.jpg",
+      "timestamp": "2026-01-28T05:27:34.567678",
+      "processing_time_seconds": 54.452586,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 40.748691666666666,
+        "gps_longitude": 14.483805555555556,
+        "location": {
+          "formatted_address": "Via Marina, 2, 80045 Pompei NA, Italy",
+          "city": "Pompei",
+          "county": "Città Metropolitana di Napoli",
+          "country": "Italy"
+        },
+        "datetime_original": "2022:07:16 16:25:36",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Bronze statue in Pompeii, Pompei, Italy",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Pompeii, and the visible mountain resembles Mount Vesuvius, which is a prominent feature near Pompeii. The statue's modern style suggests it is part of a contemporary installation within the archaeological site.",
+            "detailed_description": "The image shows a large bronze statue located in Pompeii, Italy. The statue is modern in style, depicting a male figure with a spear. In the background, Mount Vesuvius is visible, providing a dramatic natural backdrop to the scene. The statue is positioned among ancient ruins, highlighting the contrast between contemporary art and historical architecture.",
+            "identification": {
+              "primary": [
+                "Bronze statue in Pompeii"
+              ],
+              "location": "Pompei, Italy",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Bronze statue",
+                "type": "statue",
+                "confidence": 0.9
+              },
+              {
+                "name": "Mount Vesuvius",
+                "type": "natural_feature",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "bronze",
+              "modern_art",
+              "Pompeii",
+              "Mount_Vesuvius",
+              "sculpture"
+            ],
+            "location": "Pompei, Italy",
+            "type": "statue",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Statue by Igor Mitoraj",
+                "specificity_level": "very_specific",
+                "confidence": 0.75,
+                "reasoning": "Igor Mitoraj is known for creating modern sculptures in Pompeii, and this statue resembles his style."
+              },
+              {
+                "guess": "Contemporary art installation in Pompeii",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.85,
+                "reasoning": "The modern style and location suggest it is part of a contemporary art installation within the archaeological site."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Bronze statue in Pompeii\"],\n        \"location\": \"Pompei, Italy\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Bronze statue\",\n            \"type\": \"statue\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Mount Vesuvius\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"bronze\", \"modern_art\", \"Pompeii\", \"Mount_Vesuvius\", \"sculpture\"],\n    \"description\": \"The image shows a large bronze statue located in Pompeii, Italy. The statue is modern in style, depicting a male figure with a spear. In the background, Mount Vesuvius is visible, providing a dramatic natural backdrop to the scene. The statue is positioned among ancient ruins, highlighting the contrast between contemporary art and historical architecture.\",\n    \"reasoning\": \"The location metadata indicates Pompeii, and the visible mountain resembles Mount Vesuvius, which is a prominent feature near Pompeii. The statue's modern style suggests it is part of a contemporary installation within the archaeological site.\",\n    \"type\": \"statue\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Statue by Igor Mitoraj\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.75,\n            \"reasoning\": \"Igor Mitoraj is known for creating modern sculptures in Pompeii, and this statue resembles his style.\"\n        },\n        {\n            \"guess\": \"Contemporary art installation in Pompeii\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.85,\n            \"reasoning\": \"The modern style and location suggest it is part of a contemporary art installation within the archaeological site.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": 40.748691666666666,
+              "longitude": 14.483805555555556
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Via Marina, 2, 80045 Pompei NA, Italy",
+              "city": "Pompei",
+              "county": "Città Metropolitana di Napoli",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2022:07:16 16:25:36",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 11.031222105026245
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image prominently features a large bronze statue situated in an archaeological setting, likely within the ancient ruins of Pompeii. The statue depicts a male figure, standing upright, with a muscular build and classical proportions reminiscent of ancient Roman or Greek sculptures. The figure is missing its left arm, adding a sense of antiquity and historical wear. The statue is mounted on a pedestal, which elevates it above the surrounding ruins. The bronze material exhibits a greenish patin",
+            "description": "The image prominently features a large bronze statue situated in an archaeological setting, likely within the ancient ruins of Pompeii. The statue depicts a male figure, standing upright, with a muscular build and classical proportions reminiscent of ancient Roman or Greek sculptures. The figure is missing its left arm, adding a sense of antiquity and historical wear. The statue is mounted on a pedestal, which elevates it above the surrounding ruins. The bronze material exhibits a greenish patin",
+            "architectural_style": "Classical",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 40.748691666666666,
+              "longitude": 14.483805555555556
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Via Marina, 2, 80045 Pompei NA, Italy",
+              "city": "Pompei",
+              "county": "Città Metropolitana di Napoli",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2022:07:16 16:25:36",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 42.26733899116516
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Sculpture",
+          "confidence": 0.9810557961463928,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Sculpture",
+                "score": 0.9810557961463928
+              },
+              {
+                "source": "label",
+                "name": "Statue",
+                "score": 0.9804337620735168
+              },
+              {
+                "source": "object",
+                "name": "Sculpture",
+                "score": 0.8409014940261841
+              },
+              {
+                "source": "label",
+                "name": "Mountain range",
+                "score": 0.8241070508956909
+              },
+              {
+                "source": "web",
+                "name": "Tree",
+                "score": 0.3053150177001953
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Tree",
+                "score": 0.3053150177001953
+              },
+              {
+                "name": "M-tree",
+                "score": 0.259799987077713
+              }
+            ],
+            "objects": [
+              {
+                "name": "Sculpture",
+                "score": 0.8409014940261841
+              }
+            ],
+            "labels": [
+              {
+                "name": "Sculpture",
+                "score": 0.9810557961463928
+              },
+              {
+                "name": "Statue",
+                "score": 0.9804337620735168
+              },
+              {
+                "name": "Monument",
+                "score": 0.894913911819458
+              },
+              {
+                "name": "Mountain range",
+                "score": 0.8241070508956909
+              },
+              {
+                "name": "Classical sculpture",
+                "score": 0.6327584385871887
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 40.748691666666666,
+              "longitude": 14.483805555555556
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Via Marina, 2, 80045 Pompei NA, Italy",
+              "city": "Pompei",
+              "county": "Città Metropolitana di Napoli",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2022:07:16 16:25:36",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 14.763666868209839
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Pompei, Città Metropolitana di Napoli, Italy",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Pompei, Città Metropolitana di Napoli, Italy",
+            "coordinates": {
+              "latitude": 40.748691666666666,
+              "longitude": 14.483805555555556
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "House of Meleager",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 48,
+                  "vicinity": "Via Di Mercurio, Pompei",
+                  "place_id": "ChIJoUPOc7C8OxMRsZuW-wz2Uwc",
+                  "location": {
+                    "lat": 40.7523694,
+                    "lng": 14.4833641
+                  }
+                },
+                {
+                  "name": "Casa dei Vettii",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 556,
+                  "vicinity": "Vicolo dei Vetti, Pompei",
+                  "place_id": "ChIJCXZGmrq8OxMRaD6jYKaJYlo",
+                  "location": {
+                    "lat": 40.7522032,
+                    "lng": 14.4846599
+                  }
+                },
+                {
+                  "name": "The brothel of Pompeii",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 2275,
+                  "vicinity": "Via Villa dei Misteri, 2, Pompei",
+                  "place_id": "ChIJ8wltTbq8OxMR_mam2Nq0atc",
+                  "location": {
+                    "lat": 40.7502816,
+                    "lng": 14.4868047
+                  }
+                },
+                {
+                  "name": "Macellum",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 96,
+                  "vicinity": "Via degli Augustali, 12, Pompei",
+                  "place_id": "ChIJW5-VbLq8OxMRrnghAkvR0rk",
+                  "location": {
+                    "lat": 40.75007,
+                    "lng": 14.48499
+                  }
+                },
+                {
+                  "name": "House of Sallust",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 29,
+                  "vicinity": "Pompeii Scavi, Pompei",
+                  "place_id": "ChIJ_a28jLC8OxMRWF1kJjmTAHY",
+                  "location": {
+                    "lat": 40.7511774,
+                    "lng": 14.4825972
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "House of Sallust",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 29,
+                  "vicinity": "Pompeii Scavi, Pompei",
+                  "place_id": "ChIJ_a28jLC8OxMRWF1kJjmTAHY",
+                  "location": {
+                    "lat": 40.7511774,
+                    "lng": 14.4825972
+                  }
+                },
+                {
+                  "name": "Scavi di Pompei",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 13991,
+                  "vicinity": "Viale delle Ginestre, Pompei",
+                  "place_id": "ChIJgW9adrm8OxMRSESCBO-iJaA",
+                  "location": {
+                    "lat": 40.7486332,
+                    "lng": 14.4812931
+                  }
+                },
+                {
+                  "name": "House of the Faun",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 1188,
+                  "vicinity": "Pompei",
+                  "place_id": "ChIJH_Vxh7q8OxMRAiuFWe-YnkA",
+                  "location": {
+                    "lat": 40.75107669999999,
+                    "lng": 14.4846309
+                  }
+                },
+                {
+                  "name": "Archaeological Park of Pompeii",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 81288,
+                  "vicinity": "Pompei",
+                  "place_id": "ChIJg-rRh728OxMRNZtSjoBipHw",
+                  "location": {
+                    "lat": 40.7512189,
+                    "lng": 14.4886761
+                  }
+                },
+                {
+                  "name": "Forum of Pompeii",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 8844,
+                  "vicinity": "Via Villa dei Misteri, 2, Pompei",
+                  "place_id": "ChIJLUGMGrq8OxMRB6NZAjYmWaY",
+                  "location": {
+                    "lat": 40.7492886,
+                    "lng": 14.4847282
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Hotel del Sole",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 1509,
+                  "vicinity": "Via Plinio, 15, Pompei",
+                  "place_id": "ChIJQXGtr768OxMRjGwQ1YUPLQ0",
+                  "location": {
+                    "lat": 40.74886039999999,
+                    "lng": 14.4945584
+                  }
+                },
+                {
+                  "name": "Fortuna Village Pompei",
+                  "types": [
+                    "campground",
+                    "parking",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 774,
+                  "vicinity": "Via Plinio, 115, Pompei",
+                  "place_id": "ChIJ6_KL0bm8OxMRbOyEghHcoFY",
+                  "location": {
+                    "lat": 40.7467366,
+                    "lng": 14.4842913
+                  }
+                },
+                {
+                  "name": "Ristorante Suisse",
+                  "types": [
+                    "restaurant",
+                    "bar",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 2.8,
+                  "user_ratings_total": 950,
+                  "vicinity": "Piazza Esedra, 10/13, Pompei",
+                  "place_id": "ChIJcwRA3bm8OxMRSxCOMz3sndQ",
+                  "location": {
+                    "lat": 40.74724829999999,
+                    "lng": 14.4837497
+                  }
+                },
+                {
+                  "name": "Ristorante Tiberius",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.5,
+                  "user_ratings_total": 1221,
+                  "vicinity": "Via Villa dei Misteri, 7, Pompei",
+                  "place_id": "ChIJM2OeY7G8OxMRXINocaKi5hQ",
+                  "location": {
+                    "lat": 40.7512427,
+                    "lng": 14.4783563
+                  }
+                },
+                {
+                  "name": "Vesuvio",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.3,
+                  "user_ratings_total": 1773,
+                  "vicinity": "Via Plinio, 137, Pompei",
+                  "place_id": "ChIJ2ZpODbe8OxMRb7TkiSFNrw4",
+                  "location": {
+                    "lat": 40.74702670000001,
+                    "lng": 14.4827107
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Chiesa di San Giuseppe",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Via Plinio, 361, Torre Annunziata",
+                  "place_id": "ChIJm5eI4my9OxMRnirb9kVsjzw",
+                  "location": {
+                    "lat": 40.749088,
+                    "lng": 14.4754877
+                  }
+                },
+                {
+                  "name": "Cappella di S. Antonio a Bottaro",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Italy",
+                  "place_id": "ChIJ1WiEj8m8OxMRNR68R6xVPOk",
+                  "location": {
+                    "lat": 40.74269009999999,
+                    "lng": 14.4787878
+                  }
+                },
+                {
+                  "name": "Cappella di Sant'Antonio a Pontenuovo",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Via Don Gennarino Carotenuto, 19A, Pompei",
+                  "place_id": "ChIJhSpySQC9OxMRRGZ3qyAPjkc",
+                  "location": {
+                    "lat": 40.7397786,
+                    "lng": 14.482246
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Castellammare di Stabia",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Castellammare di Stabia",
+                  "place_id": "ChIJbRsgkTm9OxMR2BCvRmx8yls",
+                  "location": {
+                    "lat": 40.6981057,
+                    "lng": 14.4880402
+                  }
+                },
+                {
+                  "name": "House of Meleager",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 48,
+                  "vicinity": "Via Di Mercurio, Pompei",
+                  "place_id": "ChIJoUPOc7C8OxMRsZuW-wz2Uwc",
+                  "location": {
+                    "lat": 40.7523694,
+                    "lng": 14.4833641
+                  }
+                },
+                {
+                  "name": "Hotel Vittoria",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.5,
+                  "user_ratings_total": 1096,
+                  "vicinity": "Piazza Esedra, Pompei",
+                  "place_id": "ChIJ6R_QKLe8OxMR5J5RGy3vMKA",
+                  "location": {
+                    "lat": 40.7469943,
+                    "lng": 14.4849515
+                  }
+                },
+                {
+                  "name": "Casa dei Vettii",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 556,
+                  "vicinity": "Vicolo dei Vetti, Pompei",
+                  "place_id": "ChIJCXZGmrq8OxMRaD6jYKaJYlo",
+                  "location": {
+                    "lat": 40.7522032,
+                    "lng": 14.4846599
+                  }
+                },
+                {
+                  "name": "Hotel degli Amici",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 51,
+                  "vicinity": "Via Plinio, 93, Pompei",
+                  "place_id": "ChIJp21Psr68OxMRtvoGkL_8MMs",
+                  "location": {
+                    "lat": 40.7473259,
+                    "lng": 14.4906295
+                  }
+                }
+              ]
+            },
+            "total_places_found": 23,
+            "photo_timestamp": "2022:07:16 16:25:36",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.8690180778503418
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/35.jpg"
+    },
+    {
+      "image_filename": "35.jpg",
+      "timestamp": "2026-01-28T05:28:29.069351",
+      "processing_time_seconds": 51.196,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Bronze statue of a warrior, Pompeii, Italy",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The statue's style and location suggest it is part of the Pompeii archaeological site, known for its classical art and proximity to Mount Vesuvius.",
+            "detailed_description": "The image features a bronze statue of a warrior, likely inspired by classical themes, situated in the archaeological site of Pompeii, Italy. The statue is depicted holding a spear, with a muscular build and classical proportions. In the background, Mount Vesuvius is visible, providing a dramatic natural backdrop. The setting includes ruins and stone structures typical of ancient Roman architecture.",
+            "identification": {
+              "primary": [
+                "Bronze statue of a warrior"
+              ],
+              "location": "Pompeii, Italy",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Bronze statue of a warrior",
+                "type": "statue",
+                "confidence": 0.9
+              },
+              {
+                "name": "Mount Vesuvius",
+                "type": "natural_feature",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "bronze",
+              "sculpture",
+              "Pompeii",
+              "ancient",
+              "landscape"
+            ],
+            "location": "Pompeii, Italy",
+            "type": "statue",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Statue of a Roman god or hero",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.75,
+                "reasoning": "The classical style and setting suggest it could represent a Roman deity or hero."
+              },
+              {
+                "guess": "Modern installation inspired by classical themes",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The bronze material and style could indicate a contemporary artwork inspired by ancient themes."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Bronze statue of a warrior\"],\n        \"location\": \"Pompeii, Italy\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Bronze statue of a warrior\",\n            \"type\": \"statue\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Mount Vesuvius\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"bronze\", \"sculpture\", \"Pompeii\", \"ancient\", \"landscape\"],\n    \"description\": \"The image features a bronze statue of a warrior, likely inspired by classical themes, situated in the archaeological site of Pompeii, Italy. The statue is depicted holding a spear, with a muscular build and classical proportions. In the background, Mount Vesuvius is visible, providing a dramatic natural backdrop. The setting includes ruins and stone structures typical of ancient Roman architecture.\",\n    \"reasoning\": \"The statue's style and location suggest it is part of the Pompeii archaeological site, known for its classical art and proximity to Mount Vesuvius.\",\n    \"type\": \"statue\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Statue of a Roman god or hero\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.75,\n            \"reasoning\": \"The classical style and setting suggest it could represent a Roman deity or hero.\"\n        },\n        {\n            \"guess\": \"Modern installation inspired by classical themes\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The bronze material and style could indicate a contemporary artwork inspired by ancient themes.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 10.161596298217773
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a large bronze statue of a male figure, prominently positioned against a backdrop of mountainous terrain and a clear blue sky. The statue appears to be in a classical style, reminiscent of ancient Greek or Roman sculptures, characterized by its realistic anatomical proportions and detailed musculature. The figure is standing upright, holding a spear in one hand, and is missing an arm, suggesting it may be an intentional artistic choice or indicative of historical wear. The stat",
+            "description": "The image depicts a large bronze statue of a male figure, prominently positioned against a backdrop of mountainous terrain and a clear blue sky. The statue appears to be in a classical style, reminiscent of ancient Greek or Roman sculptures, characterized by its realistic anatomical proportions and detailed musculature. The figure is standing upright, holding a spear in one hand, and is missing an arm, suggesting it may be an intentional artistic choice or indicative of historical wear. The stat",
+            "architectural_style": "Classical",
+            "search_backends_used": [],
+            "processing_time_seconds": 41.03252100944519
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Sculpture",
+          "confidence": 0.9810557961463928,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Sculpture",
+                "score": 0.9810557961463928
+              },
+              {
+                "source": "label",
+                "name": "Statue",
+                "score": 0.9804337620735168
+              },
+              {
+                "source": "object",
+                "name": "Sculpture",
+                "score": 0.8409014940261841
+              },
+              {
+                "source": "label",
+                "name": "Mountain range",
+                "score": 0.8241070508956909
+              },
+              {
+                "source": "web",
+                "name": "Tree",
+                "score": 0.3053150177001953
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Tree",
+                "score": 0.3053150177001953
+              },
+              {
+                "name": "M-tree",
+                "score": 0.259799987077713
+              }
+            ],
+            "objects": [
+              {
+                "name": "Sculpture",
+                "score": 0.8409014940261841
+              }
+            ],
+            "labels": [
+              {
+                "name": "Sculpture",
+                "score": 0.9810557961463928
+              },
+              {
+                "name": "Statue",
+                "score": 0.9804337620735168
+              },
+              {
+                "name": "Monument",
+                "score": 0.894913911819458
+              },
+              {
+                "name": "Mountain range",
+                "score": 0.8241070508956909
+              },
+              {
+                "name": "Classical sculpture",
+                "score": 0.6327584385871887
+              }
+            ],
+            "processing_time_seconds": 14.750477075576782
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/35.jpg"
+    }
+  ]
+}

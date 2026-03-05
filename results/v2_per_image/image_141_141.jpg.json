@@ -1,0 +1,1110 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "141.jpg",
+      "timestamp": "2026-01-28T02:18:51.221627",
+      "processing_time_seconds": 68.937321,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 52.494819444444445,
+        "gps_longitude": 13.415141666666667,
+        "location": {
+          "formatted_address": "Böckhstraße 10, 10967 Berlin, Germany",
+          "city": "Berlin",
+          "county": "Berlin",
+          "country": "Germany"
+        },
+        "datetime_original": "2025:02:09 15:24:40",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Modernist building, Berlin, Germany",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The building's design elements, such as geometric shapes and clean lines, are characteristic of modernist architecture. The location metadata indicates Berlin, which is known for such architectural styles.",
+            "detailed_description": "The image shows a modernist building in Berlin, Germany. The structure features clean lines and geometric shapes typical of modernist architecture. It has a distinctive facade with vertical elements and balconies, and the color palette includes soft yellows and grays. The building is surrounded by a cobblestone street and bicycles, indicating an urban setting. The architectural style suggests it may be from the mid-20th century.",
+            "identification": {
+              "primary": [
+                "Modernist building"
+              ],
+              "location": "Berlin, Germany",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Modernist building",
+                "type": "building",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "modernist",
+              "20th_century",
+              "architecture",
+              "Berlin"
+            ],
+            "location": "Berlin, Germany",
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Residential building in Berlin",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.75,
+                "reasoning": "The style and urban setting suggest it could be a residential building typical of Berlin's architectural landscape."
+              },
+              {
+                "guess": "20th-century modernist structure",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The design aligns with modernist principles, common in 20th-century architecture."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Modernist building\"],\n        \"location\": \"Berlin, Germany\",\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Modernist building\",\n            \"type\": \"building\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"modernist\", \"20th_century\", \"architecture\", \"Berlin\"],\n    \"description\": \"The image shows a modernist building in Berlin, Germany. The structure features clean lines and geometric shapes typical of modernist architecture. It has a distinctive facade with vertical elements and balconies, and the color palette includes soft yellows and grays. The building is surrounded by a cobblestone street and bicycles, indicating an urban setting. The architectural style suggests it may be from the mid-20th century.\",\n    \"reasoning\": \"The building's design elements, such as geometric shapes and clean lines, are characteristic of modernist architecture. The location metadata indicates Berlin, which is known for such architectural styles.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Residential building in Berlin\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.75,\n            \"reasoning\": \"The style and urban setting suggest it could be a residential building typical of Berlin's architectural landscape.\"\n        },\n        {\n            \"guess\": \"20th-century modernist structure\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.70,\n            \"reasoning\": \"The design aligns with modernist principles, common in 20th-century architecture.\"\n        }\n    ]\n}",
+            "gps_coordinates": {
+              "latitude": 52.494819444444445,
+              "longitude": 13.415141666666667
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Böckhstraße 10, 10967 Berlin, Germany",
+              "city": "Berlin",
+              "county": "Berlin",
+              "country": "Germany"
+            },
+            "photo_timestamp": "2025:02:09 15:24:40",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 18.55445098876953
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([en.wikipedia.org]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a distinctive building in Berlin, Germany, characterized by its modern architectural style with elements of post-war design. The building features a unique facade with vertical lines and a series of protruding balconies that create a layered effect. The color palette includes soft yellows and creams, contrasting with the gray tones of the adjacent structures. The building's design includes narrow windows with white frames, contributing to a sleek, streamlined appearance. The to",
+            "description": "The image depicts a distinctive building in Berlin, Germany, characterized by its modern architectural style with elements of post-war design. The building features a unique facade with vertical lines and a series of protruding balconies that create a layered effect. The color palette includes soft yellows and creams, contrasting with the gray tones of the adjacent structures. The building's design includes narrow windows with white frames, contributing to a sleek, streamlined appearance. The to",
+            "architectural_style": "Modern",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 52.494819444444445,
+              "longitude": 13.415141666666667
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Böckhstraße 10, 10967 Berlin, Germany",
+              "city": "Berlin",
+              "county": "Berlin",
+              "country": "Germany"
+            },
+            "photo_timestamp": "2025:02:09 15:24:40",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 49.32658123970032
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Apartment (Berlin, Germany)",
+          "confidence": 0.5095524787902832,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Apartment",
+            "artist_name": null,
+            "museum_or_location": "Berlin, Germany",
+            "art_style": null,
+            "art_era": null,
+            "confidence": 0.5095524787902832,
+            "web_entities": [
+              {
+                "name": "Apartment",
+                "score": 0.5095524787902832
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.3634944260120392
+              },
+              {
+                "name": "Tree",
+                "score": 0.3423992395401001
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 52.494819444444445,
+              "longitude": 13.415141666666667
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Böckhstraße 10, 10967 Berlin, Germany",
+              "city": "Berlin",
+              "county": "Berlin",
+              "country": "Germany"
+            },
+            "photo_timestamp": "2025:02:09 15:24:40",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 27.90090584754944
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Berlin, Germany",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Berlin, Germany",
+            "coordinates": {
+              "latitude": 52.494819444444445,
+              "longitude": 13.415141666666667
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Mevlana Moschee Berlin",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 906,
+                  "vicinity": "Skalitzer Straße 131/132, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJ55kymDROqEcR0gdYVe0rWY4",
+                  "location": {
+                    "lat": 52.49953,
+                    "lng": 13.42021
+                  }
+                },
+                {
+                  "name": "Böckler Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 264,
+                  "vicinity": "Prinzenstraße 1, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJPfXUjNJPqEcRNKbUdlQsTgk",
+                  "location": {
+                    "lat": 52.49707009999999,
+                    "lng": 13.4083193
+                  }
+                },
+                {
+                  "name": "Kreuzberg Pavillon",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 14,
+                  "vicinity": "Naunynstraße 53, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJ_1gHxzNOqEcRagRaNH-xLAk",
+                  "location": {
+                    "lat": 52.5023042,
+                    "lng": 13.4181614
+                  }
+                },
+                {
+                  "name": "Saint Johannes Basilika",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 683,
+                  "vicinity": "Lilienthalstraße 5, Berlin-Bezirk Neukölln",
+                  "place_id": "ChIJY23fb8VPqEcRd4_LGLkjhnE",
+                  "location": {
+                    "lat": 52.4876632,
+                    "lng": 13.4091105
+                  }
+                },
+                {
+                  "name": "Mural",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 4,
+                  "vicinity": "Naunynstraße 52, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJo3wUxjNOqEcRLQorw1L__74",
+                  "location": {
+                    "lat": 52.50244649999999,
+                    "lng": 13.4180688
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Fichtebunker",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1312,
+                  "vicinity": "Fichtestraße 6, Berlin",
+                  "place_id": "ChIJ97u6Ic9PqEcRuwWQuC5mkCk",
+                  "location": {
+                    "lat": 52.4903547,
+                    "lng": 13.4129079
+                  }
+                },
+                {
+                  "name": "F³ - Space for Photography",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 171,
+                  "vicinity": "Prinzessinnenstraße 30/1. Hof, Berlin",
+                  "place_id": "ChIJU5yWkTFOqEcR26gbkOiMmxg",
+                  "location": {
+                    "lat": 52.50147450000001,
+                    "lng": 13.414183
+                  }
+                },
+                {
+                  "name": "Kreuzberg Pavillon",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 14,
+                  "vicinity": "Naunynstraße 53, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJ_1gHxzNOqEcRagRaNH-xLAk",
+                  "location": {
+                    "lat": 52.5023042,
+                    "lng": 13.4181614
+                  }
+                },
+                {
+                  "name": "exponauten",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Erkelenzdamm 59/61, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJixi6Ec1PqEcRdDYMlSBc1k4",
+                  "location": {
+                    "lat": 52.49677049999999,
+                    "lng": 13.4129178
+                  }
+                },
+                {
+                  "name": "FHXB Friedrichshain-Kreuzberg Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 299,
+                  "vicinity": "Adalbertstraße 95A, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJ0xpVdTNOqEcRW22FiVSWFX0",
+                  "location": {
+                    "lat": 52.5006146,
+                    "lng": 13.4182532
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Guru Indisches Restaurant",
+                  "types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 739,
+                  "vicinity": "Körtestraße 30, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJ7-bTxs9PqEcRSV4G7KVcOO0",
+                  "location": {
+                    "lat": 52.4900868,
+                    "lng": 13.4085265
+                  }
+                },
+                {
+                  "name": "AMRIT - Berlin Kreuzberg",
+                  "types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 4076,
+                  "vicinity": "Oranienstraße 204, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJeVq3CDVOqEcRba5RL1mUXDE",
+                  "location": {
+                    "lat": 52.499641,
+                    "lng": 13.4249485
+                  }
+                },
+                {
+                  "name": "Max und Moritz",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2879,
+                  "vicinity": "Oranienstraße 162, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJbUbbajJOqEcRawilLsv27Wk",
+                  "location": {
+                    "lat": 52.5025993,
+                    "lng": 13.4139938
+                  }
+                },
+                {
+                  "name": "Horváth",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 634,
+                  "vicinity": "Paul-Lincke-Ufer 44a, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJ74LRF8tPqEcRNeBJAS2qxaQ",
+                  "location": {
+                    "lat": 52.496461,
+                    "lng": 13.4208765
+                  }
+                },
+                {
+                  "name": "Ankerklause",
+                  "types": [
+                    "restaurant",
+                    "bar",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2995,
+                  "vicinity": "Kottbusser Damm 104, Berlin-Bezirk Neukölln",
+                  "place_id": "ChIJHwunA8tPqEcRzdgaAEx7K4M",
+                  "location": {
+                    "lat": 52.49583619999999,
+                    "lng": 13.4205592
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Böckler Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 264,
+                  "vicinity": "Prinzenstraße 1, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJPfXUjNJPqEcRNKbUdlQsTgk",
+                  "location": {
+                    "lat": 52.49707009999999,
+                    "lng": 13.4083193
+                  }
+                },
+                {
+                  "name": "Dog Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 144,
+                  "vicinity": "Hasenheide 82, Berlin-Bezirk Neukölln",
+                  "place_id": "ChIJgWgaDsZPqEcRua0CAoD90lk",
+                  "location": {
+                    "lat": 52.48674509999999,
+                    "lng": 13.4140247
+                  }
+                },
+                {
+                  "name": "Böcklerpark",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 901,
+                  "vicinity": "Böcklerstraße 6, Berlin",
+                  "place_id": "ChIJ-7L7gdJPqEcRhnpx35DYPIA",
+                  "location": {
+                    "lat": 52.4960834,
+                    "lng": 13.4114272
+                  }
+                },
+                {
+                  "name": "Sportbootanleger",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 7,
+                  "vicinity": "Böcklerpark, Böcklerstraße 6, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJr7gH_3NPqEcR35s3CDdDpNk",
+                  "location": {
+                    "lat": 52.4958025,
+                    "lng": 13.4110913
+                  }
+                },
+                {
+                  "name": "Wrangelbrunnen",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 100,
+                  "vicinity": "Grimmstraße 11B-C, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJzQitk85PqEcREdIFadDbyX8",
+                  "location": {
+                    "lat": 52.49205990000001,
+                    "lng": 13.4130617
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Christian Marten",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Kottbusser Damm 6, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJxbsyTcpPqEcRVJyXn5kl4go",
+                  "location": {
+                    "lat": 52.4942712,
+                    "lng": 13.4208296
+                  }
+                },
+                {
+                  "name": "Kreuzbergprojekt",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 9,
+                  "vicinity": "Lenaustraße 4, Berlin-Bezirk Neukölln",
+                  "place_id": "ChIJ0RoIfbJPqEcRl77DFB6H7RA",
+                  "location": {
+                    "lat": 52.4899125,
+                    "lng": 13.4250977
+                  }
+                },
+                {
+                  "name": "Gospel Believers International Ministries",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 31,
+                  "vicinity": "Wassertorstraße 21A, Berlin",
+                  "place_id": "ChIJ7em9wCxOqEcRqUpo-G193-k",
+                  "location": {
+                    "lat": 52.50052609999999,
+                    "lng": 13.4066204
+                  }
+                },
+                {
+                  "name": "Kirche am Südstern",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 145,
+                  "vicinity": "Südstern 12, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJNfPUAtBPqEcRUwzb0hKf5vw",
+                  "location": {
+                    "lat": 52.4892752,
+                    "lng": 13.4062406
+                  }
+                },
+                {
+                  "name": "Saint Johannes Basilika",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 683,
+                  "vicinity": "Lilienthalstraße 5, Berlin-Bezirk Neukölln",
+                  "place_id": "ChIJY23fb8VPqEcRd4_LGLkjhnE",
+                  "location": {
+                    "lat": 52.4876632,
+                    "lng": 13.4091105
+                  }
+                },
+                {
+                  "name": "Mevlana Moschee Berlin",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 906,
+                  "vicinity": "Skalitzer Straße 131/132, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJ55kymDROqEcR0gdYVe0rWY4",
+                  "location": {
+                    "lat": 52.49953,
+                    "lng": 13.42021
+                  }
+                },
+                {
+                  "name": "Omar Moschee",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 3112,
+                  "vicinity": "Wiener Straße 1-6, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJPVluYjVOqEcRZ1IzmSCONbk",
+                  "location": {
+                    "lat": 52.4989366,
+                    "lng": 13.4267616
+                  }
+                },
+                {
+                  "name": "Vakif Moschee e.V.",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Boppstraße 4, Berlin",
+                  "place_id": "ChIJcaS4UABPqEcRcAaa6fYKKa0",
+                  "location": {
+                    "lat": 52.4908525,
+                    "lng": 13.4213774
+                  }
+                },
+                {
+                  "name": "Muradiye Moschee - DITIB Kulturverein e.V.",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 73,
+                  "vicinity": "Kottbusser Damm 75, Berlin-Bezirk Neukölln",
+                  "place_id": "ChIJX34RPbZPqEcRfkZEk05EskY",
+                  "location": {
+                    "lat": 52.4905202,
+                    "lng": 13.4239238
+                  }
+                },
+                {
+                  "name": "Bilvanis Dosteli e.V",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 5,
+                  "vicinity": "Hobrechtstraße 64, Berlin",
+                  "place_id": "ChIJ6WgRQwBPqEcReVNgdIEsdCk",
+                  "location": {
+                    "lat": 52.48970320000001,
+                    "lng": 13.425758
+                  }
+                },
+                {
+                  "name": "Fraenkelufer Synagogue",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 68,
+                  "vicinity": "Fraenkelufer 10, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJmZOriMxPqEcRjAtHdL3x_1w",
+                  "location": {
+                    "lat": 52.4959464,
+                    "lng": 13.416789
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Künstlerhaus Bethanien",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 198,
+                  "vicinity": "Kottbusser Straße 10/d, Berlin",
+                  "place_id": "ChIJVZcMW8tPqEcRU5yWU2r65ew",
+                  "location": {
+                    "lat": 52.4972258,
+                    "lng": 13.4189602
+                  }
+                },
+                {
+                  "name": "AKA",
+                  "types": [
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 402,
+                  "vicinity": "Pflügerstraße 6, Berlin-Bezirk Neukölln",
+                  "place_id": "ChIJHUwhbrZPqEcRd2H1ORY3wNE",
+                  "location": {
+                    "lat": 52.49120049999999,
+                    "lng": 13.4255113
+                  }
+                },
+                {
+                  "name": "Crystal Ball Berlin",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 11,
+                  "vicinity": "Schönleinstraße 7, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJl-EZiclPqEcRyxGTS-v3rgQ",
+                  "location": {
+                    "lat": 52.492154,
+                    "lng": 13.4208555
+                  }
+                },
+                {
+                  "name": "Kraupa-Tuskany Zeidler",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 25,
+                  "vicinity": "Regina-Jonas-Straße 41/43, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJO4_tXx5OqEcRAyLKC_z9qWw",
+                  "location": {
+                    "lat": 52.496851,
+                    "lng": 13.418323
+                  }
+                },
+                {
+                  "name": "erratum",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Böckhstraße 40, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJaYs5yMtPqEcRc4V6OyWQD-M",
+                  "location": {
+                    "lat": 52.4937523,
+                    "lng": 13.4196661
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Berlin",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Berlin",
+                  "place_id": "ChIJAVkDPzdOqEcRcDteW0YgIQQ",
+                  "location": {
+                    "lat": 52.52000659999999,
+                    "lng": 13.404954
+                  }
+                },
+                {
+                  "name": "Hotel Prens Berlin Kreuzberg am Maybachufer",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 662,
+                  "vicinity": "Kottbusser Damm 102, Berlin-Bezirk Neukölln",
+                  "place_id": "ChIJmScCVcpPqEcRK6yUV93gUPI",
+                  "location": {
+                    "lat": 52.4951432,
+                    "lng": 13.4210774
+                  }
+                },
+                {
+                  "name": "Hotel Ludwig Van Beethoven",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1572,
+                  "vicinity": "Hasenheide 14, Berlin",
+                  "place_id": "ChIJYTG18LdPqEcRZrPKedtSHPw",
+                  "location": {
+                    "lat": 52.48764389999999,
+                    "lng": 13.4210506
+                  }
+                },
+                {
+                  "name": "Hotel Vier Jahreszeiten Berlin City",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 579,
+                  "vicinity": "Skalitzer Straße 36, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJsf_9ZjVOqEcRryBq0sZMybo",
+                  "location": {
+                    "lat": 52.4987041,
+                    "lng": 13.4260974
+                  }
+                },
+                {
+                  "name": "Comebackpackers",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 391,
+                  "vicinity": "Adalbertstraße 97, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJ4z6UbDNOqEcRCNuVHMcJO3Y",
+                  "location": {
+                    "lat": 52.4999658,
+                    "lng": 13.4177774
+                  }
+                }
+              ]
+            },
+            "total_places_found": 41,
+            "photo_timestamp": "2025:02:09 15:24:40",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.8100969791412354
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/141.jpg"
+    },
+    {
+      "image_filename": "141.jpg",
+      "timestamp": "2026-01-28T02:20:00.198773",
+      "processing_time_seconds": 59.897872,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Modernist residential building, Berlin, Germany",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and urban setting suggest a modernist building typical of Berlin. The geometric design and pastel colors are indicative of mid-20th-century modernism.",
+            "detailed_description": "The image shows a modernist residential building characterized by its geometric design and vertical emphasis. The facade features a combination of pastel colors, primarily yellow and beige, with large windows and balconies. The building has a distinct architectural style typical of mid-20th-century modernism, with clean lines and functional design. It is located in an urban setting, likely in Berlin, Germany, as suggested by the architectural style and surrounding environment.",
+            "identification": {
+              "primary": [
+                "Modernist residential building"
+              ],
+              "location": "Berlin, Germany",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Modernist residential building",
+                "type": "building",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "Modernist",
+              "20th_century",
+              "residential",
+              "Berlin"
+            ],
+            "location": "Berlin, Germany",
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Residential building in Berlin",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.75,
+                "reasoning": "The architectural style and urban setting are consistent with residential buildings found in Berlin."
+              },
+              {
+                "guess": "Modernist architecture",
+                "specificity_level": "general",
+                "confidence": 0.65,
+                "reasoning": "The building's design elements are characteristic of modernist architecture."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Modernist residential building\"],\n        \"location\": \"Berlin, Germany\",\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Modernist residential building\",\n            \"type\": \"building\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"Modernist\", \"20th_century\", \"residential\", \"Berlin\"],\n    \"description\": \"The image shows a modernist residential building characterized by its geometric design and vertical emphasis. The facade features a combination of pastel colors, primarily yellow and beige, with large windows and balconies. The building has a distinct architectural style typical of mid-20th-century modernism, with clean lines and functional design. It is located in an urban setting, likely in Berlin, Germany, as suggested by the architectural style and surrounding environment.\",\n    \"reasoning\": \"The architectural style and urban setting suggest a modernist building typical of Berlin. The geometric design and pastel colors are indicative of mid-20th-century modernism.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Residential building in Berlin\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.75,\n            \"reasoning\": \"The architectural style and urban setting are consistent with residential buildings found in Berlin.\"\n        },\n        {\n            \"guess\": \"Modernist architecture\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.65,\n            \"reasoning\": \"The building's design elements are characteristic of modernist architecture.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 11.192908763885498
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Modern building with unique facade design",
+          "confidence": 0.7,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The search results did not provide a specific name for the building, but the description matches the characteristics of modern architecture with unique facade elements. The setting suggests a vibrant urban environment, but no specific location was confirmed by the search results.",
+            "identification": {
+              "primary": [
+                "Modern building with unique facade design"
+              ],
+              "location": null,
+              "confidence": 0.75
+            },
+            "artifacts": [
+              {
+                "name": "Modern building with protruding balconies",
+                "type": "building",
+                "confidence": 0.75
+              },
+              {
+                "name": "Older structures with traditional architectural styles",
+                "type": "building",
+                "confidence": 0.7
+              },
+              {
+                "name": "Cobblestone street with bicycles and mature trees",
+                "type": "viewpoint",
+                "confidence": 0.65
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "urban_environment",
+              "facade_design",
+              "protruding_balconies",
+              "grid_window_pattern"
+            ],
+            "sources_used": [
+              "web"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "building",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Modern building in a European city",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "The description suggests a European urban environment with cobblestone streets and traditional buildings, which is common in many European cities."
+              },
+              {
+                "guess": "Contemporary residential building",
+                "specificity_level": "general",
+                "confidence": 0.65,
+                "reasoning": "The architectural style and facade design are typical of contemporary residential buildings found in urban areas."
+              },
+              {
+                "guess": "Modern architectural landmark",
+                "specificity_level": "very_general",
+                "confidence": 0.6,
+                "reasoning": "The unique design elements suggest it could be a landmark building, but no specific identification was confirmed."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.75,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image features a striking building with a modern architectural style that stands out due to its unique facade design. The building is characterized by vertical lines and a series of protruding balconies that create a dynamic visual effect. The facade is painted in a combination of soft yellow and beige tones, which contrast with the grey and white window frames. The windows are arranged in a grid-like pattern, contributing to the building’s geometric aesthetic. The top of the building featur",
+            "description": "The image features a striking building with a modern architectural style that stands out due to its unique facade design. The building is characterized by vertical lines and a series of protruding balconies that create a dynamic visual effect. The facade is painted in a combination of soft yellow and beige tones, which contrast with the grey and white window frames. The windows are arranged in a grid-like pattern, contributing to the building’s geometric aesthetic. The top of the building featur",
+            "architectural_style": "Modern",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 48.70241117477417
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Apartment",
+          "confidence": 0.5096497535705566,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Apartment",
+            "artist_name": null,
+            "museum_or_location": null,
+            "art_style": null,
+            "art_era": null,
+            "confidence": 0.5096497535705566,
+            "web_entities": [
+              {
+                "name": "Apartment",
+                "score": 0.5096497535705566
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.36213648319244385
+              },
+              {
+                "name": "Tree",
+                "score": 0.34219178557395935
+              }
+            ],
+            "processing_time_seconds": 26.60594892501831
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/141.jpg"
+    }
+  ]
+}

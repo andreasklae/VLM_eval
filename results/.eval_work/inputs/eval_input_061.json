@@ -1,0 +1,796 @@
+{
+  "image_id": 61,
+  "filename": "61.heic",
+  "ground_truth": {
+    "description": "Photo of Borre Kirke in Norway taken from the graveyard.",
+    "photographer_description": "A photo of Borre Kirke in Norway taken from the graveyard. With metadata it should be able to get this; without, it should see a Norwegian church. Daytime, clear weather.",
+    "locations": [
+      {
+        "name": "Borre Church, Borre / Horten, Vestfold, Norway",
+        "hierarchy": {
+          "country": "Norway",
+          "region": "Vestfold",
+          "city": "Borre / Horten",
+          "exact": "Borre Church"
+        }
+      }
+    ],
+    "entities": [
+      {
+        "name": "Borre Church",
+        "type": "religious_site",
+        "notes": "Borre Kirke",
+        "importance": "high",
+        "max_specificity": 5
+      },
+      {
+        "name": "Borre gravplass",
+        "type": "landmark",
+        "notes": "",
+        "max_specificity": 5,
+        "importance": "medium",
+        "added_by": "human_evaluator"
+      },
+      {
+        "name": "Norwegian Flag",
+        "type": "other",
+        "notes": "",
+        "max_specificity": 5,
+        "importance": "low",
+        "added_by": "human_evaluator"
+      }
+    ],
+    "scene_type": [
+      "architecture",
+      "religious"
+    ],
+    "key_visual_elements": [
+      "Norwegian stone church",
+      "Graveyard",
+      "Medieval architecture"
+    ],
+    "max_specificity": "Specific",
+    "difficulty": "Easy (with metadata), Medium (should recognize Norwegian church)",
+    "notes": "Daytime, clear weather.",
+    "gps_metadata": {
+      "gps_latitude": 59.38214166666667,
+      "gps_longitude": 10.459444444444443,
+      "reverse_geocoded": {
+        "formatted_address": "Kirkebakken 4, 3184 Borre, Norway",
+        "city": null,
+        "county": "Horten",
+        "country": "Norway"
+      }
+    },
+    "image_categories": [
+      "landmark",
+      "urban"
+    ],
+    "difficulty_with_gps": "easy",
+    "difficulty_without_gps": "hard"
+  },
+  "model_runs": [
+    {
+      "image_filename": "61.jpg",
+      "use_gps": true,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "A whitewashed medieval stone church with steep red clay tile roofs and a small dark wooden spire rises behind a large leafless tree. The church has several cross-gabled volumes and black timber detailing on the gable ends. It sits on a gently sloping churchyard filled with gravestones and small flower plantings. Bright daylight and a clear blue sky suggest spring. The setting is rural/suburban with a few buildings and flagpoles visible in the distance.",
+            "photographer_location": [
+              {
+                "name": "Churchyard of Borre Church (Kirkebakken 4, 3184 Borre, Horten, Vestfold og Telemark, Norway)",
+                "confidence": 0.95
+              },
+              {
+                "name": "Borre, Horten Municipality, Vestfold og Telemark, Norway",
+                "confidence": 0.9
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Borre Church (Borre kirke), Borre, Horten, Vestfold og Telemark, Norway",
+                "confidence": 0.96
+              },
+              {
+                "name": "Borre Churchyard / cemetery surrounding Borre kirke",
+                "confidence": 0.9
+              }
+            ],
+            "entities": [
+              {
+                "name": "Borre Church (Borre kirke)",
+                "type": "religious_site",
+                "confidence": 0.96,
+                "notes": "Medieval parish church, likely 12th century; whitewashed stone walls, red tile roofs; located in Borre, Horten, Vestfold og Telemark, Norway."
+              },
+              {
+                "name": "Borre Church building",
+                "type": "building",
+                "confidence": 0.96,
+                "notes": "Stone construction with multiple gabled sections, dark wooden spire/turret, and half-timber-style gable detailing."
+              },
+              {
+                "name": "Borre churchyard (cemetery)",
+                "type": "cultural_site",
+                "confidence": 0.92,
+                "notes": "Historic graveyard surrounding the church with numerous headstones."
+              },
+              {
+                "name": "Medieval Romanesque stone church architecture (Norway)",
+                "type": "architectural_style",
+                "confidence": 0.6,
+                "notes": "Thick masonry walls and small windows typical of 12th-century Norwegian parish churches."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "A small white church with red-tiled gabled roofs sits in a well-kept churchyard. In the foreground is a large, leafless deciduous tree whose sprawling branches loom over numerous gravestones of varying shapes and sizes. The church has white plaster walls with dark timber-framed gable ends and a modest steeple rising behind the tree. The scene is bathed in bright daylight against a clear blue sky, suggesting a rural Norwegian parish setting. Nearby, a cluster of headstones and grave markers indicates an active cemetery surrounding the church, consistent with the given location in Borre, Vestfold, Norway.",
+            "photographer_location": [
+              {
+                "name": "Kirkebakken 4, 3184 Borre, Norway",
+                "confidence": 0.98
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Borre Kirke (Borre Church), Borre, Vestfold, Norway",
+                "confidence": 0.92
+              },
+              {
+                "name": "Borre Church Cemetery, Borre, Vestfold, Norway",
+                "confidence": 0.65
+              }
+            ],
+            "entities": [
+              {
+                "name": "Borre Kirke",
+                "type": "building",
+                "confidence": 0.92,
+                "notes": "Historic parish church in Borre, Vestfold, Norway; white plaster walls with red tile roof; small bell tower visible behind tree."
+              },
+              {
+                "name": "Borre Church Cemetery",
+                "type": "public_space",
+                "confidence": 0.75,
+                "notes": "Graveyard surrounding the church with varied headstones."
+              },
+              {
+                "name": "Large deciduous tree",
+                "type": "natural_feature",
+                "confidence": 0.7,
+                "notes": "Dominant foreground element; leafless with extensive branching."
+              },
+              {
+                "name": "Half-timbered gable ends",
+                "type": "architectural_style",
+                "confidence": 0.6,
+                "notes": "Dark timber framing with white infill on gable ends of the church."
+              },
+              {
+                "name": "Gravestones/monuments in cemetery",
+                "type": "monument",
+                "confidence": 0.6,
+                "notes": "Various grave markers in foreground and mid-ground."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A low-angle, eye-level outdoor shot depicts Borre Church (Borre kirke), a medieval stone church with white-washed walls and a red clay tile roof, set against a clear, deep blue sky. A large, leafless deciduous tree with a complex network of branches dominates the left foreground, partially obscuring the church building. The church features distinctive architectural elements, including dark timber-framed (half-timbered) gables on its transepts or porches, arched windows, and a small black spire or flèche atop the main roof ridge. The foreground is a grassy cemetery filled with numerous gravestones of varying ages, shapes, and materials (mostly grey granite or stone). Several graves are adorned with fresh yellow flowers, likely daffodils, suggesting early spring. In the background to the left, a Norwegian flag is visible flying on a pole near a white wooden building.",
+            "photographer_location": [
+              {
+                "name": "Borre Churchyard",
+                "confidence": 0.95
+              },
+              {
+                "name": "Kirkebakken, Borre",
+                "confidence": 0.9
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Borre Church",
+                "confidence": 1.0
+              },
+              {
+                "name": "Borre",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "Borre Church",
+                "type": "religious_site",
+                "confidence": 1.0,
+                "notes": "Medieval stone church, originally built in the 12th century, featuring Romanesque style with later modifications."
+              },
+              {
+                "name": "Borre Church",
+                "type": "building",
+                "confidence": 1.0,
+                "notes": null
+              },
+              {
+                "name": "Cemetery",
+                "type": "public_space",
+                "confidence": 0.95,
+                "notes": "Churchyard surrounding Borre Church"
+              },
+              {
+                "name": "Gravestones",
+                "type": "monument",
+                "confidence": 0.95,
+                "notes": null
+              },
+              {
+                "name": "Tree",
+                "type": "natural_feature",
+                "confidence": 0.9,
+                "notes": "Large deciduous tree, leafless"
+              },
+              {
+                "name": "Norwegian Flag",
+                "type": "other",
+                "confidence": 0.85,
+                "notes": null
+              },
+              {
+                "name": "Romanesque",
+                "type": "architectural_style",
+                "confidence": 0.8,
+                "notes": "Core structure style"
+              },
+              {
+                "name": "Half-timbering",
+                "type": "architectural_style",
+                "confidence": 0.9,
+                "notes": "Visible on the gables"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A wide shot of Borre Kirke (Borre Church) in Norway, a medieval stone building with white-washed walls, a red-tiled roof, and distinctive half-timbered gables. A large, leafless deciduous tree dominates the left foreground, its intricate branch network reaching across the clear blue sky. The church is situated within a cemetery featuring numerous gravestones of varying styles and ages, some adorned with yellow spring flowers. The lighting is bright and direct, suggesting a clear, sunny day.",
+            "photographer_location": [
+              {
+                "name": "Kirkebakken 4, 3184 Borre, Norway",
+                "confidence": 1.0
+              },
+              {
+                "name": "Borre, Horten, Norway",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Borre Kirke, Borre, Norway",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "Borre Kirke",
+                "type": "religious_site",
+                "confidence": 1.0,
+                "notes": "A medieval stone church dating back to the 12th century, known for its Romanesque style and later half-timbered additions."
+              },
+              {
+                "name": "Borre Cemetery",
+                "type": "cultural_site",
+                "confidence": 1.0,
+                "notes": "The graveyard surrounding Borre Church."
+              },
+              {
+                "name": "Romanesque architecture",
+                "type": "architectural_style",
+                "confidence": 0.9,
+                "notes": "The primary architectural style of the original medieval stone church."
+              },
+              {
+                "name": "Half-timbering",
+                "type": "architectural_style",
+                "confidence": 0.95,
+                "notes": "Visible on the gables of the church's eastern sections."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "A whitewashed medieval stone church with red clay tile roofs and a dark central spire stands amid a churchyard filled with numerous headstones. A large leafless deciduous tree dominates the foreground, its branches spreading against a clear blue sky. Spring flowers appear at some graves, and the terrain is gently sloped around the building. The scene conveys a peaceful rural Norwegian churchyard setting.",
+            "photographer_location": [
+              {
+                "name": "Kirkebakken 4, 3184 Borre, Horten, Vestfold og Telemark, Norway",
+                "confidence": 0.95
+              },
+              {
+                "name": "Borre Churchyard (kirkegård), Borre, Horten, Norway",
+                "confidence": 0.9
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Borre Church (Borre kirke), Kirkebakken 4, 3184 Borre, Horten, Vestfold og Telemark, Norway",
+                "confidence": 0.85
+              },
+              {
+                "name": "Borre, Horten Municipality, Vestfold og Telemark, Norway",
+                "confidence": 0.9
+              }
+            ],
+            "entities": [
+              {
+                "name": "Borre Church (Borre kirke)",
+                "type": "religious_site",
+                "confidence": 0.85,
+                "notes": "Medieval parish church in Borre, Horten Municipality, Norway; whitewashed stone with red tile roofs and a central spire."
+              },
+              {
+                "name": "Borre Church (building)",
+                "type": "building",
+                "confidence": 0.85,
+                "notes": "Stone construction; surrounded by a historic churchyard cemetery."
+              },
+              {
+                "name": "Borre Churchyard (kirkegård)",
+                "type": "cultural_site",
+                "confidence": 0.8,
+                "notes": "Graveyard surrounding the church with numerous headstones and maintained plots."
+              },
+              {
+                "name": "Romanesque medieval stone church architecture",
+                "type": "architectural_style",
+                "confidence": 0.6,
+                "notes": "Typical Norwegian medieval stone church form with simple masonry walls and later roof/spire elements."
+              },
+              {
+                "name": "Borre",
+                "type": "district",
+                "confidence": 0.85,
+                "notes": "Village/area in Horten Municipality where the church is located."
+              },
+              {
+                "name": "Horten Municipality",
+                "type": "district",
+                "confidence": 0.7,
+                "notes": "Administrative area in Vestfold og Telemark county, Norway."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "A small white church with red-tiled roofs sits in a grassy churchyard filled with tombstones. A large, leafless tree dominates the foreground, its branches sprawling across the frame. The church features gabled roofs with timber-framing accents and a modest steeple in the background. The scene is lit by bright daylight with a clear blue sky. The location appears to be Borre Church in Borre, Vestfold, Norway, with nearby cemetery plots and local museum buildings in the vicinity.",
+            "photographer_location": [
+              {
+                "name": "Kirkebakken 4, 3184 Borre, Norway",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Borre Church (Borre kyrkje), Borre, Vestfold, Norway",
+                "confidence": 0.92
+              }
+            ],
+            "entities": [
+              {
+                "name": "Borre Church",
+                "type": "religious_site",
+                "confidence": 0.92,
+                "notes": "Medieval parish church in Borre, Vestfold, Norway; white plaster walls with red tile roof; visible steeple"
+              }
+            ],
+            "landmark_name": null
+          }
+        }
+      ]
+    },
+    {
+      "image_filename": "61.jpg",
+      "use_gps": false,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "A rural church and its surrounding cemetery. The church is a whitewashed masonry/stone parish church with multiple steep red/orange clay-tile gable roofs and dark timbered gable trim (half‑timber style brackets). Tall, narrow rectangular windows are painted green. There is no high tower; the building has a compact, low profile typical of many Nordic parish churches. Numerous gravestones and headstones stand on a neatly kept lawn around the church. A large leafless deciduous tree dominates the foreground. In the distance a flag on a pole appears to be the Norwegian flag. Clear daylight with blue sky suggests a bright, cold season day.",
+            "photographer_location": [
+              {
+                "name": "Within the churchyard/cemetery grounds, a few dozen meters from the church building, near a large deciduous tree",
+                "confidence": 0.9
+              },
+              {
+                "name": "Norway (inferred from the flag), rural setting",
+                "confidence": 0.6
+              },
+              {
+                "name": "Jæren/Rogaland region of Norway (tentative)",
+                "confidence": 0.3
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "The whitewashed parish church at the center of the cemetery grounds",
+                "confidence": 0.95
+              },
+              {
+                "name": "Scandinavia, likely Norway",
+                "confidence": 0.6
+              }
+            ],
+            "entities": [
+              {
+                "name": "Unidentified whitewashed parish church (Scandinavia)",
+                "type": "building",
+                "confidence": 0.7,
+                "notes": "Whitewashed masonry, red/orange clay-tile gabled roofs, dark timber gable decoration; likely a Lutheran parish church of Nordic vernacular character (19th–20th century appearance)."
+              },
+              {
+                "name": "Churchyard / cemetery",
+                "type": "religious_site",
+                "confidence": 0.95,
+                "notes": "Gravestones on maintained lawn surrounding the church."
+              },
+              {
+                "name": "Norwegian national flag (on distant flagpole)",
+                "type": "other",
+                "confidence": 0.55,
+                "notes": "Red field with blue cross bordered in white suggests Norway."
+              },
+              {
+                "name": "Scandinavian vernacular church architecture",
+                "type": "architectural_style",
+                "confidence": 0.6,
+                "notes": "Whitewashed stone walls with red tile roof common in rural Norway/Denmark/Sweden; half‑timber gable trim hints at late 19th–early 20th century influences."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "A village cemetery scene featuring a prominent white chapel-like building with orange-red tile roof and black timber-framed gables, set among numerous headstones and crosses. In the foreground a large, leafless, gnarled tree arches over the graveyard. The gravestones are of varying shapes—upright slabs, curved cenotaphs, some with crosses. The grass is green with a clear blue sky above, suggesting late winter or early spring. The chapel resembles a small rural church or mortuary chapel typical of Central Europe.",
+            "photographer_location": [
+              {
+                "name": "In a cemetery lawn near the headstones, facing the chapel",
+                "confidence": 0.85
+              },
+              {
+                "name": "Village cemetery in Central Europe",
+                "confidence": 0.65
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Chapel in the cemetery (white walls, orange-red tiled roof, black timber-framed gables)",
+                "confidence": 0.85
+              },
+              {
+                "name": "Chapel within a rural European cemetery",
+                "confidence": 0.6
+              }
+            ],
+            "entities": [
+              {
+                "name": "Cemetery",
+                "type": "public_space",
+                "confidence": 0.9,
+                "notes": null
+              },
+              {
+                "name": "Gravestones / tombstones",
+                "type": "monument",
+                "confidence": 0.9,
+                "notes": "Various shapes; upright slabs and crosses"
+              },
+              {
+                "name": "Cross on gravestone",
+                "type": "monument",
+                "confidence": 0.7,
+                "notes": "Latin cross motif"
+              },
+              {
+                "name": "Chapel in cemetery / church building",
+                "type": "religious_site",
+                "confidence": 0.9,
+                "notes": "Small white chapel with orange-red tile roof and timber-framed gables"
+              },
+              {
+                "name": "Chapel (architectural style: half-timbered / Fachwerk)",
+                "type": "architectural_style",
+                "confidence": 0.65,
+                "notes": "Timber-framed woodwork visible on gables"
+              },
+              {
+                "name": "Gnarled leafless tree",
+                "type": "natural_feature",
+                "confidence": 0.65,
+                "notes": "Dominant tree in foreground with sprawling branches"
+              },
+              {
+                "name": "Blue sky",
+                "type": "natural_feature",
+                "confidence": 0.4,
+                "notes": "Clear weather; part of the scene but not a landmark"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A sunny, eye-level outdoor shot taken within a cemetery, featuring the eastern end of Skejby Church (Skejby Kirke) in Aarhus, Denmark. The church is characterized by its whitewashed walls and red-tiled saddle roofs. A distinctive architectural feature is the black-and-white half-timbering (bindingsværk) visible on the upper gables of both the lower chancel section in the foreground and the higher nave section rising behind it. To the left, a large, leafless tree with a complex network of branches frames the composition, casting shadows across the green lawn. The foreground is populated by neat rows of dark granite gravestones, some adorned with yellow flowers. In the background, beyond the churchyard boundary, residential houses and a flagpole flying the Danish flag (Dannebrog) are visible under a clear blue sky.",
+            "photographer_location": [
+              {
+                "name": "Skejby Kirkegård",
+                "confidence": 1.0
+              },
+              {
+                "name": "Skejby, Aarhus",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Skejby Kirke",
+                "confidence": 1.0
+              },
+              {
+                "name": "Skejby, Aarhus",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "Skejby Kirke",
+                "type": "religious_site",
+                "confidence": 1.0,
+                "notes": "Medieval Danish village church with Romanesque origins and later half-timbered gable additions."
+              },
+              {
+                "name": "Skejby Kirkegård",
+                "type": "public_space",
+                "confidence": 1.0,
+                "notes": "Cemetery surrounding the church."
+              },
+              {
+                "name": "Half-timbering",
+                "type": "architectural_style",
+                "confidence": 0.95,
+                "notes": "Visible on the church gables."
+              },
+              {
+                "name": "Gravestones",
+                "type": "monument",
+                "confidence": 1.0,
+                "notes": null
+              },
+              {
+                "name": "Tree",
+                "type": "natural_feature",
+                "confidence": 1.0,
+                "notes": "Large, leafless deciduous tree."
+              },
+              {
+                "name": "Dannebrog",
+                "type": "other",
+                "confidence": 0.9,
+                "notes": "Danish flag visible in the background."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A view of Sankt Jørgens Kirke (St. George's Church) in Svendborg, Denmark, captured from within its surrounding cemetery. The church is characterized by its white-washed masonry walls, steep red-tiled roofs, and distinctive black-and-white half-timbered (Fachwerk) gables on several of its sections. A large, sprawling tree without leaves dominates the left foreground, its intricate branch network silhouetted against a clear, bright blue sky. The cemetery features numerous granite headstones of varying designs arranged on a green lawn. In the distant background, a Danish flag (Dannebrog) is visible flying above nearby residential buildings.",
+            "photographer_location": [
+              {
+                "name": "Sankt Jørgens Kirkegård, Svendborg, Denmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Svendborg",
+                "confidence": 0.99
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Sankt Jørgens Kirke, Svendborg, Denmark",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "Sankt Jørgens Kirke",
+                "type": "religious_site",
+                "confidence": 1.0,
+                "notes": "A medieval church in Svendborg, Denmark, notable for its unique half-timbered gables added in the 18th century."
+              },
+              {
+                "name": "Svendborg",
+                "type": "district",
+                "confidence": 1.0,
+                "notes": "A town on the island of Funen in south-central Denmark."
+              },
+              {
+                "name": "Danish village church architecture",
+                "type": "architectural_style",
+                "confidence": 0.95,
+                "notes": "Traditional style characterized by white-washed walls and red tile roofs."
+              },
+              {
+                "name": "Half-timbering",
+                "type": "architectural_style",
+                "confidence": 1.0,
+                "notes": "A method of building with exposed wood framing, seen here on the church gables."
+              },
+              {
+                "name": "Sankt Jørgens Kirkegård",
+                "type": "cultural_site",
+                "confidence": 0.95,
+                "notes": "The cemetery surrounding St. George's Church."
+              },
+              {
+                "name": "Dannebrog",
+                "type": "other",
+                "confidence": 0.9,
+                "notes": "The national flag of Denmark, visible in the background."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "A tranquil rural churchyard on a clear day. In the foreground stands a large leafless deciduous tree with twisting branches against a deep blue sky. Beyond it is a small whitewashed stone church with steep orange-red clay tile gabled roofs and dark timber detailing on the gable ends. The windows are modest and rectangular. The surrounding grounds are a well‑kept cemetery with numerous upright and slanted headstones, some with fresh yellow flowers. A flagpole in the distance appears to carry a red flag with a dark blue cross bordered in white, suggesting Norway. The season looks like early spring, with grass green and trees still bare.",
+            "photographer_location": [
+              {
+                "name": "Churchyard of a rural church",
+                "confidence": 0.9
+              },
+              {
+                "name": "Scandinavia (general)",
+                "confidence": 0.6
+              },
+              {
+                "name": "Norway (unconfirmed)",
+                "confidence": 0.35
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Unidentified rural church and its cemetery (churchyard)",
+                "confidence": 0.9
+              },
+              {
+                "name": "Scandinavia (general)",
+                "confidence": 0.6
+              },
+              {
+                "name": "Norway (unconfirmed)",
+                "confidence": 0.35
+              }
+            ],
+            "entities": [
+              {
+                "name": "Unidentified rural Christian church",
+                "type": "building",
+                "confidence": 0.85,
+                "notes": "Whitewashed masonry walls, steep red tile roofs, timbered gable details."
+              },
+              {
+                "name": "Church (religious site)",
+                "type": "religious_site",
+                "confidence": 0.85,
+                "notes": "Active parish church suggested by maintained grounds."
+              },
+              {
+                "name": "Cemetery / churchyard",
+                "type": "cultural_site",
+                "confidence": 0.95,
+                "notes": "Numerous headstones and flowered graves surrounding the church."
+              },
+              {
+                "name": "Scandinavian vernacular church architecture",
+                "type": "architectural_style",
+                "confidence": 0.6,
+                "notes": "Whitewashed stone, red clay tile roofs, simple massing; common in Norway/Denmark/Sweden."
+              },
+              {
+                "name": "Large deciduous tree",
+                "type": "natural_feature",
+                "confidence": 0.8,
+                "notes": "Leafless, likely early spring."
+              },
+              {
+                "name": "Norwegian flag (possible)",
+                "type": "other",
+                "confidence": 0.3,
+                "notes": "Distant flag appears red with a blue cross edged in white; indicates probable location in Norway."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "The image shows a small white church with a red-tiled, pitched roof and dark timber-framed gables, set in a churchyard. The surrounding area is a grassy cemetery populated with numerous tombstones of varying shapes, including upright headstones and obelisks. A large, leafless tree with twisting branches dominates the left side of the frame, extending over the scene and contrasting against a clear blue sky. In the foreground and midground, several gravestones and monuments are visible, some with flowers or decorations. The overall atmosphere is tranquil and solemn, typical of a rural church cemetery.",
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "Church",
+                "type": "religious_site",
+                "confidence": 0.8,
+                "notes": "Small white church with red-tiled roof and timber-framed gables."
+              },
+              {
+                "name": "Cemetery",
+                "type": "public_space",
+                "confidence": 0.6,
+                "notes": "Grave markers and monuments surrounding the church."
+              }
+            ],
+            "landmark_name": null
+          }
+        }
+      ]
+    }
+  ]
+}

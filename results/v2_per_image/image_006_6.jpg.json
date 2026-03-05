@@ -1,0 +1,142 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "6.jpg",
+      "timestamp": "2026-01-28T06:18:35.483718",
+      "processing_time_seconds": 47.742444,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Painted Ladies, San Francisco Skyline, San Francisco, USA",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive Victorian style and location in San Francisco make the identification of the Painted Ladies and the city skyline highly confident.",
+            "detailed_description": "The image features the Painted Ladies, a row of Victorian houses located in San Francisco, USA. These houses are known for their colorful facades and intricate architectural details typical of the late 19th century. In the background, the San Francisco skyline is visible, including notable buildings such as the Transamerica Pyramid and Salesforce Tower. The scene is set on a clear day, with a grassy foreground and people enjoying the view.",
+            "identification": {
+              "primary": [
+                "Painted Ladies",
+                "San Francisco Skyline"
+              ],
+              "location": "San Francisco, USA",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Painted Ladies",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "San Francisco Skyline",
+                "type": "viewpoint",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Victorian_architecture",
+              "19th_century",
+              "urban",
+              "San_Francisco",
+              "skyline"
+            ],
+            "location": "San Francisco, USA",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Painted Ladies\", \"San Francisco Skyline\"],\n        \"location\": \"San Francisco, USA\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Painted Ladies\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"San Francisco Skyline\",\n            \"type\": \"viewpoint\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Victorian_architecture\", \"19th_century\", \"urban\", \"San_Francisco\", \"skyline\"],\n    \"description\": \"The image features the Painted Ladies, a row of Victorian houses located in San Francisco, USA. These houses are known for their colorful facades and intricate architectural details typical of the late 19th century. In the background, the San Francisco skyline is visible, including notable buildings such as the Transamerica Pyramid and Salesforce Tower. The scene is set on a clear day, with a grassy foreground and people enjoying the view.\",\n    \"reasoning\": \"The distinctive Victorian style and location in San Francisco make the identification of the Painted Ladies and the city skyline highly confident.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 8.652703285217285
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image features a row of Victorian-style houses in the foreground, known for their ornate detailing and vibrant colors. These houses exhibit characteristics typical of late 19th-century architecture, including steeply pitched roofs, decorative trim, and bay windows. Each house is painted in different pastel shades, creating a visually striking contrast against the clear blue sky. The architectural style is characterized by intricate woodwork and a variety of textures, showcasing elements such",
+            "description": "The image features a row of Victorian-style houses in the foreground, known for their ornate detailing and vibrant colors. These houses exhibit characteristics typical of late 19th-century architecture, including steeply pitched roofs, decorative trim, and bay windows. Each house is painted in different pastel shades, creating a visually striking contrast against the clear blue sky. The architectural style is characterized by intricate woodwork and a variety of textures, showcasing elements such",
+            "architectural_style": "Victorian",
+            "search_backends_used": [],
+            "processing_time_seconds": 39.08784365653992
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Apartment",
+          "confidence": 0.5035444498062134,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Apartment",
+            "artist_name": null,
+            "museum_or_location": null,
+            "art_style": null,
+            "art_era": null,
+            "confidence": 0.5035444498062134,
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.5598375201225281
+              },
+              {
+                "name": "Apartment",
+                "score": 0.5035444498062134
+              },
+              {
+                "name": "House",
+                "score": 0.4972999095916748
+              },
+              {
+                "name": "Public space",
+                "score": 0.48991718888282776
+              },
+              {
+                "name": "Building",
+                "score": 0.43149998784065247
+              }
+            ],
+            "processing_time_seconds": 11.253671169281006
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/6.jpg"
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "11.jpg",
+      "timestamp": "2026-01-28T01:05:40.632665",
+      "processing_time_seconds": 65.784588,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "25 de Abril Bridge, Lisbon cityscape, Lisbon, Portugal",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive suspension bridge and the architectural style of the buildings are characteristic of Lisbon, making the identification confident.",
+            "detailed_description": "The image shows a panoramic view of Lisbon, Portugal, with the prominent 25 de Abril Bridge in the background. The bridge is a suspension bridge, similar in design to the Golden Gate Bridge, and spans the Tagus River. The foreground features a variety of traditional Portuguese architecture with colorful buildings and terracotta roofs, typical of Lisbon's urban landscape.",
+            "identification": {
+              "primary": [
+                "25 de Abril Bridge",
+                "Lisbon cityscape"
+              ],
+              "location": "Lisbon, Portugal",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "25 de Abril Bridge",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Lisbon cityscape",
+                "type": "viewpoint",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "bridge",
+              "cityscape",
+              "Lisbon",
+              "Portugal",
+              "architecture"
+            ],
+            "location": "Lisbon, Portugal",
+            "type": "viewpoint",
+            "search_range_meters": 2000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"25 de Abril Bridge\", \"Lisbon cityscape\"],\n        \"location\": \"Lisbon, Portugal\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"25 de Abril Bridge\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Lisbon cityscape\",\n            \"type\": \"viewpoint\",\n            \"confidence\": 0.90\n        }\n    ],\n    \"tags\": [\"bridge\", \"cityscape\", \"Lisbon\", \"Portugal\", \"architecture\"],\n    \"description\": \"The image shows a panoramic view of Lisbon, Portugal, with the prominent 25 de Abril Bridge in the background. The bridge is a suspension bridge, similar in design to the Golden Gate Bridge, and spans the Tagus River. The foreground features a variety of traditional Portuguese architecture with colorful buildings and terracotta roofs, typical of Lisbon's urban landscape.\",\n    \"reasoning\": \"The distinctive suspension bridge and the architectural style of the buildings are characteristic of Lisbon, making the identification confident.\",\n    \"type\": \"viewpoint\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 17.458459854125977
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "25 de Abril Bridge, Lisbon cityscape, Lisbon, Portugal",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the Lisbon cityscape, known for its colorful buildings and the prominent 25 de Abril Bridge. The architectural styles and urban density align with Lisbon's characteristics. The bridge's distinctive towers and cables are consistent with the 25 de Abril Bridge, a notable landmark in Lisbon. Search results strongly support this identification.",
+            "identification": {
+              "primary": [
+                "25 de Abril Bridge",
+                "Lisbon cityscape"
+              ],
+              "location": "Lisbon, Portugal",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "25 de Abril Bridge",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Lisbon cityscape",
+                "type": "viewpoint",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "traditional European",
+              "suspension bridge",
+              "terracotta roofs",
+              "pastel-colored buildings",
+              "Lisbon",
+              "urban landscape"
+            ],
+            "sources_used": [
+              "editorialstage.thediscoverer.com"
+            ],
+            "all_candidates": [
+              "*Source*: ([editorialstage.thediscoverer.com]())",
+              "*Source*: ([editorialstage.thediscoverer.com]())",
+              "*Source*: ([editorialstage.thediscoverer.com]())",
+              "*Source*: ([editorialstage.thediscoverer.com]())",
+              "*Source*: ([editorialstage.thediscoverer.com]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 2000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image presents a panoramic view of a cityscape characterized by a dense array of buildings with varying architectural styles. The foreground features a collection of colorful buildings, predominantly in shades of pastel pink, yellow, and cream, with terracotta roofs. These structures exhibit a mix of architectural styles, including traditional European designs with ornate facades and decorative elements. The buildings are closely packed, creating a vibrant urban tapestry. In the background, ",
+            "description": "The image presents a panoramic view of a cityscape characterized by a dense array of buildings with varying architectural styles. The foreground features a collection of colorful buildings, predominantly in shades of pastel pink, yellow, and cream, with terracotta roofs. These structures exhibit a mix of architectural styles, including traditional European designs with ornate facades and decorative elements. The buildings are closely packed, creating a vibrant urban tapestry. In the background, ",
+            "architectural_style": "Traditional European",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 48.32323384284973
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Urban area",
+          "confidence": 0.9773275256156921,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Urban area",
+                "score": 0.9773275256156921
+              },
+              {
+                "source": "label",
+                "name": "Roof",
+                "score": 0.9719129204750061
+              },
+              {
+                "source": "label",
+                "name": "Residential area",
+                "score": 0.9700343012809753
+              },
+              {
+                "source": "label",
+                "name": "City",
+                "score": 0.9662021994590759
+              },
+              {
+                "source": "object",
+                "name": "Building",
+                "score": 0.579703152179718
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.5162636637687683
+              },
+              {
+                "name": "Apartment",
+                "score": 0.49251893162727356
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.41854989528656006
+              },
+              {
+                "name": "Tower",
+                "score": 0.4081000089645386
+              },
+              {
+                "name": "Building",
+                "score": 0.36809998750686646
+              }
+            ],
+            "objects": [
+              {
+                "name": "Building",
+                "score": 0.579703152179718
+              },
+              {
+                "name": "Building",
+                "score": 0.5544084906578064
+              },
+              {
+                "name": "Building",
+                "score": 0.5120403170585632
+              }
+            ],
+            "labels": [
+              {
+                "name": "Daytime",
+                "score": 0.9816599488258362
+              },
+              {
+                "name": "Urban area",
+                "score": 0.9773275256156921
+              },
+              {
+                "name": "Roof",
+                "score": 0.9719129204750061
+              },
+              {
+                "name": "Residential area",
+                "score": 0.9700343012809753
+              },
+              {
+                "name": "City",
+                "score": 0.9662021994590759
+              }
+            ],
+            "processing_time_seconds": 25.425498008728027
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/11.jpg"
+    }
+  ]
+}

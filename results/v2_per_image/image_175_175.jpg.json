@@ -1,0 +1,993 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "175.jpg",
+      "timestamp": "2026-01-28T03:35:58.651741",
+      "processing_time_seconds": 79.307221,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 59.96685,
+        "gps_longitude": 10.719188888888889,
+        "location": {
+          "formatted_address": "XP89+PM Oslo Municipality, Norway",
+          "city": null,
+          "county": "Oslo Municipality",
+          "country": "Norway"
+        },
+        "datetime_original": "2025:06:29 04:37:38",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Forest landscape, Oslo Municipality, Norway",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Oslo Municipality, Norway, which is known for its lush forests. The presence of tall trees and the sunlight suggests a typical forest landscape in this region.",
+            "detailed_description": "The image depicts a serene forest landscape during sunrise. Tall trees with dense foliage are visible, and the sunlight filters through the branches, creating a warm glow. The ground is covered with greenery and a narrow path leads through the forest. The scene suggests a peaceful natural setting typical of Norwegian woodlands.",
+            "identification": {
+              "primary": [
+                "Forest landscape"
+              ],
+              "location": "Oslo Municipality, Norway",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Forest landscape with sunrise",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "forest",
+              "nature",
+              "sunrise",
+              "Norway",
+              "landscape"
+            ],
+            "location": "Oslo Municipality, Norway",
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Forest landscape\"],\n        \"location\": \"Oslo Municipality, Norway\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Forest landscape with sunrise\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"forest\", \"nature\", \"sunrise\", \"Norway\", \"landscape\"],\n    \"description\": \"The image depicts a serene forest landscape during sunrise. Tall trees with dense foliage are visible, and the sunlight filters through the branches, creating a warm glow. The ground is covered with greenery and a narrow path leads through the forest. The scene suggests a peaceful natural setting typical of Norwegian woodlands.\",\n    \"reasoning\": \"The location metadata indicates Oslo Municipality, Norway, which is known for its lush forests. The presence of tall trees and the sunlight suggests a typical forest landscape in this region.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 59.96685,
+              "longitude": 10.719188888888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "XP89+PM Oslo Municipality, Norway",
+              "city": null,
+              "county": "Oslo Municipality",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:06:29 04:37:38",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 25.82754683494568
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Scandinavian woodland in Oslo Municipality, Oslo Municipality, Norway",
+          "confidence": 0.7999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches typical features of Scandinavian woodlands, particularly in Norway, with tall pine trees and dense undergrowth. The location metadata confirms the photo was taken in Oslo Municipality, supporting the identification of a local forest scene. The search results did not provide specific names, but the description aligns well with general characteristics of forests in this region.",
+            "identification": {
+              "primary": [
+                "Scandinavian woodland in Oslo Municipality"
+              ],
+              "location": "Oslo Municipality, Norway",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Tall pine trees",
+                "type": "natural_feature",
+                "confidence": 0.95
+              },
+              {
+                "name": "Dense undergrowth with ferns and shrubs",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Natural trail",
+                "type": "viewpoint",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "forest",
+              "Scandinavian",
+              "natural_trail",
+              "pine_trees",
+              "Oslo"
+            ],
+            "sources_used": [
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Nordmarka forest in Oslo",
+                "specificity_level": "very_specific",
+                "confidence": 0.75,
+                "reasoning": "Nordmarka is a well-known forest area in Oslo that matches the description of tall pine trees and natural trails."
+              },
+              {
+                "guess": "General Scandinavian forest",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The description fits many forests in Scandinavia, characterized by pine trees and dense undergrowth."
+              },
+              {
+                "guess": "Forest near Oslo",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.65,
+                "reasoning": "Given the location metadata, a forest near Oslo is a plausible identification."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.85,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a serene forest scene during what appears to be early morning or late afternoon, as indicated by the warm, low sunlight filtering through the trees. The forest is dense with tall pine trees, characterized by their straight trunks and sparse branches, typical of Scandinavian woodlands. The ground is covered with lush green undergrowth, including ferns and small shrubs, creating a rich carpet of foliage. The sunlight creates a striking visual effect, casting long shadows and illu",
+            "description": "The image depicts a serene forest scene during what appears to be early morning or late afternoon, as indicated by the warm, low sunlight filtering through the trees. The forest is dense with tall pine trees, characterized by their straight trunks and sparse branches, typical of Scandinavian woodlands. The ground is covered with lush green undergrowth, including ferns and small shrubs, creating a rich carpet of foliage. The sunlight creates a striking visual effect, casting long shadows and illu",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 59.96685,
+              "longitude": 10.719188888888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "XP89+PM Oslo Municipality, Norway",
+              "city": null,
+              "county": "Oslo Municipality",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:06:29 04:37:38",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 52.76724720001221
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Leaf",
+          "confidence": 0.9816373586654663,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Leaf",
+                "score": 0.9816373586654663
+              },
+              {
+                "source": "label",
+                "name": "Tree",
+                "score": 0.9789047837257385
+              },
+              {
+                "source": "label",
+                "name": "Natural environment",
+                "score": 0.9768205881118774
+              },
+              {
+                "source": "label",
+                "name": "Branch",
+                "score": 0.9742806553840637
+              },
+              {
+                "source": "label",
+                "name": "Wood",
+                "score": 0.9707384705543518
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Old-growth forest",
+                "score": 0.39876773953437805
+              },
+              {
+                "name": "Tree",
+                "score": 0.33381736278533936
+              },
+              {
+                "name": "Forest",
+                "score": 0.3073999881744385
+              },
+              {
+                "name": "Sunlight",
+                "score": 0.2807159721851349
+              },
+              {
+                "name": "M-tree",
+                "score": 0.24699999392032623
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.8094887733459473
+              },
+              {
+                "name": "Pants",
+                "score": 0.7970566749572754
+              },
+              {
+                "name": "Backpack",
+                "score": 0.7495449781417847
+              },
+              {
+                "name": "Person",
+                "score": 0.6916986107826233
+              },
+              {
+                "name": "Outerwear",
+                "score": 0.6400375366210938
+              }
+            ],
+            "labels": [
+              {
+                "name": "Leaf",
+                "score": 0.9816373586654663
+              },
+              {
+                "name": "Tree",
+                "score": 0.9789047837257385
+              },
+              {
+                "name": "Natural environment",
+                "score": 0.9768205881118774
+              },
+              {
+                "name": "Branch",
+                "score": 0.9742806553840637
+              },
+              {
+                "name": "Wood",
+                "score": 0.9707384705543518
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 59.96685,
+              "longitude": 10.719188888888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "XP89+PM Oslo Municipality, Norway",
+              "city": null,
+              "county": "Oslo Municipality",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:06:29 04:37:38",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 28.92180585861206
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Oslo Municipality, Norway",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Oslo Municipality, Norway",
+            "coordinates": {
+              "latitude": 59.96685,
+              "longitude": 10.719188888888889
+            },
+            "search_range_meters": 2000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Bøttetreet",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 13,
+                  "vicinity": "XP99+QP, Oslo",
+                  "place_id": "ChIJ71VIGQBzQUYRmw7yWuuL2RM",
+                  "location": {
+                    "lat": 59.9693943,
+                    "lng": 10.7193213
+                  }
+                },
+                {
+                  "name": "Nye Gaustad Gruve",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 4,
+                  "vicinity": "XP97+34",
+                  "place_id": "ChIJ23YZWxFzQUYRm8xKZrT0I2A",
+                  "location": {
+                    "lat": 59.9676315,
+                    "lng": 10.7128135
+                  }
+                },
+                {
+                  "name": "Sognsvannskiosken",
+                  "types": [
+                    "cafe",
+                    "meal_takeaway",
+                    "bakery",
+                    "tourist_attraction",
+                    "restaurant",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 182,
+                  "vicinity": "Sognsveien 232, Oslo",
+                  "place_id": "ChIJib_aANFoQUYRExvnjD5Ewy8",
+                  "location": {
+                    "lat": 59.96908440000001,
+                    "lng": 10.7312856
+                  }
+                },
+                {
+                  "name": "Foss",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 18,
+                  "vicinity": "XP84+4C, Oslo",
+                  "place_id": "ChIJ0Q2H1ERzQUYRyTES37SFnLc",
+                  "location": {
+                    "lat": 59.9653718,
+                    "lng": 10.7060155
+                  }
+                },
+                {
+                  "name": "Vettakollen",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 97,
+                  "vicinity": "Vettaliveien 19-25, Oslo",
+                  "place_id": "ChIJLwwmlHZyQUYRdn8z27WcKDE",
+                  "location": {
+                    "lat": 59.9680108,
+                    "lng": 10.6994173
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Gaustad museum",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 10,
+                  "vicinity": "Sognsvannsveien 21, Oslo",
+                  "place_id": "ChIJfyo-FfBtQUYRO9NF1xHfq9A",
+                  "location": {
+                    "lat": 59.95102679999999,
+                    "lng": 10.7185671
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Vettakollen Pizzeria",
+                  "types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 253,
+                  "vicinity": "Skogryggveien 39, Oslo",
+                  "place_id": "ChIJaU6ofYltQUYR-R4wXMpxp3E",
+                  "location": {
+                    "lat": 59.95985640000001,
+                    "lng": 10.6959262
+                  }
+                },
+                {
+                  "name": "Sognsvannskiosken",
+                  "types": [
+                    "cafe",
+                    "tourist_attraction",
+                    "meal_takeaway",
+                    "bakery",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 182,
+                  "vicinity": "Sognsveien 232, Oslo",
+                  "place_id": "ChIJib_aANFoQUYRExvnjD5Ewy8",
+                  "location": {
+                    "lat": 59.96908440000001,
+                    "lng": 10.7312856
+                  }
+                },
+                {
+                  "name": "ZiOPizza Kringsjå",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 30,
+                  "vicinity": "Olav M. Troviks vei 72, Oslo",
+                  "place_id": "ChIJVazP-vlzQUYRnDss4BAXwtc",
+                  "location": {
+                    "lat": 59.9639343,
+                    "lng": 10.733231
+                  }
+                },
+                {
+                  "name": "Kafé Årstidene",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 5,
+                  "vicinity": "Gaustad sykehus, Oslo",
+                  "place_id": "ChIJc7IiIsptQUYR8arTDuVpgQA",
+                  "location": {
+                    "lat": 59.94983939999999,
+                    "lng": 10.7191915
+                  }
+                },
+                {
+                  "name": "Flamenco Pizza",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Nordbergveien 43c, Oslo",
+                  "place_id": "ChIJH5RADndvQUYR5NIpwjDRJg0",
+                  "location": {
+                    "lat": 59.95652949999999,
+                    "lng": 10.7462069
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Kringsjå studentby Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Sogn, Oslo",
+                  "place_id": "ChIJl5Xd3ppzQUYR-nDFNN58uS8",
+                  "location": {
+                    "lat": 59.9641026,
+                    "lng": 10.7310137
+                  }
+                },
+                {
+                  "name": "Bench",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 5,
+                  "vicinity": "XPGJ+8X",
+                  "place_id": "ChIJydTiRQBzQUYRYXx2DEwXwLQ",
+                  "location": {
+                    "lat": 59.9758034,
+                    "lng": 10.732443
+                  }
+                },
+                {
+                  "name": "Damefallet",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 20,
+                  "vicinity": "Hamborgveien 9B, Oslo",
+                  "place_id": "ChIJ5f7XXP9tQUYRw9KSuxRXME0",
+                  "location": {
+                    "lat": 59.9592474,
+                    "lng": 10.735853
+                  }
+                },
+                {
+                  "name": "Solvang kolonihager avdeling 2",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "Sogn, Oslo",
+                  "place_id": "ChIJmYHkOBBtQUYRvBTyyrJEkUs",
+                  "location": {
+                    "lat": 59.9545196,
+                    "lng": 10.7275801
+                  }
+                },
+                {
+                  "name": "Honnørplassen",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1,
+                  "vicinity": "Oslo",
+                  "place_id": "ChIJvy75BVhtQUYRaeIcHX-FexU",
+                  "location": {
+                    "lat": 59.95262569999999,
+                    "lng": 10.7260841
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Nordberg congregation",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 40,
+                  "vicinity": "Kringsjågrenda 1, Oslo",
+                  "place_id": "ChIJWc2DxwFyQUYR_BqMI_hQXok",
+                  "location": {
+                    "lat": 59.9631216,
+                    "lng": 10.7426474
+                  }
+                },
+                {
+                  "name": "Tårnhuset",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Oslo",
+                  "place_id": "ChIJsaqWxIdtQUYRKcpE4Lpdtb0",
+                  "location": {
+                    "lat": 59.94933930000001,
+                    "lng": 10.7193682
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Oslo",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Oslo",
+                  "place_id": "ChIJOfBn8mFuQUYRmh4j019gkn4",
+                  "location": {
+                    "lat": 59.9121746,
+                    "lng": 10.7312704
+                  }
+                },
+                {
+                  "name": "Olympiatoppen Sportshotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 208,
+                  "vicinity": "Sognsveien 228, Oslo",
+                  "place_id": "ChIJ3QL44AVyQUYRWdoTbbT55J0",
+                  "location": {
+                    "lat": 59.9683333,
+                    "lng": 10.7313889
+                  }
+                },
+                {
+                  "name": "Vettakollen Pizzeria",
+                  "types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 253,
+                  "vicinity": "Skogryggveien 39, Oslo",
+                  "place_id": "ChIJaU6ofYltQUYR-R4wXMpxp3E",
+                  "location": {
+                    "lat": 59.95985640000001,
+                    "lng": 10.6959262
+                  }
+                },
+                {
+                  "name": "Bad, Park og Idrett - medlemsorganisasjon",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 2,
+                  "vicinity": "Sognsveien 220, Oslo",
+                  "place_id": "ChIJ934Y0gVyQUYRPK_c6y11WuU",
+                  "location": {
+                    "lat": 59.96666860000001,
+                    "lng": 10.7311326
+                  }
+                },
+                {
+                  "name": "Sogn Frivillighetsentral",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 11,
+                  "vicinity": "Minister Ditleffs vei 22, Oslo",
+                  "place_id": "ChIJyXh5HgFyQUYRdHtQGi6A-BU",
+                  "location": {
+                    "lat": 59.9628113,
+                    "lng": 10.7382741
+                  }
+                }
+              ]
+            },
+            "total_places_found": 23,
+            "photo_timestamp": "2025:06:29 04:37:38",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.5041232109069824
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/175.jpg"
+    },
+    {
+      "image_filename": "175.jpg",
+      "timestamp": "2026-01-28T03:37:18.008213",
+      "processing_time_seconds": 60.159034,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Forest landscape",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of tall trees and dense foliage suggests a forest environment. The lighting and composition indicate a sunset, enhancing the natural beauty of the scene.",
+            "detailed_description": "The image depicts a forest landscape during sunset. Tall trees, likely coniferous, are visible with sunlight filtering through the branches, creating a warm glow. The ground is covered with green foliage, and a narrow path leads through the forest. The scene conveys a serene and natural atmosphere, typical of a wooded area.",
+            "identification": {
+              "primary": [
+                "Forest landscape"
+              ],
+              "location": null,
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Forest",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "nature",
+              "forest",
+              "trees",
+              "sunset",
+              "outdoors"
+            ],
+            "location": null,
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Forest landscape\"],\n        \"location\": null,\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Forest\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"nature\", \"forest\", \"trees\", \"sunset\", \"outdoors\"],\n    \"description\": \"The image depicts a forest landscape during sunset. Tall trees, likely coniferous, are visible with sunlight filtering through the branches, creating a warm glow. The ground is covered with green foliage, and a narrow path leads through the forest. The scene conveys a serene and natural atmosphere, typical of a wooded area.\",\n    \"reasoning\": \"The presence of tall trees and dense foliage suggests a forest environment. The lighting and composition indicate a sunset, enhancing the natural beauty of the scene.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": []\n}",
+            "processing_time_seconds": 8.65887999534607
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Serene forest scene during sunset",
+          "confidence": 0.7,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The search results do not provide a specific location or landmark name, but they confirm the general description of a forest scene with coniferous trees and sunset lighting. The high scores from image repositories suggest this is a common type of nature photography rather than a specific location.",
+            "identification": {
+              "primary": [
+                "Serene forest scene during sunset"
+              ],
+              "location": null,
+              "confidence": 0.75
+            },
+            "artifacts": [
+              {
+                "name": "Tall coniferous trees",
+                "type": "natural_feature",
+                "confidence": 0.85
+              },
+              {
+                "name": "Sunset light",
+                "type": "natural_feature",
+                "confidence": 0.8
+              },
+              {
+                "name": "Dense foliage",
+                "type": "natural_feature",
+                "confidence": 0.75
+              }
+            ],
+            "tags": [
+              "forest",
+              "sunset",
+              "coniferous",
+              "natural_feature",
+              "tranquil"
+            ],
+            "sources_used": [
+              "unsplash.com",
+              "pixabay.com"
+            ],
+            "all_candidates": [
+              "*URL*: ([music.apple.com]())",
+              "*URL*: ([unsplash.com]())",
+              "*URL*: ([pixabay.com]())",
+              "*URL*: ([pixabay.com]())",
+              "*URL*: ([artrageouscynthia.com]())"
+            ],
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Forest in Pacific Northwest, USA",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "The description matches typical forest scenes found in the Pacific Northwest, known for its coniferous trees and lush undergrowth."
+              },
+              {
+                "guess": "Boreal forest in Canada",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.55,
+                "reasoning": "Boreal forests are characterized by coniferous trees and dense foliage, similar to the description."
+              },
+              {
+                "guess": "Generic forest scene",
+                "specificity_level": "very_general",
+                "confidence": 0.75,
+                "reasoning": "The description fits a common forest scene without specific location indicators."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.75,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a serene forest scene during sunset. Tall trees, primarily coniferous, dominate the landscape, with their branches extending towards the sky. The sun is setting in the background, casting a warm, golden light that filters through the dense foliage, creating a tranquil atmosphere. The forest floor is covered with lush green undergrowth, including ferns and small shrubs, adding to the rich texture of the scene. The path winding through the forest is narrow and slightly worn, sugg",
+            "description": "The image depicts a serene forest scene during sunset. Tall trees, primarily coniferous, dominate the landscape, with their branches extending towards the sky. The sun is setting in the background, casting a warm, golden light that filters through the dense foliage, creating a tranquil atmosphere. The forest floor is covered with lush green undergrowth, including ferns and small shrubs, adding to the rich texture of the scene. The path winding through the forest is narrow and slightly worn, sugg",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 51.49622702598572
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Leaf",
+          "confidence": 0.9816373586654663,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Leaf",
+                "score": 0.9816373586654663
+              },
+              {
+                "source": "label",
+                "name": "Tree",
+                "score": 0.9789047837257385
+              },
+              {
+                "source": "label",
+                "name": "Natural environment",
+                "score": 0.9768205881118774
+              },
+              {
+                "source": "label",
+                "name": "Branch",
+                "score": 0.9742806553840637
+              },
+              {
+                "source": "label",
+                "name": "Wood",
+                "score": 0.9707384705543518
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Old-growth forest",
+                "score": 0.39876773953437805
+              },
+              {
+                "name": "Tree",
+                "score": 0.33381736278533936
+              },
+              {
+                "name": "Forest",
+                "score": 0.3073999881744385
+              },
+              {
+                "name": "Sunlight",
+                "score": 0.2807159721851349
+              },
+              {
+                "name": "M-tree",
+                "score": 0.24699999392032623
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.8094887733459473
+              },
+              {
+                "name": "Pants",
+                "score": 0.7970566749572754
+              },
+              {
+                "name": "Backpack",
+                "score": 0.7495449781417847
+              },
+              {
+                "name": "Person",
+                "score": 0.6916986107826233
+              },
+              {
+                "name": "Outerwear",
+                "score": 0.6400375366210938
+              }
+            ],
+            "labels": [
+              {
+                "name": "Leaf",
+                "score": 0.9816373586654663
+              },
+              {
+                "name": "Tree",
+                "score": 0.9789047837257385
+              },
+              {
+                "name": "Natural environment",
+                "score": 0.9768205881118774
+              },
+              {
+                "name": "Branch",
+                "score": 0.9742806553840637
+              },
+              {
+                "name": "Wood",
+                "score": 0.9707384705543518
+              }
+            ],
+            "processing_time_seconds": 28.62859272956848
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/175.jpg"
+    }
+  ]
+}

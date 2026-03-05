@@ -1,0 +1,761 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "150.jpg",
+      "timestamp": "2026-01-28T02:38:41.419794",
+      "processing_time_seconds": 68.738165,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 28.560455555555556,
+        "gps_longitude": 34.52643888888889,
+        "location": {
+          "formatted_address": "HG6G+5H Dahab, Egypt",
+          "city": null,
+          "county": "Dahab",
+          "country": "Egypt"
+        },
+        "datetime_original": "2025:02:22 12:35:33",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Sinai Mountains, Red Sea coastline, Dahab, Egypt",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Dahab, Egypt, which is known for its proximity to the Sinai Mountains and the Red Sea. The visual characteristics match these natural features.",
+            "detailed_description": "The image shows a desert landscape with the Sinai Mountains in the background and the Red Sea coastline on the right. The terrain is arid and rocky, typical of the region. The coastline features clear blue waters, contrasting with the dry, mountainous landscape.",
+            "identification": {
+              "primary": [
+                "Sinai Mountains",
+                "Red Sea coastline"
+              ],
+              "location": "Dahab, Egypt",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Sinai Mountains",
+                "type": "natural_feature",
+                "confidence": 0.95
+              },
+              {
+                "name": "Red Sea coastline",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "mountains",
+              "coastline",
+              "desert",
+              "Egypt"
+            ],
+            "location": "Dahab, Egypt",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Sinai Mountains\", \"Red Sea coastline\"],\n        \"location\": \"Dahab, Egypt\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Sinai Mountains\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Red Sea coastline\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"mountains\", \"coastline\", \"desert\", \"Egypt\"],\n    \"description\": \"The image shows a desert landscape with the Sinai Mountains in the background and the Red Sea coastline on the right. The terrain is arid and rocky, typical of the region. The coastline features clear blue waters, contrasting with the dry, mountainous landscape.\",\n    \"reasoning\": \"The location metadata indicates Dahab, Egypt, which is known for its proximity to the Sinai Mountains and the Red Sea. The visual characteristics match these natural features.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 28.560455555555556,
+              "longitude": 34.52643888888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "HG6G+5H Dahab, Egypt",
+              "city": null,
+              "county": "Dahab",
+              "country": "Egypt"
+            },
+            "photo_timestamp": "2025:02:22 12:35:33",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 30.98152995109558
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "**Blue Hole**: A world-famous diving site, the Blue Hole is a submarine sinkhole approximately 6 kilometers north of Dahab. It features a maximum depth of just over 130 meters and is accessible via a ",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a scenic coastal landscape in Dahab, Egypt, characterized by a rugged terrain and a vibrant blue sky. The foreground features a sandy path running parallel to the coastline, where several camels are being ridden. The camels are adorned with traditional saddles and blankets, showcasing a blend of earthy tones and patterns typical of the region. The coastline is marked by a narrow strip of pebbled beach, leading to the deep blue waters of the sea, which are gently lapping against",
+            "description": "The image depicts a scenic coastal landscape in Dahab, Egypt, characterized by a rugged terrain and a vibrant blue sky. The foreground features a sandy path running parallel to the coastline, where several camels are being ridden. The camels are adorned with traditional saddles and blankets, showcasing a blend of earthy tones and patterns typical of the region. The coastline is marked by a narrow strip of pebbled beach, leading to the deep blue waters of the sea, which are gently lapping against",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 28.560455555555556,
+              "longitude": 34.52643888888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "HG6G+5H Dahab, Egypt",
+              "city": null,
+              "county": "Dahab",
+              "country": "Egypt"
+            },
+            "photo_timestamp": "2025:02:22 12:35:33",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 37.03045105934143
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Recreation",
+          "confidence": 0.8420073986053467,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Recreation",
+                "score": 0.8420073986053467
+              },
+              {
+                "source": "label",
+                "name": "Sand",
+                "score": 0.8355196714401245
+              },
+              {
+                "source": "label",
+                "name": "Vacation",
+                "score": 0.8312180042266846
+              },
+              {
+                "source": "label",
+                "name": "Geology",
+                "score": 0.8220463991165161
+              },
+              {
+                "source": "label",
+                "name": "Fun",
+                "score": 0.8099050521850586
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Sand",
+                "score": 0.29622992873191833
+              }
+            ],
+            "objects": [
+              {
+                "name": "Camel",
+                "score": 0.7908034920692444
+              },
+              {
+                "name": "Clothing",
+                "score": 0.7462366819381714
+              },
+              {
+                "name": "Top",
+                "score": 0.7158989906311035
+              },
+              {
+                "name": "Person",
+                "score": 0.7043461203575134
+              },
+              {
+                "name": "Person",
+                "score": 0.6957506537437439
+              }
+            ],
+            "labels": [
+              {
+                "name": "Recreation",
+                "score": 0.8420073986053467
+              },
+              {
+                "name": "Sand",
+                "score": 0.8355196714401245
+              },
+              {
+                "name": "Vacation",
+                "score": 0.8312180042266846
+              },
+              {
+                "name": "Geology",
+                "score": 0.8220463991165161
+              },
+              {
+                "name": "Fun",
+                "score": 0.8099050521850586
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 28.560455555555556,
+              "longitude": 34.52643888888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "HG6G+5H Dahab, Egypt",
+              "city": null,
+              "county": "Dahab",
+              "country": "Egypt"
+            },
+            "photo_timestamp": "2025:02:22 12:35:33",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 18.074707984924316
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Dahab, Egypt",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Dahab, Egypt",
+            "coordinates": {
+              "latitude": 28.560455555555556,
+              "longitude": 34.52643888888889
+            },
+            "search_range_meters": 5000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Canyon (Dive site)",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1343,
+                  "vicinity": "قسم سانت كاترين",
+                  "place_id": "ChIJZbua9KhKqxURYpThmzzrhlI",
+                  "location": {
+                    "lat": 28.55436,
+                    "lng": 34.5213126
+                  }
+                },
+                {
+                  "name": "Nomades sur la plage du Dahab",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 3,
+                  "vicinity": "HGCP+379",
+                  "place_id": "ChIJd0mQUwA1qxURap6NjZkIgjk",
+                  "location": {
+                    "lat": 28.5701742,
+                    "lng": 34.5357332
+                  }
+                },
+                {
+                  "name": "Blue Hole of Dahab",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 2499,
+                  "vicinity": "HGFP+3Q6, Blue Hole Road, Saint Catherine",
+                  "place_id": "ChIJaT1Yp4c1qxURL7vxxs-19Tk",
+                  "location": {
+                    "lat": 28.5722769,
+                    "lng": 34.5372978
+                  }
+                },
+                {
+                  "name": "Divers memorial",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 21,
+                  "vicinity": "HGFQ+79",
+                  "place_id": "ChIJiZAkRlQ1qxURtEC74OI35dc",
+                  "location": {
+                    "lat": 28.5731787,
+                    "lng": 34.5384628
+                  }
+                },
+                {
+                  "name": "Bedouin Moon Mountain",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Bedouin moon hotel, Blue Hole Road",
+                  "place_id": "ChIJE_mBrhRLqxURpHPcRiH1h10",
+                  "location": {
+                    "lat": 28.5453263,
+                    "lng": 34.5154944
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Sea Sun Restaurant",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 1.4,
+                  "user_ratings_total": 8,
+                  "vicinity": "53 طريق بلو هول, عسلة, Dahab",
+                  "place_id": "ChIJ4yHYyKlKqxUR3C2rcSwJ-wo",
+                  "location": {
+                    "lat": 28.549455,
+                    "lng": 34.516309
+                  }
+                },
+                {
+                  "name": "Bedouin Moon Restaurant",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 9,
+                  "vicinity": "GG96+7F6, طريق بلو هول, عسلة, Dahab",
+                  "place_id": "ChIJ3VuuB9NKqxURyBCOE3Sp7iA",
+                  "location": {
+                    "lat": 28.518162,
+                    "lng": 34.511149
+                  }
+                },
+                {
+                  "name": "Punto ristoro",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 2.7,
+                  "user_ratings_total": 3,
+                  "vicinity": "HG4C+QW, Dahab",
+                  "place_id": "ChIJy_d-BgA1qxURvF0Ouyaa7K0",
+                  "location": {
+                    "lat": 28.5569308,
+                    "lng": 34.522148
+                  }
+                },
+                {
+                  "name": "Accampamento",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 1,
+                  "user_ratings_total": 3,
+                  "vicinity": "HG4C+QW, Dahab",
+                  "place_id": "ChIJy5uQegA1qxUR2WHJDuqWoxE",
+                  "location": {
+                    "lat": 28.556866,
+                    "lng": 34.522189
+                  }
+                },
+                {
+                  "name": "Canyon Restaurant",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 71,
+                  "vicinity": "Dahab",
+                  "place_id": "ChIJL71uF1o1qxURTvL2G_ZYmlE",
+                  "location": {
+                    "lat": 28.5538064,
+                    "lng": 34.5193276
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "National Park Office",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 25,
+                  "vicinity": "Saint Catherine, Blue Hole Road, Dahab",
+                  "place_id": "ChIJwSSmx6Q1qxURbvJzPlu0jyE",
+                  "location": {
+                    "lat": 28.56807259999999,
+                    "lng": 34.5331547
+                  }
+                },
+                {
+                  "name": "Gran canyon",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 11,
+                  "vicinity": "HF5V+JWJ",
+                  "place_id": "ChIJlTppLgDLVBQRXhRtMj9r-Ks",
+                  "location": {
+                    "lat": 28.559076,
+                    "lng": 34.4947572
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Mosque",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "HGFQ+84",
+                  "place_id": "ChIJxTk57TI1qxUR9q0ymft8VCg",
+                  "location": {
+                    "lat": 28.5733353,
+                    "lng": 34.5377813
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Dahab",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Dahab",
+                  "place_id": "ChIJX1itvylLqxURvxkzeY0jZaw",
+                  "location": {
+                    "lat": 28.5091355,
+                    "lng": 34.5136344
+                  }
+                },
+                {
+                  "name": "Sea Sun Dahab",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 2.9,
+                  "user_ratings_total": 374,
+                  "vicinity": "GGX9+X22, Blue Hole Road, عسلة, Dahab",
+                  "place_id": "ChIJPUp0uKlKqxURudXvyfMK8Z4",
+                  "location": {
+                    "lat": 28.5498905,
+                    "lng": 34.51750940000001
+                  }
+                },
+                {
+                  "name": "Miami Beach Resort",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 2.9,
+                  "user_ratings_total": 604,
+                  "vicinity": "طريق بلو هول, عسلة, Dahab",
+                  "place_id": "ChIJ53ltHq5KqxUR32U3kaDgIvU",
+                  "location": {
+                    "lat": 28.54066650000001,
+                    "lng": 34.5152893
+                  }
+                },
+                {
+                  "name": "Sea Sun Restaurant",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 1.4,
+                  "user_ratings_total": 8,
+                  "vicinity": "53 طريق بلو هول, عسلة, Dahab",
+                  "place_id": "ChIJ4yHYyKlKqxUR3C2rcSwJ-wo",
+                  "location": {
+                    "lat": 28.549455,
+                    "lng": 34.516309
+                  }
+                },
+                {
+                  "name": "English Bar",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "53 طريق بلو هول, عسلة, Dahab",
+                  "place_id": "ChIJ4yHYyKlKqxURq2TzpA0ctwQ",
+                  "location": {
+                    "lat": 28.549455,
+                    "lng": 34.516309
+                  }
+                }
+              ]
+            },
+            "total_places_found": 18,
+            "photo_timestamp": "2025:02:22 12:35:33",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.4837319850921631
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/150.jpg"
+    },
+    {
+      "image_filename": "150.jpg",
+      "timestamp": "2026-01-28T02:39:50.199493",
+      "processing_time_seconds": 61.312972,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Camel ride along the Red Sea, Sinai Peninsula, Egypt",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of camels, desert mountains, and the coastline suggests a location typical of the Sinai Peninsula, known for such landscapes and activities.",
+            "detailed_description": "The image depicts a camel ride along the coastline of the Red Sea, with desert mountains visible in the background. The terrain is arid and rocky, typical of the Sinai Peninsula region in Egypt. The sea is calm, and the sky is clear, indicating a sunny day.",
+            "identification": {
+              "primary": [
+                "Camel ride along the Red Sea"
+              ],
+              "location": "Sinai Peninsula, Egypt",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Red Sea coastline",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Desert mountains",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "natural_landscape",
+              "desert",
+              "coastline",
+              "camel_ride",
+              "Red_Sea"
+            ],
+            "location": "Sinai Peninsula, Egypt",
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Camel ride along the Gulf of Aqaba",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "The Gulf of Aqaba is part of the Red Sea and features similar landscapes and activities."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Camel ride along the Red Sea\"],\n        \"location\": \"Sinai Peninsula, Egypt\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Red Sea coastline\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Desert mountains\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"natural_landscape\", \"desert\", \"coastline\", \"camel_ride\", \"Red_Sea\"],\n    \"description\": \"The image depicts a camel ride along the coastline of the Red Sea, with desert mountains visible in the background. The terrain is arid and rocky, typical of the Sinai Peninsula region in Egypt. The sea is calm, and the sky is clear, indicating a sunny day.\",\n    \"reasoning\": \"The presence of camels, desert mountains, and the coastline suggests a location typical of the Sinai Peninsula, known for such landscapes and activities.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Camel ride along the Gulf of Aqaba\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The Gulf of Aqaba is part of the Red Sea and features similar landscapes and activities.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 27.536664962768555
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([anantara.com]())",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a coastal desert landscape with a group of camels being ridden along a sandy path. The foreground features a camel with a rider dressed in casual attire, including a scarf and sneakers. The camels are walking parallel to a shoreline, where the deep blue sea contrasts with the arid, rocky terrain. The sea is calm, with gentle waves lapping against the shore, which is composed of small rocks and pebbles. In the background, a range of rugged mountains rises sharply, displaying a v",
+            "description": "The image depicts a coastal desert landscape with a group of camels being ridden along a sandy path. The foreground features a camel with a rider dressed in casual attire, including a scarf and sneakers. The camels are walking parallel to a shoreline, where the deep blue sea contrasts with the arid, rocky terrain. The sea is calm, with gentle waves lapping against the shore, which is composed of small rocks and pebbles. In the background, a range of rugged mountains rises sharply, displaying a v",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 33.77164697647095
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Recreation",
+          "confidence": 0.8420073986053467,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Recreation",
+                "score": 0.8420073986053467
+              },
+              {
+                "source": "label",
+                "name": "Sand",
+                "score": 0.8355196714401245
+              },
+              {
+                "source": "label",
+                "name": "Vacation",
+                "score": 0.8312180042266846
+              },
+              {
+                "source": "label",
+                "name": "Geology",
+                "score": 0.8220463991165161
+              },
+              {
+                "source": "label",
+                "name": "Fun",
+                "score": 0.8099050521850586
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Sand",
+                "score": 0.29622992873191833
+              }
+            ],
+            "objects": [
+              {
+                "name": "Camel",
+                "score": 0.7908034920692444
+              },
+              {
+                "name": "Clothing",
+                "score": 0.7462366819381714
+              },
+              {
+                "name": "Top",
+                "score": 0.7158989906311035
+              },
+              {
+                "name": "Person",
+                "score": 0.7043461203575134
+              },
+              {
+                "name": "Person",
+                "score": 0.6957506537437439
+              }
+            ],
+            "labels": [
+              {
+                "name": "Recreation",
+                "score": 0.8420073986053467
+              },
+              {
+                "name": "Sand",
+                "score": 0.8355196714401245
+              },
+              {
+                "name": "Vacation",
+                "score": 0.8312180042266846
+              },
+              {
+                "name": "Geology",
+                "score": 0.8220463991165161
+              },
+              {
+                "name": "Fun",
+                "score": 0.8099050521850586
+              }
+            ],
+            "processing_time_seconds": 17.432430028915405
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/150.jpg"
+    }
+  ]
+}

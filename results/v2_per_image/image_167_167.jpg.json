@@ -1,0 +1,950 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "167.jpg",
+      "timestamp": "2026-01-28T03:16:41.611831",
+      "processing_time_seconds": 61.600168,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 38.948186111111106,
+        "gps_longitude": -9.414691666666666,
+        "location": {
+          "formatted_address": "En 247 (Pta do Miradouro), 2655 Carvoeira, Portugal",
+          "city": "Carvoeira",
+          "county": "Mafra",
+          "country": "Portugal"
+        },
+        "datetime_original": "2025:06:04 14:52:09",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Coastal view of Ericeira, Ericeira, Portugal",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Carvoeira, Mafra, Portugal, which is near Ericeira. The coastal features and townscape are consistent with Ericeira's known landscape.",
+            "detailed_description": "The image shows a coastal view of Ericeira, Portugal. Visible are rugged cliffs leading down to the ocean, with waves crashing against the shore. In the background, there is a townscape with white buildings and red roofs typical of Portuguese coastal architecture. The scene captures the natural beauty and urban elements of this popular seaside destination.",
+            "identification": {
+              "primary": [
+                "Coastal view of Ericeira"
+              ],
+              "location": "Ericeira, Portugal",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Coastal cliffs and townscape",
+                "type": "natural_feature | townscape",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "coastline",
+              "cliffs",
+              "ocean",
+              "townscape",
+              "Portugal"
+            ],
+            "location": "Ericeira, Portugal",
+            "type": "viewpoint",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Coastal view of a different town in Portugal",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The coastal features are common in various Portuguese seaside towns, but Ericeira is a likely match given the location metadata."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Coastal view of Ericeira\"],\n        \"location\": \"Ericeira, Portugal\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Coastal cliffs and townscape\",\n            \"type\": \"natural_feature | townscape\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"coastline\", \"cliffs\", \"ocean\", \"townscape\", \"Portugal\"],\n    \"description\": \"The image shows a coastal view of Ericeira, Portugal. Visible are rugged cliffs leading down to the ocean, with waves crashing against the shore. In the background, there is a townscape with white buildings and red roofs typical of Portuguese coastal architecture. The scene captures the natural beauty and urban elements of this popular seaside destination.\",\n    \"reasoning\": \"The location metadata indicates Carvoeira, Mafra, Portugal, which is near Ericeira. The coastal features and townscape are consistent with Ericeira's known landscape.\",\n    \"type\": \"viewpoint\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Coastal view of a different town in Portugal\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The coastal features are common in various Portuguese seaside towns, but Ericeira is a likely match given the location metadata.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": 38.948186111111106,
+              "longitude": -9.414691666666666
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "En 247 (Pta do Miradouro), 2655 Carvoeira, Portugal",
+              "city": "Carvoeira",
+              "county": "Mafra",
+              "country": "Portugal"
+            },
+            "photo_timestamp": "2025:06:04 14:52:09",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 23.025859117507935
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "A picturesque coastal town located about 35 kilometers northwest of Lisbon in the municipality of Mafra. Historically, it was an important fishing port and played a significant role in Portugal’s mari",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image captures a coastal landscape with a prominent view of a rugged cliffside and the expansive ocean. The cliffs are characterized by their steep, rocky formations, with patches of greenery and vegetation clinging to the surfaces. The ocean below is calm, with gentle waves lapping against the base of the cliffs. In the distance, a breakwater or pier extends into the sea, providing a sense of depth and perspective. Beyond the pier, a town is visible, featuring a dense cluster of buildings w",
+            "description": "The image captures a coastal landscape with a prominent view of a rugged cliffside and the expansive ocean. The cliffs are characterized by their steep, rocky formations, with patches of greenery and vegetation clinging to the surfaces. The ocean below is calm, with gentle waves lapping against the base of the cliffs. In the distance, a breakwater or pier extends into the sea, providing a sense of depth and perspective. Beyond the pier, a town is visible, featuring a dense cluster of buildings w",
+            "architectural_style": "Traditional Portuguese",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 38.948186111111106,
+              "longitude": -9.414691666666666
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "En 247 (Pta do Miradouro), 2655 Carvoeira, Portugal",
+              "city": "Carvoeira",
+              "county": "Mafra",
+              "country": "Portugal"
+            },
+            "photo_timestamp": "2025:06:04 14:52:09",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 37.07007718086243
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Geological formation",
+          "confidence": 0.8981939554214478,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Geological formation",
+                "score": 0.8981939554214478
+              },
+              {
+                "source": "label",
+                "name": "Terrain",
+                "score": 0.8913838267326355
+              },
+              {
+                "source": "label",
+                "name": "Bedrock",
+                "score": 0.8434546589851379
+              },
+              {
+                "source": "web",
+                "name": "Tree",
+                "score": 0.3391161859035492
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Tree",
+                "score": 0.3391161859035492
+              },
+              {
+                "name": "M-tree",
+                "score": 0.259799987077713
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9891188144683838
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9814658164978027
+              },
+              {
+                "name": "Geological formation",
+                "score": 0.8981939554214478
+              },
+              {
+                "name": "Terrain",
+                "score": 0.8913838267326355
+              },
+              {
+                "name": "Bedrock",
+                "score": 0.8434546589851379
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 38.948186111111106,
+              "longitude": -9.414691666666666
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "En 247 (Pta do Miradouro), 2655 Carvoeira, Portugal",
+              "city": "Carvoeira",
+              "county": "Mafra",
+              "country": "Portugal"
+            },
+            "photo_timestamp": "2025:06:04 14:52:09",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 12.37019968032837
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Carvoeira, Mafra, Portugal",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Carvoeira, Mafra, Portugal",
+            "coordinates": {
+              "latitude": 38.948186111111106,
+              "longitude": -9.414691666666666
+            },
+            "search_range_meters": 2000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Miradouro da praia da Foz do Lizandro",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 6,
+                  "vicinity": "Ericeira",
+                  "place_id": "ChIJ78_hQgAnHw0RT5EQF6-AKbU",
+                  "location": {
+                    "lat": 38.94526080000001,
+                    "lng": -9.4145288
+                  }
+                },
+                {
+                  "name": "Mural \"Cangrejo\"",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Ericeira",
+                  "place_id": "ChIJWx-CIgAnHw0RDZnQr7SbOi8",
+                  "location": {
+                    "lat": 38.9536427,
+                    "lng": -9.4121329
+                  }
+                },
+                {
+                  "name": "Miradouro Praia Sul",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 127,
+                  "vicinity": "Rua Comandante Filipe Freire 3 2655, Ericeira",
+                  "place_id": "ChIJsyEGX5UnHw0RjQIaSGnbWeM",
+                  "location": {
+                    "lat": 38.9552342,
+                    "lng": -9.4148
+                  }
+                },
+                {
+                  "name": "Chair with an ocean view",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Rua Porto Revez 3A, Ericeira",
+                  "place_id": "ChIJ8ykhOwAnHw0RFeHz89ysClc",
+                  "location": {
+                    "lat": 38.9601936,
+                    "lng": -9.4177188
+                  }
+                },
+                {
+                  "name": "Vila da Ericeira",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 5,
+                  "vicinity": "Rua Manuel Ortigão Burnay 1B, Ericeira",
+                  "place_id": "ChIJfWtHAQAnHw0REA9b2prtmPg",
+                  "location": {
+                    "lat": 38.9603617,
+                    "lng": -9.4168335
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Casa de Cultura Jaime Lobo e Silva",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 12,
+                  "vicinity": "Rua Mendes Leal 13, Ericeira",
+                  "place_id": "ChIJfbjTOwAnHw0Re_8pieHOAtY",
+                  "location": {
+                    "lat": 38.9630823,
+                    "lng": -9.417609
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Naonda Bar::Restaurante",
+                  "types": [
+                    "restaurant",
+                    "bar",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 716,
+                  "vicinity": "Rua do Passadiço, 2, Foz do Lizandro nr, Carvoeira",
+                  "place_id": "ChIJQ7oDyH8nHw0RmxiweuSXhkw",
+                  "location": {
+                    "lat": 38.94169899999999,
+                    "lng": -9.414021
+                  }
+                },
+                {
+                  "name": "7 Praias da Baleia",
+                  "types": [
+                    "restaurant",
+                    "bar",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 509,
+                  "vicinity": "Rua Belo Horizonte 8-10, Ericeira",
+                  "place_id": "ChIJQVwsvnQnHw0Rbhc---pf_l4",
+                  "location": {
+                    "lat": 38.9595659,
+                    "lng": -9.4160706
+                  }
+                },
+                {
+                  "name": "Pizzeria Pão d'Alho",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 936,
+                  "vicinity": "Rua Doutor Eduardo Burnay 18A, Ericeira",
+                  "place_id": "ChIJFxCMzHQnHw0R3ydLJTOfUu0",
+                  "location": {
+                    "lat": 38.96054229999999,
+                    "lng": -9.415147099999999
+                  }
+                },
+                {
+                  "name": "Brunch me",
+                  "types": [
+                    "restaurant",
+                    "bar",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 656,
+                  "vicinity": "Praça dos Navegantes 8, Ericeira",
+                  "place_id": "ChIJCQ5pCgwnHw0RgxbyATpUwa8",
+                  "location": {
+                    "lat": 38.9607989,
+                    "lng": -9.4164693
+                  }
+                },
+                {
+                  "name": "O Caniço",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1203,
+                  "vicinity": "Largo Santa Marta 4, Ericeira",
+                  "place_id": "ChIJ65P5ugwnHw0RWHy285MhFrI",
+                  "location": {
+                    "lat": 38.961483,
+                    "lng": -9.418129700000001
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Parque Urbano Carvoeira",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Rua da Mina, Carvoeira",
+                  "place_id": "ChIJqUDAUwAnHw0RsB8D4wzgKDU",
+                  "location": {
+                    "lat": 38.9496704,
+                    "lng": -9.408493499999997
+                  }
+                },
+                {
+                  "name": "Miradouro da Mina",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Rua da Ramalha 1 2, Carvoeira",
+                  "place_id": "ChIJOdXumDsnHw0RtbpePm_FIvY",
+                  "location": {
+                    "lat": 38.9522684,
+                    "lng": -9.403863699999999
+                  }
+                },
+                {
+                  "name": "Parque de Santa Marta",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 806,
+                  "vicinity": "Largo Santa Marta, Ericeira",
+                  "place_id": "ChIJK2SQxgwnHw0Rezg38UUygGE",
+                  "location": {
+                    "lat": 38.9615884,
+                    "lng": -9.418844299999998
+                  }
+                },
+                {
+                  "name": "Valbom bike park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.5,
+                  "user_ratings_total": 4,
+                  "vicinity": "Rua da Botelha 9, Carvoeira",
+                  "place_id": "ChIJnWL7FgDZHg0RA7Ec1pROMiQ",
+                  "location": {
+                    "lat": 38.9344646,
+                    "lng": -9.409640200000002
+                  }
+                },
+                {
+                  "name": "Parque Aventura Forte da Carvoeira",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Estrada da Adega da Cruz 57, Carvoeira",
+                  "place_id": "ChIJHcILKADZHg0RFBpfm073QGc",
+                  "location": {
+                    "lat": 38.94051820000001,
+                    "lng": -9.398278999999997
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Dário’s Ocean Spirit",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Rua Bairro João David Soares 1, Ericeira",
+                  "place_id": "ChIJAZjgBwAnHw0R-dD8ZQvedOk",
+                  "location": {
+                    "lat": 38.95716050000001,
+                    "lng": -9.4143939
+                  }
+                },
+                {
+                  "name": "Capela de São Julião",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 110,
+                  "vicinity": "Largo da Igreja, Carvoeira",
+                  "place_id": "ChIJ3Zu2hIPYHg0RrBjZ-QA5gYg",
+                  "location": {
+                    "lat": 38.93534919999999,
+                    "lng": -9.419694800000002
+                  }
+                },
+                {
+                  "name": "Salão do Reino das Testemunhas de Jeová",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 4,
+                  "vicinity": "Travessa do Toquim 4A, Ericeira",
+                  "place_id": "ChIJr-RaXW0nHw0Rs6RKEf2MQF0",
+                  "location": {
+                    "lat": 38.9620519,
+                    "lng": -9.4147035
+                  }
+                },
+                {
+                  "name": "Igreja de Santa Marta",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 43,
+                  "vicinity": "Largo Santa Marta 21, Ericeira",
+                  "place_id": "ChIJQbPfvQwnHw0RpF_6-LGaFl4",
+                  "location": {
+                    "lat": 38.9618577,
+                    "lng": -9.418303499999999
+                  }
+                },
+                {
+                  "name": "Church of Our Lady of O",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 99,
+                  "vicinity": "Estrada da Senhora do Ó 58, Carvoeira",
+                  "place_id": "ChIJr76V0I0nHw0RspYyoKlAy3c",
+                  "location": {
+                    "lat": 38.95015069999999,
+                    "lng": -9.394498700000002
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Hélder Alfaiate Galeria de Arte",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 9,
+                  "vicinity": "Rua da Fonte do Cabo 40 A, Ericeira",
+                  "place_id": "ChIJtay1fwsnHw0RxjWo9lBdZ6Y",
+                  "location": {
+                    "lat": 38.963185,
+                    "lng": -9.416710999999998
+                  }
+                },
+                {
+                  "name": "Pointless Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Rua da Fonte do Cabo 54, Ericeira",
+                  "place_id": "ChIJxYTPQ1UnHw0Rt8XCNnMM84k",
+                  "location": {
+                    "lat": 38.9642242,
+                    "lng": -9.417107800000002
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Ericeira",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Ericeira",
+                  "place_id": "ChIJl2_9rQ4nHw0RTKoQDGEMLHQ",
+                  "location": {
+                    "lat": 38.9681277,
+                    "lng": -9.4073004
+                  }
+                },
+                {
+                  "name": "Hotel Vila Galé Ericeira",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 3592,
+                  "vicinity": "Largo dos Navegantes 1, Ericeira",
+                  "place_id": "ChIJs9rXhZ00GQ0Rn7_PLu5XG3Q",
+                  "location": {
+                    "lat": 38.960474,
+                    "lng": -9.417036999999999
+                  }
+                },
+                {
+                  "name": "Chill In Surfhouse Ericeira",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 81,
+                  "vicinity": "Rua Bairro João David Soares 8, Ericeira",
+                  "place_id": "ChIJXzyPxnUnHw0RS1V6dnlLIZ4",
+                  "location": {
+                    "lat": 38.9568528,
+                    "lng": -9.413552900000001
+                  }
+                },
+                {
+                  "name": "Três Bandeiras Co-living",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 31,
+                  "vicinity": "Praceta da Revolta 18, Carvoeira",
+                  "place_id": "ChIJuyq6_33YHg0RxjJEvFbdPQU",
+                  "location": {
+                    "lat": 38.9352396,
+                    "lng": -9.411623999999998
+                  }
+                },
+                {
+                  "name": "Ericeira Surf Camp",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 120,
+                  "vicinity": "Rua Doutor Eduardo Burnay 36, Ericeira",
+                  "place_id": "ChIJIbfLaQsnHw0RzSpdoU2TKq4",
+                  "location": {
+                    "lat": 38.9621543,
+                    "lng": -9.4163322
+                  }
+                }
+              ]
+            },
+            "total_places_found": 28,
+            "photo_timestamp": "2025:06:04 14:52:09",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 1.2505700588226318
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/167.jpg"
+    },
+    {
+      "image_filename": "167.jpg",
+      "timestamp": "2026-01-28T03:17:43.247092",
+      "processing_time_seconds": 59.844156,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Coastal view with cityscape, Peniche, Portugal",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The coastal cliffs and cityscape suggest a location known for its maritime environment. The style and layout of the city buildings are consistent with Peniche, Portugal.",
+            "detailed_description": "The image shows a coastal view with rugged cliffs in the foreground and a cityscape in the background. The city appears to be Peniche, Portugal, known for its coastal scenery and maritime activities. The cliffs are characteristic of the region's natural landscape, and the city buildings are visible along the shoreline.",
+            "identification": {
+              "primary": [
+                "Coastal view with cityscape"
+              ],
+              "location": "Peniche, Portugal",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Coastal cliffs",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "City buildings",
+                "type": "landmark",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "coastline",
+              "urban",
+              "natural_feature",
+              "Portugal"
+            ],
+            "location": "Peniche, Portugal",
+            "type": "viewpoint",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Nazare, Portugal",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "Nazare is another coastal city in Portugal with similar features, but the layout and visible structures align more closely with Peniche."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Coastal view with cityscape\"],\n        \"location\": \"Peniche, Portugal\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Coastal cliffs\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"City buildings\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"coastline\", \"urban\", \"natural_feature\", \"Portugal\"],\n    \"description\": \"The image shows a coastal view with rugged cliffs in the foreground and a cityscape in the background. The city appears to be Peniche, Portugal, known for its coastal scenery and maritime activities. The cliffs are characteristic of the region's natural landscape, and the city buildings are visible along the shoreline.\",\n    \"reasoning\": \"The coastal cliffs and cityscape suggest a location known for its maritime environment. The style and layout of the city buildings are consistent with Peniche, Portugal.\",\n    \"type\": \"viewpoint\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Nazare, Portugal\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"Nazare is another coastal city in Portugal with similar features, but the layout and visible structures align more closely with Peniche.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 25.685349941253662
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Amalfi Coast, Amalfi, Italy",
+          "confidence": 0.7999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the Amalfi Coast, known for its rugged cliffs and Mediterranean architecture. The search results suggest a coastal area with similar features, and the presence of red-tiled roofs aligns with the architectural style of the region.",
+            "identification": {
+              "primary": [
+                "Amalfi Coast"
+              ],
+              "location": "Amalfi, Italy",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Rocky cliffs",
+                "type": "natural_feature",
+                "confidence": 0.95
+              },
+              {
+                "name": "Mediterranean cityscape",
+                "type": "urban_area",
+                "confidence": 0.85
+              },
+              {
+                "name": "Red-tiled roofs",
+                "type": "architectural_feature",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "Mediterranean",
+              "coastal",
+              "urban",
+              "natural_feature",
+              "architecture"
+            ],
+            "sources_used": [
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "*Source*: ([en.wikipedia.org]())",
+              "*Source*: ([en.wikipedia.org]())",
+              "*Source*: ([en.wikipedia.org]())",
+              "*Source*: ([en.wikipedia.org]())",
+              "*Source*: ([en.wikipedia.org]())"
+            ],
+            "type": "landscape",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Cinque Terre",
+                "specificity_level": "very_specific",
+                "confidence": 0.7,
+                "reasoning": "Cinque Terre also features rocky cliffs and Mediterranean architecture, making it a plausible alternative."
+              },
+              {
+                "guess": "Mediterranean coastal city",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The description fits many Mediterranean coastal cities with similar features."
+              },
+              {
+                "guess": "Italian coastline",
+                "specificity_level": "very_general",
+                "confidence": 0.5,
+                "reasoning": "The features are common along various parts of the Italian coastline."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.85,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a coastal landscape with a prominent view of a rocky shoreline and a distant urban area. The foreground features rugged cliffs with patches of vegetation, displaying a mix of earthy tones and green hues. The cliffs descend sharply into the ocean, where waves can be seen crashing against the rocks, creating white foam. The sea is a deep blue, contrasting with the lighter sky above. In the background, a cityscape is visible, characterized by densely packed buildings with red-tile",
+            "description": "The image depicts a coastal landscape with a prominent view of a rocky shoreline and a distant urban area. The foreground features rugged cliffs with patches of vegetation, displaying a mix of earthy tones and green hues. The cliffs descend sharply into the ocean, where waves can be seen crashing against the rocks, creating white foam. The sea is a deep blue, contrasting with the lighter sky above. In the background, a cityscape is visible, characterized by densely packed buildings with red-tile",
+            "architectural_style": "Mediterranean",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 34.15729594230652
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Geological formation",
+          "confidence": 0.8981939554214478,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Geological formation",
+                "score": 0.8981939554214478
+              },
+              {
+                "source": "label",
+                "name": "Terrain",
+                "score": 0.8913838267326355
+              },
+              {
+                "source": "label",
+                "name": "Bedrock",
+                "score": 0.8434546589851379
+              },
+              {
+                "source": "web",
+                "name": "Tree",
+                "score": 0.33883512020111084
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Tree",
+                "score": 0.33883512020111084
+              },
+              {
+                "name": "M-tree",
+                "score": 0.259799987077713
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9891188144683838
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9814658164978027
+              },
+              {
+                "name": "Geological formation",
+                "score": 0.8981939554214478
+              },
+              {
+                "name": "Terrain",
+                "score": 0.8913838267326355
+              },
+              {
+                "name": "Bedrock",
+                "score": 0.8434546589851379
+              }
+            ],
+            "processing_time_seconds": 12.481632947921753
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/167.jpg"
+    }
+  ]
+}

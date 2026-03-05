@@ -1,0 +1,1031 @@
+{
+  "image_id": 38,
+  "filename": "38.jpg",
+  "ground_truth": {
+    "description": "Photo from main street of Brussels near royal palace during military parade at national day. Belgian flags visible. Belgian/European architecture in background.",
+    "photographer_description": "A photo taken from one of the main streets of Brussels near the royal palace during a military parade at their national day. It should be able to get the specific street with metadata, and it should be able to at least guess Belgium without metadata because of visible flags. Impressive if it understands that it is their national day based on the photo. In the background is some typical Belgian/European architecture. Daytime, cloudy, summer.",
+    "locations": [
+      {
+        "name": "Near Royal Palace, Brussels, Brussels-Capital, Belgium",
+        "hierarchy": {
+          "country": "Belgium",
+          "region": "Brussels-Capital",
+          "city": "Brussels",
+          "exact": "Near Royal Palace"
+        }
+      }
+    ],
+    "entities": [
+      {
+        "name": "Hôtel Errera",
+        "type": "building",
+        "notes": "",
+        "max_specificity": 5,
+        "importance": "medium",
+        "added_by": "human_evaluator"
+      },
+      {
+        "name": "Belgian National day parade",
+        "type": "other",
+        "notes": "",
+        "max_specificity": 5,
+        "importance": "high",
+        "added_by": "human_evaluator"
+      },
+      {
+        "name": "Belgian Military vehicles",
+        "type": "other",
+        "notes": "",
+        "max_specificity": 4,
+        "importance": "low",
+        "added_by": "human_evaluator"
+      },
+      {
+        "name": "Belgian flag",
+        "type": "other",
+        "notes": "",
+        "max_specificity": 5,
+        "importance": "low",
+        "added_by": "human_evaluator"
+      },
+      {
+        "name": "European Union flag",
+        "type": "other",
+        "notes": "",
+        "max_specificity": 5,
+        "importance": "low",
+        "added_by": "human_evaluator"
+      },
+      {
+        "name": "Flag of Flanders",
+        "type": "other",
+        "notes": "",
+        "max_specificity": 5,
+        "importance": "low",
+        "added_by": "human_evaluator"
+      }
+    ],
+    "scene_type": [
+      "event",
+      "urban",
+      "parade"
+    ],
+    "key_visual_elements": [
+      "Military parade",
+      "Belgian flags",
+      "European architecture",
+      "National celebration"
+    ],
+    "max_specificity": "Specific",
+    "difficulty": "Medium (flags help identify Belgium)",
+    "notes": "Should guess Belgium from flags. Impressive if understands it's national day. Daytime, cloudy, summer.",
+    "gps_metadata": {
+      "gps_latitude": 50.84353611111111,
+      "gps_longitude": 4.360794444444444,
+      "reverse_geocoded": {
+        "formatted_address": "020 - PALAIS ROYAL / KONINKLIJK PALEIS, 1000 Bruxelles, Belgium",
+        "city": "Bruxelles",
+        "county": "Bruxelles",
+        "country": "Belgium"
+      }
+    },
+    "image_categories": [
+      "landmark",
+      "urban"
+    ],
+    "difficulty_with_gps": "medium",
+    "difficulty_without_gps": "medium"
+  },
+  "model_runs": [
+    {
+      "image_filename": "38.jpg",
+      "use_gps": true,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "A large public parade passes through a neoclassical square in central Brussels. Crowds line metal barriers while police supervise. Several Belgian Armed Forces armored vehicles drive along tram tracks beneath overhead wires: a camouflaged 4x4 scout/command vehicle in front (covered with camouflage netting) and larger wheeled 8x8 armored vehicles with turrets behind. Belgian and EU flags decorate the street. The backdrop is a pale cream neoclassical building with a triangular pediment containing a roundel, slate roof with dormers, and wrought‑iron balcony rails—part of the uniform 18th‑century ensemble around the square. Ornate cast‑iron streetlamps and an overcast sky complete the scene.",
+            "photographer_location": [
+              {
+                "name": "Place Royale / Koningsplein, Brussels",
+                "confidence": 0.78
+              },
+              {
+                "name": "In front of the BELvue Museum / Coudenberg complex, Brussels",
+                "confidence": 0.63
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Armored vehicles parading across Place Royale / Rue Royale tramway, Brussels",
+                "confidence": 0.76
+              },
+              {
+                "name": "Facade of the BELvue Museum (Hôtel Bellevue) by the Coudenberg, Brussels",
+                "confidence": 0.65
+              }
+            ],
+            "entities": [
+              {
+                "name": "BELvue Museum (Hôtel Bellevue)",
+                "type": "building",
+                "confidence": 0.65,
+                "notes": "Neoclassical townhouse on the Coudenberg/Place Royale ensemble; cream facade with triangular pediment."
+              },
+              {
+                "name": "Place Royale / Koningsplein, Brussels",
+                "type": "public_space",
+                "confidence": 0.78,
+                "notes": "Historic neoclassical square with uniform facades and tram lines."
+              },
+              {
+                "name": "Belgian Armed Forces armored vehicles",
+                "type": "other",
+                "confidence": 0.9,
+                "notes": "Military parade units; includes a camouflaged 4x4 scout/command vehicle and larger 8x8 wheeled APC/IFV."
+              },
+              {
+                "name": "MOWAG Piranha IIIC (possible)",
+                "type": "other",
+                "confidence": 0.35,
+                "notes": "Likely model of the 8x8 Belgian wheeled armored vehicle visible behind."
+              },
+              {
+                "name": "Neoclassical architecture",
+                "type": "architectural_style",
+                "confidence": 0.9,
+                "notes": "Late 18th‑century Brussels ensemble around Place Royale, characterized by pediments, pilasters, and light-colored facades."
+              },
+              {
+                "name": "Brussels tramway (overhead wires and tracks)",
+                "type": "infrastructure",
+                "confidence": 0.95,
+                "notes": "Tram route crossing Place Royale/Rue Royale."
+              },
+              {
+                "name": "Belgian National Day military parade (likely)",
+                "type": "other",
+                "confidence": 0.75,
+                "notes": "Annual parade near the Royal Palace on 21 July; flags, police presence, and army vehicles suggest this event."
+              },
+              {
+                "name": "Coudenberg (Palais du Coudenberg archaeological site)",
+                "type": "cultural_site",
+                "confidence": 0.4,
+                "notes": "Historic palace site adjacent to the BELvue Museum; referenced by the building backdrop."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "The photo captures a crowded central Brussels street during a ceremonial parade. A line of armored military vehicles, camouflaged with netting, moves along tram tracks while uniformed personnel and a dense onlookers crowd the sidewalks on both sides. Flags, including the Belgian national banner and the European flag, flap from a cream-colored neoclassical building with balconies on the left. Overhead, tram wires cross the street and ornate lampposts line the sidewalk. The overcast sky and the densely packed spectators give a sense of a formal public event in a historic urban setting, likely in the Mont des Arts / Place Royale area of Brussels.",
+            "photographer_location": [
+              {
+                "name": "Mont des Arts / Place Royale area, Brussels, Belgium",
+                "confidence": 0.7
+              },
+              {
+                "name": "Brussels city center, near Rue Royale",
+                "confidence": 0.5
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Parade route through central Brussels (Mont des Arts / Place Royale vicinity)",
+                "confidence": 0.65
+              },
+              {
+                "name": "Brussels city center street near Mont des Arts",
+                "confidence": 0.55
+              }
+            ],
+            "entities": [
+              {
+                "name": "Belgian flag",
+                "type": "signage",
+                "confidence": 0.85,
+                "notes": "Flag of Belgium displayed on building along parade route."
+              },
+              {
+                "name": "European Union flag",
+                "type": "signage",
+                "confidence": 0.7,
+                "notes": "Flag visible among flags on building."
+              },
+              {
+                "name": "Armored vehicle (military armored personnel carrier)",
+                "type": "other",
+                "confidence": 0.7,
+                "notes": "Camouflage netting; part of a military parade."
+              },
+              {
+                "name": "Military parade",
+                "type": "public_space",
+                "confidence": 0.6,
+                "notes": "Street parade with armored vehicles and uniformed personnel."
+              },
+              {
+                "name": "Cream-colored neoclassical building with flags",
+                "type": "building",
+                "confidence": 0.55,
+                "notes": "Facade and balconies typical of central Brussels architecture."
+              },
+              {
+                "name": "Overhead tram lines",
+                "type": "infrastructure",
+                "confidence": 0.5,
+                "notes": "Tram wires spanning the street."
+              },
+              {
+                "name": "Crowd of spectators",
+                "type": "public_space",
+                "confidence": 0.45,
+                "notes": "Dense spectators along the parade route."
+              },
+              {
+                "name": "Mont des Arts (nearby cultural complex)",
+                "type": "district",
+                "confidence": 0.4,
+                "notes": "Nearby central Brussels cultural district."
+              },
+              {
+                "name": "Place Royale (historic square, Brussels)",
+                "type": "district",
+                "confidence": 0.35,
+                "notes": "Nearby historic square in central Brussels."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A street-level photograph capturing a military parade on a cloudy day in Brussels. In the foreground, a large crowd of spectators stands behind metal barriers on the left side of the frame, many holding up smartphones to capture the scene. A police officer with arms crossed stands near the crowd. The center of the image is dominated by a column of military vehicles moving along tram tracks on a paved street. The lead vehicle is an armored personnel carrier heavily draped in camouflage netting, obscuring its specific details. Behind it, several 8x8 armored vehicles (likely MOWAG Piranha IIIC) are visible. In the background, a grand cream-colored neoclassical building, the Hôtel Errera, stands prominently. It features a triangular pediment, a slate roof, and a balcony adorned with flags: the yellow and black Lion of Flanders flag, the Belgian tricolor, and the European Union flag. Stone lion statues sit atop the gate pillars in front of the building. Vintage-style black street lamps line the street.",
+            "photographer_location": [
+              {
+                "name": "Rue Royale",
+                "confidence": 0.95
+              },
+              {
+                "name": "Parc de Bruxelles",
+                "confidence": 0.8
+              },
+              {
+                "name": "Brussels",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Hôtel Errera",
+                "confidence": 0.95
+              },
+              {
+                "name": "Rue Royale",
+                "confidence": 0.95
+              }
+            ],
+            "entities": [
+              {
+                "name": "Hôtel Errera",
+                "type": "landmark",
+                "confidence": 0.95,
+                "notes": "Official residence of the Minister-President of Flanders; Neoclassical style, 18th century"
+              },
+              {
+                "name": "Rue Royale",
+                "type": "infrastructure",
+                "confidence": 0.95,
+                "notes": "Major street in Brussels"
+              },
+              {
+                "name": "Armored Military Vehicles",
+                "type": "other",
+                "confidence": 0.95,
+                "notes": "Belgian Land Component vehicles; lead vehicle is camouflaged (possibly Dingo 2), followed by Piranha IIIC APCs"
+              },
+              {
+                "name": "Flag of Flanders",
+                "type": "other",
+                "confidence": 0.95,
+                "notes": "Yellow with black lion"
+              },
+              {
+                "name": "Flag of Belgium",
+                "type": "other",
+                "confidence": 0.95,
+                "notes": null
+              },
+              {
+                "name": "Flag of the European Union",
+                "type": "other",
+                "confidence": 0.95,
+                "notes": null
+              },
+              {
+                "name": "Crowd",
+                "type": "other",
+                "confidence": 0.9,
+                "notes": "Spectators watching the parade"
+              },
+              {
+                "name": "Police Officer",
+                "type": "other",
+                "confidence": 0.9,
+                "notes": "Belgian police uniform"
+              },
+              {
+                "name": "Tram tracks",
+                "type": "infrastructure",
+                "confidence": 0.9,
+                "notes": null
+              },
+              {
+                "name": "Street lamps",
+                "type": "infrastructure",
+                "confidence": 0.85,
+                "notes": "Vintage style"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A military parade is taking place on a city street lined with neoclassical buildings under an overcast sky. In the foreground, a dense crowd of spectators watches as camouflaged military vehicles, including a Dingo 2 armored car and Piranha IIIC infantry fighting vehicles, drive along tram tracks. A Belgian police officer in a blue uniform stands guard. The prominent building on the left features a cream-colored facade, a pediment with a circular window, and balconies adorned with lion sculptures and various flags, including the Belgian national flag and the European Union flag. The architecture is consistent with the late 18th-century urban planning of central Brussels.",
+            "photographer_location": [
+              {
+                "name": "Place Royale, Brussels, Belgium",
+                "confidence": 0.95
+              },
+              {
+                "name": "Corner of Rue de la Régence and Place Royale",
+                "confidence": 0.9
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Rue de la Régence, Brussels, Belgium",
+                "confidence": 0.95
+              },
+              {
+                "name": "Hôtel de Grimbergen",
+                "confidence": 0.9
+              }
+            ],
+            "entities": [
+              {
+                "name": "Place Royale",
+                "type": "public_space",
+                "confidence": 0.98,
+                "notes": "A historic square in central Brussels designed in neoclassical style."
+              },
+              {
+                "name": "Hôtel de Grimbergen",
+                "type": "building",
+                "confidence": 0.95,
+                "notes": "Neoclassical building on the corner of Place Royale and Rue de la Régence, part of the Royal Museums of Fine Arts complex."
+              },
+              {
+                "name": "Rue de la Régence",
+                "type": "infrastructure",
+                "confidence": 0.95,
+                "notes": "A major street in Brussels connecting Place Royale to the Palais de Justice."
+              },
+              {
+                "name": "Belgian National Day Parade",
+                "type": "cultural_site",
+                "confidence": 0.98,
+                "notes": "Annual military and civilian parade held on July 21st."
+              },
+              {
+                "name": "Neoclassical architecture",
+                "type": "architectural_style",
+                "confidence": 1.0,
+                "notes": "The dominant style of the buildings surrounding Place Royale, designed by Barnabé Guimard."
+              },
+              {
+                "name": "Belgian Armed Forces",
+                "type": "other",
+                "confidence": 0.95,
+                "notes": "The military vehicles and personnel depicted belong to the Belgian Land Component."
+              },
+              {
+                "name": "Dingo 2",
+                "type": "other",
+                "confidence": 0.9,
+                "notes": "The camouflaged armored vehicle in the foreground."
+              },
+              {
+                "name": "Piranha IIIC",
+                "type": "other",
+                "confidence": 0.85,
+                "notes": "The larger armored vehicles following in the parade."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "Police",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "A crowded city street scene during a military parade in central Brussels. Large groups of spectators stand behind metal barriers while police officers supervise. Several Belgian Army armored vehicles—one light reconnaissance vehicle covered in camouflage netting and two larger 8x8 armored carriers—drive along tram tracks under overhead wires. The backdrop is a cream-colored neoclassical building with a triangular pediment (with round oculus), mansard roof and wrought-iron balconies. Belgian tricolor flags hang from the facade. The atmosphere is overcast, suggesting a public celebration near the Royal Palace/Place des Palais area.",
+            "photographer_location": [
+              {
+                "name": "Near the Royal Palace of Brussels, City of Brussels, Belgium",
+                "confidence": 0.8
+              },
+              {
+                "name": "Place des Palais (Paleizenplein), Brussels",
+                "confidence": 0.75
+              },
+              {
+                "name": "Rue Royale (Koningsstraat), Brussels",
+                "confidence": 0.65
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Place des Palais / Rue Royale corridor, Brussels",
+                "confidence": 0.7
+              },
+              {
+                "name": "In front of the BELvue Museum (Hôtel Bellevue), Brussels",
+                "confidence": 0.55
+              }
+            ],
+            "entities": [
+              {
+                "name": "Place des Palais (Paleizenplein)",
+                "type": "public_space",
+                "confidence": 0.65,
+                "notes": "Large open square in front of the Royal Palace, frequently used for national ceremonies and parades."
+              },
+              {
+                "name": "Rue Royale (Koningsstraat)",
+                "type": "infrastructure",
+                "confidence": 0.6,
+                "notes": "Major north–south axial street with tram lines running past the Royal Palace area."
+              },
+              {
+                "name": "BELvue Museum (Hôtel Bellevue)",
+                "type": "building",
+                "confidence": 0.55,
+                "notes": "Neoclassical former hotel adjacent to the Coudenberg site; now a museum about Belgium and its history."
+              },
+              {
+                "name": "Neoclassical architecture",
+                "type": "architectural_style",
+                "confidence": 0.9,
+                "notes": "Symmetry, triangular pediment with oculus, and mansard roof characteristic of 18th–19th century Brussels facades."
+              },
+              {
+                "name": "Belgian National Day military parade",
+                "type": "other",
+                "confidence": 0.7,
+                "notes": "Annual event on or around 21 July featuring military vehicles and public festivities near the Royal Palace."
+              },
+              {
+                "name": "Belgian Army armored vehicles (AIV/Piranha family, with one light recon vehicle)",
+                "type": "other",
+                "confidence": 0.7,
+                "notes": "8x8 armored carriers and a lighter reconnaissance vehicle; Belgian tricolor insignia and camouflage netting visible."
+              },
+              {
+                "name": "Belgian flags (black-yellow-red)",
+                "type": "other",
+                "confidence": 0.95,
+                "notes": "National tricolor displayed on building facades during official celebrations."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "A crowded Brussels street scene during a military parade. Armored vehicles drive along a tram track while spectators line the sidewalks behind barriers. Flags line the cream-colored neoclassical buildings, and the sky is overcast. The scene appears to be near the Palais Royal (Koninklijk Paleis) area in Brussels, with a mix of onlookers and official vehicles passing by.",
+            "photographer_location": [
+              {
+                "name": "Palais Royal / Koninklijk Paleis, Brussels, Belgium",
+                "confidence": 0.8
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Brussels city street near Palais Royal, parade route",
+                "confidence": 0.6
+              }
+            ],
+            "entities": [
+              {
+                "name": "Armored military vehicles (tanks) in parade",
+                "type": "other",
+                "confidence": 0.75,
+                "notes": "Armored vehicles driving along a city street; Belgian flags visible; crowd watching."
+              },
+              {
+                "name": "Crowd of spectators",
+                "type": "public_space",
+                "confidence": 0.6,
+                "notes": "People lining the street behind barriers watching the procession."
+              }
+            ],
+            "landmark_name": null
+          }
+        }
+      ]
+    },
+    {
+      "image_filename": "38.jpg",
+      "use_gps": false,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "A large crowd lines a major ceremonial street for a military parade. Two camouflaged armored vehicles move along tram tracks under overhead wires. The setting is an urban square/street with ornate historic lampposts and uniform neoclassical façades: light-colored stucco, mansard roofs with dormers, and a central pedimented building displaying multiple flags (Belgium and regional/EU flags). The view looks along the street toward distant modern office towers. Weather is overcast.",
+            "photographer_location": [
+              {
+                "name": "Rue Royale (Koningsstraat), near Place Royale/Koningsplein, Brussels, Belgium",
+                "confidence": 0.75
+              },
+              {
+                "name": "Place Royale/Koningsplein, central Brussels",
+                "confidence": 0.65
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Military parade on Rue Royale (Koningsstraat), central Brussels",
+                "confidence": 0.75
+              },
+              {
+                "name": "National Day parade route by Place Royale and the Royal Palace area, Brussels",
+                "confidence": 0.6
+              }
+            ],
+            "entities": [
+              {
+                "name": "Rue Royale (Koningsstraat)",
+                "type": "infrastructure",
+                "confidence": 0.7,
+                "notes": "Historic north–south axis with tram lines in central Brussels"
+              },
+              {
+                "name": "Place Royale/Koningsplein ensemble (neoclassical façades)",
+                "type": "public_space",
+                "confidence": 0.65,
+                "notes": "Uniform late-18th-century urban square architecture"
+              },
+              {
+                "name": "Neoclassical architecture",
+                "type": "architectural_style",
+                "confidence": 0.9,
+                "notes": "Stuccoed façades, pediments, mansard roofs and dormers"
+              },
+              {
+                "name": "Belgian Army armored vehicles (likely Piranha-family APCs)",
+                "type": "other",
+                "confidence": 0.55,
+                "notes": "Wheeled armored vehicles covered with camouflage netting participating in a parade"
+              },
+              {
+                "name": "Belgian National Day military parade",
+                "type": "other",
+                "confidence": 0.6,
+                "notes": "Annual event around 21 July featuring military units along the Royal district"
+              },
+              {
+                "name": "Tramway overhead catenary (STIB/MIVB)",
+                "type": "infrastructure",
+                "confidence": 0.8,
+                "notes": "Wires above the roadway indicate a tram corridor"
+              },
+              {
+                "name": "Historic cast-iron streetlamps of the Royal district",
+                "type": "infrastructure",
+                "confidence": 0.7,
+                "notes": "Tall, ornate lampposts lining Rue Royale and Place Royale"
+              },
+              {
+                "name": "Belgian national and regional flags",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Black–yellow–red tricolour along with regional/EU flags displayed on the façade"
+              },
+              {
+                "name": "Finance Tower (Tour des Finances), Brussels",
+                "type": "building",
+                "confidence": 0.35,
+                "notes": "Modern office tower faintly visible in the distance along Rue Royale; identification uncertain"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "A crowded city street during a parade. In the mid-left is a beige neoclassical government-style building with columns and flagpoles displaying national flags. A camouflaged armored military vehicle sits on the roadway in front of the building, flanked by troops or security, while a dense line of spectators fills the sidewalk on the right, many of them taking photos with phones. The sky is overcast and the scene is busy with people along the parade route.",
+            "photographer_location": [
+              {
+                "name": "Sidewalk along a major city street in front of a neoclassical building, crowded with spectators",
+                "confidence": 0.72
+              },
+              {
+                "name": "City center in a European city (parade setting)",
+                "confidence": 0.92
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Road in front of the government building where a camouflaged armored vehicle is parked during a parade",
+                "confidence": 0.85
+              }
+            ],
+            "entities": [
+              {
+                "name": "Romanian flag",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Blue-yellow-red vertical tricolor flag."
+              },
+              {
+                "name": "Beige neoclassical government building",
+                "type": "building",
+                "confidence": 0.75,
+                "notes": "Facade with columns, pediment, and flagpoles."
+              },
+              {
+                "name": "Armored military vehicle",
+                "type": "other",
+                "confidence": 0.7,
+                "notes": "Camouflaged vehicle on the street as part of the parade."
+              },
+              {
+                "name": "Parade crowd",
+                "type": "public_space",
+                "confidence": 0.6,
+                "notes": "Spectators along barricades watching and photographing."
+              },
+              {
+                "name": "Statue/monument in front of the building",
+                "type": "monument",
+                "confidence": 0.45,
+                "notes": "Greenish sculpture on a pedestal near the vehicle."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A vertical shot (rotated 90 degrees counter-clockwise) of a street scene during the Belgian National Day parade in Brussels. A dense crowd of spectators lines the foreground (right side of image), standing behind barriers and watching the procession. On the street, military trucks covered in camouflage netting are driving past. In the background (left side of image), a large neoclassical building with a pale yellow facade, slate roof, and dormer windows is visible. A central balcony on the building displays Belgian and European Union flags. Tram tracks and overhead lines run along the cobbled street. The sky is overcast.",
+            "photographer_location": [
+              {
+                "name": "Rue Royale",
+                "confidence": 0.95
+              },
+              {
+                "name": "Brussels",
+                "confidence": 1.0
+              },
+              {
+                "name": "Parc de Bruxelles perimeter",
+                "confidence": 0.8
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Parliament of the French Community",
+                "confidence": 0.95
+              },
+              {
+                "name": "Hôtel de Ligne",
+                "confidence": 0.95
+              },
+              {
+                "name": "Rue Royale",
+                "confidence": 0.95
+              }
+            ],
+            "entities": [
+              {
+                "name": "Hôtel de Ligne",
+                "type": "building",
+                "confidence": 0.95,
+                "notes": "Seat of the Parliament of the French Community of Belgium; Neoclassical style"
+              },
+              {
+                "name": "Rue Royale",
+                "type": "public_space",
+                "confidence": 0.95,
+                "notes": "Major street in Brussels with tram lines"
+              },
+              {
+                "name": "Belgian National Day Parade",
+                "type": "other",
+                "confidence": 0.95,
+                "notes": "Annual event on July 21st; indicated by military vehicles and crowd"
+              },
+              {
+                "name": "Military vehicles",
+                "type": "transport_hub",
+                "confidence": 0.9,
+                "notes": "Camouflaged trucks participating in the parade"
+              },
+              {
+                "name": "Belgian Flag",
+                "type": "other",
+                "confidence": 1.0,
+                "notes": null
+              },
+              {
+                "name": "European Union Flag",
+                "type": "other",
+                "confidence": 1.0,
+                "notes": null
+              },
+              {
+                "name": "Tram tracks",
+                "type": "infrastructure",
+                "confidence": 1.0,
+                "notes": "For Brussels tram lines 92/93"
+              },
+              {
+                "name": "Crowd",
+                "type": "other",
+                "confidence": 1.0,
+                "notes": "Spectators"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A high-angle, slightly tilted shot of a military parade in Brussels, Belgium. The scene is captured from the perspective of a spectator in a dense crowd lining the street. Several military armored vehicles, heavily draped in green camouflage netting, are driving along the road, which features tram tracks. In the background, the Neoclassical facade of the Palace of the Nation (Palais de la Nation) is visible, adorned with multiple Belgian and European Union flags. The sky is overcast and grey. People in the crowd are watching the procession, some taking photos with their phones. A police officer in a white and blue uniform stands near one of the vehicles.",
+            "photographer_location": [
+              {
+                "name": "Place des Palais, Brussels, Belgium",
+                "confidence": 0.95
+              },
+              {
+                "name": "Brussels",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Place des Palais, Brussels, Belgium",
+                "confidence": 0.95
+              },
+              {
+                "name": "Palace of the Nation, Brussels",
+                "confidence": 0.9
+              }
+            ],
+            "entities": [
+              {
+                "name": "Palace of the Nation",
+                "type": "building",
+                "confidence": 0.95,
+                "notes": "Seat of the Belgian Federal Parliament; Neoclassical style."
+              },
+              {
+                "name": "Place des Palais",
+                "type": "public_space",
+                "confidence": 0.95,
+                "notes": "Large square in front of the Royal Palace where the National Day parade takes place."
+              },
+              {
+                "name": "Belgian National Day Parade",
+                "type": "other",
+                "confidence": 0.9,
+                "notes": "Annual military and civilian parade held on July 21st."
+              },
+              {
+                "name": "Brussels",
+                "type": "district",
+                "confidence": 1.0,
+                "notes": null
+              },
+              {
+                "name": "Neoclassical architecture",
+                "type": "architectural_style",
+                "confidence": 0.95,
+                "notes": null
+              },
+              {
+                "name": "Belgian Flag",
+                "type": "signage",
+                "confidence": 1.0,
+                "notes": "Black, yellow, and red vertical tricolor."
+              },
+              {
+                "name": "European Union Flag",
+                "type": "signage",
+                "confidence": 1.0,
+                "notes": "Blue field with 12 gold stars."
+              },
+              {
+                "name": "Piranha IIIC",
+                "type": "other",
+                "confidence": 0.7,
+                "notes": "Armored vehicles likely belonging to the Belgian Land Component."
+              },
+              {
+                "name": "Belgian Land Component",
+                "type": "other",
+                "confidence": 0.85,
+                "notes": "The land-based branch of the Belgian Armed Forces."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "Police",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "A crowded city street scene during a military parade. Camouflage-clad armored vehicles roll past behind metal barriers while large crowds watch and take photos. Elegant neoclassical buildings with mansard roofs line the street; one corner building displays multiple flags including several Belgian tricolors (black–yellow–red) and an EU flag. Ornate historic lampposts and overhead tram wires are visible, indicating a central European urban square. The sky is overcast.",
+            "photographer_location": [
+              {
+                "name": "Brussels, Belgium",
+                "confidence": 0.85
+              },
+              {
+                "name": "Place Royale (Koningsplein), Brussels, Belgium",
+                "confidence": 0.55
+              },
+              {
+                "name": "Rue de la Régence area, Brussels, Belgium",
+                "confidence": 0.45
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Parade route in/near Place Royale, central Brussels, Belgium",
+                "confidence": 0.5
+              },
+              {
+                "name": "Vicinity of the Royal Palace district, Brussels, Belgium",
+                "confidence": 0.5
+              }
+            ],
+            "entities": [
+              {
+                "name": "Belgian tricolor flags",
+                "type": "other",
+                "confidence": 0.95,
+                "notes": "Black–yellow–red vertical stripes on the building’s facade"
+              },
+              {
+                "name": "Armored military vehicles",
+                "type": "other",
+                "confidence": 0.95,
+                "notes": "Covered with camouflage netting, participating in a parade"
+              },
+              {
+                "name": "Brussels tram overhead lines",
+                "type": "infrastructure",
+                "confidence": 0.9,
+                "notes": "Catenary wires visible above the street"
+              },
+              {
+                "name": "Historic lampposts",
+                "type": "infrastructure",
+                "confidence": 0.8,
+                "notes": "Ornate multi-headed street lamps typical of central Brussels"
+              },
+              {
+                "name": "Place Royale (Koningsplein)",
+                "type": "public_space",
+                "confidence": 0.55,
+                "notes": "Neoclassical square with tram lines in central Brussels; likely location of the scene"
+              },
+              {
+                "name": "Royal Palace of Brussels area",
+                "type": "landmark",
+                "confidence": 0.35,
+                "notes": "Parade commonly occurs near this landmark; area identification is tentative"
+              },
+              {
+                "name": "BELvue Museum (Hôtel Bellevue)",
+                "type": "building",
+                "confidence": 0.3,
+                "notes": "Neoclassical building facing the square; possible identification of the corner building shown"
+              },
+              {
+                "name": "Saint Jacques-sur-Coudenberg",
+                "type": "religious_site",
+                "confidence": 0.3,
+                "notes": "Neoclassical church on Place Royale; not directly visible but may be nearby on the square"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "A crowded urban street scene during a public event or parade. On the left side, a large beige building with a neoclassical facade displays flags on flagpoles. A dense crowd lines the right-hand sidewalk, with many bystanders facing the street and some capturing the moment on their phones. In the middle of the street there appears to be a military or armored vehicle and several personnel nearby. The sky is overcast, lending diffuse lighting to the scene and emphasizing the urban public-space atmosphere of a ceremonial gathering.",
+            "photographer_location": [
+              {
+                "name": "Sidewalk opposite the crowd along a wide city street",
+                "confidence": 0.45
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Crowd of spectators along the street in front of the building",
+                "confidence": 0.6
+              }
+            ],
+            "entities": [
+              {
+                "name": "Beige neoclassical building",
+                "type": "building",
+                "confidence": 0.6,
+                "notes": "Flags hanging from flagpoles on facade"
+              },
+              {
+                "name": "Armored vehicle on the street",
+                "type": "other",
+                "confidence": 0.4,
+                "notes": "Military vehicle present in parade context"
+              },
+              {
+                "name": "Flags along the building",
+                "type": "signage",
+                "confidence": 0.4,
+                "notes": "National/ceremonial flags"
+              },
+              {
+                "name": "Dense crowd of spectators",
+                "type": "public_space",
+                "confidence": 0.5,
+                "notes": "People gathered along the street watching the event"
+              }
+            ],
+            "landmark_name": null
+          }
+        }
+      ]
+    }
+  ]
+}

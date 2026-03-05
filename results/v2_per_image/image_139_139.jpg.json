@@ -1,0 +1,1145 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "139.jpg",
+      "timestamp": "2026-01-28T02:12:37.219688",
+      "processing_time_seconds": 61.564543,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 52.520047222222225,
+        "gps_longitude": 13.410741666666667,
+        "location": {
+          "formatted_address": "Rathausstraße 7, 10178 Berlin, Germany",
+          "city": "Berlin",
+          "county": "Berlin",
+          "country": "Germany"
+        },
+        "datetime_original": "2025:01:18 18:57:53",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Berlin TV Tower, Berlin, Germany",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive shape and location in Berlin strongly suggest the Berlin TV Tower, a well-known landmark.",
+            "detailed_description": "The image shows the Berlin TV Tower (Fernsehturm), a prominent landmark in Berlin, Germany. It is characterized by its tall, slender concrete structure and spherical observation deck. The tower is illuminated, creating a glow in the foggy night sky. This structure is a notable example of modern architecture from the 20th century.",
+            "identification": {
+              "primary": [
+                "Berlin TV Tower"
+              ],
+              "location": "Berlin, Germany",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Berlin TV Tower",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "20th_century",
+              "concrete",
+              "Berlin",
+              "landmark"
+            ],
+            "location": "Berlin, Germany",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Berlin TV Tower\"],\n        \"location\": \"Berlin, Germany\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Berlin TV Tower\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"20th_century\", \"concrete\", \"Berlin\", \"landmark\"],\n    \"description\": \"The image shows the Berlin TV Tower (Fernsehturm), a prominent landmark in Berlin, Germany. It is characterized by its tall, slender concrete structure and spherical observation deck. The tower is illuminated, creating a glow in the foggy night sky. This structure is a notable example of modern architecture from the 20th century.\",\n    \"reasoning\": \"The distinctive shape and location in Berlin strongly suggest the Berlin TV Tower, a well-known landmark.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 52.520047222222225,
+              "longitude": 13.410741666666667
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Rathausstraße 7, 10178 Berlin, Germany",
+              "city": "Berlin",
+              "county": "Berlin",
+              "country": "Germany"
+            },
+            "photo_timestamp": "2025:01:18 18:57:53",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 22.59010887145996
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Berlin TV Tower, Modern triangular sculpture, Berlin, Germany",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the Berlin TV Tower's modern design and illumination, which is a prominent feature in Berlin. The triangular structure could be a modern sculpture or architectural element near the tower. The location metadata supports this identification.",
+            "identification": {
+              "primary": [
+                "Berlin TV Tower",
+                "Modern triangular sculpture"
+              ],
+              "location": "Berlin, Germany",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Berlin TV Tower",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Modern triangular sculpture",
+                "type": "sculpture",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "modern",
+              "architecture",
+              "Berlin",
+              "Germany",
+              "urban",
+              "night"
+            ],
+            "sources_used": [
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Fernsehturm Berlin",
+                "specificity_level": "very_specific",
+                "confidence": 0.9,
+                "reasoning": "The Fernsehturm Berlin is a well-known modern tower in Berlin that matches the description of a tall, illuminated tower."
+              },
+              {
+                "guess": "Modern urban sculpture in Berlin",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.75,
+                "reasoning": "The triangular structure could be a modern sculpture or architectural element in Berlin, fitting the urban setting."
+              },
+              {
+                "guess": "Modern tower in a European city",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The description fits a modern tower in a European city, but Berlin is the most likely given the location metadata."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image prominently features a tall, slender tower that pierces through a foggy night sky. The tower is illuminated, creating a glowing effect around its upper portion, which is shrouded in mist. This illumination highlights the sleek, modern design of the tower, characterized by its smooth, cylindrical shape that tapers slightly towards the top. The lighting creates a dramatic contrast against the dark sky, emphasizing the tower's verticality and presence. In the foreground, there is a triang",
+            "description": "The image prominently features a tall, slender tower that pierces through a foggy night sky. The tower is illuminated, creating a glowing effect around its upper portion, which is shrouded in mist. This illumination highlights the sleek, modern design of the tower, characterized by its smooth, cylindrical shape that tapers slightly towards the top. The lighting creates a dramatic contrast against the dark sky, emphasizing the tower's verticality and presence. In the foreground, there is a triang",
+            "architectural_style": "Modern",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 52.520047222222225,
+              "longitude": 13.410741666666667
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Rathausstraße 7, 10178 Berlin, Germany",
+              "city": "Berlin",
+              "county": "Berlin",
+              "country": "Germany"
+            },
+            "photo_timestamp": "2025:01:18 18:57:53",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 38.25372123718262
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "atmospheric phenomenon",
+          "confidence": 0.9287776947021484,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "atmospheric phenomenon",
+                "score": 0.9287776947021484
+              },
+              {
+                "source": "label",
+                "name": "Darkness",
+                "score": 0.8919310569763184
+              },
+              {
+                "source": "label",
+                "name": "Midnight",
+                "score": 0.8724605441093445
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Light",
+                "score": 0.3723898231983185
+              },
+              {
+                "name": "Night",
+                "score": 0.31338611245155334
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Night",
+                "score": 0.9549285173416138
+              },
+              {
+                "name": "atmospheric phenomenon",
+                "score": 0.9287776947021484
+              },
+              {
+                "name": "Darkness",
+                "score": 0.8919310569763184
+              },
+              {
+                "name": "Midnight",
+                "score": 0.8724605441093445
+              },
+              {
+                "name": "Spire",
+                "score": 0.6897019147872925
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 52.520047222222225,
+              "longitude": 13.410741666666667
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Rathausstraße 7, 10178 Berlin, Germany",
+              "city": "Berlin",
+              "county": "Berlin",
+              "country": "Germany"
+            },
+            "photo_timestamp": "2025:01:18 18:57:53",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 5.50900411605835
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Berlin, Germany",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Berlin, Germany",
+            "coordinates": {
+              "latitude": 52.520047222222225,
+              "longitude": 13.410741666666667
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Alexanderplatz",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 238291,
+                  "vicinity": "Berlin",
+                  "place_id": "ChIJbygR2x5OqEcRbhbkZsMB_DA",
+                  "location": {
+                    "lat": 52.52198139999999,
+                    "lng": 13.413306
+                  }
+                },
+                {
+                  "name": "Berlin Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 44686,
+                  "vicinity": "Am Lustgarten, Berlin",
+                  "place_id": "ChIJS9HC895RqEcR_IovsNVoDng",
+                  "location": {
+                    "lat": 52.5190608,
+                    "lng": 13.401078
+                  }
+                },
+                {
+                  "name": "Egyptian Museum and Papyrus Collection",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 2330,
+                  "vicinity": "Bodestraße 1-3, Berlin",
+                  "place_id": "ChIJM28dat1RqEcRKXIADGmEr-4",
+                  "location": {
+                    "lat": 52.5201349,
+                    "lng": 13.3976459
+                  }
+                },
+                {
+                  "name": "Saint Mary's Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 3809,
+                  "vicinity": "Karl-Liebknecht-Straße 8, Berlin",
+                  "place_id": "ChIJS4MKBSBOqEcRgXI8kWHFOvw",
+                  "location": {
+                    "lat": 52.5206108,
+                    "lng": 13.4071221
+                  }
+                },
+                {
+                  "name": "DDR Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 26916,
+                  "vicinity": "Vera Britain Ufer, Karl-Liebknecht-Straße 1, Berlin",
+                  "place_id": "ChIJVzpGU95RqEcRZJgnyr-ZDC0",
+                  "location": {
+                    "lat": 52.51922430000001,
+                    "lng": 13.402637
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Egyptian Museum and Papyrus Collection",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 2330,
+                  "vicinity": "Bodestraße 1-3, Berlin",
+                  "place_id": "ChIJM28dat1RqEcRKXIADGmEr-4",
+                  "location": {
+                    "lat": 52.5201349,
+                    "lng": 13.3976459
+                  }
+                },
+                {
+                  "name": "DDR Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 26916,
+                  "vicinity": "Vera Britain Ufer, Karl-Liebknecht-Straße 1, Berlin",
+                  "place_id": "ChIJVzpGU95RqEcRZJgnyr-ZDC0",
+                  "location": {
+                    "lat": 52.51922430000001,
+                    "lng": 13.402637
+                  }
+                },
+                {
+                  "name": "Pergamonmuseum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 29298,
+                  "vicinity": "Bodestraße 1-3, Berlin",
+                  "place_id": "ChIJS4MKBSBOqEcRMVSPqUYFOJ0",
+                  "location": {
+                    "lat": 52.521183,
+                    "lng": 13.3969
+                  }
+                },
+                {
+                  "name": "Altes Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 5802,
+                  "vicinity": "Bodestraße 1-3, Berlin",
+                  "place_id": "ChIJM28dat1RqEcRu_1H_QZRHrY",
+                  "location": {
+                    "lat": 52.5194665,
+                    "lng": 13.3987445
+                  }
+                },
+                {
+                  "name": "Alte Nationalgalerie",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 9424,
+                  "vicinity": "Bodestraße 1-3, Berlin",
+                  "place_id": "ChIJM28dat1RqEcRC0AVNUpwAuk",
+                  "location": {
+                    "lat": 52.52081039999999,
+                    "lng": 13.3983529
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Park Inn by Radisson Berlin Alexanderplatz",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 28218,
+                  "vicinity": "Alexanderplatz 7, Berlin",
+                  "place_id": "ChIJ4Q7iHh9OqEcRoYdM_f1daq0",
+                  "location": {
+                    "lat": 52.522811,
+                    "lng": 13.4131023
+                  }
+                },
+                {
+                  "name": "art'otel Berlin Mitte, Powered by Radisson Hotels",
+                  "types": [
+                    "gym",
+                    "health",
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1127,
+                  "vicinity": "Wallstraße 70-73, Berlin",
+                  "place_id": "ChIJDxXSfyZOqEcRoyCJSyGWw2Y",
+                  "location": {
+                    "lat": 52.5123924,
+                    "lng": 13.4098798
+                  }
+                },
+                {
+                  "name": "Zur letzten Instanz",
+                  "types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 3338,
+                  "vicinity": "Waisenstraße 14-16, Berlin",
+                  "place_id": "ChIJ1WEbzyNOqEcRKqrOGWDKPMs",
+                  "location": {
+                    "lat": 52.5173692,
+                    "lng": 13.4137999
+                  }
+                },
+                {
+                  "name": "Hofbräu",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 28934,
+                  "vicinity": "Karl-Liebknecht-Straße 30, Berlin",
+                  "place_id": "ChIJA3tAkR5OqEcRHQ3BP-tASds",
+                  "location": {
+                    "lat": 52.5247247,
+                    "lng": 13.4137705
+                  }
+                },
+                {
+                  "name": "Spreegold Mitte",
+                  "types": [
+                    "cafe",
+                    "meal_takeaway",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 2917,
+                  "vicinity": "Rosa-Luxemburg-Straße 2, Berlin",
+                  "place_id": "ChIJJdTMVw5OqEcRajmwtdn7TNU",
+                  "location": {
+                    "lat": 52.5231605,
+                    "lng": 13.4092636
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Lustgarten",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 9408,
+                  "vicinity": "Unter den Linden 1, Berlin",
+                  "place_id": "ChIJ2Rv9kd5RqEcRCk1Dri7L9aU",
+                  "location": {
+                    "lat": 52.5187,
+                    "lng": 13.3992
+                  }
+                },
+                {
+                  "name": "James-Simon-Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 4388,
+                  "vicinity": "Burgstraße 28, Berlin",
+                  "place_id": "ChIJO51g_t1RqEcR_km127hXRfE",
+                  "location": {
+                    "lat": 52.52192609999999,
+                    "lng": 13.399294
+                  }
+                },
+                {
+                  "name": "Köllnischer Park",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 200,
+                  "vicinity": "Köllnischer Park, Wallstraße 51, Berlin",
+                  "place_id": "ChIJSRda9iROqEcRVSLooGeWg0w",
+                  "location": {
+                    "lat": 52.5129645,
+                    "lng": 13.4146606
+                  }
+                },
+                {
+                  "name": "Auf Fahrt",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Propststraße 11, Berlin",
+                  "place_id": "ChIJDTZHuCBOqEcRJb2cr5E7kak",
+                  "location": {
+                    "lat": 52.5165083,
+                    "lng": 13.4063743
+                  }
+                },
+                {
+                  "name": "Wasserkaskaden",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 86,
+                  "vicinity": "Panoramastraße 1a, Berlin",
+                  "place_id": "ChIJN_PsGSBOqEcRnJxHYlKNd3o",
+                  "location": {
+                    "lat": 52.520199,
+                    "lng": 13.4081516
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Berlin Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 44686,
+                  "vicinity": "Am Lustgarten, Berlin",
+                  "place_id": "ChIJS9HC895RqEcR_IovsNVoDng",
+                  "location": {
+                    "lat": 52.5190608,
+                    "lng": 13.401078
+                  }
+                },
+                {
+                  "name": "Saint Mary's Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 3809,
+                  "vicinity": "Karl-Liebknecht-Straße 8, Berlin",
+                  "place_id": "ChIJS4MKBSBOqEcRgXI8kWHFOvw",
+                  "location": {
+                    "lat": 52.5206108,
+                    "lng": 13.4071221
+                  }
+                },
+                {
+                  "name": "Evangelical Church Forum Berlin city center",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 20,
+                  "vicinity": "Klosterstraße 66, Berlin",
+                  "place_id": "ChIJafl_3SNOqEcRqWQHvY3jB2g",
+                  "location": {
+                    "lat": 52.5166553,
+                    "lng": 13.41359
+                  }
+                },
+                {
+                  "name": "Berlin Immanuel Gemeinde",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 5,
+                  "vicinity": "Rosa-Luxemburg-Straße 17A, Berlin",
+                  "place_id": "ChIJ8SHWFh5OqEcRKFl4DDcyooE",
+                  "location": {
+                    "lat": 52.52512249999999,
+                    "lng": 13.4100899
+                  }
+                },
+                {
+                  "name": "Parochialkirche",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 288,
+                  "vicinity": "Klosterstraße 67, Berlin",
+                  "place_id": "ChIJDRZ-giFOqEcRsdU2x11TSf8",
+                  "location": {
+                    "lat": 52.5170228,
+                    "lng": 13.4126176
+                  }
+                },
+                {
+                  "name": "Chabad-Berlin Alexanderplatz",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 120,
+                  "vicinity": "Karl-Liebknecht-Straße 34, Berlin",
+                  "place_id": "ChIJaZpFHxxOqEcRaYGCKlebIfA",
+                  "location": {
+                    "lat": 52.52577160000001,
+                    "lng": 13.4154439
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Monsterkabinett",
+                  "types": [
+                    "art_gallery",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 725,
+                  "vicinity": "In the backyard, in the basement, Rosenthaler Straße 39, Berlin",
+                  "place_id": "ChIJRyQVKOFRqEcRcJ2zTT4qVT4",
+                  "location": {
+                    "lat": 52.5245062,
+                    "lng": 13.4019357
+                  }
+                },
+                {
+                  "name": "YellowKorner",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 47,
+                  "vicinity": "Neue Schönhauser Straße 15, Berlin",
+                  "place_id": "ChIJXx2jqeFRqEcRatidSXOWtxM",
+                  "location": {
+                    "lat": 52.52450999999999,
+                    "lng": 13.4048634
+                  }
+                },
+                {
+                  "name": "Zille Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 146,
+                  "vicinity": "Propststraße 11, Berlin",
+                  "place_id": "ChIJeS5IuCBOqEcR8Vygi3-olKY",
+                  "location": {
+                    "lat": 52.5165083,
+                    "lng": 13.4063743
+                  }
+                },
+                {
+                  "name": "Circleculture Art GmbH",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 28,
+                  "vicinity": "Gipsstraße 11, Berlin",
+                  "place_id": "ChIJ64A6sOZRqEcRoaFsBVGjKEg",
+                  "location": {
+                    "lat": 52.526647,
+                    "lng": 13.4011898
+                  }
+                },
+                {
+                  "name": "BQ",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 19,
+                  "vicinity": "Weydingerstraße 10, Berlin",
+                  "place_id": "ChIJG-nw2R1OqEcR4sBmtuJJ7zY",
+                  "location": {
+                    "lat": 52.52624179999999,
+                    "lng": 13.4122295
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Berlin",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Berlin",
+                  "place_id": "ChIJAVkDPzdOqEcRcDteW0YgIQQ",
+                  "location": {
+                    "lat": 52.52000659999999,
+                    "lng": 13.404954
+                  }
+                },
+                {
+                  "name": "Park Inn by Radisson Berlin Alexanderplatz",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 28218,
+                  "vicinity": "Alexanderplatz 7, Berlin",
+                  "place_id": "ChIJ4Q7iHh9OqEcRoYdM_f1daq0",
+                  "location": {
+                    "lat": 52.522811,
+                    "lng": 13.4131023
+                  }
+                },
+                {
+                  "name": "Hotel Motel One Berlin-Hackescher Markt",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1740,
+                  "vicinity": "Dircksenstraße 36, Berlin",
+                  "place_id": "ChIJg_Fz1B9OqEcRksIuXzrG3jg",
+                  "location": {
+                    "lat": 52.5232492,
+                    "lng": 13.4085933
+                  }
+                },
+                {
+                  "name": "Radisson Collection Hotel, Berlin",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 3594,
+                  "vicinity": "Karl-Liebknecht-Straße 3, Berlin",
+                  "place_id": "ChIJLTX2ud9RqEcRtiblhC9s3Rg",
+                  "location": {
+                    "lat": 52.5195799,
+                    "lng": 13.4027302
+                  }
+                },
+                {
+                  "name": "art'otel Berlin Mitte, Powered by Radisson Hotels",
+                  "types": [
+                    "gym",
+                    "lodging",
+                    "bar",
+                    "health",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1127,
+                  "vicinity": "Wallstraße 70-73, Berlin",
+                  "place_id": "ChIJDxXSfyZOqEcRoyCJSyGWw2Y",
+                  "location": {
+                    "lat": 52.5123924,
+                    "lng": 13.4098798
+                  }
+                }
+              ]
+            },
+            "total_places_found": 36,
+            "photo_timestamp": "2025:01:18 18:57:53",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.47257018089294434
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/139.jpg"
+    },
+    {
+      "image_filename": "139.jpg",
+      "timestamp": "2026-01-28T02:13:38.818691",
+      "processing_time_seconds": 60.320795,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Berlin TV Tower, Berlin, Germany",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The shape and illumination of the tower, along with its location in Berlin, suggest it is the Berlin TV Tower, a well-known landmark.",
+            "detailed_description": "The image shows the Berlin TV Tower, a prominent landmark in Berlin, Germany. It is a tall concrete structure with a distinctive spherical observation deck near the top. The tower is illuminated, creating a glowing effect in the foggy night sky. The architectural style is modernist, typical of mid-20th century design.",
+            "identification": {
+              "primary": [
+                "Berlin TV Tower"
+              ],
+              "location": "Berlin, Germany",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Berlin TV Tower",
+                "type": "landmark",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "20th_century",
+              "concrete",
+              "Berlin",
+              "landmark"
+            ],
+            "location": "Berlin, Germany",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Berlin TV Tower\"],\n        \"location\": \"Berlin, Germany\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Berlin TV Tower\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"20th_century\", \"concrete\", \"Berlin\", \"landmark\"],\n    \"description\": \"The image shows the Berlin TV Tower, a prominent landmark in Berlin, Germany. It is a tall concrete structure with a distinctive spherical observation deck near the top. The tower is illuminated, creating a glowing effect in the foggy night sky. The architectural style is modernist, typical of mid-20th century design.\",\n    \"reasoning\": \"The shape and illumination of the tower, along with its location in Berlin, suggest it is the Berlin TV Tower, a well-known landmark.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 22.304110050201416
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Oriental Pearl Tower, Modern architectural installation, Shanghai, China",
+          "confidence": 0.7999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the Oriental Pearl Tower's distinctive tall, slender design and modern architectural style. The fog and lighting effects are consistent with how the tower is often photographed at night. The presence of a triangular structure suggests a modern urban setting, which aligns with Shanghai's architectural landscape.",
+            "identification": {
+              "primary": [
+                "Oriental Pearl Tower",
+                "Modern architectural installation"
+              ],
+              "location": "Shanghai, China",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Oriental Pearl Tower",
+                "type": "landmark",
+                "confidence": 0.85
+              },
+              {
+                "name": "Modern architectural installation",
+                "type": "building",
+                "confidence": 0.7
+              }
+            ],
+            "tags": [
+              "modern",
+              "urban",
+              "night",
+              "fog",
+              "tower",
+              "Shanghai"
+            ],
+            "sources_used": [
+              "unsplash.com",
+              "motionarray.com"
+            ],
+            "all_candidates": [
+              "*URL*: ([unsplash.com]())",
+              "*URL*: ([unsplash.com]())",
+              "*URL*: ([unsplash.com]())",
+              "*URL*: ([motionarray.com]())",
+              "*URL*: ([medium.com]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Canton Tower",
+                "specificity_level": "very_specific",
+                "confidence": 0.7,
+                "reasoning": "The Canton Tower also features a slender design and is often illuminated at night, but the description more closely matches the Oriental Pearl Tower."
+              },
+              {
+                "guess": "Modern skyscraper in Shanghai",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "Shanghai is known for its modern skyscrapers, and the description fits the urban setting, but the tower's specific features suggest the Oriental Pearl Tower."
+              },
+              {
+                "guess": "Modern tower in urban setting",
+                "specificity_level": "general",
+                "confidence": 0.5,
+                "reasoning": "The description fits many modern towers in urban settings, but the specific features suggest a more iconic structure."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 3,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.85,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image prominently features a tall, slender tower that pierces into the night sky, partially obscured by fog. The tower is illuminated from below, creating a dramatic effect as the light diffuses through the mist, giving the structure a ghostly appearance. The tower's surface appears smooth and cylindrical, tapering slightly towards the top. The lighting accentuates the vertical lines of the structure, making it stand out against the dark background. To the right of the tower, there is a tria",
+            "description": "The image prominently features a tall, slender tower that pierces into the night sky, partially obscured by fog. The tower is illuminated from below, creating a dramatic effect as the light diffuses through the mist, giving the structure a ghostly appearance. The tower's surface appears smooth and cylindrical, tapering slightly towards the top. The lighting accentuates the vertical lines of the structure, making it stand out against the dark background. To the right of the tower, there is a tria",
+            "architectural_style": "Modern",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 38.014373779296875
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "atmospheric phenomenon",
+          "confidence": 0.9279849529266357,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "atmospheric phenomenon",
+                "score": 0.9279849529266357
+              },
+              {
+                "source": "label",
+                "name": "Darkness",
+                "score": 0.8923916220664978
+              },
+              {
+                "source": "label",
+                "name": "Midnight",
+                "score": 0.8722419738769531
+              },
+              {
+                "source": "label",
+                "name": "Spire",
+                "score": 0.7008488178253174
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Light",
+                "score": 0.37280789017677307
+              },
+              {
+                "name": "Night",
+                "score": 0.31371375918388367
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Night",
+                "score": 0.9548096060752869
+              },
+              {
+                "name": "atmospheric phenomenon",
+                "score": 0.9279849529266357
+              },
+              {
+                "name": "Darkness",
+                "score": 0.8923916220664978
+              },
+              {
+                "name": "Midnight",
+                "score": 0.8722419738769531
+              },
+              {
+                "name": "Spire",
+                "score": 0.7008488178253174
+              }
+            ],
+            "processing_time_seconds": 5.530304193496704
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/139.jpg"
+    }
+  ]
+}

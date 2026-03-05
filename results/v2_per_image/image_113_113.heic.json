@@ -1,0 +1,547 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "113.heic",
+      "timestamp": "2026-01-28T01:12:50.381011",
+      "processing_time_seconds": 67.474115,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 10.410947222222223,
+        "gps_longitude": 119.16279722222222,
+        "location": {
+          "formatted_address": "C567+94 San Vicente, Palawan, Philippines",
+          "city": "San Vicente",
+          "county": "Palawan",
+          "country": "Philippines"
+        },
+        "datetime_original": "2024:11:27 11:23:01",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Long Beach, San Vicente, Palawan, Philippines",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates San Vicente, Palawan, which is known for Long Beach, a prominent natural feature in the area. The visual characteristics match descriptions of this beach.",
+            "detailed_description": "The image shows a tropical beach with a long stretch of white sand bordered by numerous tall palm trees. The coastline curves gently, with waves lapping at the shore. The background features lush greenery and distant hills, typical of the scenic landscapes found in Palawan, Philippines. The clear blue sky and vibrant green foliage create a picturesque setting.",
+            "identification": {
+              "primary": [
+                "Long Beach"
+              ],
+              "location": "San Vicente, Palawan, Philippines",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Long Beach",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "beach",
+              "tropical",
+              "palm_trees",
+              "coastline",
+              "Philippines"
+            ],
+            "location": "San Vicente, Palawan, Philippines",
+            "type": "natural_feature",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Long Beach\"],\n        \"location\": \"San Vicente, Palawan, Philippines\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Long Beach\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"beach\", \"tropical\", \"palm_trees\", \"coastline\", \"Philippines\"],\n    \"description\": \"The image shows a tropical beach with a long stretch of white sand bordered by numerous tall palm trees. The coastline curves gently, with waves lapping at the shore. The background features lush greenery and distant hills, typical of the scenic landscapes found in Palawan, Philippines. The clear blue sky and vibrant green foliage create a picturesque setting.\",\n    \"reasoning\": \"The location metadata indicates San Vicente, Palawan, which is known for Long Beach, a prominent natural feature in the area. The visual characteristics match descriptions of this beach.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "gps_coordinates": {
+              "latitude": 10.410947222222223,
+              "longitude": 119.16279722222222
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "C567+94 San Vicente, Palawan, Philippines",
+              "city": "San Vicente",
+              "county": "Palawan",
+              "country": "Philippines"
+            },
+            "photo_timestamp": "2024:11:27 11:23:01",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 29.158154010772705
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "**Long Beach**: As the longest white-sand beach in the Philippines, Long Beach offers a serene and unspoiled environment, ideal for relaxation and various water activities. ([discoverthephilippines.co",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a serene tropical beach scene in San Vicente, Palawan, Philippines. The foreground features a sandy shoreline gently kissed by small waves from a clear, turquoise sea. The water exhibits a gradient of colors, transitioning from deep blue to lighter shades near the shore. Lining the beach are tall, slender coconut palm trees, their lush green fronds swaying slightly in the breeze. The palms are densely packed, creating a natural canopy that provides shade along the beach. In the",
+            "description": "The image depicts a serene tropical beach scene in San Vicente, Palawan, Philippines. The foreground features a sandy shoreline gently kissed by small waves from a clear, turquoise sea. The water exhibits a gradient of colors, transitioning from deep blue to lighter shades near the shore. Lining the beach are tall, slender coconut palm trees, their lush green fronds swaying slightly in the breeze. The palms are densely packed, creating a natural canopy that provides shade along the beach. In the",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 10.410947222222223,
+              "longitude": 119.16279722222222
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "C567+94 San Vicente, Palawan, Philippines",
+              "city": "San Vicente",
+              "county": "Palawan",
+              "country": "Philippines"
+            },
+            "photo_timestamp": "2024:11:27 11:23:01",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 37.53972005844116
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Coast",
+          "confidence": 0.9358633756637573,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Coast",
+                "score": 0.9358633756637573
+              },
+              {
+                "source": "label",
+                "name": "Coastal and oceanic landforms",
+                "score": 0.9226899743080139
+              },
+              {
+                "source": "label",
+                "name": "Sea",
+                "score": 0.9006056785583496
+              },
+              {
+                "source": "label",
+                "name": "Beach",
+                "score": 0.8997704386711121
+              },
+              {
+                "source": "label",
+                "name": "Shore",
+                "score": 0.8981738686561584
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Royal palms",
+                "score": 0.4862139821052551
+              },
+              {
+                "name": "Babassu",
+                "score": 0.4776882827281952
+              },
+              {
+                "name": "sea-m",
+                "score": 0.39309999346733093
+              },
+              {
+                "name": "Beach",
+                "score": 0.3637745678424835
+              },
+              {
+                "name": "Attalea",
+                "score": 0.09449999779462814
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Coast",
+                "score": 0.9358633756637573
+              },
+              {
+                "name": "Coastal and oceanic landforms",
+                "score": 0.9226899743080139
+              },
+              {
+                "name": "Sea",
+                "score": 0.9006056785583496
+              },
+              {
+                "name": "Beach",
+                "score": 0.8997704386711121
+              },
+              {
+                "name": "Shore",
+                "score": 0.8981738686561584
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 10.410947222222223,
+              "longitude": 119.16279722222222
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "C567+94 San Vicente, Palawan, Philippines",
+              "city": "San Vicente",
+              "county": "Palawan",
+              "country": "Philippines"
+            },
+            "photo_timestamp": "2024:11:27 11:23:01",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 17.290618181228638
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "San Vicente, Palawan, Philippines",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "San Vicente, Palawan, Philippines",
+            "coordinates": {
+              "latitude": 10.410947222222223,
+              "longitude": 119.16279722222222
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "restaurants": [
+                {
+                  "name": "Pablo's Café",
+                  "types": [
+                    "cafe",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 49,
+                  "vicinity": "No street address, Port Barton, San Vicente",
+                  "place_id": "ChIJ8VHzJqfFtTMRGV3jOrfAyOQ",
+                  "location": {
+                    "lat": 10.4121703,
+                    "lng": 119.1673638
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "San Vicente",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "San Vicente",
+                  "place_id": "ChIJxfAOpmTZtTMRfssqKeHhYow",
+                  "location": {
+                    "lat": 10.3616657,
+                    "lng": 119.1158017
+                  }
+                },
+                {
+                  "name": "White Beach Annex",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 90,
+                  "vicinity": "C544+9F4, Port Barton, San Vicente",
+                  "place_id": "ChIJU386KbrEtTMRNU1K737mG94",
+                  "location": {
+                    "lat": 10.4058789,
+                    "lng": 119.1561909
+                  }
+                },
+                {
+                  "name": "Coconut Beach Parking",
+                  "types": [
+                    "parking",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "C567+Q7, San Vicente",
+                  "place_id": "ChIJo--dfADFtTMRdOCQXbKqtSc",
+                  "location": {
+                    "lat": 10.4119952,
+                    "lng": 119.1632425
+                  }
+                },
+                {
+                  "name": "Coconut Beach Entrance",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "C567+R8, San Vicente",
+                  "place_id": "ChIJNd7zVADFtTMReZDVbgITusY",
+                  "location": {
+                    "lat": 10.4120625,
+                    "lng": 119.1633125
+                  }
+                },
+                {
+                  "name": "Coconut Beach",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 294,
+                  "vicinity": "C566+79J, Port Barton, San Vicente",
+                  "place_id": "ChIJUyEQ6HvFtTMRK0-yrB4Duqc",
+                  "location": {
+                    "lat": 10.4107098,
+                    "lng": 119.1608906
+                  }
+                }
+              ]
+            },
+            "total_places_found": 6,
+            "photo_timestamp": "2024:11:27 11:23:01",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.3711891174316406
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/113.heic"
+    },
+    {
+      "image_filename": "113.heic",
+      "timestamp": "2026-01-28T01:13:57.890981",
+      "processing_time_seconds": 75.774649,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Tropical beach with palm trees",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of palm trees and the coastal setting indicate a tropical beach environment. The mountain in the background adds to the natural landscape.",
+            "detailed_description": "The image depicts a tropical beach lined with tall palm trees. The sandy shore is gently washed by small waves from the ocean. In the background, there is a mountain, adding to the scenic view. The sky is clear with a few clouds, suggesting a sunny day.",
+            "identification": {
+              "primary": [
+                "Tropical beach with palm trees"
+              ],
+              "location": null,
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Palm trees lining the beach",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Mountain in the background",
+                "type": "natural_feature",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "tropical",
+              "beach",
+              "palm_trees",
+              "coastline",
+              "natural_landscape"
+            ],
+            "location": null,
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Beach in Southeast Asia",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The tropical setting and palm trees are typical of Southeast Asian beaches."
+              },
+              {
+                "guess": "Beach in the Caribbean",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The palm trees and beach setting are also common in the Caribbean."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Tropical beach with palm trees\"],\n        \"location\": null,\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Palm trees lining the beach\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Mountain in the background\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"tropical\", \"beach\", \"palm_trees\", \"coastline\", \"natural_landscape\"],\n    \"description\": \"The image depicts a tropical beach lined with tall palm trees. The sandy shore is gently washed by small waves from the ocean. In the background, there is a mountain, adding to the scenic view. The sky is clear with a few clouds, suggesting a sunny day.\",\n    \"reasoning\": \"The presence of palm trees and the coastal setting indicate a tropical beach environment. The mountain in the background adds to the natural landscape.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Beach in Southeast Asia\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The tropical setting and palm trees are typical of Southeast Asian beaches.\"\n        },\n        {\n            \"guess\": \"Beach in the Caribbean\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The palm trees and beach setting are also common in the Caribbean.\"\n        }\n    ]\n}",
+            "processing_time_seconds": 28.11997413635254
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([en.wikipedia.org]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 3,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a serene tropical beach scene characterized by a long stretch of sandy shoreline lined with tall, slender palm trees. The palms are densely packed, their fronds swaying gently in the breeze, creating a lush green canopy that contrasts with the bright blue sky above. The beach itself is gently curved, with soft, white sand that meets the clear, turquoise waters of the ocean. Small waves are lapping at the shore, creating a rhythmic pattern of foam and ripples. In the background,",
+            "description": "The image depicts a serene tropical beach scene characterized by a long stretch of sandy shoreline lined with tall, slender palm trees. The palms are densely packed, their fronds swaying gently in the breeze, creating a lush green canopy that contrasts with the bright blue sky above. The beach itself is gently curved, with soft, white sand that meets the clear, turquoise waters of the ocean. Small waves are lapping at the shore, creating a rhythmic pattern of foam and ripples. In the background,",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 47.41965579986572
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Coast",
+          "confidence": 0.9358633756637573,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Coast",
+                "score": 0.9358633756637573
+              },
+              {
+                "source": "label",
+                "name": "Coastal and oceanic landforms",
+                "score": 0.9226899743080139
+              },
+              {
+                "source": "label",
+                "name": "Sea",
+                "score": 0.9006056785583496
+              },
+              {
+                "source": "label",
+                "name": "Beach",
+                "score": 0.8997704386711121
+              },
+              {
+                "source": "label",
+                "name": "Shore",
+                "score": 0.8981738686561584
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Royal palms",
+                "score": 0.4862139821052551
+              },
+              {
+                "name": "Babassu",
+                "score": 0.4776882827281952
+              },
+              {
+                "name": "sea-m",
+                "score": 0.3919000029563904
+              },
+              {
+                "name": "Beach",
+                "score": 0.3637745678424835
+              },
+              {
+                "name": "Attalea",
+                "score": 0.094480000436306
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Coast",
+                "score": 0.9358633756637573
+              },
+              {
+                "name": "Coastal and oceanic landforms",
+                "score": 0.9226899743080139
+              },
+              {
+                "name": "Sea",
+                "score": 0.9006056785583496
+              },
+              {
+                "name": "Beach",
+                "score": 0.8997704386711121
+              },
+              {
+                "name": "Shore",
+                "score": 0.8981738686561584
+              }
+            ],
+            "processing_time_seconds": 18.10591411590576
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/113.heic"
+    }
+  ]
+}

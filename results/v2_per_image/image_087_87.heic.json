@@ -1,0 +1,641 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "87.heic",
+      "timestamp": "2026-01-28T07:13:45.588176",
+      "processing_time_seconds": 63.158016,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -26.379527777777778,
+        "gps_longitude": 153.1109,
+        "location": {
+          "formatted_address": "J4C6+6Q, Noosa Heads QLD 4567, Australia",
+          "city": "Noosa Heads",
+          "county": "Noosa Shire",
+          "country": "Australia"
+        },
+        "datetime_original": "2024:07:13 15:57:34",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Coastal landscape at Noosa National Park, Noosa Heads, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Noosa Heads, which is known for its national park and coastal scenery. The visible landscape matches typical features of Noosa National Park, such as rocky shores and dense vegetation.",
+            "detailed_description": "The image depicts a coastal landscape at Noosa National Park in Noosa Heads, Australia. The scene includes a rocky shoreline with waves gently crashing against the rocks. The coastline is lined with dense vegetation and a walking path, suggesting a popular hiking area. The sky is clear and blue, indicating a sunny day. The natural beauty of the area is highlighted by the lush greenery and the rugged terrain.",
+            "identification": {
+              "primary": [
+                "Coastal landscape at Noosa National Park"
+              ],
+              "location": "Noosa Heads, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Coastal landscape",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "coastal_landscape",
+              "natural_feature",
+              "Australia",
+              "Noosa_National_Park"
+            ],
+            "location": "Noosa Heads, Australia",
+            "type": "natural_feature",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Coastal landscape at Noosa National Park\"],\n        \"location\": \"Noosa Heads, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Coastal landscape\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"coastal_landscape\", \"natural_feature\", \"Australia\", \"Noosa_National_Park\"],\n    \"description\": \"The image depicts a coastal landscape at Noosa National Park in Noosa Heads, Australia. The scene includes a rocky shoreline with waves gently crashing against the rocks. The coastline is lined with dense vegetation and a walking path, suggesting a popular hiking area. The sky is clear and blue, indicating a sunny day. The natural beauty of the area is highlighted by the lush greenery and the rugged terrain.\",\n    \"reasoning\": \"The location metadata indicates Noosa Heads, which is known for its national park and coastal scenery. The visible landscape matches typical features of Noosa National Park, such as rocky shores and dense vegetation.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "gps_coordinates": {
+              "latitude": -26.379527777777778,
+              "longitude": 153.1109
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "J4C6+6Q, Noosa Heads QLD 4567, Australia",
+              "city": "Noosa Heads",
+              "county": "Noosa Shire",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2024:07:13 15:57:34",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 10.856684923171997
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image captures a scenic coastal landscape at Noosa Heads, Australia. The foreground features a rugged path that winds along the edge of a rocky shoreline. The path is bordered by lush vegetation, including small shrubs and grasses, which add texture and color to the scene. The coastline is characterized by rocky outcrops and a pebble-strewn beach, where gentle waves lap against the shore. In the background, a densely forested hill rises, covered with a mix of native Australian flora, includi",
+            "description": "The image captures a scenic coastal landscape at Noosa Heads, Australia. The foreground features a rugged path that winds along the edge of a rocky shoreline. The path is bordered by lush vegetation, including small shrubs and grasses, which add texture and color to the scene. The coastline is characterized by rocky outcrops and a pebble-strewn beach, where gentle waves lap against the shore. In the background, a densely forested hill rises, covered with a mix of native Australian flora, includi",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": -26.379527777777778,
+              "longitude": 153.1109
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "J4C6+6Q, Noosa Heads QLD 4567, Australia",
+              "city": "Noosa Heads",
+              "county": "Noosa Shire",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2024:07:13 15:57:34",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 51.385627031326294
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Body of water",
+          "confidence": 0.9793654084205627,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Body of water",
+                "score": 0.9793654084205627
+              },
+              {
+                "source": "label",
+                "name": "Natural environment",
+                "score": 0.9748062491416931
+              },
+              {
+                "source": "label",
+                "name": "Coast",
+                "score": 0.9729592800140381
+              },
+              {
+                "source": "label",
+                "name": "Coastal and oceanic landforms",
+                "score": 0.9484266042709351
+              },
+              {
+                "source": "object",
+                "name": "Shorts",
+                "score": 0.8138658404350281
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Mountain",
+                "score": 0.4475563168525696
+              },
+              {
+                "name": "5SG",
+                "score": 0.30979999899864197
+              },
+              {
+                "name": "Hiking",
+                "score": 0.30305808782577515
+              }
+            ],
+            "objects": [
+              {
+                "name": "Shorts",
+                "score": 0.8138658404350281
+              },
+              {
+                "name": "Top",
+                "score": 0.7803471684455872
+              },
+              {
+                "name": "Person",
+                "score": 0.7436718940734863
+              },
+              {
+                "name": "Person",
+                "score": 0.7195152044296265
+              },
+              {
+                "name": "Top",
+                "score": 0.6973657011985779
+              }
+            ],
+            "labels": [
+              {
+                "name": "Water",
+                "score": 0.9809130430221558
+              },
+              {
+                "name": "Body of water",
+                "score": 0.9793654084205627
+              },
+              {
+                "name": "Natural environment",
+                "score": 0.9748062491416931
+              },
+              {
+                "name": "Coast",
+                "score": 0.9729592800140381
+              },
+              {
+                "name": "Coastal and oceanic landforms",
+                "score": 0.9484266042709351
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": -26.379527777777778,
+              "longitude": 153.1109
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "J4C6+6Q, Noosa Heads QLD 4567, Australia",
+              "city": "Noosa Heads",
+              "county": "Noosa Shire",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2024:07:13 15:57:34",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 20.973809719085693
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Noosa Heads, Noosa Shire, Australia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Noosa Heads, Noosa Shire, Australia",
+            "coordinates": {
+              "latitude": -26.379527777777778,
+              "longitude": 153.1109
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Alexandria Bay",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 197,
+                  "vicinity": "Noosa Heads",
+                  "place_id": "ChIJLUCRyy5qk2sR6eUmtSrACl4",
+                  "location": {
+                    "lat": -26.3872949,
+                    "lng": 153.1151032
+                  }
+                },
+                {
+                  "name": "Granite Bay beach access",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 21,
+                  "vicinity": "J4C6+6Q, Noosa Heads",
+                  "place_id": "ChIJy_YqvpRrk2sRYU6j8-fobwg",
+                  "location": {
+                    "lat": -26.37942109999999,
+                    "lng": 153.1118903
+                  }
+                },
+                {
+                  "name": "Tea Tree Tower",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1,
+                  "vicinity": "Bench, Noosa Heads",
+                  "place_id": "ChIJ26dPSABpk2sRgi0cU66XQsg",
+                  "location": {
+                    "lat": -26.3795239,
+                    "lng": 153.1053035
+                  }
+                },
+                {
+                  "name": "Fairy Pools",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 810,
+                  "vicinity": "Noosa Heads",
+                  "place_id": "ChIJaUAVwSNqk2sR7bgc7efFzas",
+                  "location": {
+                    "lat": -26.3765223,
+                    "lng": 153.1159276
+                  }
+                },
+                {
+                  "name": "Tea Tree Bay Beach",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 185,
+                  "vicinity": "Noosa Heads",
+                  "place_id": "ChIJJZ--VLlpk2sRbc8TF8wG6cM",
+                  "location": {
+                    "lat": -26.3794815,
+                    "lng": 153.104538
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Donnison's Nook",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 20,
+                  "vicinity": "J4C3+69, Noosa Heads",
+                  "place_id": "ChIJiR42RGZpk2sRET7LvNETlJ4",
+                  "location": {
+                    "lat": -26.37945899999999,
+                    "lng": 153.1038091
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Sunshine Coast",
+                  "types": [
+                    "colloquial_area",
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Sunshine Coast",
+                  "place_id": "ChIJ7Uh9bbZ_k2sRUK_e81qjAgM",
+                  "location": {
+                    "lat": -26.6527751,
+                    "lng": 153.0895855
+                  }
+                },
+                {
+                  "name": "Alexandria Bay",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 197,
+                  "vicinity": "Noosa Heads",
+                  "place_id": "ChIJLUCRyy5qk2sR6eUmtSrACl4",
+                  "location": {
+                    "lat": -26.3872949,
+                    "lng": 153.1151032
+                  }
+                },
+                {
+                  "name": "Granite Bay beach access",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 21,
+                  "vicinity": "J4C6+6Q, Noosa Heads",
+                  "place_id": "ChIJy_YqvpRrk2sRYU6j8-fobwg",
+                  "location": {
+                    "lat": -26.37942109999999,
+                    "lng": 153.1118903
+                  }
+                },
+                {
+                  "name": "Dolphin Point Lookout",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 278,
+                  "vicinity": "Coastal Walk, Noosa Heads",
+                  "place_id": "ChIJE1Yu7olpk2sR1NVZYr4-K4U",
+                  "location": {
+                    "lat": -26.3773186,
+                    "lng": 153.1080128
+                  }
+                },
+                {
+                  "name": "Public Amenities",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 12,
+                  "vicinity": "Coastal Walk, Noosa Heads",
+                  "place_id": "ChIJnT6qTYhpk2sRydMdwAVinMA",
+                  "location": {
+                    "lat": -26.3792773,
+                    "lng": 153.1069403
+                  }
+                }
+              ]
+            },
+            "total_places_found": 11,
+            "photo_timestamp": "2024:07:13 15:57:34",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.37615323066711426
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/87.heic"
+    },
+    {
+      "image_filename": "87.heic",
+      "timestamp": "2026-01-28T07:14:48.777861",
+      "processing_time_seconds": 65.182062,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Coastal trail with rocky shoreline",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The identification is based on the visible features such as the trail, rocky shoreline, and coastal vegetation, which are typical of coastal hiking areas.",
+            "detailed_description": "The image depicts a coastal trail running alongside a rocky shoreline. The trail is bordered by vegetation and leads through a natural landscape with hills covered in greenery. The ocean is visible to the left, with waves crashing against the rocks. The scene suggests a popular hiking or walking area, characterized by its natural beauty and rugged terrain.",
+            "identification": {
+              "primary": [
+                "Coastal trail with rocky shoreline"
+              ],
+              "location": null,
+              "confidence": 0.8
+            },
+            "artifacts": [
+              {
+                "name": "Coastal trail",
+                "type": "natural_feature",
+                "confidence": 0.8
+              },
+              {
+                "name": "Rocky shoreline",
+                "type": "natural_feature",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "coastline",
+              "trail",
+              "nature",
+              "landscape",
+              "outdoor"
+            ],
+            "location": null,
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Coastal trail in a national park",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "The natural setting and trail suggest it could be part of a protected area or national park."
+              },
+              {
+                "guess": "Popular hiking destination",
+                "specificity_level": "general",
+                "confidence": 0.5,
+                "reasoning": "The presence of hikers and the well-maintained trail indicate it might be a known hiking spot."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Coastal trail with rocky shoreline\"],\n        \"location\": null,\n        \"confidence\": 0.8\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Coastal trail\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.8\n        },\n        {\n            \"name\": \"Rocky shoreline\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"coastline\", \"trail\", \"nature\", \"landscape\", \"outdoor\"],\n    \"description\": \"The image depicts a coastal trail running alongside a rocky shoreline. The trail is bordered by vegetation and leads through a natural landscape with hills covered in greenery. The ocean is visible to the left, with waves crashing against the rocks. The scene suggests a popular hiking or walking area, characterized by its natural beauty and rugged terrain.\",\n    \"reasoning\": \"The identification is based on the visible features such as the trail, rocky shoreline, and coastal vegetation, which are typical of coastal hiking areas.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Coastal trail in a national park\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The natural setting and trail suggest it could be part of a protected area or national park.\"\n        },\n        {\n            \"guess\": \"Popular hiking destination\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.5,\n            \"reasoning\": \"The presence of hikers and the well-maintained trail indicate it might be a known hiking spot.\"\n        }\n    ]\n}",
+            "processing_time_seconds": 12.213022232055664
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a coastal landscape with a rugged shoreline and a lush, green hillside. The coastline features rocky outcrops and a narrow strip of pebbled beach where waves gently lap against the shore. The hillside is densely covered with vegetation, predominantly consisting of trees and shrubs, creating a rich tapestry of green hues. The path along the coast is a dirt trail, bordered by rocks and native plants, leading into the distance. The sky above is a clear, vibrant blue with a few wis",
+            "description": "The image depicts a coastal landscape with a rugged shoreline and a lush, green hillside. The coastline features rocky outcrops and a narrow strip of pebbled beach where waves gently lap against the shore. The hillside is densely covered with vegetation, predominantly consisting of trees and shrubs, creating a rich tapestry of green hues. The path along the coast is a dirt trail, bordered by rocks and native plants, leading into the distance. The sky above is a clear, vibrant blue with a few wis",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "processing_time_seconds": 52.70897698402405
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Body of water",
+          "confidence": 0.9793654084205627,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Body of water",
+                "score": 0.9793654084205627
+              },
+              {
+                "source": "label",
+                "name": "Natural environment",
+                "score": 0.9748062491416931
+              },
+              {
+                "source": "label",
+                "name": "Coast",
+                "score": 0.9729592800140381
+              },
+              {
+                "source": "label",
+                "name": "Coastal and oceanic landforms",
+                "score": 0.9484266042709351
+              },
+              {
+                "source": "object",
+                "name": "Shorts",
+                "score": 0.8138658404350281
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Mountain",
+                "score": 0.4475563168525696
+              },
+              {
+                "name": "5SG",
+                "score": 0.30979999899864197
+              },
+              {
+                "name": "Hiking",
+                "score": 0.30305808782577515
+              }
+            ],
+            "objects": [
+              {
+                "name": "Shorts",
+                "score": 0.8138658404350281
+              },
+              {
+                "name": "Top",
+                "score": 0.7803471684455872
+              },
+              {
+                "name": "Person",
+                "score": 0.7436718940734863
+              },
+              {
+                "name": "Person",
+                "score": 0.7195152044296265
+              },
+              {
+                "name": "Top",
+                "score": 0.6973657011985779
+              }
+            ],
+            "labels": [
+              {
+                "name": "Water",
+                "score": 0.9809130430221558
+              },
+              {
+                "name": "Body of water",
+                "score": 0.9793654084205627
+              },
+              {
+                "name": "Natural environment",
+                "score": 0.9748062491416931
+              },
+              {
+                "name": "Coast",
+                "score": 0.9729592800140381
+              },
+              {
+                "name": "Coastal and oceanic landforms",
+                "score": 0.9484266042709351
+              }
+            ],
+            "processing_time_seconds": 22.003520011901855
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/87.heic"
+    }
+  ]
+}

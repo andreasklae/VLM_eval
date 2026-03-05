@@ -1,0 +1,1041 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "88.jpg",
+      "timestamp": "2026-01-28T07:15:53.996713",
+      "processing_time_seconds": 53.263735,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 59.927327777777776,
+        "gps_longitude": 10.740727777777776,
+        "location": {
+          "formatted_address": "WPGR+W7, Oslo, Norway",
+          "city": "Oslo",
+          "county": "Oslo",
+          "country": "Norway"
+        },
+        "datetime_original": "2024:07:29 05:28:39",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Oslo City Hall, Akershus Fortress, Oslo, Norway",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The Oslo City Hall is identifiable by its distinctive twin towers and red brick construction, typical of its modern architectural style. Akershus Fortress is recognized by its historical structure and location near the waterfront. The photo's location metadata supports the identification of these landmarks in Oslo.",
+            "detailed_description": "The image shows a view of Oslo, Norway, featuring prominent landmarks such as the Oslo City Hall and Akershus Fortress. Oslo City Hall is characterized by its modern architectural style with red brick facades and twin towers. Akershus Fortress, visible in the background, is a medieval castle and fortress that adds historical context to the scene. The waterfront setting and urban landscape are visible, with buildings illuminated by the early morning light.",
+            "identification": {
+              "primary": [
+                "Oslo City Hall",
+                "Akershus Fortress"
+              ],
+              "location": "Oslo, Norway",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Oslo City Hall",
+                "type": "landmark",
+                "confidence": 0.9
+              },
+              {
+                "name": "Akershus Fortress",
+                "type": "landmark",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "historical_fortress",
+              "Oslo",
+              "urban_landscape",
+              "waterfront"
+            ],
+            "location": "Oslo, Norway",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Oslo City Hall\", \"Akershus Fortress\"],\n        \"location\": \"Oslo, Norway\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Oslo City Hall\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Akershus Fortress\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"historical_fortress\", \"Oslo\", \"urban_landscape\", \"waterfront\"],\n    \"description\": \"The image shows a view of Oslo, Norway, featuring prominent landmarks such as the Oslo City Hall and Akershus Fortress. Oslo City Hall is characterized by its modern architectural style with red brick facades and twin towers. Akershus Fortress, visible in the background, is a medieval castle and fortress that adds historical context to the scene. The waterfront setting and urban landscape are visible, with buildings illuminated by the early morning light.\",\n    \"reasoning\": \"The Oslo City Hall is identifiable by its distinctive twin towers and red brick construction, typical of its modern architectural style. Akershus Fortress is recognized by its historical structure and location near the waterfront. The photo's location metadata supports the identification of these landmarks in Oslo.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 59.927327777777776,
+              "longitude": 10.740727777777776
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "WPGR+W7, Oslo, Norway",
+              "city": "Oslo",
+              "county": "Oslo",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2024:07:29 05:28:39",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 11.053001880645752
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image captures a panoramic view of Oslo, Norway, during the early morning hours. The skyline features a mix of modern and historical architecture. Prominent in the scene is a large, modern building with a grid-like facade, possibly an office or commercial structure, characterized by its dark color and geometric design. Nearby, there is a historical building with a clock tower, displaying traditional architectural elements such as brickwork and a pitched roof, indicative of early 20th-century",
+            "description": "The image captures a panoramic view of Oslo, Norway, during the early morning hours. The skyline features a mix of modern and historical architecture. Prominent in the scene is a large, modern building with a grid-like facade, possibly an office or commercial structure, characterized by its dark color and geometric design. Nearby, there is a historical building with a clock tower, displaying traditional architectural elements such as brickwork and a pitched roof, indicative of early 20th-century",
+            "architectural_style": "Modern and early 20th-century",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 59.927327777777776,
+              "longitude": 10.740727777777776
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "WPGR+W7, Oslo, Norway",
+              "city": "Oslo",
+              "county": "Oslo",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2024:07:29 05:28:39",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 41.60600805282593
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Composite material",
+          "confidence": 0.878146767616272,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Composite material",
+                "score": 0.878146767616272
+              },
+              {
+                "source": "label",
+                "name": "Sunlight",
+                "score": 0.8148444890975952
+              },
+              {
+                "source": "label",
+                "name": "Engineering",
+                "score": 0.7851046323776245
+              },
+              {
+                "source": "object",
+                "name": "Building",
+                "score": 0.5656828284263611
+              },
+              {
+                "source": "web",
+                "name": "Security lighting",
+                "score": 0.4568301737308502
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Security lighting",
+                "score": 0.4568301737308502
+              },
+              {
+                "name": "Lighting",
+                "score": 0.38519999384880066
+              },
+              {
+                "name": "Security",
+                "score": 0.38510000705718994
+              },
+              {
+                "name": "Tree",
+                "score": 0.3237100839614868
+              },
+              {
+                "name": "M-tree",
+                "score": 0.24699999392032623
+              }
+            ],
+            "objects": [
+              {
+                "name": "Building",
+                "score": 0.5656828284263611
+              }
+            ],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9893569350242615
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9817883968353271
+              },
+              {
+                "name": "Composite material",
+                "score": 0.878146767616272
+              },
+              {
+                "name": "Sunlight",
+                "score": 0.8148444890975952
+              },
+              {
+                "name": "Engineering",
+                "score": 0.7851046323776245
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 59.927327777777776,
+              "longitude": 10.740727777777776
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "WPGR+W7, Oslo, Norway",
+              "city": "Oslo",
+              "county": "Oslo",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2024:07:29 05:28:39",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 13.29973816871643
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Oslo, Norway",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Oslo, Norway",
+            "coordinates": {
+              "latitude": 59.927327777777776,
+              "longitude": 10.740727777777776
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Fagerborg Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 170,
+                  "vicinity": "Pilestredet 72, Oslo",
+                  "place_id": "ChIJw6hs2XduQUYR2g-9v17yeck",
+                  "location": {
+                    "lat": 59.92722219999999,
+                    "lng": 10.7297222
+                  }
+                },
+                {
+                  "name": "Old Aker Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 245,
+                  "vicinity": "Akersbakken 26, Oslo",
+                  "place_id": "ChIJ74oDVWVuQUYRI6AnDZRSvd4",
+                  "location": {
+                    "lat": 59.92377149999999,
+                    "lng": 10.7472223
+                  }
+                },
+                {
+                  "name": "Labour Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 94,
+                  "vicinity": "Sagveien 28, Oslo",
+                  "place_id": "ChIJZ8TCRWxuQUYRcpLZ4-G5sww",
+                  "location": {
+                    "lat": 59.9308971,
+                    "lng": 10.7557825
+                  }
+                },
+                {
+                  "name": "Our Savior's Cemetery",
+                  "types": [
+                    "cemetery",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 115,
+                  "vicinity": "Akersbakken 32, Oslo",
+                  "place_id": "ChIJoaBly3puQUYRVDeWweXTkh4",
+                  "location": {
+                    "lat": 59.92164549999999,
+                    "lng": 10.7442256
+                  }
+                },
+                {
+                  "name": "J. L. Amundsens benk",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "WPGR+W7, Oslo",
+                  "place_id": "ChIJ7ztuAQBvQUYR1p3lqh6cxdo",
+                  "location": {
+                    "lat": 59.9272845,
+                    "lng": 10.7406696
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Labour Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 94,
+                  "vicinity": "Sagveien 28, Oslo",
+                  "place_id": "ChIJZ8TCRWxuQUYRcpLZ4-G5sww",
+                  "location": {
+                    "lat": 59.9308971,
+                    "lng": 10.7557825
+                  }
+                },
+                {
+                  "name": "Galleri Ramfjord",
+                  "types": [
+                    "art_gallery",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 74,
+                  "vicinity": "Schwensens gate 1, Oslo",
+                  "place_id": "ChIJV43mI3puQUYRKyvgMGArevI",
+                  "location": {
+                    "lat": 59.9229209,
+                    "lng": 10.7376159
+                  }
+                },
+                {
+                  "name": "Ruth Maier's Square",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Dovregata, Oslo",
+                  "place_id": "ChIJ-6OMQU9vQUYRUvQnQYueoJw",
+                  "location": {
+                    "lat": 59.92206470000001,
+                    "lng": 10.7376878
+                  }
+                },
+                {
+                  "name": "Akersberget (sølvgruve)",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 4,
+                  "vicinity": "Maridalsveien 28, Oslo",
+                  "place_id": "ChIJYX8PzL1vQUYRi-PvAbTmMUo",
+                  "location": {
+                    "lat": 59.92459599999999,
+                    "lng": 10.750303
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Scandic Vulkan",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 1044,
+                  "vicinity": "Vulkan, Maridalsveien 13A, Oslo",
+                  "place_id": "ChIJMRa1nmVuQUYRZTOT-OABges",
+                  "location": {
+                    "lat": 59.9222391,
+                    "lng": 10.7510158
+                  }
+                },
+                {
+                  "name": "Mathallen Oslo",
+                  "types": [
+                    "bar",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 9689,
+                  "vicinity": "Vulkan 5, Oslo",
+                  "place_id": "ChIJLSeTf2VuQUYRw9V12gQwpqU",
+                  "location": {
+                    "lat": 59.9222297,
+                    "lng": 10.7520516
+                  }
+                },
+                {
+                  "name": "Mother India Bislett",
+                  "types": [
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 550,
+                  "vicinity": "Pilestredet 63, Oslo",
+                  "place_id": "ChIJ0cIOO3huQUYRRY1wQu7-BKo",
+                  "location": {
+                    "lat": 59.92392940000001,
+                    "lng": 10.731132
+                  }
+                },
+                {
+                  "name": "Nam Fah Thai",
+                  "types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 375,
+                  "vicinity": "Maridalsveien 21, Oslo",
+                  "place_id": "ChIJe6mHFYhuQUYRsWh0wTADgyE",
+                  "location": {
+                    "lat": 59.9230892,
+                    "lng": 10.7511753
+                  }
+                },
+                {
+                  "name": "Restaurant Schrøder",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 1183,
+                  "vicinity": "Waldemar Thranes gate 8, Oslo",
+                  "place_id": "ChIJY9pFa3puQUYRQiGV-7hDObA",
+                  "location": {
+                    "lat": 59.9234282,
+                    "lng": 10.7394846
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Treningsparken St. Hanshaugen",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 109,
+                  "vicinity": "Geitmyrsveien 20, Oslo",
+                  "place_id": "ChIJQZOdAnFuQUYRJtu7dMhjGJE",
+                  "location": {
+                    "lat": 59.9273171,
+                    "lng": 10.7424446
+                  }
+                },
+                {
+                  "name": "Bislettbekken",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 6,
+                  "vicinity": "Pilestredet 44, Oslo",
+                  "place_id": "ChIJ1d9Vp3luQUYRU4WZOXvBx4w",
+                  "location": {
+                    "lat": 59.92212619999999,
+                    "lng": 10.7334413
+                  }
+                },
+                {
+                  "name": "Alexanders benk",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "WPGR+W7, Oslo",
+                  "place_id": "ChIJCbEzGgBvQUYR4Hmyl_rOUuc",
+                  "location": {
+                    "lat": 59.9273292,
+                    "lng": 10.7405687
+                  }
+                },
+                {
+                  "name": "St. Hanshaugen",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 665,
+                  "vicinity": "Oslo",
+                  "place_id": "ChIJlTdDkpRvQUYR91RbiRsvQrg",
+                  "location": {
+                    "lat": 59.9275221,
+                    "lng": 10.7409875
+                  }
+                },
+                {
+                  "name": "Hundeluftegård",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 11,
+                  "vicinity": "Colletts gate 44, Oslo",
+                  "place_id": "ChIJDfE5K69vQUYRODGMXnY1vfQ",
+                  "location": {
+                    "lat": 59.9292511,
+                    "lng": 10.7431145
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Oslo Cathedral High School",
+                  "types": [
+                    "secondary_school",
+                    "school",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Ullevålsveien 31, Oslo",
+                  "place_id": "ChIJMZ2VA3tuQUYRW5mvOfQxpDo",
+                  "location": {
+                    "lat": 59.9209234,
+                    "lng": 10.7414822
+                  }
+                },
+                {
+                  "name": "Kirketorget Oslo",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Akersbakken 32, Oslo",
+                  "place_id": "ChIJZYItZl9uQUYRPkPzNMWrYhk",
+                  "location": {
+                    "lat": 59.9230087,
+                    "lng": 10.7445801
+                  }
+                },
+                {
+                  "name": "Fagerborg Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 170,
+                  "vicinity": "Pilestredet 72, Oslo",
+                  "place_id": "ChIJw6hs2XduQUYR2g-9v17yeck",
+                  "location": {
+                    "lat": 59.92722219999999,
+                    "lng": 10.7297222
+                  }
+                },
+                {
+                  "name": "Jesus Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 62,
+                  "vicinity": "St. Mark's Church, Oslo, Schwensens gate 9c, Oslo",
+                  "place_id": "ChIJb_innIhuQUYRfzwpxLgjhRw",
+                  "location": {
+                    "lat": 59.92399870000001,
+                    "lng": 10.7397366
+                  }
+                },
+                {
+                  "name": "Den evangelisk lutherske frikirke Oslo Storbymenighet",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3,
+                  "user_ratings_total": 3,
+                  "vicinity": "Pilestredet 69, Oslo",
+                  "place_id": "ChIJC6qIbWFuQUYR4-JtsduNazI",
+                  "location": {
+                    "lat": 59.9248646,
+                    "lng": 10.730623
+                  }
+                },
+                {
+                  "name": "Oslo Synagogue",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 62,
+                  "vicinity": "Bergstien 13, Oslo",
+                  "place_id": "ChIJ77r6ZHBuQUYRcc4kk4p6AIs",
+                  "location": {
+                    "lat": 59.92567869999999,
+                    "lng": 10.7431674
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Marius Martinussen",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Frydenlundgata 3A, Oslo",
+                  "place_id": "ChIJiyd69XluQUYRQ68auF-S0mA",
+                  "location": {
+                    "lat": 59.92345419999999,
+                    "lng": 10.7369433
+                  }
+                },
+                {
+                  "name": "Laska",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Alnafetgata 8A, Oslo",
+                  "place_id": "ChIJI7HjqXBuQUYRmaaqPGku5Uc",
+                  "location": {
+                    "lat": 59.9246645,
+                    "lng": 10.7382207
+                  }
+                },
+                {
+                  "name": "Kari Steihaug",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Uelands gate 59J, Oslo",
+                  "place_id": "ChIJEYIqcXJuQUYRM7CUX33372w",
+                  "location": {
+                    "lat": 59.9315895,
+                    "lng": 10.7493884
+                  }
+                },
+                {
+                  "name": "Josefine Lyche",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Darres gate 12, Oslo",
+                  "place_id": "ChIJufOgi25uQUYRSrAb_Xxuri4",
+                  "location": {
+                    "lat": 59.9274385,
+                    "lng": 10.7534005
+                  }
+                },
+                {
+                  "name": "Oslo Kunsthandel",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Stensgata 38 A, Oslo",
+                  "place_id": "ChIJ0-EvRXxuQUYRjQqNK2Zwj3A",
+                  "location": {
+                    "lat": 59.93296160000001,
+                    "lng": 10.7328724
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Oslo",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Oslo",
+                  "place_id": "ChIJOfBn8mFuQUYRmh4j019gkn4",
+                  "location": {
+                    "lat": 59.9121746,
+                    "lng": 10.7312704
+                  }
+                },
+                {
+                  "name": "Scandic Vulkan",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 1044,
+                  "vicinity": "Vulkan, Maridalsveien 13A, Oslo",
+                  "place_id": "ChIJMRa1nmVuQUYRZTOT-OABges",
+                  "location": {
+                    "lat": 59.9222391,
+                    "lng": 10.7510158
+                  }
+                },
+                {
+                  "name": "Scandic Holberg",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 1007,
+                  "vicinity": "Holbergs Plass 1, Oslo",
+                  "place_id": "ChIJP-OjUXluQUYRJ_9HmwGHCuw",
+                  "location": {
+                    "lat": 59.9196472,
+                    "lng": 10.7345104
+                  }
+                },
+                {
+                  "name": "The APARTMENTS Company - Fagerborggaten 16",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 103,
+                  "vicinity": "Fagerborggata 16, Oslo",
+                  "place_id": "ChIJDz1H3NhtQUYRXwpsRd__Dv0",
+                  "location": {
+                    "lat": 59.9302397,
+                    "lng": 10.726576
+                  }
+                },
+                {
+                  "name": "AS Collettsgate 13",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Colletts gate 13B, Oslo",
+                  "place_id": "ChIJAS9cWnduQUYR5jBvN_ol6yM",
+                  "location": {
+                    "lat": 59.92531820000001,
+                    "lng": 10.7364709
+                  }
+                }
+              ]
+            },
+            "total_places_found": 35,
+            "photo_timestamp": "2024:07:29 05:28:39",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.3690981864929199
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/88.jpg"
+    },
+    {
+      "image_filename": "88.jpg",
+      "timestamp": "2026-01-28T07:16:47.293120",
+      "processing_time_seconds": 49.6251,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Oslo City Hall, Aker Brygge, Oslo, Norway",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive red brick facade and twin towers of Oslo City Hall are recognizable features. The location near the waterfront and the urban setting suggest Aker Brygge, a well-known area in Oslo.",
+            "detailed_description": "The image shows a view of Oslo City Hall, a prominent building known for its modernist architectural style and red brick facade. It is located near the waterfront area of Aker Brygge, which is visible in the background. The scene captures the urban landscape of Oslo with the fjord and surrounding hills in the distance.",
+            "identification": {
+              "primary": [
+                "Oslo City Hall",
+                "Aker Brygge"
+              ],
+              "location": "Oslo, Norway",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Oslo City Hall",
+                "type": "building",
+                "confidence": 0.95
+              },
+              {
+                "name": "Aker Brygge",
+                "type": "landmark",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "20th_century",
+              "brick",
+              "waterfront",
+              "urban"
+            ],
+            "location": "Oslo, Norway",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Oslo City Hall\", \"Aker Brygge\"],\n        \"location\": \"Oslo, Norway\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Oslo City Hall\",\n            \"type\": \"building\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Aker Brygge\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.90\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"20th_century\", \"brick\", \"waterfront\", \"urban\"],\n    \"description\": \"The image shows a view of Oslo City Hall, a prominent building known for its modernist architectural style and red brick facade. It is located near the waterfront area of Aker Brygge, which is visible in the background. The scene captures the urban landscape of Oslo with the fjord and surrounding hills in the distance.\",\n    \"reasoning\": \"The distinctive red brick facade and twin towers of Oslo City Hall are recognizable features. The location near the waterfront and the urban setting suggest Aker Brygge, a well-known area in Oslo.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 8.93651008605957
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a panoramic view of a cityscape during sunset or sunrise, characterized by a warm, golden light illuminating the buildings. The foreground includes a lush area with dense green trees, which frames the view of the city. In the middle ground, there is a collection of buildings with varying architectural styles, including modern and possibly mid-century designs. Notable features include a tall, rectangular building with a grid-like facade, and a shorter building with a distinctive",
+            "description": "The image depicts a panoramic view of a cityscape during sunset or sunrise, characterized by a warm, golden light illuminating the buildings. The foreground includes a lush area with dense green trees, which frames the view of the city. In the middle ground, there is a collection of buildings with varying architectural styles, including modern and possibly mid-century designs. Notable features include a tall, rectangular building with a grid-like facade, and a shorter building with a distinctive",
+            "architectural_style": "Modern and mid-century",
+            "search_backends_used": [],
+            "processing_time_seconds": 40.687281131744385
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Composite material",
+          "confidence": 0.878146767616272,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Composite material",
+                "score": 0.878146767616272
+              },
+              {
+                "source": "label",
+                "name": "Sunlight",
+                "score": 0.8148444890975952
+              },
+              {
+                "source": "label",
+                "name": "Engineering",
+                "score": 0.7851046323776245
+              },
+              {
+                "source": "object",
+                "name": "Building",
+                "score": 0.5656828284263611
+              },
+              {
+                "source": "web",
+                "name": "Security lighting",
+                "score": 0.4568301737308502
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Security lighting",
+                "score": 0.4568301737308502
+              },
+              {
+                "name": "Lighting",
+                "score": 0.38519999384880066
+              },
+              {
+                "name": "Security",
+                "score": 0.38510000705718994
+              },
+              {
+                "name": "Tree",
+                "score": 0.3237100839614868
+              },
+              {
+                "name": "M-tree",
+                "score": 0.24699999392032623
+              }
+            ],
+            "objects": [
+              {
+                "name": "Building",
+                "score": 0.5656828284263611
+              }
+            ],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9893569350242615
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9817883968353271
+              },
+              {
+                "name": "Composite material",
+                "score": 0.878146767616272
+              },
+              {
+                "name": "Sunlight",
+                "score": 0.8148444890975952
+              },
+              {
+                "name": "Engineering",
+                "score": 0.7851046323776245
+              }
+            ],
+            "processing_time_seconds": 11.562222957611084
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/88.jpg"
+    }
+  ]
+}

@@ -1,0 +1,1091 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "181.heic",
+      "timestamp": "2026-01-28T03:50:56.243000",
+      "processing_time_seconds": 69.954399,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -37.80966111111111,
+        "gps_longitude": 144.9638222222222,
+        "location": {
+          "formatted_address": "2312 Swanston St, Melbourne VIC 3000, Australia",
+          "city": "Melbourne",
+          "county": "Melbourne City",
+          "country": "Australia"
+        },
+        "datetime_original": "2025:06:30 15:40:48",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Bourke Street, Melbourne, Australia",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Melbourne, and the image shows a typical urban street scene with modern buildings and tram infrastructure, which are characteristic of Bourke Street in Melbourne.",
+            "detailed_description": "The image depicts Bourke Street in Melbourne, Australia, characterized by modern skyscrapers lining the street. The architecture is predominantly contemporary, featuring glass facades and sleek designs. Tram lines run along the center of the street, indicating Melbourne's extensive tram network. The street is bustling with vehicles, and the urban environment is vibrant and dynamic.",
+            "identification": {
+              "primary": [
+                "Bourke Street"
+              ],
+              "location": "Melbourne, Australia",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Modern skyscrapers",
+                "type": "building",
+                "confidence": 0.9
+              },
+              {
+                "name": "Tram lines",
+                "type": "transport_infrastructure",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "urban",
+              "transport",
+              "Melbourne"
+            ],
+            "location": "Melbourne, Australia",
+            "type": "urban_street",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Collins Street",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "Collins Street is another major street in Melbourne with similar architectural features."
+              },
+              {
+                "guess": "Elizabeth Street",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "Elizabeth Street also features tram lines and modern buildings in Melbourne."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Bourke Street\"],\n        \"location\": \"Melbourne, Australia\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Modern skyscrapers\",\n            \"type\": \"building\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Tram lines\",\n            \"type\": \"transport_infrastructure\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"urban\", \"transport\", \"Melbourne\"],\n    \"description\": \"The image depicts Bourke Street in Melbourne, Australia, characterized by modern skyscrapers lining the street. The architecture is predominantly contemporary, featuring glass facades and sleek designs. Tram lines run along the center of the street, indicating Melbourne's extensive tram network. The street is bustling with vehicles, and the urban environment is vibrant and dynamic.\",\n    \"reasoning\": \"The location metadata indicates Melbourne, and the image shows a typical urban street scene with modern buildings and tram infrastructure, which are characteristic of Bourke Street in Melbourne.\",\n    \"type\": \"urban_street\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Collins Street\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"Collins Street is another major street in Melbourne with similar architectural features.\"\n        },\n        {\n            \"guess\": \"Elizabeth Street\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"Elizabeth Street also features tram lines and modern buildings in Melbourne.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": -37.80966111111111,
+              "longitude": 144.9638222222222
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "2312 Swanston St, Melbourne VIC 3000, Australia",
+              "city": "Melbourne",
+              "county": "Melbourne City",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:06:30 15:40:48",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 28.570563077926636
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([en.wikipedia.org]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a bustling urban street scene in Melbourne, Australia, characterized by a mix of modern and older architectural styles. The street is lined with tall buildings on both sides, creating a canyon-like effect. On the left side, there are contemporary high-rise structures with glass facades, reflecting the sky and surrounding buildings. These buildings exhibit a sleek, modern architectural style, typical of late 20th and early 21st-century design, with clean lines and extensive use ",
+            "description": "The image depicts a bustling urban street scene in Melbourne, Australia, characterized by a mix of modern and older architectural styles. The street is lined with tall buildings on both sides, creating a canyon-like effect. On the left side, there are contemporary high-rise structures with glass facades, reflecting the sky and surrounding buildings. These buildings exhibit a sleek, modern architectural style, typical of late 20th and early 21st-century design, with clean lines and extensive use ",
+            "architectural_style": "Modern and early 20th-century",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": -37.80966111111111,
+              "longitude": 144.9638222222222
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "2312 Swanston St, Melbourne VIC 3000, Australia",
+              "city": "Melbourne",
+              "county": "Melbourne City",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:06:30 15:40:48",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 40.20798897743225
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Apartment (Melbourne, Australia)",
+          "confidence": 0.5682905912399292,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Apartment",
+            "artist_name": null,
+            "museum_or_location": "Melbourne, Australia",
+            "art_style": null,
+            "art_era": null,
+            "confidence": 0.5682905912399292,
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.5852980017662048
+              },
+              {
+                "name": "Car",
+                "score": 0.5771999955177307
+              },
+              {
+                "name": "Apartment",
+                "score": 0.5682905912399292
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.4811636507511139
+              },
+              {
+                "name": "Tower",
+                "score": 0.4074999988079071
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": -37.80966111111111,
+              "longitude": 144.9638222222222
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "2312 Swanston St, Melbourne VIC 3000, Australia",
+              "city": "Melbourne",
+              "county": "Melbourne City",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:06:30 15:40:48",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 17.216938972473145
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Melbourne, Melbourne City, Australia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Melbourne, Melbourne City, Australia",
+            "coordinates": {
+              "latitude": -37.80966111111111,
+              "longitude": 144.9638222222222
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Shot Tower Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 153,
+                  "vicinity": "Melbourne Central/211 La Trobe Street, Melbourne",
+                  "place_id": "ChIJx18s48pC1moRPwB-wTgc7kg",
+                  "location": {
+                    "lat": -37.8103869,
+                    "lng": 144.9629577
+                  }
+                },
+                {
+                  "name": "Queen Victoria Market",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 58057,
+                  "vicinity": "Queen Street, Melbourne",
+                  "place_id": "ChIJsVeQNzRd1moRUNQyBXZWBA8",
+                  "location": {
+                    "lat": -37.8075798,
+                    "lng": 144.956785
+                  }
+                },
+                {
+                  "name": "State Library Victoria",
+                  "types": [
+                    "art_gallery",
+                    "library",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 4067,
+                  "vicinity": "328 Swanston Street, Melbourne",
+                  "place_id": "ChIJ6RxLlctC1moReA6DqUtnh_E",
+                  "location": {
+                    "lat": -37.8097255,
+                    "lng": 144.9654504
+                  }
+                },
+                {
+                  "name": "Old Melbourne Gaol",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 3628,
+                  "vicinity": "377 Russell Street, Melbourne",
+                  "place_id": "ChIJYUcwasxC1moResepeNQs7Z0",
+                  "location": {
+                    "lat": -37.807832,
+                    "lng": 144.9653171
+                  }
+                },
+                {
+                  "name": "Royal Exhibition Building",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 6355,
+                  "vicinity": "9 Nicholson Street, Carlton",
+                  "place_id": "ChIJcd7_l9lC1moRN3U9OQmxoEQ",
+                  "location": {
+                    "lat": -37.8046891,
+                    "lng": 144.9716502
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Shot Tower Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 153,
+                  "vicinity": "Melbourne Central/211 La Trobe Street, Melbourne",
+                  "place_id": "ChIJx18s48pC1moRPwB-wTgc7kg",
+                  "location": {
+                    "lat": -37.8103869,
+                    "lng": 144.9629577
+                  }
+                },
+                {
+                  "name": "Old Melbourne Gaol",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 3628,
+                  "vicinity": "377 Russell Street, Melbourne",
+                  "place_id": "ChIJYUcwasxC1moResepeNQs7Z0",
+                  "location": {
+                    "lat": -37.807832,
+                    "lng": 144.9653171
+                  }
+                },
+                {
+                  "name": "Melbourne Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 18783,
+                  "vicinity": "11 Nicholson Street, Carlton",
+                  "place_id": "ChIJn97JQNpC1moRIcJsVMEQLI8",
+                  "location": {
+                    "lat": -37.803273,
+                    "lng": 144.9717408
+                  }
+                },
+                {
+                  "name": "Museum of Chinese Australian History",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 357,
+                  "vicinity": "level 1/22 Cohen Place, Melbourne",
+                  "place_id": "ChIJt7zSJ8lC1moRIqMuY1-bRIk",
+                  "location": {
+                    "lat": -37.8107775,
+                    "lng": 144.969144
+                  }
+                },
+                {
+                  "name": "ACMI",
+                  "types": [
+                    "tourist_attraction",
+                    "movie_theater",
+                    "art_gallery",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 6091,
+                  "vicinity": "Federation Square, Flinders Street, Melbourne",
+                  "place_id": "ChIJT8T86bZC1moRpBiRUC3lABM",
+                  "location": {
+                    "lat": -37.8175974,
+                    "lng": 144.9686881
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Oriental Teahouse Melbourne CBD",
+                  "types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1010,
+                  "vicinity": "378 Little Collins Street, Melbourne",
+                  "place_id": "ChIJd5kNx7RC1moR-pM_GKr9bKQ",
+                  "location": {
+                    "lat": -37.8155739,
+                    "lng": 144.9620832
+                  }
+                },
+                {
+                  "name": "Stamford Plaza Melbourne",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 1978,
+                  "vicinity": "111 Little Collins Street, Melbourne",
+                  "place_id": "ChIJc-7BSMhC1moRJadN_SH7-PM",
+                  "location": {
+                    "lat": -37.8135163,
+                    "lng": 144.9699388
+                  }
+                },
+                {
+                  "name": "Ginza Teppanyaki",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1489,
+                  "vicinity": "Level 1/139 Little Bourke Street, Melbourne",
+                  "place_id": "ChIJ5XpydclC1moR7UUgWI3KRTI",
+                  "location": {
+                    "lat": -37.8117282,
+                    "lng": 144.9684233
+                  }
+                },
+                {
+                  "name": "Japanese Teppanyaki Inn",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 468,
+                  "vicinity": "182 Collins Street, Melbourne",
+                  "place_id": "ChIJ4zzLEbZC1moRzkG67FkQbt8",
+                  "location": {
+                    "lat": -37.8149706,
+                    "lng": 144.9674068
+                  }
+                },
+                {
+                  "name": "Flower Drum Restaurant Melbourne",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1413,
+                  "vicinity": "17 Market Lane, Melbourne",
+                  "place_id": "ChIJr1N1BMlC1moR6aJLe1nHgPQ",
+                  "location": {
+                    "lat": -37.8118772,
+                    "lng": 144.9692458
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Flagstaff Gardens",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 7972,
+                  "vicinity": "309-311 William Street, West Melbourne",
+                  "place_id": "ChIJnQHt6Uld1moRgIUxBXZWBA8",
+                  "location": {
+                    "lat": -37.8105577,
+                    "lng": 144.9545199
+                  }
+                },
+                {
+                  "name": "The Nature Conservancy",
+                  "types": [
+                    "point_of_interest",
+                    "park",
+                    "establishment"
+                  ],
+                  "rating": 3.1,
+                  "user_ratings_total": 7,
+                  "vicinity": "The 60L Green Building, Leicester Street, Carlton",
+                  "place_id": "ChIJjV4jJDNd1moRRw0GV7FTvfk",
+                  "location": {
+                    "lat": -37.80491840000001,
+                    "lng": 144.9603597
+                  }
+                },
+                {
+                  "name": "Morton Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "7/388 Bourke Street, Melbourne",
+                  "place_id": "ChIJ50znJrVC1moRcr7Wpz_Tovo",
+                  "location": {
+                    "lat": -37.8143385,
+                    "lng": 144.9620968
+                  }
+                },
+                {
+                  "name": "Living Legacy Forest",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "f4/349 Collins Street, Melbourne",
+                  "place_id": "ChIJgRXO-rRC1moRWhgTu2bMh8o",
+                  "location": {
+                    "lat": -37.8169688,
+                    "lng": 144.9628399
+                  }
+                },
+                {
+                  "name": "Luminova",
+                  "types": [
+                    "park",
+                    "electronics_store",
+                    "home_goods_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "140 Bourke Street, Melbourne",
+                  "place_id": "ChIJX0nYqMlC1moR3JaU1CqoS1w",
+                  "location": {
+                    "lat": -37.8122757,
+                    "lng": 144.9689195
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "St Francis’ Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1125,
+                  "vicinity": "326 Lonsdale Street, Melbourne",
+                  "place_id": "ChIJF604vcpC1moREpFwYJGJbA8",
+                  "location": {
+                    "lat": -37.81165680000001,
+                    "lng": 144.9623958
+                  }
+                },
+                {
+                  "name": "ICC Melbourne",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 37,
+                  "vicinity": "156 Collins Street, Melbourne",
+                  "place_id": "ChIJsxcWIrZC1moRMuKBpgq2zbQ",
+                  "location": {
+                    "lat": -37.81458979999999,
+                    "lng": 144.9685261
+                  }
+                },
+                {
+                  "name": "Scots’ Church Melbourne",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 179,
+                  "vicinity": "77 Russell Street, Melbourne",
+                  "place_id": "ChIJsxcWIrZC1moRJ8W6FBQ_gO8",
+                  "location": {
+                    "lat": -37.8146546,
+                    "lng": 144.9686359
+                  }
+                },
+                {
+                  "name": "St. Michael's Uniting Church",
+                  "types": [
+                    "church",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 112,
+                  "vicinity": "120 Collins Street, Melbourne",
+                  "place_id": "ChIJXZeo0slC1moRlF6TvAzjn0k",
+                  "location": {
+                    "lat": -37.81432249999999,
+                    "lng": 144.9692778
+                  }
+                },
+                {
+                  "name": "Romanian Orthodox Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 19,
+                  "vicinity": "61/53-63 Queensberry Street, Carlton",
+                  "place_id": "ChIJ_6A6Cc5C1moRAUGikBgEHio",
+                  "location": {
+                    "lat": -37.805335,
+                    "lng": 144.966991
+                  }
+                },
+                {
+                  "name": "Melbourne Madinah",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 172,
+                  "vicinity": "359 Exhibition Street, Melbourne",
+                  "place_id": "ChIJ-_oYIrJC1moRQh_iqGoc-k4",
+                  "location": {
+                    "lat": -37.8074,
+                    "lng": 144.9682305
+                  }
+                },
+                {
+                  "name": "RMIT international Campus Musalla",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 9,
+                  "vicinity": "3000/265 Bourke Street, Melbourne",
+                  "place_id": "ChIJ0WH297VC1moRCkzYEDSoTho",
+                  "location": {
+                    "lat": -37.8136194,
+                    "lng": 144.9659915
+                  }
+                },
+                {
+                  "name": "Musalla - University of Melbourne Islamic Society",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 98,
+                  "vicinity": "Pelham Street, Carlton",
+                  "place_id": "ChIJ1ZPqstJC1moRx8iRGftqsE4",
+                  "location": {
+                    "lat": -37.80195990000001,
+                    "lng": 144.9612737
+                  }
+                },
+                {
+                  "name": "University Of Melbourne Musalla (Prayer Rooms)",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 16,
+                  "vicinity": "Parkville VIC 3010",
+                  "place_id": "ChIJbR_8stJC1moRJdx8IdLrlFI",
+                  "location": {
+                    "lat": -37.80192729999999,
+                    "lng": 144.9613333
+                  }
+                },
+                {
+                  "name": "Muslimin.Melbourne Mosques",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 52,
+                  "vicinity": "17 Victoria Street, Melbourne",
+                  "place_id": "ChIJnZ0lyM5D1moRYs3O-d1MCK8",
+                  "location": {
+                    "lat": -37.8074272,
+                    "lng": 144.9680903
+                  }
+                },
+                {
+                  "name": "East Melbourne Hebrew Congregation",
+                  "types": [
+                    "synagogue",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 57,
+                  "vicinity": "488 Albert Street, East Melbourne",
+                  "place_id": "ChIJSf2_B8VC1moRE9uJb5NE9bA",
+                  "location": {
+                    "lat": -37.80906239999999,
+                    "lng": 144.974214
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "State Library Victoria",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "library",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 4067,
+                  "vicinity": "328 Swanston Street, Melbourne",
+                  "place_id": "ChIJ6RxLlctC1moReA6DqUtnh_E",
+                  "location": {
+                    "lat": -37.8097255,
+                    "lng": 144.9654504
+                  }
+                },
+                {
+                  "name": "Outré Gallery",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 340,
+                  "vicinity": "249 Elizabeth Street, Melbourne",
+                  "place_id": "ChIJlWuMXLVC1moRPheZvqV8P3E",
+                  "location": {
+                    "lat": -37.812839,
+                    "lng": 144.962309
+                  }
+                },
+                {
+                  "name": "RMIT Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 96,
+                  "vicinity": "344 Swanston Street, Melbourne",
+                  "place_id": "ChIJ-_AvCstC1moRc13Bm9kOaRg",
+                  "location": {
+                    "lat": -37.8090356,
+                    "lng": 144.9639658
+                  }
+                },
+                {
+                  "name": "Craft Victoria",
+                  "types": [
+                    "art_gallery",
+                    "home_goods_store",
+                    "jewelry_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 90,
+                  "vicinity": "Craft, Watson Place, Melbourne",
+                  "place_id": "ChIJy7Tlw8dC1moRnqcyPeBCW4w",
+                  "location": {
+                    "lat": -37.8158241,
+                    "lng": 144.9682385
+                  }
+                },
+                {
+                  "name": "ACMI",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "museum",
+                    "movie_theater",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 6091,
+                  "vicinity": "Federation Square, Flinders Street, Melbourne",
+                  "place_id": "ChIJT8T86bZC1moRpBiRUC3lABM",
+                  "location": {
+                    "lat": -37.8175974,
+                    "lng": 144.9686881
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Melbourne",
+                  "types": [
+                    "colloquial_area",
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Melbourne",
+                  "place_id": "ChIJ90260rVG1moRkM2MIXVWBAQ",
+                  "location": {
+                    "lat": -37.8136276,
+                    "lng": 144.9630576
+                  }
+                },
+                {
+                  "name": "ibis Melbourne - Hotel & Apartments",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1978,
+                  "vicinity": "15-21 Therry Street, Melbourne",
+                  "place_id": "ChIJiaMVrcxC1moRvEVeeAq_JSM",
+                  "location": {
+                    "lat": -37.8069565,
+                    "lng": 144.9613627
+                  }
+                },
+                {
+                  "name": "Mantra on Russell Melbourne",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1177,
+                  "vicinity": "222 Russell Street, Melbourne",
+                  "place_id": "ChIJXccYcclC1moRFzEzURPX3m8",
+                  "location": {
+                    "lat": -37.8112795,
+                    "lng": 144.9679488
+                  }
+                },
+                {
+                  "name": "Hotel Grand Chancellor Melbourne",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 1474,
+                  "vicinity": "131 Lonsdale Street, Melbourne",
+                  "place_id": "ChIJ53vEPslC1moRaeD68DDwOfk",
+                  "location": {
+                    "lat": -37.8107074,
+                    "lng": 144.9684061
+                  }
+                },
+                {
+                  "name": "The Victoria Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 2951,
+                  "vicinity": "215 Little Collins Street, Melbourne",
+                  "place_id": "ChIJ62M5mrRC1moR6NLAe6ezBHI",
+                  "location": {
+                    "lat": -37.8142903,
+                    "lng": 144.9671311
+                  }
+                }
+              ]
+            },
+            "total_places_found": 41,
+            "photo_timestamp": "2025:06:30 15:40:48",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.45438218116760254
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/181.heic"
+    },
+    {
+      "image_filename": "181.heic",
+      "timestamp": "2026-01-28T03:52:06.255369",
+      "processing_time_seconds": 61.111457,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "City street with modern skyscrapers, Melbourne, Australia",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of tram tracks and the style of the buildings suggest a modern city environment, likely Melbourne, known for its extensive tram network and contemporary architecture.",
+            "detailed_description": "The image depicts a city street lined with modern skyscrapers, characterized by glass facades and contemporary architectural styles. Tram tracks are visible running down the center of the street, indicating a public transportation system. The scene is urban, with a mix of commercial buildings and high-rise towers, typical of a bustling city center.",
+            "identification": {
+              "primary": [
+                "City street with modern skyscrapers"
+              ],
+              "location": "Melbourne, Australia",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Modern skyscrapers",
+                "type": "building",
+                "confidence": 0.9
+              },
+              {
+                "name": "Tram tracks",
+                "type": "transportation infrastructure",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "urban",
+              "glass_facade",
+              "transportation",
+              "Melbourne"
+            ],
+            "location": "Melbourne, Australia",
+            "type": "urban scene",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Sydney, Australia",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "Sydney also features modern skyscrapers and urban infrastructure, but lacks the tram network visible in the image."
+              },
+              {
+                "guess": "Brisbane, Australia",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.5,
+                "reasoning": "Brisbane has similar architectural styles, but the tram tracks are more indicative of Melbourne."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"City street with modern skyscrapers\"],\n        \"location\": \"Melbourne, Australia\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Modern skyscrapers\",\n            \"type\": \"building\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Tram tracks\",\n            \"type\": \"transportation infrastructure\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"urban\", \"glass_facade\", \"transportation\", \"Melbourne\"],\n    \"description\": \"The image depicts a city street lined with modern skyscrapers, characterized by glass facades and contemporary architectural styles. Tram tracks are visible running down the center of the street, indicating a public transportation system. The scene is urban, with a mix of commercial buildings and high-rise towers, typical of a bustling city center.\",\n    \"reasoning\": \"The presence of tram tracks and the style of the buildings suggest a modern city environment, likely Melbourne, known for its extensive tram network and contemporary architecture.\",\n    \"type\": \"urban scene\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Sydney, Australia\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"Sydney also features modern skyscrapers and urban infrastructure, but lacks the tram network visible in the image.\"\n        },\n        {\n            \"guess\": \"Brisbane, Australia\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.5,\n            \"reasoning\": \"Brisbane has similar architectural styles, but the tram tracks are more indicative of Melbourne.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 25.440296173095703
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([cindy-chung.pixels.com]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts an urban street scene with a prominent view of a long, straight road flanked by tall buildings on either side. The street features tram tracks running down the center, indicating a city with a tram system. Overhead, numerous wires and cables are visible, likely associated with the tram infrastructure. The buildings on the left side of the street are modern, with glass facades reflecting the blue sky, suggesting contemporary architectural styles. These structures exhibit clean l",
+            "description": "The image depicts an urban street scene with a prominent view of a long, straight road flanked by tall buildings on either side. The street features tram tracks running down the center, indicating a city with a tram system. Overhead, numerous wires and cables are visible, likely associated with the tram infrastructure. The buildings on the left side of the street are modern, with glass facades reflecting the blue sky, suggesting contemporary architectural styles. These structures exhibit clean l",
+            "architectural_style": "Modern and traditional blend",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 35.452194929122925
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Apartment",
+          "confidence": 0.5686671137809753,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Apartment",
+            "artist_name": null,
+            "museum_or_location": null,
+            "art_style": null,
+            "art_era": null,
+            "confidence": 0.5686671137809753,
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.5854259133338928
+              },
+              {
+                "name": "Car",
+                "score": 0.5771999955177307
+              },
+              {
+                "name": "Apartment",
+                "score": 0.5686671137809753
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.4812811613082886
+              },
+              {
+                "name": "Tower",
+                "score": 0.4074999988079071
+              }
+            ],
+            "processing_time_seconds": 16.25810408592224
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/181.heic"
+    }
+  ]
+}

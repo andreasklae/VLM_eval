@@ -1,0 +1,1042 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "21.jpg",
+      "timestamp": "2026-01-28T04:56:44.480335",
+      "processing_time_seconds": 46.895952,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 40.75539722222222,
+        "gps_longitude": -73.9837111111111,
+        "location": {
+          "formatted_address": "42 St-Bryant Pk, New York, NY 10036, USA",
+          "city": "New York",
+          "county": "New York County",
+          "country": "United States"
+        },
+        "datetime_original": "2019:09:29 09:44:42",
+        "camera_make": "google",
+        "camera_model": "Mi MIX 3"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Empire State Building, New York, United States",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The Empire State Building is easily recognizable due to its iconic spire and architectural style, confirming its identity as a major landmark in New York City.",
+            "detailed_description": "The image prominently features the Empire State Building, a renowned Art Deco skyscraper located in New York City. It is characterized by its distinctive spire and stepped design, typical of the Art Deco style from the early 20th century. Surrounding the Empire State Building are other modern and historic buildings, contributing to the dense urban landscape of Manhattan.",
+            "identification": {
+              "primary": [
+                "Empire State Building"
+              ],
+              "location": "New York, United States",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Empire State Building",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Art Deco",
+              "20th_century",
+              "skyscraper",
+              "New York",
+              "landmark"
+            ],
+            "location": "New York, United States",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Empire State Building\"],\n        \"location\": \"New York, United States\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Empire State Building\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Art Deco\", \"20th_century\", \"skyscraper\", \"New York\", \"landmark\"],\n    \"description\": \"The image prominently features the Empire State Building, a renowned Art Deco skyscraper located in New York City. It is characterized by its distinctive spire and stepped design, typical of the Art Deco style from the early 20th century. Surrounding the Empire State Building are other modern and historic buildings, contributing to the dense urban landscape of Manhattan.\",\n    \"reasoning\": \"The Empire State Building is easily recognizable due to its iconic spire and architectural style, confirming its identity as a major landmark in New York City.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 40.75539722222222,
+              "longitude": -73.9837111111111
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "42 St-Bryant Pk, New York, NY 10036, USA",
+              "city": "New York",
+              "county": "New York County",
+              "country": "United States"
+            },
+            "photo_timestamp": "2019:09:29 09:44:42",
+            "camera": {
+              "make": "google",
+              "model": "Mi MIX 3"
+            },
+            "processing_time_seconds": 8.273074865341187
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image prominently features a cityscape in New York City, with the iconic skyscraper in the center. This building is characterized by its distinctive Art Deco architectural style, evident in its stepped design and spire. The facade is composed of limestone and stainless steel, giving it a sleek and modern appearance despite its historical construction. Surrounding the skyscraper are other high-rise buildings, showcasing a mix of architectural styles, including modern glass facades and older b",
+            "description": "The image prominently features a cityscape in New York City, with the iconic skyscraper in the center. This building is characterized by its distinctive Art Deco architectural style, evident in its stepped design and spire. The facade is composed of limestone and stainless steel, giving it a sleek and modern appearance despite its historical construction. Surrounding the skyscraper are other high-rise buildings, showcasing a mix of architectural styles, including modern glass facades and older b",
+            "architectural_style": "Art Deco",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 40.75539722222222,
+              "longitude": -73.9837111111111
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "42 St-Bryant Pk, New York, NY 10036, USA",
+              "city": "New York",
+              "county": "New York County",
+              "country": "United States"
+            },
+            "photo_timestamp": "2019:09:29 09:44:42",
+            "camera": {
+              "make": "google",
+              "model": "Mi MIX 3"
+            },
+            "processing_time_seconds": 37.77424693107605
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Apartment (New York, United States)",
+          "confidence": 0.5529721975326538,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Apartment",
+            "artist_name": null,
+            "museum_or_location": "New York, United States",
+            "art_style": null,
+            "art_era": null,
+            "confidence": 0.5529721975326538,
+            "web_entities": [
+              {
+                "name": "Car",
+                "score": 0.7285500168800354
+              },
+              {
+                "name": "SUV",
+                "score": 0.6859013438224792
+              },
+              {
+                "name": "Daewoo Tosca",
+                "score": 0.5994452238082886
+              },
+              {
+                "name": "Skyscraper",
+                "score": 0.55724036693573
+              },
+              {
+                "name": "Apartment",
+                "score": 0.5529721975326538
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 40.75539722222222,
+              "longitude": -73.9837111111111
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "42 St-Bryant Pk, New York, NY 10036, USA",
+              "city": "New York",
+              "county": "New York County",
+              "country": "United States"
+            },
+            "photo_timestamp": "2019:09:29 09:44:42",
+            "camera": {
+              "make": "google",
+              "model": "Mi MIX 3"
+            },
+            "processing_time_seconds": 12.252104997634888
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "New York, New York County, United States",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "New York, New York County, United States",
+            "coordinates": {
+              "latitude": 40.75539722222222,
+              "longitude": -73.9837111111111
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Times Square",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 238200,
+                  "vicinity": "Manhattan",
+                  "place_id": "ChIJmQJIxlVYwokRLgeuocVOGVU",
+                  "location": {
+                    "lat": 40.7579747,
+                    "lng": -73.9855426
+                  }
+                },
+                {
+                  "name": "Radio City Music Hall",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 27143,
+                  "vicinity": "1260 6th Avenue, New York",
+                  "place_id": "ChIJPS8b1vhYwokRldqq2YHmxJI",
+                  "location": {
+                    "lat": 40.75997599999999,
+                    "lng": -73.9799772
+                  }
+                },
+                {
+                  "name": "Rockefeller Center",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 198850,
+                  "vicinity": "45 Rockefeller Plaza, New York",
+                  "place_id": "ChIJ9U1mz_5YwokRosza1aAk0jM",
+                  "location": {
+                    "lat": 40.7587402,
+                    "lng": -73.9786736
+                  }
+                },
+                {
+                  "name": "Empire State Building",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 123950,
+                  "vicinity": "20 West 34th Street, New York",
+                  "place_id": "ChIJaXQRs6lZwokRY6EFpJnhNNE",
+                  "location": {
+                    "lat": 40.7484405,
+                    "lng": -73.98566439999999
+                  }
+                },
+                {
+                  "name": "Madame Tussauds New York",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 29293,
+                  "vicinity": "234 West 42nd Street, New York",
+                  "place_id": "ChIJ8VOfr1RYwokRhil9_pcMKuc",
+                  "location": {
+                    "lat": 40.7564752,
+                    "lng": -73.9883888
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Empire State Building",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 123950,
+                  "vicinity": "20 West 34th Street, New York",
+                  "place_id": "ChIJaXQRs6lZwokRY6EFpJnhNNE",
+                  "location": {
+                    "lat": 40.7484405,
+                    "lng": -73.98566439999999
+                  }
+                },
+                {
+                  "name": "Madame Tussauds New York",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 29293,
+                  "vicinity": "234 West 42nd Street, New York",
+                  "place_id": "ChIJ8VOfr1RYwokRhil9_pcMKuc",
+                  "location": {
+                    "lat": 40.7564752,
+                    "lng": -73.9883888
+                  }
+                },
+                {
+                  "name": "The Museum of Modern Art",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 58017,
+                  "vicinity": "11 West 53rd Street, New York",
+                  "place_id": "ChIJKxDbe_lYwokRVf__s8CPn-o",
+                  "location": {
+                    "lat": 40.7614327,
+                    "lng": -73.97762159999999
+                  }
+                },
+                {
+                  "name": "The Morgan Library & Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "library",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 4888,
+                  "vicinity": "225 Madison Avenue, New York",
+                  "place_id": "ChIJ3453OAdZwokRja92OOKCugM",
+                  "location": {
+                    "lat": 40.7492258,
+                    "lng": -73.9813971
+                  }
+                },
+                {
+                  "name": "The Paley Center For Media NYC",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 624,
+                  "vicinity": "25 West 52nd Street, New York",
+                  "place_id": "ChIJF5e1QvlYwokRcVF6x1CEcQk",
+                  "location": {
+                    "lat": 40.7605642,
+                    "lng": -73.9775578
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Connolly's",
+                  "types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 5039,
+                  "vicinity": "121 West 45th Street, New York",
+                  "place_id": "ChIJAS6GeVVYwokRPfg8xt4nH-I",
+                  "location": {
+                    "lat": 40.7573681,
+                    "lng": -73.9835798
+                  }
+                },
+                {
+                  "name": "Carmine's - Time Square",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 18413,
+                  "vicinity": "200 West 44th Street, New York",
+                  "place_id": "ChIJR9So-lRYwokRX1xEjA0rChA",
+                  "location": {
+                    "lat": 40.757498,
+                    "lng": -73.986654
+                  }
+                },
+                {
+                  "name": "Bryant Park Grill",
+                  "types": [
+                    "restaurant",
+                    "bar",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 3270,
+                  "vicinity": "25 West 40th Street, New York",
+                  "place_id": "ChIJqTF1eABZwokR3ZMQ2obIW4w",
+                  "location": {
+                    "lat": 40.7531999,
+                    "lng": -73.982957
+                  }
+                },
+                {
+                  "name": "Blue Fin",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 1203,
+                  "vicinity": "1567 Broadway, New York",
+                  "place_id": "ChIJzz-PyFVYwokRwp5z0KduYls",
+                  "location": {
+                    "lat": 40.75937589999999,
+                    "lng": -73.98532519999999
+                  }
+                },
+                {
+                  "name": "Grand Central Oyster Bar",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 4520,
+                  "vicinity": "89 East 42nd Street, New York",
+                  "place_id": "ChIJR9legAFZwokRa1s5gcFXPZw",
+                  "location": {
+                    "lat": 40.7524823,
+                    "lng": -73.97743109999999
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "I D & Allc",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "295 Madison Avenue, New York",
+                  "place_id": "ChIJywfGBQFZwokRPVfXK5F6LAs",
+                  "location": {
+                    "lat": 40.7517291,
+                    "lng": -73.97949229999999
+                  }
+                },
+                {
+                  "name": "Paley Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 868,
+                  "vicinity": "3 East 53rd Street, New York",
+                  "place_id": "ChIJcUYGvftYwokRXvGL1B_cN2o",
+                  "location": {
+                    "lat": 40.7602157,
+                    "lng": -73.9751349
+                  }
+                },
+                {
+                  "name": "Bryant Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 105284,
+                  "vicinity": "New York",
+                  "place_id": "ChIJvbGg56pZwokRp_E3JbivnLQ",
+                  "location": {
+                    "lat": 40.7535367,
+                    "lng": -73.9829529
+                  }
+                },
+                {
+                  "name": "Father Duffy Square",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 2996,
+                  "vicinity": "7th Ave &, West 47th Street, New York",
+                  "place_id": "ChIJk-utwVVYwokRx--LhLcP2cA",
+                  "location": {
+                    "lat": 40.75900769999999,
+                    "lng": -73.9850222
+                  }
+                },
+                {
+                  "name": "Forty Eight West Thirty Eighth",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "48 West 38th Street, New York",
+                  "place_id": "ChIJA-3LSKpZwokRMYbcDhpVkEs",
+                  "location": {
+                    "lat": 40.75170869999999,
+                    "lng": -73.9850369
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "St. Patrick's Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 41129,
+                  "vicinity": "5th Avenue, New York",
+                  "place_id": "ChIJUW4vEPxYwokRW6o24DU0YIg",
+                  "location": {
+                    "lat": 40.7586117,
+                    "lng": -73.9761953
+                  }
+                },
+                {
+                  "name": "Times Square Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1451,
+                  "vicinity": "237 West 51st Street, New York",
+                  "place_id": "ChIJVUGHS1ZYwokRx39CH6zNL5M",
+                  "location": {
+                    "lat": 40.7624398,
+                    "lng": -73.9841342
+                  }
+                },
+                {
+                  "name": "St. Bartholomew's Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 719,
+                  "vicinity": "325 Park Avenue, New York",
+                  "place_id": "ChIJ0zRtw_xYwokRwwRCPeCLMfg",
+                  "location": {
+                    "lat": 40.7574631,
+                    "lng": -73.9733474
+                  }
+                },
+                {
+                  "name": "St. Thomas Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 1053,
+                  "vicinity": "1 West 53rd Street, New York",
+                  "place_id": "ChIJQxcQwftYwokRKy-FqagoB7g",
+                  "location": {
+                    "lat": 40.7607327,
+                    "lng": -73.9758992
+                  }
+                },
+                {
+                  "name": "Shrine and Parish Church of The Holy Innocents",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 508,
+                  "vicinity": "128 West 37th Street, New York",
+                  "place_id": "ChIJ-dkWjatZwokR-fugfEGfdX0",
+                  "location": {
+                    "lat": 40.7522929,
+                    "lng": -73.9880697
+                  }
+                },
+                {
+                  "name": "Masjid Awliya of Allah",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 393,
+                  "vicinity": "327 West 36th Street, New York",
+                  "place_id": "ChIJFeAUdq1ZwokRAfbM6aIysCc",
+                  "location": {
+                    "lat": 40.7542225,
+                    "lng": -73.9937345
+                  }
+                },
+                {
+                  "name": "Union For Reform Judaism",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3,
+                  "user_ratings_total": 6,
+                  "vicinity": "633 3rd Avenue # Sc-7, New York",
+                  "place_id": "ChIJi9zckANZwokR0mt7ay2oriY",
+                  "location": {
+                    "lat": 40.7496916,
+                    "lng": -73.9748302
+                  }
+                },
+                {
+                  "name": "Metropolitan Synagogue",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3,
+                  "user_ratings_total": 4,
+                  "vicinity": "40 East 35th Street, New York",
+                  "place_id": "ChIJ8_cPDQdZwokR14YcgqDp--8",
+                  "location": {
+                    "lat": 40.74779900000001,
+                    "lng": -73.9815546
+                  }
+                },
+                {
+                  "name": "Central Conference of American Rabbis",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 1,
+                  "user_ratings_total": 1,
+                  "vicinity": "355 Lexington Avenue Floor 8, New York",
+                  "place_id": "ChIJt5cK5gNZwokRZoUISh2LHcQ",
+                  "location": {
+                    "lat": 40.7501675,
+                    "lng": -73.97648269999999
+                  }
+                },
+                {
+                  "name": "Chabad Torah Center",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 42,
+                  "vicinity": "393 5th Avenue, New York",
+                  "place_id": "ChIJpavGt6lZwokRPUGPlFX8U3k",
+                  "location": {
+                    "lat": 40.7499348,
+                    "lng": -73.98328939999999
+                  }
+                },
+                {
+                  "name": "Chabad of the Diamond District",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 9,
+                  "vicinity": "31 West 46th Street 3rd floor, New York",
+                  "place_id": "ChIJaReSqv9YwokRFCTZ-ihNQnQ",
+                  "location": {
+                    "lat": 40.75684429999999,
+                    "lng": -73.9801852
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "The Museum of Modern Art",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 58017,
+                  "vicinity": "11 West 53rd Street, New York",
+                  "place_id": "ChIJKxDbe_lYwokRVf__s8CPn-o",
+                  "location": {
+                    "lat": 40.7614327,
+                    "lng": -73.97762159999999
+                  }
+                },
+                {
+                  "name": "Scandinavia House",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "movie_theater",
+                    "art_gallery",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 575,
+                  "vicinity": "58 Park Avenue, New York",
+                  "place_id": "ChIJ7QYh1gZZwokRQgSBBv50DdI",
+                  "location": {
+                    "lat": 40.749454,
+                    "lng": -73.980048
+                  }
+                },
+                {
+                  "name": "Creative Art Works",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 6,
+                  "vicinity": "100 West 33rd Street Suite 1026, New York",
+                  "place_id": "ChIJrThdq61ZwokRcd4D4wrebGQ",
+                  "location": {
+                    "lat": 40.7491267,
+                    "lng": -73.9893388
+                  }
+                },
+                {
+                  "name": "Tower 49 Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 50,
+                  "vicinity": "12 East 49th Street, New York",
+                  "place_id": "ChIJM2o4JPxYwokRof90Wc157Dg",
+                  "location": {
+                    "lat": 40.75724949999999,
+                    "lng": -73.9769973
+                  }
+                },
+                {
+                  "name": "Contemporary Art Partners LLC",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1,
+                  "vicinity": "1412 Broadway Fl 21, New York",
+                  "place_id": "ChIJddPYBqxZwokRf83sVnAxYzY",
+                  "location": {
+                    "lat": 40.7536186,
+                    "lng": -73.9865552
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "New York",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "New York",
+                  "place_id": "ChIJOwg_06VPwokRYv534QaPC8g",
+                  "location": {
+                    "lat": 40.7127753,
+                    "lng": -74.0059728
+                  }
+                },
+                {
+                  "name": "Royalton New York",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 1376,
+                  "vicinity": "44 West 44th Street, New York",
+                  "place_id": "ChIJpSMN7_9YwokRkCnu6yqV-Rk",
+                  "location": {
+                    "lat": 40.7555732,
+                    "lng": -73.9822616
+                  }
+                },
+                {
+                  "name": "Aura Hotel Times Square",
+                  "types": [
+                    "lodging",
+                    "clothing_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 2319,
+                  "vicinity": "120 West 44th Street, New York",
+                  "place_id": "ChIJWZVoalVYwokRiKS594qHz1g",
+                  "location": {
+                    "lat": 40.75643159999999,
+                    "lng": -73.98428679999999
+                  }
+                },
+                {
+                  "name": "City Club Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.6,
+                  "user_ratings_total": 1141,
+                  "vicinity": "55 West 44th Street, New York",
+                  "place_id": "ChIJTzk87v9YwokR2exR3ZVeQRg",
+                  "location": {
+                    "lat": 40.7558959,
+                    "lng": -73.9821702
+                  }
+                },
+                {
+                  "name": "The Chatwal - The Unbound Collection by Hyatt",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 429,
+                  "vicinity": "130 West 44th Street, New York",
+                  "place_id": "ChIJ613balVYwokR2Sd7fEqauZs",
+                  "location": {
+                    "lat": 40.7565183,
+                    "lng": -73.9846017
+                  }
+                }
+              ]
+            },
+            "total_places_found": 41,
+            "photo_timestamp": "2019:09:29 09:44:42",
+            "camera": {
+              "make": "google",
+              "model": "Mi MIX 3"
+            },
+            "processing_time_seconds": 0.5253398418426514
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/21.jpg"
+    },
+    {
+      "image_filename": "21.jpg",
+      "timestamp": "2026-01-28T04:57:31.407589",
+      "processing_time_seconds": 57.409052,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Empire State Building, New York City, USA",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The Empire State Building is easily recognizable due to its iconic spire and Art Deco design, which are distinctive features of this landmark in New York City.",
+            "detailed_description": "The image prominently features the Empire State Building, a renowned Art Deco skyscraper located in New York City. It is characterized by its distinctive spire and stepped design, typical of the Art Deco style popular in the early 20th century. Surrounding the Empire State Building are other modern and mid-century buildings, contributing to the dense urban landscape of Manhattan.",
+            "identification": {
+              "primary": [
+                "Empire State Building"
+              ],
+              "location": "New York City, USA",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Empire State Building",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Art Deco",
+              "20th_century",
+              "skyscraper",
+              "New York City",
+              "landmark"
+            ],
+            "location": "New York City, USA",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Empire State Building\"],\n        \"location\": \"New York City, USA\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Empire State Building\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Art Deco\", \"20th_century\", \"skyscraper\", \"New York City\", \"landmark\"],\n    \"description\": \"The image prominently features the Empire State Building, a renowned Art Deco skyscraper located in New York City. It is characterized by its distinctive spire and stepped design, typical of the Art Deco style popular in the early 20th century. Surrounding the Empire State Building are other modern and mid-century buildings, contributing to the dense urban landscape of Manhattan.\",\n    \"reasoning\": \"The Empire State Building is easily recognizable due to its iconic spire and Art Deco design, which are distinctive features of this landmark in New York City.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 9.056707859039307
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image captures a bustling urban scene dominated by a prominent skyscraper in the background. This skyscraper features a distinctive spire and is characterized by its Art Deco architectural style, evident in its tiered structure and ornamental detailing. The building is constructed with limestone and granite, giving it a robust and classic appearance. Surrounding the skyscraper are modern buildings with glass facades, reflecting the contemporary architectural style prevalent in urban centers.",
+            "description": "The image captures a bustling urban scene dominated by a prominent skyscraper in the background. This skyscraper features a distinctive spire and is characterized by its Art Deco architectural style, evident in its tiered structure and ornamental detailing. The building is constructed with limestone and granite, giving it a robust and classic appearance. Surrounding the skyscraper are modern buildings with glass facades, reflecting the contemporary architectural style prevalent in urban centers.",
+            "architectural_style": "Art Deco",
+            "search_backends_used": [],
+            "processing_time_seconds": 48.35098695755005
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Apartment",
+          "confidence": 0.5117471814155579,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Apartment",
+            "artist_name": null,
+            "museum_or_location": null,
+            "art_style": null,
+            "art_era": null,
+            "confidence": 0.5117471814155579,
+            "web_entities": [
+              {
+                "name": "Car",
+                "score": 0.7494000196456909
+              },
+              {
+                "name": "SUV",
+                "score": 0.6929346323013306
+              },
+              {
+                "name": "Minivan",
+                "score": 0.564300000667572
+              },
+              {
+                "name": "Compact car",
+                "score": 0.5611500144004822
+              },
+              {
+                "name": "Skyscraper",
+                "score": 0.5506983399391174
+              }
+            ],
+            "processing_time_seconds": 12.549942970275879
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/21.jpg"
+    }
+  ]
+}

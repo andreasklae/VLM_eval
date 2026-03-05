@@ -1,0 +1,996 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "188.jpg",
+      "timestamp": "2026-01-28T04:06:40.687885",
+      "processing_time_seconds": 66.607599,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 59.97086388888889,
+        "gps_longitude": 10.594183333333334,
+        "location": {
+          "formatted_address": "XHCW+55, Bærum, Norway",
+          "city": null,
+          "county": "Bærum",
+          "country": "Norway"
+        },
+        "datetime_original": "2025:07:21 16:48:10",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Lake or water body, Forest, Bærum, Norway",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of a water body and forest is consistent with the natural landscapes found in Bærum, Norway. The rocky shoreline and dense tree coverage are typical features of this region.",
+            "detailed_description": "The image shows a serene landscape featuring a lake or water body with a rocky shoreline. The water reflects the sunlight, creating a shimmering effect. In the background, there is a dense forest with tall trees. The sky is partly cloudy, with the sun visible, casting light across the scene.",
+            "identification": {
+              "primary": [
+                "Lake or water body",
+                "Forest"
+              ],
+              "location": "Bærum, Norway",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Lake or water body",
+                "type": "natural_feature",
+                "confidence": 0.85
+              },
+              {
+                "name": "Forest",
+                "type": "natural_feature",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "lake",
+              "forest",
+              "Norway",
+              "landscape"
+            ],
+            "location": "Bærum, Norway",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Lake in Bærum",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.75,
+                "reasoning": "Bærum is known for its natural landscapes, including lakes and forests."
+              },
+              {
+                "guess": "Norwegian landscape",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The features are typical of Norwegian natural scenery."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Lake or water body\", \"Forest\"],\n        \"location\": \"Bærum, Norway\",\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Lake or water body\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.85\n        },\n        {\n            \"name\": \"Forest\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"lake\", \"forest\", \"Norway\", \"landscape\"],\n    \"description\": \"The image shows a serene landscape featuring a lake or water body with a rocky shoreline. The water reflects the sunlight, creating a shimmering effect. In the background, there is a dense forest with tall trees. The sky is partly cloudy, with the sun visible, casting light across the scene.\",\n    \"reasoning\": \"The presence of a water body and forest is consistent with the natural landscapes found in Bærum, Norway. The rocky shoreline and dense tree coverage are typical features of this region.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Lake in Bærum\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.75,\n            \"reasoning\": \"Bærum is known for its natural landscapes, including lakes and forests.\"\n        },\n        {\n            \"guess\": \"Norwegian landscape\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.70,\n            \"reasoning\": \"The features are typical of Norwegian natural scenery.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": 59.97086388888889,
+              "longitude": 10.594183333333334
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "XHCW+55, Bærum, Norway",
+              "city": null,
+              "county": "Bærum",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:07:21 16:48:10",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 12.146537065505981
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([en.wikipedia.org]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a serene lakeside scene in Bærum, Norway. The foreground features a rocky shoreline with smooth, rounded stones scattered across a gravelly surface. A wooden dock extends into the lake, providing a focal point that draws the eye towards the water. The lake itself is calm, with gentle ripples reflecting the sunlight, creating a shimmering effect across the surface. In the background, a dense line of trees forms a natural barrier, their dark green foliage contrasting with the lig",
+            "description": "The image depicts a serene lakeside scene in Bærum, Norway. The foreground features a rocky shoreline with smooth, rounded stones scattered across a gravelly surface. A wooden dock extends into the lake, providing a focal point that draws the eye towards the water. The lake itself is calm, with gentle ripples reflecting the sunlight, creating a shimmering effect across the surface. In the background, a dense line of trees forms a natural barrier, their dark green foliage contrasting with the lig",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 59.97086388888889,
+              "longitude": 10.594183333333334
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "XHCW+55, Bærum, Norway",
+              "city": null,
+              "county": "Bærum",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:07:21 16:48:10",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 53.677513122558594
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Sun",
+          "confidence": 0.976269006729126,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Sun",
+                "score": 0.976269006729126
+              },
+              {
+                "source": "label",
+                "name": "Astronomical object",
+                "score": 0.853877067565918
+              }
+            ],
+            "web_entities": [],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9889386296272278
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9816538691520691
+              },
+              {
+                "name": "Sun",
+                "score": 0.976269006729126
+              },
+              {
+                "name": "Cloud",
+                "score": 0.948495090007782
+              },
+              {
+                "name": "Astronomical object",
+                "score": 0.853877067565918
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 59.97086388888889,
+              "longitude": 10.594183333333334
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "XHCW+55, Bærum, Norway",
+              "city": null,
+              "county": "Bærum",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:07:21 16:48:10",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 15.078897714614868
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Bærum, Norway",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Bærum, Norway",
+            "coordinates": {
+              "latitude": 59.97086388888889,
+              "longitude": 10.594183333333334
+            },
+            "search_range_meters": 5000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Holmenkollen Ski Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 8095,
+                  "vicinity": "Kongeveien 5, Oslo",
+                  "place_id": "ChIJAVYeCn9tQUYR-b71kdo6ySs",
+                  "location": {
+                    "lat": 59.9640897,
+                    "lng": 10.6664141
+                  }
+                },
+                {
+                  "name": "Skimore Oslo",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1640,
+                  "vicinity": "Tryvannsveien 64, Oslo",
+                  "place_id": "ChIJA6u0RIxyQUYR9FwjWef9G8Q",
+                  "location": {
+                    "lat": 59.9879088,
+                    "lng": 10.6667453
+                  }
+                },
+                {
+                  "name": "Grinimuseet",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 137,
+                  "vicinity": "Jøssingveien 31, Eiksmarka",
+                  "place_id": "ChIJadRVALUSQUYR8V0SkBFLQ8Y",
+                  "location": {
+                    "lat": 59.9557625,
+                    "lng": 10.5847105
+                  }
+                },
+                {
+                  "name": "Kollensvevet Zipline & activities in Holmenkollen",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 376,
+                  "vicinity": "Kongeveien 5, Oslo",
+                  "place_id": "ChIJC4eGFBNuQUYR8OLMLtU6rNk",
+                  "location": {
+                    "lat": 59.9643766,
+                    "lng": 10.6660077
+                  }
+                },
+                {
+                  "name": "Skisimulator",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 2.9,
+                  "user_ratings_total": 69,
+                  "vicinity": "Kongeveien 5, Oslo",
+                  "place_id": "ChIJAVYeCn9tQUYREh5yngL6LvY",
+                  "location": {
+                    "lat": 59.9646494,
+                    "lng": 10.6671184
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Holmenkollen Ski Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 8095,
+                  "vicinity": "Kongeveien 5, Oslo",
+                  "place_id": "ChIJAVYeCn9tQUYR-b71kdo6ySs",
+                  "location": {
+                    "lat": 59.9640897,
+                    "lng": 10.6664141
+                  }
+                },
+                {
+                  "name": "Bogstad Farm",
+                  "types": [
+                    "museum",
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 947,
+                  "vicinity": "Sørkedalsveien 450, Oslo",
+                  "place_id": "ChIJM_T7KaFyQUYRnSyeCS3S8_M",
+                  "location": {
+                    "lat": 59.9715927,
+                    "lng": 10.6261318
+                  }
+                },
+                {
+                  "name": "Grinimuseet",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 137,
+                  "vicinity": "Jøssingveien 31, Eiksmarka",
+                  "place_id": "ChIJadRVALUSQUYR8V0SkBFLQ8Y",
+                  "location": {
+                    "lat": 59.9557625,
+                    "lng": 10.5847105
+                  }
+                },
+                {
+                  "name": "Holmenkollbakken",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 13107,
+                  "vicinity": "Kongeveien 5, Oslo",
+                  "place_id": "ChIJL6W97n9tQUYRYXKbabAIBis",
+                  "location": {
+                    "lat": 59.9650094,
+                    "lng": 10.6646572
+                  }
+                },
+                {
+                  "name": "LHK-144 Galleriet",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Nadderudveien 144, Eiksmarka",
+                  "place_id": "ChIJFbJWRABtQUYRFFAWfWVCYZQ",
+                  "location": {
+                    "lat": 59.939834,
+                    "lng": 10.6160561
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Voksenåsen Hotell, BW Signature Collection",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 634,
+                  "vicinity": "Ullveien 4, Oslo",
+                  "place_id": "ChIJJTkieIZyQUYR0lREclp961Y",
+                  "location": {
+                    "lat": 59.9752705,
+                    "lng": 10.6654984
+                  }
+                },
+                {
+                  "name": "Lysebu",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 669,
+                  "vicinity": "Lysebuveien 12, Oslo",
+                  "place_id": "ChIJPcx3uppyQUYRLqktHbHLsXo",
+                  "location": {
+                    "lat": 59.9775893,
+                    "lng": 10.6558712
+                  }
+                },
+                {
+                  "name": "Frognerseteren Kafe og restaurant",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 3503,
+                  "vicinity": "Holmenkollveien 200, Oslo",
+                  "place_id": "ChIJA7dIvGJyQUYRq-23oM44u6s",
+                  "location": {
+                    "lat": 59.97767959999999,
+                    "lng": 10.6775563
+                  }
+                },
+                {
+                  "name": "Bjørnsgard Selskapslokaler",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 16,
+                  "vicinity": "Tangenveien 112, Oslo",
+                  "place_id": "ChIJsX2PLaxyQUYRhny9q1r1LvI",
+                  "location": {
+                    "lat": 59.97877899999999,
+                    "lng": 10.6091077
+                  }
+                },
+                {
+                  "name": "Sushihuset Røa",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 148,
+                  "vicinity": "Vækerøveien 195c, Oslo",
+                  "place_id": "ChIJMTECY21tQUYRljdBjM4NRWk",
+                  "location": {
+                    "lat": 59.94615279999999,
+                    "lng": 10.6427908
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Topcamp Bogstad",
+                  "types": [
+                    "rv_park",
+                    "park",
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 2512,
+                  "vicinity": "Ankerveien 117, Oslo",
+                  "place_id": "ChIJlRadgWFtQUYR2jnxilWMHAE",
+                  "location": {
+                    "lat": 59.96252149999999,
+                    "lng": 10.6422634
+                  }
+                },
+                {
+                  "name": "BBQ norrona",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Fossumveien 123, Eiksmarka",
+                  "place_id": "ChIJ5UTbbgBtQUYRXJ7N-UUmiqE",
+                  "location": {
+                    "lat": 59.9690622,
+                    "lng": 10.6144741
+                  }
+                },
+                {
+                  "name": "Styggedalen hundepark",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 5,
+                  "vicinity": "Oslo",
+                  "place_id": "ChIJnVmGYAxzQUYR8Wgk9aqby7k",
+                  "location": {
+                    "lat": 59.9771582,
+                    "lng": 10.6254793
+                  }
+                },
+                {
+                  "name": "Krigsminne",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 7,
+                  "vicinity": "Østernvannveien 34, Eiksmarka",
+                  "place_id": "ChIJqUIIl0ttQUYRuMdVdMuqRnQ",
+                  "location": {
+                    "lat": 59.95257109999999,
+                    "lng": 10.5955581
+                  }
+                },
+                {
+                  "name": "Lauritz Sand Statue",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 6,
+                  "vicinity": "Listuveien 1, Eiksmarka",
+                  "place_id": "ChIJdQOkMUFtQUYR4lo9Fb0JChA",
+                  "location": {
+                    "lat": 59.9481942,
+                    "lng": 10.6177443
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Røa Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 45,
+                  "vicinity": "Nordengveien 9, Oslo",
+                  "place_id": "ChIJ9xh7fmZtQUYR0dajRhkagGE",
+                  "location": {
+                    "lat": 59.9496725,
+                    "lng": 10.6434185
+                  }
+                },
+                {
+                  "name": "Kristi Forsamling",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Tore Hals Mejdells vei, Oslo",
+                  "place_id": "ChIJ4zrFgnJtQUYRuBn2XPmjoQM",
+                  "location": {
+                    "lat": 59.94619669999999,
+                    "lng": 10.6439386
+                  }
+                },
+                {
+                  "name": "Synnøve Bjørke Gestaltpraksis",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Tore Hals Mejdells vei, Oslo",
+                  "place_id": "ChIJawWWomttQUYRuCK5A0TT6Mc",
+                  "location": {
+                    "lat": 59.9461883,
+                    "lng": 10.6439984
+                  }
+                },
+                {
+                  "name": "Holmenkollen Chapel",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 404,
+                  "vicinity": "Oslo",
+                  "place_id": "ChIJp0V68X9yQUYRkzQSHaNrkJs",
+                  "location": {
+                    "lat": 59.96568819999999,
+                    "lng": 10.6723642
+                  }
+                },
+                {
+                  "name": "Voksen kirkegård",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 10,
+                  "vicinity": "Jarbakken 7, Oslo",
+                  "place_id": "ChIJG8vZnnptQUYRj6giZGdiI2E",
+                  "location": {
+                    "lat": 59.95556569999999,
+                    "lng": 10.6497017
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Karl Heldal",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Olaf Bulls vei 10C, Oslo",
+                  "place_id": "ChIJPROVSWJtQUYRbnIxEMNVdPQ",
+                  "location": {
+                    "lat": 59.96482319999999,
+                    "lng": 10.6443294
+                  }
+                },
+                {
+                  "name": "Wenche Landaas",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 5,
+                  "vicinity": "Konglefaret 45A, Eiksmarka",
+                  "place_id": "ChIJAZblvj9tQUYRPzdaTN_1Cbk",
+                  "location": {
+                    "lat": 59.9442334,
+                    "lng": 10.6207591
+                  }
+                },
+                {
+                  "name": "King Bankrupt",
+                  "types": [
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Fossumveien 70, Eiksmarka",
+                  "place_id": "ChIJEXA7MfVvQUYRnwNbxHMf9F0",
+                  "location": {
+                    "lat": 59.96287510000001,
+                    "lng": 10.6198943
+                  }
+                },
+                {
+                  "name": "Studio Delt-Keramikkverksted",
+                  "types": [
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 6,
+                  "vicinity": "Sørkedalsveien 448, Oslo",
+                  "place_id": "ChIJwc8DAwBzQUYRj_ut-mODtC0",
+                  "location": {
+                    "lat": 59.97238189999999,
+                    "lng": 10.6285199
+                  }
+                },
+                {
+                  "name": "Sofia Karyofilis",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Ankerveien 64B, Oslo",
+                  "place_id": "ChIJu9ZGQnptQUYR8VH9r4lX1Ek",
+                  "location": {
+                    "lat": 59.9565048,
+                    "lng": 10.6539864
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Oslo",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Oslo",
+                  "place_id": "ChIJOfBn8mFuQUYRmh4j019gkn4",
+                  "location": {
+                    "lat": 59.9121746,
+                    "lng": 10.7312704
+                  }
+                },
+                {
+                  "name": "Voksenåsen Hotell, BW Signature Collection",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 634,
+                  "vicinity": "Ullveien 4, Oslo",
+                  "place_id": "ChIJJTkieIZyQUYR0lREclp961Y",
+                  "location": {
+                    "lat": 59.9752705,
+                    "lng": 10.6654984
+                  }
+                },
+                {
+                  "name": "Soria Moria hotel and conference center",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 903,
+                  "vicinity": "Voksenkollveien 60, Oslo",
+                  "place_id": "ChIJdWLe14RyQUYRc241ahyDzhc",
+                  "location": {
+                    "lat": 59.97527780000001,
+                    "lng": 10.6552778
+                  }
+                },
+                {
+                  "name": "Lysebu",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 669,
+                  "vicinity": "Lysebuveien 12, Oslo",
+                  "place_id": "ChIJPcx3uppyQUYRLqktHbHLsXo",
+                  "location": {
+                    "lat": 59.9775893,
+                    "lng": 10.6558712
+                  }
+                },
+                {
+                  "name": "Scandic Holmenkollen Park Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 2768,
+                  "vicinity": "Kongeveien 26, Oslo",
+                  "place_id": "ChIJKzFg8H5tQUYR_WIV8fvQyXQ",
+                  "location": {
+                    "lat": 59.9627894,
+                    "lng": 10.6628325
+                  }
+                }
+              ]
+            },
+            "total_places_found": 35,
+            "photo_timestamp": "2025:07:21 16:48:10",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.5925209522247314
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/188.jpg"
+    },
+    {
+      "image_filename": "188.jpg",
+      "timestamp": "2026-01-28T04:07:47.334716",
+      "processing_time_seconds": 60.179381,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Lake with a dock",
+          "confidence": 0.7,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of water, a dock, and surrounding trees suggests a lakeside setting. The bright sun and reflections indicate a clear day.",
+            "detailed_description": "The image depicts a serene lakeside scene with a dock extending into the water. The lake is surrounded by trees, and the sky is partly cloudy with the sun shining brightly, creating reflections on the water. The foreground consists of a rocky shoreline.",
+            "identification": {
+              "primary": [
+                "Lake with a dock"
+              ],
+              "location": null,
+              "confidence": 0.7
+            },
+            "artifacts": [
+              {
+                "name": "Lake",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Dock",
+                "type": "other",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "lake",
+              "dock",
+              "landscape"
+            ],
+            "location": null,
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Mountain lake",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The trees and rocky shoreline suggest a mountainous or forested area."
+              },
+              {
+                "guess": "Recreational lake",
+                "specificity_level": "general",
+                "confidence": 0.5,
+                "reasoning": "The dock indicates a place used for recreation or leisure activities."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Lake with a dock\"],\n        \"location\": null,\n        \"confidence\": 0.7\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Lake\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Dock\",\n            \"type\": \"other\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"lake\", \"dock\", \"landscape\"],\n    \"description\": \"The image depicts a serene lakeside scene with a dock extending into the water. The lake is surrounded by trees, and the sky is partly cloudy with the sun shining brightly, creating reflections on the water. The foreground consists of a rocky shoreline.\",\n    \"reasoning\": \"The presence of water, a dock, and surrounding trees suggests a lakeside setting. The bright sun and reflections indicate a clear day.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Mountain lake\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The trees and rocky shoreline suggest a mountainous or forested area.\"\n        },\n        {\n            \"guess\": \"Recreational lake\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.5,\n            \"reasoning\": \"The dock indicates a place used for recreation or leisure activities.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 9.428231954574585
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([craiyon.com]())",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a serene lakeside scene under a bright sky. The lake occupies a significant portion of the image, with its calm waters reflecting the sunlight, creating a shimmering effect. The shoreline is composed of a pebble-covered beach, with several large rocks scattered along the edge. A wooden dock extends into the lake, providing a focal point in the composition. In the background, a dense forest lines the opposite shore, with tall trees silhouetted against the sky. The sky is partly ",
+            "description": "The image depicts a serene lakeside scene under a bright sky. The lake occupies a significant portion of the image, with its calm waters reflecting the sunlight, creating a shimmering effect. The shoreline is composed of a pebble-covered beach, with several large rocks scattered along the edge. A wooden dock extends into the lake, providing a focal point in the composition. In the background, a dense forest lines the opposite shore, with tall trees silhouetted against the sky. The sky is partly ",
+            "architectural_style": "None",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 50.74891972541809
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Sun",
+          "confidence": 0.9776421189308167,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Sun",
+                "score": 0.9776421189308167
+              },
+              {
+                "source": "label",
+                "name": "Astronomical object",
+                "score": 0.8619253039360046
+              }
+            ],
+            "web_entities": [],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9889513850212097
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9816567897796631
+              },
+              {
+                "name": "Sun",
+                "score": 0.9776421189308167
+              },
+              {
+                "name": "Cloud",
+                "score": 0.9467047452926636
+              },
+              {
+                "name": "Astronomical object",
+                "score": 0.8619253039360046
+              }
+            ],
+            "processing_time_seconds": 15.047851800918579
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/188.jpg"
+    }
+  ]
+}

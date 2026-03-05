@@ -1,0 +1,1061 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "211.jpg",
+      "timestamp": "2026-01-28T05:00:21.130976",
+      "processing_time_seconds": 48.536894,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 50.089475,
+        "gps_longitude": 14.398969444444443,
+        "location": {
+          "formatted_address": "Malá Strana 192, 118 00 Praha-Praha 1, Czechia",
+          "city": null,
+          "county": "Hlavní město Praha",
+          "country": "Czechia"
+        },
+        "datetime_original": "2026:01:01 14:17:59",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "St. Nicholas Church, Žižkov Television Tower, Prague, Czechia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive green dome and Baroque architecture identify St. Nicholas Church, while the tall, modern structure is recognizable as the Žižkov Television Tower.",
+            "detailed_description": "The image shows a view of Prague, Czechia, featuring the Baroque-style St. Nicholas Church with its distinctive green dome and ornate towers. In the background, the Žižkov Television Tower is visible, characterized by its modern design and height. The scene captures the blend of historical and contemporary architecture typical of Prague.",
+            "identification": {
+              "primary": [
+                "St. Nicholas Church",
+                "Žižkov Television Tower"
+              ],
+              "location": "Prague, Czechia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "St. Nicholas Church",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Žižkov Television Tower",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Baroque",
+              "20th_century",
+              "architecture",
+              "Prague",
+              "landmark"
+            ],
+            "location": "Prague, Czechia",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"St. Nicholas Church\", \"Žižkov Television Tower\"],\n        \"location\": \"Prague, Czechia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"St. Nicholas Church\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Žižkov Television Tower\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Baroque\", \"20th_century\", \"architecture\", \"Prague\", \"landmark\"],\n    \"description\": \"The image shows a view of Prague, Czechia, featuring the Baroque-style St. Nicholas Church with its distinctive green dome and ornate towers. In the background, the Žižkov Television Tower is visible, characterized by its modern design and height. The scene captures the blend of historical and contemporary architecture typical of Prague.\",\n    \"reasoning\": \"The distinctive green dome and Baroque architecture identify St. Nicholas Church, while the tall, modern structure is recognizable as the Žižkov Television Tower.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 50.089475,
+              "longitude": 14.398969444444443
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Malá Strana 192, 118 00 Praha-Praha 1, Czechia",
+              "city": null,
+              "county": "Hlavní město Praha",
+              "country": "Czechia"
+            },
+            "photo_timestamp": "2026:01:01 14:17:59",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 8.554117918014526
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image presents a panoramic view of Prague, Czechia, showcasing a blend of historical and modern architecture. Dominating the foreground is a traditional street lamp, which adds a classic touch to the scene. In the midground, the prominent green dome and twin spires of a Baroque-style church stand out, likely part of the St. Nicholas Church, characterized by its ornate design and copper roofing. The church's architectural style is marked by intricate detailing and a harmonious blend of curves",
+            "description": "The image presents a panoramic view of Prague, Czechia, showcasing a blend of historical and modern architecture. Dominating the foreground is a traditional street lamp, which adds a classic touch to the scene. In the midground, the prominent green dome and twin spires of a Baroque-style church stand out, likely part of the St. Nicholas Church, characterized by its ornate design and copper roofing. The church's architectural style is marked by intricate detailing and a harmonious blend of curves",
+            "architectural_style": "Baroque",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 50.089475,
+              "longitude": 14.398969444444443
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Malá Strana 192, 118 00 Praha-Praha 1, Czechia",
+              "city": null,
+              "county": "Hlavní město Praha",
+              "country": "Czechia"
+            },
+            "photo_timestamp": "2026:01:01 14:17:59",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 39.05036282539368
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Tavern By Seven Swabians (50.0883, 14.3985)",
+          "confidence": 0.3216952681541443,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Tavern By Seven Swabians",
+            "coordinates": {
+              "latitude": 50.0883179,
+              "longitude": 14.398487999999999
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 3024
+              },
+              {
+                "x": 0,
+                "y": 3024
+              }
+            ],
+            "context_labels": [
+              "Sky",
+              "Daytime",
+              "Cloud",
+              "Cumulus",
+              "Spire"
+            ],
+            "context_objects": [
+              "Person",
+              "Person",
+              "Outerwear"
+            ],
+            "web_entities": [
+              {
+                "name": "House",
+                "score": 0.40004998445510864
+              },
+              {
+                "name": "Skyscraper",
+                "score": 0.31455257534980774
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Tavern By Seven Swabians",
+                "score": 0.3216952681541443,
+                "location": {
+                  "lat": 50.0883179,
+                  "lng": 14.398487999999999
+                }
+              },
+              {
+                "name": "Prague Castle",
+                "score": 0.28012406826019287,
+                "location": {
+                  "lat": 50.0910966,
+                  "lng": 14.4016165
+                }
+              },
+              {
+                "name": "Statue Of Tomáš Garrigue Masaryk, Prague",
+                "score": 0.21380972862243652,
+                "location": {
+                  "lat": 50.0895119,
+                  "lng": 14.397953
+                }
+              },
+              {
+                "name": "Charles Bridge",
+                "score": 0.20245400071144104,
+                "location": {
+                  "lat": 50.0864771,
+                  "lng": 14.411436600000002
+                }
+              }
+            ],
+            "processing_time_seconds": 13.813285112380981
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Hlavní město Praha, Czechia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Hlavní město Praha, Czechia",
+            "coordinates": {
+              "latitude": 50.089475,
+              "longitude": 14.398969444444443
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Loreto",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "museum",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 5006,
+                  "vicinity": "Loretánské náměstí 7, Praha 1",
+                  "place_id": "ChIJC5zY0RuVC0cRUQlKCL3UIoI",
+                  "location": {
+                    "lat": 50.089239,
+                    "lng": 14.39151
+                  }
+                },
+                {
+                  "name": "Memorial to the Victims of Communism",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2763,
+                  "vicinity": "Újezd 420/14, Malá Strana",
+                  "place_id": "ChIJEcgmkPyUC0cRzqn6tvduPRM",
+                  "location": {
+                    "lat": 50.0811535,
+                    "lng": 14.4041143
+                  }
+                },
+                {
+                  "name": "Prague Castle",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 192657,
+                  "vicinity": "Prague 1",
+                  "place_id": "ChIJw7ckbB6VC0cRnyUSr4g8zyo",
+                  "location": {
+                    "lat": 50.0910966,
+                    "lng": 14.4016165
+                  }
+                },
+                {
+                  "name": "St. Vitus Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 92239,
+                  "vicinity": "III. nádvoří 48/2, Praha 1",
+                  "place_id": "ChIJW08COB6VC0cRoonZ8lA4rWk",
+                  "location": {
+                    "lat": 50.09089179999999,
+                    "lng": 14.4005114
+                  }
+                },
+                {
+                  "name": "Petrin Tower",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 34435,
+                  "vicinity": "Petřínské sady 633, Malá Strana, Praha 1",
+                  "place_id": "ChIJd71LDf2UC0cRkcGvwf8x33E",
+                  "location": {
+                    "lat": 50.083527,
+                    "lng": 14.3950837
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Loreto",
+                  "types": [
+                    "art_gallery",
+                    "museum",
+                    "place_of_worship",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 5006,
+                  "vicinity": "Loretánské náměstí 7, Praha 1",
+                  "place_id": "ChIJC5zY0RuVC0cRUQlKCL3UIoI",
+                  "location": {
+                    "lat": 50.089239,
+                    "lng": 14.39151
+                  }
+                },
+                {
+                  "name": "Church of Our Lady Victorious and The Infant Jesus of Prague",
+                  "types": [
+                    "museum",
+                    "church",
+                    "place_of_worship",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 10248,
+                  "vicinity": "Karmelitská 9, Praha 1",
+                  "place_id": "ChIJgZa7AeOUC0cRE4hLPeViQBU",
+                  "location": {
+                    "lat": 50.0857287,
+                    "lng": 14.4035505
+                  }
+                },
+                {
+                  "name": "Lobkowicz Palace",
+                  "types": [
+                    "art_gallery",
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 6660,
+                  "vicinity": "Jiřská 3, Praha 1",
+                  "place_id": "ChIJH3y4L-CUC0cRxLvVqnWQK2Q",
+                  "location": {
+                    "lat": 50.0916483,
+                    "lng": 14.4049501
+                  }
+                },
+                {
+                  "name": "Galerie Josefa Sudka",
+                  "types": [
+                    "art_gallery",
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 68,
+                  "vicinity": "24, Úvoz 160, Hradčany, Praha 1",
+                  "place_id": "ChIJgy9oCxyVC0cRBM2lr3dESWk",
+                  "location": {
+                    "lat": 50.0883157,
+                    "lng": 14.3947342
+                  }
+                },
+                {
+                  "name": "Prague Castle Riding School",
+                  "types": [
+                    "museum",
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 707,
+                  "vicinity": "U Prašného mostu 3, Hradčany, Praha 1",
+                  "place_id": "ChIJ-3lcMB-VC0cRudhXPynyy8Y",
+                  "location": {
+                    "lat": 50.092354,
+                    "lng": 14.398243
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Alchymist Grand Hotel and Spa",
+                  "types": [
+                    "spa",
+                    "lodging",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 606,
+                  "vicinity": "Tržiště 19, Malá Strana, Praha 1",
+                  "place_id": "ChIJsV1z9R2VC0cRSpYhQyaSQww",
+                  "location": {
+                    "lat": 50.0875441,
+                    "lng": 14.4008812
+                  }
+                },
+                {
+                  "name": "Hotel Čertovka",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 508,
+                  "vicinity": "85, U Lužického semináře 2, Praha 1",
+                  "place_id": "ChIJWeueB-SUC0cRH00ffLoiRvs",
+                  "location": {
+                    "lat": 50.087293,
+                    "lng": 14.408346
+                  }
+                },
+                {
+                  "name": "Golden Well Hotel Prague",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 213,
+                  "vicinity": "U Zlaté studně 166/4, Malá Strana, Praha 1",
+                  "place_id": "ChIJvd6BteGUC0cRwJvOlvLJvEE",
+                  "location": {
+                    "lat": 50.0908432,
+                    "lng": 14.4045839
+                  }
+                },
+                {
+                  "name": "Archibald At The Charles Bridge",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 967,
+                  "vicinity": "15, Na Kampě 508, Malá Strana",
+                  "place_id": "ChIJe0C9b-SUC0cRD8s-sXvP1Gk",
+                  "location": {
+                    "lat": 50.0859063,
+                    "lng": 14.4087321
+                  }
+                },
+                {
+                  "name": "Aria Hotel Prague",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 524,
+                  "vicinity": "Tržiště 368/9, Praha 1-Malá Strana",
+                  "place_id": "ChIJIV-mauKUC0cRDxyomz9fYCI",
+                  "location": {
+                    "lat": 50.087156,
+                    "lng": 14.40266
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Vojanovy sady",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 3315,
+                  "vicinity": "U Lužického semináře, Malá Strana, Praha 1",
+                  "place_id": "ChIJ0alOyKOVC0cRkAZcOn8ZvjI",
+                  "location": {
+                    "lat": 50.08887559999999,
+                    "lng": 14.4090669
+                  }
+                },
+                {
+                  "name": "Petrin Hill",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 6610,
+                  "vicinity": "Petřínské sady 1, Praha 1",
+                  "place_id": "ChIJm-WdsPyUC0cRq14Y6AP1KW4",
+                  "location": {
+                    "lat": 50.0815434,
+                    "lng": 14.3969205
+                  }
+                },
+                {
+                  "name": "Deer Moat",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 615,
+                  "vicinity": "Prague 1",
+                  "place_id": "ChIJRZCOrx-VC0cReDN__ql51sY",
+                  "location": {
+                    "lat": 50.09174629999999,
+                    "lng": 14.3997708
+                  }
+                },
+                {
+                  "name": "Fourth courtyard of Prague Castle",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 176,
+                  "vicinity": "Vikářská 40/8, Hradčany",
+                  "place_id": "ChIJJTt77R6VC0cRQnPmVtoT_W4",
+                  "location": {
+                    "lat": 50.0905311,
+                    "lng": 14.3980143
+                  }
+                },
+                {
+                  "name": "Pleskotův tunel v Jelením příkopě",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 128,
+                  "vicinity": "Hradčany, Prague 1",
+                  "place_id": "ChIJuaMJseyVC0cR0HzBVXO_rjg",
+                  "location": {
+                    "lat": 50.09143599999999,
+                    "lng": 14.3994744
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "St. Vitus Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 92239,
+                  "vicinity": "III. nádvoří 48/2, Praha 1",
+                  "place_id": "ChIJW08COB6VC0cRoonZ8lA4rWk",
+                  "location": {
+                    "lat": 50.09089179999999,
+                    "lng": 14.4005114
+                  }
+                },
+                {
+                  "name": "Kostel Jana Křtitele Na Prádle",
+                  "types": [
+                    "church",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 60,
+                  "vicinity": "Kostel Svaty Jana Křtitele Na Prádle, 6, Říční 440, Praha 1-Malá Strana",
+                  "place_id": "ChIJgbmEW_uUC0cR14s6lqSOBWc",
+                  "location": {
+                    "lat": 50.08197010000001,
+                    "lng": 14.4065577
+                  }
+                },
+                {
+                  "name": "St. Nicholas Church (Malá Strana)",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 7914,
+                  "vicinity": "Malostranské náměstí, Praha 1",
+                  "place_id": "ChIJI8HWguGUC0cR_FG_wGIqqwY",
+                  "location": {
+                    "lat": 50.0880269,
+                    "lng": 14.4034704
+                  }
+                },
+                {
+                  "name": "Church of Our Lady Victorious and The Infant Jesus of Prague",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 10248,
+                  "vicinity": "Karmelitská 9, Praha 1",
+                  "place_id": "ChIJgZa7AeOUC0cRE4hLPeViQBU",
+                  "location": {
+                    "lat": 50.0857287,
+                    "lng": 14.4035505
+                  }
+                },
+                {
+                  "name": "St. George's Basilica",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2470,
+                  "vicinity": "Prague",
+                  "place_id": "ChIJjzZaLB6VC0cRxNlBNtYnc9s",
+                  "location": {
+                    "lat": 50.09123109999999,
+                    "lng": 14.4023938
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Loreto",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "place_of_worship",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 5006,
+                  "vicinity": "Loretánské náměstí 7, Praha 1",
+                  "place_id": "ChIJC5zY0RuVC0cRUQlKCL3UIoI",
+                  "location": {
+                    "lat": 50.089239,
+                    "lng": 14.39151
+                  }
+                },
+                {
+                  "name": "Lobkowicz Palace",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 6660,
+                  "vicinity": "Jiřská 3, Praha 1",
+                  "place_id": "ChIJH3y4L-CUC0cRxLvVqnWQK2Q",
+                  "location": {
+                    "lat": 50.0916483,
+                    "lng": 14.4049501
+                  }
+                },
+                {
+                  "name": "Prague Castle Picture Gallery",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 216,
+                  "vicinity": "Hrad I. nádvoří č p 1, Hradčany, Praha 1",
+                  "place_id": "ChIJIUSsZR6VC0cRqBVljrTqZAE",
+                  "location": {
+                    "lat": 50.0906881,
+                    "lng": 14.3985704
+                  }
+                },
+                {
+                  "name": "Galerie Josefa Sudka",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 68,
+                  "vicinity": "24, Úvoz 160, Hradčany, Praha 1",
+                  "place_id": "ChIJgy9oCxyVC0cRBM2lr3dESWk",
+                  "location": {
+                    "lat": 50.0883157,
+                    "lng": 14.3947342
+                  }
+                },
+                {
+                  "name": "Hradčanská Galerie Josefa Kalouska",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 16,
+                  "vicinity": "Hradčanské náměstí 60/12, Praha 1",
+                  "place_id": "ChIJo_S8pB6VC0cRe7aSEqu7f4Y",
+                  "location": {
+                    "lat": 50.0899161,
+                    "lng": 14.3957121
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Prague",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Prague",
+                  "place_id": "ChIJi3lwCZyTC0cRkEAWZg-vAAQ",
+                  "location": {
+                    "lat": 50.0755381,
+                    "lng": 14.4378005
+                  }
+                },
+                {
+                  "name": "Alchymist Grand Hotel and Spa",
+                  "types": [
+                    "spa",
+                    "lodging",
+                    "restaurant",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 606,
+                  "vicinity": "Tržiště 19, Malá Strana, Praha 1",
+                  "place_id": "ChIJsV1z9R2VC0cRSpYhQyaSQww",
+                  "location": {
+                    "lat": 50.0875441,
+                    "lng": 14.4008812
+                  }
+                },
+                {
+                  "name": "Hotel Čertovka",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 508,
+                  "vicinity": "85, U Lužického semináře 2, Praha 1",
+                  "place_id": "ChIJWeueB-SUC0cRH00ffLoiRvs",
+                  "location": {
+                    "lat": 50.087293,
+                    "lng": 14.408346
+                  }
+                },
+                {
+                  "name": "Golden Well Hotel Prague",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 213,
+                  "vicinity": "U Zlaté studně 166/4, Malá Strana, Praha 1",
+                  "place_id": "ChIJvd6BteGUC0cRwJvOlvLJvEE",
+                  "location": {
+                    "lat": 50.0908432,
+                    "lng": 14.4045839
+                  }
+                },
+                {
+                  "name": "Hotel Pod Věží",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 827,
+                  "vicinity": "Mostecká 58/2, Malá Strana",
+                  "place_id": "ChIJr0-p6eOUC0cRTDQtdidvGWg",
+                  "location": {
+                    "lat": 50.0873509,
+                    "lng": 14.4066691
+                  }
+                }
+              ]
+            },
+            "total_places_found": 35,
+            "photo_timestamp": "2026:01:01 14:17:59",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.6630311012268066
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/211.jpg"
+    },
+    {
+      "image_filename": "211.jpg",
+      "timestamp": "2026-01-28T05:01:09.700994",
+      "processing_time_seconds": 55.075934,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "St. Nicholas Church, Žižkov Television Tower, Prague, Czech Republic",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive Baroque style of St. Nicholas Church and the modern design of the Žižkov Television Tower are recognizable features of Prague's skyline, allowing for confident identification.",
+            "detailed_description": "The image shows a panoramic view of Prague, Czech Republic. Prominently visible is St. Nicholas Church, a Baroque architectural masterpiece with its distinctive green dome and ornate towers. In the background, the Žižkov Television Tower rises above the cityscape, known for its modern design and unique appearance. The scene captures the blend of historical and contemporary architecture that characterizes Prague.",
+            "identification": {
+              "primary": [
+                "St. Nicholas Church",
+                "Žižkov Television Tower"
+              ],
+              "location": "Prague, Czech Republic",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "St. Nicholas Church",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Žižkov Television Tower",
+                "type": "landmark",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "Baroque",
+              "20th_century",
+              "church",
+              "television_tower",
+              "Prague"
+            ],
+            "location": "Prague, Czech Republic",
+            "type": "landmark",
+            "search_range_meters": 2000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"St. Nicholas Church\", \"Žižkov Television Tower\"],\n        \"location\": \"Prague, Czech Republic\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"St. Nicholas Church\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Žižkov Television Tower\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.90\n        }\n    ],\n    \"tags\": [\"Baroque\", \"20th_century\", \"church\", \"television_tower\", \"Prague\"],\n    \"description\": \"The image shows a panoramic view of Prague, Czech Republic. Prominently visible is St. Nicholas Church, a Baroque architectural masterpiece with its distinctive green dome and ornate towers. In the background, the Žižkov Television Tower rises above the cityscape, known for its modern design and unique appearance. The scene captures the blend of historical and contemporary architecture that characterizes Prague.\",\n    \"reasoning\": \"The distinctive Baroque style of St. Nicholas Church and the modern design of the Žižkov Television Tower are recognizable features of Prague's skyline, allowing for confident identification.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 7.538027763366699
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image presents a panoramic view of a cityscape dominated by historical architecture. In the foreground, a traditional street lamp with ornate detailing stands prominently, adding a classic touch to the scene. Behind it, the city unfolds with a dense array of buildings featuring red-tiled roofs typical of Central European architecture. The skyline is marked by a variety of architectural styles, including Baroque and Gothic elements. Notably, there is a large church with a distinctive green do",
+            "description": "The image presents a panoramic view of a cityscape dominated by historical architecture. In the foreground, a traditional street lamp with ornate detailing stands prominently, adding a classic touch to the scene. Behind it, the city unfolds with a dense array of buildings featuring red-tiled roofs typical of Central European architecture. The skyline is marked by a variety of architectural styles, including Baroque and Gothic elements. Notably, there is a large church with a distinctive green do",
+            "architectural_style": "Baroque, Gothic, Modern",
+            "search_backends_used": [],
+            "processing_time_seconds": 47.53624415397644
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Tavern By Seven Swabians (50.0883, 14.3985)",
+          "confidence": 0.32208213210105896,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Tavern By Seven Swabians",
+            "coordinates": {
+              "latitude": 50.0883179,
+              "longitude": 14.398487999999999
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 3024
+              },
+              {
+                "x": 0,
+                "y": 3024
+              }
+            ],
+            "context_labels": [
+              "Sky",
+              "Daytime",
+              "Cloud",
+              "Cumulus",
+              "Spire"
+            ],
+            "context_objects": [
+              "Person",
+              "Person",
+              "Outerwear"
+            ],
+            "web_entities": [
+              {
+                "name": "House",
+                "score": 0.40004998445510864
+              },
+              {
+                "name": "Skyscraper",
+                "score": 0.31455257534980774
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Tavern By Seven Swabians",
+                "score": 0.32208213210105896,
+                "location": {
+                  "lat": 50.0883179,
+                  "lng": 14.398487999999999
+                }
+              },
+              {
+                "name": "Prague Castle",
+                "score": 0.28048691153526306,
+                "location": {
+                  "lat": 50.0910966,
+                  "lng": 14.4016165
+                }
+              },
+              {
+                "name": "Statue Of Tomáš Garrigue Masaryk, Prague",
+                "score": 0.21380789577960968,
+                "location": {
+                  "lat": 50.0895119,
+                  "lng": 14.397953
+                }
+              },
+              {
+                "name": "Charles Bridge",
+                "score": 0.20253223180770874,
+                "location": {
+                  "lat": 50.0864771,
+                  "lng": 14.411436600000002
+                }
+              }
+            ],
+            "processing_time_seconds": 14.326860904693604
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/211.jpg"
+    }
+  ]
+}

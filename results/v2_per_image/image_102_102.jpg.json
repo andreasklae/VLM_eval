@@ -1,0 +1,1086 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "102.jpg",
+      "timestamp": "2026-01-28T00:48:38.333755",
+      "processing_time_seconds": 67.407306,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 52.517066666666665,
+        "gps_longitude": 13.374538888888889,
+        "location": {
+          "formatted_address": "Scheidemannstraße 1, 10557 Berlin, Germany",
+          "city": "Berlin",
+          "county": "Berlin",
+          "country": "Germany"
+        },
+        "datetime_original": "2024:10:20 14:51:44",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Reichstag Building, Berlin, Germany",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and the presence of the German flag indicate that this is the Reichstag Building, a well-known landmark in Berlin.",
+            "detailed_description": "The image shows the Reichstag Building in Berlin, Germany. This historic structure is characterized by its Neo-Baroque architectural style, featuring a grand facade with columns and intricate stonework. The German flag is prominently displayed atop the building. The Reichstag serves as the seat of the German parliament and is a significant political and historical landmark.",
+            "identification": {
+              "primary": [
+                "Reichstag Building"
+              ],
+              "location": "Berlin, Germany",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Reichstag Building",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Neo-Baroque",
+              "19th_century",
+              "stone",
+              "Berlin",
+              "government_building"
+            ],
+            "location": "Berlin, Germany",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Reichstag Building\"],\n        \"location\": \"Berlin, Germany\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Reichstag Building\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Neo-Baroque\", \"19th_century\", \"stone\", \"Berlin\", \"government_building\"],\n    \"description\": \"The image shows the Reichstag Building in Berlin, Germany. This historic structure is characterized by its Neo-Baroque architectural style, featuring a grand facade with columns and intricate stonework. The German flag is prominently displayed atop the building. The Reichstag serves as the seat of the German parliament and is a significant political and historical landmark.\",\n    \"reasoning\": \"The architectural style and the presence of the German flag indicate that this is the Reichstag Building, a well-known landmark in Berlin.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "gps_coordinates": {
+              "latitude": 52.517066666666665,
+              "longitude": 13.374538888888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Scheidemannstraße 1, 10557 Berlin, Germany",
+              "city": "Berlin",
+              "county": "Berlin",
+              "country": "Germany"
+            },
+            "photo_timestamp": "2024:10:20 14:51:44",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 18.409234046936035
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Reichstag Building, Berlin, Germany",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the architectural style and features of the Reichstag Building, a prominent neoclassical structure in Berlin. The presence of the German flag and the building's historical significance as a government building further supports this identification. Search results from reliable sources confirm the match.",
+            "identification": {
+              "primary": [
+                "Reichstag Building"
+              ],
+              "location": "Berlin, Germany",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Reichstag Building",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "German flag",
+                "type": "other",
+                "confidence": 0.9
+              },
+              {
+                "name": "Corinthian columns",
+                "type": "architectural_feature",
+                "confidence": 0.85
+              },
+              {
+                "name": "Pediment with carvings",
+                "type": "architectural_feature",
+                "confidence": 0.85
+              },
+              {
+                "name": "Stone sculptures",
+                "type": "architectural_feature",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "neoclassical",
+              "19th century",
+              "stone",
+              "Berlin",
+              "government building"
+            ],
+            "sources_used": [
+              "archeyes.com",
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "*URL*: ([archeyes.com]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 2,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image prominently features a grand neoclassical building, characterized by its imposing facade and architectural elements typical of the late 19th century. The structure showcases a pediment adorned with intricate carvings and supported by a row of Corinthian columns, which are notable for their ornate capitals. Above the pediment, a German flag is visible, adding a nationalistic element to the scene. The building's facade is constructed from light-colored stone, giving it a stately and endu",
+            "description": "The image prominently features a grand neoclassical building, characterized by its imposing facade and architectural elements typical of the late 19th century. The structure showcases a pediment adorned with intricate carvings and supported by a row of Corinthian columns, which are notable for their ornate capitals. Above the pediment, a German flag is visible, adding a nationalistic element to the scene. The building's facade is constructed from light-colored stone, giving it a stately and endu",
+            "architectural_style": "Neoclassical",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 52.517066666666665,
+              "longitude": 13.374538888888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Scheidemannstraße 1, 10557 Berlin, Germany",
+              "city": "Berlin",
+              "county": "Berlin",
+              "country": "Germany"
+            },
+            "photo_timestamp": "2024:10:20 14:51:44",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 48.2743821144104
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Tree",
+          "confidence": 0.979789137840271,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Tree",
+                "score": 0.979789137840271
+              },
+              {
+                "source": "label",
+                "name": "Branch",
+                "score": 0.9701737761497498
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.7289741635322571
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.6973463892936707
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.664147675037384
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Tree",
+                "score": 0.36194491386413574
+              },
+              {
+                "name": "M-tree",
+                "score": 0.259799987077713
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.7289741635322571
+              },
+              {
+                "name": "Person",
+                "score": 0.6973463892936707
+              },
+              {
+                "name": "Person",
+                "score": 0.664147675037384
+              },
+              {
+                "name": "Person",
+                "score": 0.6395331621170044
+              },
+              {
+                "name": "Person",
+                "score": 0.6057310700416565
+              }
+            ],
+            "labels": [
+              {
+                "name": "Daytime",
+                "score": 0.9814720153808594
+              },
+              {
+                "name": "Tree",
+                "score": 0.979789137840271
+              },
+              {
+                "name": "Branch",
+                "score": 0.9701737761497498
+              },
+              {
+                "name": "Walking",
+                "score": 0.584963321685791
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 52.517066666666665,
+              "longitude": 13.374538888888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Scheidemannstraße 1, 10557 Berlin, Germany",
+              "city": "Berlin",
+              "county": "Berlin",
+              "country": "Germany"
+            },
+            "photo_timestamp": "2024:10:20 14:51:44",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 28.964531898498535
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Berlin, Germany",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Berlin, Germany",
+            "coordinates": {
+              "latitude": 52.517066666666665,
+              "longitude": 13.374538888888889
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Reichstag Building",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 9472,
+                  "vicinity": "Platz der Republik 1, Berlin",
+                  "place_id": "ChIJbVDuQcdRqEcR5X3xq9NSG2Q",
+                  "location": {
+                    "lat": 52.51862020000001,
+                    "lng": 13.3761871
+                  }
+                },
+                {
+                  "name": "Memorial to the Murdered Jews of Europe",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 48746,
+                  "vicinity": "Cora-Berliner-Straße 1, Berlin",
+                  "place_id": "ChIJW2oZB8ZRqEcRyFvuEpCnNBQ",
+                  "location": {
+                    "lat": 52.5139474,
+                    "lng": 13.3787126
+                  }
+                },
+                {
+                  "name": "Berliner Philharmonie",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 11820,
+                  "vicinity": "Herbert-von-Karajan-Straße 1, Berlin",
+                  "place_id": "ChIJK_QFBbZRqEcRZgBlwtwfnv0",
+                  "location": {
+                    "lat": 52.5100319,
+                    "lng": 13.369693
+                  }
+                },
+                {
+                  "name": "German Chancellery",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 1010,
+                  "vicinity": "Willy-Brandt-Straße 1, Berlin",
+                  "place_id": "ChIJPzzOMrlRqEcRTzIrJIsAfa4",
+                  "location": {
+                    "lat": 52.5201007,
+                    "lng": 13.3692184
+                  }
+                },
+                {
+                  "name": "House of World Cultures",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 3266,
+                  "vicinity": "John-Foster-Dulles-Allee 10, Berlin",
+                  "place_id": "ChIJW-9xr7tRqEcRafqpF3pEPEc",
+                  "location": {
+                    "lat": 52.5185185,
+                    "lng": 13.3644649
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Madame Tussauds Berlin",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 21874,
+                  "vicinity": "Unter den Linden 74, Berlin",
+                  "place_id": "ChIJr-gAJ8RRqEcR2Ml0N1JXFu4",
+                  "location": {
+                    "lat": 52.5168889,
+                    "lng": 13.3815918
+                  }
+                },
+                {
+                  "name": "State Institute for Music Research",
+                  "types": [
+                    "museum",
+                    "library",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 24,
+                  "vicinity": "Ben-Gurion-Straße 1, Berlin",
+                  "place_id": "ChIJ_eyJ0bNRqEcRKYAXEl3SGSI",
+                  "location": {
+                    "lat": 52.5101582,
+                    "lng": 13.3723737
+                  }
+                },
+                {
+                  "name": "Academy of Arts",
+                  "types": [
+                    "art_gallery",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 668,
+                  "vicinity": "Pariser Platz 4, Berlin",
+                  "place_id": "ChIJn5FmBuhRqEcRoIq0vXKK2wE",
+                  "location": {
+                    "lat": 52.5157484,
+                    "lng": 13.3795177
+                  }
+                },
+                {
+                  "name": "Erlebnis Europa",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 354,
+                  "vicinity": "Unter den Linden 78, Berlin",
+                  "place_id": "ChIJazI9kcZRqEcRqvsC8yzl6xQ",
+                  "location": {
+                    "lat": 52.51684369999999,
+                    "lng": 13.3803356
+                  }
+                },
+                {
+                  "name": "Futurium",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 12436,
+                  "vicinity": "Alexanderufer 2, Berlin",
+                  "place_id": "ChIJExpfyL9RqEcROQaM3Ff0a7A",
+                  "location": {
+                    "lat": 52.523931,
+                    "lng": 13.374345
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "EINSTEIN Unter den Linden",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 6875,
+                  "vicinity": "Unter den Linden 42, Berlin",
+                  "place_id": "ChIJhbDljsRRqEcRFZtUstV1Zf4",
+                  "location": {
+                    "lat": 52.51725,
+                    "lng": 13.3860628
+                  }
+                },
+                {
+                  "name": "Cookies Cream",
+                  "types": [
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1373,
+                  "vicinity": "Behrenstraße 55, Berlin",
+                  "place_id": "ChIJV4_rtsRRqEcRIKoaNDZ0VnQ",
+                  "location": {
+                    "lat": 52.5157102,
+                    "lng": 13.3877054
+                  }
+                },
+                {
+                  "name": "Ishin Mittelstraße",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2383,
+                  "vicinity": "Mittelstraße 24, Berlin",
+                  "place_id": "ChIJXZ4AgcRRqEcRzwjWx_mEBAY",
+                  "location": {
+                    "lat": 52.5180204,
+                    "lng": 13.3866199
+                  }
+                },
+                {
+                  "name": "Tausend",
+                  "types": [
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 667,
+                  "vicinity": "Schiffbauerdamm 11, Berlin",
+                  "place_id": "ChIJI8NDzcNRqEcReDAkOOA6Big",
+                  "location": {
+                    "lat": 52.5207369,
+                    "lng": 13.3844524
+                  }
+                },
+                {
+                  "name": "Vapiano",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 3.4,
+                  "user_ratings_total": 5835,
+                  "vicinity": "Potsdamer Platz 5, Berlin",
+                  "place_id": "ChIJjdxZF8lRqEcREcbD8THB3gk",
+                  "location": {
+                    "lat": 52.5102753,
+                    "lng": 13.3763765
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Platz der Republik",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 6621,
+                  "vicinity": "Scheidemannstraße 2, Berlin",
+                  "place_id": "ChIJm9UuubhRqEcRXElqrVl6tMY",
+                  "location": {
+                    "lat": 52.51858499999999,
+                    "lng": 13.3731851
+                  }
+                },
+                {
+                  "name": "Soviet War Memorial Tiergarten",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 5188,
+                  "vicinity": "Straße des 17. Juni 4, Berlin",
+                  "place_id": "ChIJx1dCZrhRqEcRH2D-6oTe-a8",
+                  "location": {
+                    "lat": 52.5166259,
+                    "lng": 13.3719287
+                  }
+                },
+                {
+                  "name": "Henriette-Herz-Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 24,
+                  "vicinity": "Am Park 4, Berlin",
+                  "place_id": "ChIJ_9DwsclRqEcRk284MThG5CU",
+                  "location": {
+                    "lat": 52.5109808,
+                    "lng": 13.3737476
+                  }
+                },
+                {
+                  "name": "Neustädtischer Kirchplatz",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 165,
+                  "vicinity": "Neustädtische Kirchstraße, Berlin",
+                  "place_id": "ChIJC1F1eMRRqEcRDzoHl0gb_tU",
+                  "location": {
+                    "lat": 52.5181697,
+                    "lng": 13.3852208
+                  }
+                },
+                {
+                  "name": "Spreebogenpark",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2512,
+                  "vicinity": "Berlin",
+                  "place_id": "ChIJKygK_b5RqEcRHroxJoN1-JE",
+                  "location": {
+                    "lat": 52.5220633,
+                    "lng": 13.3720242
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Evangelische Kirchengemeinde in der Friedrichstadt",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3,
+                  "user_ratings_total": 3,
+                  "vicinity": "Taubenstraße 3, Berlin",
+                  "place_id": "ChIJTeXuVMVRqEcRCpANUXMenXc",
+                  "location": {
+                    "lat": 52.51270599999999,
+                    "lng": 13.3873745
+                  }
+                },
+                {
+                  "name": "Welcome Church Berlin",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 6,
+                  "vicinity": "Luisenstraße 39, Berlin",
+                  "place_id": "ChIJzZVwiVlRqEcRpP1kfbU8IZ0",
+                  "location": {
+                    "lat": 52.5219089,
+                    "lng": 13.3799852
+                  }
+                },
+                {
+                  "name": "Berlin Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 117,
+                  "vicinity": "Voxstraße 2, Berlin",
+                  "place_id": "ChIJSR5v1ctRqEcRqiiqjxV-AXg",
+                  "location": {
+                    "lat": 52.50855730000001,
+                    "lng": 13.3738293
+                  }
+                },
+                {
+                  "name": "Hauskapelle St. Michael",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 5,
+                  "vicinity": "Am Weidendamm 2, Berlin",
+                  "place_id": "ChIJrcp7lcJRqEcRspl0uJKYF0w",
+                  "location": {
+                    "lat": 52.5217811,
+                    "lng": 13.3863419
+                  }
+                },
+                {
+                  "name": "Schleiermacherhaus",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "Taubenstraße 3, Berlin",
+                  "place_id": "ChIJ27uMVMVRqEcRoYuwzMCTVrQ",
+                  "location": {
+                    "lat": 52.5127598,
+                    "lng": 13.3872054
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Arte Luise Arthotel",
+                  "types": [
+                    "art_gallery",
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 1235,
+                  "vicinity": "Luisenstraße 19, Berlin",
+                  "place_id": "ChIJbeeBVsBRqEcRfLjH_Wjj9g0",
+                  "location": {
+                    "lat": 52.52172659999999,
+                    "lng": 13.3796396
+                  }
+                },
+                {
+                  "name": "Academy of Arts",
+                  "types": [
+                    "art_gallery",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 668,
+                  "vicinity": "Pariser Platz 4, Berlin",
+                  "place_id": "ChIJn5FmBuhRqEcRoIq0vXKK2wE",
+                  "location": {
+                    "lat": 52.5157484,
+                    "lng": 13.3795177
+                  }
+                },
+                {
+                  "name": "Friends forever galerie",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 5,
+                  "vicinity": "Glinkastraße 42, Berlin",
+                  "place_id": "ChIJladsFMJRqEcRtvqAN3123is",
+                  "location": {
+                    "lat": 52.5151286,
+                    "lng": 13.3864097
+                  }
+                },
+                {
+                  "name": "FeldbuschWiesnerRudolph | FWR Galerie",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 11,
+                  "vicinity": "Jägerstraße 5, Berlin",
+                  "place_id": "ChIJkcynruhRqEcRPJEuH2ztB_Q",
+                  "location": {
+                    "lat": 52.51355650000001,
+                    "lng": 13.3859481
+                  }
+                },
+                {
+                  "name": "kal-galerie",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Marienstraße 25, Berlin",
+                  "place_id": "ChIJQaxWucFRqEcRslTLVi8hTtM",
+                  "location": {
+                    "lat": 52.5222793,
+                    "lng": 13.3820233
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Berlin",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Berlin",
+                  "place_id": "ChIJAVkDPzdOqEcRcDteW0YgIQQ",
+                  "location": {
+                    "lat": 52.52000659999999,
+                    "lng": 13.404954
+                  }
+                },
+                {
+                  "name": "Hotel Adlon Kempinski Berlin",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 2065,
+                  "vicinity": "Unter den Linden 77, Berlin",
+                  "place_id": "ChIJHQQciMZRqEcR2X4b8-vf5Bk",
+                  "location": {
+                    "lat": 52.5160431,
+                    "lng": 13.3799442
+                  }
+                },
+                {
+                  "name": "Arte Luise Arthotel",
+                  "types": [
+                    "art_gallery",
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 1235,
+                  "vicinity": "Luisenstraße 19, Berlin",
+                  "place_id": "ChIJbeeBVsBRqEcRfLjH_Wjj9g0",
+                  "location": {
+                    "lat": 52.52172659999999,
+                    "lng": 13.3796396
+                  }
+                },
+                {
+                  "name": "Berlin Marriott Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 3161,
+                  "vicinity": "Inge-Beisheim-Platz 1, Berlin",
+                  "place_id": "ChIJX-1THMlRqEcRLR_hDVVnW9s",
+                  "location": {
+                    "lat": 52.51087500000001,
+                    "lng": 13.3762494
+                  }
+                },
+                {
+                  "name": "The Ritz-Carlton, Berlin",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 3095,
+                  "vicinity": "Potsdamer Platz 3, Berlin",
+                  "place_id": "ChIJDcQdDslRqEcRPfEx1bivOaQ",
+                  "location": {
+                    "lat": 52.5103836,
+                    "lng": 13.3752744
+                  }
+                }
+              ]
+            },
+            "total_places_found": 35,
+            "photo_timestamp": "2024:10:20 14:51:44",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.42155885696411133
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/102.jpg"
+    },
+    {
+      "image_filename": "102.jpg",
+      "timestamp": "2026-01-28T00:49:45.784254",
+      "processing_time_seconds": 61.987432,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Reichstag Building, Berlin, Germany",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style, the presence of the German flag, and the distinctive features of the building strongly suggest that this is the Reichstag Building in Berlin.",
+            "detailed_description": "The image shows the Reichstag Building in Berlin, Germany. This historic structure is characterized by its neoclassical architectural style, featuring a prominent pediment and columns. The building is adorned with a German flag, indicating its significance as a seat of government. The facade is made of stone, and the design includes intricate sculptures and decorative elements typical of the late 19th century.",
+            "identification": {
+              "primary": [
+                "Reichstag Building"
+              ],
+              "location": "Berlin, Germany",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Reichstag Building",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Neoclassical",
+              "19th_century",
+              "stone",
+              "Berlin",
+              "government_building"
+            ],
+            "location": "Berlin, Germany",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Reichstag Building\"],\n        \"location\": \"Berlin, Germany\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Reichstag Building\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Neoclassical\", \"19th_century\", \"stone\", \"Berlin\", \"government_building\"],\n    \"description\": \"The image shows the Reichstag Building in Berlin, Germany. This historic structure is characterized by its neoclassical architectural style, featuring a prominent pediment and columns. The building is adorned with a German flag, indicating its significance as a seat of government. The facade is made of stone, and the design includes intricate sculptures and decorative elements typical of the late 19th century.\",\n    \"reasoning\": \"The architectural style, the presence of the German flag, and the distinctive features of the building strongly suggest that this is the Reichstag Building in Berlin.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "processing_time_seconds": 12.635034799575806
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([en.wikipedia.org]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a grand neoclassical building characterized by its imposing facade and architectural details. The structure features a prominent pediment adorned with intricate carvings and supported by a series of Corinthian columns. The columns are tall and robust, contributing to the building's majestic appearance. The facade is constructed from light-colored stone, adding to its classical aesthetic. Atop the building, a flagpole prominently displays a national flag, which adds a sense of i",
+            "description": "The image depicts a grand neoclassical building characterized by its imposing facade and architectural details. The structure features a prominent pediment adorned with intricate carvings and supported by a series of Corinthian columns. The columns are tall and robust, contributing to the building's majestic appearance. The facade is constructed from light-colored stone, adding to its classical aesthetic. Atop the building, a flagpole prominently displays a national flag, which adds a sense of i",
+            "architectural_style": "Neoclassical",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 49.349721908569336
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Tree",
+          "confidence": 0.979789137840271,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Tree",
+                "score": 0.979789137840271
+              },
+              {
+                "source": "label",
+                "name": "Branch",
+                "score": 0.9701737761497498
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.7289741635322571
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.6973463892936707
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.664147675037384
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Tree",
+                "score": 0.36194491386413574
+              },
+              {
+                "name": "M-tree",
+                "score": 0.259799987077713
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.7289741635322571
+              },
+              {
+                "name": "Person",
+                "score": 0.6973463892936707
+              },
+              {
+                "name": "Person",
+                "score": 0.664147675037384
+              },
+              {
+                "name": "Person",
+                "score": 0.6395331621170044
+              },
+              {
+                "name": "Person",
+                "score": 0.6057310700416565
+              }
+            ],
+            "labels": [
+              {
+                "name": "Daytime",
+                "score": 0.9814720153808594
+              },
+              {
+                "name": "Tree",
+                "score": 0.979789137840271
+              },
+              {
+                "name": "Branch",
+                "score": 0.9701737761497498
+              },
+              {
+                "name": "Walking",
+                "score": 0.584963321685791
+              }
+            ],
+            "processing_time_seconds": 28.650545835494995
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/102.jpg"
+    }
+  ]
+}

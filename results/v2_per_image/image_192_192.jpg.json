@@ -1,0 +1,1091 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "192.jpg",
+      "timestamp": "2026-01-28T04:17:31.717591",
+      "processing_time_seconds": 61.420998,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 47.800669444444445,
+        "gps_longitude": 13.044286111111111,
+        "location": {
+          "formatted_address": "Rathauspl. 3, 5020 Salzburg, Austria",
+          "city": "Salzburg",
+          "county": "Salzburg",
+          "country": "Austria"
+        },
+        "datetime_original": "2025:11:17 10:54:57",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Salzburg Cathedral, Salzach River, Salzburg, Austria",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and twin towers suggest the Salzburg Cathedral, a well-known landmark in Salzburg. The river's presence aligns with the Salzach River, which flows through the city.",
+            "detailed_description": "The image shows a view of Salzburg, Austria, featuring the Salzach River in the foreground. Prominently visible is the Salzburg Cathedral, a Baroque-style building characterized by its twin towers and dome. The cathedral dates back to the 17th century and is a significant landmark in the city. The river adds a natural element to the urban landscape, with a bridge crossing over it.",
+            "identification": {
+              "primary": [
+                "Salzburg Cathedral",
+                "Salzach River"
+              ],
+              "location": "Salzburg, Austria",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Salzburg Cathedral",
+                "type": "landmark",
+                "confidence": 0.9
+              },
+              {
+                "name": "Salzach River",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "Baroque",
+              "17th_century",
+              "river",
+              "Salzburg"
+            ],
+            "location": "Salzburg, Austria",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Hohensalzburg Fortress",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "The fortress is another prominent landmark in Salzburg, often visible in cityscape images."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Salzburg Cathedral\", \"Salzach River\"],\n        \"location\": \"Salzburg, Austria\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Salzburg Cathedral\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Salzach River\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"Baroque\", \"17th_century\", \"river\", \"Salzburg\"],\n    \"description\": \"The image shows a view of Salzburg, Austria, featuring the Salzach River in the foreground. Prominently visible is the Salzburg Cathedral, a Baroque-style building characterized by its twin towers and dome. The cathedral dates back to the 17th century and is a significant landmark in the city. The river adds a natural element to the urban landscape, with a bridge crossing over it.\",\n    \"reasoning\": \"The architectural style and twin towers suggest the Salzburg Cathedral, a well-known landmark in Salzburg. The river's presence aligns with the Salzach River, which flows through the city.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Hohensalzburg Fortress\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The fortress is another prominent landmark in Salzburg, often visible in cityscape images.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": 47.800669444444445,
+              "longitude": 13.044286111111111
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Rathauspl. 3, 5020 Salzburg, Austria",
+              "city": "Salzburg",
+              "county": "Salzburg",
+              "country": "Austria"
+            },
+            "photo_timestamp": "2025:11:17 10:54:57",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 8.29892873764038
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([salzburg.info]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 2,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a scenic view of Salzburg, Austria, with a focus on a prominent church and its surroundings. The church features a tall, slender spire topped with a pointed roof, characteristic of Gothic architectural style. Below the spire, the church has a clock face visible on its tower, indicating its historical significance. The building is constructed with light-colored stone, and its facade includes arched windows and decorative elements typical of ecclesiastical architecture. The churc",
+            "description": "The image depicts a scenic view of Salzburg, Austria, with a focus on a prominent church and its surroundings. The church features a tall, slender spire topped with a pointed roof, characteristic of Gothic architectural style. Below the spire, the church has a clock face visible on its tower, indicating its historical significance. The building is constructed with light-colored stone, and its facade includes arched windows and decorative elements typical of ecclesiastical architecture. The churc",
+            "architectural_style": "Gothic",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 47.800669444444445,
+              "longitude": 13.044286111111111
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Rathauspl. 3, 5020 Salzburg, Austria",
+              "city": "Salzburg",
+              "county": "Salzburg",
+              "country": "Austria"
+            },
+            "photo_timestamp": "2025:11:17 10:54:57",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 52.43468499183655
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Water resources",
+          "confidence": 0.9803670048713684,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Water resources",
+                "score": 0.9803670048713684
+              },
+              {
+                "source": "label",
+                "name": "Iron",
+                "score": 0.7944503426551819
+              },
+              {
+                "source": "label",
+                "name": "Engineering",
+                "score": 0.7602007985115051
+              },
+              {
+                "source": "label",
+                "name": "Spire",
+                "score": 0.7440431118011475
+              }
+            ],
+            "web_entities": [],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Daytime",
+                "score": 0.9810042977333069
+              },
+              {
+                "name": "Water resources",
+                "score": 0.9803670048713684
+              },
+              {
+                "name": "Iron",
+                "score": 0.7944503426551819
+              },
+              {
+                "name": "Engineering",
+                "score": 0.7602007985115051
+              },
+              {
+                "name": "Spire",
+                "score": 0.7440431118011475
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 47.800669444444445,
+              "longitude": 13.044286111111111
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Rathauspl. 3, 5020 Salzburg, Austria",
+              "city": "Salzburg",
+              "county": "Salzburg",
+              "country": "Austria"
+            },
+            "photo_timestamp": "2025:11:17 10:54:57",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 14.645405054092407
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Salzburg, Austria",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Salzburg, Austria",
+            "coordinates": {
+              "latitude": 47.800669444444445,
+              "longitude": 13.044286111111111
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Fortress Hohensalzburg",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 51537,
+                  "vicinity": "Mönchsberg 34, Salzburg",
+                  "place_id": "ChIJvQMhJ2CQdkcRa1Xs6dO-dys",
+                  "location": {
+                    "lat": 47.79494829999999,
+                    "lng": 13.0476583
+                  }
+                },
+                {
+                  "name": "Haus der Natur",
+                  "types": [
+                    "tourist_attraction",
+                    "zoo",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 13300,
+                  "vicinity": "Museumsplatz 5, Salzburg",
+                  "place_id": "ChIJdcwcsWWQdkcRRacRj7tCVGI",
+                  "location": {
+                    "lat": 47.8016443,
+                    "lng": 13.0392002
+                  }
+                },
+                {
+                  "name": "Mirabell Palace",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 31560,
+                  "vicinity": "Mirabellplatz 4, Salzburg",
+                  "place_id": "ChIJK-tdP3uQdkcRVd3VZhHZ1Sw",
+                  "location": {
+                    "lat": 47.8054432,
+                    "lng": 13.0416942
+                  }
+                },
+                {
+                  "name": "Mozart's Birthplace",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 26854,
+                  "vicinity": "Getreidegasse 9, Salzburg",
+                  "place_id": "ChIJiYA55GOQdkcRi7885u5bbJ4",
+                  "location": {
+                    "lat": 47.8000079,
+                    "lng": 13.0435589
+                  }
+                },
+                {
+                  "name": "Salzburg Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 12505,
+                  "vicinity": "Domplatz 1a, Salzburg",
+                  "place_id": "ChIJuYYBl2GQdkcRHSa2IHQNv0U",
+                  "location": {
+                    "lat": 47.79789460000001,
+                    "lng": 13.0466354
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Fortress Hohensalzburg",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 51537,
+                  "vicinity": "Mönchsberg 34, Salzburg",
+                  "place_id": "ChIJvQMhJ2CQdkcRa1Xs6dO-dys",
+                  "location": {
+                    "lat": 47.79494829999999,
+                    "lng": 13.0476583
+                  }
+                },
+                {
+                  "name": "Haus der Natur",
+                  "types": [
+                    "tourist_attraction",
+                    "zoo",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 13300,
+                  "vicinity": "Museumsplatz 5, Salzburg",
+                  "place_id": "ChIJdcwcsWWQdkcRRacRj7tCVGI",
+                  "location": {
+                    "lat": 47.8016443,
+                    "lng": 13.0392002
+                  }
+                },
+                {
+                  "name": "Mozart's Birthplace",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 26854,
+                  "vicinity": "Getreidegasse 9, Salzburg",
+                  "place_id": "ChIJiYA55GOQdkcRi7885u5bbJ4",
+                  "location": {
+                    "lat": 47.8000079,
+                    "lng": 13.0435589
+                  }
+                },
+                {
+                  "name": "Museum der Moderne",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1770,
+                  "vicinity": "Am Mönchsberg 32, Salzburg",
+                  "place_id": "ChIJSy24wWWQdkcR1cIBSqENQxg",
+                  "location": {
+                    "lat": 47.8009123,
+                    "lng": 13.0383679
+                  }
+                },
+                {
+                  "name": "Mozart Residence",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 7772,
+                  "vicinity": "Makartplatz 8, Salzburg",
+                  "place_id": "ChIJHd0TY2OQdkcR59EiCmY5mTo",
+                  "location": {
+                    "lat": 47.8026282,
+                    "lng": 13.0438679
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Hotel Schloss Mönchstein",
+                  "types": [
+                    "spa",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 583,
+                  "vicinity": "Mönchsberg Park 26, Salzburg",
+                  "place_id": "ChIJgzqYv2-QdkcR964su6hRSxc",
+                  "location": {
+                    "lat": 47.80408199999999,
+                    "lng": 13.035739
+                  }
+                },
+                {
+                  "name": "Stadtalm",
+                  "types": [
+                    "restaurant",
+                    "lodging",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1105,
+                  "vicinity": "Am Mönchsberg 19C, Salzburg",
+                  "place_id": "ChIJ7zZzgWaQdkcRqTaT3HS4tak",
+                  "location": {
+                    "lat": 47.7998495,
+                    "lng": 13.039244
+                  }
+                },
+                {
+                  "name": "Gasthof Goldgasse",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1448,
+                  "vicinity": "Goldgasse 10, Salzburg",
+                  "place_id": "ChIJXTkrKmKQdkcR7hDF0nXbaXY",
+                  "location": {
+                    "lat": 47.7994026,
+                    "lng": 13.0459156
+                  }
+                },
+                {
+                  "name": "Radisson Blu Hotel Altstadt, Salzburg",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 751,
+                  "vicinity": "Rudolfskai 28, Salzburg",
+                  "place_id": "ChIJiW-bPGKQdkcRZz-f6n75UZc",
+                  "location": {
+                    "lat": 47.7997516,
+                    "lng": 13.0469915
+                  }
+                },
+                {
+                  "name": "Hotel IMLAUER & Bräu Salzburg",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1710,
+                  "vicinity": "Rainerstraße 12-14, Salzburg",
+                  "place_id": "ChIJxTzDO3qQdkcRwM-YmGLINPk",
+                  "location": {
+                    "lat": 47.8087525,
+                    "lng": 13.0416895
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Park am Gersberg",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3,
+                  "user_ratings_total": 1,
+                  "vicinity": "Schwarzstraße 1, Salzburg",
+                  "place_id": "ChIJq6pagmOQdkcRQljXCL_b4bI",
+                  "location": {
+                    "lat": 47.8018699,
+                    "lng": 13.0438112
+                  }
+                },
+                {
+                  "name": "Makartplatz",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 20,
+                  "vicinity": "Makartplatz, Salzburg",
+                  "place_id": "ChIJpcS8TQCRdkcRbPouHpCFX4Q",
+                  "location": {
+                    "lat": 47.80291800000001,
+                    "lng": 13.0437628
+                  }
+                },
+                {
+                  "name": "Aussichtspunkt",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Bucklreuthstraße 1, Salzburg",
+                  "place_id": "ChIJ5e1tguSRdkcRVsvZAyMPfEM",
+                  "location": {
+                    "lat": 47.797526,
+                    "lng": 13.0397047
+                  }
+                },
+                {
+                  "name": "Kaipromenade",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 10,
+                  "vicinity": "Kaipromenade, Salzburg",
+                  "place_id": "ChIJ2-c559SRdkcRjEHmTQxO9L0",
+                  "location": {
+                    "lat": 47.80340109999999,
+                    "lng": 13.0382798
+                  }
+                },
+                {
+                  "name": "Alma-Rose'-Stiege",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Reichenhaller Straße 6/8, Salzburg",
+                  "place_id": "ChIJS0TzSgCRdkcRGLWbqZYXyZM",
+                  "location": {
+                    "lat": 47.79874179999999,
+                    "lng": 13.0374489
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Salzburg Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 12505,
+                  "vicinity": "Domplatz 1a, Salzburg",
+                  "place_id": "ChIJuYYBl2GQdkcRHSa2IHQNv0U",
+                  "location": {
+                    "lat": 47.79789460000001,
+                    "lng": 13.0466354
+                  }
+                },
+                {
+                  "name": "Katholische Jungschar Salzburg",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Kaigasse 26, Salzburg",
+                  "place_id": "ChIJqR3rWYqQdkcRrPZHG9mXX6k",
+                  "location": {
+                    "lat": 47.7966877,
+                    "lng": 13.0497733
+                  }
+                },
+                {
+                  "name": "Pfarrgemeinde Salzburg Christuskirche",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 99,
+                  "vicinity": "Schwarzstraße 25, Salzburg",
+                  "place_id": "ChIJLxGON2WQdkcR7KHoHAR6Vio",
+                  "location": {
+                    "lat": 47.80428070000001,
+                    "lng": 13.0398522
+                  }
+                },
+                {
+                  "name": "Andräkirche Salzburg",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 401,
+                  "vicinity": "Mirabellplatz 5/1, Salzburg",
+                  "place_id": "ChIJV6IsRHuQdkcRLWoaiiP2GH4",
+                  "location": {
+                    "lat": 47.8060072,
+                    "lng": 13.043566
+                  }
+                },
+                {
+                  "name": "Kollegienkirche",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 467,
+                  "vicinity": "Universitätsplatz 20, Salzburg",
+                  "place_id": "ChIJJxycW2GQdkcRmWJgpds0S4k",
+                  "location": {
+                    "lat": 47.7992131,
+                    "lng": 13.0431707
+                  }
+                },
+                {
+                  "name": "Dzemat Salzburg - Moschee - مسجد",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Gabelsbergerstraße 34, Salzburg",
+                  "place_id": "ChIJQeBIEACRdkcRD7-SRK1aIr0",
+                  "location": {
+                    "lat": 47.8081244,
+                    "lng": 13.0503693
+                  }
+                },
+                {
+                  "name": "Al Ihlas mosque salzburg",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 3,
+                  "vicinity": "Gabelsbergerstraße 18, Salzburg",
+                  "place_id": "ChIJO52WbACRdkcR3g5ugPWRQWw",
+                  "location": {
+                    "lat": 47.8088032,
+                    "lng": 13.048795
+                  }
+                },
+                {
+                  "name": "Israelitische Kultusgemeinde Salzburg",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.5,
+                  "user_ratings_total": 6,
+                  "vicinity": "Lasserstraße 8, Salzburg",
+                  "place_id": "ChIJz4Adxn2QdkcRmILWxaHqAUQ",
+                  "location": {
+                    "lat": 47.80777309999999,
+                    "lng": 13.0501405
+                  }
+                },
+                {
+                  "name": "Synagogue",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 9,
+                  "vicinity": "Lasserstraße 8, Salzburg",
+                  "place_id": "ChIJO8ciz32QdkcRCBK3wQDIWbk",
+                  "location": {
+                    "lat": 47.8077636,
+                    "lng": 13.0502048
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Restaurant Blaue Gans Salzburg Gasthaus",
+                  "types": [
+                    "restaurant",
+                    "art_gallery",
+                    "bar",
+                    "lodging",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 668,
+                  "vicinity": "41-43, Getreidegasse, Salzburg",
+                  "place_id": "ChIJwVEfIGSQdkcRttpZEQ1Uw-s",
+                  "location": {
+                    "lat": 47.799901,
+                    "lng": 13.040636
+                  }
+                },
+                {
+                  "name": "Shakespeare Kunst & Kulinarisches",
+                  "types": [
+                    "art_gallery",
+                    "cafe",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 264,
+                  "vicinity": "Hubert-Sattler-Gasse 3, Salzburg",
+                  "place_id": "ChIJt6dzDnuQdkcRAiYyUAwsElI",
+                  "location": {
+                    "lat": 47.80642299999999,
+                    "lng": 13.043255
+                  }
+                },
+                {
+                  "name": "Rudolf Budja Galerie",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 20,
+                  "vicinity": "Sigmund-Haffner-Gasse 16, Salzburg",
+                  "place_id": "ChIJGWOzXWGQdkcRg8V-Y550gnA",
+                  "location": {
+                    "lat": 47.7987583,
+                    "lng": 13.0434285
+                  }
+                },
+                {
+                  "name": "Galerie Academia GesmbH & Co KG",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Residenzplatz 1, Salzburg",
+                  "place_id": "ChIJR5iTmmGQdkcRXBUHrJl8vvU",
+                  "location": {
+                    "lat": 47.7985012,
+                    "lng": 13.0457712
+                  }
+                },
+                {
+                  "name": "Galerie Gerlich",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 5,
+                  "vicinity": "Sigmund-Haffner-Gasse 6, Salzburg",
+                  "place_id": "ChIJ154m32OQdkcRV-yQD_iiv9k",
+                  "location": {
+                    "lat": 47.7996041,
+                    "lng": 13.0442322
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Salzburg",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Salzburg",
+                  "place_id": "ChIJsdQIqd2adkcRPfcqQaGD4cE",
+                  "location": {
+                    "lat": 47.8014154,
+                    "lng": 13.0448441
+                  }
+                },
+                {
+                  "name": "Sheraton Grand Salzburg",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1538,
+                  "vicinity": "Auerspergstraße 4, Salzburg",
+                  "place_id": "ChIJ_6PQjHqQdkcReADCl6cM1Tw",
+                  "location": {
+                    "lat": 47.8069935,
+                    "lng": 13.0407158
+                  }
+                },
+                {
+                  "name": "Neutor Hotel Salzburg Zentrum",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.3,
+                  "user_ratings_total": 734,
+                  "vicinity": "Neutorstraße 8, Salzburg",
+                  "place_id": "ChIJCWXlTGaQdkcRBOCbOCtaBZk",
+                  "location": {
+                    "lat": 47.7977232,
+                    "lng": 13.0372356
+                  }
+                },
+                {
+                  "name": "Hotel am Mirabellplatz",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 958,
+                  "vicinity": "Paris-Lodron-Straße 1, Salzburg",
+                  "place_id": "ChIJ02w_VHuQdkcRH1ZUQZ2O1Z0",
+                  "location": {
+                    "lat": 47.8046658,
+                    "lng": 13.0444092
+                  }
+                },
+                {
+                  "name": "Boutiquehotel Amadeus",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 259,
+                  "vicinity": "Linzer Gasse 43, Salzburg",
+                  "place_id": "ChIJp5eWKn2QdkcRDRdXTUY3LXU",
+                  "location": {
+                    "lat": 47.80416669999999,
+                    "lng": 13.0477778
+                  }
+                }
+              ]
+            },
+            "total_places_found": 39,
+            "photo_timestamp": "2025:11:17 10:54:57",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.44580578804016113
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/192.jpg"
+    },
+    {
+      "image_filename": "192.jpg",
+      "timestamp": "2026-01-28T04:18:33.166983",
+      "processing_time_seconds": 61.027856,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Church with a tall spire, Salzburg, Austria",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and landscape are indicative of European cities, with the church's Gothic features and the river suggesting a location like Salzburg. The spire and setting match common views of Salzburg's historic architecture.",
+            "detailed_description": "The image features a church with a tall spire, likely in a Gothic architectural style, situated along a river. The church has a prominent tower with a pointed roof, typical of Gothic design. The setting includes a riverbank with a bridge crossing over, and the landscape suggests a European city, possibly Salzburg, Austria.",
+            "identification": {
+              "primary": [
+                "Church with a tall spire"
+              ],
+              "location": "Salzburg, Austria",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Church with a tall spire",
+                "type": "landmark",
+                "confidence": 0.85
+              },
+              {
+                "name": "River",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "Gothic",
+              "19th_century",
+              "stone",
+              "Salzburg",
+              "landmark"
+            ],
+            "location": "Salzburg, Austria",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Salzburg Cathedral",
+                "specificity_level": "very_specific",
+                "confidence": 0.75,
+                "reasoning": "The spire and setting resemble views of Salzburg Cathedral, a known landmark in the city."
+              },
+              {
+                "guess": "Church in Salzburg",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.85,
+                "reasoning": "The architectural style and river setting are consistent with churches found in Salzburg."
+              },
+              {
+                "guess": "European Gothic Church",
+                "specificity_level": "general",
+                "confidence": 0.9,
+                "reasoning": "The Gothic architectural style is common in European churches, and the river setting suggests a city with such features."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Church with a tall spire\"],\n        \"location\": \"Salzburg, Austria\",\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Church with a tall spire\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.85\n        },\n        {\n            \"name\": \"River\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"Gothic\", \"19th_century\", \"stone\", \"Salzburg\", \"landmark\"],\n    \"description\": \"The image features a church with a tall spire, likely in a Gothic architectural style, situated along a river. The church has a prominent tower with a pointed roof, typical of Gothic design. The setting includes a riverbank with a bridge crossing over, and the landscape suggests a European city, possibly Salzburg, Austria.\",\n    \"reasoning\": \"The architectural style and landscape are indicative of European cities, with the church's Gothic features and the river suggesting a location like Salzburg. The spire and setting match common views of Salzburg's historic architecture.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Salzburg Cathedral\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.75,\n            \"reasoning\": \"The spire and setting resemble views of Salzburg Cathedral, a known landmark in the city.\"\n        },\n        {\n            \"guess\": \"Church in Salzburg\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.85,\n            \"reasoning\": \"The architectural style and river setting are consistent with churches found in Salzburg.\"\n        },\n        {\n            \"guess\": \"European Gothic Church\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.9,\n            \"reasoning\": \"The Gothic architectural style is common in European churches, and the river setting suggests a city with such features.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 9.87385606765747
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([en.wikipedia.org]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a scenic view of a river with a prominent church and other architectural structures in the background. The church features a tall, slender spire topped with a dark pointed roof, characteristic of Gothic architectural style. Below the spire, the church has a clock tower with visible clock faces on each side. The building is constructed with light-colored stone, and its facade includes arched windows and decorative elements typical of historical European architecture. Surrounding",
+            "description": "The image depicts a scenic view of a river with a prominent church and other architectural structures in the background. The church features a tall, slender spire topped with a dark pointed roof, characteristic of Gothic architectural style. Below the spire, the church has a clock tower with visible clock faces on each side. The building is constructed with light-colored stone, and its facade includes arched windows and decorative elements typical of historical European architecture. Surrounding",
+            "architectural_style": "Gothic",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 51.15287399291992
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Water resources",
+          "confidence": 0.9803670048713684,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Water resources",
+                "score": 0.9803670048713684
+              },
+              {
+                "source": "label",
+                "name": "Iron",
+                "score": 0.7944503426551819
+              },
+              {
+                "source": "label",
+                "name": "Engineering",
+                "score": 0.7602007985115051
+              },
+              {
+                "source": "label",
+                "name": "Spire",
+                "score": 0.7440431118011475
+              }
+            ],
+            "web_entities": [],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Daytime",
+                "score": 0.9810042977333069
+              },
+              {
+                "name": "Water resources",
+                "score": 0.9803670048713684
+              },
+              {
+                "name": "Iron",
+                "score": 0.7944503426551819
+              },
+              {
+                "name": "Engineering",
+                "score": 0.7602007985115051
+              },
+              {
+                "name": "Spire",
+                "score": 0.7440431118011475
+              }
+            ],
+            "processing_time_seconds": 14.39500117301941
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/192.jpg"
+    }
+  ]
+}

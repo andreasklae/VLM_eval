@@ -1,0 +1,1229 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "183.heic",
+      "timestamp": "2026-01-28T03:55:26.903336",
+      "processing_time_seconds": 60.807543,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -37.805125,
+        "gps_longitude": 144.9709638888889,
+        "location": {
+          "formatted_address": "Royal Exhibition Building, Melbourne Museum, 9 Nicholson St, Carlton VIC 3053, Australia",
+          "city": "Carlton",
+          "county": "Melbourne City",
+          "country": "Australia"
+        },
+        "datetime_original": "2025:06:30 16:58:53",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Skyline of Melbourne, Melbourne, Australia",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Melbourne, and the architectural style and skyline match known features of the city. The distinctive modern skyscrapers are characteristic of Melbourne's urban development.",
+            "detailed_description": "The image shows a section of the Melbourne skyline, featuring modern skyscrapers with distinctive architectural designs. The prominent building in the center has a unique curved shape with reflective glass facades, typical of contemporary architecture. Surrounding it are other high-rise buildings, contributing to the urban landscape. The foreground includes lush greenery and parkland, indicating a city park setting.",
+            "identification": {
+              "primary": [
+                "Skyline of Melbourne"
+              ],
+              "location": "Melbourne, Australia",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Modern skyscrapers",
+                "type": "building",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "skyscraper",
+              "urban",
+              "Melbourne",
+              "Australia"
+            ],
+            "location": "Melbourne, Australia",
+            "type": "viewpoint",
+            "search_range_meters": 2000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Skyline of Melbourne\"],\n        \"location\": \"Melbourne, Australia\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Modern skyscrapers\",\n            \"type\": \"building\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"skyscraper\", \"urban\", \"Melbourne\", \"Australia\"],\n    \"description\": \"The image shows a section of the Melbourne skyline, featuring modern skyscrapers with distinctive architectural designs. The prominent building in the center has a unique curved shape with reflective glass facades, typical of contemporary architecture. Surrounding it are other high-rise buildings, contributing to the urban landscape. The foreground includes lush greenery and parkland, indicating a city park setting.\",\n    \"reasoning\": \"The location metadata indicates Melbourne, and the architectural style and skyline match known features of the city. The distinctive modern skyscrapers are characteristic of Melbourne's urban development.\",\n    \"type\": \"viewpoint\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": []\n}",
+            "gps_coordinates": {
+              "latitude": -37.805125,
+              "longitude": 144.9709638888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Royal Exhibition Building, Melbourne Museum, 9 Nicholson St, Carlton VIC 3053, Australia",
+              "city": "Carlton",
+              "county": "Melbourne City",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:06:30 16:58:53",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 9.803303718566895
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Eureka Tower, Melbourne, Australia",
+          "confidence": 0.7999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the Eureka Tower, a prominent skyscraper in Melbourne known for its modern design and glass facade. The location metadata supports this identification as the photo was taken in Melbourne. The search results suggest this identification with high confidence.",
+            "identification": {
+              "primary": [
+                "Eureka Tower"
+              ],
+              "location": "Melbourne, Australia",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Eureka Tower",
+                "type": "landmark",
+                "confidence": 0.85
+              },
+              {
+                "name": "High-rise buildings",
+                "type": "building",
+                "confidence": 0.75
+              },
+              {
+                "name": "Park area",
+                "type": "natural_feature",
+                "confidence": 0.7
+              }
+            ],
+            "tags": [
+              "contemporary",
+              "modern architecture",
+              "glass facade",
+              "urban skyline",
+              "Melbourne"
+            ],
+            "sources_used": [
+              "timeout.com",
+              "maisonoffice.vn"
+            ],
+            "all_candidates": [
+              "**URL**: ([timeout.com]())",
+              "**URL**: ([maisonoffice.vn]())",
+              "**URL**: ([maisonoffice.vn]())",
+              "**URL**: ([en.wikipedia.org]())",
+              "**URL**: ([en.wikipedia.org]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Melbourne Central Tower",
+                "specificity_level": "very_specific",
+                "confidence": 0.65,
+                "reasoning": "Another modern skyscraper in Melbourne with a glass facade, but less likely due to the distinctive cylindrical design described."
+              },
+              {
+                "guess": "Contemporary skyscraper in Melbourne",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "The description fits several modern buildings in Melbourne, but Eureka Tower is the most distinctive."
+              },
+              {
+                "guess": "Modern skyscraper",
+                "specificity_level": "general",
+                "confidence": 0.55,
+                "reasoning": "Reflective glass and cylindrical design are common in modern architecture, but Eureka Tower is a notable example."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 3,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.85,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a cityscape with a prominent modern skyscraper as the central focus. This building features a distinctive design with two cylindrical towers connected by a horizontal bridge-like structure. The facade is composed of reflective glass, giving it a sleek and contemporary appearance. The towers are tall and slender, with a smooth curvature that adds to their modern aesthetic. Surrounding the skyscraper are several other high-rise buildings, each with varying architectural styles, i",
+            "description": "The image depicts a cityscape with a prominent modern skyscraper as the central focus. This building features a distinctive design with two cylindrical towers connected by a horizontal bridge-like structure. The facade is composed of reflective glass, giving it a sleek and contemporary appearance. The towers are tall and slender, with a smooth curvature that adds to their modern aesthetic. Surrounding the skyscraper are several other high-rise buildings, each with varying architectural styles, i",
+            "architectural_style": "Contemporary",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": -37.805125,
+              "longitude": 144.9709638888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Royal Exhibition Building, Melbourne Museum, 9 Nicholson St, Carlton VIC 3053, Australia",
+              "city": "Carlton",
+              "county": "Melbourne City",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:06:30 16:58:53",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 49.61236310005188
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Apartment (Carlton, Australia)",
+          "confidence": 0.5101895332336426,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Apartment",
+            "artist_name": null,
+            "museum_or_location": "Carlton, Australia",
+            "art_style": null,
+            "art_era": null,
+            "confidence": 0.5101895332336426,
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.5678038001060486
+              },
+              {
+                "name": "Apartment",
+                "score": 0.5101895332336426
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.4364691376686096
+              },
+              {
+                "name": "Tower",
+                "score": 0.4284341335296631
+              },
+              {
+                "name": "Tree",
+                "score": 0.34786859154701233
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": -37.805125,
+              "longitude": 144.9709638888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Royal Exhibition Building, Melbourne Museum, 9 Nicholson St, Carlton VIC 3053, Australia",
+              "city": "Carlton",
+              "county": "Melbourne City",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:06:30 16:58:53",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 20.380211114883423
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Carlton, Melbourne City, Australia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Carlton, Melbourne City, Australia",
+            "coordinates": {
+              "latitude": -37.805125,
+              "longitude": 144.9709638888889
+            },
+            "search_range_meters": 2000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Shot Tower Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 153,
+                  "vicinity": "Melbourne Central/211 La Trobe Street, Melbourne",
+                  "place_id": "ChIJx18s48pC1moRPwB-wTgc7kg",
+                  "location": {
+                    "lat": -37.8103869,
+                    "lng": 144.9629577
+                  }
+                },
+                {
+                  "name": "Queen Victoria Market",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 58057,
+                  "vicinity": "Queen Street, Melbourne",
+                  "place_id": "ChIJsVeQNzRd1moRUNQyBXZWBA8",
+                  "location": {
+                    "lat": -37.8075798,
+                    "lng": 144.956785
+                  }
+                },
+                {
+                  "name": "Melbourne Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 18783,
+                  "vicinity": "11 Nicholson Street, Carlton",
+                  "place_id": "ChIJn97JQNpC1moRIcJsVMEQLI8",
+                  "location": {
+                    "lat": -37.803273,
+                    "lng": 144.9717408
+                  }
+                },
+                {
+                  "name": "Fed Square",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2922,
+                  "vicinity": "Swanston St & Flinders St, Melbourne",
+                  "place_id": "ChIJT8T86bZC1moRqw7W6kVH5zg",
+                  "location": {
+                    "lat": -37.8179789,
+                    "lng": 144.9690576
+                  }
+                },
+                {
+                  "name": "Saint Patrick's Cathedral",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 3992,
+                  "vicinity": "1 Cathedral Place, East Melbourne",
+                  "place_id": "ChIJq5z0TsRC1moRoPbHvgub8is",
+                  "location": {
+                    "lat": -37.8100833,
+                    "lng": 144.9764167
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Shot Tower Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 153,
+                  "vicinity": "Melbourne Central/211 La Trobe Street, Melbourne",
+                  "place_id": "ChIJx18s48pC1moRPwB-wTgc7kg",
+                  "location": {
+                    "lat": -37.8103869,
+                    "lng": 144.9629577
+                  }
+                },
+                {
+                  "name": "Melbourne Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 18783,
+                  "vicinity": "11 Nicholson Street, Carlton",
+                  "place_id": "ChIJn97JQNpC1moRIcJsVMEQLI8",
+                  "location": {
+                    "lat": -37.803273,
+                    "lng": 144.9717408
+                  }
+                },
+                {
+                  "name": "Old Melbourne Gaol",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 3628,
+                  "vicinity": "377 Russell Street, Melbourne",
+                  "place_id": "ChIJYUcwasxC1moResepeNQs7Z0",
+                  "location": {
+                    "lat": -37.807832,
+                    "lng": 144.9653171
+                  }
+                },
+                {
+                  "name": "ACMI",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "museum",
+                    "movie_theater",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 6091,
+                  "vicinity": "Federation Square, Flinders Street, Melbourne",
+                  "place_id": "ChIJT8T86bZC1moRpBiRUC3lABM",
+                  "location": {
+                    "lat": -37.8175974,
+                    "lng": 144.9686881
+                  }
+                },
+                {
+                  "name": "Immigration Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 3285,
+                  "vicinity": "400 Flinders Street, Melbourne",
+                  "place_id": "ChIJ1fB5g7ZC1moRIxI14Xd2bYs",
+                  "location": {
+                    "lat": -37.81924420000001,
+                    "lng": 144.9604547
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "La Camera, Italian Restaurant",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 1335,
+                  "vicinity": "MR2/3 Southgate Avenue, Southbank",
+                  "place_id": "ChIJ9f7HQrJC1moRwo_U9X7VL-E",
+                  "location": {
+                    "lat": -37.8200651,
+                    "lng": 144.9666394
+                  }
+                },
+                {
+                  "name": "Stamford Plaza Melbourne",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 1978,
+                  "vicinity": "111 Little Collins Street, Melbourne",
+                  "place_id": "ChIJc-7BSMhC1moRJadN_SH7-PM",
+                  "location": {
+                    "lat": -37.8135163,
+                    "lng": 144.9699388
+                  }
+                },
+                {
+                  "name": "Oriental Teahouse Melbourne CBD",
+                  "types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1010,
+                  "vicinity": "378 Little Collins Street, Melbourne",
+                  "place_id": "ChIJd5kNx7RC1moR-pM_GKr9bKQ",
+                  "location": {
+                    "lat": -37.8155739,
+                    "lng": 144.9620832
+                  }
+                },
+                {
+                  "name": "Rendezvous Hotel Melbourne",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 2369,
+                  "vicinity": "328 Flinders Street, Melbourne",
+                  "place_id": "ChIJj9l7c7NC1moRts0rcsFU3dc",
+                  "location": {
+                    "lat": -37.8183324,
+                    "lng": 144.9635426
+                  }
+                },
+                {
+                  "name": "Ginza Teppanyaki",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1489,
+                  "vicinity": "Level 1/139 Little Bourke Street, Melbourne",
+                  "place_id": "ChIJ5XpydclC1moR7UUgWI3KRTI",
+                  "location": {
+                    "lat": -37.8117282,
+                    "lng": 144.9684233
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Alexandra Gardens",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1721,
+                  "vicinity": "Alexandra Gardens Skate Park, 3 Boathouse Drive, Melbourne",
+                  "place_id": "ChIJc8A97rlC1moRUPD0CXZWBB0",
+                  "location": {
+                    "lat": -37.8204318,
+                    "lng": 144.9721339
+                  }
+                },
+                {
+                  "name": "Birrarung Marr",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 3166,
+                  "vicinity": "Melbourne",
+                  "place_id": "ChIJIXktmrlC1moRQPgxBXZWBA8",
+                  "location": {
+                    "lat": -37.8187351,
+                    "lng": 144.9742624
+                  }
+                },
+                {
+                  "name": "Melbourne General Cemetery",
+                  "types": [
+                    "cemetery",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 75,
+                  "vicinity": "College Crescent, Parkville",
+                  "place_id": "ChIJKc7PbCxD1moR4FMwBXZWBA8",
+                  "location": {
+                    "lat": -37.7916965,
+                    "lng": 144.9618751
+                  }
+                },
+                {
+                  "name": "Fitzroy Gardens",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 6974,
+                  "vicinity": "Wellington Parade, East Melbourne",
+                  "place_id": "ChIJX6ytzMNC1moREIYxBXZWBA8",
+                  "location": {
+                    "lat": -37.81272149999999,
+                    "lng": 144.9800679
+                  }
+                },
+                {
+                  "name": "Flagstaff Gardens",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 7972,
+                  "vicinity": "309-311 William Street, West Melbourne",
+                  "place_id": "ChIJnQHt6Uld1moRgIUxBXZWBA8",
+                  "location": {
+                    "lat": -37.8105577,
+                    "lng": 144.9545199
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Saint Patrick's Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 3992,
+                  "vicinity": "1 Cathedral Place, East Melbourne",
+                  "place_id": "ChIJq5z0TsRC1moRoPbHvgub8is",
+                  "location": {
+                    "lat": -37.8100833,
+                    "lng": 144.9764167
+                  }
+                },
+                {
+                  "name": "St Francis’ Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1125,
+                  "vicinity": "326 Lonsdale Street, Melbourne",
+                  "place_id": "ChIJF604vcpC1moREpFwYJGJbA8",
+                  "location": {
+                    "lat": -37.81165680000001,
+                    "lng": 144.9623958
+                  }
+                },
+                {
+                  "name": "St Mary Star of the Sea",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 425,
+                  "vicinity": "33 Howard Street, West Melbourne",
+                  "place_id": "ChIJiVCJ4zZd1moRVXnu9Vf1DPY",
+                  "location": {
+                    "lat": -37.805961,
+                    "lng": 144.9530936
+                  }
+                },
+                {
+                  "name": "ICC Melbourne",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 37,
+                  "vicinity": "156 Collins Street, Melbourne",
+                  "place_id": "ChIJsxcWIrZC1moRMuKBpgq2zbQ",
+                  "location": {
+                    "lat": -37.81458979999999,
+                    "lng": 144.9685261
+                  }
+                },
+                {
+                  "name": "Scots’ Church Melbourne",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 179,
+                  "vicinity": "77 Russell Street, Melbourne",
+                  "place_id": "ChIJsxcWIrZC1moRJ8W6FBQ_gO8",
+                  "location": {
+                    "lat": -37.8146546,
+                    "lng": 144.9686359
+                  }
+                },
+                {
+                  "name": "Melbourne Madinah",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 172,
+                  "vicinity": "359 Exhibition Street, Melbourne",
+                  "place_id": "ChIJ-_oYIrJC1moRQh_iqGoc-k4",
+                  "location": {
+                    "lat": -37.8074,
+                    "lng": 144.9682305
+                  }
+                },
+                {
+                  "name": "BSN Central Mosque",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 262,
+                  "vicinity": "144 Fitzroy Street, Fitzroy",
+                  "place_id": "ChIJHT11ldtC1moR50j6VlaRn8I",
+                  "location": {
+                    "lat": -37.8043736,
+                    "lng": 144.9764185
+                  }
+                },
+                {
+                  "name": "University Of Melbourne Musalla (Prayer Rooms)",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 16,
+                  "vicinity": "Parkville VIC 3010",
+                  "place_id": "ChIJbR_8stJC1moRJdx8IdLrlFI",
+                  "location": {
+                    "lat": -37.80192729999999,
+                    "lng": 144.9613333
+                  }
+                },
+                {
+                  "name": "Musalla - University of Melbourne Islamic Society",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 98,
+                  "vicinity": "Pelham Street, Carlton",
+                  "place_id": "ChIJ1ZPqstJC1moRx8iRGftqsE4",
+                  "location": {
+                    "lat": -37.80195990000001,
+                    "lng": 144.9612737
+                  }
+                },
+                {
+                  "name": "RMIT international Campus Musalla",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 9,
+                  "vicinity": "3000/265 Bourke Street, Melbourne",
+                  "place_id": "ChIJ0WH297VC1moRCkzYEDSoTho",
+                  "location": {
+                    "lat": -37.8136194,
+                    "lng": 144.9659915
+                  }
+                },
+                {
+                  "name": "East Melbourne Hebrew Congregation",
+                  "types": [
+                    "synagogue",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 57,
+                  "vicinity": "488 Albert Street, East Melbourne",
+                  "place_id": "ChIJSf2_B8VC1moRE9uJb5NE9bA",
+                  "location": {
+                    "lat": -37.80906239999999,
+                    "lng": 144.974214
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Fed Square",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2922,
+                  "vicinity": "Swanston St & Flinders St, Melbourne",
+                  "place_id": "ChIJT8T86bZC1moRqw7W6kVH5zg",
+                  "location": {
+                    "lat": -37.8179789,
+                    "lng": 144.9690576
+                  }
+                },
+                {
+                  "name": "State Library Victoria",
+                  "types": [
+                    "tourist_attraction",
+                    "library",
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 4067,
+                  "vicinity": "328 Swanston Street, Melbourne",
+                  "place_id": "ChIJ6RxLlctC1moReA6DqUtnh_E",
+                  "location": {
+                    "lat": -37.8097255,
+                    "lng": 144.9654504
+                  }
+                },
+                {
+                  "name": "ACMI",
+                  "types": [
+                    "movie_theater",
+                    "tourist_attraction",
+                    "art_gallery",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 6091,
+                  "vicinity": "Federation Square, Flinders Street, Melbourne",
+                  "place_id": "ChIJT8T86bZC1moRpBiRUC3lABM",
+                  "location": {
+                    "lat": -37.8175974,
+                    "lng": 144.9686881
+                  }
+                },
+                {
+                  "name": "National Gallery of Victoria",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 24942,
+                  "vicinity": "180 Saint Kilda Road, Melbourne",
+                  "place_id": "ChIJuYNitLFC1moRVB5vMAKPcTM",
+                  "location": {
+                    "lat": -37.8225942,
+                    "lng": 144.9689278
+                  }
+                },
+                {
+                  "name": "The Ian Potter Centre: NGV Australia",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 2695,
+                  "vicinity": "Federation Square, Flinders St &, Russell Street, Melbourne",
+                  "place_id": "ChIJ1fB5g7ZC1moR10K4RhIg36U",
+                  "location": {
+                    "lat": -37.8170507,
+                    "lng": 144.9697357
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Melbourne",
+                  "types": [
+                    "colloquial_area",
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Melbourne",
+                  "place_id": "ChIJ90260rVG1moRkM2MIXVWBAQ",
+                  "location": {
+                    "lat": -37.8136276,
+                    "lng": 144.9630576
+                  }
+                },
+                {
+                  "name": "Hotel Grand Chancellor Melbourne",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 1474,
+                  "vicinity": "131 Lonsdale Street, Melbourne",
+                  "place_id": "ChIJ53vEPslC1moRaeD68DDwOfk",
+                  "location": {
+                    "lat": -37.8107074,
+                    "lng": 144.9684061
+                  }
+                },
+                {
+                  "name": "Mantra on Russell Melbourne",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1177,
+                  "vicinity": "222 Russell Street, Melbourne",
+                  "place_id": "ChIJXccYcclC1moRFzEzURPX3m8",
+                  "location": {
+                    "lat": -37.8112795,
+                    "lng": 144.9679488
+                  }
+                },
+                {
+                  "name": "Park Hyatt Melbourne",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 2525,
+                  "vicinity": "1 Parliament Square, off, Parliament Place, Melbourne",
+                  "place_id": "ChIJN92GPsRC1moRORPubhGOXn8",
+                  "location": {
+                    "lat": -37.81135259999999,
+                    "lng": 144.9755666
+                  }
+                },
+                {
+                  "name": "ibis Melbourne - Hotel & Apartments",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1978,
+                  "vicinity": "15-21 Therry Street, Melbourne",
+                  "place_id": "ChIJiaMVrcxC1moRvEVeeAq_JSM",
+                  "location": {
+                    "lat": -37.8069565,
+                    "lng": 144.9613627
+                  }
+                }
+              ]
+            },
+            "total_places_found": 41,
+            "photo_timestamp": "2025:06:30 16:58:53",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.9030051231384277
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/183.heic"
+    },
+    {
+      "image_filename": "183.heic",
+      "timestamp": "2026-01-28T03:56:27.745166",
+      "processing_time_seconds": 58.6527,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Modern skyscraper with distinctive curved design, Melbourne, Australia",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and design elements suggest a modern skyscraper typical of urban landscapes in cities like Melbourne. The presence of multiple high-rise buildings and landscaped gardens supports this identification.",
+            "detailed_description": "The image features a modern skyscraper with a distinctive curved design, characterized by reflective glass surfaces and a unique architectural form. The building is part of a city skyline, surrounded by other high-rise structures. The foreground includes a park area with trees and landscaped gardens, suggesting an urban setting with green spaces.",
+            "identification": {
+              "primary": [
+                "Modern skyscraper with distinctive curved design"
+              ],
+              "location": "Melbourne, Australia",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Modern skyscraper",
+                "type": "building",
+                "confidence": 0.9
+              },
+              {
+                "name": "City skyline",
+                "type": "viewpoint",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "skyscraper",
+              "urban_landscape",
+              "Melbourne"
+            ],
+            "location": "Melbourne, Australia",
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Specific skyscraper in Melbourne",
+                "specificity_level": "very_specific",
+                "confidence": 0.7,
+                "reasoning": "The design and location suggest it could be a well-known skyscraper in Melbourne."
+              },
+              {
+                "guess": "Urban park in Melbourne",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "The presence of landscaped gardens and trees indicates a park setting within the city."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Modern skyscraper with distinctive curved design\"],\n        \"location\": \"Melbourne, Australia\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Modern skyscraper\",\n            \"type\": \"building\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"City skyline\",\n            \"type\": \"viewpoint\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"skyscraper\", \"urban_landscape\", \"Melbourne\"],\n    \"description\": \"The image features a modern skyscraper with a distinctive curved design, characterized by reflective glass surfaces and a unique architectural form. The building is part of a city skyline, surrounded by other high-rise structures. The foreground includes a park area with trees and landscaped gardens, suggesting an urban setting with green spaces.\",\n    \"reasoning\": \"The architectural style and design elements suggest a modern skyscraper typical of urban landscapes in cities like Melbourne. The presence of multiple high-rise buildings and landscaped gardens supports this identification.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Specific skyscraper in Melbourne\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The design and location suggest it could be a well-known skyscraper in Melbourne.\"\n        },\n        {\n            \"guess\": \"Urban park in Melbourne\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The presence of landscaped gardens and trees indicates a park setting within the city.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 17.52907085418701
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Marina Bay Sands, Singapore",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the distinctive architectural features of Marina Bay Sands, including the cylindrical towers and horizontal connecting structure. The search results strongly support this identification with high confidence scores. The presence of a park in the foreground aligns with the location's known surroundings.",
+            "identification": {
+              "primary": [
+                "Marina Bay Sands"
+              ],
+              "location": "Singapore",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Marina Bay Sands",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Urban skyline",
+                "type": "viewpoint",
+                "confidence": 0.85
+              },
+              {
+                "name": "Park with pathways and trees",
+                "type": "natural_feature",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "contemporary",
+              "modern architecture",
+              "urban skyline",
+              "Singapore",
+              "park"
+            ],
+            "sources_used": [
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image features a modern urban skyline with a prominent skyscraper that stands out due to its unique architectural design. This building consists of two cylindrical towers connected by a horizontal structure near the top, creating a distinctive silhouette against the clear blue sky. The towers are clad in reflective glass, which captures the light and adds a shimmering effect to the facade. Surrounding the main skyscraper are several other high-rise buildings, each featuring a variety of arch",
+            "description": "The image features a modern urban skyline with a prominent skyscraper that stands out due to its unique architectural design. This building consists of two cylindrical towers connected by a horizontal structure near the top, creating a distinctive silhouette against the clear blue sky. The towers are clad in reflective glass, which captures the light and adds a shimmering effect to the facade. Surrounding the main skyscraper are several other high-rise buildings, each featuring a variety of arch",
+            "architectural_style": "Contemporary",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 40.87151622772217
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Tree",
+          "confidence": 0.9796082973480225,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Tree",
+                "score": 0.9796082973480225
+              },
+              {
+                "source": "label",
+                "name": "Urban area",
+                "score": 0.9543189406394958
+              },
+              {
+                "source": "label",
+                "name": "City",
+                "score": 0.946772575378418
+              },
+              {
+                "source": "label",
+                "name": "Metropolitan area",
+                "score": 0.9395538568496704
+              },
+              {
+                "source": "web",
+                "name": "Skyscraper",
+                "score": 0.5681686401367188
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.5681686401367188
+              },
+              {
+                "name": "Apartment",
+                "score": 0.4743057191371918
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.43080848455429077
+              },
+              {
+                "name": "Tower",
+                "score": 0.42913252115249634
+              },
+              {
+                "name": "Corporate headquarters",
+                "score": 0.3621618151664734
+              }
+            ],
+            "objects": [
+              {
+                "name": "Building",
+                "score": 0.5155680775642395
+              }
+            ],
+            "labels": [
+              {
+                "name": "Daytime",
+                "score": 0.981658935546875
+              },
+              {
+                "name": "Tree",
+                "score": 0.9796082973480225
+              },
+              {
+                "name": "Urban area",
+                "score": 0.9543189406394958
+              },
+              {
+                "name": "City",
+                "score": 0.946772575378418
+              },
+              {
+                "name": "Metropolitan area",
+                "score": 0.9395538568496704
+              }
+            ],
+            "processing_time_seconds": 20.436004877090454
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/183.heic"
+    }
+  ]
+}

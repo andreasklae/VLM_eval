@@ -1,0 +1,1057 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "156.jpg",
+      "timestamp": "2026-01-28T02:51:38.799984",
+      "processing_time_seconds": 77.246112,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 46.15977777777778,
+        "gps_longitude": -1.1514722222222222,
+        "location": {
+          "formatted_address": "1 Rue de l'Hôtel de ville, 17000 La Rochelle, France",
+          "city": "La Rochelle",
+          "county": "Charente-Maritime",
+          "country": "France"
+        },
+        "datetime_original": "2025:03:28 11:43:49",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Statue in La Rochelle, La Rochelle, France",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates La Rochelle, and the architectural style of the building is consistent with historic French urban architecture. The statue's material and style suggest it is a public monument.",
+            "detailed_description": "The image shows a statue of a historical figure mounted on a pedestal in a public square in La Rochelle, France. The statue appears to be made of bronze, depicting a person in a dynamic pose. Behind the statue is a historic building with a stone facade, featuring multiple stories and decorative elements typical of 19th-century French architecture. The building has arched windows and a slate roof, contributing to its classic appearance.",
+            "identification": {
+              "primary": [
+                "Statue in La Rochelle"
+              ],
+              "location": "La Rochelle, France",
+              "confidence": 0.8
+            },
+            "artifacts": [
+              {
+                "name": "Statue of a historical figure",
+                "type": "statue",
+                "confidence": 0.8
+              },
+              {
+                "name": "Historic building facade",
+                "type": "building",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "19th_century",
+              "stone",
+              "historic",
+              "La_Rochelle",
+              "architecture"
+            ],
+            "location": "La Rochelle, France",
+            "type": "statue",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Statue of Admiral Duperré",
+                "specificity_level": "very_specific",
+                "confidence": 0.7,
+                "reasoning": "Admiral Duperré is a notable figure associated with La Rochelle, and there is a known statue of him in the city."
+              },
+              {
+                "guess": "Statue of Jean Guiton",
+                "specificity_level": "very_specific",
+                "confidence": 0.6,
+                "reasoning": "Jean Guiton was a mayor of La Rochelle, and his statue is also a possibility given the location."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Statue in La Rochelle\"],\n        \"location\": \"La Rochelle, France\",\n        \"confidence\": 0.8\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Statue of a historical figure\",\n            \"type\": \"statue\",\n            \"confidence\": 0.8\n        },\n        {\n            \"name\": \"Historic building facade\",\n            \"type\": \"building\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"19th_century\", \"stone\", \"historic\", \"La_Rochelle\", \"architecture\"],\n    \"description\": \"The image shows a statue of a historical figure mounted on a pedestal in a public square in La Rochelle, France. The statue appears to be made of bronze, depicting a person in a dynamic pose. Behind the statue is a historic building with a stone facade, featuring multiple stories and decorative elements typical of 19th-century French architecture. The building has arched windows and a slate roof, contributing to its classic appearance.\",\n    \"reasoning\": \"The location metadata indicates La Rochelle, and the architectural style of the building is consistent with historic French urban architecture. The statue's material and style suggest it is a public monument.\",\n    \"type\": \"statue\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Statue of Admiral Duperré\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"Admiral Duperré is a notable figure associated with La Rochelle, and there is a known statue of him in the city.\"\n        },\n        {\n            \"guess\": \"Statue of Jean Guiton\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"Jean Guiton was a mayor of La Rochelle, and his statue is also a possibility given the location.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": 46.15977777777778,
+              "longitude": -1.1514722222222222
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "1 Rue de l'Hôtel de ville, 17000 La Rochelle, France",
+              "city": "La Rochelle",
+              "county": "Charente-Maritime",
+              "country": "France"
+            },
+            "photo_timestamp": "2025:03:28 11:43:49",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 33.019164085388184
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "**URL**: ([audiala.com]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 3,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a prominent statue situated in a public square, with a historical building in the background. The statue is mounted on a pedestal and features a figure in a dynamic pose, possibly representing a historical or cultural figure. The statue is made of bronze, evident from its greenish patina, and showcases detailed craftsmanship with intricate clothing and facial features. The pedestal is made of stone, with decorative elements that suggest a classical influence. Behind the statue,",
+            "description": "The image depicts a prominent statue situated in a public square, with a historical building in the background. The statue is mounted on a pedestal and features a figure in a dynamic pose, possibly representing a historical or cultural figure. The statue is made of bronze, evident from its greenish patina, and showcases detailed craftsmanship with intricate clothing and facial features. The pedestal is made of stone, with decorative elements that suggest a classical influence. Behind the statue,",
+            "architectural_style": "Late 19th to early 20th century French architecture",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 46.15977777777778,
+              "longitude": -1.1514722222222222
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "1 Rue de l'Hôtel de ville, 17000 La Rochelle, France",
+              "city": "La Rochelle",
+              "county": "Charente-Maritime",
+              "country": "France"
+            },
+            "photo_timestamp": "2025:03:28 11:43:49",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 43.31918716430664
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Apartment (La Rochelle, France)",
+          "confidence": 0.5061492919921875,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Apartment",
+            "artist_name": null,
+            "museum_or_location": "La Rochelle, France",
+            "art_style": null,
+            "art_era": null,
+            "confidence": 0.5061492919921875,
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.5187978148460388
+              },
+              {
+                "name": "Apartment",
+                "score": 0.5061492919921875
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.40027517080307007
+              },
+              {
+                "name": "Tower",
+                "score": 0.39879998564720154
+              },
+              {
+                "name": "Architecture",
+                "score": 0.33200398087501526
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 46.15977777777778,
+              "longitude": -1.1514722222222222
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "1 Rue de l'Hôtel de ville, 17000 La Rochelle, France",
+              "city": "La Rochelle",
+              "county": "Charente-Maritime",
+              "country": "France"
+            },
+            "photo_timestamp": "2025:03:28 11:43:49",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 21.432945728302002
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "La Rochelle, Charente-Maritime, France",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "La Rochelle, Charente-Maritime, France",
+            "coordinates": {
+              "latitude": 46.15977777777778,
+              "longitude": -1.1514722222222222
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "La Rochelle Aquarium",
+                  "types": [
+                    "aquarium",
+                    "tourist_attraction",
+                    "museum",
+                    "school",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 8769,
+                  "vicinity": "Quai Louis Prunier, La Rochelle",
+                  "place_id": "ChIJB9VE3LBTAUgRA7CwC7UzEt8",
+                  "location": {
+                    "lat": 46.1532422,
+                    "lng": -1.1506112
+                  }
+                },
+                {
+                  "name": "The Center for National Monuments",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 6,
+                  "vicinity": "22 Quai Louis Durand, La Rochelle",
+                  "place_id": "ChIJD2oKU6VTAUgRC3W5SZTFt2M",
+                  "location": {
+                    "lat": 46.1585033,
+                    "lng": -1.1484306
+                  }
+                },
+                {
+                  "name": "Cloister Of The White Ladies",
+                  "types": [
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 391,
+                  "vicinity": "6 Rue Saint-Michel, La Rochelle",
+                  "place_id": "ChIJTYv22a5TAUgROxV4rIbQKt0",
+                  "location": {
+                    "lat": 46.159749,
+                    "lng": -1.1499676
+                  }
+                },
+                {
+                  "name": "Escales Documentaires",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 5,
+                  "vicinity": "13 Rue de l'Aimable Nanette, La Rochelle",
+                  "place_id": "ChIJ39OY2K9TAUgRrKbi8TMBKGc",
+                  "location": {
+                    "lat": 46.155449,
+                    "lng": -1.1506583
+                  }
+                },
+                {
+                  "name": "Saint Louis Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1967,
+                  "vicinity": "Place de Verdun, La Rochelle",
+                  "place_id": "ChIJz65HFqZTAUgRe1S7cpg0ST4",
+                  "location": {
+                    "lat": 46.1617587,
+                    "lng": -1.1532335
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "La Rochelle Aquarium",
+                  "types": [
+                    "aquarium",
+                    "tourist_attraction",
+                    "museum",
+                    "school",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 8769,
+                  "vicinity": "Quai Louis Prunier, La Rochelle",
+                  "place_id": "ChIJB9VE3LBTAUgRA7CwC7UzEt8",
+                  "location": {
+                    "lat": 46.1532422,
+                    "lng": -1.1506112
+                  }
+                },
+                {
+                  "name": "Cloister Of The White Ladies",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 391,
+                  "vicinity": "6 Rue Saint-Michel, La Rochelle",
+                  "place_id": "ChIJTYv22a5TAUgROxV4rIbQKt0",
+                  "location": {
+                    "lat": 46.159749,
+                    "lng": -1.1499676
+                  }
+                },
+                {
+                  "name": "musée des Beaux-Arts de La Rochelle",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 89,
+                  "vicinity": "28 Rue Gargoulleau, La Rochelle",
+                  "place_id": "ChIJscD3kKhTAUgRLcC9blFpTeE",
+                  "location": {
+                    "lat": 46.1621054,
+                    "lng": -1.1516979
+                  }
+                },
+                {
+                  "name": "Musée du Nouveau Monde",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 669,
+                  "vicinity": "10 Rue Fleuriau, La Rochelle",
+                  "place_id": "ChIJNQZ1wKhTAUgRxLU3djpzNZo",
+                  "location": {
+                    "lat": 46.16172599999999,
+                    "lng": -1.151071
+                  }
+                },
+                {
+                  "name": "Muséum d'Histoire naturelle de La Rochelle",
+                  "types": [
+                    "tourist_attraction",
+                    "library",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1574,
+                  "vicinity": "28 Rue Albert 1er, La Rochelle",
+                  "place_id": "ChIJvR35GKhTAUgR-vZKfw2GnNU",
+                  "location": {
+                    "lat": 46.164966,
+                    "lng": -1.151274
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "La Boussole",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 5262,
+                  "vicinity": "41 Rue Saint Jean du Pérot, La Rochelle",
+                  "place_id": "ChIJ1cltuKRTAUgRKpnExh_ipHY",
+                  "location": {
+                    "lat": 46.1561111,
+                    "lng": -1.1561111
+                  }
+                },
+                {
+                  "name": "Iséo",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 8074,
+                  "vicinity": "4 Place de la Chaîne, La Rochelle",
+                  "place_id": "ChIJl0NExqRTAUgR-iO92UHlSNg",
+                  "location": {
+                    "lat": 46.15620680000001,
+                    "lng": -1.1544821
+                  }
+                },
+                {
+                  "name": "Restaurant Les Flots",
+                  "types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2549,
+                  "vicinity": "1 Rue de la Chaîne, La Rochelle",
+                  "place_id": "ChIJ3xTrL6VTAUgRgcwlmX0aRnA",
+                  "location": {
+                    "lat": 46.1559238,
+                    "lng": -1.1545183
+                  }
+                },
+                {
+                  "name": "Les 4 Sergents",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 2407,
+                  "vicinity": "49 Rue Saint Jean du Pérot, La Rochelle",
+                  "place_id": "ChIJOx0ouqRTAUgR5q8-U--yU4E",
+                  "location": {
+                    "lat": 46.15615080000001,
+                    "lng": -1.156494
+                  }
+                },
+                {
+                  "name": "Bon Temps",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1872,
+                  "vicinity": "35 Rue Saint Jean du Pérot, La Rochelle",
+                  "place_id": "ChIJS5g4xqRTAUgRAoN_8QPLQKQ",
+                  "location": {
+                    "lat": 46.1561111,
+                    "lng": -1.1558333
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Le parc Charruyer",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 5672,
+                  "vicinity": "Chemin des Remparts, La Rochelle",
+                  "place_id": "ChIJO6hrzaZTAUgR5zSr00jPaw0",
+                  "location": {
+                    "lat": 46.1583567,
+                    "lng": -1.1592825
+                  }
+                },
+                {
+                  "name": "Place de La Fourche",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 5,
+                  "vicinity": "Rue de la Fourche, La Rochelle",
+                  "place_id": "ChIJ7YHYvRdTAUgRyEOR2HoUuXk",
+                  "location": {
+                    "lat": 46.15791959999999,
+                    "lng": -1.1489605
+                  }
+                },
+                {
+                  "name": "Quai Valin Square",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 150,
+                  "vicinity": "15 Quai Valin, La Rochelle",
+                  "place_id": "ChIJO5cuu69TAUgReftydB7eXUg",
+                  "location": {
+                    "lat": 46.1572723,
+                    "lng": -1.1506613
+                  }
+                },
+                {
+                  "name": "Interîles : Départ des Croisières",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 55,
+                  "vicinity": "Vieux-Port, La Rochelle",
+                  "place_id": "ChIJDcB3PEVTAUgRG9WpSYoEwSE",
+                  "location": {
+                    "lat": 46.156733,
+                    "lng": -1.1537482
+                  }
+                },
+                {
+                  "name": "Vieux port",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 12,
+                  "vicinity": "Vieux-Port, La Rochelle",
+                  "place_id": "ChIJEx2-KVJTAUgR4S1MRKn9Jmk",
+                  "location": {
+                    "lat": 46.1563983,
+                    "lng": -1.1537093
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Chapelle Saint-Vincent",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "20Quarter Rue Albert 1er, La Rochelle",
+                  "place_id": "ChIJI3SiGahTAUgRMxkxFOm3oKw",
+                  "location": {
+                    "lat": 46.1646508,
+                    "lng": -1.1516839
+                  }
+                },
+                {
+                  "name": "Église Protestante Unie de La Rochelle",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 38,
+                  "vicinity": "2 Rue Saint-Michel, La Rochelle",
+                  "place_id": "ChIJFbwTJ69TAUgRBu3UY5zXLeU",
+                  "location": {
+                    "lat": 46.1595593,
+                    "lng": -1.1498208
+                  }
+                },
+                {
+                  "name": "Saint Louis Cathedral",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1967,
+                  "vicinity": "Place de Verdun, La Rochelle",
+                  "place_id": "ChIJz65HFqZTAUgRe1S7cpg0ST4",
+                  "location": {
+                    "lat": 46.1617587,
+                    "lng": -1.1532335
+                  }
+                },
+                {
+                  "name": "Saint Saviour Church of La Rochelle",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 648,
+                  "vicinity": "15 Rue Saint-Sauveur, La Rochelle",
+                  "place_id": "ChIJFaJ7Gq9TAUgRAsVp04x5_N0",
+                  "location": {
+                    "lat": 46.1588398,
+                    "lng": -1.1503243
+                  }
+                },
+                {
+                  "name": "Chapel of Our Lady of Hope",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 20,
+                  "vicinity": "12 Rue des Augustins, La Rochelle",
+                  "place_id": "ChIJ48prBKZTAUgRIEeSJG1xpEs",
+                  "location": {
+                    "lat": 46.1606349,
+                    "lng": -1.1523469
+                  }
+                },
+                {
+                  "name": "Maison Communautaire Israélite",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 19,
+                  "vicinity": "34 Cours des Dames, La Rochelle",
+                  "place_id": "ChIJgXaiF6VTAUgRR8Bi0SPToOU",
+                  "location": {
+                    "lat": 46.1570912,
+                    "lng": -1.1541312
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Atelier Bletterie",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 17,
+                  "vicinity": "11ter Rue Bletterie, La Rochelle",
+                  "place_id": "ChIJH9LcF69TAUgRrabzGE4eA-o",
+                  "location": {
+                    "lat": 46.1591178,
+                    "lng": -1.1506669
+                  }
+                },
+                {
+                  "name": "Galerie Alain Encadreur",
+                  "types": [
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 30,
+                  "vicinity": "41 Rue du Minage, La Rochelle",
+                  "place_id": "ChIJHfbxWKhTAUgRzPbQV259h5w",
+                  "location": {
+                    "lat": 46.1627798,
+                    "lng": -1.1509646
+                  }
+                },
+                {
+                  "name": "Krebs Bruce",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "9 Ter Rue Amelot, La Rochelle",
+                  "place_id": "ChIJxXdzTalTAUgRHtB3NLGLL_k",
+                  "location": {
+                    "lat": 46.1607212,
+                    "lng": -1.1489049
+                  }
+                },
+                {
+                  "name": "YellowKorner La Rochelle",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 24,
+                  "vicinity": "4 Rue Saint-Yon, La Rochelle",
+                  "place_id": "ChIJUdz6VH1TAUgRM-dnTpH20FE",
+                  "location": {
+                    "lat": 46.1599509,
+                    "lng": -1.1512543
+                  }
+                },
+                {
+                  "name": "White Ladies Chapel of La Rochelle",
+                  "types": [
+                    "art_gallery",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 19,
+                  "vicinity": "23 Quai Maubec, La Rochelle",
+                  "place_id": "ChIJC3olRd1TAUgR66zSzjRENQ4",
+                  "location": {
+                    "lat": 46.1591876,
+                    "lng": -1.1493407
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "La Rochelle",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "La Rochelle",
+                  "place_id": "ChIJdT0lyYNTAUgRQJbuYJLTBQQ",
+                  "location": {
+                    "lat": 46.160329,
+                    "lng": -1.151139
+                  }
+                },
+                {
+                  "name": "Hotel Henri IV",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 254,
+                  "vicinity": "31 Rue des Gentilshommes, La Rochelle",
+                  "place_id": "ChIJe9X1aa9TAUgRZ6KqJYhy_TM",
+                  "location": {
+                    "lat": 46.158969,
+                    "lng": -1.1515194
+                  }
+                },
+                {
+                  "name": "Le Yachtman, The Originals Collection",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 567,
+                  "vicinity": "23 Quai Valin, La Rochelle",
+                  "place_id": "ChIJZQT3ra9TAUgRamayv3pW3LE",
+                  "location": {
+                    "lat": 46.157377,
+                    "lng": -1.149801
+                  }
+                },
+                {
+                  "name": "Hôtel La Marine",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 378,
+                  "vicinity": "30 Quai Duperré, La Rochelle",
+                  "place_id": "ChIJfcUVgaVTAUgR_yyZwfka3zs",
+                  "location": {
+                    "lat": 46.15828820000001,
+                    "lng": -1.1527464
+                  }
+                },
+                {
+                  "name": "ibis La Rochelle Centre Historique",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 765,
+                  "vicinity": "1 Ter Rue Fleuriau, La Rochelle",
+                  "place_id": "ChIJUy4-w6hTAUgRmqP_QK7bZ5c",
+                  "location": {
+                    "lat": 46.1612609,
+                    "lng": -1.1507233
+                  }
+                }
+              ]
+            },
+            "total_places_found": 36,
+            "photo_timestamp": "2025:03:28 11:43:49",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.6594278812408447
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/156.jpg"
+    },
+    {
+      "image_filename": "156.jpg",
+      "timestamp": "2026-01-28T02:52:56.089124",
+      "processing_time_seconds": 65.61248,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Statue in a public square, Historic building facade, Nantes, France",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and urban setting suggest a location in France, specifically Nantes, based on the building's design and the presence of a public square with a statue.",
+            "detailed_description": "The image depicts a public square featuring an equestrian statue mounted on a pedestal. The statue is likely made of bronze, showcasing a figure on horseback. Behind the statue is a historic building with a stone facade, characterized by multiple stories, decorative elements, and mansard roofs typical of 19th-century French architecture. The building has arched windows and ornate detailing, contributing to the classic urban aesthetic of the area.",
+            "identification": {
+              "primary": [
+                "Statue in a public square",
+                "Historic building facade"
+              ],
+              "location": "Nantes, France",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Equestrian statue",
+                "type": "statue",
+                "confidence": 0.9
+              },
+              {
+                "name": "Historic building",
+                "type": "building",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "19th_century",
+              "stone",
+              "urban",
+              "public_square",
+              "French_architecture"
+            ],
+            "location": "Nantes, France",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Place Royale, Nantes",
+                "specificity_level": "very_specific",
+                "confidence": 0.75,
+                "reasoning": "The architectural style and presence of a statue in a public square match the characteristics of Place Royale in Nantes."
+              },
+              {
+                "guess": "Typical French urban square",
+                "specificity_level": "general",
+                "confidence": 0.65,
+                "reasoning": "The elements visible are common in many French cities, featuring historic architecture and public art."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Statue in a public square\", \"Historic building facade\"],\n        \"location\": \"Nantes, France\",\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Equestrian statue\",\n            \"type\": \"statue\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Historic building\",\n            \"type\": \"building\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"19th_century\", \"stone\", \"urban\", \"public_square\", \"French_architecture\"],\n    \"description\": \"The image depicts a public square featuring an equestrian statue mounted on a pedestal. The statue is likely made of bronze, showcasing a figure on horseback. Behind the statue is a historic building with a stone facade, characterized by multiple stories, decorative elements, and mansard roofs typical of 19th-century French architecture. The building has arched windows and ornate detailing, contributing to the classic urban aesthetic of the area.\",\n    \"reasoning\": \"The architectural style and urban setting suggest a location in France, specifically Nantes, based on the building's design and the presence of a public square with a statue.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Place Royale, Nantes\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.75,\n            \"reasoning\": \"The architectural style and presence of a statue in a public square match the characteristics of Place Royale in Nantes.\"\n        },\n        {\n            \"guess\": \"Typical French urban square\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.65,\n            \"reasoning\": \"The elements visible are common in many French cities, featuring historic architecture and public art.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 21.241368770599365
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Statue of a historical figure in a public square, Historic building with late 19th to early 20th-century European design",
+          "confidence": 0.7,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches a typical European public square with a bronze statue and historic building. The search results suggest possibilities but do not provide a specific name or location. The architectural style and statue characteristics are consistent with many European cities, making a precise identification difficult without more specific details.",
+            "identification": {
+              "primary": [
+                "Statue of a historical figure in a public square",
+                "Historic building with late 19th to early 20th-century European design"
+              ],
+              "location": null,
+              "confidence": 0.75
+            },
+            "artifacts": [
+              {
+                "name": "Bronze statue with green patina",
+                "type": "statue",
+                "confidence": 0.85
+              },
+              {
+                "name": "Historic building with ornate stonework facade",
+                "type": "building",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "bronze",
+              "patina",
+              "European architecture",
+              "historic building",
+              "public square"
+            ],
+            "sources_used": [
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "statue",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Statue of a historical figure in a European city square",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The description fits many European city squares with similar statues and architectural styles."
+              },
+              {
+                "guess": "Public square in Paris with historic architecture",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "Paris has many squares with similar statues and architectural styles, but no specific match was found."
+              },
+              {
+                "guess": "Bronze statue in a historic square in Vienna",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.55,
+                "reasoning": "Vienna is known for its historic squares and statues, fitting the description, but no specific match was confirmed."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.75,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image features a prominent statue situated in a public square, surrounded by a historic building. The statue is mounted on a pedestal and depicts a figure in a dynamic pose, possibly a historical or cultural figure, made of bronze or a similar metal, exhibiting a green patina typical of aged bronze. The pedestal is stone, with decorative elements and inscriptions, though the text is not fully visible. The building behind the statue is a multi-story structure, showcasing an architectural styl",
+            "description": "The image features a prominent statue situated in a public square, surrounded by a historic building. The statue is mounted on a pedestal and depicts a figure in a dynamic pose, possibly a historical or cultural figure, made of bronze or a similar metal, exhibiting a green patina typical of aged bronze. The pedestal is stone, with decorative elements and inscriptions, though the text is not fully visible. The building behind the statue is a multi-story structure, showcasing an architectural styl",
+            "architectural_style": "Late 19th to early 20th-century European",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 44.367860078811646
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Apartment",
+          "confidence": 0.5061492919921875,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Apartment",
+            "artist_name": null,
+            "museum_or_location": null,
+            "art_style": null,
+            "art_era": null,
+            "confidence": 0.5061492919921875,
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.5187978148460388
+              },
+              {
+                "name": "Apartment",
+                "score": 0.5061492919921875
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.40027517080307007
+              },
+              {
+                "name": "Tower",
+                "score": 0.3982999920845032
+              },
+              {
+                "name": "Architecture",
+                "score": 0.33200398087501526
+              }
+            ],
+            "processing_time_seconds": 21.30913782119751
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/156.jpg"
+    }
+  ]
+}

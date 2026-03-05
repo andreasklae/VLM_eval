@@ -1,0 +1,644 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "110.heic",
+      "timestamp": "2026-01-28T01:06:46.464526",
+      "processing_time_seconds": 61.11213,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 11.212891666666666,
+        "gps_longitude": 119.34384166666666,
+        "location": {
+          "formatted_address": "687V+5G El Nido, Palawan, Philippines",
+          "city": "El Nido",
+          "county": "Palawan",
+          "country": "Philippines"
+        },
+        "datetime_original": "2024:11:25 12:29:35",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Limestone cliffs, El Nido, Palawan, Philippines",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates El Nido, Palawan, which is known for its distinctive limestone formations. The presence of the traditional boat further supports the identification of the region.",
+            "detailed_description": "The image shows dramatic limestone cliffs typical of the El Nido region in Palawan, Philippines. These cliffs are characterized by their steep, jagged formations and lush vegetation. The clear blue sky and vibrant blue water enhance the tropical setting. A traditional Filipino outrigger boat, known as a bangka, is visible on the water, which is commonly used for island hopping and tours in the area.",
+            "identification": {
+              "primary": [
+                "Limestone cliffs"
+              ],
+              "location": "El Nido, Palawan, Philippines",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Limestone cliffs",
+                "type": "natural_feature",
+                "confidence": 0.95
+              },
+              {
+                "name": "Traditional Filipino outrigger boat (bangka)",
+                "type": "other",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "limestone",
+              "tropical",
+              "boat",
+              "Philippines"
+            ],
+            "location": "El Nido, Palawan, Philippines",
+            "type": "natural_feature",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Limestone cliffs\"],\n        \"location\": \"El Nido, Palawan, Philippines\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Limestone cliffs\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Traditional Filipino outrigger boat (bangka)\",\n            \"type\": \"other\",\n            \"confidence\": 0.90\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"limestone\", \"tropical\", \"boat\", \"Philippines\"],\n    \"description\": \"The image shows dramatic limestone cliffs typical of the El Nido region in Palawan, Philippines. These cliffs are characterized by their steep, jagged formations and lush vegetation. The clear blue sky and vibrant blue water enhance the tropical setting. A traditional Filipino outrigger boat, known as a bangka, is visible on the water, which is commonly used for island hopping and tours in the area.\",\n    \"reasoning\": \"The location metadata indicates El Nido, Palawan, which is known for its distinctive limestone formations. The presence of the traditional boat further supports the identification of the region.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 11.212891666666666,
+              "longitude": 119.34384166666666
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "687V+5G El Nido, Palawan, Philippines",
+              "city": "El Nido",
+              "county": "Palawan",
+              "country": "Philippines"
+            },
+            "photo_timestamp": "2024:11:25 12:29:35",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 12.053987979888916
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Limestone cliffs in Bacuit Bay, Traditional Filipino outrigger boat 'bangka', El Nido, Palawan, Philippines",
+          "confidence": 0.75,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The search results strongly indicate that the limestone cliffs are part of Bacuit Bay, a well-known area in El Nido characterized by karst formations. The presence of the traditional 'bangka' boat aligns with typical coastal activities in the region. The search results confirm the location and features described in the image, supporting a high confidence identification.",
+            "identification": {
+              "primary": [
+                "Limestone cliffs in Bacuit Bay",
+                "Traditional Filipino outrigger boat 'bangka'"
+              ],
+              "location": "El Nido, Palawan, Philippines",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Limestone cliffs",
+                "type": "natural_feature",
+                "confidence": 0.95
+              },
+              {
+                "name": "Traditional Filipino outrigger boat 'bangka'",
+                "type": "other",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "karst",
+              "tropical",
+              "coastal",
+              "Philippines",
+              "boat"
+            ],
+            "sources_used": [
+              "tripsavvy.com",
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "A jagged limestone peak offering panoramic views of El Nido town and Bacuit Bay. Climbing to the summit provides a challenging yet rewarding experience. ([tripsavvy.com]())",
+              "The largest island in Bacuit Bay, featuring the highest peak at 640 meters above sea level. Its limestone cliffs are surrounded by white sandy beaches and clear waters. ([en.wikipedia.org]())",
+              "A secluded beach accessible through a narrow crevice in the limestone cliffs, offering a hidden paradise experience. ([backpackertravel.org]())",
+              "A serene lagoon surrounded by towering limestone cliffs, accessible by kayak or boat, providing a tranquil setting for exploration. ([mtapotravel.com]())",
+              "An archaeological site featuring limestone karst formations, including the Ille Cave, which has been inhabited since the Late Pleistocene. ([en.wikipedia.org]())"
+            ],
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image captures a stunning coastal landscape in El Nido, Palawan, Philippines. The main subject is a rugged limestone cliff formation rising dramatically from the sea. The cliffs are characterized by sharp, jagged peaks and vertical rock faces, typical of karst formations, which are common in this region. The limestone is weathered and gray, contrasting with the lush greenery that covers parts of the cliffs. Vegetation is dense, with tropical foliage cascading down the slopes, adding vibrant ",
+            "description": "The image captures a stunning coastal landscape in El Nido, Palawan, Philippines. The main subject is a rugged limestone cliff formation rising dramatically from the sea. The cliffs are characterized by sharp, jagged peaks and vertical rock faces, typical of karst formations, which are common in this region. The limestone is weathered and gray, contrasting with the lush greenery that covers parts of the cliffs. Vegetation is dense, with tropical foliage cascading down the slopes, adding vibrant ",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 11.212891666666666,
+              "longitude": 119.34384166666666
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "687V+5G El Nido, Palawan, Philippines",
+              "city": "El Nido",
+              "county": "Palawan",
+              "country": "Philippines"
+            },
+            "photo_timestamp": "2024:11:25 12:29:35",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 48.147247076034546
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Boat",
+          "confidence": 0.9845235347747803,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Boat",
+                "score": 0.9845235347747803
+              },
+              {
+                "source": "label",
+                "name": "Watercraft",
+                "score": 0.9753536581993103
+              },
+              {
+                "source": "label",
+                "name": "Coastal and oceanic landforms",
+                "score": 0.9483752250671387
+              },
+              {
+                "source": "label",
+                "name": "Boats and boating--Equipment and supplies",
+                "score": 0.9466400742530823
+              },
+              {
+                "source": "label",
+                "name": "Coast",
+                "score": 0.9217934012413025
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "sea-m",
+                "score": 0.43209999799728394
+              },
+              {
+                "name": "Massif",
+                "score": 0.2992999851703644
+              },
+              {
+                "name": "Motorboat",
+                "score": 0.27680641412734985
+              },
+              {
+                "name": "Massif",
+                "score": 0.2752109169960022
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Boat",
+                "score": 0.9845235347747803
+              },
+              {
+                "name": "Watercraft",
+                "score": 0.9753536581993103
+              },
+              {
+                "name": "Coastal and oceanic landforms",
+                "score": 0.9483752250671387
+              },
+              {
+                "name": "Boats and boating--Equipment and supplies",
+                "score": 0.9466400742530823
+              },
+              {
+                "name": "Coast",
+                "score": 0.9217934012413025
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 11.212891666666666,
+              "longitude": 119.34384166666666
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "687V+5G El Nido, Palawan, Philippines",
+              "city": "El Nido",
+              "county": "Palawan",
+              "country": "Philippines"
+            },
+            "photo_timestamp": "2024:11:25 12:29:35",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 26.028034210205078
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "El Nido, Palawan, Philippines",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "El Nido, Palawan, Philippines",
+            "coordinates": {
+              "latitude": 11.212891666666666,
+              "longitude": 119.34384166666666
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Cadlao Lagoon",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 209,
+                  "vicinity": "687W+V5G, Unnamed Road, El Nido",
+                  "place_id": "ChIJqy7XzyyrtzMRwEk1-ZdyXUk",
+                  "location": {
+                    "lat": 11.2146796,
+                    "lng": 119.3454484
+                  }
+                },
+                {
+                  "name": "Ubugon cove",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 53,
+                  "vicinity": "687W+W53, El Nido",
+                  "place_id": "ChIJ5SkSVkirtzMRufsqi_9HQA0",
+                  "location": {
+                    "lat": 11.2147727,
+                    "lng": 119.3454292
+                  }
+                },
+                {
+                  "name": "Serenity beach",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 20,
+                  "vicinity": "685W+MC, El Nido",
+                  "place_id": "ChIJv8Vtk8qrtzMRKHG4lOysC4M",
+                  "location": {
+                    "lat": 11.209163,
+                    "lng": 119.346021
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "El Nido",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "El Nido",
+                  "place_id": "ChIJD55c7xVVtjMRVQSbWVtmTvw",
+                  "location": {
+                    "lat": 11.1989164,
+                    "lng": 119.4231658
+                  }
+                },
+                {
+                  "name": "Cadlao Lagoon",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 209,
+                  "vicinity": "687W+V5G, Unnamed Road, El Nido",
+                  "place_id": "ChIJqy7XzyyrtzMRwEk1-ZdyXUk",
+                  "location": {
+                    "lat": 11.2146796,
+                    "lng": 119.3454484
+                  }
+                },
+                {
+                  "name": "Ubugon cove",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 53,
+                  "vicinity": "687W+W53, El Nido",
+                  "place_id": "ChIJ5SkSVkirtzMRufsqi_9HQA0",
+                  "location": {
+                    "lat": 11.2147727,
+                    "lng": 119.3454292
+                  }
+                },
+                {
+                  "name": "Serenity beach",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 20,
+                  "vicinity": "685W+MC, El Nido",
+                  "place_id": "ChIJv8Vtk8qrtzMRKHG4lOysC4M",
+                  "location": {
+                    "lat": 11.209163,
+                    "lng": 119.346021
+                  }
+                },
+                {
+                  "name": "Alexander Beach",
+                  "types": [
+                    "campground",
+                    "lodging",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "689R+W9, El Nido",
+                  "place_id": "ChIJZVH9EgCrtzMRLz-lKaEcA-4",
+                  "location": {
+                    "lat": 11.2198732,
+                    "lng": 119.3409828
+                  }
+                }
+              ]
+            },
+            "total_places_found": 8,
+            "photo_timestamp": "2024:11:25 12:29:35",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.37308692932128906
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/110.heic"
+    },
+    {
+      "image_filename": "110.heic",
+      "timestamp": "2026-01-28T01:07:47.622838",
+      "processing_time_seconds": 59.016485,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Limestone cliffs in El Nido, Palawan, Philippines",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive limestone formations and tropical setting are characteristic of El Nido in Palawan, known for its stunning natural beauty and island landscapes. The presence of the outrigger boat further suggests a location popular for tourism and island exploration.",
+            "detailed_description": "The image depicts dramatic limestone cliffs rising from the sea, characteristic of the El Nido region in Palawan, Philippines. The cliffs are covered with lush greenery, typical of tropical landscapes. In the foreground, a traditional outrigger boat is visible, commonly used for island hopping in this area. The water is a deep blue, contrasting with the vibrant green of the vegetation and the gray of the limestone.",
+            "identification": {
+              "primary": [
+                "Limestone cliffs in El Nido"
+              ],
+              "location": "Palawan, Philippines",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Limestone cliffs",
+                "type": "natural_feature",
+                "confidence": 0.95
+              },
+              {
+                "name": "Traditional outrigger boat",
+                "type": "other",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "limestone",
+              "tropical",
+              "boat",
+              "Philippines"
+            ],
+            "location": "Palawan, Philippines",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Limestone cliffs in El Nido\"],\n        \"location\": \"Palawan, Philippines\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Limestone cliffs\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Traditional outrigger boat\",\n            \"type\": \"other\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"limestone\", \"tropical\", \"boat\", \"Philippines\"],\n    \"description\": \"The image depicts dramatic limestone cliffs rising from the sea, characteristic of the El Nido region in Palawan, Philippines. The cliffs are covered with lush greenery, typical of tropical landscapes. In the foreground, a traditional outrigger boat is visible, commonly used for island hopping in this area. The water is a deep blue, contrasting with the vibrant green of the vegetation and the gray of the limestone.\",\n    \"reasoning\": \"The distinctive limestone formations and tropical setting are characteristic of El Nido in Palawan, known for its stunning natural beauty and island landscapes. The presence of the outrigger boat further suggests a location popular for tourism and island exploration.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": []\n}",
+            "processing_time_seconds": 14.828118801116943
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "El Nido, Palawan, Bangka boat, Palawan, Philippines",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description of limestone cliffs with karst formations and the presence of a Bangka boat strongly suggests the location is El Nido in Palawan, Philippines, known for its stunning karst landscapes and traditional boats. Search results with high scores support this identification.",
+            "identification": {
+              "primary": [
+                "El Nido, Palawan",
+                "Bangka boat"
+              ],
+              "location": "Palawan, Philippines",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Limestone cliffs",
+                "type": "natural_feature",
+                "confidence": 0.95
+              },
+              {
+                "name": "Bangka boat",
+                "type": "other",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "karst",
+              "tropical",
+              "coastal",
+              "Philippines",
+              "tourism"
+            ],
+            "sources_used": [
+              "en.wikipedia.org",
+              "pexels.com"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([pexels.com]())",
+              "*URL*: ([warrenphotographic.co.uk]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 3,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a stunning coastal landscape featuring dramatic limestone cliffs rising sharply from the sea. These cliffs exhibit a rugged, jagged appearance with vertical striations and sharp peaks, characteristic of karst formations. The cliffs are partially covered with lush greenery, including dense vegetation and small trees, creating a vivid contrast against the dark gray rock. The vibrant blue sky above is dotted with a few fluffy white clouds, enhancing the tropical atmosphere. In the",
+            "description": "The image depicts a stunning coastal landscape featuring dramatic limestone cliffs rising sharply from the sea. These cliffs exhibit a rugged, jagged appearance with vertical striations and sharp peaks, characteristic of karst formations. The cliffs are partially covered with lush greenery, including dense vegetation and small trees, creating a vivid contrast against the dark gray rock. The vibrant blue sky above is dotted with a few fluffy white clouds, enhancing the tropical atmosphere. In the",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 43.90764594078064
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Boat",
+          "confidence": 0.9845235347747803,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Boat",
+                "score": 0.9845235347747803
+              },
+              {
+                "source": "label",
+                "name": "Watercraft",
+                "score": 0.9753536581993103
+              },
+              {
+                "source": "label",
+                "name": "Coastal and oceanic landforms",
+                "score": 0.9483752250671387
+              },
+              {
+                "source": "label",
+                "name": "Boats and boating--Equipment and supplies",
+                "score": 0.9466400742530823
+              },
+              {
+                "source": "label",
+                "name": "Coast",
+                "score": 0.9217934012413025
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "sea-m",
+                "score": 0.43209999799728394
+              },
+              {
+                "name": "Massif",
+                "score": 0.2992999851703644
+              },
+              {
+                "name": "Motorboat",
+                "score": 0.27680641412734985
+              },
+              {
+                "name": "Massif",
+                "score": 0.2753182053565979
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Boat",
+                "score": 0.9845235347747803
+              },
+              {
+                "name": "Watercraft",
+                "score": 0.9753536581993103
+              },
+              {
+                "name": "Coastal and oceanic landforms",
+                "score": 0.9483752250671387
+              },
+              {
+                "name": "Boats and boating--Equipment and supplies",
+                "score": 0.9466400742530823
+              },
+              {
+                "name": "Coast",
+                "score": 0.9217934012413025
+              }
+            ],
+            "processing_time_seconds": 25.16549515724182
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/110.heic"
+    }
+  ]
+}

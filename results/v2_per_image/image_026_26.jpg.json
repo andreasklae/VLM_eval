@@ -1,0 +1,1109 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "26.jpg",
+      "timestamp": "2026-01-28T05:08:49.428971",
+      "processing_time_seconds": 50.116407,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 43.77274722222222,
+        "gps_longitude": 11.256408333333333,
+        "location": {
+          "formatted_address": "Piazza del Duomo, 59 R, 50122 Firenze FI, Italy",
+          "city": "Firenze",
+          "county": "Città Metropolitana di Firenze",
+          "country": "Italy"
+        },
+        "datetime_original": "2022:07:13 18:16:40",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Giotto's Campanile, Florence Cathedral, Florence, Italy",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive Gothic style and marble facade, along with the location metadata, strongly indicate that this is Giotto's Campanile next to Florence Cathedral.",
+            "detailed_description": "The image shows Giotto's Campanile, a prominent bell tower of Florence Cathedral, located in Florence, Italy. The tower is a masterpiece of Gothic architecture, characterized by its intricate marble facade with white, green, and pink panels. The cathedral itself is visible, showcasing similar Gothic architectural elements. The structures are adorned with detailed carvings and geometric patterns typical of the period.",
+            "identification": {
+              "primary": [
+                "Giotto's Campanile",
+                "Florence Cathedral"
+              ],
+              "location": "Florence, Italy",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Giotto's Campanile",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Florence Cathedral",
+                "type": "landmark",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "Gothic",
+              "14th_century",
+              "marble",
+              "Florence",
+              "architecture"
+            ],
+            "location": "Florence, Italy",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Giotto's Campanile\", \"Florence Cathedral\"],\n        \"location\": \"Florence, Italy\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Giotto's Campanile\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Florence Cathedral\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.90\n        }\n    ],\n    \"tags\": [\"Gothic\", \"14th_century\", \"marble\", \"Florence\", \"architecture\"],\n    \"description\": \"The image shows Giotto's Campanile, a prominent bell tower of Florence Cathedral, located in Florence, Italy. The tower is a masterpiece of Gothic architecture, characterized by its intricate marble facade with white, green, and pink panels. The cathedral itself is visible, showcasing similar Gothic architectural elements. The structures are adorned with detailed carvings and geometric patterns typical of the period.\",\n    \"reasoning\": \"The distinctive Gothic style and marble facade, along with the location metadata, strongly indicate that this is Giotto's Campanile next to Florence Cathedral.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 43.77274722222222,
+              "longitude": 11.256408333333333
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Piazza del Duomo, 59 R, 50122 Firenze FI, Italy",
+              "city": "Firenze",
+              "county": "Città Metropolitana di Firenze",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2022:07:13 18:16:40",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 8.851495027542114
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image prominently features a tall, intricately designed tower, likely part of a cathedral complex, situated in Florence, Italy. The tower exhibits a Gothic architectural style, characterized by its vertical emphasis and ornate detailing. It is constructed with alternating bands of white and green marble, creating a striking striped pattern typical of Florentine architecture. The tower is adorned with pointed arches and decorative elements such as tracery and sculptural details. Adjacent to t",
+            "description": "The image prominently features a tall, intricately designed tower, likely part of a cathedral complex, situated in Florence, Italy. The tower exhibits a Gothic architectural style, characterized by its vertical emphasis and ornate detailing. It is constructed with alternating bands of white and green marble, creating a striking striped pattern typical of Florentine architecture. The tower is adorned with pointed arches and decorative elements such as tracery and sculptural details. Adjacent to t",
+            "architectural_style": "Gothic",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 43.77274722222222,
+              "longitude": 11.256408333333333
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Piazza del Duomo, 59 R, 50122 Firenze FI, Italy",
+              "city": "Firenze",
+              "county": "Città Metropolitana di Firenze",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2022:07:13 18:16:40",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 40.61196684837341
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Piazza Del Duomo (43.7731, 11.2555)",
+          "confidence": 0.3223664462566376,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Piazza Del Duomo",
+            "coordinates": {
+              "latitude": 43.7730912,
+              "longitude": 11.2554649
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 3024
+              },
+              {
+                "x": 0,
+                "y": 3024
+              }
+            ],
+            "context_labels": [
+              "Daytime",
+              "Composite material",
+              "Engineering",
+              "Iron",
+              "Metal"
+            ],
+            "context_objects": [
+              "Building",
+              "Building",
+              "Building"
+            ],
+            "web_entities": [
+              {
+                "name": "Architecture",
+                "score": 0.3906051814556122
+              },
+              {
+                "name": "Façade",
+                "score": 0.33404624462127686
+              },
+              {
+                "name": "ArchitectureM RIBA Chartered Practice",
+                "score": 0.3052999973297119
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Piazza Del Duomo",
+                "score": 0.3223664462566376,
+                "location": {
+                  "lat": 43.7730912,
+                  "lng": 11.2554649
+                }
+              },
+              {
+                "name": "Giotto's Bell Tower",
+                "score": 0.2499712109565735,
+                "location": {
+                  "lat": 43.772805999999996,
+                  "lng": 11.2557051
+                }
+              }
+            ],
+            "processing_time_seconds": 14.731266021728516
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Firenze, Città Metropolitana di Firenze, Italy",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Firenze, Città Metropolitana di Firenze, Italy",
+            "coordinates": {
+              "latitude": 43.77274722222222,
+              "longitude": 11.256408333333333
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Ponte Vecchio",
+                  "types": [
+                    "landmark",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 148019,
+                  "vicinity": "Ponte Vecchio, Firenze",
+                  "place_id": "ChIJZ7bcoqpWKhMR6ALnMOgKMUA",
+                  "location": {
+                    "lat": 43.76792500000001,
+                    "lng": 11.2531435
+                  }
+                },
+                {
+                  "name": "Chiesa di Santa Maria Maggiore",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 743,
+                  "vicinity": "Vicolo di Santa Maria Maggiore, 1, Firenze",
+                  "place_id": "ChIJ65TGDwJUKhMR9MneTUcmw5s",
+                  "location": {
+                    "lat": 43.7733168,
+                    "lng": 11.2528428
+                  }
+                },
+                {
+                  "name": "Hercules and Cacus",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 282,
+                  "vicinity": "Piazza della Signoria, Firenze",
+                  "place_id": "ChIJ0_VB8ABUKhMRj7sLt3AMUm0",
+                  "location": {
+                    "lat": 43.76920030000001,
+                    "lng": 11.2558834
+                  }
+                },
+                {
+                  "name": "Palazzo Guicciardini",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 69,
+                  "vicinity": "Via de' Guicciardini, 15, Firenze",
+                  "place_id": "ChIJCSCabFVRKhMR_A9KYbPCjNE",
+                  "location": {
+                    "lat": 43.76652559999999,
+                    "lng": 11.2511105
+                  }
+                },
+                {
+                  "name": "Basilica of Santa Maria Novella",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 30851,
+                  "vicinity": "Piazza di Santa Maria Novella, 18, Firenze",
+                  "place_id": "ChIJYZMhdalWKhMRsm6GSXl05YU",
+                  "location": {
+                    "lat": 43.77463460000001,
+                    "lng": 11.2493859
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Basilica of Santa Maria Novella",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 30851,
+                  "vicinity": "Piazza di Santa Maria Novella, 18, Firenze",
+                  "place_id": "ChIJYZMhdalWKhMRsm6GSXl05YU",
+                  "location": {
+                    "lat": 43.77463460000001,
+                    "lng": 11.2493859
+                  }
+                },
+                {
+                  "name": "Uffizi Galleries",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 89990,
+                  "vicinity": "Piazzale degli Uffizi, 6, Firenze",
+                  "place_id": "ChIJgZDFjQBUKhMRzcTwm8i33s0",
+                  "location": {
+                    "lat": 43.7677856,
+                    "lng": 11.2553108
+                  }
+                },
+                {
+                  "name": "Museo Nazionale del Bargello",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 8618,
+                  "vicinity": "Via del Proconsolo, 4, Firenze",
+                  "place_id": "ChIJeSvB0gZUKhMR7CVehDqbPCE",
+                  "location": {
+                    "lat": 43.7703981,
+                    "lng": 11.2580078
+                  }
+                },
+                {
+                  "name": "Cappelle Medicee",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 6603,
+                  "vicinity": "Piazza di Madonna degli Aldobrandini, 6, Firenze",
+                  "place_id": "ChIJj_nVhwJUKhMRcHH43IISjnI",
+                  "location": {
+                    "lat": 43.7750913,
+                    "lng": 11.2533903
+                  }
+                },
+                {
+                  "name": "Medici Riccardi Palace",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 9734,
+                  "vicinity": "Via Camillo Cavour, 3, Firenze",
+                  "place_id": "ChIJGwHnGwNUKhMRQHINyFmGy48",
+                  "location": {
+                    "lat": 43.7752136,
+                    "lng": 11.2557272
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Hotel Lungarno",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 509,
+                  "vicinity": "Borgo San Iacopo, 14, Firenze",
+                  "place_id": "ChIJez8bNVVRKhMR6QTW0w89UGo",
+                  "location": {
+                    "lat": 43.76796720000001,
+                    "lng": 11.2515563
+                  }
+                },
+                {
+                  "name": "Grand Hotel Baglioni",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 3248,
+                  "vicinity": "Piazza dell'Unità Italiana, 6, Firenze",
+                  "place_id": "ChIJVSY-yqlWKhMRvt1mmq51lB4",
+                  "location": {
+                    "lat": 43.774635,
+                    "lng": 11.2505918
+                  }
+                },
+                {
+                  "name": "Palazzo Firenze by Baglioni Hotels & Resorts",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 279,
+                  "vicinity": "Via Ghibellina, 87, Firenze",
+                  "place_id": "ChIJJ9GCOAZUKhMRuCFIeQlEgvI",
+                  "location": {
+                    "lat": 43.7699928,
+                    "lng": 11.2623128
+                  }
+                },
+                {
+                  "name": "Brunelleschi Hotel",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1466,
+                  "vicinity": "Piazza Sant'Elisabetta, 3, Firenze",
+                  "place_id": "ChIJVYTq1xZLKhMR9hdzECEEL0Q",
+                  "location": {
+                    "lat": 43.771716,
+                    "lng": 11.25577
+                  }
+                },
+                {
+                  "name": "The Place Firenze",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 251,
+                  "vicinity": "Piazza di Santa Maria Novella, 7, Firenze",
+                  "place_id": "ChIJI4A8galWKhMRMeMpaP5CV9M",
+                  "location": {
+                    "lat": 43.7729256,
+                    "lng": 11.2498047
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Terzo Giardino",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 39,
+                  "vicinity": "Lungarno Serristori, 19, Firenze",
+                  "place_id": "ChIJlTPXRvhTKhMRMZafSyHgMYQ",
+                  "location": {
+                    "lat": 43.7654429,
+                    "lng": 11.2621001
+                  }
+                },
+                {
+                  "name": "Villa Bardini",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 3132,
+                  "vicinity": "Costa San Giorgio, 2, Firenze",
+                  "place_id": "ChIJiaZVj_5TKhMRKzngptMzaPk",
+                  "location": {
+                    "lat": 43.7639854,
+                    "lng": 11.2561705
+                  }
+                },
+                {
+                  "name": "San Donato park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "Florence",
+                  "place_id": "ChIJLa1zAgBVKhMRA6kT66ttx6E",
+                  "location": {
+                    "lat": 43.7699685,
+                    "lng": 11.2576706
+                  }
+                },
+                {
+                  "name": "Via di ruffignano",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Florence",
+                  "place_id": "ChIJSxg9YABVKhMROv2r_05ndrk",
+                  "location": {
+                    "lat": 43.7699685,
+                    "lng": 11.2576706
+                  }
+                },
+                {
+                  "name": "Piazza delle Belle",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Via Ricasoli, 87 R, Firenze",
+                  "place_id": "ChIJ3RViQQBVKhMRhRJVW2YGxA0",
+                  "location": {
+                    "lat": 43.776429,
+                    "lng": 11.258344
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Chiesa di Santa Maria Maggiore",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 743,
+                  "vicinity": "Vicolo di Santa Maria Maggiore, 1, Firenze",
+                  "place_id": "ChIJ65TGDwJUKhMR9MneTUcmw5s",
+                  "location": {
+                    "lat": 43.7733168,
+                    "lng": 11.2528428
+                  }
+                },
+                {
+                  "name": "Convento San Paolino",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 21,
+                  "vicinity": "Via di San Paolino, 8, Firenze",
+                  "place_id": "ChIJXW9A5atWKhMRdOHYvlwpimE",
+                  "location": {
+                    "lat": 43.77274889999999,
+                    "lng": 11.2478275
+                  }
+                },
+                {
+                  "name": "Basilica of Santa Maria Novella",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 30851,
+                  "vicinity": "Piazza di Santa Maria Novella, 18, Firenze",
+                  "place_id": "ChIJYZMhdalWKhMRsm6GSXl05YU",
+                  "location": {
+                    "lat": 43.77463460000001,
+                    "lng": 11.2493859
+                  }
+                },
+                {
+                  "name": "Cathedral of Santa Maria del Fiore",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 106746,
+                  "vicinity": "Piazza del Duomo, Firenze",
+                  "place_id": "ChIJ9S_ivwNUKhMR9fGqh4RDkVU",
+                  "location": {
+                    "lat": 43.77314499999999,
+                    "lng": 11.2559602
+                  }
+                },
+                {
+                  "name": "Basilica of Santa Croce in Florence",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 40336,
+                  "vicinity": "Piazza di Santa Croce, 16, Firenze",
+                  "place_id": "ChIJMcPMIwdUKhMRVRITnGR5go8",
+                  "location": {
+                    "lat": 43.7685683,
+                    "lng": 11.2622677
+                  }
+                },
+                {
+                  "name": "Comunità Islamica di Firenze e Toscana APS",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 13,
+                  "vicinity": "Via dei Martiri del Popolo, 39R, Firenze",
+                  "place_id": "ChIJmSY7GKFVKhMRkJUKSYdoaow",
+                  "location": {
+                    "lat": 43.7710073,
+                    "lng": 11.2642721
+                  }
+                },
+                {
+                  "name": "Moschea di Firenze Centro",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 323,
+                  "vicinity": "Via dei Martiri del Popolo, 39/R, Firenze",
+                  "place_id": "ChIJ77xKuAhUKhMRtR-sR9D8C_E",
+                  "location": {
+                    "lat": 43.771007,
+                    "lng": 11.264272
+                  }
+                },
+                {
+                  "name": "Synagogue and Jewish Museum of Florence",
+                  "types": [
+                    "synagogue",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2060,
+                  "vicinity": "Via Luigi Carlo Farini, 6, Firenze",
+                  "place_id": "ChIJs67hEw9UKhMR2-UAYlzN3C4",
+                  "location": {
+                    "lat": 43.7727318,
+                    "lng": 11.2663138
+                  }
+                },
+                {
+                  "name": "Old Synagogue, 1882",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 2.5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Via dell'Oche, 5, Firenze",
+                  "place_id": "ChIJYxgOar9VKhMR5tDQbwZH02Q",
+                  "location": {
+                    "lat": 43.77215949999999,
+                    "lng": 11.2563797
+                  }
+                },
+                {
+                  "name": "Great Synagigue in Florene",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Via Luigi Carlo Farini, 4, Firenze",
+                  "place_id": "ChIJPxHO_rBVKhMR3rakLW8VyMw",
+                  "location": {
+                    "lat": 43.7726728,
+                    "lng": 11.2652876
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Porcellino Gallery",
+                  "types": [
+                    "art_gallery",
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 119,
+                  "vicinity": "Piazza del Mercato Nuovo, 4, Firenze",
+                  "place_id": "ChIJPySQSgBUKhMRmbVaVAmBH0o",
+                  "location": {
+                    "lat": 43.7698936,
+                    "lng": 11.2539234
+                  }
+                },
+                {
+                  "name": "Medici Riccardi Palace",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 9734,
+                  "vicinity": "Via Camillo Cavour, 3, Firenze",
+                  "place_id": "ChIJGwHnGwNUKhMRQHINyFmGy48",
+                  "location": {
+                    "lat": 43.7752136,
+                    "lng": 11.2557272
+                  }
+                },
+                {
+                  "name": "Art Gallery and Auction House Pananti",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 72,
+                  "vicinity": "Via Maggio, 28, Firenze",
+                  "place_id": "ChIJ6dTM5VRRKhMRJqXeg3GDFAE",
+                  "location": {
+                    "lat": 43.7667197,
+                    "lng": 11.2488507
+                  }
+                },
+                {
+                  "name": "FLAIR FIRENZE",
+                  "types": [
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "general_contractor",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 20,
+                  "vicinity": "Lungarno Corsini, 24r, Firenze",
+                  "place_id": "ChIJ1evSQKtWKhMRgrCLH6bniu8",
+                  "location": {
+                    "lat": 43.7699206,
+                    "lng": 11.2498315
+                  }
+                },
+                {
+                  "name": "San Jacopo Show",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "general_contractor",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 8,
+                  "vicinity": "Borgo San Iacopo, 66/red, Firenze",
+                  "place_id": "ChIJRbqSSlVRKhMREHwodSfSYOs",
+                  "location": {
+                    "lat": 43.7679546,
+                    "lng": 11.2510582
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Florence",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Florence",
+                  "place_id": "ChIJrdbSgKZWKhMRAyrH7xd51ZM",
+                  "location": {
+                    "lat": 43.7699685,
+                    "lng": 11.2576706
+                  }
+                },
+                {
+                  "name": "Hotel Nuova Italia",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 487,
+                  "vicinity": "Via Faenza, 26, Firenze",
+                  "place_id": "ChIJlebhD6hWKhMRrbUhqaOlaRI",
+                  "location": {
+                    "lat": 43.7765684,
+                    "lng": 11.2518972
+                  }
+                },
+                {
+                  "name": "Aldobrandini",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 319,
+                  "vicinity": "Piazza di Madonna degli Aldobrandini, 8, Firenze",
+                  "place_id": "ChIJqRrdfQJUKhMRMnj9a57IlNU",
+                  "location": {
+                    "lat": 43.7746817,
+                    "lng": 11.2525223
+                  }
+                },
+                {
+                  "name": "Cerretani Hotel Firenze - MGallery Collection",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 910,
+                  "vicinity": "Via de' Cerretani, 68, Firenze",
+                  "place_id": "ChIJ_8zVCwJUKhMRQHofXxCBSjA",
+                  "location": {
+                    "lat": 43.7735415,
+                    "lng": 11.2522641
+                  }
+                },
+                {
+                  "name": "B&B di Piazza del Duomo",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 117,
+                  "vicinity": "Via dell' Oriuolo, 49, Firenze",
+                  "place_id": "ChIJz9pZ-ANUKhMRQe01IRoq5PU",
+                  "location": {
+                    "lat": 43.77246479999999,
+                    "lng": 11.2582201
+                  }
+                }
+              ]
+            },
+            "total_places_found": 40,
+            "photo_timestamp": "2022:07:13 18:16:40",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.37253308296203613
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/26.jpg"
+    },
+    {
+      "image_filename": "26.jpg",
+      "timestamp": "2026-01-28T05:09:39.567359",
+      "processing_time_seconds": 52.475366,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Giotto's Campanile, Florence Cathedral, Florence, Italy",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive Gothic style and marble facade patterns are characteristic of Giotto's Campanile and the Florence Cathedral. The location and architectural details match known features of these landmarks.",
+            "detailed_description": "The image prominently features Giotto's Campanile, a free-standing bell tower part of the Florence Cathedral complex. It is a masterpiece of Gothic architecture, characterized by its intricate marble facade with geometric patterns in white, green, and pink marble. The tower is known for its vertical emphasis and detailed ornamentation. Adjacent to the campanile is part of the Florence Cathedral, also known as the Cathedral of Santa Maria del Fiore, which shares the same architectural style and decorative elements.",
+            "identification": {
+              "primary": [
+                "Giotto's Campanile",
+                "Florence Cathedral"
+              ],
+              "location": "Florence, Italy",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Giotto's Campanile",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Florence Cathedral",
+                "type": "landmark",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "Gothic",
+              "14th_century",
+              "marble",
+              "Florence",
+              "architecture"
+            ],
+            "location": "Florence, Italy",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Giotto's Campanile\", \"Florence Cathedral\"],\n        \"location\": \"Florence, Italy\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Giotto's Campanile\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Florence Cathedral\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.90\n        }\n    ],\n    \"tags\": [\"Gothic\", \"14th_century\", \"marble\", \"Florence\", \"architecture\"],\n    \"description\": \"The image prominently features Giotto's Campanile, a free-standing bell tower part of the Florence Cathedral complex. It is a masterpiece of Gothic architecture, characterized by its intricate marble facade with geometric patterns in white, green, and pink marble. The tower is known for its vertical emphasis and detailed ornamentation. Adjacent to the campanile is part of the Florence Cathedral, also known as the Cathedral of Santa Maria del Fiore, which shares the same architectural style and decorative elements.\",\n    \"reasoning\": \"The distinctive Gothic style and marble facade patterns are characteristic of Giotto's Campanile and the Florence Cathedral. The location and architectural details match known features of these landmarks.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "processing_time_seconds": 7.933789968490601
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image features a prominent architectural structure, a tall bell tower, which is part of a larger cathedral complex. The tower exhibits a Gothic architectural style, characterized by its vertical emphasis and intricate detailing. The facade is adorned with alternating patterns of white and green marble, creating a striking visual contrast. The tower is divided into several sections by horizontal cornices, each section featuring a series of arched windows and decorative panels. The windows are",
+            "description": "The image features a prominent architectural structure, a tall bell tower, which is part of a larger cathedral complex. The tower exhibits a Gothic architectural style, characterized by its vertical emphasis and intricate detailing. The facade is adorned with alternating patterns of white and green marble, creating a striking visual contrast. The tower is divided into several sections by horizontal cornices, each section featuring a series of arched windows and decorative panels. The windows are",
+            "architectural_style": "Gothic",
+            "search_backends_used": [],
+            "processing_time_seconds": 44.54027986526489
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Piazza Del Duomo (43.7731, 11.2555)",
+          "confidence": 0.3223664462566376,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Piazza Del Duomo",
+            "coordinates": {
+              "latitude": 43.7730912,
+              "longitude": 11.2554649
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 3024
+              },
+              {
+                "x": 0,
+                "y": 3024
+              }
+            ],
+            "context_labels": [
+              "Daytime",
+              "Composite material",
+              "Engineering",
+              "Iron",
+              "Metal"
+            ],
+            "context_objects": [
+              "Building",
+              "Building",
+              "Building"
+            ],
+            "web_entities": [
+              {
+                "name": "Architecture",
+                "score": 0.3906051814556122
+              },
+              {
+                "name": "Façade",
+                "score": 0.33404624462127686
+              },
+              {
+                "name": "ArchitectureM RIBA Chartered Practice",
+                "score": 0.3052999973297119
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Piazza Del Duomo",
+                "score": 0.3223664462566376,
+                "location": {
+                  "lat": 43.7730912,
+                  "lng": 11.2554649
+                }
+              },
+              {
+                "name": "Giotto's Bell Tower",
+                "score": 0.2499712109565735,
+                "location": {
+                  "lat": 43.772805999999996,
+                  "lng": 11.2557051
+                }
+              }
+            ],
+            "processing_time_seconds": 14.121262073516846
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/26.jpg"
+    }
+  ]
+}

@@ -1,0 +1,1078 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "201.jpg",
+      "timestamp": "2026-01-28T04:38:56.789589",
+      "processing_time_seconds": 74.682343,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 48.21105555555556,
+        "gps_longitude": 16.359111111111112,
+        "location": {
+          "formatted_address": "Christkindlmarkt C, 1010 Wien, Austria",
+          "city": "Wien",
+          "county": "Wien",
+          "country": "Austria"
+        },
+        "datetime_original": "2025:11:20 20:28:32",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Vienna City Hall (Rathaus), Vienna, Austria",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and distinctive features such as the tower and facade match the Vienna City Hall, a well-known landmark in Vienna.",
+            "detailed_description": "The image shows the Vienna City Hall (Rathaus), a prominent Neo-Gothic building located in Vienna, Austria. The structure is characterized by its ornate facade, pointed arches, and a central tower with a clock. The building is illuminated at night, highlighting its intricate architectural details. A large Christmas tree and festive decorations suggest a holiday market taking place in front of the Rathaus.",
+            "identification": {
+              "primary": [
+                "Vienna City Hall (Rathaus)"
+              ],
+              "location": "Vienna, Austria",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Vienna City Hall",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Neo-Gothic",
+              "19th_century",
+              "stone",
+              "Vienna",
+              "landmark"
+            ],
+            "location": "Vienna, Austria",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Vienna City Hall (Rathaus)\"],\n        \"location\": \"Vienna, Austria\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Vienna City Hall\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Neo-Gothic\", \"19th_century\", \"stone\", \"Vienna\", \"landmark\"],\n    \"description\": \"The image shows the Vienna City Hall (Rathaus), a prominent Neo-Gothic building located in Vienna, Austria. The structure is characterized by its ornate facade, pointed arches, and a central tower with a clock. The building is illuminated at night, highlighting its intricate architectural details. A large Christmas tree and festive decorations suggest a holiday market taking place in front of the Rathaus.\",\n    \"reasoning\": \"The architectural style and distinctive features such as the tower and facade match the Vienna City Hall, a well-known landmark in Vienna.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 48.21105555555556,
+              "longitude": 16.359111111111112
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Christkindlmarkt C, 1010 Wien, Austria",
+              "city": "Wien",
+              "county": "Wien",
+              "country": "Austria"
+            },
+            "photo_timestamp": "2025:11:20 20:28:32",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 23.27725315093994
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image prominently features a grand Gothic Revival building, characterized by its ornate facade and towering spires. The structure is illuminated against the night sky, highlighting its intricate architectural details. The building has multiple pointed arches and a series of lancet windows, typical of Gothic architecture. The central tower is particularly striking, with a clock face visible, surrounded by smaller turrets and pinnacles. The facade is adorned with decorative stonework, includin",
+            "description": "The image prominently features a grand Gothic Revival building, characterized by its ornate facade and towering spires. The structure is illuminated against the night sky, highlighting its intricate architectural details. The building has multiple pointed arches and a series of lancet windows, typical of Gothic architecture. The central tower is particularly striking, with a clock face visible, surrounded by smaller turrets and pinnacles. The facade is adorned with decorative stonework, includin",
+            "architectural_style": "Gothic Revival",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 48.21105555555556,
+              "longitude": 16.359111111111112
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Christkindlmarkt C, 1010 Wien, Austria",
+              "city": "Wien",
+              "county": "Wien",
+              "country": "Austria"
+            },
+            "photo_timestamp": "2025:11:20 20:28:32",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 50.70030999183655
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Electricity",
+          "confidence": 0.8363322615623474,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Electricity",
+                "score": 0.8363322615623474
+              },
+              {
+                "source": "label",
+                "name": "Darkness",
+                "score": 0.8217800259590149
+              },
+              {
+                "source": "label",
+                "name": "Tourist attraction",
+                "score": 0.8008848428726196
+              },
+              {
+                "source": "label",
+                "name": "Engineering",
+                "score": 0.746682345867157
+              },
+              {
+                "source": "object",
+                "name": "Building",
+                "score": 0.5598942637443542
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Image",
+                "score": 0.638700008392334
+              },
+              {
+                "name": "2025",
+                "score": 0.5485000014305115
+              },
+              {
+                "name": "In the Night",
+                "score": 0.47861000895500183
+              },
+              {
+                "name": "Night Moves",
+                "score": 0.4733999967575073
+              },
+              {
+                "name": "Bob Seger & The Silver Bullet Band",
+                "score": 0.424699991941452
+              }
+            ],
+            "objects": [
+              {
+                "name": "Building",
+                "score": 0.5598942637443542
+              }
+            ],
+            "labels": [
+              {
+                "name": "Night",
+                "score": 0.9092447757720947
+              },
+              {
+                "name": "Electricity",
+                "score": 0.8363322615623474
+              },
+              {
+                "name": "Darkness",
+                "score": 0.8217800259590149
+              },
+              {
+                "name": "Tourist attraction",
+                "score": 0.8008848428726196
+              },
+              {
+                "name": "Engineering",
+                "score": 0.746682345867157
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 48.21105555555556,
+              "longitude": 16.359111111111112
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Christkindlmarkt C, 1010 Wien, Austria",
+              "city": "Wien",
+              "county": "Wien",
+              "country": "Austria"
+            },
+            "photo_timestamp": "2025:11:20 20:28:32",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 14.107057809829712
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Wien, Austria",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Wien, Austria",
+            "coordinates": {
+              "latitude": 48.21105555555556,
+              "longitude": 16.359111111111112
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Palais Sturany",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Schottenring 21, Wien",
+                  "place_id": "ChIJs078XbsHbUcRZ4jZwbg3P_U",
+                  "location": {
+                    "lat": 48.2164325,
+                    "lng": 16.3671679
+                  }
+                },
+                {
+                  "name": "Hofburg",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 56660,
+                  "vicinity": "Vienna",
+                  "place_id": "ChIJ3wYgv5kHbUcRX0LEFIAWhYY",
+                  "location": {
+                    "lat": 48.2056578,
+                    "lng": 16.3647803
+                  }
+                },
+                {
+                  "name": "Museum of Natural History Vienna",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 41236,
+                  "vicinity": "Burgring 7, Wien",
+                  "place_id": "ChIJnQAHwZAHbUcRycXUTr8uocQ",
+                  "location": {
+                    "lat": 48.205212,
+                    "lng": 16.3598451
+                  }
+                },
+                {
+                  "name": "Burgtheater",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 4778,
+                  "vicinity": "Universitätsring 2, Wien",
+                  "place_id": "ChIJzyPFSJYHbUcRXmqp1UY0UTo",
+                  "location": {
+                    "lat": 48.21029619999999,
+                    "lng": 16.36146
+                  }
+                },
+                {
+                  "name": "Time Travel Vienna",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 11165,
+                  "vicinity": "Habsburgergasse 10A, Wien",
+                  "place_id": "ChIJbac0_JgHbUcRXkPUJudXIpA",
+                  "location": {
+                    "lat": 48.20825920000001,
+                    "lng": 16.3682589
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Hofburg",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 56660,
+                  "vicinity": "Vienna",
+                  "place_id": "ChIJ3wYgv5kHbUcRX0LEFIAWhYY",
+                  "location": {
+                    "lat": 48.2056578,
+                    "lng": 16.3647803
+                  }
+                },
+                {
+                  "name": "Museum of Natural History Vienna",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 41236,
+                  "vicinity": "Burgring 7, Wien",
+                  "place_id": "ChIJnQAHwZAHbUcRycXUTr8uocQ",
+                  "location": {
+                    "lat": 48.205212,
+                    "lng": 16.3598451
+                  }
+                },
+                {
+                  "name": "Time Travel Vienna",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 11165,
+                  "vicinity": "Habsburgergasse 10A, Wien",
+                  "place_id": "ChIJbac0_JgHbUcRXkPUJudXIpA",
+                  "location": {
+                    "lat": 48.20825920000001,
+                    "lng": 16.3682589
+                  }
+                },
+                {
+                  "name": "Kunsthistorisches Museum Wien",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 33525,
+                  "vicinity": "Maria-Theresien-Platz, Wien",
+                  "place_id": "ChIJ8XfPY5oHbUcRQbimbLVSYG8",
+                  "location": {
+                    "lat": 48.2038016,
+                    "lng": 16.3617874
+                  }
+                },
+                {
+                  "name": "mumok - Museum moderner Kunst Stiftung Ludwig Wien",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 5482,
+                  "vicinity": "Museumsplatz 1, Wien",
+                  "place_id": "ChIJ8_JZQZAHbUcRN4m3aYR7DqY",
+                  "location": {
+                    "lat": 48.2037823,
+                    "lng": 16.3578331
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Hotel Das Tigra",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1350,
+                  "vicinity": "Tiefer Graben 14-20, Wien",
+                  "place_id": "ChIJRbzYwaIHbUcRyLpGz3xuxAo",
+                  "location": {
+                    "lat": 48.2121475,
+                    "lng": 16.368097
+                  }
+                },
+                {
+                  "name": "Hotel Sans Souci Wien",
+                  "types": [
+                    "lodging",
+                    "spa",
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 1179,
+                  "vicinity": "Burggasse 2, Wien",
+                  "place_id": "ChIJ8_JZQZAHbUcRfOCRCB4Q_n4",
+                  "location": {
+                    "lat": 48.2047201,
+                    "lng": 16.35652469999999
+                  }
+                },
+                {
+                  "name": "Flemings Selection Hotel Wien-City",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2603,
+                  "vicinity": "Josefstädter Straße 10-12, Wien",
+                  "place_id": "ChIJY_BO9JQHbUcRHxnHgS5GUeA",
+                  "location": {
+                    "lat": 48.20940179999999,
+                    "lng": 16.3534456
+                  }
+                },
+                {
+                  "name": "Radisson Blu Style Hotel, Vienna",
+                  "types": [
+                    "gym",
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "health",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1148,
+                  "vicinity": "Herrengasse 12, Wien",
+                  "place_id": "ChIJDwjfHpgHbUcR8JDwLXVYy8A",
+                  "location": {
+                    "lat": 48.2101644,
+                    "lng": 16.3657129
+                  }
+                },
+                {
+                  "name": "Do&Co Hotel Vienna",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 648,
+                  "vicinity": "Stephansplatz 12, Wien",
+                  "place_id": "ChIJMQdQLJ8HbUcRlLQ78418bzk",
+                  "location": {
+                    "lat": 48.208367,
+                    "lng": 16.3718471
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Volksgarten",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 19644,
+                  "vicinity": "Vienna",
+                  "place_id": "ChIJr8X4FZcHbUcRJ66c8VeFbcU",
+                  "location": {
+                    "lat": 48.2080439,
+                    "lng": 16.3613967
+                  }
+                },
+                {
+                  "name": "Burggarten",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 12048,
+                  "vicinity": "Josefsplatz 1, Wien",
+                  "place_id": "ChIJdWDYUZoHbUcRTq4MHzRMp2s",
+                  "location": {
+                    "lat": 48.2043382,
+                    "lng": 16.3658336
+                  }
+                },
+                {
+                  "name": "Ostarrichipark",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 225,
+                  "vicinity": "Otto-Wagner-Platz, Wien",
+                  "place_id": "ChIJY5fBeL8HbUcRj4eN9OnkKQo",
+                  "location": {
+                    "lat": 48.2154854,
+                    "lng": 16.3545221
+                  }
+                },
+                {
+                  "name": "Judenplatz Holocaust Memorial",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1766,
+                  "vicinity": "Judenplatz, Wien",
+                  "place_id": "ChIJ_YHCiaIHbUcRM7HPfSBZcfc",
+                  "location": {
+                    "lat": 48.2116915,
+                    "lng": 16.369482
+                  }
+                },
+                {
+                  "name": "Heldenplatz",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 18942,
+                  "vicinity": "Heldenplatz 21/4, Wien",
+                  "place_id": "ChIJf5_KqpAHbUcROuTS5DKluMk",
+                  "location": {
+                    "lat": 48.2065038,
+                    "lng": 16.3634618
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "St. Michael's Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1116,
+                  "vicinity": "Michaelerplatz 5, Wien",
+                  "place_id": "ChIJA5JbAZkHbUcRPIkhomHjo0M",
+                  "location": {
+                    "lat": 48.2080885,
+                    "lng": 16.367059
+                  }
+                },
+                {
+                  "name": "Katholische Kirche Alservorstadt (Allerheiligste Dreifaltigkeit)",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 64,
+                  "vicinity": "Alser Straße 17, Wien",
+                  "place_id": "ChIJG6T8ccAHbUcRpKquDp_mWmw",
+                  "location": {
+                    "lat": 48.2146749,
+                    "lng": 16.3528184
+                  }
+                },
+                {
+                  "name": "Kirche am Hof",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 576,
+                  "vicinity": "Schulhof 1, Wien",
+                  "place_id": "ChIJmZtSc5gHbUcRcI_cQ1g_fts",
+                  "location": {
+                    "lat": 48.2108755,
+                    "lng": 16.3687984
+                  }
+                },
+                {
+                  "name": "Augustinerkirche",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 2016,
+                  "vicinity": "Augustinerstraße 3, Wien",
+                  "place_id": "ChIJ9SMnY5kHbUcRyjvhFEBAo1k",
+                  "location": {
+                    "lat": 48.2058923,
+                    "lng": 16.3676484
+                  }
+                },
+                {
+                  "name": "Catholic University Community Vienna",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 34,
+                  "vicinity": "Edith-Stein-Haus, Ebendorferstraße 8, Wien",
+                  "place_id": "ChIJ6wW7Gb4HbUcR9aUKC-kwQxU",
+                  "location": {
+                    "lat": 48.21281289999999,
+                    "lng": 16.3580581
+                  }
+                },
+                {
+                  "name": "Islamischer Gebetsraum 'Afro' - Uni Wien",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 29,
+                  "vicinity": "Türkenstraße 3, Wien",
+                  "place_id": "ChIJ3fdHQAAHbUcR04uKO-IfhZU",
+                  "location": {
+                    "lat": 48.2168642,
+                    "lng": 16.3605751
+                  }
+                },
+                {
+                  "name": "MJAME – Messianic Jewish Alliance of Middle Europe",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 5,
+                  "vicinity": "Vienna",
+                  "place_id": "ChIJRfqKYfwHbUcR8Nv7kwnc4qc",
+                  "location": {
+                    "lat": 48.2081419,
+                    "lng": 16.3703912
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "BELLA VOLEN Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 138,
+                  "vicinity": "Landesgerichtsstraße 6, Wien",
+                  "place_id": "ChIJH4JT1yuobUcR_B1U-IWI1UI",
+                  "location": {
+                    "lat": 48.2098379,
+                    "lng": 16.3555342
+                  }
+                },
+                {
+                  "name": "Galerie Serafin",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Florianigasse 9, Wien",
+                  "place_id": "ChIJO6pAQZUHbUcRMBeJsPyJOKw",
+                  "location": {
+                    "lat": 48.21196610000001,
+                    "lng": 16.3532638
+                  }
+                },
+                {
+                  "name": "Galerie Ernst Hilger",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 86,
+                  "vicinity": "Dorotheergasse 5/3a, Wien",
+                  "place_id": "ChIJK419JpkHbUcRi8nyD6yskzU",
+                  "location": {
+                    "lat": 48.20775829999999,
+                    "lng": 16.3699397
+                  }
+                },
+                {
+                  "name": "Ikonen Mautner | Orthodox icons",
+                  "types": [
+                    "art_gallery",
+                    "home_goods_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 61,
+                  "vicinity": "Herrengasse 2-4, Wien",
+                  "place_id": "ChIJ14cNs5kHbUcRabavMXFJyXY",
+                  "location": {
+                    "lat": 48.20843379999999,
+                    "lng": 16.366594
+                  }
+                },
+                {
+                  "name": "galerie artziwna",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 38,
+                  "vicinity": "Herrengasse 17, Wien",
+                  "place_id": "ChIJny2Cb70HbUcRcKZEHDK-dgI",
+                  "location": {
+                    "lat": 48.21063900000001,
+                    "lng": 16.364969
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Vienna",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Vienna",
+                  "place_id": "ChIJn8o2UZ4HbUcRRluiUYrlwv0",
+                  "location": {
+                    "lat": 48.20806959999999,
+                    "lng": 16.3713095
+                  }
+                },
+                {
+                  "name": "Hotel Josefshof am Rathaus",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2022,
+                  "vicinity": "Josefsgasse 4/8, Wien",
+                  "place_id": "ChIJZ4vcZJQHbUcRTuTxeCgOO6Q",
+                  "location": {
+                    "lat": 48.20862979999999,
+                    "lng": 16.3539942
+                  }
+                },
+                {
+                  "name": "HPA - Hotel Pension Andreas",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 624,
+                  "vicinity": "Schlösselgasse 11, Wien",
+                  "place_id": "ChIJ97o4V5UHbUcRqUr28bpIETk",
+                  "location": {
+                    "lat": 48.2127778,
+                    "lng": 16.3530556
+                  }
+                },
+                {
+                  "name": "Hotel Graf Stadion",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 748,
+                  "vicinity": "Buchfeldgasse 5, Wien",
+                  "place_id": "ChIJDS-U-pQHbUcRLVurPa9pThE",
+                  "location": {
+                    "lat": 48.20985839999999,
+                    "lng": 16.3534893
+                  }
+                },
+                {
+                  "name": "Theaterhotel & Suites Wien",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 588,
+                  "vicinity": "Josefstädter Straße 22, Wien",
+                  "place_id": "ChIJZe17x5QHbUcR89GoaIyrsy0",
+                  "location": {
+                    "lat": 48.20954889999999,
+                    "lng": 16.3514633
+                  }
+                }
+              ]
+            },
+            "total_places_found": 37,
+            "photo_timestamp": "2025:11:20 20:28:32",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.4422879219055176
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/201.jpg"
+    },
+    {
+      "image_filename": "201.jpg",
+      "timestamp": "2026-01-28T04:40:11.498659",
+      "processing_time_seconds": 49.205397,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Vienna City Hall (Rathaus), Vienna, Austria",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and distinctive features such as the central tower and clock, along with the Christmas market setting, strongly indicate this is the Vienna City Hall.",
+            "detailed_description": "The image shows the Vienna City Hall (Rathaus), a prominent Neo-Gothic building located in Vienna, Austria. The facade is illuminated, highlighting its intricate Gothic architectural features such as pointed arches, spires, and ornate detailing. The building is constructed from stone and features a central tower with a clock. In the foreground, there is a Christmas market with festive lights and decorations, including a large Christmas tree.",
+            "identification": {
+              "primary": [
+                "Vienna City Hall (Rathaus)"
+              ],
+              "location": "Vienna, Austria",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Vienna City Hall",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Christmas Market",
+                "type": "event",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "Neo-Gothic",
+              "19th_century",
+              "stone",
+              "Vienna",
+              "landmark"
+            ],
+            "location": "Vienna, Austria",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Vienna City Hall (Rathaus)\"],\n        \"location\": \"Vienna, Austria\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Vienna City Hall\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Christmas Market\",\n            \"type\": \"event\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"Neo-Gothic\", \"19th_century\", \"stone\", \"Vienna\", \"landmark\"],\n    \"description\": \"The image shows the Vienna City Hall (Rathaus), a prominent Neo-Gothic building located in Vienna, Austria. The facade is illuminated, highlighting its intricate Gothic architectural features such as pointed arches, spires, and ornate detailing. The building is constructed from stone and features a central tower with a clock. In the foreground, there is a Christmas market with festive lights and decorations, including a large Christmas tree.\",\n    \"reasoning\": \"The architectural style and distinctive features such as the central tower and clock, along with the Christmas market setting, strongly indicate this is the Vienna City Hall.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 9.613191843032837
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image features a grand, illuminated Gothic-style building, characterized by its intricate architectural details and towering spires. The facade is adorned with numerous pointed arches and ornate tracery, typical of Gothic architecture. The central tower is particularly striking, with a clock face visible, surrounded by smaller turrets and pinnacles. The building is bathed in warm lighting, highlighting the stonework and decorative elements. Below the building, a festive market scene is visib",
+            "description": "The image features a grand, illuminated Gothic-style building, characterized by its intricate architectural details and towering spires. The facade is adorned with numerous pointed arches and ornate tracery, typical of Gothic architecture. The central tower is particularly striking, with a clock face visible, surrounded by smaller turrets and pinnacles. The building is bathed in warm lighting, highlighting the stonework and decorative elements. Below the building, a festive market scene is visib",
+            "architectural_style": "Gothic",
+            "search_backends_used": [],
+            "processing_time_seconds": 39.59113812446594
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Electricity",
+          "confidence": 0.8363322615623474,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Electricity",
+                "score": 0.8363322615623474
+              },
+              {
+                "source": "label",
+                "name": "Darkness",
+                "score": 0.8217800259590149
+              },
+              {
+                "source": "label",
+                "name": "Tourist attraction",
+                "score": 0.8008848428726196
+              },
+              {
+                "source": "label",
+                "name": "Engineering",
+                "score": 0.746682345867157
+              },
+              {
+                "source": "object",
+                "name": "Building",
+                "score": 0.5598942637443542
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Image",
+                "score": 0.5813999772071838
+              },
+              {
+                "name": "2025",
+                "score": 0.5561000108718872
+              },
+              {
+                "name": "opening",
+                "score": 0.49300000071525574
+              },
+              {
+                "name": "In the Night",
+                "score": 0.48972001671791077
+              },
+              {
+                "name": "In the Night",
+                "score": 0.46639999747276306
+              }
+            ],
+            "objects": [
+              {
+                "name": "Building",
+                "score": 0.5598942637443542
+              }
+            ],
+            "labels": [
+              {
+                "name": "Night",
+                "score": 0.9092447757720947
+              },
+              {
+                "name": "Electricity",
+                "score": 0.8363322615623474
+              },
+              {
+                "name": "Darkness",
+                "score": 0.8217800259590149
+              },
+              {
+                "name": "Tourist attraction",
+                "score": 0.8008848428726196
+              },
+              {
+                "name": "Engineering",
+                "score": 0.746682345867157
+              }
+            ],
+            "processing_time_seconds": 13.935512065887451
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/201.jpg"
+    }
+  ]
+}

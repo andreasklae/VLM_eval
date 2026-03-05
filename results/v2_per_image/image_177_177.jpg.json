@@ -1,0 +1,786 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "177.jpg",
+      "timestamp": "2026-01-28T03:40:19.396846",
+      "processing_time_seconds": 62.000571,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 59.97019166666667,
+        "gps_longitude": 10.72555,
+        "location": {
+          "formatted_address": "XPCF+36, Oslo, Norway",
+          "city": "Oslo",
+          "county": "Oslo",
+          "country": "Norway"
+        },
+        "datetime_original": "2025:06:29 05:08:30",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Lake view at sunset, Oslo, Norway",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Oslo, Norway, and the image shows a typical Scandinavian landscape with a lake and sunset, which matches the geographical context.",
+            "detailed_description": "The image depicts a serene lake view during sunset in Oslo, Norway. The sun is low on the horizon, casting a warm glow over the water. The lake is surrounded by a silhouette of trees, creating a peaceful and picturesque scene. The reflection of the sun on the water adds to the tranquility of the setting.",
+            "identification": {
+              "primary": [
+                "Lake view at sunset"
+              ],
+              "location": "Oslo, Norway",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Lake",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Sunset",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "sunset",
+              "lake",
+              "Norway",
+              "landscape"
+            ],
+            "location": "Oslo, Norway",
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Lake view at sunset\"],\n        \"location\": \"Oslo, Norway\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Lake\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Sunset\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"sunset\", \"lake\", \"Norway\", \"landscape\"],\n    \"description\": \"The image depicts a serene lake view during sunset in Oslo, Norway. The sun is low on the horizon, casting a warm glow over the water. The lake is surrounded by a silhouette of trees, creating a peaceful and picturesque scene. The reflection of the sun on the water adds to the tranquility of the setting.\",\n    \"reasoning\": \"The location metadata indicates Oslo, Norway, and the image shows a typical Scandinavian landscape with a lake and sunset, which matches the geographical context.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 59.97019166666667,
+              "longitude": 10.72555
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "XPCF+36, Oslo, Norway",
+              "city": "Oslo",
+              "county": "Oslo",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:06:29 05:08:30",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 14.25894021987915
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([en.wikipedia.org]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 2,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image captures a serene lakeside scene during sunrise or sunset, with the sun positioned low in the sky, casting a warm golden hue across the landscape. The lake is calm, with gentle ripples reflecting the sunlight, creating a shimmering effect on the water's surface. In the background, a dense line of trees forms a silhouette against the sky, indicating a forested area. The sky transitions from a deep blue at the top to a lighter shade near the horizon, enhancing the tranquil atmosphere. Th",
+            "description": "The image captures a serene lakeside scene during sunrise or sunset, with the sun positioned low in the sky, casting a warm golden hue across the landscape. The lake is calm, with gentle ripples reflecting the sunlight, creating a shimmering effect on the water's surface. In the background, a dense line of trees forms a silhouette against the sky, indicating a forested area. The sky transitions from a deep blue at the top to a lighter shade near the horizon, enhancing the tranquil atmosphere. Th",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 59.97019166666667,
+              "longitude": 10.72555
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "XPCF+36, Oslo, Norway",
+              "city": "Oslo",
+              "county": "Oslo",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:06:29 05:08:30",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 47.16554403305054
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Sunlight",
+          "confidence": 0.8252928256988525,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Sunlight",
+                "score": 0.8252928256988525
+              },
+              {
+                "source": "label",
+                "name": "Backlighting",
+                "score": 0.7152112126350403
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.7141652703285217
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.6922590136528015
+              },
+              {
+                "source": "object",
+                "name": "Clothing",
+                "score": 0.6722182035446167
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Sunlight",
+                "score": 0.29716140031814575
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.7141652703285217
+              },
+              {
+                "name": "Person",
+                "score": 0.6922590136528015
+              },
+              {
+                "name": "Clothing",
+                "score": 0.6722182035446167
+              },
+              {
+                "name": "Footwear",
+                "score": 0.5465516448020935
+              },
+              {
+                "name": "Shoe",
+                "score": 0.505125105381012
+              }
+            ],
+            "labels": [
+              {
+                "name": "Photograph",
+                "score": 0.9882677793502808
+              },
+              {
+                "name": "Sunlight",
+                "score": 0.8252928256988525
+              },
+              {
+                "name": "Backlighting",
+                "score": 0.7152112126350403
+              },
+              {
+                "name": "Evening",
+                "score": 0.6939589381217957
+              },
+              {
+                "name": "Dusk",
+                "score": 0.6649105548858643
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 59.97019166666667,
+              "longitude": 10.72555
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "XPCF+36, Oslo, Norway",
+              "city": "Oslo",
+              "county": "Oslo",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:06:29 05:08:30",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 13.692829847335815
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Oslo, Norway",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Oslo, Norway",
+            "coordinates": {
+              "latitude": 59.97019166666667,
+              "longitude": 10.72555
+            },
+            "search_range_meters": 2000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Sognsvannskiosken",
+                  "types": [
+                    "cafe",
+                    "tourist_attraction",
+                    "bakery",
+                    "meal_takeaway",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 182,
+                  "vicinity": "Sognsveien 232, Oslo",
+                  "place_id": "ChIJib_aANFoQUYRExvnjD5Ewy8",
+                  "location": {
+                    "lat": 59.96908440000001,
+                    "lng": 10.7312856
+                  }
+                },
+                {
+                  "name": "Bøttetreet",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 13,
+                  "vicinity": "XP99+QP, Oslo",
+                  "place_id": "ChIJ71VIGQBzQUYRmw7yWuuL2RM",
+                  "location": {
+                    "lat": 59.9693943,
+                    "lng": 10.7193213
+                  }
+                },
+                {
+                  "name": "Nye Gaustad Gruve",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 4,
+                  "vicinity": "XP97+34",
+                  "place_id": "ChIJ23YZWxFzQUYRm8xKZrT0I2A",
+                  "location": {
+                    "lat": 59.9676315,
+                    "lng": 10.7128135
+                  }
+                },
+                {
+                  "name": "Sogn gruve",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 24,
+                  "vicinity": "XPCR+H7, Oslo",
+                  "place_id": "ChIJ8V2tyr9zQUYR091hrr7OOKs",
+                  "location": {
+                    "lat": 59.97149799999999,
+                    "lng": 10.7407015
+                  }
+                },
+                {
+                  "name": "Foss",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 18,
+                  "vicinity": "XP84+4C, Oslo",
+                  "place_id": "ChIJ0Q2H1ERzQUYRyTES37SFnLc",
+                  "location": {
+                    "lat": 59.9653718,
+                    "lng": 10.7060155
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Sognsvannskiosken",
+                  "types": [
+                    "cafe",
+                    "meal_takeaway",
+                    "bakery",
+                    "tourist_attraction",
+                    "restaurant",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 182,
+                  "vicinity": "Sognsveien 232, Oslo",
+                  "place_id": "ChIJib_aANFoQUYRExvnjD5Ewy8",
+                  "location": {
+                    "lat": 59.96908440000001,
+                    "lng": 10.7312856
+                  }
+                },
+                {
+                  "name": "ZiOPizza Kringsjå",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 30,
+                  "vicinity": "Olav M. Troviks vei 72, Oslo",
+                  "place_id": "ChIJVazP-vlzQUYRnDss4BAXwtc",
+                  "location": {
+                    "lat": 59.9639343,
+                    "lng": 10.733231
+                  }
+                },
+                {
+                  "name": "Flamenco Pizza",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Nordbergveien 43c, Oslo",
+                  "place_id": "ChIJH5RADndvQUYR5NIpwjDRJg0",
+                  "location": {
+                    "lat": 59.95652949999999,
+                    "lng": 10.7462069
+                  }
+                },
+                {
+                  "name": "Flamenco Pizza Tåsen",
+                  "types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 44,
+                  "vicinity": "Nordbergveien 43C, Oslo",
+                  "place_id": "ChIJD_GX6OpvQUYRBmajF0NW0u4",
+                  "location": {
+                    "lat": 59.95652949999999,
+                    "lng": 10.7462069
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Bench",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 5,
+                  "vicinity": "XPGJ+8X",
+                  "place_id": "ChIJydTiRQBzQUYRYXx2DEwXwLQ",
+                  "location": {
+                    "lat": 59.9758034,
+                    "lng": 10.732443
+                  }
+                },
+                {
+                  "name": "Kringsjå studentby Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Sogn, Oslo",
+                  "place_id": "ChIJl5Xd3ppzQUYR-nDFNN58uS8",
+                  "location": {
+                    "lat": 59.9641026,
+                    "lng": 10.7310137
+                  }
+                },
+                {
+                  "name": "Damefallet",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 20,
+                  "vicinity": "Hamborgveien 9B, Oslo",
+                  "place_id": "ChIJ5f7XXP9tQUYRw9KSuxRXME0",
+                  "location": {
+                    "lat": 59.9592474,
+                    "lng": 10.735853
+                  }
+                },
+                {
+                  "name": "Grindajordet",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 42,
+                  "vicinity": "Peder Ankers vei 25, Oslo",
+                  "place_id": "ChIJtc4fQflxQUYRhChvwq8nzo4",
+                  "location": {
+                    "lat": 59.96547930000001,
+                    "lng": 10.754363
+                  }
+                },
+                {
+                  "name": "Solvang kolonihager avdeling 2",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "Sogn, Oslo",
+                  "place_id": "ChIJmYHkOBBtQUYRvBTyyrJEkUs",
+                  "location": {
+                    "lat": 59.9545196,
+                    "lng": 10.7275801
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Nordberg congregation",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 40,
+                  "vicinity": "Kringsjågrenda 1, Oslo",
+                  "place_id": "ChIJWc2DxwFyQUYR_BqMI_hQXok",
+                  "location": {
+                    "lat": 59.9631216,
+                    "lng": 10.7426474
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Oslo",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Oslo",
+                  "place_id": "ChIJOfBn8mFuQUYRmh4j019gkn4",
+                  "location": {
+                    "lat": 59.9121746,
+                    "lng": 10.7312704
+                  }
+                },
+                {
+                  "name": "Olympiatoppen Sportshotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 208,
+                  "vicinity": "Sognsveien 228, Oslo",
+                  "place_id": "ChIJ3QL44AVyQUYRWdoTbbT55J0",
+                  "location": {
+                    "lat": 59.9683333,
+                    "lng": 10.7313889
+                  }
+                },
+                {
+                  "name": "Bad, Park og Idrett - medlemsorganisasjon",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 2,
+                  "vicinity": "Sognsveien 220, Oslo",
+                  "place_id": "ChIJ934Y0gVyQUYRPK_c6y11WuU",
+                  "location": {
+                    "lat": 59.96666860000001,
+                    "lng": 10.7311326
+                  }
+                },
+                {
+                  "name": "Sogn Frivillighetsentral",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 11,
+                  "vicinity": "Minister Ditleffs vei 22, Oslo",
+                  "place_id": "ChIJyXh5HgFyQUYRdHtQGi6A-BU",
+                  "location": {
+                    "lat": 59.9628113,
+                    "lng": 10.7382741
+                  }
+                },
+                {
+                  "name": "Elden Eiendom AS",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Postboks 24, Oslo",
+                  "place_id": "ChIJtQNFXoduQUYR1HWSjGJe0Is",
+                  "location": {
+                    "lat": 59.96282699999999,
+                    "lng": 10.7359407
+                  }
+                }
+              ]
+            },
+            "total_places_found": 20,
+            "photo_timestamp": "2025:06:29 05:08:30",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.3370201587677002
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/177.jpg"
+    },
+    {
+      "image_filename": "177.jpg",
+      "timestamp": "2026-01-28T03:41:21.435360",
+      "processing_time_seconds": 59.888329,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Lake at sunset",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of the sun setting over a body of water, along with the reflection and surrounding trees, suggests a natural setting focused on the lake and sunset.",
+            "detailed_description": "The image depicts a serene lake at sunset. The sun is low on the horizon, casting a warm glow across the water. The lake is surrounded by trees, creating a dark silhouette against the sky. The reflection of the sun on the water adds to the tranquil atmosphere. A dock or platform is visible in the foreground, with a person sitting and enjoying the view.",
+            "identification": {
+              "primary": [
+                "Lake at sunset"
+              ],
+              "location": null,
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Lake",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "sunset",
+              "lake",
+              "nature",
+              "reflection",
+              "silhouette"
+            ],
+            "location": null,
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Lake at sunset\"],\n        \"location\": null,\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Lake\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"sunset\", \"lake\", \"nature\", \"reflection\", \"silhouette\"],\n    \"description\": \"The image depicts a serene lake at sunset. The sun is low on the horizon, casting a warm glow across the water. The lake is surrounded by trees, creating a dark silhouette against the sky. The reflection of the sun on the water adds to the tranquil atmosphere. A dock or platform is visible in the foreground, with a person sitting and enjoying the view.\",\n    \"reasoning\": \"The presence of the sun setting over a body of water, along with the reflection and surrounding trees, suggests a natural setting focused on the lake and sunset.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 17.90371298789978
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([sunsetviewpostlake.com]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image captures a serene lakeside scene at sunset. The sun is low on the horizon, casting a warm golden light across the water, creating a shimmering reflection. The lake is calm, with gentle ripples visible on the surface. In the background, a dense line of trees forms a dark silhouette against the sky, indicating a forested area. The sky transitions from a deep blue at the top to a soft orange near the horizon, typical of a sunset. The foreground features a wooden dock extending into the wa",
+            "description": "The image captures a serene lakeside scene at sunset. The sun is low on the horizon, casting a warm golden light across the water, creating a shimmering reflection. The lake is calm, with gentle ripples visible on the surface. In the background, a dense line of trees forms a dark silhouette against the sky, indicating a forested area. The sky transitions from a deep blue at the top to a soft orange near the horizon, typical of a sunset. The foreground features a wooden dock extending into the wa",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 41.98173499107361
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Sunlight",
+          "confidence": 0.8252928256988525,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Sunlight",
+                "score": 0.8252928256988525
+              },
+              {
+                "source": "label",
+                "name": "Backlighting",
+                "score": 0.7152112126350403
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.7141652703285217
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.6922590136528015
+              },
+              {
+                "source": "object",
+                "name": "Clothing",
+                "score": 0.6722182035446167
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Sunlight",
+                "score": 0.29734787344932556
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.7141652703285217
+              },
+              {
+                "name": "Person",
+                "score": 0.6922590136528015
+              },
+              {
+                "name": "Clothing",
+                "score": 0.6722182035446167
+              },
+              {
+                "name": "Footwear",
+                "score": 0.5465516448020935
+              },
+              {
+                "name": "Shoe",
+                "score": 0.505125105381012
+              }
+            ],
+            "labels": [
+              {
+                "name": "Photograph",
+                "score": 0.9882677793502808
+              },
+              {
+                "name": "Sunlight",
+                "score": 0.8252928256988525
+              },
+              {
+                "name": "Backlighting",
+                "score": 0.7152112126350403
+              },
+              {
+                "name": "Evening",
+                "score": 0.6939589381217957
+              },
+              {
+                "name": "Dusk",
+                "score": 0.6649105548858643
+              }
+            ],
+            "processing_time_seconds": 13.596646070480347
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/177.jpg"
+    }
+  ]
+}

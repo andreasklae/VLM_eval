@@ -1,0 +1,464 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "57.heic",
+      "timestamp": "2026-01-28T06:12:48.877473",
+      "processing_time_seconds": 54.116806,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -25.777505555555553,
+        "gps_longitude": 113.476425,
+        "location": {
+          "formatted_address": "5P6M6FCG+XH",
+          "city": null,
+          "county": null,
+          "country": null
+        },
+        "datetime_original": "2023:04:11 17:58:53",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Coastal landscape at sunset, Shark Bay, Western Australia",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata suggests Shark Bay, Western Australia, which is known for its coastal landscapes. The presence of the ocean, sunset, and boardwalk aligns with typical features of this region.",
+            "detailed_description": "The image captures a scenic coastal landscape at sunset, with the sun setting over the ocean. The sky is a gradient of warm colors transitioning to cooler tones. A boardwalk extends through the coastal vegetation, leading towards the water. The vegetation consists of low shrubs typical of coastal environments. The setting sun casts a golden reflection on the water, creating a serene and picturesque scene.",
+            "identification": {
+              "primary": [
+                "Coastal landscape at sunset"
+              ],
+              "location": "Shark Bay, Western Australia",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Sunset over the ocean",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Boardwalk through coastal vegetation",
+                "type": "viewpoint",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "sunset",
+              "coastal_landscape",
+              "boardwalk",
+              "Western_Australia"
+            ],
+            "location": "Shark Bay, Western Australia",
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "General coastal landscape",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The image shows typical features of a coastal landscape, which could be found in various locations."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Coastal landscape at sunset\"],\n        \"location\": \"Shark Bay, Western Australia\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Sunset over the ocean\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Boardwalk through coastal vegetation\",\n            \"type\": \"viewpoint\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"sunset\", \"coastal_landscape\", \"boardwalk\", \"Western_Australia\"],\n    \"description\": \"The image captures a scenic coastal landscape at sunset, with the sun setting over the ocean. The sky is a gradient of warm colors transitioning to cooler tones. A boardwalk extends through the coastal vegetation, leading towards the water. The vegetation consists of low shrubs typical of coastal environments. The setting sun casts a golden reflection on the water, creating a serene and picturesque scene.\",\n    \"reasoning\": \"The location metadata suggests Shark Bay, Western Australia, which is known for its coastal landscapes. The presence of the ocean, sunset, and boardwalk aligns with typical features of this region.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"General coastal landscape\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The image shows typical features of a coastal landscape, which could be found in various locations.\"\n        }\n    ]\n}",
+            "gps_coordinates": {
+              "latitude": -25.777505555555553,
+              "longitude": 113.476425
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "5P6M6FCG+XH",
+              "city": null,
+              "county": null,
+              "country": null
+            },
+            "photo_timestamp": "2023:04:11 17:58:53",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 10.198349952697754
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image captures a serene coastal landscape during sunset. The sun is low on the horizon, casting a warm golden glow across the scene. The sky transitions from a deep blue at the top to a rich orange near the horizon, creating a gradient effect that enhances the tranquil atmosphere. Below the sky, a body of water stretches across the middle of the image, reflecting the sunlight in shimmering patterns. The water appears calm, with gentle ripples visible on the surface. In the foreground, a sand",
+            "description": "The image captures a serene coastal landscape during sunset. The sun is low on the horizon, casting a warm golden glow across the scene. The sky transitions from a deep blue at the top to a rich orange near the horizon, creating a gradient effect that enhances the tranquil atmosphere. Below the sky, a body of water stretches across the middle of the image, reflecting the sunlight in shimmering patterns. The water appears calm, with gentle ripples visible on the surface. In the foreground, a sand",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": -25.777505555555553,
+              "longitude": 113.476425
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "5P6M6FCG+XH",
+              "city": null,
+              "county": null,
+              "country": null
+            },
+            "photo_timestamp": "2023:04:11 17:58:53",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 43.207300901412964
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Horizon",
+          "confidence": 0.9718084931373596,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Horizon",
+                "score": 0.9718084931373596
+              },
+              {
+                "source": "label",
+                "name": "Fluid",
+                "score": 0.95476233959198
+              },
+              {
+                "source": "label",
+                "name": "Coast",
+                "score": 0.9188271760940552
+              },
+              {
+                "source": "label",
+                "name": "Dusk",
+                "score": 0.9105490446090698
+              },
+              {
+                "source": "web",
+                "name": "sea-m",
+                "score": 0.4291999936103821
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "sea-m",
+                "score": 0.4291999936103821
+              },
+              {
+                "name": "Red sky at morning",
+                "score": 0.38316476345062256
+              },
+              {
+                "name": "Sunset",
+                "score": 0.3738504648208618
+              },
+              {
+                "name": "Beach",
+                "score": 0.3275240957736969
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Water",
+                "score": 0.9848678112030029
+              },
+              {
+                "name": "Horizon",
+                "score": 0.9718084931373596
+              },
+              {
+                "name": "Fluid",
+                "score": 0.95476233959198
+              },
+              {
+                "name": "Coast",
+                "score": 0.9188271760940552
+              },
+              {
+                "name": "Dusk",
+                "score": 0.9105490446090698
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": -25.777505555555553,
+              "longitude": 113.476425
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "5P6M6FCG+XH",
+              "city": null,
+              "county": null,
+              "country": null
+            },
+            "photo_timestamp": "2023:04:11 17:58:53",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 15.880086660385132
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "5P6M6FCG+XH",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "5P6M6FCG+XH",
+            "coordinates": {
+              "latitude": -25.777505555555553,
+              "longitude": 113.476425
+            },
+            "search_range_meters": 2000,
+            "nearby_places": {
+              "viewpoints": [
+                {
+                  "name": "Francois Peron National Park",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Francois Peron National Park",
+                  "place_id": "ChIJj79xwBcd4SsR2XlzPHoanBY",
+                  "location": {
+                    "lat": -25.6959038,
+                    "lng": 113.5252319
+                  }
+                },
+                {
+                  "name": "Big Lagoon Campground",
+                  "types": [
+                    "campground",
+                    "lodging",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 173,
+                  "vicinity": "Unnamed Road",
+                  "place_id": "ChIJl4phvXUG4SsRZ4JmJZEn77k",
+                  "location": {
+                    "lat": -25.7746865,
+                    "lng": 113.4761153
+                  }
+                }
+              ]
+            },
+            "total_places_found": 2,
+            "photo_timestamp": "2023:04:11 17:58:53",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.28737521171569824
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/57.heic"
+    },
+    {
+      "image_filename": "57.heic",
+      "timestamp": "2026-01-28T06:13:43.013678",
+      "processing_time_seconds": 51.60326,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Coastal landscape at sunset",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of the sun setting over water and the boardwalk suggests a coastal location, likely intended for scenic views or nature walks.",
+            "detailed_description": "The image depicts a coastal landscape at sunset, with the sun low on the horizon casting a warm glow over the scene. The foreground features a boardwalk leading through sandy terrain and low vegetation, suggesting a viewpoint or walking path. The water reflects the sunlight, creating a serene and picturesque setting.",
+            "identification": {
+              "primary": [
+                "Coastal landscape at sunset"
+              ],
+              "location": null,
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Boardwalk",
+                "type": "viewpoint",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "sunset",
+              "coastline",
+              "boardwalk",
+              "landscape"
+            ],
+            "location": null,
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Nature reserve or coastal park",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The boardwalk and natural landscape are typical of protected areas designed for public enjoyment and conservation."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Coastal landscape at sunset\"],\n        \"location\": null,\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Boardwalk\",\n            \"type\": \"viewpoint\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"sunset\", \"coastline\", \"boardwalk\", \"landscape\"],\n    \"description\": \"The image depicts a coastal landscape at sunset, with the sun low on the horizon casting a warm glow over the scene. The foreground features a boardwalk leading through sandy terrain and low vegetation, suggesting a viewpoint or walking path. The water reflects the sunlight, creating a serene and picturesque setting.\",\n    \"reasoning\": \"The presence of the sun setting over water and the boardwalk suggests a coastal location, likely intended for scenic views or nature walks.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Nature reserve or coastal park\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The boardwalk and natural landscape are typical of protected areas designed for public enjoyment and conservation.\"\n        }\n    ]\n}",
+            "processing_time_seconds": 9.618285179138184
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image captures a serene coastal landscape at sunset. The sun is low on the horizon, casting a warm golden glow across the scene. The sky transitions from a deep blue at the top to a soft orange near the horizon, creating a tranquil atmosphere. Below the horizon, a body of water reflects the sunlight, producing shimmering patterns on its surface. The shoreline is gently curved, with sandy areas leading to a rugged terrain covered in low-lying vegetation. The vegetation consists of small bushe",
+            "description": "The image captures a serene coastal landscape at sunset. The sun is low on the horizon, casting a warm golden glow across the scene. The sky transitions from a deep blue at the top to a soft orange near the horizon, creating a tranquil atmosphere. Below the horizon, a body of water reflects the sunlight, producing shimmering patterns on its surface. The shoreline is gently curved, with sandy areas leading to a rugged terrain covered in low-lying vegetation. The vegetation consists of small bushe",
+            "architectural_style": "Modern boardwalk design",
+            "search_backends_used": [],
+            "processing_time_seconds": 41.752954959869385
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Horizon",
+          "confidence": 0.9718084931373596,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Horizon",
+                "score": 0.9718084931373596
+              },
+              {
+                "source": "label",
+                "name": "Fluid",
+                "score": 0.95476233959198
+              },
+              {
+                "source": "label",
+                "name": "Coast",
+                "score": 0.9188271760940552
+              },
+              {
+                "source": "label",
+                "name": "Dusk",
+                "score": 0.9105490446090698
+              },
+              {
+                "source": "web",
+                "name": "sea-m",
+                "score": 0.4291999936103821
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "sea-m",
+                "score": 0.4291999936103821
+              },
+              {
+                "name": "Red sky at morning",
+                "score": 0.38316476345062256
+              },
+              {
+                "name": "Sunset",
+                "score": 0.3738504648208618
+              },
+              {
+                "name": "Beach",
+                "score": 0.3275240957736969
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Water",
+                "score": 0.9848678112030029
+              },
+              {
+                "name": "Horizon",
+                "score": 0.9718084931373596
+              },
+              {
+                "name": "Fluid",
+                "score": 0.95476233959198
+              },
+              {
+                "name": "Coast",
+                "score": 0.9188271760940552
+              },
+              {
+                "name": "Dusk",
+                "score": 0.9105490446090698
+              }
+            ],
+            "processing_time_seconds": 15.112354040145874
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/57.heic"
+    }
+  ]
+}

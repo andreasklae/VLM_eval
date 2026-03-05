@@ -1,0 +1,806 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "105.heic",
+      "timestamp": "2026-01-28T00:54:49.332725",
+      "processing_time_seconds": 66.021338,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -8.80971388888889,
+        "gps_longitude": 115.10598888888889,
+        "location": {
+          "formatted_address": "54Q4+X49, Pecatu, South Kuta, Badung Regency, Bali 80361, Indonesia",
+          "city": null,
+          "county": "Badung Regency",
+          "country": "Indonesia"
+        },
+        "datetime_original": "2024:11:18 13:28:33",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Beach with rocky shoreline, Badung Regency, Indonesia",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Badung Regency, Indonesia, which is known for its beautiful beaches and rocky shorelines. The presence of cliffside buildings and tropical vegetation aligns with typical coastal scenes in this region.",
+            "detailed_description": "The image depicts a scenic beach with a rocky shoreline and clear turquoise waters. Several large rocks are visible in the water, adding to the natural beauty of the scene. On the left side, there are buildings constructed on the cliffside, featuring thatched roofs and balconies overlooking the ocean. The lush greenery and clear sky contribute to the tropical atmosphere.",
+            "identification": {
+              "primary": [
+                "Beach with rocky shoreline"
+              ],
+              "location": "Badung Regency, Indonesia",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Rocky shoreline with clear water",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Cliffside buildings",
+                "type": "building",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "beach",
+              "rocky_shoreline",
+              "cliffside",
+              "tropical",
+              "Indonesia"
+            ],
+            "location": "Badung Regency, Indonesia",
+            "type": "natural_feature",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Padang Padang Beach",
+                "specificity_level": "very_specific",
+                "confidence": 0.7,
+                "reasoning": "Padang Padang Beach is a well-known beach in the Badung area with similar rocky features."
+              },
+              {
+                "guess": "Uluwatu Beach",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "Uluwatu Beach is another popular destination in the region with cliffside views and rocky shores."
+              },
+              {
+                "guess": "General Bali beach",
+                "specificity_level": "general",
+                "confidence": 0.5,
+                "reasoning": "The scene is characteristic of many beaches in Bali, known for their natural beauty and tropical settings."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Beach with rocky shoreline\"],\n        \"location\": \"Badung Regency, Indonesia\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Rocky shoreline with clear water\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Cliffside buildings\",\n            \"type\": \"building\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"beach\", \"rocky_shoreline\", \"cliffside\", \"tropical\", \"Indonesia\"],\n    \"description\": \"The image depicts a scenic beach with a rocky shoreline and clear turquoise waters. Several large rocks are visible in the water, adding to the natural beauty of the scene. On the left side, there are buildings constructed on the cliffside, featuring thatched roofs and balconies overlooking the ocean. The lush greenery and clear sky contribute to the tropical atmosphere.\",\n    \"reasoning\": \"The location metadata indicates Badung Regency, Indonesia, which is known for its beautiful beaches and rocky shorelines. The presence of cliffside buildings and tropical vegetation aligns with typical coastal scenes in this region.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Padang Padang Beach\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"Padang Padang Beach is a well-known beach in the Badung area with similar rocky features.\"\n        },\n        {\n            \"guess\": \"Uluwatu Beach\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"Uluwatu Beach is another popular destination in the region with cliffside views and rocky shores.\"\n        },\n        {\n            \"guess\": \"General Bali beach\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.5,\n            \"reasoning\": \"The scene is characteristic of many beaches in Bali, known for their natural beauty and tropical settings.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": -8.80971388888889,
+              "longitude": 115.10598888888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "54Q4+X49, Pecatu, South Kuta, Badung Regency, Bali 80361, Indonesia",
+              "city": null,
+              "county": "Badung Regency",
+              "country": "Indonesia"
+            },
+            "photo_timestamp": "2024:11:18 13:28:33",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 29.343008041381836
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([thebalibest.com]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 2,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a stunning coastal landscape in Badung Regency, Indonesia. The foreground features a sandy beach with clear turquoise waters gently lapping against the shore. Several large, jagged rocks protrude from the water, adding a dramatic element to the scene. These rocks are partially covered with lush green vegetation, indicating a vibrant tropical environment. To the left, there are several buildings with thatched roofs and balconies, nestled among dense greenery. These structures ap",
+            "description": "The image depicts a stunning coastal landscape in Badung Regency, Indonesia. The foreground features a sandy beach with clear turquoise waters gently lapping against the shore. Several large, jagged rocks protrude from the water, adding a dramatic element to the scene. These rocks are partially covered with lush green vegetation, indicating a vibrant tropical environment. To the left, there are several buildings with thatched roofs and balconies, nestled among dense greenery. These structures ap",
+            "architectural_style": "Tropical resort architecture",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": -8.80971388888889,
+              "longitude": 115.10598888888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "54Q4+X49, Pecatu, South Kuta, Badung Regency, Bali 80361, Indonesia",
+              "city": null,
+              "county": "Badung Regency",
+              "country": "Indonesia"
+            },
+            "photo_timestamp": "2024:11:18 13:28:33",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 35.82493472099304
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Body of water",
+          "confidence": 0.9794728755950928,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Body of water",
+                "score": 0.9794728755950928
+              },
+              {
+                "source": "label",
+                "name": "Coast",
+                "score": 0.9673106670379639
+              },
+              {
+                "source": "label",
+                "name": "Coastal and oceanic landforms",
+                "score": 0.9603173136711121
+              },
+              {
+                "source": "label",
+                "name": "Sea",
+                "score": 0.9431703090667725
+              },
+              {
+                "source": "label",
+                "name": "Summer",
+                "score": 0.929635763168335
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "River Island",
+                "score": 0.42320001125335693
+              },
+              {
+                "name": "sea-m",
+                "score": 0.4032999873161316
+              },
+              {
+                "name": "River Island",
+                "score": 0.3882000148296356
+              },
+              {
+                "name": "",
+                "score": 0.3882000148296356
+              },
+              {
+                "name": "Islet",
+                "score": 0.3218112587928772
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Body of water",
+                "score": 0.9794728755950928
+              },
+              {
+                "name": "Coast",
+                "score": 0.9673106670379639
+              },
+              {
+                "name": "Coastal and oceanic landforms",
+                "score": 0.9603173136711121
+              },
+              {
+                "name": "Sea",
+                "score": 0.9431703090667725
+              },
+              {
+                "name": "Summer",
+                "score": 0.929635763168335
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": -8.80971388888889,
+              "longitude": 115.10598888888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "54Q4+X49, Pecatu, South Kuta, Badung Regency, Bali 80361, Indonesia",
+              "city": null,
+              "county": "Badung Regency",
+              "country": "Indonesia"
+            },
+            "photo_timestamp": "2024:11:18 13:28:33",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 12.681568622589111
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Badung Regency, Indonesia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Badung Regency, Indonesia",
+            "coordinates": {
+              "latitude": -8.80971388888889,
+              "longitude": 115.10598888888889
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Faisal Beach",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "54Q4+X49, Pecatu",
+                  "place_id": "ChIJBdkILwBF0i0RutRiJDGjeDY",
+                  "location": {
+                    "lat": -8.8096211,
+                    "lng": 115.1059434
+                  }
+                },
+                {
+                  "name": "Adul Beach",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "54Q4+X49, Pecatu",
+                  "place_id": "ChIJSYK1CQBF0i0RLPYBF_ibosk",
+                  "location": {
+                    "lat": -8.8098017,
+                    "lng": 115.1057936
+                  }
+                },
+                {
+                  "name": "Pantai Pemutih",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 87,
+                  "vicinity": "no, Jalan Pemutih No.1A, Pecatu",
+                  "place_id": "ChIJH2uVY0VF0i0R80QCKEH18K0",
+                  "location": {
+                    "lat": -8.808726799999999,
+                    "lng": 115.1071256
+                  }
+                },
+                {
+                  "name": "Bali Surfspot",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.6,
+                  "user_ratings_total": 5,
+                  "vicinity": "Jalan Labuansait No.73, Pecatu",
+                  "place_id": "ChIJ1_-kAABF0i0Rih0evxsoGbQ",
+                  "location": {
+                    "lat": -8.8110269,
+                    "lng": 115.1037645
+                  }
+                },
+                {
+                  "name": "Radisson Beach access gate",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Radisson Blu Bali Uluwatu, Pecatu",
+                  "place_id": "ChIJQ683BgBF0i0RjTdaf5y__EY",
+                  "location": {
+                    "lat": -8.808713400000002,
+                    "lng": 115.1113688
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Anantara Uluwatu Bali Resort",
+                  "types": [
+                    "spa",
+                    "lodging",
+                    "bar",
+                    "health",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2726,
+                  "vicinity": "Jalan Pemutih, Pecatu",
+                  "place_id": "ChIJv5Tx3UVF0i0RQ2jeB0yfNfQ",
+                  "location": {
+                    "lat": -8.8086324,
+                    "lng": 115.1082347
+                  }
+                },
+                {
+                  "name": "Dugong Restaurant, Bar & Lounge",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 202,
+                  "vicinity": "JL. Pantai Labuan Sait, Pecatu",
+                  "place_id": "ChIJvQ5FPlBF0i0R3pEvpsNipZM",
+                  "location": {
+                    "lat": -8.8109934,
+                    "lng": 115.1046707
+                  }
+                },
+                {
+                  "name": "My Iguana Restaurant",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.5,
+                  "user_ratings_total": 2,
+                  "vicinity": "54P4+VH6, Pecatu",
+                  "place_id": "ChIJZW-PJU5F0i0Re6BU2UzCqX8",
+                  "location": {
+                    "lat": -8.812825999999998,
+                    "lng": 115.1063925
+                  }
+                },
+                {
+                  "name": "Drifter Surf Shop & Cafe - Uluwatu",
+                  "types": [
+                    "cafe",
+                    "art_gallery",
+                    "book_store",
+                    "clothing_store",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1161,
+                  "vicinity": "Jalan Labuansait No.52, Pecatu",
+                  "place_id": "ChIJX7jv8EtF0i0RPWxbyT2Zygk",
+                  "location": {
+                    "lat": -8.814913899999999,
+                    "lng": 115.1123204
+                  }
+                },
+                {
+                  "name": "Yeye's Warung & Gift Shop",
+                  "types": [
+                    "bar",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1006,
+                  "vicinity": "Jalan Labuansait No.250, Pecatu",
+                  "place_id": "ChIJPS8A-S5F0i0RV6Dt-jLck5k",
+                  "location": {
+                    "lat": -8.814646399999999,
+                    "lng": 115.1013033
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Padang Padang Beach Entrance",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "Padang Padang Beach, Pecatu",
+                  "place_id": "ChIJeT7LLABF0i0RTxvnxnW6lKk",
+                  "location": {
+                    "lat": -8.8116746,
+                    "lng": 115.1040535
+                  }
+                },
+                {
+                  "name": "Pathway down to Impossibles",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 3,
+                  "vicinity": "54R7+H52, Pecatu",
+                  "place_id": "ChIJwypn521F0i0RHcICGuBT9Wg",
+                  "location": {
+                    "lat": -8.8087669,
+                    "lng": 115.112032
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Drifter Surf Shop & Cafe - Uluwatu",
+                  "types": [
+                    "book_store",
+                    "cafe",
+                    "art_gallery",
+                    "clothing_store",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1161,
+                  "vicinity": "Jalan Labuansait No.52, Pecatu",
+                  "place_id": "ChIJX7jv8EtF0i0RPWxbyT2Zygk",
+                  "location": {
+                    "lat": -8.814913899999999,
+                    "lng": 115.1123204
+                  }
+                },
+                {
+                  "name": "MBV Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 5,
+                  "vicinity": "Jalan Labuansait No.72, Pecatu",
+                  "place_id": "ChIJbU7s-ZFF0i0RD3rHrehcdM8",
+                  "location": {
+                    "lat": -8.8125422,
+                    "lng": 115.1064024
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "PinkCoco Uluwatu - Constant Surprises & for Cool Adults Only",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 666,
+                  "vicinity": "Padang - Padang Beach, Jalan Labuansait, Pecatu",
+                  "place_id": "ChIJd6KA-FBF0i0RBvjQajl0s1k",
+                  "location": {
+                    "lat": -8.8127531,
+                    "lng": 115.1066378
+                  }
+                },
+                {
+                  "name": "Anantara Uluwatu Bali Resort",
+                  "types": [
+                    "bar",
+                    "spa",
+                    "health",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2726,
+                  "vicinity": "Jalan Pemutih, Pecatu",
+                  "place_id": "ChIJv5Tx3UVF0i0RQ2jeB0yfNfQ",
+                  "location": {
+                    "lat": -8.8086324,
+                    "lng": 115.1082347
+                  }
+                },
+                {
+                  "name": "The Rocks",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 40,
+                  "vicinity": "Jalan Labuan Sait, Pecatu",
+                  "place_id": "ChIJr2laZkVF0i0RRWJlnMu9ci0",
+                  "location": {
+                    "lat": -8.809429,
+                    "lng": 115.106246
+                  }
+                },
+                {
+                  "name": "Medori Putih Homestay",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 145,
+                  "vicinity": "Jalan Pemutih labuan sait Pecatu No.1A, Pecatu",
+                  "place_id": "ChIJoQtM105F0i0RDpCaR9oknDs",
+                  "location": {
+                    "lat": -8.812954600000001,
+                    "lng": 115.1113114
+                  }
+                },
+                {
+                  "name": "Padang Padang Surf Camp",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 308,
+                  "vicinity": "Jalan Labuan Sait, Pecatu",
+                  "place_id": "ChIJw6EjDExF0i0RSs_qNonm50k",
+                  "location": {
+                    "lat": -8.81518,
+                    "lng": 115.109232
+                  }
+                }
+              ]
+            },
+            "total_places_found": 19,
+            "photo_timestamp": "2024:11:18 13:28:33",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.4189739227294922
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/105.heic"
+    },
+    {
+      "image_filename": "105.heic",
+      "timestamp": "2026-01-28T00:55:55.397469",
+      "processing_time_seconds": 60.199984,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Beach with rocky shoreline, Bali, Indonesia",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The combination of tropical vegetation, clear turquoise water, and rocky shoreline is characteristic of coastal areas in Bali, Indonesia. The architectural style of the buildings also suggests a tropical resort setting.",
+            "detailed_description": "The image depicts a scenic coastal area with a sandy beach and rocky shoreline. The water is clear and turquoise, typical of tropical locations. There are several large rocks protruding from the water, and lush greenery covers the cliffs in the background. Buildings with thatched roofs are visible on the left side, suggesting a resort or residential area. The sky is mostly clear with some clouds, indicating a sunny day.",
+            "identification": {
+              "primary": [
+                "Beach with rocky shoreline"
+              ],
+              "location": "Bali, Indonesia",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Beach with rocky shoreline",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "coastal",
+              "tropical",
+              "natural_feature",
+              "Bali",
+              "Indonesia"
+            ],
+            "location": "Bali, Indonesia",
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Uluwatu Beach",
+                "specificity_level": "very_specific",
+                "confidence": 0.7,
+                "reasoning": "The rocky shoreline and clear waters are similar to those found at Uluwatu Beach in Bali."
+              },
+              {
+                "guess": "Padang Padang Beach",
+                "specificity_level": "very_specific",
+                "confidence": 0.6,
+                "reasoning": "Padang Padang Beach is known for its rocky formations and clear waters, fitting the description."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Beach with rocky shoreline\"],\n        \"location\": \"Bali, Indonesia\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Beach with rocky shoreline\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"coastal\", \"tropical\", \"natural_feature\", \"Bali\", \"Indonesia\"],\n    \"description\": \"The image depicts a scenic coastal area with a sandy beach and rocky shoreline. The water is clear and turquoise, typical of tropical locations. There are several large rocks protruding from the water, and lush greenery covers the cliffs in the background. Buildings with thatched roofs are visible on the left side, suggesting a resort or residential area. The sky is mostly clear with some clouds, indicating a sunny day.\",\n    \"reasoning\": \"The combination of tropical vegetation, clear turquoise water, and rocky shoreline is characteristic of coastal areas in Bali, Indonesia. The architectural style of the buildings also suggests a tropical resort setting.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Uluwatu Beach\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The rocky shoreline and clear waters are similar to those found at Uluwatu Beach in Bali.\"\n        },\n        {\n            \"guess\": \"Padang Padang Beach\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"Padang Padang Beach is known for its rocky formations and clear waters, fitting the description.\"\n        }\n    ]\n}",
+            "processing_time_seconds": 28.529893159866333
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL:* ([houzz.com]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a coastal scene characterized by rugged cliffs and clear turquoise waters. In the foreground, several large rocks protrude from the shallow water, some topped with small patches of greenery. The beach is sandy, with gentle waves lapping at the shore. To the left, a series of buildings are perched on the cliffside, featuring thatched roofs and balconies that overlook the ocean. These structures are surrounded by lush vegetation, including palm trees and other tropical plants. Th",
+            "description": "The image depicts a coastal scene characterized by rugged cliffs and clear turquoise waters. In the foreground, several large rocks protrude from the shallow water, some topped with small patches of greenery. The beach is sandy, with gentle waves lapping at the shore. To the left, a series of buildings are perched on the cliffside, featuring thatched roofs and balconies that overlook the ocean. These structures are surrounded by lush vegetation, including palm trees and other tropical plants. Th",
+            "architectural_style": "Traditional and modern blend",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 31.47527813911438
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Body of water",
+          "confidence": 0.9794728755950928,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Body of water",
+                "score": 0.9794728755950928
+              },
+              {
+                "source": "label",
+                "name": "Coast",
+                "score": 0.9673106670379639
+              },
+              {
+                "source": "label",
+                "name": "Coastal and oceanic landforms",
+                "score": 0.9603173136711121
+              },
+              {
+                "source": "label",
+                "name": "Sea",
+                "score": 0.9431703090667725
+              },
+              {
+                "source": "label",
+                "name": "Summer",
+                "score": 0.929635763168335
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "River Island",
+                "score": 0.42320001125335693
+              },
+              {
+                "name": "sea-m",
+                "score": 0.4032999873161316
+              },
+              {
+                "name": "River Island",
+                "score": 0.3882000148296356
+              },
+              {
+                "name": "",
+                "score": 0.3882000148296356
+              },
+              {
+                "name": "Islet",
+                "score": 0.3218112587928772
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Body of water",
+                "score": 0.9794728755950928
+              },
+              {
+                "name": "Coast",
+                "score": 0.9673106670379639
+              },
+              {
+                "name": "Coastal and oceanic landforms",
+                "score": 0.9603173136711121
+              },
+              {
+                "name": "Sea",
+                "score": 0.9431703090667725
+              },
+              {
+                "name": "Summer",
+                "score": 0.929635763168335
+              }
+            ],
+            "processing_time_seconds": 12.963609218597412
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/105.heic"
+    }
+  ]
+}

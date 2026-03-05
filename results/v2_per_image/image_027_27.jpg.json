@@ -1,0 +1,1051 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "27.jpg",
+      "timestamp": "2026-01-28T05:10:32.082796",
+      "processing_time_seconds": 60.025497,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 43.7769,
+        "gps_longitude": 11.2586,
+        "location": {
+          "formatted_address": "Via Ricasoli, 99 R, 50121 Firenze FI, Italy",
+          "city": "Firenze",
+          "county": "Città Metropolitana di Firenze",
+          "country": "Italy"
+        },
+        "datetime_original": "2022:07:14 14:07:02",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "David by Michelangelo, Florence, Italy",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The statue's distinctive pose and anatomical detail are characteristic of Michelangelo's David, a well-known artwork located in Florence.",
+            "detailed_description": "The image shows the statue of David by Michelangelo, a masterpiece of Renaissance sculpture created between 1501 and 1504. It is carved from marble and depicts the biblical hero David. The statue is renowned for its detailed anatomy and expression, symbolizing strength and youthful beauty. It is housed in the Galleria dell'Accademia in Florence, Italy.",
+            "identification": {
+              "primary": [
+                "David by Michelangelo"
+              ],
+              "location": "Florence, Italy",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "David",
+                "type": "statue",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Renaissance",
+              "marble",
+              "Florence",
+              "sculpture",
+              "Michelangelo"
+            ],
+            "location": "Florence, Italy",
+            "type": "statue",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"David by Michelangelo\"],\n        \"location\": \"Florence, Italy\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"David\",\n            \"type\": \"statue\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Renaissance\", \"marble\", \"Florence\", \"sculpture\", \"Michelangelo\"],\n    \"description\": \"The image shows the statue of David by Michelangelo, a masterpiece of Renaissance sculpture created between 1501 and 1504. It is carved from marble and depicts the biblical hero David. The statue is renowned for its detailed anatomy and expression, symbolizing strength and youthful beauty. It is housed in the Galleria dell'Accademia in Florence, Italy.\",\n    \"reasoning\": \"The statue's distinctive pose and anatomical detail are characteristic of Michelangelo's David, a well-known artwork located in Florence.\",\n    \"type\": \"statue\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 43.7769,
+              "longitude": 11.2586
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Via Ricasoli, 99 R, 50121 Firenze FI, Italy",
+              "city": "Firenze",
+              "county": "Città Metropolitana di Firenze",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2022:07:14 14:07:02",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 12.500089883804321
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image features a renowned marble sculpture depicting a standing male figure. The statue is characterized by its detailed anatomical precision and lifelike representation, showcasing the subject in a contrapposto stance, where the weight is shifted onto one leg, creating a sense of dynamic movement. The figure is nude, emphasizing the sculptor's skill in rendering human anatomy with meticulous attention to muscle definition and proportion. The right hand is positioned near the shoulder, holdi",
+            "description": "The image features a renowned marble sculpture depicting a standing male figure. The statue is characterized by its detailed anatomical precision and lifelike representation, showcasing the subject in a contrapposto stance, where the weight is shifted onto one leg, creating a sense of dynamic movement. The figure is nude, emphasizing the sculptor's skill in rendering human anatomy with meticulous attention to muscle definition and proportion. The right hand is positioned near the shoulder, holdi",
+            "architectural_style": "Classical",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 43.7769,
+              "longitude": 11.2586
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Via Ricasoli, 99 R, 50121 Firenze FI, Italy",
+              "city": "Firenze",
+              "county": "Città Metropolitana di Firenze",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2022:07:14 14:07:02",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 46.39486289024353
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Sculpture (Firenze, Italy)",
+          "confidence": 0.7168999910354614,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Sculpture",
+            "artist_name": null,
+            "museum_or_location": "Firenze, Italy",
+            "art_style": "Classical sculpture",
+            "art_era": "Classical sculpture",
+            "confidence": 0.7168999910354614,
+            "web_entities": [
+              {
+                "name": "David",
+                "score": 1.4995499849319458
+              },
+              {
+                "name": "Galleria dell’Accademia di Firenze",
+                "score": 0.9530999660491943
+              },
+              {
+                "name": "Sculpture",
+                "score": 0.7168999910354614
+              },
+              {
+                "name": "Statue",
+                "score": 0.7027999758720398
+              },
+              {
+                "name": "Photograph",
+                "score": 0.6510000228881836
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 43.7769,
+              "longitude": 11.2586
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Via Ricasoli, 99 R, 50121 Firenze FI, Italy",
+              "city": "Firenze",
+              "county": "Città Metropolitana di Firenze",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2022:07:14 14:07:02",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 18.79716396331787
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Firenze, Città Metropolitana di Firenze, Italy",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Firenze, Città Metropolitana di Firenze, Italy",
+            "coordinates": {
+              "latitude": 43.7769,
+              "longitude": 11.2586
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Chiesa di Santa Maria Maggiore",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 743,
+                  "vicinity": "Vicolo di Santa Maria Maggiore, 1, Firenze",
+                  "place_id": "ChIJ65TGDwJUKhMR9MneTUcmw5s",
+                  "location": {
+                    "lat": 43.7733168,
+                    "lng": 11.2528428
+                  }
+                },
+                {
+                  "name": "Hercules and Cacus",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 282,
+                  "vicinity": "Piazza della Signoria, Firenze",
+                  "place_id": "ChIJ0_VB8ABUKhMRj7sLt3AMUm0",
+                  "location": {
+                    "lat": 43.76920030000001,
+                    "lng": 11.2558834
+                  }
+                },
+                {
+                  "name": "Basilica of Santa Maria Novella",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 30851,
+                  "vicinity": "Piazza di Santa Maria Novella, 18, Firenze",
+                  "place_id": "ChIJYZMhdalWKhMRsm6GSXl05YU",
+                  "location": {
+                    "lat": 43.77463460000001,
+                    "lng": 11.2493859
+                  }
+                },
+                {
+                  "name": "Cathedral of Santa Maria del Fiore",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 106746,
+                  "vicinity": "Piazza del Duomo, Firenze",
+                  "place_id": "ChIJ9S_ivwNUKhMR9fGqh4RDkVU",
+                  "location": {
+                    "lat": 43.77314499999999,
+                    "lng": 11.2559602
+                  }
+                },
+                {
+                  "name": "Cappelle Medicee",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 6603,
+                  "vicinity": "Piazza di Madonna degli Aldobrandini, 6, Firenze",
+                  "place_id": "ChIJj_nVhwJUKhMRcHH43IISjnI",
+                  "location": {
+                    "lat": 43.7750913,
+                    "lng": 11.2533903
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Basilica of Santa Maria Novella",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 30851,
+                  "vicinity": "Piazza di Santa Maria Novella, 18, Firenze",
+                  "place_id": "ChIJYZMhdalWKhMRsm6GSXl05YU",
+                  "location": {
+                    "lat": 43.77463460000001,
+                    "lng": 11.2493859
+                  }
+                },
+                {
+                  "name": "Cappelle Medicee",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 6603,
+                  "vicinity": "Piazza di Madonna degli Aldobrandini, 6, Firenze",
+                  "place_id": "ChIJj_nVhwJUKhMRcHH43IISjnI",
+                  "location": {
+                    "lat": 43.7750913,
+                    "lng": 11.2533903
+                  }
+                },
+                {
+                  "name": "Museo Nazionale del Bargello",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 8618,
+                  "vicinity": "Via del Proconsolo, 4, Firenze",
+                  "place_id": "ChIJeSvB0gZUKhMR7CVehDqbPCE",
+                  "location": {
+                    "lat": 43.7703981,
+                    "lng": 11.2580078
+                  }
+                },
+                {
+                  "name": "Medici Riccardi Palace",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 9734,
+                  "vicinity": "Via Camillo Cavour, 3, Firenze",
+                  "place_id": "ChIJGwHnGwNUKhMRQHINyFmGy48",
+                  "location": {
+                    "lat": 43.7752136,
+                    "lng": 11.2557272
+                  }
+                },
+                {
+                  "name": "Opera del Duomo Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 11247,
+                  "vicinity": "Piazza del Duomo, 9, Firenze",
+                  "place_id": "ChIJ9S_ivwNUKhMRUYCd7gsp86A",
+                  "location": {
+                    "lat": 43.77317060000001,
+                    "lng": 11.258112
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Grand Hotel Baglioni",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 3248,
+                  "vicinity": "Piazza dell'Unità Italiana, 6, Firenze",
+                  "place_id": "ChIJVSY-yqlWKhMRvt1mmq51lB4",
+                  "location": {
+                    "lat": 43.774635,
+                    "lng": 11.2505918
+                  }
+                },
+                {
+                  "name": "Brunelleschi Hotel",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1466,
+                  "vicinity": "Piazza Sant'Elisabetta, 3, Firenze",
+                  "place_id": "ChIJVYTq1xZLKhMR9hdzECEEL0Q",
+                  "location": {
+                    "lat": 43.771716,
+                    "lng": 11.25577
+                  }
+                },
+                {
+                  "name": "Palazzo Firenze by Baglioni Hotels & Resorts",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 279,
+                  "vicinity": "Via Ghibellina, 87, Firenze",
+                  "place_id": "ChIJJ9GCOAZUKhMRuCFIeQlEgvI",
+                  "location": {
+                    "lat": 43.7699928,
+                    "lng": 11.2623128
+                  }
+                },
+                {
+                  "name": "The Place Firenze",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 251,
+                  "vicinity": "Piazza di Santa Maria Novella, 7, Firenze",
+                  "place_id": "ChIJI4A8galWKhMRMeMpaP5CV9M",
+                  "location": {
+                    "lat": 43.7729256,
+                    "lng": 11.2498047
+                  }
+                },
+                {
+                  "name": "Caffè Gilli",
+                  "types": [
+                    "cafe",
+                    "bakery",
+                    "store",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 9574,
+                  "vicinity": "Via Roma, 1r, Firenze",
+                  "place_id": "ChIJFbiwjwFUKhMRPJ-oDzQyiBU",
+                  "location": {
+                    "lat": 43.7718814,
+                    "lng": 11.2541517
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Piazza delle Belle",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Via Ricasoli, 87 R, Firenze",
+                  "place_id": "ChIJ3RViQQBVKhMRhRJVW2YGxA0",
+                  "location": {
+                    "lat": 43.776429,
+                    "lng": 11.258344
+                  }
+                },
+                {
+                  "name": "Giardino Di Palazzo Grifoni",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Via dei Servi, 51, Firenze",
+                  "place_id": "ChIJVVWlywRUKhMR1cOTsYaE1g0",
+                  "location": {
+                    "lat": 43.77646149999999,
+                    "lng": 11.2596857
+                  }
+                },
+                {
+                  "name": "Pandolfini Palace",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Via San Gallo, 74, Firenze",
+                  "place_id": "ChIJ__8_wRtUKhMRTRSlDHGjSrc",
+                  "location": {
+                    "lat": 43.7804083,
+                    "lng": 11.25973
+                  }
+                },
+                {
+                  "name": "Giardino di San Clemente",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Via Gino Capponi, 15, Firenze",
+                  "place_id": "ChIJAQBAdhpUKhMRDHnxoInxBcM",
+                  "location": {
+                    "lat": 43.7794298,
+                    "lng": 11.2636269
+                  }
+                },
+                {
+                  "name": "Giardino di Palazzo Caccini",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 8,
+                  "vicinity": "Borgo Pinti, 33, Firenze",
+                  "place_id": "ChIJTbKGvQVUKhMRJ59z0JjZxos",
+                  "location": {
+                    "lat": 43.77351290000001,
+                    "lng": 11.2626091
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Chiesa di Santa Maria Maggiore",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 743,
+                  "vicinity": "Vicolo di Santa Maria Maggiore, 1, Firenze",
+                  "place_id": "ChIJ65TGDwJUKhMR9MneTUcmw5s",
+                  "location": {
+                    "lat": 43.7733168,
+                    "lng": 11.2528428
+                  }
+                },
+                {
+                  "name": "Basilica of Santa Maria Novella",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 30851,
+                  "vicinity": "Piazza di Santa Maria Novella, 18, Firenze",
+                  "place_id": "ChIJYZMhdalWKhMRsm6GSXl05YU",
+                  "location": {
+                    "lat": 43.77463460000001,
+                    "lng": 11.2493859
+                  }
+                },
+                {
+                  "name": "Cathedral of Santa Maria del Fiore",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 106746,
+                  "vicinity": "Piazza del Duomo, Firenze",
+                  "place_id": "ChIJ9S_ivwNUKhMR9fGqh4RDkVU",
+                  "location": {
+                    "lat": 43.77314499999999,
+                    "lng": 11.2559602
+                  }
+                },
+                {
+                  "name": "Convento San Paolino",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 21,
+                  "vicinity": "Via di San Paolino, 8, Firenze",
+                  "place_id": "ChIJXW9A5atWKhMRdOHYvlwpimE",
+                  "location": {
+                    "lat": 43.77274889999999,
+                    "lng": 11.2478275
+                  }
+                },
+                {
+                  "name": "Baptistery of St. John",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 9488,
+                  "vicinity": "Piazza San Giovanni, Firenze",
+                  "place_id": "ChIJJQXzvwNUKhMRfYXRv0EzSgc",
+                  "location": {
+                    "lat": 43.77311539999999,
+                    "lng": 11.2550232
+                  }
+                },
+                {
+                  "name": "Comunità Islamica di Firenze e Toscana APS",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 13,
+                  "vicinity": "Via dei Martiri del Popolo, 39R, Firenze",
+                  "place_id": "ChIJmSY7GKFVKhMRkJUKSYdoaow",
+                  "location": {
+                    "lat": 43.7710073,
+                    "lng": 11.2642721
+                  }
+                },
+                {
+                  "name": "Moschea di Firenze Centro",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 323,
+                  "vicinity": "Via dei Martiri del Popolo, 39/R, Firenze",
+                  "place_id": "ChIJ77xKuAhUKhMRtR-sR9D8C_E",
+                  "location": {
+                    "lat": 43.771007,
+                    "lng": 11.264272
+                  }
+                },
+                {
+                  "name": "Synagogue and Jewish Museum of Florence",
+                  "types": [
+                    "synagogue",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2060,
+                  "vicinity": "Via Luigi Carlo Farini, 6, Firenze",
+                  "place_id": "ChIJs67hEw9UKhMR2-UAYlzN3C4",
+                  "location": {
+                    "lat": 43.7727318,
+                    "lng": 11.2663138
+                  }
+                },
+                {
+                  "name": "Old Synagogue, 1882",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 2.5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Via dell'Oche, 5, Firenze",
+                  "place_id": "ChIJYxgOar9VKhMR5tDQbwZH02Q",
+                  "location": {
+                    "lat": 43.77215949999999,
+                    "lng": 11.2563797
+                  }
+                },
+                {
+                  "name": "Great Synagigue in Florene",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Via Luigi Carlo Farini, 4, Firenze",
+                  "place_id": "ChIJPxHO_rBVKhMR3rakLW8VyMw",
+                  "location": {
+                    "lat": 43.7726728,
+                    "lng": 11.2652876
+                  }
+                },
+                {
+                  "name": "Station",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Via Giuseppe la Farina, 5, Firenze",
+                  "place_id": "ChIJGwPkIQBVKhMRtny9GyC0yIs",
+                  "location": {
+                    "lat": 43.77779580000001,
+                    "lng": 11.2705144
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Porcellino Gallery",
+                  "types": [
+                    "art_gallery",
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 119,
+                  "vicinity": "Piazza del Mercato Nuovo, 4, Firenze",
+                  "place_id": "ChIJPySQSgBUKhMRmbVaVAmBH0o",
+                  "location": {
+                    "lat": 43.7698936,
+                    "lng": 11.2539234
+                  }
+                },
+                {
+                  "name": "Medici Riccardi Palace",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 9734,
+                  "vicinity": "Via Camillo Cavour, 3, Firenze",
+                  "place_id": "ChIJGwHnGwNUKhMRQHINyFmGy48",
+                  "location": {
+                    "lat": 43.7752136,
+                    "lng": 11.2557272
+                  }
+                },
+                {
+                  "name": "ShortStop",
+                  "types": [
+                    "art_gallery",
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 35,
+                  "vicinity": "Via Nazionale, 22, Firenze",
+                  "place_id": "ChIJ8XGoWh1UKhMR7wRvkiZ5sJs",
+                  "location": {
+                    "lat": 43.7778751,
+                    "lng": 11.2529732
+                  }
+                },
+                {
+                  "name": "Gadarte",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 25,
+                  "vicinity": "Via Sant'Egidio, 27/r, Firenze",
+                  "place_id": "ChIJrYfb0gVUKhMRQ3id0pvnKgo",
+                  "location": {
+                    "lat": 43.7722893,
+                    "lng": 11.2609468
+                  }
+                },
+                {
+                  "name": "Bottega Montebello - Maurizio Bomberini",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "Via dei Servi, 111-red, Firenze",
+                  "place_id": "ChIJyVPb0QRUKhMRWJI26r9EHC0",
+                  "location": {
+                    "lat": 43.7759305,
+                    "lng": 11.2599026
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Florence",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Florence",
+                  "place_id": "ChIJrdbSgKZWKhMRAyrH7xd51ZM",
+                  "location": {
+                    "lat": 43.7699685,
+                    "lng": 11.2576706
+                  }
+                },
+                {
+                  "name": "Hotel Nuova Italia",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 487,
+                  "vicinity": "Via Faenza, 26, Firenze",
+                  "place_id": "ChIJlebhD6hWKhMRrbUhqaOlaRI",
+                  "location": {
+                    "lat": 43.7765684,
+                    "lng": 11.2518972
+                  }
+                },
+                {
+                  "name": "Aldobrandini",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 319,
+                  "vicinity": "Piazza di Madonna degli Aldobrandini, 8, Firenze",
+                  "place_id": "ChIJqRrdfQJUKhMRMnj9a57IlNU",
+                  "location": {
+                    "lat": 43.7746817,
+                    "lng": 11.2525223
+                  }
+                },
+                {
+                  "name": "B&B di Piazza del Duomo",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 117,
+                  "vicinity": "Via dell' Oriuolo, 49, Firenze",
+                  "place_id": "ChIJz9pZ-ANUKhMRQe01IRoq5PU",
+                  "location": {
+                    "lat": 43.77246479999999,
+                    "lng": 11.2582201
+                  }
+                },
+                {
+                  "name": "Cerretani Hotel Firenze - MGallery Collection",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 910,
+                  "vicinity": "Via de' Cerretani, 68, Firenze",
+                  "place_id": "ChIJ_8zVCwJUKhMRQHofXxCBSjA",
+                  "location": {
+                    "lat": 43.7735415,
+                    "lng": 11.2522641
+                  }
+                }
+              ]
+            },
+            "total_places_found": 41,
+            "photo_timestamp": "2022:07:14 14:07:02",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.8819918632507324
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/27.jpg"
+    },
+    {
+      "image_filename": "27.jpg",
+      "timestamp": "2026-01-28T05:11:32.142071",
+      "processing_time_seconds": 57.408735,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "David by Michelangelo, Florence, Italy",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive style, material, and pose of the statue, along with the setting, strongly indicate it is Michelangelo's 'David', located in Florence.",
+            "detailed_description": "The image shows the famous marble statue 'David' by Michelangelo, a masterpiece of Renaissance sculpture. It depicts the biblical hero David, characterized by his contrapposto stance and detailed anatomical features. The statue is housed in the Galleria dell'Accademia in Florence, Italy. The setting includes a domed ceiling with paneled walls, typical of museum display environments.",
+            "identification": {
+              "primary": [
+                "David by Michelangelo"
+              ],
+              "location": "Florence, Italy",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "David",
+                "type": "statue",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Renaissance",
+              "marble",
+              "Florence",
+              "sculpture",
+              "Michelangelo"
+            ],
+            "location": "Florence, Italy",
+            "type": "statue",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"David by Michelangelo\"],\n        \"location\": \"Florence, Italy\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"David\",\n            \"type\": \"statue\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Renaissance\", \"marble\", \"Florence\", \"sculpture\", \"Michelangelo\"],\n    \"description\": \"The image shows the famous marble statue 'David' by Michelangelo, a masterpiece of Renaissance sculpture. It depicts the biblical hero David, characterized by his contrapposto stance and detailed anatomical features. The statue is housed in the Galleria dell'Accademia in Florence, Italy. The setting includes a domed ceiling with paneled walls, typical of museum display environments.\",\n    \"reasoning\": \"The distinctive style, material, and pose of the statue, along with the setting, strongly indicate it is Michelangelo's 'David', located in Florence.\",\n    \"type\": \"statue\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 9.025695085525513
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image features a renowned marble sculpture depicting a nude male figure standing in a contrapposto pose, which is characterized by the weight resting on one leg while the other is relaxed, creating a slight twist in the torso. The sculpture is highly detailed, showcasing anatomical precision and idealized proportions typical of Renaissance art. The figure's right hand is raised and resting on his shoulder, while his left hand hangs by his side. His expression is contemplative, and his gaze i",
+            "description": "The image features a renowned marble sculpture depicting a nude male figure standing in a contrapposto pose, which is characterized by the weight resting on one leg while the other is relaxed, creating a slight twist in the torso. The sculpture is highly detailed, showcasing anatomical precision and idealized proportions typical of Renaissance art. The figure's right hand is raised and resting on his shoulder, while his left hand hangs by his side. His expression is contemplative, and his gaze i",
+            "architectural_style": "Renaissance",
+            "search_backends_used": [],
+            "processing_time_seconds": 48.38167881965637
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Sculpture",
+          "confidence": 0.7014999985694885,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Sculpture",
+            "artist_name": null,
+            "museum_or_location": null,
+            "art_style": "Classical sculpture",
+            "art_era": "Classical sculpture",
+            "confidence": 0.7014999985694885,
+            "web_entities": [
+              {
+                "name": "David",
+                "score": 1.4995499849319458
+              },
+              {
+                "name": "Galleria dell’Accademia di Firenze",
+                "score": 1.053149938583374
+              },
+              {
+                "name": "Sculpture",
+                "score": 0.7014999985694885
+              },
+              {
+                "name": "Statue",
+                "score": 0.6980999708175659
+              },
+              {
+                "name": "Art",
+                "score": 0.5385000109672546
+              }
+            ],
+            "processing_time_seconds": 19.9237539768219
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/27.jpg"
+    }
+  ]
+}

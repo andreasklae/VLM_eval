@@ -1,0 +1,1083 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "37.jpg",
+      "timestamp": "2026-01-28T05:31:24.188295",
+      "processing_time_seconds": 60.402498,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 50.84765277777778,
+        "gps_longitude": 4.357905555555555,
+        "location": {
+          "formatted_address": "Parc de la statue roi Baudouin, Rue Sainte-Gudule, 1000 Bruxelles, Belgium",
+          "city": "Bruxelles",
+          "county": "Bruxelles",
+          "country": "Belgium"
+        },
+        "datetime_original": "2022:07:21 15:10:54",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Cathedral of St. Michael and St. Gudula, Brussels, Belgium",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style, twin towers, and location in Brussels strongly suggest this is the Cathedral of St. Michael and St. Gudula, a well-known Gothic cathedral in the city.",
+            "detailed_description": "The image shows the Cathedral of St. Michael and St. Gudula in Brussels, Belgium. This Gothic-style cathedral features twin towers and intricate stonework typical of the Gothic architectural style. The facade includes pointed arches, detailed tracery, and large stained glass windows. The cathedral is a significant historical and religious landmark in Brussels.",
+            "identification": {
+              "primary": [
+                "Cathedral of St. Michael and St. Gudula"
+              ],
+              "location": "Brussels, Belgium",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Cathedral of St. Michael and St. Gudula",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Gothic",
+              "cathedral",
+              "stone",
+              "Brussels",
+              "landmark"
+            ],
+            "location": "Brussels, Belgium",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Cathedral of St. Michael and St. Gudula\"],\n        \"location\": \"Brussels, Belgium\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Cathedral of St. Michael and St. Gudula\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Gothic\", \"cathedral\", \"stone\", \"Brussels\", \"landmark\"],\n    \"description\": \"The image shows the Cathedral of St. Michael and St. Gudula in Brussels, Belgium. This Gothic-style cathedral features twin towers and intricate stonework typical of the Gothic architectural style. The facade includes pointed arches, detailed tracery, and large stained glass windows. The cathedral is a significant historical and religious landmark in Brussels.\",\n    \"reasoning\": \"The architectural style, twin towers, and location in Brussels strongly suggest this is the Cathedral of St. Michael and St. Gudula, a well-known Gothic cathedral in the city.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "gps_coordinates": {
+              "latitude": 50.84765277777778,
+              "longitude": 4.357905555555555
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Parc de la statue roi Baudouin, Rue Sainte-Gudule, 1000 Bruxelles, Belgium",
+              "city": "Bruxelles",
+              "county": "Bruxelles",
+              "country": "Belgium"
+            },
+            "photo_timestamp": "2022:07:21 15:10:54",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 8.33961796760559
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a grand Gothic cathedral characterized by its imposing twin towers and intricate architectural details. The facade is dominated by two tall, symmetrical towers that rise majestically, each adorned with pinnacles and decorative stonework. Between the towers, there is a large, ornate central portal featuring a pointed arch typical of Gothic architecture. Above the portal, a large stained glass window is visible, framed by elaborate tracery. The stone facade is richly decorated wi",
+            "description": "The image depicts a grand Gothic cathedral characterized by its imposing twin towers and intricate architectural details. The facade is dominated by two tall, symmetrical towers that rise majestically, each adorned with pinnacles and decorative stonework. Between the towers, there is a large, ornate central portal featuring a pointed arch typical of Gothic architecture. Above the portal, a large stained glass window is visible, framed by elaborate tracery. The stone facade is richly decorated wi",
+            "architectural_style": "Gothic",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 50.84765277777778,
+              "longitude": 4.357905555555555
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Parc de la statue roi Baudouin, Rue Sainte-Gudule, 1000 Bruxelles, Belgium",
+              "city": "Bruxelles",
+              "county": "Bruxelles",
+              "country": "Belgium"
+            },
+            "photo_timestamp": "2022:07:21 15:10:54",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 51.408029079437256
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "St. Michael & St. Gudula Cathedral",
+          "confidence": 1.7011820077896118,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "all_candidates": [
+              {
+                "source": "web",
+                "name": "St. Michael & St. Gudula Cathedral",
+                "score": 1.7011820077896118
+              },
+              {
+                "source": "label",
+                "name": "Tourist attraction",
+                "score": 0.8140254616737366
+              },
+              {
+                "source": "label",
+                "name": "Spire",
+                "score": 0.7850829362869263
+              },
+              {
+                "source": "label",
+                "name": "Classical architecture",
+                "score": 0.7611387372016907
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.7013158798217773
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "St. Michael & St. Gudula Cathedral",
+                "score": 1.7011820077896118
+              },
+              {
+                "name": "",
+                "score": 0.6639000177383423
+              },
+              {
+                "name": "Netherlands",
+                "score": 0.6633000373840332
+              },
+              {
+                "name": "Basílica de la Sagrada Família",
+                "score": 0.5136450529098511
+              },
+              {
+                "name": "",
+                "score": 0.44679999351501465
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.7013158798217773
+              },
+              {
+                "name": "Building",
+                "score": 0.5301797986030579
+              },
+              {
+                "name": "Building",
+                "score": 0.5233750939369202
+              }
+            ],
+            "labels": [
+              {
+                "name": "Tourist attraction",
+                "score": 0.8140254616737366
+              },
+              {
+                "name": "Spire",
+                "score": 0.7850829362869263
+              },
+              {
+                "name": "Classical architecture",
+                "score": 0.7611387372016907
+              },
+              {
+                "name": "Gothic architecture",
+                "score": 0.6951412558555603
+              },
+              {
+                "name": "Cathedral",
+                "score": 0.6704541444778442
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 50.84765277777778,
+              "longitude": 4.357905555555555
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Parc de la statue roi Baudouin, Rue Sainte-Gudule, 1000 Bruxelles, Belgium",
+              "city": "Bruxelles",
+              "county": "Bruxelles",
+              "country": "Belgium"
+            },
+            "photo_timestamp": "2022:07:21 15:10:54",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 22.34924006462097
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Bruxelles, Belgium",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Bruxelles, Belgium",
+            "coordinates": {
+              "latitude": 50.84765277777778,
+              "longitude": 4.357905555555555
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Saint Catherine Catholic Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2136,
+                  "vicinity": "Place Sainte-Catherine 50, Bruxelles",
+                  "place_id": "ChIJXWfZ84bDw0cRzmrmGD0mF1A",
+                  "location": {
+                    "lat": 50.85077039999999,
+                    "lng": 4.348129699999999
+                  }
+                },
+                {
+                  "name": "Manneken Pis",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 80978,
+                  "vicinity": "Brussels",
+                  "place_id": "ChIJ0T1eGXnEw0cRH8GwIKZAuBc",
+                  "location": {
+                    "lat": 50.844993,
+                    "lng": 4.349989
+                  }
+                },
+                {
+                  "name": "Comics Art Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "library",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 3442,
+                  "vicinity": "Rue des Sables 20, Bruxelles",
+                  "place_id": "ChIJwQ0CZX_Dw0cRAgyG-NX_zKA",
+                  "location": {
+                    "lat": 50.85100629999999,
+                    "lng": 4.360131200000001
+                  }
+                },
+                {
+                  "name": "Grand Place",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 171690,
+                  "vicinity": "Grote Markt, Brussel",
+                  "place_id": "ChIJ8fEURn_Ew0cRts_ij101PLA",
+                  "location": {
+                    "lat": 50.8467887,
+                    "lng": 4.352435600000001
+                  }
+                },
+                {
+                  "name": "Grand Casino Brussels VIAGE",
+                  "types": [
+                    "casino",
+                    "tourist_attraction",
+                    "cafe",
+                    "night_club",
+                    "bakery",
+                    "bar",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 1811,
+                  "vicinity": "Boulevard Anspach 30, Bruxelles",
+                  "place_id": "ChIJLSxvO4fDw0cRgKIEPINh93w",
+                  "location": {
+                    "lat": 50.84967750000001,
+                    "lng": 4.351323900000001
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Comics Art Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "library",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 3442,
+                  "vicinity": "Rue des Sables 20, Bruxelles",
+                  "place_id": "ChIJwQ0CZX_Dw0cRAgyG-NX_zKA",
+                  "location": {
+                    "lat": 50.85100629999999,
+                    "lng": 4.360131200000001
+                  }
+                },
+                {
+                  "name": "Brussels City Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2239,
+                  "vicinity": "Grote Markt van, Brussel",
+                  "place_id": "ChIJ003jlX3Dw0cRi0Hhp7GpQKo",
+                  "location": {
+                    "lat": 50.8469398,
+                    "lng": 4.3528752
+                  }
+                },
+                {
+                  "name": "Magritte Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 8108,
+                  "vicinity": "Place Royale 1, Bruxelles",
+                  "place_id": "ChIJPYlgS4fEw0cRhva9IKvp0iQ",
+                  "location": {
+                    "lat": 50.84240570000001,
+                    "lng": 4.3586407
+                  }
+                },
+                {
+                  "name": "Royal Museums of Fine Arts of Belgium",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 9993,
+                  "vicinity": "Rue de la Régence 3, Bruxelles",
+                  "place_id": "ChIJa5YBW4fEw0cRXEdEmmrHNzM",
+                  "location": {
+                    "lat": 50.8416199,
+                    "lng": 4.3581793
+                  }
+                },
+                {
+                  "name": "Musical Instruments Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 6132,
+                  "vicinity": "Rue Montagne de la Cour 2, Bruxelles",
+                  "place_id": "ChIJz2gUtIDEw0cRY-bzLAHSISU",
+                  "location": {
+                    "lat": 50.8428875,
+                    "lng": 4.3590038
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "The Dominican",
+                  "types": [
+                    "night_club",
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2370,
+                  "vicinity": "Rue Léopold 9, Bruxelles",
+                  "place_id": "ChIJsXxX7IDDw0cRYzRU0IPZPBc",
+                  "location": {
+                    "lat": 50.8492581,
+                    "lng": 4.3547629
+                  }
+                },
+                {
+                  "name": "Hotel Le Plaza Brussels",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 3475,
+                  "vicinity": "Boulevard Adolphe Max 118/126, Bruxelles",
+                  "place_id": "ChIJfZTZSoLDw0cRM7OPLhLDSLQ",
+                  "location": {
+                    "lat": 50.85452220000001,
+                    "lng": 4.356221100000001
+                  }
+                },
+                {
+                  "name": "Bedford Hotel & Congress Centre",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 9314,
+                  "vicinity": "Rue du Midi 135, Bruxelles",
+                  "place_id": "ChIJOUvAlXnEw0cRm8QDtalvxKM",
+                  "location": {
+                    "lat": 50.8442326,
+                    "lng": 4.3474068
+                  }
+                },
+                {
+                  "name": "Hotel Mozart",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.1,
+                  "user_ratings_total": 1728,
+                  "vicinity": "Rue du Marché aux Fromages 23, Bruxelles",
+                  "place_id": "ChIJYX7nI3_Ew0cRcfG5trAuEtI",
+                  "location": {
+                    "lat": 50.84563129999999,
+                    "lng": 4.353133999999999
+                  }
+                },
+                {
+                  "name": "Novotel Brussels City Centre",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 3674,
+                  "vicinity": "Rue de la Vierge Noire 32, Bruxelles",
+                  "place_id": "ChIJtd6f_IbDw0cRRSEu3pVdiCk",
+                  "location": {
+                    "lat": 50.8506706,
+                    "lng": 4.3498257
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Parc de Bruxelles",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 21377,
+                  "vicinity": "Brussels",
+                  "place_id": "ChIJ8bkYeoHEw0cRJWjmPRPA384",
+                  "location": {
+                    "lat": 50.8454323,
+                    "lng": 4.364190099999999
+                  }
+                },
+                {
+                  "name": "Square du Petit Sablon",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1532,
+                  "vicinity": "Place du Petit Sablon 12, Bruxelles",
+                  "place_id": "ChIJi1yFcH3Ew0cRMmuGFDc3PBo",
+                  "location": {
+                    "lat": 50.8395691,
+                    "lng": 4.3565988
+                  }
+                },
+                {
+                  "name": "MOA Paris",
+                  "types": [
+                    "jewelry_store",
+                    "store",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1026,
+                  "vicinity": "Carrefour de l'Europe 2, Bruxelles",
+                  "place_id": "ChIJAT8tFn7Ew0cRjfzJavXyqZo",
+                  "location": {
+                    "lat": 50.8454609,
+                    "lng": 4.357445
+                  }
+                },
+                {
+                  "name": "Regent Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Boulevard du Régent 35, Bruxelles",
+                  "place_id": "ChIJ57AG94LEw0cRuObCWL1gfcE",
+                  "location": {
+                    "lat": 50.8455382,
+                    "lng": 4.367861099999999
+                  }
+                },
+                {
+                  "name": "Esquisse du Jardin",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Rue de la Chapelle, Bruxelles",
+                  "place_id": "ChIJ6_8N8XvEw0cR_xOZurn4tok",
+                  "location": {
+                    "lat": 50.8419915,
+                    "lng": 4.3511041
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Saint Catherine Catholic Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2136,
+                  "vicinity": "Place Sainte-Catherine 50, Bruxelles",
+                  "place_id": "ChIJXWfZ84bDw0cRzmrmGD0mF1A",
+                  "location": {
+                    "lat": 50.85077039999999,
+                    "lng": 4.348129699999999
+                  }
+                },
+                {
+                  "name": "St. Michael & St. Gudula Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 23099,
+                  "vicinity": "Esplanade de la Sainte-Gudule, Bruxelles",
+                  "place_id": "ChIJvTZ4_3_Dw0cRzSOE0556hYQ",
+                  "location": {
+                    "lat": 50.8479083,
+                    "lng": 4.3601497
+                  }
+                },
+                {
+                  "name": "Temple de l'Observatoire",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 23,
+                  "vicinity": "Boulevard Bischoffsheim 40, Bruxelles",
+                  "place_id": "ChIJ-SBHCHzDw0cRz7U3rHcIIjY",
+                  "location": {
+                    "lat": 50.8526097,
+                    "lng": 4.3664887
+                  }
+                },
+                {
+                  "name": "Église Notre-Dame de la Chapelle",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1886,
+                  "vicinity": "Place de la Chapelle, Bruxelles",
+                  "place_id": "ChIJh1fm9HvEw0cRo5ZZd3FdmyQ",
+                  "location": {
+                    "lat": 50.84156309999999,
+                    "lng": 4.351109500000001
+                  }
+                },
+                {
+                  "name": "Eglise et Tourisme Bruxelles ASBL",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1,
+                  "vicinity": "Rue du Bois Sauvage 15, Bruxelles",
+                  "place_id": "ChIJKf1_0X_Dw0cRJvq9AhjrlEs",
+                  "location": {
+                    "lat": 50.84808019999999,
+                    "lng": 4.361365
+                  }
+                },
+                {
+                  "name": "DIOGONDIRAL ET HOORE GOOGA",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 5,
+                  "vicinity": "Rue d'Anderlecht 30, Bruxelles",
+                  "place_id": "ChIJB54uaQDFw0cRtD-NhSh7_Jc",
+                  "location": {
+                    "lat": 50.8453424,
+                    "lng": 4.344737199999999
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Mira",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Rue des Pierres 16, Bruxelles",
+                  "place_id": "ChIJ05F1hXjEw0cRbM4zpRAxA98",
+                  "location": {
+                    "lat": 50.8474675,
+                    "lng": 4.349756699999999
+                  }
+                },
+                {
+                  "name": "YellowKorner",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 73,
+                  "vicinity": "Place du Grand Sablon 43, Bruxelles",
+                  "place_id": "ChIJt89fMHzEw0cRBEEC4CdpFbY",
+                  "location": {
+                    "lat": 50.8412415,
+                    "lng": 4.3540331
+                  }
+                },
+                {
+                  "name": "Greta Meert Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 36,
+                  "vicinity": "Rue du Canal 13, Bruxelles",
+                  "place_id": "ChIJ3W5SQYTDw0cRlkdUH7_DfOU",
+                  "location": {
+                    "lat": 50.8547614,
+                    "lng": 4.3514952
+                  }
+                },
+                {
+                  "name": "Collectors' Gallery",
+                  "types": [
+                    "art_gallery",
+                    "jewelry_store",
+                    "home_goods_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 5,
+                  "vicinity": "Rue des Minimes 12, Bruxelles",
+                  "place_id": "ChIJS1fkgH7Ew0cRgC7yAcC3yeE",
+                  "location": {
+                    "lat": 50.841067,
+                    "lng": 4.353872
+                  }
+                },
+                {
+                  "name": "Avant-g'artiste Sprl",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Rue de la Montagne 39, Bruxelles",
+                  "place_id": "ChIJQd5njH_Ew0cRceVUeoS_pzk",
+                  "location": {
+                    "lat": 50.8473626,
+                    "lng": 4.3567201
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Brussels",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Brussels",
+                  "place_id": "ChIJZ2jHc-2kw0cRpwJzeGY6i8E",
+                  "location": {
+                    "lat": 50.84770289999999,
+                    "lng": 4.357200100000001
+                  }
+                },
+                {
+                  "name": "Hotel NH Brussels Carrefour de l'Europe",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1084,
+                  "vicinity": "Rue Marche aux Herbes, Rue du Marché aux Herbes 110, Bruxelles",
+                  "place_id": "ChIJKVwdoH_Ew0cRG19BpvA7MwI",
+                  "location": {
+                    "lat": 50.846384,
+                    "lng": 4.35532
+                  }
+                },
+                {
+                  "name": "The Dominican",
+                  "types": [
+                    "night_club",
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2370,
+                  "vicinity": "Rue Léopold 9, Bruxelles",
+                  "place_id": "ChIJsXxX7IDDw0cRYzRU0IPZPBc",
+                  "location": {
+                    "lat": 50.8492581,
+                    "lng": 4.3547629
+                  }
+                },
+                {
+                  "name": "Hotel Floris Arlequin Grand Place",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 1658,
+                  "vicinity": "Rue de la Fourche 17/19, Bruxelles",
+                  "place_id": "ChIJaeKKqIDDw0cRPHsrdUp26hc",
+                  "location": {
+                    "lat": 50.84809229999999,
+                    "lng": 4.353150299999999
+                  }
+                },
+                {
+                  "name": "Warwick Grand-Place Brussels",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 3307,
+                  "vicinity": "Rue Duquesnoy 5, Bruxelles",
+                  "place_id": "ChIJXYWCAn_Ew0cRFOhcq-heq0s",
+                  "location": {
+                    "lat": 50.8452508,
+                    "lng": 4.3544393
+                  }
+                }
+              ]
+            },
+            "total_places_found": 36,
+            "photo_timestamp": "2022:07:21 15:10:54",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.3857579231262207
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/37.jpg"
+    },
+    {
+      "image_filename": "37.jpg",
+      "timestamp": "2026-01-28T05:32:24.619493",
+      "processing_time_seconds": 65.227303,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Cathedral of St. Michael and St. Gudula, Brussels, Belgium",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and twin towers are characteristic of Gothic cathedrals, and the specific design elements match those of the Cathedral of St. Michael and St. Gudula in Brussels.",
+            "detailed_description": "The image shows the Cathedral of St. Michael and St. Gudula, a prominent Gothic-style cathedral located in Brussels, Belgium. The facade features twin towers with intricate stonework and pointed arches typical of Gothic architecture. The central entrance is flanked by large windows with tracery, and the structure is adorned with detailed carvings and spires.",
+            "identification": {
+              "primary": [
+                "Cathedral of St. Michael and St. Gudula"
+              ],
+              "location": "Brussels, Belgium",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Cathedral of St. Michael and St. Gudula",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Gothic",
+              "architecture",
+              "cathedral",
+              "Belgium",
+              "landmark"
+            ],
+            "location": "Brussels, Belgium",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Cathedral of St. Michael and St. Gudula\"],\n        \"location\": \"Brussels, Belgium\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Cathedral of St. Michael and St. Gudula\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Gothic\", \"architecture\", \"cathedral\", \"Belgium\", \"landmark\"],\n    \"description\": \"The image shows the Cathedral of St. Michael and St. Gudula, a prominent Gothic-style cathedral located in Brussels, Belgium. The facade features twin towers with intricate stonework and pointed arches typical of Gothic architecture. The central entrance is flanked by large windows with tracery, and the structure is adorned with detailed carvings and spires.\",\n    \"reasoning\": \"The architectural style and twin towers are characteristic of Gothic cathedrals, and the specific design elements match those of the Cathedral of St. Michael and St. Gudula in Brussels.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "processing_time_seconds": 11.500252962112427
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a grand Gothic-style cathedral characterized by its imposing twin towers and intricate architectural details. The facade is dominated by two tall, symmetrical towers, each adorned with ornate stonework and vertical lines that emphasize their height. Between the towers, a large, pointed arch window features elaborate tracery, typical of Gothic architecture, allowing light to filter into the interior. Below this window, three arched doorways serve as the main entrance, each frame",
+            "description": "The image depicts a grand Gothic-style cathedral characterized by its imposing twin towers and intricate architectural details. The facade is dominated by two tall, symmetrical towers, each adorned with ornate stonework and vertical lines that emphasize their height. Between the towers, a large, pointed arch window features elaborate tracery, typical of Gothic architecture, allowing light to filter into the interior. Below this window, three arched doorways serve as the main entrance, each frame",
+            "architectural_style": "Gothic",
+            "search_backends_used": [],
+            "processing_time_seconds": 53.72530817985535
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "St. Michael & St. Gudula Cathedral",
+          "confidence": 1.7009403705596924,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "all_candidates": [
+              {
+                "source": "web",
+                "name": "St. Michael & St. Gudula Cathedral",
+                "score": 1.7009403705596924
+              },
+              {
+                "source": "label",
+                "name": "Tourist attraction",
+                "score": 0.8140254616737366
+              },
+              {
+                "source": "label",
+                "name": "Spire",
+                "score": 0.7850829362869263
+              },
+              {
+                "source": "label",
+                "name": "Classical architecture",
+                "score": 0.7611387372016907
+              },
+              {
+                "source": "web",
+                "name": "",
+                "score": 0.7014999985694885
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "St. Michael & St. Gudula Cathedral",
+                "score": 1.7009403705596924
+              },
+              {
+                "name": "",
+                "score": 0.7014999985694885
+              },
+              {
+                "name": "Netherlands",
+                "score": 0.6540600657463074
+              },
+              {
+                "name": "",
+                "score": 0.5737000107765198
+              },
+              {
+                "name": "visit.brussels",
+                "score": 0.44920000433921814
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.7013158798217773
+              },
+              {
+                "name": "Building",
+                "score": 0.5301797986030579
+              },
+              {
+                "name": "Building",
+                "score": 0.5233750939369202
+              }
+            ],
+            "labels": [
+              {
+                "name": "Tourist attraction",
+                "score": 0.8140254616737366
+              },
+              {
+                "name": "Spire",
+                "score": 0.7850829362869263
+              },
+              {
+                "name": "Classical architecture",
+                "score": 0.7611387372016907
+              },
+              {
+                "name": "Gothic architecture",
+                "score": 0.6951412558555603
+              },
+              {
+                "name": "Cathedral",
+                "score": 0.6704541444778442
+              }
+            ],
+            "processing_time_seconds": 22.84333300590515
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/37.jpg"
+    }
+  ]
+}

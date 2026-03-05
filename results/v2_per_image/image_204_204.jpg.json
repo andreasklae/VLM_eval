@@ -1,0 +1,1019 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "204.jpg",
+      "timestamp": "2026-01-28T04:44:52.840623",
+      "processing_time_seconds": 59.661643,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 45.81914444444445,
+        "gps_longitude": 9.095552777777778,
+        "location": {
+          "formatted_address": "Piazza Bonacossa, 8, 22034 Brunate CO, Italy",
+          "city": "Brunate",
+          "county": "Provincia di Como",
+          "country": "Italy"
+        },
+        "datetime_original": "2025:12:15 13:32:24",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Lake Como, Brunate, Italy",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Brunate, Italy, which is known for its views of Lake Como. The visible body of water and surrounding landscape match the characteristics of Lake Como.",
+            "detailed_description": "The image shows a view of Lake Como, a large lake in Northern Italy known for its picturesque scenery and surrounding mountains. The lake is visible in the background, surrounded by hills and residential areas. The foreground includes trees and part of a building, typical of the architecture found in Brunate, a town overlooking the lake.",
+            "identification": {
+              "primary": [
+                "Lake Como"
+              ],
+              "location": "Brunate, Italy",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Lake Como",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "lake",
+              "Italy",
+              "landscape"
+            ],
+            "location": "Brunate, Italy",
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Lake Como\"],\n        \"location\": \"Brunate, Italy\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Lake Como\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"lake\", \"Italy\", \"landscape\"],\n    \"description\": \"The image shows a view of Lake Como, a large lake in Northern Italy known for its picturesque scenery and surrounding mountains. The lake is visible in the background, surrounded by hills and residential areas. The foreground includes trees and part of a building, typical of the architecture found in Brunate, a town overlooking the lake.\",\n    \"reasoning\": \"The location metadata indicates Brunate, Italy, which is known for its views of Lake Como. The visible body of water and surrounding landscape match the characteristics of Lake Como.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 45.81914444444445,
+              "longitude": 9.095552777777778
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Piazza Bonacossa, 8, 22034 Brunate CO, Italy",
+              "city": "Brunate",
+              "county": "Provincia di Como",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2025:12:15 13:32:24",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 9.420200109481812
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image captures a scenic view from Brunate, Italy, overlooking the town of Como and its surrounding landscape. The foreground features a yellow building with a dark slate roof, typical of residential architecture in the region. The structure exhibits simple, clean lines and is partially obscured by trees and branches. The roof has a steep pitch, which is characteristic of buildings in areas with significant rainfall or snow. Surrounding the building are tall evergreen trees, likely cypresses,",
+            "description": "The image captures a scenic view from Brunate, Italy, overlooking the town of Como and its surrounding landscape. The foreground features a yellow building with a dark slate roof, typical of residential architecture in the region. The structure exhibits simple, clean lines and is partially obscured by trees and branches. The roof has a steep pitch, which is characteristic of buildings in areas with significant rainfall or snow. Surrounding the building are tall evergreen trees, likely cypresses,",
+            "architectural_style": "Modern residential",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 45.81914444444445,
+              "longitude": 9.095552777777778
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Piazza Bonacossa, 8, 22034 Brunate CO, Italy",
+              "city": "Brunate",
+              "county": "Provincia di Como",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2025:12:15 13:32:24",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 49.55851101875305
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Branch",
+          "confidence": 0.9828283190727234,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Branch",
+                "score": 0.9828283190727234
+              },
+              {
+                "source": "label",
+                "name": "Leaf",
+                "score": 0.9813185930252075
+              },
+              {
+                "source": "label",
+                "name": "Tree",
+                "score": 0.9768044948577881
+              },
+              {
+                "source": "web",
+                "name": "Ponderosa pine",
+                "score": 0.45664653182029724
+              },
+              {
+                "source": "web",
+                "name": "Eastern white pine",
+                "score": 0.41539719700813293
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Ponderosa pine",
+                "score": 0.45664653182029724
+              },
+              {
+                "name": "Eastern white pine",
+                "score": 0.41539719700813293
+              },
+              {
+                "name": "Pine",
+                "score": 0.3984000086784363
+              },
+              {
+                "name": "Black spruce",
+                "score": 0.37731459736824036
+              },
+              {
+                "name": "Shortleaf pine",
+                "score": 0.3253999948501587
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9876881837844849
+              },
+              {
+                "name": "Branch",
+                "score": 0.9828283190727234
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9813464879989624
+              },
+              {
+                "name": "Leaf",
+                "score": 0.9813185930252075
+              },
+              {
+                "name": "Tree",
+                "score": 0.9768044948577881
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 45.81914444444445,
+              "longitude": 9.095552777777778
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Piazza Bonacossa, 8, 22034 Brunate CO, Italy",
+              "city": "Brunate",
+              "county": "Provincia di Como",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2025:12:15 13:32:24",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 21.285914182662964
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Brunate, Provincia di Como, Italy",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Brunate, Provincia di Como, Italy",
+            "coordinates": {
+              "latitude": 45.81914444444445,
+              "longitude": 9.095552777777778
+            },
+            "search_range_meters": 2000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "War Memorial",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 938,
+                  "vicinity": "Viale Giancarlo Puecher, Como",
+                  "place_id": "ChIJ57lU-q2dhkcRVxcvoMwyZ5k",
+                  "location": {
+                    "lat": 45.8149149,
+                    "lng": 9.073551199999999
+                  }
+                },
+                {
+                  "name": "Fontana Campari",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 30,
+                  "vicinity": "Via Roma, 13, Brunate",
+                  "place_id": "ChIJ4Rz0vt-dhkcRQfcFu6DsqtY",
+                  "location": {
+                    "lat": 45.81971,
+                    "lng": 9.0950483
+                  }
+                },
+                {
+                  "name": "Stunning Bike Co-Tours | Bike Rentals & Luggage Storage",
+                  "types": [
+                    "tourist_attraction",
+                    "travel_agency",
+                    "storage",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 95,
+                  "vicinity": "Inside the hallway, Via Alessandro Manzoni, 12, Como",
+                  "place_id": "ChIJW1ORGcqdhkcR33aAzrapMeA",
+                  "location": {
+                    "lat": 45.813671,
+                    "lng": 9.084886000000001
+                  }
+                },
+                {
+                  "name": "Life Electric",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1059,
+                  "vicinity": "Diga foranea Piero Caldirola, Como",
+                  "place_id": "ChIJ3XNeo0uchkcRTbJQBdIhkg0",
+                  "location": {
+                    "lat": 45.815375,
+                    "lng": 9.080258
+                  }
+                },
+                {
+                  "name": "Museo Archeologico Giovio",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 175,
+                  "vicinity": "Piazza Medaglie d'Oro Comasche, 1, Como",
+                  "place_id": "ChIJN9WdVqeOhkcR2OCU29Z0vsA",
+                  "location": {
+                    "lat": 45.8086754,
+                    "lng": 9.0861798
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Opera don Guanella - Provincia Sacro Cuore",
+                  "types": [
+                    "museum",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 10,
+                  "vicinity": "Via Tommaso Grossi, 18, Como",
+                  "place_id": "ChIJtYE7wcydhkcRSPIRpOODw1U",
+                  "location": {
+                    "lat": 45.8093292,
+                    "lng": 9.091227700000001
+                  }
+                },
+                {
+                  "name": "Museo Archeologico Giovio",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 175,
+                  "vicinity": "Piazza Medaglie d'Oro Comasche, 1, Como",
+                  "place_id": "ChIJN9WdVqeOhkcR2OCU29Z0vsA",
+                  "location": {
+                    "lat": 45.8086754,
+                    "lng": 9.0861798
+                  }
+                },
+                {
+                  "name": "Civic Museum of the Risorgimento",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 38,
+                  "vicinity": "Piazza Medaglie d'Oro Comasche, 1, Como",
+                  "place_id": "ChIJwapfOjWchkcRuyifWrQUX7Y",
+                  "location": {
+                    "lat": 45.80847839999999,
+                    "lng": 9.0861586
+                  }
+                },
+                {
+                  "name": "Tempio Voltiano",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 4698,
+                  "vicinity": "Viale Guglielmo Marconi, 1, Como",
+                  "place_id": "ChIJ8es9GrKdhkcR3dUXw-DrI9o",
+                  "location": {
+                    "lat": 45.8148429,
+                    "lng": 9.0752774
+                  }
+                },
+                {
+                  "name": "Pinacoteca Civica",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 352,
+                  "vicinity": "Via Armando Diaz, 84, Como",
+                  "place_id": "ChIJqz1AgEqchkcR6BTlBarPyXs",
+                  "location": {
+                    "lat": 45.807378,
+                    "lng": 9.083307
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Hotel Paradiso Como",
+                  "types": [
+                    "atm",
+                    "bar",
+                    "lodging",
+                    "finance",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 367,
+                  "vicinity": "Via Giacomo Scalini, 70, Brunate",
+                  "place_id": "ChIJK127Fd2dhkcRXM3cdG_kJUE",
+                  "location": {
+                    "lat": 45.826038,
+                    "lng": 9.102476599999997
+                  }
+                },
+                {
+                  "name": "Ristorante albergo Capanna C.A.O. - Brunate (co)",
+                  "types": [
+                    "lodging",
+                    "cafe",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 433,
+                  "vicinity": "Via alle Colme, 35, Brunate",
+                  "place_id": "ChIJU-R9VHWehkcRPqr4ne-AMnw",
+                  "location": {
+                    "lat": 45.8254282,
+                    "lng": 9.112551199999999
+                  }
+                },
+                {
+                  "name": "Hotel Tre Re",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 525,
+                  "vicinity": "Via Pietro Boldoni, 20, Como",
+                  "place_id": "ChIJebuRHbWdhkcR2WqdnX8LlT8",
+                  "location": {
+                    "lat": 45.8112655,
+                    "lng": 9.0816553
+                  }
+                },
+                {
+                  "name": "Ristorante - Hotel Locanda Milano 1873",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1303,
+                  "vicinity": "Via Alessandro Volta, 62, Brunate",
+                  "place_id": "ChIJI2effsWdhkcRi8bnTzmZuhI",
+                  "location": {
+                    "lat": 45.81835,
+                    "lng": 9.096269999999999
+                  }
+                },
+                {
+                  "name": "Ristorante Falchetto Hotel",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 363,
+                  "vicinity": "Via ai Piani, 73, Brunate",
+                  "place_id": "ChIJU16JqLidhkcROpE8kY3LFa4",
+                  "location": {
+                    "lat": 45.82274,
+                    "lng": 9.08682
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Parco di Villa Franceschini",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.5,
+                  "user_ratings_total": 14,
+                  "vicinity": "Brunate",
+                  "place_id": "ChIJq-V7_z-dhkcReDHgjZlraVU",
+                  "location": {
+                    "lat": 45.8189664,
+                    "lng": 9.0970555
+                  }
+                },
+                {
+                  "name": "Educazione Cinofila Federico Gueli",
+                  "types": [
+                    "park",
+                    "school",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 12,
+                  "vicinity": "Via Maurizio Monti, Como",
+                  "place_id": "ChIJO4YvdjmfhkcR92xbifrAKhM",
+                  "location": {
+                    "lat": 45.8150258,
+                    "lng": 9.09427
+                  }
+                },
+                {
+                  "name": "Cascata",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 2.3,
+                  "user_ratings_total": 3,
+                  "vicinity": "Salita San Donato, Como",
+                  "place_id": "ChIJab6Qc1udhkcRekcwYSr-f_w",
+                  "location": {
+                    "lat": 45.8133961,
+                    "lng": 9.0978414
+                  }
+                },
+                {
+                  "name": "Parco Pubblico Cav. Eugenio Marenghi - Brunate (co)",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 21,
+                  "vicinity": "Via Giacomo Scalini, 80, Brunate",
+                  "place_id": "ChIJK45uMd2dhkcRSatjOftvzA4",
+                  "location": {
+                    "lat": 45.82566910000001,
+                    "lng": 9.1016341
+                  }
+                },
+                {
+                  "name": "Area cani di Piazza del Popolo",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Piazza del Popolo, Como",
+                  "place_id": "ChIJEwQmHQCdhkcRm9YmJb212iY",
+                  "location": {
+                    "lat": 45.8116539,
+                    "lng": 9.0857064
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Chiesa Parrocchiale di San Giuliano Martire",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 29,
+                  "vicinity": "Via Maurizio Monti, 53, Como",
+                  "place_id": "ChIJBy6uvsudhkcRvBGK6hWGuBg",
+                  "location": {
+                    "lat": 45.8125889,
+                    "lng": 9.089258599999999
+                  }
+                },
+                {
+                  "name": "Opera don Guanella - Provincia Sacro Cuore",
+                  "types": [
+                    "museum",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 10,
+                  "vicinity": "Via Tommaso Grossi, 18, Como",
+                  "place_id": "ChIJtYE7wcydhkcRSPIRpOODw1U",
+                  "location": {
+                    "lat": 45.8093292,
+                    "lng": 9.091227700000001
+                  }
+                },
+                {
+                  "name": "Sodalizio Terz'Ordine Secolare Francescano Ancelle del Signore",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 22,
+                  "vicinity": "Via Giacomo Scalini, 14, Brunate",
+                  "place_id": "ChIJBwOVXMSdhkcRYP9lo64bB9Y",
+                  "location": {
+                    "lat": 45.82111279999999,
+                    "lng": 9.096899500000001
+                  }
+                },
+                {
+                  "name": "Chiesa di San Provino",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 26,
+                  "vicinity": "Piazza Roma, Como",
+                  "place_id": "ChIJh0tMxrWdhkcRHcPQAr5me5o",
+                  "location": {
+                    "lat": 45.81298169999999,
+                    "lng": 9.0838696
+                  }
+                },
+                {
+                  "name": "Opera Don Guanella Como",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 330,
+                  "vicinity": "Via Tommaso Grossi, 18, Como",
+                  "place_id": "ChIJ6SIqscydhkcRvTyKTO2kflw",
+                  "location": {
+                    "lat": 45.80940080000001,
+                    "lng": 9.0912237
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Studio Fabrizio Bellanca - Artista in Como",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 10,
+                  "vicinity": "Via Borgo Vico, 35, Como",
+                  "place_id": "ChIJA59uNk2chkcRQa6GCQ6tR50",
+                  "location": {
+                    "lat": 45.8104536,
+                    "lng": 9.0730744
+                  }
+                },
+                {
+                  "name": "Atena Galleria Darte",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 5,
+                  "vicinity": "Lungo Lario Trieste, 44, Como",
+                  "place_id": "ChIJzQgt97adhkcRtlQevUiOUf8",
+                  "location": {
+                    "lat": 45.8161183,
+                    "lng": 9.0830062
+                  }
+                },
+                {
+                  "name": "Galleria D'Arte Il Salotto",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 4,
+                  "vicinity": "Via Carloni, 5c, Como",
+                  "place_id": "ChIJW9FRMjKchkcRYT5r8wMpA9c",
+                  "location": {
+                    "lat": 45.80477399999999,
+                    "lng": 9.091963499999999
+                  }
+                },
+                {
+                  "name": "Wall Paint Juvarra.Txt by Fabrizio Musa",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Via Vittorio Emanuele II, 40, Como",
+                  "place_id": "ChIJB6c9GFqdhkcR16D8zPUyh6Y",
+                  "location": {
+                    "lat": 45.8108715,
+                    "lng": 9.083753699999997
+                  }
+                },
+                {
+                  "name": "San Pietro in Atrio",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 80,
+                  "vicinity": "Via Odescalchi, Como",
+                  "place_id": "ChIJDftyVjWchkcRIIJxMKoWnZI",
+                  "location": {
+                    "lat": 45.8091989,
+                    "lng": 9.0842624
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Como",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Como",
+                  "place_id": "ChIJY-0nEEichkcRJPVfeK-Wm7k",
+                  "location": {
+                    "lat": 45.8063817,
+                    "lng": 9.0851867
+                  }
+                },
+                {
+                  "name": "Hotel Metropole Suisse",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 1062,
+                  "vicinity": "Piazza Camillo Benso Conte di Cavour, 19, Como",
+                  "place_id": "ChIJ145qbrSdhkcRW-An6xoM0NU",
+                  "location": {
+                    "lat": 45.81302729999999,
+                    "lng": 9.0801526
+                  }
+                },
+                {
+                  "name": "Albergo Terminus",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 536,
+                  "vicinity": "Lungo Lario Trieste, 14, Como",
+                  "place_id": "ChIJz2jUg7adhkcRaOmiDczGFjM",
+                  "location": {
+                    "lat": 45.81367699999999,
+                    "lng": 9.081662999999999
+                  }
+                },
+                {
+                  "name": "The Residence Diaz - 86",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 150,
+                  "vicinity": "Via Armando Diaz, 86, Como",
+                  "place_id": "ChIJNUj6fzWchkcRTkbN-FCljVU",
+                  "location": {
+                    "lat": 45.8071282,
+                    "lng": 9.083617900000002
+                  }
+                },
+                {
+                  "name": "Hotel Marco'S",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 274,
+                  "vicinity": "Via Coloniola, 43, Como",
+                  "place_id": "ChIJB1u9BLedhkcRBL8GiX-elWc",
+                  "location": {
+                    "lat": 45.8171385,
+                    "lng": 9.083168199999998
+                  }
+                }
+              ]
+            },
+            "total_places_found": 35,
+            "photo_timestamp": "2025:12:15 13:32:24",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.4358646869659424
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/204.jpg"
+    },
+    {
+      "image_filename": "204.jpg",
+      "timestamp": "2026-01-28T04:45:52.545999",
+      "processing_time_seconds": 60.851292,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Lake Como, Como, Italy",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive shape and setting of the lake, along with the surrounding mountainous terrain, suggest it is Lake Como. The architecture and vegetation are consistent with the region.",
+            "detailed_description": "The image shows a scenic view of Lake Como, a large lake in Northern Italy known for its picturesque landscapes and surrounding mountains. The lake is visible in the background, surrounded by hills and residential areas. The foreground includes trees and a building with a sloped roof, typical of the architecture found in the region.",
+            "identification": {
+              "primary": [
+                "Lake Como"
+              ],
+              "location": "Como, Italy",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Lake Como",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "lake",
+              "natural_feature",
+              "Italy",
+              "landscape"
+            ],
+            "location": "Como, Italy",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Lake Como\"],\n        \"location\": \"Como, Italy\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Lake Como\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"lake\", \"natural_feature\", \"Italy\", \"landscape\"],\n    \"description\": \"The image shows a scenic view of Lake Como, a large lake in Northern Italy known for its picturesque landscapes and surrounding mountains. The lake is visible in the background, surrounded by hills and residential areas. The foreground includes trees and a building with a sloped roof, typical of the architecture found in the region.\",\n    \"reasoning\": \"The distinctive shape and setting of the lake, along with the surrounding mountainous terrain, suggest it is Lake Como. The architecture and vegetation are consistent with the region.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 8.188977241516113
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image presents a scenic view featuring a serene landscape with a body of water, likely a lake, surrounded by mountainous terrain. The lake is visible in the mid-ground, reflecting the sky's light blue hue. The mountains in the background are partially obscured by a gentle haze, suggesting a peaceful, tranquil atmosphere. The foreground includes a building with a yellow facade and a dark roof, partially visible behind a tree with bare branches, indicating a winter or early spring setting. The",
+            "description": "The image presents a scenic view featuring a serene landscape with a body of water, likely a lake, surrounded by mountainous terrain. The lake is visible in the mid-ground, reflecting the sky's light blue hue. The mountains in the background are partially obscured by a gentle haze, suggesting a peaceful, tranquil atmosphere. The foreground includes a building with a yellow facade and a dark roof, partially visible behind a tree with bare branches, indicating a winter or early spring setting. The",
+            "architectural_style": "Residential building with modern elements",
+            "search_backends_used": [],
+            "processing_time_seconds": 52.65971302986145
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Branch",
+          "confidence": 0.9828283190727234,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Branch",
+                "score": 0.9828283190727234
+              },
+              {
+                "source": "label",
+                "name": "Leaf",
+                "score": 0.9813185930252075
+              },
+              {
+                "source": "label",
+                "name": "Tree",
+                "score": 0.9768044948577881
+              },
+              {
+                "source": "web",
+                "name": "Ponderosa pine",
+                "score": 0.45700255036354065
+              },
+              {
+                "source": "web",
+                "name": "Eastern white pine",
+                "score": 0.41512617468833923
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Ponderosa pine",
+                "score": 0.45700255036354065
+              },
+              {
+                "name": "Eastern white pine",
+                "score": 0.41512617468833923
+              },
+              {
+                "name": "Pine",
+                "score": 0.3984000086784363
+              },
+              {
+                "name": "Black spruce",
+                "score": 0.37731459736824036
+              },
+              {
+                "name": "Shortleaf pine",
+                "score": 0.3253999948501587
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9876881837844849
+              },
+              {
+                "name": "Branch",
+                "score": 0.9828283190727234
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9813464879989624
+              },
+              {
+                "name": "Leaf",
+                "score": 0.9813185930252075
+              },
+              {
+                "name": "Tree",
+                "score": 0.9768044948577881
+              }
+            ],
+            "processing_time_seconds": 21.127351760864258
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/204.jpg"
+    }
+  ]
+}

@@ -1,0 +1,955 @@
+{
+  "image_id": 199,
+  "filename": "199.jpg",
+  "ground_truth": {
+    "description": "Photo of Helvetia building in Vienna. Should describe architecture (typical Vienna), read \"Helvetia\" text, understand which building. Should definitely get with location metadata.",
+    "photographer_description": "Photo of the Helvetia building in Vienna. It should at the very least be able to describe the architecture and hopefully see that it is typical of Vienna. It should also be able to read the «Helvetia» text on the building and understand which building it is. It should definitely get it with location metadata.",
+    "locations": [
+      {
+        "name": "Near Stephansplatz, Vienna, Vienna, Austria",
+        "hierarchy": {
+          "country": "Austria",
+          "region": "Vienna",
+          "city": "Vienna",
+          "exact": "Near Stephansplatz"
+        }
+      }
+    ],
+    "entities": [
+      {
+        "name": "Helvetia building",
+        "type": "landmark",
+        "notes": null,
+        "importance": "medium",
+        "max_specificity": 5
+      },
+      {
+        "name": "Hoher markt",
+        "type": "public_space",
+        "notes": "",
+        "max_specificity": 5,
+        "importance": "medium",
+        "added_by": "human_evaluator"
+      },
+      {
+        "name": "Innere Stadt Vienna",
+        "type": "district",
+        "notes": "",
+        "max_specificity": 4,
+        "importance": "high",
+        "added_by": "human_evaluator"
+      },
+      {
+        "name": "Ankeruhr",
+        "type": "landmark",
+        "notes": "",
+        "max_specificity": 5,
+        "importance": "medium",
+        "added_by": "human_evaluator"
+      }
+    ],
+    "scene_type": [
+      "architecture"
+    ],
+    "key_visual_elements": [
+      "Viennese architecture",
+      "\"Helvetia\" text on building",
+      "Historic facade"
+    ],
+    "max_specificity": "Specific",
+    "difficulty": "Easy (text visible, Vienna style)",
+    "notes": "Should read \"Helvetia\" text.",
+    "gps_metadata": {
+      "gps_latitude": 48.21082777777778,
+      "gps_longitude": 16.372983333333334,
+      "reverse_geocoded": {
+        "formatted_address": "Hoher Markt 10, 1010 Wien, Austria",
+        "city": "Wien",
+        "county": "Wien",
+        "country": "Austria"
+      }
+    },
+    "image_categories": [
+      "landmark",
+      "urban"
+    ],
+    "difficulty_with_gps": "easy",
+    "difficulty_without_gps": "hard"
+  },
+  "model_runs": [
+    {
+      "image_filename": "199.jpg",
+      "use_gps": true,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "Nighttime street scene in central Vienna showing a historicist corner block with a white stucco facade, tall pilasters, arched window heads, and a steep mansard roof with dormers. Along the cornice the gilded inscriptions read “LEBENSVERSICHERUNG – HELVETIA – ELEMENTARVERSICHERUNG,” indicating the building’s long association with Helvetia insurance. Ground level hosts a Helvetia office entrance and a cafe/brasserie with a canopied outdoor terrace wrapped in warm string lights and planters. A blue “U” Vienna U‑Bahn sign is mounted above a doorway. On the neighboring facade a large illuminated hanging sign shaped like a wristwatch suggests a jeweler/watch shop. Cobblestone paving, bollards, and a do‑not‑enter sign are visible. Ambient street and shop lighting illuminate the architecture against a dark sky.",
+            "photographer_location": [
+              {
+                "name": "Innere Stadt (likely near Graben/Habsburgergasse), Vienna, Austria",
+                "confidence": 0.62
+              },
+              {
+                "name": "Hoher Markt area, Innere Stadt, Vienna, Austria",
+                "confidence": 0.38
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Helvetia-Haus / Helvetia Versicherungen building on or just off the Graben, Innere Stadt, Vienna",
+                "confidence": 0.64
+              },
+              {
+                "name": "Helvetia Versicherungen, Hoher Markt 10–11, Innere Stadt, Vienna (possible)",
+                "confidence": 0.36
+              }
+            ],
+            "entities": [
+              {
+                "name": "Helvetia-Haus (Vienna)",
+                "type": "building",
+                "confidence": 0.65,
+                "notes": "Historicist/Beaux‑Arts facade with pilasters and mansard roof; long-time premises for Helvetia insurance in Vienna."
+              },
+              {
+                "name": "Helvetia Versicherungen signage",
+                "type": "signage",
+                "confidence": 0.98,
+                "notes": "Cornice inscriptions read “LEBENSVERSICHERUNG – HELVETIA – ELEMENTARVERSICHERUNG”; Helvetia office/logo at street level."
+              },
+              {
+                "name": "Graben, Vienna",
+                "type": "public_space",
+                "confidence": 0.6,
+                "notes": "Major pedestrian street in the Innere Stadt; likely location of the facade shown."
+              },
+              {
+                "name": "Vienna U‑Bahn sign (likely Stephansplatz vicinity)",
+                "type": "infrastructure",
+                "confidence": 0.5,
+                "notes": "Blue square with white “U” mounted on the building indicates proximity to the underground network."
+              },
+              {
+                "name": "Innere Stadt (1st District), Vienna",
+                "type": "district",
+                "confidence": 0.8,
+                "notes": null
+              },
+              {
+                "name": "Historicist / Neoclassical with mansard roof",
+                "type": "architectural_style",
+                "confidence": 0.7,
+                "notes": "Late 19th–early 20th century Vienna urban palazzo style with giant order pilasters and dormered mansard."
+              },
+              {
+                "name": "Hanging watch sign (jeweler’s clock)",
+                "type": "signage",
+                "confidence": 0.45,
+                "notes": "Large illuminated watch-shaped sign on adjacent facade, indicating a watch/jewelry shop on or near the Graben."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "Night photograph of a white, historic building with a neoclassical facade. The top of the building bears a German inscription reading “LEBENSVERSICHERUNG HELVETIA,” indicating a Helvetia life insurance company. The ground floor houses a cafe/restaurant with an outdoor seating area enclosed by a railing adorned with warm string lights. The scene is softly lit by interior lights from the upper floors and warm outdoor lighting, casting a cozy glow on the cobblestone street in front. The architectural details include tall arched windows on the lower floors, decorative pilasters, and a centered doorway with a small balcony above. Overall, the composition combines a dignified, historic commercial façade with a lively, intimate street-level cafe set in a quiet Vienna night environment.",
+            "photographer_location": [
+              {
+                "name": "Sidewalk in front of the Helvetia building, Vienna city center (Rathaus area)",
+                "confidence": 0.75
+              },
+              {
+                "name": "Rathausplatz vicinity, Vienna, Austria",
+                "confidence": 0.6
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "LEBENSVERSICHERUNG HELVETIA building, Vienna, Austria",
+                "confidence": 0.85
+              }
+            ],
+            "entities": [
+              {
+                "name": "LEBENSVERSICHERUNG HELVETIA",
+                "type": "building",
+                "confidence": 0.9,
+                "notes": "Historic neoclassical facade with arched windows; inscription across the top indicating the Helvetia life insurance building."
+              },
+              {
+                "name": "Helvetia storefront signage",
+                "type": "signage",
+                "confidence": 0.8,
+                "notes": "Ground-floor sign reading 'helvetia', illuminated at night."
+              },
+              {
+                "name": "Cafe terrace with outdoor seating",
+                "type": "public_space",
+                "confidence": 0.75,
+                "notes": "Outdoor dining area with fairy-light illumination along the railing; umbrellas and potted plants visible."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "Nighttime street view on Hoher Markt in Vienna showing a grand historicist corner building with a mansard roof and dormer windows. Large gold lettering along the cornice reads “HELVETIA” with “LEBENSVERSICHERUNG” and “ELEMENTARVERSICHERUNG.” The ground floor contains a brightly lit restaurant terrace with string lights, parasols, plants, and a bicycle parked nearby. Cobblestone paving, a no‑entry sign, and neighboring buildings are visible.",
+            "photographer_location": [
+              {
+                "name": "Hoher Markt 10, 1010 Wien, Austria",
+                "confidence": 0.9
+              },
+              {
+                "name": "Hoher Markt, Innere Stadt, Vienna, Austria",
+                "confidence": 0.85
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Helvetia Versicherungen Österreich, Hoher Markt 10–11, 1010 Wien, Austria",
+                "confidence": 0.85
+              },
+              {
+                "name": "Hoher Markt square, Innere Stadt, Vienna, Austria",
+                "confidence": 0.8
+              }
+            ],
+            "entities": [
+              {
+                "name": "Helvetia Versicherungen Österreich building (Hoher Markt 10–11)",
+                "type": "building",
+                "confidence": 0.88,
+                "notes": "Historicist/early 20th‑century office building with mansard roof; corporate signage “HELVETIA” on the facade."
+              },
+              {
+                "name": "Hoher Markt",
+                "type": "public_space",
+                "confidence": 0.8,
+                "notes": "One of Vienna’s oldest squares in the Innere Stadt."
+              },
+              {
+                "name": "Helvetia corporate signage",
+                "type": "signage",
+                "confidence": 0.95,
+                "notes": "Large gold letters at the roofline and illuminated ‘helvetia’ logo at street level."
+              },
+              {
+                "name": "Historicist / Neoclassical urban tenement-office style",
+                "type": "architectural_style",
+                "confidence": 0.55,
+                "notes": "Symmetrical facade with pilasters, ornamented window surrounds, and a mansard roof; typical of late 19th–early 20th century Vienna."
+              },
+              {
+                "name": "Outdoor restaurant terrace on Hoher Markt",
+                "type": "other",
+                "confidence": 0.7,
+                "notes": "Festive string lights, parasols, planters; located at the ground level of the Helvetia building."
+              },
+              {
+                "name": "Innere Stadt (1st District), Vienna",
+                "type": "district",
+                "confidence": 0.75,
+                "notes": "Historic city center surrounding St. Stephen’s Cathedral."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "Nighttime street scene in Vienna's first district featuring a large white neoclassical building with arched windows and decorative details. The upper facade bears the gold inscription 'LEBENSVERSICHERUNG HELVETIA' across the cornice. The ground floor houses a warmly lit outdoor café with string lights and umbrellas, while a modern Helvetia sign is visible to the right. The scene is set near Hoher Markt in Vienna, Austria, with surrounding historic and urban elements suggesting a busy central area.",
+            "photographer_location": [
+              {
+                "name": "Hoher Markt 10, 1010 Wien, Austria",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Hoher Markt, Vienna, Austria",
+                "confidence": 0.85
+              }
+            ],
+            "entities": [
+              {
+                "name": "Helvetia Lebensversicherung Building",
+                "type": "building",
+                "confidence": 0.82,
+                "notes": "White neoclassical façade with arched windows and cornice inscription 'LEBENSVERSICHERUNG HELVETIA'."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A nighttime view of the Helvetia building (historically the Ankerhof) located at Hoher Markt in Vienna, Austria. The grand, multi-story building exhibits classical architectural features with a light-colored facade, pilasters, and arched windows on the lower levels. The text \"LEBENSVERSICHERUNG HELVETIA ELEMENTARVERSICHERUNG\" is inscribed in gold lettering below the roofline, and a modern \"helvetia\" logo is visible above the ground floor entrance. The street level features a cafe/brasserie with an outdoor seating area covered by large beige umbrellas and enclosed by a railing densely decorated with warm, glowing string lights. To the right, the illuminated bridge structure of the famous Ankeruhr (Anker Clock) is visible connecting to the adjacent building. On the left, a street sign attached to the building corner reads \"Hoher Markt\". In the immediate foreground left, a curved stone section of the Vermählungsbrunnen (Wedding Fountain) is partially visible. The street is paved with cobblestones.",
+            "photographer_location": [
+              {
+                "name": "Hoher Markt",
+                "confidence": 1.0
+              },
+              {
+                "name": "Vienna",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Hoher Markt 10-11",
+                "confidence": 0.95
+              },
+              {
+                "name": "Helvetia-Haus",
+                "confidence": 0.9
+              }
+            ],
+            "entities": [
+              {
+                "name": "Helvetia-Haus",
+                "type": "building",
+                "confidence": 1.0,
+                "notes": "Historicist building, formerly Ankerhof"
+              },
+              {
+                "name": "Ankeruhr",
+                "type": "landmark",
+                "confidence": 0.95,
+                "notes": "Art Nouveau clock bridge connecting the buildings, partially visible on the right"
+              },
+              {
+                "name": "Hoher Markt",
+                "type": "public_space",
+                "confidence": 1.0,
+                "notes": "Historic square in Vienna"
+              },
+              {
+                "name": "Vermählungsbrunnen",
+                "type": "monument",
+                "confidence": 0.85,
+                "notes": "Stone basin visible in the foreground left"
+              },
+              {
+                "name": "Helvetia",
+                "type": "signage",
+                "confidence": 1.0,
+                "notes": "Insurance company name on facade"
+              },
+              {
+                "name": "Street sign",
+                "type": "signage",
+                "confidence": 1.0,
+                "notes": "Reads 'Hoher Markt'"
+              },
+              {
+                "name": "Cafe Brasserie Bar",
+                "type": "other",
+                "confidence": 0.9,
+                "notes": "Ground floor commercial establishment"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A night photograph of the Helvetia insurance building at Hoher Markt in Vienna. The building is a grand, multi-story structure in a historicist architectural style, featuring classical elements like pilasters, arched windows, and a mansard roof with dormers. The words 'LEBENSVERSICHERUNG HELVETIA ELEMENTARVERSICHERUNG' are inscribed across the top facade. On the ground floor, a cafe with outdoor seating is illuminated by warm fairy lights and umbrellas. To the right, the famous Ankeruhr (Anker Clock) is partially visible, spanning an alleyway between two buildings. The foreground shows a cobblestone street and a stone bollard.",
+            "photographer_location": [
+              {
+                "name": "Hoher Markt, Vienna, Austria",
+                "confidence": 1.0
+              },
+              {
+                "name": "Innere Stadt, Vienna",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Hoher Markt 10-11, 1010 Wien, Austria",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "Helvetia-Haus",
+                "type": "building",
+                "confidence": 1.0,
+                "notes": "The headquarters of Helvetia Insurance in Vienna."
+              },
+              {
+                "name": "Ankeruhr",
+                "type": "landmark",
+                "confidence": 1.0,
+                "notes": "A famous Art Nouveau clock designed by Franz Matsch, located at Hoher Markt."
+              },
+              {
+                "name": "Hoher Markt",
+                "type": "public_space",
+                "confidence": 1.0,
+                "notes": "One of the oldest squares in Vienna."
+              },
+              {
+                "name": "Historicism",
+                "type": "architectural_style",
+                "confidence": 0.95,
+                "notes": "The architectural style of the Helvetia building."
+              },
+              {
+                "name": "Innere Stadt",
+                "type": "district",
+                "confidence": 1.0,
+                "notes": "The first district of Vienna."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "Skyscraper",
+                "type": "landmark",
+                "confidence": 0.5663899183273315,
+                "notes": null
+              },
+              {
+                "name": "Apartment",
+                "type": "artwork",
+                "confidence": 0.5474056005477905,
+                "notes": null
+              },
+              {
+                "name": "Hoher",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "Marki",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "LEBENSVERSICHERUNG",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "HELVETIA",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "ELEMENTARVERSICHERUNG",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "CAFE",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "BRASSERIE",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "helvetia",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              }
+            ],
+            "landmark_name": null
+          }
+        }
+      ]
+    },
+    {
+      "image_filename": "199.jpg",
+      "use_gps": false,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "Nighttime street view of a historicist corner building with a pale stucco facade, strong cornice, pilasters, and arched window heads. The upper facade bears the inscriptions “HELVETIA” and “LEBENSVERSICHERUNG,” indicating the historic Helvetia insurance house. At street level an illuminated modern “helvetia” sign marks the current office/branch entrance. In front, a restaurant terrace with large umbrellas and dense warm-white festive lights lines the cobbled pedestrian street. An Austrian flag hangs near the terrace, and a ‘no-entry’ traffic sign is visible above the corner. The photo is taken from street level looking up at an oblique angle along the facade.",
+            "photographer_location": [
+              {
+                "name": "Innere Stadt (1st District), Vienna, Austria — near Seilergasse/Graben area",
+                "confidence": 0.55
+              },
+              {
+                "name": "Hoher Markt area, Innere Stadt, Vienna, Austria",
+                "confidence": 0.3
+              },
+              {
+                "name": "Old Town area, Zurich, Switzerland (less likely)",
+                "confidence": 0.15
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Helvetia Versicherungen building (historic ‘Helvetia Lebensversicherung’ house), likely Seilergasse/Graben vicinity, Innere Stadt, Vienna",
+                "confidence": 0.5
+              },
+              {
+                "name": "Helvetia Versicherungen Austria offices, Hoher Markt 10–11, Innere Stadt, Vienna (possible)",
+                "confidence": 0.3
+              }
+            ],
+            "entities": [
+              {
+                "name": "Helvetia Versicherungen (brand signage)",
+                "type": "signage",
+                "confidence": 0.98,
+                "notes": "Swiss insurance company; illuminated storefront sign visible."
+              },
+              {
+                "name": "‘Helvetia Lebensversicherung’ historic building facade",
+                "type": "building",
+                "confidence": 0.6,
+                "notes": "Corner facade with carved inscriptions ‘HELVETIA’ and ‘LEBENSVERSICHERUNG’; likely a historic company house in Vienna’s 1st District."
+              },
+              {
+                "name": "Gründerzeit / Historicist (Neoclassical-influenced) urban tenement/commercial facade",
+                "type": "architectural_style",
+                "confidence": 0.7,
+                "notes": "Late 19th–early 20th century Viennese style with pilasters, heavy cornice, stucco ornament."
+              },
+              {
+                "name": "Innere Stadt (1st District), Vienna",
+                "type": "district",
+                "confidence": 0.55,
+                "notes": "Central historic district; inferred from architectural character, signage, and Austrian flag."
+              },
+              {
+                "name": "Graben (Vienna)",
+                "type": "public_space",
+                "confidence": 0.35,
+                "notes": "Major pedestrian boulevard near which Helvetia signage/building is plausibly located."
+              },
+              {
+                "name": "Austrian national flag",
+                "type": "other",
+                "confidence": 0.6,
+                "notes": "Red-white-red flag mounted on facade near the terrace."
+              },
+              {
+                "name": "No entry (Do Not Enter) traffic sign",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "European ‘verboten’ circular red sign with white bar at the corner."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "Nighttime street scene in a European town center. A white historic building with arched windows and decorative architectural detailing runs along a cobblestone street. The ground floor hosts a restaurant or cafe with a brightly lit outdoor terrace enclosed by string lights and small trees in planters. A neon/illuminated sign reading Helvetia is visible on a storefront, suggesting a commercial area. The scene is softly illuminated by warm exterior lighting, creating a festive ambiance around the terrace. The image appears slightly tilted, with the corner of the square and a stone balustrade visible in the foreground on the right.",
+            "photographer_location": [
+              {
+                "name": "Cobbled town square in front of the white historic building, European city center",
+                "confidence": 0.65
+              },
+              {
+                "name": "Across the street facing the building’s façade",
+                "confidence": 0.3
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "White neoclassical / Beaux-Arts style building with arched windows (historic facade)",
+                "confidence": 0.75
+              }
+            ],
+            "entities": [
+              {
+                "name": "Helvetia sign",
+                "type": "signage",
+                "confidence": 0.88,
+                "notes": "Logo for Helvetia Insurance on a storefront facade."
+              },
+              {
+                "name": "White historic building with arched windows and decorative cornice",
+                "type": "building",
+                "confidence": 0.82,
+                "notes": "Beaux-Arts/Neoclassical-inspired facade with pilasters and curved window frames."
+              },
+              {
+                "name": "Cafe terrace with string lights",
+                "type": "public_space",
+                "confidence": 0.78,
+                "notes": "Outdoor dining area along the street, adorned with warm fairy lights and planters."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "Nighttime street scene in a Central European city showing an ornate, light-colored historic corner building with five levels, tall pilasters, arched window details, and a strong cornice. The facade bears the word “HELVETIA” and German text including “LEBENSVERSICHERUNG,” and there is a modern illuminated “helvetia” logo at street level, indicating an insurance branch in the building. At the ground floor are restaurants/cafés with large umbrellas and warm string lights suggesting holiday decorations. The cobblestone pedestrian street includes planters, a bicycle, and a European ‘no entry’ traffic sign. Overall ambiance is festive and urban, with classic late-19th/early-20th‑century architecture.",
+            "photographer_location": [
+              {
+                "name": "Vienna, Austria (Innere Stadt area, possible Graben/Kohlmarkt vicinity)",
+                "confidence": 0.4
+              },
+              {
+                "name": "Zürich, Switzerland (central old town)",
+                "confidence": 0.25
+              },
+              {
+                "name": "Basel, Switzerland (city center)",
+                "confidence": 0.2
+              },
+              {
+                "name": "Munich, Germany (historic center)",
+                "confidence": 0.15
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Vienna, Austria (inner-city pedestrian street)",
+                "confidence": 0.4
+              },
+              {
+                "name": "Zürich, Switzerland (old town/central shopping street)",
+                "confidence": 0.25
+              },
+              {
+                "name": "Basel, Switzerland (city center)",
+                "confidence": 0.2
+              },
+              {
+                "name": "Munich, Germany (Altstadt)",
+                "confidence": 0.15
+              }
+            ],
+            "entities": [
+              {
+                "name": "Helvetia insurance office (branch within historic building)",
+                "type": "building",
+                "confidence": 0.6,
+                "notes": "Facade bears the word “HELVETIA” and “LEBENSVERSICHERUNG” (German for life insurance). Likely a local branch of the Swiss insurer in a historic structure."
+              },
+              {
+                "name": "Helvetia brand signage",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Illuminated lowercase “helvetia” with the multicolor triangular logo visible on the street façade."
+              },
+              {
+                "name": "Historicist/Neoclassical (Gründerzeit) façade",
+                "type": "architectural_style",
+                "confidence": 0.6,
+                "notes": "Symmetrical windows, stucco ornament, full-height pilasters, strong cornice typical of late 19th–early 20th century urban buildings in Central Europe."
+              },
+              {
+                "name": "Café/restaurant terrace with holiday lights",
+                "type": "public_space",
+                "confidence": 0.85,
+                "notes": "Outdoor seating under large parasols; festive string lights along planters and railings."
+              },
+              {
+                "name": "European ‘No Entry’ traffic sign",
+                "type": "signage",
+                "confidence": 0.95,
+                "notes": "Red circular sign with horizontal white bar at the street corner."
+              },
+              {
+                "name": "Cobblestone pedestrian street",
+                "type": "public_space",
+                "confidence": 0.8,
+                "notes": "Stone paving and limited vehicle access suggest a central pedestrianized zone."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "Night scene on a cobblestone plaza featuring a grand white neoclassical building with arched windows and ornate detailing. The word HELVETIA appears on the upper façade. To the right, a warmly lit outdoor dining area with string lights, umbrellas, and potted trees lines the storefronts. A bicycle and a few people are visible near the seating area; interior lights glow from the upper floors. Overall, the image captures a European city street at night.",
+            "photographer_location": [
+              {
+                "name": "Street-level viewpoint across the cobblestone plaza in front of the building",
+                "confidence": 0.55
+              },
+              {
+                "name": "Sidewalk area near an outdoor dining zone",
+                "confidence": 0.3
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "The white neoclassical building with the HELVETIA sign",
+                "confidence": 0.92
+              }
+            ],
+            "entities": [
+              {
+                "name": "Helvetia building",
+                "type": "building",
+                "confidence": 0.85,
+                "notes": "Historic façade with arched windows and decorative reliefs; signage HELVETIA on the upper façade."
+              },
+              {
+                "name": "Outdoor dining area with string lights",
+                "type": "public_space",
+                "confidence": 0.65,
+                "notes": "Ground-floor storefronts, umbrellas, potted plants, and warm string lighting."
+              },
+              {
+                "name": "Helvetia sign",
+                "type": "signage",
+                "confidence": 0.8,
+                "notes": "Signage on the building facade reading HELVETIA."
+              },
+              {
+                "name": "Bicycle",
+                "type": "other",
+                "confidence": 0.5,
+                "notes": "Parked near the outdoor dining area."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A night photograph, rotated 90 degrees clockwise (ground is on the right), depicting the illuminated facade of the Helvetia insurance building in St. Gallen, Switzerland. The building features Neoclassical architecture with pilasters, arched ground-floor windows, and prominent signage reading \"LEBENSVERSICHERUNG HELVETIA ELEMENTARVERSICHERUNG\" across the upper facade. A vertical \"helvetia\" sign with a triangular logo projects from the building. On the ground level, a cafe or brasserie (\"CAFE BRASSERIE BAR\") has an outdoor seating area enclosed by hedges adorned with warm, festive string lights. In the immediate foreground (bottom right in the rotated view), the stone rim of a fountain—likely the Broderbrunnen—is visible. The setting is an urban square with cobblestone paving.",
+            "photographer_location": [
+              {
+                "name": "Kornhausplatz, St. Gallen",
+                "confidence": 0.95
+              },
+              {
+                "name": "Near Broderbrunnen",
+                "confidence": 0.9
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Helvetia Building",
+                "confidence": 1.0
+              },
+              {
+                "name": "Kornhausstrasse 3, St. Gallen",
+                "confidence": 0.95
+              }
+            ],
+            "entities": [
+              {
+                "name": "Helvetia Building",
+                "type": "building",
+                "confidence": 1.0,
+                "notes": "Historicist building housing the Helvetia insurance general agency; features prominent company signage."
+              },
+              {
+                "name": "Kornhausplatz",
+                "type": "public_space",
+                "confidence": 0.95,
+                "notes": "The square where the building and fountain are located."
+              },
+              {
+                "name": "Broderbrunnen",
+                "type": "monument",
+                "confidence": 0.85,
+                "notes": "Likely the stone structure partially visible in the foreground; a famous Art Nouveau fountain."
+              },
+              {
+                "name": "Cafe Brasserie Bar",
+                "type": "other",
+                "confidence": 0.9,
+                "notes": "Commercial establishment on the ground floor of the Helvetia building."
+              },
+              {
+                "name": "Helvetia",
+                "type": "signage",
+                "confidence": 1.0,
+                "notes": "Brand signage for the Swiss insurance company."
+              },
+              {
+                "name": "Neoclassical",
+                "type": "architectural_style",
+                "confidence": 0.9,
+                "notes": "Style of the building facade."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A night-time photograph of the Helvetia-Hof building located at Hoher Markt in Vienna, Austria. The building is a grand example of Viennese historicist architecture, featuring a light-colored stone facade with multiple rows of windows, some of which are arched. Large lettering on the upper facade reads 'HELVETIA' and 'LEBENSVERSICHERUNG ELEMENTARVERSICHERUNG'. A modern 'helvetia' logo with a red triangle is also visible. At the street level, there is a cafe or brasserie with outdoor seating under large umbrellas, illuminated by warm fairy lights. A street sign for 'Hoher Markt' is visible on the corner. The ground is paved with cobblestones, and the scene is captured from a low angle looking up at the building.",
+            "photographer_location": [
+              {
+                "name": "Hoher Markt, Vienna, Austria",
+                "confidence": 0.95
+              },
+              {
+                "name": "Innere Stadt, Vienna",
+                "confidence": 0.9
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Helvetia-Hof, Hoher Markt 10-11, Vienna, Austria",
+                "confidence": 0.98
+              }
+            ],
+            "entities": [
+              {
+                "name": "Helvetia-Hof",
+                "type": "building",
+                "confidence": 0.98,
+                "notes": "Historic office building of the Helvetia insurance company, built in the late 19th century."
+              },
+              {
+                "name": "Hoher Markt",
+                "type": "public_space",
+                "confidence": 1.0,
+                "notes": "One of the oldest and most historic squares in Vienna's city center."
+              },
+              {
+                "name": "Vienna",
+                "type": "district",
+                "confidence": 1.0,
+                "notes": "The capital city of Austria."
+              },
+              {
+                "name": "Helvetia Insurance",
+                "type": "signage",
+                "confidence": 1.0,
+                "notes": "Branding for the Swiss insurance group Helvetia."
+              },
+              {
+                "name": "Historicism",
+                "type": "architectural_style",
+                "confidence": 0.9,
+                "notes": "The architectural style of the building, characteristic of the Ringstraße era in Vienna."
+              },
+              {
+                "name": "Innere Stadt",
+                "type": "district",
+                "confidence": 0.95,
+                "notes": "The 1st district of Vienna, where the square is located."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "Skyscraper",
+                "type": "landmark",
+                "confidence": 0.5667905211448669,
+                "notes": null
+              },
+              {
+                "name": "Apartment",
+                "type": "artwork",
+                "confidence": 0.5510150194168091,
+                "notes": null
+              },
+              {
+                "name": "LEBENSVERSICHERUNG",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "HELVETIA",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "ELEMENTARVERSICHERUNG",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "LHoher",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "Mark",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "CAFE",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "BRASSERIE",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "helvetia",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              }
+            ],
+            "landmark_name": null
+          }
+        }
+      ]
+    }
+  ]
+}

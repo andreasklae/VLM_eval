@@ -1,0 +1,1041 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "97.heic",
+      "timestamp": "2026-01-28T07:34:49.164847",
+      "processing_time_seconds": 63.860982,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -33.8685,
+        "gps_longitude": 151.207,
+        "location": {
+          "formatted_address": "365 George St, Sydney NSW 2000, Australia",
+          "city": "Sydney",
+          "county": "Council of the City of Sydney",
+          "country": "Australia"
+        },
+        "datetime_original": "2024:09:15 16:43:52",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "George Street, Sydney, Sydney, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata and visible architectural styles suggest this is George Street in Sydney, known for its blend of modern and historic architecture.",
+            "detailed_description": "The image shows George Street in Sydney, Australia, a prominent urban thoroughfare. The street is lined with a mix of modern skyscrapers and historic buildings, reflecting Sydney's architectural diversity. Visible are contemporary high-rise structures with glass facades, alongside older buildings with ornate detailing and stonework. The street is bustling with pedestrians and features tram tracks, indicating public transportation access.",
+            "identification": {
+              "primary": [
+                "George Street, Sydney"
+              ],
+              "location": "Sydney, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "George Street",
+                "type": "street",
+                "confidence": 0.95
+              },
+              {
+                "name": "Modern skyscrapers",
+                "type": "building",
+                "confidence": 0.85
+              },
+              {
+                "name": "Historic buildings",
+                "type": "building",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "urban",
+              "modern_architecture",
+              "historic_architecture",
+              "Sydney",
+              "Australia"
+            ],
+            "location": "Sydney, Australia",
+            "type": "street",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"George Street, Sydney\"],\n        \"location\": \"Sydney, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"George Street\",\n            \"type\": \"street\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Modern skyscrapers\",\n            \"type\": \"building\",\n            \"confidence\": 0.85\n        },\n        {\n            \"name\": \"Historic buildings\",\n            \"type\": \"building\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"urban\", \"modern_architecture\", \"historic_architecture\", \"Sydney\", \"Australia\"],\n    \"description\": \"The image shows George Street in Sydney, Australia, a prominent urban thoroughfare. The street is lined with a mix of modern skyscrapers and historic buildings, reflecting Sydney's architectural diversity. Visible are contemporary high-rise structures with glass facades, alongside older buildings with ornate detailing and stonework. The street is bustling with pedestrians and features tram tracks, indicating public transportation access.\",\n    \"reasoning\": \"The location metadata and visible architectural styles suggest this is George Street in Sydney, known for its blend of modern and historic architecture.\",\n    \"type\": \"street\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "gps_coordinates": {
+              "latitude": -33.8685,
+              "longitude": 151.207
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "365 George St, Sydney NSW 2000, Australia",
+              "city": "Sydney",
+              "county": "Council of the City of Sydney",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2024:09:15 16:43:52",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 11.11936616897583
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a bustling urban street scene in Sydney, Australia, characterized by a mix of architectural styles. The street is lined with a variety of buildings, ranging from modern skyscrapers to historical structures. On the left side, there is a prominent building with a classic facade featuring ornate detailing and a sign for 'Dymocks,' a well-known bookstore chain. Adjacent to it, modern high-rise buildings with glass and steel exteriors rise into the sky, showcasing contemporary archi",
+            "description": "The image depicts a bustling urban street scene in Sydney, Australia, characterized by a mix of architectural styles. The street is lined with a variety of buildings, ranging from modern skyscrapers to historical structures. On the left side, there is a prominent building with a classic facade featuring ornate detailing and a sign for 'Dymocks,' a well-known bookstore chain. Adjacent to it, modern high-rise buildings with glass and steel exteriors rise into the sky, showcasing contemporary archi",
+            "architectural_style": "Mix of modern and historical architecture",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": -33.8685,
+              "longitude": 151.207
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "365 George St, Sydney NSW 2000, Australia",
+              "city": "Sydney",
+              "county": "Council of the City of Sydney",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2024:09:15 16:43:52",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 51.778080224990845
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Apartment (Sydney, Australia)",
+          "confidence": 0.5760377049446106,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Apartment",
+            "artist_name": null,
+            "museum_or_location": "Sydney, Australia",
+            "art_style": null,
+            "art_era": null,
+            "confidence": 0.5760377049446106,
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.6061202883720398
+              },
+              {
+                "name": "Apartment",
+                "score": 0.5760377049446106
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.49855220317840576
+              },
+              {
+                "name": "Zebra crossing",
+                "score": 0.48310717940330505
+              },
+              {
+                "name": "Sidewalk",
+                "score": 0.4266458749771118
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": -33.8685,
+              "longitude": 151.207
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "365 George St, Sydney NSW 2000, Australia",
+              "city": "Sydney",
+              "county": "Council of the City of Sydney",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2024:09:15 16:43:52",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 20.34627079963684
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Sydney, Council of the City of Sydney, Australia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Sydney, Council of the City of Sydney, Australia",
+            "coordinates": {
+              "latitude": -33.8685,
+              "longitude": 151.207
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "SEA LIFE Sydney Aquarium",
+                  "types": [
+                    "aquarium",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 22020,
+                  "vicinity": "1-5 Wheat Road, Sydney",
+                  "place_id": "ChIJYV-J-ziuEmsRIMyoFaMedU4",
+                  "location": {
+                    "lat": -33.8695997,
+                    "lng": 151.2021381
+                  }
+                },
+                {
+                  "name": "WILD LIFE Sydney Zoo",
+                  "types": [
+                    "tourist_attraction",
+                    "zoo",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 5401,
+                  "vicinity": "1-5 Wheat Road, Sydney",
+                  "place_id": "ChIJLat3W0euEmsRCQCK0yaDjTc",
+                  "location": {
+                    "lat": -33.8694129,
+                    "lng": 151.2017032
+                  }
+                },
+                {
+                  "name": "The Mint",
+                  "types": [
+                    "tourist_attraction",
+                    "cafe",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 412,
+                  "vicinity": "Level 1/10 Macquarie Street, Sydney",
+                  "place_id": "ChIJK70U2mquEmsRSlU92xtCn4c",
+                  "location": {
+                    "lat": -33.8689323,
+                    "lng": 151.2126165
+                  }
+                },
+                {
+                  "name": "St Mary's Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 8713,
+                  "vicinity": "St Marys Rd, Sydney",
+                  "place_id": "ChIJIfH_5hSuEmsR3jZ2qQd0ev4",
+                  "location": {
+                    "lat": -33.8711905,
+                    "lng": 151.2133254
+                  }
+                },
+                {
+                  "name": "Australian National Maritime Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 6172,
+                  "vicinity": "2 Murray Street, Sydney",
+                  "place_id": "ChIJTze93zmuEmsRhvE6T4Y9DhU",
+                  "location": {
+                    "lat": -33.8693567,
+                    "lng": 151.1986328
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Australian National Maritime Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 6172,
+                  "vicinity": "2 Murray Street, Sydney",
+                  "place_id": "ChIJTze93zmuEmsRhvE6T4Y9DhU",
+                  "location": {
+                    "lat": -33.8693567,
+                    "lng": 151.1986328
+                  }
+                },
+                {
+                  "name": "Australian Museum",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 12823,
+                  "vicinity": "Level 4/1 William Street, Darlinghurst",
+                  "place_id": "ChIJlwsH0RWuEmsR3Cg3WEDw76I",
+                  "location": {
+                    "lat": -33.8743446,
+                    "lng": 151.2131667
+                  }
+                },
+                {
+                  "name": "Museum of Contemporary Art Australia",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "cafe",
+                    "museum",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 9216,
+                  "vicinity": "140 George Street, The Rocks",
+                  "place_id": "ChIJ68aBlEKuEmsRHUA9oME5Zh0",
+                  "location": {
+                    "lat": -33.8599358,
+                    "lng": 151.2090295
+                  }
+                },
+                {
+                  "name": "Museum of Sydney",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 3023,
+                  "vicinity": "Cnr Bridge Street &, Phillip Street, Sydney",
+                  "place_id": "ChIJ_1pC8mmuEmsRrvud0Ftcoyg",
+                  "location": {
+                    "lat": -33.8636288,
+                    "lng": 151.2114567
+                  }
+                },
+                {
+                  "name": "Madame Tussauds Sydney",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 5512,
+                  "vicinity": "1-5 Wheat Road, Sydney",
+                  "place_id": "ChIJuUFiBzmuEmsRB5kohGRewMg",
+                  "location": {
+                    "lat": -33.8696002,
+                    "lng": 151.2017779
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "QT Sydney",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 2041,
+                  "vicinity": "49 Market Street, Sydney",
+                  "place_id": "ChIJK6RwVT6uEmsRQ447JSUTGGI",
+                  "location": {
+                    "lat": -33.8709065,
+                    "lng": 151.2075485
+                  }
+                },
+                {
+                  "name": "Amora Hotel Jamison Sydney",
+                  "types": [
+                    "spa",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 2814,
+                  "vicinity": "11 Jamison Street, Sydney",
+                  "place_id": "ChIJa51FEUGuEmsRIXRtDjLFQXM",
+                  "location": {
+                    "lat": -33.864458,
+                    "lng": 151.2062952
+                  }
+                },
+                {
+                  "name": "Swissôtel Sydney",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 3350,
+                  "vicinity": "68 Market Street, Sydney",
+                  "place_id": "ChIJAddzqj-uEmsRO8NmIaLn1t0",
+                  "location": {
+                    "lat": -33.8702647,
+                    "lng": 151.2074559
+                  }
+                },
+                {
+                  "name": "Castlereagh Boutique Hotel, Ascend Hotel Collection",
+                  "types": [
+                    "cafe",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 816,
+                  "vicinity": "169 Castlereagh Street, Sydney",
+                  "place_id": "ChIJp2HsPT6uEmsRskGgtjLmnLc",
+                  "location": {
+                    "lat": -33.8725825,
+                    "lng": 151.2090734
+                  }
+                },
+                {
+                  "name": "The Little Snail Restaurant",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 3198,
+                  "vicinity": "Shop 3/50 Murray Street, Pyrmont",
+                  "place_id": "ChIJtwapWjeuEmsRcxV5JARHpSk",
+                  "location": {
+                    "lat": -33.870383,
+                    "lng": 151.1979245
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "WILD LIFE Sydney Zoo",
+                  "types": [
+                    "tourist_attraction",
+                    "zoo",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 5401,
+                  "vicinity": "1-5 Wheat Road, Sydney",
+                  "place_id": "ChIJLat3W0euEmsRCQCK0yaDjTc",
+                  "location": {
+                    "lat": -33.8694129,
+                    "lng": 151.2017032
+                  }
+                },
+                {
+                  "name": "Hyde Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 17788,
+                  "vicinity": "Elizabeth Street, Sydney",
+                  "place_id": "ChIJDflB7BWuEmsRYPbx-Wh9AQ8",
+                  "location": {
+                    "lat": -33.8715202,
+                    "lng": 151.2116243
+                  }
+                },
+                {
+                  "name": "Tumbalong Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 2223,
+                  "vicinity": "11 Harbour Street, Sydney",
+                  "place_id": "ChIJaZrLHzuuEmsRYPzx-Wh9AQ8",
+                  "location": {
+                    "lat": -33.8756884,
+                    "lng": 151.2017266
+                  }
+                },
+                {
+                  "name": "Wynyard Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 793,
+                  "vicinity": "1001 York Street, Sydney",
+                  "place_id": "ChIJDRF76ECuEmsREAnz-Wh9AQ8",
+                  "location": {
+                    "lat": -33.8657009,
+                    "lng": 151.2061439
+                  }
+                },
+                {
+                  "name": "The Domain Sydney",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1639,
+                  "vicinity": "Art Gallery Road, Sydney",
+                  "place_id": "ChIJS6MuAnCuEmsRjVr4zXUIQDc",
+                  "location": {
+                    "lat": -33.8684368,
+                    "lng": 151.2149869
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "St Mary's Cathedral",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 8713,
+                  "vicinity": "St Marys Rd, Sydney",
+                  "place_id": "ChIJIfH_5hSuEmsR3jZ2qQd0ev4",
+                  "location": {
+                    "lat": -33.8711905,
+                    "lng": 151.2133254
+                  }
+                },
+                {
+                  "name": "Wesley Mission HQ",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 96,
+                  "vicinity": "220 Pitt Street, Sydney",
+                  "place_id": "ChIJk5EPRT6uEmsRTu7sBZ3VZgA",
+                  "location": {
+                    "lat": -33.8717086,
+                    "lng": 151.2083294
+                  }
+                },
+                {
+                  "name": "St Andrew's Cathedral",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 661,
+                  "vicinity": "Cnr of George and, Bathurst Street, Sydney",
+                  "place_id": "ChIJ7xObFjyuEmsRZKT6ur5YNMg",
+                  "location": {
+                    "lat": -33.8739336,
+                    "lng": 151.2063454
+                  }
+                },
+                {
+                  "name": "Saint Patrick's Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 639,
+                  "vicinity": "20 Grosvenor Street, The Rocks",
+                  "place_id": "ChIJiVLPZkGuEmsRQHR4WJMxPQI",
+                  "location": {
+                    "lat": -33.8631328,
+                    "lng": 151.2059914
+                  }
+                },
+                {
+                  "name": "Scots Presbyterian Church Sydney",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 74,
+                  "vicinity": "44 Margaret Street, Sydney",
+                  "place_id": "ChIJb0zSGEGuEmsR4yDcc9HXsQQ",
+                  "location": {
+                    "lat": -33.8649282,
+                    "lng": 151.2058338
+                  }
+                },
+                {
+                  "name": "Sydney CBD Masjid",
+                  "types": [
+                    "mosque",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 722,
+                  "vicinity": "56/56-60 Erskine Street, Sydney",
+                  "place_id": "ChIJpTpyTkeuEmsRyk375nNkMEI",
+                  "location": {
+                    "lat": -33.8666203,
+                    "lng": 151.2039743
+                  }
+                },
+                {
+                  "name": "Castlereagh & Park St Musalla",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 40,
+                  "vicinity": "189 Castlereagh Street, Sydney",
+                  "place_id": "ChIJFfupdgCvEmsRvTbh0G2xw0Q",
+                  "location": {
+                    "lat": -33.8733666,
+                    "lng": 151.2090581
+                  }
+                },
+                {
+                  "name": "The Great Synagogue",
+                  "types": [
+                    "synagogue",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 95,
+                  "vicinity": "166 Castlereagh Street, Sydney",
+                  "place_id": "ChIJ7WLBIj6uEmsRfPcbl6D5UR8",
+                  "location": {
+                    "lat": -33.872612,
+                    "lng": 151.2093528
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Museum of Contemporary Art Australia",
+                  "types": [
+                    "tourist_attraction",
+                    "cafe",
+                    "art_gallery",
+                    "museum",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 9216,
+                  "vicinity": "140 George Street, The Rocks",
+                  "place_id": "ChIJ68aBlEKuEmsRHUA9oME5Zh0",
+                  "location": {
+                    "lat": -33.8599358,
+                    "lng": 151.2090295
+                  }
+                },
+                {
+                  "name": "Art Gallery of New South Wales",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 14982,
+                  "vicinity": "Art Gallery Road, Sydney",
+                  "place_id": "ChIJPVqlfGyuEmsRHPcnCX1X1OE",
+                  "location": {
+                    "lat": -33.8688037,
+                    "lng": 151.2174138
+                  }
+                },
+                {
+                  "name": "Billich Art Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 95,
+                  "vicinity": "1 Martin Place, Sydney",
+                  "place_id": "ChIJ5UZ9tEKuEmsRdSFeRtkB3Jg",
+                  "location": {
+                    "lat": -33.8684026,
+                    "lng": 151.2081331
+                  }
+                },
+                {
+                  "name": "Vanity Designs",
+                  "types": [
+                    "art_gallery",
+                    "local_government_office",
+                    "general_contractor",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "27 Park Street, Sydney",
+                  "place_id": "ChIJw0f0cj6uEmsRRuAQ51mybSM",
+                  "location": {
+                    "lat": -33.87354569999999,
+                    "lng": 151.208802
+                  }
+                },
+                {
+                  "name": "AC Art Space",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "1/66 King Street, Sydney",
+                  "place_id": "ChIJdw4nZj-uEmsRhsHP5DxmE_k",
+                  "location": {
+                    "lat": -33.86848820000001,
+                    "lng": 151.2062538
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Sydney",
+                  "types": [
+                    "colloquial_area",
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Sydney",
+                  "place_id": "ChIJP3Sa8ziYEmsRUKgyFmh9AQM",
+                  "location": {
+                    "lat": -33.8622503,
+                    "lng": 151.207684
+                  }
+                },
+                {
+                  "name": "The Grace Sydney",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 3214,
+                  "vicinity": "77 York Street, Sydney",
+                  "place_id": "ChIJnzcAQT-uEmsRHzT8I_C279w",
+                  "location": {
+                    "lat": -33.86896410000001,
+                    "lng": 151.2058908
+                  }
+                },
+                {
+                  "name": "QT Sydney",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 2041,
+                  "vicinity": "49 Market Street, Sydney",
+                  "place_id": "ChIJK6RwVT6uEmsRQ447JSUTGGI",
+                  "location": {
+                    "lat": -33.8709065,
+                    "lng": 151.2075485
+                  }
+                },
+                {
+                  "name": "Sofitel Sydney Wentworth",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 4313,
+                  "vicinity": "Sofitel Sydney Wentworth 61, 101 Phillip Street, Sydney",
+                  "place_id": "ChIJOdOLbGquEmsR6oPJgVpzjxg",
+                  "location": {
+                    "lat": -33.8653817,
+                    "lng": 151.2111873
+                  }
+                },
+                {
+                  "name": "Fraser Suites Sydney",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 993,
+                  "vicinity": "488 Kent Street, Sydney",
+                  "place_id": "ChIJ0zxfbzyuEmsRYYkBoKdBTP4",
+                  "location": {
+                    "lat": -33.8748433,
+                    "lng": 151.2055178
+                  }
+                }
+              ]
+            },
+            "total_places_found": 38,
+            "photo_timestamp": "2024:09:15 16:43:52",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.42391490936279297
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/97.heic"
+    },
+    {
+      "image_filename": "97.heic",
+      "timestamp": "2026-01-28T07:35:53.053572",
+      "processing_time_seconds": 60.169177,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "George Street, Sydney, Australia",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of the Queen Victoria Building and the mix of architectural styles are indicative of Sydney's George Street. The combination of historic and modern buildings aligns with the known characteristics of this area.",
+            "detailed_description": "The image depicts George Street in Sydney, Australia, featuring a mix of historic and modern architecture. On the left, the Queen Victoria Building is visible, characterized by its Romanesque Revival style with domes and ornate detailing. The street is lined with various shops and commercial buildings, including modern skyscrapers in the background, showcasing contemporary architectural styles with glass facades. The scene is urban and bustling, typical of a central business district.",
+            "identification": {
+              "primary": [
+                "George Street"
+              ],
+              "location": "Sydney, Australia",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Queen Victoria Building",
+                "type": "landmark",
+                "confidence": 0.85
+              },
+              {
+                "name": "Modern skyscrapers",
+                "type": "building",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "urban",
+              "architecture",
+              "modern",
+              "historic",
+              "Sydney"
+            ],
+            "location": "Sydney, Australia",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Pitt Street Mall",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "Pitt Street Mall is nearby and shares similar architectural and commercial characteristics."
+              },
+              {
+                "guess": "Martin Place",
+                "specificity_level": "general",
+                "confidence": 0.5,
+                "reasoning": "Martin Place is another central location in Sydney with similar urban features."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"George Street\"],\n        \"location\": \"Sydney, Australia\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Queen Victoria Building\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.85\n        },\n        {\n            \"name\": \"Modern skyscrapers\",\n            \"type\": \"building\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"urban\", \"architecture\", \"modern\", \"historic\", \"Sydney\"],\n    \"description\": \"The image depicts George Street in Sydney, Australia, featuring a mix of historic and modern architecture. On the left, the Queen Victoria Building is visible, characterized by its Romanesque Revival style with domes and ornate detailing. The street is lined with various shops and commercial buildings, including modern skyscrapers in the background, showcasing contemporary architectural styles with glass facades. The scene is urban and bustling, typical of a central business district.\",\n    \"reasoning\": \"The presence of the Queen Victoria Building and the mix of architectural styles are indicative of Sydney's George Street. The combination of historic and modern buildings aligns with the known characteristics of this area.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Pitt Street Mall\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"Pitt Street Mall is nearby and shares similar architectural and commercial characteristics.\"\n        },\n        {\n            \"guess\": \"Martin Place\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.5,\n            \"reasoning\": \"Martin Place is another central location in Sydney with similar urban features.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 11.352335929870605
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a bustling urban street scene, characterized by a mix of architectural styles and modern commercial establishments. The street is lined with tall buildings, showcasing a blend of historical and contemporary architecture. On the left side, there is a building with classical architectural elements, such as ornate cornices and decorative moldings, indicative of early 20th-century design. Adjacent to it, a modern high-rise with a sleek, glass facade rises prominently, featuring ver",
+            "description": "The image depicts a bustling urban street scene, characterized by a mix of architectural styles and modern commercial establishments. The street is lined with tall buildings, showcasing a blend of historical and contemporary architecture. On the left side, there is a building with classical architectural elements, such as ornate cornices and decorative moldings, indicative of early 20th-century design. Adjacent to it, a modern high-rise with a sleek, glass facade rises prominently, featuring ver",
+            "architectural_style": "Mix of classical and modern architecture",
+            "search_backends_used": [],
+            "processing_time_seconds": 48.56935501098633
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Apartment",
+          "confidence": 0.5725060701370239,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Apartment",
+            "artist_name": null,
+            "museum_or_location": null,
+            "art_style": null,
+            "art_era": null,
+            "confidence": 0.5725060701370239,
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.6026603579521179
+              },
+              {
+                "name": "Apartment",
+                "score": 0.5725060701370239
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.4990670680999756
+              },
+              {
+                "name": "Zebra crossing",
+                "score": 0.4846516251564026
+              },
+              {
+                "name": "Pedestrian",
+                "score": 0.4567355811595917
+              }
+            ],
+            "processing_time_seconds": 20.3004469871521
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/97.heic"
+    }
+  ]
+}

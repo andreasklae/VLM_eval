@@ -1,0 +1,1071 @@
+{
+  "image_id": 31,
+  "filename": "31.jpg",
+  "ground_truth": {
+    "description": "Marble statue of head of Napoleon. Text \"Napoleon\" under the head. Inside Pitti Palace Museum.",
+    "photographer_description": "Marble statue of the head of Napoleon. It should be able to get this because there is a text \"Napoleon\" under the head. If it got the location metadata, it should also be able to get that it's inside the Pitti Palace Museum.",
+    "locations": [
+      {
+        "name": "Galleria d'Arte Moderna at Palazzo Pitti",
+        "hierarchy": {
+          "country": "Italy",
+          "region": "Tuscany",
+          "city": "Florence",
+          "exact": "Palazzo Pitti"
+        }
+      }
+    ],
+    "entities": [
+      {
+        "name": "Napoleon bust by Antonio Canova",
+        "type": "landmark",
+        "notes": null,
+        "importance": "high",
+        "max_specificity": 5
+      },
+      {
+        "name": "Galleria d'Arte Moderna di Palazzo Pitti",
+        "type": "artwork",
+        "notes": "",
+        "max_specificity": 5,
+        "importance": "low",
+        "added_by": "human_evaluator"
+      }
+    ],
+    "scene_type": [
+      "art",
+      "sculpture"
+    ],
+    "key_visual_elements": [
+      "Marble bust of Napoleon",
+      "\"Napoleon\" text label",
+      "Museum setting (with framed paintings and other sculptures visible)"
+    ],
+    "max_specificity": "Specific",
+    "difficulty": "Easy (text visible)",
+    "notes": "Should get Napoleon from text. With metadata, should get Pitti Palace.",
+    "gps_metadata": {
+      "gps_latitude": 43.76495,
+      "gps_longitude": 11.250244444444444,
+      "reverse_geocoded": {
+        "formatted_address": "Piazza de' Pitti, 1, 50125 Firenze FI, Italy",
+        "city": "Firenze",
+        "county": "Città Metropolitana di Firenze",
+        "country": "Italy"
+      }
+    },
+    "difficulty_with_gps": "medium",
+    "difficulty_without_gps": "hard",
+    "image_categories": [
+      "art"
+    ]
+  },
+  "model_runs": [
+    {
+      "image_filename": "31.jpg",
+      "use_gps": true,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "Indoor museum gallery with warm lighting and vaulted, stucco-trimmed ceilings inside a historic palazzo. Centered is a polished white marble bust on a pedestal inscribed \"NAPOLEON.\" A small exhibit label on the base reads in Italian and attributes the work to Antonio Canova and his workshop, describing it as a colossal head of Napoleon. The room has large arched windows with shutters to the right, a red-carpeted corridor and chandeliers visible through a doorway, and a gilded-framed portrait painting on the wall behind. Another marble statue (winged figure) stands blurred in the background, reinforcing the museum setting.",
+            "photographer_location": [
+              {
+                "name": "Florence, Tuscany, Italy",
+                "confidence": 0.98
+              },
+              {
+                "name": "Palazzo Pitti, Florence, Tuscany, Italy",
+                "confidence": 0.9
+              },
+              {
+                "name": "Galleria d'Arte Moderna di Palazzo Pitti, Florence, Tuscany, Italy",
+                "confidence": 0.75
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Palazzo Pitti, Florence, Tuscany, Italy",
+                "confidence": 0.9
+              },
+              {
+                "name": "Galleria d'Arte Moderna di Palazzo Pitti, Florence, Tuscany, Italy",
+                "confidence": 0.8
+              },
+              {
+                "name": "Galleria Palatina (Palatine Gallery), Palazzo Pitti, Florence, Tuscany, Italy",
+                "confidence": 0.5
+              }
+            ],
+            "entities": [
+              {
+                "name": "Testa colossale di Napoleone (Bust of Napoleon) — Antonio Canova and workshop",
+                "type": "artwork",
+                "confidence": 0.92,
+                "notes": "Marble, Neoclassical; late 18th–early 19th century. Inscription \"NAPOLEON\" on the bust’s base; label visible reads \"Antonio Canova e Scuola\"."
+              },
+              {
+                "name": "Palazzo Pitti (Pitti Palace)",
+                "type": "building",
+                "confidence": 0.85,
+                "notes": "Renaissance palace in Florence housing multiple museums."
+              },
+              {
+                "name": "Galleria d'Arte Moderna di Palazzo Pitti",
+                "type": "cultural_site",
+                "confidence": 0.75,
+                "notes": "Museum in Palazzo Pitti known for Neoclassical and 19th‑century collections; likely gallery for this bust."
+              },
+              {
+                "name": "Exhibit label for Canova bust",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Italian text attributing the work to Antonio Canova e Scuola; identifies subject as Napoleon."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "Inside a Florence museum/gallery, a white marble bust of Napoleon Bonaparte sits on a short pedestal with the inscription 'NAPOLEON' on its base. The sculpture is highly detailed, with a stoic expression and short-cropped hair, rendered in neoclassical style. The bust is placed on a blue pedestal in a room with pale walls, arched ceilings, and soft natural light entering from a window on the right. In the background, a doorway leads to another gallery space where a framed portrait hangs above a mantel, and a sculpture stands near the window. The overall scene conveys a refined neoclassical interior typical of a historical museum in Florence, with visitors subtly visible beyond the foreground.",
+            "photographer_location": [
+              {
+                "name": "Florence, Italy",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Florence, Italy",
+                "confidence": 0.85
+              }
+            ],
+            "entities": [
+              {
+                "name": "Napoleon bust",
+                "type": "artwork",
+                "confidence": 0.92,
+                "notes": "Marble bust of Napoleon Bonaparte; likely by Antonio Canova; Neoclassical style; early 19th century; base inscribed 'NAPOLEON'."
+              },
+              {
+                "name": "Neoclassical interior",
+                "type": "architectural_style",
+                "confidence": 0.7,
+                "notes": "Interior features such as arches and muted tones typical of neoclassical design."
+              },
+              {
+                "name": "Florence museum interior",
+                "type": "public_space",
+                "confidence": 0.65,
+                "notes": "Indoor gallery space in Florence, where artworks are exhibited."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "Indoor museum gallery setting with a white marble bust prominently displayed on a pedestal. The bust depicts a stern, short-haired male and has 'NAPOLEON' carved on its base. A small museum label is visible on the pedestal edge, and the room features high arched ceilings, ornate trim, a large window with shutters admitting daylight, red carpet, framed paintings, and additional marble statuary in the background. The scene suggests a neoclassical artwork exhibited inside the Palazzo Pitti complex in Florence.",
+            "photographer_location": [
+              {
+                "name": "Palazzo Pitti, Florence, Italy",
+                "confidence": 0.95
+              },
+              {
+                "name": "Piazza de' Pitti, Florence, Italy",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Palazzo Pitti, Florence, Italy",
+                "confidence": 0.9
+              },
+              {
+                "name": "Galleria Palatina (Palatine Gallery), Palazzo Pitti, Florence, Italy",
+                "confidence": 0.75
+              }
+            ],
+            "entities": [
+              {
+                "name": "Bust of Napoleon",
+                "type": "artwork",
+                "confidence": 0.95,
+                "notes": "Marble bust labeled 'NAPOLEON'; often attributed to Antonio Canova or his workshop, early 19th century, neoclassical style."
+              },
+              {
+                "name": "Palazzo Pitti",
+                "type": "building",
+                "confidence": 0.9,
+                "notes": "Historic palace in Florence housing several museums, including the Palatine Gallery."
+              },
+              {
+                "name": "Galleria Palatina (Palatine Gallery)",
+                "type": "cultural_site",
+                "confidence": 0.75,
+                "notes": "Museum rooms within Palazzo Pitti displaying paintings and sculptures in period interiors."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "A white marble bust of Napoleon Bonaparte sits on a short cylindrical pedestal with the inscription 'NAPOLEON' at the base. The sculpture is a classical head-and-shoulders portrait with short wavy hair and a stern, composed expression. It is displayed in a refined museum gallery with pale walls and a softly arched ceiling. Behind and to the left, a doorway reveals another room with a framed portrait in a gold frame. To the right, a window lets daylight spill in, casting a cool blue highlight on the bust. In the distance, another statue on a pedestal and a red-carpeted corridor extend back, contributing to a formal Florence museum ambiance with additional artworks and visitors visible.",
+            "photographer_location": [
+              {
+                "name": "Piazza de' Pitti, Florence, Italy",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Florence, Italy",
+                "confidence": 0.85
+              }
+            ],
+            "entities": [
+              {
+                "name": "Napoleon Bonaparte marble bust",
+                "type": "artwork",
+                "confidence": 0.92,
+                "notes": "Marble sculpture; base inscription 'NAPOLEON'; neoclassical portrait style"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A close-up, slightly low-angle photograph of a white marble bust of Napoleon Bonaparte, displayed on a dark blue pedestal. The sculpture depicts Napoleon in a neoclassical style with short, wavy Roman-style hair and a stoic, serious expression. The base of the bust bears the inscription \"NAPOLEON\". A small label placed in front reads \"ANTONIO CANOVA E SCUOLA\" and \"Testa colossale di Napoleone\". The setting is an elegant museum gallery with high, vaulted ceilings and cream-colored walls. To the left, a framed oil painting of a woman in a white dress hangs on the wall, and a doorway reveals an adjacent room with a red carpet, chandeliers, and further artworks. To the right, a large window with shutters admits natural light, silhouetting a smaller marble statue of a seated figure in the background.",
+            "photographer_location": [
+              {
+                "name": "Palazzo Pitti",
+                "confidence": 0.98
+              },
+              {
+                "name": "Galleria d'Arte Moderna",
+                "confidence": 0.9
+              },
+              {
+                "name": "Florence, Italy",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Palazzo Pitti",
+                "confidence": 0.98
+              },
+              {
+                "name": "Galleria d'Arte Moderna",
+                "confidence": 0.9
+              },
+              {
+                "name": "Florence, Italy",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "Colossal Head of Napoleon",
+                "type": "artwork",
+                "confidence": 0.99,
+                "notes": "Marble bust by Antonio Canova and workshop (Canova e Scuola), inscribed 'NAPOLEON'"
+              },
+              {
+                "name": "Palazzo Pitti",
+                "type": "building",
+                "confidence": 0.99,
+                "notes": "Renaissance palace housing the museum"
+              },
+              {
+                "name": "Galleria d'Arte Moderna",
+                "type": "cultural_site",
+                "confidence": 0.9,
+                "notes": "Museum section within Palazzo Pitti housing neoclassical works"
+              },
+              {
+                "name": "Antonio Canova",
+                "type": "other",
+                "confidence": 0.99,
+                "notes": "Artist identified on the label"
+              },
+              {
+                "name": "Napoleon Bonaparte",
+                "type": "other",
+                "confidence": 0.99,
+                "notes": "Subject of the bust"
+              },
+              {
+                "name": "painting",
+                "type": "artwork",
+                "confidence": 0.85,
+                "notes": "Portrait of a woman in the background"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A white marble bust of Napoleon Bonaparte, depicted in a Neoclassical style with short, curly hair and a stoic expression. The bust sits on a circular marble pedestal inscribed with the name 'NAPOLEON'. A small identification card at the base attributes the work to 'ANTONIO CANOVA E SCUOLA' and titles it 'Testa colossale di Napoleone'. The sculpture is displayed in an opulent interior room with high vaulted ceilings, decorative moldings, and a doorway leading to a gallery with a red carpet and a chandelier. In the background, a framed oil portrait of a woman and another marble sculpture near a window are visible.",
+            "photographer_location": [
+              {
+                "name": "Palazzo Pitti, Florence, Italy",
+                "confidence": 0.95
+              },
+              {
+                "name": "Florence, Italy",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Palazzo Pitti, Florence, Italy",
+                "confidence": 0.95
+              },
+              {
+                "name": "Gallery of Modern Art, Florence",
+                "confidence": 0.85
+              }
+            ],
+            "entities": [
+              {
+                "name": "Napoleon Bonaparte",
+                "type": "other",
+                "confidence": 1.0,
+                "notes": "Subject of the sculpture"
+              },
+              {
+                "name": "Antonio Canova",
+                "type": "artwork",
+                "confidence": 0.95,
+                "notes": "Italian Neoclassical sculptor identified on the label"
+              },
+              {
+                "name": "Palazzo Pitti",
+                "type": "building",
+                "confidence": 0.95,
+                "notes": "Renaissance palace in Florence housing several museums"
+              },
+              {
+                "name": "Gallery of Modern Art, Florence",
+                "type": "cultural_site",
+                "confidence": 0.85,
+                "notes": "Museum located on the top floor of Palazzo Pitti"
+              },
+              {
+                "name": "Neoclassicism",
+                "type": "architectural_style",
+                "confidence": 0.9,
+                "notes": "Artistic style of the bust and interior decor"
+              },
+              {
+                "name": "Testa colossale di Napoleone",
+                "type": "artwork",
+                "confidence": 0.95,
+                "notes": "Colossal head of Napoleon by Antonio Canova and school"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "Art",
+                "type": "artwork",
+                "confidence": 0.4983092248439789,
+                "notes": null
+              },
+              {
+                "name": "M Leuven",
+                "type": "other",
+                "confidence": 0.39525002241134644,
+                "notes": null
+              },
+              {
+                "name": "Museum",
+                "type": "cultural_site",
+                "confidence": 0.3615787625312805,
+                "notes": null
+              },
+              {
+                "name": "Statue",
+                "type": "other",
+                "confidence": 0.3427355885505676,
+                "notes": null
+              },
+              {
+                "name": "Chin",
+                "type": "other",
+                "confidence": 0.9885352849960327,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Head",
+                "type": "other",
+                "confidence": 0.9855941534042358,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Sculpture",
+                "type": "other",
+                "confidence": 0.983184814453125,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Statue",
+                "type": "other",
+                "confidence": 0.982307493686676,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Forehead",
+                "type": "other",
+                "confidence": 0.9808929562568665,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Nose",
+                "type": "other",
+                "confidence": 0.975023090839386,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Jaw",
+                "type": "other",
+                "confidence": 0.9572765231132507,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Classical sculpture",
+                "type": "other",
+                "confidence": 0.9311761856079102,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Art",
+                "type": "other",
+                "confidence": 0.9293109774589539,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Artifact",
+                "type": "other",
+                "confidence": 0.8612794876098633,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "NAPOLEON",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "ANTONIO",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "CANOVA",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "SCUOLA",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "Possagno",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "Venezia",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "Testa",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "colossale",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "Napoleone",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "Gen.",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "ducali",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "Lorenesi",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              }
+            ],
+            "landmark_name": null
+          }
+        }
+      ]
+    },
+    {
+      "image_filename": "31.jpg",
+      "use_gps": false,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "A white marble neoclassical bust displayed on a pedestal in a museum gallery. The bust depicts an idealized young man with cropped hair and strong classical features; the socle is inscribed \"NAPOLEON.\" A small brown museum label on the base reads in Italian \"Antonio Canova e Scuola – Testa colossale di Napoleone,\" attributing the work to Antonio Canova and his workshop. The room has vaulted plaster ceilings, an arched window with shutters, and other artworks visible, including a framed portrait and a seated winged statue in the background.",
+            "photographer_location": [
+              {
+                "name": "Museo Napoleonico, Rome, Italy",
+                "confidence": 0.55
+              },
+              {
+                "name": "Rome, Italy",
+                "confidence": 0.65
+              },
+              {
+                "name": "Italy",
+                "confidence": 0.8
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Museo Napoleonico, Rome, Italy",
+                "confidence": 0.55
+              },
+              {
+                "name": "Rome, Italy",
+                "confidence": 0.65
+              },
+              {
+                "name": "Italy",
+                "confidence": 0.8
+              }
+            ],
+            "entities": [
+              {
+                "name": "Bust of Napoleon Bonaparte (Colossal Head)",
+                "type": "artwork",
+                "confidence": 0.92,
+                "notes": "White marble; base inscribed 'NAPOLEON'. Attributed on label to Antonio Canova and his workshop; Neoclassicism, early 19th century."
+              },
+              {
+                "name": "Antonio Canova (attribution)",
+                "type": "other",
+                "confidence": 0.7,
+                "notes": "Sculptor; attribution per label 'Antonio Canova e Scuola' (workshop)."
+              },
+              {
+                "name": "Museo Napoleonico",
+                "type": "cultural_site",
+                "confidence": 0.55,
+                "notes": "Probable museum setting in Rome, Italy, dedicated to Napoleonic collections."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "A white marble bust of Napoleon Bonaparte occupies a pedestal in a neoclassical interior. The bust shows a stern, idealized facial expression with short, wavy hair. The pedestal is inscribed with the word 'NAPOLEON' and there is a small plaque likely naming the sculptor Antonio Canova. In the background, a framed portrait in a gilded frame hangs on the wall, and a doorway leads to a corridor with a red carpet. To the right, a large window lets in daylight and another marble statue sits on a pedestal near the window. The overall setting resembles a museum or gallery with soft, warm interior lighting and plaster arches overhead.",
+            "photographer_location": [
+              {
+                "name": "Italy",
+                "confidence": 0.85
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Italy",
+                "confidence": 0.85
+              }
+            ],
+            "entities": [
+              {
+                "name": "Napoleon (bust) in marble by Antonio Canova",
+                "type": "artwork",
+                "confidence": 0.92,
+                "notes": "Neoclassical marble bust of Napoleon Bonaparte; attributed to Antonio Canova; early 19th century."
+              },
+              {
+                "name": "Napoleon",
+                "type": "signage",
+                "confidence": 0.75,
+                "notes": "Pedestal inscription identifying the subject."
+              },
+              {
+                "name": "Portrait of a noblewoman in a gilded frame",
+                "type": "artwork",
+                "confidence": 0.7,
+                "notes": "Oil painting in a gold frame on the wall behind the bust."
+              },
+              {
+                "name": "Antonio Canova inscription plaque",
+                "type": "signage",
+                "confidence": 0.7,
+                "notes": "Plaque mentions Antonio Canova; indicates the sculptor or attribution."
+              },
+              {
+                "name": "Marble statue near window",
+                "type": "artwork",
+                "confidence": 0.6,
+                "notes": "Unidentified marble sculpture visible in background near window."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "A polished white marble bust of a young man rendered in an idealized Roman manner, with short tousled hair, smooth planes, a straight nose, and deep, unpupilled eyes. The head turns slightly to the figure’s left and the chest terminates just below the pectorals on a round marble socle. The front of the socle is incised with the inscription “NAPOLEON,” identifying the subject as Napoleon Bonaparte. The piece is displayed on a pedestal in an elegant museum gallery with cream vaulted ceilings and molding, a tall shuttered window to the right, and warm ambient lighting. In the background are a seated winged marble figure on a plinth and, through a doorway, a red-carpeted corridor with framed paintings including a portrait in a gilded frame. The sculpture’s idealization, polished finish, and classical gravitas suggest a Neoclassical work, likely by or after Antonio Canova or his circle/workshop.",
+            "photographer_location": [
+              {
+                "name": "Italy",
+                "confidence": 0.65
+              },
+              {
+                "name": "Florence, Italy",
+                "confidence": 0.35
+              },
+              {
+                "name": "Rome, Italy",
+                "confidence": 0.25
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Italy",
+                "confidence": 0.7
+              },
+              {
+                "name": "Florence, Italy",
+                "confidence": 0.3
+              },
+              {
+                "name": "Rome, Italy",
+                "confidence": 0.25
+              }
+            ],
+            "entities": [
+              {
+                "name": "Bust of Napoleon Bonaparte",
+                "type": "artwork",
+                "confidence": 0.9,
+                "notes": "White marble, Neoclassical style; head turned left; inscription on socle reads “NAPOLEON.” Likely by or after Antonio Canova (or his workshop/circle)."
+              },
+              {
+                "name": "“NAPOLEON” inscription on socle",
+                "type": "signage",
+                "confidence": 0.99,
+                "notes": "Carved lettering identifying the subject on the bust’s base."
+              },
+              {
+                "name": "Seated winged figure (background)",
+                "type": "artwork",
+                "confidence": 0.5,
+                "notes": "Marble statue on a plinth; possibly Cupid or an angel."
+              },
+              {
+                "name": "Portrait in gilded frame (background)",
+                "type": "artwork",
+                "confidence": 0.6,
+                "notes": "Oil painting visible above the doorway in the adjoining red-carpeted corridor."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "A white marble bust of a male figure with short, wavy hair is mounted on a rounded pedestal. The base bears the inscription 'NAPOLEON'. The sculpture is displayed indoors in a gallery or museum setting, with arched architecture overhead, a framed portrait on the wall in the background, and another statue visible at the far right. Warm indoor lighting and a large window to the right contribute to the lighting in the scene.",
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "Marble bust",
+                "type": "artwork",
+                "confidence": 0.75,
+                "notes": "White marble sculpture of a male figure; base inscription reads 'NAPOLEON'. Accompanying label may indicate attribution to Antonio Canova."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A close-up, slightly low-angle shot of a white marble bust of Napoleon Bonaparte, displayed on a dark blue surface. The bust, created in a classical Roman style with short curly hair and a stern, idealized expression, features the name \"NAPOLEON\" carved into its base. A small museum label at the bottom identifies the work as \"Testa colossale di Napoleone\" by \"Antonio Canova e Scuola\" (Antonio Canova and School). The sculpture is situated in an elegant museum gallery with high, vaulted ceilings and cream-colored walls. To the left, a framed oil painting of a woman in a light dress hangs on the wall, and a doorway leads to an adjacent room featuring a red carpet, paintings, and a chandelier. To the right, a large window with slatted shutters provides natural backlighting, silhouetting a smaller sculpture of a winged figure on the windowsill.",
+            "photographer_location": [
+              {
+                "name": "Galleria Palatina",
+                "confidence": 0.95
+              },
+              {
+                "name": "Palazzo Pitti",
+                "confidence": 0.95
+              },
+              {
+                "name": "Florence",
+                "confidence": 0.95
+              },
+              {
+                "name": "Italy",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Galleria Palatina",
+                "confidence": 0.95
+              },
+              {
+                "name": "Palazzo Pitti",
+                "confidence": 0.95
+              },
+              {
+                "name": "Florence",
+                "confidence": 0.95
+              }
+            ],
+            "entities": [
+              {
+                "name": "Colossal Head of Napoleon",
+                "type": "artwork",
+                "confidence": 0.99,
+                "notes": "Marble bust by Antonio Canova and workshop; inscribed 'NAPOLEON'"
+              },
+              {
+                "name": "Napoleon Bonaparte",
+                "type": "other",
+                "confidence": 1.0,
+                "notes": "Historical figure depicted"
+              },
+              {
+                "name": "Antonio Canova",
+                "type": "other",
+                "confidence": 0.95,
+                "notes": "Artist identified on label"
+              },
+              {
+                "name": "Palazzo Pitti",
+                "type": "building",
+                "confidence": 0.95,
+                "notes": "Museum housing the collection"
+              },
+              {
+                "name": "Museum Label",
+                "type": "signage",
+                "confidence": 1.0,
+                "notes": "Reads: 'ANTONIO CANOVA E SCUOLA... Testa colossale di Napoleone'"
+              },
+              {
+                "name": "Oil Painting",
+                "type": "artwork",
+                "confidence": 0.9,
+                "notes": "Portrait of a woman, visible in background"
+              },
+              {
+                "name": "Winged Sculpture",
+                "type": "artwork",
+                "confidence": 0.85,
+                "notes": "Small winged figure silhouetted in the window"
+              },
+              {
+                "name": "Chandelier",
+                "type": "other",
+                "confidence": 0.9,
+                "notes": "Visible in the adjacent room"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A white marble bust of Napoleon Bonaparte, sculpted in a Neoclassical style. The bust is mounted on a circular pedestal with the name 'NAPOLEON' inscribed on the base. A museum label at the bottom identifies the work as 'Testa colossale di Napoleone' by Antonio Canova and his school. The sculpture is displayed in a grand museum gallery with high vaulted ceilings, cream-colored walls, and decorative moldings. In the background, a framed portrait of a woman hangs on the wall, and a doorway leads to another room with a red carpet and a chandelier. To the right, another marble sculpture of a winged figure is visible near a large window with shutters.",
+            "photographer_location": [
+              {
+                "name": "Palazzo Pitti, Florence, Italy",
+                "confidence": 0.95
+              },
+              {
+                "name": "Galleria d'Arte Moderna, Florence, Italy",
+                "confidence": 0.9
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Palazzo Pitti, Florence, Italy",
+                "confidence": 0.95
+              }
+            ],
+            "entities": [
+              {
+                "name": "Napoleon Bonaparte",
+                "type": "landmark",
+                "confidence": 1.0,
+                "notes": "Subject of the bust"
+              },
+              {
+                "name": "Antonio Canova",
+                "type": "artwork",
+                "confidence": 1.0,
+                "notes": "Italian Neoclassical sculptor identified on the museum label"
+              },
+              {
+                "name": "Colossal Head of Napoleon",
+                "type": "artwork",
+                "confidence": 1.0,
+                "notes": "Marble sculpture by Antonio Canova and his school"
+              },
+              {
+                "name": "Palazzo Pitti",
+                "type": "building",
+                "confidence": 0.95,
+                "notes": "The Renaissance palace in Florence where the gallery is located"
+              },
+              {
+                "name": "Galleria d'Arte Moderna",
+                "type": "cultural_site",
+                "confidence": 0.9,
+                "notes": "The specific museum within Palazzo Pitti housing this work"
+              },
+              {
+                "name": "Neoclassicism",
+                "type": "architectural_style",
+                "confidence": 0.95,
+                "notes": "The artistic style of the sculpture"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "Art",
+                "type": "artwork",
+                "confidence": 0.5032525658607483,
+                "notes": null
+              },
+              {
+                "name": "M Leuven",
+                "type": "other",
+                "confidence": 0.39525002241134644,
+                "notes": null
+              },
+              {
+                "name": "Museum",
+                "type": "cultural_site",
+                "confidence": 0.3741762638092041,
+                "notes": null
+              },
+              {
+                "name": "Statue",
+                "type": "other",
+                "confidence": 0.35601791739463806,
+                "notes": null
+              },
+              {
+                "name": "Chin",
+                "type": "other",
+                "confidence": 0.9885545969009399,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Head",
+                "type": "other",
+                "confidence": 0.9855066537857056,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Sculpture",
+                "type": "other",
+                "confidence": 0.9830697774887085,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Statue",
+                "type": "other",
+                "confidence": 0.981353223323822,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Forehead",
+                "type": "other",
+                "confidence": 0.9811182618141174,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Nose",
+                "type": "other",
+                "confidence": 0.9749757647514343,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Jaw",
+                "type": "other",
+                "confidence": 0.9584726095199585,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Classical sculpture",
+                "type": "other",
+                "confidence": 0.9308007955551147,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Art",
+                "type": "other",
+                "confidence": 0.9303564429283142,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Artifact",
+                "type": "other",
+                "confidence": 0.8621580600738525,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "NAPOLEON",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "ANTONIO",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "CANOVA",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "SCUOLA",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "Possagno",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "Venezia",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "Testa",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "colossale",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "Napoleone",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "Gen.",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "ducali",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "Lorenesi",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              }
+            ],
+            "landmark_name": null
+          }
+        }
+      ]
+    }
+  ]
+}

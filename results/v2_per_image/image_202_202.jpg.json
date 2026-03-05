@@ -1,0 +1,1083 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "202.jpg",
+      "timestamp": "2026-01-28T04:41:00.756632",
+      "processing_time_seconds": 64.827659,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 45.814230555555554,
+        "gps_longitude": 9.076025,
+        "location": {
+          "formatted_address": "Viale Guglielmo Marconi, 1, 22100 Como CO, Italy",
+          "city": "Como",
+          "county": "Provincia di Como",
+          "country": "Italy"
+        },
+        "datetime_original": "2025:12:15 12:22:30",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Lake Como, Hills surrounding Como, Como, Italy",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Como, Italy, which is famous for Lake Como. The visible body of water and surrounding hills match the typical landscape of this area.",
+            "detailed_description": "The image shows Lake Como, a prominent natural feature in northern Italy, surrounded by hills. The lake is known for its picturesque scenery and is a popular tourist destination. The hills are dotted with buildings, likely residential, and the shoreline is lined with trees and a walkway. The sky is clear, contributing to the serene atmosphere.",
+            "identification": {
+              "primary": [
+                "Lake Como",
+                "Hills surrounding Como"
+              ],
+              "location": "Como, Italy",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Lake Como",
+                "type": "natural_feature",
+                "confidence": 0.95
+              },
+              {
+                "name": "Hills surrounding Como",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "lake",
+              "hills",
+              "Italy",
+              "Como"
+            ],
+            "location": "Como, Italy",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Lake Como\", \"Hills surrounding Como\"],\n        \"location\": \"Como, Italy\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Lake Como\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Hills surrounding Como\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.90\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"lake\", \"hills\", \"Italy\", \"Como\"],\n    \"description\": \"The image shows Lake Como, a prominent natural feature in northern Italy, surrounded by hills. The lake is known for its picturesque scenery and is a popular tourist destination. The hills are dotted with buildings, likely residential, and the shoreline is lined with trees and a walkway. The sky is clear, contributing to the serene atmosphere.\",\n    \"reasoning\": \"The location metadata indicates Como, Italy, which is famous for Lake Como. The visible body of water and surrounding hills match the typical landscape of this area.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 45.814230555555554,
+              "longitude": 9.076025
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Viale Guglielmo Marconi, 1, 22100 Como CO, Italy",
+              "city": "Como",
+              "county": "Provincia di Como",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2025:12:15 12:22:30",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 9.876145124435425
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a scenic view of Lake Como, located in the Province of Como, Italy. The lake is expansive, with calm waters reflecting the clear blue sky above. The shoreline is visible on the right side of the image, featuring a sandy beach area with some scattered debris, such as driftwood. A stone walkway runs parallel to the lake, bordered by an ornate wrought iron railing. The railing features intricate designs and patterns, adding a decorative element to the scene. On the left side, leaf",
+            "description": "The image depicts a scenic view of Lake Como, located in the Province of Como, Italy. The lake is expansive, with calm waters reflecting the clear blue sky above. The shoreline is visible on the right side of the image, featuring a sandy beach area with some scattered debris, such as driftwood. A stone walkway runs parallel to the lake, bordered by an ornate wrought iron railing. The railing features intricate designs and patterns, adding a decorative element to the scene. On the left side, leaf",
+            "architectural_style": "Various styles including traditional Italian and modern",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 45.814230555555554,
+              "longitude": 9.076025
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Viale Guglielmo Marconi, 1, 22100 Como CO, Italy",
+              "city": "Como",
+              "county": "Provincia di Como",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2025:12:15 12:22:30",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 54.31190204620361
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Composite material",
+          "confidence": 0.8776746988296509,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Composite material",
+                "score": 0.8776746988296509
+              },
+              {
+                "source": "label",
+                "name": "Sunlight",
+                "score": 0.8127016425132751
+              },
+              {
+                "source": "label",
+                "name": "Meteorological phenomenon",
+                "score": 0.7191364765167236
+              },
+              {
+                "source": "web",
+                "name": "Tree",
+                "score": 0.3148757219314575
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Tree",
+                "score": 0.3148757219314575
+              },
+              {
+                "name": "M-tree",
+                "score": 0.2590999901294708
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9892885684967041
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9811685681343079
+              },
+              {
+                "name": "Composite material",
+                "score": 0.8776746988296509
+              },
+              {
+                "name": "Sunlight",
+                "score": 0.8127016425132751
+              },
+              {
+                "name": "Meteorological phenomenon",
+                "score": 0.7191364765167236
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 45.814230555555554,
+              "longitude": 9.076025
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Viale Guglielmo Marconi, 1, 22100 Como CO, Italy",
+              "city": "Como",
+              "county": "Provincia di Como",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2025:12:15 12:22:30",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 23.452538013458252
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Como, Provincia di Como, Italy",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Como, Provincia di Como, Italy",
+            "coordinates": {
+              "latitude": 45.814230555555554,
+              "longitude": 9.076025
+            },
+            "search_range_meters": 5000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "War Memorial",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 938,
+                  "vicinity": "Viale Giancarlo Puecher, Como",
+                  "place_id": "ChIJ57lU-q2dhkcRVxcvoMwyZ5k",
+                  "location": {
+                    "lat": 45.8149149,
+                    "lng": 9.073551199999999
+                  }
+                },
+                {
+                  "name": "Museo Villa Bernasconi",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 681,
+                  "vicinity": "Largo Alfredo Campanini, 2, Cernobbio",
+                  "place_id": "ChIJ23OZeoOdhkcRqCbN5WaSGaU",
+                  "location": {
+                    "lat": 45.8374847,
+                    "lng": 9.073044899999998
+                  }
+                },
+                {
+                  "name": "Museo Archeologico Giovio",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 175,
+                  "vicinity": "Piazza Medaglie d'Oro Comasche, 1, Como",
+                  "place_id": "ChIJN9WdVqeOhkcR2OCU29Z0vsA",
+                  "location": {
+                    "lat": 45.8086754,
+                    "lng": 9.0861798
+                  }
+                },
+                {
+                  "name": "Life Electric",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1059,
+                  "vicinity": "Diga foranea Piero Caldirola, Como",
+                  "place_id": "ChIJ3XNeo0uchkcRTbJQBdIhkg0",
+                  "location": {
+                    "lat": 45.815375,
+                    "lng": 9.080258
+                  }
+                },
+                {
+                  "name": "ComeOn Como",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3,
+                  "user_ratings_total": 1,
+                  "vicinity": "Viale Fratelli Rosselli, 31, Como",
+                  "place_id": "ChIJ__8P4qydhkcR352ZYfVrdwM",
+                  "location": {
+                    "lat": 45.8121646,
+                    "lng": 9.0704291
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Opera don Guanella - Provincia Sacro Cuore",
+                  "types": [
+                    "museum",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 10,
+                  "vicinity": "Via Tommaso Grossi, 18, Como",
+                  "place_id": "ChIJtYE7wcydhkcRSPIRpOODw1U",
+                  "location": {
+                    "lat": 45.8093292,
+                    "lng": 9.091227700000001
+                  }
+                },
+                {
+                  "name": "Museo Villa Bernasconi",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 681,
+                  "vicinity": "Largo Alfredo Campanini, 2, Cernobbio",
+                  "place_id": "ChIJ23OZeoOdhkcRqCbN5WaSGaU",
+                  "location": {
+                    "lat": 45.8374847,
+                    "lng": 9.073044899999998
+                  }
+                },
+                {
+                  "name": "Museo Archeologico Giovio",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 175,
+                  "vicinity": "Piazza Medaglie d'Oro Comasche, 1, Como",
+                  "place_id": "ChIJN9WdVqeOhkcR2OCU29Z0vsA",
+                  "location": {
+                    "lat": 45.8086754,
+                    "lng": 9.0861798
+                  }
+                },
+                {
+                  "name": "Villa Olmo",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 5827,
+                  "vicinity": "Via Simone Cantoni, 1, Como",
+                  "place_id": "ChIJ2XNkR6idhkcReptpYQO06_c",
+                  "location": {
+                    "lat": 45.818983,
+                    "lng": 9.065375699999999
+                  }
+                },
+                {
+                  "name": "Civic Museum of the Risorgimento",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 38,
+                  "vicinity": "Piazza Medaglie d'Oro Comasche, 1, Como",
+                  "place_id": "ChIJwapfOjWchkcRuyifWrQUX7Y",
+                  "location": {
+                    "lat": 45.80847839999999,
+                    "lng": 9.0861586
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Hotel Miralago",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 411,
+                  "vicinity": "Piazza Risorgimento, 1, Cernobbio",
+                  "place_id": "ChIJvfUakISdhkcRxc6IA8gPLsU",
+                  "location": {
+                    "lat": 45.8405611,
+                    "lng": 9.077365
+                  }
+                },
+                {
+                  "name": "Albergo Ristorante Della Torre",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1690,
+                  "vicinity": "Via Vittorio Emanuele II, 3, Cernobbio",
+                  "place_id": "ChIJ37jrunmdhkcREutwNJu1fXQ",
+                  "location": {
+                    "lat": 45.8412364,
+                    "lng": 9.0669135
+                  }
+                },
+                {
+                  "name": "Hotel Regina Olga",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 141,
+                  "vicinity": "Via Regina, 18, Cernobbio",
+                  "place_id": "ChIJ7wrdeoOdhkcR9_zDTfI-uGQ",
+                  "location": {
+                    "lat": 45.84052719999999,
+                    "lng": 9.076838799999999
+                  }
+                },
+                {
+                  "name": "Hotel Paradiso Como",
+                  "types": [
+                    "atm",
+                    "lodging",
+                    "bar",
+                    "finance",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 367,
+                  "vicinity": "Via Giacomo Scalini, 70, Brunate",
+                  "place_id": "ChIJK127Fd2dhkcRXM3cdG_kJUE",
+                  "location": {
+                    "lat": 45.826038,
+                    "lng": 9.102476599999997
+                  }
+                },
+                {
+                  "name": "Ristorante albergo Capanna C.A.O. - Brunate (co)",
+                  "types": [
+                    "cafe",
+                    "lodging",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 433,
+                  "vicinity": "Via alle Colme, 35, Brunate",
+                  "place_id": "ChIJU-R9VHWehkcRPqr4ne-AMnw",
+                  "location": {
+                    "lat": 45.8254282,
+                    "lng": 9.112551199999999
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Villa Olmo",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 5827,
+                  "vicinity": "Via Simone Cantoni, 1, Como",
+                  "place_id": "ChIJ2XNkR6idhkcReptpYQO06_c",
+                  "location": {
+                    "lat": 45.818983,
+                    "lng": 9.065375699999999
+                  }
+                },
+                {
+                  "name": "Parco del Grumello",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 120,
+                  "vicinity": "Via Per Cernobbio, 11-19, Como",
+                  "place_id": "ChIJ8zvxrqedhkcRJuwV_BDnyoA",
+                  "location": {
+                    "lat": 45.8224014,
+                    "lng": 9.067367999999998
+                  }
+                },
+                {
+                  "name": "Parco Spina Verde",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 166,
+                  "vicinity": "Como",
+                  "place_id": "ChIJ-S_TmFqchkcREqedmgukMgQ",
+                  "location": {
+                    "lat": 45.80094219999999,
+                    "lng": 9.068188399999999
+                  }
+                },
+                {
+                  "name": "Parco Regionale Spina Verde",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2250,
+                  "vicinity": "San Fermo della Battaglia",
+                  "place_id": "ChIJnSgPrCidhkcR5nty7FjcgsY",
+                  "location": {
+                    "lat": 45.8180778,
+                    "lng": 9.0263415
+                  }
+                },
+                {
+                  "name": "Castello Baradello",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 877,
+                  "vicinity": "Via Castel Baradello, 5, Como",
+                  "place_id": "ChIJsfNk6TuchkcRNWZogNupBVA",
+                  "location": {
+                    "lat": 45.7940273,
+                    "lng": 9.085969600000002
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Chiesa Parrocchiale di San Giuliano Martire",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 29,
+                  "vicinity": "Via Maurizio Monti, 53, Como",
+                  "place_id": "ChIJBy6uvsudhkcRvBGK6hWGuBg",
+                  "location": {
+                    "lat": 45.8125889,
+                    "lng": 9.089258599999999
+                  }
+                },
+                {
+                  "name": "Opera don Guanella - Provincia Sacro Cuore",
+                  "types": [
+                    "museum",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 10,
+                  "vicinity": "Via Tommaso Grossi, 18, Como",
+                  "place_id": "ChIJtYE7wcydhkcRSPIRpOODw1U",
+                  "location": {
+                    "lat": 45.8093292,
+                    "lng": 9.091227700000001
+                  }
+                },
+                {
+                  "name": "Congregazione Suore Infermiere dell'Addolorata",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 3,
+                  "vicinity": "Via Vitani, 13, Como",
+                  "place_id": "ChIJaehS3bSdhkcR4XlLP4Sy3LY",
+                  "location": {
+                    "lat": 45.8112326,
+                    "lng": 9.081021400000001
+                  }
+                },
+                {
+                  "name": "Chiesa Parrocchiale di Santa Cecilia",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 35,
+                  "vicinity": "Piazza Martignoni, 1, Como",
+                  "place_id": "ChIJBazdSYaehkcRfFQEgGJxXzI",
+                  "location": {
+                    "lat": 45.8041176,
+                    "lng": 9.1163914
+                  }
+                },
+                {
+                  "name": "Associazione dei Testimoni di Geova",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 16,
+                  "vicinity": "Via Gabriele Castellini, 11, Como",
+                  "place_id": "ChIJ9ctSMzuchkcRD8ERyV-JavY",
+                  "location": {
+                    "lat": 45.7965363,
+                    "lng": 9.091630199999999
+                  }
+                },
+                {
+                  "name": "Moschea di Milli Gorus",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 54,
+                  "vicinity": "Piazzale Montesanto, 4, Como",
+                  "place_id": "ChIJg0yZ7CSchkcRWFgkOd1hymY",
+                  "location": {
+                    "lat": 45.7957173,
+                    "lng": 9.0934445
+                  }
+                },
+                {
+                  "name": "Associazione Islamica Culturale di Como",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 10,
+                  "vicinity": "Via Domenico Pino, 5, Como",
+                  "place_id": "ChIJhcTHPhachkcRqnlSUcpWvXA",
+                  "location": {
+                    "lat": 45.7892353,
+                    "lng": 9.085538099999999
+                  }
+                },
+                {
+                  "name": "Lega Dei Centri Culturali İslamici",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 4,
+                  "vicinity": "Via Filippo Turati, 5, Como",
+                  "place_id": "ChIJrWqPtZGdhkcRsJUKTF6QQdA",
+                  "location": {
+                    "lat": 45.7893181,
+                    "lng": 9.0883754
+                  }
+                },
+                {
+                  "name": "Turk mosque",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 46,
+                  "vicinity": "Via Filippo Turati, 5, Como",
+                  "place_id": "ChIJwb95FAadhkcRgUV6YA0-jOY",
+                  "location": {
+                    "lat": 45.78931,
+                    "lng": 9.0884291
+                  }
+                },
+                {
+                  "name": "DITIB COMO",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 27,
+                  "vicinity": "Via Marco Cumano, 7, Como",
+                  "place_id": "ChIJ3cHg2NmdhkcRxp4YN6pUEXU",
+                  "location": {
+                    "lat": 45.7871612,
+                    "lng": 9.0896484
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Marsiglione Arts Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 12,
+                  "vicinity": "Via Bellinzona, 82/A, Como",
+                  "place_id": "ChIJv6xF3bSdhkcRdYzBcCRI2Xc",
+                  "location": {
+                    "lat": 45.82370600000001,
+                    "lng": 9.0546749
+                  }
+                },
+                {
+                  "name": "Studio Fabrizio Bellanca - Artista in Como",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 10,
+                  "vicinity": "Via Borgo Vico, 35, Como",
+                  "place_id": "ChIJA59uNk2chkcRQa6GCQ6tR50",
+                  "location": {
+                    "lat": 45.8104536,
+                    "lng": 9.0730744
+                  }
+                },
+                {
+                  "name": "CONSARC/GALLERIA snc",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 18,
+                  "vicinity": "Via F.Borromini 2 Entrata da, Via Grütli, Chiasso",
+                  "place_id": "ChIJvZ9Zd0qdhkcR0lT2j6Jewas",
+                  "location": {
+                    "lat": 45.83343680000001,
+                    "lng": 9.024863500000002
+                  }
+                },
+                {
+                  "name": "Galleria D'Arte Il Salotto",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 4,
+                  "vicinity": "Via Carloni, 5c, Como",
+                  "place_id": "ChIJW9FRMjKchkcRYT5r8wMpA9c",
+                  "location": {
+                    "lat": 45.80477399999999,
+                    "lng": 9.091963499999999
+                  }
+                },
+                {
+                  "name": "Palazzo Mazzini",
+                  "types": [
+                    "art_gallery",
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 43,
+                  "vicinity": "Via Armando Diaz, 2, Como",
+                  "place_id": "ChIJT7G_kkydhkcRzBbqOSqI-NU",
+                  "location": {
+                    "lat": 45.8106553,
+                    "lng": 9.0801339
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Como",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Como",
+                  "place_id": "ChIJY-0nEEichkcRJPVfeK-Wm7k",
+                  "location": {
+                    "lat": 45.8063817,
+                    "lng": 9.0851867
+                  }
+                },
+                {
+                  "name": "Hotel Villa Flori",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 906,
+                  "vicinity": "Via Per Cernobbio, 12, Como",
+                  "place_id": "ChIJfQC_AKGdhkcR4I9bW1pzGfk",
+                  "location": {
+                    "lat": 45.8280667,
+                    "lng": 9.070164
+                  }
+                },
+                {
+                  "name": "Hotel Metropole Suisse",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 1062,
+                  "vicinity": "Piazza Camillo Benso Conte di Cavour, 19, Como",
+                  "place_id": "ChIJ145qbrSdhkcRW-An6xoM0NU",
+                  "location": {
+                    "lat": 45.81302729999999,
+                    "lng": 9.0801526
+                  }
+                },
+                {
+                  "name": "Albergo Terminus",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 536,
+                  "vicinity": "Lungo Lario Trieste, 14, Como",
+                  "place_id": "ChIJz2jUg7adhkcRaOmiDczGFjM",
+                  "location": {
+                    "lat": 45.81367699999999,
+                    "lng": 9.081662999999999
+                  }
+                },
+                {
+                  "name": "Hotel Borgovico",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 210,
+                  "vicinity": "Via Borgo Vico, 89/91, Como",
+                  "place_id": "ChIJa0MdJ62dhkcRWCyYsxv44oA",
+                  "location": {
+                    "lat": 45.8113473,
+                    "lng": 9.0707942
+                  }
+                }
+              ]
+            },
+            "total_places_found": 40,
+            "photo_timestamp": "2025:12:15 12:22:30",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.36867713928222656
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/202.jpg"
+    },
+    {
+      "image_filename": "202.jpg",
+      "timestamp": "2026-01-28T04:42:05.614781",
+      "processing_time_seconds": 60.107676,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Lake Como, Como, Italy",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive shape and setting of the lake, along with the mountainous backdrop and waterfront, are characteristic of Lake Como in Italy.",
+            "detailed_description": "The image shows Lake Como, a large lake in northern Italy known for its picturesque scenery and surrounding mountains. The view includes a waterfront with a railing, trees, and a mountainous backdrop with buildings nestled along the slopes. The lake's calm waters reflect the clear blue sky, creating a serene and scenic landscape.",
+            "identification": {
+              "primary": [
+                "Lake Como"
+              ],
+              "location": "Como, Italy",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Lake Como",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "lake",
+              "natural_feature",
+              "Italy",
+              "mountains",
+              "waterfront"
+            ],
+            "location": "Como, Italy",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Lake Como\"],\n        \"location\": \"Como, Italy\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Lake Como\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"lake\", \"natural_feature\", \"Italy\", \"mountains\", \"waterfront\"],\n    \"description\": \"The image shows Lake Como, a large lake in northern Italy known for its picturesque scenery and surrounding mountains. The view includes a waterfront with a railing, trees, and a mountainous backdrop with buildings nestled along the slopes. The lake's calm waters reflect the clear blue sky, creating a serene and scenic landscape.\",\n    \"reasoning\": \"The distinctive shape and setting of the lake, along with the mountainous backdrop and waterfront, are characteristic of Lake Como in Italy.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 9.531404972076416
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a scenic lakeside view with a mountainous backdrop. The lake is expansive, with calm, rippling water reflecting the blue sky above. The shoreline is bordered by a stone pathway, lined with a wrought iron railing that exhibits intricate designs, possibly featuring floral or geometric patterns. The railing runs parallel to the water, providing a barrier between the pathway and the lake. Along the path, leafless trees are visible, suggesting a winter or early spring setting. In th",
+            "description": "The image depicts a scenic lakeside view with a mountainous backdrop. The lake is expansive, with calm, rippling water reflecting the blue sky above. The shoreline is bordered by a stone pathway, lined with a wrought iron railing that exhibits intricate designs, possibly featuring floral or geometric patterns. The railing runs parallel to the water, providing a barrier between the pathway and the lake. Along the path, leafless trees are visible, suggesting a winter or early spring setting. In th",
+            "architectural_style": "Modern residential",
+            "search_backends_used": [],
+            "processing_time_seconds": 50.574140787124634
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Composite material",
+          "confidence": 0.8776746988296509,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Composite material",
+                "score": 0.8776746988296509
+              },
+              {
+                "source": "label",
+                "name": "Sunlight",
+                "score": 0.8127016425132751
+              },
+              {
+                "source": "label",
+                "name": "Meteorological phenomenon",
+                "score": 0.7191364765167236
+              },
+              {
+                "source": "web",
+                "name": "Tree",
+                "score": 0.3148757219314575
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Tree",
+                "score": 0.3148757219314575
+              },
+              {
+                "name": "M-tree",
+                "score": 0.2590999901294708
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9892885684967041
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9811685681343079
+              },
+              {
+                "name": "Composite material",
+                "score": 0.8776746988296509
+              },
+              {
+                "name": "Sunlight",
+                "score": 0.8127016425132751
+              },
+              {
+                "name": "Meteorological phenomenon",
+                "score": 0.7191364765167236
+              }
+            ],
+            "processing_time_seconds": 22.135931968688965
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/202.jpg"
+    }
+  ]
+}

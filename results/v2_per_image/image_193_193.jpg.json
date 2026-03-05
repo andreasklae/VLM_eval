@@ -1,0 +1,1031 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "193.jpg",
+      "timestamp": "2026-01-28T04:19:34.245710",
+      "processing_time_seconds": 74.366707,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 47.79781111111111,
+        "gps_longitude": 13.045988888888889,
+        "location": {
+          "formatted_address": "Residenzplatz 1, Domplatz 1a, 5020 Salzburg, Austria",
+          "city": "Salzburg",
+          "county": "Salzburg",
+          "country": "Austria"
+        },
+        "datetime_original": "2025:11:17 13:31:10",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Salzburg Cathedral, Salzburg, Austria",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and decorative elements are consistent with the Baroque period, and the location metadata strongly suggests Salzburg Cathedral, a well-known landmark in Salzburg, Austria.",
+            "detailed_description": "The image depicts the interior of Salzburg Cathedral, a prominent Baroque structure located in Salzburg, Austria. The cathedral features ornate architectural elements typical of the Baroque style, including elaborate stucco work, decorative arches, and a richly adorned ceiling. The interior is characterized by its grand scale, symmetrical design, and use of light to enhance the dramatic effect. The cathedral's nave is visible, with rows of pews and an altar at the far end. The intricate detailing and artistic embellishments reflect the 17th-century Baroque period.",
+            "identification": {
+              "primary": [
+                "Salzburg Cathedral"
+              ],
+              "location": "Salzburg, Austria",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Baroque interior of Salzburg Cathedral",
+                "type": "building",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Baroque",
+              "17th_century",
+              "architecture",
+              "Austria",
+              "cathedral"
+            ],
+            "location": "Salzburg, Austria",
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Salzburg Cathedral\"],\n        \"location\": \"Salzburg, Austria\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Baroque interior of Salzburg Cathedral\",\n            \"type\": \"building\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Baroque\", \"17th_century\", \"architecture\", \"Austria\", \"cathedral\"],\n    \"description\": \"The image depicts the interior of Salzburg Cathedral, a prominent Baroque structure located in Salzburg, Austria. The cathedral features ornate architectural elements typical of the Baroque style, including elaborate stucco work, decorative arches, and a richly adorned ceiling. The interior is characterized by its grand scale, symmetrical design, and use of light to enhance the dramatic effect. The cathedral's nave is visible, with rows of pews and an altar at the far end. The intricate detailing and artistic embellishments reflect the 17th-century Baroque period.\",\n    \"reasoning\": \"The architectural style and decorative elements are consistent with the Baroque period, and the location metadata strongly suggests Salzburg Cathedral, a well-known landmark in Salzburg, Austria.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "gps_coordinates": {
+              "latitude": 47.79781111111111,
+              "longitude": 13.045988888888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Residenzplatz 1, Domplatz 1a, 5020 Salzburg, Austria",
+              "city": "Salzburg",
+              "county": "Salzburg",
+              "country": "Austria"
+            },
+            "photo_timestamp": "2025:11:17 13:31:10",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 10.682270050048828
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "**URL**: ([catholicshrinebasilica.com]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 2,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts the interior of a grand cathedral, showcasing a rich Baroque architectural style. The ceiling is adorned with intricate stucco work, featuring ornate decorations and detailed frescoes. These frescoes are framed by elaborate moldings and depict religious scenes, adding depth and color to the ceiling. The arches are prominently featured, with their curvature accentuated by the decorative elements that include scrolls and floral motifs. The walls are lined with pilasters that have",
+            "description": "The image depicts the interior of a grand cathedral, showcasing a rich Baroque architectural style. The ceiling is adorned with intricate stucco work, featuring ornate decorations and detailed frescoes. These frescoes are framed by elaborate moldings and depict religious scenes, adding depth and color to the ceiling. The arches are prominently featured, with their curvature accentuated by the decorative elements that include scrolls and floral motifs. The walls are lined with pilasters that have",
+            "architectural_style": "Baroque",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 47.79781111111111,
+              "longitude": 13.045988888888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Residenzplatz 1, Domplatz 1a, 5020 Salzburg, Austria",
+              "city": "Salzburg",
+              "county": "Salzburg",
+              "country": "Austria"
+            },
+            "photo_timestamp": "2025:11:17 13:31:10",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 62.781782150268555
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Domquartier Salzburg (47.7985, 13.0456)",
+          "confidence": 0.43505704402923584,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Domquartier Salzburg",
+            "coordinates": {
+              "latitude": 47.7985009,
+              "longitude": 13.0456487
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 3024
+              },
+              {
+                "x": 0,
+                "y": 3024
+              }
+            ],
+            "context_labels": [
+              "Ceiling",
+              "Glass",
+              "Classical architecture",
+              "Symmetry",
+              "Column"
+            ],
+            "context_objects": [],
+            "web_entities": [
+              {
+                "name": "Building",
+                "score": 0.3155220150947571
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Domquartier Salzburg",
+                "score": 0.43505704402923584,
+                "location": {
+                  "lat": 47.7985009,
+                  "lng": 13.0456487
+                }
+              },
+              {
+                "name": "Fortress Hohensalzburg",
+                "score": 0.29294314980506897,
+                "location": {
+                  "lat": 47.794948299999994,
+                  "lng": 13.0476583
+                }
+              },
+              {
+                "name": "L'osteria Salzburg",
+                "score": 0.2379050850868225,
+                "location": {
+                  "lat": 47.8025564,
+                  "lng": 13.0449492
+                }
+              }
+            ],
+            "processing_time_seconds": 19.942206859588623
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Salzburg, Austria",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Salzburg, Austria",
+            "coordinates": {
+              "latitude": 47.79781111111111,
+              "longitude": 13.045988888888889
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Fortress Hohensalzburg",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 51537,
+                  "vicinity": "Mönchsberg 34, Salzburg",
+                  "place_id": "ChIJvQMhJ2CQdkcRa1Xs6dO-dys",
+                  "location": {
+                    "lat": 47.79494829999999,
+                    "lng": 13.0476583
+                  }
+                },
+                {
+                  "name": "Haus der Natur",
+                  "types": [
+                    "tourist_attraction",
+                    "zoo",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 13300,
+                  "vicinity": "Museumsplatz 5, Salzburg",
+                  "place_id": "ChIJdcwcsWWQdkcRRacRj7tCVGI",
+                  "location": {
+                    "lat": 47.8016443,
+                    "lng": 13.0392002
+                  }
+                },
+                {
+                  "name": "Mozart's Birthplace",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 26854,
+                  "vicinity": "Getreidegasse 9, Salzburg",
+                  "place_id": "ChIJiYA55GOQdkcRi7885u5bbJ4",
+                  "location": {
+                    "lat": 47.8000079,
+                    "lng": 13.0435589
+                  }
+                },
+                {
+                  "name": "Salzburg Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 12505,
+                  "vicinity": "Domplatz 1a, Salzburg",
+                  "place_id": "ChIJuYYBl2GQdkcRHSa2IHQNv0U",
+                  "location": {
+                    "lat": 47.79789460000001,
+                    "lng": 13.0466354
+                  }
+                },
+                {
+                  "name": "Mozart Residence",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 7772,
+                  "vicinity": "Makartplatz 8, Salzburg",
+                  "place_id": "ChIJHd0TY2OQdkcR59EiCmY5mTo",
+                  "location": {
+                    "lat": 47.8026282,
+                    "lng": 13.0438679
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Fortress Hohensalzburg",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 51537,
+                  "vicinity": "Mönchsberg 34, Salzburg",
+                  "place_id": "ChIJvQMhJ2CQdkcRa1Xs6dO-dys",
+                  "location": {
+                    "lat": 47.79494829999999,
+                    "lng": 13.0476583
+                  }
+                },
+                {
+                  "name": "Haus der Natur",
+                  "types": [
+                    "museum",
+                    "zoo",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 13300,
+                  "vicinity": "Museumsplatz 5, Salzburg",
+                  "place_id": "ChIJdcwcsWWQdkcRRacRj7tCVGI",
+                  "location": {
+                    "lat": 47.8016443,
+                    "lng": 13.0392002
+                  }
+                },
+                {
+                  "name": "Mozart's Birthplace",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 26854,
+                  "vicinity": "Getreidegasse 9, Salzburg",
+                  "place_id": "ChIJiYA55GOQdkcRi7885u5bbJ4",
+                  "location": {
+                    "lat": 47.8000079,
+                    "lng": 13.0435589
+                  }
+                },
+                {
+                  "name": "Mozart Residence",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 7772,
+                  "vicinity": "Makartplatz 8, Salzburg",
+                  "place_id": "ChIJHd0TY2OQdkcR59EiCmY5mTo",
+                  "location": {
+                    "lat": 47.8026282,
+                    "lng": 13.0438679
+                  }
+                },
+                {
+                  "name": "Museum der Moderne",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1770,
+                  "vicinity": "Am Mönchsberg 32, Salzburg",
+                  "place_id": "ChIJSy24wWWQdkcR1cIBSqENQxg",
+                  "location": {
+                    "lat": 47.8009123,
+                    "lng": 13.0383679
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Gasthof Goldgasse",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1448,
+                  "vicinity": "Goldgasse 10, Salzburg",
+                  "place_id": "ChIJXTkrKmKQdkcR7hDF0nXbaXY",
+                  "location": {
+                    "lat": 47.7994026,
+                    "lng": 13.0459156
+                  }
+                },
+                {
+                  "name": "Stadtalm",
+                  "types": [
+                    "restaurant",
+                    "lodging",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1105,
+                  "vicinity": "Am Mönchsberg 19C, Salzburg",
+                  "place_id": "ChIJ7zZzgWaQdkcRqTaT3HS4tak",
+                  "location": {
+                    "lat": 47.7998495,
+                    "lng": 13.039244
+                  }
+                },
+                {
+                  "name": "Radisson Blu Hotel Altstadt, Salzburg",
+                  "types": [
+                    "bar",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 751,
+                  "vicinity": "Rudolfskai 28, Salzburg",
+                  "place_id": "ChIJiW-bPGKQdkcRZz-f6n75UZc",
+                  "location": {
+                    "lat": 47.7997516,
+                    "lng": 13.0469915
+                  }
+                },
+                {
+                  "name": "M32",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 1902,
+                  "vicinity": "Am Mönchsberg 32, Salzburg",
+                  "place_id": "ChIJSy24wWWQdkcR5MQ1vMpVomc",
+                  "location": {
+                    "lat": 47.8009301,
+                    "lng": 13.0385761
+                  }
+                },
+                {
+                  "name": "St. Peter Stiftskulinarium",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 3379,
+                  "vicinity": "Sankt-Peter-Bezirk 1/4, Salzburg",
+                  "place_id": "ChIJDRMIAWGQdkcRuJNeZ6h78Gs",
+                  "location": {
+                    "lat": 47.7970354,
+                    "lng": 13.0442094
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Aussichtspunkt",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Bucklreuthstraße 1, Salzburg",
+                  "place_id": "ChIJ5e1tguSRdkcRVsvZAyMPfEM",
+                  "location": {
+                    "lat": 47.797526,
+                    "lng": 13.0397047
+                  }
+                },
+                {
+                  "name": "Park am Gersberg",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3,
+                  "user_ratings_total": 1,
+                  "vicinity": "Schwarzstraße 1, Salzburg",
+                  "place_id": "ChIJq6pagmOQdkcRQljXCL_b4bI",
+                  "location": {
+                    "lat": 47.8018699,
+                    "lng": 13.0438112
+                  }
+                },
+                {
+                  "name": "Makartplatz",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 20,
+                  "vicinity": "Makartplatz, Salzburg",
+                  "place_id": "ChIJpcS8TQCRdkcRbPouHpCFX4Q",
+                  "location": {
+                    "lat": 47.80291800000001,
+                    "lng": 13.0437628
+                  }
+                },
+                {
+                  "name": "Alma-Rose'-Stiege",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Reichenhaller Straße 6/8, Salzburg",
+                  "place_id": "ChIJS0TzSgCRdkcRGLWbqZYXyZM",
+                  "location": {
+                    "lat": 47.79874179999999,
+                    "lng": 13.0374489
+                  }
+                },
+                {
+                  "name": "Kaipromenade",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 10,
+                  "vicinity": "Kaipromenade, Salzburg",
+                  "place_id": "ChIJ2-c559SRdkcRjEHmTQxO9L0",
+                  "location": {
+                    "lat": 47.80340109999999,
+                    "lng": 13.0382798
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Salzburg Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 12505,
+                  "vicinity": "Domplatz 1a, Salzburg",
+                  "place_id": "ChIJuYYBl2GQdkcRHSa2IHQNv0U",
+                  "location": {
+                    "lat": 47.79789460000001,
+                    "lng": 13.0466354
+                  }
+                },
+                {
+                  "name": "Katholische Jungschar Salzburg",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Kaigasse 26, Salzburg",
+                  "place_id": "ChIJqR3rWYqQdkcRrPZHG9mXX6k",
+                  "location": {
+                    "lat": 47.7966877,
+                    "lng": 13.0497733
+                  }
+                },
+                {
+                  "name": "DomQuartier Salzburg",
+                  "types": [
+                    "museum",
+                    "art_gallery",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1098,
+                  "vicinity": "Residenzplatz 1, Domplatz 1a, Salzburg",
+                  "place_id": "ChIJR5iTmmGQdkcRMhe3zatrdSU",
+                  "location": {
+                    "lat": 47.7985009,
+                    "lng": 13.0456487
+                  }
+                },
+                {
+                  "name": "Erzdiözese Salzburg, Matrikenreferat",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Kaigasse 18, Salzburg",
+                  "place_id": "ChIJj2-cZoqQdkcRvGI9QJRfO-Y",
+                  "location": {
+                    "lat": 47.7968717,
+                    "lng": 13.0489453
+                  }
+                },
+                {
+                  "name": "Kollegienkirche",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 467,
+                  "vicinity": "Universitätsplatz 20, Salzburg",
+                  "place_id": "ChIJJxycW2GQdkcRmWJgpds0S4k",
+                  "location": {
+                    "lat": 47.7992131,
+                    "lng": 13.0431707
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Restaurant Blaue Gans Salzburg Gasthaus",
+                  "types": [
+                    "restaurant",
+                    "art_gallery",
+                    "bar",
+                    "lodging",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 668,
+                  "vicinity": "41-43, Getreidegasse, Salzburg",
+                  "place_id": "ChIJwVEfIGSQdkcRttpZEQ1Uw-s",
+                  "location": {
+                    "lat": 47.799901,
+                    "lng": 13.040636
+                  }
+                },
+                {
+                  "name": "Rudolf Budja Galerie",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 20,
+                  "vicinity": "Sigmund-Haffner-Gasse 16, Salzburg",
+                  "place_id": "ChIJGWOzXWGQdkcRg8V-Y550gnA",
+                  "location": {
+                    "lat": 47.7987583,
+                    "lng": 13.0434285
+                  }
+                },
+                {
+                  "name": "Galerie Academia GesmbH & Co KG",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Residenzplatz 1, Salzburg",
+                  "place_id": "ChIJR5iTmmGQdkcRXBUHrJl8vvU",
+                  "location": {
+                    "lat": 47.7985012,
+                    "lng": 13.0457712
+                  }
+                },
+                {
+                  "name": "Galerie Gerlich",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 5,
+                  "vicinity": "Sigmund-Haffner-Gasse 6, Salzburg",
+                  "place_id": "ChIJ154m32OQdkcRV-yQD_iiv9k",
+                  "location": {
+                    "lat": 47.7996041,
+                    "lng": 13.0442322
+                  }
+                },
+                {
+                  "name": "Textil Kunst Galerie",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 7,
+                  "vicinity": "Steingasse 35a, Salzburg",
+                  "place_id": "ChIJF1SgXmKQdkcR1np69hJWPKA",
+                  "location": {
+                    "lat": 47.8012203,
+                    "lng": 13.047654
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Salzburg",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Salzburg",
+                  "place_id": "ChIJsdQIqd2adkcRPfcqQaGD4cE",
+                  "location": {
+                    "lat": 47.8014154,
+                    "lng": 13.0448441
+                  }
+                },
+                {
+                  "name": "Neutor Hotel Salzburg Zentrum",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.3,
+                  "user_ratings_total": 734,
+                  "vicinity": "Neutorstraße 8, Salzburg",
+                  "place_id": "ChIJCWXlTGaQdkcRBOCbOCtaBZk",
+                  "location": {
+                    "lat": 47.7977232,
+                    "lng": 13.0372356
+                  }
+                },
+                {
+                  "name": "Hotel Elefant",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 801,
+                  "vicinity": "Sigmund-Haffner-Gasse 4, Salzburg",
+                  "place_id": "ChIJ258K3GOQdkcR7rlIBrxub70",
+                  "location": {
+                    "lat": 47.7997222,
+                    "lng": 13.0444444
+                  }
+                },
+                {
+                  "name": "Boutiquehotel Amadeus",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 259,
+                  "vicinity": "Linzer Gasse 43, Salzburg",
+                  "place_id": "ChIJp5eWKn2QdkcRDRdXTUY3LXU",
+                  "location": {
+                    "lat": 47.80416669999999,
+                    "lng": 13.0477778
+                  }
+                },
+                {
+                  "name": "Gasthof Goldgasse",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1448,
+                  "vicinity": "Goldgasse 10, Salzburg",
+                  "place_id": "ChIJXTkrKmKQdkcR7hDF0nXbaXY",
+                  "location": {
+                    "lat": 47.7994026,
+                    "lng": 13.0459156
+                  }
+                }
+              ]
+            },
+            "total_places_found": 35,
+            "photo_timestamp": "2025:11:17 13:31:10",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.5837147235870361
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/193.jpg"
+    },
+    {
+      "image_filename": "193.jpg",
+      "timestamp": "2026-01-28T04:20:48.652952",
+      "processing_time_seconds": 60.40597,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Baroque church interior",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and decorative elements are indicative of Baroque design, known for its elaborate details and dramatic use of space. The presence of frescoes and a pipe organ further supports this identification.",
+            "detailed_description": "The image depicts the interior of a Baroque-style church, characterized by its ornate architectural elements, including elaborate moldings and decorative frescoes. The ceiling features intricate designs and paintings typical of the Baroque period, with a focus on grandeur and detail. The presence of a pipe organ suggests a space used for religious ceremonies and musical performances. The overall design emphasizes verticality and opulence, common in Baroque architecture.",
+            "identification": {
+              "primary": [
+                "Baroque church interior"
+              ],
+              "location": null,
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Baroque architectural elements",
+                "type": "building",
+                "confidence": 0.9
+              },
+              {
+                "name": "Decorative frescoes",
+                "type": "artwork",
+                "confidence": 0.8
+              },
+              {
+                "name": "Pipe organ",
+                "type": "instrument",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "Baroque",
+              "church",
+              "architecture",
+              "fresco",
+              "organ"
+            ],
+            "location": null,
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "St. Peter's Church, Vienna",
+                "specificity_level": "very_specific",
+                "confidence": 0.7,
+                "reasoning": "The style and elements are similar to those found in St. Peter's Church, a notable Baroque church in Vienna."
+              },
+              {
+                "guess": "Salzburg Cathedral",
+                "specificity_level": "very_specific",
+                "confidence": 0.65,
+                "reasoning": "Salzburg Cathedral is another example of Baroque architecture with similar interior features."
+              },
+              {
+                "guess": "Baroque church in Central Europe",
+                "specificity_level": "general",
+                "confidence": 0.75,
+                "reasoning": "The style is consistent with Baroque churches found throughout Central Europe."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Baroque church interior\"],\n        \"location\": null,\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Baroque architectural elements\",\n            \"type\": \"building\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Decorative frescoes\",\n            \"type\": \"artwork\",\n            \"confidence\": 0.8\n        },\n        {\n            \"name\": \"Pipe organ\",\n            \"type\": \"instrument\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"Baroque\", \"church\", \"architecture\", \"fresco\", \"organ\"],\n    \"description\": \"The image depicts the interior of a Baroque-style church, characterized by its ornate architectural elements, including elaborate moldings and decorative frescoes. The ceiling features intricate designs and paintings typical of the Baroque period, with a focus on grandeur and detail. The presence of a pipe organ suggests a space used for religious ceremonies and musical performances. The overall design emphasizes verticality and opulence, common in Baroque architecture.\",\n    \"reasoning\": \"The architectural style and decorative elements are indicative of Baroque design, known for its elaborate details and dramatic use of space. The presence of frescoes and a pipe organ further supports this identification.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"St. Peter's Church, Vienna\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The style and elements are similar to those found in St. Peter's Church, a notable Baroque church in Vienna.\"\n        },\n        {\n            \"guess\": \"Salzburg Cathedral\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.65,\n            \"reasoning\": \"Salzburg Cathedral is another example of Baroque architecture with similar interior features.\"\n        },\n        {\n            \"guess\": \"Baroque church in Central Europe\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.75,\n            \"reasoning\": \"The style is consistent with Baroque churches found throughout Central Europe.\"\n        }\n    ]\n}",
+            "processing_time_seconds": 12.790527820587158
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([en.wikipedia.org]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts the interior of a grand church or cathedral, showcasing a stunning example of Baroque architecture. The ceiling is adorned with intricate stucco work and frescoes, featuring religious iconography and scenes. The arches are richly decorated with ornate carvings and gilded elements, emphasizing the opulence typical of the Baroque style. The nave is lined with wooden pews, leading towards an elaborate altar area. The altar is a focal point, featuring detailed woodwork and possibly",
+            "description": "The image depicts the interior of a grand church or cathedral, showcasing a stunning example of Baroque architecture. The ceiling is adorned with intricate stucco work and frescoes, featuring religious iconography and scenes. The arches are richly decorated with ornate carvings and gilded elements, emphasizing the opulence typical of the Baroque style. The nave is lined with wooden pews, leading towards an elaborate altar area. The altar is a focal point, featuring detailed woodwork and possibly",
+            "architectural_style": "Baroque",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 47.61338782310486
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Domquartier Salzburg (47.7985, 13.0456)",
+          "confidence": 0.43505704402923584,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Domquartier Salzburg",
+            "coordinates": {
+              "latitude": 47.7985009,
+              "longitude": 13.0456487
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 3024
+              },
+              {
+                "x": 0,
+                "y": 3024
+              }
+            ],
+            "context_labels": [
+              "Ceiling",
+              "Glass",
+              "Classical architecture",
+              "Symmetry",
+              "Column"
+            ],
+            "context_objects": [],
+            "web_entities": [
+              {
+                "name": "Building",
+                "score": 0.3155220150947571
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Domquartier Salzburg",
+                "score": 0.43505704402923584,
+                "location": {
+                  "lat": 47.7985009,
+                  "lng": 13.0456487
+                }
+              },
+              {
+                "name": "Fortress Hohensalzburg",
+                "score": 0.29294314980506897,
+                "location": {
+                  "lat": 47.794948299999994,
+                  "lng": 13.0476583
+                }
+              },
+              {
+                "name": "L'osteria Salzburg",
+                "score": 0.2379050850868225,
+                "location": {
+                  "lat": 47.8025564,
+                  "lng": 13.0449492
+                }
+              }
+            ],
+            "processing_time_seconds": 19.525079011917114
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/193.jpg"
+    }
+  ]
+}

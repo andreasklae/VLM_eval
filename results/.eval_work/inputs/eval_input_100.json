@@ -1,0 +1,1282 @@
+{
+  "image_id": 100,
+  "filename": "100.heic",
+  "ground_truth": {
+    "description": "Photo from inside one of the tents in Munich at Oktoberfest. Should be obvious due to clothing of people, but less obvious which specific Oktoberfest party without metadata.",
+    "photographer_description": "A photo from the inside of one of the tents in Munich at Oktoberfest. Should be obvious due to the clothing of the people in the photo (traditional Bavarian clothing - dirndls, lederhosen), but less obvious which exact Oktoberfest party without metadata. There is a mural/painting on the wall depicting Munich landmarks (Siegestor and equestrian statue - depicted in mural, not actual landmarks).",
+    "locations": [
+      {
+        "name": "Hacker fezt tent, Munich, Bavaria, Germany",
+        "hierarchy": {
+          "country": "Germany",
+          "region": "Bavaria",
+          "city": "Munich",
+          "exact": "Oktoberfest tent"
+        }
+      }
+    ],
+    "entities": [
+      {
+        "name": "Oktoberfest",
+        "type": "other",
+        "notes": "event",
+        "importance": "high",
+        "max_specificity": 5
+      },
+      {
+        "name": "Himmel der Bayern mural",
+        "type": "artwork",
+        "notes": "",
+        "max_specificity": 5,
+        "importance": "medium",
+        "added_by": "human_evaluator"
+      },
+      {
+        "name": "Siegestor",
+        "type": "artwork",
+        "notes": "",
+        "max_specificity": 5,
+        "importance": "low",
+        "added_by": "human_evaluator"
+      },
+      {
+        "name": "Theatinerkirche St. Kajetan",
+        "type": "artwork",
+        "notes": "",
+        "max_specificity": 5,
+        "importance": "low",
+        "added_by": "human_evaluator"
+      },
+      {
+        "name": "Hacker-Pschorr beer",
+        "type": "other",
+        "notes": "",
+        "max_specificity": 5,
+        "importance": "low",
+        "added_by": "human_evaluator"
+      },
+      {
+        "name": "Pretzel",
+        "type": "other",
+        "notes": "",
+        "max_specificity": 5,
+        "importance": "low",
+        "added_by": "human_evaluator"
+      },
+      {
+        "name": "Hacker-Festzelt",
+        "type": "establishment",
+        "notes": "",
+        "max_specificity": 5,
+        "importance": "medium",
+        "added_by": "human_evaluator"
+      },
+      {
+        "name": "Statue of King Ludwig I",
+        "type": "artwork",
+        "notes": "",
+        "max_specificity": 5,
+        "importance": "low",
+        "added_by": "human_evaluator"
+      }
+    ],
+    "scene_type": [
+      "event",
+      "interior"
+    ],
+    "key_visual_elements": [
+      "Beer tent interior",
+      "Traditional Bavarian clothing (dirndls, lederhosen)",
+      "Oktoberfest atmosphere",
+      "Mural/painting on wall depicting Munich landmarks (Siegestor and equestrian statue - depicted in mural, not actual landmarks)"
+    ],
+    "max_specificity": "Specific",
+    "difficulty": "Easy (Oktoberfest recognizable from attire)",
+    "notes": "Specific tent unclear without metadata. Mural shows Munich landmarks but these are painted/depicted, not actual landmarks visible in the photo.",
+    "gps_metadata": {
+      "gps_latitude": 48.133025,
+      "gps_longitude": 11.548191666666666,
+      "reverse_geocoded": {
+        "formatted_address": "Festzelt \"Hofbräu, Beer tent \"Hofbräu, Theresienhöhe, 80336 München, Germany",
+        "city": "München",
+        "county": "Oberbayern",
+        "country": "Germany"
+      }
+    },
+    "image_categories": [
+      "other"
+    ],
+    "difficulty_with_gps": "easy",
+    "difficulty_without_gps": "easy"
+  },
+  "model_runs": [
+    {
+      "image_filename": "100.jpg",
+      "use_gps": true,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "Interior of a large Munich beer tent with long orange trestle tables and crowded benches. People in traditional Bavarian attire (dirndls and casual shirts) drink from 1‑liter beer steins (Maßkrüge) and share a giant pretzel. The wooden gallery and light strings frame a bright tent hall under a translucent, blue‑white ceiling. Along the upper walls is a panoramic mural of Munich landmarks—the blue sky scene known from the tent’s decor—with the Theatinerkirche’s twin yellow towers and the Siegestor triumphal arch clearly depicted. The scene evokes Oktoberfest at Theresienwiese, specifically the Hacker‑Pschorr tent with its “Himmel der Bayern” sky-and-cityscape painting.",
+            "photographer_location": [
+              {
+                "name": "München, Bavaria, Germany",
+                "confidence": 0.97
+              },
+              {
+                "name": "Theresienwiese, München, Bavaria, Germany",
+                "confidence": 0.92
+              },
+              {
+                "name": "Hacker-Festzelt, Theresienwiese, München, Bavaria, Germany",
+                "confidence": 0.88
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Hacker-Festzelt, Theresienwiese, München, Bavaria, Germany",
+                "confidence": 0.9
+              },
+              {
+                "name": "Theresienwiese, München, Bavaria, Germany",
+                "confidence": 0.9
+              }
+            ],
+            "entities": [
+              {
+                "name": "Hacker-Festzelt (Oktoberfest beer tent)",
+                "type": "public_space",
+                "confidence": 0.9,
+                "notes": "Large tent by Hacker‑Pschorr with signature sky mural ‘Himmel der Bayern’"
+              },
+              {
+                "name": "Oktoberfest (Wiesn)",
+                "type": "cultural_site",
+                "confidence": 0.86,
+                "notes": "Annual beer festival held at Theresienwiese, Munich"
+              },
+              {
+                "name": "Theresienwiese",
+                "type": "public_space",
+                "confidence": 0.92,
+                "notes": "Festival grounds in Munich where Oktoberfest takes place"
+              },
+              {
+                "name": "Himmel der Bayern mural",
+                "type": "artwork",
+                "confidence": 0.8,
+                "notes": "Sky and Munich cityscape decoration inside the Hacker-Festzelt"
+              },
+              {
+                "name": "Siegestor (Munich) – depicted in mural",
+                "type": "landmark",
+                "confidence": 0.72,
+                "notes": "Triumphal arch on Ludwigstraße shown in the wall painting"
+              },
+              {
+                "name": "Theatinerkirche St. Kajetan – depicted in mural",
+                "type": "religious_site",
+                "confidence": 0.67,
+                "notes": "Baroque church with yellow twin towers painted on the wall"
+              },
+              {
+                "name": "Hacker-Pschorr beer stein (Maßkrug)",
+                "type": "other",
+                "confidence": 0.82,
+                "notes": "1‑liter glass mug with brewery branding"
+              },
+              {
+                "name": "Bavarian pretzel (Brezn)",
+                "type": "other",
+                "confidence": 0.95,
+                "notes": "Large festival pretzel typically served in Munich beer tents"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "An indoor Bavarian beer hall scene. Long wooden communal tables host groups of people; a man in a blue plaid shirt holds up a large pretzel in one hand and a foamy beer stein in the other, while a woman beside him wears a traditional dirndl. The ceiling is a glass skylight, and the back wall is adorned with a large mural depicting a historic Munich cityscape with statues and arches, contributing a festival-like atmosphere. The crowd around is festive, with many guests in traditional attire, suggesting an Oktoberfest-style beer hall setting.",
+            "photographer_location": [
+              {
+                "name": "Munich, Bavaria, Germany",
+                "confidence": 0.95
+              },
+              {
+                "name": "Theresienwiese, Munich, Bavaria, Germany",
+                "confidence": 0.75
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Theresienwiese, Munich, Bavaria, Germany",
+                "confidence": 0.85
+              }
+            ],
+            "entities": [
+              {
+                "name": "Oktoberfest beer tent",
+                "type": "building",
+                "confidence": 0.8,
+                "notes": "Interior festival tent with long wooden tables; Bavarian atmosphere."
+              },
+              {
+                "name": "Beer stein",
+                "type": "other",
+                "confidence": 0.85,
+                "notes": "Large glass beer mug held by the man."
+              },
+              {
+                "name": "Pretzel",
+                "type": "other",
+                "confidence": 0.8,
+                "notes": "Large Bavarian pretzel."
+              },
+              {
+                "name": "Dirndl dress",
+                "type": "other",
+                "confidence": 0.65,
+                "notes": "Traditional Bavarian dress worn by the woman."
+              },
+              {
+                "name": "Mural of Munich landmarks",
+                "type": "artwork",
+                "confidence": 0.75,
+                "notes": "Backdrop mural depicting historical Munich cityscape with statues and arches."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "Bustling interior of a Munich Oktoberfest beer tent with long orange communal tables and benches. A young man at the center holds a 1‑liter glass beer stein (Maß) and a large salted pretzel, while guests around him wear casual clothes and some traditional Bavarian attire (dirndl). Clear glass steins on the table show the Hacker‑Pschorr branding. The tent’s walls feature a panoramic mural of Munich landmarks and a festive procession, and the translucent roof panels are painted sky‑blue with cloud motifs, creating a bright “heaven of Bavaria” atmosphere. Warm wood galleries, garlands, and lights frame the lively scene of people drinking and socializing.",
+            "photographer_location": [
+              {
+                "name": "Oktoberfest beer tent, Theresienwiese, Munich, Germany",
+                "confidence": 0.95
+              },
+              {
+                "name": "Hacker-Festzelt (Hacker-Pschorr beer tent), Theresienwiese, Munich, Germany",
+                "confidence": 0.8
+              },
+              {
+                "name": "Hofbräu-Festzelt, Theresienwiese, Munich, Germany",
+                "confidence": 0.3
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Hacker-Festzelt (interior), Theresienwiese, Munich, Germany",
+                "confidence": 0.8
+              },
+              {
+                "name": "Oktoberfest grounds, Theresienwiese, Munich, Germany",
+                "confidence": 0.95
+              }
+            ],
+            "entities": [
+              {
+                "name": "Oktoberfest",
+                "type": "cultural_site",
+                "confidence": 0.95,
+                "notes": "Annual beer festival held at Theresienwiese, Munich."
+              },
+              {
+                "name": "Hacker-Festzelt (Hacker-Pschorr beer tent)",
+                "type": "building",
+                "confidence": 0.8,
+                "notes": "Iconic Oktoberfest tent known for the sky-themed “Himmel der Bayern” interior."
+              },
+              {
+                "name": "Theresienwiese",
+                "type": "public_space",
+                "confidence": 0.9,
+                "notes": "Large open field in Munich where Oktoberfest takes place."
+              },
+              {
+                "name": "Hacker-Pschorr branding (on beer steins)",
+                "type": "signage",
+                "confidence": 0.85,
+                "notes": "Logo visible on 1‑liter Maßkrüge."
+              },
+              {
+                "name": "Pretzel (Brezn)",
+                "type": "other",
+                "confidence": 0.99,
+                "notes": "Traditional large Bavarian soft pretzel."
+              },
+              {
+                "name": "Beer stein (Maßkrug)",
+                "type": "other",
+                "confidence": 0.99,
+                "notes": "1‑liter glass stein commonly used at Oktoberfest."
+              },
+              {
+                "name": "Siegestor (depicted in mural)",
+                "type": "landmark",
+                "confidence": 0.55,
+                "notes": "Triumphal arch in Munich, shown as part of the painted city panorama."
+              },
+              {
+                "name": "Theatine Church (Theatinerkirche) towers (depicted in mural)",
+                "type": "landmark",
+                "confidence": 0.55,
+                "notes": "Distinctive yellow twin towers included in the wall painting of Munich."
+              },
+              {
+                "name": "Bavarian beer tent interior style (“Himmel der Bayern” sky ceiling)",
+                "type": "architectural_style",
+                "confidence": 0.7,
+                "notes": "Light blue ceiling panels with clouds and festive wooden galleries create an open, airy atmosphere."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "A lively scene inside the Hofbräu Festzelt beer tent at Oktoberfest in Munich. In the foreground, a young man in a blue plaid shirt sits at a long wooden table, holding a large beer stein in one hand and a pretzel in the other. To his left, a woman in a dirndl smiles. Surrounding them are other patrons at shared wooden benches. The tent features a glass roof and a large mural on the back wall depicting Bavarian cityscapes, with horse-drawn carriages and archways. The overall atmosphere is festive, with traditional Bavarian attire and beer culture evident throughout the crowded space.",
+            "photographer_location": [
+              {
+                "name": "Festzelt Hofbräu, Theresienhöhe, München, Germany",
+                "confidence": 0.82
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Oktoberfest beer tent Hofbräu Festzelt, Theresienwiese, Munich, Germany",
+                "confidence": 0.88
+              }
+            ],
+            "entities": [
+              {
+                "name": "Hofbräu Festzelt (beer tent) at Theresienwiese, Munich",
+                "type": "building",
+                "confidence": 0.78,
+                "notes": "Temporary festival structure used for Oktoberfest; interior mural and communal wooden seating."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A lively interior scene inside a large beer tent, likely during a folk festival in Munich. In the foreground, a young man and woman are seated at an orange wooden table. The man, wearing a blue plaid traditional shirt (Trachtenhemd), holds a large pretzel (Brezn) in his left hand and sits behind a 1-liter beer mug (Maßkrug). The woman to his right wears a traditional white and blue Dirndl dress and glasses, smiling as she looks to the side. On the table, there are smartphones, a beige Patagonia waist pack, and a black puffer jacket. The beer mugs bear the logo of the Munich brewery \"Hacker-Pschorr\" and are filled with amber beer. The background is bustling with other festival-goers seated at rows of tables. The tent features a high ceiling with skylights and blue fabric lining. The back wall is covered with a large, detailed painted mural depicting a historical Munich cityscape, prominently featuring the Siegestor (Victory Gate), the Theatinerkirche, and equestrian statues, set against a blue sky with clouds.",
+            "photographer_location": [
+              {
+                "name": "Theresienwiese",
+                "confidence": 0.95
+              },
+              {
+                "name": "München",
+                "confidence": 1.0
+              },
+              {
+                "name": "Radlinger's Münchner Weißbiergarten",
+                "confidence": 0.7
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Theresienwiese",
+                "confidence": 0.95
+              },
+              {
+                "name": "München",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "Frühlingsfest München",
+                "type": "cultural_site",
+                "confidence": 0.9,
+                "notes": "Munich Spring Festival, indicated by location and tent setting"
+              },
+              {
+                "name": "Hacker-Pschorr",
+                "type": "other",
+                "confidence": 0.95,
+                "notes": "Beer brand logo visible on the Maßkrug"
+              },
+              {
+                "name": "Maßkrug",
+                "type": "other",
+                "confidence": 0.95,
+                "notes": "1-liter beer mug"
+              },
+              {
+                "name": "Brezn",
+                "type": "other",
+                "confidence": 0.95,
+                "notes": "Large Bavarian pretzel"
+              },
+              {
+                "name": "Dirndl",
+                "type": "other",
+                "confidence": 0.9,
+                "notes": "Traditional Bavarian dress worn by the woman"
+              },
+              {
+                "name": "Siegestor",
+                "type": "landmark",
+                "confidence": 0.85,
+                "notes": "Depicted in the background mural"
+              },
+              {
+                "name": "Theatinerkirche",
+                "type": "landmark",
+                "confidence": 0.8,
+                "notes": "Depicted in the background mural"
+              },
+              {
+                "name": "Mural",
+                "type": "artwork",
+                "confidence": 0.9,
+                "notes": "Large painting of historical Munich on the tent wall"
+              },
+              {
+                "name": "Theresienwiese",
+                "type": "public_space",
+                "confidence": 0.95,
+                "notes": "The fairground location"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "The image captures the interior of a large festival tent, specifically the Hacker-Pschorr tent (Hacker-Festzelt) during a beer festival on the Theresienwiese in Munich. In the foreground, a man in a blue checkered shirt holds a large traditional Bavarian pretzel (Brezn) and a one-liter glass beer mug (Maßkrug) filled with beer, featuring the Hacker-Pschorr logo. To his left, a woman is dressed in a traditional light-colored Dirndl. The background is dominated by a large, colorful mural depicting iconic Munich landmarks and scenes, including the yellow Theatinerkirche, the Siegestor arch, and the Max-Joseph-Denkmal statue, all set against a painted blue sky with clouds. The tent's ceiling consists of translucent white panels, and the seating area is filled with long wooden tables and benches typical of Bavarian beer halls.",
+            "photographer_location": [
+              {
+                "name": "Theresienwiese, Munich, Germany",
+                "confidence": 0.98
+              },
+              {
+                "name": "Munich, Germany",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Hacker-Festzelt, Theresienwiese, Munich",
+                "confidence": 0.95
+              },
+              {
+                "name": "Theresienwiese, Munich",
+                "confidence": 0.98
+              }
+            ],
+            "entities": [
+              {
+                "name": "Hacker-Festzelt",
+                "type": "building",
+                "confidence": 0.95,
+                "notes": "The festival tent of the Hacker-Pschorr brewery, known for its 'Himmel der Bayern' (Heaven of the Bavarians) mural."
+              },
+              {
+                "name": "Theresienwiese",
+                "type": "public_space",
+                "confidence": 0.98,
+                "notes": "The open space in Munich that hosts Oktoberfest and Frühlingsfest."
+              },
+              {
+                "name": "Hacker-Pschorr",
+                "type": "other",
+                "confidence": 1.0,
+                "notes": "One of the six major breweries in Munich, logo visible on the beer mugs."
+              },
+              {
+                "name": "Oktoberfest",
+                "type": "cultural_site",
+                "confidence": 0.85,
+                "notes": "The world's largest beer festival, held annually on the Theresienwiese."
+              },
+              {
+                "name": "Frühlingsfest München",
+                "type": "cultural_site",
+                "confidence": 0.85,
+                "notes": "The Munich Spring Festival, also held on the Theresienwiese."
+              },
+              {
+                "name": "Theatinerkirche",
+                "type": "landmark",
+                "confidence": 0.95,
+                "notes": "Depicted in the mural; a 17th-century Catholic church in Munich."
+              },
+              {
+                "name": "Siegestor",
+                "type": "landmark",
+                "confidence": 0.95,
+                "notes": "Depicted in the mural; a three-arched triumphal arch in Munich."
+              },
+              {
+                "name": "Max-Joseph-Denkmal",
+                "type": "monument",
+                "confidence": 0.9,
+                "notes": "Depicted in the mural; monument to King Maximilian I Joseph of Bavaria."
+              },
+              {
+                "name": "Maßkrug",
+                "type": "other",
+                "confidence": 1.0,
+                "notes": "Traditional Bavarian one-liter beer mug."
+              },
+              {
+                "name": "Dirndl",
+                "type": "other",
+                "confidence": 1.0,
+                "notes": "Traditional feminine dress worn in Bavaria and Austria."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "light-hearted",
+                "type": "artwork",
+                "confidence": 0.4341000020503998,
+                "notes": null
+              },
+              {
+                "name": "Tableware",
+                "type": "other",
+                "confidence": 0.9793207049369812,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Drinkware",
+                "type": "other",
+                "confidence": 0.9730114936828613,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Smile",
+                "type": "other",
+                "confidence": 0.9547299742698669,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Barware",
+                "type": "other",
+                "confidence": 0.9443644285202026,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Table",
+                "type": "other",
+                "confidence": 0.9368753433227539,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Furniture",
+                "type": "other",
+                "confidence": 0.9077457785606384,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Alcoholic drink",
+                "type": "other",
+                "confidence": 0.9021168947219849,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Alcohol",
+                "type": "other",
+                "confidence": 0.8509671688079834,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Fun",
+                "type": "other",
+                "confidence": 0.8442580699920654,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Beer",
+                "type": "other",
+                "confidence": 0.8344245553016663,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "patagonia",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "Denist",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "AUSGANG",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "Kacker",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "Pschorr",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "HIMMEL",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "BAYER",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "facket",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              }
+            ],
+            "landmark_name": null
+          }
+        }
+      ]
+    },
+    {
+      "image_filename": "100.jpg",
+      "use_gps": false,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "Interior of a Bavarian beer tent with long orange tables and wooden galleries decorated with greenery. Several one-liter glass beer steins (Maßkrüge) with Munich-brewery logos are on the table, and a large salted pretzel is being held up. Attendees wear festival clothing, including a dirndl. A panoramic wall mural shows Munich cityscapes, including a triumphal arch and a yellow twin-towered church, under a bright tent roof with translucent panels. The setting strongly suggests an Oktoberfest festzelt in Munich.",
+            "photographer_location": [
+              {
+                "name": "Munich, Bavaria, Germany",
+                "confidence": 0.82
+              },
+              {
+                "name": "Theresienwiese, Munich, Germany",
+                "confidence": 0.7
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Theresienwiese, Munich, Germany",
+                "confidence": 0.72
+              },
+              {
+                "name": "Munich, Bavaria, Germany",
+                "confidence": 0.82
+              }
+            ],
+            "entities": [
+              {
+                "name": "Oktoberfest (Wiesn)",
+                "type": "cultural_site",
+                "confidence": 0.72,
+                "notes": "Annual beer festival held at Theresienwiese in Munich"
+              },
+              {
+                "name": "Theresienwiese",
+                "type": "public_space",
+                "confidence": 0.7,
+                "notes": "Fairground where Oktoberfest takes place"
+              },
+              {
+                "name": "Bavarian beer tent (Festzelt) interior",
+                "type": "building",
+                "confidence": 0.78,
+                "notes": "Wooden galleries, communal benches, festival decor"
+              },
+              {
+                "name": "Maßkrug (one-litre beer stein)",
+                "type": "other",
+                "confidence": 0.96,
+                "notes": "Standard glass mug used at Oktoberfest"
+              },
+              {
+                "name": "Brezn (Bavarian pretzel)",
+                "type": "other",
+                "confidence": 0.96,
+                "notes": "Large salted soft pretzel typical of Bavarian beer halls"
+              },
+              {
+                "name": "Siegestor (depicted in mural)",
+                "type": "landmark",
+                "confidence": 0.58,
+                "notes": "Triumphal arch on Ludwigstraße in Munich"
+              },
+              {
+                "name": "Theatinerkirche (St. Kajetan) (depicted in mural)",
+                "type": "religious_site",
+                "confidence": 0.57,
+                "notes": "Yellow Baroque twin-towered church on Odeonsplatz, Munich"
+              },
+              {
+                "name": "Feldherrnhalle (possible depiction in mural)",
+                "type": "landmark",
+                "confidence": 0.47,
+                "notes": "Loggia on Odeonsplatz in Munich"
+              },
+              {
+                "name": "Munich brewery logos on steins (e.g., Paulaner/Spaten/Hacker-Pschorr)",
+                "type": "signage",
+                "confidence": 0.44,
+                "notes": "Branding visible but not fully legible"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "Inside a Bavarian-style beer hall, a group of people sit at long wooden tables. A person in a blue plaid shirt holds up a large soft pretzel. On the table are large glass beer mugs with foam and condensation, a jacket, and a smartphone. The background features a blue mural on the wall depicting a European city square with statues and classical architecture, giving the scene a festive beer-hall atmosphere. The overall lighting is warm and indoor, with wooden beams and festive decor visible around the seating area.",
+            "photographer_location": [
+              {
+                "name": "Germany",
+                "confidence": 0.6
+              },
+              {
+                "name": "Bavaria, Germany",
+                "confidence": 0.5
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Germany",
+                "confidence": 0.4
+              },
+              {
+                "name": "Bavaria, Germany",
+                "confidence": 0.3
+              }
+            ],
+            "entities": [
+              {
+                "name": "soft pretzel",
+                "type": "other",
+                "confidence": 0.75,
+                "notes": "large salted pretzel held by a person"
+              },
+              {
+                "name": "beer mug",
+                "type": "other",
+                "confidence": 0.8,
+                "notes": "glass stein with foam on the table"
+              },
+              {
+                "name": "beer glass",
+                "type": "other",
+                "confidence": 0.7,
+                "notes": "short glass with beer remnants"
+              },
+              {
+                "name": "cityscape mural",
+                "type": "artwork",
+                "confidence": 0.6,
+                "notes": "blue sky mural depicting European architecture and statues"
+              },
+              {
+                "name": "beer hall interior",
+                "type": "public_space",
+                "confidence": 0.65,
+                "notes": "inside a Bavarian-style beer hall with wooden furniture and festive decor"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "Indoor festival beer tent scene with long orange wooden tables and benches crowded with people. Several 1‑liter glass beer steins (Maßkrüge) filled with pale lager sit on the table, and one person holds up a large salted pretzel. Many attendees wear Bavarian-style clothing (dirndl and checkered shirt). The tent has a bright translucent roof, evergreen garlands, and a large wall mural depicting historic Munich scenes and landmarks under a blue-sky motif, suggesting an Oktoberfest-style festzelt atmosphere.",
+            "photographer_location": [
+              {
+                "name": "Munich, Bavaria, Germany",
+                "confidence": 0.7
+              },
+              {
+                "name": "Theresienwiese festival grounds (Oktoberfest), Munich",
+                "confidence": 0.55
+              },
+              {
+                "name": "An Oktoberfest beer tent (Festzelt), possibly Hacker-Festzelt",
+                "confidence": 0.35
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Interior of a Bavarian beer tent (Festzelt) at communal tables",
+                "confidence": 0.85
+              },
+              {
+                "name": "Oktoberfest at Theresienwiese, Munich (tent interior)",
+                "confidence": 0.55
+              }
+            ],
+            "entities": [
+              {
+                "name": "Bavarian beer tent (Festzelt) interior",
+                "type": "building",
+                "confidence": 0.85,
+                "notes": "Large temporary festival hall with communal benches, garlands, and translucent roof."
+              },
+              {
+                "name": "Oktoberfest",
+                "type": "cultural_site",
+                "confidence": 0.6,
+                "notes": "Annual beer festival in Munich held at Theresienwiese; atmosphere and decor strongly suggest this setting."
+              },
+              {
+                "name": "Theresienwiese",
+                "type": "public_space",
+                "confidence": 0.5,
+                "notes": "Open fairground in Munich where Oktoberfest is hosted."
+              },
+              {
+                "name": "Hacker-Festzelt (tent)",
+                "type": "building",
+                "confidence": 0.35,
+                "notes": "Tent known for sky-and-Munich murals and serving Hacker-Pschorr beer; suggested by mural and stein branding but not certain."
+              },
+              {
+                "name": "Maßkrug (1‑liter beer stein)",
+                "type": "other",
+                "confidence": 0.99,
+                "notes": "Traditional glass mug used at Bavarian beer festivals."
+              },
+              {
+                "name": "Brezn (pretzel)",
+                "type": "other",
+                "confidence": 0.99,
+                "notes": "Large salted soft pretzel, a common Bavarian snack."
+              },
+              {
+                "name": "Theatinerkirche (St. Cajetan) — depicted in mural",
+                "type": "religious_site",
+                "confidence": 0.4,
+                "notes": "Twin yellow towers recognizable in the painted Munich cityscape."
+              },
+              {
+                "name": "Siegestor — depicted in mural",
+                "type": "landmark",
+                "confidence": 0.35,
+                "notes": "Triumphal arch in Munich; appears in the wall painting."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "A lively indoor scene at a Bavarian-style beer hall with a long wooden communal table. A person in a plaid shirt holds up a large soft pretzel above the table while others sit nearby. Several large glass beer mugs with amber beer sit on the table, along with a smartphone and a jacket. The backdrop features a bright blue mural depicting a European city square with statues and arches, giving the space a festive, Oktoberfest-like atmosphere. People in the background are engaged in conversation, and the overall mood is casual and convivial.",
+            "photographer_location": [
+              {
+                "name": "Inside a Bavarian-style beer hall or tavern",
+                "confidence": 0.6
+              },
+              {
+                "name": "Across a long wooden communal table in a themed restaurant",
+                "confidence": 0.4
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "People seated at a long wooden table in a beer hall",
+                "confidence": 0.6
+              },
+              {
+                "name": "Pretzel being held up by a person in the foreground",
+                "confidence": 0.6
+              }
+            ],
+            "entities": [
+              {
+                "name": "soft pretzel",
+                "type": "other",
+                "confidence": 0.92,
+                "notes": "Large pretzel held up above the table"
+              },
+              {
+                "name": "beer mug",
+                "type": "other",
+                "confidence": 0.9,
+                "notes": "Amber beer in a large glass mug on the table"
+              },
+              {
+                "name": "beer mugs",
+                "type": "other",
+                "confidence": 0.85,
+                "notes": "Multiple beer mugs visible on the table"
+              },
+              {
+                "name": "smartphone",
+                "type": "other",
+                "confidence": 0.6,
+                "notes": "Phone with a decorative mountain/landscape case on the table"
+              },
+              {
+                "name": "blue mural",
+                "type": "artwork",
+                "confidence": 0.65,
+                "notes": "Backdrop mural of a European city square with statues"
+              },
+              {
+                "name": "dining group",
+                "type": "public_space",
+                "confidence": 0.5,
+                "notes": "People seated and interacting at the table in a beer-hall setting"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A lively interior scene inside a large beer tent, specifically the Hacker-Festzelt at Oktoberfest in Munich. A group of people are seated at a long, orange wooden table. In the center, a young man in a blue plaid shirt holds up a large Bavarian pretzel (Brezn). To his right, a woman is wearing a traditional Dirndl. On the table are several 1-liter beer mugs (Masskrug), one of which clearly displays the Hacker-Pschorr brewery logo. The background features the tent's iconic 'Himmel der Bayern' (Heaven of the Bavarians) decor, with a large painted mural depicting Munich's Siegestor (Victory Gate) and a traditional costume parade under a painted blue sky with white clouds.",
+            "photographer_location": [
+              {
+                "name": "Hacker-Festzelt",
+                "confidence": 0.98
+              },
+              {
+                "name": "Theresienwiese",
+                "confidence": 0.98
+              },
+              {
+                "name": "Munich",
+                "confidence": 1.0
+              },
+              {
+                "name": "Germany",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Hacker-Festzelt",
+                "confidence": 0.98
+              },
+              {
+                "name": "Theresienwiese",
+                "confidence": 0.98
+              },
+              {
+                "name": "Munich",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "Hacker-Festzelt",
+                "type": "building",
+                "confidence": 0.98,
+                "notes": "Famous Oktoberfest tent known as 'Heaven of the Bavarians'"
+              },
+              {
+                "name": "Oktoberfest",
+                "type": "cultural_site",
+                "confidence": 0.99,
+                "notes": "Annual beer festival"
+              },
+              {
+                "name": "Hacker-Pschorr",
+                "type": "signage",
+                "confidence": 0.99,
+                "notes": "Brewery logo visible on beer mug"
+              },
+              {
+                "name": "Siegestor",
+                "type": "landmark",
+                "confidence": 0.9,
+                "notes": "Depicted in the background mural"
+              },
+              {
+                "name": "Himmel der Bayern",
+                "type": "artwork",
+                "confidence": 0.95,
+                "notes": "Interior design style of the tent featuring painted sky and murals"
+              },
+              {
+                "name": "Masskrug",
+                "type": "other",
+                "confidence": 0.99,
+                "notes": "1-liter beer mug"
+              },
+              {
+                "name": "Pretzel",
+                "type": "other",
+                "confidence": 0.99,
+                "notes": "Large Bavarian Brezn"
+              },
+              {
+                "name": "Dirndl",
+                "type": "other",
+                "confidence": 0.9,
+                "notes": "Traditional Bavarian dress worn by subject"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A group of people are seated at a long orange wooden table inside a large beer tent, likely during Oktoberfest. They are holding large glass beer mugs (Maßkrug) with the Hacker-Pschorr logo and a large salted pretzel (Brezn). Some individuals are wearing traditional Bavarian clothing, such as a white lace Dirndl. The background features a large, colorful mural depicting iconic Munich landmarks, including the Siegestor (Victory Arch) and the Feldherrnhalle. The tent's interior has a rustic wooden structure with decorative garlands and a blue sky-themed ceiling visible through windows.",
+            "photographer_location": [
+              {
+                "name": "Hacker-Festzelt, Theresienwiese, Munich, Germany",
+                "confidence": 0.95
+              },
+              {
+                "name": "Munich, Germany",
+                "confidence": 0.99
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Hacker-Festzelt, Theresienwiese, Munich, Germany",
+                "confidence": 0.95
+              },
+              {
+                "name": "Munich, Germany",
+                "confidence": 0.99
+              }
+            ],
+            "entities": [
+              {
+                "name": "Hacker-Festzelt",
+                "type": "building",
+                "confidence": 0.95,
+                "notes": "One of the large beer tents at the Munich Oktoberfest, known for its 'Himmel der Bayern' (Heaven of the Bavarians) theme."
+              },
+              {
+                "name": "Oktoberfest",
+                "type": "cultural_site",
+                "confidence": 0.98,
+                "notes": "The world's largest Volksfest, held annually in Munich, Bavaria, Germany."
+              },
+              {
+                "name": "Hacker-Pschorr",
+                "type": "other",
+                "confidence": 0.95,
+                "notes": "A traditional Munich brewery whose logo is visible on the beer mugs."
+              },
+              {
+                "name": "Siegestor",
+                "type": "landmark",
+                "confidence": 0.9,
+                "notes": "Depicted in the mural; a three-arched triumphal arch in Munich."
+              },
+              {
+                "name": "Feldherrnhalle",
+                "type": "landmark",
+                "confidence": 0.9,
+                "notes": "Depicted in the mural; a monumental loggia on the Odeonsplatz in Munich."
+              },
+              {
+                "name": "Maßkrug",
+                "type": "other",
+                "confidence": 0.98,
+                "notes": "Traditional one-liter beer mug used in Bavaria."
+              },
+              {
+                "name": "Brezn",
+                "type": "other",
+                "confidence": 0.98,
+                "notes": "Large Bavarian soft pretzel."
+              },
+              {
+                "name": "Theresienwiese",
+                "type": "public_space",
+                "confidence": 0.98,
+                "notes": "The open space in Munich where Oktoberfest takes place."
+              },
+              {
+                "name": "Bavarian Tracht",
+                "type": "cultural_site",
+                "confidence": 0.95,
+                "notes": "Traditional Bavarian clothing, including Dirndls and Lederhosen."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "Visual Arts",
+                "type": "artwork",
+                "confidence": 0.39753851294517517,
+                "notes": null
+              },
+              {
+                "name": "Art",
+                "type": "artwork",
+                "confidence": 0.3490000069141388,
+                "notes": null
+              },
+              {
+                "name": "Tableware",
+                "type": "other",
+                "confidence": 0.9773861765861511,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Drinkware",
+                "type": "other",
+                "confidence": 0.9693871140480042,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Barware",
+                "type": "other",
+                "confidence": 0.9391545057296753,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Smile",
+                "type": "other",
+                "confidence": 0.9388548731803894,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Table",
+                "type": "other",
+                "confidence": 0.9162827730178833,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Alcoholic drink",
+                "type": "other",
+                "confidence": 0.8656899333000183,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Serveware",
+                "type": "other",
+                "confidence": 0.8478010296821594,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Glass",
+                "type": "other",
+                "confidence": 0.8367997407913208,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Liquor",
+                "type": "other",
+                "confidence": 0.8254097700119019,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Alcohol",
+                "type": "other",
+                "confidence": 0.8010227680206299,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "patagonia",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "Denist",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "AUSGANG",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "Kacke",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "Pschorr",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "HIMMEL",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "BAYER",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "facker",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              }
+            ],
+            "landmark_name": null
+          }
+        }
+      ]
+    }
+  ]
+}

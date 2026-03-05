@@ -1,0 +1,1099 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "80.jpg",
+      "timestamp": "2026-01-28T07:03:13.048076",
+      "processing_time_seconds": 49.146252,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 48.87371111111111,
+        "gps_longitude": 2.2967138888888887,
+        "location": {
+          "formatted_address": "156 Tunnel de l'Étoile, 75017 Paris, France",
+          "city": "Paris",
+          "county": "Paris",
+          "country": "France"
+        },
+        "datetime_original": "2023:12:12 18:33:49",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Arc de Triomphe, Paris, France",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The Arc de Triomphe is a well-known landmark in Paris, recognizable by its distinctive neoclassical design and prominent location at the end of the Champs-Élysées.",
+            "detailed_description": "The image shows the Arc de Triomphe, a monumental arch located in Paris, France. It is a neoclassical structure built in the 19th century, characterized by its large size and intricate relief sculptures depicting historical scenes. The arch is illuminated at night, highlighting its detailed carvings and inscriptions. The surrounding area is bustling with people, and the pavement reflects the streetlights, adding to the vibrant atmosphere.",
+            "identification": {
+              "primary": [
+                "Arc de Triomphe"
+              ],
+              "location": "Paris, France",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Arc de Triomphe",
+                "type": "monument",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Neoclassical",
+              "19th_century",
+              "stone",
+              "Paris",
+              "monument"
+            ],
+            "location": "Paris, France",
+            "type": "monument",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Arc de Triomphe\"],\n        \"location\": \"Paris, France\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Arc de Triomphe\",\n            \"type\": \"monument\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Neoclassical\", \"19th_century\", \"stone\", \"Paris\", \"monument\"],\n    \"description\": \"The image shows the Arc de Triomphe, a monumental arch located in Paris, France. It is a neoclassical structure built in the 19th century, characterized by its large size and intricate relief sculptures depicting historical scenes. The arch is illuminated at night, highlighting its detailed carvings and inscriptions. The surrounding area is bustling with people, and the pavement reflects the streetlights, adding to the vibrant atmosphere.\",\n    \"reasoning\": \"The Arc de Triomphe is a well-known landmark in Paris, recognizable by its distinctive neoclassical design and prominent location at the end of the Champs-Élysées.\",\n    \"type\": \"monument\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 48.87371111111111,
+              "longitude": 2.2967138888888887
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "156 Tunnel de l'Étoile, 75017 Paris, France",
+              "city": "Paris",
+              "county": "Paris",
+              "country": "France"
+            },
+            "photo_timestamp": "2023:12:12 18:33:49",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 7.848850965499878
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image prominently features a large triumphal arch, illuminated against the night sky. The arch is characterized by its neoclassical design, with a large central archway flanked by two smaller arches. The facade is adorned with intricate relief sculptures depicting historical scenes and figures, typical of neoclassical architecture. The arch is constructed from stone, and its surface is detailed with ornamental carvings and inscriptions. The lighting highlights the detailed reliefs and the ov",
+            "description": "The image prominently features a large triumphal arch, illuminated against the night sky. The arch is characterized by its neoclassical design, with a large central archway flanked by two smaller arches. The facade is adorned with intricate relief sculptures depicting historical scenes and figures, typical of neoclassical architecture. The arch is constructed from stone, and its surface is detailed with ornamental carvings and inscriptions. The lighting highlights the detailed reliefs and the ov",
+            "architectural_style": "Neoclassical",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 48.87371111111111,
+              "longitude": 2.2967138888888887
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "156 Tunnel de l'Étoile, 75017 Paris, France",
+              "city": "Paris",
+              "county": "Paris",
+              "country": "France"
+            },
+            "photo_timestamp": "2023:12:12 18:33:49",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 40.52260088920593
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Arc De Triomphe (48.8738, 2.2950)",
+          "confidence": 0.17164434492588043,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Arc De Triomphe",
+            "coordinates": {
+              "latitude": 48.8737917,
+              "longitude": 2.2950274999999998
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 3024
+              },
+              {
+                "x": 0,
+                "y": 3024
+              }
+            ],
+            "context_labels": [
+              "Night",
+              "Lighting",
+              "Electricity",
+              "Darkness",
+              "Midnight"
+            ],
+            "context_objects": [
+              "Person",
+              "Person",
+              "Person"
+            ],
+            "web_entities": [
+              {
+                "name": "Security lighting",
+                "score": 0.5061658024787903
+              },
+              {
+                "name": "Street light",
+                "score": 0.47703391313552856
+              },
+              {
+                "name": "Lighting",
+                "score": 0.4715000092983246
+              },
+              {
+                "name": "Light",
+                "score": 0.41780000925064087
+              },
+              {
+                "name": "Security",
+                "score": 0.38339999318122864
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Arc De Triomphe",
+                "score": 0.17164434492588043,
+                "location": {
+                  "lat": 48.8737917,
+                  "lng": 2.2950274999999998
+                }
+              }
+            ],
+            "processing_time_seconds": 15.093882083892822
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Paris, France",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Paris, France",
+            "coordinates": {
+              "latitude": 48.87371111111111,
+              "longitude": 2.2967138888888887
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Arc de Triomphe",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 284048,
+                  "vicinity": "Place Charles de Gaulle, Paris",
+                  "place_id": "ChIJjx37cOxv5kcRPWQuEW5ntdk",
+                  "location": {
+                    "lat": 48.8737917,
+                    "lng": 2.295027499999999
+                  }
+                },
+                {
+                  "name": "Théâtre du Lido",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 8652,
+                  "vicinity": "116 bis Avenue des Champs-Élysées, Paris",
+                  "place_id": "ChIJWUkq_-lv5kcR6J78m3Ivsss",
+                  "location": {
+                    "lat": 48.87239220000001,
+                    "lng": 2.3008379
+                  }
+                },
+                {
+                  "name": "Musée national des arts asiatiques - Guimet",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 8047,
+                  "vicinity": "6 Place d'Iéna, Paris",
+                  "place_id": "ChIJwyk5zeVv5kcRiZy8pxIE7LU",
+                  "location": {
+                    "lat": 48.86510180000001,
+                    "lng": 2.2937604
+                  }
+                },
+                {
+                  "name": "Palais Galliera",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 4091,
+                  "vicinity": "10 Avenue Pierre 1er de Serbie, Paris",
+                  "place_id": "ChIJYRVPQOZv5kcR8DUkxywb2-A",
+                  "location": {
+                    "lat": 48.8659745,
+                    "lng": 2.2966155
+                  }
+                },
+                {
+                  "name": "Parish Church of Saint Ferdinand des Ternes",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 419,
+                  "vicinity": "27 Rue d'Armaillé, Paris",
+                  "place_id": "ChIJgd7vlpJv5kcRwobtqpKMzhY",
+                  "location": {
+                    "lat": 48.8786666,
+                    "lng": 2.2908191
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Arc de Triomphe",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 284048,
+                  "vicinity": "Place Charles de Gaulle, Paris",
+                  "place_id": "ChIJjx37cOxv5kcRPWQuEW5ntdk",
+                  "location": {
+                    "lat": 48.8737917,
+                    "lng": 2.295027499999999
+                  }
+                },
+                {
+                  "name": "Musée national des arts asiatiques - Guimet",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 8047,
+                  "vicinity": "6 Place d'Iéna, Paris",
+                  "place_id": "ChIJwyk5zeVv5kcRiZy8pxIE7LU",
+                  "location": {
+                    "lat": 48.86510180000001,
+                    "lng": 2.2937604
+                  }
+                },
+                {
+                  "name": "Palais Galliera",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 4091,
+                  "vicinity": "10 Avenue Pierre 1er de Serbie, Paris",
+                  "place_id": "ChIJYRVPQOZv5kcR8DUkxywb2-A",
+                  "location": {
+                    "lat": 48.8659745,
+                    "lng": 2.2966155
+                  }
+                },
+                {
+                  "name": "pro-holidays",
+                  "types": [
+                    "travel_agency",
+                    "airport",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "38 Avenue Victor Hugo, Paris",
+                  "place_id": "ChIJldZ0Hu5v5kcRzglzkDZwAQc",
+                  "location": {
+                    "lat": 48.87168399999999,
+                    "lng": 2.2895802
+                  }
+                },
+                {
+                  "name": "Musée Yves Saint Laurent",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 4255,
+                  "vicinity": "5 Avenue Marceau, Paris",
+                  "place_id": "ChIJk_iTk-dv5kcRzO3YkFQL2cg",
+                  "location": {
+                    "lat": 48.8656404,
+                    "lng": 2.2994513
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Warwick Champs-Elysées Paris",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1400,
+                  "vicinity": "5 Rue de Berri, Paris",
+                  "place_id": "ChIJzbddL8Jv5kcRSxvM72EgJ90",
+                  "location": {
+                    "lat": 48.8722222,
+                    "lng": 2.3030556
+                  }
+                },
+                {
+                  "name": "Hotel Vernet, Champs - Élysées",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 396,
+                  "vicinity": "25 Rue Vernet, Paris",
+                  "place_id": "ChIJXUM2f-lv5kcR_qirHSdh-mA",
+                  "location": {
+                    "lat": 48.8719682,
+                    "lng": 2.2978942
+                  }
+                },
+                {
+                  "name": "Le Royal Monceau - Raffles Paris",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2230,
+                  "vicinity": "37 Avenue Hoche, Paris",
+                  "place_id": "ChIJaQacl-pv5kcRC2DmtH2M0jk",
+                  "location": {
+                    "lat": 48.87576050000001,
+                    "lng": 2.300295
+                  }
+                },
+                {
+                  "name": "Maison Albar - Le Champs-Elysées",
+                  "types": [
+                    "spa",
+                    "gym",
+                    "lodging",
+                    "health",
+                    "restaurant",
+                    "food",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 542,
+                  "vicinity": "3 Avenue Mac-Mahon, Paris",
+                  "place_id": "ChIJA0jlvuxv5kcRjwofQsFlVQ8",
+                  "location": {
+                    "lat": 48.875466,
+                    "lng": 2.294527
+                  }
+                },
+                {
+                  "name": "Hotel Napoleon",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1435,
+                  "vicinity": "40 Avenue de Friedland, Paris",
+                  "place_id": "ChIJY8J-uutv5kcRsLNc8mDcyXY",
+                  "location": {
+                    "lat": 48.874277,
+                    "lng": 2.2980315
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Brazil Forest",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "101 Avenue des Champs-Élysées, Paris",
+                  "place_id": "ChIJ23qb5Olv5kcRQXnNDSby92I",
+                  "location": {
+                    "lat": 48.87147290000001,
+                    "lng": 2.300264400000001
+                  }
+                },
+                {
+                  "name": "Forinvest Business Angels",
+                  "types": [
+                    "park",
+                    "general_contractor",
+                    "finance",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "6 Rue de la Tremoille, Paris",
+                  "place_id": "ChIJa6_JO91v5kcROD3xsKVkotA",
+                  "location": {
+                    "lat": 48.8663842,
+                    "lng": 2.3021549
+                  }
+                },
+                {
+                  "name": "Garden of the Hôtel Salomon de Rothschild",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 373,
+                  "vicinity": "12 Avenue de Friedland, Paris",
+                  "place_id": "ChIJtwFjScBv5kcRNg5ypceJVWY",
+                  "location": {
+                    "lat": 48.87499199999999,
+                    "lng": 2.3027332
+                  }
+                },
+                {
+                  "name": "Thomas Jefferson Square",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 424,
+                  "vicinity": "1 Place des États-Unis, Paris",
+                  "place_id": "ChIJ1VzTT-9v5kcRcJIecip7Bow",
+                  "location": {
+                    "lat": 48.86789690000001,
+                    "lng": 2.2942335
+                  }
+                },
+                {
+                  "name": "Frenk logs home",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "22 Avenue de Wagram, Paris",
+                  "place_id": "ChIJGbBYa1dv5kcRBAkJ5WTiwYc",
+                  "location": {
+                    "lat": 48.8762244,
+                    "lng": 2.2971123
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Cathedrale Saint Alexandre Nevsky",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1036,
+                  "vicinity": "12 Rue Daru, Paris",
+                  "place_id": "ChIJZxKG_L9v5kcRMs7w1L53HsA",
+                  "location": {
+                    "lat": 48.87764019999999,
+                    "lng": 2.3019207
+                  }
+                },
+                {
+                  "name": "danish church of Paris",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 37,
+                  "vicinity": "17 Rue Lord Byron, Paris",
+                  "place_id": "ChIJfSdDR-pv5kcRoMPWbHRewsM",
+                  "location": {
+                    "lat": 48.8735171,
+                    "lng": 2.2992221
+                  }
+                },
+                {
+                  "name": "Parish Church of Saint Ferdinand des Ternes",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 419,
+                  "vicinity": "27 Rue d'Armaillé, Paris",
+                  "place_id": "ChIJgd7vlpJv5kcRwobtqpKMzhY",
+                  "location": {
+                    "lat": 48.8786666,
+                    "lng": 2.2908191
+                  }
+                },
+                {
+                  "name": "The American Cathedral in Paris",
+                  "types": [
+                    "church",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 604,
+                  "vicinity": "23 Avenue George V, Paris",
+                  "place_id": "ChIJz_1_rsJv5kcR9KeBeNaW04s",
+                  "location": {
+                    "lat": 48.867421,
+                    "lng": 2.300944
+                  }
+                },
+                {
+                  "name": "Église Suédoise",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 163,
+                  "vicinity": "9 Rue Médéric, Paris",
+                  "place_id": "ChIJkdOgR75v5kcR6xSVk8ReXf0",
+                  "location": {
+                    "lat": 48.88070130000001,
+                    "lng": 2.3030655
+                  }
+                },
+                {
+                  "name": "Synagogue Union Libérale Israélite de France",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 96,
+                  "vicinity": "24 Rue Copernic, Paris",
+                  "place_id": "ChIJ5yKJL_Bv5kcR4wb3HqrSob0",
+                  "location": {
+                    "lat": 48.86939530000001,
+                    "lng": 2.2888529
+                  }
+                },
+                {
+                  "name": "SINAGOGUE",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "20 Rue Laure Diebold, Paris",
+                  "place_id": "ChIJgzlhJxdv5kcRmYzXw2SXljI",
+                  "location": {
+                    "lat": 48.87548950000001,
+                    "lng": 2.3045592
+                  }
+                },
+                {
+                  "name": "Synagogue Du 8ème Elie Dray",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 23,
+                  "vicinity": "218 Rue du Faubourg Saint-Honoré, Paris",
+                  "place_id": "ChIJ5_ri8MBv5kcRH3fBQy8Kk2U",
+                  "location": {
+                    "lat": 48.8762409,
+                    "lng": 2.3045396
+                  }
+                },
+                {
+                  "name": "Or Haim Oumoshé",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "13 Rue Laugier, Paris",
+                  "place_id": "ChIJu7apFwBv5kcRuHLHEGO3KUA",
+                  "location": {
+                    "lat": 48.88016729999999,
+                    "lng": 2.296578799999999
+                  }
+                },
+                {
+                  "name": "GRANDE SYNAGOGUE PARIS 17 | BETH ELHANAN MEIR",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 5,
+                  "vicinity": "5 Rue Labie, Paris",
+                  "place_id": "ChIJO8-BE1Zv5kcRfmYO1600rPk",
+                  "location": {
+                    "lat": 48.879398,
+                    "lng": 2.288872300000001
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Galerie Paul Amarica",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 20,
+                  "vicinity": "21 Rue Washington, Paris",
+                  "place_id": "ChIJG03omcFv5kcRk70mlXyTDUc",
+                  "location": {
+                    "lat": 48.8732512,
+                    "lng": 2.3030602
+                  }
+                },
+                {
+                  "name": "REVEL GALLERY",
+                  "types": [
+                    "art_gallery",
+                    "home_goods_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 7,
+                  "vicinity": "66 Avenue des Champs-Élysées, Paris",
+                  "place_id": "ChIJQ9SxyM5v5kcRfpUVO24tlJs",
+                  "location": {
+                    "lat": 48.870918,
+                    "lng": 2.305412
+                  }
+                },
+                {
+                  "name": "artsurparis",
+                  "types": [
+                    "art_gallery",
+                    "furniture_store",
+                    "home_goods_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "102 Avenue des Champs-Élysées, Paris",
+                  "place_id": "ChIJneopIsJv5kcRAkZ_t9nsaZY",
+                  "location": {
+                    "lat": 48.87192350000001,
+                    "lng": 2.3023175
+                  }
+                },
+                {
+                  "name": "Galerie Charles",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 1,
+                  "user_ratings_total": 1,
+                  "vicinity": "240 Rue du Faubourg Saint-Honoré, Paris",
+                  "place_id": "ChIJv8SeEcBv5kcRUheAMZiib4k",
+                  "location": {
+                    "lat": 48.8764474,
+                    "lng": 2.302137000000001
+                  }
+                },
+                {
+                  "name": "RIM’S ART",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1,
+                  "vicinity": "Uniquement sur RDV, 14 Rue Lincoln, Paris",
+                  "place_id": "ChIJ81NsJMxv5kcRIloN7kZEWSg",
+                  "location": {
+                    "lat": 48.8703691,
+                    "lng": 2.3035922
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Paris",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Paris",
+                  "place_id": "ChIJD7fiBh9u5kcRYJSMaMOCCwQ",
+                  "location": {
+                    "lat": 48.8575475,
+                    "lng": 2.3513765
+                  }
+                },
+                {
+                  "name": "Warwick Champs-Elysées Paris",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1400,
+                  "vicinity": "5 Rue de Berri, Paris",
+                  "place_id": "ChIJzbddL8Jv5kcRSxvM72EgJ90",
+                  "location": {
+                    "lat": 48.8722222,
+                    "lng": 2.3030556
+                  }
+                },
+                {
+                  "name": "Paris Marriott Champs Elysees Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1981,
+                  "vicinity": "70 Avenue des Champs-Élysées, Paris",
+                  "place_id": "ChIJYyt4v8Nv5kcRqArzsLx7ENk",
+                  "location": {
+                    "lat": 48.8708786,
+                    "lng": 2.3050769
+                  }
+                },
+                {
+                  "name": "Hotel Vernet, Champs - Élysées",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 396,
+                  "vicinity": "25 Rue Vernet, Paris",
+                  "place_id": "ChIJXUM2f-lv5kcR_qirHSdh-mA",
+                  "location": {
+                    "lat": 48.8719682,
+                    "lng": 2.2978942
+                  }
+                },
+                {
+                  "name": "Hôtel Mercure Paris Arc de Triomphe Wagram",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 436,
+                  "vicinity": "3 Rue Brey, Paris",
+                  "place_id": "ChIJzY-Baetv5kcRprTTrWHvn4Q",
+                  "location": {
+                    "lat": 48.876076,
+                    "lng": 2.296124599999999
+                  }
+                }
+              ]
+            },
+            "total_places_found": 40,
+            "photo_timestamp": "2023:12:12 18:33:49",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.42086029052734375
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/80.jpg"
+    },
+    {
+      "image_filename": "80.jpg",
+      "timestamp": "2026-01-28T07:04:02.213210",
+      "processing_time_seconds": 56.415836,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Arc de Triomphe, Paris, France",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive shape, location, and architectural style of the monument are characteristic of the Arc de Triomphe in Paris.",
+            "detailed_description": "The image shows the Arc de Triomphe, a famous monument located in Paris, France. It is a neoclassical structure built in the 19th century, characterized by its large arch and detailed sculptural reliefs. The monument is illuminated at night, highlighting its intricate carvings and architectural details. The surrounding area includes a paved plaza with people and streetlights.",
+            "identification": {
+              "primary": [
+                "Arc de Triomphe"
+              ],
+              "location": "Paris, France",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Arc de Triomphe",
+                "type": "monument",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Neoclassical",
+              "19th_century",
+              "stone",
+              "Paris",
+              "monument"
+            ],
+            "location": "Paris, France",
+            "type": "monument",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Arc de Triomphe\"],\n        \"location\": \"Paris, France\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Arc de Triomphe\",\n            \"type\": \"monument\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Neoclassical\", \"19th_century\", \"stone\", \"Paris\", \"monument\"],\n    \"description\": \"The image shows the Arc de Triomphe, a famous monument located in Paris, France. It is a neoclassical structure built in the 19th century, characterized by its large arch and detailed sculptural reliefs. The monument is illuminated at night, highlighting its intricate carvings and architectural details. The surrounding area includes a paved plaza with people and streetlights.\",\n    \"reasoning\": \"The distinctive shape, location, and architectural style of the monument are characteristic of the Arc de Triomphe in Paris.\",\n    \"type\": \"monument\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 7.534167051315308
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image prominently features a large triumphal arch, illuminated against the night sky. The arch is constructed from stone and showcases neoclassical architectural elements. It has a massive central archway flanked by two smaller arches, each adorned with intricate sculptural reliefs depicting historical scenes and figures. The facade is richly decorated with ornate carvings and inscriptions, adding to its grandeur. The arch is set on a wide plaza, with a paved area that reflects the streetlig",
+            "description": "The image prominently features a large triumphal arch, illuminated against the night sky. The arch is constructed from stone and showcases neoclassical architectural elements. It has a massive central archway flanked by two smaller arches, each adorned with intricate sculptural reliefs depicting historical scenes and figures. The facade is richly decorated with ornate carvings and inscriptions, adding to its grandeur. The arch is set on a wide plaza, with a paved area that reflects the streetlig",
+            "architectural_style": "Neoclassical",
+            "search_backends_used": [],
+            "processing_time_seconds": 48.880059003829956
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Arc De Triomphe (48.8738, 2.2950)",
+          "confidence": 0.17164434492588043,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Arc De Triomphe",
+            "coordinates": {
+              "latitude": 48.8737917,
+              "longitude": 2.2950274999999998
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 3024
+              },
+              {
+                "x": 0,
+                "y": 3024
+              }
+            ],
+            "context_labels": [
+              "Night",
+              "Lighting",
+              "Electricity",
+              "Darkness",
+              "Midnight"
+            ],
+            "context_objects": [
+              "Person",
+              "Person",
+              "Person"
+            ],
+            "web_entities": [
+              {
+                "name": "Security lighting",
+                "score": 0.5058661699295044
+              },
+              {
+                "name": "Street light",
+                "score": 0.476578950881958
+              },
+              {
+                "name": "Lighting",
+                "score": 0.4715000092983246
+              },
+              {
+                "name": "Light",
+                "score": 0.41780000925064087
+              },
+              {
+                "name": "Security",
+                "score": 0.38339999318122864
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Arc De Triomphe",
+                "score": 0.17164434492588043,
+                "location": {
+                  "lat": 48.8737917,
+                  "lng": 2.2950274999999998
+                }
+              }
+            ],
+            "processing_time_seconds": 16.294838905334473
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/80.jpg"
+    }
+  ]
+}

@@ -1,0 +1,1025 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "56.heic",
+      "timestamp": "2026-01-28T06:10:51.931807",
+      "processing_time_seconds": 56.70093,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -33.89414166666667,
+        "gps_longitude": 151.27377222222225,
+        "location": {
+          "formatted_address": "24 Notts Ave, Bondi Beach NSW 2026, Australia",
+          "city": "Bondi Beach",
+          "county": "Waverley Council",
+          "country": "Australia"
+        },
+        "datetime_original": "2023:03:19 17:06:58",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Bondi Beach, Sydney, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Bondi Beach, and the visual features such as the sandy beach and the Bondi Pavilion confirm this identification.",
+            "detailed_description": "The image shows Bondi Beach, a famous beach located in Sydney, Australia. The beach is bustling with people enjoying the sun and surf. In the background, the Bondi Pavilion is visible, a notable building with a distinctive Mediterranean architectural style. The beach is known for its golden sands and vibrant atmosphere, attracting locals and tourists alike.",
+            "identification": {
+              "primary": [
+                "Bondi Beach"
+              ],
+              "location": "Sydney, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Bondi Beach",
+                "type": "natural_feature",
+                "confidence": 0.95
+              },
+              {
+                "name": "Bondi Pavilion",
+                "type": "building",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "beach",
+              "coastal",
+              "Bondi",
+              "Sydney",
+              "Australia"
+            ],
+            "location": "Sydney, Australia",
+            "type": "natural_feature",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Bondi Beach\"],\n        \"location\": \"Sydney, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Bondi Beach\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Bondi Pavilion\",\n            \"type\": \"building\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"beach\", \"coastal\", \"Bondi\", \"Sydney\", \"Australia\"],\n    \"description\": \"The image shows Bondi Beach, a famous beach located in Sydney, Australia. The beach is bustling with people enjoying the sun and surf. In the background, the Bondi Pavilion is visible, a notable building with a distinctive Mediterranean architectural style. The beach is known for its golden sands and vibrant atmosphere, attracting locals and tourists alike.\",\n    \"reasoning\": \"The location metadata indicates Bondi Beach, and the visual features such as the sandy beach and the Bondi Pavilion confirm this identification.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": -33.89414166666667,
+              "longitude": 151.27377222222225
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "24 Notts Ave, Bondi Beach NSW 2026, Australia",
+              "city": "Bondi Beach",
+              "county": "Waverley Council",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2023:03:19 17:06:58",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 9.367156028747559
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image captures a vibrant scene at Bondi Beach, a popular coastal destination in Australia. The beach is filled with people enjoying the sunny weather, with many sunbathing on the sandy shore and others swimming or wading in the gentle waves of the ocean. The sand is light beige, contrasting with the deep blue of the water. In the background, a variety of buildings line the coast, including several modern apartment complexes and older structures with red-tiled roofs, indicative of a Mediterra",
+            "description": "The image captures a vibrant scene at Bondi Beach, a popular coastal destination in Australia. The beach is filled with people enjoying the sunny weather, with many sunbathing on the sandy shore and others swimming or wading in the gentle waves of the ocean. The sand is light beige, contrasting with the deep blue of the water. In the background, a variety of buildings line the coast, including several modern apartment complexes and older structures with red-tiled roofs, indicative of a Mediterra",
+            "architectural_style": "Mediterranean influence",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": -33.89414166666667,
+              "longitude": 151.27377222222225
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "24 Notts Ave, Bondi Beach NSW 2026, Australia",
+              "city": "Bondi Beach",
+              "county": "Waverley Council",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2023:03:19 17:06:58",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 46.40119504928589
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Bondi Beach Park (-33.8910, 151.2754)",
+          "confidence": 0.594257652759552,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Bondi Beach Park",
+            "coordinates": {
+              "latitude": -33.8910109,
+              "longitude": 151.27540299999998
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 4032
+              },
+              {
+                "x": 0,
+                "y": 4032
+              }
+            ],
+            "context_labels": [
+              "Beach",
+              "Water",
+              "Body of water",
+              "Coast",
+              "Natural environment"
+            ],
+            "context_objects": [],
+            "web_entities": [
+              {
+                "name": "sea-m",
+                "score": 0.4300000071525574
+              },
+              {
+                "name": "Beach",
+                "score": 0.4148315489292145
+              },
+              {
+                "name": "Sand",
+                "score": 0.36859339475631714
+              },
+              {
+                "name": "Tourism",
+                "score": 0.3400000035762787
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Bondi Beach Park",
+                "score": 0.594257652759552,
+                "location": {
+                  "lat": -33.8910109,
+                  "lng": 151.27540299999998
+                }
+              },
+              {
+                "name": "Bondi To Bronte Coastal Walk",
+                "score": 0.5088098049163818,
+                "location": {
+                  "lat": -33.896104199999996,
+                  "lng": 151.2747022
+                }
+              },
+              {
+                "name": "Bondi Beach",
+                "score": 0.5073391199111938,
+                "location": {
+                  "lat": -33.892594231548486,
+                  "lng": 151.27623611183805
+                }
+              },
+              {
+                "name": "Bondi Skate Park",
+                "score": 0.48300015926361084,
+                "location": {
+                  "lat": -33.892248099999996,
+                  "lng": 151.2742777
+                }
+              },
+              {
+                "name": "Biddigal Reserve",
+                "score": 0.4663863182067871,
+                "location": {
+                  "lat": -33.891111099999996,
+                  "lng": 151.2827778
+                }
+              }
+            ],
+            "processing_time_seconds": 18.18667221069336
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Bondi Beach, Waverley Council, Australia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Bondi Beach, Waverley Council, Australia",
+            "coordinates": {
+              "latitude": -33.89414166666667,
+              "longitude": 151.27377222222225
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Bondi Beach Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 9044,
+                  "vicinity": "Campbell Parade, Bondi Beach",
+                  "place_id": "ChIJ2947iJutEmsR841yOn-g06Q",
+                  "location": {
+                    "lat": -33.8910109,
+                    "lng": 151.275403
+                  }
+                },
+                {
+                  "name": "Marks Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1251,
+                  "vicinity": "Marks Lane/ Kenneth St Bondi, Fletcher Street, Tamarama",
+                  "place_id": "ChIJvZDZpoOtEmsRRqQ_kfMMJx0",
+                  "location": {
+                    "lat": -33.89847650000001,
+                    "lng": 151.2752303
+                  }
+                },
+                {
+                  "name": "Sam Fiszman Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 148,
+                  "vicinity": "Ramsgate Avenue East, North Bondi",
+                  "place_id": "ChIJqyCShXatEmsRe0Aomnpo0JM",
+                  "location": {
+                    "lat": -33.8933333,
+                    "lng": 151.2836111
+                  }
+                },
+                {
+                  "name": "Bondi Pavilion",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 4601,
+                  "vicinity": "Queen Elizabeth Drive, Bondi Beach",
+                  "place_id": "ChIJDcgjiJ6tEmsR0M9ai0-UY-E",
+                  "location": {
+                    "lat": -33.8900918,
+                    "lng": 151.2770796
+                  }
+                },
+                {
+                  "name": "Bondi Markets",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1342,
+                  "vicinity": "Campbell Parade, Bondi Beach",
+                  "place_id": "ChIJaXfeKJ6tEmsRyjeMgc9onq8",
+                  "location": {
+                    "lat": -33.8885128,
+                    "lng": 151.2769894
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "The I z in u The",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Imperial Avenue, Bondi",
+                  "place_id": "ChIJxSwUbwCtEmsR9DkX0gKBTCQ",
+                  "location": {
+                    "lat": -33.8939353,
+                    "lng": 151.2663751
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Hotel Bondi",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 1353,
+                  "vicinity": "178 Campbell Parade, Bondi Beach",
+                  "place_id": "ChIJ_UHCsZ6tEmsRv7VoMBTS-B8",
+                  "location": {
+                    "lat": -33.8898604,
+                    "lng": 151.2751934
+                  }
+                },
+                {
+                  "name": "bp",
+                  "types": [
+                    "gas_station",
+                    "atm",
+                    "restaurant",
+                    "food",
+                    "finance",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3,
+                  "user_ratings_total": 95,
+                  "vicinity": "185 Bondi Road, Bondi",
+                  "place_id": "ChIJkfhoOI6tEmsRiEBB9DQbjFY",
+                  "location": {
+                    "lat": -33.89419999999999,
+                    "lng": 151.2648
+                  }
+                },
+                {
+                  "name": "Hurricane's Grill & Bar Bondi Beach",
+                  "types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "food",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 2681,
+                  "vicinity": "130 Roscoe Street, Bondi Beach",
+                  "place_id": "ChIJyX4tU5mtEmsRsBW-Mak_5Vw",
+                  "location": {
+                    "lat": -33.8900248,
+                    "lng": 151.2744674
+                  }
+                },
+                {
+                  "name": "The Corner House, Bondi",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 435,
+                  "vicinity": "281 Bondi Road, Bondi",
+                  "place_id": "ChIJ2fD39o-tEmsRufSZ3OLbFEw",
+                  "location": {
+                    "lat": -33.89488849999999,
+                    "lng": 151.2683604
+                  }
+                },
+                {
+                  "name": "The Bucket List",
+                  "types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 851,
+                  "vicinity": "Bondi Pavilion, Shop, 1 Queen Elizabeth Drive, Bondi Beach",
+                  "place_id": "ChIJ5zivIZytEmsR9Zpd36j4Cw4",
+                  "location": {
+                    "lat": -33.89018299999999,
+                    "lng": 151.277678
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Bondi Beach Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 9044,
+                  "vicinity": "Campbell Parade, Bondi Beach",
+                  "place_id": "ChIJ2947iJutEmsR841yOn-g06Q",
+                  "location": {
+                    "lat": -33.8910109,
+                    "lng": 151.275403
+                  }
+                },
+                {
+                  "name": "Marks Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1251,
+                  "vicinity": "Marks Lane/ Kenneth St Bondi, Fletcher Street, Tamarama",
+                  "place_id": "ChIJvZDZpoOtEmsRRqQ_kfMMJx0",
+                  "location": {
+                    "lat": -33.89847650000001,
+                    "lng": 151.2752303
+                  }
+                },
+                {
+                  "name": "Sam Fiszman Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 148,
+                  "vicinity": "Ramsgate Avenue East, North Bondi",
+                  "place_id": "ChIJqyCShXatEmsRe0Aomnpo0JM",
+                  "location": {
+                    "lat": -33.8933333,
+                    "lng": 151.2836111
+                  }
+                },
+                {
+                  "name": "South Bondi Beach",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 514,
+                  "vicinity": "Bondi Beach",
+                  "place_id": "ChIJSVtufZutEmsRlaR6oLoWD4g",
+                  "location": {
+                    "lat": -33.8935099,
+                    "lng": 151.2743066
+                  }
+                },
+                {
+                  "name": "Bondi Reserve",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "2-2A Francis Street, Bondi Beach",
+                  "place_id": "ChIJXW7UwXKtEmsRkXS7TtH7xlg",
+                  "location": {
+                    "lat": -33.8952891,
+                    "lng": 151.2726322
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Wayside Chapel, Bondi Beach",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 23,
+                  "vicinity": "95 Roscoe Street, Bondi Beach",
+                  "place_id": "ChIJzdJ0f6KtEmsR44GVRuRPJ1Q",
+                  "location": {
+                    "lat": -33.8902731,
+                    "lng": 151.2741368
+                  }
+                },
+                {
+                  "name": "Bondi Presbyterian Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 5,
+                  "vicinity": "Castlefield Street, Bondi",
+                  "place_id": "ChIJ6dyVGpCtEmsRvEbmv2nc-Hc",
+                  "location": {
+                    "lat": -33.8935313,
+                    "lng": 151.2674949
+                  }
+                },
+                {
+                  "name": "Bondi Beach Church / Bondi Anglican",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 15,
+                  "vicinity": "60 Wairoa Avenue, Bondi Beach",
+                  "place_id": "ChIJQVeYwJ-tEmsRLOUyj8HGRiY",
+                  "location": {
+                    "lat": -33.8878193,
+                    "lng": 151.2788379
+                  }
+                },
+                {
+                  "name": "St Patrick's Catholic Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 27,
+                  "vicinity": "2 Wellington Street, Bondi",
+                  "place_id": "ChIJOT-QFo6tEmsRfiXmZBGYWik",
+                  "location": {
+                    "lat": -33.89376920000001,
+                    "lng": 151.2638528
+                  }
+                },
+                {
+                  "name": "Sisters Of St Joseph",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "4 Wellington Street, Bondi",
+                  "place_id": "ChIJcYJfH46tEmsRWSEZig5rquc",
+                  "location": {
+                    "lat": -33.8935162,
+                    "lng": 151.2639865
+                  }
+                },
+                {
+                  "name": "Nefesh Synagogue Bondi",
+                  "types": [
+                    "synagogue",
+                    "library",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 13,
+                  "vicinity": "54 Roscoe Street, Bondi Beach",
+                  "place_id": "ChIJ50ONCpmtEmsR6_T7iXyyAnk",
+                  "location": {
+                    "lat": -33.8881836,
+                    "lng": 151.2718862
+                  }
+                },
+                {
+                  "name": "Chabad of Bondi",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 31,
+                  "vicinity": "105a Wellington Street, Bondi Beach",
+                  "place_id": "ChIJj78D9JmtEmsRZ2Tz-fZ8G0c",
+                  "location": {
+                    "lat": -33.88784699999999,
+                    "lng": 151.2676056
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Aquabumps",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 222,
+                  "vicinity": "64 Hall Street, Bondi Beach",
+                  "place_id": "ChIJ6_UztZ6tEmsRb0IdFkk6-J0",
+                  "location": {
+                    "lat": -33.8897195,
+                    "lng": 151.2711072
+                  }
+                },
+                {
+                  "name": "Kaleidoscope Tattoo Studio",
+                  "types": [
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 594,
+                  "vicinity": "255 Bondi Road, Bondi",
+                  "place_id": "ChIJSzkG74-tEmsRthvhZc12YTY",
+                  "location": {
+                    "lat": -33.8946426,
+                    "lng": 151.2676346
+                  }
+                },
+                {
+                  "name": "Art Moment Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Shop1 ,Ground Floor/99 Curlewis Street, Bondi Beach",
+                  "place_id": "ChIJUVCxIpmtEmsRK9Bea_WTOdc",
+                  "location": {
+                    "lat": -33.88826,
+                    "lng": 151.272661
+                  }
+                },
+                {
+                  "name": "Bondi Beach Graffiti Wall",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 71,
+                  "vicinity": "Queen Elizabeth Drive, Bondi Beach",
+                  "place_id": "ChIJx2CEIpytEmsRWLf6OMW0VTg",
+                  "location": {
+                    "lat": -33.8910708,
+                    "lng": 151.2762267
+                  }
+                },
+                {
+                  "name": "Artist Editions",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "2 Ramsgate Avenue, Bondi Beach",
+                  "place_id": "ChIJVdzfK2KtEmsRGoUrr8rxuJI",
+                  "location": {
+                    "lat": -33.8864418,
+                    "lng": 151.2761383
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Sydney",
+                  "types": [
+                    "colloquial_area",
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Sydney",
+                  "place_id": "ChIJP3Sa8ziYEmsRUKgyFmh9AQM",
+                  "location": {
+                    "lat": -33.8622503,
+                    "lng": 151.207684
+                  }
+                },
+                {
+                  "name": "Little Drifter Bondi Beach",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 695,
+                  "vicinity": "19 Lamrock Avenue, Bondi Beach",
+                  "place_id": "ChIJuXqVTJqtEmsRRZL0tSjerxk",
+                  "location": {
+                    "lat": -33.89127570000001,
+                    "lng": 151.2715008
+                  }
+                },
+                {
+                  "name": "Bondi Beach Backpackers",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 2912,
+                  "vicinity": "35a Hall Street, Bondi Beach",
+                  "place_id": "ChIJL4f04JutEmsR5i4vm4u13vA",
+                  "location": {
+                    "lat": -33.8903107,
+                    "lng": 151.2729275
+                  }
+                },
+                {
+                  "name": "Hotel Bondi",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 1353,
+                  "vicinity": "178 Campbell Parade, Bondi Beach",
+                  "place_id": "ChIJ_UHCsZ6tEmsRv7VoMBTS-B8",
+                  "location": {
+                    "lat": -33.8898604,
+                    "lng": 151.2751934
+                  }
+                },
+                {
+                  "name": "Adina Apartment Hotel Bondi Beach Sydney",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 324,
+                  "vicinity": "69/73 Hall Street, Bondi Beach",
+                  "place_id": "ChIJhd2ifpmtEmsR_ku11jWWMLQ",
+                  "location": {
+                    "lat": -33.8897151,
+                    "lng": 151.2718051
+                  }
+                }
+              ]
+            },
+            "total_places_found": 33,
+            "photo_timestamp": "2023:03:19 17:06:58",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.5046830177307129
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/56.heic"
+    },
+    {
+      "image_filename": "56.heic",
+      "timestamp": "2026-01-28T06:11:48.667391",
+      "processing_time_seconds": 60.170606,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Bondi Beach, Sydney, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The beach's distinctive shape and the presence of the Bondi Pavilion, along with the urban backdrop, strongly suggest this is Bondi Beach in Sydney, Australia. The architectural style of the pavilion and the coastal setting are characteristic of this location.",
+            "detailed_description": "The image shows Bondi Beach, a famous beach located in Sydney, Australia. The beach is crowded with people enjoying the sun and the ocean. In the background, the Bondi Pavilion is visible, which is a notable building with a distinctive architectural style featuring arches and a terracotta roof. The area is known for its vibrant atmosphere and is a popular destination for both locals and tourists.",
+            "identification": {
+              "primary": [
+                "Bondi Beach"
+              ],
+              "location": "Sydney, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Bondi Beach",
+                "type": "natural_feature",
+                "confidence": 0.95
+              },
+              {
+                "name": "Bondi Pavilion",
+                "type": "building",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "beach",
+              "coastal",
+              "Sydney",
+              "Bondi",
+              "Australia"
+            ],
+            "location": "Sydney, Australia",
+            "type": "natural_feature",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Bondi Beach\"],\n        \"location\": \"Sydney, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Bondi Beach\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Bondi Pavilion\",\n            \"type\": \"building\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"beach\", \"coastal\", \"Sydney\", \"Bondi\", \"Australia\"],\n    \"description\": \"The image shows Bondi Beach, a famous beach located in Sydney, Australia. The beach is crowded with people enjoying the sun and the ocean. In the background, the Bondi Pavilion is visible, which is a notable building with a distinctive architectural style featuring arches and a terracotta roof. The area is known for its vibrant atmosphere and is a popular destination for both locals and tourists.\",\n    \"reasoning\": \"The beach's distinctive shape and the presence of the Bondi Pavilion, along with the urban backdrop, strongly suggest this is Bondi Beach in Sydney, Australia. The architectural style of the pavilion and the coastal setting are characteristic of this location.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 9.573976755142212
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a bustling beach scene with a large number of people enjoying the sandy shore and the ocean. The beach is expansive, with golden sand stretching along the coastline. The shoreline curves gently, with waves lapping at the edge where people are wading and swimming. The water is a clear blue, contrasting with the lighter sand. In the background, there is a row of buildings that appear to be a mix of residential and commercial structures. These buildings are of varying heights and ",
+            "description": "The image depicts a bustling beach scene with a large number of people enjoying the sandy shore and the ocean. The beach is expansive, with golden sand stretching along the coastline. The shoreline curves gently, with waves lapping at the edge where people are wading and swimming. The water is a clear blue, contrasting with the lighter sand. In the background, there is a row of buildings that appear to be a mix of residential and commercial structures. These buildings are of varying heights and ",
+            "architectural_style": "Mixed architectural styles including modern and traditional",
+            "search_backends_used": [],
+            "processing_time_seconds": 50.37993097305298
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Bondi Beach Park (-33.8910, 151.2754)",
+          "confidence": 0.594257652759552,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Bondi Beach Park",
+            "coordinates": {
+              "latitude": -33.8910109,
+              "longitude": 151.27540299999998
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 4032
+              },
+              {
+                "x": 0,
+                "y": 4032
+              }
+            ],
+            "context_labels": [
+              "Beach",
+              "Water",
+              "Body of water",
+              "Coast",
+              "Natural environment"
+            ],
+            "context_objects": [],
+            "web_entities": [
+              {
+                "name": "sea-m",
+                "score": 0.4300000071525574
+              },
+              {
+                "name": "Beach",
+                "score": 0.4148315489292145
+              },
+              {
+                "name": "Sand",
+                "score": 0.36859339475631714
+              },
+              {
+                "name": "Tourism",
+                "score": 0.3400000035762787
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Bondi Beach Park",
+                "score": 0.594257652759552,
+                "location": {
+                  "lat": -33.8910109,
+                  "lng": 151.27540299999998
+                }
+              },
+              {
+                "name": "Bondi To Bronte Coastal Walk",
+                "score": 0.5088098049163818,
+                "location": {
+                  "lat": -33.896104199999996,
+                  "lng": 151.2747022
+                }
+              },
+              {
+                "name": "Bondi Beach",
+                "score": 0.5073391199111938,
+                "location": {
+                  "lat": -33.892594231548486,
+                  "lng": 151.27623611183805
+                }
+              },
+              {
+                "name": "Bondi Skate Park",
+                "score": 0.48300015926361084,
+                "location": {
+                  "lat": -33.892248099999996,
+                  "lng": 151.2742777
+                }
+              },
+              {
+                "name": "Biddigal Reserve",
+                "score": 0.4663863182067871,
+                "location": {
+                  "lat": -33.891111099999996,
+                  "lng": 151.2827778
+                }
+              }
+            ],
+            "processing_time_seconds": 19.667664766311646
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/56.heic"
+    }
+  ]
+}

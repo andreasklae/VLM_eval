@@ -1,0 +1,670 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "25.jpg",
+      "timestamp": "2026-01-28T05:07:05.907800",
+      "processing_time_seconds": 52.708335,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 67.52271944444445,
+        "gps_longitude": 14.762836111111111,
+        "location": {
+          "formatted_address": "Kaiveien 26, 8093 Kjerringøy, Norway",
+          "city": null,
+          "county": "Bodø",
+          "country": "Norway"
+        },
+        "datetime_original": "2022:06:11 00:06:44",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Norwegian coastal landscape, Bodø, Norway",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Bodø, Norway, and the architectural style of the houses, along with the natural landscape, is consistent with Norwegian coastal regions.",
+            "detailed_description": "The image depicts a scenic coastal landscape in Bodø, Norway. It features traditional Norwegian houses with red facades, typical of coastal architecture in the region. The houses are situated along a harbor with several boats visible. In the background, there is a prominent mountain landscape, adding to the natural beauty of the scene. The sky is clear with a visible moon, suggesting the photo was taken during twilight.",
+            "identification": {
+              "primary": [
+                "Norwegian coastal landscape"
+              ],
+              "location": "Bodø, Norway",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Norwegian coastal houses",
+                "type": "building",
+                "confidence": 0.9
+              },
+              {
+                "name": "Mountain landscape",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "coastal",
+              "Norwegian_architecture",
+              "natural_landscape",
+              "mountain",
+              "harbor"
+            ],
+            "location": "Bodø, Norway",
+            "type": "viewpoint",
+            "search_range_meters": 2000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Norwegian coastal landscape\"],\n        \"location\": \"Bodø, Norway\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Norwegian coastal houses\",\n            \"type\": \"building\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Mountain landscape\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"coastal\", \"Norwegian_architecture\", \"natural_landscape\", \"mountain\", \"harbor\"],\n    \"description\": \"The image depicts a scenic coastal landscape in Bodø, Norway. It features traditional Norwegian houses with red facades, typical of coastal architecture in the region. The houses are situated along a harbor with several boats visible. In the background, there is a prominent mountain landscape, adding to the natural beauty of the scene. The sky is clear with a visible moon, suggesting the photo was taken during twilight.\",\n    \"reasoning\": \"The location metadata indicates Bodø, Norway, and the architectural style of the houses, along with the natural landscape, is consistent with Norwegian coastal regions.\",\n    \"type\": \"viewpoint\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 67.52271944444445,
+              "longitude": 14.762836111111111
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Kaiveien 26, 8093 Kjerringøy, Norway",
+              "city": null,
+              "county": "Bodø",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2022:06:11 00:06:44",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 9.932940006256104
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image captures a serene coastal scene at sunset in Bodø, Norway. The foreground features several boats moored at a dock, their masts extending upwards. The boats are reflected in the calm water, creating a mirror-like effect. To the right, a series of red wooden buildings with white trim are visible, typical of Scandinavian architecture. These buildings are likely part of a harbor or marina, adding to the maritime atmosphere. In the background, a prominent mountain rises steeply, its rugged ",
+            "description": "The image captures a serene coastal scene at sunset in Bodø, Norway. The foreground features several boats moored at a dock, their masts extending upwards. The boats are reflected in the calm water, creating a mirror-like effect. To the right, a series of red wooden buildings with white trim are visible, typical of Scandinavian architecture. These buildings are likely part of a harbor or marina, adding to the maritime atmosphere. In the background, a prominent mountain rises steeply, its rugged ",
+            "architectural_style": "Scandinavian",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 67.52271944444445,
+              "longitude": 14.762836111111111
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Kaiveien 26, 8093 Kjerringøy, Norway",
+              "city": null,
+              "county": "Bodø",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2022:06:11 00:06:44",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 42.11512494087219
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Sunlight",
+          "confidence": 0.7996332049369812,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Sunlight",
+                "score": 0.7996332049369812
+              },
+              {
+                "source": "label",
+                "name": "Heat",
+                "score": 0.7347666621208191
+              },
+              {
+                "source": "object",
+                "name": "Boat",
+                "score": 0.5936493873596191
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Sunlight",
+                "score": 0.27340269088745117
+              }
+            ],
+            "objects": [
+              {
+                "name": "Boat",
+                "score": 0.5936493873596191
+              }
+            ],
+            "labels": [
+              {
+                "name": "Sunlight",
+                "score": 0.7996332049369812
+              },
+              {
+                "name": "Heat",
+                "score": 0.7347666621208191
+              },
+              {
+                "name": "Wire",
+                "score": 0.6307023763656616
+              },
+              {
+                "name": "Summit",
+                "score": 0.6163544654846191
+              },
+              {
+                "name": "Dusk",
+                "score": 0.5975256562232971
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 67.52271944444445,
+              "longitude": 14.762836111111111
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Kaiveien 26, 8093 Kjerringøy, Norway",
+              "city": null,
+              "county": "Bodø",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2022:06:11 00:06:44",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 12.216125249862671
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Bodø, Norway",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Bodø, Norway",
+            "coordinates": {
+              "latitude": 67.52271944444445,
+              "longitude": 14.762836111111111
+            },
+            "search_range_meters": 2000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Kjerringoy trading",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 624,
+                  "vicinity": "Kjerringøyveien 1129, Kjerringøy",
+                  "place_id": "ChIJRVLqFqjh3kURwcZ3Z7IKZ9g",
+                  "location": {
+                    "lat": 67.5191353,
+                    "lng": 14.7539336
+                  }
+                },
+                {
+                  "name": "Kjerringøy church",
+                  "types": [
+                    "church",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 15,
+                  "vicinity": "Sekundær Fylkesvei 571 560, Kjerringøy",
+                  "place_id": "ChIJp_Jqzqnh3kURkkDRB877sz4",
+                  "location": {
+                    "lat": 67.5188786,
+                    "lng": 14.7587856
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Kjerringoy trading",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 624,
+                  "vicinity": "Kjerringøyveien 1129, Kjerringøy",
+                  "place_id": "ChIJRVLqFqjh3kURwcZ3Z7IKZ9g",
+                  "location": {
+                    "lat": 67.5191353,
+                    "lng": 14.7539336
+                  }
+                },
+                {
+                  "name": "Karl Erik Harr Museet AS (Opening hours apply to high season)",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 6,
+                  "vicinity": "Sjyhaugen 5, Kjerringøy",
+                  "place_id": "ChIJw4GA7afh3kURLbuzhskbhLU",
+                  "location": {
+                    "lat": 67.51989549999999,
+                    "lng": 14.7637032
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Kjerringoy trading",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "restaurant",
+                    "point_of_interest",
+                    "store",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 624,
+                  "vicinity": "Kjerringøyveien 1129, Kjerringøy",
+                  "place_id": "ChIJRVLqFqjh3kURwcZ3Z7IKZ9g",
+                  "location": {
+                    "lat": 67.5191353,
+                    "lng": 14.7539336
+                  }
+                },
+                {
+                  "name": "Kjerringøy Bryggehotell",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 260,
+                  "vicinity": "Kaiveien 135, Kjerringøy",
+                  "place_id": "ChIJR_zyOQfh3kUR8Njjkichg5Q",
+                  "location": {
+                    "lat": 67.5213802,
+                    "lng": 14.7622995
+                  }
+                },
+                {
+                  "name": "Rojjana Restaurant og Take Away",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 95,
+                  "vicinity": "Kjerringøyveien 1149, Kjerringøy",
+                  "place_id": "ChIJYSt1Ac3h3kURpbhc1zFK2Xw",
+                  "location": {
+                    "lat": 67.51975879999999,
+                    "lng": 14.7629767
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Kjerringøy church",
+                  "types": [
+                    "church",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 15,
+                  "vicinity": "Sekundær Fylkesvei 571 560, Kjerringøy",
+                  "place_id": "ChIJp_Jqzqnh3kURkkDRB877sz4",
+                  "location": {
+                    "lat": 67.5188786,
+                    "lng": 14.7587856
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Zahlfjøsen",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 25,
+                  "vicinity": "Kjerringøy",
+                  "place_id": "ChIJh4FvQwfh3kURYIUbHA1kexI",
+                  "location": {
+                    "lat": 67.5203033,
+                    "lng": 14.7628606
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Kjerringøy",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Kjerringøy",
+                  "place_id": "ChIJ02-phanh3kURitoiNsBqFKw",
+                  "location": {
+                    "lat": 67.51701,
+                    "lng": 14.761825
+                  }
+                },
+                {
+                  "name": "Matkroken Kjerringøy",
+                  "types": [
+                    "grocery_or_supermarket",
+                    "supermarket",
+                    "point_of_interest",
+                    "store",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 138,
+                  "vicinity": "Kjerringøyveien 1145, Kjerringøy",
+                  "place_id": "ChIJJ2eNZwfh3kURwFhMO3rkt3g",
+                  "location": {
+                    "lat": 67.52003909999999,
+                    "lng": 14.7619126
+                  }
+                },
+                {
+                  "name": "Kjerringøyopplevelser AS",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Rundveien 8, Kjerringøy",
+                  "place_id": "ChIJf0OElQDh3kURopqD-ae6IoQ",
+                  "location": {
+                    "lat": 67.5201206,
+                    "lng": 14.7687784
+                  }
+                },
+                {
+                  "name": "Kjerringoy trading",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "restaurant",
+                    "point_of_interest",
+                    "store",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 624,
+                  "vicinity": "Kjerringøyveien 1129, Kjerringøy",
+                  "place_id": "ChIJRVLqFqjh3kURwcZ3Z7IKZ9g",
+                  "location": {
+                    "lat": 67.5191353,
+                    "lng": 14.7539336
+                  }
+                },
+                {
+                  "name": "Kjerringøy Bryggehotell",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 260,
+                  "vicinity": "Kaiveien 135, Kjerringøy",
+                  "place_id": "ChIJR_zyOQfh3kUR8Njjkichg5Q",
+                  "location": {
+                    "lat": 67.5213802,
+                    "lng": 14.7622995
+                  }
+                }
+              ]
+            },
+            "total_places_found": 14,
+            "photo_timestamp": "2022:06:11 00:06:44",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.4404411315917969
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/25.jpg"
+    },
+    {
+      "image_filename": "25.jpg",
+      "timestamp": "2026-01-28T05:07:58.648068",
+      "processing_time_seconds": 50.744625,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Harbor with boats, Mountain landscape, Norway (likely Lofoten Islands)",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The combination of the harbor, boats, and mountainous backdrop is characteristic of Norwegian coastal regions, especially the Lofoten Islands, known for their dramatic landscapes and traditional architecture.",
+            "detailed_description": "The image depicts a scenic harbor with several boats docked along the water. In the background, there is a striking mountain landscape, typical of the rugged terrain found in Norway, particularly in regions like the Lofoten Islands. The architecture of the buildings visible in the image features traditional Norwegian styles, with red-painted wooden structures. The scene is bathed in warm light, suggesting it might be taken during sunset or sunrise.",
+            "identification": {
+              "primary": [
+                "Harbor with boats",
+                "Mountain landscape"
+              ],
+              "location": "Norway (likely Lofoten Islands)",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Harbor with boats",
+                "type": "viewpoint",
+                "confidence": 0.9
+              },
+              {
+                "name": "Mountain landscape",
+                "type": "natural_feature",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "harbor",
+              "boats",
+              "mountains",
+              "Norwegian_architecture",
+              "natural_landscape"
+            ],
+            "location": "Norway (likely Lofoten Islands)",
+            "type": "viewpoint",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Lofoten Islands, Norway",
+                "specificity_level": "very_specific",
+                "confidence": 0.8,
+                "reasoning": "The landscape and architectural style are consistent with the Lofoten Islands."
+              },
+              {
+                "guess": "Norwegian coastal town",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "The scene matches typical Norwegian coastal towns with harbors and mountains."
+              },
+              {
+                "guess": "Scandinavian harbor",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The style and setting are common in Scandinavian coastal regions."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Harbor with boats\", \"Mountain landscape\"],\n        \"location\": \"Norway (likely Lofoten Islands)\",\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Harbor with boats\",\n            \"type\": \"viewpoint\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Mountain landscape\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"harbor\", \"boats\", \"mountains\", \"Norwegian_architecture\", \"natural_landscape\"],\n    \"description\": \"The image depicts a scenic harbor with several boats docked along the water. In the background, there is a striking mountain landscape, typical of the rugged terrain found in Norway, particularly in regions like the Lofoten Islands. The architecture of the buildings visible in the image features traditional Norwegian styles, with red-painted wooden structures. The scene is bathed in warm light, suggesting it might be taken during sunset or sunrise.\",\n    \"reasoning\": \"The combination of the harbor, boats, and mountainous backdrop is characteristic of Norwegian coastal regions, especially the Lofoten Islands, known for their dramatic landscapes and traditional architecture.\",\n    \"type\": \"viewpoint\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Lofoten Islands, Norway\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.8,\n            \"reasoning\": \"The landscape and architectural style are consistent with the Lofoten Islands.\"\n        },\n        {\n            \"guess\": \"Norwegian coastal town\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The scene matches typical Norwegian coastal towns with harbors and mountains.\"\n        },\n        {\n            \"guess\": \"Scandinavian harbor\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The style and setting are common in Scandinavian coastal regions.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 10.237515926361084
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a picturesque coastal scene during what appears to be the golden hour, characterized by warm, soft lighting. The main visual subject is a series of red wooden buildings, typical of Scandinavian architecture, lining the waterfront. These structures feature steep gabled roofs and large windows, reflecting the traditional style often found in northern European coastal towns. The buildings are positioned along a calm body of water, which mirrors their vibrant colors and the masts o",
+            "description": "The image depicts a picturesque coastal scene during what appears to be the golden hour, characterized by warm, soft lighting. The main visual subject is a series of red wooden buildings, typical of Scandinavian architecture, lining the waterfront. These structures feature steep gabled roofs and large windows, reflecting the traditional style often found in northern European coastal towns. The buildings are positioned along a calm body of water, which mirrors their vibrant colors and the masts o",
+            "architectural_style": "Scandinavian",
+            "search_backends_used": [],
+            "processing_time_seconds": 40.505800008773804
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Sunlight",
+          "confidence": 0.7977526783943176,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Sunlight",
+                "score": 0.7977526783943176
+              },
+              {
+                "source": "label",
+                "name": "Heat",
+                "score": 0.7333671450614929
+              },
+              {
+                "source": "object",
+                "name": "Boat",
+                "score": 0.5936493873596191
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Sunlight",
+                "score": 0.27340269088745117
+              }
+            ],
+            "objects": [
+              {
+                "name": "Boat",
+                "score": 0.5936493873596191
+              }
+            ],
+            "labels": [
+              {
+                "name": "Sunlight",
+                "score": 0.7977526783943176
+              },
+              {
+                "name": "Heat",
+                "score": 0.7333671450614929
+              },
+              {
+                "name": "Wire",
+                "score": 0.6305152177810669
+              },
+              {
+                "name": "Summit",
+                "score": 0.6182629466056824
+              },
+              {
+                "name": "Dusk",
+                "score": 0.5948407649993896
+              }
+            ],
+            "processing_time_seconds": 13.036148071289062
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/25.jpg"
+    }
+  ]
+}

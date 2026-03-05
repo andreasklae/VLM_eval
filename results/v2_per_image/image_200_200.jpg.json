@@ -1,0 +1,1084 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "200.jpg",
+      "timestamp": "2026-01-28T04:37:08.560487",
+      "processing_time_seconds": 46.528074,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 48.20722222222223,
+        "gps_longitude": 16.359386111111114,
+        "location": {
+          "formatted_address": "Ring, Volkstheater, 1010 Wien, Austria",
+          "city": "Wien",
+          "county": "Wien",
+          "country": "Austria"
+        },
+        "datetime_original": "2025:11:20 20:07:51",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Austrian Parliament Building, Pallas Athena Statue, Vienna, Austria",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and distinctive features such as the Corinthian columns and the Pallas Athena Statue are iconic elements of the Austrian Parliament Building in Vienna.",
+            "detailed_description": "The image shows the Austrian Parliament Building in Vienna, Austria, characterized by its Neoclassical architectural style. The building features a prominent facade with Corinthian columns and intricate sculptural decorations. In front of the building is the Pallas Athena Statue, a notable sculpture representing the Greek goddess of wisdom, adorned with a golden helmet and spear. The statue is surrounded by smaller figures and is a key feature of the parliament's exterior.",
+            "identification": {
+              "primary": [
+                "Austrian Parliament Building",
+                "Pallas Athena Statue"
+              ],
+              "location": "Vienna, Austria",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Austrian Parliament Building",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Pallas Athena Statue",
+                "type": "statue",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Neoclassical",
+              "19th_century",
+              "marble",
+              "Vienna",
+              "government_building"
+            ],
+            "location": "Vienna, Austria",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Austrian Parliament Building\", \"Pallas Athena Statue\"],\n        \"location\": \"Vienna, Austria\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Austrian Parliament Building\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Pallas Athena Statue\",\n            \"type\": \"statue\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Neoclassical\", \"19th_century\", \"marble\", \"Vienna\", \"government_building\"],\n    \"description\": \"The image shows the Austrian Parliament Building in Vienna, Austria, characterized by its Neoclassical architectural style. The building features a prominent facade with Corinthian columns and intricate sculptural decorations. In front of the building is the Pallas Athena Statue, a notable sculpture representing the Greek goddess of wisdom, adorned with a golden helmet and spear. The statue is surrounded by smaller figures and is a key feature of the parliament's exterior.\",\n    \"reasoning\": \"The architectural style and distinctive features such as the Corinthian columns and the Pallas Athena Statue are iconic elements of the Austrian Parliament Building in Vienna.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 48.20722222222223,
+              "longitude": 16.359386111111114
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Ring, Volkstheater, 1010 Wien, Austria",
+              "city": "Wien",
+              "county": "Wien",
+              "country": "Austria"
+            },
+            "photo_timestamp": "2025:11:20 20:07:51",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 6.978163003921509
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Austrian Parliament Building, Pallas Athena Statue, Vienna, Austria",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the architectural style and features of the Austrian Parliament Building, known for its classical design and Corinthian columns. The presence of Austrian flags and the location in Vienna further support this identification. The Pallas Athena Statue is a well-known sculpture located in front of the Parliament Building, fitting the description of a female figure with gold highlights.",
+            "identification": {
+              "primary": [
+                "Austrian Parliament Building",
+                "Pallas Athena Statue"
+              ],
+              "location": "Vienna, Austria",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Austrian Parliament Building",
+                "type": "building",
+                "confidence": 0.95
+              },
+              {
+                "name": "Pallas Athena Statue",
+                "type": "statue",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "classical",
+              "Corinthian columns",
+              "pediment sculptures",
+              "Vienna",
+              "urban",
+              "night scene"
+            ],
+            "sources_used": [
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image prominently features a classical building with a grand facade, characterized by a series of Corinthian columns that support an elaborate entablature. The columns are tall and fluted, typical of ancient Greek architectural influence. Above the columns, the entablature is adorned with intricate relief sculptures depicting various figures, possibly representing historical or mythological scenes. The pediment is triangular and features additional sculptural elements, contributing to the bu",
+            "description": "The image prominently features a classical building with a grand facade, characterized by a series of Corinthian columns that support an elaborate entablature. The columns are tall and fluted, typical of ancient Greek architectural influence. Above the columns, the entablature is adorned with intricate relief sculptures depicting various figures, possibly representing historical or mythological scenes. The pediment is triangular and features additional sculptural elements, contributing to the bu",
+            "architectural_style": "Classical",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 48.20722222222223,
+              "longitude": 16.359386111111114
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Ring, Volkstheater, 1010 Wien, Austria",
+              "city": "Wien",
+              "county": "Wien",
+              "country": "Austria"
+            },
+            "photo_timestamp": "2025:11:20 20:07:51",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 38.826658964157104
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Flag",
+          "confidence": 0.7622837424278259,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "object",
+            "all_candidates": [
+              {
+                "source": "object",
+                "name": "Flag",
+                "score": 0.7622837424278259
+              }
+            ],
+            "web_entities": [],
+            "objects": [
+              {
+                "name": "Flag",
+                "score": 0.7622837424278259
+              }
+            ],
+            "labels": [
+              {
+                "name": "Night",
+                "score": 0.8575133085250854
+              },
+              {
+                "name": "Midnight",
+                "score": 0.6978720426559448
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 48.20722222222223,
+              "longitude": 16.359386111111114
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Ring, Volkstheater, 1010 Wien, Austria",
+              "city": "Wien",
+              "county": "Wien",
+              "country": "Austria"
+            },
+            "photo_timestamp": "2025:11:20 20:07:51",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 8.990225076675415
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Wien, Austria",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Wien, Austria",
+            "coordinates": {
+              "latitude": 48.20722222222223,
+              "longitude": 16.359386111111114
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Hofburg",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 56660,
+                  "vicinity": "Vienna",
+                  "place_id": "ChIJ3wYgv5kHbUcRX0LEFIAWhYY",
+                  "location": {
+                    "lat": 48.2056578,
+                    "lng": 16.3647803
+                  }
+                },
+                {
+                  "name": "Museum of Natural History Vienna",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 41236,
+                  "vicinity": "Burgring 7, Wien",
+                  "place_id": "ChIJnQAHwZAHbUcRycXUTr8uocQ",
+                  "location": {
+                    "lat": 48.205212,
+                    "lng": 16.3598451
+                  }
+                },
+                {
+                  "name": "Albertina",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 33735,
+                  "vicinity": "Albertinaplatz 1, Wien",
+                  "place_id": "ChIJwVp-8psHbUcRuN43n5iK72Y",
+                  "location": {
+                    "lat": 48.2046992,
+                    "lng": 16.3681824
+                  }
+                },
+                {
+                  "name": "Kunsthistorisches Museum Wien",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 33525,
+                  "vicinity": "Maria-Theresien-Platz, Wien",
+                  "place_id": "ChIJ8XfPY5oHbUcRQbimbLVSYG8",
+                  "location": {
+                    "lat": 48.2038016,
+                    "lng": 16.3617874
+                  }
+                },
+                {
+                  "name": "Time Travel Vienna",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 11165,
+                  "vicinity": "Habsburgergasse 10A, Wien",
+                  "place_id": "ChIJbac0_JgHbUcRXkPUJudXIpA",
+                  "location": {
+                    "lat": 48.20825920000001,
+                    "lng": 16.3682589
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Hofburg",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 56660,
+                  "vicinity": "Vienna",
+                  "place_id": "ChIJ3wYgv5kHbUcRX0LEFIAWhYY",
+                  "location": {
+                    "lat": 48.2056578,
+                    "lng": 16.3647803
+                  }
+                },
+                {
+                  "name": "Museum of Natural History Vienna",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 41236,
+                  "vicinity": "Burgring 7, Wien",
+                  "place_id": "ChIJnQAHwZAHbUcRycXUTr8uocQ",
+                  "location": {
+                    "lat": 48.205212,
+                    "lng": 16.3598451
+                  }
+                },
+                {
+                  "name": "Albertina",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 33735,
+                  "vicinity": "Albertinaplatz 1, Wien",
+                  "place_id": "ChIJwVp-8psHbUcRuN43n5iK72Y",
+                  "location": {
+                    "lat": 48.2046992,
+                    "lng": 16.3681824
+                  }
+                },
+                {
+                  "name": "Kunsthistorisches Museum Wien",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 33525,
+                  "vicinity": "Maria-Theresien-Platz, Wien",
+                  "place_id": "ChIJ8XfPY5oHbUcRQbimbLVSYG8",
+                  "location": {
+                    "lat": 48.2038016,
+                    "lng": 16.3617874
+                  }
+                },
+                {
+                  "name": "Time Travel Vienna",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 11165,
+                  "vicinity": "Habsburgergasse 10A, Wien",
+                  "place_id": "ChIJbac0_JgHbUcRXkPUJudXIpA",
+                  "location": {
+                    "lat": 48.20825920000001,
+                    "lng": 16.3682589
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Austria Trend Hotel Europa Wien",
+                  "types": [
+                    "cafe",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1809,
+                  "vicinity": "Neuer Markt 3, Wien",
+                  "place_id": "ChIJP6fHu54HbUcR-q_daZOu-ew",
+                  "location": {
+                    "lat": 48.2061745,
+                    "lng": 16.3712666
+                  }
+                },
+                {
+                  "name": "Hotel Sans Souci Wien",
+                  "types": [
+                    "spa",
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 1179,
+                  "vicinity": "Burggasse 2, Wien",
+                  "place_id": "ChIJ8_JZQZAHbUcRfOCRCB4Q_n4",
+                  "location": {
+                    "lat": 48.2047201,
+                    "lng": 16.35652469999999
+                  }
+                },
+                {
+                  "name": "Hotel Das Tigra",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1350,
+                  "vicinity": "Tiefer Graben 14-20, Wien",
+                  "place_id": "ChIJRbzYwaIHbUcRyLpGz3xuxAo",
+                  "location": {
+                    "lat": 48.2121475,
+                    "lng": 16.368097
+                  }
+                },
+                {
+                  "name": "Flemings Selection Hotel Wien-City",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2603,
+                  "vicinity": "Josefstädter Straße 10-12, Wien",
+                  "place_id": "ChIJY_BO9JQHbUcRHxnHgS5GUeA",
+                  "location": {
+                    "lat": 48.20940179999999,
+                    "lng": 16.3534456
+                  }
+                },
+                {
+                  "name": "Ambassador Wien",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 1025,
+                  "vicinity": "Kärntner Straße 22, Wien",
+                  "place_id": "ChIJQTttpJ4HbUcRE1uDIFOEFLU",
+                  "location": {
+                    "lat": 48.2057193,
+                    "lng": 16.3710878
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Burggarten",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 12048,
+                  "vicinity": "Josefsplatz 1, Wien",
+                  "place_id": "ChIJdWDYUZoHbUcRTq4MHzRMp2s",
+                  "location": {
+                    "lat": 48.2043382,
+                    "lng": 16.3658336
+                  }
+                },
+                {
+                  "name": "Volksgarten",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 19644,
+                  "vicinity": "Vienna",
+                  "place_id": "ChIJr8X4FZcHbUcRJ66c8VeFbcU",
+                  "location": {
+                    "lat": 48.2080439,
+                    "lng": 16.3613967
+                  }
+                },
+                {
+                  "name": "Judenplatz Holocaust Memorial",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1766,
+                  "vicinity": "Judenplatz, Wien",
+                  "place_id": "ChIJ_YHCiaIHbUcRM7HPfSBZcfc",
+                  "location": {
+                    "lat": 48.2116915,
+                    "lng": 16.369482
+                  }
+                },
+                {
+                  "name": "Heldenplatz",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 18942,
+                  "vicinity": "Heldenplatz 21/4, Wien",
+                  "place_id": "ChIJf5_KqpAHbUcROuTS5DKluMk",
+                  "location": {
+                    "lat": 48.2065038,
+                    "lng": 16.3634618
+                  }
+                },
+                {
+                  "name": "Ostarrichipark",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 225,
+                  "vicinity": "Otto-Wagner-Platz, Wien",
+                  "place_id": "ChIJY5fBeL8HbUcRj4eN9OnkKQo",
+                  "location": {
+                    "lat": 48.2154854,
+                    "lng": 16.3545221
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "St. Michael's Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1116,
+                  "vicinity": "Michaelerplatz 5, Wien",
+                  "place_id": "ChIJA5JbAZkHbUcRPIkhomHjo0M",
+                  "location": {
+                    "lat": 48.2080885,
+                    "lng": 16.367059
+                  }
+                },
+                {
+                  "name": "Augustinerkirche",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 2016,
+                  "vicinity": "Augustinerstraße 3, Wien",
+                  "place_id": "ChIJ9SMnY5kHbUcRyjvhFEBAo1k",
+                  "location": {
+                    "lat": 48.2058923,
+                    "lng": 16.3676484
+                  }
+                },
+                {
+                  "name": "Kirche am Hof",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 576,
+                  "vicinity": "Schulhof 1, Wien",
+                  "place_id": "ChIJmZtSc5gHbUcRcI_cQ1g_fts",
+                  "location": {
+                    "lat": 48.2108755,
+                    "lng": 16.3687984
+                  }
+                },
+                {
+                  "name": "Catholic University Community Vienna",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 34,
+                  "vicinity": "Edith-Stein-Haus, Ebendorferstraße 8, Wien",
+                  "place_id": "ChIJ6wW7Gb4HbUcR9aUKC-kwQxU",
+                  "location": {
+                    "lat": 48.21281289999999,
+                    "lng": 16.3580581
+                  }
+                },
+                {
+                  "name": "Katholische Kirche Alservorstadt (Allerheiligste Dreifaltigkeit)",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 64,
+                  "vicinity": "Alser Straße 17, Wien",
+                  "place_id": "ChIJG6T8ccAHbUcRpKquDp_mWmw",
+                  "location": {
+                    "lat": 48.2146749,
+                    "lng": 16.3528184
+                  }
+                },
+                {
+                  "name": "Chabad Opera",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Tegetthoffstraße 3a/4. Stock / 5. Stock, Wien",
+                  "place_id": "ChIJPcs0TisHbUcRh3W33yHQ5iM",
+                  "location": {
+                    "lat": 48.2052381,
+                    "lng": 16.3700407
+                  }
+                },
+                {
+                  "name": "MJAME – Messianic Jewish Alliance of Middle Europe",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 5,
+                  "vicinity": "Vienna",
+                  "place_id": "ChIJRfqKYfwHbUcR8Nv7kwnc4qc",
+                  "location": {
+                    "lat": 48.2081419,
+                    "lng": 16.3703912
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Galerie Ernst Hilger",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 86,
+                  "vicinity": "Dorotheergasse 5/3a, Wien",
+                  "place_id": "ChIJK419JpkHbUcRi8nyD6yskzU",
+                  "location": {
+                    "lat": 48.20775829999999,
+                    "lng": 16.3699397
+                  }
+                },
+                {
+                  "name": "Galerie Sternat",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 4,
+                  "vicinity": "Lobkowitzplatz 1, Wien",
+                  "place_id": "ChIJn_wd_ZsHbUcR-Z3ilbZTEF8",
+                  "location": {
+                    "lat": 48.2054163,
+                    "lng": 16.3688239
+                  }
+                },
+                {
+                  "name": "Atelier Galerie La Speranza",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 15,
+                  "vicinity": "Siebensterngasse 9, Wien",
+                  "place_id": "ChIJER6r2ZEHbUcRY3xha0ZSNK8",
+                  "location": {
+                    "lat": 48.20255649999999,
+                    "lng": 16.3559842
+                  }
+                },
+                {
+                  "name": "Galerie Sanct Lucas",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Josefsplatz 5, Wien",
+                  "place_id": "ChIJB5MjcJkHbUcRb0U5mgMKShk",
+                  "location": {
+                    "lat": 48.20663750000001,
+                    "lng": 16.3677004
+                  }
+                },
+                {
+                  "name": "BELLA VOLEN Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 138,
+                  "vicinity": "Landesgerichtsstraße 6, Wien",
+                  "place_id": "ChIJH4JT1yuobUcR_B1U-IWI1UI",
+                  "location": {
+                    "lat": 48.2098379,
+                    "lng": 16.3555342
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Vienna",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Vienna",
+                  "place_id": "ChIJn8o2UZ4HbUcRRluiUYrlwv0",
+                  "location": {
+                    "lat": 48.20806959999999,
+                    "lng": 16.3713095
+                  }
+                },
+                {
+                  "name": "Le Méridien Vienna",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 3036,
+                  "vicinity": "Robert-Stolz-Platz 1, Wien",
+                  "place_id": "ChIJ3fbpbZsHbUcReha-LIf-uDY",
+                  "location": {
+                    "lat": 48.2026298,
+                    "lng": 16.3659918
+                  }
+                },
+                {
+                  "name": "Hotel Sacher Vienna",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 13581,
+                  "vicinity": "Philharmoniker Straße 4, Wien",
+                  "place_id": "ChIJI85wbpwHbUcRiJL_xm_zLE4",
+                  "location": {
+                    "lat": 48.2040009,
+                    "lng": 16.3697963
+                  }
+                },
+                {
+                  "name": "Austria Trend Hotel Europa Wien",
+                  "types": [
+                    "cafe",
+                    "lodging",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1809,
+                  "vicinity": "Neuer Markt 3, Wien",
+                  "place_id": "ChIJP6fHu54HbUcR-q_daZOu-ew",
+                  "location": {
+                    "lat": 48.2061745,
+                    "lng": 16.3712666
+                  }
+                },
+                {
+                  "name": "Hotel Josefshof am Rathaus",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2022,
+                  "vicinity": "Josefsgasse 4/8, Wien",
+                  "place_id": "ChIJZ4vcZJQHbUcRTuTxeCgOO6Q",
+                  "location": {
+                    "lat": 48.20862979999999,
+                    "lng": 16.3539942
+                  }
+                }
+              ]
+            },
+            "total_places_found": 37,
+            "photo_timestamp": "2025:11:20 20:07:51",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.4784719944000244
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/200.jpg"
+    },
+    {
+      "image_filename": "200.jpg",
+      "timestamp": "2026-01-28T04:37:55.108779",
+      "processing_time_seconds": 61.653842,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Austrian Parliament Building, Pallas Athena Fountain, Vienna, Austria",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and prominent features such as columns and statues are indicative of the Austrian Parliament Building. The presence of the Pallas Athena Fountain further confirms the location as Vienna.",
+            "detailed_description": "The image shows the Austrian Parliament Building in Vienna, Austria, characterized by its Neoclassical architectural style with prominent columns and detailed friezes. In front of the building is the Pallas Athena Fountain, featuring a statue of the Greek goddess Athena adorned in gold. The scene is captured at night, with the Austrian flags visible, adding to the grandeur of the setting.",
+            "identification": {
+              "primary": [
+                "Austrian Parliament Building",
+                "Pallas Athena Fountain"
+              ],
+              "location": "Vienna, Austria",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Austrian Parliament Building",
+                "type": "building",
+                "confidence": 0.95
+              },
+              {
+                "name": "Pallas Athena Fountain",
+                "type": "statue",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Neoclassical",
+              "19th_century",
+              "marble",
+              "Vienna",
+              "government_building"
+            ],
+            "location": "Vienna, Austria",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Austrian Parliament Building\", \"Pallas Athena Fountain\"],\n        \"location\": \"Vienna, Austria\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Austrian Parliament Building\",\n            \"type\": \"building\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Pallas Athena Fountain\",\n            \"type\": \"statue\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Neoclassical\", \"19th_century\", \"marble\", \"Vienna\", \"government_building\"],\n    \"description\": \"The image shows the Austrian Parliament Building in Vienna, Austria, characterized by its Neoclassical architectural style with prominent columns and detailed friezes. In front of the building is the Pallas Athena Fountain, featuring a statue of the Greek goddess Athena adorned in gold. The scene is captured at night, with the Austrian flags visible, adding to the grandeur of the setting.\",\n    \"reasoning\": \"The architectural style and prominent features such as columns and statues are indicative of the Austrian Parliament Building. The presence of the Pallas Athena Fountain further confirms the location as Vienna.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "processing_time_seconds": 21.668780088424683
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Parliament Building, Prominent Statue of National Significance, Vienna, Austria",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the architectural style and features of the Austrian Parliament Building, known for its neoclassical design and Corinthian columns. The statue described aligns with the Statue of Athena, which is located in front of the Parliament Building. The presence of red and white flags suggests Austrian national significance, supporting the identification.",
+            "identification": {
+              "primary": [
+                "Parliament Building",
+                "Prominent Statue of National Significance"
+              ],
+              "location": "Vienna, Austria",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Parliament Building",
+                "type": "building",
+                "confidence": 0.95
+              },
+              {
+                "name": "Statue of Athena",
+                "type": "statue",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "neoclassical",
+              "Corinthian columns",
+              "pediment",
+              "sculptural reliefs",
+              "Vienna",
+              "government building"
+            ],
+            "sources_used": [
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Neoclassical government building in Europe",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The architectural style and features are typical of neoclassical government buildings found throughout Europe."
+              },
+              {
+                "guess": "Statue of a historical or mythological figure",
+                "specificity_level": "general",
+                "confidence": 0.65,
+                "reasoning": "The description of the statue fits many prominent figures depicted in neoclassical art."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a grand architectural structure and a prominent statue, both illuminated against a night sky. The building features classical architectural elements, including a row of Corinthian columns with ornate capitals. Above the columns is a detailed pediment adorned with sculptural reliefs, depicting various figures in dynamic poses, likely representing historical or mythological scenes. The facade is richly decorated, showcasing intricate carvings and a harmonious symmetry typical of ",
+            "description": "The image depicts a grand architectural structure and a prominent statue, both illuminated against a night sky. The building features classical architectural elements, including a row of Corinthian columns with ornate capitals. Above the columns is a detailed pediment adorned with sculptural reliefs, depicting various figures in dynamic poses, likely representing historical or mythological scenes. The facade is richly decorated, showcasing intricate carvings and a harmonious symmetry typical of ",
+            "architectural_style": "Neoclassical",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 39.98415517807007
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Flag",
+          "confidence": 0.7622837424278259,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "object",
+            "all_candidates": [
+              {
+                "source": "object",
+                "name": "Flag",
+                "score": 0.7622837424278259
+              }
+            ],
+            "web_entities": [],
+            "objects": [
+              {
+                "name": "Flag",
+                "score": 0.7622837424278259
+              }
+            ],
+            "labels": [
+              {
+                "name": "Night",
+                "score": 0.8575133085250854
+              },
+              {
+                "name": "Midnight",
+                "score": 0.6978720426559448
+              }
+            ],
+            "processing_time_seconds": 8.357304811477661
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/200.jpg"
+    }
+  ]
+}

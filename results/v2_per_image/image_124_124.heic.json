@@ -1,0 +1,1031 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "124.heic",
+      "timestamp": "2026-01-28T01:38:34.404646",
+      "processing_time_seconds": 72.450688,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 21.04142777777778,
+        "gps_longitude": 105.83261944444445,
+        "location": {
+          "formatted_address": "710 Đ. Hoàng Hoa Thám, Ngọc Hồ, Tây Hồ, Hà Nội, Vietnam",
+          "city": null,
+          "county": "Tây Hồ",
+          "country": "Vietnam"
+        },
+        "datetime_original": "2024:12:09 17:20:56",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Park pathway along a lake, Hanoi, Vietnam",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Tây Hồ, Vietnam, which is known for its parks and lakes. The presence of a pathway, lake, and trees suggests a park environment typical of this area.",
+            "detailed_description": "The image depicts a serene park setting with a paved pathway winding alongside a lake. Tall trees with lush foliage line the path, creating a tranquil atmosphere. The lake is calm, reflecting the greenery around it. This setting is typical of parks in Hanoi, Vietnam, particularly in the Tây Hồ district.",
+            "identification": {
+              "primary": [
+                "Park pathway along a lake"
+              ],
+              "location": "Hanoi, Vietnam",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Pathway",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Lake",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Trees",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "park",
+              "lake",
+              "trees",
+              "Vietnam"
+            ],
+            "location": "Hanoi, Vietnam",
+            "type": "natural_feature",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "West Lake Park",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.75,
+                "reasoning": "West Lake is a prominent feature in Tây Hồ, known for its surrounding parks and pathways."
+              },
+              {
+                "guess": "Local park in Tây Hồ",
+                "specificity_level": "general",
+                "confidence": 0.65,
+                "reasoning": "The image could depict any of the smaller parks around Tây Hồ, given the typical park features visible."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Park pathway along a lake\"],\n        \"location\": \"Hanoi, Vietnam\",\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Pathway\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Lake\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Trees\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"park\", \"lake\", \"trees\", \"Vietnam\"],\n    \"description\": \"The image depicts a serene park setting with a paved pathway winding alongside a lake. Tall trees with lush foliage line the path, creating a tranquil atmosphere. The lake is calm, reflecting the greenery around it. This setting is typical of parks in Hanoi, Vietnam, particularly in the Tây Hồ district.\",\n    \"reasoning\": \"The location metadata indicates Tây Hồ, Vietnam, which is known for its parks and lakes. The presence of a pathway, lake, and trees suggests a park environment typical of this area.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"West Lake Park\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.75,\n            \"reasoning\": \"West Lake is a prominent feature in Tây Hồ, known for its surrounding parks and pathways.\"\n        },\n        {\n            \"guess\": \"Local park in Tây Hồ\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.65,\n            \"reasoning\": \"The image could depict any of the smaller parks around Tây Hồ, given the typical park features visible.\"\n        }\n    ]\n}",
+            "gps_coordinates": {
+              "latitude": 21.04142777777778,
+              "longitude": 105.83261944444445
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "710 Đ. Hoàng Hoa Thám, Ngọc Hồ, Tây Hồ, Hà Nội, Vietnam",
+              "city": null,
+              "county": "Tây Hồ",
+              "country": "Vietnam"
+            },
+            "photo_timestamp": "2024:12:09 17:20:56",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 27.160285234451294
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "**Cultural and Ecological Tourism**: Tây Hồ District leverages its rich cultural heritage and natural beauty to promote tourism. The area boasts 71 historical sites, including Tran Quoc Pagoda and Qua",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a serene park setting in Tây Hồ, Vietnam, featuring a winding stone pathway that leads through a lush, green landscape. The path is bordered by well-maintained grass and flanked by tall, mature trees with dense foliage, creating a canopy that filters the light and casts gentle shadows on the ground. The trees have thick trunks and are spaced evenly along the path, contributing to a sense of natural order and tranquility. To the left of the path is a calm body of water, possibly",
+            "description": "The image depicts a serene park setting in Tây Hồ, Vietnam, featuring a winding stone pathway that leads through a lush, green landscape. The path is bordered by well-maintained grass and flanked by tall, mature trees with dense foliage, creating a canopy that filters the light and casts gentle shadows on the ground. The trees have thick trunks and are spaced evenly along the path, contributing to a sense of natural order and tranquility. To the left of the path is a calm body of water, possibly",
+            "architectural_style": "Landscape design",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 21.04142777777778,
+              "longitude": 105.83261944444445
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "710 Đ. Hoàng Hoa Thám, Ngọc Hồ, Tây Hồ, Hà Nội, Vietnam",
+              "city": null,
+              "county": "Tây Hồ",
+              "country": "Vietnam"
+            },
+            "photo_timestamp": "2024:12:09 17:20:56",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 44.424055099487305
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Branch",
+          "confidence": 0.9862207174301147,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Branch",
+                "score": 0.9862207174301147
+              },
+              {
+                "source": "label",
+                "name": "Tree",
+                "score": 0.9820356965065002
+              },
+              {
+                "source": "label",
+                "name": "Leaf",
+                "score": 0.9807031750679016
+              },
+              {
+                "source": "label",
+                "name": "Natural environment",
+                "score": 0.9750118255615234
+              },
+              {
+                "source": "web",
+                "name": "Tree",
+                "score": 0.3706848621368408
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Tree",
+                "score": 0.3706848621368408
+              },
+              {
+                "name": "State park",
+                "score": 0.3091031312942505
+              },
+              {
+                "name": "M-tree",
+                "score": 0.25690001249313354
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Branch",
+                "score": 0.9862207174301147
+              },
+              {
+                "name": "Tree",
+                "score": 0.9820356965065002
+              },
+              {
+                "name": "Leaf",
+                "score": 0.9807031750679016
+              },
+              {
+                "name": "Nature",
+                "score": 0.9751579165458679
+              },
+              {
+                "name": "Natural environment",
+                "score": 0.9750118255615234
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 21.04142777777778,
+              "longitude": 105.83261944444445
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "710 Đ. Hoàng Hoa Thám, Ngọc Hồ, Tây Hồ, Hà Nội, Vietnam",
+              "city": null,
+              "county": "Tây Hồ",
+              "country": "Vietnam"
+            },
+            "photo_timestamp": "2024:12:09 17:20:56",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 24.787697792053223
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Tây Hồ, Vietnam",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Tây Hồ, Vietnam",
+            "coordinates": {
+              "latitude": 21.04142777777778,
+              "longitude": 105.83261944444445
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Kinh Thien Palace",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 371,
+                  "vicinity": "9 Hoàng Diệu, Quán Thánh",
+                  "place_id": "ChIJuT0fVKOrNTERUQS2Xq8ppkE",
+                  "location": {
+                    "lat": 21.0367807,
+                    "lng": 105.8403694
+                  }
+                },
+                {
+                  "name": "One Pillar Pagoda",
+                  "types": [
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 10176,
+                  "vicinity": "2RPM+79G, Phố Chùa Một Cột",
+                  "place_id": "ChIJ7XWEcqGrNTERrsLf6W8259s",
+                  "location": {
+                    "lat": 21.0356875,
+                    "lng": 105.8334375
+                  }
+                },
+                {
+                  "name": "Presidential Palace",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 951,
+                  "vicinity": "2 Hùng Vương",
+                  "place_id": "ChIJwd9IoKarNTERT3C7BsMeOjU",
+                  "location": {
+                    "lat": 21.0393042,
+                    "lng": 105.834477
+                  }
+                },
+                {
+                  "name": "Quan Thanh Temple",
+                  "types": [
+                    "place_of_worship",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 4888,
+                  "vicinity": "190 Phố Quán Thánh, Quán Thánh",
+                  "place_id": "ChIJwyFZi6WrNTER76sqY7OcMjE",
+                  "location": {
+                    "lat": 21.0430175,
+                    "lng": 105.8365462
+                  }
+                },
+                {
+                  "name": "Nhà Ga Thủy Phi Cơ Hồ Tây",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 27,
+                  "vicinity": "Phố Nguyễn Đình Thi, Thuỵ Khuê",
+                  "place_id": "ChIJV4jqTRirNTER6RMarrsGMaI",
+                  "location": {
+                    "lat": 21.044008,
+                    "lng": 105.8336878
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Hanoi Studio Gallery",
+                  "types": [
+                    "art_gallery",
+                    "museum",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 90,
+                  "vicinity": "23 Phố Mạc Đĩnh Chi, Trúc Bạch",
+                  "place_id": "ChIJNeTFi-urNTEROrTDa15c_jQ",
+                  "location": {
+                    "lat": 21.0463804,
+                    "lng": 105.8405696
+                  }
+                },
+                {
+                  "name": "Qpen",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "01 Hùng Vương, Quán Thánh",
+                  "place_id": "ChIJHZNukCerNTERIzPhL1bwwWg",
+                  "location": {
+                    "lat": 21.0398504,
+                    "lng": 105.8365288
+                  }
+                },
+                {
+                  "name": "Khu Khảo Cổ Hoàng Thành Thăng Long",
+                  "types": [
+                    "park",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 159,
+                  "vicinity": "18 Hoàng Diệu, Quán Thánh",
+                  "place_id": "ChIJZTU9yIOrNTERvPnGMXnLfkU",
+                  "location": {
+                    "lat": 21.0366236,
+                    "lng": 105.83929
+                  }
+                },
+                {
+                  "name": "Cipher Bunker of the General Staff",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "2RPR+W5H, Quán Thánh",
+                  "place_id": "ChIJBwREBgCrNTERs1YbwqbYJ_E",
+                  "location": {
+                    "lat": 21.0374158,
+                    "lng": 105.8403706
+                  }
+                },
+                {
+                  "name": "B52 Victory Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1801,
+                  "vicinity": "157 Phố Đội Cấn, Đội Cấn",
+                  "place_id": "ChIJK111AwurNTERB8u6Ap8YDjg",
+                  "location": {
+                    "lat": 21.0350244,
+                    "lng": 105.8261673
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Ngoc Xuan Bun Cha Restaurant",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 471,
+                  "vicinity": "102 Đường Thụy Khuê, Thuỵ Khuê",
+                  "place_id": "ChIJaxLi_girNTER_V5rnA4MMLI",
+                  "location": {
+                    "lat": 21.0419476,
+                    "lng": 105.8257885
+                  }
+                },
+                {
+                  "name": "Potomac Restaurant West Lake",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 215,
+                  "vicinity": "9b Phố Nguyễn Đình Thi, Thuỵ Khuê",
+                  "place_id": "ChIJY_ydqqirNTER_-JPGPWWupk",
+                  "location": {
+                    "lat": 21.0436974,
+                    "lng": 105.8336495
+                  }
+                },
+                {
+                  "name": "Nhà hàng Namlong Số 1 Trấn Vũ",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 359,
+                  "vicinity": "Trúc Bạch, 1 Trấn Vũ 1 Phố Trấn Vũ Ba Đình Hà Nội Hồ",
+                  "place_id": "ChIJAZJqgq-rNTERuyJhTCNFZuQ",
+                  "location": {
+                    "lat": 21.0441371,
+                    "lng": 105.838349
+                  }
+                },
+                {
+                  "name": "Fast Food New Way",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1,
+                  "vicinity": "2RVM+233, 17 Đường Thụy Khuê, Thuỵ Khuê",
+                  "place_id": "ChIJz5OZOaarNTERlqYYYlJn284",
+                  "location": {
+                    "lat": 21.0425166,
+                    "lng": 105.8326627
+                  }
+                },
+                {
+                  "name": "Nhà Hàng Lion Star",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 134,
+                  "vicinity": "6 Đường Thụy Khuê, Thuỵ Khuê",
+                  "place_id": "ChIJB29hEaarNTERB5XRaS_VCO4",
+                  "location": {
+                    "lat": 21.0428476,
+                    "lng": 105.8338392
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Khu 4 Hải hòa",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "20 Đường Trần Quốc Tảng, Khu 4, Móng Cái",
+                  "place_id": "ChIJT-CwHQBVSzEROYK-QdvuPqs",
+                  "location": {
+                    "lat": 21.0431451,
+                    "lng": 105.8325521
+                  }
+                },
+                {
+                  "name": "Công Viên Bách Thảo",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 147,
+                  "vicinity": "1 Đường Hoàng Hoa Thám, Ngọc Hồ",
+                  "place_id": "ChIJT2UMEwCrNTERC0679UcSmmI",
+                  "location": {
+                    "lat": 21.0411906,
+                    "lng": 105.830403
+                  }
+                },
+                {
+                  "name": "Hồ tròn Bách Thảo",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.2,
+                  "user_ratings_total": 32,
+                  "vicinity": "1 Đường Hoàng Hoa Thám, Ngọc Hồ",
+                  "place_id": "ChIJ-SRwoYirNTERf0vBfSa52SI",
+                  "location": {
+                    "lat": 21.0401576,
+                    "lng": 105.8304151
+                  }
+                },
+                {
+                  "name": "Núi Long Đỗ - Núi Nùng",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3,
+                  "user_ratings_total": 22,
+                  "vicinity": "1 Đường Hoàng Hoa Thám, Ngọc Hồ",
+                  "place_id": "ChIJtw_As-arNTERrw6Rl5SIxU4",
+                  "location": {
+                    "lat": 21.0397866,
+                    "lng": 105.8298991
+                  }
+                },
+                {
+                  "name": "Vườn hoa Mai Xuân Thưởng",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "2RRP+W8W, Thuỵ Khuê",
+                  "place_id": "ChIJq6qq6aWrNTERRh6FmUoGz_w",
+                  "location": {
+                    "lat": 21.0423529,
+                    "lng": 105.8358183
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Nhà Thờ Cửa Bắc (Cửa Bắc Catholic Church)",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 50,
+                  "vicinity": "56 Phố Phan Đình Phùng, Quán Thánh",
+                  "place_id": "ChIJaRu1RACrNTERzz2mmahJDnU",
+                  "location": {
+                    "lat": 21.04133329999999,
+                    "lng": 105.8405278
+                  }
+                },
+                {
+                  "name": "MMOBANK",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "55",
+                  "place_id": "ChIJpQ4zDmKrNTERjr_Vxle3BGM",
+                  "location": {
+                    "lat": 21.0327693,
+                    "lng": 105.8309884
+                  }
+                },
+                {
+                  "name": "Hội thánh Lời Sự Sống City Light",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 7,
+                  "vicinity": "142 Phố Đội Cấn, Đội Cấn",
+                  "place_id": "ChIJg1AV0g-rNTERv42qnNsqfs8",
+                  "location": {
+                    "lat": 21.0344001,
+                    "lng": 105.8265988
+                  }
+                },
+                {
+                  "name": "Lăng Allaho",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "2RPM+79G, Phố Chùa Một Cột",
+                  "place_id": "ChIJG4PlAgCrNTERI7TDPXXmgWw",
+                  "location": {
+                    "lat": 21.0351911,
+                    "lng": 105.8348599
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Thính Vũ Hiên",
+                  "types": [
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 4,
+                  "vicinity": "8A ngõ 46",
+                  "place_id": "ChIJG4GBswmrNTERIXz0_jUqiQw",
+                  "location": {
+                    "lat": 21.0413011,
+                    "lng": 105.8274293
+                  }
+                },
+                {
+                  "name": "Hanoi Studio Gallery",
+                  "types": [
+                    "art_gallery",
+                    "museum",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 90,
+                  "vicinity": "23 Phố Mạc Đĩnh Chi, Trúc Bạch",
+                  "place_id": "ChIJNeTFi-urNTEROrTDa15c_jQ",
+                  "location": {
+                    "lat": 21.0463804,
+                    "lng": 105.8405696
+                  }
+                },
+                {
+                  "name": "Gallery 51",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "8 ngo 51 Đường Hoàng Hoa Thám, Ngọc Hồ",
+                  "place_id": "ChIJG7edIW-rNTER6wmoouhf01w",
+                  "location": {
+                    "lat": 21.039209,
+                    "lng": 105.8274169
+                  }
+                },
+                {
+                  "name": "Bồng Hồ Lãng Uyển",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "18/51 Ngõ 158 Phố Ngọc Hà, Ngọc Hồ",
+                  "place_id": "ChIJeyEh0ZurNTERLPVSwu_joAU",
+                  "location": {
+                    "lat": 21.0366255,
+                    "lng": 105.8288788
+                  }
+                },
+                {
+                  "name": "Sóng Sánh Café & Roastery",
+                  "types": [
+                    "art_gallery",
+                    "cafe",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 370,
+                  "vicinity": "1st & 2nd floor, 48 Phố Ngọc Hà, Đội Cấn",
+                  "place_id": "ChIJAVhQ73qrNTERyJP3O4dSsak",
+                  "location": {
+                    "lat": 21.0347633,
+                    "lng": 105.831525
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Hanoi",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Hanoi",
+                  "place_id": "ChIJoRyG2ZurNTERqRfKcnt_iOc",
+                  "location": {
+                    "lat": 21.0277644,
+                    "lng": 105.8341598
+                  }
+                },
+                {
+                  "name": "CWD Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 497,
+                  "vicinity": "20 Đường Thụy Khuê, Thuỵ Khuê",
+                  "place_id": "ChIJnzKpZhCrNTERVfZnAhgdIUs",
+                  "location": {
+                    "lat": 21.0412753,
+                    "lng": 105.8283499
+                  }
+                },
+                {
+                  "name": "Nine Housing Apartment",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.4,
+                  "user_ratings_total": 5,
+                  "vicinity": "64 Phố Trấn Vũ, Quán Thánh",
+                  "place_id": "ChIJmWwABLarNTERZ2a35rTC28o",
+                  "location": {
+                    "lat": 21.0434792,
+                    "lng": 105.8388883
+                  }
+                },
+                {
+                  "name": "Green Homestay",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 237,
+                  "vicinity": "160 Phố Ngọc Hà, Ngọc Hồ",
+                  "place_id": "ChIJ__-gq6CrNTERoXMJugwCimc",
+                  "location": {
+                    "lat": 21.0382731,
+                    "lng": 105.8292564
+                  }
+                },
+                {
+                  "name": "Luu Tru Station",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "8B Building, 180 Phố Ngọc Hà, Ngọc Hồ",
+                  "place_id": "ChIJAQDN_gmrNTERRwEB8MRfhfk",
+                  "location": {
+                    "lat": 21.0386851,
+                    "lng": 105.8286985
+                  }
+                }
+              ]
+            },
+            "total_places_found": 34,
+            "photo_timestamp": "2024:12:09 17:20:56",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.4031240940093994
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/124.heic"
+    },
+    {
+      "image_filename": "124.heic",
+      "timestamp": "2026-01-28T01:39:46.888512",
+      "processing_time_seconds": 65.919458,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Park with pathway and trees",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of a paved pathway, trees, and a body of water suggests a park or garden setting. The natural elements are the main focus, with no identifiable landmarks or artworks visible.",
+            "detailed_description": "The image depicts a serene park setting with a paved pathway winding through lush greenery. Tall trees with dense foliage line the path, providing shade and a natural canopy. To the left, there is a calm body of water, possibly a pond or small lake, bordered by grass and additional trees. The scene conveys a peaceful, natural environment ideal for walking or relaxation.",
+            "identification": {
+              "primary": [
+                "Park with pathway and trees"
+              ],
+              "location": null,
+              "confidence": 0.8
+            },
+            "artifacts": [
+              {
+                "name": "Pathway",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Trees",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Body of water",
+                "type": "natural_feature",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "park",
+              "trees",
+              "pathway",
+              "nature",
+              "landscape"
+            ],
+            "location": null,
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Public park in an urban area",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The combination of pathway, trees, and water is typical of urban parks designed for leisure and recreation."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Park with pathway and trees\"],\n        \"location\": null,\n        \"confidence\": 0.8\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Pathway\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Trees\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Body of water\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"park\", \"trees\", \"pathway\", \"nature\", \"landscape\"],\n    \"description\": \"The image depicts a serene park setting with a paved pathway winding through lush greenery. Tall trees with dense foliage line the path, providing shade and a natural canopy. To the left, there is a calm body of water, possibly a pond or small lake, bordered by grass and additional trees. The scene conveys a peaceful, natural environment ideal for walking or relaxation.\",\n    \"reasoning\": \"The presence of a paved pathway, trees, and a body of water suggests a park or garden setting. The natural elements are the main focus, with no identifiable landmarks or artworks visible.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Public park in an urban area\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The combination of pathway, trees, and water is typical of urban parks designed for leisure and recreation.\"\n        }\n    ]\n}",
+            "processing_time_seconds": 17.634591102600098
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([en.wikipedia.org]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a serene park setting with a winding stone pathway that leads through a lush area filled with tall, mature trees. The trees are densely packed, their branches forming a canopy overhead, creating a shaded and tranquil atmosphere. The pathway is bordered by well-maintained grass, and a small bench is visible along the path, inviting visitors to rest and enjoy the natural surroundings. To the left of the path, there is a calm body of water, possibly a pond or small lake, reflectin",
+            "description": "The image depicts a serene park setting with a winding stone pathway that leads through a lush area filled with tall, mature trees. The trees are densely packed, their branches forming a canopy overhead, creating a shaded and tranquil atmosphere. The pathway is bordered by well-maintained grass, and a small bench is visible along the path, inviting visitors to rest and enjoy the natural surroundings. To the left of the path, there is a calm body of water, possibly a pond or small lake, reflectin",
+            "architectural_style": "Natural landscape with structured elements",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 48.03300881385803
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Branch",
+          "confidence": 0.9862207174301147,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Branch",
+                "score": 0.9862207174301147
+              },
+              {
+                "source": "label",
+                "name": "Tree",
+                "score": 0.9820356965065002
+              },
+              {
+                "source": "label",
+                "name": "Leaf",
+                "score": 0.9807031750679016
+              },
+              {
+                "source": "label",
+                "name": "Natural environment",
+                "score": 0.9750118255615234
+              },
+              {
+                "source": "web",
+                "name": "Tree",
+                "score": 0.3706848621368408
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Tree",
+                "score": 0.3706848621368408
+              },
+              {
+                "name": "State park",
+                "score": 0.309332937002182
+              },
+              {
+                "name": "M-tree",
+                "score": 0.25690001249313354
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Branch",
+                "score": 0.9862207174301147
+              },
+              {
+                "name": "Tree",
+                "score": 0.9820356965065002
+              },
+              {
+                "name": "Leaf",
+                "score": 0.9807031750679016
+              },
+              {
+                "name": "Nature",
+                "score": 0.9751579165458679
+              },
+              {
+                "name": "Natural environment",
+                "score": 0.9750118255615234
+              }
+            ],
+            "processing_time_seconds": 27.58544683456421
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/124.heic"
+    }
+  ]
+}

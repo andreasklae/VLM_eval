@@ -1,0 +1,1127 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "116.heic",
+      "timestamp": "2026-01-28T01:19:26.699809",
+      "processing_time_seconds": 60.669782,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 10.776322222222223,
+        "gps_longitude": 106.70265833333333,
+        "location": {
+          "formatted_address": "Số 201, Lầu 2, Trung Tâm Mondial, 203, Đồng Khởi, Phường Bến Nghé, Quận 1, Thành Phố Hồ Chí Minh, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh, Vietnam",
+          "city": null,
+          "county": "Quận 1",
+          "country": "Vietnam"
+        },
+        "datetime_original": "2024:12:01 19:37:14",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Saigon Opera House, Caravelle Hotel, Ho Chi Minh City, Vietnam",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and location metadata strongly suggest the Saigon Opera House, a well-known landmark in Ho Chi Minh City. The adjacent high-rise building matches the appearance of the Caravelle Hotel.",
+            "detailed_description": "The image shows the Saigon Opera House, a prominent example of French colonial architecture in Ho Chi Minh City, Vietnam. It features ornate detailing, including decorative columns and arches, typical of the early 20th-century style. Adjacent to it is the Caravelle Hotel, a modern high-rise building known for its hospitality services. The scene is set at night, with the buildings illuminated and a busy street in the foreground.",
+            "identification": {
+              "primary": [
+                "Saigon Opera House",
+                "Caravelle Hotel"
+              ],
+              "location": "Ho Chi Minh City, Vietnam",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Saigon Opera House",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Caravelle Hotel",
+                "type": "building",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "French_colonial",
+              "20th_century",
+              "architecture",
+              "Vietnam",
+              "urban"
+            ],
+            "location": "Ho Chi Minh City, Vietnam",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Saigon Opera House\", \"Caravelle Hotel\"],\n        \"location\": \"Ho Chi Minh City, Vietnam\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Saigon Opera House\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Caravelle Hotel\",\n            \"type\": \"building\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"French_colonial\", \"20th_century\", \"architecture\", \"Vietnam\", \"urban\"],\n    \"description\": \"The image shows the Saigon Opera House, a prominent example of French colonial architecture in Ho Chi Minh City, Vietnam. It features ornate detailing, including decorative columns and arches, typical of the early 20th-century style. Adjacent to it is the Caravelle Hotel, a modern high-rise building known for its hospitality services. The scene is set at night, with the buildings illuminated and a busy street in the foreground.\",\n    \"reasoning\": \"The architectural style and location metadata strongly suggest the Saigon Opera House, a well-known landmark in Ho Chi Minh City. The adjacent high-rise building matches the appearance of the Caravelle Hotel.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 10.776322222222223,
+              "longitude": 106.70265833333333
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Số 201, Lầu 2, Trung Tâm Mondial, 203, Đồng Khởi, Phường Bến Nghé, Quận 1, Thành Phố Hồ Chí Minh, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh, Vietnam",
+              "city": null,
+              "county": "Quận 1",
+              "country": "Vietnam"
+            },
+            "photo_timestamp": "2024:12:01 19:37:14",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 15.693439960479736
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([en.wikipedia.org]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 3,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image prominently features a grand architectural structure, likely a theater or opera house, with a neoclassical design. The building exhibits a symmetrical facade with a central arched entrance flanked by tall columns. Above the entrance, there is an ornate pediment adorned with intricate carvings and decorative elements, including sculptural reliefs. The facade is illuminated, highlighting its detailed ornamentation and classical features. The building is constructed with light-colored mat",
+            "description": "The image prominently features a grand architectural structure, likely a theater or opera house, with a neoclassical design. The building exhibits a symmetrical facade with a central arched entrance flanked by tall columns. Above the entrance, there is an ornate pediment adorned with intricate carvings and decorative elements, including sculptural reliefs. The facade is illuminated, highlighting its detailed ornamentation and classical features. The building is constructed with light-colored mat",
+            "architectural_style": "Neoclassical",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 10.776322222222223,
+              "longitude": 106.70265833333333
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Số 201, Lầu 2, Trung Tâm Mondial, 203, Đồng Khởi, Phường Bến Nghé, Quận 1, Thành Phố Hồ Chí Minh, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh, Vietnam",
+              "city": null,
+              "county": "Quận 1",
+              "country": "Vietnam"
+            },
+            "photo_timestamp": "2024:12:01 19:37:14",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 43.97372388839722
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Ho Chi Minh City Opera House (10.7766, 106.7032)",
+          "confidence": 0.41650229692459106,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Ho Chi Minh City Opera House",
+            "coordinates": {
+              "latitude": 10.7766352,
+              "longitude": 106.70316539999999
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 4032
+              },
+              {
+                "x": 0,
+                "y": 4032
+              }
+            ],
+            "context_labels": [
+              "Night",
+              "Metropolitan area",
+              "Midnight",
+              "Electricity",
+              "Metropolis"
+            ],
+            "context_objects": [
+              "Motorcycle",
+              "Motorcycle",
+              "Clothing"
+            ],
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.5364091992378235
+              },
+              {
+                "name": "Street light",
+                "score": 0.3863455653190613
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.3819013237953186
+              },
+              {
+                "name": "Street",
+                "score": 0.3673485517501831
+              },
+              {
+                "name": "Motorcycle",
+                "score": 0.3499498665332794
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Ho Chi Minh City Opera House",
+                "score": 0.41650229692459106,
+                "location": {
+                  "lat": 10.7766352,
+                  "lng": 106.70316539999999
+                }
+              }
+            ],
+            "processing_time_seconds": 18.255929708480835
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Quận 1, Vietnam",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Quận 1, Vietnam",
+            "coordinates": {
+              "latitude": 10.776322222222223,
+              "longitude": 106.70265833333333
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Notre Dame Cathedral of Saigon",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 27654,
+                  "vicinity": "01 Công trường Công xã Paris, Bến Nghé",
+                  "place_id": "ChIJUSTY5jcvdTERRVvtbJNZT-g",
+                  "location": {
+                    "lat": 10.7797855,
+                    "lng": 106.6990189
+                  }
+                },
+                {
+                  "name": "Tran Hung Dao Statue",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 943,
+                  "vicinity": "QPG4+4HH, Công trường Mê Linh",
+                  "place_id": "ChIJjzdozUUvdTERBJygjfRvnhQ",
+                  "location": {
+                    "lat": 10.7753042,
+                    "lng": 106.7064721
+                  }
+                },
+                {
+                  "name": "Saigon Opera House",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 16763,
+                  "vicinity": "07 Công trường Lam Sơn, Bến Nghé",
+                  "place_id": "ChIJKcrnSUYvdTERO64MErYx9VU",
+                  "location": {
+                    "lat": 10.7766128,
+                    "lng": 106.7031715
+                  }
+                },
+                {
+                  "name": "Ton Duc Thang Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1289,
+                  "vicinity": "5 Đường Tôn Đức Thắng, Phường Sài Gòn",
+                  "place_id": "ChIJ9aHU7UUvdTERwvaHOXtRzVI",
+                  "location": {
+                    "lat": 10.7770396,
+                    "lng": 106.7065382
+                  }
+                },
+                {
+                  "name": "Independence Palace",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 44666,
+                  "vicinity": "Ben Thanh",
+                  "place_id": "ChIJL0dwVTgvdTERao3t8B1Jhxc",
+                  "location": {
+                    "lat": 10.7769942,
+                    "lng": 106.6953021
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Ton Duc Thang Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1289,
+                  "vicinity": "5 Đường Tôn Đức Thắng, Phường Sài Gòn",
+                  "place_id": "ChIJ9aHU7UUvdTERwvaHOXtRzVI",
+                  "location": {
+                    "lat": 10.7770396,
+                    "lng": 106.7065382
+                  }
+                },
+                {
+                  "name": "Independence Palace",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 44666,
+                  "vicinity": "Ben Thanh",
+                  "place_id": "ChIJL0dwVTgvdTERao3t8B1Jhxc",
+                  "location": {
+                    "lat": 10.7769942,
+                    "lng": 106.6953021
+                  }
+                },
+                {
+                  "name": "Beshjitmunda",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "QPG3+544",
+                  "place_id": "ChIJ-dzPAwAvdTERrJAEpDfndrc",
+                  "location": {
+                    "lat": 10.7753882,
+                    "lng": 106.702825
+                  }
+                },
+                {
+                  "name": "Truyen Thong A",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Trung tam",
+                  "place_id": "ChIJH43T0hcvdTER-XkVm5BNk9s",
+                  "location": {
+                    "lat": 10.7753882,
+                    "lng": 106.702825
+                  }
+                },
+                {
+                  "name": "Bảo tàng Đỗ Hùng",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "68duong Nguyễn Huệ, Bến Nghé",
+                  "place_id": "ChIJ2dIFVAAvdTERfRvLKG4voYk",
+                  "location": {
+                    "lat": 10.7747614,
+                    "lng": 106.703569
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Rex Hotel",
+                  "types": [
+                    "cafe",
+                    "spa",
+                    "gym",
+                    "lodging",
+                    "store",
+                    "health",
+                    "restaurant",
+                    "food",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 8242,
+                  "vicinity": "141 Nguyễn Huệ, Bến Nghé",
+                  "place_id": "ChIJ25VPnkcvdTERSLUZtdUn4co",
+                  "location": {
+                    "lat": 10.7758454,
+                    "lng": 106.7012646
+                  }
+                },
+                {
+                  "name": "Caravelle Hotel",
+                  "types": [
+                    "spa",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 4204,
+                  "vicinity": "19-23 Lam Son Square, Bến Nghé",
+                  "place_id": "ChIJc_9VekYvdTERtvfHUbJKWBA",
+                  "location": {
+                    "lat": 10.7762617,
+                    "lng": 106.7036128
+                  }
+                },
+                {
+                  "name": "Hotel Continental Saigon",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 3668,
+                  "vicinity": "Hotel Continental Saigon, 132 Đường Đồng Khởi, Bến Nghé",
+                  "place_id": "ChIJow2MCUgvdTERLmE-ZvwKvXE",
+                  "location": {
+                    "lat": 10.7768949,
+                    "lng": 106.7025025
+                  }
+                },
+                {
+                  "name": "Silverland Jolie Hotel",
+                  "types": [
+                    "spa",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1154,
+                  "vicinity": "Thi Sách, Bến Nghé",
+                  "place_id": "ChIJRxtlp0gvdTERGg6rVLBCqXU",
+                  "location": {
+                    "lat": 10.777352,
+                    "lng": 106.705919
+                  }
+                },
+                {
+                  "name": "Golden Central Hotel Saigon",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 606,
+                  "vicinity": "140 Lý Tự Trọng, Phường Bến Thành",
+                  "place_id": "ChIJjTF8ikcvdTERFs5iXqfrm-I",
+                  "location": {
+                    "lat": 10.7736721,
+                    "lng": 106.6963424
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Chi Lang Park",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 303,
+                  "vicinity": "số 72 Lê Thánh Tôn, Bến Nghé",
+                  "place_id": "ChIJqU883EcvdTERTCif2vLuiAI",
+                  "location": {
+                    "lat": 10.7776809,
+                    "lng": 106.7014474
+                  }
+                },
+                {
+                  "name": "Công viên Nhà hát Thành phố Hồ Chí Minh",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "4C Đường Lê Lợi, Bến Nghé",
+                  "place_id": "ChIJ9xxXKAAvdTERB98dho8YgYk",
+                  "location": {
+                    "lat": 10.7760423,
+                    "lng": 106.7026205
+                  }
+                },
+                {
+                  "name": "Công viên Ga Nhà Hát Thành Phô_Hồi ức một tình yêu (Dương Minh Đức)",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "23 Đường Lê Lợi, Bến Nghé",
+                  "place_id": "ChIJ6e9g99kvdTERTyGd4yWqwGU",
+                  "location": {
+                    "lat": 10.775591,
+                    "lng": 106.7026972
+                  }
+                },
+                {
+                  "name": "Công viên Lam Sơn",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 5,
+                  "vicinity": "QPG3+R86, Công trường Lam Sơn, Bến Nghé",
+                  "place_id": "ChIJZ0L4EX8vdTERD0zRD8xK_0c",
+                  "location": {
+                    "lat": 10.7770337,
+                    "lng": 106.7032804
+                  }
+                },
+                {
+                  "name": "Công Trường Lam Sơn",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.5,
+                  "user_ratings_total": 2,
+                  "vicinity": "QPG3+MCM, Công trường Lam Sơn, Bến Nghé",
+                  "place_id": "ChIJfWf_eQAvdTERVkQt8qkXyZg",
+                  "location": {
+                    "lat": 10.7767198,
+                    "lng": 106.7035555
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Notre Dame Cathedral of Saigon",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 27654,
+                  "vicinity": "01 Công trường Công xã Paris, Bến Nghé",
+                  "place_id": "ChIJUSTY5jcvdTERRVvtbJNZT-g",
+                  "location": {
+                    "lat": 10.7797855,
+                    "lng": 106.6990189
+                  }
+                },
+                {
+                  "name": "Tỉnh Dòng La San Việt Nam",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 4,
+                  "vicinity": "53B Đường Nguyễn Du, Bến Nghé",
+                  "place_id": "ChIJYbgdFkgvdTERgq_tzHJmDoA",
+                  "location": {
+                    "lat": 10.7794051,
+                    "lng": 106.7005152
+                  }
+                },
+                {
+                  "name": "Thu Thiem Parish",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 187,
+                  "vicinity": "58, Khu phố 1",
+                  "place_id": "ChIJQaqql0QvdTERnNRUJsbVYEw",
+                  "location": {
+                    "lat": 10.7731278,
+                    "lng": 106.7100742
+                  }
+                },
+                {
+                  "name": "穆斯林教堂",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "49-57 Đông Du, Bến Nghé",
+                  "place_id": "ChIJlR7D4o8vdTERsLDG-WtyppU",
+                  "location": {
+                    "lat": 10.7755971,
+                    "lng": 106.7044372
+                  }
+                },
+                {
+                  "name": "trường THTT Tân Hưng",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "QPG2+757",
+                  "place_id": "ChIJzw6oCKQvdTERx6DYs-E7QQs",
+                  "location": {
+                    "lat": 10.7756587,
+                    "lng": 106.7004238
+                  }
+                },
+                {
+                  "name": "Jamia Al-Musulman Mosque",
+                  "types": [
+                    "mosque",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1203,
+                  "vicinity": "66 Đông Du, Bến Nghé",
+                  "place_id": "ChIJrTDZaUYvdTERUZ2LGrGD0rg",
+                  "location": {
+                    "lat": 10.7761942,
+                    "lng": 106.7042267
+                  }
+                },
+                {
+                  "name": "Al Rahim Masjid مسجد الرحیم, Vietnam",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 366,
+                  "vicinity": "45 Nam Kỳ Khởi Nghĩa, Phường Nguyễn Thái Bình",
+                  "place_id": "ChIJy0oCYEAvdTERSP8G6rCHWhA",
+                  "location": {
+                    "lat": 10.7699972,
+                    "lng": 106.7013389
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Apricot Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 61,
+                  "vicinity": "50-52 Mạc Thị Bưởi, Bến Nghé",
+                  "place_id": "ChIJzT9CYUYvdTER1vxW8I7L3VE",
+                  "location": {
+                    "lat": 10.7754481,
+                    "lng": 106.7046511
+                  }
+                },
+                {
+                  "name": "Thanh Hoa - Art Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 6,
+                  "vicinity": "112 Đường Lê Lợi, Phường Bến Thành",
+                  "place_id": "ChIJdZiCZ0cvdTERlSZkPuK9Xus",
+                  "location": {
+                    "lat": 10.7725518,
+                    "lng": 106.6990082
+                  }
+                },
+                {
+                  "name": "Ben Thanh Gallery",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 26,
+                  "vicinity": "7 Nguyễn Thiệp, Bến Nghé",
+                  "place_id": "ChIJc_i5-EYvdTERTaOsg5fYwb0",
+                  "location": {
+                    "lat": 10.775232,
+                    "lng": 106.703335
+                  }
+                },
+                {
+                  "name": "Art Arcade",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 24,
+                  "vicinity": "151 Đường Đồng Khởi, Bến Nghé",
+                  "place_id": "ChIJ7fJsUEYvdTERApjNcrAl6WE",
+                  "location": {
+                    "lat": 10.7757628,
+                    "lng": 106.7031707
+                  }
+                },
+                {
+                  "name": "Art Gallery Nguyen Thanh",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 26,
+                  "vicinity": "139 Đường Đồng Khởi, Bến Nghé",
+                  "place_id": "ChIJj-2uVkYvdTERGXEpndDwWSU",
+                  "location": {
+                    "lat": 10.77557,
+                    "lng": 106.703371
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Ho Chi Minh City",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Ho Chi Minh City",
+                  "place_id": "ChIJ0T2NLikpdTERKxE8d61aX_E",
+                  "location": {
+                    "lat": 10.8230989,
+                    "lng": 106.6296638
+                  }
+                },
+                {
+                  "name": "Rex Hotel",
+                  "types": [
+                    "bar",
+                    "cafe",
+                    "gym",
+                    "spa",
+                    "health",
+                    "lodging",
+                    "restaurant",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 8242,
+                  "vicinity": "141 Nguyễn Huệ, Bến Nghé",
+                  "place_id": "ChIJ25VPnkcvdTERSLUZtdUn4co",
+                  "location": {
+                    "lat": 10.7758454,
+                    "lng": 106.7012646
+                  }
+                },
+                {
+                  "name": "Sheraton Saigon Grand Opera Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 9232,
+                  "vicinity": "88 Đường Đồng Khởi, Bến Nghé",
+                  "place_id": "ChIJA0evAkgvdTERLNUql8b4ipU",
+                  "location": {
+                    "lat": 10.7754461,
+                    "lng": 106.7038779
+                  }
+                },
+                {
+                  "name": "Lotte Hotel Saigon",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 6085,
+                  "vicinity": "2A-4A Đường Tôn Đức Thắng, Phường",
+                  "place_id": "ChIJq6tuBUQvdTERPrUo2ili-N4",
+                  "location": {
+                    "lat": 10.7786426,
+                    "lng": 106.7067745
+                  }
+                },
+                {
+                  "name": "Caravelle Hotel",
+                  "types": [
+                    "bar",
+                    "spa",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 4204,
+                  "vicinity": "19-23 Lam Son Square, Bến Nghé",
+                  "place_id": "ChIJc_9VekYvdTERtvfHUbJKWBA",
+                  "location": {
+                    "lat": 10.7762617,
+                    "lng": 106.7036128
+                  }
+                }
+              ]
+            },
+            "total_places_found": 37,
+            "photo_timestamp": "2024:12:01 19:37:14",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.4444611072540283
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/116.heic"
+    },
+    {
+      "image_filename": "116.heic",
+      "timestamp": "2026-01-28T01:20:27.411381",
+      "processing_time_seconds": 59.696973,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Saigon Opera House, Caravelle Hotel, Ho Chi Minh City, Vietnam",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and location suggest the Saigon Opera House, known for its French Colonial design. The adjacent modern building with visible signage identifies it as the Caravelle Hotel.",
+            "detailed_description": "The image shows the Saigon Opera House, a prominent example of French Colonial architecture in Ho Chi Minh City, Vietnam. The building features ornate detailing, including decorative columns and sculptural elements. It is illuminated at night, highlighting its architectural features. Adjacent to the Opera House is the Caravelle Hotel, a modern high-rise building with a distinctive curved facade and illuminated signage.",
+            "identification": {
+              "primary": [
+                "Saigon Opera House",
+                "Caravelle Hotel"
+              ],
+              "location": "Ho Chi Minh City, Vietnam",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Saigon Opera House",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Caravelle Hotel",
+                "type": "building",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "French_Colonial",
+              "20th_century",
+              "architecture",
+              "Ho_Chi_Minh_City",
+              "Vietnam"
+            ],
+            "location": "Ho Chi Minh City, Vietnam",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Saigon Opera House\", \"Caravelle Hotel\"],\n        \"location\": \"Ho Chi Minh City, Vietnam\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Saigon Opera House\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Caravelle Hotel\",\n            \"type\": \"building\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"French_Colonial\", \"20th_century\", \"architecture\", \"Ho_Chi_Minh_City\", \"Vietnam\"],\n    \"description\": \"The image shows the Saigon Opera House, a prominent example of French Colonial architecture in Ho Chi Minh City, Vietnam. The building features ornate detailing, including decorative columns and sculptural elements. It is illuminated at night, highlighting its architectural features. Adjacent to the Opera House is the Caravelle Hotel, a modern high-rise building with a distinctive curved facade and illuminated signage.\",\n    \"reasoning\": \"The architectural style and location suggest the Saigon Opera House, known for its French Colonial design. The adjacent modern building with visible signage identifies it as the Caravelle Hotel.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 17.48525381088257
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Opera House, Modern High-Rise Hotel, Hanoi, Vietnam",
+          "confidence": 0.7999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the architectural style and features of the Hanoi Opera House, known for its classical facade with columns and pediments. The presence of a modern high-rise hotel with illuminated signage fits the urban setting of Hanoi. Search results suggest this identification based on architectural elements and urban context.",
+            "identification": {
+              "primary": [
+                "Opera House",
+                "Modern High-Rise Hotel"
+              ],
+              "location": "Hanoi, Vietnam",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Opera House",
+                "type": "landmark",
+                "confidence": 0.85
+              },
+              {
+                "name": "Modern High-Rise Hotel",
+                "type": "building",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "classical_architecture",
+              "modern_architecture",
+              "night_scene",
+              "urban_environment",
+              "Vietnam"
+            ],
+            "sources_used": [
+              "britannica.com",
+              "archute.com"
+            ],
+            "all_candidates": [
+              "*Source*: ([britannica.com]())",
+              "*Source*: ([archute.com]())",
+              "*Source*: ([studysmarter.co.uk]())",
+              "*Source*: ([en.wikipedia.org]())",
+              "*Source*: ([en.wikipedia.org]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Ho Chi Minh City Opera House",
+                "specificity_level": "very_specific",
+                "confidence": 0.7,
+                "reasoning": "Similar architectural style and urban setting, but less likely due to the presence of the modern high-rise hotel, which matches Hanoi's urban landscape."
+              },
+              {
+                "guess": "Classical building in Southeast Asia",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The architectural style is common in Southeast Asia, but the specific identification is uncertain without more context."
+              },
+              {
+                "guess": "Urban scene with classical and modern architecture",
+                "specificity_level": "very_general",
+                "confidence": 0.5,
+                "reasoning": "The description fits many urban environments with a mix of classical and modern architecture."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.85,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a nighttime urban scene featuring a prominent building with classical architectural elements. The building has a grand facade with ornate decorations, including a large arched entrance flanked by columns. Above the entrance is a detailed pediment adorned with sculptural elements, possibly depicting allegorical figures or motifs. The facade is illuminated by external lighting, highlighting its intricate details and giving it a majestic appearance. The structure appears to be con",
+            "description": "The image depicts a nighttime urban scene featuring a prominent building with classical architectural elements. The building has a grand facade with ornate decorations, including a large arched entrance flanked by columns. Above the entrance is a detailed pediment adorned with sculptural elements, possibly depicting allegorical figures or motifs. The facade is illuminated by external lighting, highlighting its intricate details and giving it a majestic appearance. The structure appears to be con",
+            "architectural_style": "Classical",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 41.60951805114746
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Ho Chi Minh City Opera House (10.7766, 106.7032)",
+          "confidence": 0.41650229692459106,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Ho Chi Minh City Opera House",
+            "coordinates": {
+              "latitude": 10.7766352,
+              "longitude": 106.70316539999999
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 4032
+              },
+              {
+                "x": 0,
+                "y": 4032
+              }
+            ],
+            "context_labels": [
+              "Night",
+              "Metropolitan area",
+              "Midnight",
+              "Electricity",
+              "Metropolis"
+            ],
+            "context_objects": [
+              "Motorcycle",
+              "Motorcycle",
+              "Clothing"
+            ],
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.5185636281967163
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.4075654447078705
+              },
+              {
+                "name": "Street light",
+                "score": 0.3852830231189728
+              },
+              {
+                "name": "Corporate headquarters",
+                "score": 0.38034942746162415
+              },
+              {
+                "name": "Tower",
+                "score": 0.3797999918460846
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Ho Chi Minh City Opera House",
+                "score": 0.41650229692459106,
+                "location": {
+                  "lat": 10.7766352,
+                  "lng": 106.70316539999999
+                }
+              }
+            ],
+            "processing_time_seconds": 17.753203868865967
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/116.heic"
+    }
+  ]
+}

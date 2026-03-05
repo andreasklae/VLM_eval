@@ -1,0 +1,933 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "198.jpg",
+      "timestamp": "2026-01-28T04:30:25.039407",
+      "processing_time_seconds": 61.27339,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 47.637058333333336,
+        "gps_longitude": 12.973325,
+        "location": {
+          "formatted_address": "Oislerweg 6, 83483 Bischofswiesen, Germany",
+          "city": "Bischofswiesen",
+          "county": "Oberbayern",
+          "country": "Germany"
+        },
+        "datetime_original": "2025:11:19 07:42:55",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Watzmann Mountain, Bischofswiesen, Oberbayern, Germany",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Bischofswiesen, which is near the Berchtesgaden Alps. The distinctive shape and snow-covered peaks match the well-known profile of Watzmann Mountain.",
+            "detailed_description": "The image shows Watzmann Mountain, a prominent peak in the Berchtesgaden Alps, located in Bavaria, Germany. The mountain is characterized by its distinctive shape with multiple peaks, including the main summit and the smaller peaks known as Watzmannfrau and Watzmannkinder. The snow-covered peaks are illuminated by the early morning sunlight, creating a striking contrast against the clear blue sky.",
+            "identification": {
+              "primary": [
+                "Watzmann Mountain"
+              ],
+              "location": "Bischofswiesen, Oberbayern, Germany",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Watzmann Mountain",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "mountain",
+              "Alps",
+              "Germany",
+              "landscape"
+            ],
+            "location": "Bischofswiesen, Oberbayern, Germany",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Watzmann Mountain\"],\n        \"location\": \"Bischofswiesen, Oberbayern, Germany\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Watzmann Mountain\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"mountain\", \"Alps\", \"Germany\", \"landscape\"],\n    \"description\": \"The image shows Watzmann Mountain, a prominent peak in the Berchtesgaden Alps, located in Bavaria, Germany. The mountain is characterized by its distinctive shape with multiple peaks, including the main summit and the smaller peaks known as Watzmannfrau and Watzmannkinder. The snow-covered peaks are illuminated by the early morning sunlight, creating a striking contrast against the clear blue sky.\",\n    \"reasoning\": \"The location metadata indicates Bischofswiesen, which is near the Berchtesgaden Alps. The distinctive shape and snow-covered peaks match the well-known profile of Watzmann Mountain.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 47.637058333333336,
+              "longitude": 12.973325
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Oislerweg 6, 83483 Bischofswiesen, Germany",
+              "city": "Bischofswiesen",
+              "county": "Oberbayern",
+              "country": "Germany"
+            },
+            "photo_timestamp": "2025:11:19 07:42:55",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 12.89405107498169
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image prominently features a mountain landscape at sunrise. The central subject is a snow-covered peak, illuminated by the warm, golden hues of early morning light. The mountain has a distinctive jagged shape, with sharp ridges and steep slopes, characteristic of alpine formations. The sunlight casts a striking contrast between the bright, sunlit areas and the shadowed, darker regions, highlighting the texture and contours of the snow and rock. The sky is clear, with a gradient transitioning",
+            "description": "The image prominently features a mountain landscape at sunrise. The central subject is a snow-covered peak, illuminated by the warm, golden hues of early morning light. The mountain has a distinctive jagged shape, with sharp ridges and steep slopes, characteristic of alpine formations. The sunlight casts a striking contrast between the bright, sunlit areas and the shadowed, darker regions, highlighting the texture and contours of the snow and rock. The sky is clear, with a gradient transitioning",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 47.637058333333336,
+              "longitude": 12.973325
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Oislerweg 6, 83483 Bischofswiesen, Germany",
+              "city": "Bischofswiesen",
+              "county": "Oberbayern",
+              "country": "Germany"
+            },
+            "photo_timestamp": "2025:11:19 07:42:55",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 47.601693868637085
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Mountain",
+          "confidence": 0.9343761801719666,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Mountain",
+                "score": 0.9343761801719666
+              },
+              {
+                "source": "label",
+                "name": "Geological formation",
+                "score": 0.8894684910774231
+              },
+              {
+                "source": "label",
+                "name": "Terrain",
+                "score": 0.8829941749572754
+              },
+              {
+                "source": "label",
+                "name": "Mountain range",
+                "score": 0.8766565322875977
+              }
+            ],
+            "web_entities": [],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Mountain",
+                "score": 0.9343761801719666
+              },
+              {
+                "name": "Black",
+                "score": 0.9078293442726135
+              },
+              {
+                "name": "Geological formation",
+                "score": 0.8894684910774231
+              },
+              {
+                "name": "Terrain",
+                "score": 0.8829941749572754
+              },
+              {
+                "name": "Mountain range",
+                "score": 0.8766565322875977
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 47.637058333333336,
+              "longitude": 12.973325
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Oislerweg 6, 83483 Bischofswiesen, Germany",
+              "city": "Bischofswiesen",
+              "county": "Oberbayern",
+              "country": "Germany"
+            },
+            "photo_timestamp": "2025:11:19 07:42:55",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 10.530529022216797
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Bischofswiesen, Oberbayern, Germany",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Bischofswiesen, Oberbayern, Germany",
+            "coordinates": {
+              "latitude": 47.637058333333336,
+              "longitude": 12.973325
+            },
+            "search_range_meters": 5000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Salt Mine Berchtesgaden",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 4719,
+                  "vicinity": "Parkplatz Salzburger Straße 24 Gästeeinfahrt, Bergwerkstraße 83, Berchtesgaden",
+                  "place_id": "ChIJ0WP8i6LsdkcRgCrR9D8Gzys",
+                  "location": {
+                    "lat": 47.6378101,
+                    "lng": 13.0178527
+                  }
+                },
+                {
+                  "name": "Watzmann Therme",
+                  "types": [
+                    "tourist_attraction",
+                    "amusement_park",
+                    "health",
+                    "spa",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 4955,
+                  "vicinity": "Bergwerkstraße 54, Berchtesgaden-Anzenbach",
+                  "place_id": "ChIJXaqSa5fsdkcRoLTF7mOhOZU",
+                  "location": {
+                    "lat": 47.63468899999999,
+                    "lng": 13.010816
+                  }
+                },
+                {
+                  "name": "Götschen Skilifte",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 944,
+                  "vicinity": "Kollertradte 17-19, Bischofswiesen-Loipl",
+                  "place_id": "ChIJJWk11xDsdkcRdmHA2ck4-ts",
+                  "location": {
+                    "lat": 47.64828420000001,
+                    "lng": 12.937411
+                  }
+                },
+                {
+                  "name": "Wallfahrtskirche Maria Hilf",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 17,
+                  "vicinity": "Thanngasse, Bischofswiesen-Loipl",
+                  "place_id": "ChIJdZkr1VXtdkcRBX0MUmYJf78",
+                  "location": {
+                    "lat": 47.6617815,
+                    "lng": 12.9348553
+                  }
+                },
+                {
+                  "name": "Schloss Berchtesgaden",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1895,
+                  "vicinity": "Schloßplatz 2, Berchtesgaden",
+                  "place_id": "ChIJA-3PhJPsdkcRUHyGjUeG9yE",
+                  "location": {
+                    "lat": 47.6332232,
+                    "lng": 13.0034065
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Schloss Berchtesgaden",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1895,
+                  "vicinity": "Schloßplatz 2, Berchtesgaden",
+                  "place_id": "ChIJA-3PhJPsdkcRUHyGjUeG9yE",
+                  "location": {
+                    "lat": 47.6332232,
+                    "lng": 13.0034065
+                  }
+                },
+                {
+                  "name": "Museum Schloss Adelsheim",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 76,
+                  "vicinity": "Schroffenbergallee 6, Berchtesgaden",
+                  "place_id": "ChIJ12tHBb3sdkcRyRp4xjUaRNI",
+                  "location": {
+                    "lat": 47.63979759999999,
+                    "lng": 13.0121282
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Hotel EDELWEISS Berchtesgaden",
+                  "types": [
+                    "spa",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1980,
+                  "vicinity": "Maximilianstraße 2, Berchtesgaden",
+                  "place_id": "ChIJeSNbpJPsdkcRs-a5l-UoBis",
+                  "location": {
+                    "lat": 47.6323547,
+                    "lng": 13.0021314
+                  }
+                },
+                {
+                  "name": "Alpenhotel Kronprinz",
+                  "types": [
+                    "spa",
+                    "beauty_salon",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 623,
+                  "vicinity": "Am Brandholz, Berchtesgaden",
+                  "place_id": "ChIJxU5QlPLsdkcRxMB-Bun7dKk",
+                  "location": {
+                    "lat": 47.6290539,
+                    "lng": 12.9944458
+                  }
+                },
+                {
+                  "name": "Stoll´s Hotel Alpina",
+                  "types": [
+                    "spa",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 496,
+                  "vicinity": "Ulmenweg 14-16, Schönau am Königssee-Oberschönau",
+                  "place_id": "ChIJWTc-8F7sdkcR-X9ARVhYP0U",
+                  "location": {
+                    "lat": 47.617155,
+                    "lng": 12.9877569
+                  }
+                },
+                {
+                  "name": "Hotel Grünberger",
+                  "types": [
+                    "spa",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 608,
+                  "vicinity": "Hotel Grünberger, Hansererweg 1, Berchtesgaden",
+                  "place_id": "ChIJs-05JozsdkcRDB2uEbKtCys",
+                  "location": {
+                    "lat": 47.626179,
+                    "lng": 13.001336
+                  }
+                },
+                {
+                  "name": "Hotel Köppeleck",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 546,
+                  "vicinity": "Am Köppelwald 15, Schönau am Königssee",
+                  "place_id": "ChIJ7eI_T0HsdkcRVcrogpuQcdY",
+                  "location": {
+                    "lat": 47.6055748,
+                    "lng": 12.9795757
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Freilichtbühne im Steinbruch am Kälberstein",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Bischofswiesen",
+                  "place_id": "ChIJq6pq4ezsdkcRMqMb6bDzyBc",
+                  "location": {
+                    "lat": 47.6323594,
+                    "lng": 12.9959579
+                  }
+                },
+                {
+                  "name": "Luitpold Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Von-Hindenburg-Allee, Berchtesgaden",
+                  "place_id": "ChIJ1-3bMQDtdkcRDzKXPncx75Q",
+                  "location": {
+                    "lat": 47.6284241,
+                    "lng": 12.9968672
+                  }
+                },
+                {
+                  "name": "Kurgarten Berchtesgaden",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 170,
+                  "vicinity": "Doktor-Jmhof-Straße 4, Berchtesgaden",
+                  "place_id": "ChIJzeb0xpPsdkcRMkI-t-Z0cTo",
+                  "location": {
+                    "lat": 47.63215599999999,
+                    "lng": 13.002938
+                  }
+                },
+                {
+                  "name": "Moment genießen",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Am Fischerbichl 1, Berchtesgaden",
+                  "place_id": "ChIJyfTTN-btdkcRNOtxzZyPTfs",
+                  "location": {
+                    "lat": 47.6323176,
+                    "lng": 13.0031448
+                  }
+                },
+                {
+                  "name": "Holzsteg",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1,
+                  "vicinity": "Schönau am Königssee",
+                  "place_id": "ChIJB8QpGBftdkcRYG9-aOcEHS4",
+                  "location": {
+                    "lat": 47.61632300000001,
+                    "lng": 12.9853339
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "MARIA SEVEN SORROWS Catholic Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 10,
+                  "vicinity": "Untersteiner Straße 26, Schönau am Königssee-Unterschönau",
+                  "place_id": "ChIJDWXXV-53CEERcRJatDjtMlY",
+                  "location": {
+                    "lat": 47.6060057,
+                    "lng": 12.9867149
+                  }
+                },
+                {
+                  "name": "Wallfahrtskirche Maria Hilf",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 17,
+                  "vicinity": "Thanngasse, Bischofswiesen-Loipl",
+                  "place_id": "ChIJdZkr1VXtdkcRBX0MUmYJf78",
+                  "location": {
+                    "lat": 47.6617815,
+                    "lng": 12.9348553
+                  }
+                },
+                {
+                  "name": "Jehovas Zeugen",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 7,
+                  "vicinity": "Im Pfaffenfeld 10, Bischofswiesen-Winkl",
+                  "place_id": "ChIJO99X_6mSdkcRrcm8hUJ6DVM",
+                  "location": {
+                    "lat": 47.6717709,
+                    "lng": 12.9360922
+                  }
+                },
+                {
+                  "name": "Blaskapelle Maria Gern",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 17,
+                  "vicinity": "Klammweg 2, Berchtesgaden-Maria Gern",
+                  "place_id": "ChIJvxHL-svsdkcRnOWtM2oTxzo",
+                  "location": {
+                    "lat": 47.65451299999999,
+                    "lng": 13.002338
+                  }
+                },
+                {
+                  "name": "Insulakirche",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Insulaweg 1, Bischofswiesen-Strub",
+                  "place_id": "ChIJVz6iNW_tdkcRENdE9-YbhiY",
+                  "location": {
+                    "lat": 47.6270679,
+                    "lng": 12.9674486
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Gongzeit - handgemachte Gongs kaufen",
+                  "types": [
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 8,
+                  "vicinity": "Metzgerstraße 2, Berchtesgaden",
+                  "place_id": "ChIJ-2s-pe8VdkcRCE6RkBw6q6s",
+                  "location": {
+                    "lat": 47.6324647,
+                    "lng": 13.0012999
+                  }
+                },
+                {
+                  "name": "Galerie Berchtesgaden: Fotokunst. Geschenkartikel. Souvenirs.",
+                  "types": [
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 12,
+                  "vicinity": "Weihnachtsschützenplatz 6, Berchtesgaden",
+                  "place_id": "ChIJm3J4BajtdkcRN_Nz5Z-t_VU",
+                  "location": {
+                    "lat": 47.6316548,
+                    "lng": 13.00116
+                  }
+                },
+                {
+                  "name": "The Hive Art Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Maximilianstraße 11, Berchtesgaden",
+                  "place_id": "ChIJR15u4G_tdkcRIwdKHoOe0cs",
+                  "location": {
+                    "lat": 47.630729,
+                    "lng": 13.001476
+                  }
+                },
+                {
+                  "name": "Georg Grainer - Natur- und Landschaftsfotografie",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "Maximilianstraße 13, Berchtesgaden",
+                  "place_id": "ChIJ_SRrpGjtdkcR5hFHonhqHhM",
+                  "location": {
+                    "lat": 47.6302222,
+                    "lng": 13.0013607
+                  }
+                },
+                {
+                  "name": "Atelier Maximilianstrasse",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Maximilianstraße 13, Berchtesgaden",
+                  "place_id": "ChIJ325VQpLsdkcR103GWmJiD9U",
+                  "location": {
+                    "lat": 47.6302116,
+                    "lng": 13.0013621
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Berchtesgaden",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Berchtesgaden",
+                  "place_id": "ChIJ053XqF3rdkcRcLc3CaQlHQQ",
+                  "location": {
+                    "lat": 47.6300314,
+                    "lng": 13.001148
+                  }
+                },
+                {
+                  "name": "Hotel EDELWEISS Berchtesgaden",
+                  "types": [
+                    "spa",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1980,
+                  "vicinity": "Maximilianstraße 2, Berchtesgaden",
+                  "place_id": "ChIJeSNbpJPsdkcRs-a5l-UoBis",
+                  "location": {
+                    "lat": 47.6323547,
+                    "lng": 13.0021314
+                  }
+                },
+                {
+                  "name": "Wellnesshotel Zechmeisterlehen",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 638,
+                  "vicinity": "Wahlstraße 35, Schönau am Königssee",
+                  "place_id": "ChIJYdGEmVDsdkcRogPmYzASRBM",
+                  "location": {
+                    "lat": 47.6154631,
+                    "lng": 12.976728
+                  }
+                },
+                {
+                  "name": "Alpenhotel Kronprinz",
+                  "types": [
+                    "spa",
+                    "beauty_salon",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 623,
+                  "vicinity": "Am Brandholz, Berchtesgaden",
+                  "place_id": "ChIJxU5QlPLsdkcRxMB-Bun7dKk",
+                  "location": {
+                    "lat": 47.6290539,
+                    "lng": 12.9944458
+                  }
+                },
+                {
+                  "name": "Stoll´s Hotel Alpina",
+                  "types": [
+                    "spa",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 496,
+                  "vicinity": "Ulmenweg 14-16, Schönau am Königssee-Oberschönau",
+                  "place_id": "ChIJWTc-8F7sdkcR-X9ARVhYP0U",
+                  "location": {
+                    "lat": 47.617155,
+                    "lng": 12.9877569
+                  }
+                }
+              ]
+            },
+            "total_places_found": 32,
+            "photo_timestamp": "2025:11:19 07:42:55",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.5398380756378174
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/198.jpg"
+    },
+    {
+      "image_filename": "198.jpg",
+      "timestamp": "2026-01-28T04:31:26.352516",
+      "processing_time_seconds": 43.658893,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Watzmann Mountain, Berchtesgaden, Germany",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive shape and location suggest Watzmann Mountain, a well-known landmark in the Bavarian Alps. The lighting and snow coverage are typical of this region.",
+            "detailed_description": "The image shows Watzmann Mountain, a prominent peak in the Bavarian Alps near Berchtesgaden, Germany. The mountain is characterized by its distinctive jagged peaks and is partially covered in snow, with the sunlight illuminating the summit. The foreground includes silhouettes of structures, likely part of a building, framing the view.",
+            "identification": {
+              "primary": [
+                "Watzmann Mountain"
+              ],
+              "location": "Berchtesgaden, Germany",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Watzmann Mountain",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "mountain",
+              "Alps",
+              "Germany",
+              "landscape"
+            ],
+            "location": "Berchtesgaden, Germany",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Watzmann Mountain\"],\n        \"location\": \"Berchtesgaden, Germany\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Watzmann Mountain\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"mountain\", \"Alps\", \"Germany\", \"landscape\"],\n    \"description\": \"The image shows Watzmann Mountain, a prominent peak in the Bavarian Alps near Berchtesgaden, Germany. The mountain is characterized by its distinctive jagged peaks and is partially covered in snow, with the sunlight illuminating the summit. The foreground includes silhouettes of structures, likely part of a building, framing the view.\",\n    \"reasoning\": \"The distinctive shape and location suggest Watzmann Mountain, a well-known landmark in the Bavarian Alps. The lighting and snow coverage are typical of this region.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 6.527933120727539
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image features a striking mountain landscape, with a prominent peak illuminated by the warm glow of the setting or rising sun. The mountain is covered in snow, highlighting its rugged and jagged features. The sunlight casts a golden hue on the snow-covered summit, creating a dramatic contrast against the cooler tones of the surrounding areas. The mountain range extends across the image, with multiple peaks visible, each varying in height and shape. The lower slopes are darker, likely covered",
+            "description": "The image features a striking mountain landscape, with a prominent peak illuminated by the warm glow of the setting or rising sun. The mountain is covered in snow, highlighting its rugged and jagged features. The sunlight casts a golden hue on the snow-covered summit, creating a dramatic contrast against the cooler tones of the surrounding areas. The mountain range extends across the image, with multiple peaks visible, each varying in height and shape. The lower slopes are darker, likely covered",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "processing_time_seconds": 37.12930989265442
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Mountain",
+          "confidence": 0.9343761801719666,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Mountain",
+                "score": 0.9343761801719666
+              },
+              {
+                "source": "label",
+                "name": "Geological formation",
+                "score": 0.8894684910774231
+              },
+              {
+                "source": "label",
+                "name": "Terrain",
+                "score": 0.8829941749572754
+              },
+              {
+                "source": "label",
+                "name": "Mountain range",
+                "score": 0.8766565322875977
+              }
+            ],
+            "web_entities": [],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Mountain",
+                "score": 0.9343761801719666
+              },
+              {
+                "name": "Black",
+                "score": 0.9078293442726135
+              },
+              {
+                "name": "Geological formation",
+                "score": 0.8894684910774231
+              },
+              {
+                "name": "Terrain",
+                "score": 0.8829941749572754
+              },
+              {
+                "name": "Mountain range",
+                "score": 0.8766565322875977
+              }
+            ],
+            "processing_time_seconds": 10.609401226043701
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/198.jpg"
+    }
+  ]
+}

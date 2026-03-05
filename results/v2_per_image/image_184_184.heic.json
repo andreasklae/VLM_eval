@@ -1,0 +1,810 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "184.heic",
+      "timestamp": "2026-01-28T03:57:26.435802",
+      "processing_time_seconds": 62.202546,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -38.50890833333333,
+        "gps_longitude": 145.1483472222222,
+        "location": {
+          "formatted_address": "F4RX+C8 Summerlands VIC, Australia",
+          "city": "Summerlands",
+          "county": "Bass Coast Shire",
+          "country": "Australia"
+        },
+        "datetime_original": "2025:07:01 17:03:31",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Phillip Island Boardwalk, Summerlands, Bass Coast Shire, Australia",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The boardwalk and coastal landscape are characteristic of Phillip Island, a popular tourist destination in Australia known for its natural scenery and wildlife. The location metadata supports this identification.",
+            "detailed_description": "The image shows a boardwalk at Phillip Island, located in Summerlands, Bass Coast Shire, Australia. The boardwalk is elevated and provides a scenic view of the coastal landscape, which includes grassy dunes and the ocean. The sky is painted with warm hues, suggesting a sunset or sunrise. The area is known for its natural beauty and wildlife, particularly the penguin parade that attracts visitors.",
+            "identification": {
+              "primary": [
+                "Phillip Island Boardwalk"
+              ],
+              "location": "Summerlands, Bass Coast Shire, Australia",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Phillip Island Boardwalk",
+                "type": "viewpoint",
+                "confidence": 0.9
+              },
+              {
+                "name": "Coastal landscape",
+                "type": "natural_feature",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "coastal_landscape",
+              "boardwalk",
+              "Australia",
+              "natural_feature",
+              "viewpoint"
+            ],
+            "location": "Summerlands, Bass Coast Shire, Australia",
+            "type": "viewpoint",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Penguin Parade Viewing Area",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "Phillip Island is famous for its Penguin Parade, and the boardwalk may be part of the viewing area."
+              },
+              {
+                "guess": "Summerlands Peninsula",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The landscape and boardwalk are typical of the Summerlands area on Phillip Island."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Phillip Island Boardwalk\"],\n        \"location\": \"Summerlands, Bass Coast Shire, Australia\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Phillip Island Boardwalk\",\n            \"type\": \"viewpoint\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Coastal landscape\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"coastal_landscape\", \"boardwalk\", \"Australia\", \"natural_feature\", \"viewpoint\"],\n    \"description\": \"The image shows a boardwalk at Phillip Island, located in Summerlands, Bass Coast Shire, Australia. The boardwalk is elevated and provides a scenic view of the coastal landscape, which includes grassy dunes and the ocean. The sky is painted with warm hues, suggesting a sunset or sunrise. The area is known for its natural beauty and wildlife, particularly the penguin parade that attracts visitors.\",\n    \"reasoning\": \"The boardwalk and coastal landscape are characteristic of Phillip Island, a popular tourist destination in Australia known for its natural scenery and wildlife. The location metadata supports this identification.\",\n    \"type\": \"viewpoint\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Penguin Parade Viewing Area\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"Phillip Island is famous for its Penguin Parade, and the boardwalk may be part of the viewing area.\"\n        },\n        {\n            \"guess\": \"Summerlands Peninsula\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The landscape and boardwalk are typical of the Summerlands area on Phillip Island.\"\n        }\n    ]\n}",
+            "gps_coordinates": {
+              "latitude": -38.50890833333333,
+              "longitude": 145.1483472222222
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "F4RX+C8 Summerlands VIC, Australia",
+              "city": "Summerlands",
+              "county": "Bass Coast Shire",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:07:01 17:03:31",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 22.820384979248047
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Summerlands Boardwalk, Bass Coast Shire, Australia",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the features of the Summerlands Boardwalk, which is known for its scenic coastal views and modern design. The location metadata aligns with Bass Coast Shire, Australia, supporting the identification. Search results from landscapeperformance.org and penguins.org.au suggest this boardwalk is a notable feature in the area.",
+            "identification": {
+              "primary": [
+                "Summerlands Boardwalk"
+              ],
+              "location": "Bass Coast Shire, Australia",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Summerlands Boardwalk",
+                "type": "landmark",
+                "confidence": 0.9
+              },
+              {
+                "name": "Coastal vegetation",
+                "type": "natural_feature",
+                "confidence": 0.85
+              },
+              {
+                "name": "Sunset sky",
+                "type": "natural_feature",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "modern_boardwalk",
+              "coastal_landscape",
+              "sunset",
+              "Australia",
+              "Bass Coast Shire"
+            ],
+            "sources_used": [
+              "landscapeperformance.org",
+              "penguins.org.au"
+            ],
+            "all_candidates": [
+              "*URL*: ([landscapeperformance.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([penguins.org.au]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Phillip Island Nature Park",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "Phillip Island Nature Park is a well-known location in Bass Coast Shire, Australia, which includes boardwalks and coastal landscapes similar to the description."
+              },
+              {
+                "guess": "Coastal boardwalk in Australia",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The description fits many coastal boardwalks in Australia, characterized by modern design and scenic views."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 3,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.9,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a coastal landscape at sunset, characterized by a boardwalk that winds through a grassy and slightly hilly terrain. The boardwalk is constructed from light-colored materials, possibly wood or composite, and features metal railings for safety. It extends across the landscape, providing a pathway for visitors to enjoy the scenic views. The surrounding area is covered with low, dense vegetation, typical of coastal flora, with patches of grass and small shrubs. In the background, t",
+            "description": "The image depicts a coastal landscape at sunset, characterized by a boardwalk that winds through a grassy and slightly hilly terrain. The boardwalk is constructed from light-colored materials, possibly wood or composite, and features metal railings for safety. It extends across the landscape, providing a pathway for visitors to enjoy the scenic views. The surrounding area is covered with low, dense vegetation, typical of coastal flora, with patches of grass and small shrubs. In the background, t",
+            "architectural_style": "Modern boardwalk design",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": -38.50890833333333,
+              "longitude": 145.1483472222222
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "F4RX+C8 Summerlands VIC, Australia",
+              "city": "Summerlands",
+              "county": "Bass Coast Shire",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:07:01 17:03:31",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 38.592203855514526
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Horizon",
+          "confidence": 0.9586511850357056,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Horizon",
+                "score": 0.9586511850357056
+              },
+              {
+                "source": "label",
+                "name": "Bridge",
+                "score": 0.9495831727981567
+              },
+              {
+                "source": "label",
+                "name": "Walkway",
+                "score": 0.934711754322052
+              },
+              {
+                "source": "label",
+                "name": "Boardwalk",
+                "score": 0.9265691041946411
+              },
+              {
+                "source": "label",
+                "name": "Ecoregion",
+                "score": 0.9262417554855347
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Rural area",
+                "score": 0.29814839363098145
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Horizon",
+                "score": 0.9586511850357056
+              },
+              {
+                "name": "Bridge",
+                "score": 0.9495831727981567
+              },
+              {
+                "name": "Walkway",
+                "score": 0.934711754322052
+              },
+              {
+                "name": "Boardwalk",
+                "score": 0.9265691041946411
+              },
+              {
+                "name": "Ecoregion",
+                "score": 0.9262417554855347
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": -38.50890833333333,
+              "longitude": 145.1483472222222
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "F4RX+C8 Summerlands VIC, Australia",
+              "city": "Summerlands",
+              "county": "Bass Coast Shire",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:07:01 17:03:31",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 14.957265138626099
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Summerlands, Bass Coast Shire, Australia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Summerlands, Bass Coast Shire, Australia",
+            "coordinates": {
+              "latitude": -38.50890833333333,
+              "longitude": 145.1483472222222
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Penguin Parade",
+                  "types": [
+                    "tourist_attraction",
+                    "zoo",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 11959,
+                  "vicinity": "1019 Ventnor Road, Summerlands",
+                  "place_id": "ChIJW7bw6GeV1WoRJ-q-NvGxZZw",
+                  "location": {
+                    "lat": -38.5066164,
+                    "lng": 145.149729
+                  }
+                },
+                {
+                  "name": "Penguin Parade Visitor Centre",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 333,
+                  "vicinity": "1019 Ventnor Road, Summerlands",
+                  "place_id": "ChIJSfqgKhKV1WoRXk87jIohKmc",
+                  "location": {
+                    "lat": -38.507307,
+                    "lng": 145.1480027
+                  }
+                },
+                {
+                  "name": "Penguin Premium",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 12,
+                  "vicinity": "1019 Ventnor Road, Summerlands",
+                  "place_id": "ChIJk2guZgCV1WoRwNMrn_zOQVo",
+                  "location": {
+                    "lat": -38.5112702,
+                    "lng": 145.1495308
+                  }
+                },
+                {
+                  "name": "Penguin Plus",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1114,
+                  "vicinity": "1019 Ventnor Road, Summerlands",
+                  "place_id": "ChIJaUlbwjKV1WoRBmUbVSbp2B0",
+                  "location": {
+                    "lat": -38.5114686,
+                    "lng": 145.1494458
+                  }
+                },
+                {
+                  "name": "Summerlands Lookout",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 144,
+                  "vicinity": "The Boulevard, Summerlands",
+                  "place_id": "ChIJAfGus2iV1WoRVFOBK4q7g3o",
+                  "location": {
+                    "lat": -38.5130023,
+                    "lng": 145.1495031
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Shearwater Restaurant & Cafe",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 2.8,
+                  "user_ratings_total": 137,
+                  "vicinity": "1019 Ventnor Road, Summerlands",
+                  "place_id": "ChIJkXBFxTCV1WoRDWdHMNr5RO4",
+                  "location": {
+                    "lat": -38.5060233,
+                    "lng": 145.1469716
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Penguin Parade",
+                  "types": [
+                    "zoo",
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 11959,
+                  "vicinity": "1019 Ventnor Road, Summerlands",
+                  "place_id": "ChIJW7bw6GeV1WoRJ-q-NvGxZZw",
+                  "location": {
+                    "lat": -38.5066164,
+                    "lng": 145.149729
+                  }
+                },
+                {
+                  "name": "Penguin Plus",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1114,
+                  "vicinity": "1019 Ventnor Road, Summerlands",
+                  "place_id": "ChIJaUlbwjKV1WoRBmUbVSbp2B0",
+                  "location": {
+                    "lat": -38.5114686,
+                    "lng": 145.1494458
+                  }
+                },
+                {
+                  "name": "Swan Lake Trail",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 174,
+                  "vicinity": "Ventnor Road, Ventnor",
+                  "place_id": "ChIJAZF2KEeV1WoRyprHElhVFR8",
+                  "location": {
+                    "lat": -38.5021904,
+                    "lng": 145.1535332
+                  }
+                },
+                {
+                  "name": "Swan Lake Path - Parking Area",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 32,
+                  "vicinity": "935 Ventnor Road, Ventnor",
+                  "place_id": "ChIJjwHF3EWV1WoR-vyHaTZcnfE",
+                  "location": {
+                    "lat": -38.5019702,
+                    "lng": 145.1535032
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Ventnor",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Ventnor",
+                  "place_id": "ChIJ1bPU3j7r1WoRsNSgMKR5BQU",
+                  "location": {
+                    "lat": -38.4722564,
+                    "lng": 145.1873299
+                  }
+                },
+                {
+                  "name": "Penguin Parade",
+                  "types": [
+                    "zoo",
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 11959,
+                  "vicinity": "1019 Ventnor Road, Summerlands",
+                  "place_id": "ChIJW7bw6GeV1WoRJ-q-NvGxZZw",
+                  "location": {
+                    "lat": -38.5066164,
+                    "lng": 145.149729
+                  }
+                },
+                {
+                  "name": "Penguin Parade Visitor Centre",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 333,
+                  "vicinity": "1019 Ventnor Road, Summerlands",
+                  "place_id": "ChIJSfqgKhKV1WoRXk87jIohKmc",
+                  "location": {
+                    "lat": -38.507307,
+                    "lng": 145.1480027
+                  }
+                },
+                {
+                  "name": "Aparcament",
+                  "types": [
+                    "parking",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Summerlands",
+                  "place_id": "ChIJ66RmrEGV1WoR0JaKl6QwHZ0",
+                  "location": {
+                    "lat": -38.5066231,
+                    "lng": 145.1491757
+                  }
+                },
+                {
+                  "name": "Penguin Premium",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 12,
+                  "vicinity": "1019 Ventnor Road, Summerlands",
+                  "place_id": "ChIJk2guZgCV1WoRwNMrn_zOQVo",
+                  "location": {
+                    "lat": -38.5112702,
+                    "lng": 145.1495308
+                  }
+                }
+              ]
+            },
+            "total_places_found": 15,
+            "photo_timestamp": "2025:07:01 17:03:31",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.34149885177612305
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/184.heic"
+    },
+    {
+      "image_filename": "184.heic",
+      "timestamp": "2026-01-28T03:58:28.675452",
+      "processing_time_seconds": 61.158419,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Boardwalk at coastal landscape, Phillip Island, Australia",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The boardwalk and coastal setting are characteristic of Phillip Island, known for its natural beauty and wildlife. The sunset colors and landscape features match typical scenes from this location.",
+            "detailed_description": "The image depicts a boardwalk winding through a coastal landscape at sunset. The boardwalk is elevated and constructed with metal railings, providing a pathway for visitors to enjoy the scenic views. The landscape features grassy dunes and sparse vegetation, typical of coastal environments. In the background, the ocean is visible, along with distant landforms, under a sky painted with warm hues from the setting sun.",
+            "identification": {
+              "primary": [
+                "Boardwalk at coastal landscape"
+              ],
+              "location": "Phillip Island, Australia",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Boardwalk",
+                "type": "viewpoint",
+                "confidence": 0.9
+              },
+              {
+                "name": "Coastal landscape",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "boardwalk",
+              "coastal_landscape",
+              "Phillip_Island",
+              "Australia",
+              "sunset"
+            ],
+            "location": "Phillip Island, Australia",
+            "type": "viewpoint",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Coastal boardwalk in another Australian location",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "Australia has several coastal boardwalks with similar features, but the landscape suggests Phillip Island."
+              },
+              {
+                "guess": "Generic coastal boardwalk",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The boardwalk and coastal environment are common features in various locations worldwide."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Boardwalk at coastal landscape\"],\n        \"location\": \"Phillip Island, Australia\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Boardwalk\",\n            \"type\": \"viewpoint\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Coastal landscape\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"boardwalk\", \"coastal_landscape\", \"Phillip_Island\", \"Australia\", \"sunset\"],\n    \"description\": \"The image depicts a boardwalk winding through a coastal landscape at sunset. The boardwalk is elevated and constructed with metal railings, providing a pathway for visitors to enjoy the scenic views. The landscape features grassy dunes and sparse vegetation, typical of coastal environments. In the background, the ocean is visible, along with distant landforms, under a sky painted with warm hues from the setting sun.\",\n    \"reasoning\": \"The boardwalk and coastal setting are characteristic of Phillip Island, known for its natural beauty and wildlife. The sunset colors and landscape features match typical scenes from this location.\",\n    \"type\": \"viewpoint\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Coastal boardwalk in another Australian location\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"Australia has several coastal boardwalks with similar features, but the landscape suggests Phillip Island.\"\n        },\n        {\n            \"guess\": \"Generic coastal boardwalk\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The boardwalk and coastal environment are common features in various locations worldwide.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 27.79828405380249
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Cristiano Boardwalk, Unknown",
+          "confidence": 0.49999999999999994,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The search results suggest the Cristiano Boardwalk as a plausible identification due to the description matching key features such as the boardwalk and coastal setting. The warm, golden hue of the sunset and the presence of metal railings align with the modern functional design described.",
+            "identification": {
+              "primary": [
+                "Cristiano Boardwalk"
+              ],
+              "location": "Unknown",
+              "confidence": 0.7
+            },
+            "artifacts": [
+              {
+                "name": "Cristiano Boardwalk",
+                "type": "landmark",
+                "confidence": 0.7
+              },
+              {
+                "name": "Coastal terrain",
+                "type": "natural_feature",
+                "confidence": 0.85
+              },
+              {
+                "name": "Sunset sky",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "modern_design",
+              "boardwalk",
+              "coastal",
+              "sunset",
+              "nature"
+            ],
+            "sources_used": [
+              "cristianoboardwalk.com",
+              "kaiacreative.com"
+            ],
+            "all_candidates": [
+              "*URL*: ([kaiacreative.com]())",
+              "*URL*: ([ybc.com]())",
+              "*URL*: ([formany.net]())",
+              "*URL*: ([cristianoboardwalk.com]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Generic coastal boardwalk",
+                "specificity_level": "very_general",
+                "confidence": 0.6,
+                "reasoning": "The description matches many coastal boardwalks with similar features, but specific identification is uncertain."
+              },
+              {
+                "guess": "Nature walk area in a coastal park",
+                "specificity_level": "general",
+                "confidence": 0.5,
+                "reasoning": "The natural setting and boardwalk suggest a location designed for nature walks, common in coastal parks."
+              },
+              {
+                "guess": "Boardwalk in a coastal reserve",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.55,
+                "reasoning": "The description fits a boardwalk in a coastal reserve, emphasizing harmony between human structures and nature."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.7,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a scenic coastal landscape during what appears to be sunset, characterized by a warm, golden hue in the sky. The primary visual subject is a wooden boardwalk that winds through a grassy, dune-like terrain. The boardwalk is elevated and supported by metal railings, providing a pathway for visitors to enjoy the natural surroundings. The terrain is covered with patches of green vegetation and tufts of grass, creating a textured, natural environment. In the background, the ocean is",
+            "description": "The image depicts a scenic coastal landscape during what appears to be sunset, characterized by a warm, golden hue in the sky. The primary visual subject is a wooden boardwalk that winds through a grassy, dune-like terrain. The boardwalk is elevated and supported by metal railings, providing a pathway for visitors to enjoy the natural surroundings. The terrain is covered with patches of green vegetation and tufts of grass, creating a textured, natural environment. In the background, the ocean is",
+            "architectural_style": "Modern functional design",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 33.12585425376892
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Horizon",
+          "confidence": 0.9586511850357056,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Horizon",
+                "score": 0.9586511850357056
+              },
+              {
+                "source": "label",
+                "name": "Bridge",
+                "score": 0.9495831727981567
+              },
+              {
+                "source": "label",
+                "name": "Walkway",
+                "score": 0.934711754322052
+              },
+              {
+                "source": "label",
+                "name": "Boardwalk",
+                "score": 0.9265691041946411
+              },
+              {
+                "source": "label",
+                "name": "Ecoregion",
+                "score": 0.9262417554855347
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Rural area",
+                "score": 0.29814839363098145
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Horizon",
+                "score": 0.9586511850357056
+              },
+              {
+                "name": "Bridge",
+                "score": 0.9495831727981567
+              },
+              {
+                "name": "Walkway",
+                "score": 0.934711754322052
+              },
+              {
+                "name": "Boardwalk",
+                "score": 0.9265691041946411
+              },
+              {
+                "name": "Ecoregion",
+                "score": 0.9262417554855347
+              }
+            ],
+            "processing_time_seconds": 14.751731872558594
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/184.heic"
+    }
+  ]
+}

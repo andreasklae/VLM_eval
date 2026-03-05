@@ -1,0 +1,254 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "12.jpg",
+      "timestamp": "2026-01-28T01:27:50.683695",
+      "processing_time_seconds": 138.76929,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Wooden chapel",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The structure's design and materials suggest it is a chapel, likely used for religious purposes. The wooden construction and simple design are characteristic of rustic or traditional architecture.",
+            "detailed_description": "The image shows a small wooden chapel with a steeply pitched roof and a simple, rustic design. The facade is primarily made of wood, with a central entrance featuring decorative wooden patterns. The building has a triangular shape, with white plaster elements complementing the wooden structure. It is set in a grassy area surrounded by trees, suggesting a rural or natural setting.",
+            "identification": {
+              "primary": [
+                "Wooden chapel"
+              ],
+              "location": null,
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Wooden chapel",
+                "type": "building",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "wooden",
+              "chapel",
+              "architecture",
+              "rustic",
+              "religious_building"
+            ],
+            "location": null,
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Traditional wooden chapel in a rural area",
+                "specificity_level": "general",
+                "confidence": 0.75,
+                "reasoning": "The style and materials are typical of rural chapels found in various regions."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Wooden chapel\"],\n        \"location\": null,\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Wooden chapel\",\n            \"type\": \"building\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"wooden\", \"chapel\", \"architecture\", \"rustic\", \"religious_building\"],\n    \"description\": \"The image shows a small wooden chapel with a steeply pitched roof and a simple, rustic design. The facade is primarily made of wood, with a central entrance featuring decorative wooden patterns. The building has a triangular shape, with white plaster elements complementing the wooden structure. It is set in a grassy area surrounded by trees, suggesting a rural or natural setting.\",\n    \"reasoning\": \"The structure's design and materials suggest it is a chapel, likely used for religious purposes. The wooden construction and simple design are characteristic of rustic or traditional architecture.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Traditional wooden chapel in a rural area\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.75,\n            \"reasoning\": \"The style and materials are typical of rural chapels found in various regions.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 38.143367767333984
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Rustic building with triangular facade",
+          "confidence": 0.6,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The search results did not provide a specific name or location for the building described. The description matches a rustic architectural style with distinct features such as a triangular facade, wooden planks, and a steeply pitched roof. Given the lack of specific identification in the search results, the most accurate identification is a general description of the building type and style.",
+            "identification": {
+              "primary": [
+                "Rustic building with triangular facade"
+              ],
+              "location": null,
+              "confidence": 0.65
+            },
+            "artifacts": [
+              {
+                "name": "Rustic building with triangular facade",
+                "type": "building",
+                "confidence": 0.65
+              }
+            ],
+            "tags": [
+              "rustic",
+              "triangular facade",
+              "wooden planks",
+              "geometric patterned door",
+              "steeply pitched roof",
+              "rural"
+            ],
+            "sources_used": [
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "building",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Rustic cabin in a rural area",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The description suggests a rural setting, and the architectural style is consistent with rustic cabins often found in such environments."
+              },
+              {
+                "guess": "Traditional rural house",
+                "specificity_level": "general",
+                "confidence": 0.55,
+                "reasoning": "The combination of materials and design elements is typical of traditional rural houses, which often feature wooden and plaster elements."
+              },
+              {
+                "guess": "Wooden cottage",
+                "specificity_level": "very_general",
+                "confidence": 0.5,
+                "reasoning": "The wooden planks and quaint design are characteristic of wooden cottages, although the specific identification is uncertain."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.65,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a small, rustic building with a distinct triangular facade. The structure features a combination of materials, including wooden planks and white plaster. The wooden section forms the central part of the facade, with vertical planks creating a textured appearance. The wooden door is centrally located and features a geometric pattern, adding a decorative touch to the otherwise simple design. Above the door, the triangular shape is accentuated by the roofline, which is steeply pit",
+            "description": "The image depicts a small, rustic building with a distinct triangular facade. The structure features a combination of materials, including wooden planks and white plaster. The wooden section forms the central part of the facade, with vertical planks creating a textured appearance. The wooden door is centrally located and features a geometric pattern, adding a decorative touch to the otherwise simple design. Above the door, the triangular shape is accentuated by the roofline, which is steeply pit",
+            "architectural_style": "Rustic",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 100.62108063697815
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Wood",
+          "confidence": 0.96595698595047,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Wood",
+                "score": 0.96595698595047
+              },
+              {
+                "source": "label",
+                "name": "Roof",
+                "score": 0.8956665992736816
+              },
+              {
+                "source": "object",
+                "name": "Door",
+                "score": 0.6776259541511536
+              },
+              {
+                "source": "object",
+                "name": "House",
+                "score": 0.5079769492149353
+              },
+              {
+                "source": "web",
+                "name": "Rural area",
+                "score": 0.35047948360443115
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Rural area",
+                "score": 0.35047948360443115
+              },
+              {
+                "name": "Roof",
+                "score": 0.33107447624206543
+              },
+              {
+                "name": "Tree",
+                "score": 0.3304435610771179
+              },
+              {
+                "name": "Barn",
+                "score": 0.3102143108844757
+              },
+              {
+                "name": "M-tree",
+                "score": 0.25450000166893005
+              }
+            ],
+            "objects": [
+              {
+                "name": "Door",
+                "score": 0.6776259541511536
+              },
+              {
+                "name": "House",
+                "score": 0.5079769492149353
+              }
+            ],
+            "labels": [
+              {
+                "name": "Wood",
+                "score": 0.96595698595047
+              },
+              {
+                "name": "Roof",
+                "score": 0.8956665992736816
+              },
+              {
+                "name": "Croft",
+                "score": 0.6394400000572205
+              },
+              {
+                "name": "Shed",
+                "score": 0.6322303414344788
+              },
+              {
+                "name": "Conifers",
+                "score": 0.6119993925094604
+              }
+            ],
+            "processing_time_seconds": 5.948029279708862
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/12.jpg"
+    }
+  ]
+}

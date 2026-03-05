@@ -1,0 +1,1231 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "103.jpg",
+      "timestamp": "2026-01-28T00:50:47.808493",
+      "processing_time_seconds": 59.958615,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 52.49573888888889,
+        "gps_longitude": 13.420508333333332,
+        "location": {
+          "formatted_address": "Kottbusser Damm 104, 10967 Berlin, Germany",
+          "city": "Berlin",
+          "county": "Berlin",
+          "country": "Germany"
+        },
+        "datetime_original": "2024:10:30 23:51:16",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Ankerklause, Berlin, Germany",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The neon sign with the name 'Ankerklause' is prominently displayed, indicating the identity of the establishment. The location metadata confirms it is in Berlin, Germany, which matches the known location of Ankerklause.",
+            "detailed_description": "The image shows the exterior of Ankerklause, a well-known establishment in Berlin, Germany. The building features a distinctive neon sign with the name 'Ankerklause' in bright blue lettering. The facade has a striped awning, and the setting appears to be a lively outdoor seating area at night, with tables and chairs visible. The atmosphere suggests a casual dining or bar environment.",
+            "identification": {
+              "primary": [
+                "Ankerklause"
+              ],
+              "location": "Berlin, Germany",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Ankerklause",
+                "type": "building",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "neon_sign",
+              "restaurant",
+              "Berlin",
+              "night_scene"
+            ],
+            "location": "Berlin, Germany",
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Ankerklause\"],\n        \"location\": \"Berlin, Germany\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Ankerklause\",\n            \"type\": \"building\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"neon_sign\", \"restaurant\", \"Berlin\", \"night_scene\"],\n    \"description\": \"The image shows the exterior of Ankerklause, a well-known establishment in Berlin, Germany. The building features a distinctive neon sign with the name 'Ankerklause' in bright blue lettering. The facade has a striped awning, and the setting appears to be a lively outdoor seating area at night, with tables and chairs visible. The atmosphere suggests a casual dining or bar environment.\",\n    \"reasoning\": \"The neon sign with the name 'Ankerklause' is prominently displayed, indicating the identity of the establishment. The location metadata confirms it is in Berlin, Germany, which matches the known location of Ankerklause.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 52.49573888888889,
+              "longitude": 13.420508333333332
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Kottbusser Damm 104, 10967 Berlin, Germany",
+              "city": "Berlin",
+              "county": "Berlin",
+              "country": "Germany"
+            },
+            "photo_timestamp": "2024:10:30 23:51:16",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 12.614545822143555
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Ankerklause, Berlin, Germany",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The search results strongly support the identification of 'Ankerklause' as the establishment in the image. The description matches the known features of Ankerklause, including the neon sign and maritime theme. The location metadata confirms Berlin, Germany, which aligns with the search results.",
+            "identification": {
+              "primary": [
+                "Ankerklause"
+              ],
+              "location": "Berlin, Germany",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Ankerklause neon sign",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Red and white striped awnings",
+                "type": "building",
+                "confidence": 0.9
+              },
+              {
+                "name": "Anchor motif menu holder",
+                "type": "other",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "contemporary",
+              "neon_sign",
+              "maritime_theme",
+              "Berlin",
+              "café",
+              "nightlife"
+            ],
+            "sources_used": [
+              "theworlds50best.com",
+              "barconvent.com"
+            ],
+            "all_candidates": [
+              "*URL*: ([theworlds50best.com]())",
+              "*URL*: ([barconvent.com]())",
+              "*URL*: ([opentable.co.uk]())",
+              "*URL*: ([about.visitberlin.de]())",
+              "*URL*: ([about.visitberlin.de]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a lively nighttime scene at a bar or café with a distinct maritime theme. The establishment features a prominent neon sign displaying the name 'Ankerklause' in cursive blue lettering, which stands out against the dark night sky. The facade is adorned with red and white striped awnings, contributing to a vibrant and inviting atmosphere. The exterior design includes large windows that allow glimpses into the warmly lit interior, where patrons are seated at tables. The setting is ",
+            "description": "The image depicts a lively nighttime scene at a bar or café with a distinct maritime theme. The establishment features a prominent neon sign displaying the name 'Ankerklause' in cursive blue lettering, which stands out against the dark night sky. The facade is adorned with red and white striped awnings, contributing to a vibrant and inviting atmosphere. The exterior design includes large windows that allow glimpses into the warmly lit interior, where patrons are seated at tables. The setting is ",
+            "architectural_style": "Contemporary",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 52.49573888888889,
+              "longitude": 13.420508333333332
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Kottbusser Damm 104, 10967 Berlin, Germany",
+              "city": "Berlin",
+              "county": "Berlin",
+              "country": "Germany"
+            },
+            "photo_timestamp": "2024:10:30 23:51:16",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 46.538747787475586
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Entertainment",
+          "confidence": 0.900155246257782,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Entertainment",
+                "score": 0.900155246257782
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.8962723612785339
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.8670576214790344
+              },
+              {
+                "source": "label",
+                "name": "Performing Arts",
+                "score": 0.8219022154808044
+              },
+              {
+                "source": "label",
+                "name": "Logo",
+                "score": 0.8147931098937988
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Performance M",
+                "score": 0.28870001435279846
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.8962723612785339
+              },
+              {
+                "name": "Person",
+                "score": 0.8670576214790344
+              },
+              {
+                "name": "Clothing",
+                "score": 0.7949406504631042
+              },
+              {
+                "name": "Tableware",
+                "score": 0.7851892709732056
+              },
+              {
+                "name": "Top",
+                "score": 0.7564613819122314
+              }
+            ],
+            "labels": [
+              {
+                "name": "Entertainment",
+                "score": 0.900155246257782
+              },
+              {
+                "name": "Night",
+                "score": 0.8495941162109375
+              },
+              {
+                "name": "Performing Arts",
+                "score": 0.8219022154808044
+              },
+              {
+                "name": "Logo",
+                "score": 0.8147931098937988
+              },
+              {
+                "name": "Performance",
+                "score": 0.7821545004844666
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 52.49573888888889,
+              "longitude": 13.420508333333332
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Kottbusser Damm 104, 10967 Berlin, Germany",
+              "city": "Berlin",
+              "county": "Berlin",
+              "country": "Germany"
+            },
+            "photo_timestamp": "2024:10:30 23:51:16",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 12.705403089523315
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Berlin, Germany",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Berlin, Germany",
+            "coordinates": {
+              "latitude": 52.49573888888889,
+              "longitude": 13.420508333333332
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Mevlana Moschee Berlin",
+                  "types": [
+                    "mosque",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 906,
+                  "vicinity": "Skalitzer Straße 131/132, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJ55kymDROqEcR0gdYVe0rWY4",
+                  "location": {
+                    "lat": 52.49953,
+                    "lng": 13.42021
+                  }
+                },
+                {
+                  "name": "Böckler Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 264,
+                  "vicinity": "Prinzenstraße 1, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJPfXUjNJPqEcRNKbUdlQsTgk",
+                  "location": {
+                    "lat": 52.49707009999999,
+                    "lng": 13.4083193
+                  }
+                },
+                {
+                  "name": "Black Light Mini Golf Berlin",
+                  "types": [
+                    "tourist_attraction",
+                    "amusement_park",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.6,
+                  "user_ratings_total": 1137,
+                  "vicinity": "im Görlitzer Park, Görlitzer Straße 1/Haus 1, Berlin",
+                  "place_id": "ChIJjc74IU1OqEcR9uDoOKSh3bI",
+                  "location": {
+                    "lat": 52.4983833,
+                    "lng": 13.4336923
+                  }
+                },
+                {
+                  "name": "Kreuzberg Pavillon",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 14,
+                  "vicinity": "Naunynstraße 53, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJ_1gHxzNOqEcRagRaNH-xLAk",
+                  "location": {
+                    "lat": 52.5023042,
+                    "lng": 13.4181614
+                  }
+                },
+                {
+                  "name": "Berlin Street Art Tours",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 57,
+                  "vicinity": "Reichenberger Straße 71, Berlin",
+                  "place_id": "ChIJhbNBCO9RqEcR7ZnGE4TaMa0",
+                  "location": {
+                    "lat": 52.4945534,
+                    "lng": 13.4330181
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Kreuzberg Pavillon",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 14,
+                  "vicinity": "Naunynstraße 53, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJ_1gHxzNOqEcRagRaNH-xLAk",
+                  "location": {
+                    "lat": 52.5023042,
+                    "lng": 13.4181614
+                  }
+                },
+                {
+                  "name": "F³ - Space for Photography",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 171,
+                  "vicinity": "Prinzessinnenstraße 30/1. Hof, Berlin",
+                  "place_id": "ChIJU5yWkTFOqEcR26gbkOiMmxg",
+                  "location": {
+                    "lat": 52.50147450000001,
+                    "lng": 13.414183
+                  }
+                },
+                {
+                  "name": "Fichtebunker",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1312,
+                  "vicinity": "Fichtestraße 6, Berlin",
+                  "place_id": "ChIJ97u6Ic9PqEcRuwWQuC5mkCk",
+                  "location": {
+                    "lat": 52.4903547,
+                    "lng": 13.4129079
+                  }
+                },
+                {
+                  "name": "exponauten",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Erkelenzdamm 59/61, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJixi6Ec1PqEcRdDYMlSBc1k4",
+                  "location": {
+                    "lat": 52.49677049999999,
+                    "lng": 13.4129178
+                  }
+                },
+                {
+                  "name": "FHXB Friedrichshain-Kreuzberg Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 299,
+                  "vicinity": "Adalbertstraße 95A, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJ0xpVdTNOqEcRW22FiVSWFX0",
+                  "location": {
+                    "lat": 52.5006146,
+                    "lng": 13.4182532
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "AMRIT - Berlin Kreuzberg",
+                  "types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 4076,
+                  "vicinity": "Oranienstraße 204, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJeVq3CDVOqEcRba5RL1mUXDE",
+                  "location": {
+                    "lat": 52.499641,
+                    "lng": 13.4249485
+                  }
+                },
+                {
+                  "name": "Max und Moritz",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2879,
+                  "vicinity": "Oranienstraße 162, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJbUbbajJOqEcRawilLsv27Wk",
+                  "location": {
+                    "lat": 52.5025993,
+                    "lng": 13.4139938
+                  }
+                },
+                {
+                  "name": "Horváth",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 634,
+                  "vicinity": "Paul-Lincke-Ufer 44a, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJ74LRF8tPqEcRNeBJAS2qxaQ",
+                  "location": {
+                    "lat": 52.496461,
+                    "lng": 13.4208765
+                  }
+                },
+                {
+                  "name": "Ankerklause",
+                  "types": [
+                    "restaurant",
+                    "bar",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2995,
+                  "vicinity": "Kottbusser Damm 104, Berlin-Bezirk Neukölln",
+                  "place_id": "ChIJHwunA8tPqEcRzdgaAEx7K4M",
+                  "location": {
+                    "lat": 52.49583619999999,
+                    "lng": 13.4205592
+                  }
+                },
+                {
+                  "name": "Café Jacques",
+                  "types": [
+                    "cafe",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 610,
+                  "vicinity": "Maybachufer 14, Berlin-Bezirk Neukölln",
+                  "place_id": "ChIJccDCX8pPqEcRkdhWnC8AyNI",
+                  "location": {
+                    "lat": 52.49419269999999,
+                    "lng": 13.4254616
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Böckler Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 264,
+                  "vicinity": "Prinzenstraße 1, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJPfXUjNJPqEcRNKbUdlQsTgk",
+                  "location": {
+                    "lat": 52.49707009999999,
+                    "lng": 13.4083193
+                  }
+                },
+                {
+                  "name": "Böcklerpark",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 901,
+                  "vicinity": "Böcklerstraße 6, Berlin",
+                  "place_id": "ChIJ-7L7gdJPqEcRhnpx35DYPIA",
+                  "location": {
+                    "lat": 52.4960834,
+                    "lng": 13.4114272
+                  }
+                },
+                {
+                  "name": "Çetin-Mert Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 4,
+                  "vicinity": "Skalitzer Straße, Ecke, Mariannenstraße, Berlin",
+                  "place_id": "ChIJTSk7dQBPqEcRxPgQxfYlD2g",
+                  "location": {
+                    "lat": 52.4994139,
+                    "lng": 13.4231083
+                  }
+                },
+                {
+                  "name": "Park am ehemaligen Luisenstädtischen Kanal",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 2.8,
+                  "user_ratings_total": 6,
+                  "vicinity": "Segitzdamm, Berlin",
+                  "place_id": "ChIJQ3Od4ttPqEcRWfS0cHhKQEw",
+                  "location": {
+                    "lat": 52.4993282,
+                    "lng": 13.4137579
+                  }
+                },
+                {
+                  "name": "Sportbootanleger",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 7,
+                  "vicinity": "Böcklerpark, Böcklerstraße 6, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJr7gH_3NPqEcR35s3CDdDpNk",
+                  "location": {
+                    "lat": 52.4958025,
+                    "lng": 13.4110913
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Christian Marten",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Kottbusser Damm 6, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJxbsyTcpPqEcRVJyXn5kl4go",
+                  "location": {
+                    "lat": 52.4942712,
+                    "lng": 13.4208296
+                  }
+                },
+                {
+                  "name": "Kreuzbergprojekt",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 9,
+                  "vicinity": "Lenaustraße 4, Berlin-Bezirk Neukölln",
+                  "place_id": "ChIJ0RoIfbJPqEcRl77DFB6H7RA",
+                  "location": {
+                    "lat": 52.4899125,
+                    "lng": 13.4250977
+                  }
+                },
+                {
+                  "name": "Christuskirche Kreuzberg",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 7,
+                  "vicinity": "Dieffenbachstraße 39, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJY4j3gclPqEcRP2JToqk7YsU",
+                  "location": {
+                    "lat": 52.4918901,
+                    "lng": 13.4199613
+                  }
+                },
+                {
+                  "name": "Ölberg-Kirche",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 23,
+                  "vicinity": "Paul-Lincke-Ufer 29, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJbwjCq3VPqEcRmD6fnsdw5kc",
+                  "location": {
+                    "lat": 52.49482259999999,
+                    "lng": 13.426543
+                  }
+                },
+                {
+                  "name": "Melanchthon-Kirche",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 28,
+                  "vicinity": "Planufer 84, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJSS-jS8xPqEcRQBFcqQOv7Dc",
+                  "location": {
+                    "lat": 52.49465230000001,
+                    "lng": 13.4136685
+                  }
+                },
+                {
+                  "name": "Mevlana Moschee Berlin",
+                  "types": [
+                    "mosque",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 906,
+                  "vicinity": "Skalitzer Straße 131/132, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJ55kymDROqEcR0gdYVe0rWY4",
+                  "location": {
+                    "lat": 52.49953,
+                    "lng": 13.42021
+                  }
+                },
+                {
+                  "name": "Omar Moschee",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 3112,
+                  "vicinity": "Wiener Straße 1-6, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJPVluYjVOqEcRZ1IzmSCONbk",
+                  "location": {
+                    "lat": 52.4989366,
+                    "lng": 13.4267616
+                  }
+                },
+                {
+                  "name": "DITIB Merkez Moschee",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 77,
+                  "vicinity": "Wiener Straße 12, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJSRa7lUpOqEcRUK6kqOiNcms",
+                  "location": {
+                    "lat": 52.49839189999999,
+                    "lng": 13.4282274
+                  }
+                },
+                {
+                  "name": "Vakif Moschee e.V.",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Boppstraße 4, Berlin",
+                  "place_id": "ChIJcaS4UABPqEcRcAaa6fYKKa0",
+                  "location": {
+                    "lat": 52.4908525,
+                    "lng": 13.4213774
+                  }
+                },
+                {
+                  "name": "Muradiye Moschee - DITIB Kulturverein e.V.",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 73,
+                  "vicinity": "Kottbusser Damm 75, Berlin-Bezirk Neukölln",
+                  "place_id": "ChIJX34RPbZPqEcRfkZEk05EskY",
+                  "location": {
+                    "lat": 52.4905202,
+                    "lng": 13.4239238
+                  }
+                },
+                {
+                  "name": "Fraenkelufer Synagogue",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 68,
+                  "vicinity": "Fraenkelufer 10, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJmZOriMxPqEcRjAtHdL3x_1w",
+                  "location": {
+                    "lat": 52.4959464,
+                    "lng": 13.416789
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Künstlerhaus Bethanien",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 198,
+                  "vicinity": "Kottbusser Straße 10/d, Berlin",
+                  "place_id": "ChIJVZcMW8tPqEcRU5yWU2r65ew",
+                  "location": {
+                    "lat": 52.4972258,
+                    "lng": 13.4189602
+                  }
+                },
+                {
+                  "name": "AKA",
+                  "types": [
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 402,
+                  "vicinity": "Pflügerstraße 6, Berlin-Bezirk Neukölln",
+                  "place_id": "ChIJHUwhbrZPqEcRd2H1ORY3wNE",
+                  "location": {
+                    "lat": 52.49120049999999,
+                    "lng": 13.4255113
+                  }
+                },
+                {
+                  "name": "Crystal Ball Berlin",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 11,
+                  "vicinity": "Schönleinstraße 7, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJl-EZiclPqEcRyxGTS-v3rgQ",
+                  "location": {
+                    "lat": 52.492154,
+                    "lng": 13.4208555
+                  }
+                },
+                {
+                  "name": "Kraupa-Tuskany Zeidler",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 25,
+                  "vicinity": "Regina-Jonas-Straße 41/43, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJO4_tXx5OqEcRAyLKC_z9qWw",
+                  "location": {
+                    "lat": 52.496851,
+                    "lng": 13.418323
+                  }
+                },
+                {
+                  "name": "BcmA - Berlin con mucho arte",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 15,
+                  "vicinity": "Audre-Lorde-Straße 78, Berlin",
+                  "place_id": "ChIJOUYGeTVOqEcRxny5P3ynCFM",
+                  "location": {
+                    "lat": 52.4995639,
+                    "lng": 13.4265804
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Berlin",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Berlin",
+                  "place_id": "ChIJAVkDPzdOqEcRcDteW0YgIQQ",
+                  "location": {
+                    "lat": 52.52000659999999,
+                    "lng": 13.404954
+                  }
+                },
+                {
+                  "name": "Hotel Prens Berlin Kreuzberg am Maybachufer",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 662,
+                  "vicinity": "Kottbusser Damm 102, Berlin-Bezirk Neukölln",
+                  "place_id": "ChIJmScCVcpPqEcRK6yUV93gUPI",
+                  "location": {
+                    "lat": 52.4951432,
+                    "lng": 13.4210774
+                  }
+                },
+                {
+                  "name": "“Freiraum“ Hostel & Guesthouse",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 157,
+                  "vicinity": "Wiener Straße 14, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJRQYL6kpOqEcRHNXjWOE9ndM",
+                  "location": {
+                    "lat": 52.4982863,
+                    "lng": 13.4288035
+                  }
+                },
+                {
+                  "name": "Hotel Vier Jahreszeiten Berlin City",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 579,
+                  "vicinity": "Skalitzer Straße 36, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJsf_9ZjVOqEcRryBq0sZMybo",
+                  "location": {
+                    "lat": 52.4987041,
+                    "lng": 13.4260974
+                  }
+                },
+                {
+                  "name": "Hotel Ludwig Van Beethoven",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1572,
+                  "vicinity": "Hasenheide 14, Berlin",
+                  "place_id": "ChIJYTG18LdPqEcRZrPKedtSHPw",
+                  "location": {
+                    "lat": 52.48764389999999,
+                    "lng": 13.4210506
+                  }
+                }
+              ]
+            },
+            "total_places_found": 41,
+            "photo_timestamp": "2024:10:30 23:51:16",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.5243198871612549
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/103.jpg"
+    },
+    {
+      "image_filename": "103.jpg",
+      "timestamp": "2026-01-28T00:51:47.809625",
+      "processing_time_seconds": 59.945436,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Ankerklause, Berlin, Germany",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The neon sign 'Ankerklause' is prominently displayed, indicating the name of the establishment. The style and ambiance suggest a casual dining or bar setting, common in urban areas like Berlin.",
+            "detailed_description": "The image shows a restaurant or bar named 'Ankerklause', identifiable by the neon sign on top of the building. The establishment has a distinctive striped awning and is likely a popular nightlife spot. The setting includes outdoor seating, suggesting a casual and lively atmosphere typical of urban dining and socializing venues.",
+            "identification": {
+              "primary": [
+                "Ankerklause"
+              ],
+              "location": "Berlin, Germany",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Ankerklause",
+                "type": "building",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "neon_sign",
+              "restaurant",
+              "Berlin",
+              "nightlife"
+            ],
+            "location": "Berlin, Germany",
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Ankerklause\"],\n        \"location\": \"Berlin, Germany\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Ankerklause\",\n            \"type\": \"building\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"neon_sign\", \"restaurant\", \"Berlin\", \"nightlife\"],\n    \"description\": \"The image shows a restaurant or bar named 'Ankerklause', identifiable by the neon sign on top of the building. The establishment has a distinctive striped awning and is likely a popular nightlife spot. The setting includes outdoor seating, suggesting a casual and lively atmosphere typical of urban dining and socializing venues.\",\n    \"reasoning\": \"The neon sign 'Ankerklause' is prominently displayed, indicating the name of the establishment. The style and ambiance suggest a casual dining or bar setting, common in urban areas like Berlin.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 15.089842796325684
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Ankerklause, Berlin, Germany",
+          "confidence": 0.75,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The search results strongly suggest the establishment is 'Ankerklause', supported by the distinctive neon sign and nautical theme described. The high confidence score from multiple sources indicates a reliable match. The urban setting and decor align with the known characteristics of Ankerklause in Berlin.",
+            "identification": {
+              "primary": [
+                "Ankerklause"
+              ],
+              "location": "Berlin, Germany",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Ankerklause neon sign",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Striped awning",
+                "type": "building",
+                "confidence": 0.85
+              },
+              {
+                "name": "Colorful lights",
+                "type": "other",
+                "confidence": 0.8
+              },
+              {
+                "name": "Wooden menu holder with anchor design",
+                "type": "other",
+                "confidence": 0.75
+              }
+            ],
+            "tags": [
+              "contemporary",
+              "nautical theme",
+              "neon sign",
+              "urban setting",
+              "restaurant"
+            ],
+            "sources_used": [
+              "piazzapisano.com",
+              "insneon.com"
+            ],
+            "all_candidates": [
+              "*URL*: ([piazzapisano.com]())",
+              "*URL*: ([insneon.com]())",
+              "*URL*: ([xneonled.com]())",
+              "*URL*: ([pageneon.com]())",
+              "*URL*: ([shineneon.com]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a lively outdoor seating area of a restaurant or bar at night. The establishment is characterized by its vibrant neon signage displaying the name 'Ankerklause' in bright blue cursive letters. The sign is mounted above a facade that features a striped awning in red and white, adding a nautical theme to the setting. Below the awning, the facade is adorned with strings of colorful lights, contributing to a festive atmosphere. The windows are large and transparent, allowing a view ",
+            "description": "The image depicts a lively outdoor seating area of a restaurant or bar at night. The establishment is characterized by its vibrant neon signage displaying the name 'Ankerklause' in bright blue cursive letters. The sign is mounted above a facade that features a striped awning in red and white, adding a nautical theme to the setting. Below the awning, the facade is adorned with strings of colorful lights, contributing to a festive atmosphere. The windows are large and transparent, allowing a view ",
+            "architectural_style": "Contemporary with nautical theme",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 44.846168994903564
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Entertainment",
+          "confidence": 0.900155246257782,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Entertainment",
+                "score": 0.900155246257782
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.8962723612785339
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.8670576214790344
+              },
+              {
+                "source": "label",
+                "name": "Performing Arts",
+                "score": 0.8219022154808044
+              },
+              {
+                "source": "label",
+                "name": "Logo",
+                "score": 0.8147931098937988
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Performance M",
+                "score": 0.28870001435279846
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.8962723612785339
+              },
+              {
+                "name": "Person",
+                "score": 0.8670576214790344
+              },
+              {
+                "name": "Clothing",
+                "score": 0.7949406504631042
+              },
+              {
+                "name": "Tableware",
+                "score": 0.7851892709732056
+              },
+              {
+                "name": "Top",
+                "score": 0.7564613819122314
+              }
+            ],
+            "labels": [
+              {
+                "name": "Entertainment",
+                "score": 0.900155246257782
+              },
+              {
+                "name": "Night",
+                "score": 0.8495941162109375
+              },
+              {
+                "name": "Performing Arts",
+                "score": 0.8219022154808044
+              },
+              {
+                "name": "Logo",
+                "score": 0.8147931098937988
+              },
+              {
+                "name": "Performance",
+                "score": 0.7821545004844666
+              }
+            ],
+            "processing_time_seconds": 12.956395864486694
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/103.jpg"
+    }
+  ]
+}

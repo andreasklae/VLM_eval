@@ -1,0 +1,880 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "149.jpg",
+      "timestamp": "2026-01-28T02:35:41.371858",
+      "processing_time_seconds": 59.323661,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 27.849741666666667,
+        "gps_longitude": 34.30768888888888,
+        "location": {
+          "formatted_address": "V824+6RG, El-Bahr, Sharm El Sheikh 2, South Sinai Governorate 8762236, Egypt",
+          "city": null,
+          "county": "Sharm El Sheikh 2",
+          "country": "Egypt"
+        },
+        "datetime_original": "2025:02:20 18:36:39",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Farsha Cafe, Sharm El Sheikh, Egypt",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive lighting and decor style, along with the location metadata, strongly suggest this is Farsha Cafe, a popular spot in Sharm El Sheikh known for its unique ambiance.",
+            "detailed_description": "The image depicts a vibrant night scene at Farsha Cafe in Sharm El Sheikh, Egypt. The cafe is known for its eclectic and colorful decor, featuring numerous lights and decorative elements. The setting includes a series of steps leading up to various seating areas, with a warm, red lighting ambiance that creates a lively atmosphere. The decor is characterized by a mix of traditional and modern elements, contributing to a unique and inviting environment.",
+            "identification": {
+              "primary": [
+                "Farsha Cafe"
+              ],
+              "location": "Sharm El Sheikh, Egypt",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Farsha Cafe",
+                "type": "landmark",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "cafe",
+              "decorative_lighting",
+              "night_scene",
+              "Sharm_El_Sheikh"
+            ],
+            "location": "Sharm El Sheikh, Egypt",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Farsha Cafe\"],\n        \"location\": \"Sharm El Sheikh, Egypt\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Farsha Cafe\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"cafe\", \"decorative_lighting\", \"night_scene\", \"Sharm_El_Sheikh\"],\n    \"description\": \"The image depicts a vibrant night scene at Farsha Cafe in Sharm El Sheikh, Egypt. The cafe is known for its eclectic and colorful decor, featuring numerous lights and decorative elements. The setting includes a series of steps leading up to various seating areas, with a warm, red lighting ambiance that creates a lively atmosphere. The decor is characterized by a mix of traditional and modern elements, contributing to a unique and inviting environment.\",\n    \"reasoning\": \"The distinctive lighting and decor style, along with the location metadata, strongly suggest this is Farsha Cafe, a popular spot in Sharm El Sheikh known for its unique ambiance.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 27.849741666666667,
+              "longitude": 34.30768888888888
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "V824+6RG, El-Bahr, Sharm El Sheikh 2, South Sinai Governorate 8762236, Egypt",
+              "city": null,
+              "county": "Sharm El Sheikh 2",
+              "country": "Egypt"
+            },
+            "photo_timestamp": "2025:02:20 18:36:39",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 21.15647578239441
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Space Sharm Nightclub, Sharm El Sheikh, Egypt",
+          "confidence": 0.7,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description of the vibrant and atmospheric nighttime scene with eclectic architecture and ambient lighting matches the features of Space Sharm Nightclub, which is a prominent venue in Sharm El Sheikh's nightlife scene. The search results strongly support this identification, with high confidence scores and relevant descriptions of the venue's features.",
+            "identification": {
+              "primary": [
+                "Space Sharm Nightclub"
+              ],
+              "location": "Sharm El Sheikh, Egypt",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Space Sharm Nightclub",
+                "type": "entertainment venue",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "eclectic",
+              "fusion",
+              "nightlife",
+              "entertainment",
+              "Sharm El Sheikh"
+            ],
+            "sources_used": [
+              "en.wikipedia.org",
+              "wtp.travel"
+            ],
+            "all_candidates": [
+              "*Description*: An affiliate of the renowned Ibiza nightclub, Space Sharm opened in 2010 and has been a prominent venue in Sharm El Sheikh's nightlife scene. ([en.wikipedia.org]())",
+              "*Features*: The club features three distinct areas: The Terrace, El Salon, and the Discoteca. The Terrace is designed with natural elements, including a 12-meter pool with a waterfall, creating an oas",
+              "*Highlights*: Impressive light shows, state-of-the-art sound systems, and performances by world-famous DJs. ([wtp.travel]())",
+              "*Description*: Located in Naama Bay, Taj Mahal Nightclub offers a unique fusion of Indian and Egyptian architectural styles, creating an exotic and intimate atmosphere. ([vybeful.com]())",
+              "*Highlights*: The club operates on select nights, adding an exclusive touch to each event. ([aquajoyholidays.wordpress.com]())"
+            ],
+            "type": "entertainment venue",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Taj Mahal Nightclub",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "The description of a fusion of Indian and Egyptian styles and an exotic atmosphere matches the Taj Mahal Nightclub, which is also located in Sharm El Sheikh. However, the search results for Space Sharm are stronger."
+              },
+              {
+                "guess": "General nightclub or themed restaurant",
+                "specificity_level": "very_general",
+                "confidence": 0.5,
+                "reasoning": "The description fits a general nightclub or themed restaurant with eclectic decor and ambient lighting, but specific identification is less certain without more details."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.9,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a vibrant and atmospheric nighttime scene, likely within a bustling entertainment venue or themed restaurant. The setting is characterized by a rich, warm color palette dominated by reds and oranges, enhanced by ambient lighting that creates a lively and inviting atmosphere. The architecture and decor appear eclectic, with elements that suggest a fusion of traditional and modern styles. The structure is multi-leveled, with visible stairs leading up to higher platforms, adorned ",
+            "description": "The image depicts a vibrant and atmospheric nighttime scene, likely within a bustling entertainment venue or themed restaurant. The setting is characterized by a rich, warm color palette dominated by reds and oranges, enhanced by ambient lighting that creates a lively and inviting atmosphere. The architecture and decor appear eclectic, with elements that suggest a fusion of traditional and modern styles. The structure is multi-leveled, with visible stairs leading up to higher platforms, adorned ",
+            "architectural_style": "Eclectic, fusion of traditional and modern elements",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 27.849741666666667,
+              "longitude": 34.30768888888888
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "V824+6RG, El-Bahr, Sharm El Sheikh 2, South Sinai Governorate 8762236, Egypt",
+              "city": null,
+              "county": "Sharm El Sheikh 2",
+              "country": "Egypt"
+            },
+            "photo_timestamp": "2025:02:20 18:36:39",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 37.57576513290405
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Electricity",
+          "confidence": 0.8386954069137573,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Electricity",
+                "score": 0.8386954069137573
+              },
+              {
+                "source": "label",
+                "name": "Darkness",
+                "score": 0.8366369605064392
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.7458800077438354
+              },
+              {
+                "source": "object",
+                "name": "Clothing",
+                "score": 0.5615282654762268
+              },
+              {
+                "source": "web",
+                "name": "Christmas Lights",
+                "score": 0.44193175435066223
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Lighting",
+                "score": 0.6242159605026245
+              },
+              {
+                "name": "Light",
+                "score": 0.4965418875217438
+              },
+              {
+                "name": "Christmas Lights",
+                "score": 0.44193175435066223
+              },
+              {
+                "name": "Christmas",
+                "score": 0.4316999912261963
+              },
+              {
+                "name": "Night",
+                "score": 0.3084210455417633
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.7458800077438354
+              },
+              {
+                "name": "Clothing",
+                "score": 0.5615282654762268
+              }
+            ],
+            "labels": [
+              {
+                "name": "Red",
+                "score": 0.9778811931610107
+              },
+              {
+                "name": "Night",
+                "score": 0.9254831075668335
+              },
+              {
+                "name": "Orange",
+                "score": 0.8805474042892456
+              },
+              {
+                "name": "Electricity",
+                "score": 0.8386954069137573
+              },
+              {
+                "name": "Darkness",
+                "score": 0.8366369605064392
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 27.849741666666667,
+              "longitude": 34.30768888888888
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "V824+6RG, El-Bahr, Sharm El Sheikh 2, South Sinai Governorate 8762236, Egypt",
+              "city": null,
+              "county": "Sharm El Sheikh 2",
+              "country": "Egypt"
+            },
+            "photo_timestamp": "2025:02:20 18:36:39",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 7.901689052581787
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Sharm El Sheikh 2, Egypt",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Sharm El Sheikh 2, Egypt",
+            "coordinates": {
+              "latitude": 27.849741666666667,
+              "longitude": 34.30768888888888
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Pickalbatros Aqua Blu Resort - Sharm El Sheikh",
+                  "types": [
+                    "tourist_attraction",
+                    "amusement_park",
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 26665,
+                  "vicinity": "22 Haret Al Saed",
+                  "place_id": "ChIJdYYrGDw6UxQR-_Xth3bzLIQ",
+                  "location": {
+                    "lat": 27.8568459,
+                    "lng": 34.3042704
+                  }
+                },
+                {
+                  "name": "snorkelling place",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 23,
+                  "vicinity": "R8X4+5R, Sharm El Sheikh 1",
+                  "place_id": "ChIJLwws_vw7UxQR-byBUEe4C5g",
+                  "location": {
+                    "lat": 27.8479474,
+                    "lng": 34.3070529
+                  }
+                },
+                {
+                  "name": "Фарш",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "V825+M56, Sharm El Sheikh 2",
+                  "place_id": "ChIJzZRQVwA7UxQR6PUPOfCp4jY",
+                  "location": {
+                    "lat": 27.8516323,
+                    "lng": 34.3073595
+                  }
+                },
+                {
+                  "name": "Reef Oasis - dive jetty",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 19,
+                  "vicinity": "R8X5+FW, Sharm El Sheikh 1",
+                  "place_id": "ChIJ1x5BbwA7UxQRQn2FNY8Syug",
+                  "location": {
+                    "lat": 27.8486875,
+                    "lng": 34.3098125
+                  }
+                },
+                {
+                  "name": "El Fanar Lighthouse",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 46,
+                  "vicinity": "R8X7+HJ6",
+                  "place_id": "ChIJGaKRKJY7UxQRW9bzlgH9HcY",
+                  "location": {
+                    "lat": 27.8489236,
+                    "lng": 34.31401149999999
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "The Memorial of the French Airline crash",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 20,
+                  "vicinity": "R8X8+CGX, Sharm El Sheikh 1",
+                  "place_id": "ChIJt0ZGMBM6UxQR9wyGwVvuHZM",
+                  "location": {
+                    "lat": 27.8486171,
+                    "lng": 34.3163595
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Mahraja",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 15,
+                  "vicinity": "هضبة ام السيد",
+                  "place_id": "ChIJF9az2xU6UxQRmgdhfNhRetQ",
+                  "location": {
+                    "lat": 27.8501486,
+                    "lng": 34.30987510000001
+                  }
+                },
+                {
+                  "name": "Coast Restaurant",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 5,
+                  "vicinity": "V827+HGX, El Fanar St., UMM EL SID HILL, SHARM EL SHEIKH",
+                  "place_id": "ChIJB2EIfRQ6UxQRSEf7ufqmhF0",
+                  "location": {
+                    "lat": 27.851485,
+                    "lng": 34.31384800000001
+                  }
+                },
+                {
+                  "name": "Acapulco Joe's",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 2.8,
+                  "user_ratings_total": 8,
+                  "vicinity": "Egypt",
+                  "place_id": "ChIJi7srcp45UxQRVO8hwrz8pMQ",
+                  "location": {
+                    "lat": 27.851274,
+                    "lng": 34.31384910000001
+                  }
+                },
+                {
+                  "name": "Paradise Restaurant",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.5,
+                  "user_ratings_total": 13,
+                  "vicinity": "V828+P7M, ., SHARM EL MAYAH, SHARM EL SHEIKH",
+                  "place_id": "ChIJPXXclRM6UxQRw5EN2tkAu-4",
+                  "location": {
+                    "lat": 27.851848,
+                    "lng": 34.315659
+                  }
+                },
+                {
+                  "name": "El Fanar Restaurant",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 93,
+                  "vicinity": "Egypt",
+                  "place_id": "ChIJj-GMtGw6UxQRFZVRipGiMXc",
+                  "location": {
+                    "lat": 27.8480858,
+                    "lng": 34.31522729999999
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Temple Reef",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 56,
+                  "vicinity": "R8X5+8W",
+                  "place_id": "ChIJFRXIZtE7UxQRj_a_L6U7N4U",
+                  "location": {
+                    "lat": 27.847353,
+                    "lng": 34.3089971
+                  }
+                },
+                {
+                  "name": "شاطئ الفنار",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 34,
+                  "vicinity": "R8X7+RCQ, Sharm El Sheikh 1",
+                  "place_id": "ChIJ8_81BOw7UxQRZrUFNVzX484",
+                  "location": {
+                    "lat": 27.8495891,
+                    "lng": 34.3135941
+                  }
+                },
+                {
+                  "name": "Denkmal Flug Flash 604",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 5,
+                  "vicinity": "R8X8+FHG, Unnamed Road, ثان شرم الشيخ",
+                  "place_id": "ChIJIWnuI_s7UxQRl6FOx1rDg7s",
+                  "location": {
+                    "lat": 27.84867689999999,
+                    "lng": 34.3164634
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Православная (коптская) церковь",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 62,
+                  "vicinity": "V824+58J, Sharm El Sheikh 2",
+                  "place_id": "ChIJzZypiEA6UxQRiGZWWS-EED8",
+                  "location": {
+                    "lat": 27.8504653,
+                    "lng": 34.3057672
+                  }
+                },
+                {
+                  "name": "Church of the Blessed Virgin Mary and St. Mina",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 99,
+                  "vicinity": "Sharm El Sheikh 1",
+                  "place_id": "ChIJRz2riEA6UxQR7KsSMvDXPlw",
+                  "location": {
+                    "lat": 27.8503793,
+                    "lng": 34.3056668
+                  }
+                },
+                {
+                  "name": "مسجد الرحمن",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 81,
+                  "vicinity": "V824+P2J, Sharm El Sheikh 1",
+                  "place_id": "ChIJF5XeZT86UxQR2IbKaYfoKpU",
+                  "location": {
+                    "lat": 27.8518319,
+                    "lng": 34.3050241
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Hadaba",
+                  "types": [
+                    "neighborhood",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": null,
+                  "place_id": "ChIJnQp0Xj86UxQRiaDb_z2fGf4",
+                  "location": {
+                    "lat": 27.851717,
+                    "lng": 34.3045568
+                  }
+                },
+                {
+                  "name": "Sentido Reef Oasis Senses Resort",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 10417,
+                  "vicinity": "Marine Sporting Club Road",
+                  "place_id": "ChIJ49IkNso7UxQR5e0hexeeC0g",
+                  "location": {
+                    "lat": 27.8550212,
+                    "lng": 34.30964650000001
+                  }
+                },
+                {
+                  "name": "JAZ Fanara Resort",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 20475,
+                  "vicinity": "Ras Om El-Seid",
+                  "place_id": "ChIJL74AmhY6UxQRWZkHCXfnhOQ",
+                  "location": {
+                    "lat": 27.8498641,
+                    "lng": 34.3129822
+                  }
+                },
+                {
+                  "name": "Pickalbatros Aqua Park Resort - Sharm El Sheikh",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 13551,
+                  "vicinity": "شرم الشيخ, Om El Seed Cliff",
+                  "place_id": "ChIJp8vA1Rc6UxQRUfuwoTZ7s18",
+                  "location": {
+                    "lat": 27.857415,
+                    "lng": 34.3101498
+                  }
+                },
+                {
+                  "name": "Renaissance Sharm El Sheikh Golden View Beach Resort",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 4429,
+                  "vicinity": "V827+GHJ, Al Fanar, Street, Om El Seid Hill, أول شرم الشيخ",
+                  "place_id": "ChIJ---6fBQ6UxQRR3OKBvafcEI",
+                  "location": {
+                    "lat": 27.8515066,
+                    "lng": 34.3140985
+                  }
+                }
+              ]
+            },
+            "total_places_found": 22,
+            "photo_timestamp": "2025:02:20 18:36:39",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.35210394859313965
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/149.jpg"
+    },
+    {
+      "image_filename": "149.jpg",
+      "timestamp": "2026-01-28T02:36:40.903036",
+      "processing_time_seconds": 60.466911,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "The Red Sea Star Bar, Eilat, Israel",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive red lighting and elaborate design elements suggest a themed nightlife venue. The location and style match known characteristics of the Red Sea Star Bar in Eilat, Israel.",
+            "detailed_description": "The image depicts a vibrant nightlife setting with a unique and elaborate design. The area is illuminated with red lighting, creating a striking atmosphere. The architecture includes intricate decorations and a staircase leading upwards, suggesting a multi-level venue. The setting is likely a themed bar or nightclub, known for its distinctive style and ambiance.",
+            "identification": {
+              "primary": [
+                "The Red Sea Star Bar"
+              ],
+              "location": "Eilat, Israel",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "The Red Sea Star Bar",
+                "type": "landmark",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "bar",
+              "nightlife",
+              "Eilat",
+              "Israel",
+              "unique_design"
+            ],
+            "location": "Eilat, Israel",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "The Red Sea Star Bar",
+                "specificity_level": "very_specific",
+                "confidence": 0.9,
+                "reasoning": "The unique design and lighting are characteristic of this well-known bar in Eilat."
+              },
+              {
+                "guess": "Themed nightclub",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The elaborate decorations and lighting suggest a themed nightlife venue."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"The Red Sea Star Bar\"],\n        \"location\": \"Eilat, Israel\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"The Red Sea Star Bar\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"bar\", \"nightlife\", \"Eilat\", \"Israel\", \"unique_design\"],\n    \"description\": \"The image depicts a vibrant nightlife setting with a unique and elaborate design. The area is illuminated with red lighting, creating a striking atmosphere. The architecture includes intricate decorations and a staircase leading upwards, suggesting a multi-level venue. The setting is likely a themed bar or nightclub, known for its distinctive style and ambiance.\",\n    \"reasoning\": \"The distinctive red lighting and elaborate design elements suggest a themed nightlife venue. The location and style match known characteristics of the Red Sea Star Bar in Eilat, Israel.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"The Red Sea Star Bar\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.9,\n            \"reasoning\": \"The unique design and lighting are characteristic of this well-known bar in Eilat.\"\n        },\n        {\n            \"guess\": \"Themed nightclub\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The elaborate decorations and lighting suggest a themed nightlife venue.\"\n        }\n    ]\n}",
+            "processing_time_seconds": 24.6353600025177
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([hgtv.com]())",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a vibrant and eclectic interior space, possibly a bar or club, characterized by a rich, warm color palette dominated by reds and oranges. The setting includes a series of staircases leading upward, surrounded by intricate and ornate decorations. The walls and structures are adorned with various decorative elements, including lanterns and lights that contribute to the ambient glow. The lighting is dim, creating a cozy and intimate atmosphere, with numerous small light sources sc",
+            "description": "The image depicts a vibrant and eclectic interior space, possibly a bar or club, characterized by a rich, warm color palette dominated by reds and oranges. The setting includes a series of staircases leading upward, surrounded by intricate and ornate decorations. The walls and structures are adorned with various decorative elements, including lanterns and lights that contribute to the ambient glow. The lighting is dim, creating a cozy and intimate atmosphere, with numerous small light sources sc",
+            "architectural_style": "Eclectic, possibly steampunk or fantasy",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 35.82805585861206
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Electricity",
+          "confidence": 0.8386954069137573,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Electricity",
+                "score": 0.8386954069137573
+              },
+              {
+                "source": "label",
+                "name": "Darkness",
+                "score": 0.8366369605064392
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.7458800077438354
+              },
+              {
+                "source": "object",
+                "name": "Clothing",
+                "score": 0.5615282654762268
+              },
+              {
+                "source": "web",
+                "name": "Christmas Lights",
+                "score": 0.4361473023891449
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Lighting",
+                "score": 0.6357292532920837
+              },
+              {
+                "name": "Light",
+                "score": 0.49904578924179077
+              },
+              {
+                "name": "Christmas Lights",
+                "score": 0.4361473023891449
+              },
+              {
+                "name": "Christmas",
+                "score": 0.4088999927043915
+              },
+              {
+                "name": "Night",
+                "score": 0.30838602781295776
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.7458800077438354
+              },
+              {
+                "name": "Clothing",
+                "score": 0.5615282654762268
+              }
+            ],
+            "labels": [
+              {
+                "name": "Red",
+                "score": 0.9778811931610107
+              },
+              {
+                "name": "Night",
+                "score": 0.9254831075668335
+              },
+              {
+                "name": "Orange",
+                "score": 0.8805474042892456
+              },
+              {
+                "name": "Electricity",
+                "score": 0.8386954069137573
+              },
+              {
+                "name": "Darkness",
+                "score": 0.8366369605064392
+              }
+            ],
+            "processing_time_seconds": 7.955047845840454
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/149.jpg"
+    }
+  ]
+}

@@ -1,0 +1,1232 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "147.jpg",
+      "timestamp": "2026-01-28T02:31:27.231632",
+      "processing_time_seconds": 64.094527,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 30.04726666666667,
+        "gps_longitude": 31.262044444444445,
+        "location": {
+          "formatted_address": "سنتر عزام محل رقم ٦اولاد عبد الحليم للسبح، Haret Khan Al Khalili, El-Gamaleya, El Gamaliya, Cairo Governorate 4331302, Egypt",
+          "city": null,
+          "county": "El Gamaliya",
+          "country": "Egypt"
+        },
+        "datetime_original": "2025:02:16 20:21:18",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Khan el-Khalili Bazaar, Cairo, Egypt",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates El Gamaliya, which is near the Khan el-Khalili Bazaar, a famous market in Cairo. The visual elements, such as the narrow alleyways and variety of goods, are consistent with this location.",
+            "detailed_description": "The image depicts a bustling market scene, likely part of the Khan el-Khalili Bazaar in Cairo, Egypt. The market is characterized by narrow alleyways lined with stalls selling various traditional goods, including textiles, jewelry, and crafts. The vibrant atmosphere is enhanced by colorful awnings and illuminated displays. The architecture of the surrounding buildings suggests a blend of traditional and modern styles, typical of historic marketplaces.",
+            "identification": {
+              "primary": [
+                "Khan el-Khalili Bazaar"
+              ],
+              "location": "Cairo, Egypt",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Market stalls with traditional goods",
+                "type": "market",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "market",
+              "traditional_goods",
+              "Egypt",
+              "bazaar",
+              "night"
+            ],
+            "location": "Cairo, Egypt",
+            "type": "market",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Traditional Egyptian market",
+                "specificity_level": "general",
+                "confidence": 0.8,
+                "reasoning": "The setting and goods suggest a traditional market typical in Egyptian cities."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Khan el-Khalili Bazaar\"],\n        \"location\": \"Cairo, Egypt\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Market stalls with traditional goods\",\n            \"type\": \"market\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"market\", \"traditional_goods\", \"Egypt\", \"bazaar\", \"night\"],\n    \"description\": \"The image depicts a bustling market scene, likely part of the Khan el-Khalili Bazaar in Cairo, Egypt. The market is characterized by narrow alleyways lined with stalls selling various traditional goods, including textiles, jewelry, and crafts. The vibrant atmosphere is enhanced by colorful awnings and illuminated displays. The architecture of the surrounding buildings suggests a blend of traditional and modern styles, typical of historic marketplaces.\",\n    \"reasoning\": \"The location metadata indicates El Gamaliya, which is near the Khan el-Khalili Bazaar, a famous market in Cairo. The visual elements, such as the narrow alleyways and variety of goods, are consistent with this location.\",\n    \"type\": \"market\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Traditional Egyptian market\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.8,\n            \"reasoning\": \"The setting and goods suggest a traditional market typical in Egyptian cities.\"\n        }\n    ]\n}",
+            "gps_coordinates": {
+              "latitude": 30.04726666666667,
+              "longitude": 31.262044444444445
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "سنتر عزام محل رقم ٦اولاد عبد الحليم للسبح، Haret Khan Al Khalili, El-Gamaleya, El Gamaliya, Cairo Governorate 4331302, Egypt",
+              "city": null,
+              "county": "El Gamaliya",
+              "country": "Egypt"
+            },
+            "photo_timestamp": "2025:02:16 20:21:18",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 25.701938152313232
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Khan el-Khalili, Cairo, Egypt",
+          "confidence": 0.75,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the characteristics of Khan el-Khalili, a well-known market in El Gamaliya, Cairo. The search results strongly support this identification, with high confidence scores. The architectural style and vibrant market atmosphere described are consistent with Khan el-Khalili's reputation as a center of commerce and culture.",
+            "identification": {
+              "primary": [
+                "Khan el-Khalili"
+              ],
+              "location": "Cairo, Egypt",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Khan el-Khalili",
+                "type": "market",
+                "confidence": 0.95
+              },
+              {
+                "name": "Souk al-Khayamiya",
+                "type": "market",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "traditional Egyptian",
+              "market",
+              "commerce",
+              "stone facades",
+              "wooden shutters",
+              "El Gamaliya"
+            ],
+            "sources_used": [
+              "web"
+            ],
+            "all_candidates": [
+              "Khan el-Khalili is a historic bazaar located in the El-Gamaleya district of Cairo, Egypt. Established in the 14th century during the Mamluk era, it has long been a vibrant center of commerce and cultu",
+              "Another notable market in the area is Souk al-Khayamiya, also known as the Street of the Tentmakers. This narrow, covered street is lined with artisans who still practice the traditional craft of khay"
+            ],
+            "type": "market",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Souk al-Khayamiya",
+                "specificity_level": "very_specific",
+                "confidence": 0.9,
+                "reasoning": "Souk al-Khayamiya is another notable market in the area, known for its traditional crafts and covered streets, which could match the description."
+              },
+              {
+                "guess": "Traditional Egyptian market in Cairo",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The description fits the general characteristics of traditional Egyptian markets, which are common in Cairo."
+              }
+            ],
+            "search_quality": {
+              "total_results": 2,
+              "unique_titles": 2,
+              "avg_score": 0.95,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "Few search results (2)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a bustling market scene in El Gamaliya, Egypt, captured at night. The narrow alleyway is lined with shops displaying a variety of goods, including colorful textiles, jewelry, and other handcrafted items. The shops are illuminated with bright artificial lighting, creating a vibrant atmosphere against the dark night sky. The architecture of the buildings is typical of traditional Egyptian markets, with stone facades and wooden shutters. The alley is covered with striped fabric aw",
+            "description": "The image depicts a bustling market scene in El Gamaliya, Egypt, captured at night. The narrow alleyway is lined with shops displaying a variety of goods, including colorful textiles, jewelry, and other handcrafted items. The shops are illuminated with bright artificial lighting, creating a vibrant atmosphere against the dark night sky. The architecture of the buildings is typical of traditional Egyptian markets, with stone facades and wooden shutters. The alley is covered with striped fabric aw",
+            "architectural_style": "Traditional Egyptian",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 30.04726666666667,
+              "longitude": 31.262044444444445
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "سنتر عزام محل رقم ٦اولاد عبد الحليم للسبح، Haret Khan Al Khalili, El-Gamaleya, El Gamaliya, Cairo Governorate 4331302, Egypt",
+              "city": null,
+              "county": "El Gamaliya",
+              "country": "Egypt"
+            },
+            "photo_timestamp": "2025:02:16 20:21:18",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 37.47555494308472
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Person",
+          "confidence": 0.8910805583000183,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "object",
+            "all_candidates": [
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.8910805583000183
+              },
+              {
+                "source": "object",
+                "name": "Hat",
+                "score": 0.7807850241661072
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.7446773648262024
+              }
+            ],
+            "web_entities": [],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.8910805583000183
+              },
+              {
+                "name": "Hat",
+                "score": 0.7807850241661072
+              },
+              {
+                "name": "Person",
+                "score": 0.7446773648262024
+              },
+              {
+                "name": "Person",
+                "score": 0.7337822914123535
+              },
+              {
+                "name": "Pants",
+                "score": 0.7313430905342102
+              }
+            ],
+            "labels": [
+              {
+                "name": "Retail",
+                "score": 0.5478928089141846
+              },
+              {
+                "name": "Customer",
+                "score": 0.5385355353355408
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 30.04726666666667,
+              "longitude": 31.262044444444445
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "سنتر عزام محل رقم ٦اولاد عبد الحليم للسبح، Haret Khan Al Khalili, El-Gamaleya, El Gamaliya, Cairo Governorate 4331302, Egypt",
+              "city": null,
+              "county": "El Gamaliya",
+              "country": "Egypt"
+            },
+            "photo_timestamp": "2025:02:16 20:21:18",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 19.780174732208252
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "El Gamaliya, Egypt",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "El Gamaliya, Egypt",
+            "coordinates": {
+              "latitude": 30.04726666666667,
+              "longitude": 31.262044444444445
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Khan el-Khalili",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 72349,
+                  "vicinity": "Egypt",
+                  "place_id": "ChIJD1gOLOtAWBQREX0CYeTgYRc",
+                  "location": {
+                    "lat": 30.0477386,
+                    "lng": 31.2622538
+                  }
+                },
+                {
+                  "name": "Beit Hosn - بيت حسن",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.2,
+                  "user_ratings_total": 22,
+                  "vicinity": "19 Umm Al Ghoulam, El-Gamaleya, El Gamaliya",
+                  "place_id": "ChIJx4-mRGA_WBQReqyOMKhkPjA",
+                  "location": {
+                    "lat": 30.04814720000001,
+                    "lng": 31.2647242
+                  }
+                },
+                {
+                  "name": "Sabil-Kuttab of Abdel Rahman Katkhuda",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 162,
+                  "vicinity": "2 Al Moez Ldin Allah Al Fatmi, El-Gamaleya, El Gamaliya",
+                  "place_id": "ChIJsZssOp5AWBQRlxJNoxo5IJI",
+                  "location": {
+                    "lat": 30.0507354,
+                    "lng": 31.26158800000001
+                  }
+                },
+                {
+                  "name": "Al-Aqmar Masjid",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1391,
+                  "vicinity": "Al Moez Ldin Allah Al Fatmi, El-Gamaleya, El Gamaliya",
+                  "place_id": "ChIJtYITGp5AWBQR9YlmJYxLAyE",
+                  "location": {
+                    "lat": 30.0515287,
+                    "lng": 31.26201309999999
+                  }
+                },
+                {
+                  "name": "Mosque of Sultan al-Muayyad Shaykh",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1250,
+                  "vicinity": "27V4+8XQ, Al Shrakia, Al-Darb Al-Ahmar",
+                  "place_id": "ChIJ_er9UqFAWBQRmgGJFKzMGDc",
+                  "location": {
+                    "lat": 30.0433419,
+                    "lng": 31.2574728
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "جاليري مصطفى شديد",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 3,
+                  "vicinity": "Khan el-Khalili, 6/6 سكة البادستان خان الخليلي 8 وكالة المكوة خان الخليلي, 1 Rbaa Al Selhdar",
+                  "place_id": "ChIJl3fL2XdBWBQRSQ7-kn5g-Gc",
+                  "location": {
+                    "lat": 30.0477476,
+                    "lng": 31.2622238
+                  }
+                },
+                {
+                  "name": "silver store , Khan Alfham",
+                  "types": [
+                    "jewelry_store",
+                    "museum",
+                    "home_goods_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 4,
+                  "vicinity": "27X7+32C, Passage Num 6, El-Gamaleya, El Gamaliya",
+                  "place_id": "ChIJ08ld8K1BWBQRTwrCK3JhBrQ",
+                  "location": {
+                    "lat": 30.0476868,
+                    "lng": 31.26251299999999
+                  }
+                },
+                {
+                  "name": "مكتب سفير البدر للفضيات والتحف",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "8 جعفر اول",
+                  "place_id": "ChIJsxPfY_Q_WBQR-BlAPdLREYU",
+                  "location": {
+                    "lat": 30.0482368,
+                    "lng": 31.2626393
+                  }
+                },
+                {
+                  "name": "سبيل وكتاب قايتباي الأزهر",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "27W6+FW7, Gameaa Al Azhar, El-Darb El-Ahmar, El Gamaliya",
+                  "place_id": "ChIJsdnVLQBBWBQRcsImKVGawrE",
+                  "location": {
+                    "lat": 30.046166,
+                    "lng": 31.262291
+                  }
+                },
+                {
+                  "name": "Nagib Mahfouz Museum",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 85,
+                  "vicinity": "امام وكالة الغورى, بجوار جامع الأزهر, شارع التبليطة, El Gamaliya",
+                  "place_id": "ChIJM0BMgi5BWBQR2PiZ68HG3ho",
+                  "location": {
+                    "lat": 30.04596069999999,
+                    "lng": 31.2614444
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "popo",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3,
+                  "user_ratings_total": 2,
+                  "vicinity": "27X7+C6X, El-Gamaleya, El Gamaliya",
+                  "place_id": "ChIJzwb6JGA_WBQReIRBl71ye4U",
+                  "location": {
+                    "lat": 30.0486128,
+                    "lng": 31.2631012
+                  }
+                },
+                {
+                  "name": "Tekia Khan Khatun",
+                  "types": [
+                    "cafe",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 1447,
+                  "vicinity": "3 Mohammed Abdou, Al-Darb Al-Ahmar",
+                  "place_id": "ChIJPRRsg18_WBQRzYTUSq6VBQU",
+                  "location": {
+                    "lat": 30.0445578,
+                    "lng": 31.2632356
+                  }
+                },
+                {
+                  "name": "Bedaya",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3,
+                  "user_ratings_total": 1,
+                  "vicinity": "27V5+FQ4, Ad, Al-Darb Al-Ahmar",
+                  "place_id": "ChIJxUGvJqFAWBQRUJOMpkiNlq0",
+                  "location": {
+                    "lat": 30.0436341,
+                    "lng": 31.2594453
+                  }
+                },
+                {
+                  "name": "مطعم اسماك غانم",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 91,
+                  "vicinity": "El-Gamaleya, El Gamaliya",
+                  "place_id": "ChIJq6qqqmc_WBQROGm5j_aEBrM",
+                  "location": {
+                    "lat": 30.0519602,
+                    "lng": 31.2618007
+                  }
+                },
+                {
+                  "name": "Alain Le Notre",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 39,
+                  "vicinity": "27R8+X9G, Ad, Al-Darb Al-Ahmar",
+                  "place_id": "ChIJwX1_tTBBWBQRC4oE0Yy5ztU",
+                  "location": {
+                    "lat": 30.0424492,
+                    "lng": 31.2659677
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Al-Azhar Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 39586,
+                  "vicinity": "10 Salah Salem Street, Al-Darb Al-Ahmar",
+                  "place_id": "ChIJcdNCwlg_WBQRsqBpd7z8tbQ",
+                  "location": {
+                    "lat": 30.0414258,
+                    "lng": 31.2655811
+                  }
+                },
+                {
+                  "name": "العربيه",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "3727+28J",
+                  "place_id": "ChIJdTLwcwA_WBQRlzicBGXj4Es",
+                  "location": {
+                    "lat": 30.0500869,
+                    "lng": 31.2632761
+                  }
+                },
+                {
+                  "name": "El amin nagy",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 3,
+                  "vicinity": "3728+FM6, Haret Al Sharaqwah, El-Gamaleya, El Gamaliya",
+                  "place_id": "ChIJEfwSDTU_WBQRm-hIr5wYPd4",
+                  "location": {
+                    "lat": 30.0511706,
+                    "lng": 31.2666388
+                  }
+                },
+                {
+                  "name": "حديقةًالازهر",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "27R8+VGV, الدرب الأحمر",
+                  "place_id": "ChIJYbpZeQA_WBQRE_b-AJ13dTc",
+                  "location": {
+                    "lat": 30.0425482,
+                    "lng": 31.26580299999999
+                  }
+                },
+                {
+                  "name": "avalanche studio",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "27R7+X92, darrasah, عطفة الدرب الأحمر, الدرب الأحمر",
+                  "place_id": "ChIJYYDSJ_RBWBQRKeJirUO7sKQ",
+                  "location": {
+                    "lat": 30.0410473,
+                    "lng": 31.2599988
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "بطريركية الإسكندرية وسائر أفريقيا",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2,
+                  "vicinity": "16 Al Sharabi, El-Darb El-Ahmar, Al-Darb Al-Ahmar",
+                  "place_id": "ChIJtWtjhQ1BWBQRxFmeeejSexI",
+                  "location": {
+                    "lat": 30.046545,
+                    "lng": 31.25832219999999
+                  }
+                },
+                {
+                  "name": "كنيسة القديس نيقولاس البطريركية للروم الارثوذكس بالحمزاوي - القاهرة",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 4,
+                  "vicinity": "27W5+J82, Al Hamzawi Al Saghir, El-Gamaleya, El Gamaliya",
+                  "place_id": "ChIJI5QyeZRBWBQRAsSlsK1TLok",
+                  "location": {
+                    "lat": 30.0465149,
+                    "lng": 31.25827199999999
+                  }
+                },
+                {
+                  "name": "كنيسه العذراء المغيثه حارة الروم",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "كنيسه العذراء المغيثه, Haret Al Room",
+                  "place_id": "ChIJl9lyUQBBWBQRWYU0lBX8hkA",
+                  "location": {
+                    "lat": 30.0432929,
+                    "lng": 31.26080300000001
+                  }
+                },
+                {
+                  "name": "Saint Mary Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 36,
+                  "vicinity": "27V6+887, Atfet Hosh Kadam, Al-Darb Al-Ahmar",
+                  "place_id": "ChIJLVUPxKBAWBQRwwbcxj6qNa4",
+                  "location": {
+                    "lat": 30.0432929,
+                    "lng": 31.26080300000001
+                  }
+                },
+                {
+                  "name": "دير الامير تادرس",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 13,
+                  "vicinity": "18 Atfet Al Roum, El-Darb El-Ahmar, Al-Darb Al-Ahmar",
+                  "place_id": "ChIJeafJVABBWBQRgMgGOfaQSZs",
+                  "location": {
+                    "lat": 30.0427222,
+                    "lng": 31.26158329999999
+                  }
+                },
+                {
+                  "name": "Al-Aqmar Masjid",
+                  "types": [
+                    "mosque",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1391,
+                  "vicinity": "Al Moez Ldin Allah Al Fatmi, El-Gamaleya, El Gamaliya",
+                  "place_id": "ChIJtYITGp5AWBQR9YlmJYxLAyE",
+                  "location": {
+                    "lat": 30.0515287,
+                    "lng": 31.26201309999999
+                  }
+                },
+                {
+                  "name": "Mosque of Sultan al-Muayyad Shaykh",
+                  "types": [
+                    "mosque",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1250,
+                  "vicinity": "27V4+8XQ, Al Shrakia, Al-Darb Al-Ahmar",
+                  "place_id": "ChIJ_er9UqFAWBQRmgGJFKzMGDc",
+                  "location": {
+                    "lat": 30.0433419,
+                    "lng": 31.2574728
+                  }
+                },
+                {
+                  "name": "مسجد سيدى حسن التسترى",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 7,
+                  "vicinity": "27X3+9PF, Port Said, Ghayt Al Adah, Abdeen",
+                  "place_id": "ChIJqfdpZKJAWBQRCo9SnyKxI5w",
+                  "location": {
+                    "lat": 30.04843699999999,
+                    "lng": 31.2542935
+                  }
+                },
+                {
+                  "name": "Al-Hakim Mosque",
+                  "types": [
+                    "mosque",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 11414,
+                  "vicinity": "154 Al Moez Ldin Allah Al Fatmi, El-Gamaleya, El Gamaliya",
+                  "place_id": "ChIJWWupjmI_WBQR_PUFRzr-pCs",
+                  "location": {
+                    "lat": 30.054539,
+                    "lng": 31.2637797
+                  }
+                },
+                {
+                  "name": "Al-Shaarany Mosque",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 870,
+                  "vicinity": "بورسعيد، باب الشعرية، ميدان باب الشعرية،, غيط العدة،, Bab El Sharia",
+                  "place_id": "ChIJU8Y9EJxAWBQRnjrMpG2ToSE",
+                  "location": {
+                    "lat": 30.0543288,
+                    "lng": 31.25764250000001
+                  }
+                },
+                {
+                  "name": "Maimonides Synagogue",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 62,
+                  "vicinity": "10 Darb Kormoz, El-Gamaleya, El Gamaliya",
+                  "place_id": "ChIJTYAQIJ5AWBQRulmfZ9T9Phs",
+                  "location": {
+                    "lat": 30.0506644,
+                    "lng": 31.2581996
+                  }
+                },
+                {
+                  "name": "The Ashkenazim synagogue",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "5 Kamal Hussein, Ghayt Al Adah, Abdeen",
+                  "place_id": "ChIJr6sTlD9BWBQRDpHoCSHFuJo",
+                  "location": {
+                    "lat": 30.0509889,
+                    "lng": 31.25377129999999
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Sunny Land Papyrus Gallery",
+                  "types": [
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 27,
+                  "vicinity": "68, El Sekka El Guedida, Khan Al Khalili",
+                  "place_id": "ChIJ01sriJ9AWBQRYgV37VCfnYU",
+                  "location": {
+                    "lat": 30.0473337,
+                    "lng": 31.261482
+                  }
+                },
+                {
+                  "name": "The pharonic",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 5,
+                  "vicinity": "27X6+6VP, Khan Al Khalili",
+                  "place_id": "ChIJa_k7GC1BWBQRSOWdE-X1oik",
+                  "location": {
+                    "lat": 30.0480937,
+                    "lng": 31.2621936
+                  }
+                },
+                {
+                  "name": "بيت الفن -شارع المعز",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 100,
+                  "vicinity": "183 Al Moez Ldin Allah Al Fatmi, El-Gamaleya, El Gamaliya",
+                  "place_id": "ChIJM8IrdmI_WBQRj2sT9nJXWLw",
+                  "location": {
+                    "lat": 30.0540086,
+                    "lng": 31.2626821
+                  }
+                },
+                {
+                  "name": "جاليري أولاد عبد الله - Abdallah Sons Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "El Sadat St, Darb Elbarabra, Attaba",
+                  "place_id": "ChIJuRtK1xVBWBQRot8_NfNpMQE",
+                  "location": {
+                    "lat": 30.05088890000001,
+                    "lng": 31.2547324
+                  }
+                },
+                {
+                  "name": "El Hoda Showroom For Chandeliers",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "18 متفرع من ش درب البرابرة, الموسكى, القاهرة",
+                  "place_id": "ChIJnctbZ5hAWBQR1gnGjc8x03Y",
+                  "location": {
+                    "lat": 30.0506976,
+                    "lng": 31.253638
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Cairo",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Cairo",
+                  "place_id": "ChIJ674hC6Y_WBQRujtC6Jay33k",
+                  "location": {
+                    "lat": 30.0444196,
+                    "lng": 31.2357116
+                  }
+                },
+                {
+                  "name": "Arabian Nights Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 546,
+                  "vicinity": "10 Al Aded",
+                  "place_id": "ChIJQZffF2E_WBQRjRTunkHOQLs",
+                  "location": {
+                    "lat": 30.0485215,
+                    "lng": 31.2675688
+                  }
+                },
+                {
+                  "name": "latif hosny mahba factory",
+                  "types": [
+                    "jewelry_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 33,
+                  "vicinity": "14 El Maqasif St, El-Gamaleya, El Gamaliya",
+                  "place_id": "ChIJ3w0Enp9AWBQRL3w4YX1N4Gs",
+                  "location": {
+                    "lat": 30.0490857,
+                    "lng": 31.2597672
+                  }
+                },
+                {
+                  "name": "Tawfiq Hussein",
+                  "types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "93 El Moez Ledin Allah El Fatemy St., El-Gamaleya, El Gamaliya",
+                  "place_id": "ChIJbyYGPJ5AWBQR4llVYM4XifM",
+                  "location": {
+                    "lat": 30.0511242,
+                    "lng": 31.2640009
+                  }
+                },
+                {
+                  "name": "Super Plast Co",
+                  "types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 5,
+                  "vicinity": "501,503 شارع بورسعيد",
+                  "place_id": "ChIJ7cZOrJ5AWBQRtanTAMSAULU",
+                  "location": {
+                    "lat": 30.0532343,
+                    "lng": 31.257156
+                  }
+                }
+              ]
+            },
+            "total_places_found": 42,
+            "photo_timestamp": "2025:02:16 20:21:18",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.6584551334381104
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/147.jpg"
+    },
+    {
+      "image_filename": "147.jpg",
+      "timestamp": "2026-01-28T02:32:31.371715",
+      "processing_time_seconds": 67.630024,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Traditional market or bazaar",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of market stalls with a variety of goods and the architectural style suggest a traditional bazaar. The colorful awnings and nighttime setting are characteristic of such markets.",
+            "detailed_description": "The image depicts a narrow alleyway lined with market stalls, typical of a traditional bazaar. The stalls are filled with various goods, including textiles, jewelry, and other crafts. The setting is vibrant, with colorful awnings and illuminated displays. The architecture suggests a historic or traditional style, possibly in a Middle Eastern or Mediterranean region. The scene is bustling with activity, indicating a lively shopping area.",
+            "identification": {
+              "primary": [
+                "Traditional market or bazaar"
+              ],
+              "location": null,
+              "confidence": 0.8
+            },
+            "artifacts": [
+              {
+                "name": "Market stalls",
+                "type": "other",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "market",
+              "bazaar",
+              "night",
+              "traditional",
+              "shopping"
+            ],
+            "location": null,
+            "type": "viewpoint",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Middle Eastern bazaar",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The style and goods are typical of Middle Eastern markets."
+              },
+              {
+                "guess": "Mediterranean market",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The architectural elements and vibrant colors are common in Mediterranean regions."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Traditional market or bazaar\"],\n        \"location\": null,\n        \"confidence\": 0.8\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Market stalls\",\n            \"type\": \"other\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"market\", \"bazaar\", \"night\", \"traditional\", \"shopping\"],\n    \"description\": \"The image depicts a narrow alleyway lined with market stalls, typical of a traditional bazaar. The stalls are filled with various goods, including textiles, jewelry, and other crafts. The setting is vibrant, with colorful awnings and illuminated displays. The architecture suggests a historic or traditional style, possibly in a Middle Eastern or Mediterranean region. The scene is bustling with activity, indicating a lively shopping area.\",\n    \"reasoning\": \"The presence of market stalls with a variety of goods and the architectural style suggest a traditional bazaar. The colorful awnings and nighttime setting are characteristic of such markets.\",\n    \"type\": \"viewpoint\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Middle Eastern bazaar\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The style and goods are typical of Middle Eastern markets.\"\n        },\n        {\n            \"guess\": \"Mediterranean market\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The architectural elements and vibrant colors are common in Mediterranean regions.\"\n        }\n    ]\n}",
+            "processing_time_seconds": 26.552525758743286
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Historic market alley",
+          "confidence": 0.6,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches a typical historic market alley, often found in culturally rich urban areas. The presence of crafts and souvenirs suggests a tourist destination. Search results did not provide a specific name or location, but the architectural style and market features are consistent with traditional urban environments.",
+            "identification": {
+              "primary": [
+                "Historic market alley"
+              ],
+              "location": null,
+              "confidence": 0.65
+            },
+            "artifacts": [
+              {
+                "name": "Market stalls with hanging beads and textiles",
+                "type": "market",
+                "confidence": 0.75
+              },
+              {
+                "name": "Stone facades",
+                "type": "building",
+                "confidence": 0.7
+              },
+              {
+                "name": "Striped awnings",
+                "type": "architectural_feature",
+                "confidence": 0.7
+              }
+            ],
+            "tags": [
+              "traditional_urban",
+              "market",
+              "stone_facades",
+              "striped_awnings",
+              "tourist_destination"
+            ],
+            "sources_used": [
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "*Source*: ([en.wikipedia.org]())",
+              "*Source*: ([en.wikipedia.org]())",
+              "*Source*: ([en.wikipedia.org]())",
+              "*Source*: ([en.wikipedia.org]())",
+              "*Source*: ([en.wikipedia.org]())"
+            ],
+            "type": "market",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Market alley in Istanbul, Turkey",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "Istanbul is known for its historic markets with similar architectural features and vibrant stalls."
+              },
+              {
+                "guess": "Market alley in Marrakech, Morocco",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.55,
+                "reasoning": "Marrakech has famous markets with colorful goods and traditional architecture."
+              },
+              {
+                "guess": "Market alley in Cairo, Egypt",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.5,
+                "reasoning": "Cairo's markets often feature stone facades and vibrant stalls, fitting the description."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.65,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a bustling market alley, likely in a historic or culturally rich area. The alley is narrow and lined with various shops displaying an array of colorful goods. On the left side, there are stalls filled with hanging beads, textiles, and other decorative items, suggesting a focus on crafts or souvenirs. The shops are illuminated by bright lights, enhancing the vibrant colors of the merchandise. Above the stalls, striped awnings in red and brown provide shelter and add to the tradi",
+            "description": "The image depicts a bustling market alley, likely in a historic or culturally rich area. The alley is narrow and lined with various shops displaying an array of colorful goods. On the left side, there are stalls filled with hanging beads, textiles, and other decorative items, suggesting a focus on crafts or souvenirs. The shops are illuminated by bright lights, enhancing the vibrant colors of the merchandise. Above the stalls, striped awnings in red and brown provide shelter and add to the tradi",
+            "architectural_style": "Traditional urban",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 41.0740020275116
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Person",
+          "confidence": 0.8910805583000183,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "object",
+            "all_candidates": [
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.8910805583000183
+              },
+              {
+                "source": "object",
+                "name": "Hat",
+                "score": 0.7807850241661072
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.7446773648262024
+              }
+            ],
+            "web_entities": [],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.8910805583000183
+              },
+              {
+                "name": "Hat",
+                "score": 0.7807850241661072
+              },
+              {
+                "name": "Person",
+                "score": 0.7446773648262024
+              },
+              {
+                "name": "Person",
+                "score": 0.7337822914123535
+              },
+              {
+                "name": "Pants",
+                "score": 0.7313430905342102
+              }
+            ],
+            "labels": [
+              {
+                "name": "Retail",
+                "score": 0.5464386343955994
+              },
+              {
+                "name": "Customer",
+                "score": 0.5406610369682312
+              }
+            ],
+            "processing_time_seconds": 21.27376389503479
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/147.jpg"
+    }
+  ]
+}

@@ -1,0 +1,1064 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "107.heic",
+      "timestamp": "2026-01-28T00:59:17.243674",
+      "processing_time_seconds": 65.711798,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 11.99893611111111,
+        "gps_longitude": 120.20472777777778,
+        "location": {
+          "formatted_address": "X6X3+GX5, Burgos St, Coron Town Proper, Coron, Palawan, Philippines",
+          "city": "Coron",
+          "county": "Palawan",
+          "country": "Philippines"
+        },
+        "datetime_original": "2024:11:21 12:19:02",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Street scene in Coron, Palawan, Coron, Palawan, Philippines",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Coron, Palawan, and the visible signs confirm this setting. The presence of local transportation and commercial signs are typical of urban areas in the Philippines.",
+            "detailed_description": "The image depicts a lively street scene in Coron, Palawan, Philippines. The street is lined with trees providing shade, and various commercial establishments are visible, including signs for the Philippine National Bank and Aqua Hostel. The scene includes local vehicles such as tricycles, which are common modes of transportation in the area. The architecture is typical of small-town commercial areas in the Philippines, with modest buildings and vibrant colors.",
+            "identification": {
+              "primary": [
+                "Street scene in Coron, Palawan"
+              ],
+              "location": "Coron, Palawan, Philippines",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Philippine National Bank sign",
+                "type": "landmark",
+                "confidence": 0.9
+              },
+              {
+                "name": "Aqua Hostel sign",
+                "type": "landmark",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "urban",
+              "street",
+              "Philippines",
+              "commercial_area"
+            ],
+            "location": "Coron, Palawan, Philippines",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Street scene in Coron, Palawan\"],\n        \"location\": \"Coron, Palawan, Philippines\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Philippine National Bank sign\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Aqua Hostel sign\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"urban\", \"street\", \"Philippines\", \"commercial_area\"],\n    \"description\": \"The image depicts a lively street scene in Coron, Palawan, Philippines. The street is lined with trees providing shade, and various commercial establishments are visible, including signs for the Philippine National Bank and Aqua Hostel. The scene includes local vehicles such as tricycles, which are common modes of transportation in the area. The architecture is typical of small-town commercial areas in the Philippines, with modest buildings and vibrant colors.\",\n    \"reasoning\": \"The location metadata indicates Coron, Palawan, and the visible signs confirm this setting. The presence of local transportation and commercial signs are typical of urban areas in the Philippines.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 11.99893611111111,
+              "longitude": 120.20472777777778
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "X6X3+GX5, Burgos St, Coron Town Proper, Coron, Palawan, Philippines",
+              "city": "Coron",
+              "county": "Palawan",
+              "country": "Philippines"
+            },
+            "photo_timestamp": "2024:11:21 12:19:02",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 16.59917902946472
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Street scene in Coron, Palawan, Philippines, Coron, Palawan, Philippines",
+          "confidence": 0.75,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches a typical street scene in Coron, Palawan, with local transportation and modest buildings. The presence of the Aqua Hostel sign and specific vehicles like tricycles supports the identification. Search results did not provide a more specific landmark or location, but the description aligns well with the known characteristics of Coron.",
+            "identification": {
+              "primary": [
+                "Street scene in Coron, Palawan, Philippines"
+              ],
+              "location": "Coron, Palawan, Philippines",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Aqua Hostel sign",
+                "type": "building",
+                "confidence": 0.9
+              },
+              {
+                "name": "Pink tricycle",
+                "type": "vehicle",
+                "confidence": 0.85
+              },
+              {
+                "name": "Blue vehicle with water containers",
+                "type": "vehicle",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "contemporary",
+              "utilitarian",
+              "tropical",
+              "transportation",
+              "local_life"
+            ],
+            "sources_used": [
+              "belaroundt",
+              "cooltravelvibes.com"
+            ],
+            "all_candidates": [
+              "A bustling hub where locals engage in daily activities, offering a variety of goods from fresh produce to local snacks. It's an excellent place to immerse yourself in the local lifestyle. ([belaroundt",
+              "A vibrant food hall on Real Street offering a diverse range of local, artisanal, and multicultural cuisines. Try the Kinilaw (cubed raw fish tossed in vinegar with calamansi juice). Enjoy live bands i",
+              "Known for its unique, local, and artistic design, Sigbin Bar features walls adorned with local artworks crafted by Coron’s talented artists, creating an entertaining atmosphere. ([cooltravelvibes.com]",
+              "A popular café located in Barangay Poblacion 2, Coron, Palawan, known for its artisan yogurt ice cream, fruit sherbets, and handcrafted drunken sherbet cocktails. The café's unique and appealing inter",
+              "A natural saltwater pool heated by underground volcanoes, located about 30 minutes from Coron Town. The springs are built into circular concrete pools, surrounded by wooden walkways and natural mangro"
+            ],
+            "type": "viewpoint",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Real Street in Coron, Palawan",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "Real Street is known for its vibrant local scene, which could match the description of a bustling street with local transportation and modest buildings."
+              },
+              {
+                "guess": "Barangay Poblacion 2, Coron, Palawan",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "Barangay Poblacion 2 is a known area in Coron that could fit the description of a lively street scene with local life and transportation."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a bustling street scene in Coron, Palawan, Philippines. The street is lined with lush, green trees that provide ample shade, creating a dappled light effect on the pavement. The trees are large and mature, with thick trunks and sprawling branches, contributing to the tropical atmosphere. Along the street, there are various small buildings, including a mix of residential and commercial structures. The buildings are modest, with simple facades, and some have balconies or signage.",
+            "description": "The image depicts a bustling street scene in Coron, Palawan, Philippines. The street is lined with lush, green trees that provide ample shade, creating a dappled light effect on the pavement. The trees are large and mature, with thick trunks and sprawling branches, contributing to the tropical atmosphere. Along the street, there are various small buildings, including a mix of residential and commercial structures. The buildings are modest, with simple facades, and some have balconies or signage.",
+            "architectural_style": "Contemporary, utilitarian",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 11.99893611111111,
+              "longitude": 120.20472777777778
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "X6X3+GX5, Burgos St, Coron Town Proper, Coron, Palawan, Philippines",
+              "city": "Coron",
+              "county": "Palawan",
+              "country": "Philippines"
+            },
+            "photo_timestamp": "2024:11:21 12:19:02",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 48.22887587547302
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Road surface",
+          "confidence": 0.9648833870887756,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Road surface",
+                "score": 0.9648833870887756
+              },
+              {
+                "source": "label",
+                "name": "Street",
+                "score": 0.947769045829773
+              },
+              {
+                "source": "label",
+                "name": "Road",
+                "score": 0.9464479684829712
+              },
+              {
+                "source": "label",
+                "name": "Town",
+                "score": 0.9397593140602112
+              },
+              {
+                "source": "label",
+                "name": "Public space",
+                "score": 0.9301136136054993
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Tree",
+                "score": 0.35313495993614197
+              },
+              {
+                "name": "Traffic",
+                "score": 0.32027360796928406
+              },
+              {
+                "name": "Road",
+                "score": 0.2808000147342682
+              },
+              {
+                "name": "M-tree",
+                "score": 0.26249998807907104
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.804047167301178
+              },
+              {
+                "name": "Clothing",
+                "score": 0.783146858215332
+              },
+              {
+                "name": "Person",
+                "score": 0.7200194597244263
+              },
+              {
+                "name": "Person",
+                "score": 0.7109922766685486
+              },
+              {
+                "name": "Top",
+                "score": 0.7097886800765991
+              }
+            ],
+            "labels": [
+              {
+                "name": "Road surface",
+                "score": 0.9648833870887756
+              },
+              {
+                "name": "Street",
+                "score": 0.947769045829773
+              },
+              {
+                "name": "Road",
+                "score": 0.9464479684829712
+              },
+              {
+                "name": "Town",
+                "score": 0.9397593140602112
+              },
+              {
+                "name": "Public space",
+                "score": 0.9301136136054993
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 11.99893611111111,
+              "longitude": 120.20472777777778
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "X6X3+GX5, Burgos St, Coron Town Proper, Coron, Palawan, Philippines",
+              "city": "Coron",
+              "county": "Palawan",
+              "country": "Philippines"
+            },
+            "photo_timestamp": "2024:11:21 12:19:02",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 20.776721954345703
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Coron, Palawan, Philippines",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Coron, Palawan, Philippines",
+            "coordinates": {
+              "latitude": 11.99893611111111,
+              "longitude": 120.20472777777778
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Luis Bay Travellers Lodge",
+                  "types": [
+                    "lodging",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 220,
+                  "vicinity": "X6W3+HFW, Caltex Road, Barangay 3, Coron",
+                  "place_id": "ChIJAd6u39IdujMR8VqOWBbsUaU",
+                  "location": {
+                    "lat": 11.9964335,
+                    "lng": 120.2037197
+                  }
+                },
+                {
+                  "name": "Neptune Dive Center",
+                  "types": [
+                    "tourist_attraction",
+                    "travel_agency",
+                    "school",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 127,
+                  "vicinity": "National Highway, Coron",
+                  "place_id": "ChIJSUvTpdQdujMRZHkq9n-U2nM",
+                  "location": {
+                    "lat": 11.999012,
+                    "lng": 120.204235
+                  }
+                },
+                {
+                  "name": "Lucky Day Tours",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "X6X3+5JR, San Agustin st, Poblacion, Coron",
+                  "place_id": "ChIJW5n3CAAdujMRq4XWcjgQ92k",
+                  "location": {
+                    "lat": 11.9979772,
+                    "lng": 120.204009
+                  }
+                },
+                {
+                  "name": "Cinco Niños Leisure Corp",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 29,
+                  "vicinity": "Barangay Poblacion 6 National Highway, Coron",
+                  "place_id": "ChIJuxq4VA31uTMRByXHChH8gdk",
+                  "location": {
+                    "lat": 11.9978265,
+                    "lng": 120.2042707
+                  }
+                },
+                {
+                  "name": "Explore Coron",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "X6X4+J2W, Coron - Busuanga Road, Coron Town Proper, Coron",
+                  "place_id": "ChIJe4rXCQAdujMRsj1OO847IpY",
+                  "location": {
+                    "lat": 11.999222,
+                    "lng": 120.2060491
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Demmy's Pokemon Plush Collection",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Bancuang Taas, Coron",
+                  "place_id": "ChIJkTFTw80dujMRtjwiuzq-bZs",
+                  "location": {
+                    "lat": 12.0008875,
+                    "lng": 120.2014108
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "ワニ食べれるKawayanan Grilling Station",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.6,
+                  "user_ratings_total": 604,
+                  "vicinity": "Real Street, Proper, Coron",
+                  "place_id": "ChIJ3fX8RdMdujMR4u0m29Ht4S4",
+                  "location": {
+                    "lat": 11.9982773,
+                    "lng": 120.2034399
+                  }
+                },
+                {
+                  "name": "One Averee Bay Hotel",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.6,
+                  "user_ratings_total": 168,
+                  "vicinity": "Don Pedro st, Poblacion 3, Coron, Palawan, 5316, Coron",
+                  "place_id": "ChIJOxUubdMdujMRRkdR5izbrWs",
+                  "location": {
+                    "lat": 11.997451,
+                    "lng": 120.203086
+                  }
+                },
+                {
+                  "name": "Amphibi-ko Resort and Dive Center",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 123,
+                  "vicinity": "Coron - Busuanga Road, Coron Town Proper, Coron",
+                  "place_id": "ChIJ3y8sBtMdujMRRunBDRcdqho",
+                  "location": {
+                    "lat": 11.9994377,
+                    "lng": 120.2016614
+                  }
+                },
+                {
+                  "name": "PACIFICO CORON BAR AND RESTAURANT",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 957,
+                  "vicinity": "National highway, cor Burgos Street, brgy. 2, Coron",
+                  "place_id": "ChIJt81f0XIdujMR-y3rfBInxo4",
+                  "location": {
+                    "lat": 11.9989546,
+                    "lng": 120.2046479
+                  }
+                },
+                {
+                  "name": "Le Voyage",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 473,
+                  "vicinity": "Infront of LGU, Burgos Street, Coron",
+                  "place_id": "ChIJr2FQcjEfujMR0kl1kevyfEM",
+                  "location": {
+                    "lat": 11.9988623,
+                    "lng": 120.2046389
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Coron Plaza Fountain",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 6,
+                  "vicinity": "X6X3+349, Coron Town Proper, Coron",
+                  "place_id": "ChIJRXRSWngdujMRuWJtpOEHQKk",
+                  "location": {
+                    "lat": 11.9976709,
+                    "lng": 120.2028661
+                  }
+                },
+                {
+                  "name": "Lualhati Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 324,
+                  "vicinity": "X6W2+9PC, Coron Town Proper, Coron",
+                  "place_id": "ChIJ_____ywcujMRoHX8JXI8hsc",
+                  "location": {
+                    "lat": 11.995936,
+                    "lng": 120.2017667
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "The Church of Jesus Christ of Latter-day Saints",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "National Highway Cnr, Burgos Street, Brgy. Poblacion 4, Coron",
+                  "place_id": "ChIJsRy05fsdujMRCN1i_UPII4A",
+                  "location": {
+                    "lat": 11.9991531,
+                    "lng": 120.2048999
+                  }
+                },
+                {
+                  "name": "Baptist Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "X6X3+JH6, San Augustin Street, Coron Town Proper, Coron",
+                  "place_id": "ChIJAQCwo9QdujMRToP9HfaArp4",
+                  "location": {
+                    "lat": 11.9990386,
+                    "lng": 120.2038922
+                  }
+                },
+                {
+                  "name": "San Agustin Parish Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 101,
+                  "vicinity": "San Agustin Parish Church, Roxas Street, Coron Town Proper, Coron",
+                  "place_id": "ChIJraEtTyscujMRnOR1LFIMQd8",
+                  "location": {
+                    "lat": 11.9992833,
+                    "lng": 120.2056583
+                  }
+                },
+                {
+                  "name": "pentecostal missionary Church of Christ 4th watch Coron Local",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "X6X2+WX6, Nueva Street, Coron Town Proper, Coron",
+                  "place_id": "ChIJM62BBYwdujMRUHViar7rnaA",
+                  "location": {
+                    "lat": 11.9997871,
+                    "lng": 120.2023926
+                  }
+                },
+                {
+                  "name": "JGSCC SINAMAY",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "X6X5+PQ7, Coron - Busuanga Road, Coron Town Proper, Coron",
+                  "place_id": "ChIJFUh_YbEdujMRn3v9BBHJHXY",
+                  "location": {
+                    "lat": 11.9992988,
+                    "lng": 120.2094271
+                  }
+                },
+                {
+                  "name": "Masjid Coron",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 4,
+                  "vicinity": "X6W3+X4J, Proper, Coron",
+                  "place_id": "ChIJcfvDNgAdujMR_4YTMXxfzpM",
+                  "location": {
+                    "lat": 11.9970891,
+                    "lng": 120.2030941
+                  }
+                },
+                {
+                  "name": "Masjidul Asgar (Small Mosque)",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "LAMOD STREET, Coron - Busuanga Road, Coron",
+                  "place_id": "ChIJzwMAzzMdujMR-jifVXhOJoQ",
+                  "location": {
+                    "lat": 12.0012461,
+                    "lng": 120.1988799
+                  }
+                },
+                {
+                  "name": "Masjid muzammil",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "2645+P4P, Coron",
+                  "place_id": "ChIJfeu1aQAfujMRym5LWxXGyXw",
+                  "location": {
+                    "lat": 12.0068324,
+                    "lng": 120.2078231
+                  }
+                },
+                {
+                  "name": "Barangay Buco-buco",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.5,
+                  "user_ratings_total": 2,
+                  "vicinity": "2645+P4Q, Coron",
+                  "place_id": "ChIJKSSOcW8fujMR8KsVmKlWK5w",
+                  "location": {
+                    "lat": 12.0068314,
+                    "lng": 120.2078557
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Coron",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Coron",
+                  "place_id": "ChIJddawJfIeujMRjpZeqLkahGg",
+                  "location": {
+                    "lat": 11.9989958,
+                    "lng": 120.2046888
+                  }
+                },
+                {
+                  "name": "Corto Del Mar Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 615,
+                  "vicinity": "Comiseria Street Barangay 1, Coron Town Proper, Palawan",
+                  "place_id": "ChIJITMNkCwcujMRPSjM422cjlw",
+                  "location": {
+                    "lat": 11.9972531,
+                    "lng": 120.2066838
+                  }
+                },
+                {
+                  "name": "Apartelle de Gabrielle",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 62,
+                  "vicinity": "National Highway, Barangay Poblacion 5, Coron, Palawan, Coron - Busuanga Road, Coron",
+                  "place_id": "ChIJ7YopkDEcujMRdQbKDdawljM",
+                  "location": {
+                    "lat": 12.0022848,
+                    "lng": 120.199506
+                  }
+                },
+                {
+                  "name": "Zuric Pension House",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 84,
+                  "vicinity": "X6X3+C4R, Coron - Busuanga Road, Coron Town Proper, Coron",
+                  "place_id": "ChIJA9H7fNMdujMREO_BuKkK9zg",
+                  "location": {
+                    "lat": 11.9986111,
+                    "lng": 120.2027778
+                  }
+                },
+                {
+                  "name": "Kalachuchi Hostel for Divers",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.6,
+                  "user_ratings_total": 63,
+                  "vicinity": "X6X5+FM6, Coron Town Proper, Coron",
+                  "place_id": "ChIJ8Z0NkiscujMRUlFLLzAv5Xc",
+                  "location": {
+                    "lat": 11.9986501,
+                    "lng": 120.2091562
+                  }
+                }
+              ]
+            },
+            "total_places_found": 27,
+            "photo_timestamp": "2024:11:21 12:19:02",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.4507107734680176
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/107.heic"
+    },
+    {
+      "image_filename": "107.heic",
+      "timestamp": "2026-01-28T01:00:22.988720",
+      "processing_time_seconds": 62.502628,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Street scene with large trees and local businesses, Philippines",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of the Philippine National Bank sign and the style of transportation indicate a location in the Philippines. The large trees and local businesses are typical of urban areas in the country.",
+            "detailed_description": "The image depicts a lively street scene in the Philippines, characterized by large, sprawling trees providing shade over the road. The street is lined with local businesses, including a visible sign for the Philippine National Bank and Aqua Hostel. The presence of tricycles and motorcycles suggests a typical urban setting in the region.",
+            "identification": {
+              "primary": [
+                "Street scene with large trees and local businesses"
+              ],
+              "location": "Philippines",
+              "confidence": 0.8
+            },
+            "artifacts": [
+              {
+                "name": "Philippine National Bank sign",
+                "type": "landmark",
+                "confidence": 0.9
+              },
+              {
+                "name": "Aqua Hostel sign",
+                "type": "landmark",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "urban",
+              "street",
+              "trees",
+              "local_business",
+              "Philippines"
+            ],
+            "location": "Philippines",
+            "type": "urban_street",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Street in a small city or town in the Philippines",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "The style of transportation and signage are common in smaller cities or towns in the Philippines."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Street scene with large trees and local businesses\"],\n        \"location\": \"Philippines\",\n        \"confidence\": 0.8\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Philippine National Bank sign\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Aqua Hostel sign\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"urban\", \"street\", \"trees\", \"local_business\", \"Philippines\"],\n    \"description\": \"The image depicts a lively street scene in the Philippines, characterized by large, sprawling trees providing shade over the road. The street is lined with local businesses, including a visible sign for the Philippine National Bank and Aqua Hostel. The presence of tricycles and motorcycles suggests a typical urban setting in the region.\",\n    \"reasoning\": \"The presence of the Philippine National Bank sign and the style of transportation indicate a location in the Philippines. The large trees and local businesses are typical of urban areas in the country.\",\n    \"type\": \"urban_street\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Street in a small city or town in the Philippines\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The style of transportation and signage are common in smaller cities or towns in the Philippines.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 16.44511890411377
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Aqua Hostel street scene, Unknown",
+          "confidence": 0.55,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The search results suggest a tropical urban street scene with features matching the description, such as the Aqua Hostel sign and colorful tricycles. The presence of modest concrete buildings and vibrant foliage aligns with the description, but the exact location remains unidentified.",
+            "identification": {
+              "primary": [
+                "Aqua Hostel street scene"
+              ],
+              "location": "Unknown",
+              "confidence": 0.75
+            },
+            "artifacts": [
+              {
+                "name": "Aqua Hostel sign",
+                "type": "landmark",
+                "confidence": 0.85
+              },
+              {
+                "name": "Colorful tricycles",
+                "type": "other",
+                "confidence": 0.8
+              },
+              {
+                "name": "Laundry service sign",
+                "type": "other",
+                "confidence": 0.75
+              }
+            ],
+            "tags": [
+              "contemporary functional",
+              "urban",
+              "tropical",
+              "street scene",
+              "transportation"
+            ],
+            "sources_used": [
+              "archup.net",
+              "architecture.live",
+              "nl.pinterest.com"
+            ],
+            "all_candidates": [
+              "*URL*: ([archup.net]())",
+              "*URL*: ([architecture.live]())",
+              "*URL*: ([nl.pinterest.com]())",
+              "*URL*: ([re-thinkingthefuture.com]())",
+              "*URL*: ([digitallibrary.un.org]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Street scene in Southeast Asia",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "The presence of tricycles and tropical foliage suggests a Southeast Asian location, but the exact city or country is not confirmed."
+              },
+              {
+                "guess": "Urban street in the Philippines",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.65,
+                "reasoning": "Tricycles are common in the Philippines, and the tropical setting supports this guess."
+              },
+              {
+                "guess": "Tropical urban area",
+                "specificity_level": "general",
+                "confidence": 0.8,
+                "reasoning": "The description matches a general tropical urban environment with functional architecture and vibrant street life."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.75,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a lively street scene in a tropical urban area. The street is lined with large, sprawling trees whose branches extend over the road, providing ample shade. The trees have dense, green foliage, creating a vibrant canopy that contrasts with the urban setting. The buildings along the street are modest and functional, with visible balconies and external staircases. They appear to be constructed with concrete and painted in neutral colors, such as white and beige. Several vehicles a",
+            "description": "The image depicts a lively street scene in a tropical urban area. The street is lined with large, sprawling trees whose branches extend over the road, providing ample shade. The trees have dense, green foliage, creating a vibrant canopy that contrasts with the urban setting. The buildings along the street are modest and functional, with visible balconies and external staircases. They appear to be constructed with concrete and painted in neutral colors, such as white and beige. Several vehicles a",
+            "architectural_style": "Contemporary functional",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 45.870824098587036
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Road surface",
+          "confidence": 0.9648833870887756,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Road surface",
+                "score": 0.9648833870887756
+              },
+              {
+                "source": "label",
+                "name": "Street",
+                "score": 0.947769045829773
+              },
+              {
+                "source": "label",
+                "name": "Road",
+                "score": 0.9464479684829712
+              },
+              {
+                "source": "label",
+                "name": "Town",
+                "score": 0.9397593140602112
+              },
+              {
+                "source": "label",
+                "name": "Public space",
+                "score": 0.9301136136054993
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Tree",
+                "score": 0.35313495993614197
+              },
+              {
+                "name": "Traffic",
+                "score": 0.32027360796928406
+              },
+              {
+                "name": "Road",
+                "score": 0.2808000147342682
+              },
+              {
+                "name": "M-tree",
+                "score": 0.26249998807907104
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.804047167301178
+              },
+              {
+                "name": "Clothing",
+                "score": 0.783146858215332
+              },
+              {
+                "name": "Person",
+                "score": 0.7200194597244263
+              },
+              {
+                "name": "Person",
+                "score": 0.7109922766685486
+              },
+              {
+                "name": "Top",
+                "score": 0.7097886800765991
+              }
+            ],
+            "labels": [
+              {
+                "name": "Road surface",
+                "score": 0.9648833870887756
+              },
+              {
+                "name": "Street",
+                "score": 0.947769045829773
+              },
+              {
+                "name": "Road",
+                "score": 0.9464479684829712
+              },
+              {
+                "name": "Town",
+                "score": 0.9397593140602112
+              },
+              {
+                "name": "Public space",
+                "score": 0.9301136136054993
+              }
+            ],
+            "processing_time_seconds": 19.69847011566162
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/107.heic"
+    }
+  ]
+}

@@ -1,0 +1,1086 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "195.jpg",
+      "timestamp": "2026-01-28T04:23:54.842285",
+      "processing_time_seconds": 60.368422,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 47.797402777777776,
+        "gps_longitude": 13.046344444444445,
+        "location": {
+          "formatted_address": "Sankt-Peter-Bezirk 1, 5020 Salzburg, Austria",
+          "city": "Salzburg",
+          "county": "Salzburg",
+          "country": "Austria"
+        },
+        "datetime_original": "2025:11:17 14:14:09",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Hohensalzburg Fortress, Sphaera sculpture, Salzburg, Austria",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The fortress is a well-known landmark in Salzburg, easily recognizable by its distinctive medieval architecture. The 'Sphaera' sculpture is a prominent contemporary artwork located in the same area, making it identifiable in the context of Salzburg.",
+            "detailed_description": "The image shows the Hohensalzburg Fortress, a large medieval fortress located on a hilltop in Salzburg, Austria. It features stone construction with towers and battlements typical of medieval architecture. In the foreground, there is the 'Sphaera' sculpture, a contemporary artwork by Stephan Balkenhol, consisting of a large golden sphere with a human figure standing on top. The sculpture is situated in Kapitelplatz, a square in Salzburg.",
+            "identification": {
+              "primary": [
+                "Hohensalzburg Fortress",
+                "Sphaera sculpture"
+              ],
+              "location": "Salzburg, Austria",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Hohensalzburg Fortress",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Sphaera sculpture",
+                "type": "artwork",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "medieval",
+              "fortress",
+              "contemporary_art",
+              "sculpture",
+              "Salzburg"
+            ],
+            "location": "Salzburg, Austria",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Hohensalzburg Fortress\", \"Sphaera sculpture\"],\n        \"location\": \"Salzburg, Austria\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Hohensalzburg Fortress\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Sphaera sculpture\",\n            \"type\": \"artwork\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"medieval\", \"fortress\", \"contemporary_art\", \"sculpture\", \"Salzburg\"],\n    \"description\": \"The image shows the Hohensalzburg Fortress, a large medieval fortress located on a hilltop in Salzburg, Austria. It features stone construction with towers and battlements typical of medieval architecture. In the foreground, there is the 'Sphaera' sculpture, a contemporary artwork by Stephan Balkenhol, consisting of a large golden sphere with a human figure standing on top. The sculpture is situated in Kapitelplatz, a square in Salzburg.\",\n    \"reasoning\": \"The fortress is a well-known landmark in Salzburg, easily recognizable by its distinctive medieval architecture. The 'Sphaera' sculpture is a prominent contemporary artwork located in the same area, making it identifiable in the context of Salzburg.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 47.797402777777776,
+              "longitude": 13.046344444444445
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Sankt-Peter-Bezirk 1, 5020 Salzburg, Austria",
+              "city": "Salzburg",
+              "county": "Salzburg",
+              "country": "Austria"
+            },
+            "photo_timestamp": "2025:11:17 14:14:09",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 12.43358302116394
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Sphaera, Hohensalzburg Fortress, Salzburg, Austria",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The search results clearly identify the sculpture as 'Sphaera' by Stephan Balkenhol, located in Salzburg, Austria. The description of the fortress matches the Hohensalzburg Fortress, known for its medieval architecture and prominent location in Salzburg. The search results confirm both the sculpture and the fortress, aligning with the provided location metadata.",
+            "identification": {
+              "primary": [
+                "Sphaera",
+                "Hohensalzburg Fortress"
+              ],
+              "location": "Salzburg, Austria",
+              "confidence": 1.0
+            },
+            "artifacts": [
+              {
+                "name": "Sphaera",
+                "type": "artwork",
+                "confidence": 1.0
+              },
+              {
+                "name": "Hohensalzburg Fortress",
+                "type": "fortress",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "modern_art",
+              "Romanesque",
+              "Gothic",
+              "medieval_architecture",
+              "Salzburg"
+            ],
+            "sources_used": [
+              "web",
+              "salzburg.info"
+            ],
+            "all_candidates": [
+              "The sculpture you're referring to is \"Sphaera,\" a modern artwork by German artist Stephan Balkenhol, located in Salzburg, Austria. Installed in 2007, \"Sphaera\" features a male figure standing atop a l",
+              "The sculpture stands approximately 9 meters tall, with the sphere itself measuring 5 meters in diameter. Constructed from glass-fiber reinforced plastic, the sphere weighs about two tons, while the br",
+              "\"Sphaera\" is situated in Kapitelplatz, a central square in Salzburg's old town, near the Salzburg Cathedral. Its modern design offers a unique juxtaposition to the surrounding historic architecture, i",
+              "For more information and images of \"Sphaera,\" you can visit the official Salzburg tourism website. ([salzburg.info]())"
+            ],
+            "type": "artwork",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 4,
+              "unique_titles": 4,
+              "avg_score": 0.85,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image prominently features a large, spherical sculpture made of a golden material, situated in an open plaza. The sphere is smooth and reflective, with a person standing atop it, adding a unique artistic element. The sculpture is supported by a simple, black metal framework. In the background, a historic fortress dominates the skyline, perched on a hill. This fortress is characterized by its robust stone construction, with multiple towers and battlements typical of medieval architecture. The",
+            "description": "The image prominently features a large, spherical sculpture made of a golden material, situated in an open plaza. The sphere is smooth and reflective, with a person standing atop it, adding a unique artistic element. The sculpture is supported by a simple, black metal framework. In the background, a historic fortress dominates the skyline, perched on a hill. This fortress is characterized by its robust stone construction, with multiple towers and battlements typical of medieval architecture. The",
+            "architectural_style": "Romanesque and Gothic",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 47.797402777777776,
+              "longitude": 13.046344444444445
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Sankt-Peter-Bezirk 1, 5020 Salzburg, Austria",
+              "city": "Salzburg",
+              "county": "Salzburg",
+              "country": "Austria"
+            },
+            "photo_timestamp": "2025:11:17 14:14:09",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 47.19248366355896
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Sphaera (47.7974, 13.0461)",
+          "confidence": 0.16797739267349243,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Sphaera",
+            "coordinates": {
+              "latitude": 47.79739610000001,
+              "longitude": 13.0460547
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 3024
+              },
+              {
+                "x": 0,
+                "y": 3024
+              }
+            ],
+            "context_labels": [
+              "Dome",
+              "Dome",
+              "Sphere",
+              "Finial",
+              "Cumulus"
+            ],
+            "context_objects": [
+              "Person"
+            ],
+            "web_entities": [
+              {
+                "name": "Tree",
+                "score": 0.30884820222854614
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Sphaera",
+                "score": 0.16797739267349243,
+                "location": {
+                  "lat": 47.79739610000001,
+                  "lng": 13.0460547
+                }
+              }
+            ],
+            "processing_time_seconds": 15.705343961715698
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Salzburg, Austria",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Salzburg, Austria",
+            "coordinates": {
+              "latitude": 47.797402777777776,
+              "longitude": 13.046344444444445
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Fortress Hohensalzburg",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 51537,
+                  "vicinity": "Mönchsberg 34, Salzburg",
+                  "place_id": "ChIJvQMhJ2CQdkcRa1Xs6dO-dys",
+                  "location": {
+                    "lat": 47.79494829999999,
+                    "lng": 13.0476583
+                  }
+                },
+                {
+                  "name": "Haus der Natur",
+                  "types": [
+                    "tourist_attraction",
+                    "zoo",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 13300,
+                  "vicinity": "Museumsplatz 5, Salzburg",
+                  "place_id": "ChIJdcwcsWWQdkcRRacRj7tCVGI",
+                  "location": {
+                    "lat": 47.8016443,
+                    "lng": 13.0392002
+                  }
+                },
+                {
+                  "name": "Mozart's Birthplace",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 26854,
+                  "vicinity": "Getreidegasse 9, Salzburg",
+                  "place_id": "ChIJiYA55GOQdkcRi7885u5bbJ4",
+                  "location": {
+                    "lat": 47.8000079,
+                    "lng": 13.0435589
+                  }
+                },
+                {
+                  "name": "Salzburg Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 12505,
+                  "vicinity": "Domplatz 1a, Salzburg",
+                  "place_id": "ChIJuYYBl2GQdkcRHSa2IHQNv0U",
+                  "location": {
+                    "lat": 47.79789460000001,
+                    "lng": 13.0466354
+                  }
+                },
+                {
+                  "name": "Mozart Residence",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 7772,
+                  "vicinity": "Makartplatz 8, Salzburg",
+                  "place_id": "ChIJHd0TY2OQdkcR59EiCmY5mTo",
+                  "location": {
+                    "lat": 47.8026282,
+                    "lng": 13.0438679
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Fortress Hohensalzburg",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 51537,
+                  "vicinity": "Mönchsberg 34, Salzburg",
+                  "place_id": "ChIJvQMhJ2CQdkcRa1Xs6dO-dys",
+                  "location": {
+                    "lat": 47.79494829999999,
+                    "lng": 13.0476583
+                  }
+                },
+                {
+                  "name": "Haus der Natur",
+                  "types": [
+                    "tourist_attraction",
+                    "zoo",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 13300,
+                  "vicinity": "Museumsplatz 5, Salzburg",
+                  "place_id": "ChIJdcwcsWWQdkcRRacRj7tCVGI",
+                  "location": {
+                    "lat": 47.8016443,
+                    "lng": 13.0392002
+                  }
+                },
+                {
+                  "name": "Mozart's Birthplace",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 26854,
+                  "vicinity": "Getreidegasse 9, Salzburg",
+                  "place_id": "ChIJiYA55GOQdkcRi7885u5bbJ4",
+                  "location": {
+                    "lat": 47.8000079,
+                    "lng": 13.0435589
+                  }
+                },
+                {
+                  "name": "Mozart Residence",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 7772,
+                  "vicinity": "Makartplatz 8, Salzburg",
+                  "place_id": "ChIJHd0TY2OQdkcR59EiCmY5mTo",
+                  "location": {
+                    "lat": 47.8026282,
+                    "lng": 13.0438679
+                  }
+                },
+                {
+                  "name": "Museum der Moderne",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1770,
+                  "vicinity": "Am Mönchsberg 32, Salzburg",
+                  "place_id": "ChIJSy24wWWQdkcR1cIBSqENQxg",
+                  "location": {
+                    "lat": 47.8009123,
+                    "lng": 13.0383679
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Gasthof Goldgasse",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1448,
+                  "vicinity": "Goldgasse 10, Salzburg",
+                  "place_id": "ChIJXTkrKmKQdkcR7hDF0nXbaXY",
+                  "location": {
+                    "lat": 47.7994026,
+                    "lng": 13.0459156
+                  }
+                },
+                {
+                  "name": "Stadtalm",
+                  "types": [
+                    "restaurant",
+                    "lodging",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1105,
+                  "vicinity": "Am Mönchsberg 19C, Salzburg",
+                  "place_id": "ChIJ7zZzgWaQdkcRqTaT3HS4tak",
+                  "location": {
+                    "lat": 47.7998495,
+                    "lng": 13.039244
+                  }
+                },
+                {
+                  "name": "Radisson Blu Hotel Altstadt, Salzburg",
+                  "types": [
+                    "bar",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 751,
+                  "vicinity": "Rudolfskai 28, Salzburg",
+                  "place_id": "ChIJiW-bPGKQdkcRZz-f6n75UZc",
+                  "location": {
+                    "lat": 47.7997516,
+                    "lng": 13.0469915
+                  }
+                },
+                {
+                  "name": "M32",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 1902,
+                  "vicinity": "Am Mönchsberg 32, Salzburg",
+                  "place_id": "ChIJSy24wWWQdkcR5MQ1vMpVomc",
+                  "location": {
+                    "lat": 47.8009301,
+                    "lng": 13.0385761
+                  }
+                },
+                {
+                  "name": "St. Peter Stiftskulinarium",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 3379,
+                  "vicinity": "Sankt-Peter-Bezirk 1/4, Salzburg",
+                  "place_id": "ChIJDRMIAWGQdkcRuJNeZ6h78Gs",
+                  "location": {
+                    "lat": 47.7970354,
+                    "lng": 13.0442094
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Volksgarten Salzburg",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1577,
+                  "vicinity": "Hundertwasser Allee, Salzburg",
+                  "place_id": "ChIJQ_vz3Y2QdkcR1_ibIhVxBiU",
+                  "location": {
+                    "lat": 47.7972589,
+                    "lng": 13.0596369
+                  }
+                },
+                {
+                  "name": "Aussichtspunkt",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Bucklreuthstraße 1, Salzburg",
+                  "place_id": "ChIJ5e1tguSRdkcRVsvZAyMPfEM",
+                  "location": {
+                    "lat": 47.797526,
+                    "lng": 13.0397047
+                  }
+                },
+                {
+                  "name": "Park am Gersberg",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3,
+                  "user_ratings_total": 1,
+                  "vicinity": "Schwarzstraße 1, Salzburg",
+                  "place_id": "ChIJq6pagmOQdkcRQljXCL_b4bI",
+                  "location": {
+                    "lat": 47.8018699,
+                    "lng": 13.0438112
+                  }
+                },
+                {
+                  "name": "Makartplatz",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 20,
+                  "vicinity": "Makartplatz, Salzburg",
+                  "place_id": "ChIJpcS8TQCRdkcRbPouHpCFX4Q",
+                  "location": {
+                    "lat": 47.80291800000001,
+                    "lng": 13.0437628
+                  }
+                },
+                {
+                  "name": "Alma-Rose'-Stiege",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Reichenhaller Straße 6/8, Salzburg",
+                  "place_id": "ChIJS0TzSgCRdkcRGLWbqZYXyZM",
+                  "location": {
+                    "lat": 47.79874179999999,
+                    "lng": 13.0374489
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Salzburg Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 12505,
+                  "vicinity": "Domplatz 1a, Salzburg",
+                  "place_id": "ChIJuYYBl2GQdkcRHSa2IHQNv0U",
+                  "location": {
+                    "lat": 47.79789460000001,
+                    "lng": 13.0466354
+                  }
+                },
+                {
+                  "name": "Katholische Jungschar Salzburg",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Kaigasse 26, Salzburg",
+                  "place_id": "ChIJqR3rWYqQdkcRrPZHG9mXX6k",
+                  "location": {
+                    "lat": 47.7966877,
+                    "lng": 13.0497733
+                  }
+                },
+                {
+                  "name": "DomQuartier Salzburg",
+                  "types": [
+                    "museum",
+                    "art_gallery",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1098,
+                  "vicinity": "Residenzplatz 1, Domplatz 1a, Salzburg",
+                  "place_id": "ChIJR5iTmmGQdkcRMhe3zatrdSU",
+                  "location": {
+                    "lat": 47.7985009,
+                    "lng": 13.0456487
+                  }
+                },
+                {
+                  "name": "Erzdiözese Salzburg, Matrikenreferat",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Kaigasse 18, Salzburg",
+                  "place_id": "ChIJj2-cZoqQdkcRvGI9QJRfO-Y",
+                  "location": {
+                    "lat": 47.7968717,
+                    "lng": 13.0489453
+                  }
+                },
+                {
+                  "name": "Kollegienkirche",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 467,
+                  "vicinity": "Universitätsplatz 20, Salzburg",
+                  "place_id": "ChIJJxycW2GQdkcRmWJgpds0S4k",
+                  "location": {
+                    "lat": 47.7992131,
+                    "lng": 13.0431707
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Restaurant Blaue Gans Salzburg Gasthaus",
+                  "types": [
+                    "restaurant",
+                    "art_gallery",
+                    "bar",
+                    "lodging",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 668,
+                  "vicinity": "41-43, Getreidegasse, Salzburg",
+                  "place_id": "ChIJwVEfIGSQdkcRttpZEQ1Uw-s",
+                  "location": {
+                    "lat": 47.799901,
+                    "lng": 13.040636
+                  }
+                },
+                {
+                  "name": "Rudolf Budja Galerie",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 20,
+                  "vicinity": "Sigmund-Haffner-Gasse 16, Salzburg",
+                  "place_id": "ChIJGWOzXWGQdkcRg8V-Y550gnA",
+                  "location": {
+                    "lat": 47.7987583,
+                    "lng": 13.0434285
+                  }
+                },
+                {
+                  "name": "Galerie Academia GesmbH & Co KG",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Residenzplatz 1, Salzburg",
+                  "place_id": "ChIJR5iTmmGQdkcRXBUHrJl8vvU",
+                  "location": {
+                    "lat": 47.7985012,
+                    "lng": 13.0457712
+                  }
+                },
+                {
+                  "name": "Galerie Gerlich",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 5,
+                  "vicinity": "Sigmund-Haffner-Gasse 6, Salzburg",
+                  "place_id": "ChIJ154m32OQdkcRV-yQD_iiv9k",
+                  "location": {
+                    "lat": 47.7996041,
+                    "lng": 13.0442322
+                  }
+                },
+                {
+                  "name": "Textil Kunst Galerie",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 7,
+                  "vicinity": "Steingasse 35a, Salzburg",
+                  "place_id": "ChIJF1SgXmKQdkcR1np69hJWPKA",
+                  "location": {
+                    "lat": 47.8012203,
+                    "lng": 13.047654
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Salzburg",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Salzburg",
+                  "place_id": "ChIJsdQIqd2adkcRPfcqQaGD4cE",
+                  "location": {
+                    "lat": 47.8014154,
+                    "lng": 13.0448441
+                  }
+                },
+                {
+                  "name": "Neutor Hotel Salzburg Zentrum",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.3,
+                  "user_ratings_total": 734,
+                  "vicinity": "Neutorstraße 8, Salzburg",
+                  "place_id": "ChIJCWXlTGaQdkcRBOCbOCtaBZk",
+                  "location": {
+                    "lat": 47.7977232,
+                    "lng": 13.0372356
+                  }
+                },
+                {
+                  "name": "Hotel Elefant",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 801,
+                  "vicinity": "Sigmund-Haffner-Gasse 4, Salzburg",
+                  "place_id": "ChIJ258K3GOQdkcR7rlIBrxub70",
+                  "location": {
+                    "lat": 47.7997222,
+                    "lng": 13.0444444
+                  }
+                },
+                {
+                  "name": "Gasthof Goldgasse",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1448,
+                  "vicinity": "Goldgasse 10, Salzburg",
+                  "place_id": "ChIJXTkrKmKQdkcR7hDF0nXbaXY",
+                  "location": {
+                    "lat": 47.7994026,
+                    "lng": 13.0459156
+                  }
+                },
+                {
+                  "name": "Boutiquehotel Amadeus",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 259,
+                  "vicinity": "Linzer Gasse 43, Salzburg",
+                  "place_id": "ChIJp5eWKn2QdkcRDRdXTUY3LXU",
+                  "location": {
+                    "lat": 47.80416669999999,
+                    "lng": 13.0477778
+                  }
+                }
+              ]
+            },
+            "total_places_found": 35,
+            "photo_timestamp": "2025:11:17 14:14:09",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.4481198787689209
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/195.jpg"
+    },
+    {
+      "image_filename": "195.jpg",
+      "timestamp": "2026-01-28T04:24:55.271038",
+      "processing_time_seconds": 66.822424,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Hohensalzburg Fortress, Sphaera Sculpture, Salzburg, Austria",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The fortress is identifiable by its distinctive medieval architecture and prominent location in Salzburg. The sculpture is recognized by its unique design and placement in Kapitelplatz.",
+            "detailed_description": "The image features the Hohensalzburg Fortress, a large medieval fortress located atop the Festungsberg hill in Salzburg, Austria. It is one of the largest and best-preserved castles in Europe, characterized by its imposing stone walls and towers. In the foreground is the 'Sphaera' sculpture, a contemporary artwork by Stephan Balkenhol, consisting of a large golden sphere with a human figure standing on top. The sculpture is situated in Kapitelplatz, a public square in Salzburg.",
+            "identification": {
+              "primary": [
+                "Hohensalzburg Fortress",
+                "Sphaera Sculpture"
+              ],
+              "location": "Salzburg, Austria",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Hohensalzburg Fortress",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Sphaera Sculpture",
+                "type": "artwork",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "medieval",
+              "fortress",
+              "contemporary_art",
+              "sculpture",
+              "Salzburg"
+            ],
+            "location": "Salzburg, Austria",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Hohensalzburg Fortress\", \"Sphaera Sculpture\"],\n        \"location\": \"Salzburg, Austria\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Hohensalzburg Fortress\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Sphaera Sculpture\",\n            \"type\": \"artwork\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"medieval\", \"fortress\", \"contemporary_art\", \"sculpture\", \"Salzburg\"],\n    \"description\": \"The image features the Hohensalzburg Fortress, a large medieval fortress located atop the Festungsberg hill in Salzburg, Austria. It is one of the largest and best-preserved castles in Europe, characterized by its imposing stone walls and towers. In the foreground is the 'Sphaera' sculpture, a contemporary artwork by Stephan Balkenhol, consisting of a large golden sphere with a human figure standing on top. The sculpture is situated in Kapitelplatz, a public square in Salzburg.\",\n    \"reasoning\": \"The fortress is identifiable by its distinctive medieval architecture and prominent location in Salzburg. The sculpture is recognized by its unique design and placement in Kapitelplatz.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 14.428306102752686
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Golden Orb Sculpture, Medieval Fortress, Unknown",
+          "confidence": 0.7,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The search results suggest the presence of a notable sculpture and a medieval fortress. The description matches the characteristics of a golden orb sculpture, which is a distinctive element. The fortress is identified by its medieval architectural features. However, the specific names of these elements are not confirmed by the search results, leading to a moderately confident identification.",
+            "identification": {
+              "primary": [
+                "Golden Orb Sculpture",
+                "Medieval Fortress"
+              ],
+              "location": "Unknown",
+              "confidence": 0.75
+            },
+            "artifacts": [
+              {
+                "name": "Golden Orb Sculpture with Human Figure",
+                "type": "artwork",
+                "confidence": 0.85
+              },
+              {
+                "name": "Medieval Fortress",
+                "type": "building",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "medieval",
+              "sculpture",
+              "fortress",
+              "architecture",
+              "artwork"
+            ],
+            "sources_used": [
+              "britishmuseum.org",
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "*URL*: ([britishmuseum.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([metmuseum.org]())",
+              "*URL*: ([medievalmart.com]())"
+            ],
+            "type": "artwork",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Sculpture in a European plaza",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "The sculpture's description suggests it could be a public artwork in a European city, possibly near a historic site."
+              },
+              {
+                "guess": "Medieval fortress in Europe",
+                "specificity_level": "general",
+                "confidence": 0.65,
+                "reasoning": "The fortress exhibits typical medieval architecture, which is common in many European cities."
+              },
+              {
+                "guess": "Contemporary sculpture with historical backdrop",
+                "specificity_level": "very_general",
+                "confidence": 0.6,
+                "reasoning": "The combination of modern sculpture and historic architecture is a common theme in urban settings."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.75,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image features a large, spherical sculpture prominently positioned in the foreground. This sculpture is a smooth, golden orb, mounted on a slender, black metal stand. Atop the orb stands a small human figure, adding a whimsical element to the artwork. The sculpture is situated in an open plaza, with wet pavement suggesting recent rain. In the background, a historic fortress is visible, perched on a hill. The fortress exhibits characteristics of medieval architecture, with robust stone walls,",
+            "description": "The image features a large, spherical sculpture prominently positioned in the foreground. This sculpture is a smooth, golden orb, mounted on a slender, black metal stand. Atop the orb stands a small human figure, adding a whimsical element to the artwork. The sculpture is situated in an open plaza, with wet pavement suggesting recent rain. In the background, a historic fortress is visible, perched on a hill. The fortress exhibits characteristics of medieval architecture, with robust stone walls,",
+            "architectural_style": "Medieval",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 52.39109206199646
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Sphaera (47.7974, 13.0461)",
+          "confidence": 0.16797739267349243,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Sphaera",
+            "coordinates": {
+              "latitude": 47.79739610000001,
+              "longitude": 13.0460547
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 3024
+              },
+              {
+                "x": 0,
+                "y": 3024
+              }
+            ],
+            "context_labels": [
+              "Dome",
+              "Dome",
+              "Sphere",
+              "Finial",
+              "Cumulus"
+            ],
+            "context_objects": [
+              "Person"
+            ],
+            "web_entities": [
+              {
+                "name": "Tree",
+                "score": 0.30884820222854614
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Sphaera",
+                "score": 0.16797739267349243,
+                "location": {
+                  "lat": 47.79739610000001,
+                  "lng": 13.0460547
+                }
+              }
+            ],
+            "processing_time_seconds": 15.618107795715332
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/195.jpg"
+    }
+  ]
+}

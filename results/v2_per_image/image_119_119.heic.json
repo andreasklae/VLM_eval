@@ -1,0 +1,859 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "119.heic",
+      "timestamp": "2026-01-28T01:25:40.904533",
+      "processing_time_seconds": 68.984698,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 10.331038888888889,
+        "gps_longitude": 106.37332777777777,
+        "location": {
+          "formatted_address": "89JF+J67, Tân An Thượng, Châu Thành, Bến Tre, Vietnam",
+          "city": null,
+          "county": "Châu Thành",
+          "country": "Vietnam"
+        },
+        "datetime_original": "2024:12:03 10:39:14",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Mekong Delta canal, Châu Thành, Vietnam",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Châu Thành, Vietnam, which is part of the Mekong Delta. The presence of tropical vegetation and traditional boats aligns with typical scenes from this region.",
+            "detailed_description": "The image depicts a canal in the Mekong Delta region of Vietnam, characterized by lush tropical vegetation including palm trees lining the banks. Traditional boats are moored along the muddy banks, typical of transport in this region. The scene is overcast, suggesting a humid and rainy climate common in the area.",
+            "identification": {
+              "primary": [
+                "Mekong Delta canal"
+              ],
+              "location": "Châu Thành, Vietnam",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Traditional boats",
+                "type": "natural_feature",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "river",
+              "tropical",
+              "boats",
+              "Vietnam",
+              "natural_feature"
+            ],
+            "location": "Châu Thành, Vietnam",
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Mekong Delta canal\"],\n        \"location\": \"Châu Thành, Vietnam\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Traditional boats\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"river\", \"tropical\", \"boats\", \"Vietnam\", \"natural_feature\"],\n    \"description\": \"The image depicts a canal in the Mekong Delta region of Vietnam, characterized by lush tropical vegetation including palm trees lining the banks. Traditional boats are moored along the muddy banks, typical of transport in this region. The scene is overcast, suggesting a humid and rainy climate common in the area.\",\n    \"reasoning\": \"The location metadata indicates Châu Thành, Vietnam, which is part of the Mekong Delta. The presence of tropical vegetation and traditional boats aligns with typical scenes from this region.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": []\n}",
+            "gps_coordinates": {
+              "latitude": 10.331038888888889,
+              "longitude": 106.37332777777777
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "89JF+J67, Tân An Thượng, Châu Thành, Bến Tre, Vietnam",
+              "city": null,
+              "county": "Châu Thành",
+              "country": "Vietnam"
+            },
+            "photo_timestamp": "2024:12:03 10:39:14",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 26.74128293991089
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Mekong Delta river scene, Châu Thành, Vietnam",
+          "confidence": 0.7999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches typical features of the Mekong Delta region, including the muddy river, tropical vegetation, and traditional boats. The location metadata confirms the photo was taken in Châu Thành, Vietnam, which is consistent with the Mekong Delta's characteristics.",
+            "identification": {
+              "primary": [
+                "Mekong Delta river scene"
+              ],
+              "location": "Châu Thành, Vietnam",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Traditional wooden boats",
+                "type": "boat",
+                "confidence": 0.9
+              },
+              {
+                "name": "Tropical vegetation",
+                "type": "natural_feature",
+                "confidence": 0.85
+              },
+              {
+                "name": "Wooden dock",
+                "type": "structure",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "traditional Vietnamese",
+              "tropical",
+              "river",
+              "boats",
+              "Mekong Delta",
+              "Châu Thành"
+            ],
+            "sources_used": [
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "River scene in Mekong Delta",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.8,
+                "reasoning": "The description aligns with typical features of the Mekong Delta, known for its river scenes and traditional boats."
+              },
+              {
+                "guess": "Tropical river scene in Vietnam",
+                "specificity_level": "general",
+                "confidence": 0.75,
+                "reasoning": "The tropical vegetation and traditional boats suggest a river scene in Vietnam, likely in the Mekong Delta region."
+              },
+              {
+                "guess": "Traditional Vietnamese river setting",
+                "specificity_level": "very_general",
+                "confidence": 0.7,
+                "reasoning": "The presence of traditional boats and tropical vegetation indicates a typical Vietnamese river setting."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.85,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a serene river scene in Châu Thành, Vietnam, characterized by a narrow waterway flanked by lush tropical vegetation. The river appears muddy, typical of waterways in this region, and is bordered by dense clusters of palm trees and other greenery, suggesting a humid, tropical climate. Two traditional wooden boats are moored along the riverbank, both featuring elongated hulls and covered seating areas, likely used for local transport or tourism. The boats are adorned with blue ta",
+            "description": "The image depicts a serene river scene in Châu Thành, Vietnam, characterized by a narrow waterway flanked by lush tropical vegetation. The river appears muddy, typical of waterways in this region, and is bordered by dense clusters of palm trees and other greenery, suggesting a humid, tropical climate. Two traditional wooden boats are moored along the riverbank, both featuring elongated hulls and covered seating areas, likely used for local transport or tourism. The boats are adorned with blue ta",
+            "architectural_style": "Traditional Vietnamese",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 10.331038888888889,
+              "longitude": 106.37332777777777
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "89JF+J67, Tân An Thượng, Châu Thành, Bến Tre, Vietnam",
+              "city": null,
+              "county": "Châu Thành",
+              "country": "Vietnam"
+            },
+            "photo_timestamp": "2024:12:03 10:39:14",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 41.301928997039795
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Water resources",
+          "confidence": 0.9862273931503296,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Water resources",
+                "score": 0.9862273931503296
+              },
+              {
+                "source": "label",
+                "name": "Body of water",
+                "score": 0.9806771278381348
+              },
+              {
+                "source": "label",
+                "name": "Boat",
+                "score": 0.9778773784637451
+              },
+              {
+                "source": "label",
+                "name": "Tree",
+                "score": 0.9762153625488281
+              },
+              {
+                "source": "object",
+                "name": "Boat",
+                "score": 0.6122144460678101
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Babassu",
+                "score": 0.479719340801239
+              },
+              {
+                "name": "Boat",
+                "score": 0.3549933433532715
+              },
+              {
+                "name": "River",
+                "score": 0.3348883092403412
+              },
+              {
+                "name": "Loch",
+                "score": 0.2974879741668701
+              },
+              {
+                "name": "Attalea",
+                "score": 0.08303999900817871
+              }
+            ],
+            "objects": [
+              {
+                "name": "Boat",
+                "score": 0.6122144460678101
+              }
+            ],
+            "labels": [
+              {
+                "name": "Water resources",
+                "score": 0.9862273931503296
+              },
+              {
+                "name": "Water",
+                "score": 0.9832172989845276
+              },
+              {
+                "name": "Body of water",
+                "score": 0.9806771278381348
+              },
+              {
+                "name": "Boat",
+                "score": 0.9778773784637451
+              },
+              {
+                "name": "Tree",
+                "score": 0.9762153625488281
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 10.331038888888889,
+              "longitude": 106.37332777777777
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "89JF+J67, Tân An Thượng, Châu Thành, Bến Tre, Vietnam",
+              "city": null,
+              "county": "Châu Thành",
+              "country": "Vietnam"
+            },
+            "photo_timestamp": "2024:12:03 10:39:14",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 18.608338832855225
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Châu Thành, Vietnam",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Châu Thành, Vietnam",
+            "coordinates": {
+              "latitude": 10.331038888888889,
+              "longitude": 106.37332777777777
+            },
+            "search_range_meters": 2000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Thien Ai Coconut Candy Oven",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 437,
+                  "vicinity": "89JF+P8J, Tân Thạch, Châu Thành District",
+                  "place_id": "ChIJXzUwvpavCjERfGPqm51HE3c",
+                  "location": {
+                    "lat": 10.3319741,
+                    "lng": 106.3735365
+                  }
+                },
+                {
+                  "name": "Coconut Dao Relics",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 801,
+                  "vicinity": "ấp Tân Vinh, Châu Thành",
+                  "place_id": "ChIJs1NthZivCjERh7WA7IVQyxk",
+                  "location": {
+                    "lat": 10.3360974,
+                    "lng": 106.3692822
+                  }
+                },
+                {
+                  "name": "Vườn Ổi Ruby ( Ruby farm)",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 19,
+                  "vicinity": "137 ẤP Tân Vinh, Tân Thạch, Châu Thành",
+                  "place_id": "ChIJwx0_4JivCjER-VMOsRAlXJs",
+                  "location": {
+                    "lat": 10.3359764,
+                    "lng": 106.3629609
+                  }
+                },
+                {
+                  "name": "Thới Sơn Eco Land",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 37,
+                  "vicinity": "89R6+45M, Thới Sơn, Mỹ Tho",
+                  "place_id": "ChIJ-__omDavCjERceWttnp_wkg",
+                  "location": {
+                    "lat": 10.3410439,
+                    "lng": 106.3598365
+                  }
+                },
+                {
+                  "name": "Kỳ Lân",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 4,
+                  "vicinity": "89V6+79C, Huyện Lộ 94C, Thới Sơn, Châu Thành",
+                  "place_id": "ChIJi6J8XQCvCjERCJfAPvlaTzU",
+                  "location": {
+                    "lat": 10.3430928,
+                    "lng": 106.3612128
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Chùa Tân Khánh",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 27,
+                  "vicinity": "89GF+7H5, Tân Thạch, Châu Thành District",
+                  "place_id": "ChIJW31eSwqvCjERMWHfJoEGtmI",
+                  "location": {
+                    "lat": 10.32563,
+                    "lng": 106.373995
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Nhà hàng Sông Nước Miền Tây",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 1452,
+                  "vicinity": "52-53/18 Ấp 3, Tân Thạch, Châu Thành",
+                  "place_id": "ChIJY29n56avCjERmd9C8d0-U_w",
+                  "location": {
+                    "lat": 10.3314271,
+                    "lng": 106.3775585
+                  }
+                },
+                {
+                  "name": "Nhà hàng Cồn Phụng",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 1147,
+                  "vicinity": "89P9+GQ7, ấp Tân Vinh, Châu Thành",
+                  "place_id": "ChIJcYQhhJivCjERnjBjm-VUk8s",
+                  "location": {
+                    "lat": 10.3362762,
+                    "lng": 106.3694241
+                  }
+                },
+                {
+                  "name": "Nhà Hàng Sinh Thái Mekong",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 19,
+                  "vicinity": "89JF+4HV, Phú Túc, Châu Thành District",
+                  "place_id": "ChIJHT-WKwCvCjERWBaro7pKEZs",
+                  "location": {
+                    "lat": 10.3303546,
+                    "lng": 106.3739178
+                  }
+                },
+                {
+                  "name": "Hủ tiếu.bún riêu Bảo Vy",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Tân Thạch, Châu Thành District",
+                  "place_id": "ChIJqR6ASs2vCjERrjWOyNcQTug",
+                  "location": {
+                    "lat": 10.3298193,
+                    "lng": 106.3724974
+                  }
+                },
+                {
+                  "name": "Hu tiu co 6",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "89MG+C8P, Tân Thạch, Châu Thành District",
+                  "place_id": "ChIJL6tkGwCvCjERQ1szdcKv_yk",
+                  "location": {
+                    "lat": 10.3335989,
+                    "lng": 106.3758145
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Nhà Thờ Tân Thạch",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 11,
+                  "vicinity": "89H8+967, Quốc lộ 60, Tân Thạch, Châu Thành",
+                  "place_id": "ChIJA0ihi3WvCjERTxAMjkHQYUM",
+                  "location": {
+                    "lat": 10.3284184,
+                    "lng": 106.3655543
+                  }
+                },
+                {
+                  "name": "Nhà thờ Tin lành Cồn Cát",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 17,
+                  "vicinity": "205A ấp 3, Tân Thạch, Châu Thành",
+                  "place_id": "ChIJ38H6xaivCjER2j5D8vjwbNs",
+                  "location": {
+                    "lat": 10.3324808,
+                    "lng": 106.3835812
+                  }
+                },
+                {
+                  "name": "Tan Long Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 4,
+                  "vicinity": "5/80 Ấp Tân Hòa, Tân Long, Mỹ Tho",
+                  "place_id": "ChIJvcJWcbmvCjERoyuN31K5K80",
+                  "location": {
+                    "lat": 10.3452209,
+                    "lng": 106.3783181
+                  }
+                },
+                {
+                  "name": "Nhà thờ Tân Long",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 4,
+                  "vicinity": "89XC+9CC, Tân Long, Mỹ Tho",
+                  "place_id": "ChIJLRfQrr-vCjER-mCDBM1oxJk",
+                  "location": {
+                    "lat": 10.348434,
+                    "lng": 106.3710195
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Mỹ Tho",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Mỹ Tho",
+                  "place_id": "ChIJkb6pmcavCjERp-fC1epo31k",
+                  "location": {
+                    "lat": 10.3765284,
+                    "lng": 106.3438891
+                  }
+                },
+                {
+                  "name": "Cty TNHH Hồng Thái riverside homestay Bến Tre",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 203,
+                  "vicinity": "Ấp quới hòa tây, Thị trấn, Châu Thành",
+                  "place_id": "ChIJZXsrqgivCjERZRDCaeB44EY",
+                  "location": {
+                    "lat": 10.3306585,
+                    "lng": 106.3883954
+                  }
+                },
+                {
+                  "name": "Tan Thach",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 191,
+                  "vicinity": "89J8+9FH, Tân An Thượng, Châu Thành",
+                  "place_id": "ChIJbQfbW56vCjERoax3w7-BBF4",
+                  "location": {
+                    "lat": 10.331227,
+                    "lng": 106.3660616
+                  }
+                },
+                {
+                  "name": "Doanh Nghiệp Tư Nhân Hồng Thành",
+                  "types": [
+                    "point_of_interest",
+                    "store",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "106/9 Ấp 9, Tân Thạch, Châu Thành",
+                  "place_id": "ChIJq6qqqqavCjER8Ipvrc3nqtk",
+                  "location": {
+                    "lat": 10.3335989,
+                    "lng": 106.3758145
+                  }
+                },
+                {
+                  "name": "Nhà hàng Sông Nước Miền Tây",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 1452,
+                  "vicinity": "52-53/18 Ấp 3, Tân Thạch, Châu Thành",
+                  "place_id": "ChIJY29n56avCjERmd9C8d0-U_w",
+                  "location": {
+                    "lat": 10.3314271,
+                    "lng": 106.3775585
+                  }
+                }
+              ]
+            },
+            "total_places_found": 20,
+            "photo_timestamp": "2024:12:03 10:39:14",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.48168396949768066
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/119.heic"
+    },
+    {
+      "image_filename": "119.heic",
+      "timestamp": "2026-01-28T01:26:49.934529",
+      "processing_time_seconds": 60.655598,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "River with boats",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of tropical vegetation and wooden boats suggests a river or canal in a tropical region. The boats and riverbank are the main subjects, with the natural setting providing context.",
+            "detailed_description": "The image depicts a narrow river or canal with several wooden boats moored along the bank. The boats have coverings, suggesting they are used for transport or tours. The surrounding area is lush with tropical vegetation, including palm trees and dense greenery, indicating a humid, possibly tropical environment. The sky is overcast, contributing to a subdued lighting effect.",
+            "identification": {
+              "primary": [
+                "River with boats"
+              ],
+              "location": null,
+              "confidence": 0.8
+            },
+            "artifacts": [
+              {
+                "name": "Wooden boats",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Riverbank vegetation",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "river",
+              "boats",
+              "tropical",
+              "vegetation",
+              "waterway"
+            ],
+            "location": null,
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Mekong Delta, Vietnam",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "The tropical setting and style of boats are characteristic of the Mekong Delta region."
+              },
+              {
+                "guess": "Amazon River tributary",
+                "specificity_level": "general",
+                "confidence": 0.5,
+                "reasoning": "The dense vegetation and river setting could also resemble parts of the Amazon basin."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"River with boats\"],\n        \"location\": null,\n        \"confidence\": 0.8\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Wooden boats\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Riverbank vegetation\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"river\", \"boats\", \"tropical\", \"vegetation\", \"waterway\"],\n    \"description\": \"The image depicts a narrow river or canal with several wooden boats moored along the bank. The boats have coverings, suggesting they are used for transport or tours. The surrounding area is lush with tropical vegetation, including palm trees and dense greenery, indicating a humid, possibly tropical environment. The sky is overcast, contributing to a subdued lighting effect.\",\n    \"reasoning\": \"The presence of tropical vegetation and wooden boats suggests a river or canal in a tropical region. The boats and riverbank are the main subjects, with the natural setting providing context.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Mekong Delta, Vietnam\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The tropical setting and style of boats are characteristic of the Mekong Delta region.\"\n        },\n        {\n            \"guess\": \"Amazon River tributary\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.5,\n            \"reasoning\": \"The dense vegetation and river setting could also resemble parts of the Amazon basin.\"\n        }\n    ]\n}",
+            "processing_time_seconds": 23.137877941131592
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*Source*: ([seaart.ai]())",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a serene river scene, characterized by a narrow, winding waterway flanked by lush tropical vegetation. The riverbanks are lined with dense clusters of palm trees and other greenery, creating a vibrant and natural backdrop. The water appears calm, with a muddy hue typical of rivers in tropical regions. Several boats are moored along the bank, including two small wooden boats with blue tarpaulin covers, suggesting they are used for local transport or fishing. The boats are simple",
+            "description": "The image depicts a serene river scene, characterized by a narrow, winding waterway flanked by lush tropical vegetation. The riverbanks are lined with dense clusters of palm trees and other greenery, creating a vibrant and natural backdrop. The water appears calm, with a muddy hue typical of rivers in tropical regions. Several boats are moored along the bank, including two small wooden boats with blue tarpaulin covers, suggesting they are used for local transport or fishing. The boats are simple",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 37.267513275146484
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Water resources",
+          "confidence": 0.9862273931503296,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Water resources",
+                "score": 0.9862273931503296
+              },
+              {
+                "source": "label",
+                "name": "Body of water",
+                "score": 0.9806771278381348
+              },
+              {
+                "source": "label",
+                "name": "Boat",
+                "score": 0.9778773784637451
+              },
+              {
+                "source": "label",
+                "name": "Tree",
+                "score": 0.9762153625488281
+              },
+              {
+                "source": "object",
+                "name": "Boat",
+                "score": 0.6122144460678101
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Babassu",
+                "score": 0.479719340801239
+              },
+              {
+                "name": "Boat",
+                "score": 0.3549933433532715
+              },
+              {
+                "name": "River",
+                "score": 0.3348883092403412
+              },
+              {
+                "name": "Loch",
+                "score": 0.2974879741668701
+              },
+              {
+                "name": "Attalea",
+                "score": 0.08303999900817871
+              }
+            ],
+            "objects": [
+              {
+                "name": "Boat",
+                "score": 0.6122144460678101
+              }
+            ],
+            "labels": [
+              {
+                "name": "Water resources",
+                "score": 0.9862273931503296
+              },
+              {
+                "name": "Water",
+                "score": 0.9832172989845276
+              },
+              {
+                "name": "Body of water",
+                "score": 0.9806771278381348
+              },
+              {
+                "name": "Boat",
+                "score": 0.9778773784637451
+              },
+              {
+                "name": "Tree",
+                "score": 0.9762153625488281
+              }
+            ],
+            "processing_time_seconds": 18.24676513671875
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/119.heic"
+    }
+  ]
+}

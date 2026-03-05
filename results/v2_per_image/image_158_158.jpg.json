@@ -1,0 +1,1050 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "158.jpg",
+      "timestamp": "2026-01-28T02:56:03.549392",
+      "processing_time_seconds": 60.39953,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 46.15609722222222,
+        "gps_longitude": -1.1542416666666666,
+        "location": {
+          "formatted_address": "2 Rue de la Chaîne, 17000 La Rochelle, France",
+          "city": "La Rochelle",
+          "county": "Charente-Maritime",
+          "country": "France"
+        },
+        "datetime_original": "2025:03:29 14:10:39",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Lighthouse, Ferris Wheel, La Rochelle, France",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The lighthouse and Ferris wheel are distinctive features commonly found in coastal cities like La Rochelle. The red and white stripes are typical of lighthouse designs, and the presence of the Ferris wheel suggests a tourist-friendly area.",
+            "detailed_description": "The image shows a coastal scene in La Rochelle, France, featuring a prominent lighthouse with red and white stripes. Next to it is a large Ferris wheel, indicating a recreational area. The lighthouse is a typical maritime structure, serving as a navigational aid. The Ferris wheel suggests a nearby amusement or tourist attraction. The scene is set against a bright blue sky with scattered clouds, enhancing the picturesque quality of the coastal environment.",
+            "identification": {
+              "primary": [
+                "Lighthouse",
+                "Ferris Wheel"
+              ],
+              "location": "La Rochelle, France",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Lighthouse",
+                "type": "landmark",
+                "confidence": 0.9
+              },
+              {
+                "name": "Ferris Wheel",
+                "type": "landmark",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "lighthouse",
+              "modern",
+              "amusement",
+              "La Rochelle",
+              "coastal"
+            ],
+            "location": "La Rochelle, France",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Lighthouse\", \"Ferris Wheel\"],\n        \"location\": \"La Rochelle, France\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Lighthouse\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Ferris Wheel\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"lighthouse\", \"modern\", \"amusement\", \"La Rochelle\", \"coastal\"],\n    \"description\": \"The image shows a coastal scene in La Rochelle, France, featuring a prominent lighthouse with red and white stripes. Next to it is a large Ferris wheel, indicating a recreational area. The lighthouse is a typical maritime structure, serving as a navigational aid. The Ferris wheel suggests a nearby amusement or tourist attraction. The scene is set against a bright blue sky with scattered clouds, enhancing the picturesque quality of the coastal environment.\",\n    \"reasoning\": \"The lighthouse and Ferris wheel are distinctive features commonly found in coastal cities like La Rochelle. The red and white stripes are typical of lighthouse designs, and the presence of the Ferris wheel suggests a tourist-friendly area.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 46.15609722222222,
+              "longitude": -1.1542416666666666
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "2 Rue de la Chaîne, 17000 La Rochelle, France",
+              "city": "La Rochelle",
+              "county": "Charente-Maritime",
+              "country": "France"
+            },
+            "photo_timestamp": "2025:03:29 14:10:39",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 24.973135948181152
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Lighthouse at La Rochelle, Ferris Wheel at La Rochelle, La Rochelle, France",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the known features of La Rochelle, including its lighthouse and Ferris wheel. The search results confirm the location and the presence of these landmarks, supporting a high confidence identification.",
+            "identification": {
+              "primary": [
+                "Lighthouse at La Rochelle",
+                "Ferris Wheel at La Rochelle"
+              ],
+              "location": "La Rochelle, France",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Lighthouse with red and white stripes",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Ferris Wheel",
+                "type": "landmark",
+                "confidence": 0.9
+              },
+              {
+                "name": "Colorful coastal buildings",
+                "type": "building",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "coastal architecture",
+              "modern",
+              "historical",
+              "La Rochelle",
+              "France",
+              "waterfront"
+            ],
+            "sources_used": [
+              "en.wikipedia.org",
+              "fr.wikipedia.org"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([fr.wikipedia.org]())",
+              "*URL*: ([fr.wikipedia.org]())",
+              "*URL*: ([cparici.com]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 3,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image captures a vibrant waterfront scene in La Rochelle, Charente-Maritime, France. The central focus is a striking lighthouse, characterized by its cylindrical shape and alternating red and white horizontal stripes. The lighthouse stands prominently against a backdrop of a clear blue sky with scattered fluffy clouds. Adjacent to the lighthouse is a large Ferris wheel, its metallic structure gleaming in the sunlight, adding a modern touch to the scene. The Ferris wheel's circular form contr",
+            "description": "The image captures a vibrant waterfront scene in La Rochelle, Charente-Maritime, France. The central focus is a striking lighthouse, characterized by its cylindrical shape and alternating red and white horizontal stripes. The lighthouse stands prominently against a backdrop of a clear blue sky with scattered fluffy clouds. Adjacent to the lighthouse is a large Ferris wheel, its metallic structure gleaming in the sunlight, adding a modern touch to the scene. The Ferris wheel's circular form contr",
+            "architectural_style": "Coastal architecture",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 46.15609722222222,
+              "longitude": -1.1542416666666666
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "2 Rue de la Chaîne, 17000 La Rochelle, France",
+              "city": "La Rochelle",
+              "county": "Charente-Maritime",
+              "country": "France"
+            },
+            "photo_timestamp": "2025:03:29 14:10:39",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 34.57634615898132
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Ferris wheel",
+          "confidence": 0.8701425194740295,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Ferris wheel",
+                "score": 0.8701425194740295
+              },
+              {
+                "source": "object",
+                "name": "Boat",
+                "score": 0.5440698266029358
+              }
+            ],
+            "web_entities": [],
+            "objects": [
+              {
+                "name": "Boat",
+                "score": 0.5440698266029358
+              }
+            ],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.9921590089797974
+              },
+              {
+                "name": "Blue",
+                "score": 0.9886685609817505
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9816137552261353
+              },
+              {
+                "name": "Cloud",
+                "score": 0.9462729096412659
+              },
+              {
+                "name": "Ferris wheel",
+                "score": 0.8701425194740295
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 46.15609722222222,
+              "longitude": -1.1542416666666666
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "2 Rue de la Chaîne, 17000 La Rochelle, France",
+              "city": "La Rochelle",
+              "county": "Charente-Maritime",
+              "country": "France"
+            },
+            "photo_timestamp": "2025:03:29 14:10:39",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 16.676033973693848
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "La Rochelle, Charente-Maritime, France",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "La Rochelle, Charente-Maritime, France",
+            "coordinates": {
+              "latitude": 46.15609722222222,
+              "longitude": -1.1542416666666666
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "La Rochelle Aquarium",
+                  "types": [
+                    "aquarium",
+                    "tourist_attraction",
+                    "museum",
+                    "school",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 8769,
+                  "vicinity": "Quai Louis Prunier, La Rochelle",
+                  "place_id": "ChIJB9VE3LBTAUgRA7CwC7UzEt8",
+                  "location": {
+                    "lat": 46.1532422,
+                    "lng": -1.1506112
+                  }
+                },
+                {
+                  "name": "The Center for National Monuments",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 6,
+                  "vicinity": "22 Quai Louis Durand, La Rochelle",
+                  "place_id": "ChIJD2oKU6VTAUgRC3W5SZTFt2M",
+                  "location": {
+                    "lat": 46.1585033,
+                    "lng": -1.1484306
+                  }
+                },
+                {
+                  "name": "Cloister Of The White Ladies",
+                  "types": [
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 391,
+                  "vicinity": "6 Rue Saint-Michel, La Rochelle",
+                  "place_id": "ChIJTYv22a5TAUgROxV4rIbQKt0",
+                  "location": {
+                    "lat": 46.159749,
+                    "lng": -1.1499676
+                  }
+                },
+                {
+                  "name": "Escales Documentaires",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 5,
+                  "vicinity": "13 Rue de l'Aimable Nanette, La Rochelle",
+                  "place_id": "ChIJ39OY2K9TAUgRrKbi8TMBKGc",
+                  "location": {
+                    "lat": 46.155449,
+                    "lng": -1.1506583
+                  }
+                },
+                {
+                  "name": "Saint Louis Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1967,
+                  "vicinity": "Place de Verdun, La Rochelle",
+                  "place_id": "ChIJz65HFqZTAUgRe1S7cpg0ST4",
+                  "location": {
+                    "lat": 46.1617587,
+                    "lng": -1.1532335
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "La Rochelle Aquarium",
+                  "types": [
+                    "aquarium",
+                    "tourist_attraction",
+                    "museum",
+                    "school",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 8769,
+                  "vicinity": "Quai Louis Prunier, La Rochelle",
+                  "place_id": "ChIJB9VE3LBTAUgRA7CwC7UzEt8",
+                  "location": {
+                    "lat": 46.1532422,
+                    "lng": -1.1506112
+                  }
+                },
+                {
+                  "name": "Cloister Of The White Ladies",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 391,
+                  "vicinity": "6 Rue Saint-Michel, La Rochelle",
+                  "place_id": "ChIJTYv22a5TAUgROxV4rIbQKt0",
+                  "location": {
+                    "lat": 46.159749,
+                    "lng": -1.1499676
+                  }
+                },
+                {
+                  "name": "musée des Beaux-Arts de La Rochelle",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 89,
+                  "vicinity": "28 Rue Gargoulleau, La Rochelle",
+                  "place_id": "ChIJscD3kKhTAUgRLcC9blFpTeE",
+                  "location": {
+                    "lat": 46.1621054,
+                    "lng": -1.1516979
+                  }
+                },
+                {
+                  "name": "Musée du Nouveau Monde",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 669,
+                  "vicinity": "10 Rue Fleuriau, La Rochelle",
+                  "place_id": "ChIJNQZ1wKhTAUgRxLU3djpzNZo",
+                  "location": {
+                    "lat": 46.16172599999999,
+                    "lng": -1.151071
+                  }
+                },
+                {
+                  "name": "Musée Protestant",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 69,
+                  "vicinity": "2 Rue Saint-Michel, La Rochelle",
+                  "place_id": "ChIJD8UzIa9TAUgRrvcxaoR-9EY",
+                  "location": {
+                    "lat": 46.1594995,
+                    "lng": -1.1495889
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "La Boussole",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 5262,
+                  "vicinity": "41 Rue Saint Jean du Pérot, La Rochelle",
+                  "place_id": "ChIJ1cltuKRTAUgRKpnExh_ipHY",
+                  "location": {
+                    "lat": 46.1561111,
+                    "lng": -1.1561111
+                  }
+                },
+                {
+                  "name": "Iséo",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 8074,
+                  "vicinity": "4 Place de la Chaîne, La Rochelle",
+                  "place_id": "ChIJl0NExqRTAUgR-iO92UHlSNg",
+                  "location": {
+                    "lat": 46.15620680000001,
+                    "lng": -1.1544821
+                  }
+                },
+                {
+                  "name": "Restaurant Les Flots",
+                  "types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2549,
+                  "vicinity": "1 Rue de la Chaîne, La Rochelle",
+                  "place_id": "ChIJ3xTrL6VTAUgRgcwlmX0aRnA",
+                  "location": {
+                    "lat": 46.1559238,
+                    "lng": -1.1545183
+                  }
+                },
+                {
+                  "name": "Les 4 Sergents",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 2407,
+                  "vicinity": "49 Rue Saint Jean du Pérot, La Rochelle",
+                  "place_id": "ChIJOx0ouqRTAUgR5q8-U--yU4E",
+                  "location": {
+                    "lat": 46.15615080000001,
+                    "lng": -1.156494
+                  }
+                },
+                {
+                  "name": "Christopher Coutanceau",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1197,
+                  "vicinity": "Plage de la Concurrence, La Rochelle",
+                  "place_id": "ChIJ87_sn6VTAUgRsNVFS7MOq3w",
+                  "location": {
+                    "lat": 46.15524819999999,
+                    "lng": -1.1598546
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Le parc Charruyer",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 5672,
+                  "vicinity": "Chemin des Remparts, La Rochelle",
+                  "place_id": "ChIJO6hrzaZTAUgR5zSr00jPaw0",
+                  "location": {
+                    "lat": 46.1583567,
+                    "lng": -1.1592825
+                  }
+                },
+                {
+                  "name": "Vieux port",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 12,
+                  "vicinity": "Vieux-Port, La Rochelle",
+                  "place_id": "ChIJEx2-KVJTAUgR4S1MRKn9Jmk",
+                  "location": {
+                    "lat": 46.1563983,
+                    "lng": -1.1537093
+                  }
+                },
+                {
+                  "name": "Interîles : Départ des Croisières",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 55,
+                  "vicinity": "Vieux-Port, La Rochelle",
+                  "place_id": "ChIJDcB3PEVTAUgRG9WpSYoEwSE",
+                  "location": {
+                    "lat": 46.156733,
+                    "lng": -1.1537482
+                  }
+                },
+                {
+                  "name": "Les Tables",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "31 Avenue Michel Crépeau, La Rochelle",
+                  "place_id": "ChIJsQyyrUxTAUgRW052Qf5o5nQ",
+                  "location": {
+                    "lat": 46.1535719,
+                    "lng": -1.1556368
+                  }
+                },
+                {
+                  "name": "Quai Valin Square",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 150,
+                  "vicinity": "15 Quai Valin, La Rochelle",
+                  "place_id": "ChIJO5cuu69TAUgReftydB7eXUg",
+                  "location": {
+                    "lat": 46.1572723,
+                    "lng": -1.1506613
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Église Protestante Unie de La Rochelle",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 38,
+                  "vicinity": "2 Rue Saint-Michel, La Rochelle",
+                  "place_id": "ChIJFbwTJ69TAUgRBu3UY5zXLeU",
+                  "location": {
+                    "lat": 46.1595593,
+                    "lng": -1.1498208
+                  }
+                },
+                {
+                  "name": "Saint Louis Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1967,
+                  "vicinity": "Place de Verdun, La Rochelle",
+                  "place_id": "ChIJz65HFqZTAUgRe1S7cpg0ST4",
+                  "location": {
+                    "lat": 46.1617587,
+                    "lng": -1.1532335
+                  }
+                },
+                {
+                  "name": "Saint Saviour Church of La Rochelle",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 648,
+                  "vicinity": "15 Rue Saint-Sauveur, La Rochelle",
+                  "place_id": "ChIJFaJ7Gq9TAUgRAsVp04x5_N0",
+                  "location": {
+                    "lat": 46.1588398,
+                    "lng": -1.1503243
+                  }
+                },
+                {
+                  "name": "Chapelle Saint-Vincent",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "20Quarter Rue Albert 1er, La Rochelle",
+                  "place_id": "ChIJI3SiGahTAUgRMxkxFOm3oKw",
+                  "location": {
+                    "lat": 46.1646508,
+                    "lng": -1.1516839
+                  }
+                },
+                {
+                  "name": "Chapel of Our Lady of Hope",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 20,
+                  "vicinity": "12 Rue des Augustins, La Rochelle",
+                  "place_id": "ChIJ48prBKZTAUgRIEeSJG1xpEs",
+                  "location": {
+                    "lat": 46.1606349,
+                    "lng": -1.1523469
+                  }
+                },
+                {
+                  "name": "Maison Communautaire Israélite",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 19,
+                  "vicinity": "34 Cours des Dames, La Rochelle",
+                  "place_id": "ChIJgXaiF6VTAUgRR8Bi0SPToOU",
+                  "location": {
+                    "lat": 46.1570912,
+                    "lng": -1.1541312
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Atelier Bletterie",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 17,
+                  "vicinity": "11ter Rue Bletterie, La Rochelle",
+                  "place_id": "ChIJH9LcF69TAUgRrabzGE4eA-o",
+                  "location": {
+                    "lat": 46.1591178,
+                    "lng": -1.1506669
+                  }
+                },
+                {
+                  "name": "GALERIE ANATTA",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "3 Passage de la Corvette, La Rochelle",
+                  "place_id": "ChIJWaPprjRTAUgRNkjO5HBBBdc",
+                  "location": {
+                    "lat": 46.15509360000001,
+                    "lng": -1.1506002
+                  }
+                },
+                {
+                  "name": "Galerie Arnaud",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 7,
+                  "vicinity": "3 Passage de la Corvette, La Rochelle",
+                  "place_id": "ChIJjYUr2ddTAUgR6k3227eDgT0",
+                  "location": {
+                    "lat": 46.15509360000001,
+                    "lng": -1.1506002
+                  }
+                },
+                {
+                  "name": "Ma petite galerie - ADOR Experience",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "18 Rue Saint-Nicolas, La Rochelle",
+                  "place_id": "ChIJw70OT5BTAUgRUo0wVBrb87Y",
+                  "location": {
+                    "lat": 46.15754099999999,
+                    "lng": -1.1495576
+                  }
+                },
+                {
+                  "name": "en apARTé",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 8,
+                  "vicinity": "39 Rue Saint-Nicolas, La Rochelle",
+                  "place_id": "ChIJPfjkl9tTAUgRvB45LnUDUS8",
+                  "location": {
+                    "lat": 46.1571693,
+                    "lng": -1.1492376
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "La Rochelle",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "La Rochelle",
+                  "place_id": "ChIJdT0lyYNTAUgRQJbuYJLTBQQ",
+                  "location": {
+                    "lat": 46.160329,
+                    "lng": -1.151139
+                  }
+                },
+                {
+                  "name": "Hotel Henri IV",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 254,
+                  "vicinity": "31 Rue des Gentilshommes, La Rochelle",
+                  "place_id": "ChIJe9X1aa9TAUgRZ6KqJYhy_TM",
+                  "location": {
+                    "lat": 46.158969,
+                    "lng": -1.1515194
+                  }
+                },
+                {
+                  "name": "Le Yachtman, The Originals Collection",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 567,
+                  "vicinity": "23 Quai Valin, La Rochelle",
+                  "place_id": "ChIJZQT3ra9TAUgRamayv3pW3LE",
+                  "location": {
+                    "lat": 46.157377,
+                    "lng": -1.149801
+                  }
+                },
+                {
+                  "name": "Hôtel La Marine",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 378,
+                  "vicinity": "30 Quai Duperré, La Rochelle",
+                  "place_id": "ChIJfcUVgaVTAUgR_yyZwfka3zs",
+                  "location": {
+                    "lat": 46.15828820000001,
+                    "lng": -1.1527464
+                  }
+                },
+                {
+                  "name": "ibis La Rochelle Centre Historique",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 765,
+                  "vicinity": "1 Ter Rue Fleuriau, La Rochelle",
+                  "place_id": "ChIJUy4-w6hTAUgRmqP_QK7bZ5c",
+                  "location": {
+                    "lat": 46.1612609,
+                    "lng": -1.1507233
+                  }
+                }
+              ]
+            },
+            "total_places_found": 36,
+            "photo_timestamp": "2025:03:29 14:10:39",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.6044919490814209
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/158.jpg"
+    },
+    {
+      "image_filename": "158.jpg",
+      "timestamp": "2026-01-28T02:57:03.987330",
+      "processing_time_seconds": 62.218039,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Lighthouse, Ferris Wheel, La Rochelle, France",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The lighthouse's red and white stripes are characteristic of coastal navigation aids, and the presence of a Ferris wheel indicates a tourist-friendly location. The style and setting align with known features of La Rochelle.",
+            "detailed_description": "The image features a lighthouse with distinctive red and white stripes, situated near a body of water. Adjacent to the lighthouse is a Ferris wheel, suggesting a recreational or tourist area. The scene is set against a bright blue sky with scattered clouds, indicating a coastal environment. The architecture and elements suggest a modern setting, likely in La Rochelle, France.",
+            "identification": {
+              "primary": [
+                "Lighthouse",
+                "Ferris Wheel"
+              ],
+              "location": "La Rochelle, France",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Lighthouse with red and white stripes",
+                "type": "landmark",
+                "confidence": 0.9
+              },
+              {
+                "name": "Ferris Wheel",
+                "type": "landmark",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "lighthouse",
+              "Ferris_Wheel",
+              "coastal",
+              "modern",
+              "La_Rochelle"
+            ],
+            "location": "La Rochelle, France",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Port area in a coastal city",
+                "specificity_level": "general",
+                "confidence": 0.75,
+                "reasoning": "The combination of a lighthouse and Ferris wheel is typical of coastal cities with tourist attractions."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Lighthouse\", \"Ferris Wheel\"],\n        \"location\": \"La Rochelle, France\",\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Lighthouse with red and white stripes\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Ferris Wheel\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"lighthouse\", \"Ferris_Wheel\", \"coastal\", \"modern\", \"La_Rochelle\"],\n    \"description\": \"The image features a lighthouse with distinctive red and white stripes, situated near a body of water. Adjacent to the lighthouse is a Ferris wheel, suggesting a recreational or tourist area. The scene is set against a bright blue sky with scattered clouds, indicating a coastal environment. The architecture and elements suggest a modern setting, likely in La Rochelle, France.\",\n    \"reasoning\": \"The lighthouse's red and white stripes are characteristic of coastal navigation aids, and the presence of a Ferris wheel indicates a tourist-friendly location. The style and setting align with known features of La Rochelle.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Port area in a coastal city\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.75,\n            \"reasoning\": \"The combination of a lighthouse and Ferris wheel is typical of coastal cities with tourist attractions.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 29.01329517364502
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([en.wikipedia.org]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 2,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image features a waterfront scene with several notable elements. Dominating the view is a tall lighthouse with a cylindrical shape, painted in alternating horizontal bands of white and red, topped with a red dome. This lighthouse is situated near the water's edge, surrounded by greenery and trees. Adjacent to the lighthouse, a large Ferris wheel is visible, characterized by its white metal structure and numerous passenger cabins. The Ferris wheel is set against a backdrop of a clear blue sky",
+            "description": "The image features a waterfront scene with several notable elements. Dominating the view is a tall lighthouse with a cylindrical shape, painted in alternating horizontal bands of white and red, topped with a red dome. This lighthouse is situated near the water's edge, surrounded by greenery and trees. Adjacent to the lighthouse, a large Ferris wheel is visible, characterized by its white metal structure and numerous passenger cabins. The Ferris wheel is set against a backdrop of a clear blue sky",
+            "architectural_style": "Coastal architecture",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 33.202144145965576
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Ferris wheel",
+          "confidence": 0.8701425194740295,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Ferris wheel",
+                "score": 0.8701425194740295
+              },
+              {
+                "source": "object",
+                "name": "Boat",
+                "score": 0.5440698266029358
+              }
+            ],
+            "web_entities": [],
+            "objects": [
+              {
+                "name": "Boat",
+                "score": 0.5440698266029358
+              }
+            ],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.9921590089797974
+              },
+              {
+                "name": "Blue",
+                "score": 0.9886685609817505
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9816137552261353
+              },
+              {
+                "name": "Cloud",
+                "score": 0.9462729096412659
+              },
+              {
+                "name": "Ferris wheel",
+                "score": 0.8701425194740295
+              }
+            ],
+            "processing_time_seconds": 15.734133005142212
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/158.jpg"
+    }
+  ]
+}

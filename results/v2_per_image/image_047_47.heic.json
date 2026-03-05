@@ -1,0 +1,680 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "47.heic",
+      "timestamp": "2026-01-28T05:51:34.505781",
+      "processing_time_seconds": 53.300626,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -20.924825000000002,
+        "gps_longitude": 149.04968333333332,
+        "location": {
+          "formatted_address": "51 Risley Parade, Cape Hillsborough QLD 4740, Australia",
+          "city": "Cape Hillsborough",
+          "county": "Mackay Regional",
+          "country": "Australia"
+        },
+        "datetime_original": "2022:10:01 05:35:50",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Cape Hillsborough Beach, Cape Hillsborough, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Cape Hillsborough, which is famous for its beach where kangaroos are commonly seen at sunrise. The visual elements match this description.",
+            "detailed_description": "The image depicts Cape Hillsborough Beach in Australia during sunrise. The beach is known for its picturesque views and the presence of kangaroos and wallabies that often visit the shore at dawn. The horizon shows a calm sea with distant islands silhouetted against the early morning sky, which is painted in soft hues of orange and blue.",
+            "identification": {
+              "primary": [
+                "Cape Hillsborough Beach"
+              ],
+              "location": "Cape Hillsborough, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Cape Hillsborough Beach",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "beach",
+              "sunrise",
+              "natural_feature",
+              "Australia"
+            ],
+            "location": "Cape Hillsborough, Australia",
+            "type": "natural_feature",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Cape Hillsborough Beach\"],\n        \"location\": \"Cape Hillsborough, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Cape Hillsborough Beach\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"beach\", \"sunrise\", \"natural_feature\", \"Australia\"],\n    \"description\": \"The image depicts Cape Hillsborough Beach in Australia during sunrise. The beach is known for its picturesque views and the presence of kangaroos and wallabies that often visit the shore at dawn. The horizon shows a calm sea with distant islands silhouetted against the early morning sky, which is painted in soft hues of orange and blue.\",\n    \"reasoning\": \"The location metadata indicates Cape Hillsborough, which is famous for its beach where kangaroos are commonly seen at sunrise. The visual elements match this description.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": -20.924825000000002,
+              "longitude": 149.04968333333332
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "51 Risley Parade, Cape Hillsborough QLD 4740, Australia",
+              "city": "Cape Hillsborough",
+              "county": "Mackay Regional",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2022:10:01 05:35:50",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 8.533819913864136
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image captures a serene beach scene at sunrise, with the sky transitioning from soft blue to warm hues of orange and yellow as the sun begins to rise. The horizon is marked by a calm sea, reflecting the gentle colors of the sky. In the distance, several small islands are visible, silhouetted against the brightening sky, adding depth to the landscape. The beach itself is expansive, with smooth sand stretching across the foreground. The lighting is soft, creating a peaceful and tranquil atmosp",
+            "description": "The image captures a serene beach scene at sunrise, with the sky transitioning from soft blue to warm hues of orange and yellow as the sun begins to rise. The horizon is marked by a calm sea, reflecting the gentle colors of the sky. In the distance, several small islands are visible, silhouetted against the brightening sky, adding depth to the landscape. The beach itself is expansive, with smooth sand stretching across the foreground. The lighting is soft, creating a peaceful and tranquil atmosp",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": -20.924825000000002,
+              "longitude": 149.04968333333332
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "51 Risley Parade, Cape Hillsborough QLD 4740, Australia",
+              "city": "Cape Hillsborough",
+              "county": "Mackay Regional",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2022:10:01 05:35:50",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 43.80304980278015
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Dog",
+          "confidence": 0.9873496890068054,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Dog",
+                "score": 0.9873496890068054
+              },
+              {
+                "source": "label",
+                "name": "Horizon",
+                "score": 0.9562182426452637
+              },
+              {
+                "source": "label",
+                "name": "Carnivores",
+                "score": 0.9445286393165588
+              },
+              {
+                "source": "label",
+                "name": "Sunset",
+                "score": 0.9373247623443604
+              },
+              {
+                "source": "label",
+                "name": "Dusk",
+                "score": 0.9323092103004456
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Dog",
+                "score": 0.607036292552948
+              },
+              {
+                "name": "Beach",
+                "score": 0.4002031981945038
+              },
+              {
+                "name": "Working animal",
+                "score": 0.3788575232028961
+              },
+              {
+                "name": "Sand",
+                "score": 0.31858402490615845
+              },
+              {
+                "name": "Sunset",
+                "score": 0.2694738805294037
+              }
+            ],
+            "objects": [
+              {
+                "name": "Kangaroo",
+                "score": 0.8801116943359375
+              },
+              {
+                "name": "Kangaroo",
+                "score": 0.840916097164154
+              },
+              {
+                "name": "Animal",
+                "score": 0.7138544321060181
+              },
+              {
+                "name": "Animal",
+                "score": 0.693365752696991
+              },
+              {
+                "name": "Animal",
+                "score": 0.6882833242416382
+              }
+            ],
+            "labels": [
+              {
+                "name": "Dog",
+                "score": 0.9873496890068054
+              },
+              {
+                "name": "Horizon",
+                "score": 0.9562182426452637
+              },
+              {
+                "name": "Carnivores",
+                "score": 0.9445286393165588
+              },
+              {
+                "name": "Sunset",
+                "score": 0.9373247623443604
+              },
+              {
+                "name": "Dusk",
+                "score": 0.9323092103004456
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": -20.924825000000002,
+              "longitude": 149.04968333333332
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "51 Risley Parade, Cape Hillsborough QLD 4740, Australia",
+              "city": "Cape Hillsborough",
+              "county": "Mackay Regional",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2022:10:01 05:35:50",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 12.441924810409546
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Cape Hillsborough, Mackay Regional, Australia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Cape Hillsborough, Mackay Regional, Australia",
+            "coordinates": {
+              "latitude": -20.924825000000002,
+              "longitude": 149.04968333333332
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Cape Hillsborough Nature Tourist Park",
+                  "types": [
+                    "rv_park",
+                    "campground",
+                    "tourist_attraction",
+                    "lodging",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 995,
+                  "vicinity": "51 Risley Parade, Cape Hillsborough",
+                  "place_id": "ChIJMVBAltCF2WsR8pvHkzMONZ4",
+                  "location": {
+                    "lat": -20.9247026,
+                    "lng": 149.0479527
+                  }
+                },
+                {
+                  "name": "Casuarina Beach",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 76,
+                  "vicinity": "Risley Parade, Cape Hillsborough",
+                  "place_id": "ChIJXxEMTyaD2WsR_VvLF2Cm2pM",
+                  "location": {
+                    "lat": -20.9237698,
+                    "lng": 149.0484157
+                  }
+                },
+                {
+                  "name": "Twin beach lookout",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 31,
+                  "vicinity": "33F2+9W, Cape Hillsborough",
+                  "place_id": "ChIJfZ6MNNqD2WsR2BTlR-eTYZk",
+                  "location": {
+                    "lat": -20.9265563,
+                    "lng": 149.0523395
+                  }
+                },
+                {
+                  "name": "Diwaia Lookout",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 22,
+                  "vicinity": "Cape Hillsborough National Park, Cape Hillsborough Rd, Cape Hillsborough",
+                  "place_id": "ChIJw18ik9iD2WsRXbcaBnw3eec",
+                  "location": {
+                    "lat": -20.9284747,
+                    "lng": 149.0573012
+                  }
+                },
+                {
+                  "name": "Yuibera (Yuwi) Trail",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 3,
+                  "vicinity": "Hidden Valley Road, Cape Hillsborough",
+                  "place_id": "ChIJSc2WFQCD2WsROsBfF1UCclc",
+                  "location": {
+                    "lat": -20.9293552,
+                    "lng": 149.0425679
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Cape Hillsborough Nature Tourist Park",
+                  "types": [
+                    "rv_park",
+                    "tourist_attraction",
+                    "campground",
+                    "lodging",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 995,
+                  "vicinity": "51 Risley Parade, Cape Hillsborough",
+                  "place_id": "ChIJMVBAltCF2WsR8pvHkzMONZ4",
+                  "location": {
+                    "lat": -20.9247026,
+                    "lng": 149.0479527
+                  }
+                },
+                {
+                  "name": "Cape Hillsborough Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 9,
+                  "vicinity": "Cape Hillsborough Resort, Cape Hillsborough",
+                  "place_id": "ChIJ27ekd-uD2WsRyGFcWwRWJW8",
+                  "location": {
+                    "lat": -20.9238838,
+                    "lng": 149.0478052
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Cape Hillsborough",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Cape Hillsborough",
+                  "place_id": "ChIJTRtQVu6D2WsRAIogf_HuAAQ",
+                  "location": {
+                    "lat": -20.9256453,
+                    "lng": 149.0189548
+                  }
+                },
+                {
+                  "name": "Cape Hillsborough Nature Tourist Park",
+                  "types": [
+                    "rv_park",
+                    "tourist_attraction",
+                    "campground",
+                    "lodging",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 995,
+                  "vicinity": "51 Risley Parade, Cape Hillsborough",
+                  "place_id": "ChIJMVBAltCF2WsR8pvHkzMONZ4",
+                  "location": {
+                    "lat": -20.9247026,
+                    "lng": 149.0479527
+                  }
+                },
+                {
+                  "name": "Cape Hillsborough Nature Tourist Park - Two-Bedroom Bungalow",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Australia",
+                  "place_id": "ChIJ95de58iD2WsRO7HhzFERTjw",
+                  "location": {
+                    "lat": -20.9248905,
+                    "lng": 149.0492248
+                  }
+                },
+                {
+                  "name": "Cape Hillsborough Nature Tourist Park",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Australia",
+                  "place_id": "ChIJ95de58iD2WsRqFGLNzVYIoY",
+                  "location": {
+                    "lat": -20.9248905,
+                    "lng": 149.0492248
+                  }
+                },
+                {
+                  "name": "Telstra Payphone",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "51 Risley Parade, Cape Hillsborough",
+                  "place_id": "ChIJ128nOyyD2WsRLA50_ZWJANo",
+                  "location": {
+                    "lat": -20.924965,
+                    "lng": 149.049091
+                  }
+                }
+              ]
+            },
+            "total_places_found": 12,
+            "photo_timestamp": "2022:10:01 05:35:50",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.5972819328308105
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/47.heic"
+    },
+    {
+      "image_filename": "47.heic",
+      "timestamp": "2026-01-28T05:52:27.835949",
+      "processing_time_seconds": 49.831707,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Beach at sunrise or sunset",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of kangaroos and the beach setting suggest a location in Australia. The lighting indicates either sunrise or sunset, creating a serene and picturesque atmosphere.",
+            "detailed_description": "The image depicts a beach scene during sunrise or sunset, characterized by a warm, colorful sky and calm sea. In the foreground, several kangaroos are visible on the sandy beach, adding a distinctive Australian wildlife element to the scene. The distant horizon features low-lying islands or landforms silhouetted against the sky.",
+            "identification": {
+              "primary": [
+                "Beach at sunrise or sunset"
+              ],
+              "location": null,
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Kangaroos",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "beach",
+              "sunrise",
+              "sunset",
+              "kangaroos",
+              "natural_feature"
+            ],
+            "location": null,
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Cape Hillsborough National Park, Australia",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "Cape Hillsborough is known for kangaroos on the beach at sunrise, fitting the scene depicted."
+              },
+              {
+                "guess": "Australian coastal region",
+                "specificity_level": "general",
+                "confidence": 0.8,
+                "reasoning": "The combination of kangaroos and a beach setting is typical of many coastal areas in Australia."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Beach at sunrise or sunset\"],\n        \"location\": null,\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Kangaroos\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"beach\", \"sunrise\", \"sunset\", \"kangaroos\", \"natural_feature\"],\n    \"description\": \"The image depicts a beach scene during sunrise or sunset, characterized by a warm, colorful sky and calm sea. In the foreground, several kangaroos are visible on the sandy beach, adding a distinctive Australian wildlife element to the scene. The distant horizon features low-lying islands or landforms silhouetted against the sky.\",\n    \"reasoning\": \"The presence of kangaroos and the beach setting suggest a location in Australia. The lighting indicates either sunrise or sunset, creating a serene and picturesque atmosphere.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Cape Hillsborough National Park, Australia\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"Cape Hillsborough is known for kangaroos on the beach at sunrise, fitting the scene depicted.\"\n        },\n        {\n            \"guess\": \"Australian coastal region\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.8,\n            \"reasoning\": \"The combination of kangaroos and a beach setting is typical of many coastal areas in Australia.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 9.591721773147583
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a serene beach scene at sunset, characterized by a wide expanse of sandy shoreline leading to a calm sea. The sky is adorned with a gradient of colors transitioning from deep blue at the top to warm hues of orange and yellow near the horizon, indicative of a setting sun. In the distance, the sea is tranquil, reflecting the soft colors of the sky, and a few small islands or landforms are visible on the horizon, adding depth to the scene. The beach itself is relatively flat and s",
+            "description": "The image depicts a serene beach scene at sunset, characterized by a wide expanse of sandy shoreline leading to a calm sea. The sky is adorned with a gradient of colors transitioning from deep blue at the top to warm hues of orange and yellow near the horizon, indicative of a setting sun. In the distance, the sea is tranquil, reflecting the soft colors of the sky, and a few small islands or landforms are visible on the horizon, adding depth to the scene. The beach itself is relatively flat and s",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "processing_time_seconds": 40.05434823036194
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Dog",
+          "confidence": 0.9859551191329956,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Dog",
+                "score": 0.9859551191329956
+              },
+              {
+                "source": "label",
+                "name": "Horizon",
+                "score": 0.9547271132469177
+              },
+              {
+                "source": "label",
+                "name": "Carnivores",
+                "score": 0.9387922883033752
+              },
+              {
+                "source": "label",
+                "name": "Sunset",
+                "score": 0.9358687996864319
+              },
+              {
+                "source": "label",
+                "name": "Dusk",
+                "score": 0.9300320744514465
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Dog",
+                "score": 0.607036292552948
+              },
+              {
+                "name": "Beach",
+                "score": 0.4002031981945038
+              },
+              {
+                "name": "Working animal",
+                "score": 0.3788575232028961
+              },
+              {
+                "name": "Sand",
+                "score": 0.31858402490615845
+              },
+              {
+                "name": "Sunset",
+                "score": 0.2695779800415039
+              }
+            ],
+            "objects": [
+              {
+                "name": "Kangaroo",
+                "score": 0.8801116943359375
+              },
+              {
+                "name": "Kangaroo",
+                "score": 0.840916097164154
+              },
+              {
+                "name": "Animal",
+                "score": 0.7138544321060181
+              },
+              {
+                "name": "Animal",
+                "score": 0.693365752696991
+              },
+              {
+                "name": "Animal",
+                "score": 0.6882833242416382
+              }
+            ],
+            "labels": [
+              {
+                "name": "Dog",
+                "score": 0.9859551191329956
+              },
+              {
+                "name": "Horizon",
+                "score": 0.9547271132469177
+              },
+              {
+                "name": "Carnivores",
+                "score": 0.9387922883033752
+              },
+              {
+                "name": "Sunset",
+                "score": 0.9358687996864319
+              },
+              {
+                "name": "Dusk",
+                "score": 0.9300320744514465
+              }
+            ],
+            "processing_time_seconds": 11.728332996368408
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/47.heic"
+    }
+  ]
+}

@@ -1,0 +1,889 @@
+{
+  "image_id": 56,
+  "filename": "56.heic",
+  "ground_truth": {
+    "description": "Photo of Bondi Beach with no visible landmarks except barely Bondi Pavilion.",
+    "photographer_description": "A photo of Bondi Beach, but with no visible landmarks except barely Bondi Pavilion (would be impressive if a vision model recognized it). Metadata should give it off though. Daytime, clear sky.",
+    "locations": [
+      {
+        "name": "Bondi Beach, Sydney, New South Wales, Australia",
+        "hierarchy": {
+          "country": "Australia",
+          "region": "New South Wales",
+          "city": "Sydney",
+          "exact": "Bondi Beach"
+        }
+      }
+    ],
+    "entities": [
+      {
+        "name": "Bondi Beach",
+        "type": "landmark",
+        "notes": null,
+        "importance": "high",
+        "max_specificity": 5
+      },
+      {
+        "name": "Bondi Pavilion",
+        "type": "landmark",
+        "notes": "barely visible, impressive if recognized",
+        "importance": "medium",
+        "max_specificity": 5
+      },
+      {
+        "name": "Bondi Sewer Vent",
+        "type": "building",
+        "notes": "",
+        "max_specificity": 5,
+        "importance": "low",
+        "added_by": "human_evaluator"
+      }
+    ],
+    "scene_type": [
+      "beach",
+      "coastal"
+    ],
+    "key_visual_elements": [
+      "Beach scene",
+      "Buildings in background",
+      "Bondi Pavilion (faint)"
+    ],
+    "max_specificity": "Recognizable Type",
+    "difficulty": "Easy (with metadata), Medium (without - should recognize Australian beach)",
+    "notes": "Daytime, clear sky.",
+    "gps_metadata": {
+      "gps_latitude": -33.89414166666667,
+      "gps_longitude": 151.27377222222225,
+      "reverse_geocoded": {
+        "formatted_address": "24 Notts Ave, Bondi Beach NSW 2026, Australia",
+        "city": "Bondi Beach",
+        "county": "Waverley Council",
+        "country": "Australia"
+      }
+    },
+    "image_categories": [
+      "landmark",
+      "urban",
+      "nature"
+    ],
+    "difficulty_with_gps": "medium",
+    "difficulty_without_gps": "hard"
+  },
+  "model_runs": [
+    {
+      "image_filename": "56.heic",
+      "use_gps": true,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "A wide, crowded ocean beach on a clear sunny day. The foreground shows golden sand densely populated with sunbathers and people walking along the wet shoreline; many swimmers are in the small, rolling surf. Several lifeguards in yellow-and-red uniforms and a beach utility buggy are visible near the waterline. Behind the sand runs a seafront promenade with a long, low civic building featuring cream walls, arcaded colonnades, and red terracotta tiled roofs—characteristic of Spanish Mission/Mediterranean Revival style. Beyond the promenade are rows of mid-rise apartment blocks and houses on low hills. The view looks across the full curve of the beach toward the opposite headland under a cloudless blue sky, suggesting an elevated vantage from the southern end of the bay.",
+            "photographer_location": [
+              {
+                "name": "South Bondi headland near Bondi Icebergs / start of the Bondi to Bronte Coastal Walk",
+                "confidence": 0.75
+              },
+              {
+                "name": "Bondi Beach, Sydney",
+                "confidence": 0.95
+              },
+              {
+                "name": "Bondi Beach View Point",
+                "confidence": 0.6
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Bondi Beach (central and southern sections), Sydney",
+                "confidence": 0.95
+              },
+              {
+                "name": "Bondi Pavilion on Queen Elizabeth Drive, Bondi Beach",
+                "confidence": 0.9
+              },
+              {
+                "name": "Shoreline of Bondi Bay",
+                "confidence": 0.85
+              }
+            ],
+            "entities": [
+              {
+                "name": "Bondi Beach",
+                "type": "landmark",
+                "confidence": 0.98,
+                "notes": "Iconic Sydney ocean beach forming a broad crescent of sand and surf."
+              },
+              {
+                "name": "Bondi Beach",
+                "type": "natural_feature",
+                "confidence": 0.98,
+                "notes": "Sandy ocean beach and bay on Sydney’s eastern suburbs."
+              },
+              {
+                "name": "Bondi Pavilion",
+                "type": "building",
+                "confidence": 0.9,
+                "notes": "Interwar Mediterranean/Spanish Mission style civic building with arcades and red tiled roofs along the beachfront promenade."
+              },
+              {
+                "name": "Bondi to Bronte Coastal Walk",
+                "type": "public_space",
+                "confidence": 0.75,
+                "notes": "Likely vantage point is the south-end section near Bondi Icebergs."
+              },
+              {
+                "name": "South Bondi headland viewpoint",
+                "type": "viewpoint",
+                "confidence": 0.7,
+                "notes": "Elevated lookout area above the southern end of the beach."
+              },
+              {
+                "name": "Queen Elizabeth Drive / Bondi Promenade",
+                "type": "public_space",
+                "confidence": 0.6,
+                "notes": "Seafront walkway behind the beach."
+              },
+              {
+                "name": "Ben Buckler (North Bondi headland)",
+                "type": "natural_feature",
+                "confidence": 0.5,
+                "notes": "Distant headland at the far end of the beach, partially visible in the background."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "A wide, sunlit view of Bondi Beach with a densely populated sandy shore and a turquoise sea. The beach is crowded with sunbathers, families, and swimmers, while many people stroll along the wet sand near the waterline. In the background, a row of low-rise buildings and a promenade edge the beach, including a distinctive structure with arches along the ground floor that resembles Bondi Pavilion. The sky is clear and blue, and the hillside beyond is dotted with trees and residential buildings, contributing to a quintessential Bondi coastalscape.",
+            "photographer_location": [
+              {
+                "name": "Bondi Beach, Sydney, New South Wales, Australia",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Bondi Beach",
+                "confidence": 0.85
+              },
+              {
+                "name": "Bondi Pavilion",
+                "confidence": 0.7
+              }
+            ],
+            "entities": [
+              {
+                "name": "Bondi Beach",
+                "type": "natural_feature",
+                "confidence": 0.95,
+                "notes": "Long sandy beach at Bondi, iconic Sydney recreation spot"
+              },
+              {
+                "name": "Bondi Pavilion",
+                "type": "building",
+                "confidence": 0.9,
+                "notes": "Heritage/arts complex located on the Bondi Beach promenade; recognizable arch-fronted facade"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A vibrant, high-angle daytime photograph looking north along Bondi Beach in Sydney, Australia. The scene is densely packed with beachgoers on the golden sand and swimmers in the turquoise, white-capped ocean. In the middle distance, the historic Bondi Pavilion is clearly visible, distinguished by its red-tiled roof and arched colonnades. The background features the residential hillside of the North Bondi suburb rising towards the Ben Buckler headland. A distinctive white vertical tower, the Bondi Sewer Vent, stands prominently on the skyline against a clear blue sky. A lifeguard ATV is visible on the sand among the crowds.",
+            "photographer_location": [
+              {
+                "name": "Bondi to Bronte Coastal Walk",
+                "confidence": 0.95
+              },
+              {
+                "name": "South Bondi Headland",
+                "confidence": 0.9
+              },
+              {
+                "name": "Notts Avenue",
+                "confidence": 0.85
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Bondi Beach",
+                "confidence": 1.0
+              },
+              {
+                "name": "North Bondi",
+                "confidence": 0.9
+              }
+            ],
+            "entities": [
+              {
+                "name": "Bondi Beach",
+                "type": "landmark",
+                "confidence": 1.0,
+                "notes": null
+              },
+              {
+                "name": "Bondi Pavilion",
+                "type": "building",
+                "confidence": 0.98,
+                "notes": "Heritage-listed cultural centre with distinctive red tile roof and arches"
+              },
+              {
+                "name": "Bondi Sewer Vent",
+                "type": "infrastructure",
+                "confidence": 0.95,
+                "notes": "Also known as Ben Buckler Sewer Vent; white tower on the skyline"
+              },
+              {
+                "name": "North Bondi",
+                "type": "district",
+                "confidence": 0.9,
+                "notes": "Suburb visible on the hill in the background"
+              },
+              {
+                "name": "Ben Buckler",
+                "type": "natural_feature",
+                "confidence": 0.85,
+                "notes": "Headland at the northern end of the beach"
+              },
+              {
+                "name": "Pacific Ocean",
+                "type": "natural_feature",
+                "confidence": 1.0,
+                "notes": null
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A high-angle, sunny daytime photograph of Bondi Beach in Sydney, Australia. The foreground and middle ground are filled with a wide, sandy beach crowded with numerous people sunbathing and walking. To the right, the turquoise ocean waves roll onto the shore, with people swimming in the surf. In the background, the urban landscape of Bondi is visible, featuring various residential and commercial buildings. A prominent landmark is the Bondi Pavilion, a large building with a distinctive red-tiled roof situated along the beachfront. The sky is clear and blue. The photo is taken from an elevated position at the southern end of the beach, looking north.",
+            "photographer_location": [
+              {
+                "name": "Bondi to Bronte Coastal Walk",
+                "confidence": 0.95
+              },
+              {
+                "name": "Bondi Beach View Point",
+                "confidence": 0.9
+              },
+              {
+                "name": "Bondi Beach, Sydney, Australia",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Bondi Beach",
+                "confidence": 1.0
+              },
+              {
+                "name": "South Bondi Beach",
+                "confidence": 0.95
+              }
+            ],
+            "entities": [
+              {
+                "name": "Bondi Beach",
+                "type": "natural_feature",
+                "confidence": 1.0,
+                "notes": "Famous crescent-shaped beach in Sydney, Australia."
+              },
+              {
+                "name": "Bondi Pavilion",
+                "type": "building",
+                "confidence": 0.98,
+                "notes": "A community cultural centre with a prominent red-tiled roof."
+              },
+              {
+                "name": "Bondi to Bronte Coastal Walk",
+                "type": "viewpoint",
+                "confidence": 0.95,
+                "notes": "Popular walking trail offering elevated views of the beach."
+              },
+              {
+                "name": "Ben Buckler",
+                "type": "natural_feature",
+                "confidence": 0.85,
+                "notes": "The headland at the northern end of Bondi Beach, visible in the far background."
+              },
+              {
+                "name": "Bondi Beach Park",
+                "type": "public_space",
+                "confidence": 0.9,
+                "notes": "Parkland area adjacent to the beach and promenade."
+              },
+              {
+                "name": "Bondi Sewage Treatment Plant Chimney",
+                "type": "infrastructure",
+                "confidence": 0.7,
+                "notes": "The tall white chimney-like structure visible on the horizon."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "Bondi Beach Park",
+                "type": "landmark",
+                "confidence": 0.594257652759552,
+                "notes": null
+              },
+              {
+                "name": "Bondi To Bronte Coastal Walk",
+                "type": "landmark",
+                "confidence": 0.5088098049163818,
+                "notes": null
+              },
+              {
+                "name": "Bondi Beach",
+                "type": "landmark",
+                "confidence": 0.5073391199111938,
+                "notes": null
+              },
+              {
+                "name": "Bondi Skate Park",
+                "type": "landmark",
+                "confidence": 0.48300015926361084,
+                "notes": null
+              },
+              {
+                "name": "Biddigal Reserve",
+                "type": "landmark",
+                "confidence": 0.4663863182067871,
+                "notes": null
+              }
+            ],
+            "landmark_name": "Bondi Beach Park"
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "Sunny, crowded beach scene with hundreds of people sunbathing on pale sand and wading or swimming in small shore break waves. The shoreline curves in a broad crescent with turquoise water and a clear blue sky. Behind the beach is a promenade and a large arcaded, cream-colored building with red terracotta roof tiles (the heritage Bondi Pavilion). Low- to mid-rise residential buildings and coastal vegetation rise on the hills beyond. View appears to be from the southern headland looking north across Bondi Beach, Sydney, Australia.",
+            "photographer_location": [
+              {
+                "name": "South Bondi headland / Notts Avenue (near Bondi Icebergs), Bondi Beach, NSW, Australia",
+                "confidence": 0.9
+              },
+              {
+                "name": "Bondi to Bronte Coastal Walk, southern lookout",
+                "confidence": 0.75
+              },
+              {
+                "name": "Waverley, Eastern Suburbs of Sydney, NSW",
+                "confidence": 0.6
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Bondi Beach, Bondi Beach suburb, Waverley Council, Sydney, NSW, Australia",
+                "confidence": 0.98
+              },
+              {
+                "name": "Bondi Pavilion, Campbell Parade, Bondi Beach, NSW",
+                "confidence": 0.86
+              }
+            ],
+            "entities": [
+              {
+                "name": "Bondi Beach",
+                "type": "natural_feature",
+                "confidence": 0.98,
+                "notes": "Iconic ocean beach in Sydney’s Eastern Suburbs, about 1 km long; popular for swimming and surfing; within Waverley Council."
+              },
+              {
+                "name": "Bondi Pavilion",
+                "type": "building",
+                "confidence": 0.9,
+                "notes": "Heritage-listed community and cultural center facing the beach; Spanish Mission/Mediterranean Revival style with arcaded colonnades and red tile roof; constructed circa 1928–1929 and recently restored."
+              },
+              {
+                "name": "Spanish Mission / Mediterranean Revival (as seen on Bondi Pavilion)",
+                "type": "architectural_style",
+                "confidence": 0.72,
+                "notes": "Stucco walls, arched colonnades, and red terracotta roof tiles characteristic of the style."
+              },
+              {
+                "name": "Bondi Beach (suburb/district)",
+                "type": "district",
+                "confidence": 0.9,
+                "notes": "Suburb of Sydney in the Eastern Suburbs, NSW, Australia."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "A wide view of Bondi Beach in Sydney, Australia, showing a crowded sandy shoreline with numerous sunbathers and swimmers along the water's edge. The blue-green sea extends to the right, with a line of modern buildings and a promenade lining the back of the beach under a clear sky.",
+            "photographer_location": [
+              {
+                "name": "24 Notts Ave, Bondi Beach, NSW 2026, Australia",
+                "confidence": 0.98
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Bondi Beach, Sydney, New South Wales, Australia",
+                "confidence": 0.92
+              }
+            ],
+            "entities": [
+              {
+                "name": "Bondi Beach",
+                "type": "natural_feature",
+                "confidence": 0.95,
+                "notes": null
+              }
+            ],
+            "landmark_name": null
+          }
+        }
+      ]
+    },
+    {
+      "image_filename": "56.heic",
+      "use_gps": false,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "A crowded crescent-shaped surf beach with golden sand and clear blue water. The shoreline curves to the right with gentle waves and many swimmers. Set behind the beach is an urban beachfront with low- to mid-rise apartments. A prominent heritage pavilion with a terracotta-tiled roof and long arcaded facade sits near the center-left of the beach. On the distant right ridge stands a tall, slender white ventilation stack. Lighting suggests a bright, clear afternoon. The vantage appears to be slightly elevated from the southern end of the beach, looking north/northeast along the shoreline.",
+            "photographer_location": [
+              {
+                "name": "South end promenade of Bondi Beach (near the coastal walk/above the sand), Sydney, NSW, Australia",
+                "confidence": 0.78
+              },
+              {
+                "name": "Bondi Beach, Sydney, New South Wales, Australia",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Bondi Beach, Sydney, New South Wales, Australia",
+                "confidence": 0.95
+              },
+              {
+                "name": "Bondi Pavilion, Bondi Beach",
+                "confidence": 0.82
+              },
+              {
+                "name": "North Bondi sewer vent (Ben Buckler Vent), North Bondi headland",
+                "confidence": 0.66
+              }
+            ],
+            "entities": [
+              {
+                "name": "Bondi Beach",
+                "type": "public_space",
+                "confidence": 0.95,
+                "notes": "Iconic Sydney beach; broad sandy bay with surf."
+              },
+              {
+                "name": "Bondi Beach",
+                "type": "natural_feature",
+                "confidence": 0.86,
+                "notes": "Crescent-shaped bay on the Pacific Ocean."
+              },
+              {
+                "name": "Bondi Pavilion",
+                "type": "building",
+                "confidence": 0.9,
+                "notes": "Heritage-listed beachfront pavilion (opened 1929) with terracotta roof and arcaded facade."
+              },
+              {
+                "name": "Bondi Pavilion",
+                "type": "cultural_site",
+                "confidence": 0.85,
+                "notes": "Community and arts venue on Bondi Beach."
+              },
+              {
+                "name": "North Bondi sewer vent (Ben Buckler Vent)",
+                "type": "infrastructure",
+                "confidence": 0.7,
+                "notes": "Tall white ventilation stack on the North Bondi/Ben Buckler headland."
+              },
+              {
+                "name": "Spanish Mission / Mediterranean Revival",
+                "type": "architectural_style",
+                "confidence": 0.7,
+                "notes": "Stylistic description of the Bondi Pavilion's arcades and roof tiles."
+              },
+              {
+                "name": "North Bondi",
+                "type": "district",
+                "confidence": 0.62,
+                "notes": "Suburb/headland area visible at the far end of the beach."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "A densely populated sandy beach along a curved coastline in a sunlit coastal town. The foreground shows numerous sunbathers and towels on the light-colored sand, with many people wading or swimming in the calm turquoise water near the shore. A promenade runs behind the beach, lined with a row of low-rise buildings and storefronts. On the left, a long arcade or pavilion-like structure with arches is visible. Behind the beachfront, a hillside is dotted with houses and trees, with a tall slender white tower/stack rising on a distant hill. The sky is clear blue and the lighting is bright, suggesting midday or mid-afternoon.",
+            "photographer_location": [
+              {
+                "name": "Overlooking Bondi Beach, Sydney, Australia",
+                "confidence": 0.55
+              },
+              {
+                "name": "Elevated vantage point above the beachfront (coastal promenade area)",
+                "confidence": 0.25
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Bondi Beach, Sydney, Australia",
+                "confidence": 0.85
+              }
+            ],
+            "entities": [
+              {
+                "name": "Bondi Beach",
+                "type": "landmark",
+                "confidence": 0.85,
+                "notes": "Public seaside beach in Sydney, Australia."
+              },
+              {
+                "name": "Bondi Pavilion / beachfront arcade",
+                "type": "building",
+                "confidence": 0.65,
+                "notes": "Arcade/pavilion-style structure with arches along the promenade."
+              },
+              {
+                "name": "Esplanade / beachfront promenade",
+                "type": "public_space",
+                "confidence": 0.6,
+                "notes": "Promenade behind the beach with shops and buildings."
+              },
+              {
+                "name": "Distant tall white tower on hill",
+                "type": "infrastructure",
+                "confidence": 0.3,
+                "notes": "Tall slender structure visible on the distant hill; exact function not confirmed."
+              },
+              {
+                "name": "Hilly residential suburbs behind beach",
+                "type": "district",
+                "confidence": 0.5,
+                "notes": "Residential housing on the hillside behind the beachfront."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A high-angle, daytime photograph capturing a densely crowded scene at Bondi Beach in Sydney, Australia. The golden sand is packed with thousands of beachgoers sunbathing and walking, while many others swim and surf in the turquoise and blue waters of the Tasman Sea on the right. The waves are rolling in with white foam. In the background on the left, the historic Bondi Pavilion is clearly visible, distinguished by its red-tiled roof, cream facade, and arched colonnades. Behind the beach, the suburb of North Bondi rises on a hill, densely populated with residential buildings. A prominent, tall white cylindrical tower (the North Bondi Sewer Vent) stands on the skyline towards the right side of the background. Lifeguards in yellow and red uniforms can be seen patrolling the sand.",
+            "photographer_location": [
+              {
+                "name": "Notts Avenue",
+                "confidence": 0.9
+              },
+              {
+                "name": "South Bondi Headland",
+                "confidence": 0.85
+              },
+              {
+                "name": "Bondi Icebergs Club area",
+                "confidence": 0.8
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Bondi Beach",
+                "confidence": 1.0
+              },
+              {
+                "name": "Sydney",
+                "confidence": 1.0
+              },
+              {
+                "name": "New South Wales",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "Bondi Beach",
+                "type": "natural_feature",
+                "confidence": 1.0,
+                "notes": "Famous crescent-shaped beach in Sydney"
+              },
+              {
+                "name": "Bondi Pavilion",
+                "type": "building",
+                "confidence": 0.95,
+                "notes": "Heritage-listed community cultural centre with distinctive red tile roof"
+              },
+              {
+                "name": "North Bondi Sewer Vent",
+                "type": "infrastructure",
+                "confidence": 0.95,
+                "notes": "Tall white ventilation tower on the northern headland"
+              },
+              {
+                "name": "Ben Buckler",
+                "type": "district",
+                "confidence": 0.9,
+                "notes": "The headland/point visible in the background distance"
+              },
+              {
+                "name": "North Bondi",
+                "type": "district",
+                "confidence": 0.9,
+                "notes": "Suburb visible on the hill in the background"
+              },
+              {
+                "name": "Tasman Sea",
+                "type": "natural_feature",
+                "confidence": 1.0,
+                "notes": null
+              },
+              {
+                "name": "Lifeguards",
+                "type": "other",
+                "confidence": 0.9,
+                "notes": "Visible in yellow and red uniforms"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A high-angle, vertical shot of a very crowded beach during a bright, sunny day. The beach features golden sand packed with people sunbathing and walking. To the right, the turquoise waters of the ocean have gentle white waves breaking on the shore, with many swimmers in the water. In the mid-ground on the left, there is a large, historic-looking building with a prominent red-tiled roof and arched colonnades. The background consists of a rising hillside densely packed with residential buildings and greenery. A tall, slender white chimney or tower is visible on the horizon towards the right side of the background. The lighting is harsh and direct, suggesting midday sun.",
+            "photographer_location": [
+              {
+                "name": "Bondi Beach (South End)",
+                "confidence": 0.95
+              },
+              {
+                "name": "Notts Avenue, Bondi Beach",
+                "confidence": 0.9
+              },
+              {
+                "name": "Sydney, Australia",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Bondi Beach",
+                "confidence": 1.0
+              },
+              {
+                "name": "Sydney, Australia",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "Bondi Beach",
+                "type": "landmark",
+                "confidence": 1.0,
+                "notes": "World-famous beach in Sydney, Australia."
+              },
+              {
+                "name": "Bondi Pavilion",
+                "type": "building",
+                "confidence": 1.0,
+                "notes": "The large building with the red-tiled roof, a community and cultural center."
+              },
+              {
+                "name": "Bondi Sewage Treatment Plant Chimney",
+                "type": "infrastructure",
+                "confidence": 0.95,
+                "notes": "The tall white vent tower visible on the North Bondi headland."
+              },
+              {
+                "name": "North Bondi",
+                "type": "district",
+                "confidence": 0.95,
+                "notes": "The residential area visible in the background."
+              },
+              {
+                "name": "Pacific Ocean",
+                "type": "natural_feature",
+                "confidence": 1.0,
+                "notes": null
+              },
+              {
+                "name": "Interwar Mediterranean style",
+                "type": "architectural_style",
+                "confidence": 0.9,
+                "notes": "The architectural style of the Bondi Pavilion."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "Bondi Beach Park",
+                "type": "landmark",
+                "confidence": 0.5926653146743774,
+                "notes": null
+              },
+              {
+                "name": "Bondi To Bronte Coastal Walk",
+                "type": "landmark",
+                "confidence": 0.5065430998802185,
+                "notes": null
+              },
+              {
+                "name": "Bondi Beach",
+                "type": "landmark",
+                "confidence": 0.5062299966812134,
+                "notes": null
+              },
+              {
+                "name": "Bondi Skate Park",
+                "type": "landmark",
+                "confidence": 0.48083022236824036,
+                "notes": null
+              },
+              {
+                "name": "Biddigal Reserve",
+                "type": "landmark",
+                "confidence": 0.46666741371154785,
+                "notes": null
+              }
+            ],
+            "landmark_name": "Bondi Beach Park"
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "A wide, sunlit view of a crowded sandy beach with gentle surf and many people swimming, wading, and sunbathing. The shoreline curves along a crescent-shaped bay, with small waves breaking near the water’s edge. Behind the beach is a promenade and a long, low, pale building with arches and a terracotta-tiled roof, and further back are low-rise apartments and greenery on the hills. The sky is clear and blue, suggesting a warm day at a popular urban ocean beach.",
+            "photographer_location": [
+              {
+                "name": "South end of Bondi Beach, Sydney, New South Wales, Australia",
+                "confidence": 0.6
+              },
+              {
+                "name": "Bondi Beach Promenade, Sydney, New South Wales, Australia",
+                "confidence": 0.5
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Bondi Beach, Bondi, Sydney, New South Wales, Australia",
+                "confidence": 0.9
+              },
+              {
+                "name": "Waverley local area, Eastern Suburbs of Sydney, Australia",
+                "confidence": 0.6
+              }
+            ],
+            "entities": [
+              {
+                "name": "Bondi Beach",
+                "type": "natural_feature",
+                "confidence": 0.93,
+                "notes": "Iconic crescent-shaped surf beach in the suburb of Bondi, Sydney; popular for swimming and surfing and patrolled by surf lifesavers."
+              },
+              {
+                "name": "Bondi Pavilion",
+                "type": "building",
+                "confidence": 0.75,
+                "notes": "Historic beachfront pavilion with arcades and terracotta roof; early 20th‑century design often described as Spanish Mission/Med revival."
+              },
+              {
+                "name": "Bondi",
+                "type": "district",
+                "confidence": 0.8,
+                "notes": "Beachside suburb in Sydney’s Eastern Suburbs (Waverley Council)."
+              },
+              {
+                "name": "Bondi Beach Promenade",
+                "type": "public_space",
+                "confidence": 0.55,
+                "notes": "Seafront walkway and gathering area immediately behind the sand."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "A crowded sandy beach along a coastline with numerous sunbathers and swimmers. The beach stretches along the water, with gentle waves. In the background there are low-rise buildings and a hillside with more structures under a clear blue sky.",
+            "photographer_location": [],
+            "subject_location": [
+              {
+                "name": "Beach",
+                "confidence": 0.65
+              },
+              {
+                "name": "Sea / Ocean",
+                "confidence": 0.65
+              }
+            ],
+            "entities": [
+              {
+                "name": "Beach",
+                "type": "natural_feature",
+                "confidence": 0.85,
+                "notes": null
+              },
+              {
+                "name": "Ocean / Sea",
+                "type": "natural_feature",
+                "confidence": 0.8,
+                "notes": null
+              },
+              {
+                "name": "Coastline Buildings",
+                "type": "building",
+                "confidence": 0.6,
+                "notes": "low-rise structures along shoreline"
+              }
+            ],
+            "landmark_name": null
+          }
+        }
+      ]
+    }
+  ]
+}

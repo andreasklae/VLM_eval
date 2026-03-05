@@ -1,0 +1,494 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "82.jpg",
+      "timestamp": "2026-01-28T07:06:36.064104",
+      "processing_time_seconds": 44.875959,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -30.3226,
+        "gps_longitude": 152.7145222222222,
+        "location": {
+          "formatted_address": "208 Coramba Rd, Dorrigo NSW 2453, Australia",
+          "city": "Dorrigo",
+          "county": "Bellingen Shire Council",
+          "country": "Australia"
+        },
+        "datetime_original": "2024:04:04 17:09:50",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 14 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Dangar Falls, Dorrigo, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Dorrigo, Australia, which is known for Dangar Falls. The visual characteristics of the waterfall match descriptions and images of Dangar Falls, including the wide cascade and surrounding vegetation.",
+            "detailed_description": "The image depicts Dangar Falls, a picturesque waterfall located near Dorrigo in New South Wales, Australia. The waterfall features a wide cascade of water flowing over a rocky cliff into a pool below. Surrounding the falls are lush greenery and trees, contributing to the scenic natural environment. The falls are a popular spot for visitors and are known for their tranquil setting.",
+            "identification": {
+              "primary": [
+                "Dangar Falls"
+              ],
+              "location": "Dorrigo, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Dangar Falls",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "waterfall",
+              "natural_feature",
+              "Australia",
+              "Dorrigo"
+            ],
+            "location": "Dorrigo, Australia",
+            "type": "natural_feature",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Dangar Falls\"],\n        \"location\": \"Dorrigo, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Dangar Falls\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"waterfall\", \"natural_feature\", \"Australia\", \"Dorrigo\"],\n    \"description\": \"The image depicts Dangar Falls, a picturesque waterfall located near Dorrigo in New South Wales, Australia. The waterfall features a wide cascade of water flowing over a rocky cliff into a pool below. Surrounding the falls are lush greenery and trees, contributing to the scenic natural environment. The falls are a popular spot for visitors and are known for their tranquil setting.\",\n    \"reasoning\": \"The location metadata indicates Dorrigo, Australia, which is known for Dangar Falls. The visual characteristics of the waterfall match descriptions and images of Dangar Falls, including the wide cascade and surrounding vegetation.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "gps_coordinates": {
+              "latitude": -30.3226,
+              "longitude": 152.7145222222222
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "208 Coramba Rd, Dorrigo NSW 2453, Australia",
+              "city": "Dorrigo",
+              "county": "Bellingen Shire Council",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2024:04:04 17:09:50",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 14 Pro"
+            },
+            "processing_time_seconds": 7.812726020812988
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image features a picturesque waterfall cascading over a rocky cliff into a pool below. The waterfall is characterized by multiple streams of water flowing over the edge, creating a curtain-like effect. The cliff face is composed of rugged, layered rock formations with visible textures and colors ranging from earthy browns to grays. Surrounding the waterfall, lush vegetation is abundant, with dense greenery and trees framing the scene, indicating a rich, natural environment. The pool at the b",
+            "description": "The image features a picturesque waterfall cascading over a rocky cliff into a pool below. The waterfall is characterized by multiple streams of water flowing over the edge, creating a curtain-like effect. The cliff face is composed of rugged, layered rock formations with visible textures and colors ranging from earthy browns to grays. Surrounding the waterfall, lush vegetation is abundant, with dense greenery and trees framing the scene, indicating a rich, natural environment. The pool at the b",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": -30.3226,
+              "longitude": 152.7145222222222
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "208 Coramba Rd, Dorrigo NSW 2453, Australia",
+              "city": "Dorrigo",
+              "county": "Bellingen Shire Council",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2024:04:04 17:09:50",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 14 Pro"
+            },
+            "processing_time_seconds": 36.50561189651489
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Dorrigo Rainforest Centre (-30.3636, 152.7290)",
+          "confidence": 0.5835821628570557,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Dorrigo Rainforest Centre",
+            "coordinates": {
+              "latitude": -30.363587500000005,
+              "longitude": 152.7290021
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 1536,
+                "y": 0
+              },
+              {
+                "x": 1536,
+                "y": 2048
+              },
+              {
+                "x": 0,
+                "y": 2048
+              }
+            ],
+            "context_labels": [
+              "Water resources",
+              "Water",
+              "Body of water",
+              "Waterfall",
+              "Watercourse"
+            ],
+            "context_objects": [],
+            "web_entities": [
+              {
+                "name": "Waterfall",
+                "score": 0.3758484423160553
+              },
+              {
+                "name": "Tourism",
+                "score": 0.3190999925136566
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Dorrigo Rainforest Centre",
+                "score": 0.5835821628570557,
+                "location": {
+                  "lat": -30.363587500000005,
+                  "lng": 152.7290021
+                }
+              },
+              {
+                "name": "Dorrigo National Park",
+                "score": 0.5645064115524292,
+                "location": {
+                  "lat": -30.3636107,
+                  "lng": 152.7290644
+                }
+              }
+            ],
+            "processing_time_seconds": 7.782395839691162
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Dorrigo, Bellingen Shire Council, Australia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Dorrigo, Bellingen Shire Council, Australia",
+            "coordinates": {
+              "latitude": -30.3226,
+              "longitude": 152.7145222222222
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Dangar Falls",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1678,
+                  "vicinity": "Coramba Road, Dorrigo",
+                  "place_id": "ChIJXd8N7_WjnmsRdVINr2kzYC4",
+                  "location": {
+                    "lat": -30.3233022,
+                    "lng": 152.7143427
+                  }
+                },
+                {
+                  "name": "Dangar Falls Labyrinth",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 28,
+                  "vicinity": "Dorrigo",
+                  "place_id": "ChIJtXWH4QmknmsRooQoxbPVx3c",
+                  "location": {
+                    "lat": -30.322199,
+                    "lng": 152.7158601
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Dorrigo",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Dorrigo",
+                  "place_id": "ChIJFZ5tcqajnmsRUJVDkLQJBgQ",
+                  "location": {
+                    "lat": -30.3401871,
+                    "lng": 152.7118883
+                  }
+                },
+                {
+                  "name": "Dangar Falls Lodge | Camp | Caravan",
+                  "types": [
+                    "rv_park",
+                    "campground",
+                    "lodging",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 116,
+                  "vicinity": "Dangar Falls, 180 Coramba Road, Dorrigo",
+                  "place_id": "ChIJXd8N7_WjnmsRA1BlWN-izGE",
+                  "location": {
+                    "lat": -30.3218253,
+                    "lng": 152.715315
+                  }
+                },
+                {
+                  "name": "Dangar Falls",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1678,
+                  "vicinity": "Coramba Road, Dorrigo",
+                  "place_id": "ChIJXd8N7_WjnmsRdVINr2kzYC4",
+                  "location": {
+                    "lat": -30.3233022,
+                    "lng": 152.7143427
+                  }
+                },
+                {
+                  "name": "Public Toilets Dangar Falls",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 3,
+                  "vicinity": "180 Coramba Road, Dorrigo",
+                  "place_id": "ChIJ9XkQ9cmjnmsRy11HhSWyESo",
+                  "location": {
+                    "lat": -30.3218253,
+                    "lng": 152.715315
+                  }
+                },
+                {
+                  "name": "Dangar Falls Lodge Coffee Van",
+                  "types": [
+                    "cafe",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 8,
+                  "vicinity": "180 Coramba Road, Dorrigo",
+                  "place_id": "ChIJa4AydQClnmsRQJjtWOtor3w",
+                  "location": {
+                    "lat": -30.3218699,
+                    "lng": 152.7154762
+                  }
+                }
+              ]
+            },
+            "total_places_found": 7,
+            "photo_timestamp": "2024:04:04 17:09:50",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 14 Pro"
+            },
+            "processing_time_seconds": 0.3221876621246338
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/82.jpg"
+    },
+    {
+      "image_filename": "82.jpg",
+      "timestamp": "2026-01-28T07:07:20.968307",
+      "processing_time_seconds": 54.015302,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Whangarei Falls, Whangarei, New Zealand",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The waterfall's distinctive height and surrounding environment match the characteristics of Whangarei Falls, a well-known natural feature in New Zealand.",
+            "detailed_description": "The image depicts Whangarei Falls, a picturesque waterfall located in Whangarei, New Zealand. The waterfall is approximately 26 meters high and is surrounded by lush greenery and rocky cliffs. The water cascades down into a pool below, which is visible in the foreground. The area is known for its scenic beauty and is a popular spot for visitors and locals alike.",
+            "identification": {
+              "primary": [
+                "Whangarei Falls"
+              ],
+              "location": "Whangarei, New Zealand",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Whangarei Falls",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "waterfall",
+              "natural_feature",
+              "New_Zealand",
+              "Whangarei"
+            ],
+            "location": "Whangarei, New Zealand",
+            "type": "natural_feature",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Whangarei Falls\"],\n        \"location\": \"Whangarei, New Zealand\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Whangarei Falls\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"waterfall\", \"natural_feature\", \"New_Zealand\", \"Whangarei\"],\n    \"description\": \"The image depicts Whangarei Falls, a picturesque waterfall located in Whangarei, New Zealand. The waterfall is approximately 26 meters high and is surrounded by lush greenery and rocky cliffs. The water cascades down into a pool below, which is visible in the foreground. The area is known for its scenic beauty and is a popular spot for visitors and locals alike.\",\n    \"reasoning\": \"The waterfall's distinctive height and surrounding environment match the characteristics of Whangarei Falls, a well-known natural feature in New Zealand.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "processing_time_seconds": 8.190186023712158
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a picturesque waterfall cascading over a rocky cliff into a pool below. The waterfall is characterized by multiple streams of water flowing down the cliff face, creating a curtain-like effect. The cliff is composed of rugged, stratified rock formations, with visible layers and textures that add to the natural beauty of the scene. The water appears to be clear and is falling with considerable force, creating a mist at the base where it meets the pool. Surrounding the waterfall, ",
+            "description": "The image depicts a picturesque waterfall cascading over a rocky cliff into a pool below. The waterfall is characterized by multiple streams of water flowing down the cliff face, creating a curtain-like effect. The cliff is composed of rugged, stratified rock formations, with visible layers and textures that add to the natural beauty of the scene. The water appears to be clear and is falling with considerable force, creating a mist at the base where it meets the pool. Surrounding the waterfall, ",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "processing_time_seconds": 45.8225998878479
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Dorrigo Rainforest Centre (-30.3636, 152.7290)",
+          "confidence": 0.5835821628570557,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Dorrigo Rainforest Centre",
+            "coordinates": {
+              "latitude": -30.363587500000005,
+              "longitude": 152.7290021
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 1536,
+                "y": 0
+              },
+              {
+                "x": 1536,
+                "y": 2048
+              },
+              {
+                "x": 0,
+                "y": 2048
+              }
+            ],
+            "context_labels": [
+              "Water resources",
+              "Water",
+              "Body of water",
+              "Waterfall",
+              "Watercourse"
+            ],
+            "context_objects": [],
+            "web_entities": [
+              {
+                "name": "Waterfall",
+                "score": 0.3758484423160553
+              },
+              {
+                "name": "Tourism",
+                "score": 0.3192000091075897
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Dorrigo Rainforest Centre",
+                "score": 0.5835821628570557,
+                "location": {
+                  "lat": -30.363587500000005,
+                  "lng": 152.7290021
+                }
+              },
+              {
+                "name": "Dorrigo National Park",
+                "score": 0.5645064115524292,
+                "location": {
+                  "lat": -30.3636107,
+                  "lng": 152.7290644
+                }
+              }
+            ],
+            "processing_time_seconds": 7.911890983581543
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/82.jpg"
+    }
+  ]
+}

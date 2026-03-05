@@ -1,0 +1,924 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "111.heic",
+      "timestamp": "2026-01-28T01:08:46.666675",
+      "processing_time_seconds": 62.908714,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 11.207013888888888,
+        "gps_longitude": 119.36045,
+        "location": {
+          "formatted_address": "6946+R5 El Nido, Palawan, Philippines",
+          "city": "El Nido",
+          "county": "Palawan",
+          "country": "Philippines"
+        },
+        "datetime_original": "2024:11:25 13:59:20",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Limestone cliffs and karst formations, El Nido, Palawan, Philippines",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates El Nido, Palawan, which is renowned for its limestone cliffs and karst formations. The visual characteristics match the typical landscape of this area.",
+            "detailed_description": "The image shows a scenic view of limestone cliffs and karst formations typical of the El Nido area in Palawan, Philippines. The cliffs rise dramatically from the sea, creating a striking landscape against the clear blue sky. The water in the foreground is a vibrant turquoise, characteristic of tropical coastal regions. The formations are part of a larger archipelago known for its stunning natural beauty and unique geological features.",
+            "identification": {
+              "primary": [
+                "Limestone cliffs and karst formations"
+              ],
+              "location": "El Nido, Palawan, Philippines",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Limestone cliffs",
+                "type": "natural_feature",
+                "confidence": 0.95
+              },
+              {
+                "name": "Karst formations",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "limestone",
+              "karst",
+              "Philippines",
+              "coastal"
+            ],
+            "location": "El Nido, Palawan, Philippines",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Limestone cliffs and karst formations\"],\n        \"location\": \"El Nido, Palawan, Philippines\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Limestone cliffs\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Karst formations\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"limestone\", \"karst\", \"Philippines\", \"coastal\"],\n    \"description\": \"The image shows a scenic view of limestone cliffs and karst formations typical of the El Nido area in Palawan, Philippines. The cliffs rise dramatically from the sea, creating a striking landscape against the clear blue sky. The water in the foreground is a vibrant turquoise, characteristic of tropical coastal regions. The formations are part of a larger archipelago known for its stunning natural beauty and unique geological features.\",\n    \"reasoning\": \"The location metadata indicates El Nido, Palawan, which is renowned for its limestone cliffs and karst formations. The visual characteristics match the typical landscape of this area.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 11.207013888888888,
+              "longitude": 119.36045
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "6946+R5 El Nido, Palawan, Philippines",
+              "city": "El Nido",
+              "county": "Palawan",
+              "country": "Philippines"
+            },
+            "photo_timestamp": "2024:11:25 13:59:20",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 20.492655038833618
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "A picturesque bay dotted with dramatic limestone islands and karst formations, offering breathtaking views and a serene atmosphere. ([shootplanet.com]())",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image captures a stunning seascape in El Nido, Palawan, Philippines. The foreground features vibrant turquoise waters, gradually transitioning to deeper blue hues as the sea extends towards the horizon. The water appears calm with gentle ripples, reflecting the sunlight. In the midground, several limestone karst formations rise majestically from the sea, characteristic of the region's dramatic landscape. These formations are steep and rugged, with varying heights and shapes, creating a strik",
+            "description": "The image captures a stunning seascape in El Nido, Palawan, Philippines. The foreground features vibrant turquoise waters, gradually transitioning to deeper blue hues as the sea extends towards the horizon. The water appears calm with gentle ripples, reflecting the sunlight. In the midground, several limestone karst formations rise majestically from the sea, characteristic of the region's dramatic landscape. These formations are steep and rugged, with varying heights and shapes, creating a strik",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 11.207013888888888,
+              "longitude": 119.36045
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "6946+R5 El Nido, Palawan, Philippines",
+              "city": "El Nido",
+              "county": "Palawan",
+              "country": "Philippines"
+            },
+            "photo_timestamp": "2024:11:25 13:59:20",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 41.23447108268738
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "sea-m",
+          "confidence": 0.43149998784065247,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "all_candidates": [
+              {
+                "source": "web",
+                "name": "sea-m",
+                "score": 0.43149998784065247
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "sea-m",
+                "score": 0.43149998784065247
+              },
+              {
+                "name": "Massif",
+                "score": 0.2989000082015991
+              },
+              {
+                "name": "Massif",
+                "score": 0.26816582679748535
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.990168571472168
+              },
+              {
+                "name": "Blue",
+                "score": 0.9894992113113403
+              },
+              {
+                "name": "Water",
+                "score": 0.9851260781288147
+              },
+              {
+                "name": "Cloud",
+                "score": 0.9834257364273071
+              },
+              {
+                "name": "Daytime",
+                "score": 0.981284499168396
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 11.207013888888888,
+              "longitude": 119.36045
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "6946+R5 El Nido, Palawan, Philippines",
+              "city": "El Nido",
+              "county": "Palawan",
+              "country": "Philippines"
+            },
+            "photo_timestamp": "2024:11:25 13:59:20",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 16.41487407684326
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "El Nido, Palawan, Philippines",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "El Nido, Palawan, Philippines",
+            "coordinates": {
+              "latitude": 11.207013888888888,
+              "longitude": 119.36045
+            },
+            "search_range_meters": 5000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "JBenito Travel & Tours",
+                  "types": [
+                    "tourist_attraction",
+                    "travel_agency",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.6,
+                  "user_ratings_total": 34,
+                  "vicinity": "Sitio Caalan., Bgy. Masagana, Zone 3, EL Nido Palawan",
+                  "place_id": "ChIJ66qqukdVtjMRXnoOKyxRLsw",
+                  "location": {
+                    "lat": 11.1875574,
+                    "lng": 119.3952895
+                  }
+                },
+                {
+                  "name": "Exoticloops Motorcycle Tours",
+                  "types": [
+                    "travel_agency",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 42,
+                  "vicinity": "Exoticloops Street, El Nido",
+                  "place_id": "ChIJMXjw9hRVtjMR23BoYmqFD0U",
+                  "location": {
+                    "lat": 11.1777978,
+                    "lng": 119.3918233
+                  }
+                },
+                {
+                  "name": "Duiklocatie Nat-Nat",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 4,
+                  "vicinity": "59VH+JH, El Nido",
+                  "place_id": "ChIJLcPVxsZVtjMRlxQ02_lLVpM",
+                  "location": {
+                    "lat": 11.205548,
+                    "lng": 119.3639405
+                  }
+                },
+                {
+                  "name": "Hayag Beach",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "6995+RJ, El Nido",
+                  "place_id": "ChIJX_ftPQCrtzMR8pkvKPMT2bQ",
+                  "location": {
+                    "lat": 11.219515,
+                    "lng": 119.359033
+                  }
+                },
+                {
+                  "name": "Serenity beach",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 20,
+                  "vicinity": "685W+MC, El Nido",
+                  "place_id": "ChIJv8Vtk8qrtzMRKHG4lOysC4M",
+                  "location": {
+                    "lat": 11.209163,
+                    "lng": 119.346021
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "La Salangane Hotel Bar and Restaurant",
+                  "types": [
+                    "restaurant",
+                    "meal_takeaway",
+                    "bar",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 243,
+                  "vicinity": "33 Serena Street, brgy,buena suerte, El Nido",
+                  "place_id": "ChIJdafjd8hVtjMRt5sDwan9EmM",
+                  "location": {
+                    "lat": 11.1801952,
+                    "lng": 119.3881819
+                  }
+                },
+                {
+                  "name": "Vellago Resort",
+                  "types": [
+                    "bar",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 229,
+                  "vicinity": "Seven Commando Beach, El Nido",
+                  "place_id": "ChIJZaPoXRtVtjMR_fdOgVXR22M",
+                  "location": {
+                    "lat": 11.1743006,
+                    "lng": 119.3782025
+                  }
+                },
+                {
+                  "name": "El Nido Boutique Artcafe",
+                  "types": [
+                    "restaurant",
+                    "drugstore",
+                    "travel_agency",
+                    "bar",
+                    "health",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 2089,
+                  "vicinity": "Serena Street, Buena Suerte, El Nido",
+                  "place_id": "ChIJ4fQKbxZVtjMRyP5OOroJlm4",
+                  "location": {
+                    "lat": 11.1801397,
+                    "lng": 119.3879394
+                  }
+                },
+                {
+                  "name": "GK Caalan Restaurant & Cabins",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 7,
+                  "vicinity": "Ca'Alan Beach Walking Path, Transport Terminal, El Nido",
+                  "place_id": "ChIJw-cOuzhVtjMRjGeJWRJQwtI",
+                  "location": {
+                    "lat": 11.187243,
+                    "lng": 119.3938351
+                  }
+                },
+                {
+                  "name": "Jarace Grill",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 586,
+                  "vicinity": "Rizal Street, Buena Suerte Pob. (Barangay 2), El Nido",
+                  "place_id": "ChIJoWXL3xVVtjMRvhLM6W9LAf4",
+                  "location": {
+                    "lat": 11.1804585,
+                    "lng": 119.3891361
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Bukal Island",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 23,
+                  "vicinity": "695H+JJP, El Nido",
+                  "place_id": "ChIJAd0vadGqtzMRCAmpUXJDxZg",
+                  "location": {
+                    "lat": 11.209092,
+                    "lng": 119.3790722
+                  }
+                },
+                {
+                  "name": "Balinawood Beach",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 6,
+                  "vicinity": "68GW+FJJ, El Nido",
+                  "place_id": "ChIJW_ZxagCrtzMRlhvGvP5nxLw",
+                  "location": {
+                    "lat": 11.2262077,
+                    "lng": 119.3465068
+                  }
+                },
+                {
+                  "name": "El Nido-Taytay Managed Resource Protected Area",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "69V3+5C2, El Nido",
+                  "place_id": "ChIJf4P53AurtzMRoZzJgsq8YJg",
+                  "location": {
+                    "lat": 11.2428998,
+                    "lng": 119.3535066
+                  }
+                },
+                {
+                  "name": "Buena Suerte Seawall",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 2,
+                  "vicinity": "59HP+XF6, El Nido",
+                  "place_id": "ChIJN1M7EgBVtjMRLJdW3Nkwn40",
+                  "location": {
+                    "lat": 11.1804464,
+                    "lng": 119.3860013
+                  }
+                },
+                {
+                  "name": "Parking Area, Masagana, Elnido",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "59JR+XQ8, Masagana, El Nido",
+                  "place_id": "ChIJOUv6HgBVtjMRTjmEVwMkWIo",
+                  "location": {
+                    "lat": 11.1824047,
+                    "lng": 119.3919528
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "JMCIM EL NIDO CHURCH",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "59HP+Q7V, El Nido",
+                  "place_id": "ChIJeXgINwBVtjMRWaWoNGPEpjs",
+                  "location": {
+                    "lat": 11.1794768,
+                    "lng": 119.3856635
+                  }
+                },
+                {
+                  "name": "El Nido Fundamental Baptist Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "59HQ+VGF, Buena Suerte Pob. (Barangay 2), El Nido",
+                  "place_id": "ChIJ68cNTMNVtjMR4j0DRT-r0cY",
+                  "location": {
+                    "lat": 11.1796927,
+                    "lng": 119.3887917
+                  }
+                },
+                {
+                  "name": "St. Francis of Assisi Parish Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 56,
+                  "vicinity": "59HR+W28, Real Street, Buena Suerte Pob. (Barangay 2), El Nido",
+                  "place_id": "ChIJu9d1zxVVtjMRpFd3dwCL1c0",
+                  "location": {
+                    "lat": 11.1796054,
+                    "lng": 119.3898681
+                  }
+                },
+                {
+                  "name": "El Nido Full Gospel Church - Assemblies of God",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "59JV+W48, Balinsasayaw Road, El Nido",
+                  "place_id": "ChIJZVhQKwBVtjMRntvVRGOELk4",
+                  "location": {
+                    "lat": 11.1822916,
+                    "lng": 119.3928327
+                  }
+                },
+                {
+                  "name": "Kingdom hall",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "59JV+F3C, 357 Balinsasayaw Road, Buena Suerte Pob. (Barangay 2), El Nido",
+                  "place_id": "ChIJNZQJv6BVtjMRsf8iZdf_KY8",
+                  "location": {
+                    "lat": 11.1811703,
+                    "lng": 119.3926425
+                  }
+                },
+                {
+                  "name": "Tarawa Mosque Masjid (Musala مصلى ) El Nido Palawan",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 6,
+                  "vicinity": "597X+82H, Corong-corong Pob. (Barangay 4), El Nido",
+                  "place_id": "ChIJ0y0pBQBVtjMR5-gVxaG2S54",
+                  "location": {
+                    "lat": 11.1746973,
+                    "lng": 119.3913332
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "The Art Collective of El Nido",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 7,
+                  "vicinity": "Amboy Street, Buena Suerte Pob. (Barangay 2), El Nido",
+                  "place_id": "ChIJj_ji11BVtjMRKi-4LZ0Kkyw",
+                  "location": {
+                    "lat": 11.1784113,
+                    "lng": 119.3905907
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "El Nido",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "El Nido",
+                  "place_id": "ChIJD55c7xVVtjMRVQSbWVtmTvw",
+                  "location": {
+                    "lat": 11.1989164,
+                    "lng": 119.4231658
+                  }
+                },
+                {
+                  "name": "A Place To Remember El Nido Palawan",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.3,
+                  "user_ratings_total": 84,
+                  "vicinity": "Serena Street, Buena Suerte Pob. (Barangay 2), El Nido",
+                  "place_id": "ChIJiy5pXRZVtjMRwG5o51sQRw0",
+                  "location": {
+                    "lat": 11.1802019,
+                    "lng": 119.3875656
+                  }
+                },
+                {
+                  "name": "Garnet Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.4,
+                  "user_ratings_total": 94,
+                  "vicinity": "59JR+9CJ, Calle Hama, Buena Suerte Pob. (Barangay 2), El Nido",
+                  "place_id": "ChIJPySZkRVVtjMRwidRl_P38C4",
+                  "location": {
+                    "lat": 11.1809628,
+                    "lng": 119.3910181
+                  }
+                },
+                {
+                  "name": "Makulay Lodge & Villas",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 45,
+                  "vicinity": "Caalan Beach, El Nido",
+                  "place_id": "ChIJx5HQMz9VtjMRGdFuCBqf6zo",
+                  "location": {
+                    "lat": 11.1862323,
+                    "lng": 119.3927831
+                  }
+                },
+                {
+                  "name": "Wonderland El Nido Beach Resort",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 44,
+                  "vicinity": "Wilderness Experience, Pasandigan Cove, Cadlao Island, Survivor, El Nido",
+                  "place_id": "ChIJRXLt_zKrtzMR3bvQwzmFAvM",
+                  "location": {
+                    "lat": 11.2080448,
+                    "lng": 119.3570566
+                  }
+                }
+              ]
+            },
+            "total_places_found": 27,
+            "photo_timestamp": "2024:11:25 13:59:20",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.6726629734039307
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/111.heic"
+    },
+    {
+      "image_filename": "111.heic",
+      "timestamp": "2026-01-28T01:09:49.615074",
+      "processing_time_seconds": 60.830984,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Limestone cliffs and islands, El Nido, Palawan, Philippines",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive limestone formations and tropical sea suggest a location in El Nido, Palawan, which is famous for such landscapes. The color of the water and the shape of the cliffs are typical of this region.",
+            "detailed_description": "The image shows a scenic view of limestone cliffs and islands rising from a tropical sea. The water is a vibrant mix of turquoise and deep blue, typical of tropical regions. The sky is clear with scattered clouds, adding to the picturesque setting. The landscape is characteristic of El Nido in Palawan, Philippines, known for its dramatic karst formations and clear waters.",
+            "identification": {
+              "primary": [
+                "Limestone cliffs and islands"
+              ],
+              "location": "El Nido, Palawan, Philippines",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Limestone cliffs",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Tropical sea",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "tropical",
+              "limestone",
+              "sea",
+              "Philippines"
+            ],
+            "location": "El Nido, Palawan, Philippines",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Halong Bay, Vietnam",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "Similar limestone formations are found in Halong Bay, but the color of the water and overall landscape are more consistent with El Nido."
+              },
+              {
+                "guess": "Krabi, Thailand",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.5,
+                "reasoning": "Krabi also features limestone cliffs and tropical seas, but the formations are less similar to those in the image."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Limestone cliffs and islands\"],\n        \"location\": \"El Nido, Palawan, Philippines\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Limestone cliffs\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Tropical sea\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"tropical\", \"limestone\", \"sea\", \"Philippines\"],\n    \"description\": \"The image shows a scenic view of limestone cliffs and islands rising from a tropical sea. The water is a vibrant mix of turquoise and deep blue, typical of tropical regions. The sky is clear with scattered clouds, adding to the picturesque setting. The landscape is characteristic of El Nido in Palawan, Philippines, known for its dramatic karst formations and clear waters.\",\n    \"reasoning\": \"The distinctive limestone formations and tropical sea suggest a location in El Nido, Palawan, which is famous for such landscapes. The color of the water and the shape of the cliffs are typical of this region.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Halong Bay, Vietnam\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"Similar limestone formations are found in Halong Bay, but the color of the water and overall landscape are more consistent with El Nido.\"\n        },\n        {\n            \"guess\": \"Krabi, Thailand\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.5,\n            \"reasoning\": \"Krabi also features limestone cliffs and tropical seas, but the formations are less similar to those in the image.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 23.756323099136353
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Ha Long Bay, Quang Ninh Province, Vietnam",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the iconic features of Ha Long Bay, which is renowned for its limestone karst formations and vibrant turquoise waters. The search results strongly suggest this identification, and the visual description aligns with known characteristics of Ha Long Bay.",
+            "identification": {
+              "primary": [
+                "Ha Long Bay"
+              ],
+              "location": "Quang Ninh Province, Vietnam",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Limestone formations",
+                "type": "natural_feature",
+                "confidence": 0.95
+              },
+              {
+                "name": "Turquoise waters",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Lush greenery",
+                "type": "natural_feature",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "karst_landscape",
+              "natural_beauty",
+              "coastal",
+              "Vietnam",
+              "tourism"
+            ],
+            "sources_used": [
+              "en.wikipedia.org",
+              "nichecanvas.com"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([nichecanvas.com]())"
+            ],
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Phang Nga Bay",
+                "specificity_level": "very_specific",
+                "confidence": 0.7,
+                "reasoning": "Phang Nga Bay in Thailand also features limestone karst formations and turquoise waters, making it a plausible alternative."
+              },
+              {
+                "guess": "Guilin Karst Mountains",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "Guilin in China is known for its karst landscape, though it is less coastal compared to the description."
+              },
+              {
+                "guess": "Karst landscape in Southeast Asia",
+                "specificity_level": "general",
+                "confidence": 0.5,
+                "reasoning": "The description fits a general karst landscape found in various Southeast Asian locations."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 2,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a stunning coastal landscape characterized by vibrant turquoise waters in the foreground, transitioning to deeper blue hues as the sea extends towards the horizon. The water is gently rippling, suggesting a calm sea. In the background, a series of dramatic limestone formations rise from the ocean, creating a striking silhouette against the sky. These formations are rugged and steep, typical of karst landscapes, and they add a sense of grandeur and natural beauty to the scene. T",
+            "description": "The image depicts a stunning coastal landscape characterized by vibrant turquoise waters in the foreground, transitioning to deeper blue hues as the sea extends towards the horizon. The water is gently rippling, suggesting a calm sea. In the background, a series of dramatic limestone formations rise from the ocean, creating a striking silhouette against the sky. These formations are rugged and steep, typical of karst landscapes, and they add a sense of grandeur and natural beauty to the scene. T",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 36.82805109024048
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "sea-m",
+          "confidence": 0.43149998784065247,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "all_candidates": [
+              {
+                "source": "web",
+                "name": "sea-m",
+                "score": 0.43149998784065247
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "sea-m",
+                "score": 0.43149998784065247
+              },
+              {
+                "name": "Massif",
+                "score": 0.2989000082015991
+              },
+              {
+                "name": "Massif",
+                "score": 0.26806196570396423
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.990168571472168
+              },
+              {
+                "name": "Blue",
+                "score": 0.9894992113113403
+              },
+              {
+                "name": "Water",
+                "score": 0.9851260781288147
+              },
+              {
+                "name": "Cloud",
+                "score": 0.9834257364273071
+              },
+              {
+                "name": "Daytime",
+                "score": 0.981284499168396
+              }
+            ],
+            "processing_time_seconds": 16.53431987762451
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/111.heic"
+    }
+  ]
+}

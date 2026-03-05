@@ -1,0 +1,1251 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "154.jpg",
+      "timestamp": "2026-01-28T02:47:24.722239",
+      "processing_time_seconds": 61.729932,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 59.91186388888889,
+        "gps_longitude": 10.750719444444444,
+        "location": {
+          "formatted_address": "ByportenJernbanetorget 60154, 0154 Oslo, Norway",
+          "city": null,
+          "county": "Oslo",
+          "country": "Norway"
+        },
+        "datetime_original": "2025:03:27 06:06:40",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Oslo Central Station Clock Tower, Oslo, Norway",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The clock tower is a recognizable feature of Oslo Central Station, known for its distinctive modern design and neon lighting. The location metadata supports this identification.",
+            "detailed_description": "The image features the Oslo Central Station Clock Tower, a prominent modern structure in Oslo, Norway. The tower is illuminated with colorful lights, including red and white neon elements, and displays a clock at the top. Surrounding the tower are urban buildings with varied architectural styles, including traditional and modern elements. The scene is set during early morning or evening, as indicated by the dim lighting and visible streetlights.",
+            "identification": {
+              "primary": [
+                "Oslo Central Station Clock Tower"
+              ],
+              "location": "Oslo, Norway",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Oslo Central Station Clock Tower",
+                "type": "landmark",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "clock_tower",
+              "Oslo",
+              "Norway",
+              "urban"
+            ],
+            "location": "Oslo, Norway",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Oslo Central Station Clock Tower\"],\n        \"location\": \"Oslo, Norway\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Oslo Central Station Clock Tower\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"clock_tower\", \"Oslo\", \"Norway\", \"urban\"],\n    \"description\": \"The image features the Oslo Central Station Clock Tower, a prominent modern structure in Oslo, Norway. The tower is illuminated with colorful lights, including red and white neon elements, and displays a clock at the top. Surrounding the tower are urban buildings with varied architectural styles, including traditional and modern elements. The scene is set during early morning or evening, as indicated by the dim lighting and visible streetlights.\",\n    \"reasoning\": \"The clock tower is a recognizable feature of Oslo Central Station, known for its distinctive modern design and neon lighting. The location metadata supports this identification.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 59.91186388888889,
+              "longitude": 10.750719444444444
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "ByportenJernbanetorget 60154, 0154 Oslo, Norway",
+              "city": null,
+              "county": "Oslo",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:03:27 06:06:40",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 24.180799961090088
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Fjordporten Tower, Oslo, Norway",
+          "confidence": 0.6499999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description of a modern tower with neon lights and metal framework in Oslo matches the proposed Fjordporten development near Oslo's main railway station. The presence of historic buildings aligns with the location's architectural context. Other search results either describe structures too far from Oslo or do not match the visual description of neon lights and modern design.",
+            "identification": {
+              "primary": [
+                "Fjordporten Tower"
+              ],
+              "location": "Oslo, Norway",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Fjordporten Tower",
+                "type": "landmark",
+                "confidence": 0.85
+              },
+              {
+                "name": "Historic European-style buildings",
+                "type": "building",
+                "confidence": 0.75
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "neon_lights",
+              "metal_framework",
+              "historic_facades",
+              "urban_setting",
+              "Oslo"
+            ],
+            "sources_used": [
+              "leopol",
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "A proposed mixed-use development near Oslo's main railway station, Fjordporten features a timber tower with a glass facade, integrating modern design with the historic station's surroundings. ([leopol",
+              "Located in Brumunddal, approximately 100 km from Oslo, Mjøstårnet is an 18-storey wooden building that was the world's tallest wooden structure upon completion in 2019. ([en.wikipedia.org]())",
+              "Situated in the Bjørvika neighborhood, the Oslo Opera House is a modern architectural landmark with a white marble exterior, contrasting with the traditional European-style buildings in the area. ([en",
+              "Built between 1916 and 1920, Havnelageret is a commercial building in Oslo that combines classical elements with modern design, reflecting the architectural evolution of the city. ([en.wikipedia.org](",
+              "Constructed between 1847 and 1852, Oscarshall Palace is a neo-Gothic building located on Bygdøy in Oslo, showcasing traditional European architectural style. ([en.wikipedia.org]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Oslo Opera House",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "The Oslo Opera House is a modern architectural landmark in Oslo, but lacks the neon lights and metal framework described."
+              },
+              {
+                "guess": "Mjøstårnet",
+                "specificity_level": "general",
+                "confidence": 0.5,
+                "reasoning": "Mjøstårnet is a notable tower structure, but it is located far from Oslo and does not match the neon light description."
+              },
+              {
+                "guess": "Havnelageret",
+                "specificity_level": "general",
+                "confidence": 0.5,
+                "reasoning": "Havnelageret combines classical and modern design elements, but does not feature neon lights or a metal framework."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.85,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a prominent tower structure located in an urban setting, likely in Oslo, Norway. The tower is characterized by its modern design, featuring a metal framework with illuminated elements. It is adorned with vibrant neon lights, predominantly red, which create a striking visual effect against the early morning sky. The tower includes a large circular symbol at the top, possibly indicating a brand or logo, and is further accentuated by horizontal bands of light. Surrounding the towe",
+            "description": "The image depicts a prominent tower structure located in an urban setting, likely in Oslo, Norway. The tower is characterized by its modern design, featuring a metal framework with illuminated elements. It is adorned with vibrant neon lights, predominantly red, which create a striking visual effect against the early morning sky. The tower includes a large circular symbol at the top, possibly indicating a brand or logo, and is further accentuated by horizontal bands of light. Surrounding the towe",
+            "architectural_style": "Modern for the tower, traditional European for surrounding buildings",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 59.91186388888889,
+              "longitude": 10.750719444444444
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "ByportenJernbanetorget 60154, 0154 Oslo, Norway",
+              "city": null,
+              "county": "Oslo",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:03:27 06:06:40",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 36.197031021118164
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Engineering",
+          "confidence": 0.813254177570343,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Engineering",
+                "score": 0.813254177570343
+              },
+              {
+                "source": "label",
+                "name": "Electricity",
+                "score": 0.7907843589782715
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.7767479419708252
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.7752659916877747
+              },
+              {
+                "source": "label",
+                "name": "Electrical Supply",
+                "score": 0.7129141092300415
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Metropolitan area",
+                "score": 0.27942997217178345
+              },
+              {
+                "name": "The 0J",
+                "score": 0.2175000011920929
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.7767479419708252
+              },
+              {
+                "name": "Person",
+                "score": 0.7752659916877747
+              },
+              {
+                "name": "Person",
+                "score": 0.7037740349769592
+              },
+              {
+                "name": "Clothing",
+                "score": 0.66085284948349
+              },
+              {
+                "name": "Person",
+                "score": 0.6077455282211304
+              }
+            ],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.9896022081375122
+              },
+              {
+                "name": "Blue",
+                "score": 0.9889090657234192
+              },
+              {
+                "name": "Engineering",
+                "score": 0.813254177570343
+              },
+              {
+                "name": "Electricity",
+                "score": 0.7907843589782715
+              },
+              {
+                "name": "Electrical Supply",
+                "score": 0.7129141092300415
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 59.91186388888889,
+              "longitude": 10.750719444444444
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "ByportenJernbanetorget 60154, 0154 Oslo, Norway",
+              "city": null,
+              "county": "Oslo",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:03:27 06:06:40",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 12.958501100540161
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Oslo, Norway",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Oslo, Norway",
+            "coordinates": {
+              "latitude": 59.91186388888889,
+              "longitude": 10.750719444444444
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Oslo Opera House",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 29486,
+                  "vicinity": "Kirsten Flagstads plass 1, Oslo",
+                  "place_id": "ChIJFfcho4tuQUYREdaiosanthw",
+                  "location": {
+                    "lat": 59.90748850000002,
+                    "lng": 10.7531275
+                  }
+                },
+                {
+                  "name": "Munch",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 16426,
+                  "vicinity": "Edvard Munchs Plass 1, Oslo",
+                  "place_id": "ChIJJ0uE7VtuQUYRGxJdLJL1PmU",
+                  "location": {
+                    "lat": 59.9059037,
+                    "lng": 10.7552605
+                  }
+                },
+                {
+                  "name": "Oslo Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 5129,
+                  "vicinity": "Karl Johans gate 11, Oslo",
+                  "place_id": "ChIJafNVh2JuQUYRS87dbb5wUrM",
+                  "location": {
+                    "lat": 59.91252399999999,
+                    "lng": 10.7468866
+                  }
+                },
+                {
+                  "name": "Oslo Reptile Park",
+                  "types": [
+                    "zoo",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 3016,
+                  "vicinity": "Sankt Olavs Gate 2, Oslo",
+                  "place_id": "ChIJnXRliGFuQUYRLNRLS_Q9CDM",
+                  "location": {
+                    "lat": 59.9181666,
+                    "lng": 10.7431959
+                  }
+                },
+                {
+                  "name": "Kulturkirken Jakob",
+                  "types": [
+                    "church",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 656,
+                  "vicinity": "Hausmanns gate 14, Oslo",
+                  "place_id": "ChIJ6YTWrmZuQUYR67M-UX44Hgc",
+                  "location": {
+                    "lat": 59.9181346,
+                    "lng": 10.7541839
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Munch",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 16426,
+                  "vicinity": "Edvard Munchs Plass 1, Oslo",
+                  "place_id": "ChIJJ0uE7VtuQUYRGxJdLJL1PmU",
+                  "location": {
+                    "lat": 59.9059037,
+                    "lng": 10.7552605
+                  }
+                },
+                {
+                  "name": "Byens andre Rådhus",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 6,
+                  "vicinity": "Rådhusgata 7, Oslo",
+                  "place_id": "ChIJewmZ_YhuQUYRuguFHCTg6Hw",
+                  "location": {
+                    "lat": 59.9090335,
+                    "lng": 10.7447266
+                  }
+                },
+                {
+                  "name": "22. juli-Senteret",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 531,
+                  "vicinity": "Teatergata 10, Oslo",
+                  "place_id": "ChIJ2-zrHWNuQUYRfsO1BAVC8DI",
+                  "location": {
+                    "lat": 59.9159596,
+                    "lng": 10.7427013
+                  }
+                },
+                {
+                  "name": "Intercultural Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 251,
+                  "vicinity": "Tøyenbekken 5, Oslo",
+                  "place_id": "ChIJof87uF9uQUYRU5LAdOSWIng",
+                  "location": {
+                    "lat": 59.91301900000001,
+                    "lng": 10.763262
+                  }
+                },
+                {
+                  "name": "Oslo City Council for Cultural Affairs",
+                  "types": [
+                    "museum",
+                    "local_government_office",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 5,
+                  "vicinity": "Storgata 25, Oslo",
+                  "place_id": "ChIJFUpNWIduQUYRuYGKByJbQl8",
+                  "location": {
+                    "lat": 59.9140318,
+                    "lng": 10.7511655
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Grand Hotel Oslo",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2452,
+                  "vicinity": "Karl Johans gate 31, Oslo",
+                  "place_id": "ChIJhxTybn1uQUYRIFo4Y1uqZic",
+                  "location": {
+                    "lat": 59.9137238,
+                    "lng": 10.7394509
+                  }
+                },
+                {
+                  "name": "Hotell Bondeheimen",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 604,
+                  "vicinity": "Kristian IVs gate 2, Oslo",
+                  "place_id": "ChIJWx2bPX1uQUYRzKxcNezmH5o",
+                  "location": {
+                    "lat": 59.9147074,
+                    "lng": 10.7403558
+                  }
+                },
+                {
+                  "name": "Scandic St. Olavs plass",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 2438,
+                  "vicinity": "Sankt Olavs Plass 1, Oslo",
+                  "place_id": "ChIJ4eLMSUfaFkYRgV5MoWq622o",
+                  "location": {
+                    "lat": 59.91817400000001,
+                    "lng": 10.739867
+                  }
+                },
+                {
+                  "name": "Hotel Continental, Oslo",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1478,
+                  "vicinity": "Stortingsgata 24/26, Oslo",
+                  "place_id": "ChIJKUfL-n1uQUYRo4M6Cup-2xE",
+                  "location": {
+                    "lat": 59.9141596,
+                    "lng": 10.7335142
+                  }
+                },
+                {
+                  "name": "Brasserie France",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1406,
+                  "vicinity": "Øvre Slottsgate 16, Oslo",
+                  "place_id": "ChIJfZiTrmJuQUYRo3gKwWWXWBY",
+                  "location": {
+                    "lat": 59.9130579,
+                    "lng": 10.7428031
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Rudolf Nilsens plass",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 144,
+                  "vicinity": "Vahls gate, Heimdalsgata, Oslo",
+                  "place_id": "ChIJCTFScV5uQUYR4NDpVLSVpz8",
+                  "location": {
+                    "lat": 59.9162267,
+                    "lng": 10.7655991
+                  }
+                },
+                {
+                  "name": "Regjeringsparken",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 9,
+                  "vicinity": "Johan Nygaardsvolds plass, Oslo",
+                  "place_id": "ChIJO5FT32JuQUYRt1odEf0Q-l8",
+                  "location": {
+                    "lat": 59.91551949999999,
+                    "lng": 10.7449218
+                  }
+                },
+                {
+                  "name": "Akershus Fortress",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 17354,
+                  "vicinity": "Oslo",
+                  "place_id": "ChIJ035kbYZuQUYRuu0uM9oMKao",
+                  "location": {
+                    "lat": 59.90758599999999,
+                    "lng": 10.7370841
+                  }
+                },
+                {
+                  "name": "FB ATELIER SALONG",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 8,
+                  "vicinity": "Storgata 4, Tønsberg",
+                  "place_id": "ChIJVRmy-3bBRkYRKCN24ui-taI",
+                  "location": {
+                    "lat": 59.91295909999999,
+                    "lng": 10.7486018
+                  }
+                },
+                {
+                  "name": "Paléhaven",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 13,
+                  "vicinity": "Christian Frederiks plass 2, Oslo",
+                  "place_id": "ChIJtV-lJ4puQUYRhQQ_0PM4TVw",
+                  "location": {
+                    "lat": 59.9100878,
+                    "lng": 10.7509006
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Oslo Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 5129,
+                  "vicinity": "Karl Johans gate 11, Oslo",
+                  "place_id": "ChIJafNVh2JuQUYRS87dbb5wUrM",
+                  "location": {
+                    "lat": 59.91252399999999,
+                    "lng": 10.7468866
+                  }
+                },
+                {
+                  "name": "Kulturkirken Jakob",
+                  "types": [
+                    "church",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 656,
+                  "vicinity": "Hausmanns gate 14, Oslo",
+                  "place_id": "ChIJ6YTWrmZuQUYR67M-UX44Hgc",
+                  "location": {
+                    "lat": 59.9181346,
+                    "lng": 10.7541839
+                  }
+                },
+                {
+                  "name": "Den norske kirke",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 4,
+                  "vicinity": "The House Of The Church, Rådhusgata 1-3, Oslo",
+                  "place_id": "ChIJRR3PD4luQUYRiMx6-8bS440",
+                  "location": {
+                    "lat": 59.9090932,
+                    "lng": 10.7464364
+                  }
+                },
+                {
+                  "name": "Oslo international charismatic church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Møllergata 28, Oslo",
+                  "place_id": "ChIJDd8Jl2NuQUYR7izunDPZFvI",
+                  "location": {
+                    "lat": 59.91659559999999,
+                    "lng": 10.7495183
+                  }
+                },
+                {
+                  "name": "Frelsesarmeen Grønland",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 16,
+                  "vicinity": "Lakkegata 15A, Oslo",
+                  "place_id": "ChIJ37QWh2BuQUYRm_la_Qpfkfc",
+                  "location": {
+                    "lat": 59.9142126,
+                    "lng": 10.7603883
+                  }
+                },
+                {
+                  "name": "Salahaddin senter",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Grønlandsleiret 39, Oslo",
+                  "place_id": "ChIJZcTA4_VuQUYRBNuo1-qsbw8",
+                  "location": {
+                    "lat": 59.910963,
+                    "lng": 10.7669805
+                  }
+                },
+                {
+                  "name": "Islamic Cultural Centre Norway",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 409,
+                  "vicinity": "Tøyenbekken 24, Oslo",
+                  "place_id": "ChIJy6mN7F9uQUYRD2siEfA0pTc",
+                  "location": {
+                    "lat": 59.91174609999999,
+                    "lng": 10.7625928
+                  }
+                },
+                {
+                  "name": "Central Jamaat-E Ahl-E sunnat Norway Regd.",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 214,
+                  "vicinity": "Motzfeldts gate 10, Oslo",
+                  "place_id": "ChIJ703IR15uQUYR8UIrx1mhLI8",
+                  "location": {
+                    "lat": 59.914607,
+                    "lng": 10.7638993
+                  }
+                },
+                {
+                  "name": "مركز إمام الرضا الإسلامي / Al-Redha Islamisk senter",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Grønland 4, Oslo",
+                  "place_id": "ChIJaZ5gJ4NvQUYRxRMebKpQI80",
+                  "location": {
+                    "lat": 59.9134559,
+                    "lng": 10.759623
+                  }
+                },
+                {
+                  "name": "IBC - Imam Bediuzzeman Camii",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 17,
+                  "vicinity": "Lakkegata 17, Oslo",
+                  "place_id": "ChIJvcvza2FvQUYRXKHUvbSRJjM",
+                  "location": {
+                    "lat": 59.9143944,
+                    "lng": 10.7603513
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "The Association of Visual Artists Oslo",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 7,
+                  "vicinity": "Rådhusgata 19, Oslo",
+                  "place_id": "ChIJJx671YduQUYRJykZL9Uhyk8",
+                  "location": {
+                    "lat": 59.91024969999999,
+                    "lng": 10.7404243
+                  }
+                },
+                {
+                  "name": "Strandquist Art",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Møllergata 4, Oslo",
+                  "place_id": "ChIJeR0o8WRuQUYRaRxCRficVRw",
+                  "location": {
+                    "lat": 59.91368370000001,
+                    "lng": 10.7463731
+                  }
+                },
+                {
+                  "name": "Tidsskriftet Kunsthåndverk",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Rådhusgata 20, Oslo",
+                  "place_id": "ChIJMRx-iYhuQUYRuHVlMctBfA8",
+                  "location": {
+                    "lat": 59.90943629999999,
+                    "lng": 10.7420458
+                  }
+                },
+                {
+                  "name": "UKS Young Artists' Society",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 9,
+                  "vicinity": "Keysers gate 1, Oslo",
+                  "place_id": "ChIJm3jwRHxuQUYRPc0ARx-Tqb8",
+                  "location": {
+                    "lat": 59.9170804,
+                    "lng": 10.7439015
+                  }
+                },
+                {
+                  "name": "Mari Kvale",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Fredensborgveien 15B, Oslo",
+                  "place_id": "ChIJ_0BKgmRuQUYRPLOIv9xQP3I",
+                  "location": {
+                    "lat": 59.91815870000001,
+                    "lng": 10.7480823
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Oslo",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Oslo",
+                  "place_id": "ChIJOfBn8mFuQUYRmh4j019gkn4",
+                  "location": {
+                    "lat": 59.9121746,
+                    "lng": 10.7312704
+                  }
+                },
+                {
+                  "name": "Anker Hotel",
+                  "types": [
+                    "bar",
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 4380,
+                  "vicinity": "Storgata 55, Oslo",
+                  "place_id": "ChIJFVLTKWduQUYRK4owC-eIqBg",
+                  "location": {
+                    "lat": 59.9176955,
+                    "lng": 10.7579343
+                  }
+                },
+                {
+                  "name": "Karl Johan Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 1156,
+                  "vicinity": "Karl Johans gate 33, Oslo",
+                  "place_id": "ChIJLfXLb31uQUYRy59kNgxpHN4",
+                  "location": {
+                    "lat": 59.91400759999999,
+                    "lng": 10.7388541
+                  }
+                },
+                {
+                  "name": "Scandic Byporten Oslo",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 1624,
+                  "vicinity": "Jernbanetorget 6, Oslo",
+                  "place_id": "ChIJz01tB4puQUYR1ZmtcgiJxAU",
+                  "location": {
+                    "lat": 59.911873,
+                    "lng": 10.7511217
+                  }
+                },
+                {
+                  "name": "Home Hotel Folketeateret",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1065,
+                  "vicinity": "Storgata 21-23, Oslo",
+                  "place_id": "ChIJNZ1vJGJuQUYRV0UnbnZKKPM",
+                  "location": {
+                    "lat": 59.9139388,
+                    "lng": 10.7505243
+                  }
+                }
+              ]
+            },
+            "total_places_found": 40,
+            "photo_timestamp": "2025:03:27 06:06:40",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 1.1030972003936768
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/154.jpg"
+    },
+    {
+      "image_filename": "154.jpg",
+      "timestamp": "2026-01-28T02:48:26.478265",
+      "processing_time_seconds": 61.474124,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Rådhuspladsen Tower, Copenhagen, Denmark",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The neon-lit tower is a distinctive feature of Rådhuspladsen in Copenhagen, known for its modern design and central location. The surrounding architecture and urban setting further confirm the identification.",
+            "detailed_description": "The image features the Rådhuspladsen Tower, a modern structure located in Copenhagen, Denmark. The tower is adorned with neon lights, creating a vibrant display against the evening sky. Surrounding the tower are buildings with traditional architectural styles, contributing to the urban landscape of the city center.",
+            "identification": {
+              "primary": [
+                "Rådhuspladsen Tower"
+              ],
+              "location": "Copenhagen, Denmark",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Rådhuspladsen Tower",
+                "type": "landmark",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "neon_lights",
+              "urban",
+              "Copenhagen"
+            ],
+            "location": "Copenhagen, Denmark",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Rådhuspladsen Tower\"],\n        \"location\": \"Copenhagen, Denmark\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Rådhuspladsen Tower\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"neon_lights\", \"urban\", \"Copenhagen\"],\n    \"description\": \"The image features the Rådhuspladsen Tower, a modern structure located in Copenhagen, Denmark. The tower is adorned with neon lights, creating a vibrant display against the evening sky. Surrounding the tower are buildings with traditional architectural styles, contributing to the urban landscape of the city center.\",\n    \"reasoning\": \"The neon-lit tower is a distinctive feature of Rådhuspladsen in Copenhagen, known for its modern design and central location. The surrounding architecture and urban setting further confirm the identification.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "processing_time_seconds": 26.914002895355225
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Tokyo Tower, Tokyo, Japan",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches Tokyo Tower's distinctive metal framework and neon lighting. The search results strongly suggest Tokyo Tower, and the surrounding historic architecture aligns with Tokyo's urban landscape.",
+            "identification": {
+              "primary": [
+                "Tokyo Tower"
+              ],
+              "location": "Tokyo, Japan",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Tokyo Tower",
+                "type": "landmark",
+                "confidence": 0.9
+              },
+              {
+                "name": "Historic urban buildings",
+                "type": "building",
+                "confidence": 0.7
+              }
+            ],
+            "tags": [
+              "contemporary",
+              "metal",
+              "neon lights",
+              "urban",
+              "Tokyo"
+            ],
+            "sources_used": [
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Eiffel Tower",
+                "specificity_level": "very_specific",
+                "confidence": 0.5,
+                "reasoning": "The metal framework and urban setting could suggest the Eiffel Tower, but the neon lights and contemporary design are less characteristic."
+              },
+              {
+                "guess": "Neon-lit urban tower in Shanghai",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "Shanghai has several neon-lit towers, but the description more closely matches Tokyo Tower's features."
+              },
+              {
+                "guess": "Contemporary urban tower",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The description fits a general contemporary urban tower with neon lights and metal framework."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.9,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image features a prominent urban landmark, a tall tower structure adorned with bright neon lights. The tower is composed of a metallic framework, with a series of horizontal and vertical beams creating a grid-like pattern. At the top, there is a large circular neon sign with a red outline, possibly indicating a logo or symbol. Below this, the tower is illuminated with vibrant red and yellow neon lights that form a striking visual display, creating a sense of modernity and urban vibrancy. The",
+            "description": "The image features a prominent urban landmark, a tall tower structure adorned with bright neon lights. The tower is composed of a metallic framework, with a series of horizontal and vertical beams creating a grid-like pattern. At the top, there is a large circular neon sign with a red outline, possibly indicating a logo or symbol. Below this, the tower is illuminated with vibrant red and yellow neon lights that form a striking visual display, creating a sense of modernity and urban vibrancy. The",
+            "architectural_style": "Contemporary for the tower; historic urban for surrounding buildings",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 34.55875492095947
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Engineering",
+          "confidence": 0.813254177570343,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Engineering",
+                "score": 0.813254177570343
+              },
+              {
+                "source": "label",
+                "name": "Electricity",
+                "score": 0.7907843589782715
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.7767479419708252
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.7752659916877747
+              },
+              {
+                "source": "label",
+                "name": "Electrical Supply",
+                "score": 0.7129141092300415
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Metropolitan area",
+                "score": 0.27942997217178345
+              },
+              {
+                "name": "The 0J",
+                "score": 0.2175000011920929
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.7767479419708252
+              },
+              {
+                "name": "Person",
+                "score": 0.7752659916877747
+              },
+              {
+                "name": "Person",
+                "score": 0.7037740349769592
+              },
+              {
+                "name": "Clothing",
+                "score": 0.66085284948349
+              },
+              {
+                "name": "Person",
+                "score": 0.6077455282211304
+              }
+            ],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.9896022081375122
+              },
+              {
+                "name": "Blue",
+                "score": 0.9889090657234192
+              },
+              {
+                "name": "Engineering",
+                "score": 0.813254177570343
+              },
+              {
+                "name": "Electricity",
+                "score": 0.7907843589782715
+              },
+              {
+                "name": "Electrical Supply",
+                "score": 0.7129141092300415
+              }
+            ],
+            "processing_time_seconds": 13.356582164764404
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/154.jpg"
+    }
+  ]
+}

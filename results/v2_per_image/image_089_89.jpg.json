@@ -1,0 +1,705 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "89.jpg",
+      "timestamp": "2026-01-28T07:17:36.964016",
+      "processing_time_seconds": 60.399154,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 36.48679722222222,
+        "gps_longitude": -4.725827777777778,
+        "location": {
+          "formatted_address": "Urb. Royal Beach, 15, 29649 Mijas, Málaga, Spain",
+          "city": "Mijas",
+          "county": "Málaga",
+          "country": "Spain"
+        },
+        "datetime_original": "2024:08:03 14:09:40",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Beachfront in Mijas, Mijas, Málaga, Spain",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Mijas, Málaga, Spain, which is known for its coastal areas and Mediterranean architecture. The visual elements match this description.",
+            "detailed_description": "The image shows a beachfront area in Mijas, Málaga, Spain. The scene includes sandy beaches with people enjoying the sun and water. In the background, there are several buildings with Mediterranean architectural features, such as white facades and terracotta roofs. The sea is calm, and the sky is clear, indicating a sunny day.",
+            "identification": {
+              "primary": [
+                "Beachfront in Mijas"
+              ],
+              "location": "Mijas, Málaga, Spain",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Beachfront buildings",
+                "type": "building",
+                "confidence": 0.85
+              },
+              {
+                "name": "Beach",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Mediterranean_architecture",
+              "beach",
+              "coastal",
+              "Spain"
+            ],
+            "location": "Mijas, Málaga, Spain",
+            "type": "viewpoint",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Beachfront in Mijas\"],\n        \"location\": \"Mijas, Málaga, Spain\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Beachfront buildings\",\n            \"type\": \"building\",\n            \"confidence\": 0.85\n        },\n        {\n            \"name\": \"Beach\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Mediterranean_architecture\", \"beach\", \"coastal\", \"Spain\"],\n    \"description\": \"The image shows a beachfront area in Mijas, Málaga, Spain. The scene includes sandy beaches with people enjoying the sun and water. In the background, there are several buildings with Mediterranean architectural features, such as white facades and terracotta roofs. The sea is calm, and the sky is clear, indicating a sunny day.\",\n    \"reasoning\": \"The location metadata indicates Mijas, Málaga, Spain, which is known for its coastal areas and Mediterranean architecture. The visual elements match this description.\",\n    \"type\": \"viewpoint\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 36.48679722222222,
+              "longitude": -4.725827777777778
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Urb. Royal Beach, 15, 29649 Mijas, Málaga, Spain",
+              "city": "Mijas",
+              "county": "Málaga",
+              "country": "Spain"
+            },
+            "photo_timestamp": "2024:08:03 14:09:40",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 8.892640113830566
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a coastal scene in Mijas, Málaga, Spain. The foreground features a sandy beach with several sunbathers and colorful umbrellas scattered across the sand. The beach is bordered by a calm sea with gentle waves lapping at the shore. Yellow buoys are visible in the water, marking swimming areas. In the background, a series of modern buildings line the coast. These structures exhibit a Mediterranean architectural style characterized by white facades and terracotta-tiled roofs. The bu",
+            "description": "The image depicts a coastal scene in Mijas, Málaga, Spain. The foreground features a sandy beach with several sunbathers and colorful umbrellas scattered across the sand. The beach is bordered by a calm sea with gentle waves lapping at the shore. Yellow buoys are visible in the water, marking swimming areas. In the background, a series of modern buildings line the coast. These structures exhibit a Mediterranean architectural style characterized by white facades and terracotta-tiled roofs. The bu",
+            "architectural_style": "Mediterranean",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 36.48679722222222,
+              "longitude": -4.725827777777778
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Urb. Royal Beach, 15, 29649 Mijas, Málaga, Spain",
+              "city": "Mijas",
+              "county": "Málaga",
+              "country": "Spain"
+            },
+            "photo_timestamp": "2024:08:03 14:09:40",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 50.93464016914368
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Building",
+          "confidence": 0.5482287406921387,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "object",
+            "all_candidates": [
+              {
+                "source": "object",
+                "name": "Building",
+                "score": 0.5482287406921387
+              },
+              {
+                "source": "web",
+                "name": "Skyscraper",
+                "score": 0.5238987803459167
+              },
+              {
+                "source": "web",
+                "name": "Tower",
+                "score": 0.3917999863624573
+              },
+              {
+                "source": "web",
+                "name": "High-rise building",
+                "score": 0.37337398529052734
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.5238987803459167
+              },
+              {
+                "name": "Tower",
+                "score": 0.3917999863624573
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.37337398529052734
+              },
+              {
+                "name": "Architecture",
+                "score": 0.3118097484111786
+              },
+              {
+                "name": "ArchitectureM RIBA Chartered Practice",
+                "score": 0.2971999943256378
+              }
+            ],
+            "objects": [
+              {
+                "name": "Building",
+                "score": 0.5482287406921387
+              }
+            ],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9892057180404663
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9816667437553406
+              },
+              {
+                "name": "Beach",
+                "score": 0.579575777053833
+              },
+              {
+                "name": "Walking",
+                "score": 0.5324704647064209
+              },
+              {
+                "name": "Holiday",
+                "score": 0.5016805529594421
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 36.48679722222222,
+              "longitude": -4.725827777777778
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Urb. Royal Beach, 15, 29649 Mijas, Málaga, Spain",
+              "city": "Mijas",
+              "county": "Málaga",
+              "country": "Spain"
+            },
+            "photo_timestamp": "2024:08:03 14:09:40",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 18.077992916107178
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Mijas, Málaga, Spain",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Mijas, Málaga, Spain",
+            "coordinates": {
+              "latitude": 36.48679722222222,
+              "longitude": -4.725827777777778
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Parque de Calahonda",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 114,
+                  "vicinity": "Calle Julián Lozano, 2E, Calahonda",
+                  "place_id": "ChIJ9a8z5iAgcw0R_bL98rldOkc",
+                  "location": {
+                    "lat": 36.4896839,
+                    "lng": -4.730151999999999
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "The New Beach House",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 78,
+                  "vicinity": "Urbanizacion Leyla Playa, 1, Mijas",
+                  "place_id": "ChIJR9bIQycgcw0ROtP9IohEWcE",
+                  "location": {
+                    "lat": 36.48780279999999,
+                    "lng": -4.728660499999999
+                  }
+                },
+                {
+                  "name": "Chiringuito La Luna",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 2851,
+                  "vicinity": "Acceso playa La Luna, Calahonda",
+                  "place_id": "ChIJb792Gycgcw0RDJ-nEoa0aNU",
+                  "location": {
+                    "lat": 36.4871911,
+                    "lng": -4.730010900000001
+                  }
+                },
+                {
+                  "name": "Chiringuito El Capricho",
+                  "types": [
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 2203,
+                  "vicinity": "Complejo “Mi Capricho Playa de Calahonda, s/n, Costa",
+                  "place_id": "ChIJKZ3R_L0fcw0R6Jy7vqWVmi4",
+                  "location": {
+                    "lat": 36.4872998,
+                    "lng": -4.7183901
+                  }
+                },
+                {
+                  "name": "Navea's pizza",
+                  "types": [
+                    "meal_delivery",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 255,
+                  "vicinity": "Calle Mérida de Jarales, 12, Mijas",
+                  "place_id": "ChIJddAFAI4fcw0RSRbZ86JS5NA",
+                  "location": {
+                    "lat": 36.489371,
+                    "lng": -4.717439
+                  }
+                },
+                {
+                  "name": "Bogart's Tapas Bar & Restaurant",
+                  "types": [
+                    "restaurant",
+                    "bar",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 938,
+                  "vicinity": "Avenida España, Urb. Rincón del Mar, Sitio de Calahonda, Mijas Costa",
+                  "place_id": "ChIJoQv1gY0fcw0Rj8wTDJkPafc",
+                  "location": {
+                    "lat": 36.49205829999999,
+                    "lng": -4.717752099999999
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Parque de Calahonda",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 114,
+                  "vicinity": "Calle Julián Lozano, 2E, Calahonda",
+                  "place_id": "ChIJ9a8z5iAgcw0R_bL98rldOkc",
+                  "location": {
+                    "lat": 36.4896839,
+                    "lng": -4.730151999999999
+                  }
+                },
+                {
+                  "name": "Duna de Calahonda",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Calle de la Playa, Marbella",
+                  "place_id": "ChIJ18WLBQAhcw0RZDG94JYN8TI",
+                  "location": {
+                    "lat": 36.4862742,
+                    "lng": -4.7335661
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Iglesia de San Miguel de Calahonda",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 84,
+                  "vicinity": "Urbanización Sitio de Calahonda, 203, Mijas",
+                  "place_id": "ChIJ9YBLH5Ifcw0RJig-4-5WxhM",
+                  "location": {
+                    "lat": 36.4897702,
+                    "lng": -4.716174
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Alonso Original Art",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Avenida de España, Las Lagunas de Mijas",
+                  "place_id": "ChIJ94rUHJQfcw0R3liEr2STqWU",
+                  "location": {
+                    "lat": 36.4898117,
+                    "lng": -4.716711399999999
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Marbella",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Marbella",
+                  "place_id": "ChIJ36tNkAnYcg0Rq-y1B7mdbA4",
+                  "location": {
+                    "lat": 36.5102831,
+                    "lng": -4.8852579
+                  }
+                },
+                {
+                  "name": "Apartment Calle Avutarda",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 4,
+                  "vicinity": "Esquina Lince Iberico, Calle Avutarda, 6, Calahonda",
+                  "place_id": "ChIJ4fYQ6iMgcw0RKTVsCTx7pEw",
+                  "location": {
+                    "lat": 36.4902322,
+                    "lng": -4.733919399999999
+                  }
+                },
+                {
+                  "name": "FARMAZONA CALAHONDA",
+                  "types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 9,
+                  "vicinity": "Centro Comercial El Campanario, Calle Beamar de Calahonda, 1, Local 10A, Mijas",
+                  "place_id": "ChIJUyOa_ZIfcw0RAAl0DhzTLKg",
+                  "location": {
+                    "lat": 36.4890489,
+                    "lng": -4.7283187
+                  }
+                },
+                {
+                  "name": "Cajamar Caja Rural",
+                  "types": [
+                    "bank",
+                    "insurance_agency",
+                    "atm",
+                    "finance",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.2,
+                  "user_ratings_total": 11,
+                  "vicinity": "Calle Mérida de Jarales, 7-9, Calahonda",
+                  "place_id": "ChIJrSVpTIwfcw0RcnOQXTAWyNw",
+                  "location": {
+                    "lat": 36.489215,
+                    "lng": -4.719602
+                  }
+                },
+                {
+                  "name": "Cardland",
+                  "types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 28,
+                  "vicinity": "C/Comercial Calahonda, 17, Costa",
+                  "place_id": "ChIJURJzf44fcw0Rom0DHCpVWyc",
+                  "location": {
+                    "lat": 36.4892848,
+                    "lng": -4.7196729
+                  }
+                }
+              ]
+            },
+            "total_places_found": 15,
+            "photo_timestamp": "2024:08:03 14:09:40",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.33588385581970215
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/89.jpg"
+    },
+    {
+      "image_filename": "89.jpg",
+      "timestamp": "2026-01-28T07:18:37.396092",
+      "processing_time_seconds": 59.835581,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Beachfront area with buildings",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of a sandy beach and modern buildings with Mediterranean-style architecture suggests a coastal urban area, likely a resort or residential zone.",
+            "detailed_description": "The image shows a beachfront area with a sandy beach and several people enjoying the seaside. In the background, there are modern buildings with Mediterranean architectural features, such as terracotta roofs and white facades. The scene is typical of a coastal urban area, possibly a resort or residential zone.",
+            "identification": {
+              "primary": [
+                "Beachfront area with buildings"
+              ],
+              "location": null,
+              "confidence": 0.8
+            },
+            "artifacts": [
+              {
+                "name": "Beach",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Residential or hotel buildings",
+                "type": "building",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "beach",
+              "coastal",
+              "modern_architecture",
+              "Mediterranean_style",
+              "urban"
+            ],
+            "location": null,
+            "type": "viewpoint",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Mediterranean coastal resort",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The architectural style and beachfront setting are typical of Mediterranean resorts."
+              },
+              {
+                "guess": "Spanish coastal town",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "The architectural style and beach setting are common in Spanish coastal towns."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Beachfront area with buildings\"],\n        \"location\": null,\n        \"confidence\": 0.8\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Beach\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Residential or hotel buildings\",\n            \"type\": \"building\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"beach\", \"coastal\", \"modern_architecture\", \"Mediterranean_style\", \"urban\"],\n    \"description\": \"The image shows a beachfront area with a sandy beach and several people enjoying the seaside. In the background, there are modern buildings with Mediterranean architectural features, such as terracotta roofs and white facades. The scene is typical of a coastal urban area, possibly a resort or residential zone.\",\n    \"reasoning\": \"The presence of a sandy beach and modern buildings with Mediterranean-style architecture suggests a coastal urban area, likely a resort or residential zone.\",\n    \"type\": \"viewpoint\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Mediterranean coastal resort\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The architectural style and beachfront setting are typical of Mediterranean resorts.\"\n        },\n        {\n            \"guess\": \"Spanish coastal town\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The architectural style and beach setting are common in Spanish coastal towns.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 11.344758033752441
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a coastal scene featuring a sandy beach adjacent to a body of water, likely the sea or ocean. The beach is populated with people engaging in various activities, such as sunbathing and swimming. The shoreline curves gently, with waves lapping at the sand. Several yellow buoys are visible in the water, indicating a designated swimming area. The beach is bordered by a line of buildings that appear to be residential or vacation properties. These structures are characterized by a Me",
+            "description": "The image depicts a coastal scene featuring a sandy beach adjacent to a body of water, likely the sea or ocean. The beach is populated with people engaging in various activities, such as sunbathing and swimming. The shoreline curves gently, with waves lapping at the sand. Several yellow buoys are visible in the water, indicating a designated swimming area. The beach is bordered by a line of buildings that appear to be residential or vacation properties. These structures are characterized by a Me",
+            "architectural_style": "Mediterranean",
+            "search_backends_used": [],
+            "processing_time_seconds": 48.48891019821167
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Building",
+          "confidence": 0.5482287406921387,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "object",
+            "all_candidates": [
+              {
+                "source": "object",
+                "name": "Building",
+                "score": 0.5482287406921387
+              },
+              {
+                "source": "web",
+                "name": "Skyscraper",
+                "score": 0.5237976312637329
+              },
+              {
+                "source": "web",
+                "name": "Tower",
+                "score": 0.39160001277923584
+              },
+              {
+                "source": "web",
+                "name": "High-rise building",
+                "score": 0.37320953607559204
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.5237976312637329
+              },
+              {
+                "name": "Tower",
+                "score": 0.39160001277923584
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.37320953607559204
+              },
+              {
+                "name": "Architecture",
+                "score": 0.31172317266464233
+              },
+              {
+                "name": "ArchitectureM RIBA Chartered Practice",
+                "score": 0.2971999943256378
+              }
+            ],
+            "objects": [
+              {
+                "name": "Building",
+                "score": 0.5482287406921387
+              }
+            ],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9892057180404663
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9816667437553406
+              },
+              {
+                "name": "Beach",
+                "score": 0.579575777053833
+              },
+              {
+                "name": "Walking",
+                "score": 0.5324704647064209
+              },
+              {
+                "name": "Holiday",
+                "score": 0.5016805529594421
+              }
+            ],
+            "processing_time_seconds": 19.219845056533813
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/89.jpg"
+    }
+  ]
+}

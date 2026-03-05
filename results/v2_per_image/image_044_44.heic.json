@@ -1,0 +1,716 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "44.heic",
+      "timestamp": "2026-01-28T05:46:25.355216",
+      "processing_time_seconds": 51.895431,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -28.639105555555556,
+        "gps_longitude": 153.636125,
+        "location": {
+          "formatted_address": "199 Lighthouse Rd, Byron Bay NSW 2481, Australia",
+          "city": "Byron Bay",
+          "county": "Byron Shire Council",
+          "country": "Australia"
+        },
+        "datetime_original": "2022:08:20 17:04:36",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Cape Byron Lighthouse, Byron Bay, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Byron Bay, and the lighthouse's distinctive features match those of the Cape Byron Lighthouse, a well-known landmark in the area.",
+            "detailed_description": "The image shows the Cape Byron Lighthouse, located at Byron Bay, Australia. This lighthouse is a prominent coastal landmark, known for its white cylindrical tower and lantern room. It is situated on a rocky cliff overlooking the ocean, providing panoramic views of the surrounding area. The lighthouse was constructed in the early 20th century and is characterized by its classic lighthouse architecture with a white facade and a black lantern room.",
+            "identification": {
+              "primary": [
+                "Cape Byron Lighthouse"
+              ],
+              "location": "Byron Bay, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Cape Byron Lighthouse",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "lighthouse",
+              "coastal",
+              "early_20th_century",
+              "Australia"
+            ],
+            "location": "Byron Bay, Australia",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Cape Byron Lighthouse\"],\n        \"location\": \"Byron Bay, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Cape Byron Lighthouse\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"lighthouse\", \"coastal\", \"early_20th_century\", \"Australia\"],\n    \"description\": \"The image shows the Cape Byron Lighthouse, located at Byron Bay, Australia. This lighthouse is a prominent coastal landmark, known for its white cylindrical tower and lantern room. It is situated on a rocky cliff overlooking the ocean, providing panoramic views of the surrounding area. The lighthouse was constructed in the early 20th century and is characterized by its classic lighthouse architecture with a white facade and a black lantern room.\",\n    \"reasoning\": \"The location metadata indicates Byron Bay, and the lighthouse's distinctive features match those of the Cape Byron Lighthouse, a well-known landmark in the area.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": -28.639105555555556,
+              "longitude": 153.636125
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "199 Lighthouse Rd, Byron Bay NSW 2481, Australia",
+              "city": "Byron Bay",
+              "county": "Byron Shire Council",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2022:08:20 17:04:36",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 8.113138914108276
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image features a prominent lighthouse situated on a rocky cliff overlooking the ocean. The lighthouse is cylindrical and painted white, with a black band near the top where the lantern room is located. The lantern room is encased in glass and topped with a conical roof, which includes a weather vane. The structure exhibits a classic lighthouse design, likely from the late 19th to early 20th century, characterized by its simplicity and functional form. Surrounding the base of the lighthouse i",
+            "description": "The image features a prominent lighthouse situated on a rocky cliff overlooking the ocean. The lighthouse is cylindrical and painted white, with a black band near the top where the lantern room is located. The lantern room is encased in glass and topped with a conical roof, which includes a weather vane. The structure exhibits a classic lighthouse design, likely from the late 19th to early 20th century, characterized by its simplicity and functional form. Surrounding the base of the lighthouse i",
+            "architectural_style": "Functional lighthouse architecture with fortress-like elements",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": -28.639105555555556,
+              "longitude": 153.636125
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "199 Lighthouse Rd, Byron Bay NSW 2481, Australia",
+              "city": "Byron Bay",
+              "county": "Byron Shire Council",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2022:08:20 17:04:36",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 42.4573712348938
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Lighthouse",
+          "confidence": 0.9834167957305908,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Lighthouse",
+                "score": 0.9834167957305908
+              },
+              {
+                "source": "label",
+                "name": "Tower",
+                "score": 0.9417955875396729
+              },
+              {
+                "source": "label",
+                "name": "Beacon",
+                "score": 0.9102981686592102
+              },
+              {
+                "source": "object",
+                "name": "Lighthouse",
+                "score": 0.7210545539855957
+              },
+              {
+                "source": "web",
+                "name": "sea-m",
+                "score": 0.4325999915599823
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "sea-m",
+                "score": 0.4325999915599823
+              },
+              {
+                "name": "Lighthouse",
+                "score": 0.3718712329864502
+              }
+            ],
+            "objects": [
+              {
+                "name": "Lighthouse",
+                "score": 0.7210545539855957
+              }
+            ],
+            "labels": [
+              {
+                "name": "Lighthouse",
+                "score": 0.9834167957305908
+              },
+              {
+                "name": "Tower",
+                "score": 0.9417955875396729
+              },
+              {
+                "name": "Beacon",
+                "score": 0.9102981686592102
+              },
+              {
+                "name": "Promontory",
+                "score": 0.646441638469696
+              },
+              {
+                "name": "Headland",
+                "score": 0.6213486790657043
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": -28.639105555555556,
+              "longitude": 153.636125
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "199 Lighthouse Rd, Byron Bay NSW 2481, Australia",
+              "city": "Byron Bay",
+              "county": "Byron Shire Council",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2022:08:20 17:04:36",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 12.791645050048828
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Byron Bay, Byron Shire Council, Australia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Byron Bay, Byron Shire Council, Australia",
+            "coordinates": {
+              "latitude": -28.639105555555556,
+              "longitude": 153.636125
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Fisherman's Lookout",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 243,
+                  "vicinity": "Byron Bay",
+                  "place_id": "ChIJN78lRtNjkGsRbKkaV0m5tOg",
+                  "location": {
+                    "lat": -28.6363889,
+                    "lng": 153.6283333
+                  }
+                },
+                {
+                  "name": "Cape Byron Lighthouse",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 9214,
+                  "vicinity": "Lighthouse Road, Byron Bay",
+                  "place_id": "ChIJD5SVBNFjkGsRKDWDW1Fahz0",
+                  "location": {
+                    "lat": -28.638465,
+                    "lng": 153.6362461
+                  }
+                },
+                {
+                  "name": "Cape Byron Information Centre",
+                  "types": [
+                    "tourist_attraction",
+                    "travel_agency",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 19,
+                  "vicinity": "199 Lighthouse Road, Byron Bay",
+                  "place_id": "ChIJddu-D9FjkGsRQ5ZDd4M1xMM",
+                  "location": {
+                    "lat": -28.6390294,
+                    "lng": 153.635993
+                  }
+                },
+                {
+                  "name": "Assistant Lighthouse Keepers' Cottages",
+                  "types": [
+                    "tourist_attraction",
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 25,
+                  "vicinity": "193-195 Lighthouse Road, Byron Bay",
+                  "place_id": "ChIJYxVnptFjkGsR1jdZnrkiqdo",
+                  "location": {
+                    "lat": -28.6396313,
+                    "lng": 153.6358491
+                  }
+                },
+                {
+                  "name": "Cape Byron Lookout",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 78,
+                  "vicinity": "Lighthouse Road, Byron Bay",
+                  "place_id": "ChIJcbon-F9jkGsRvDPtMkkF8Kk",
+                  "location": {
+                    "lat": -28.6384632,
+                    "lng": 153.6367081
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Cape Byron Lighthouse",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 9214,
+                  "vicinity": "Lighthouse Road, Byron Bay",
+                  "place_id": "ChIJD5SVBNFjkGsRKDWDW1Fahz0",
+                  "location": {
+                    "lat": -28.638465,
+                    "lng": 153.6362461
+                  }
+                },
+                {
+                  "name": "CoastSnap Byron Community Beach Monitoring",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Lighthouse Road, Byron Bay",
+                  "place_id": "ChIJg6fAAudjkGsRIScTStfnUB0",
+                  "location": {
+                    "lat": -28.6405115,
+                    "lng": 153.6359317
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Raes on Wategos",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 741,
+                  "vicinity": "6-8 Marine Parade, Byron Bay",
+                  "place_id": "ChIJCXTk3dNjkGsRi_Kr7tBDQNE",
+                  "location": {
+                    "lat": -28.6373683,
+                    "lng": 153.6327048
+                  }
+                },
+                {
+                  "name": "The Pass Cafe",
+                  "types": [
+                    "cafe",
+                    "meal_takeaway",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 570,
+                  "vicinity": "1 Brooke Drive, Byron Bay",
+                  "place_id": "ChIJoWjT3dJjkGsRb81jhv47M7Y",
+                  "location": {
+                    "lat": -28.6380427,
+                    "lng": 153.6289509
+                  }
+                },
+                {
+                  "name": "The Pass Cafe Kiosk",
+                  "types": [
+                    "cafe",
+                    "meal_takeaway",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 309,
+                  "vicinity": "201 Lighthouse Road, Byron Bay",
+                  "place_id": "ChIJicvArTJikGsRc9bBeBAWQmo",
+                  "location": {
+                    "lat": -28.64048829999999,
+                    "lng": 153.6307763
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Walgun Cape Byron State Conservation Area",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 4458,
+                  "vicinity": "Lighthouse Road, Byron Bay",
+                  "place_id": "ChIJj8IMfM1jkGsRUDyTBFleu2M",
+                  "location": {
+                    "lat": -28.6404821,
+                    "lng": 153.63175
+                  }
+                },
+                {
+                  "name": "Captain Cook’s Beach",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Vel’s Corner, 5 Brooke Drive, Byron Bay",
+                  "place_id": "ChIJnxkQRQBjkGsRQeyQM16K0xQ",
+                  "location": {
+                    "lat": -28.6398236,
+                    "lng": 153.6272446
+                  }
+                },
+                {
+                  "name": "Clark’s beach",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "153 Lighthouse Road, Byron Bay",
+                  "place_id": "ChIJbUYcQwBjkGsRahFQ_YkKAuI",
+                  "location": {
+                    "lat": -28.6403054,
+                    "lng": 153.627311
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Byron Bay",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Byron Bay",
+                  "place_id": "ChIJK3Y-LYVikGsR0PJDkLQJBgQ",
+                  "location": {
+                    "lat": -28.6421823,
+                    "lng": 153.6108065
+                  }
+                },
+                {
+                  "name": "Victoria's At Wategos",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 32,
+                  "vicinity": "1 Marine Parade, Byron Bay",
+                  "place_id": "ChIJhTV-fdFjkGsROzzXxycYGTI",
+                  "location": {
+                    "lat": -28.6383365,
+                    "lng": 153.6335025
+                  }
+                },
+                {
+                  "name": "Fisherman's Lookout",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 243,
+                  "vicinity": "Byron Bay",
+                  "place_id": "ChIJN78lRtNjkGsRbKkaV0m5tOg",
+                  "location": {
+                    "lat": -28.6363889,
+                    "lng": 153.6283333
+                  }
+                },
+                {
+                  "name": "Raes on Wategos",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 741,
+                  "vicinity": "6-8 Marine Parade, Byron Bay",
+                  "place_id": "ChIJCXTk3dNjkGsRi_Kr7tBDQNE",
+                  "location": {
+                    "lat": -28.6373683,
+                    "lng": 153.6327048
+                  }
+                },
+                {
+                  "name": "Cape Byron Lighthouse",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 9214,
+                  "vicinity": "Lighthouse Road, Byron Bay",
+                  "place_id": "ChIJD5SVBNFjkGsRKDWDW1Fahz0",
+                  "location": {
+                    "lat": -28.638465,
+                    "lng": 153.6362461
+                  }
+                }
+              ]
+            },
+            "total_places_found": 18,
+            "photo_timestamp": "2022:08:20 17:04:36",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.8326001167297363
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/44.heic"
+    },
+    {
+      "image_filename": "44.heic",
+      "timestamp": "2026-01-28T05:47:17.276567",
+      "processing_time_seconds": 54.304206,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Cape Byron Lighthouse, Byron Bay, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive architecture and location on a cliff overlooking the ocean are characteristic of the Cape Byron Lighthouse, a well-known landmark in Byron Bay, Australia.",
+            "detailed_description": "The image shows the Cape Byron Lighthouse, located at Byron Bay, Australia. This lighthouse is a prominent coastal landmark, characterized by its white cylindrical tower and lantern room. It sits atop a grassy cliff overlooking the ocean, providing a scenic view. The lighthouse was built in the early 20th century and is known for its classic design and strategic location at the easternmost point of the Australian mainland.",
+            "identification": {
+              "primary": [
+                "Cape Byron Lighthouse"
+              ],
+              "location": "Byron Bay, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Cape Byron Lighthouse",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "lighthouse",
+              "coastal",
+              "early_20th_century",
+              "Australia"
+            ],
+            "location": "Byron Bay, Australia",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Cape Byron Lighthouse\"],\n        \"location\": \"Byron Bay, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Cape Byron Lighthouse\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"lighthouse\", \"coastal\", \"early_20th_century\", \"Australia\"],\n    \"description\": \"The image shows the Cape Byron Lighthouse, located at Byron Bay, Australia. This lighthouse is a prominent coastal landmark, characterized by its white cylindrical tower and lantern room. It sits atop a grassy cliff overlooking the ocean, providing a scenic view. The lighthouse was built in the early 20th century and is known for its classic design and strategic location at the easternmost point of the Australian mainland.\",\n    \"reasoning\": \"The distinctive architecture and location on a cliff overlooking the ocean are characteristic of the Cape Byron Lighthouse, a well-known landmark in Byron Bay, Australia.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 9.761498928070068
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image features a prominent lighthouse situated atop a rugged cliff overlooking the ocean. The lighthouse is characterized by its cylindrical shape and white exterior, which contrasts sharply with the deep blue sky. The structure includes a lantern room at the top, encircled by a balcony with a railing. The lantern room is capped with a dome, and a weather vane is visible at the apex. Below the lantern room, there is a dark band that adds a decorative element to the otherwise stark white faca",
+            "description": "The image features a prominent lighthouse situated atop a rugged cliff overlooking the ocean. The lighthouse is characterized by its cylindrical shape and white exterior, which contrasts sharply with the deep blue sky. The structure includes a lantern room at the top, encircled by a balcony with a railing. The lantern room is capped with a dome, and a weather vane is visible at the apex. Below the lantern room, there is a dark band that adds a decorative element to the otherwise stark white faca",
+            "architectural_style": "Functional maritime architecture",
+            "search_backends_used": [],
+            "processing_time_seconds": 44.31196308135986
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Lighthouse",
+          "confidence": 0.9833793044090271,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Lighthouse",
+                "score": 0.9833793044090271
+              },
+              {
+                "source": "label",
+                "name": "Tower",
+                "score": 0.9415817260742188
+              },
+              {
+                "source": "label",
+                "name": "Beacon",
+                "score": 0.909773051738739
+              },
+              {
+                "source": "object",
+                "name": "Lighthouse",
+                "score": 0.7210545539855957
+              },
+              {
+                "source": "web",
+                "name": "sea-m",
+                "score": 0.4325999915599823
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "sea-m",
+                "score": 0.4325999915599823
+              },
+              {
+                "name": "Lighthouse",
+                "score": 0.3718712329864502
+              }
+            ],
+            "objects": [
+              {
+                "name": "Lighthouse",
+                "score": 0.7210545539855957
+              }
+            ],
+            "labels": [
+              {
+                "name": "Lighthouse",
+                "score": 0.9833793044090271
+              },
+              {
+                "name": "Tower",
+                "score": 0.9415817260742188
+              },
+              {
+                "name": "Beacon",
+                "score": 0.909773051738739
+              },
+              {
+                "name": "Promontory",
+                "score": 0.6420496702194214
+              },
+              {
+                "name": "Headland",
+                "score": 0.6189102530479431
+              }
+            ],
+            "processing_time_seconds": 14.097684860229492
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/44.heic"
+    }
+  ]
+}

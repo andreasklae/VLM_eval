@@ -1,0 +1,1152 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "34.jpg",
+      "timestamp": "2026-01-28T05:25:40.125263",
+      "processing_time_seconds": 56.849613,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 40.85024166666667,
+        "gps_longitude": 14.263016666666667,
+        "location": {
+          "formatted_address": "Via Cesare Sersale, 25, 80139 Napoli NA, Italy",
+          "city": "Napoli",
+          "county": "Città Metropolitana di Napoli",
+          "country": "Italy"
+        },
+        "datetime_original": "2022:07:15 16:24:42",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Historic street in Naples, Napoli, Italy",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Naples, and the architectural style is consistent with Mediterranean urban environments commonly found in this region.",
+            "detailed_description": "The image depicts a narrow street in Naples, Italy, characterized by historic residential buildings. The architecture features typical Mediterranean elements, such as colorful facades, balconies with wrought iron railings, and shutters. The street is lined with parked cars and scooters, adding to the urban atmosphere. The buildings show signs of aging, with some wear and tear visible on the facades.",
+            "identification": {
+              "primary": [
+                "Historic street in Naples"
+              ],
+              "location": "Napoli, Italy",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Residential buildings",
+                "type": "building",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "historic_architecture",
+              "urban",
+              "Mediterranean",
+              "Naples"
+            ],
+            "location": "Napoli, Italy",
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Typical Neapolitan street scene",
+                "specificity_level": "general",
+                "confidence": 0.8,
+                "reasoning": "The architectural style and urban setting are typical of Naples."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Historic street in Naples\"],\n        \"location\": \"Napoli, Italy\",\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Residential buildings\",\n            \"type\": \"building\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"historic_architecture\", \"urban\", \"Mediterranean\", \"Naples\"],\n    \"description\": \"The image depicts a narrow street in Naples, Italy, characterized by historic residential buildings. The architecture features typical Mediterranean elements, such as colorful facades, balconies with wrought iron railings, and shutters. The street is lined with parked cars and scooters, adding to the urban atmosphere. The buildings show signs of aging, with some wear and tear visible on the facades.\",\n    \"reasoning\": \"The location metadata indicates Naples, and the architectural style is consistent with Mediterranean urban environments commonly found in this region.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Typical Neapolitan street scene\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.8,\n            \"reasoning\": \"The architectural style and urban setting are typical of Naples.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": 40.85024166666667,
+              "longitude": 14.263016666666667
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Via Cesare Sersale, 25, 80139 Napoli NA, Italy",
+              "city": "Napoli",
+              "county": "Città Metropolitana di Napoli",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2022:07:15 16:24:42",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 11.091840982437134
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a narrow street in Naples, Italy, characterized by its vibrant urban architecture. The buildings lining the street are typical of Southern Italian residential architecture, featuring multiple stories with balconies and shutters. The facades are painted in warm tones, predominantly yellows and ochres, which reflect the Mediterranean style. The buildings exhibit a mix of architectural elements, including wrought iron balconies, decorative cornices, and window shutters. Some balco",
+            "description": "The image depicts a narrow street in Naples, Italy, characterized by its vibrant urban architecture. The buildings lining the street are typical of Southern Italian residential architecture, featuring multiple stories with balconies and shutters. The facades are painted in warm tones, predominantly yellows and ochres, which reflect the Mediterranean style. The buildings exhibit a mix of architectural elements, including wrought iron balconies, decorative cornices, and window shutters. Some balco",
+            "architectural_style": "Mediterranean",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 40.85024166666667,
+              "longitude": 14.263016666666667
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Via Cesare Sersale, 25, 80139 Napoli NA, Italy",
+              "city": "Napoli",
+              "county": "Città Metropolitana di Napoli",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2022:07:15 16:24:42",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 45.057430028915405
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Car",
+          "confidence": 0.9240838289260864,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "object",
+            "all_candidates": [
+              {
+                "source": "object",
+                "name": "Car",
+                "score": 0.9240838289260864
+              },
+              {
+                "source": "object",
+                "name": "Car",
+                "score": 0.8961120843887329
+              },
+              {
+                "source": "label",
+                "name": "Composite material",
+                "score": 0.8867266178131104
+              },
+              {
+                "source": "label",
+                "name": "Metal",
+                "score": 0.8183174133300781
+              },
+              {
+                "source": "label",
+                "name": "Engineering",
+                "score": 0.8111071586608887
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "/m/083vt",
+                "score": 0.51910001039505
+              },
+              {
+                "name": "Wood",
+                "score": 0.28092506527900696
+              }
+            ],
+            "objects": [
+              {
+                "name": "Car",
+                "score": 0.9240838289260864
+              },
+              {
+                "name": "Car",
+                "score": 0.8961120843887329
+              },
+              {
+                "name": "Building",
+                "score": 0.6834737658500671
+              },
+              {
+                "name": "Car",
+                "score": 0.611960768699646
+              },
+              {
+                "name": "Building",
+                "score": 0.5916281938552856
+              }
+            ],
+            "labels": [
+              {
+                "name": "Composite material",
+                "score": 0.8867266178131104
+              },
+              {
+                "name": "Metal",
+                "score": 0.8183174133300781
+              },
+              {
+                "name": "Engineering",
+                "score": 0.8111071586608887
+              },
+              {
+                "name": "Apartment",
+                "score": 0.8107072114944458
+              },
+              {
+                "name": "Iron",
+                "score": 0.7954962849617004
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 40.85024166666667,
+              "longitude": 14.263016666666667
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Via Cesare Sersale, 25, 80139 Napoli NA, Italy",
+              "city": "Napoli",
+              "county": "Città Metropolitana di Napoli",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2022:07:15 16:24:42",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 18.943002939224243
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Napoli, Città Metropolitana di Napoli, Italy",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Napoli, Città Metropolitana di Napoli, Italy",
+            "coordinates": {
+              "latitude": 40.85024166666667,
+              "longitude": 14.263016666666667
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Chiesa di Sant'Agostino alla Zecca",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 64,
+                  "vicinity": "Via San Agostino alla Zecca, 24, Napoli",
+                  "place_id": "ChIJEdPLeEAIOxMR0191LKrb9W0",
+                  "location": {
+                    "lat": 40.8492785,
+                    "lng": 14.2627437
+                  }
+                },
+                {
+                  "name": "Basilica San Giovanni Maggiore",
+                  "types": [
+                    "church",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 771,
+                  "vicinity": "Rampe San Giovanni Maggiore, Napoli",
+                  "place_id": "ChIJx-XzO0QIOxMRgce-k-LUyaw",
+                  "location": {
+                    "lat": 40.8457039,
+                    "lng": 14.2560141
+                  }
+                },
+                {
+                  "name": "Chiesa di Santa Maria Regina Coeli",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 71,
+                  "vicinity": "Vico San Gaudioso, 2, Napoli",
+                  "place_id": "ChIJYVXNf0IIOxMR7HWMEi5mIkE",
+                  "location": {
+                    "lat": 40.8521268,
+                    "lng": 14.2543792
+                  }
+                },
+                {
+                  "name": "Church of Saints Marcellinus and Festus",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 238,
+                  "vicinity": "Largo San Marcellino, Napoli",
+                  "place_id": "ChIJwy0DNUEIOxMRKaUMYN5OMSU",
+                  "location": {
+                    "lat": 40.8473191,
+                    "lng": 14.2584773
+                  }
+                },
+                {
+                  "name": "Statua del Dio Nilo",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 230,
+                  "vicinity": "Via Nilo, 26, Napoli",
+                  "place_id": "ChIJ0UpilUMIOxMRtTu-MMZubLo",
+                  "location": {
+                    "lat": 40.848761,
+                    "lng": 14.2562129
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Complesso Monumentale San Lorenzo Maggiore",
+                  "types": [
+                    "museum",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2519,
+                  "vicinity": "Piazza San Gaetano, 316, Napoli",
+                  "place_id": "ChIJM9ju80EIOxMRbBbdxUNOxTo",
+                  "location": {
+                    "lat": 40.8506805,
+                    "lng": 14.2575662
+                  }
+                },
+                {
+                  "name": "Pio Monte della Misericordia",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "museum",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 2610,
+                  "vicinity": "Via dei Tribunali, 253, Napoli",
+                  "place_id": "ChIJBcb1g2oIOxMRAz3FS9W0ZVU",
+                  "location": {
+                    "lat": 40.85196039999999,
+                    "lng": 14.2603592
+                  }
+                },
+                {
+                  "name": "Donnaregina Contemporary Art Museum - Madre Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 3603,
+                  "vicinity": "Via Luigi Settembrini, 79, Napoli",
+                  "place_id": "ChIJd_UsuWsIOxMRRaTdKQ8VAVc",
+                  "location": {
+                    "lat": 40.8551541,
+                    "lng": 14.2584685
+                  }
+                },
+                {
+                  "name": "Teatro San Ferdinando",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1077,
+                  "vicinity": "Piazza Eduardo de Filippo, 20, Napoli",
+                  "place_id": "ChIJgZ7eNxMIOxMRsEBgh6YCY6M",
+                  "location": {
+                    "lat": 40.8572263,
+                    "lng": 14.2632429
+                  }
+                },
+                {
+                  "name": "Complesso Monumentale Donnaregina - Museo Diocesano Napoli",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1383,
+                  "vicinity": "Largo Donnaregina, Napoli",
+                  "place_id": "ChIJB92GT2oIOxMR3NMnDa50gNA",
+                  "location": {
+                    "lat": 40.85389869999999,
+                    "lng": 14.2588377
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Hotel Cineholiday Naples",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 472,
+                  "vicinity": "Via Silvio Spaventa, 14-16-18, Napoli",
+                  "place_id": "ChIJ1XnEBRYIOxMRv0QtKXe3M_Q",
+                  "location": {
+                    "lat": 40.8509894,
+                    "lng": 14.2691098
+                  }
+                },
+                {
+                  "name": "Hotel Vergilius Billia",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 1784,
+                  "vicinity": "Via Giuseppe Pica, 2/16, Napoli",
+                  "place_id": "ChIJd5KDDxYIOxMRqDIHfGiIkJk",
+                  "location": {
+                    "lat": 40.8511658,
+                    "lng": 14.2694319
+                  }
+                },
+                {
+                  "name": "Antica Pizzeria Di Matteo",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 13739,
+                  "vicinity": "Via dei Tribunali, 94, Napoli",
+                  "place_id": "ChIJ5Thu70EIOxMRr5t-mAnq5uw",
+                  "location": {
+                    "lat": 40.85125120000001,
+                    "lng": 14.2579677
+                  }
+                },
+                {
+                  "name": "Pizzeria Trianon",
+                  "types": [
+                    "meal_delivery",
+                    "meal_takeaway",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 5961,
+                  "vicinity": "Via Pietro Colletta, 44, Napoli",
+                  "place_id": "ChIJXxGxkj8IOxMRngOQ3K_Aplg",
+                  "location": {
+                    "lat": 40.850191,
+                    "lng": 14.263673
+                  }
+                },
+                {
+                  "name": "Mimì alla Ferrovia",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 5194,
+                  "vicinity": "Via Alfonso D'Aragona, 19/21, Napoli",
+                  "place_id": "ChIJ34X_NRQIOxMRoxwkHIPxMrY",
+                  "location": {
+                    "lat": 40.8534539,
+                    "lng": 14.267209
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "\"Re Ladislao\" park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 177,
+                  "vicinity": "Via Cardinale Seripando, 9, Napoli",
+                  "place_id": "ChIJ5T9KYmsIOxMR6bOxd_pWmGI",
+                  "location": {
+                    "lat": 40.8560758,
+                    "lng": 14.2606844
+                  }
+                },
+                {
+                  "name": "Dog Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 25,
+                  "vicinity": "6,, Via Benedetto Croce, 2, Napoli",
+                  "place_id": "ChIJ0xCZn0QIOxMRKDP7LZCCb3I",
+                  "location": {
+                    "lat": 40.84749720000001,
+                    "lng": 14.2527517
+                  }
+                },
+                {
+                  "name": "Piazzetta Sedil Capuano",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 7,
+                  "vicinity": "Piazzetta Sedil Capuano, 239, Napoli",
+                  "place_id": "ChIJ69zEHiEJOxMRfQTkU9n_XEs",
+                  "location": {
+                    "lat": 40.85205940000001,
+                    "lng": 14.260889
+                  }
+                },
+                {
+                  "name": "Marrageddon",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Naples",
+                  "place_id": "ChIJDZzxfQAJOxMRn8WrhLk6fz4",
+                  "location": {
+                    "lat": 40.8517746,
+                    "lng": 14.2681244
+                  }
+                },
+                {
+                  "name": "ippodromo agnano",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Piazza Giuseppe Garibaldi, Napoli",
+                  "place_id": "ChIJN-sRGgAJOxMRpeZfK1o5fkg",
+                  "location": {
+                    "lat": 40.85233210000001,
+                    "lng": 14.2697156
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Chiesa di Sant'Agostino alla Zecca",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 64,
+                  "vicinity": "Via San Agostino alla Zecca, 24, Napoli",
+                  "place_id": "ChIJEdPLeEAIOxMR0191LKrb9W0",
+                  "location": {
+                    "lat": 40.8492785,
+                    "lng": 14.2627437
+                  }
+                },
+                {
+                  "name": "Complesso Monumentale di Santa Maria della Pace",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 46,
+                  "vicinity": "Via dei Tribunali, 181, Napoli",
+                  "place_id": "ChIJjaAUuWoIOxMRYyNmGU7q1UY",
+                  "location": {
+                    "lat": 40.8525133,
+                    "lng": 14.2618783
+                  }
+                },
+                {
+                  "name": "Basilica San Giovanni Maggiore",
+                  "types": [
+                    "church",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 771,
+                  "vicinity": "Rampe San Giovanni Maggiore, Napoli",
+                  "place_id": "ChIJx-XzO0QIOxMRgce-k-LUyaw",
+                  "location": {
+                    "lat": 40.8457039,
+                    "lng": 14.2560141
+                  }
+                },
+                {
+                  "name": "Chiesa di Santa Maria Assunta dei Pignatelli",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 21,
+                  "vicinity": "Piazzetta Corpo di Napoli, Napoli",
+                  "place_id": "ChIJ70B0xEMIOxMRFuHCEgVCrFM",
+                  "location": {
+                    "lat": 40.8487781,
+                    "lng": 14.2561122
+                  }
+                },
+                {
+                  "name": "Chiesa di Santa Maria Regina Coeli",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 71,
+                  "vicinity": "Vico San Gaudioso, 2, Napoli",
+                  "place_id": "ChIJYVXNf0IIOxMR7HWMEi5mIkE",
+                  "location": {
+                    "lat": 40.8521268,
+                    "lng": 14.2543792
+                  }
+                },
+                {
+                  "name": "Associazione Culturale Islamica Zayd Ibn Thabit",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 5,
+                  "vicinity": "Via Corradino di Svevia, 20, Napoli",
+                  "place_id": "ChIJ56-yYwAJOxMR3omC1eqwzuc",
+                  "location": {
+                    "lat": 40.84812660000001,
+                    "lng": 14.2667955
+                  }
+                },
+                {
+                  "name": "Associazione Culturale Islamica",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 6,
+                  "vicinity": "Via Lavinaio, 50, Napoli",
+                  "place_id": "ChIJbWjkij4IOxMRc9V75qy4XTY",
+                  "location": {
+                    "lat": 40.848333,
+                    "lng": 14.2674005
+                  }
+                },
+                {
+                  "name": "Ex Chiesa di Santa Maria dell'Arco in via Soprammuro",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Traversa III Garibaldi, 5, Napoli",
+                  "place_id": "ChIJres1PAAJOxMRTDoGKMxmfbY",
+                  "location": {
+                    "lat": 40.8489595,
+                    "lng": 14.2680819
+                  }
+                },
+                {
+                  "name": "Associazione religiosa \"Napoli Centro Jame Masjid\"",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Via Sopramuro, 46, Napoli",
+                  "place_id": "ChIJrez-QEsJOxMRa1Qqbv8fYHI",
+                  "location": {
+                    "lat": 40.8480338,
+                    "lng": 14.2681536
+                  }
+                },
+                {
+                  "name": "Islamic Center - Masjid",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 54,
+                  "vicinity": "Via Silvio Spaventa, 2, Napoli",
+                  "place_id": "ChIJY-ZMCRYIOxMR8nECVYJpnWo",
+                  "location": {
+                    "lat": 40.8515172,
+                    "lng": 14.2688177
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Pio Monte della Misericordia",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "museum",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 2610,
+                  "vicinity": "Via dei Tribunali, 253, Napoli",
+                  "place_id": "ChIJBcb1g2oIOxMRAz3FS9W0ZVU",
+                  "location": {
+                    "lat": 40.85196039999999,
+                    "lng": 14.2603592
+                  }
+                },
+                {
+                  "name": "Aleph Design Apartment",
+                  "types": [
+                    "art_gallery",
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 13,
+                  "vicinity": "Via dei Tribunali, 309, Napoli",
+                  "place_id": "ChIJkzGJ8UEIOxMR7nSe55h4kOg",
+                  "location": {
+                    "lat": 40.8510382,
+                    "lng": 14.2578158
+                  }
+                },
+                {
+                  "name": "lello masucci art studio",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Via dei Tribunali, 362, Napoli",
+                  "place_id": "ChIJIeIPFEUIOxMR3CFji_dh12I",
+                  "location": {
+                    "lat": 40.85029449999999,
+                    "lng": 14.2554763
+                  }
+                },
+                {
+                  "name": "1 Opera",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Via San Gregorio Armeno, 41, Napoli",
+                  "place_id": "ChIJvzCU2UMIOxMRm8h1mI5xiuU",
+                  "location": {
+                    "lat": 40.8497822,
+                    "lng": 14.2578882
+                  }
+                },
+                {
+                  "name": "L Arte Del Presepio -bottega Quagliarella",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 62,
+                  "vicinity": "Via dei Tribunali, 304, Napoli",
+                  "place_id": "ChIJ1YhE7kEIOxMRgK65LkckS4E",
+                  "location": {
+                    "lat": 40.8512,
+                    "lng": 14.2579
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Naples",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Naples",
+                  "place_id": "ChIJ6_p622YIOxMRfriMZcxDOtI",
+                  "location": {
+                    "lat": 40.8517746,
+                    "lng": 14.2681244
+                  }
+                },
+                {
+                  "name": "UNA Hotels Napoli",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2589,
+                  "vicinity": "10, Piazza Giuseppe Garibaldi, 9, Napoli",
+                  "place_id": "ChIJYbYVwhUIOxMRn62g4X2mKuM",
+                  "location": {
+                    "lat": 40.8517772,
+                    "lng": 14.2674944
+                  }
+                },
+                {
+                  "name": "Janare - Rooms & Terrace",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 74,
+                  "vicinity": "Via Atri, 31, Napoli",
+                  "place_id": "ChIJG0VDUEIIOxMR83f-v8vVevs",
+                  "location": {
+                    "lat": 40.8504325,
+                    "lng": 14.2550104
+                  }
+                },
+                {
+                  "name": "Hotel Naples",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 929,
+                  "vicinity": "Corso Umberto I, 55, Napoli",
+                  "place_id": "ChIJF-phhUYIOxMR3GP5F5iVnSc",
+                  "location": {
+                    "lat": 40.8449263,
+                    "lng": 14.2577771
+                  }
+                },
+                {
+                  "name": "Napoli Centrale Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 302,
+                  "vicinity": "Piazza Giuseppe Garibaldi, 26, Napoli",
+                  "place_id": "ChIJyRcPyRUIOxMRJL3SFgLWN4E",
+                  "location": {
+                    "lat": 40.8530774,
+                    "lng": 14.267688
+                  }
+                }
+              ]
+            },
+            "total_places_found": 40,
+            "photo_timestamp": "2022:07:15 16:24:42",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.4159529209136963
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/34.jpg"
+    },
+    {
+      "image_filename": "34.jpg",
+      "timestamp": "2026-01-28T05:26:37.005744",
+      "processing_time_seconds": 57.517384,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Street scene with residential buildings, Naples, Italy",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style, vibrant colors, and urban setting suggest a Mediterranean city, and the presence of scooters and specific building features are indicative of Naples, Italy.",
+            "detailed_description": "The image depicts a street scene in Naples, Italy, featuring residential buildings with a Mediterranean architectural style. The buildings are characterized by vibrant colors, such as yellow and ochre, and display features typical of urban Italian architecture, including balconies, shutters, and decorative cornices. The street is narrow, lined with parked cars and scooters, and the buildings show signs of aging and wear, adding to the historical ambiance of the area.",
+            "identification": {
+              "primary": [
+                "Street scene with residential buildings"
+              ],
+              "location": "Naples, Italy",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Residential buildings",
+                "type": "building",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "urban",
+              "architecture",
+              "Mediterranean",
+              "residential",
+              "Italy"
+            ],
+            "location": "Naples, Italy",
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Street in Palermo, Italy",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "Similar architectural style and urban characteristics are found in other Italian cities like Palermo."
+              },
+              {
+                "guess": "Street in Rome, Italy",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.5,
+                "reasoning": "Rome also features similar urban architecture, though the style is more typical of Naples."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Street scene with residential buildings\"],\n        \"location\": \"Naples, Italy\",\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Residential buildings\",\n            \"type\": \"building\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"urban\", \"architecture\", \"Mediterranean\", \"residential\", \"Italy\"],\n    \"description\": \"The image depicts a street scene in Naples, Italy, featuring residential buildings with a Mediterranean architectural style. The buildings are characterized by vibrant colors, such as yellow and ochre, and display features typical of urban Italian architecture, including balconies, shutters, and decorative cornices. The street is narrow, lined with parked cars and scooters, and the buildings show signs of aging and wear, adding to the historical ambiance of the area.\",\n    \"reasoning\": \"The architectural style, vibrant colors, and urban setting suggest a Mediterranean city, and the presence of scooters and specific building features are indicative of Naples, Italy.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Street in Palermo, Italy\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"Similar architectural style and urban characteristics are found in other Italian cities like Palermo.\"\n        },\n        {\n            \"guess\": \"Street in Rome, Italy\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.5,\n            \"reasoning\": \"Rome also features similar urban architecture, though the style is more typical of Naples.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 11.493014097213745
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a narrow urban street lined with buildings showcasing a mix of architectural styles. The buildings on the left side of the street are characterized by a more traditional design, featuring ornate balconies with wrought iron railings and decorative window shutters. These structures have a weathered appearance, suggesting historical significance and age. The facades are adorned with intricate moldings and cornices, typical of classical architecture. On the right side, a prominent ",
+            "description": "The image depicts a narrow urban street lined with buildings showcasing a mix of architectural styles. The buildings on the left side of the street are characterized by a more traditional design, featuring ornate balconies with wrought iron railings and decorative window shutters. These structures have a weathered appearance, suggesting historical significance and age. The facades are adorned with intricate moldings and cornices, typical of classical architecture. On the right side, a prominent ",
+            "architectural_style": "Classical and modern",
+            "search_backends_used": [],
+            "processing_time_seconds": 46.019675970077515
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Car",
+          "confidence": 0.9240838289260864,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "object",
+            "all_candidates": [
+              {
+                "source": "object",
+                "name": "Car",
+                "score": 0.9240838289260864
+              },
+              {
+                "source": "object",
+                "name": "Car",
+                "score": 0.8961120843887329
+              },
+              {
+                "source": "label",
+                "name": "Composite material",
+                "score": 0.886709451675415
+              },
+              {
+                "source": "label",
+                "name": "Metal",
+                "score": 0.8185257911682129
+              },
+              {
+                "source": "label",
+                "name": "Engineering",
+                "score": 0.8116945028305054
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "/m/083vt",
+                "score": 0.51910001039505
+              },
+              {
+                "name": "Wood",
+                "score": 0.28092506527900696
+              }
+            ],
+            "objects": [
+              {
+                "name": "Car",
+                "score": 0.9240838289260864
+              },
+              {
+                "name": "Car",
+                "score": 0.8961120843887329
+              },
+              {
+                "name": "Building",
+                "score": 0.6834737658500671
+              },
+              {
+                "name": "Car",
+                "score": 0.611960768699646
+              },
+              {
+                "name": "Building",
+                "score": 0.5916281938552856
+              }
+            ],
+            "labels": [
+              {
+                "name": "Composite material",
+                "score": 0.886709451675415
+              },
+              {
+                "name": "Metal",
+                "score": 0.8185257911682129
+              },
+              {
+                "name": "Engineering",
+                "score": 0.8116945028305054
+              },
+              {
+                "name": "Apartment",
+                "score": 0.8076890707015991
+              },
+              {
+                "name": "Iron",
+                "score": 0.7975484728813171
+              }
+            ],
+            "processing_time_seconds": 18.73752498626709
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/34.jpg"
+    }
+  ]
+}

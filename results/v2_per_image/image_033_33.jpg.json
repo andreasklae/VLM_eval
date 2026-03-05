@@ -1,0 +1,969 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "33.jpg",
+      "timestamp": "2026-01-28T05:23:51.842801",
+      "processing_time_seconds": 54.565826,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 43.75973888888889,
+        "gps_longitude": 11.264677777777777,
+        "location": {
+          "formatted_address": "Via delle Porte Sante, 34, 50125 Firenze FI, Italy",
+          "city": "Firenze",
+          "county": "Città Metropolitana di Firenze",
+          "country": "Italy"
+        },
+        "datetime_original": "2022:07:14 18:44:31",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Florence Cathedral (Santa Maria del Fiore), Giotto's Campanile, Florence, Italy",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive dome of the Florence Cathedral and the adjacent Giotto's Campanile are iconic landmarks of Florence, easily recognizable due to their architectural style and historical significance.",
+            "detailed_description": "The image shows a view of Florence, Italy, with the prominent Florence Cathedral (Santa Maria del Fiore) and Giotto's Campanile. The cathedral is known for its large dome designed by Filippo Brunelleschi, a masterpiece of Renaissance architecture. The campanile, or bell tower, is a separate structure designed by Giotto, showcasing Gothic architectural elements. The cityscape includes typical Italian Renaissance architecture, with terracotta roofs and historical buildings.",
+            "identification": {
+              "primary": [
+                "Florence Cathedral (Santa Maria del Fiore)",
+                "Giotto's Campanile"
+              ],
+              "location": "Florence, Italy",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Florence Cathedral (Santa Maria del Fiore)",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Giotto's Campanile",
+                "type": "landmark",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "Renaissance",
+              "architecture",
+              "cathedral",
+              "Italy",
+              "landmark"
+            ],
+            "location": "Florence, Italy",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Florence Cathedral (Santa Maria del Fiore)\", \"Giotto's Campanile\"],\n        \"location\": \"Florence, Italy\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Florence Cathedral (Santa Maria del Fiore)\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Giotto's Campanile\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.90\n        }\n    ],\n    \"tags\": [\"Renaissance\", \"architecture\", \"cathedral\", \"Italy\", \"landmark\"],\n    \"description\": \"The image shows a view of Florence, Italy, with the prominent Florence Cathedral (Santa Maria del Fiore) and Giotto's Campanile. The cathedral is known for its large dome designed by Filippo Brunelleschi, a masterpiece of Renaissance architecture. The campanile, or bell tower, is a separate structure designed by Giotto, showcasing Gothic architectural elements. The cityscape includes typical Italian Renaissance architecture, with terracotta roofs and historical buildings.\",\n    \"reasoning\": \"The distinctive dome of the Florence Cathedral and the adjacent Giotto's Campanile are iconic landmarks of Florence, easily recognizable due to their architectural style and historical significance.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 43.75973888888889,
+              "longitude": 11.264677777777777
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Via delle Porte Sante, 34, 50125 Firenze FI, Italy",
+              "city": "Firenze",
+              "county": "Città Metropolitana di Firenze",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2022:07:14 18:44:31",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 11.706549882888794
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image captures a panoramic view of Florence, Italy, with the iconic cathedral prominently visible in the center. The cathedral features a large, red-tiled dome, characteristic of Renaissance architecture, designed by Filippo Brunelleschi. The dome is an engineering marvel, with a distinctive octagonal shape and ribbed structure. Adjacent to the dome is a tall bell tower, known as the Campanile, which is adorned with intricate marble patterns and Gothic-style windows. The facade of the cathed",
+            "description": "The image captures a panoramic view of Florence, Italy, with the iconic cathedral prominently visible in the center. The cathedral features a large, red-tiled dome, characteristic of Renaissance architecture, designed by Filippo Brunelleschi. The dome is an engineering marvel, with a distinctive octagonal shape and ribbed structure. Adjacent to the dome is a tall bell tower, known as the Campanile, which is adorned with intricate marble patterns and Gothic-style windows. The facade of the cathed",
+            "architectural_style": "Renaissance",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 43.75973888888889,
+              "longitude": 11.264677777777777
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Via delle Porte Sante, 34, 50125 Firenze FI, Italy",
+              "city": "Firenze",
+              "county": "Città Metropolitana di Firenze",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2022:07:14 18:44:31",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 42.14666223526001
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Sunlight",
+          "confidence": 0.8003677725791931,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Sunlight",
+                "score": 0.8003677725791931
+              },
+              {
+                "source": "label",
+                "name": "Bird's-eye view",
+                "score": 0.7374506592750549
+              }
+            ],
+            "web_entities": [],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9883714318275452
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9816537499427795
+              },
+              {
+                "name": "Sunlight",
+                "score": 0.8003677725791931
+              },
+              {
+                "name": "Bird's-eye view",
+                "score": 0.7374506592750549
+              },
+              {
+                "name": "Conifers",
+                "score": 0.5915740728378296
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 43.75973888888889,
+              "longitude": 11.264677777777777
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Via delle Porte Sante, 34, 50125 Firenze FI, Italy",
+              "city": "Firenze",
+              "county": "Città Metropolitana di Firenze",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2022:07:14 18:44:31",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 16.064152002334595
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Firenze, Città Metropolitana di Firenze, Italy",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Firenze, Città Metropolitana di Firenze, Italy",
+            "coordinates": {
+              "latitude": 43.75973888888889,
+              "longitude": 11.264677777777777
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Porta San Niccolò",
+                  "types": [
+                    "landmark",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 994,
+                  "vicinity": "Piazza Giuseppe Poggi, 1, Firenze",
+                  "place_id": "ChIJSXhCnvdTKhMRWxhaXKhovPs",
+                  "location": {
+                    "lat": 43.7645484,
+                    "lng": 11.2649262
+                  }
+                },
+                {
+                  "name": "Piazzale Michelangelo",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 107304,
+                  "vicinity": "Piazzale Michelangelo, Firenze",
+                  "place_id": "ChIJQzhmQ_dTKhMRGVENguFo97Q",
+                  "location": {
+                    "lat": 43.7629314,
+                    "lng": 11.2650561
+                  }
+                },
+                {
+                  "name": "Basilica di San Miniato",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 6176,
+                  "vicinity": "Via delle Porte Sante, 34, Firenze",
+                  "place_id": "ChIJl26IxfBTKhMRsFKUrq2_Pzs",
+                  "location": {
+                    "lat": 43.7594184,
+                    "lng": 11.2649796
+                  }
+                },
+                {
+                  "name": "Chiesa di San Salvatore al Monte",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 386,
+                  "vicinity": "Via di San Salvatore Al Monte, 9, Firenze",
+                  "place_id": "ChIJyxQrcR5UKhMRp8kTfD05Ihg",
+                  "location": {
+                    "lat": 43.7614218,
+                    "lng": 11.2653226
+                  }
+                },
+                {
+                  "name": "Florence National Central Library",
+                  "types": [
+                    "tourist_attraction",
+                    "library",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 408,
+                  "vicinity": "Piazza dei Cavalleggeri, 1, Firenze",
+                  "place_id": "ChIJk0VRdfhTKhMRjN3C2anfmms",
+                  "location": {
+                    "lat": 43.76708129999999,
+                    "lng": 11.2623479
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Horne Museum",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 192,
+                  "vicinity": "Via dei Benci, 6, Firenze",
+                  "place_id": "ChIJtTAKXgdUKhMRnoJED4eXS6I",
+                  "location": {
+                    "lat": 43.767492,
+                    "lng": 11.2594189
+                  }
+                },
+                {
+                  "name": "Villa Bardini",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 3132,
+                  "vicinity": "Costa San Giorgio, 2, Firenze",
+                  "place_id": "ChIJiaZVj_5TKhMRKzngptMzaPk",
+                  "location": {
+                    "lat": 43.7639854,
+                    "lng": 11.2561705
+                  }
+                },
+                {
+                  "name": "Stefano Bardini Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 505,
+                  "vicinity": "Via dei Renai, 37, Firenze",
+                  "place_id": "ChIJMcWEKvlTKhMRTeupUd6b7yU",
+                  "location": {
+                    "lat": 43.7650542,
+                    "lng": 11.2583579
+                  }
+                },
+                {
+                  "name": "Museo Casa Rodolfo Siviero",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 67,
+                  "vicinity": "Lungarno Serristori, 1/3, Firenze",
+                  "place_id": "ChIJaVnDKPhTKhMRZsUjxdfyyQk",
+                  "location": {
+                    "lat": 43.7648833,
+                    "lng": 11.2638812
+                  }
+                },
+                {
+                  "name": "Sistema delle Rampe del Poggi",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 150,
+                  "vicinity": "San Niccolò, Firenze",
+                  "place_id": "ChIJa2dTs5VTKhMRgWK35RoJ3JY",
+                  "location": {
+                    "lat": 43.7637784,
+                    "lng": 11.2648554
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Hotel Silla",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 492,
+                  "vicinity": "Via dei Renai, 5, Firenze",
+                  "place_id": "ChIJla4f2fhTKhMRpZIgXdTqI6s",
+                  "location": {
+                    "lat": 43.7647399,
+                    "lng": 11.2602958
+                  }
+                },
+                {
+                  "name": "Art Hotel Villa Agape",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 761,
+                  "vicinity": "Via della Torre del Gallo, 8, Firenze",
+                  "place_id": "ChIJtWgg-eNTKhMRoDdx8rdqtFg",
+                  "location": {
+                    "lat": 43.75436610000001,
+                    "lng": 11.2589547
+                  }
+                },
+                {
+                  "name": "LHP Hotel River & SPA",
+                  "types": [
+                    "spa",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 432,
+                  "vicinity": "Lungarno della Zecca Vecchia, 18, Firenze",
+                  "place_id": "ChIJ7xGZJ_ZTKhMRspXDmUK8OgM",
+                  "location": {
+                    "lat": 43.7664029,
+                    "lng": 11.2673936
+                  }
+                },
+                {
+                  "name": "FH55 Grand Hotel Mediterraneo",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 4716,
+                  "vicinity": "Lungarno del Tempio, 44, Firenze",
+                  "place_id": "ChIJW9Y1fgpUKhMRzMGsQA5i3j4",
+                  "location": {
+                    "lat": 43.76614929999999,
+                    "lng": 11.2721806
+                  }
+                },
+                {
+                  "name": "Rifrullo Firenze",
+                  "types": [
+                    "cafe",
+                    "bar",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1882,
+                  "vicinity": "Via di San Niccolò, 57, Firenze",
+                  "place_id": "ChIJS5ZIqflTKhMREb0peIm_z-4",
+                  "location": {
+                    "lat": 43.7641771,
+                    "lng": 11.2615872
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Terzo Giardino",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 39,
+                  "vicinity": "Lungarno Serristori, 19, Firenze",
+                  "place_id": "ChIJlTPXRvhTKhMRMZafSyHgMYQ",
+                  "location": {
+                    "lat": 43.7654429,
+                    "lng": 11.2621001
+                  }
+                },
+                {
+                  "name": "Villa Bardini",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 3132,
+                  "vicinity": "Costa San Giorgio, 2, Firenze",
+                  "place_id": "ChIJiaZVj_5TKhMRKzngptMzaPk",
+                  "location": {
+                    "lat": 43.7639854,
+                    "lng": 11.2561705
+                  }
+                },
+                {
+                  "name": "Giardino delle Rose",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 4353,
+                  "vicinity": "Viale Giuseppe Poggi, 2, Firenze",
+                  "place_id": "ChIJUTXw5vlTKhMROvZg0D1Pa-c",
+                  "location": {
+                    "lat": 43.76298949999999,
+                    "lng": 11.2628239
+                  }
+                },
+                {
+                  "name": "Comune di Firenze/Verde Pubblico",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 5,
+                  "vicinity": "Viale Giuseppe Poggi, 2, Firenze",
+                  "place_id": "ChIJhSReevdTKhMRMbXwLff0tzk",
+                  "location": {
+                    "lat": 43.76405919999999,
+                    "lng": 11.2663869
+                  }
+                },
+                {
+                  "name": "Giardino dell'Iris",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 600,
+                  "vicinity": "Via Michelangelo Buonarroti, 82, Firenze",
+                  "place_id": "ChIJwxXZ3vZTKhMRR-_uFVcE6AU",
+                  "location": {
+                    "lat": 43.7626841,
+                    "lng": 11.2663504
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Basilica di San Miniato",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 6176,
+                  "vicinity": "Via delle Porte Sante, 34, Firenze",
+                  "place_id": "ChIJl26IxfBTKhMRsFKUrq2_Pzs",
+                  "location": {
+                    "lat": 43.7594184,
+                    "lng": 11.2649796
+                  }
+                },
+                {
+                  "name": "Chiesa di San Salvatore al Monte",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 386,
+                  "vicinity": "Via di San Salvatore Al Monte, 9, Firenze",
+                  "place_id": "ChIJyxQrcR5UKhMRp8kTfD05Ihg",
+                  "location": {
+                    "lat": 43.7614218,
+                    "lng": 11.2653226
+                  }
+                },
+                {
+                  "name": "Auditorium Santa Croce al Tempio",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 43,
+                  "vicinity": "Via di San Giuseppe, Firenze",
+                  "place_id": "ChIJbZVQaghUKhMR-0N-RoTO_WA",
+                  "location": {
+                    "lat": 43.7680379,
+                    "lng": 11.264928
+                  }
+                },
+                {
+                  "name": "Chiesa Evangelica Luterana di Firenze",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 32,
+                  "vicinity": "Lungarno Torrigiani, 11, Firenze",
+                  "place_id": "ChIJxx5NIf9TKhMRM1_0v_5wUho",
+                  "location": {
+                    "lat": 43.76562300000001,
+                    "lng": 11.2571597
+                  }
+                },
+                {
+                  "name": "Provincia Toscana dei Frati Minori di San Francesco",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 3,
+                  "vicinity": "Via di San Salvatore Al Monte, 9, Firenze",
+                  "place_id": "ChIJ070qVfdTKhMRLgWL97Z1ci8",
+                  "location": {
+                    "lat": 43.7610683,
+                    "lng": 11.2653966
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Art Gallery Studio Iguarnieri Florence",
+                  "types": [
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 75,
+                  "vicinity": "Lungarno Benvenuto Cellini, 39 nero, Firenze",
+                  "place_id": "ChIJA8asUvZTKhMRzUtTaOsWAbo",
+                  "location": {
+                    "lat": 43.7646138,
+                    "lng": 11.2667787
+                  }
+                },
+                {
+                  "name": "Nonfinito Art Gallery / Studio",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 21,
+                  "vicinity": "Via di San Niccolò, 75 rosso, Firenze",
+                  "place_id": "ChIJQadUB_lTKhMRKUGN8Ea-p-U",
+                  "location": {
+                    "lat": 43.7643994,
+                    "lng": 11.2608441
+                  }
+                },
+                {
+                  "name": "Otto Atelier Michaela Sieberova",
+                  "types": [
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 22,
+                  "vicinity": "Via di San Niccolò, 58, Firenze",
+                  "place_id": "ChIJeey6A_lTKhMROPLcYrn4sRU",
+                  "location": {
+                    "lat": 43.7646335,
+                    "lng": 11.260278
+                  }
+                },
+                {
+                  "name": "Il Bisonte - Foundation for Art and Printmaking",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 11,
+                  "vicinity": "Via di San Niccolò, 24rosso, Firenze",
+                  "place_id": "ChIJRTipzflTKhMRFMtVR_H7J2A",
+                  "location": {
+                    "lat": 43.7644424,
+                    "lng": 11.2616615
+                  }
+                },
+                {
+                  "name": "Tornabuoni Arte Srl",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 46,
+                  "vicinity": "Lungarno Benvenuto Cellini, 3, Firenze",
+                  "place_id": "ChIJFx6cefZTKhMRqegKzMMVbEE",
+                  "location": {
+                    "lat": 43.76420419999999,
+                    "lng": 11.2695751
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Florence",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Florence",
+                  "place_id": "ChIJrdbSgKZWKhMRAyrH7xd51ZM",
+                  "location": {
+                    "lat": 43.7699685,
+                    "lng": 11.2576706
+                  }
+                },
+                {
+                  "name": "Hotel Silla",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 492,
+                  "vicinity": "Via dei Renai, 5, Firenze",
+                  "place_id": "ChIJla4f2fhTKhMRpZIgXdTqI6s",
+                  "location": {
+                    "lat": 43.7647399,
+                    "lng": 11.2602958
+                  }
+                },
+                {
+                  "name": "Residence Michelangiolo",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 64,
+                  "vicinity": "Viale Michelangelo, 21, Firenze",
+                  "place_id": "ChIJk3R_j_RTKhMRMpWmHrhHEig",
+                  "location": {
+                    "lat": 43.7613967,
+                    "lng": 11.2728933
+                  }
+                },
+                {
+                  "name": "Hotel Home Florence",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 403,
+                  "vicinity": "Piazza Piave, 3, Firenze",
+                  "place_id": "ChIJy0Sy5wlUKhMRjX2c61A32gQ",
+                  "location": {
+                    "lat": 43.76687219999999,
+                    "lng": 11.2679434
+                  }
+                },
+                {
+                  "name": "Plaza Hotel Lucchesi",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1083,
+                  "vicinity": "Lungarno della Zecca Vecchia, 38, Firenze",
+                  "place_id": "ChIJ0SxLAfhTKhMRzushPx_GJOM",
+                  "location": {
+                    "lat": 43.7666092,
+                    "lng": 11.2633806
+                  }
+                }
+              ]
+            },
+            "total_places_found": 35,
+            "photo_timestamp": "2022:07:14 18:44:31",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.44564199447631836
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/33.jpg"
+    },
+    {
+      "image_filename": "33.jpg",
+      "timestamp": "2026-01-28T05:24:46.442051",
+      "processing_time_seconds": 53.639817,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Florence Cathedral, Giotto's Campanile, Florence, Italy",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive dome and bell tower are iconic features of Florence's skyline, making it possible to confidently identify these landmarks.",
+            "detailed_description": "The image shows a panoramic view of Florence, Italy, with the prominent Florence Cathedral, also known as the Cathedral of Santa Maria del Fiore, featuring its iconic red-tiled dome designed by Filippo Brunelleschi. Next to it is Giotto's Campanile, a bell tower known for its Gothic architecture. The cityscape is surrounded by rolling hills and a clear blue sky.",
+            "identification": {
+              "primary": [
+                "Florence Cathedral",
+                "Giotto's Campanile"
+              ],
+              "location": "Florence, Italy",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Florence Cathedral",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Giotto's Campanile",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Renaissance",
+              "architecture",
+              "Italy",
+              "cathedral",
+              "bell_tower"
+            ],
+            "location": "Florence, Italy",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Florence Cathedral\", \"Giotto's Campanile\"],\n        \"location\": \"Florence, Italy\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Florence Cathedral\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Giotto's Campanile\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Renaissance\", \"architecture\", \"Italy\", \"cathedral\", \"bell_tower\"],\n    \"description\": \"The image shows a panoramic view of Florence, Italy, with the prominent Florence Cathedral, also known as the Cathedral of Santa Maria del Fiore, featuring its iconic red-tiled dome designed by Filippo Brunelleschi. Next to it is Giotto's Campanile, a bell tower known for its Gothic architecture. The cityscape is surrounded by rolling hills and a clear blue sky.\",\n    \"reasoning\": \"The distinctive dome and bell tower are iconic features of Florence's skyline, making it possible to confidently identify these landmarks.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 8.949299097061157
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image captures a panoramic view of a historic cityscape dominated by a prominent cathedral with a large dome and accompanying bell tower. The cathedral features a distinctive Renaissance architectural style, characterized by its symmetrical design, use of white and green marble, and intricate detailing. The dome is a notable feature, with a reddish-brown color and an octagonal base, indicative of Renaissance engineering and design. The bell tower is tall and slender, with a series of decorat",
+            "description": "The image captures a panoramic view of a historic cityscape dominated by a prominent cathedral with a large dome and accompanying bell tower. The cathedral features a distinctive Renaissance architectural style, characterized by its symmetrical design, use of white and green marble, and intricate detailing. The dome is a notable feature, with a reddish-brown color and an octagonal base, indicative of Renaissance engineering and design. The bell tower is tall and slender, with a series of decorat",
+            "architectural_style": "Renaissance",
+            "search_backends_used": [],
+            "processing_time_seconds": 44.68771195411682
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Sunlight",
+          "confidence": 0.8003677725791931,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Sunlight",
+                "score": 0.8003677725791931
+              },
+              {
+                "source": "label",
+                "name": "Bird's-eye view",
+                "score": 0.7374506592750549
+              }
+            ],
+            "web_entities": [],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9883714318275452
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9816537499427795
+              },
+              {
+                "name": "Sunlight",
+                "score": 0.8003677725791931
+              },
+              {
+                "name": "Bird's-eye view",
+                "score": 0.7374506592750549
+              },
+              {
+                "name": "Conifers",
+                "score": 0.5915740728378296
+              }
+            ],
+            "processing_time_seconds": 16.704360961914062
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/33.jpg"
+    }
+  ]
+}

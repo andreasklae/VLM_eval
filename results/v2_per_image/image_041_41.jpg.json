@@ -1,0 +1,1111 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "41.jpg",
+      "timestamp": "2026-01-28T05:40:19.747004",
+      "processing_time_seconds": 58.360637,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 51.50515,
+        "gps_longitude": -0.078675,
+        "location": {
+          "formatted_address": "110 The Queen's Walk, London SE1 2AA, UK",
+          "city": null,
+          "county": "Greater London",
+          "country": "United Kingdom"
+        },
+        "datetime_original": "2022:07:23 12:05:05",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Tower Bridge, London, United Kingdom",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive twin towers and the bridge's design are unmistakable features of Tower Bridge, a well-known landmark in London.",
+            "detailed_description": "The image shows Tower Bridge, a famous Victorian-era bascule and suspension bridge in London, United Kingdom. It features two large towers in the Gothic Revival style, connected by a walkway and a lower deck for vehicles and pedestrians. The bridge spans the River Thames and is an iconic symbol of London. The scene includes decorative bunting and a modern street lamp along the riverside walkway.",
+            "identification": {
+              "primary": [
+                "Tower Bridge"
+              ],
+              "location": "London, United Kingdom",
+              "confidence": 1.0
+            },
+            "artifacts": [
+              {
+                "name": "Tower Bridge",
+                "type": "landmark",
+                "confidence": 1.0
+              }
+            ],
+            "tags": [
+              "Victorian",
+              "bridge",
+              "London",
+              "Gothic_Revival",
+              "landmark"
+            ],
+            "location": "London, United Kingdom",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Tower Bridge\"],\n        \"location\": \"London, United Kingdom\",\n        \"confidence\": 1.0\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Tower Bridge\",\n            \"type\": \"landmark\",\n            \"confidence\": 1.0\n        }\n    ],\n    \"tags\": [\"Victorian\", \"bridge\", \"London\", \"Gothic_Revival\", \"landmark\"],\n    \"description\": \"The image shows Tower Bridge, a famous Victorian-era bascule and suspension bridge in London, United Kingdom. It features two large towers in the Gothic Revival style, connected by a walkway and a lower deck for vehicles and pedestrians. The bridge spans the River Thames and is an iconic symbol of London. The scene includes decorative bunting and a modern street lamp along the riverside walkway.\",\n    \"reasoning\": \"The distinctive twin towers and the bridge's design are unmistakable features of Tower Bridge, a well-known landmark in London.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 51.50515,
+              "longitude": -0.078675
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "110 The Queen's Walk, London SE1 2AA, UK",
+              "city": null,
+              "county": "Greater London",
+              "country": "United Kingdom"
+            },
+            "photo_timestamp": "2022:07:23 12:05:05",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 10.275492191314697
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image prominently features a well-known bascule and suspension bridge, characterized by its distinctive Gothic Revival architectural style. The bridge is composed of two massive towers connected by a walkway and a roadway, with the towers featuring crenellated parapets and pointed arches. The stone construction is evident, with detailed ornamentation typical of the Gothic Revival style, including decorative pinnacles and tracery. The bridge spans a wide river, with the water reflecting the c",
+            "description": "The image prominently features a well-known bascule and suspension bridge, characterized by its distinctive Gothic Revival architectural style. The bridge is composed of two massive towers connected by a walkway and a roadway, with the towers featuring crenellated parapets and pointed arches. The stone construction is evident, with detailed ornamentation typical of the Gothic Revival style, including decorative pinnacles and tracery. The bridge spans a wide river, with the water reflecting the c",
+            "architectural_style": "Gothic Revival",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 51.50515,
+              "longitude": -0.078675
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "110 The Queen's Walk, London SE1 2AA, UK",
+              "city": null,
+              "county": "Greater London",
+              "country": "United Kingdom"
+            },
+            "photo_timestamp": "2022:07:23 12:05:05",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 47.21492886543274
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Iron",
+          "confidence": 0.904469907283783,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Iron",
+                "score": 0.904469907283783
+              },
+              {
+                "source": "label",
+                "name": "Composite material",
+                "score": 0.8901212811470032
+              },
+              {
+                "source": "label",
+                "name": "Metal",
+                "score": 0.8559694290161133
+              },
+              {
+                "source": "object",
+                "name": "Top",
+                "score": 0.8077859282493591
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.7719327807426453
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Amusement Ride",
+                "score": 0.37014228105545044
+              },
+              {
+                "name": "Amusement",
+                "score": 0.314300000667572
+              },
+              {
+                "name": "Amusement Park",
+                "score": 0.29280000925064087
+              }
+            ],
+            "objects": [
+              {
+                "name": "Top",
+                "score": 0.8077859282493591
+              },
+              {
+                "name": "Person",
+                "score": 0.7719327807426453
+              },
+              {
+                "name": "Person",
+                "score": 0.7084547877311707
+              },
+              {
+                "name": "Clothing",
+                "score": 0.638721764087677
+              },
+              {
+                "name": "Person",
+                "score": 0.6269361972808838
+              }
+            ],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.988913893699646
+              },
+              {
+                "name": "Daytime",
+                "score": 0.981506884098053
+              },
+              {
+                "name": "Iron",
+                "score": 0.904469907283783
+              },
+              {
+                "name": "Composite material",
+                "score": 0.8901212811470032
+              },
+              {
+                "name": "Metal",
+                "score": 0.8559694290161133
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 51.50515,
+              "longitude": -0.078675
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "110 The Queen's Walk, London SE1 2AA, UK",
+              "city": null,
+              "county": "Greater London",
+              "country": "United Kingdom"
+            },
+            "photo_timestamp": "2022:07:23 12:05:05",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 18.037598371505737
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Greater London, United Kingdom",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Greater London, United Kingdom",
+            "coordinates": {
+              "latitude": 51.50515,
+              "longitude": -0.078675
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Tower of London",
+                  "types": [
+                    "tourist_attraction",
+                    "landmark",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 116612,
+                  "vicinity": "London",
+                  "place_id": "ChIJ3TgfM0kDdkgRZ2TV4d1Jv6g",
+                  "location": {
+                    "lat": 51.50811239999999,
+                    "lng": -0.0759493
+                  }
+                },
+                {
+                  "name": "St Katharine Docks",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 6941,
+                  "vicinity": "50 Saint Katharine's Way, London",
+                  "place_id": "ChIJmyYjOEgDdkgR345iS9jBRsE",
+                  "location": {
+                    "lat": 51.5064168,
+                    "lng": -0.0718167
+                  }
+                },
+                {
+                  "name": "Tower Bridge",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 177142,
+                  "vicinity": "Tower Bridge Road, London",
+                  "place_id": "ChIJSdtli0MDdkgRLW9aCBpCeJ4",
+                  "location": {
+                    "lat": 51.5054564,
+                    "lng": -0.07535649999999999
+                  }
+                },
+                {
+                  "name": "London Bridge",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 63129,
+                  "vicinity": "London",
+                  "place_id": "ChIJxRO7WVEDdkgRrGM1fCYoHqY",
+                  "location": {
+                    "lat": 51.5078788,
+                    "lng": -0.08773210000000001
+                  }
+                },
+                {
+                  "name": "Monument to the Great Fire of London",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 13438,
+                  "vicinity": "Fish Street Hill, London",
+                  "place_id": "ChIJDz0Q3FMDdkgRw0x0c68WGtk",
+                  "location": {
+                    "lat": 51.510143,
+                    "lng": -0.08594199999999998
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "The Old Operating Theatre Museum and Herb Garret",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1372,
+                  "vicinity": "9a Saint Thomas Street, London",
+                  "place_id": "ChIJXRDdrFADdkgRT_s4Gh7ORxg",
+                  "location": {
+                    "lat": 51.5050283,
+                    "lng": -0.0885991
+                  }
+                },
+                {
+                  "name": "Tower Bridge Engine Rooms",
+                  "types": [
+                    "museum",
+                    "local_government_office",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1162,
+                  "vicinity": "Bridge Masters Residence, Tower Bridge Road, London",
+                  "place_id": "ChIJSdtli0MDdkgRrgRLMv8r0IQ",
+                  "location": {
+                    "lat": 51.5042193,
+                    "lng": -0.0761728
+                  }
+                },
+                {
+                  "name": "HMS Belfast",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 13861,
+                  "vicinity": "The Queen's Walk, London",
+                  "place_id": "ChIJ53DRz08DdkgRrg8CSNPPXws",
+                  "location": {
+                    "lat": 51.506579,
+                    "lng": -0.08138899999999999
+                  }
+                },
+                {
+                  "name": "The Golden Hinde",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1571,
+                  "vicinity": "Saint Mary Overie's Dock, Cathedral Street, London",
+                  "place_id": "ChIJezfRVFYDdkgRPvbycxADmY4",
+                  "location": {
+                    "lat": 51.5069501,
+                    "lng": -0.09032479999999998
+                  }
+                },
+                {
+                  "name": "Fashion and Textile Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 305,
+                  "vicinity": "83 Bermondsey Street, London",
+                  "place_id": "ChIJSep40kQDdkgRPze1yPrhO9U",
+                  "location": {
+                    "lat": 51.50119110000001,
+                    "lng": -0.0817456
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "The Tower Hotel, by Thistle",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 11686,
+                  "vicinity": "Saint Katharine's Way, London",
+                  "place_id": "ChIJN8TLJEgDdkgRLEFtFv_mVcs",
+                  "location": {
+                    "lat": 51.506786,
+                    "lng": -0.07396490000000001
+                  }
+                },
+                {
+                  "name": "Novotel London Tower Bridge",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 3803,
+                  "vicinity": "10 Pepys Street, London",
+                  "place_id": "ChIJtx22FUwDdkgRpORimUrdYlQ",
+                  "location": {
+                    "lat": 51.5107254,
+                    "lng": -0.0773324
+                  }
+                },
+                {
+                  "name": "Premier Inn London Tower Bridge hotel",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 2238,
+                  "vicinity": "159 Tower Bridge Road, London",
+                  "place_id": "ChIJs3Q1fEQDdkgRR-IjVioDIdM",
+                  "location": {
+                    "lat": 51.4993294,
+                    "lng": -0.0792754
+                  }
+                },
+                {
+                  "name": "London Bridge Hotel",
+                  "types": [
+                    "gym",
+                    "lodging",
+                    "bar",
+                    "health",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1249,
+                  "vicinity": "8-18 London Bridge Street, London",
+                  "place_id": "ChIJu6GgulADdkgRisE18ox2rdU",
+                  "location": {
+                    "lat": 51.5051976,
+                    "lng": -0.0881208
+                  }
+                },
+                {
+                  "name": "The Chamberlain Hotel, Tower Bridge",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1506,
+                  "vicinity": "132-135 Minories, London",
+                  "place_id": "ChIJbzZAgksDdkgRVNB_KxLPlos",
+                  "location": {
+                    "lat": 51.51222969999999,
+                    "lng": -0.07567569999999998
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Potters Fields Park",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 2725,
+                  "vicinity": "Tooley Street, London",
+                  "place_id": "ChIJfdkOjEUDdkgRYGBQ5bvKWlo",
+                  "location": {
+                    "lat": 51.5041452,
+                    "lng": -0.0783269
+                  }
+                },
+                {
+                  "name": "Guy Street Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 117,
+                  "vicinity": "Guy Street, London",
+                  "place_id": "ChIJMQyctVsDdkgRj6e01fvEeAw",
+                  "location": {
+                    "lat": 51.50171839999999,
+                    "lng": -0.0866055
+                  }
+                },
+                {
+                  "name": "Hankey Place Gardens",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 17,
+                  "vicinity": "20 Pilgrimage Street, London",
+                  "place_id": "ChIJK4AdRlkDdkgRA6YRePk2c0w",
+                  "location": {
+                    "lat": 51.499864,
+                    "lng": -0.08916670000000002
+                  }
+                },
+                {
+                  "name": "St George's Churchyard Gardens",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 5,
+                  "vicinity": "Long Lane, London",
+                  "place_id": "ChIJo_Qu-lgDdkgRdf2y85PXkGE",
+                  "location": {
+                    "lat": 51.5014919,
+                    "lng": -0.0916889
+                  }
+                },
+                {
+                  "name": "Water Fountains",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 58,
+                  "vicinity": "1-2 More London Place, London",
+                  "place_id": "ChIJY3dGUUUDdkgRn5c35hvi4RI",
+                  "location": {
+                    "lat": 51.5051642,
+                    "lng": -0.0799858
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Southwark Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 3987,
+                  "vicinity": "London Bridge, London",
+                  "place_id": "ChIJ1aSDEVcDdkgRcnd_8l9Qbh4",
+                  "location": {
+                    "lat": 51.5061009,
+                    "lng": -0.08959579999999999
+                  }
+                },
+                {
+                  "name": "Our Lady of La Salette and Saint Joseph Catholic Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 59,
+                  "vicinity": "14 Melior Street, London",
+                  "place_id": "ChIJDxHD91oDdkgRNAln1QAX1Dg",
+                  "location": {
+                    "lat": 51.5026763,
+                    "lng": -0.0850861
+                  }
+                },
+                {
+                  "name": "All Hallows by the Tower",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 840,
+                  "vicinity": "Byward Street, London",
+                  "place_id": "ChIJ-9AX1k0DdkgRBucVmbfb4z0",
+                  "location": {
+                    "lat": 51.5094167,
+                    "lng": -0.0793083
+                  }
+                },
+                {
+                  "name": "St Olave's Church, Hart Street",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 169,
+                  "vicinity": "8 Hart Street, London",
+                  "place_id": "ChIJBYyAyE0DdkgRtneljJ9kOe8",
+                  "location": {
+                    "lat": 51.5109216,
+                    "lng": -0.079445
+                  }
+                },
+                {
+                  "name": "St Mary-at-Hill",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 114,
+                  "vicinity": "Lovat Lane, London",
+                  "place_id": "ChIJeY15JlIDdkgR-383mirmLPI",
+                  "location": {
+                    "lat": 51.5100253,
+                    "lng": -0.08352260000000002
+                  }
+                },
+                {
+                  "name": "Mosque for jumma",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 5,
+                  "vicinity": "20 Little Somerset Street, London",
+                  "place_id": "ChIJAV44RwADdkgRvWekbngOgSU",
+                  "location": {
+                    "lat": 51.5134833,
+                    "lng": -0.0745583
+                  }
+                },
+                {
+                  "name": "Jummah Salah in Portsoken Community Hall (Run by Halls 4 Jumuah)",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 8,
+                  "vicinity": "16 Little Somerset Street, London",
+                  "place_id": "ChIJfbFGKtsDdkgRfNRGZgB0aL4",
+                  "location": {
+                    "lat": 51.513386,
+                    "lng": -0.0739619
+                  }
+                },
+                {
+                  "name": "Friday Prayer (Jumu'ah) in Holland House",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "1 Bury Street, London",
+                  "place_id": "ChIJ__bzQgADdkgRaubLNbR9MEE",
+                  "location": {
+                    "lat": 51.5140161,
+                    "lng": -0.0795289
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "The Doodle Bar",
+                  "types": [
+                    "bar",
+                    "art_gallery",
+                    "cafe",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 867,
+                  "vicinity": "60 Druid Street, London",
+                  "place_id": "ChIJScAqkHMFdkgRUzas6dSHSxM",
+                  "location": {
+                    "lat": 51.5002417,
+                    "lng": -0.07631109999999999
+                  }
+                },
+                {
+                  "name": "White Cube Bermondsey",
+                  "types": [
+                    "art_gallery",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 2102,
+                  "vicinity": "144-152, Bermondsey Street, London",
+                  "place_id": "ChIJ2SOnxbocdkgRxmoRKRwc49M",
+                  "location": {
+                    "lat": 51.49937569999999,
+                    "lng": -0.082318
+                  }
+                },
+                {
+                  "name": "Poussin Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "London",
+                  "place_id": "ChIJu0UQYkMDdkgR6ZUyVYPVq5U",
+                  "location": {
+                    "lat": 51.4994313,
+                    "lng": -0.08118639999999999
+                  }
+                },
+                {
+                  "name": "Eames Fine Art Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 67,
+                  "vicinity": "58 Bermondsey Street, London",
+                  "place_id": "ChIJAfGUKlsDdkgRDoyk9FSq0CM",
+                  "location": {
+                    "lat": 51.5017655,
+                    "lng": -0.08240109999999999
+                  }
+                },
+                {
+                  "name": "Bermondsey Gallery",
+                  "types": [
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 95,
+                  "vicinity": "29 Dockhead, London",
+                  "place_id": "ChIJGVMQPEcDdkgRIyHnvuldTng",
+                  "location": {
+                    "lat": 51.5003158,
+                    "lng": -0.0722972
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "London",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "London",
+                  "place_id": "ChIJdd4hrwug2EcRmSrV3Vo6llI",
+                  "location": {
+                    "lat": 51.5072178,
+                    "lng": -0.1275862
+                  }
+                },
+                {
+                  "name": "Hilton London Tower Bridge",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2953,
+                  "vicinity": "5 More London Place, Tooley Street, London",
+                  "place_id": "ChIJry4CB1ADdkgRrKALccYikP8",
+                  "location": {
+                    "lat": 51.50455969999999,
+                    "lng": -0.0825847
+                  }
+                },
+                {
+                  "name": "The Tower Hotel, by Thistle",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 11686,
+                  "vicinity": "Saint Katharine's Way, London",
+                  "place_id": "ChIJN8TLJEgDdkgRLEFtFv_mVcs",
+                  "location": {
+                    "lat": 51.506786,
+                    "lng": -0.07396490000000001
+                  }
+                },
+                {
+                  "name": "Apex City of London Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 2175,
+                  "vicinity": "1 Seething Lane, London",
+                  "place_id": "ChIJS6BnX6scdkgRZRvjBscyBtc",
+                  "location": {
+                    "lat": 51.51055520000001,
+                    "lng": -0.07951860000000001
+                  }
+                },
+                {
+                  "name": "Novotel London Tower Bridge",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 3803,
+                  "vicinity": "10 Pepys Street, London",
+                  "place_id": "ChIJtx22FUwDdkgRpORimUrdYlQ",
+                  "location": {
+                    "lat": 51.5107254,
+                    "lng": -0.0773324
+                  }
+                }
+              ]
+            },
+            "total_places_found": 38,
+            "photo_timestamp": "2022:07:23 12:05:05",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.548123836517334
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/41.jpg"
+    },
+    {
+      "image_filename": "41.jpg",
+      "timestamp": "2026-01-28T05:41:18.149217",
+      "processing_time_seconds": 55.011228,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Tower Bridge, London, United Kingdom",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The bridge's iconic twin towers and bascule design are distinctive features of Tower Bridge, a well-known London landmark.",
+            "detailed_description": "The image shows Tower Bridge, a famous Victorian Gothic-style bridge in London, United Kingdom. It features two large towers connected by a walkway and a bascule bridge mechanism. The bridge spans the River Thames and is a prominent landmark known for its distinctive architecture and historical significance.",
+            "identification": {
+              "primary": [
+                "Tower Bridge"
+              ],
+              "location": "London, United Kingdom",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Tower Bridge",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Victorian_Gothic",
+              "19th_century",
+              "bridge",
+              "London",
+              "river"
+            ],
+            "location": "London, United Kingdom",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Tower Bridge\"],\n        \"location\": \"London, United Kingdom\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Tower Bridge\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Victorian_Gothic\", \"19th_century\", \"bridge\", \"London\", \"river\"],\n    \"description\": \"The image shows Tower Bridge, a famous Victorian Gothic-style bridge in London, United Kingdom. It features two large towers connected by a walkway and a bascule bridge mechanism. The bridge spans the River Thames and is a prominent landmark known for its distinctive architecture and historical significance.\",\n    \"reasoning\": \"The bridge's iconic twin towers and bascule design are distinctive features of Tower Bridge, a well-known London landmark.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 7.54661226272583
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image prominently features a large, iconic bridge spanning a river. This bridge is characterized by its two massive stone towers, each topped with pointed spires, and a central bascule section that can be raised for river traffic. The towers are connected by a high-level walkway, which is supported by suspension cables. The architectural style of the bridge is Gothic Revival, evident in the ornate detailing and the pointed arches. The bridge is constructed primarily from stone and steel, sho",
+            "description": "The image prominently features a large, iconic bridge spanning a river. This bridge is characterized by its two massive stone towers, each topped with pointed spires, and a central bascule section that can be raised for river traffic. The towers are connected by a high-level walkway, which is supported by suspension cables. The architectural style of the bridge is Gothic Revival, evident in the ornate detailing and the pointed arches. The bridge is constructed primarily from stone and steel, sho",
+            "architectural_style": "Gothic Revival",
+            "search_backends_used": [],
+            "processing_time_seconds": 47.46293926239014
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Iron",
+          "confidence": 0.904469907283783,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Iron",
+                "score": 0.904469907283783
+              },
+              {
+                "source": "label",
+                "name": "Composite material",
+                "score": 0.8901212811470032
+              },
+              {
+                "source": "label",
+                "name": "Metal",
+                "score": 0.8559694290161133
+              },
+              {
+                "source": "object",
+                "name": "Top",
+                "score": 0.8077859282493591
+              },
+              {
+                "source": "object",
+                "name": "Person",
+                "score": 0.7719327807426453
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Amusement Ride",
+                "score": 0.37014228105545044
+              },
+              {
+                "name": "Amusement",
+                "score": 0.314300000667572
+              },
+              {
+                "name": "Amusement Park",
+                "score": 0.29280000925064087
+              }
+            ],
+            "objects": [
+              {
+                "name": "Top",
+                "score": 0.8077859282493591
+              },
+              {
+                "name": "Person",
+                "score": 0.7719327807426453
+              },
+              {
+                "name": "Person",
+                "score": 0.7084547877311707
+              },
+              {
+                "name": "Clothing",
+                "score": 0.638721764087677
+              },
+              {
+                "name": "Person",
+                "score": 0.6269361972808838
+              }
+            ],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.988913893699646
+              },
+              {
+                "name": "Daytime",
+                "score": 0.981506884098053
+              },
+              {
+                "name": "Iron",
+                "score": 0.904469907283783
+              },
+              {
+                "name": "Composite material",
+                "score": 0.8901212811470032
+              },
+              {
+                "name": "Metal",
+                "score": 0.8559694290161133
+              }
+            ],
+            "processing_time_seconds": 17.95426893234253
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/41.jpg"
+    }
+  ]
+}

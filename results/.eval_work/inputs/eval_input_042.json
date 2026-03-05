@@ -1,0 +1,922 @@
+{
+  "image_id": 42,
+  "filename": "42.jpg",
+  "ground_truth": {
+    "description": "Photo from streets of Amsterdam. No landmarks visible but architecture makes it obviously Amsterdam or Dutch city.",
+    "photographer_description": "A photo from the streets of Amsterdam. No landmarks are visible, but the architecture makes it obviously Amsterdam or a Dutch city. Expected for the models to get that, both with and without metadata (and respectful degrees of specificity), clear weather, summer.",
+    "locations": [
+      {
+        "name": "N/A, Amsterdam, North Holland, Netherlands",
+        "hierarchy": {
+          "country": "Netherlands",
+          "region": "North Holland",
+          "city": "Amsterdam",
+          "exact": "N/A"
+        }
+      }
+    ],
+    "entities": [
+      {
+        "name": "Streets of amsterdam",
+        "type": "public_space",
+        "notes": "",
+        "max_specificity": 4,
+        "importance": "medium",
+        "added_by": "human_evaluator"
+      }
+    ],
+    "scene_type": [
+      "urban",
+      "architecture"
+    ],
+    "key_visual_elements": [
+      "Dutch canal houses",
+      "Narrow gabled buildings",
+      "Amsterdam architecture style"
+    ],
+    "max_specificity": "Recognizable Type",
+    "difficulty": "Easy (distinctive architecture)",
+    "notes": "Should recognize Dutch city style. Clear weather, summer.",
+    "gps_metadata": {
+      "gps_latitude": 52.35725,
+      "gps_longitude": 4.919683333333333,
+      "reverse_geocoded": {
+        "formatted_address": "Derde Oosterparkstraat 150I, 1092 ED Amsterdam, Netherlands",
+        "city": "Amsterdam",
+        "county": "Amsterdam",
+        "country": "Netherlands"
+      }
+    },
+    "image_categories": [
+      "urban"
+    ],
+    "difficulty_with_gps": "medium",
+    "difficulty_without_gps": "hard"
+  },
+  "model_runs": [
+    {
+      "image_filename": "42.jpg",
+      "use_gps": true,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "Narrow Amsterdam residential street lined with continuous rows of 4–5 story late‑19th/early‑20th‑century brick apartment houses. Facades show red/brown brick with white stone banding and lintels, tall vertical windows, small wrought‑iron balconies, and dormer windows projecting from steep slate/tilted roofs. Ground floors have tall doorways and stoops; some ivy climbs the masonry. Vintage-style cast-iron street lamps stand along a paved sidewalk. The roadway is brick/cobblestone with parallel parking; several cars display Dutch yellow license plates. Bicycles are parked near a temporary construction barrier further down the street. Trees are intermittently planted along the curb. Clear blue sky and bright daylight indicate fair weather. The scene is characteristic of Amsterdam’s 19th-century expansion neighborhoods in the east of the city.",
+            "photographer_location": [
+              {
+                "name": "Oosterparkbuurt, Amsterdam-Oost, Amsterdam, Netherlands",
+                "confidence": 0.55
+              },
+              {
+                "name": "Dapperbuurt, Amsterdam-Oost, Amsterdam, Netherlands",
+                "confidence": 0.45
+              },
+              {
+                "name": "Transvaalbuurt, Amsterdam-Oost, Amsterdam, Netherlands",
+                "confidence": 0.35
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "A residential street in Oosterparkbuurt or Dapperbuurt, Amsterdam-Oost",
+                "confidence": 0.55
+              },
+              {
+                "name": "Possibly Vrolikstraat or a nearby parallel street (uncertain)",
+                "confidence": 0.25
+              }
+            ],
+            "entities": [
+              {
+                "name": "Amsterdam-Oost (Amsterdam East)",
+                "type": "district",
+                "confidence": 0.7,
+                "notes": "Borough containing Oosterparkbuurt and Dapperbuurt; streetscapes match its late-19th-century housing stock."
+              },
+              {
+                "name": "Oosterparkbuurt",
+                "type": "district",
+                "confidence": 0.55,
+                "notes": "Neighborhood adjacent to Oosterpark with similar brick rowhouse architecture."
+              },
+              {
+                "name": "Dapperbuurt",
+                "type": "district",
+                "confidence": 0.45,
+                "notes": "Nearby neighborhood with comparable streets and buildings."
+              },
+              {
+                "name": "Dutch Neo-Renaissance / Eclectic late-19th-century urban housing",
+                "type": "architectural_style",
+                "confidence": 0.6,
+                "notes": "Red/brown brick with white stone bands and lintels, vertical windows, dormers, and wrought-iron details typical of c. 1880–1910 Amsterdam expansions."
+              },
+              {
+                "name": "Historic-style cast-iron street lamp",
+                "type": "infrastructure",
+                "confidence": 0.9,
+                "notes": "Traditional Amsterdam lantern design used on residential streets."
+              },
+              {
+                "name": "Brick/cobblestone roadway (klinkerstraat)",
+                "type": "infrastructure",
+                "confidence": 0.85,
+                "notes": "Typical Dutch brick paving used on local streets."
+              },
+              {
+                "name": "Continuous brick rowhouses with dormers",
+                "type": "building",
+                "confidence": 0.9,
+                "notes": "Multi-story perimeter-block housing forming a narrow residential street wall, common in Amsterdam’s 19th-century ring."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "A quintessential Amsterdam street scene: a narrow, tree-lined street flanked by tall, brick canal houses with white-trimmed sash windows and decorative cornices. The left facade features an arched doorway and a carved stone detail near the entrance, while the right side shows a row of similar brick houses with white framing and small dormer-like extensions at the roofline. A traditional black wrought-iron street lamp stands in the middle of the sidewalk, and several parked cars line the curb with a few bicycles nearby. The sky is clear and vivid blue, suggesting bright, sunny weather. The overall mood is calm and orderly, showcasing typical late-17th to 18th-century Dutch canal-house architecture in an urban Amsterdam setting.",
+            "photographer_location": [
+              {
+                "name": "Amsterdam, Netherlands",
+                "confidence": 0.9
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Canal belt street / canal house district in Amsterdam (central to eastern canal ring)",
+                "confidence": 0.65
+              }
+            ],
+            "entities": [
+              {
+                "name": "Amsterdam canal houses",
+                "type": "architectural_style",
+                "confidence": 0.85,
+                "notes": "Tall, narrow brick townhouses with decorative gables common to Amsterdam's canal districts."
+              },
+              {
+                "name": "Wrought-iron street lamp",
+                "type": "infrastructure",
+                "confidence": 0.6,
+                "notes": "Classic black lamp post typical of historic European sidewalks."
+              },
+              {
+                "name": "Arched doorway with decorative brickwork",
+                "type": "building",
+                "confidence": 0.5,
+                "notes": "Ornate entry feature on the left-hand facade."
+              },
+              {
+                "name": "Canal belt architectural detail",
+                "type": "architectural_style",
+                "confidence": 0.4,
+                "notes": "General reference to the canal-house style seen in the row of facades."
+              },
+              {
+                "name": "Public street scene with parked cars and bicycles",
+                "type": "public_space",
+                "confidence": 0.4,
+                "notes": "Urban street, typical Amsterdam with street parking and bicycles."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A street-level view looking down a narrow, residential street in Amsterdam, specifically in the Oosterparkbuurt district. The scene is framed by tall, multi-story brick apartment buildings typical of early 20th-century Dutch architecture. The buildings on the right feature red brick facades with white window frames, cornices, and decorative lintels, while the buildings on the left have a darker brick appearance with climbing ivy near the foreground. A wooden pallet bench sits on the left sidewalk next to a parked bicycle. The street is lined with parked cars on both sides. Prominently visible in the center-right foreground is a black BMW 3 Series Touring (license plate ZS-902-N), and further back on the right is a silver Volkswagen Golf (license plate 81-JP-KB). A classic black streetlamp stands on the left sidewalk. The sky is a clear, deep blue, and shadows fall to the left, indicating the sun is to the right (South/West). In the distance, the street appears to end or curve near a cluster of trees.",
+            "photographer_location": [
+              {
+                "name": "Derde Oosterparkstraat",
+                "confidence": 0.85
+              },
+              {
+                "name": "Oosterparkbuurt",
+                "confidence": 0.95
+              },
+              {
+                "name": "Amsterdam",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Derde Oosterparkstraat",
+                "confidence": 0.85
+              },
+              {
+                "name": "Oosterparkbuurt",
+                "confidence": 0.95
+              },
+              {
+                "name": "Amsterdam",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "Derde Oosterparkstraat",
+                "type": "infrastructure",
+                "confidence": 0.85,
+                "notes": "Likely street based on proximity to Arti Plus and Oosterpark"
+              },
+              {
+                "name": "BMW 320i Touring",
+                "type": "other",
+                "confidence": 0.95,
+                "notes": "License plate ZS-902-N, black station wagon"
+              },
+              {
+                "name": "Volkswagen Golf",
+                "type": "other",
+                "confidence": 0.95,
+                "notes": "License plate 81-JP-KB, silver hatchback"
+              },
+              {
+                "name": "Residential buildings",
+                "type": "building",
+                "confidence": 1.0,
+                "notes": "Early 20th-century Dutch brick architecture"
+              },
+              {
+                "name": "Street lamp",
+                "type": "infrastructure",
+                "confidence": 1.0,
+                "notes": "Classic Amsterdam style"
+              },
+              {
+                "name": "Bicycles",
+                "type": "other",
+                "confidence": 1.0,
+                "notes": "Parked on sidewalk"
+              },
+              {
+                "name": "Wooden bench",
+                "type": "other",
+                "confidence": 0.9,
+                "notes": "Pallet style bench on sidewalk"
+              },
+              {
+                "name": "Oosterparkbuurt",
+                "type": "district",
+                "confidence": 0.95,
+                "notes": "Neighborhood in Amsterdam Oost"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A street-level view of Eerste Oosterparkstraat in Amsterdam, featuring traditional late 19th-century Dutch residential architecture. The buildings on the right are constructed from red brick with white stone accents, featuring decorative gables, small wrought-iron balconies, and dormer windows under red-tiled roofs. On the left, a brick building is partially covered in climbing ivy. A traditional black Amsterdam-style street lamp stands on the sidewalk. Several modern cars are parked along the curb, including a black BMW with the Dutch license plate ZS-902-N. The street is paved with grey stone tiles, and the sky is a clear, bright blue. In the distance, leafy green trees suggest the proximity of a park.",
+            "photographer_location": [
+              {
+                "name": "Eerste Oosterparkstraat, Amsterdam",
+                "confidence": 0.95
+              },
+              {
+                "name": "Amsterdam-Oost, Amsterdam",
+                "confidence": 0.9
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Eerste Oosterparkstraat, Amsterdam",
+                "confidence": 0.95
+              }
+            ],
+            "entities": [
+              {
+                "name": "Eerste Oosterparkstraat",
+                "type": "infrastructure",
+                "confidence": 0.95,
+                "notes": "A major residential and commercial street in the East district of Amsterdam."
+              },
+              {
+                "name": "Amsterdam-Oost",
+                "type": "district",
+                "confidence": 0.9,
+                "notes": "The eastern borough of Amsterdam where the street is located."
+              },
+              {
+                "name": "19th-century Dutch architecture",
+                "type": "architectural_style",
+                "confidence": 0.85,
+                "notes": "The residential buildings display typical late 19th-century eclectic and Neo-Renaissance styles common in Amsterdam's expansion neighborhoods."
+              },
+              {
+                "name": "Oosterpark",
+                "type": "public_space",
+                "confidence": 0.8,
+                "notes": "A large city park located at the end of the street depicted."
+              },
+              {
+                "name": "Amsterdam",
+                "type": "district",
+                "confidence": 1.0,
+                "notes": null
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "AMAQ",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "Cocafeld",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "POLO",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "ANNO",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "Quiet residential street scene in Amsterdam on a clear blue day. Tall, narrow late‑19th/early‑20th‑century brick apartment buildings line both sides, with red and brown brick facades, white stone trim bands and lintels, small wrought‑iron balconies, and multiple roof dormers. Ground floors have large windows and stoops; some ivy climbs the walls and planter boxes sit along the sidewalk. A vintage‑style streetlamp stands on the pavement. Numerous parked cars with yellow Dutch license plates line the curb, while several bicycles (including a cargo bike) are visible near a temporary construction barrier farther down the street. Street trees punctuate the row, and the road continues toward a nearby intersection.",
+            "photographer_location": [
+              {
+                "name": "Derde Oosterparkstraat, Oosterparkbuurt, Amsterdam-Oost, Amsterdam, Netherlands",
+                "confidence": 0.8
+              },
+              {
+                "name": "Amsterdam, Netherlands",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Derde Oosterparkstraat streetscape, Oosterparkbuurt, Amsterdam-Oost, Amsterdam, Netherlands",
+                "confidence": 0.75
+              },
+              {
+                "name": "Amsterdam-Oost (East Amsterdam)",
+                "confidence": 0.7
+              }
+            ],
+            "entities": [
+              {
+                "name": "Derde Oosterparkstraat",
+                "type": "public_space",
+                "confidence": 0.75,
+                "notes": "Residential street in the Oosterparkbuurt area of Amsterdam-Oost"
+              },
+              {
+                "name": "Amsterdam-Oost",
+                "type": "district",
+                "confidence": 0.7,
+                "notes": "Borough of Amsterdam encompassing Oosterparkbuurt"
+              },
+              {
+                "name": "Late 19th–early 20th century Dutch brick residential architecture",
+                "type": "architectural_style",
+                "confidence": 0.8,
+                "notes": "Ornamented brick facades with white stone bands, arched details, dormers, and wrought‑iron balconies typical of Amsterdam’s 19th‑century ring neighborhoods"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "Wide-angle street scene in Amsterdam: a narrow, brick-lined residential street with tall row houses on both sides. On the left, red-brick façades with arched entrances and decorative balconies; on the right, similar brick buildings with white trim and gabled roofs. A classic black ornate street lamp stands in the foreground near the sidewalk. Parked cars line the curb on the right, with a bicycle resting on the left sidewalk. The sky is bright blue and cloudless, suggesting a sunny day.",
+            "photographer_location": [
+              {
+                "name": "Derde Oosterparkstraat 150I, 1092 ED Amsterdam, Netherlands",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Amsterdam, Netherlands",
+                "confidence": 0.8
+              }
+            ],
+            "entities": [
+              {
+                "name": "Residential brick townhouses along a European street",
+                "type": "building",
+                "confidence": 0.85,
+                "notes": "multi-story brick façades with white trim and balconies"
+              },
+              {
+                "name": "Ornate street lamp",
+                "type": "infrastructure",
+                "confidence": 0.75,
+                "notes": "classic black lamppost in foreground"
+              },
+              {
+                "name": "Parked cars along curb",
+                "type": "infrastructure",
+                "confidence": 0.65,
+                "notes": "vehicles lining the right side"
+              },
+              {
+                "name": "Bicycle on the sidewalk",
+                "type": "infrastructure",
+                "confidence": 0.6,
+                "notes": "bike resting on the left sidewalk"
+              },
+              {
+                "name": "Row of traditional Dutch canal-house architecture",
+                "type": "architectural_style",
+                "confidence": 0.7,
+                "notes": "gabled roofs and brickwork typical of Amsterdam"
+              },
+              {
+                "name": "Narrow public street with sidewalks",
+                "type": "public_space",
+                "confidence": 0.6,
+                "notes": "pedestrian and roadway area with parked vehicles"
+              }
+            ],
+            "landmark_name": null
+          }
+        }
+      ]
+    },
+    {
+      "image_filename": "42.jpg",
+      "use_gps": false,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "A narrow European residential street lined with continuous rows of 4–5 story red‑brick terraced buildings with white stone trim, decorative cornices on consoles, arched window heads and small wrought‑iron Juliet balconies. The roadway is brick-paved with a gray block‑paved sidewalk. Cars with yellow EU (Dutch) license plates are parked along the curb, and several bicycles are locked to a black, historic‑style street lamp and railings. Planters and climbing greenery appear in front of ground‑floor doors. Clear daylight with blue sky.",
+            "photographer_location": [
+              {
+                "name": "Sidewalk of a residential street, Amsterdam, Netherlands",
+                "confidence": 0.65
+              },
+              {
+                "name": "Urban street in the Netherlands",
+                "confidence": 0.9
+              },
+              {
+                "name": "19th‑century ring neighborhoods (e.g., De Pijp / Oud‑West), Amsterdam",
+                "confidence": 0.4
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Row of late‑19th/early‑20th‑century brick apartment houses on a side street, Amsterdam, Netherlands",
+                "confidence": 0.6
+              },
+              {
+                "name": "Urban residential block in the Netherlands",
+                "confidence": 0.85
+              }
+            ],
+            "entities": [
+              {
+                "name": "Amsterdam 19th‑century brick rowhouses",
+                "type": "building",
+                "confidence": 0.7,
+                "notes": "Continuous terraced housing; red brick with white stone bands and lintels; narrow parcels; typical of Amsterdam expansion-era neighborhoods."
+              },
+              {
+                "name": "Dutch Neo‑Renaissance",
+                "type": "architectural_style",
+                "confidence": 0.55,
+                "notes": "Brick façades with white sandstone trim, decorative cornices and arched window heads common in late‑19th‑century Dutch urban housing."
+              },
+              {
+                "name": "Amsterdam-style street lamp",
+                "type": "infrastructure",
+                "confidence": 0.6,
+                "notes": "Black decorative municipal lamppost seen along the curb."
+              },
+              {
+                "name": "Dutch vehicle registration plates",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Yellow EU plates with NL country code visible on parked cars, indicating the Netherlands."
+              },
+              {
+                "name": "Parked bicycles",
+                "type": "other",
+                "confidence": 0.8,
+                "notes": "Multiple bicycles locked along the street, characteristic of Dutch cities."
+              },
+              {
+                "name": "Brick-paved carriageway and block‑paved sidewalk",
+                "type": "infrastructure",
+                "confidence": 0.7,
+                "notes": "Typical Dutch streetscape materials."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "A bright street scene in Amsterdam featuring a row of tall, narrow brick canal houses with ornate stepped gables and large sash windows. The buildings line a cobblestone street with parked modern cars along the right-hand curb. Several bicycles and a decorative street lamp are visible near the center, with small trees and planters along the sidewalk. The sky is clear and blue, highlighting the classic Dutch architectural style of the canal belt.",
+            "photographer_location": [
+              {
+                "name": "Amsterdam, Netherlands",
+                "confidence": 0.9
+              },
+              {
+                "name": "Jordaan / canal belt area, Amsterdam",
+                "confidence": 0.5
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Historic canal houses along a street in Amsterdam",
+                "confidence": 0.85
+              }
+            ],
+            "entities": [
+              {
+                "name": "Dutch canal houses",
+                "type": "building",
+                "confidence": 0.85,
+                "notes": "Tall, narrow brick homes with ornate façades and large sash windows typical of Amsterdam's canal belt."
+              },
+              {
+                "name": "Gabled façade (stepped / crow-stepped gables)",
+                "type": "architectural_style",
+                "confidence": 0.75,
+                "notes": "Traditional Dutch canal-house roofline style."
+              },
+              {
+                "name": "Street lamp",
+                "type": "infrastructure",
+                "confidence": 0.7,
+                "notes": "Decorative black iron street lamp."
+              },
+              {
+                "name": "Bicycle",
+                "type": "other",
+                "confidence": 0.6,
+                "notes": "Bike leaning near the sidewalk area."
+              },
+              {
+                "name": "Trees on sidewalk",
+                "type": "natural_feature",
+                "confidence": 0.6,
+                "notes": "Small trees planted along the street."
+              },
+              {
+                "name": "Planters / pots with greenery",
+                "type": "public_space",
+                "confidence": 0.6,
+                "notes": "Planters along the edge of the sidewalk."
+              },
+              {
+                "name": "Vehicles (cars) with NL license plates",
+                "type": "infrastructure",
+                "confidence": 0.65,
+                "notes": "Several modern cars parked along the curb; Dutch plates visible."
+              },
+              {
+                "name": "Signage/banner",
+                "type": "signage",
+                "confidence": 0.5,
+                "notes": "Yellow promotional banner/poster near the center-right."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "The image (which is rotated 90 degrees counter-clockwise) depicts a street scene in Amsterdam, Netherlands, characterized by distinctive 'Amsterdam School' architecture. The primary subject is a large, multi-story residential building facade made of red and brown brick with vertical window arrangements, decorative masonry, and white window frames. The sky is a clear, deep blue. At street level, a grey tiled sidewalk runs parallel to the building. Several cars are parked along the curb, including a black BMW 1-series with the Dutch license plate 'ZS-902-N' and a silver Volkswagen Golf with the license plate '81-JP-KB'. Numerous bicycles are parked on the sidewalk, a typical feature of the city. A classic black cast-iron streetlamp and a wooden planter box are also visible in the foreground.",
+            "photographer_location": [
+              {
+                "name": "Amsterdam",
+                "confidence": 1.0
+              },
+              {
+                "name": "Amsterdam-Zuid",
+                "confidence": 0.9
+              },
+              {
+                "name": "Rivierenbuurt",
+                "confidence": 0.8
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Amsterdam",
+                "confidence": 1.0
+              },
+              {
+                "name": "Amsterdam-Zuid",
+                "confidence": 0.9
+              }
+            ],
+            "entities": [
+              {
+                "name": "Amsterdam School",
+                "type": "architectural_style",
+                "confidence": 0.95,
+                "notes": "Expressionist brick architecture style typical of Amsterdam (1910-1930)"
+              },
+              {
+                "name": "Residential Building",
+                "type": "building",
+                "confidence": 1.0,
+                "notes": "Brick facade with vertical emphasis"
+              },
+              {
+                "name": "BMW 1-series",
+                "type": "other",
+                "confidence": 0.95,
+                "notes": "Black car, license plate ZS-902-N"
+              },
+              {
+                "name": "Volkswagen Golf",
+                "type": "other",
+                "confidence": 0.9,
+                "notes": "Silver car, license plate 81-JP-KB"
+              },
+              {
+                "name": "Bicycles",
+                "type": "other",
+                "confidence": 1.0,
+                "notes": "Parked on sidewalk"
+              },
+              {
+                "name": "Streetlamp",
+                "type": "infrastructure",
+                "confidence": 0.9,
+                "notes": "Classic Amsterdam style"
+              },
+              {
+                "name": "Sidewalk",
+                "type": "infrastructure",
+                "confidence": 1.0,
+                "notes": "Grey square tiles"
+              },
+              {
+                "name": "Amsterdam-Zuid",
+                "type": "district",
+                "confidence": 0.9,
+                "notes": "District known for this architectural style"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A street-level view of Frans Halsstraat in the De Pijp neighborhood of Amsterdam, Netherlands. The image, which is oriented vertically (rotated 90 degrees counter-clockwise), shows a narrow residential street lined with tall, multi-story brick buildings featuring white stone decorative accents, ornate window pediments, and small balconies with wrought iron railings. Several cars are parked along the right side of the street, including a black BMW with the Dutch license plate ZS-902-N and a silver Volkswagen with the plate 81-JP-KB. Numerous bicycles are parked on the sidewalk. A traditional Amsterdam-style street lamp, known as a 'Kroonlantaarn', is visible in the foreground. The sky is a clear, bright blue, indicating a sunny day.",
+            "photographer_location": [
+              {
+                "name": "Frans Halsstraat, Amsterdam, Netherlands",
+                "confidence": 0.95
+              },
+              {
+                "name": "De Pijp, Amsterdam",
+                "confidence": 0.98
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Frans Halsstraat, Amsterdam, Netherlands",
+                "confidence": 0.98
+              }
+            ],
+            "entities": [
+              {
+                "name": "Amsterdam",
+                "type": "district",
+                "confidence": 1.0,
+                "notes": "Capital city of the Netherlands"
+              },
+              {
+                "name": "De Pijp",
+                "type": "district",
+                "confidence": 0.98,
+                "notes": "A popular neighborhood in the Amsterdam-Zuid borough known for its 19th-century architecture"
+              },
+              {
+                "name": "Frans Halsstraat",
+                "type": "infrastructure",
+                "confidence": 0.95,
+                "notes": "A residential street in the De Pijp neighborhood"
+              },
+              {
+                "name": "Dutch Neo-Renaissance architecture",
+                "type": "architectural_style",
+                "confidence": 0.9,
+                "notes": "The style of the brick buildings with white stone accents, typical of late 19th-century Amsterdam expansions"
+              },
+              {
+                "name": "Kroonlantaarn",
+                "type": "infrastructure",
+                "confidence": 0.9,
+                "notes": "Traditional Amsterdam street lamp design"
+              },
+              {
+                "name": "BMW 1 Series",
+                "type": "other",
+                "confidence": 0.95,
+                "notes": "Black car with Dutch license plate ZS-902-N"
+              },
+              {
+                "name": "Volkswagen Polo",
+                "type": "other",
+                "confidence": 0.9,
+                "notes": "Silver car with Dutch license plate 81-JP-KB"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "AMAQ",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "Cocsfeld",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "POLO",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "ANNO",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "Street-level view along a quiet European residential street lined with continuous rows of narrow, 4–5 story brick townhouses featuring white stone trim, arched window heads, small balconies with wrought-iron railings, and red clay roof tiles with dormers. The roadway appears brick-paved with a narrow sidewalk of gray pavers. Modern cars with yellow EU-style license plates are parked tightly along the curb, and several bicycles are locked to posts near a traditional black streetlamp. Young street trees and planter boxes add greenery; a temporary construction hoarding with a yellow panel is visible farther down the block. The scene suggests a late-19th/early-20th-century Dutch urban neighborhood, likely in Amsterdam or another city in the Netherlands, under a clear blue sky.",
+            "photographer_location": [
+              {
+                "name": "Netherlands",
+                "confidence": 0.9
+              },
+              {
+                "name": "Amsterdam, Netherlands",
+                "confidence": 0.65
+              },
+              {
+                "name": "Oud-West or De Pijp, Amsterdam, Netherlands",
+                "confidence": 0.35
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Residential street in Amsterdam, Netherlands",
+                "confidence": 0.6
+              },
+              {
+                "name": "Urban neighborhood, Netherlands",
+                "confidence": 0.9
+              }
+            ],
+            "entities": [
+              {
+                "name": "Row of late-19th/early-20th-century Dutch brick townhouses",
+                "type": "building",
+                "confidence": 0.8,
+                "notes": "Narrow facades with white stone trim, arched window heads, dormers; typical of historic Dutch urban housing."
+              },
+              {
+                "name": "Residential brick-paved street",
+                "type": "infrastructure",
+                "confidence": 0.75,
+                "notes": "Narrow carriageway with curbside parking; gray paver sidewalks."
+              },
+              {
+                "name": "Traditional Dutch street lamp",
+                "type": "infrastructure",
+                "confidence": 0.7,
+                "notes": "Black pole lamp with decorative arm."
+              },
+              {
+                "name": "Bicycles parked along the street",
+                "type": "other",
+                "confidence": 0.9,
+                "notes": "Common urban transport in Dutch cities."
+              },
+              {
+                "name": "Dutch Neo-Renaissance / late 19th-century urban brick architecture",
+                "type": "architectural_style",
+                "confidence": 0.4,
+                "notes": "Brick facades with white stone banding and ornament; style attribution tentative."
+              },
+              {
+                "name": "Yellow EU-style Dutch license plates",
+                "type": "other",
+                "confidence": 0.95,
+                "notes": "Distinctive national plate color indicating the Netherlands."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "A street scene in a European city featuring tall, narrow red-brick canal houses with ornate stepped gables lining a quiet street. The left side of the frame shows a clear blue sky; the right side shows a row of parked cars with yellow Dutch license plates along a cobbled sidewalk. A decorative black street lamp stands near a small tree, and a bicycle is visible near a yellow sign on the sidewalk. The overall architectural style is characteristic of Amsterdam canal houses with large windows and decorative façades.",
+            "photographer_location": [
+              {
+                "name": "Amsterdam, Netherlands",
+                "confidence": 0.65
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Canal-side street in Amsterdam",
+                "confidence": 0.6
+              }
+            ],
+            "entities": [
+              {
+                "name": "Amsterdam canal houses",
+                "type": "building",
+                "confidence": 0.75,
+                "notes": "Row houses with brick facades and ornate stepped gables; typical of canal districts"
+              },
+              {
+                "name": "Gabled Dutch canal house architectural style",
+                "type": "architectural_style",
+                "confidence": 0.6,
+                "notes": "Stepped-pediment gables on narrow brick townhouses"
+              },
+              {
+                "name": "Decorative street lamp",
+                "type": "infrastructure",
+                "confidence": 0.5,
+                "notes": "Ornate street lamp on the sidewalk"
+              }
+            ],
+            "landmark_name": null
+          }
+        }
+      ]
+    }
+  ]
+}

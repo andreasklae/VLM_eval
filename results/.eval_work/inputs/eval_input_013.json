@@ -1,0 +1,1198 @@
+{
+  "image_id": 13,
+  "filename": "13.jpg",
+  "ground_truth": {
+    "description": "Photo from Karl Johan street, Oslo. Royal palace visible in distance (somewhat covered by trees). Side of Stortinget barely visible.",
+    "photographer_description": "Photo from Karl Johan street, Oslo. You can see the royal palace in the distance, but it is somewhat covered by trees and other buildings. It should still be able to recognize it though. You can also barely see the side of the Stortinget. I don't expect it to recognize it, but impressive if it does. Overall, I expect it to recognize that it's Karl Johan and that it can see the royal palace in the background, even without metadata.",
+    "locations": [
+      {
+        "name": "Karl Johans gate, Oslo, Oslo, Norway",
+        "hierarchy": {
+          "country": "Norway",
+          "region": "Oslo",
+          "city": "Oslo",
+          "exact": "Karl Johans gate"
+        }
+      }
+    ],
+    "entities": [
+      {
+        "name": "Royal Palace",
+        "type": "landmark",
+        "notes": "Det kongelige slott",
+        "max_specificity": 5,
+        "importance": "high"
+      },
+      {
+        "name": "Stortinget (Norwegian Parliament) - partial",
+        "type": "landmark",
+        "notes": null,
+        "max_specificity": 5,
+        "importance": "high"
+      },
+      {
+        "name": "Karl Johans gate",
+        "type": "landmark",
+        "notes": null,
+        "max_specificity": 5,
+        "importance": "high"
+      },
+      {
+        "name": "Statue of King Karl Johan",
+        "type": "monument",
+        "notes": "",
+        "max_specificity": 5,
+        "added_by": "human_evaluator",
+        "importance": "low"
+      },
+      {
+        "name": "Studenterlunden Park",
+        "type": "public_space",
+        "notes": "",
+        "max_specificity": 5,
+        "added_by": "human_evaluator",
+        "importance": "low"
+      }
+    ],
+    "scene_type": [
+      "urban",
+      "landmark",
+      "street"
+    ],
+    "key_visual_elements": [
+      "Wide pedestrian street (cobblestone)",
+      "Palace in distance",
+      "Trees lining street",
+      "Parliament building (partial)"
+    ],
+    "max_specificity": "Specific",
+    "difficulty": "Medium (should recognize Karl Johan and palace even without metadata)",
+    "notes": "Impressive if recognizes Stortinget. Palace partially obscured.",
+    "gps_metadata": {
+      "gps_latitude": 59.913288055555554,
+      "gps_longitude": 10.740633055555556,
+      "reverse_geocoded": {
+        "formatted_address": "Karl Johans gt. 25, 0159 Oslo, Norway",
+        "city": null,
+        "county": "Oslo",
+        "country": "Norway"
+      }
+    },
+    "difficulty_with_gps": "easy",
+    "difficulty_without_gps": "easy",
+    "image_categories": [
+      "landmark",
+      "urban"
+    ]
+  },
+  "model_runs": [
+    {
+      "image_filename": "13.jpg",
+      "use_gps": true,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "A busy, cobblestoned stretch of a grand European boulevard lined with flower planters and historic street lamps leads toward a large neoclassical palace framed by trees. On the left is a long yellow-brick institutional building with arched windows and decorative stonework in a Romanesque-revival idiom; on the right are late‑19th/early‑20th‑century facades with shopfronts and awnings. Numerous pedestrians fill the street under soft, partly cloudy daylight. The perspective looks along the tree-lined axis toward the palace at the far end, while the prominent yellow-brick building dominates the foreground left. The scene conveys Oslo’s central ceremonial axis with civic architecture and a lively public realm.",
+            "photographer_location": [
+              {
+                "name": "Karl Johans gate 25, 0159 Oslo, Norway",
+                "confidence": 0.98
+              },
+              {
+                "name": "Karl Johans gate, Oslo, Norway",
+                "confidence": 0.96
+              },
+              {
+                "name": "Sentrum, Oslo, Norway",
+                "confidence": 0.92
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Karl Johans gate, Oslo, Norway",
+                "confidence": 0.96
+              },
+              {
+                "name": "Stortinget, Oslo, Norway",
+                "confidence": 0.94
+              },
+              {
+                "name": "The Royal Palace (Det kongelige slott), Oslo, Norway",
+                "confidence": 0.93
+              },
+              {
+                "name": "Slottsplassen, Oslo, Norway",
+                "confidence": 0.72
+              }
+            ],
+            "entities": [
+              {
+                "name": "Stortinget (Norwegian Parliament Building)",
+                "type": "building",
+                "confidence": 0.98,
+                "notes": "Yellow brick; completed 1866; architect Emil Victor Langlet; eclectic with Neo‑Romanesque influences."
+              },
+              {
+                "name": "Det kongelige slott (The Royal Palace, Oslo)",
+                "type": "landmark",
+                "confidence": 0.94,
+                "notes": "19th‑century neoclassical royal residence visible at the end of the boulevard."
+              },
+              {
+                "name": "Karl Johans gate",
+                "type": "public_space",
+                "confidence": 0.98,
+                "notes": "Oslo’s main boulevard linking the Royal Palace and Oslo Central Station; pedestrian‑friendly with cobblestones and historic lamps."
+              },
+              {
+                "name": "Historic street lamps on Karl Johans gate",
+                "type": "infrastructure",
+                "confidence": 0.8,
+                "notes": "Black posts with gilded crown finials along the boulevard."
+              },
+              {
+                "name": "Slottsplassen (Palace Square)",
+                "type": "public_space",
+                "confidence": 0.7,
+                "notes": "Open forecourt in front of the Royal Palace at the end of the vista."
+              },
+              {
+                "name": "Sentrum (Oslo city centre)",
+                "type": "district",
+                "confidence": 0.9,
+                "notes": "Central district encompassing Karl Johans gate and key civic buildings."
+              },
+              {
+                "name": "Studenterlunden",
+                "type": "public_space",
+                "confidence": 0.6,
+                "notes": "Tree‑lined park bordering parts of Karl Johans gate; likely the greenery along the axis."
+              },
+              {
+                "name": "Grand Hotel Oslo (possible)",
+                "type": "building",
+                "confidence": 0.55,
+                "notes": "Iconic hotel on Karl Johans gate; white facade on the right side may belong to it (uncertain)."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "A wide, sunlit street scene along Karl Johans gate in central Oslo. In the foreground, a cobblestone pedestrian boulevard is flanked by a large, ornate brick building on the left featuring tall arched windows and decorative masonry. To the right, a row of historic pastel-colored buildings with shopfronts and small balconies line the avenue. Classic street lamps with curved arms rise above the sidewalks, and flower planters add bursts of color along the edges. People stroll and converse as the avenue stretches toward the distant horizon. At the far end, a grand neoclassical building with columns and a broad staircase dominates the view, suggesting a prominent civic structure such as the Norwegian Parliament.",
+            "photographer_location": [
+              {
+                "name": "Karl Johans gate 25, 0159 Oslo, Norway",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Stortinget, Oslo, Norway",
+                "confidence": 0.85
+              }
+            ],
+            "entities": [
+              {
+                "name": "Stortinget (Parliament of Norway)",
+                "type": "landmark",
+                "confidence": 0.85,
+                "notes": "Neoclassical government building visible at the far end of Karl Johans gate."
+              },
+              {
+                "name": "Karl Johans gate",
+                "type": "public_space",
+                "confidence": 0.8,
+                "notes": "Main central street in Oslo running toward the Parliament and Palace."
+              },
+              {
+                "name": "Historic brick building with arched windows (left)",
+                "type": "building",
+                "confidence": 0.6,
+                "notes": null
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "Busy city street scene in central Oslo looking up Karl Johans gate. The cobblestoned boulevard is lined with flower planters, historic lampposts, and crowds of pedestrians. On the left is the long yellow‑brick facade of the Norwegian Parliament building (Stortinget) with repeated round‑arched windows. The street rises toward a tree‑framed neoclassical palace visible in the distance, the Royal Palace at the western end of Karl Johans gate. Historic shopfronts and cafes line the right side under soft, cloudy daylight.",
+            "photographer_location": [
+              {
+                "name": "Karl Johans gate outside the Storting building (Stortinget), Oslo, Norway",
+                "confidence": 0.9
+              },
+              {
+                "name": "Sentrum, Oslo, Norway",
+                "confidence": 0.8
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Karl Johans gate, Oslo, Norway",
+                "confidence": 0.92
+              },
+              {
+                "name": "The Royal Palace (Det kongelige slott), Oslo, Norway",
+                "confidence": 0.88
+              },
+              {
+                "name": "Storting building (Stortinget), Oslo, Norway",
+                "confidence": 0.86
+              }
+            ],
+            "entities": [
+              {
+                "name": "Karl Johans gate",
+                "type": "public_space",
+                "confidence": 0.93,
+                "notes": "Oslo's main boulevard running from Oslo Central Station to the Royal Palace; pictured here as a pedestrian‑friendly, cobblestoned stretch."
+              },
+              {
+                "name": "Storting building (Stortinget)",
+                "type": "building",
+                "confidence": 0.91,
+                "notes": "Seat of the Parliament of Norway; inaugurated 1866; architect Emil Victor Langlet; yellow brick facade with round‑arched windows reflecting Neo‑Romanesque/Historicist tendencies."
+              },
+              {
+                "name": "The Royal Palace (Det kongelige slott)",
+                "type": "building",
+                "confidence": 0.88,
+                "notes": "Royal residence at the west end of Karl Johans gate; designed by Hans Linstow; completed 1849; neoclassical style."
+              },
+              {
+                "name": "Neo‑Romanesque / Historicist architecture",
+                "type": "architectural_style",
+                "confidence": 0.7,
+                "notes": "Visible on the Storting building's yellow‑brick facade with repetitive round arches."
+              },
+              {
+                "name": "Sentrum (Oslo city centre)",
+                "type": "district",
+                "confidence": 0.7,
+                "notes": "Central district containing Karl Johans gate, Stortinget, and the Royal Palace."
+              },
+              {
+                "name": "View toward the Royal Palace from Karl Johans gate",
+                "type": "viewpoint",
+                "confidence": 0.75,
+                "notes": "Classic vista in Oslo with the palace centered at the end of the tree‑lined boulevard."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "A bustling pedestrian street scene in central Oslo, viewed along Karl Johans gate. The left foreground features a large, historic brick building with arched windows and decorative masonry, while the right side shows a row of shops and balconies with awnings. The cobblestone street is lined with modern street lamps and flower planters, and numerous people are strolling, chatting, and taking in the city. In the distance, the avenue opens toward a grand, neoclassical building atop a gentle slope, suggesting the Royal Palace vicinity as a focal point. The sky is partly cloudy, casting soft light over the scene.",
+            "photographer_location": [
+              {
+                "name": "Karl Johans gate 25, 0159 Oslo, Norway",
+                "confidence": 0.92
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Karl Johans gate, Oslo, Norway",
+                "confidence": 0.85
+              }
+            ],
+            "entities": [
+              {
+                "name": "Karl Johans gate",
+                "type": "viewpoint",
+                "confidence": 0.65,
+                "notes": "Main street in Oslo from which the photo is taken, leading toward the Royal Palace area."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A street-level perspective looking west up Karl Johans gate in Oslo, Norway. The foreground features a cobblestone street with a pedestrian crosswalk and people walking away from the camera. To the immediate left stands the imposing yellow brick facade of the Stortinget (Norwegian Parliament) building, characterized by its Romanesque Revival style with tall arched windows and a corner tower. On the right side of the street, historic commercial buildings with light-colored facades line the avenue, some displaying flags and signage (including a red 'SALE' banner). In the middle ground, the trees of Studenterlunden park line the left side of the street. The street leads the eye directly to the background, where the Royal Palace (Det Kongelige Slott) sits atop a hill, centered in the composition. The equestrian statue of King Karl Johan is visible in silhouette in front of the palace. The sky is overcast with soft, diffused light.",
+            "photographer_location": [
+              {
+                "name": "Karl Johans gate 25",
+                "confidence": 0.95
+              },
+              {
+                "name": "Karl Johans gate",
+                "confidence": 0.99
+              },
+              {
+                "name": "Oslo",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "The Royal Palace",
+                "confidence": 0.99
+              },
+              {
+                "name": "Karl Johans gate",
+                "confidence": 0.99
+              },
+              {
+                "name": "Stortinget",
+                "confidence": 0.95
+              }
+            ],
+            "entities": [
+              {
+                "name": "The Royal Palace",
+                "type": "landmark",
+                "confidence": 0.99,
+                "notes": "Det Kongelige Slott; residence of the Norwegian monarch"
+              },
+              {
+                "name": "Stortinget",
+                "type": "building",
+                "confidence": 0.98,
+                "notes": "The Norwegian Parliament building; yellow brick architecture by Emil Victor Langlet"
+              },
+              {
+                "name": "Karl Johans gate",
+                "type": "public_space",
+                "confidence": 0.99,
+                "notes": "Main street of Oslo"
+              },
+              {
+                "name": "Statue of King Karl Johan",
+                "type": "monument",
+                "confidence": 0.9,
+                "notes": "Equestrian statue by Brynjulf Bergslien located in front of the palace"
+              },
+              {
+                "name": "Studenterlunden",
+                "type": "public_space",
+                "confidence": 0.9,
+                "notes": "Park area visible on the left side of the street"
+              },
+              {
+                "name": "Cobblestone pavement",
+                "type": "infrastructure",
+                "confidence": 0.95,
+                "notes": null
+              },
+              {
+                "name": "Street lamps",
+                "type": "infrastructure",
+                "confidence": 0.9,
+                "notes": "Distinctive curved design found on Karl Johans gate"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A view looking west down Karl Johans gate, the main street of Oslo, Norway. On the left is the yellow-brick facade of the Stortinget (the Norwegian Parliament building), featuring Romanesque Revival architecture with arched windows and decorative stonework. The street is paved with cobblestones and is filled with pedestrians. In the far distance, at the end of the long, straight vista, sits the Royal Palace (Det kongelige slott), a neoclassical building situated on a slight rise. The scene is captured in daylight with soft, directional light creating long shadows. Trees line the street further down, and classic black street lamps are visible.",
+            "photographer_location": [
+              {
+                "name": "Karl Johans gate 25, Oslo, Norway",
+                "confidence": 0.95
+              },
+              {
+                "name": "Oslo, Norway",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Karl Johans gate, Oslo, Norway",
+                "confidence": 0.95
+              },
+              {
+                "name": "The Royal Palace, Oslo, Norway",
+                "confidence": 0.95
+              }
+            ],
+            "entities": [
+              {
+                "name": "Karl Johans gate",
+                "type": "public_space",
+                "confidence": 0.99,
+                "notes": "The main street of Oslo."
+              },
+              {
+                "name": "Stortinget",
+                "type": "building",
+                "confidence": 0.99,
+                "notes": "The Norwegian Parliament building, designed by Emil Victor Langlet and completed in 1866."
+              },
+              {
+                "name": "The Royal Palace",
+                "type": "landmark",
+                "confidence": 0.99,
+                "notes": "Det kongelige slott, built in the first half of the 19th century as the Norwegian residence of the French-born King Charles III John."
+              },
+              {
+                "name": "National Theatre",
+                "type": "building",
+                "confidence": 0.9,
+                "notes": "Nationaltheatret, visible in the distance on the left side of the street."
+              },
+              {
+                "name": "Studenterlunden Park",
+                "type": "public_space",
+                "confidence": 0.85,
+                "notes": "The park area located between the Parliament and the Royal Palace."
+              },
+              {
+                "name": "Romanesque Revival",
+                "type": "architectural_style",
+                "confidence": 0.9,
+                "notes": "The style of the Storting building."
+              },
+              {
+                "name": "Neoclassical architecture",
+                "type": "architectural_style",
+                "confidence": 0.9,
+                "notes": "The style of the Royal Palace."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "Nationaltheatret",
+                "type": "landmark",
+                "confidence": 0.26797202229499817,
+                "notes": null
+              },
+              {
+                "name": "Kullt",
+                "type": "landmark",
+                "confidence": 0.2528420388698578,
+                "notes": null
+              },
+              {
+                "name": "Max Burgers",
+                "type": "landmark",
+                "confidence": 0.1668914556503296,
+                "notes": null
+              },
+              {
+                "name": "The Royal Palace",
+                "type": "landmark",
+                "confidence": 0.15470506250858307,
+                "notes": null
+              },
+              {
+                "name": "Pedestrian",
+                "type": "other",
+                "confidence": 0.41800686717033386,
+                "notes": null
+              },
+              {
+                "name": "Mixed-use",
+                "type": "other",
+                "confidence": 0.3635403513908386,
+                "notes": null
+              },
+              {
+                "name": "Sidewalk",
+                "type": "other",
+                "confidence": 0.3463449776172638,
+                "notes": null
+              },
+              {
+                "name": "Tourism",
+                "type": "other",
+                "confidence": 0.31290000677108765,
+                "notes": null
+              },
+              {
+                "name": "Cobblestone",
+                "type": "other",
+                "confidence": 0.29159998893737793,
+                "notes": null
+              },
+              {
+                "name": "Road",
+                "type": "other",
+                "confidence": 0.28769999742507935,
+                "notes": null
+              },
+              {
+                "name": "Meter",
+                "type": "other",
+                "confidence": 0.2809000015258789,
+                "notes": null
+              },
+              {
+                "name": "Urban area",
+                "type": "other",
+                "confidence": 0.26489999890327454,
+                "notes": null
+              },
+              {
+                "name": "Molar concentration",
+                "type": "other",
+                "confidence": 0.22220000624656677,
+                "notes": null
+              },
+              {
+                "name": "City",
+                "type": "other",
+                "confidence": 0.9699313044548035,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Urban area",
+                "type": "other",
+                "confidence": 0.9666376113891602,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Road surface",
+                "type": "other",
+                "confidence": 0.9616092443466187,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Street",
+                "type": "other",
+                "confidence": 0.9512184262275696,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Road",
+                "type": "other",
+                "confidence": 0.9467261433601379,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Public space",
+                "type": "other",
+                "confidence": 0.9450437426567078,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Town",
+                "type": "other",
+                "confidence": 0.9443754553794861,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Pedestrian",
+                "type": "other",
+                "confidence": 0.9429574012756348,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Sidewalk",
+                "type": "other",
+                "confidence": 0.8735293745994568,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Travel",
+                "type": "other",
+                "confidence": 0.8034418821334839,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "SALE",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              }
+            ],
+            "landmark_name": "Nationaltheatret"
+          }
+        }
+      ]
+    },
+    {
+      "image_filename": "13.jpg",
+      "use_gps": false,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "A busy, gently sloping boulevard lined with trees and historic buildings. At the far end of the axis sits a pale yellow neoclassical palace on a hill. In the foreground on the left is a long yellow-brick institutional building with repeated arched windows, and ornate black street lamps with gold finials run down the center of the street. The pavement is cobbled and the area is filled with pedestrians. The overall scene suggests central Oslo, looking along Karl Johans gate from near the Parliament toward the Royal Palace.",
+            "photographer_location": [
+              {
+                "name": "Karl Johans gate, Oslo, Norway",
+                "confidence": 0.92
+              },
+              {
+                "name": "Stortinget, Oslo, Norway",
+                "confidence": 0.82
+              },
+              {
+                "name": "Oslo, Norway",
+                "confidence": 0.96
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "The Royal Palace (Det Kongelige Slott), Oslo, Norway",
+                "confidence": 0.92
+              },
+              {
+                "name": "Karl Johans gate, Oslo, Norway",
+                "confidence": 0.9
+              },
+              {
+                "name": "Stortinget, Oslo, Norway",
+                "confidence": 0.75
+              }
+            ],
+            "entities": [
+              {
+                "name": "The Royal Palace (Det Kongelige Slott), Oslo",
+                "type": "landmark",
+                "confidence": 0.92,
+                "notes": "Norwegian royal residence at the west end of Karl Johans gate"
+              },
+              {
+                "name": "The Royal Palace, Oslo",
+                "type": "building",
+                "confidence": 0.9,
+                "notes": "Neoclassical palace completed in the 19th century"
+              },
+              {
+                "name": "Karl Johans gate",
+                "type": "public_space",
+                "confidence": 0.95,
+                "notes": "Main boulevard in central Oslo running to the Royal Palace"
+              },
+              {
+                "name": "Stortinget (Parliament of Norway Building)",
+                "type": "landmark",
+                "confidence": 0.85,
+                "notes": "National parliament located along Karl Johans gate"
+              },
+              {
+                "name": "Stortinget building",
+                "type": "building",
+                "confidence": 0.83,
+                "notes": "Historicist/Neo-Romanesque yellow-brick façade designed by Emil Victor Langlet, 1860s"
+              },
+              {
+                "name": "Sentrum (Central Oslo)",
+                "type": "district",
+                "confidence": 0.8,
+                "notes": "City-center area encompassing Karl Johans gate"
+              },
+              {
+                "name": "Historicist / Neo-Romanesque brick architecture",
+                "type": "architectural_style",
+                "confidence": 0.6,
+                "notes": "Characteristic of the Stortinget façade visible at left"
+              },
+              {
+                "name": "Ornate street lamps on Karl Johans gate",
+                "type": "infrastructure",
+                "confidence": 0.7,
+                "notes": "Curved black poles with gold details lining the boulevard"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "A broad, cobblestone pedestrian boulevard flanked by historic architecture. On the left is a large beige-brick building with arched windows, decorative stonework, and a castellated parapet. The right side features a row of mid-rise shops with awnings and flower displays. Ornate black streetlamps line the street, and people walk along the sidewalks and central promenade. In the distance, a green park area sits beyond a gentle slope, capped by a distant neoclassical building with a columned façade and steps leading upward. The lighting is soft, suggesting late afternoon, with a warm, slightly desaturated tone.",
+            "photographer_location": [
+              {
+                "name": "Budapest, Hungary",
+                "confidence": 0.65
+              },
+              {
+                "name": "Andrássy Avenue, Budapest, Hungary",
+                "confidence": 0.45
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Budapest, Hungary",
+                "confidence": 0.7
+              }
+            ],
+            "entities": [
+              {
+                "name": "Left-hand historic brick building with arched windows",
+                "type": "building",
+                "confidence": 0.84,
+                "notes": "Castellated cornice, Gothic-inspired window openings"
+              },
+              {
+                "name": "Neoclassical building with columns (distant, across the street)",
+                "type": "building",
+                "confidence": 0.78,
+                "notes": "Pedimented facade visible in distance"
+              },
+              {
+                "name": "Cobblestone pedestrian street",
+                "type": "infrastructure",
+                "confidence": 0.75,
+                "notes": "Wide urban avenue with pedestrian traffic"
+              },
+              {
+                "name": "Ornate street lamps along the boulevard",
+                "type": "infrastructure",
+                "confidence": 0.65,
+                "notes": "Tall curved lamp posts with hanging lanterns"
+              },
+              {
+                "name": "Shops and awnings along the right side",
+                "type": "public_space",
+                "confidence": 0.55,
+                "notes": "Retail storefronts with signage, including a red 'SALE' sign"
+              },
+              {
+                "name": "Flower planters along the boulevard",
+                "type": "public_space",
+                "confidence": 0.55,
+                "notes": "Decorative plantings beside the walkway"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "A lively, cobblestoned boulevard lined with historic buildings and flower planters. On the left is a long yellow-brick structure with repeating arched windows (the Norwegian Parliament building), while shops and cafes line the right. Classic curved street lamps punctuate the scene. In the distance, at the top of the gently rising, tree-lined avenue, stands the pale-yellow Royal Palace of Oslo. Crowds of pedestrians fill the street under a bright, partly cloudy sky—an iconic view along Karl Johans gate toward the palace.",
+            "photographer_location": [
+              {
+                "name": "Karl Johans gate near Stortinget, Sentrum, Oslo, Norway",
+                "confidence": 0.86
+              },
+              {
+                "name": "Oslo city centre (Sentrum), Norway",
+                "confidence": 0.93
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "The Royal Palace (Slottet), Oslo, Norway",
+                "confidence": 0.92
+              },
+              {
+                "name": "Karl Johans gate, Oslo, Norway",
+                "confidence": 0.9
+              }
+            ],
+            "entities": [
+              {
+                "name": "Karl Johans gate",
+                "type": "public_space",
+                "confidence": 0.93,
+                "notes": "Oslo’s principal boulevard running between Oslo Central Station and the Royal Palace; popular pedestrian thoroughfare."
+              },
+              {
+                "name": "Royal Palace, Oslo (Slottet)",
+                "type": "building",
+                "confidence": 0.92,
+                "notes": "Neoclassical royal residence at the western end of Karl Johans gate; completed in the 19th century."
+              },
+              {
+                "name": "Stortinget (Parliament of Norway Building)",
+                "type": "building",
+                "confidence": 0.88,
+                "notes": "Historic yellow-brick parliamentary building with arched windows facing Karl Johans gate; 19th-century architecture."
+              },
+              {
+                "name": "Sentrum (Oslo city centre)",
+                "type": "district",
+                "confidence": 0.78,
+                "notes": "Central district of Oslo encompassing Karl Johans gate and key civic landmarks."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "A European city street scene captured from a pedestrian walkway. A broad cobblestone avenue runs forward between a large, ornate stone building with arched windows on the left and a row of light-colored façades with shop fronts on the right. Decorative street lamps line the street, and people are scattered along the sidewalks and in the distance. Trees form a green corridor along the central area, and planters with flowers add color to the foreground. The street leads to a distant, grand building at the far end, approached by a staircase and flanked by greenery under a partly cloudy sky.",
+            "photographer_location": [
+              {
+                "name": "Sidewalk or pedestrian promenade along a wide European street, near the left-hand building",
+                "confidence": 0.35
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Public street scene on a historic avenue in a European city",
+                "confidence": 0.4
+              }
+            ],
+            "entities": [
+              {
+                "name": "Left-hand ornate stone building with arched windows",
+                "type": "building",
+                "confidence": 0.75,
+                "notes": "historic European architectural style; brick/stone facade with repeating arches"
+              },
+              {
+                "name": "Right-hand row of storefronts and light-colored façades",
+                "type": "public_space",
+                "confidence": 0.5,
+                "notes": "retail façades along the street"
+              },
+              {
+                "name": "Cobblestone street",
+                "type": "infrastructure",
+                "confidence": 0.6,
+                "notes": "historic paving typical of European streets"
+              },
+              {
+                "name": "Decorative street lamps",
+                "type": "infrastructure",
+                "confidence": 0.65,
+                "notes": "tall curved posts with lanterns"
+              },
+              {
+                "name": "Pedestrians",
+                "type": "public_space",
+                "confidence": 0.55,
+                "notes": "people walking and standing along the street"
+              },
+              {
+                "name": "Tree-lined boulevard extending into distance",
+                "type": "public_space",
+                "confidence": 0.5,
+                "notes": "greenery flanking the avenue"
+              },
+              {
+                "name": "Distant grand building at far end with steps",
+                "type": "landmark",
+                "confidence": 0.4,
+                "notes": "unknown landmark; forms a focal point at the end of the avenue"
+              },
+              {
+                "name": "Planters with flowers along the street",
+                "type": "public_space",
+                "confidence": 0.45,
+                "notes": "decorative horticultural elements"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A street-level vertical photograph looking west up Karl Johans gate in Oslo, Norway. In the immediate foreground, a cobblestone street features a pedestrian zebra crossing where several people are walking, including a man in a blue shirt and white cap standing centrally. To the left stands the imposing yellow-brick facade of the Stortinget (Norwegian Parliament) building, characterized by Neo-Romanesque arched windows and decorative brickwork. On the right, a row of lighter-colored commercial buildings with awnings and signage lines the street. The street slopes gently upward, flanked on the left by the mature trees of the Studenterlunden park. In the center background, at the top of the hill, sits the Royal Palace (Det Kongelige Slott), a pale yellow classical building with a columned portico, fronted by the silhouette of the equestrian statue of King Karl Johan. The sky is overcast with soft, diffused lighting.",
+            "photographer_location": [
+              {
+                "name": "Karl Johans gate",
+                "confidence": 1.0
+              },
+              {
+                "name": "Oslo",
+                "confidence": 1.0
+              },
+              {
+                "name": "Norway",
+                "confidence": 1.0
+              },
+              {
+                "name": "Intersection of Karl Johans gate and Akersgata",
+                "confidence": 0.9
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Karl Johans gate",
+                "confidence": 1.0
+              },
+              {
+                "name": "Oslo",
+                "confidence": 1.0
+              },
+              {
+                "name": "Slottsplassen",
+                "confidence": 0.95
+              }
+            ],
+            "entities": [
+              {
+                "name": "Karl Johans gate",
+                "type": "infrastructure",
+                "confidence": 1.0,
+                "notes": "Main street of Oslo"
+              },
+              {
+                "name": "Stortinget",
+                "type": "building",
+                "confidence": 0.98,
+                "notes": "The Norwegian Parliament building, designed by Emil Victor Langlet, completed 1866"
+              },
+              {
+                "name": "The Royal Palace",
+                "type": "landmark",
+                "confidence": 0.98,
+                "notes": "Det Kongelige Slott, residence of the Norwegian monarch"
+              },
+              {
+                "name": "Statue of King Karl Johan",
+                "type": "monument",
+                "confidence": 0.9,
+                "notes": "Equestrian statue by Brynjulf Bergslien in front of the palace"
+              },
+              {
+                "name": "Studenterlunden",
+                "type": "public_space",
+                "confidence": 0.9,
+                "notes": "Park area visible on the left side of the street with trees"
+              },
+              {
+                "name": "Street lamps",
+                "type": "infrastructure",
+                "confidence": 0.95,
+                "notes": "Ornate black metal lamps characteristic of the area"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A view looking west down Karl Johans gate, the main street of Oslo, Norway. On the left is the yellow brick facade of the Stortinget (the Norwegian Parliament building), featuring Romanesque Revival architectural elements like arched windows and decorative brickwork. The street is paved with cobblestones and is filled with pedestrians. In the far distance, at the end of the long uphill street, the neoclassical Royal Palace (Slottet) is visible against a cloudy sky. Ornate black street lamps and green trees line the thoroughfare, and several commercial buildings with awnings are visible on the right side of the street.",
+            "photographer_location": [
+              {
+                "name": "Karl Johans gate, Oslo, Norway",
+                "confidence": 0.95
+              },
+              {
+                "name": "Akersgata, Oslo, Norway",
+                "confidence": 0.85
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Karl Johans gate, Oslo, Norway",
+                "confidence": 0.98
+              },
+              {
+                "name": "Sentrum, Oslo, Norway",
+                "confidence": 0.95
+              }
+            ],
+            "entities": [
+              {
+                "name": "Stortinget",
+                "type": "building",
+                "confidence": 1.0,
+                "notes": "The seat of the Parliament of Norway, designed by Emil Victor Langlet and completed in 1866."
+              },
+              {
+                "name": "The Royal Palace, Oslo",
+                "type": "building",
+                "confidence": 1.0,
+                "notes": "The official residence of the Norwegian monarch, designed by Hans Linstow in neoclassical style and completed in 1849."
+              },
+              {
+                "name": "Karl Johans gate",
+                "type": "public_space",
+                "confidence": 1.0,
+                "notes": "The main street of the city of Oslo, named after King Charles III John."
+              },
+              {
+                "name": "Romanesque Revival architecture",
+                "type": "architectural_style",
+                "confidence": 0.9,
+                "notes": "The primary style of the Storting building."
+              },
+              {
+                "name": "Neoclassical architecture",
+                "type": "architectural_style",
+                "confidence": 0.9,
+                "notes": "The architectural style of the Royal Palace."
+              },
+              {
+                "name": "Oslo",
+                "type": "district",
+                "confidence": 1.0,
+                "notes": null
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "Nationaltheatret",
+                "type": "landmark",
+                "confidence": 0.270844966173172,
+                "notes": null
+              },
+              {
+                "name": "Kullt",
+                "type": "landmark",
+                "confidence": 0.25442802906036377,
+                "notes": null
+              },
+              {
+                "name": "Max Burgers",
+                "type": "landmark",
+                "confidence": 0.1655655801296234,
+                "notes": null
+              },
+              {
+                "name": "The Royal Palace",
+                "type": "landmark",
+                "confidence": 0.15501675009727478,
+                "notes": null
+              },
+              {
+                "name": "Pedestrian",
+                "type": "other",
+                "confidence": 0.40379154682159424,
+                "notes": null
+              },
+              {
+                "name": "Mixed-use",
+                "type": "other",
+                "confidence": 0.36643359065055847,
+                "notes": null
+              },
+              {
+                "name": "Sidewalk",
+                "type": "other",
+                "confidence": 0.3339669704437256,
+                "notes": null
+              },
+              {
+                "name": "Tourism",
+                "type": "other",
+                "confidence": 0.3147999942302704,
+                "notes": null
+              },
+              {
+                "name": "Meter",
+                "type": "other",
+                "confidence": 0.2809000015258789,
+                "notes": null
+              },
+              {
+                "name": "Urban area",
+                "type": "other",
+                "confidence": 0.2662999927997589,
+                "notes": null
+              },
+              {
+                "name": "Molar concentration",
+                "type": "other",
+                "confidence": 0.22380000352859497,
+                "notes": null
+              },
+              {
+                "name": "City",
+                "type": "other",
+                "confidence": 0.9697621464729309,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Urban area",
+                "type": "other",
+                "confidence": 0.9664040803909302,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Road surface",
+                "type": "other",
+                "confidence": 0.9616084694862366,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Street",
+                "type": "other",
+                "confidence": 0.9513565301895142,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Road",
+                "type": "other",
+                "confidence": 0.9467926621437073,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Public space",
+                "type": "other",
+                "confidence": 0.9445977807044983,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Town",
+                "type": "other",
+                "confidence": 0.9439952969551086,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Pedestrian",
+                "type": "other",
+                "confidence": 0.9429134726524353,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Sidewalk",
+                "type": "other",
+                "confidence": 0.8730155229568481,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Travel",
+                "type": "other",
+                "confidence": 0.8030049800872803,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "SALE",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              }
+            ],
+            "landmark_name": "Nationaltheatret"
+          }
+        }
+      ]
+    }
+  ]
+}

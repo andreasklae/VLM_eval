@@ -1,0 +1,179 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "3.jpg",
+      "timestamp": "2026-01-28T05:16:23.312125",
+      "processing_time_seconds": 139.783067,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Ski Jump Structure, Oslo, Norway",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The steep ramp and modern design suggest a ski jump facility, commonly associated with Oslo's famous ski jump. The materials and style align with known features of such structures.",
+            "detailed_description": "The image shows a ski jump structure, characterized by a steep ramp leading upwards. The ramp is made of steel and is part of a larger ski jumping facility. The design is modern, with clean lines and a minimalist aesthetic. The structure is likely part of a well-known ski jump in Oslo, Norway, known for its distinctive architectural style.",
+            "identification": {
+              "primary": [
+                "Ski Jump Structure"
+              ],
+              "location": "Oslo, Norway",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Ski Jump Ramp",
+                "type": "landmark",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "sports_facility",
+              "steel",
+              "Norway"
+            ],
+            "location": "Oslo, Norway",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Holmenkollen Ski Jump",
+                "specificity_level": "very_specific",
+                "confidence": 0.85,
+                "reasoning": "Holmenkollen is a famous ski jump in Oslo, known for its modern design and prominence in winter sports."
+              },
+              {
+                "guess": "Ski Jump Facility",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The structure resembles typical ski jump facilities, which are common in regions with winter sports."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Ski Jump Structure\"],\n        \"location\": \"Oslo, Norway\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Ski Jump Ramp\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"sports_facility\", \"steel\", \"Norway\"],\n    \"description\": \"The image shows a ski jump structure, characterized by a steep ramp leading upwards. The ramp is made of steel and is part of a larger ski jumping facility. The design is modern, with clean lines and a minimalist aesthetic. The structure is likely part of a well-known ski jump in Oslo, Norway, known for its distinctive architectural style.\",\n    \"reasoning\": \"The steep ramp and modern design suggest a ski jump facility, commonly associated with Oslo's famous ski jump. The materials and style align with known features of such structures.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Holmenkollen Ski Jump\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.85,\n            \"reasoning\": \"Holmenkollen is a famous ski jump in Oslo, known for its modern design and prominence in winter sports.\"\n        },\n        {\n            \"guess\": \"Ski Jump Facility\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The structure resembles typical ski jump facilities, which are common in regions with winter sports.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 28.577850103378296
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image features a large, modern architectural structure characterized by a prominent angular design. The main subject is a massive, dark-colored wall with a sharp, geometric form, possibly made of concrete or a similar material. Adjacent to this wall is a sleek, elongated funnel-like structure, which appears to be metallic, with a smooth surface and a slightly tapered end. This element is mounted horizontally, extending outward from the main building. Below the funnel-like structure, a narrow",
+            "description": "The image features a large, modern architectural structure characterized by a prominent angular design. The main subject is a massive, dark-colored wall with a sharp, geometric form, possibly made of concrete or a similar material. Adjacent to this wall is a sleek, elongated funnel-like structure, which appears to be metallic, with a smooth surface and a slightly tapered end. This element is mounted horizontally, extending outward from the main building. Below the funnel-like structure, a narrow",
+            "architectural_style": "Contemporary",
+            "search_backends_used": [],
+            "processing_time_seconds": 111.19830393791199
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Monochrome",
+          "confidence": 0.7921140789985657,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Monochrome",
+                "score": 0.7921140789985657
+              },
+              {
+                "source": "web",
+                "name": "Brutalist architecture",
+                "score": 0.40948551893234253
+              },
+              {
+                "source": "web",
+                "name": "Façade",
+                "score": 0.32579365372657776
+              },
+              {
+                "source": "web",
+                "name": "Monochrome",
+                "score": 0.30951055884361267
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Brutalist architecture",
+                "score": 0.40948551893234253
+              },
+              {
+                "name": "Façade",
+                "score": 0.32579365372657776
+              },
+              {
+                "name": "Monochrome",
+                "score": 0.30951055884361267
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Black",
+                "score": 0.9065282344818115
+              },
+              {
+                "name": "Grey",
+                "score": 0.8293830752372742
+              },
+              {
+                "name": "Monochrome",
+                "score": 0.7921140789985657
+              },
+              {
+                "name": "Daylighting",
+                "score": 0.587845504283905
+              },
+              {
+                "name": "Shadow",
+                "score": 0.5799033045768738
+              }
+            ],
+            "processing_time_seconds": 5.462892770767212
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/3.jpg"
+    }
+  ]
+}

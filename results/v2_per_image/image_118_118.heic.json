@@ -1,0 +1,1034 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "118.heic",
+      "timestamp": "2026-01-28T01:23:28.044503",
+      "processing_time_seconds": 63.242755,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 10.76638611111111,
+        "gps_longitude": 106.69185,
+        "location": {
+          "formatted_address": "Phố đi bộ Bùi Viện, 143 Bùi Viện, Phường Phạm Ngũ Lão, Quận 1, Thành phố Hồ Chí Minh, Vietnam",
+          "city": null,
+          "county": "Quận 1",
+          "country": "Vietnam"
+        },
+        "datetime_original": "2024:12:02 20:26:36",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Bui Vien Street, Ho Chi Minh City, Vietnam",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of numerous neon signs, bars, and restaurants, combined with the location metadata, strongly suggests this is Bui Vien Street, a well-known nightlife destination in Ho Chi Minh City.",
+            "detailed_description": "The image depicts Bui Vien Street in Ho Chi Minh City, Vietnam, known for its vibrant nightlife and bustling atmosphere. The street is lined with numerous neon signs advertising hotels, bars, and restaurants, creating a lively and colorful scene. Motorbikes are parked along the side, and people are visible walking along the street, contributing to the energetic ambiance typical of this area.",
+            "identification": {
+              "primary": [
+                "Bui Vien Street"
+              ],
+              "location": "Ho Chi Minh City, Vietnam",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Bui Vien Street",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "nightlife",
+              "urban",
+              "neon_signs",
+              "Vietnam",
+              "street"
+            ],
+            "location": "Ho Chi Minh City, Vietnam",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Bui Vien Street\"],\n        \"location\": \"Ho Chi Minh City, Vietnam\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Bui Vien Street\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"nightlife\", \"urban\", \"neon_signs\", \"Vietnam\", \"street\"],\n    \"description\": \"The image depicts Bui Vien Street in Ho Chi Minh City, Vietnam, known for its vibrant nightlife and bustling atmosphere. The street is lined with numerous neon signs advertising hotels, bars, and restaurants, creating a lively and colorful scene. Motorbikes are parked along the side, and people are visible walking along the street, contributing to the energetic ambiance typical of this area.\",\n    \"reasoning\": \"The presence of numerous neon signs, bars, and restaurants, combined with the location metadata, strongly suggests this is Bui Vien Street, a well-known nightlife destination in Ho Chi Minh City.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 10.76638611111111,
+              "longitude": 106.69185
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Phố đi bộ Bùi Viện, 143 Bùi Viện, Phường Phạm Ngũ Lão, Quận 1, Thành phố Hồ Chí Minh, Vietnam",
+              "city": null,
+              "county": "Quận 1",
+              "country": "Vietnam"
+            },
+            "photo_timestamp": "2024:12:02 20:26:36",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 28.763800144195557
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "**URL**: ([vietnamnightlife.com]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 3,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a vibrant urban street scene at night in Quận 1, Vietnam, characterized by a lively atmosphere and bustling activity. The street is lined with numerous buildings, each adorned with brightly illuminated neon signs and advertisements. The signs display a variety of text, including 'HOTEL,' 'THE RICE,' and 'PARIS,' indicating the presence of hotels, restaurants, and bars. The architecture of the buildings is modern, with multiple stories and balconies visible, suggesting a densely",
+            "description": "The image depicts a vibrant urban street scene at night in Quận 1, Vietnam, characterized by a lively atmosphere and bustling activity. The street is lined with numerous buildings, each adorned with brightly illuminated neon signs and advertisements. The signs display a variety of text, including 'HOTEL,' 'THE RICE,' and 'PARIS,' indicating the presence of hotels, restaurants, and bars. The architecture of the buildings is modern, with multiple stories and balconies visible, suggesting a densely",
+            "architectural_style": "Modern",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 10.76638611111111,
+              "longitude": 106.69185
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Phố đi bộ Bùi Viện, 143 Bùi Viện, Phường Phạm Ngũ Lão, Quận 1, Thành phố Hồ Chí Minh, Vietnam",
+              "city": null,
+              "county": "Quận 1",
+              "country": "Vietnam"
+            },
+            "photo_timestamp": "2024:12:02 20:26:36",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 33.62329816818237
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Mode of transport",
+          "confidence": 0.9815696477890015,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Mode of transport",
+                "score": 0.9815696477890015
+              },
+              {
+                "source": "label",
+                "name": "Urban area",
+                "score": 0.974718451499939
+              },
+              {
+                "source": "label",
+                "name": "City",
+                "score": 0.9715978503227234
+              },
+              {
+                "source": "label",
+                "name": "Metropolitan area",
+                "score": 0.9628392457962036
+              },
+              {
+                "source": "object",
+                "name": "Motorcycle",
+                "score": 0.5983462929725647
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.48082369565963745
+              },
+              {
+                "name": "Street light",
+                "score": 0.37636926770210266
+              },
+              {
+                "name": "Neon Sign",
+                "score": 0.36838141083717346
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.3549940586090088
+              },
+              {
+                "name": "Cityscape",
+                "score": 0.34623825550079346
+              }
+            ],
+            "objects": [
+              {
+                "name": "Motorcycle",
+                "score": 0.5983462929725647
+              }
+            ],
+            "labels": [
+              {
+                "name": "Mode of transport",
+                "score": 0.9815696477890015
+              },
+              {
+                "name": "Urban area",
+                "score": 0.974718451499939
+              },
+              {
+                "name": "City",
+                "score": 0.9715978503227234
+              },
+              {
+                "name": "Night",
+                "score": 0.970660924911499
+              },
+              {
+                "name": "Metropolitan area",
+                "score": 0.9628392457962036
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 10.76638611111111,
+              "longitude": 106.69185
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Phố đi bộ Bùi Viện, 143 Bùi Viện, Phường Phạm Ngũ Lão, Quận 1, Thành phố Hồ Chí Minh, Vietnam",
+              "city": null,
+              "county": "Quận 1",
+              "country": "Vietnam"
+            },
+            "photo_timestamp": "2024:12:02 20:26:36",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 14.293001890182495
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Quận 1, Vietnam",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Quận 1, Vietnam",
+            "coordinates": {
+              "latitude": 10.76638611111111,
+              "longitude": 106.69185
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Bui Vien Walking Street",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 24638,
+                  "vicinity": "Đường Bùi Viện, Phường Phạm Ngũ Lão",
+                  "place_id": "ChIJCdzLBRYvdTERpsMyNScNwPE",
+                  "location": {
+                    "lat": 10.767351,
+                    "lng": 106.6938836
+                  }
+                },
+                {
+                  "name": "An Lac Buddhist Temple",
+                  "types": [
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 91,
+                  "vicinity": "175/15 Đường Phạm Ngũ Lão, Phường Phạm Ngũ Lão",
+                  "place_id": "ChIJgeWudj8vdTER8olF8MvuN-s",
+                  "location": {
+                    "lat": 10.7685031,
+                    "lng": 106.6943967
+                  }
+                },
+                {
+                  "name": "Nguyễn Văn Hảo building",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 28,
+                  "vicinity": "Vietnam/1 Đường Yersin, Phường Phạm Ngũ Lão",
+                  "place_id": "ChIJu5RzSj4vdTEReSYtogsLTlY",
+                  "location": {
+                    "lat": 10.7688391,
+                    "lng": 106.6967763
+                  }
+                },
+                {
+                  "name": "Ben Thanh Market",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 78864,
+                  "vicinity": "Ben Thanh",
+                  "place_id": "ChIJTeYpMT8vdTERMH8sUnkta40",
+                  "location": {
+                    "lat": 10.7725168,
+                    "lng": 106.6980208
+                  }
+                },
+                {
+                  "name": "Thái Bình Market",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 5743,
+                  "vicinity": "Đường Cống Quỳnh, Phường Phạm Ngũ Lão",
+                  "place_id": "ChIJd_Wo8hcvdTERXV5f7ac_lUg",
+                  "location": {
+                    "lat": 10.7667302,
+                    "lng": 106.6886914
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Phạm Nghiêm Trai",
+                  "types": [
+                    "museum",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 849,
+                  "vicinity": "199 Đường Nguyễn Trãi, Phường Nguyễn Cư Trinh",
+                  "place_id": "ChIJV-rQMBIvdTERKJ2FMkbK72k",
+                  "location": {
+                    "lat": 10.7661435,
+                    "lng": 106.6881469
+                  }
+                },
+                {
+                  "name": "PHỞ MUSEUM - Bảo Tàng Ẩm Thực Việt Nam",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 53,
+                  "vicinity": "211 Nguyễn Thái Học, Phường Phạm Ngũ Lão",
+                  "place_id": "ChIJ2SlLLgAvdTERhcy5DEw1v5o",
+                  "location": {
+                    "lat": 10.7690426,
+                    "lng": 106.694543
+                  }
+                },
+                {
+                  "name": "Pho Museum",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 180,
+                  "vicinity": "211 Nguyễn Thái Học, Phường Phạm Ngũ Lão",
+                  "place_id": "ChIJLZFFHQAvdTERCzTshJfVw88",
+                  "location": {
+                    "lat": 10.7690426,
+                    "lng": 106.694543
+                  }
+                },
+                {
+                  "name": "Ho Chi Minh City Fine Arts Museum",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 681,
+                  "vicinity": "97A Phó Đức Chính, Phường Nguyễn Thái Bình",
+                  "place_id": "ChIJPccxGQAvdTERYMYelqaxe8M",
+                  "location": {
+                    "lat": 10.7700162,
+                    "lng": 106.6991857
+                  }
+                },
+                {
+                  "name": "Museum Voor Schone Kunsten",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 4,
+                  "vicinity": "97A D, Phó Đức Chính, Phường Nguyễn Thái Bình",
+                  "place_id": "ChIJAQDQgj8vdTERXELtboObZ4U",
+                  "location": {
+                    "lat": 10.7700162,
+                    "lng": 106.6991857
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Golden Central Hotel Saigon",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 606,
+                  "vicinity": "140 Lý Tự Trọng, Phường Bến Thành",
+                  "place_id": "ChIJjTF8ikcvdTERFs5iXqfrm-I",
+                  "location": {
+                    "lat": 10.7736721,
+                    "lng": 106.6963424
+                  }
+                },
+                {
+                  "name": "Rang Dong Hotel",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 988,
+                  "vicinity": "81 - 83 Cách Mạng Tháng Tám, Phường Bến Thành",
+                  "place_id": "ChIJe0b_aDwvdTERtSMMwR7yDtc",
+                  "location": {
+                    "lat": 10.7721723,
+                    "lng": 106.6916713
+                  }
+                },
+                {
+                  "name": "iPeace Hotel",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 3.6,
+                  "user_ratings_total": 317,
+                  "vicinity": "175 Đường Phạm Ngũ Lão, Phường Phạm Ngũ Lão",
+                  "place_id": "ChIJfU3sCT4vdTER79_2IEdjx4A",
+                  "location": {
+                    "lat": 10.7685337,
+                    "lng": 106.6941517
+                  }
+                },
+                {
+                  "name": "Saigon Star Hotel",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 356,
+                  "vicinity": "204 Đường Nguyễn Thị Minh Khai, Phường 6",
+                  "place_id": "ChIJqxN4kkgvdTERZpkl-Nqzcik",
+                  "location": {
+                    "lat": 10.7751522,
+                    "lng": 106.6905212
+                  }
+                },
+                {
+                  "name": "Silverland Ben Thanh",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1517,
+                  "vicinity": "ward, 14-16 Le Lai Street, Ben Thanh, ward, district 1",
+                  "place_id": "ChIJI0NEEGgvdTERIPjke4yN2m0",
+                  "location": {
+                    "lat": 10.7718018,
+                    "lng": 106.697274
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "September 23rd Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 9843,
+                  "vicinity": "",
+                  "place_id": "ChIJu4YK_j4vdTERfSn0egKOyug",
+                  "location": {
+                    "lat": 10.7687114,
+                    "lng": 106.69234
+                  }
+                },
+                {
+                  "name": "Saigon Central Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 44,
+                  "vicinity": "QM9R+JW2",
+                  "place_id": "ChIJdymKjDwvdTER51vEnmC3LNg",
+                  "location": {
+                    "lat": 10.7690071,
+                    "lng": 106.6922686
+                  }
+                },
+                {
+                  "name": "아시안 루비 파크뷰",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "100 Đường Lê Lai, Phường Phạm Ngũ Lão",
+                  "place_id": "ChIJk6oxxj0vdTER-7oIG981pGA",
+                  "location": {
+                    "lat": 10.7697661,
+                    "lng": 106.6927245
+                  }
+                },
+                {
+                  "name": "Tao Đàn",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "QM9Q+RW5, Hẻm Tôn Thất Tùng, Phường Phạm Ngũ Lão",
+                  "place_id": "ChIJxdBlFD0vdTERtWLbLlLQ7G4",
+                  "location": {
+                    "lat": 10.7695004,
+                    "lng": 106.6898592
+                  }
+                },
+                {
+                  "name": "Nguyen Thi Nghia Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 27,
+                  "vicinity": "QMCW+235, Phường Phạm Ngũ Lão",
+                  "place_id": "ChIJKx11cd0vdTERMWN2lOz2fmY",
+                  "location": {
+                    "lat": 10.77001,
+                    "lng": 106.6952394
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Kingdom Hall of Jehovah's Witnesses",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 102,
+                  "vicinity": "345/47 Đường Trần Hưng Đạo, Cầu Kho",
+                  "place_id": "ChIJEZPc7BAvdTER8VqN2oPDync",
+                  "location": {
+                    "lat": 10.7604586,
+                    "lng": 106.689869
+                  }
+                },
+                {
+                  "name": "Nhà Thờ Tin Lành Sài Gòn (HTTLVN)",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 11,
+                  "vicinity": "155 Đường Trần Hưng Đạo, Phường Cô Giang",
+                  "place_id": "ChIJoWn3MAAvdTERH5YJHFy1rQg",
+                  "location": {
+                    "lat": 10.766385,
+                    "lng": 106.694309
+                  }
+                },
+                {
+                  "name": "Tượng Thánh Mátthêu Lê văn Gẫm (1813-1847)",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 18,
+                  "vicinity": "1 Đường Tôn Thất Tùng, Phường Phạm Ngũ Lão",
+                  "place_id": "ChIJ9av_AM8vdTERwsIKwdcyB5c",
+                  "location": {
+                    "lat": 10.7686872,
+                    "lng": 106.6890685
+                  }
+                },
+                {
+                  "name": "Nhà thờ Huyện Sỹ",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 174,
+                  "vicinity": "1 Đường Tôn Thất Tùng, Phường Phạm Ngũ Lão",
+                  "place_id": "ChIJY58O7asvdTERJhBD3mlVNbw",
+                  "location": {
+                    "lat": 10.7689886,
+                    "lng": 106.6893251
+                  }
+                },
+                {
+                  "name": "THÁNH ĐƯỜNG GIÁO XỨ CHỢ ĐŨI",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "1 Đường Tôn Thất Tùng, Phường Phạm Ngũ Lão",
+                  "place_id": "ChIJE5Q5QAAvdTEREfV_OuZE-X4",
+                  "location": {
+                    "lat": 10.7692293,
+                    "lng": 106.6891202
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Art Vietnam Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 2.5,
+                  "user_ratings_total": 2,
+                  "vicinity": "QM7V+G6X, {{Province, Phường Cô Giang",
+                  "place_id": "ChIJoS4GlxYvdTERE-IpUgGdMjA",
+                  "location": {
+                    "lat": 10.763855,
+                    "lng": 106.6931033
+                  }
+                },
+                {
+                  "name": "Art Gallery Sunshine",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 5,
+                  "vicinity": "40 Đường Bùi Viện, Phường Phạm Ngũ Lão",
+                  "place_id": "ChIJifIGSRYvdTERcPsW8tDDYgw",
+                  "location": {
+                    "lat": 10.7677327,
+                    "lng": 106.6944985
+                  }
+                },
+                {
+                  "name": "Minh Anh Art Gallery | Hand-painted Oil Paintings & Custom Artwork Orders",
+                  "types": [
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 76,
+                  "vicinity": "101 Đường Bùi Viện, Phường Phạm Ngũ Lão",
+                  "place_id": "ChIJAbWrGhYvdTERHqrc5u-o5dw",
+                  "location": {
+                    "lat": 10.7666799,
+                    "lng": 106.692728
+                  }
+                },
+                {
+                  "name": "Minh Long - Showroom Quận 3",
+                  "types": [
+                    "art_gallery",
+                    "furniture_store",
+                    "home_goods_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 382,
+                  "vicinity": "17 Bà Huyện Thanh Quan, Phường Võ Thị Sáu",
+                  "place_id": "ChIJl6XuETsvdTER5ZVJPtAZWyw",
+                  "location": {
+                    "lat": 10.775,
+                    "lng": 106.69
+                  }
+                },
+                {
+                  "name": "The sun 2 Capitol",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "80 Đường Trần Hưng Đạo, Phường Cô Giang",
+                  "place_id": "ChIJZWTDDwAvdTERqADeD0tXbls",
+                  "location": {
+                    "lat": 10.768793,
+                    "lng": 106.6939444
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Ho Chi Minh City",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Ho Chi Minh City",
+                  "place_id": "ChIJ0T2NLikpdTERKxE8d61aX_E",
+                  "location": {
+                    "lat": 10.8230989,
+                    "lng": 106.6296638
+                  }
+                },
+                {
+                  "name": "New World Saigon Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 10760,
+                  "vicinity": "76 Đường Lê Lai, Phường Bến Thành",
+                  "place_id": "ChIJZfXdjj4vdTER1-XCkv7ltio",
+                  "location": {
+                    "lat": 10.7708719,
+                    "lng": 106.6951897
+                  }
+                },
+                {
+                  "name": "Vien Dong Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 2653,
+                  "vicinity": "275A Đường Phạm Ngũ Lão, Phường Bến Thành",
+                  "place_id": "ChIJWwkxBUwvdTERHxWYqmRizUk",
+                  "location": {
+                    "lat": 10.7679664,
+                    "lng": 106.6919963
+                  }
+                },
+                {
+                  "name": "Sanouva Saigon Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 940,
+                  "vicinity": "175 Lý Tự Trọng, Phường Bến Thành",
+                  "place_id": "ChIJOQYLJDwvdTERagMkn6pCb0E",
+                  "location": {
+                    "lat": 10.7732098,
+                    "lng": 106.6963194
+                  }
+                },
+                {
+                  "name": "Cochin Sang Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 975,
+                  "vicinity": "28-30 Đường Nguyễn An Ninh, Phường Bến Thành",
+                  "place_id": "ChIJ38jv2cYodTERKEwTzF1p1zQ",
+                  "location": {
+                    "lat": 10.7719236,
+                    "lng": 106.6969637
+                  }
+                }
+              ]
+            },
+            "total_places_found": 35,
+            "photo_timestamp": "2024:12:02 20:26:36",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.41956615447998047
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/118.heic"
+    },
+    {
+      "image_filename": "118.heic",
+      "timestamp": "2026-01-28T01:24:31.317431",
+      "processing_time_seconds": 69.548664,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Bui Vien Street, Ho Chi Minh City, Vietnam",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of numerous neon signs and the bustling nightlife atmosphere are characteristic of Bui Vien Street, a well-known area in Ho Chi Minh City.",
+            "detailed_description": "The image depicts Bui Vien Street, a vibrant nightlife area in Ho Chi Minh City, Vietnam. The street is lined with numerous bars, restaurants, and hotels, all adorned with colorful neon signs and lights. The atmosphere is lively, with many people walking along the street and motorbikes parked on the side. The architecture is modern, with multi-story buildings featuring balconies and bright signage.",
+            "identification": {
+              "primary": [
+                "Bui Vien Street"
+              ],
+              "location": "Ho Chi Minh City, Vietnam",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Bui Vien Street",
+                "type": "landmark",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "urban",
+              "nightlife",
+              "neon_signs",
+              "street"
+            ],
+            "location": "Ho Chi Minh City, Vietnam",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Bui Vien Street\"],\n        \"location\": \"Ho Chi Minh City, Vietnam\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Bui Vien Street\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"urban\", \"nightlife\", \"neon_signs\", \"street\"],\n    \"description\": \"The image depicts Bui Vien Street, a vibrant nightlife area in Ho Chi Minh City, Vietnam. The street is lined with numerous bars, restaurants, and hotels, all adorned with colorful neon signs and lights. The atmosphere is lively, with many people walking along the street and motorbikes parked on the side. The architecture is modern, with multi-story buildings featuring balconies and bright signage.\",\n    \"reasoning\": \"The presence of numerous neon signs and the bustling nightlife atmosphere are characteristic of Bui Vien Street, a well-known area in Ho Chi Minh City.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 32.401148080825806
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([urbannowcompany.com]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a vibrant urban street scene at night, characterized by a bustling atmosphere and an array of colorful neon signs. The street is lined with various commercial establishments, including hotels, bars, and restaurants, each advertising their services with illuminated signage. On the left side, there are signs for a bar and a restaurant, with names such as 'Paris' and 'Dog Bar' visible. The right side features a prominent hotel sign with the word 'HOTEL' vertically displayed, accom",
+            "description": "The image depicts a vibrant urban street scene at night, characterized by a bustling atmosphere and an array of colorful neon signs. The street is lined with various commercial establishments, including hotels, bars, and restaurants, each advertising their services with illuminated signage. On the left side, there are signs for a bar and a restaurant, with names such as 'Paris' and 'Dog Bar' visible. The right side features a prominent hotel sign with the word 'HOTEL' vertically displayed, accom",
+            "architectural_style": "Contemporary urban",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 36.97066593170166
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Mode of transport",
+          "confidence": 0.9815696477890015,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Mode of transport",
+                "score": 0.9815696477890015
+              },
+              {
+                "source": "label",
+                "name": "Urban area",
+                "score": 0.974718451499939
+              },
+              {
+                "source": "label",
+                "name": "City",
+                "score": 0.9715978503227234
+              },
+              {
+                "source": "label",
+                "name": "Metropolitan area",
+                "score": 0.9628392457962036
+              },
+              {
+                "source": "object",
+                "name": "Motorcycle",
+                "score": 0.5983462929725647
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.4822905659675598
+              },
+              {
+                "name": "Neon Sign",
+                "score": 0.4124676287174225
+              },
+              {
+                "name": "Street light",
+                "score": 0.4073564112186432
+              },
+              {
+                "name": "Street",
+                "score": 0.3623029589653015
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.35478511452674866
+              }
+            ],
+            "objects": [
+              {
+                "name": "Motorcycle",
+                "score": 0.5983462929725647
+              }
+            ],
+            "labels": [
+              {
+                "name": "Mode of transport",
+                "score": 0.9815696477890015
+              },
+              {
+                "name": "Urban area",
+                "score": 0.974718451499939
+              },
+              {
+                "name": "City",
+                "score": 0.9715978503227234
+              },
+              {
+                "name": "Night",
+                "score": 0.970660924911499
+              },
+              {
+                "name": "Metropolitan area",
+                "score": 0.9628392457962036
+              }
+            ],
+            "processing_time_seconds": 14.557016134262085
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/118.heic"
+    }
+  ]
+}

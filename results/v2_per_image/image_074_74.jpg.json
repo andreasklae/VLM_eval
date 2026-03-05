@@ -1,0 +1,441 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "74.jpg",
+      "timestamp": "2026-01-28T06:49:14.982579",
+      "processing_time_seconds": 66.23081,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 61.86473055555556,
+        "gps_longitude": 9.787577777777777,
+        "location": {
+          "formatted_address": "VQ7Q+V2 Mysusæter, Norway",
+          "city": "Mysusæter",
+          "county": "Innlandet",
+          "country": "Norway"
+        },
+        "datetime_original": "2023:09:09 11:12:10",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Rondane Mountains, Innlandet, Norway",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates the photo was taken in Mysusæter, Innlandet, Norway, which is near the Rondane National Park. The distinctive rocky peaks and tundra landscape are characteristic of the Rondane Mountains.",
+            "detailed_description": "The image shows a rugged mountain landscape, likely part of the Rondane Mountains in Innlandet, Norway. The mountains have steep, rocky peaks and are surrounded by a tundra-like terrain with sparse vegetation. The sky is clear with some clouds, adding to the dramatic natural scenery.",
+            "identification": {
+              "primary": [
+                "Rondane Mountains"
+              ],
+              "location": "Innlandet, Norway",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Rondane Mountains",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "mountain",
+              "natural_landscape",
+              "Norway",
+              "Rondane",
+              "geological_feature"
+            ],
+            "location": "Innlandet, Norway",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Rondane National Park",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.8,
+                "reasoning": "The landscape matches the typical features of Rondane National Park, known for its mountainous terrain."
+              },
+              {
+                "guess": "Norwegian mountain range",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The image depicts a typical Norwegian mountain landscape, which could belong to several ranges in the region."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Rondane Mountains\"],\n        \"location\": \"Innlandet, Norway\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Rondane Mountains\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"mountain\", \"natural_landscape\", \"Norway\", \"Rondane\", \"geological_feature\"],\n    \"description\": \"The image shows a rugged mountain landscape, likely part of the Rondane Mountains in Innlandet, Norway. The mountains have steep, rocky peaks and are surrounded by a tundra-like terrain with sparse vegetation. The sky is clear with some clouds, adding to the dramatic natural scenery.\",\n    \"reasoning\": \"The location metadata indicates the photo was taken in Mysusæter, Innlandet, Norway, which is near the Rondane National Park. The distinctive rocky peaks and tundra landscape are characteristic of the Rondane Mountains.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Rondane National Park\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.8,\n            \"reasoning\": \"The landscape matches the typical features of Rondane National Park, known for its mountainous terrain.\"\n        },\n        {\n            \"guess\": \"Norwegian mountain range\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The image depicts a typical Norwegian mountain landscape, which could belong to several ranges in the region.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": 61.86473055555556,
+              "longitude": 9.787577777777777
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "VQ7Q+V2 Mysusæter, Norway",
+              "city": "Mysusæter",
+              "county": "Innlandet",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2023:09:09 11:12:10",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 12.932017803192139
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image showcases a striking mountainous landscape, characterized by two prominent peaks that dominate the scene. These peaks are rugged and steep, with a distinct grayish hue that suggests they are composed primarily of rock. The surface of the mountains is marked by visible striations and crevices, adding texture and depth to their appearance. The foreground consists of a vast expanse of tundra-like terrain, covered in patches of moss and lichen, which create a mottled pattern of greens, bro",
+            "description": "The image showcases a striking mountainous landscape, characterized by two prominent peaks that dominate the scene. These peaks are rugged and steep, with a distinct grayish hue that suggests they are composed primarily of rock. The surface of the mountains is marked by visible striations and crevices, adding texture and depth to their appearance. The foreground consists of a vast expanse of tundra-like terrain, covered in patches of moss and lichen, which create a mottled pattern of greens, bro",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 61.86473055555556,
+              "longitude": 9.787577777777777
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "VQ7Q+V2 Mysusæter, Norway",
+              "city": "Mysusæter",
+              "county": "Innlandet",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2023:09:09 11:12:10",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 52.787933111190796
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Mountainous landforms",
+          "confidence": 0.9782513976097107,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Mountainous landforms",
+                "score": 0.9782513976097107
+              },
+              {
+                "source": "label",
+                "name": "Mountain",
+                "score": 0.9734012484550476
+              },
+              {
+                "source": "label",
+                "name": "Rock",
+                "score": 0.9323853254318237
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Bedrock",
+                "score": 0.27516666054725647
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9889466762542725
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9813092947006226
+              },
+              {
+                "name": "Mountainous landforms",
+                "score": 0.9782513976097107
+              },
+              {
+                "name": "Mountain",
+                "score": 0.9734012484550476
+              },
+              {
+                "name": "Rock",
+                "score": 0.9323853254318237
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 61.86473055555556,
+              "longitude": 9.787577777777777
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "VQ7Q+V2 Mysusæter, Norway",
+              "city": "Mysusæter",
+              "county": "Innlandet",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2023:09:09 11:12:10",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 23.786940813064575
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Mysusæter, Innlandet, Norway",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Mysusæter, Innlandet, Norway",
+            "coordinates": {
+              "latitude": 61.86473055555556,
+              "longitude": 9.787577777777777
+            },
+            "search_range_meters": 5000,
+            "nearby_places": {
+              "viewpoints": [
+                {
+                  "name": "DNT Rondvassbu",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 289,
+                  "vicinity": "Rondvassbu, Otta",
+                  "place_id": "ChIJP9uDU6Uva0YRRp9Ryib6y4U",
+                  "location": {
+                    "lat": 61.8788057,
+                    "lng": 9.796426499999999
+                  }
+                },
+                {
+                  "name": "Ula River Put In",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Unnamed Rd, Otta",
+                  "place_id": "ChIJ0U4fy8Uua0YR8Era_PaxxAY",
+                  "location": {
+                    "lat": 61.8392681,
+                    "lng": 9.731666899999997
+                  }
+                },
+                {
+                  "name": "Storronden",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Rondane National Park, Otta",
+                  "place_id": "ChIJi0OWLXQla0YRi8hs7_7PSoo",
+                  "location": {
+                    "lat": 61.89167490000001,
+                    "lng": 9.8619928
+                  }
+                }
+              ]
+            },
+            "total_places_found": 3,
+            "photo_timestamp": "2023:09:09 11:12:10",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.3097548484802246
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/74.jpg"
+    },
+    {
+      "image_filename": "74.jpg",
+      "timestamp": "2026-01-28T06:50:21.250676",
+      "processing_time_seconds": 66.586251,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Mountain landscape",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive peaks and rocky terrain indicate a mountainous region. The lack of specific identifying features makes it difficult to pinpoint the exact location, but the geological characteristics are clear.",
+            "detailed_description": "The image depicts a rugged mountain landscape with prominent peaks. The terrain is characterized by rocky surfaces and sparse vegetation, suggesting a high-altitude environment. The sky is clear with some clouds, enhancing the dramatic appearance of the mountains.",
+            "identification": {
+              "primary": [
+                "Mountain landscape"
+              ],
+              "location": null,
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Mountain range",
+                "type": "natural_feature",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "mountains",
+              "landscape",
+              "geological"
+            ],
+            "location": null,
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Scottish Highlands",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "The rugged terrain and vegetation are reminiscent of the Scottish Highlands."
+              },
+              {
+                "guess": "Norwegian mountains",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.5,
+                "reasoning": "The landscape could resemble mountainous areas in Norway."
+              },
+              {
+                "guess": "Rocky Mountains",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.4,
+                "reasoning": "The rocky peaks are similar to those found in the Rocky Mountains."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Mountain landscape\"],\n        \"location\": null,\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Mountain range\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"mountains\", \"landscape\", \"geological\"],\n    \"description\": \"The image depicts a rugged mountain landscape with prominent peaks. The terrain is characterized by rocky surfaces and sparse vegetation, suggesting a high-altitude environment. The sky is clear with some clouds, enhancing the dramatic appearance of the mountains.\",\n    \"reasoning\": \"The distinctive peaks and rocky terrain indicate a mountainous region. The lack of specific identifying features makes it difficult to pinpoint the exact location, but the geological characteristics are clear.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Scottish Highlands\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The rugged terrain and vegetation are reminiscent of the Scottish Highlands.\"\n        },\n        {\n            \"guess\": \"Norwegian mountains\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.5,\n            \"reasoning\": \"The landscape could resemble mountainous areas in Norway.\"\n        },\n        {\n            \"guess\": \"Rocky Mountains\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.4,\n            \"reasoning\": \"The rocky peaks are similar to those found in the Rocky Mountains.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 12.086010932922363
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a striking natural landscape dominated by two prominent mountain peaks. These peaks are characterized by their steep, rugged slopes and rocky surfaces, which appear to be composed of dark gray stone. The mountains rise sharply from a vast, undulating terrain covered in a mix of moss and lichen, creating a patchwork of earthy tones including browns, greens, and yellows. The foreground features a textured landscape with visible patterns of vegetation that suggest a tundra or alpi",
+            "description": "The image depicts a striking natural landscape dominated by two prominent mountain peaks. These peaks are characterized by their steep, rugged slopes and rocky surfaces, which appear to be composed of dark gray stone. The mountains rise sharply from a vast, undulating terrain covered in a mix of moss and lichen, creating a patchwork of earthy tones including browns, greens, and yellows. The foreground features a textured landscape with visible patterns of vegetation that suggest a tundra or alpi",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "processing_time_seconds": 54.49618196487427
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Tunnels Chancaní (-31.3754, -65.3923)",
+          "confidence": 0.33652782440185547,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Tunnels Chancaní",
+            "coordinates": {
+              "latitude": -31.375447500000003,
+              "longitude": -65.3922848
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 3024
+              },
+              {
+                "x": 0,
+                "y": 3024
+              }
+            ],
+            "context_labels": [
+              "Blue",
+              "Daytime",
+              "Mountainous landforms",
+              "Mountain",
+              "Rock"
+            ],
+            "context_objects": [],
+            "web_entities": [],
+            "all_landmarks": [
+              {
+                "name": "Tunnels Chancaní",
+                "score": 0.33652782440185547,
+                "location": {
+                  "lat": -31.375447500000003,
+                  "lng": -65.3922848
+                }
+              }
+            ],
+            "processing_time_seconds": 24.9877290725708
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/74.jpg"
+    }
+  ]
+}

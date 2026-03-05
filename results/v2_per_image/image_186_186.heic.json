@@ -1,0 +1,562 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "186.heic",
+      "timestamp": "2026-01-28T04:01:41.055292",
+      "processing_time_seconds": 64.205983,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -38.622258333333335,
+        "gps_longitude": 142.93171666666666,
+        "location": {
+          "formatted_address": "9WHJ+3M Peterborough VIC, Australia",
+          "city": "Peterborough",
+          "county": "Victoria",
+          "country": "Australia"
+        },
+        "datetime_original": "2025:07:04 10:27:41",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "London Arch, Peterborough, Victoria, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata and distinctive arch formation suggest this is the London Arch, a well-known natural landmark along the Great Ocean Road.",
+            "detailed_description": "The image shows the London Arch, a natural rock formation located along the Great Ocean Road in Victoria, Australia. This coastal feature is characterized by its arch shape, formed by erosion from the sea. The arch is surrounded by clear blue waters and rugged cliffs, typical of the dramatic landscapes found in this region.",
+            "identification": {
+              "primary": [
+                "London Arch"
+              ],
+              "location": "Peterborough, Victoria, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "London Arch",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "coastal_landscape",
+              "erosion",
+              "Victoria",
+              "Australia"
+            ],
+            "location": "Peterborough, Victoria, Australia",
+            "type": "natural_feature",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"London Arch\"],\n        \"location\": \"Peterborough, Victoria, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"London Arch\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"coastal_landscape\", \"erosion\", \"Victoria\", \"Australia\"],\n    \"description\": \"The image shows the London Arch, a natural rock formation located along the Great Ocean Road in Victoria, Australia. This coastal feature is characterized by its arch shape, formed by erosion from the sea. The arch is surrounded by clear blue waters and rugged cliffs, typical of the dramatic landscapes found in this region.\",\n    \"reasoning\": \"The location metadata and distinctive arch formation suggest this is the London Arch, a well-known natural landmark along the Great Ocean Road.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": -38.622258333333335,
+              "longitude": 142.93171666666666
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "9WHJ+3M Peterborough VIC, Australia",
+              "city": "Peterborough",
+              "county": "Victoria",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:07:04 10:27:41",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 30.129827737808228
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "The Arch, Peterborough, Victoria, Australia",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The search results strongly indicate that the natural arch described is 'The Arch,' located near Peterborough, Victoria, Australia. The description matches the visual features of the arch, including its sedimentary rock layers and coastal setting. The search results confirm the location and provide additional context about the area, supporting a high confidence identification.",
+            "identification": {
+              "primary": [
+                "The Arch"
+              ],
+              "location": "Peterborough, Victoria, Australia",
+              "confidence": 1.0
+            },
+            "artifacts": [
+              {
+                "name": "The Arch",
+                "type": "natural_feature",
+                "confidence": 1.0
+              },
+              {
+                "name": "Coastal cliffs",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "natural_arch",
+              "sedimentary_rock",
+              "coastal_landscape",
+              "Victoria",
+              "Australia"
+            ],
+            "sources_used": [
+              "web",
+              "parks.vic.gov.au"
+            ],
+            "all_candidates": [
+              "The natural arch near Peterborough, Victoria, Australia, is known as \"The Arch.\" It is a prominent rock formation located in the Port Campbell National Park, approximately 380 kilometers southwest of ",
+              "Visitors can access The Arch via a paved pathway that leads to a viewing area, offering picturesque views of the surrounding coastline. The area is also home to other notable natural formations, inclu",
+              "For more detailed information about The Arch and other attractions in the area, you can refer to the Port Campbell National Park and Bay of Islands Coastal Park Visitor Guide. ([parks.vic.gov.au]())"
+            ],
+            "type": "natural_feature",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 3,
+              "unique_titles": 3,
+              "avg_score": 0.9,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a striking coastal rock formation located along the shoreline of Peterborough, Victoria, Australia. The main subject is a natural arch, formed by erosion, standing prominently in the ocean. The arch is characterized by its rugged texture and layered appearance, showcasing sedimentary rock strata in shades of warm ochre and sandy brown. The arch rises from the sea, creating a dramatic silhouette against the backdrop of the deep blue ocean and the clear sky. The water surrounding",
+            "description": "The image depicts a striking coastal rock formation located along the shoreline of Peterborough, Victoria, Australia. The main subject is a natural arch, formed by erosion, standing prominently in the ocean. The arch is characterized by its rugged texture and layered appearance, showcasing sedimentary rock strata in shades of warm ochre and sandy brown. The arch rises from the sea, creating a dramatic silhouette against the backdrop of the deep blue ocean and the clear sky. The water surrounding",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": -38.622258333333335,
+              "longitude": 142.93171666666666
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "9WHJ+3M Peterborough VIC, Australia",
+              "city": "Peterborough",
+              "county": "Victoria",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:07:04 10:27:41",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 33.20221209526062
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Rock",
+          "confidence": 0.950268030166626,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Rock",
+                "score": 0.950268030166626
+              },
+              {
+                "source": "label",
+                "name": "Coast",
+                "score": 0.9325965046882629
+              },
+              {
+                "source": "label",
+                "name": "Geological formation",
+                "score": 0.9145938158035278
+              },
+              {
+                "source": "label",
+                "name": "Sea",
+                "score": 0.9114153385162354
+              },
+              {
+                "source": "label",
+                "name": "Coastal and oceanic landforms",
+                "score": 0.8827792406082153
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "sea-m",
+                "score": 0.43389999866485596
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Rock",
+                "score": 0.950268030166626
+              },
+              {
+                "name": "Coast",
+                "score": 0.9325965046882629
+              },
+              {
+                "name": "Geological formation",
+                "score": 0.9145938158035278
+              },
+              {
+                "name": "Sea",
+                "score": 0.9114153385162354
+              },
+              {
+                "name": "Coastal and oceanic landforms",
+                "score": 0.8827792406082153
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": -38.622258333333335,
+              "longitude": 142.93171666666666
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "9WHJ+3M Peterborough VIC, Australia",
+              "city": "Peterborough",
+              "county": "Victoria",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:07:04 10:27:41",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 15.428471088409424
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Peterborough, Victoria, Australia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Peterborough, Victoria, Australia",
+            "coordinates": {
+              "latitude": -38.622258333333335,
+              "longitude": 142.93171666666666
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Meens Edge",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 4,
+                  "vicinity": "9WFP+4V, Peterborough",
+                  "place_id": "ChIJMWRuSwChgqoRWY61oF1qfTA",
+                  "location": {
+                    "lat": -38.62724449999999,
+                    "lng": 142.9371963
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Port Campbell",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Port Campbell",
+                  "place_id": "ChIJP87jaCGggqoR4MugMKR5BQQ",
+                  "location": {
+                    "lat": -38.6190434,
+                    "lng": 142.9962812
+                  }
+                },
+                {
+                  "name": "London Bridge",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 2533,
+                  "vicinity": "Great Ocean Road, Peterborough",
+                  "place_id": "ChIJExDJO9aggqoRGKaoThTm1Mk",
+                  "location": {
+                    "lat": -38.6224139,
+                    "lng": 142.9318583
+                  }
+                },
+                {
+                  "name": "London bridge",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Peterborough",
+                  "place_id": "ChIJPfldfQChgqoR5NAGK8UBpfk",
+                  "location": {
+                    "lat": -38.6222755,
+                    "lng": 142.9318327
+                  }
+                },
+                {
+                  "name": "London Bridge Western Lookout",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Peterborough",
+                  "place_id": "ChIJfVpXNwChgqoR8NZH5rr5_yY",
+                  "location": {
+                    "lat": -38.6218107,
+                    "lng": 142.9316504
+                  }
+                },
+                {
+                  "name": "London Bridge Eastern Lookout",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Peterborough",
+                  "place_id": "ChIJQXtHAwChgqoRA0KCkTXnlLQ",
+                  "location": {
+                    "lat": -38.6230159,
+                    "lng": 142.9322818
+                  }
+                }
+              ]
+            },
+            "total_places_found": 6,
+            "photo_timestamp": "2025:07:04 10:27:41",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.44086718559265137
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/186.heic"
+    },
+    {
+      "image_filename": "186.heic",
+      "timestamp": "2026-01-28T04:02:45.293028",
+      "processing_time_seconds": 107.649278,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "London Arch, Port Campbell National Park, Victoria, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive arch shape and coastal setting suggest the London Arch, a well-known landmark in Victoria, Australia. The geological features and location match descriptions of this natural formation.",
+            "detailed_description": "The image shows the London Arch, a natural rock formation located in Port Campbell National Park, Victoria, Australia. It is characterized by its arch shape, formed by erosion from the ocean waves. The surrounding landscape includes rugged cliffs and a sandy beach, with the blue ocean extending into the horizon. The rock formation is made of limestone and is a popular tourist attraction along the Great Ocean Road.",
+            "identification": {
+              "primary": [
+                "London Arch"
+              ],
+              "location": "Port Campbell National Park, Victoria, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "London Arch",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "rock_formation",
+              "coastal_landscape",
+              "Australia"
+            ],
+            "location": "Port Campbell National Park, Victoria, Australia",
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"London Arch\"],\n        \"location\": \"Port Campbell National Park, Victoria, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"London Arch\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"rock_formation\", \"coastal_landscape\", \"Australia\"],\n    \"description\": \"The image shows the London Arch, a natural rock formation located in Port Campbell National Park, Victoria, Australia. It is characterized by its arch shape, formed by erosion from the ocean waves. The surrounding landscape includes rugged cliffs and a sandy beach, with the blue ocean extending into the horizon. The rock formation is made of limestone and is a popular tourist attraction along the Great Ocean Road.\",\n    \"reasoning\": \"The distinctive arch shape and coastal setting suggest the London Arch, a well-known landmark in Victoria, Australia. The geological features and location match descriptions of this natural formation.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 29.791877031326294
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "London Arch, Victoria, Australia",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The search results strongly suggest London Arch as the subject due to its distinctive natural archway and coastal setting. The description matches the known characteristics of London Arch, including its sedimentary composition and isolated position from the mainland. The high confidence scores from multiple sources support this identification.",
+            "identification": {
+              "primary": [
+                "London Arch"
+              ],
+              "location": "Victoria, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "London Arch",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "sedimentary_rock",
+              "natural_arch",
+              "coastal",
+              "erosion",
+              "Australia"
+            ],
+            "sources_used": [
+              "en.wikipedia.org",
+              "nps.gov"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([nps.gov]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 2,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a striking coastal rock formation characterized by a natural archway. The formation is composed of sedimentary rock, likely sandstone, with visible layers indicating geological processes over time. The arch is surrounded by deep blue ocean waters, with waves gently crashing against the base of the structure. The rock formation is isolated from the mainland, suggesting it may have been part of a larger landmass before erosion shaped it into its current form. The arch itself is w",
+            "description": "The image depicts a striking coastal rock formation characterized by a natural archway. The formation is composed of sedimentary rock, likely sandstone, with visible layers indicating geological processes over time. The arch is surrounded by deep blue ocean waters, with waves gently crashing against the base of the structure. The rock formation is isolated from the mainland, suggesting it may have been part of a larger landmass before erosion shaped it into its current form. The arch itself is w",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 77.59509301185608
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Rock",
+          "confidence": 0.950268030166626,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Rock",
+                "score": 0.950268030166626
+              },
+              {
+                "source": "label",
+                "name": "Coast",
+                "score": 0.9325965046882629
+              },
+              {
+                "source": "label",
+                "name": "Geological formation",
+                "score": 0.9145938158035278
+              },
+              {
+                "source": "label",
+                "name": "Sea",
+                "score": 0.9114153385162354
+              },
+              {
+                "source": "label",
+                "name": "Coastal and oceanic landforms",
+                "score": 0.8827792406082153
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "sea-m",
+                "score": 0.43389999866485596
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Rock",
+                "score": 0.950268030166626
+              },
+              {
+                "name": "Coast",
+                "score": 0.9325965046882629
+              },
+              {
+                "name": "Geological formation",
+                "score": 0.9145938158035278
+              },
+              {
+                "name": "Sea",
+                "score": 0.9114153385162354
+              },
+              {
+                "name": "Coastal and oceanic landforms",
+                "score": 0.8827792406082153
+              }
+            ],
+            "processing_time_seconds": 15.01170015335083
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/186.heic"
+    }
+  ]
+}

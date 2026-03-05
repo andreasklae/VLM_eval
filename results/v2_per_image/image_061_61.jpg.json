@@ -1,0 +1,631 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "61.jpg",
+      "timestamp": "2026-01-28T06:21:17.330012",
+      "processing_time_seconds": 71.286691,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 59.38214166666667,
+        "gps_longitude": 10.459444444444443,
+        "location": {
+          "formatted_address": "Kirkebakken 4, 3184 Borre, Norway",
+          "city": null,
+          "county": "Horten",
+          "country": "Norway"
+        },
+        "datetime_original": "2023:04:22 14:47:20",
+        "camera_make": "Apple",
+        "camera_model": "iPhone XR"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Church building, Horten, Norway",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and setting suggest a typical Scandinavian church, common in Norway. The presence of gravestones indicates it is part of a cemetery.",
+            "detailed_description": "The image shows a church building with a white facade and red-tiled roof, typical of Scandinavian architectural style. It is situated in a cemetery, surrounded by gravestones. The church features simple, clean lines and a traditional design. The setting includes a large tree and well-maintained grass, indicating a peaceful and serene environment.",
+            "identification": {
+              "primary": [
+                "Church building"
+              ],
+              "location": "Horten, Norway",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Church building",
+                "type": "building",
+                "confidence": 0.85
+              },
+              {
+                "name": "Gravestones",
+                "type": "monument",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "church",
+              "architecture",
+              "cemetery",
+              "Norway",
+              "building"
+            ],
+            "location": "Horten, Norway",
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Local church in Horten",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.75,
+                "reasoning": "Given the location metadata, it is likely a church in Horten, Norway."
+              },
+              {
+                "guess": "Scandinavian church architecture",
+                "specificity_level": "general",
+                "confidence": 0.85,
+                "reasoning": "The architectural style is consistent with Scandinavian churches."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Church building\"],\n        \"location\": \"Horten, Norway\",\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Church building\",\n            \"type\": \"building\",\n            \"confidence\": 0.85\n        },\n        {\n            \"name\": \"Gravestones\",\n            \"type\": \"monument\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"church\", \"architecture\", \"cemetery\", \"Norway\", \"building\"],\n    \"description\": \"The image shows a church building with a white facade and red-tiled roof, typical of Scandinavian architectural style. It is situated in a cemetery, surrounded by gravestones. The church features simple, clean lines and a traditional design. The setting includes a large tree and well-maintained grass, indicating a peaceful and serene environment.\",\n    \"reasoning\": \"The architectural style and setting suggest a typical Scandinavian church, common in Norway. The presence of gravestones indicates it is part of a cemetery.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Local church in Horten\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.75,\n            \"reasoning\": \"Given the location metadata, it is likely a church in Horten, Norway.\"\n        },\n        {\n            \"guess\": \"Scandinavian church architecture\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.85,\n            \"reasoning\": \"The architectural style is consistent with Scandinavian churches.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": 59.38214166666667,
+              "longitude": 10.459444444444443
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Kirkebakken 4, 3184 Borre, Norway",
+              "city": null,
+              "county": "Horten",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2023:04:22 14:47:20",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone XR"
+            },
+            "processing_time_seconds": 12.055722951889038
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a church surrounded by a cemetery, set against a clear blue sky. The church is constructed with white stone walls and features a red-tiled roof, typical of Scandinavian architecture. The roof is steeply pitched, and the building has a simple, rectangular form. The facade includes dark wooden elements that contrast with the white walls, adding a traditional touch to the structure. The church is situated among numerous gravestones, which vary in shape and size. Some gravestones a",
+            "description": "The image depicts a church surrounded by a cemetery, set against a clear blue sky. The church is constructed with white stone walls and features a red-tiled roof, typical of Scandinavian architecture. The roof is steeply pitched, and the building has a simple, rectangular form. The facade includes dark wooden elements that contrast with the white walls, adding a traditional touch to the structure. The church is situated among numerous gravestones, which vary in shape and size. Some gravestones a",
+            "architectural_style": "Traditional Scandinavian",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 59.38214166666667,
+              "longitude": 10.459444444444443
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Kirkebakken 4, 3184 Borre, Norway",
+              "city": null,
+              "county": "Horten",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2023:04:22 14:47:20",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone XR"
+            },
+            "processing_time_seconds": 58.60195708274841
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Leaf",
+          "confidence": 0.9719086289405823,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Leaf",
+                "score": 0.9719086289405823
+              },
+              {
+                "source": "label",
+                "name": "Branch",
+                "score": 0.9635770916938782
+              },
+              {
+                "source": "object",
+                "name": "House",
+                "score": 0.7172133326530457
+              },
+              {
+                "source": "web",
+                "name": "Tree",
+                "score": 0.35929107666015625
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Tree",
+                "score": 0.35929107666015625
+              },
+              {
+                "name": "M-tree",
+                "score": 0.2572999894618988
+              },
+              {
+                "name": "House",
+                "score": 0.04036500304937363
+              }
+            ],
+            "objects": [
+              {
+                "name": "House",
+                "score": 0.7172133326530457
+              }
+            ],
+            "labels": [
+              {
+                "name": "Leaf",
+                "score": 0.9719086289405823
+              },
+              {
+                "name": "Branch",
+                "score": 0.9635770916938782
+              },
+              {
+                "name": "Suburb",
+                "score": 0.683635950088501
+              },
+              {
+                "name": "Landscaping",
+                "score": 0.6819190979003906
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 59.38214166666667,
+              "longitude": 10.459444444444443
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Kirkebakken 4, 3184 Borre, Norway",
+              "city": null,
+              "county": "Horten",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2023:04:22 14:47:20",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone XR"
+            },
+            "processing_time_seconds": 25.692020416259766
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Horten, Norway",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Horten, Norway",
+            "coordinates": {
+              "latitude": 59.38214166666667,
+              "longitude": 10.459444444444443
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Midgard vikingsenter",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1189,
+                  "vicinity": "Birkelyveien 9, Borre",
+                  "place_id": "ChIJ16Abx420RkYRLGI5sQmoqpQ",
+                  "location": {
+                    "lat": 59.385036,
+                    "lng": 10.466654
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Midgard vikingsenter",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1189,
+                  "vicinity": "Birkelyveien 9, Borre",
+                  "place_id": "ChIJ16Abx420RkYRLGI5sQmoqpQ",
+                  "location": {
+                    "lat": 59.385036,
+                    "lng": 10.466654
+                  }
+                },
+                {
+                  "name": "Gildehallen, Vestfoldmuseene IKS",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 368,
+                  "vicinity": "Birkelyveien 10, Borre",
+                  "place_id": "ChIJD5obkcy1RkYRvf9JiBCPCz0",
+                  "location": {
+                    "lat": 59.3873706,
+                    "lng": 10.4698777
+                  }
+                },
+                {
+                  "name": "Skipsgrav (Borreparken)",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Horten",
+                  "place_id": "ChIJg4QWAr61RkYRYGYT-b8xmlc",
+                  "location": {
+                    "lat": 59.3840851,
+                    "lng": 10.4730548
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "HGO",
+                  "types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 78,
+                  "vicinity": "Raveien 10, Horten",
+                  "place_id": "ChIJ2Y_8CMq1RkYRBaA9dWLGVJk",
+                  "location": {
+                    "lat": 59.38092450000001,
+                    "lng": 10.4572659
+                  }
+                },
+                {
+                  "name": "Horten",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Raveien 11, Borre",
+                  "place_id": "ChIJoQWIPwC1RkYRGdgMPzulMoM",
+                  "location": {
+                    "lat": 59.38036469999999,
+                    "lng": 10.4557557
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Borre Kirke",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 55,
+                  "vicinity": "Kirkebakken 4, Borre",
+                  "place_id": "ChIJ7az5o8K1RkYR8zOqHSkMI_E",
+                  "location": {
+                    "lat": 59.3823792,
+                    "lng": 10.4599755
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Horten",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Horten",
+                  "place_id": "ChIJ-Xe-Y6-0RkYRYORzpNYDvkw",
+                  "location": {
+                    "lat": 59.417084,
+                    "lng": 10.4832128
+                  }
+                },
+                {
+                  "name": "Midgard vikingsenter",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1189,
+                  "vicinity": "Birkelyveien 9, Borre",
+                  "place_id": "ChIJ16Abx420RkYRLGI5sQmoqpQ",
+                  "location": {
+                    "lat": 59.385036,
+                    "lng": 10.466654
+                  }
+                },
+                {
+                  "name": "Esso",
+                  "types": [
+                    "gas_station",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 147,
+                  "vicinity": "Raveien 11, Borre",
+                  "place_id": "ChIJheX-w_S0RkYRVWpebV8cZ2o",
+                  "location": {
+                    "lat": 59.3802692,
+                    "lng": 10.455705
+                  }
+                },
+                {
+                  "name": "Shs Video",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1,
+                  "vicinity": "Sandeveien 4, Borre",
+                  "place_id": "ChIJSQZEXPO0RkYRMZTTRVzR_pI",
+                  "location": {
+                    "lat": 59.3823044,
+                    "lng": 10.4562864
+                  }
+                },
+                {
+                  "name": "Personlige Lærer",
+                  "types": [
+                    "school",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Sandeveien 5N, Klokkergården, Borre, Horten, Vestfold",
+                  "place_id": "ChIJpfMz9vO0RkYRdaHn2u8Yrfg",
+                  "location": {
+                    "lat": 59.3823678,
+                    "lng": 10.4504985
+                  }
+                }
+              ]
+            },
+            "total_places_found": 12,
+            "photo_timestamp": "2023:04:22 14:47:20",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone XR"
+            },
+            "processing_time_seconds": 0.3392040729522705
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/61.jpg"
+    },
+    {
+      "image_filename": "61.jpg",
+      "timestamp": "2026-01-28T06:22:28.649511",
+      "processing_time_seconds": 65.239707,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Church building",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of gravestones and the architectural style of the building suggest it is a church. The red roof and white walls are distinctive features often found in traditional church architecture.",
+            "detailed_description": "The image shows a church building with a red tiled roof and white walls, situated in a cemetery. The architectural style appears to be traditional, with simple lines and a pitched roof. Surrounding the church are numerous gravestones, indicating that this is a burial site. The scene is set against a clear blue sky, and there are bare trees visible, suggesting it might be early spring or late autumn.",
+            "identification": {
+              "primary": [
+                "Church building"
+              ],
+              "location": null,
+              "confidence": 0.8
+            },
+            "artifacts": [
+              {
+                "name": "Church building with red roof",
+                "type": "building",
+                "confidence": 0.8
+              },
+              {
+                "name": "Gravestones",
+                "type": "monument",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "church",
+              "cemetery",
+              "red_roof",
+              "architecture",
+              "gravestones"
+            ],
+            "location": null,
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Traditional European church",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The architectural style and setting are typical of many European churches."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Church building\"],\n        \"location\": null,\n        \"confidence\": 0.8\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Church building with red roof\",\n            \"type\": \"building\",\n            \"confidence\": 0.8\n        },\n        {\n            \"name\": \"Gravestones\",\n            \"type\": \"monument\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"church\", \"cemetery\", \"red_roof\", \"architecture\", \"gravestones\"],\n    \"description\": \"The image shows a church building with a red tiled roof and white walls, situated in a cemetery. The architectural style appears to be traditional, with simple lines and a pitched roof. Surrounding the church are numerous gravestones, indicating that this is a burial site. The scene is set against a clear blue sky, and there are bare trees visible, suggesting it might be early spring or late autumn.\",\n    \"reasoning\": \"The presence of gravestones and the architectural style of the building suggest it is a church. The red roof and white walls are distinctive features often found in traditional church architecture.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Traditional European church\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The architectural style and setting are typical of many European churches.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 11.781546831130981
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a cemetery with a prominent church building in the background. The church features a traditional architectural style, characterized by its white plastered walls and steeply pitched red-tiled roofs. The roof design includes multiple gables, which add to the visual complexity and traditional aesthetic of the structure. The facade of the church is relatively simple, with minimal ornamentation, typical of many rural churches. Adjacent to the church is a large, leafless tree, which ",
+            "description": "The image depicts a cemetery with a prominent church building in the background. The church features a traditional architectural style, characterized by its white plastered walls and steeply pitched red-tiled roofs. The roof design includes multiple gables, which add to the visual complexity and traditional aesthetic of the structure. The facade of the church is relatively simple, with minimal ornamentation, typical of many rural churches. Adjacent to the church is a large, leafless tree, which ",
+            "architectural_style": "Traditional rural church architecture",
+            "search_backends_used": [],
+            "processing_time_seconds": 53.45637011528015
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Leaf",
+          "confidence": 0.9719086289405823,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Leaf",
+                "score": 0.9719086289405823
+              },
+              {
+                "source": "label",
+                "name": "Branch",
+                "score": 0.9635770916938782
+              },
+              {
+                "source": "object",
+                "name": "House",
+                "score": 0.7172133326530457
+              },
+              {
+                "source": "web",
+                "name": "Tree",
+                "score": 0.35929107666015625
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Tree",
+                "score": 0.35929107666015625
+              },
+              {
+                "name": "M-tree",
+                "score": 0.2572999894618988
+              },
+              {
+                "name": "House",
+                "score": 0.04036500304937363
+              }
+            ],
+            "objects": [
+              {
+                "name": "House",
+                "score": 0.7172133326530457
+              }
+            ],
+            "labels": [
+              {
+                "name": "Leaf",
+                "score": 0.9719086289405823
+              },
+              {
+                "name": "Branch",
+                "score": 0.9635770916938782
+              },
+              {
+                "name": "Suburb",
+                "score": 0.683635950088501
+              },
+              {
+                "name": "Landscaping",
+                "score": 0.6819190979003906
+              }
+            ],
+            "processing_time_seconds": 23.565704107284546
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/61.jpg"
+    }
+  ]
+}

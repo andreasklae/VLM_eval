@@ -1,0 +1,496 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "75.jpg",
+      "timestamp": "2026-01-28T06:51:27.878774",
+      "processing_time_seconds": 76.920592,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 61.907605555555556,
+        "gps_longitude": 9.849905555555557,
+        "location": {
+          "formatted_address": "9FHFWR5X+2X",
+          "city": null,
+          "county": null,
+          "country": null
+        },
+        "datetime_original": "2023:09:09 15:29:22",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Mountain slope with rocky terrain",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The rocky terrain and steep slope suggest a mountainous environment. The presence of distant peaks and snow patches further supports this identification.",
+            "detailed_description": "The image shows a steep mountain slope covered with large rocks and boulders. The terrain is rugged and appears to be part of a high-altitude environment. The rocks are predominantly gray and weathered, suggesting a harsh climate. In the background, there are distant peaks and possibly some patches of snow, indicating a mountainous region.",
+            "identification": {
+              "primary": [
+                "Mountain slope with rocky terrain"
+              ],
+              "location": null,
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Rocky mountain slope",
+                "type": "natural_feature",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "mountain",
+              "rocky_terrain",
+              "outdoors"
+            ],
+            "location": null,
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Alpine mountain slope",
+                "specificity_level": "general",
+                "confidence": 0.75,
+                "reasoning": "The rocky terrain and snow patches are characteristic of alpine regions."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Mountain slope with rocky terrain\"],\n        \"location\": null,\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Rocky mountain slope\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"mountain\", \"rocky_terrain\", \"outdoors\"],\n    \"description\": \"The image shows a steep mountain slope covered with large rocks and boulders. The terrain is rugged and appears to be part of a high-altitude environment. The rocks are predominantly gray and weathered, suggesting a harsh climate. In the background, there are distant peaks and possibly some patches of snow, indicating a mountainous region.\",\n    \"reasoning\": \"The rocky terrain and steep slope suggest a mountainous environment. The presence of distant peaks and snow patches further supports this identification.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Alpine mountain slope\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.75,\n            \"reasoning\": \"The rocky terrain and snow patches are characteristic of alpine regions.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": 61.907605555555556,
+              "longitude": 9.849905555555557
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "9FHFWR5X+2X",
+              "city": null,
+              "county": null,
+              "country": null
+            },
+            "photo_timestamp": "2023:09:09 15:29:22",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 12.437932014465332
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a rugged mountain landscape characterized by a steep slope covered in loose rocks and scree. The foreground is dominated by angular, gray stones of varying sizes, which appear to be fragments of larger rock formations. These rocks are irregularly shaped and scattered across the slope, suggesting a natural process of erosion or rockfall. The texture of the rocks is rough, with visible striations and patches of lichen, indicating exposure to the elements over time. In the backgro",
+            "description": "The image depicts a rugged mountain landscape characterized by a steep slope covered in loose rocks and scree. The foreground is dominated by angular, gray stones of varying sizes, which appear to be fragments of larger rock formations. These rocks are irregularly shaped and scattered across the slope, suggesting a natural process of erosion or rockfall. The texture of the rocks is rough, with visible striations and patches of lichen, indicating exposure to the elements over time. In the backgro",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 61.907605555555556,
+              "longitude": 9.849905555555557
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "9FHFWR5X+2X",
+              "city": null,
+              "county": null,
+              "country": null
+            },
+            "photo_timestamp": "2023:09:09 15:29:22",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 63.925063133239746
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Adventure",
+          "confidence": 0.944462776184082,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Adventure",
+                "score": 0.944462776184082
+              },
+              {
+                "source": "label",
+                "name": "Rock",
+                "score": 0.9417449831962585
+              },
+              {
+                "source": "label",
+                "name": "Recreation",
+                "score": 0.8866149187088013
+              },
+              {
+                "source": "label",
+                "name": "Bedrock",
+                "score": 0.8814890384674072
+              },
+              {
+                "source": "label",
+                "name": "geological phenomenon",
+                "score": 0.8624212145805359
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Outcrop",
+                "score": 0.3097285032272339
+              }
+            ],
+            "objects": [
+              {
+                "name": "Footwear",
+                "score": 0.5406033992767334
+              }
+            ],
+            "labels": [
+              {
+                "name": "Adventure",
+                "score": 0.944462776184082
+              },
+              {
+                "name": "Rock",
+                "score": 0.9417449831962585
+              },
+              {
+                "name": "Recreation",
+                "score": 0.8866149187088013
+              },
+              {
+                "name": "Bedrock",
+                "score": 0.8814890384674072
+              },
+              {
+                "name": "geological phenomenon",
+                "score": 0.8624212145805359
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 61.907605555555556,
+              "longitude": 9.849905555555557
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "9FHFWR5X+2X",
+              "city": null,
+              "county": null,
+              "country": null
+            },
+            "photo_timestamp": "2023:09:09 15:29:22",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 30.660664796829224
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "9FHFWR5X+2X",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "9FHFWR5X+2X",
+            "coordinates": {
+              "latitude": 61.907605555555556,
+              "longitude": 9.849905555555557
+            },
+            "search_range_meters": 5000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Rondane National Park",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 1139,
+                  "vicinity": "Norway",
+                  "place_id": "ChIJH2qOR7Qva0YRmWXSEGVHfqE",
+                  "location": {
+                    "lat": 61.9315164,
+                    "lng": 9.788880899999999
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Rondane National Park",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 1139,
+                  "vicinity": "Norway",
+                  "place_id": "ChIJH2qOR7Qva0YRmWXSEGVHfqE",
+                  "location": {
+                    "lat": 61.9315164,
+                    "lng": 9.788880899999999
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "DNT Rondvassbu",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 289,
+                  "vicinity": "Rondvassbu, Otta",
+                  "place_id": "ChIJP9uDU6Uva0YRRp9Ryib6y4U",
+                  "location": {
+                    "lat": 61.8788057,
+                    "lng": 9.796426499999999
+                  }
+                },
+                {
+                  "name": "Rondane National Park",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 1139,
+                  "vicinity": "Norway",
+                  "place_id": "ChIJH2qOR7Qva0YRmWXSEGVHfqE",
+                  "location": {
+                    "lat": 61.9315164,
+                    "lng": 9.788880899999999
+                  }
+                },
+                {
+                  "name": "Storronden",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Rondane National Park, Otta",
+                  "place_id": "ChIJi0OWLXQla0YRi8hs7_7PSoo",
+                  "location": {
+                    "lat": 61.89167490000001,
+                    "lng": 9.8619928
+                  }
+                }
+              ]
+            },
+            "total_places_found": 5,
+            "photo_timestamp": "2023:09:09 15:29:22",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.29216480255126953
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/75.jpg"
+    },
+    {
+      "image_filename": "75.jpg",
+      "timestamp": "2026-01-28T06:52:44.840841",
+      "processing_time_seconds": 75.632196,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Mountain landscape with rocky terrain",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The rocky terrain and steep slope are characteristic of mountainous regions. The presence of large rocks and the distant view of peaks indicate a high-altitude environment.",
+            "detailed_description": "The image depicts a steep mountain slope covered in large, angular rocks. The terrain is rugged and appears to be part of a high-altitude environment, possibly in a mountainous region. The rocks are varied in size and shape, creating a challenging surface for hiking. The background shows a distant view of other mountain peaks, suggesting a vast and remote landscape.",
+            "identification": {
+              "primary": [
+                "Mountain landscape with rocky terrain"
+              ],
+              "location": null,
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Rocky slope",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "mountain",
+              "rocky_terrain",
+              "natural_feature",
+              "outdoor"
+            ],
+            "location": null,
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Alpine mountain region",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The rocky terrain and distant peaks are typical of alpine environments."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Mountain landscape with rocky terrain\"],\n        \"location\": null,\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Rocky slope\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"mountain\", \"rocky_terrain\", \"natural_feature\", \"outdoor\"],\n    \"description\": \"The image depicts a steep mountain slope covered in large, angular rocks. The terrain is rugged and appears to be part of a high-altitude environment, possibly in a mountainous region. The rocks are varied in size and shape, creating a challenging surface for hiking. The background shows a distant view of other mountain peaks, suggesting a vast and remote landscape.\",\n    \"reasoning\": \"The rocky terrain and steep slope are characteristic of mountainous regions. The presence of large rocks and the distant view of peaks indicate a high-altitude environment.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Alpine mountain region\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The rocky terrain and distant peaks are typical of alpine environments.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 11.857367038726807
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a rugged mountain landscape with a steep, rocky slope. The foreground is dominated by an expanse of angular, gray rocks and boulders, which appear to be part of a scree or talus slope. These rocks vary in size and shape, with some covered in patches of greenish lichen, indicating a natural, weathered environment. The slope descends sharply, leading the eye towards the background, where a dramatic mountain face is visible. This mountain face features striations and layers, sugge",
+            "description": "The image depicts a rugged mountain landscape with a steep, rocky slope. The foreground is dominated by an expanse of angular, gray rocks and boulders, which appear to be part of a scree or talus slope. These rocks vary in size and shape, with some covered in patches of greenish lichen, indicating a natural, weathered environment. The slope descends sharply, leading the eye towards the background, where a dramatic mountain face is visible. This mountain face features striations and layers, sugge",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "processing_time_seconds": 63.77209997177124
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Adventure",
+          "confidence": 0.944462776184082,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Adventure",
+                "score": 0.944462776184082
+              },
+              {
+                "source": "label",
+                "name": "Rock",
+                "score": 0.9417449831962585
+              },
+              {
+                "source": "label",
+                "name": "Recreation",
+                "score": 0.8866149187088013
+              },
+              {
+                "source": "label",
+                "name": "Bedrock",
+                "score": 0.8814890384674072
+              },
+              {
+                "source": "label",
+                "name": "geological phenomenon",
+                "score": 0.8624212145805359
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Outcrop",
+                "score": 0.3099694550037384
+              }
+            ],
+            "objects": [
+              {
+                "name": "Footwear",
+                "score": 0.5406033992767334
+              }
+            ],
+            "labels": [
+              {
+                "name": "Adventure",
+                "score": 0.944462776184082
+              },
+              {
+                "name": "Rock",
+                "score": 0.9417449831962585
+              },
+              {
+                "name": "Recreation",
+                "score": 0.8866149187088013
+              },
+              {
+                "name": "Bedrock",
+                "score": 0.8814890384674072
+              },
+              {
+                "name": "geological phenomenon",
+                "score": 0.8624212145805359
+              }
+            ],
+            "processing_time_seconds": 32.407320976257324
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/75.jpg"
+    }
+  ]
+}

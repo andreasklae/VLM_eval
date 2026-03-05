@@ -1,0 +1,503 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "77.heic",
+      "timestamp": "2026-01-28T06:56:00.717407",
+      "processing_time_seconds": 70.278647,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -39.19709722222222,
+        "gps_longitude": 175.5641777777778,
+        "location": {
+          "formatted_address": "RH37+5M Waimarino, Manawatū-Whanganui Region, New Zealand",
+          "city": "Waimarino",
+          "county": "Manawatū-Whanganui Region",
+          "country": "New Zealand"
+        },
+        "datetime_original": "2023:11:19 13:11:18",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Taranaki Falls, Tongariro National Park, New Zealand",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates the photo was taken in the Manawatū-Whanganui Region, which is home to Tongariro National Park. The waterfall's appearance and surrounding landscape match descriptions of Taranaki Falls, a well-known feature in the park.",
+            "detailed_description": "The image depicts Taranaki Falls, a prominent waterfall located in Tongariro National Park, New Zealand. The waterfall cascades over a cliff of volcanic rock, surrounded by lush vegetation typical of the region. The water flows into a rocky stream below, creating a picturesque natural scene. The area is known for its rugged terrain and diverse plant life, contributing to the scenic beauty of the park.",
+            "identification": {
+              "primary": [
+                "Taranaki Falls"
+              ],
+              "location": "Tongariro National Park, New Zealand",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Taranaki Falls",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "waterfall",
+              "natural_feature",
+              "New_Zealand",
+              "Tongariro_National_Park",
+              "rock",
+              "vegetation"
+            ],
+            "location": "Tongariro National Park, New Zealand",
+            "type": "natural_feature",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Waterfall in Tongariro National Park",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.8,
+                "reasoning": "The waterfall's characteristics and location suggest it is within Tongariro National Park, but if not Taranaki Falls, it could be another waterfall in the area."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Taranaki Falls\"],\n        \"location\": \"Tongariro National Park, New Zealand\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Taranaki Falls\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"waterfall\", \"natural_feature\", \"New_Zealand\", \"Tongariro_National_Park\", \"rock\", \"vegetation\"],\n    \"description\": \"The image depicts Taranaki Falls, a prominent waterfall located in Tongariro National Park, New Zealand. The waterfall cascades over a cliff of volcanic rock, surrounded by lush vegetation typical of the region. The water flows into a rocky stream below, creating a picturesque natural scene. The area is known for its rugged terrain and diverse plant life, contributing to the scenic beauty of the park.\",\n    \"reasoning\": \"The location metadata indicates the photo was taken in the Manawatū-Whanganui Region, which is home to Tongariro National Park. The waterfall's appearance and surrounding landscape match descriptions of Taranaki Falls, a well-known feature in the park.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Waterfall in Tongariro National Park\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.8,\n            \"reasoning\": \"The waterfall's characteristics and location suggest it is within Tongariro National Park, but if not Taranaki Falls, it could be another waterfall in the area.\"\n        }\n    ]\n}",
+            "gps_coordinates": {
+              "latitude": -39.19709722222222,
+              "longitude": 175.5641777777778
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "RH37+5M Waimarino, Manawatū-Whanganui Region, New Zealand",
+              "city": "Waimarino",
+              "county": "Manawatū-Whanganui Region",
+              "country": "New Zealand"
+            },
+            "photo_timestamp": "2023:11:19 13:11:18",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 13.021914005279541
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image captures a striking natural waterfall cascading down a rugged cliff face in the Waimarino area of the Manawatū-Whanganui Region, New Zealand. The waterfall is the central focus, with water flowing forcefully down the rocky surface, creating a misty spray at the base. The cliff is composed of dark, weathered rock, exhibiting a rough texture and vertical striations that add to the dramatic appearance. Surrounding the waterfall, the landscape is lush with dense vegetation, including shrub",
+            "description": "The image captures a striking natural waterfall cascading down a rugged cliff face in the Waimarino area of the Manawatū-Whanganui Region, New Zealand. The waterfall is the central focus, with water flowing forcefully down the rocky surface, creating a misty spray at the base. The cliff is composed of dark, weathered rock, exhibiting a rough texture and vertical striations that add to the dramatic appearance. Surrounding the waterfall, the landscape is lush with dense vegetation, including shrub",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": -39.19709722222222,
+              "longitude": 175.5641777777778
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "RH37+5M Waimarino, Manawatū-Whanganui Region, New Zealand",
+              "city": "Waimarino",
+              "county": "Manawatū-Whanganui Region",
+              "country": "New Zealand"
+            },
+            "photo_timestamp": "2023:11:19 13:11:18",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 56.44992804527283
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Taranaki Falls",
+          "confidence": 1.1776050329208374,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "all_candidates": [
+              {
+                "source": "web",
+                "name": "Taranaki Falls",
+                "score": 1.1776050329208374
+              },
+              {
+                "source": "label",
+                "name": "Body of water",
+                "score": 0.9809367656707764
+              },
+              {
+                "source": "label",
+                "name": "Water resources",
+                "score": 0.9791554808616638
+              },
+              {
+                "source": "label",
+                "name": "Waterfall",
+                "score": 0.9581116437911987
+              },
+              {
+                "source": "web",
+                "name": "Waterfall",
+                "score": 0.9438205361366272
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Taranaki Falls",
+                "score": 1.1776050329208374
+              },
+              {
+                "name": "Waterfall",
+                "score": 0.9438205361366272
+              },
+              {
+                "name": "Alsea Falls",
+                "score": 0.8281500339508057
+              },
+              {
+                "name": "Taranaki Falls Walk",
+                "score": 0.6759999990463257
+              },
+              {
+                "name": "Mount Tongariro",
+                "score": 0.5227200388908386
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.7135218977928162
+              },
+              {
+                "name": "Person",
+                "score": 0.7081173658370972
+              },
+              {
+                "name": "Person",
+                "score": 0.6824091076850891
+              },
+              {
+                "name": "Clothing",
+                "score": 0.6356339454650879
+              },
+              {
+                "name": "Clothing",
+                "score": 0.5996301770210266
+              }
+            ],
+            "labels": [
+              {
+                "name": "Body of water",
+                "score": 0.9809367656707764
+              },
+              {
+                "name": "Water",
+                "score": 0.9805576205253601
+              },
+              {
+                "name": "Water resources",
+                "score": 0.9791554808616638
+              },
+              {
+                "name": "Nature",
+                "score": 0.975189745426178
+              },
+              {
+                "name": "Waterfall",
+                "score": 0.9581116437911987
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": -39.19709722222222,
+              "longitude": 175.5641777777778
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "RH37+5M Waimarino, Manawatū-Whanganui Region, New Zealand",
+              "city": "Waimarino",
+              "county": "Manawatū-Whanganui Region",
+              "country": "New Zealand"
+            },
+            "photo_timestamp": "2023:11:19 13:11:18",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 24.561496019363403
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Waimarino, Manawatū-Whanganui Region, New Zealand",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Waimarino, Manawatū-Whanganui Region, New Zealand",
+            "coordinates": {
+              "latitude": -39.19709722222222,
+              "longitude": 175.5641777777778
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Taranaki Falls",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 1025,
+                  "vicinity": "Tongariro Northern Circuit",
+                  "place_id": "ChIJ8TN_TlQAa20RSGuM-3MA8yI",
+                  "location": {
+                    "lat": -39.1974373,
+                    "lng": 175.5643643
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Taranaki Falls",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 1025,
+                  "vicinity": "Tongariro Northern Circuit",
+                  "place_id": "ChIJ8TN_TlQAa20RSGuM-3MA8yI",
+                  "location": {
+                    "lat": -39.1974373,
+                    "lng": 175.5643643
+                  }
+                }
+              ]
+            },
+            "total_places_found": 2,
+            "photo_timestamp": "2023:11:19 13:11:18",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.30382609367370605
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/77.heic"
+    },
+    {
+      "image_filename": "77.heic",
+      "timestamp": "2026-01-28T06:57:11.023522",
+      "processing_time_seconds": 66.16939,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Taranaki Falls, Tongariro National Park, New Zealand",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The waterfall's distinctive features and the surrounding landscape are characteristic of Taranaki Falls, a well-known natural feature in Tongariro National Park.",
+            "detailed_description": "The image shows Taranaki Falls, a waterfall located in Tongariro National Park, New Zealand. The waterfall cascades over a cliff of volcanic rock, surrounded by lush vegetation typical of the park's alpine environment. The water flows into a rocky stream, creating a picturesque natural scene.",
+            "identification": {
+              "primary": [
+                "Taranaki Falls"
+              ],
+              "location": "Tongariro National Park, New Zealand",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Taranaki Falls",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "waterfall",
+              "natural_feature",
+              "New_Zealand",
+              "Tongariro_National_Park"
+            ],
+            "location": "Tongariro National Park, New Zealand",
+            "type": "natural_feature",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Taranaki Falls\"],\n        \"location\": \"Tongariro National Park, New Zealand\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Taranaki Falls\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"waterfall\", \"natural_feature\", \"New_Zealand\", \"Tongariro_National_Park\"],\n    \"description\": \"The image shows Taranaki Falls, a waterfall located in Tongariro National Park, New Zealand. The waterfall cascades over a cliff of volcanic rock, surrounded by lush vegetation typical of the park's alpine environment. The water flows into a rocky stream, creating a picturesque natural scene.\",\n    \"reasoning\": \"The waterfall's distinctive features and the surrounding landscape are characteristic of Taranaki Falls, a well-known natural feature in Tongariro National Park.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "processing_time_seconds": 9.770633935928345
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a striking natural waterfall cascading down a rugged cliff face. The waterfall is characterized by a powerful stream of water plunging vertically, creating a misty spray at the base where it meets a rocky riverbed. The cliff is composed of dark, weathered rock formations, exhibiting a rough texture and varied shades of gray and brown. Surrounding the waterfall, dense vegetation is visible, consisting of lush green shrubs and small trees that add a vibrant contrast to the rocky ",
+            "description": "The image depicts a striking natural waterfall cascading down a rugged cliff face. The waterfall is characterized by a powerful stream of water plunging vertically, creating a misty spray at the base where it meets a rocky riverbed. The cliff is composed of dark, weathered rock formations, exhibiting a rough texture and varied shades of gray and brown. Surrounding the waterfall, dense vegetation is visible, consisting of lush green shrubs and small trees that add a vibrant contrast to the rocky ",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "processing_time_seconds": 56.12764096260071
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Taranaki Falls",
+          "confidence": 1.2935506105422974,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "all_candidates": [
+              {
+                "source": "web",
+                "name": "Taranaki Falls",
+                "score": 1.2935506105422974
+              },
+              {
+                "source": "label",
+                "name": "Body of water",
+                "score": 0.9809367656707764
+              },
+              {
+                "source": "label",
+                "name": "Water resources",
+                "score": 0.9791554808616638
+              },
+              {
+                "source": "label",
+                "name": "Waterfall",
+                "score": 0.9581116437911987
+              },
+              {
+                "source": "web",
+                "name": "Waterfall",
+                "score": 0.9499951601028442
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Taranaki Falls",
+                "score": 1.2935506105422974
+              },
+              {
+                "name": "Waterfall",
+                "score": 0.9499951601028442
+              },
+              {
+                "name": "Alsea Falls",
+                "score": 0.9219000339508057
+              },
+              {
+                "name": "Taranaki Falls Walk",
+                "score": 0.7013000249862671
+              },
+              {
+                "name": "Mountain river",
+                "score": 0.5169622898101807
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.7135218977928162
+              },
+              {
+                "name": "Person",
+                "score": 0.7081173658370972
+              },
+              {
+                "name": "Person",
+                "score": 0.6824091076850891
+              },
+              {
+                "name": "Clothing",
+                "score": 0.6356339454650879
+              },
+              {
+                "name": "Clothing",
+                "score": 0.5996301770210266
+              }
+            ],
+            "labels": [
+              {
+                "name": "Body of water",
+                "score": 0.9809367656707764
+              },
+              {
+                "name": "Water",
+                "score": 0.9805576205253601
+              },
+              {
+                "name": "Water resources",
+                "score": 0.9791554808616638
+              },
+              {
+                "name": "Nature",
+                "score": 0.975189745426178
+              },
+              {
+                "name": "Waterfall",
+                "score": 0.9581116437911987
+              }
+            ],
+            "processing_time_seconds": 26.516677856445312
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/77.heic"
+    }
+  ]
+}

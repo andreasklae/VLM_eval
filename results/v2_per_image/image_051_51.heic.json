@@ -1,0 +1,921 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "51.heic",
+      "timestamp": "2026-01-28T06:01:26.444078",
+      "processing_time_seconds": 52.553565,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 1.2850249999999999,
+        "gps_longitude": 103.86458611111111,
+        "location": {
+          "formatted_address": "18 Marina Gardens Dr, Singapore 018953",
+          "city": "Singapore",
+          "county": null,
+          "country": "Singapore"
+        },
+        "datetime_original": "2022:12:06 10:09:16",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Singapore Flyer, Singapore, Singapore",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive structure and location match the known characteristics of the Singapore Flyer, a well-known landmark in Singapore.",
+            "detailed_description": "The image prominently features the Singapore Flyer, a large Ferris wheel located in Singapore. It is characterized by its modern design and significant height, offering panoramic views of the city. Surrounding the Flyer are various modern skyscrapers, contributing to the urban landscape of Singapore. The scene includes a body of water in the foreground, enhancing the visual appeal of the cityscape.",
+            "identification": {
+              "primary": [
+                "Singapore Flyer"
+              ],
+              "location": "Singapore, Singapore",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Singapore Flyer",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Ferris_wheel",
+              "modern_architecture",
+              "Singapore",
+              "urban_landscape"
+            ],
+            "location": "Singapore, Singapore",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Singapore Flyer\"],\n        \"location\": \"Singapore, Singapore\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Singapore Flyer\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Ferris_wheel\", \"modern_architecture\", \"Singapore\", \"urban_landscape\"],\n    \"description\": \"The image prominently features the Singapore Flyer, a large Ferris wheel located in Singapore. It is characterized by its modern design and significant height, offering panoramic views of the city. Surrounding the Flyer are various modern skyscrapers, contributing to the urban landscape of Singapore. The scene includes a body of water in the foreground, enhancing the visual appeal of the cityscape.\",\n    \"reasoning\": \"The distinctive structure and location match the known characteristics of the Singapore Flyer, a well-known landmark in Singapore.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 1.2850249999999999,
+              "longitude": 103.86458611111111
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "18 Marina Gardens Dr, Singapore 018953",
+              "city": "Singapore",
+              "county": null,
+              "country": "Singapore"
+            },
+            "photo_timestamp": "2022:12:06 10:09:16",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 9.455132246017456
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image prominently features a large observation wheel, known for its impressive height and modern design. The wheel consists of a circular frame supported by a central hub and spokes, resembling a giant bicycle wheel. Each spoke connects to a series of capsules or gondolas evenly distributed around the circumference, offering panoramic views. The structure is painted in a sleek white, contributing to its contemporary aesthetic. In the background, a skyline of high-rise buildings is visible, s",
+            "description": "The image prominently features a large observation wheel, known for its impressive height and modern design. The wheel consists of a circular frame supported by a central hub and spokes, resembling a giant bicycle wheel. Each spoke connects to a series of capsules or gondolas evenly distributed around the circumference, offering panoramic views. The structure is painted in a sleek white, contributing to its contemporary aesthetic. In the background, a skyline of high-rise buildings is visible, s",
+            "architectural_style": "Modern",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 1.2850249999999999,
+              "longitude": 103.86458611111111
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "18 Marina Gardens Dr, Singapore 018953",
+              "city": "Singapore",
+              "county": null,
+              "country": "Singapore"
+            },
+            "photo_timestamp": "2022:12:06 10:09:16",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 42.067116022109985
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Flower Dome (1.2846, 103.8647)",
+          "confidence": 0.5786824822425842,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Flower Dome",
+            "coordinates": {
+              "latitude": 1.2846292,
+              "longitude": 103.86469749999999
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 4032
+              },
+              {
+                "x": 0,
+                "y": 4032
+              }
+            ],
+            "context_labels": [
+              "Ferris wheel",
+              "Daytime",
+              "Amusement ride",
+              "City",
+              "Urban area"
+            ],
+            "context_objects": [
+              "Building",
+              "Building",
+              "Building"
+            ],
+            "web_entities": [
+              {
+                "name": "Ferris wheel",
+                "score": 0.5123884081840515
+              },
+              {
+                "name": "Amusement Ride",
+                "score": 0.48270028829574585
+              },
+              {
+                "name": "Amusement Park",
+                "score": 0.3190999925136566
+              },
+              {
+                "name": "Cityscape",
+                "score": 0.3178124725818634
+              },
+              {
+                "name": "Amusement",
+                "score": 0.31439998745918274
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Flower Dome",
+                "score": 0.5786824822425842,
+                "location": {
+                  "lat": 1.2846292,
+                  "lng": 103.86469749999999
+                }
+              },
+              {
+                "name": "Supertree Grove",
+                "score": 0.38677218556404114,
+                "location": {
+                  "lat": 1.2819616999999999,
+                  "lng": 103.86390569999999
+                }
+              },
+              {
+                "name": "Gardens By The Bay",
+                "score": 0.3729759752750397,
+                "location": {
+                  "lat": 1.2815683,
+                  "lng": 103.86361319999999
+                }
+              },
+              {
+                "name": "Singapore Flyer",
+                "score": 0.3624476194381714,
+                "location": {
+                  "lat": 1.2892987999999999,
+                  "lng": 103.86313679999999
+                }
+              },
+              {
+                "name": "Sands Expo & Convention Centre",
+                "score": 0.31182682514190674,
+                "location": {
+                  "lat": 1.282611,
+                  "lng": 103.8585366
+                }
+              }
+            ],
+            "processing_time_seconds": 14.5743408203125
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Singapore, Singapore",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Singapore, Singapore",
+            "coordinates": {
+              "latitude": 1.2850249999999999,
+              "longitude": 103.86458611111111
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Singapore Flyer",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 23883,
+                  "vicinity": "30 Raffles Avenue",
+                  "place_id": "ChIJzVHFNqkZ2jERboLN2YrltH8",
+                  "location": {
+                    "lat": 1.2892988,
+                    "lng": 103.8631368
+                  }
+                },
+                {
+                  "name": "Gardens by the Bay",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 154711,
+                  "vicinity": "18 Marina Gardens Drive",
+                  "place_id": "ChIJMxZ-kwQZ2jERdsqftXeWCWI",
+                  "location": {
+                    "lat": 1.2815683,
+                    "lng": 103.8636132
+                  }
+                },
+                {
+                  "name": "ArtScience Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 17828,
+                  "vicinity": "6 Bayfront Avenue",
+                  "place_id": "ChIJnWdQKQQZ2jERScXuKeFHyIE",
+                  "location": {
+                    "lat": 1.2862738,
+                    "lng": 103.8592663
+                  }
+                },
+                {
+                  "name": "Flight Experience Singapore - Boeing 737 Simulator",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 422,
+                  "vicinity": "30 Raffles Avenue, #02-06 Singapore Flyer",
+                  "place_id": "ChIJdaP5-6kZ2jERwRa6IqcXDow",
+                  "location": {
+                    "lat": 1.2892961,
+                    "lng": 103.8628871
+                  }
+                },
+                {
+                  "name": "Flower Dome",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 25713,
+                  "vicinity": "18 Marina Gardens Drive, Singapore",
+                  "place_id": "ChIJPYrvewEZ2jERK-pztVWcDig",
+                  "location": {
+                    "lat": 1.2846292,
+                    "lng": 103.8646975
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "ArtScience Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 17828,
+                  "vicinity": "6 Bayfront Avenue",
+                  "place_id": "ChIJnWdQKQQZ2jERScXuKeFHyIE",
+                  "location": {
+                    "lat": 1.2862738,
+                    "lng": 103.8592663
+                  }
+                },
+                {
+                  "name": "Sustainable Singapore Gallery",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 240,
+                  "vicinity": "8 Marina Gardens Drive, #01-03 Marina Barrage, Singapore",
+                  "place_id": "ChIJUaiuK-MY2jERdA3DpNZiblI",
+                  "location": {
+                    "lat": 1.2802738,
+                    "lng": 103.8711395
+                  }
+                },
+                {
+                  "name": "teamLab Future World",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 998,
+                  "vicinity": "6 Bayfront Avenue, Singapore",
+                  "place_id": "ChIJt5kkVgYZ2jERk2FtbA63gIY",
+                  "location": {
+                    "lat": 1.2862784,
+                    "lng": 103.8592687
+                  }
+                },
+                {
+                  "name": "ArtScience Laboratory",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 11,
+                  "vicinity": "6 Bayfront Avenue, Singapore",
+                  "place_id": "ChIJe_HXcgAZ2jERpDQOFrGDsog",
+                  "location": {
+                    "lat": 1.2863771,
+                    "lng": 103.8592491
+                  }
+                },
+                {
+                  "name": "Affordable Art Fair Singapore",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 10,
+                  "vicinity": "1 Republic Boulevard, F1 Pit Building Marina Bay Street Circuit, Singapore",
+                  "place_id": "ChIJURxWRZsZ2jER2P5QpDmQgU8",
+                  "location": {
+                    "lat": 1.2913634,
+                    "lng": 103.8638916
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Mandarin Oriental, Singapore",
+                  "types": [
+                    "spa",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 7398,
+                  "vicinity": "5 Raffles Avenue, Singapore",
+                  "place_id": "ChIJt7a1YKgZ2jER1U6XOjXyMCA",
+                  "location": {
+                    "lat": 1.2902058,
+                    "lng": 103.8580476
+                  }
+                },
+                {
+                  "name": "Satay by the Bay",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 6516,
+                  "vicinity": "18 Marina Gardens Drive, #01-19 Gardens by the Bay",
+                  "place_id": "ChIJp6HV3hwZ2jERvuwjdrUPNRg",
+                  "location": {
+                    "lat": 1.2821346,
+                    "lng": 103.8688728
+                  }
+                },
+                {
+                  "name": "CUT by Wolfgang Puck",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1876,
+                  "vicinity": "10 Bayfront Avenue, B1-71 The Shoppes, Marina Bay Sands",
+                  "place_id": "ChIJnWdQKQQZ2jERxH3g-HsHchE",
+                  "location": {
+                    "lat": 1.2850908,
+                    "lng": 103.8598243
+                  }
+                },
+                {
+                  "name": "Myeongdong Bunsik",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 38,
+                  "vicinity": "2 Bayfront Avenue, #B2-49A/50/51/52/53, The Shoppes, at, Marina Bay Sands, Singapore",
+                  "place_id": "ChIJnWdQKQQZ2jERV2i98X0w0Uk",
+                  "location": {
+                    "lat": 1.2860173,
+                    "lng": 103.8600816
+                  }
+                },
+                {
+                  "name": "Dolce Vita",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 270,
+                  "vicinity": "5 Raffles Avenue, Level 5",
+                  "place_id": "ChIJga9oQqgZ2jERl7a7lid-Sic",
+                  "location": {
+                    "lat": 1.2902868,
+                    "lng": 103.8581532
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Gardens by the Bay",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 154711,
+                  "vicinity": "18 Marina Gardens Drive",
+                  "place_id": "ChIJMxZ-kwQZ2jERdsqftXeWCWI",
+                  "location": {
+                    "lat": 1.2815683,
+                    "lng": 103.8636132
+                  }
+                },
+                {
+                  "name": "Youth Olympic Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 376,
+                  "vicinity": "Raffles Avenue",
+                  "place_id": "ChIJs9ou2akZ2jERCq21-091JMk",
+                  "location": {
+                    "lat": 1.2891019,
+                    "lng": 103.8605555
+                  }
+                },
+                {
+                  "name": "Chinese Garden",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1,
+                  "vicinity": "",
+                  "place_id": "ChIJ__8vlQMZ2jERo3R2pXUq3Ek",
+                  "location": {
+                    "lat": 1.283095,
+                    "lng": 103.8635201
+                  }
+                },
+                {
+                  "name": "Secret Life of Trees",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "",
+                  "place_id": "ChIJq6pasgMZ2jERqJPPBJNWqA0",
+                  "location": {
+                    "lat": 1.2826488,
+                    "lng": 103.8648791
+                  }
+                },
+                {
+                  "name": "Malay Garden",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "",
+                  "place_id": "ChIJAQDAmgMZ2jERDcIedeX2990",
+                  "location": {
+                    "lat": 1.2824763,
+                    "lng": 103.8630218
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Sustainable Singapore Gallery",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 240,
+                  "vicinity": "8 Marina Gardens Drive, #01-03 Marina Barrage, Singapore",
+                  "place_id": "ChIJUaiuK-MY2jERdA3DpNZiblI",
+                  "location": {
+                    "lat": 1.2802738,
+                    "lng": 103.8711395
+                  }
+                },
+                {
+                  "name": "OVAS (SINGAPORE) PTE LTD",
+                  "types": [
+                    "furniture_store",
+                    "art_gallery",
+                    "home_goods_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 26,
+                  "vicinity": "9 Raffles Blvd 02-46 Millenia Walk",
+                  "place_id": "ChIJqUKFh_AX2jERegkrn3Ji-Nw",
+                  "location": {
+                    "lat": 1.2922268,
+                    "lng": 103.8598624
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Singapore",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Singapore",
+                  "place_id": "ChIJyY4rtGcX2jERIKTarqz3AAQ",
+                  "location": {
+                    "lat": 1.2811866,
+                    "lng": 103.8503404
+                  }
+                },
+                {
+                  "name": "Mandarin Oriental, Singapore",
+                  "types": [
+                    "spa",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 7398,
+                  "vicinity": "5 Raffles Avenue, Singapore",
+                  "place_id": "ChIJt7a1YKgZ2jER1U6XOjXyMCA",
+                  "location": {
+                    "lat": 1.2902058,
+                    "lng": 103.8580476
+                  }
+                },
+                {
+                  "name": "The Ritz-Carlton, Millenia Singapore",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 6240,
+                  "vicinity": "7 Raffles Avenue, Marina Bay",
+                  "place_id": "ChIJOek7q6kZ2jERX8_FX0BTcq4",
+                  "location": {
+                    "lat": 1.2909392,
+                    "lng": 103.8599895
+                  }
+                },
+                {
+                  "name": "Singapore Flyer",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 23883,
+                  "vicinity": "30 Raffles Avenue",
+                  "place_id": "ChIJzVHFNqkZ2jERboLN2YrltH8",
+                  "location": {
+                    "lat": 1.2892988,
+                    "lng": 103.8631368
+                  }
+                },
+                {
+                  "name": "Gardens by the Bay",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 154711,
+                  "vicinity": "18 Marina Gardens Drive",
+                  "place_id": "ChIJMxZ-kwQZ2jERdsqftXeWCWI",
+                  "location": {
+                    "lat": 1.2815683,
+                    "lng": 103.8636132
+                  }
+                }
+              ]
+            },
+            "total_places_found": 27,
+            "photo_timestamp": "2022:12:06 10:09:16",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.6029119491577148
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/51.heic"
+    },
+    {
+      "image_filename": "51.heic",
+      "timestamp": "2026-01-28T06:02:19.023602",
+      "processing_time_seconds": 52.461242,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Singapore Flyer, Singapore",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive design and location of the Ferris wheel, along with the surrounding urban skyline, strongly indicate that this is the Singapore Flyer.",
+            "detailed_description": "The image features the Singapore Flyer, a large Ferris wheel located in Singapore. It is a prominent landmark known for its modern design and offers panoramic views of the city. The wheel is set against a backdrop of skyscrapers and urban architecture, with a body of water in the foreground, enhancing the scenic urban landscape.",
+            "identification": {
+              "primary": [
+                "Singapore Flyer"
+              ],
+              "location": "Singapore",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Singapore Flyer",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Ferris_wheel",
+              "modern_architecture",
+              "Singapore",
+              "urban_landscape"
+            ],
+            "location": "Singapore",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Singapore Flyer\"],\n        \"location\": \"Singapore\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Singapore Flyer\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Ferris_wheel\", \"modern_architecture\", \"Singapore\", \"urban_landscape\"],\n    \"description\": \"The image features the Singapore Flyer, a large Ferris wheel located in Singapore. It is a prominent landmark known for its modern design and offers panoramic views of the city. The wheel is set against a backdrop of skyscrapers and urban architecture, with a body of water in the foreground, enhancing the scenic urban landscape.\",\n    \"reasoning\": \"The distinctive design and location of the Ferris wheel, along with the surrounding urban skyline, strongly indicate that this is the Singapore Flyer.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 10.579214811325073
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image prominently features a large observation wheel, commonly known as a Ferris wheel, set against a backdrop of modern skyscrapers. The wheel is characterized by its sleek, white structure with numerous spokes radiating from the central hub to the outer rim, where multiple passenger capsules are evenly spaced. Each capsule is enclosed and appears to be made of glass, allowing panoramic views. The wheel is supported by a robust A-frame structure at its base, which is anchored to a building ",
+            "description": "The image prominently features a large observation wheel, commonly known as a Ferris wheel, set against a backdrop of modern skyscrapers. The wheel is characterized by its sleek, white structure with numerous spokes radiating from the central hub to the outer rim, where multiple passenger capsules are evenly spaced. Each capsule is enclosed and appears to be made of glass, allowing panoramic views. The wheel is supported by a robust A-frame structure at its base, which is anchored to a building ",
+            "architectural_style": "Contemporary",
+            "search_backends_used": [],
+            "processing_time_seconds": 41.670775175094604
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Flower Dome (1.2846, 103.8647)",
+          "confidence": 0.5786824822425842,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Flower Dome",
+            "coordinates": {
+              "latitude": 1.2846292,
+              "longitude": 103.86469749999999
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 4032
+              },
+              {
+                "x": 0,
+                "y": 4032
+              }
+            ],
+            "context_labels": [
+              "Ferris wheel",
+              "Daytime",
+              "Amusement ride",
+              "City",
+              "Urban area"
+            ],
+            "context_objects": [
+              "Building",
+              "Building",
+              "Building"
+            ],
+            "web_entities": [
+              {
+                "name": "Ferris wheel",
+                "score": 0.5123100280761719
+              },
+              {
+                "name": "Amusement Ride",
+                "score": 0.4831349551677704
+              },
+              {
+                "name": "Amusement Park",
+                "score": 0.3190999925136566
+              },
+              {
+                "name": "Cityscape",
+                "score": 0.3172416687011719
+              },
+              {
+                "name": "Amusement",
+                "score": 0.31439998745918274
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Flower Dome",
+                "score": 0.5786824822425842,
+                "location": {
+                  "lat": 1.2846292,
+                  "lng": 103.86469749999999
+                }
+              },
+              {
+                "name": "Supertree Grove",
+                "score": 0.38677218556404114,
+                "location": {
+                  "lat": 1.2819616999999999,
+                  "lng": 103.86390569999999
+                }
+              },
+              {
+                "name": "Gardens By The Bay",
+                "score": 0.3729759752750397,
+                "location": {
+                  "lat": 1.2815683,
+                  "lng": 103.86361319999999
+                }
+              },
+              {
+                "name": "Singapore Flyer",
+                "score": 0.3624476194381714,
+                "location": {
+                  "lat": 1.2892987999999999,
+                  "lng": 103.86313679999999
+                }
+              },
+              {
+                "name": "Sands Expo & Convention Centre",
+                "score": 0.31182682514190674,
+                "location": {
+                  "lat": 1.282611,
+                  "lng": 103.8585366
+                }
+              }
+            ],
+            "processing_time_seconds": 14.920440912246704
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/51.heic"
+    }
+  ]
+}

@@ -1,0 +1,591 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "205.jpg",
+      "timestamp": "2026-01-28T04:46:53.432663",
+      "processing_time_seconds": 60.052422,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 45.95869444444445,
+        "gps_longitude": 8.987538888888889,
+        "location": {
+          "formatted_address": "Arogno, Paese, 6822 Arogno, Switzerland",
+          "city": "Arogno",
+          "county": "Lugano",
+          "country": "Switzerland"
+        },
+        "datetime_original": "2025:12:16 14:55:14",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Church bell tower, Arogno, Lugano, Switzerland",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and presence of a clock face suggest a church bell tower, common in European towns. The mountainous backdrop aligns with the location metadata indicating Switzerland.",
+            "detailed_description": "The image features a church bell tower with a clock face, typical of European ecclesiastical architecture. The tower has a simple, rectangular design with a pitched roof. Adjacent buildings have traditional tiled roofs and painted facades. In the background, a misty mountain landscape is visible, characterized by rocky outcrops and sparse vegetation, typical of the Swiss Alps region.",
+            "identification": {
+              "primary": [
+                "Church bell tower"
+              ],
+              "location": "Arogno, Lugano, Switzerland",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Church bell tower",
+                "type": "building",
+                "confidence": 0.85
+              },
+              {
+                "name": "Mountain landscape",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "architecture",
+              "bell_tower",
+              "mountain",
+              "Switzerland",
+              "church"
+            ],
+            "location": "Arogno, Lugano, Switzerland",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Local church in Arogno",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.75,
+                "reasoning": "Given the location in Arogno, this could be a local church tower."
+              },
+              {
+                "guess": "Typical Swiss church architecture",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The style is consistent with Swiss church architecture."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Church bell tower\"],\n        \"location\": \"Arogno, Lugano, Switzerland\",\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Church bell tower\",\n            \"type\": \"building\",\n            \"confidence\": 0.85\n        },\n        {\n            \"name\": \"Mountain landscape\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"architecture\", \"bell_tower\", \"mountain\", \"Switzerland\", \"church\"],\n    \"description\": \"The image features a church bell tower with a clock face, typical of European ecclesiastical architecture. The tower has a simple, rectangular design with a pitched roof. Adjacent buildings have traditional tiled roofs and painted facades. In the background, a misty mountain landscape is visible, characterized by rocky outcrops and sparse vegetation, typical of the Swiss Alps region.\",\n    \"reasoning\": \"The architectural style and presence of a clock face suggest a church bell tower, common in European towns. The mountainous backdrop aligns with the location metadata indicating Switzerland.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Local church in Arogno\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.75,\n            \"reasoning\": \"Given the location in Arogno, this could be a local church tower.\"\n        },\n        {\n            \"guess\": \"Typical Swiss church architecture\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The style is consistent with Swiss church architecture.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": 45.95869444444445,
+              "longitude": 8.987538888888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Arogno, Paese, 6822 Arogno, Switzerland",
+              "city": "Arogno",
+              "county": "Lugano",
+              "country": "Switzerland"
+            },
+            "photo_timestamp": "2025:12:16 14:55:14",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 11.217419147491455
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a picturesque mountainous landscape shrouded in mist, creating a dramatic and atmospheric scene. Dominating the foreground is a church tower, characterized by its rectangular structure and topped with a pyramidal roof. The tower features a clock face with Roman numerals, providing a classic touch. Below the clock, there is a niche containing a statue, adding a religious element to the architecture. The tower is constructed from light-colored stone, contrasting with the darker, ",
+            "description": "The image depicts a picturesque mountainous landscape shrouded in mist, creating a dramatic and atmospheric scene. Dominating the foreground is a church tower, characterized by its rectangular structure and topped with a pyramidal roof. The tower features a clock face with Roman numerals, providing a classic touch. Below the clock, there is a niche containing a statue, adding a religious element to the architecture. The tower is constructed from light-colored stone, contrasting with the darker, ",
+            "architectural_style": "Traditional Swiss",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 45.95869444444445,
+              "longitude": 8.987538888888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Arogno, Paese, 6822 Arogno, Switzerland",
+              "city": "Arogno",
+              "county": "Lugano",
+              "country": "Switzerland"
+            },
+            "photo_timestamp": "2025:12:16 14:55:14",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 47.83268189430237
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "atmospheric phenomenon",
+          "confidence": 0.9622814059257507,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "atmospheric phenomenon",
+                "score": 0.9622814059257507
+              },
+              {
+                "source": "label",
+                "name": "Mist",
+                "score": 0.8937782049179077
+              },
+              {
+                "source": "label",
+                "name": "Hill station",
+                "score": 0.871948778629303
+              },
+              {
+                "source": "label",
+                "name": "Fog",
+                "score": 0.8545762300491333
+              }
+            ],
+            "web_entities": [],
+            "objects": [],
+            "labels": [
+              {
+                "name": "atmospheric phenomenon",
+                "score": 0.9622814059257507
+              },
+              {
+                "name": "Mist",
+                "score": 0.8937782049179077
+              },
+              {
+                "name": "Hill station",
+                "score": 0.871948778629303
+              },
+              {
+                "name": "Fog",
+                "score": 0.8545762300491333
+              },
+              {
+                "name": "Morning",
+                "score": 0.8356050252914429
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 45.95869444444445,
+              "longitude": 8.987538888888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Arogno, Paese, 6822 Arogno, Switzerland",
+              "city": "Arogno",
+              "county": "Lugano",
+              "country": "Switzerland"
+            },
+            "photo_timestamp": "2025:12:16 14:55:14",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 17.52329397201538
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Arogno, Lugano, Switzerland",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Arogno, Lugano, Switzerland",
+            "coordinates": {
+              "latitude": 45.95869444444445,
+              "longitude": 8.987538888888889
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "restaurants": [
+                {
+                  "name": "Locanda La Pignatta",
+                  "types": [
+                    "restaurant",
+                    "lodging",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 158,
+                  "vicinity": "Via Strada Nuova 50, Arogno",
+                  "place_id": "ChIJ_Rgy_pIuhEcRhfSMJwIrNUY",
+                  "location": {
+                    "lat": 45.9584613,
+                    "lng": 8.9878333
+                  }
+                },
+                {
+                  "name": "Cafe' de la Poste",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 20,
+                  "vicinity": "Piázza Gránda 2, Arogno",
+                  "place_id": "ChIJfxx5Q5IuhEcRB4zHcuJ0PuE",
+                  "location": {
+                    "lat": 45.9594433,
+                    "lng": 8.987091499999998
+                  }
+                },
+                {
+                  "name": "Osteria Arogno",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 103,
+                  "vicinity": "Stráda dala Gésa 7, Arogno",
+                  "place_id": "ChIJgwuebpIuhEcR6YLFKnc8_j8",
+                  "location": {
+                    "lat": 45.96010880000001,
+                    "lng": 8.987110300000003
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Oratorio di San Rocco",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Via Strada Nuova 3, Arogno",
+                  "place_id": "ChIJz-aBITMvhEcRhi33bwn6e6o",
+                  "location": {
+                    "lat": 45.95852240000001,
+                    "lng": 8.985285600000001
+                  }
+                },
+                {
+                  "name": "Chiesa di San Michele di Arogno",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Arogno",
+                  "place_id": "ChIJc6yCheUvhEcR5NX3wk3bukQ",
+                  "location": {
+                    "lat": 45.9547579,
+                    "lng": 8.9891183
+                  }
+                },
+                {
+                  "name": "Chiesa di San Vitale ad Arogno",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 5,
+                  "vicinity": "Strada da Pügèrna 34-64, Arogno",
+                  "place_id": "ChIJG5pfx5AvhEcRkIXiACGJbxQ",
+                  "location": {
+                    "lat": 45.96281939999999,
+                    "lng": 8.9824024
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Campione d'Italia",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Campione d'Italia",
+                  "place_id": "ChIJXbvYv4EuhEcRsdEFnvo6j24",
+                  "location": {
+                    "lat": 45.9703889,
+                    "lng": 8.9710399
+                  }
+                },
+                {
+                  "name": "Locanda La Pignatta",
+                  "types": [
+                    "restaurant",
+                    "lodging",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 158,
+                  "vicinity": "Via Strada Nuova 50, Arogno",
+                  "place_id": "ChIJ_Rgy_pIuhEcRhfSMJwIrNUY",
+                  "location": {
+                    "lat": 45.9584613,
+                    "lng": 8.9878333
+                  }
+                },
+                {
+                  "name": "Teatro Sociale Arogno",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 30,
+                  "vicinity": "Stráda Végia, Arogno",
+                  "place_id": "ChIJxZVQRJIuhEcRWQU2nrttiPs",
+                  "location": {
+                    "lat": 45.9593028,
+                    "lng": 8.986966899999999
+                  }
+                },
+                {
+                  "name": "Azienda Agricola Bianchi",
+                  "types": [
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 86,
+                  "vicinity": "Stráda da Röv 22a, Arogno",
+                  "place_id": "ChIJ_U_AUJUuhEcRgAOzUesi5kw",
+                  "location": {
+                    "lat": 45.9538413,
+                    "lng": 8.988815599999999
+                  }
+                },
+                {
+                  "name": "RODYON Computer Things di Antonio Pellegrini",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Strada da Carirora 13, Arogno",
+                  "place_id": "ChIJ1RH6EREphEcRMx9RPkM9ZNw",
+                  "location": {
+                    "lat": 45.955865,
+                    "lng": 8.9831156
+                  }
+                }
+              ]
+            },
+            "total_places_found": 11,
+            "photo_timestamp": "2025:12:16 14:55:14",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.7816488742828369
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/205.jpg"
+    },
+    {
+      "image_filename": "205.jpg",
+      "timestamp": "2026-01-28T04:47:53.526850",
+      "processing_time_seconds": 58.683144,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Church tower, Mountain landscape",
+          "confidence": 0.75,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The church tower is identifiable by its clock and architectural style, which suggests a traditional design. The mountain landscape is prominent and recognizable due to its natural features and misty atmosphere.",
+            "detailed_description": "The image features a church tower with a clock face, characterized by its simple architectural design. The tower is set against a dramatic mountain landscape, partially obscured by mist or fog, creating a moody and atmospheric scene. The building has a traditional style with a tiled roof and light-colored facade. The mountains in the background are rugged and covered with sparse vegetation, adding to the natural beauty of the setting.",
+            "identification": {
+              "primary": [
+                "Church tower",
+                "Mountain landscape"
+              ],
+              "location": null,
+              "confidence": 0.75
+            },
+            "artifacts": [
+              {
+                "name": "Church tower with clock",
+                "type": "building",
+                "confidence": 0.85
+              },
+              {
+                "name": "Mountain landscape",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "architecture",
+              "natural_landscape",
+              "church",
+              "mountain",
+              "mist"
+            ],
+            "location": null,
+            "type": "viewpoint",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Italian Alps region",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "The architectural style and mountainous landscape suggest a location in the Italian Alps."
+              },
+              {
+                "guess": "Swiss Alps region",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.5,
+                "reasoning": "The combination of church architecture and mountain scenery is also typical of the Swiss Alps."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Church tower\", \"Mountain landscape\"],\n        \"location\": null,\n        \"confidence\": 0.75\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Church tower with clock\",\n            \"type\": \"building\",\n            \"confidence\": 0.85\n        },\n        {\n            \"name\": \"Mountain landscape\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"architecture\", \"natural_landscape\", \"church\", \"mountain\", \"mist\"],\n    \"description\": \"The image features a church tower with a clock face, characterized by its simple architectural design. The tower is set against a dramatic mountain landscape, partially obscured by mist or fog, creating a moody and atmospheric scene. The building has a traditional style with a tiled roof and light-colored facade. The mountains in the background are rugged and covered with sparse vegetation, adding to the natural beauty of the setting.\",\n    \"reasoning\": \"The church tower is identifiable by its clock and architectural style, which suggests a traditional design. The mountain landscape is prominent and recognizable due to its natural features and misty atmosphere.\",\n    \"type\": \"viewpoint\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Italian Alps region\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The architectural style and mountainous landscape suggest a location in the Italian Alps.\"\n        },\n        {\n            \"guess\": \"Swiss Alps region\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.5,\n            \"reasoning\": \"The combination of church architecture and mountain scenery is also typical of the Swiss Alps.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 12.91291069984436
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image features a picturesque mountain landscape shrouded in mist, creating a dramatic and atmospheric scene. The mountains are rugged, with steep slopes and rocky outcrops, covered in patches of vegetation that appear dark and dense. The mist adds a mystical quality, partially obscuring the mountain's features and creating a sense of depth and mystery. In the foreground, there is a prominent clock tower, which is part of a building complex. The tower is constructed in a traditional architect",
+            "description": "The image features a picturesque mountain landscape shrouded in mist, creating a dramatic and atmospheric scene. The mountains are rugged, with steep slopes and rocky outcrops, covered in patches of vegetation that appear dark and dense. The mist adds a mystical quality, partially obscuring the mountain's features and creating a sense of depth and mystery. In the foreground, there is a prominent clock tower, which is part of a building complex. The tower is constructed in a traditional architect",
+            "architectural_style": "Traditional Mediterranean or Alpine",
+            "search_backends_used": [],
+            "processing_time_seconds": 45.76879954338074
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "atmospheric phenomenon",
+          "confidence": 0.9622814059257507,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "atmospheric phenomenon",
+                "score": 0.9622814059257507
+              },
+              {
+                "source": "label",
+                "name": "Mist",
+                "score": 0.8937782049179077
+              },
+              {
+                "source": "label",
+                "name": "Hill station",
+                "score": 0.871948778629303
+              },
+              {
+                "source": "label",
+                "name": "Fog",
+                "score": 0.8545762300491333
+              }
+            ],
+            "web_entities": [],
+            "objects": [],
+            "labels": [
+              {
+                "name": "atmospheric phenomenon",
+                "score": 0.9622814059257507
+              },
+              {
+                "name": "Mist",
+                "score": 0.8937782049179077
+              },
+              {
+                "name": "Hill station",
+                "score": 0.871948778629303
+              },
+              {
+                "name": "Fog",
+                "score": 0.8545762300491333
+              },
+              {
+                "name": "Morning",
+                "score": 0.8356050252914429
+              }
+            ],
+            "processing_time_seconds": 17.524002075195312
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/205.jpg"
+    }
+  ]
+}

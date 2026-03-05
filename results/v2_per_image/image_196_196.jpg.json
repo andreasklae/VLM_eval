@@ -1,0 +1,762 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "196.jpg",
+      "timestamp": "2026-01-28T04:26:02.138715",
+      "processing_time_seconds": 70.844568,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 47.793552777777776,
+        "gps_longitude": 13.007594444444445,
+        "location": {
+          "formatted_address": "Hangar-7, Salzburg Airport, Wilhelm-Spazier-Straße 7a, 5020 Salzburg, Austria",
+          "city": "Salzburg",
+          "county": "Salzburg",
+          "country": "Austria"
+        },
+        "datetime_original": "2025:11:17 14:40:25",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Red Bull Racing Formula 1 Car, Aircraft in Hangar-7, Salzburg, Austria",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of the Red Bull Racing car and the aircraft, combined with the distinctive architectural style, strongly suggests the location is Hangar-7 in Salzburg, which is known for displaying such items.",
+            "detailed_description": "The image shows a Red Bull Racing Formula 1 car displayed in Hangar-7, a modern architectural structure in Salzburg, Austria. Hangar-7 is known for its collection of historical aircraft and Formula 1 cars. The car features the distinctive Red Bull branding and is part of an exhibition showcasing motorsport and aviation. The hangar's architecture is characterized by its glass and steel construction, providing a sleek and contemporary backdrop.",
+            "identification": {
+              "primary": [
+                "Red Bull Racing Formula 1 Car",
+                "Aircraft in Hangar-7"
+              ],
+              "location": "Salzburg, Austria",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Red Bull Racing Formula 1 Car",
+                "type": "vehicle",
+                "confidence": 0.95
+              },
+              {
+                "name": "Aircraft in Hangar-7",
+                "type": "aircraft",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "motorsport",
+              "aviation",
+              "exhibition",
+              "Salzburg"
+            ],
+            "location": "Salzburg, Austria",
+            "type": "exhibition",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Red Bull Racing Formula 1 Car\", \"Aircraft in Hangar-7\"],\n        \"location\": \"Salzburg, Austria\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Red Bull Racing Formula 1 Car\",\n            \"type\": \"vehicle\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Aircraft in Hangar-7\",\n            \"type\": \"aircraft\",\n            \"confidence\": 0.90\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"motorsport\", \"aviation\", \"exhibition\", \"Salzburg\"],\n    \"description\": \"The image shows a Red Bull Racing Formula 1 car displayed in Hangar-7, a modern architectural structure in Salzburg, Austria. Hangar-7 is known for its collection of historical aircraft and Formula 1 cars. The car features the distinctive Red Bull branding and is part of an exhibition showcasing motorsport and aviation. The hangar's architecture is characterized by its glass and steel construction, providing a sleek and contemporary backdrop.\",\n    \"reasoning\": \"The presence of the Red Bull Racing car and the aircraft, combined with the distinctive architectural style, strongly suggests the location is Hangar-7 in Salzburg, which is known for displaying such items.\",\n    \"type\": \"exhibition\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 47.793552777777776,
+              "longitude": 13.007594444444445
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Hangar-7, Salzburg Airport, Wilhelm-Spazier-Straße 7a, 5020 Salzburg, Austria",
+              "city": "Salzburg",
+              "county": "Salzburg",
+              "country": "Austria"
+            },
+            "photo_timestamp": "2025:11:17 14:40:25",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 10.63771104812622
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Hangar-7, Salzburg, Austria",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "Hangar-7 is a well-known exhibition space in Salzburg, Austria, associated with Red Bull and known for displaying Formula 1 cars and aircraft. The description matches the typical exhibits and architectural style of Hangar-7, and the search results strongly support this identification with a perfect score.",
+            "identification": {
+              "primary": [
+                "Hangar-7"
+              ],
+              "location": "Salzburg, Austria",
+              "confidence": 1.0
+            },
+            "artifacts": [
+              {
+                "name": "Formula 1 race car with Red Bull branding",
+                "type": "race_car",
+                "confidence": 1.0
+              },
+              {
+                "name": "Vintage aircraft with polished metallic exterior",
+                "type": "aircraft",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "Formula_1",
+              "Red_Bull",
+              "vintage_aircraft",
+              "museum_exhibition",
+              "Salzburg"
+            ],
+            "sources_used": [
+              "Hangar-7"
+            ],
+            "all_candidates": [
+              "**Website**: [Hangar-7]()",
+              "**Website**: [Classic Expo Salzburg 2026]()",
+              "**Website**: [Paddock Motorsport Museum]()",
+              "**Website**: [Red Bull Ring]()",
+              "**Website**: [Audi Museum Mobile]()"
+            ],
+            "type": "museum_exhibition",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts an indoor exhibition space featuring a Formula 1 race car prominently displayed alongside an aircraft. The race car is characterized by its aerodynamic design, vibrant colors, and branding elements. It features a sleek body with a predominantly dark blue and red color scheme, adorned with logos and sponsorship decals, including prominent Red Bull branding. The tires are marked with 'P Zero,' indicating a high-performance specification. The car's design emphasizes speed and prec",
+            "description": "The image depicts an indoor exhibition space featuring a Formula 1 race car prominently displayed alongside an aircraft. The race car is characterized by its aerodynamic design, vibrant colors, and branding elements. It features a sleek body with a predominantly dark blue and red color scheme, adorned with logos and sponsorship decals, including prominent Red Bull branding. The tires are marked with 'P Zero,' indicating a high-performance specification. The car's design emphasizes speed and prec",
+            "architectural_style": "Modern",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 47.793552777777776,
+              "longitude": 13.007594444444445
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Hangar-7, Salzburg Airport, Wilhelm-Spazier-Straße 7a, 5020 Salzburg, Austria",
+              "city": "Salzburg",
+              "county": "Salzburg",
+              "country": "Austria"
+            },
+            "photo_timestamp": "2025:11:17 14:40:25",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 59.60552191734314
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Automotive Tire",
+          "confidence": 0.9772663712501526,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Automotive Tire",
+                "score": 0.9772663712501526
+              },
+              {
+                "source": "label",
+                "name": "Motor vehicle",
+                "score": 0.9692062139511108
+              },
+              {
+                "source": "label",
+                "name": "Formula One tyres",
+                "score": 0.960986316204071
+              },
+              {
+                "source": "label",
+                "name": "Car",
+                "score": 0.9524146914482117
+              },
+              {
+                "source": "label",
+                "name": "Formula 1",
+                "score": 0.950442910194397
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Racing",
+                "score": 0.38199999928474426
+              },
+              {
+                "name": "Motorsport",
+                "score": 0.34779998660087585
+              },
+              {
+                "name": "Endurance racing",
+                "score": 0.31836920976638794
+              }
+            ],
+            "objects": [
+              {
+                "name": "Tire",
+                "score": 0.7671785354614258
+              },
+              {
+                "name": "Tire",
+                "score": 0.758840024471283
+              },
+              {
+                "name": "Wheel",
+                "score": 0.7316492199897766
+              },
+              {
+                "name": "Wheel",
+                "score": 0.7160378694534302
+              },
+              {
+                "name": "Wheel",
+                "score": 0.6226076483726501
+              }
+            ],
+            "labels": [
+              {
+                "name": "Automotive Tire",
+                "score": 0.9772663712501526
+              },
+              {
+                "name": "Motor vehicle",
+                "score": 0.9692062139511108
+              },
+              {
+                "name": "Formula One tyres",
+                "score": 0.960986316204071
+              },
+              {
+                "name": "Car",
+                "score": 0.9524146914482117
+              },
+              {
+                "name": "Formula 1",
+                "score": 0.950442910194397
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 47.793552777777776,
+              "longitude": 13.007594444444445
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Hangar-7, Salzburg Airport, Wilhelm-Spazier-Straße 7a, 5020 Salzburg, Austria",
+              "city": "Salzburg",
+              "county": "Salzburg",
+              "country": "Austria"
+            },
+            "photo_timestamp": "2025:11:17 14:40:25",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 20.836920976638794
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Salzburg, Austria",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Salzburg, Austria",
+            "coordinates": {
+              "latitude": 47.793552777777776,
+              "longitude": 13.007594444444445
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "museums": [
+                {
+                  "name": "Red Bull Hangar-7",
+                  "types": [
+                    "bar",
+                    "museum",
+                    "cafe",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 18107,
+                  "vicinity": "Wilhelm-Spazier-Straße 7a, Salzburg",
+                  "place_id": "ChIJi3cNYTuQdkcRFS3E8T9lPu8",
+                  "location": {
+                    "lat": 47.79353150000001,
+                    "lng": 13.0077824
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Red Bull Hangar-7",
+                  "types": [
+                    "museum",
+                    "bar",
+                    "cafe",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 18107,
+                  "vicinity": "Wilhelm-Spazier-Straße 7a, Salzburg",
+                  "place_id": "ChIJi3cNYTuQdkcRFS3E8T9lPu8",
+                  "location": {
+                    "lat": 47.79353150000001,
+                    "lng": 13.0077824
+                  }
+                },
+                {
+                  "name": "Restaurant Ikarus",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 533,
+                  "vicinity": "Wilhelm-Spazier-Straße 7A, Salzburg",
+                  "place_id": "ChIJvTsynjyQdkcR10NE96LAmKc",
+                  "location": {
+                    "lat": 47.7936195,
+                    "lng": 13.0078326
+                  }
+                },
+                {
+                  "name": "Das Jedermann Café - Restaurant",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 11,
+                  "vicinity": "Innsbrucker Bundesstraße 105, Salzburg",
+                  "place_id": "ChIJ8f9C2yaQdkcRVAZ-_ABaorA",
+                  "location": {
+                    "lat": 47.7912674,
+                    "lng": 12.9979015
+                  }
+                },
+                {
+                  "name": "Gasthaus Kuglhof",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1028,
+                  "vicinity": "Kugelhofstraße 13, Salzburg",
+                  "place_id": "ChIJ3f3SWzmQdkcRH03bp9LWncg",
+                  "location": {
+                    "lat": 47.79234390000001,
+                    "lng": 13.0126826
+                  }
+                },
+                {
+                  "name": "Kolala Asia Buffet Restaurant",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 250,
+                  "vicinity": "Karolingerstraße 1, Salzburg",
+                  "place_id": "ChIJ9ecyUj2QdkcRadMJAThJOGU",
+                  "location": {
+                    "lat": 47.7980548,
+                    "lng": 13.0083356
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Salzburg",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Salzburg",
+                  "place_id": "ChIJsdQIqd2adkcRPfcqQaGD4cE",
+                  "location": {
+                    "lat": 47.8014154,
+                    "lng": 13.0448441
+                  }
+                },
+                {
+                  "name": "Airporthotel Salzburg",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.5,
+                  "user_ratings_total": 269,
+                  "vicinity": "Doktor-Matthias-Laireiter-Straße 9, Salzburg",
+                  "place_id": "ChIJ8ZIUqSiQdkcR2rMwV8aiCdQ",
+                  "location": {
+                    "lat": 47.7894423,
+                    "lng": 12.9966674
+                  }
+                },
+                {
+                  "name": "Salzburg Airport",
+                  "types": [
+                    "airport",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 2852,
+                  "vicinity": "Innsbrucker Bundesstraße 95, Salzburg",
+                  "place_id": "ChIJMUEWmiSQdkcRb5nIVkNvPB4",
+                  "location": {
+                    "lat": 47.7916482,
+                    "lng": 12.9986641
+                  }
+                },
+                {
+                  "name": "Kurzzeitparken P1 Salzburg Flughafen",
+                  "types": [
+                    "parking",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 50,
+                  "vicinity": "Christian-Doppler-Platz, Salzburg",
+                  "place_id": "ChIJM4FXbSaQdkcRuK3-jzF19b4",
+                  "location": {
+                    "lat": 47.79108949999999,
+                    "lng": 12.9972142
+                  }
+                },
+                {
+                  "name": "Hyundai-Partner Wolfgang Denzel Auto AG",
+                  "types": [
+                    "car_repair",
+                    "car_dealer",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 180,
+                  "vicinity": "Innsbrucker Bundesstraße 77-79, Salzburg",
+                  "place_id": "ChIJMZw6zxeQdkcRIzKlqroBbzA",
+                  "location": {
+                    "lat": 47.7996103,
+                    "lng": 13.0114761
+                  }
+                }
+              ]
+            },
+            "total_places_found": 11,
+            "photo_timestamp": "2025:11:17 14:40:25",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.3824148178100586
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/196.jpg"
+    },
+    {
+      "image_filename": "196.jpg",
+      "timestamp": "2026-01-28T04:27:13.016220",
+      "processing_time_seconds": 70.69849,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Red Bull Racing Formula 1 Car, Aircraft, Salzburg, Austria",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of Red Bull branding and the style of the Formula 1 car suggest it is part of the Red Bull Racing team. The aircraft and exhibition space align with the known features of Hangar-7 in Salzburg, which displays similar items.",
+            "detailed_description": "The image shows a Red Bull Racing Formula 1 car prominently displayed in a modern exhibition space. The car features branding from Red Bull, Infiniti, and Total, indicating its association with the Red Bull Racing team. Next to the car is a polished aircraft, reflecting the sleek design and technological focus of the exhibition. The setting is likely the Hangar-7 in Salzburg, Austria, known for showcasing aircraft and Formula 1 cars.",
+            "identification": {
+              "primary": [
+                "Red Bull Racing Formula 1 Car",
+                "Aircraft"
+              ],
+              "location": "Salzburg, Austria",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Red Bull Racing Formula 1 Car",
+                "type": "vehicle",
+                "confidence": 0.95
+              },
+              {
+                "name": "Aircraft",
+                "type": "aircraft",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "modern",
+              "motorsport",
+              "aviation",
+              "technology",
+              "exhibition"
+            ],
+            "location": "Salzburg, Austria",
+            "type": "exhibition",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Red Bull Racing Formula 1 Car\", \"Aircraft\"],\n        \"location\": \"Salzburg, Austria\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Red Bull Racing Formula 1 Car\",\n            \"type\": \"vehicle\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Aircraft\",\n            \"type\": \"aircraft\",\n            \"confidence\": 0.90\n        }\n    ],\n    \"tags\": [\"modern\", \"motorsport\", \"aviation\", \"technology\", \"exhibition\"],\n    \"description\": \"The image shows a Red Bull Racing Formula 1 car prominently displayed in a modern exhibition space. The car features branding from Red Bull, Infiniti, and Total, indicating its association with the Red Bull Racing team. Next to the car is a polished aircraft, reflecting the sleek design and technological focus of the exhibition. The setting is likely the Hangar-7 in Salzburg, Austria, known for showcasing aircraft and Formula 1 cars.\",\n    \"reasoning\": \"The presence of Red Bull branding and the style of the Formula 1 car suggest it is part of the Red Bull Racing team. The aircraft and exhibition space align with the known features of Hangar-7 in Salzburg, which displays similar items.\",\n    \"type\": \"exhibition\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 10.080127954483032
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "National Motor Museum, Beaulieu, United Kingdom",
+          "confidence": 0.75,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The search results strongly suggest the National Motor Museum as the location due to its focus on automotive history and exhibitions. The description of the modern exhibition space with a Formula 1 car and vintage aircraft aligns with the museum's offerings. The high confidence score from the nationalmotormuseum.org.uk source supports this identification.",
+            "identification": {
+              "primary": [
+                "National Motor Museum"
+              ],
+              "location": "Beaulieu, United Kingdom",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Red Bull Formula 1 race car",
+                "type": "race car",
+                "confidence": 0.95
+              },
+              {
+                "name": "Vintage aircraft",
+                "type": "aircraft",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "modern",
+              "Formula 1",
+              "vintage aircraft",
+              "glass ceiling",
+              "museum"
+            ],
+            "sources_used": [
+              "nationalmotormuseum.org.uk",
+              "corp.formula1.com"
+            ],
+            "all_candidates": [
+              "*URL*: ([nationalmotormuseum.org.uk]())",
+              "*URL*: ([corp.formula1.com]())",
+              "*URL*: ([audi-mediacenter.com]())",
+              "*URL*: ([haynesmuseum.org]())",
+              "*URL*: ([formula1.com]())"
+            ],
+            "type": "museum",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Haynes International Motor Museum",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "Haynes Museum also features automotive exhibitions, but the search results and description match less closely than the National Motor Museum."
+              },
+              {
+                "guess": "Formula 1 Exhibition Space",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "Formula 1 exhibitions could feature similar setups, but the specific combination of aircraft and car suggests a broader museum context."
+              },
+              {
+                "guess": "Audi Exhibition Center",
+                "specificity_level": "general",
+                "confidence": 0.5,
+                "reasoning": "Audi centers may display modern vehicles, but the presence of a vintage aircraft is less likely."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a sleek, modern exhibition space featuring a Formula 1 race car prominently displayed alongside a vintage aircraft. The race car is characterized by its aerodynamic design, vibrant colors, and branding. It features a combination of red, blue, and yellow hues with prominent logos, including 'Red Bull' and 'Total.' The car's design includes large rear wings, slick tires marked with 'P Zero,' and intricate detailing typical of high-performance racing vehicles. Adjacent to the car ",
+            "description": "The image depicts a sleek, modern exhibition space featuring a Formula 1 race car prominently displayed alongside a vintage aircraft. The race car is characterized by its aerodynamic design, vibrant colors, and branding. It features a combination of red, blue, and yellow hues with prominent logos, including 'Red Bull' and 'Total.' The car's design includes large rear wings, slick tires marked with 'P Zero,' and intricate detailing typical of high-performance racing vehicles. Adjacent to the car ",
+            "architectural_style": "Modern",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 60.61650729179382
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Automotive Tire",
+          "confidence": 0.9772660136222839,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Automotive Tire",
+                "score": 0.9772660136222839
+              },
+              {
+                "source": "label",
+                "name": "Motor vehicle",
+                "score": 0.969316303730011
+              },
+              {
+                "source": "label",
+                "name": "Formula One tyres",
+                "score": 0.9608661532402039
+              },
+              {
+                "source": "label",
+                "name": "Car",
+                "score": 0.9523152709007263
+              },
+              {
+                "source": "label",
+                "name": "Formula 1",
+                "score": 0.9506025314331055
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Racing",
+                "score": 0.38199999928474426
+              },
+              {
+                "name": "Motorsport",
+                "score": 0.34779998660087585
+              },
+              {
+                "name": "Endurance racing",
+                "score": 0.3184301257133484
+              }
+            ],
+            "objects": [
+              {
+                "name": "Tire",
+                "score": 0.7671785354614258
+              },
+              {
+                "name": "Tire",
+                "score": 0.758840024471283
+              },
+              {
+                "name": "Wheel",
+                "score": 0.7316492199897766
+              },
+              {
+                "name": "Wheel",
+                "score": 0.7160378694534302
+              },
+              {
+                "name": "Wheel",
+                "score": 0.6226076483726501
+              }
+            ],
+            "labels": [
+              {
+                "name": "Automotive Tire",
+                "score": 0.9772660136222839
+              },
+              {
+                "name": "Motor vehicle",
+                "score": 0.969316303730011
+              },
+              {
+                "name": "Formula One tyres",
+                "score": 0.9608661532402039
+              },
+              {
+                "name": "Car",
+                "score": 0.9523152709007263
+              },
+              {
+                "name": "Formula 1",
+                "score": 0.9506025314331055
+              }
+            ],
+            "processing_time_seconds": 20.70105814933777
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/196.jpg"
+    }
+  ]
+}

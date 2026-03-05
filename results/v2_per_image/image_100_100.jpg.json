@@ -1,0 +1,1138 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "100.jpg",
+      "timestamp": "2026-01-28T00:44:36.659826",
+      "processing_time_seconds": 62.153909,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 48.133025,
+        "gps_longitude": 11.548191666666666,
+        "location": {
+          "formatted_address": "Festzelt \"Hofbräu, Beer tent \"Hofbräu, Theresienhöhe, 80336 München, Germany",
+          "city": "München",
+          "county": "Oberbayern",
+          "country": "Germany"
+        },
+        "datetime_original": "2024:10:05 09:33:31",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Oktoberfest Tent Interior, München, Germany",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The setting, decorations, and items like beer steins and pretzels strongly suggest the Oktoberfest in Munich. The mural includes recognizable Munich landmarks, reinforcing the location.",
+            "detailed_description": "The image shows the interior of an Oktoberfest tent in Munich, Germany. The tent is bustling with people enjoying beer and pretzels, typical of the festival. The ceiling features a large mural depicting various Munich landmarks, including architectural elements like towers and arches, and scenes of traditional Bavarian culture.",
+            "identification": {
+              "primary": [
+                "Oktoberfest Tent Interior"
+              ],
+              "location": "München, Germany",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Oktoberfest Tent",
+                "type": "event_venue",
+                "confidence": 0.95
+              },
+              {
+                "name": "Mural depicting Munich landmarks",
+                "type": "artwork",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "Oktoberfest",
+              "festival",
+              "beer",
+              "mural",
+              "Munich"
+            ],
+            "location": "München, Germany",
+            "type": "event_venue",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Beer Hall Interior",
+                "specificity_level": "general",
+                "confidence": 0.75,
+                "reasoning": "The setting resembles a traditional Bavarian beer hall, which is common in Munich."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Oktoberfest Tent Interior\"],\n        \"location\": \"München, Germany\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Oktoberfest Tent\",\n            \"type\": \"event_venue\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Mural depicting Munich landmarks\",\n            \"type\": \"artwork\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"Oktoberfest\", \"festival\", \"beer\", \"mural\", \"Munich\"],\n    \"description\": \"The image shows the interior of an Oktoberfest tent in Munich, Germany. The tent is bustling with people enjoying beer and pretzels, typical of the festival. The ceiling features a large mural depicting various Munich landmarks, including architectural elements like towers and arches, and scenes of traditional Bavarian culture.\",\n    \"reasoning\": \"The setting, decorations, and items like beer steins and pretzels strongly suggest the Oktoberfest in Munich. The mural includes recognizable Munich landmarks, reinforcing the location.\",\n    \"type\": \"event_venue\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Beer Hall Interior\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.75,\n            \"reasoning\": \"The setting resembles a traditional Bavarian beer hall, which is common in Munich.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": 48.133025,
+              "longitude": 11.548191666666666
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Festzelt \"Hofbräu, Beer tent \"Hofbräu, Theresienhöhe, 80336 München, Germany",
+              "city": "München",
+              "county": "Oberbayern",
+              "country": "Germany"
+            },
+            "photo_timestamp": "2024:10:05 09:33:31",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 10.354884147644043
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([en.wikipedia.org]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts an indoor setting with a large mural on the wall. The mural is a detailed and colorful representation of a historical or cultural scene, likely related to Munich. It features a procession with figures dressed in traditional attire, including soldiers and civilians, alongside horses and carriages. Prominent architectural landmarks are visible in the mural, such as a large triumphal arch and classical buildings, which suggest a cityscape. The mural is painted in a realistic style",
+            "description": "The image depicts an indoor setting with a large mural on the wall. The mural is a detailed and colorful representation of a historical or cultural scene, likely related to Munich. It features a procession with figures dressed in traditional attire, including soldiers and civilians, alongside horses and carriages. Prominent architectural landmarks are visible in the mural, such as a large triumphal arch and classical buildings, which suggest a cityscape. The mural is painted in a realistic style",
+            "architectural_style": "Classical elements in mural",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 48.133025,
+              "longitude": 11.548191666666666
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Festzelt \"Hofbräu, Beer tent \"Hofbräu, Theresienhöhe, 80336 München, Germany",
+              "city": "München",
+              "county": "Oberbayern",
+              "country": "Germany"
+            },
+            "photo_timestamp": "2024:10:05 09:33:31",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 50.04536199569702
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Tableware",
+          "confidence": 0.9793207049369812,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Tableware",
+                "score": 0.9793207049369812
+              },
+              {
+                "source": "label",
+                "name": "Drinkware",
+                "score": 0.9730114936828613
+              },
+              {
+                "source": "label",
+                "name": "Smile",
+                "score": 0.9547299742698669
+              },
+              {
+                "source": "label",
+                "name": "Barware",
+                "score": 0.9443644285202026
+              },
+              {
+                "source": "label",
+                "name": "Table",
+                "score": 0.9368753433227539
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "light-hearted",
+                "score": 0.4343000054359436
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.8021417260169983
+              },
+              {
+                "name": "Top",
+                "score": 0.797977089881897
+              },
+              {
+                "name": "Clothing",
+                "score": 0.7829731702804565
+              },
+              {
+                "name": "Clothing",
+                "score": 0.7811415195465088
+              },
+              {
+                "name": "Clothing",
+                "score": 0.7723383903503418
+              }
+            ],
+            "labels": [
+              {
+                "name": "Tableware",
+                "score": 0.9793207049369812
+              },
+              {
+                "name": "Drinkware",
+                "score": 0.9730114936828613
+              },
+              {
+                "name": "Smile",
+                "score": 0.9547299742698669
+              },
+              {
+                "name": "Barware",
+                "score": 0.9443644285202026
+              },
+              {
+                "name": "Table",
+                "score": 0.9368753433227539
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 48.133025,
+              "longitude": 11.548191666666666
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Festzelt \"Hofbräu, Beer tent \"Hofbräu, Theresienhöhe, 80336 München, Germany",
+              "city": "München",
+              "county": "Oberbayern",
+              "country": "Germany"
+            },
+            "photo_timestamp": "2024:10:05 09:33:31",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 15.99304723739624
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "München, Oberbayern, Germany",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "München, Oberbayern, Germany",
+            "coordinates": {
+              "latitude": 48.133025,
+              "longitude": 11.548191666666666
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "German Transport Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 5066,
+                  "vicinity": "Am Bavariapark 5, München-Schwanthalerhöhe",
+                  "place_id": "ChIJLZsxWKvYnUcRFCAj2O8WP_g",
+                  "location": {
+                    "lat": 48.1326018,
+                    "lng": 11.5420722
+                  }
+                },
+                {
+                  "name": "Bavaria Statue",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 3781,
+                  "vicinity": "Theresienhöhe 16, München-Schwanthalerhöhe",
+                  "place_id": "ChIJ73Aj06zYnUcRFOO8irGMjTk",
+                  "location": {
+                    "lat": 48.13068870000001,
+                    "lng": 11.545926
+                  }
+                },
+                {
+                  "name": "St. Paul",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1569,
+                  "vicinity": "St.-Pauls-Platz 11, München-Ludwigsvorstadt-Isarvorstadt",
+                  "place_id": "ChIJq8Ded1XfnUcRl52L1Sm-2mw",
+                  "location": {
+                    "lat": 48.1363871,
+                    "lng": 11.5525711
+                  }
+                },
+                {
+                  "name": "Ruhmeshalle",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 93,
+                  "vicinity": "Theresienwiese Theresienhöhe 16, Theresienhöhe 16, München-Schwanthalerhöhe",
+                  "place_id": "ChIJN_AF06zYnUcRwcmPJcyCFQU",
+                  "location": {
+                    "lat": 48.1307233,
+                    "lng": 11.5456961
+                  }
+                },
+                {
+                  "name": "Bavariapark",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1269,
+                  "vicinity": "Munich-Schwanthalerhöhe",
+                  "place_id": "ChIJv4-uV6zYnUcRYNGuuejMyrM",
+                  "location": {
+                    "lat": 48.1310136,
+                    "lng": 11.5435815
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "German Transport Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 5066,
+                  "vicinity": "Am Bavariapark 5, München-Schwanthalerhöhe",
+                  "place_id": "ChIJLZsxWKvYnUcRFCAj2O8WP_g",
+                  "location": {
+                    "lat": 48.1326018,
+                    "lng": 11.5420722
+                  }
+                },
+                {
+                  "name": "Bavarian Zugspitze Railway locomotive gear",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 38,
+                  "vicinity": "Theresienhöhe 14A, München-Schwanthalerhöhe",
+                  "place_id": "ChIJ4zs_pqzYnUcRcYdNuWdJpek",
+                  "location": {
+                    "lat": 48.1324864,
+                    "lng": 11.5457548
+                  }
+                },
+                {
+                  "name": "Bis 1933 Haus der Reichsbannerkapelle München",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Ridlerstraße 26, München",
+                  "place_id": "ChIJW34MUgDZnUcRRyqrnNH-DRo",
+                  "location": {
+                    "lat": 48.13207019999999,
+                    "lng": 11.5367
+                  }
+                },
+                {
+                  "name": "Street Art Mural: CYRCLE x Positive-Propaganda",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Bergmannstraße, München",
+                  "place_id": "ChIJ8UF0T3LZnUcR_726BFL-K0c",
+                  "location": {
+                    "lat": 48.1376554,
+                    "lng": 11.5377761
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Hotel Westend",
+                  "types": [
+                    "real_estate_agency",
+                    "spa",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 521,
+                  "vicinity": "Schwanthalerstraße 121, München",
+                  "place_id": "ChIJIwCa1QF2nkcRgXo6U14MJXk",
+                  "location": {
+                    "lat": 48.13780889999999,
+                    "lng": 11.5452191
+                  }
+                },
+                {
+                  "name": "Flemings Hotel München-City",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1295,
+                  "vicinity": "Bayerstraße 47, München-Ludwigsvorstadt-Isarvorstadt",
+                  "place_id": "ChIJhZtM3_h1nkcRjUtR4CNk8U4",
+                  "location": {
+                    "lat": 48.1390286,
+                    "lng": 11.5570631
+                  }
+                },
+                {
+                  "name": "Zur Schwalbe",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 826,
+                  "vicinity": "Schwanthalerstraße 149, München",
+                  "place_id": "ChIJRZTo-qnYnUcR7nKFkv5VcOg",
+                  "location": {
+                    "lat": 48.13760329999999,
+                    "lng": 11.5415807
+                  }
+                },
+                {
+                  "name": "Café am Beethovenplatz",
+                  "types": [
+                    "cafe",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 1091,
+                  "vicinity": "Goethestraße 51, München-Ludwigsvorstadt-Isarvorstadt",
+                  "place_id": "ChIJ77o3clffnUcRDMly3blQ9cE",
+                  "location": {
+                    "lat": 48.1333402,
+                    "lng": 11.5588918
+                  }
+                },
+                {
+                  "name": "Hans im Glück",
+                  "types": [
+                    "night_club",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 2302,
+                  "vicinity": "Goetheplatz 2, München",
+                  "place_id": "ChIJGQwFl1DfnUcRQ_R4caDq1f0",
+                  "location": {
+                    "lat": 48.1300007,
+                    "lng": 11.5578398
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Georg Freundorfer Platz",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 197,
+                  "vicinity": "Geroltstraße 24, München-Schwanthalerhöhe",
+                  "place_id": "ChIJt_jKPanYnUcRBepWqgldkHw",
+                  "location": {
+                    "lat": 48.1341664,
+                    "lng": 11.5389742
+                  }
+                },
+                {
+                  "name": "Bavariapark",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1269,
+                  "vicinity": "Munich-Schwanthalerhöhe",
+                  "place_id": "ChIJv4-uV6zYnUcRYNGuuejMyrM",
+                  "location": {
+                    "lat": 48.1310136,
+                    "lng": 11.5435815
+                  }
+                },
+                {
+                  "name": "Frühlingsfest Theresienwiese München",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 41,
+                  "vicinity": "Munich-Schwanthalerhöhe",
+                  "place_id": "ChIJixMR4A7fnUcRht--BMNWRZ8",
+                  "location": {
+                    "lat": 48.1339854,
+                    "lng": 11.549321
+                  }
+                },
+                {
+                  "name": "Theresienwiese",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 661,
+                  "vicinity": "Bavariaring 5, München",
+                  "place_id": "ChIJiXPHVFHfnUcRpFdWLHRAhqc",
+                  "location": {
+                    "lat": 48.13577779999999,
+                    "lng": 11.5500694
+                  }
+                },
+                {
+                  "name": "Westend Kiez",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.5,
+                  "user_ratings_total": 4,
+                  "vicinity": "Theresienhöhe 6C, München",
+                  "place_id": "ChIJKy2t8xHZnUcRp7hXOvUgtqY",
+                  "location": {
+                    "lat": 48.1362154,
+                    "lng": 11.5457736
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "St. Paul",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1569,
+                  "vicinity": "St.-Pauls-Platz 11, München-Ludwigsvorstadt-Isarvorstadt",
+                  "place_id": "ChIJq8Ded1XfnUcRl52L1Sm-2mw",
+                  "location": {
+                    "lat": 48.1363871,
+                    "lng": 11.5525711
+                  }
+                },
+                {
+                  "name": "Klapa Croatia",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Schwanthalerstraße 96/98, München-Ludwigsvorstadt-Isarvorstadt",
+                  "place_id": "ChIJO0_Zjf91nkcRPXszb3T_K2I",
+                  "location": {
+                    "lat": 48.13773,
+                    "lng": 11.5508355
+                  }
+                },
+                {
+                  "name": "Katholischer Fonds für weltkirchliche und entwicklungsbezogene Bildungs- und Öffentlichkeitsarbeit",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Pettenkoferstraße 26-28, München-Ludwigsvorstadt-Isarvorstadt",
+                  "place_id": "ChIJ_wWtwsSVokcR_axWHJA38dw",
+                  "location": {
+                    "lat": 48.1353358,
+                    "lng": 11.5566027
+                  }
+                },
+                {
+                  "name": "Portugiesische Kath. Seelsorgestelle",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 4,
+                  "vicinity": "Landsberger Straße 39, München-Schwanthalerhöhe",
+                  "place_id": "ChIJ_bE2PgJ2nkcRDCH3LoiBho0",
+                  "location": {
+                    "lat": 48.13943279999999,
+                    "lng": 11.5414327
+                  }
+                },
+                {
+                  "name": "Hrvatska katolička župa München",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 86,
+                  "vicinity": "Schwanthalerstraße 96, München-Ludwigsvorstadt-Isarvorstadt",
+                  "place_id": "ChIJO0_Zjf91nkcRfqNF6kmvMGA",
+                  "location": {
+                    "lat": 48.13773,
+                    "lng": 11.5508355
+                  }
+                },
+                {
+                  "name": "Islamische Gemeinschaft Tevhid e.V.",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 79,
+                  "vicinity": "Ligsalzstraße 31A, München-Schwanthalerhöhe",
+                  "place_id": "ChIJw6OvoGl2nkcRXB7_bEpAWuI",
+                  "location": {
+                    "lat": 48.13494459999999,
+                    "lng": 11.5427457
+                  }
+                },
+                {
+                  "name": "Moschee مسجد",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 20,
+                  "vicinity": "Ligsalzstraße 31a, München-Schwanthalerhöhe",
+                  "place_id": "ChIJUTdrxQF2nkcRiwuUkzEb7nc",
+                  "location": {
+                    "lat": 48.13495889999999,
+                    "lng": 11.5427242
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "werkschau.galerie für objekte + bilder",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Schwanthalerstraße 141, München-Schwanthalerhöhe",
+                  "place_id": "ChIJASjwG6rYnUcRdW6tHscPONE",
+                  "location": {
+                    "lat": 48.1377156,
+                    "lng": 11.5427111
+                  }
+                },
+                {
+                  "name": "Studio Gabi Green",
+                  "types": [
+                    "art_gallery",
+                    "jewelry_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 4,
+                  "vicinity": "Gollierstraße 17, München-Schwanthalerhöhe",
+                  "place_id": "ChIJc6xcVqrYnUcR-VsswpXLymw",
+                  "location": {
+                    "lat": 48.13572809999999,
+                    "lng": 11.5445403
+                  }
+                },
+                {
+                  "name": "ABC Westside Galerie",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Schwanthalerstraße 176, München-Schwanthalerhöhe",
+                  "place_id": "ChIJMxSU_qnYnUcRJvmg2FCVtmE",
+                  "location": {
+                    "lat": 48.1378765,
+                    "lng": 11.5419586
+                  }
+                },
+                {
+                  "name": "Malforum München",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 22,
+                  "vicinity": "Lindwurmstraße 68, München",
+                  "place_id": "ChIJR6ZPG07fnUcRkVoB0RYJTeI",
+                  "location": {
+                    "lat": 48.12667709999999,
+                    "lng": 11.55172
+                  }
+                },
+                {
+                  "name": "Atelier für Medienkunst der HFF München",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 2,
+                  "vicinity": "Bavariastraße 6A, München",
+                  "place_id": "ChIJE7X5L03fnUcROC4EcQmAYhU",
+                  "location": {
+                    "lat": 48.1258443,
+                    "lng": 11.5447182
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Munich",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Munich",
+                  "place_id": "ChIJ2V-Mo_l1nkcRfZixfUq4DAE",
+                  "location": {
+                    "lat": 48.1351253,
+                    "lng": 11.5819806
+                  }
+                },
+                {
+                  "name": "Bavaria Boutique Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 621,
+                  "vicinity": "Gollierstraße 9, München-Schwanthalerhöhe",
+                  "place_id": "ChIJ4Vlw5qrYnUcRut4my1GUkbw",
+                  "location": {
+                    "lat": 48.1356156,
+                    "lng": 11.545954
+                  }
+                },
+                {
+                  "name": "MEININGER Hotel München Zentrum",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.6,
+                  "user_ratings_total": 2677,
+                  "vicinity": "Landsberger Straße 20b, München",
+                  "place_id": "ChIJN-wkvQF2nkcRFY1Hn9J3q64",
+                  "location": {
+                    "lat": 48.13968550000001,
+                    "lng": 11.544977
+                  }
+                },
+                {
+                  "name": "Sofitel Munich Bayerpost",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 4518,
+                  "vicinity": "Bayerstraße 12, München",
+                  "place_id": "ChIJvSMRL_l1nkcRIQuiN5lygpA",
+                  "location": {
+                    "lat": 48.1394594,
+                    "lng": 11.5567813
+                  }
+                },
+                {
+                  "name": "Hotel Seibel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 583,
+                  "vicinity": "Theresienhöhe 9, München-Schwanthalerhöhe",
+                  "place_id": "ChIJUe3D06rYnUcRyqMI-RdaHps",
+                  "location": {
+                    "lat": 48.1351484,
+                    "lng": 11.5469907
+                  }
+                }
+              ]
+            },
+            "total_places_found": 36,
+            "photo_timestamp": "2024:10:05 09:33:31",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 1.3290789127349854
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/100.jpg"
+    },
+    {
+      "image_filename": "100.jpg",
+      "timestamp": "2026-01-28T00:45:38.878131",
+      "processing_time_seconds": 58.809421,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Mural depicting Munich landmarks, Munich, Germany",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The mural includes recognizable elements from Munich, such as the Siegestor, which is a well-known landmark in the city. The style and subject matter suggest a focus on Munich's historical and cultural identity.",
+            "detailed_description": "The image shows a mural depicting various landmarks of Munich, Germany. Notable features include the distinctive architecture of Munich, such as the Siegestor (Victory Gate) and other historical buildings. The mural is painted in a realistic style, capturing the essence of the city's cultural heritage.",
+            "identification": {
+              "primary": [
+                "Mural depicting Munich landmarks"
+              ],
+              "location": "Munich, Germany",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Mural of Munich landmarks",
+                "type": "artwork",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "mural",
+              "Munich",
+              "landmarks",
+              "artwork",
+              "cultural"
+            ],
+            "location": "Munich, Germany",
+            "type": "artwork",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Mural in a beer hall during Oktoberfest",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.8,
+                "reasoning": "The setting and presence of beer steins suggest a festive environment typical of Oktoberfest in Munich."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Mural depicting Munich landmarks\"],\n        \"location\": \"Munich, Germany\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Mural of Munich landmarks\",\n            \"type\": \"artwork\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"mural\", \"Munich\", \"landmarks\", \"artwork\", \"cultural\"],\n    \"description\": \"The image shows a mural depicting various landmarks of Munich, Germany. Notable features include the distinctive architecture of Munich, such as the Siegestor (Victory Gate) and other historical buildings. The mural is painted in a realistic style, capturing the essence of the city's cultural heritage.\",\n    \"reasoning\": \"The mural includes recognizable elements from Munich, such as the Siegestor, which is a well-known landmark in the city. The style and subject matter suggest a focus on Munich's historical and cultural identity.\",\n    \"type\": \"artwork\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Mural in a beer hall during Oktoberfest\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.8,\n            \"reasoning\": \"The setting and presence of beer steins suggest a festive environment typical of Oktoberfest in Munich.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 8.96668815612793
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Vibrant mural depicting a historical European street scene",
+          "confidence": 0.7,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches a mural with European architectural elements and historical figures. The search results suggest a mural but do not specify a particular name or location, leading to a general identification of the scene depicted.",
+            "identification": {
+              "primary": [
+                "Vibrant mural depicting a historical European street scene"
+              ],
+              "location": null,
+              "confidence": 0.75
+            },
+            "artifacts": [
+              {
+                "name": "Equestrian statue",
+                "type": "artwork",
+                "confidence": 0.85
+              },
+              {
+                "name": "Triumphal arch",
+                "type": "artwork",
+                "confidence": 0.8
+              },
+              {
+                "name": "Classical European architecture",
+                "type": "artwork",
+                "confidence": 0.75
+              }
+            ],
+            "tags": [
+              "classical_european",
+              "mural",
+              "equestrian_statue",
+              "triumphal_arch",
+              "historical_scene"
+            ],
+            "sources_used": [
+              "web"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "artwork",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Mural in a European museum or cultural center",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "The mural's style and elements suggest it could be located in a museum or cultural center in Europe."
+              },
+              {
+                "guess": "Depiction of a historical European festival",
+                "specificity_level": "general",
+                "confidence": 0.65,
+                "reasoning": "The festive elements and traditional attire indicate a scene from a historical festival."
+              },
+              {
+                "guess": "Mural featuring a famous European equestrian statue",
+                "specificity_level": "very_specific",
+                "confidence": 0.6,
+                "reasoning": "The equestrian statue might represent a specific historical figure, but the search results do not confirm a specific name."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.75,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts an indoor setting with a vibrant mural painted on the wall. The mural features a lively street scene with historical architecture and figures. Prominent in the mural is a large equestrian statue, likely representing a historical figure, surrounded by lush green trees and classical buildings with red roofs. The architecture includes elements reminiscent of European styles, such as arches and columns. To the right, there is a triumphal arch, similar to those found in major Europe",
+            "description": "The image depicts an indoor setting with a vibrant mural painted on the wall. The mural features a lively street scene with historical architecture and figures. Prominent in the mural is a large equestrian statue, likely representing a historical figure, surrounded by lush green trees and classical buildings with red roofs. The architecture includes elements reminiscent of European styles, such as arches and columns. To the right, there is a triumphal arch, similar to those found in major Europe",
+            "architectural_style": "Classical European",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 49.83982300758362
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Tableware",
+          "confidence": 0.9793207049369812,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Tableware",
+                "score": 0.9793207049369812
+              },
+              {
+                "source": "label",
+                "name": "Drinkware",
+                "score": 0.9730114936828613
+              },
+              {
+                "source": "label",
+                "name": "Smile",
+                "score": 0.9547299742698669
+              },
+              {
+                "source": "label",
+                "name": "Barware",
+                "score": 0.9443644285202026
+              },
+              {
+                "source": "label",
+                "name": "Table",
+                "score": 0.9368753433227539
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "light-hearted",
+                "score": 0.4343000054359436
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.8021417260169983
+              },
+              {
+                "name": "Top",
+                "score": 0.797977089881897
+              },
+              {
+                "name": "Clothing",
+                "score": 0.7829731702804565
+              },
+              {
+                "name": "Clothing",
+                "score": 0.7811415195465088
+              },
+              {
+                "name": "Clothing",
+                "score": 0.7723383903503418
+              }
+            ],
+            "labels": [
+              {
+                "name": "Tableware",
+                "score": 0.9793207049369812
+              },
+              {
+                "name": "Drinkware",
+                "score": 0.9730114936828613
+              },
+              {
+                "name": "Smile",
+                "score": 0.9547299742698669
+              },
+              {
+                "name": "Barware",
+                "score": 0.9443644285202026
+              },
+              {
+                "name": "Table",
+                "score": 0.9368753433227539
+              }
+            ],
+            "processing_time_seconds": 15.10537600517273
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/100.jpg"
+    }
+  ]
+}

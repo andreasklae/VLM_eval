@@ -1,0 +1,1226 @@
+{
+  "image_id": 21,
+  "filename": "21.jpg",
+  "ground_truth": {
+    "description": "Photo taken from streets of Manhattan. Top of Empire State Building visible.",
+    "photographer_description": "A photo taken from the streets of Manhattan. Top of the Empire State Building is visible, which it should be able to recognize. You can see yellow taxis on the street and trees lining the street. This is obviously the streets of Manhattan, it should be able to get that both with and without metadata.",
+    "locations": [
+      {
+        "name": "Manhattan, New York City, New York, USA",
+        "hierarchy": {
+          "country": "USA",
+          "region": "New York",
+          "city": "New York City",
+          "exact": "Manhattan"
+        }
+      }
+    ],
+    "entities": [
+      {
+        "name": "Empire State Building",
+        "type": "landmark",
+        "notes": null,
+        "max_specificity": 5,
+        "importance": "high"
+      },
+      {
+        "name": "Bryant Park",
+        "type": "public_space",
+        "notes": "",
+        "max_specificity": 5,
+        "added_by": "human_evaluator",
+        "importance": "medium"
+      },
+      {
+        "name": "Avenue of the Americas (Sixth Avenue)",
+        "type": "infrastructure",
+        "notes": "",
+        "max_specificity": 5,
+        "added_by": "human_evaluator",
+        "importance": "medium"
+      },
+      {
+        "name": "Salesforce Tower at Bryant Park",
+        "type": "building",
+        "notes": "",
+        "max_specificity": 5,
+        "added_by": "human_evaluator",
+        "importance": "low"
+      },
+      {
+        "name": "Bank of America Tower",
+        "type": "building",
+        "notes": "",
+        "max_specificity": 5,
+        "added_by": "human_evaluator",
+        "importance": "low"
+      },
+      {
+        "name": "Bryant Park Studios",
+        "type": "building",
+        "notes": "",
+        "max_specificity": 5,
+        "added_by": "human_evaluator",
+        "importance": "low"
+      }
+    ],
+    "scene_type": [
+      "urban",
+      "cityscape"
+    ],
+    "key_visual_elements": [
+      "Empire State Building (upper portion)",
+      "Manhattan street scene",
+      "Yellow taxis (on street)",
+      "Trees lining the street",
+      "Tall buildings"
+    ],
+    "max_specificity": "Specific",
+    "difficulty": "Easy",
+    "notes": "Should recognize Empire State Building and Manhattan.",
+    "gps_metadata": {
+      "gps_latitude": 40.75539722222222,
+      "gps_longitude": -73.9837111111111,
+      "reverse_geocoded": {
+        "formatted_address": "42 St-Bryant Pk, New York, NY 10036, USA",
+        "city": "New York",
+        "county": "New York County",
+        "country": "United States"
+      }
+    },
+    "difficulty_with_gps": "easy",
+    "difficulty_without_gps": "easy",
+    "image_categories": [
+      "landmark",
+      "urban"
+    ]
+  },
+  "model_runs": [
+    {
+      "image_filename": "21.jpg",
+      "use_gps": true,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "Street-level view in Midtown Manhattan on a clear day. The scene looks down a north–south avenue framed by modern office towers with glass curtain walls; the left-hand tower is wrapped in scaffolding. Centered in the distance is the Empire State Building with its tiered Art Deco crown and spire. In the foreground are New York City traffic lights, a crosswalk, and a green street sign for W 43 St. Yellow taxis and pedestrians move along the busy street. On the right side, a line of mature trees and small kiosks indicates the edge of a park consistent with Bryant Park. Lighting is bright with blue sky and scattered clouds.",
+            "photographer_location": [
+              {
+                "name": "New York, United States",
+                "confidence": 0.96
+              },
+              {
+                "name": "Midtown Manhattan, New York, United States",
+                "confidence": 0.9
+              },
+              {
+                "name": "Sixth Avenue & West 43rd Street, Manhattan, New York, United States",
+                "confidence": 0.7
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Empire State Building, 350 Fifth Avenue, Manhattan, New York, United States",
+                "confidence": 0.99
+              },
+              {
+                "name": "Bryant Park, Midtown Manhattan, New York, United States",
+                "confidence": 0.75
+              }
+            ],
+            "entities": [
+              {
+                "name": "Empire State Building",
+                "type": "landmark",
+                "confidence": 0.99,
+                "notes": "Iconic NYC skyscraper with spire; completed 1931."
+              },
+              {
+                "name": "Empire State Building",
+                "type": "building",
+                "confidence": 0.99,
+                "notes": "350 Fifth Avenue; limestone facade with Art Deco setbacks and spire."
+              },
+              {
+                "name": "Art Deco",
+                "type": "architectural_style",
+                "confidence": 0.9,
+                "notes": "Style exemplified by the Empire State Building’s stepped massing and crown; 1930s."
+              },
+              {
+                "name": "Bryant Park",
+                "type": "public_space",
+                "confidence": 0.75,
+                "notes": "Tree-lined park visible along the right side of the avenue."
+              },
+              {
+                "name": "Avenue of the Americas (Sixth Avenue)",
+                "type": "infrastructure",
+                "confidence": 0.82,
+                "notes": "Primary avenue running through the scene."
+              },
+              {
+                "name": "West 43rd Street street sign",
+                "type": "signage",
+                "confidence": 0.85,
+                "notes": "Green street sign beneath traffic light at the intersection."
+              },
+              {
+                "name": "Midtown Manhattan",
+                "type": "district",
+                "confidence": 0.95,
+                "notes": "Central business district context of the view."
+              },
+              {
+                "name": "One Bryant Park (Bank of America Tower)",
+                "type": "building",
+                "confidence": 0.4,
+                "notes": "Possible reflective glass-and-metal facade at right edge."
+              },
+              {
+                "name": "1095 Avenue of the Americas (Salesforce Tower at Bryant Park)",
+                "type": "building",
+                "confidence": 0.35,
+                "notes": "Possible green-glass grid office tower under scaffolding on the left."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "A street-level view in Midtown Manhattan with a clear blue sky. In the foreground, a busy city street features pedestrians and yellow cabs. On the left, a tall glass-clad building under construction or renovation lines the block, while to the right another modern high-rise frames the scene. In the distance, the iconic Empire State Building rises above the surrounding midtown skyline, its distinctive Art Deco spire and stepped silhouette prominent. A street corner sign indicates West 34th Street. The scene conveys a typical busy avenue near a major Manhattan landmark, with trees lining the sidewalk and a mix of old and new architecture contributing to a dense urban canyon.",
+            "photographer_location": [
+              {
+                "name": "West 34th Street, Manhattan, New York, United States",
+                "confidence": 0.92
+              },
+              {
+                "name": "Midtown Manhattan, New York, United States",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Empire State Building, Midtown Manhattan, New York, United States",
+                "confidence": 0.92
+              }
+            ],
+            "entities": [
+              {
+                "name": "Empire State Building",
+                "type": "landmark",
+                "confidence": 0.92,
+                "notes": "Art Deco skyscraper completed in 1931; iconic NYC skyline feature."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "Daytime street scene in Midtown Manhattan looking south down Sixth Avenue (Avenue of the Americas) from near West 43rd Street by Bryant Park. The Empire State Building is centered in the distance, showing its stepped Art Deco crown and tall antenna above surrounding mid‑rise buildings. In the left foreground a modern glass curtain‑wall office tower is wrapped in green safety netting and scaffolding. At street level are yellow traffic lights, a pedestrian crossing signal, and street signs for W 43 St and One Way. The right side shows the leafy edge of Bryant Park and reflective modern towers. Numerous yellow taxis and cars move along the avenue under a bright sky with scattered clouds.",
+            "photographer_location": [
+              {
+                "name": "42 St–Bryant Park, Manhattan, New York City, New York, USA",
+                "confidence": 0.96
+              },
+              {
+                "name": "Bryant Park, Manhattan, New York City, New York, USA",
+                "confidence": 0.94
+              },
+              {
+                "name": "Midtown Manhattan, New York City, New York, USA",
+                "confidence": 0.93
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Empire State Building, Midtown South, Manhattan, New York City, New York, USA",
+                "confidence": 0.97
+              },
+              {
+                "name": "Sixth Avenue (Avenue of the Americas), Manhattan, New York City, New York, USA",
+                "confidence": 0.9
+              },
+              {
+                "name": "Bryant Park, Manhattan, New York City, New York, USA",
+                "confidence": 0.88
+              }
+            ],
+            "entities": [
+              {
+                "name": "Empire State Building",
+                "type": "landmark",
+                "confidence": 0.99,
+                "notes": "Iconic New York City skyscraper with spire; visible centered in distance."
+              },
+              {
+                "name": "Empire State Building",
+                "type": "building",
+                "confidence": 0.99,
+                "notes": "Art Deco skyscraper completed 1931, 102 stories."
+              },
+              {
+                "name": "Art Deco",
+                "type": "architectural_style",
+                "confidence": 0.9,
+                "notes": "Style of the Empire State Building’s tiered crown."
+              },
+              {
+                "name": "Bryant Park",
+                "type": "public_space",
+                "confidence": 0.93,
+                "notes": "Tree canopies visible on the mid‑right along Sixth Avenue."
+              },
+              {
+                "name": "Sixth Avenue (Avenue of the Americas)",
+                "type": "infrastructure",
+                "confidence": 0.95,
+                "notes": "Primary north–south avenue shown; viewpoint looks south."
+              },
+              {
+                "name": "West 43rd Street",
+                "type": "infrastructure",
+                "confidence": 0.92,
+                "notes": "Intersection indicated by the visible W 43 St street sign."
+              },
+              {
+                "name": "W 43 St street sign",
+                "type": "signage",
+                "confidence": 0.95,
+                "notes": null
+              },
+              {
+                "name": "Midtown Manhattan",
+                "type": "district",
+                "confidence": 0.95,
+                "notes": "Neighborhood context of the scene."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "Sunny street-level view in Midtown Manhattan. In the foreground to the left is a tall glass-clad building with green-tinted windows, and to the right another tall modern structure with vertical lines. Between them a row of mid-rise beige and brownstone-style buildings lines the street. The street is active with yellow taxis, other vehicles, and pedestrians, with a traffic signal and crosswalk signs visible. A few trees line mid-block. In the distance, the Empire State Building rises centered in the skyline under a bright blue sky. The photo appears to be taken from a corner near Bryant Park (around 42nd Street), looking toward Fifth Avenue where the Empire State Building sits on the skyline.",
+            "photographer_location": [
+              {
+                "name": "Bryant Park, New York, NY",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Midtown Manhattan, New York, NY",
+                "confidence": 0.85
+              }
+            ],
+            "entities": [
+              {
+                "name": "Empire State Building",
+                "type": "landmark",
+                "confidence": 0.92,
+                "notes": "Iconic Art Deco skyscraper with spire visible in distance."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A street-level view looking south down Avenue of the Americas (6th Avenue) in Midtown Manhattan, New York City. The central focal point is the Empire State Building, rising in the distance against a blue sky with scattered clouds. In the immediate foreground on the left (east side of the avenue), a large building is completely covered in blue scaffolding and netting; based on its location between 42nd and 43rd Streets, this is the Grace Building undergoing renovation. On the right (west side), the modern glass facade of the Bank of America Tower (One Bryant Park) is visible, characterized by its horizontal louvers. Further down on the left, the green trees of Bryant Park are visible. The street is active with traffic, including yellow taxis and black SUVs, and pedestrians. A green street sign in the foreground clearly reads 'W 43 St' and 'Americas', confirming the location.",
+            "photographer_location": [
+              {
+                "name": "Intersection of West 43rd Street and Avenue of the Americas (6th Ave), New York, NY",
+                "confidence": 1.0
+              },
+              {
+                "name": "Midtown Manhattan",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Empire State Building",
+                "confidence": 1.0
+              },
+              {
+                "name": "Bryant Park",
+                "confidence": 0.95
+              },
+              {
+                "name": "Avenue of the Americas",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "Empire State Building",
+                "type": "landmark",
+                "confidence": 1.0,
+                "notes": "Art Deco skyscraper located at 350 Fifth Avenue"
+              },
+              {
+                "name": "Grace Building",
+                "type": "building",
+                "confidence": 0.9,
+                "notes": "1114 Avenue of the Americas; covered in blue scaffolding/netting"
+              },
+              {
+                "name": "Bank of America Tower",
+                "type": "building",
+                "confidence": 0.9,
+                "notes": "One Bryant Park; horizontal louvers visible on facade"
+              },
+              {
+                "name": "Bryant Park",
+                "type": "public_space",
+                "confidence": 0.95,
+                "notes": "Visible as trees on the left side"
+              },
+              {
+                "name": "Avenue of the Americas",
+                "type": "infrastructure",
+                "confidence": 1.0,
+                "notes": "6th Avenue"
+              },
+              {
+                "name": "West 43rd Street",
+                "type": "infrastructure",
+                "confidence": 1.0,
+                "notes": "Identified by street sign"
+              },
+              {
+                "name": "Street Sign",
+                "type": "signage",
+                "confidence": 1.0,
+                "notes": "Reads 'W 43 St' and 'Americas'"
+              },
+              {
+                "name": "Yellow Taxi",
+                "type": "other",
+                "confidence": 0.95,
+                "notes": "NYC taxi"
+              },
+              {
+                "name": "Scaffolding",
+                "type": "other",
+                "confidence": 1.0,
+                "notes": "Covering the building on the left"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A street-level view in Midtown Manhattan looking south down Avenue of the Americas (6th Avenue) from the intersection of West 43rd Street. On the left, a modern skyscraper with a green glass facade (1095 Avenue of the Americas) is partially covered in blue scaffolding. In the center-right background, the iconic Art Deco spire of the Empire State Building rises above the city skyline. In the middle ground, the lush green trees of Bryant Park are visible. The foreground features typical New York City street elements including traffic lights, street signs for 'W 43 ST' and 'Americas', yellow taxis, and pedestrians. The sky is clear blue with a few wispy clouds.",
+            "photographer_location": [
+              {
+                "name": "Intersection of West 43rd Street and Avenue of the Americas, Manhattan, New York City, New York, United States",
+                "confidence": 0.98
+              },
+              {
+                "name": "6th Avenue, New York City",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Midtown Manhattan, New York City, New York, United States",
+                "confidence": 0.95
+              },
+              {
+                "name": "Empire State Building, New York City",
+                "confidence": 0.99
+              },
+              {
+                "name": "Bryant Park, New York City",
+                "confidence": 0.95
+              }
+            ],
+            "entities": [
+              {
+                "name": "Empire State Building",
+                "type": "landmark",
+                "confidence": 1.0,
+                "notes": "Art Deco skyscraper designed by Shreve, Lamb & Harmon, completed in 1931."
+              },
+              {
+                "name": "Bryant Park",
+                "type": "public_space",
+                "confidence": 0.95,
+                "notes": "A 9.6-acre public park located in the New York City borough of Manhattan."
+              },
+              {
+                "name": "1095 Avenue of the Americas",
+                "type": "building",
+                "confidence": 0.9,
+                "notes": "Also known as the Salesforce Tower, featuring a prominent green glass curtain wall."
+              },
+              {
+                "name": "Avenue of the Americas",
+                "type": "infrastructure",
+                "confidence": 0.98,
+                "notes": "Commonly known as Sixth Avenue."
+              },
+              {
+                "name": "West 43rd Street",
+                "type": "infrastructure",
+                "confidence": 1.0,
+                "notes": null
+              },
+              {
+                "name": "Art Deco",
+                "type": "architectural_style",
+                "confidence": 0.95,
+                "notes": "The style of the Empire State Building."
+              },
+              {
+                "name": "Modernism",
+                "type": "architectural_style",
+                "confidence": 0.85,
+                "notes": "The style of the glass skyscraper on the left."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "Bryant Park",
+                "type": "landmark",
+                "confidence": 0.38337647914886475,
+                "notes": null
+              },
+              {
+                "name": "Bryant Park Studios",
+                "type": "landmark",
+                "confidence": 0.24920649826526642,
+                "notes": null
+              },
+              {
+                "name": "Times Square",
+                "type": "landmark",
+                "confidence": 0.2289903610944748,
+                "notes": null
+              },
+              {
+                "name": "Stephen Sondheim Theatre",
+                "type": "landmark",
+                "confidence": 0.20011302828788757,
+                "notes": null
+              },
+              {
+                "name": "Car",
+                "type": "other",
+                "confidence": 0.7644000053405762,
+                "notes": null
+              },
+              {
+                "name": "SUV",
+                "type": "other",
+                "confidence": 0.6616460084915161,
+                "notes": null
+              },
+              {
+                "name": "Compact car",
+                "type": "other",
+                "confidence": 0.6040500402450562,
+                "notes": null
+              },
+              {
+                "name": "Skyscraper",
+                "type": "other",
+                "confidence": 0.5757763981819153,
+                "notes": null
+              },
+              {
+                "name": "Minivan",
+                "type": "other",
+                "confidence": 0.5623500347137451,
+                "notes": null
+              },
+              {
+                "name": "Apartment",
+                "type": "artwork",
+                "confidence": 0.5532237887382507,
+                "notes": null
+              },
+              {
+                "name": "Lincoln MKS",
+                "type": "other",
+                "confidence": 0.5152442455291748,
+                "notes": null
+              },
+              {
+                "name": "Daewoo Tosca",
+                "type": "other",
+                "confidence": 0.4993589520454407,
+                "notes": null
+              },
+              {
+                "name": "High-rise building",
+                "type": "other",
+                "confidence": 0.48986509442329407,
+                "notes": null
+              },
+              {
+                "name": "Compact MPV",
+                "type": "other",
+                "confidence": 0.40073859691619873,
+                "notes": null
+              },
+              {
+                "name": "Skyscraper",
+                "type": "other",
+                "confidence": 0.9879350662231445,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Building",
+                "type": "other",
+                "confidence": 0.9867658615112305,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Urban area",
+                "type": "other",
+                "confidence": 0.9824994802474976,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Daytime",
+                "type": "other",
+                "confidence": 0.981783390045166,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "City",
+                "type": "other",
+                "confidence": 0.9783521294593811,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Metropolitan area",
+                "type": "other",
+                "confidence": 0.9736056923866272,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "High-rise building",
+                "type": "other",
+                "confidence": 0.9704422354698181,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Commercial building",
+                "type": "other",
+                "confidence": 0.9440593123435974,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Tower",
+                "type": "other",
+                "confidence": 0.943606972694397,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Metropolis",
+                "type": "other",
+                "confidence": 0.9406687617301941,
+                "notes": "Detected via label detection"
+              }
+            ],
+            "landmark_name": "Bryant Park"
+          }
+        }
+      ]
+    },
+    {
+      "image_filename": "21.jpg",
+      "use_gps": false,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "Street-level view in Midtown Manhattan looking south along a busy avenue. The Empire State Building dominates the center background with its distinctive Art Deco massing and tall antenna spire. Foreground shows a New York City intersection with a W 43 St street sign, traffic lights, and one‑way signage. Modern glass curtain‑wall office towers line both sides; one on the left is wrapped in scaffolding. To the right, leafy trees and kiosks indicate the edge of Bryant Park. Yellow taxis and pedestrians are visible. Lighting is daytime with a mostly clear blue sky and scattered clouds.",
+            "photographer_location": [
+              {
+                "name": "Avenue of the Americas & West 43rd Street, Midtown Manhattan, New York City, USA",
+                "confidence": 0.92
+              },
+              {
+                "name": "Midtown Manhattan, New York City, USA",
+                "confidence": 0.98
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Empire State Building, 350 Fifth Avenue, Midtown Manhattan, New York City, USA",
+                "confidence": 0.99
+              },
+              {
+                "name": "Midtown Manhattan, New York City, USA",
+                "confidence": 0.9
+              }
+            ],
+            "entities": [
+              {
+                "name": "Empire State Building",
+                "type": "landmark",
+                "confidence": 0.99,
+                "notes": "Iconic Art Deco skyscraper completed 1931 with antenna spire"
+              },
+              {
+                "name": "Empire State Building",
+                "type": "building",
+                "confidence": 0.99,
+                "notes": "Art Deco high-rise at 350 Fifth Avenue"
+              },
+              {
+                "name": "Bryant Park",
+                "type": "public_space",
+                "confidence": 0.7,
+                "notes": "City park bordered by 5th/6th Ave and 40th–42nd St"
+              },
+              {
+                "name": "Avenue of the Americas (Sixth Avenue)",
+                "type": "infrastructure",
+                "confidence": 0.88,
+                "notes": "Major north–south avenue in Midtown Manhattan"
+              },
+              {
+                "name": "W 43 St street sign",
+                "type": "signage",
+                "confidence": 0.95,
+                "notes": "Intersection identifier visible in foreground"
+              },
+              {
+                "name": "Bank of America Tower at One Bryant Park",
+                "type": "building",
+                "confidence": 0.6,
+                "notes": "Tall glass skyscraper near Bryant Park on Sixth Avenue"
+              },
+              {
+                "name": "3 Bryant Park (1095 Avenue of the Americas)",
+                "type": "building",
+                "confidence": 0.5,
+                "notes": "Glass office tower along Sixth Avenue"
+              },
+              {
+                "name": "Midtown Manhattan",
+                "type": "district",
+                "confidence": 0.98,
+                "notes": "Central business district of New York City"
+              },
+              {
+                "name": "New York City yellow taxis",
+                "type": "other",
+                "confidence": 0.7,
+                "notes": "Iconic city cabs contributing to location identification"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "A street-level view in Midtown Manhattan with the Empire State Building rising in the distance. In the foreground are two modern glass-clad towers—one on the left under scaffolding with a green-tinted façade, and another on the right with sleek vertical lines. The street is busy with cars including yellow taxis, pedestrians, and a small tree-lined plaza area near the curb. A blue sky with a few clouds forms the backdrop behind the iconic Empire State Building.",
+            "photographer_location": [
+              {
+                "name": "West 43rd Street, Midtown Manhattan, New York, NY, USA",
+                "confidence": 0.9
+              },
+              {
+                "name": "Midtown Manhattan, New York, NY, USA",
+                "confidence": 0.8
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Empire State Building, Midtown Manhattan, New York, NY, USA",
+                "confidence": 0.92
+              },
+              {
+                "name": "Empire State Building, 350 5th Ave, New York, NY 10118, USA",
+                "confidence": 0.7
+              }
+            ],
+            "entities": [
+              {
+                "name": "Empire State Building",
+                "type": "landmark",
+                "confidence": 0.92,
+                "notes": "Art Deco skyscraper completed in 1931; designed by Shreve, Lamb & Harmon."
+              },
+              {
+                "name": "Empire State Building",
+                "type": "building",
+                "confidence": 0.85,
+                "notes": "Iconic 102-story office skyscraper in Midtown Manhattan."
+              },
+              {
+                "name": "West 43rd Street signage",
+                "type": "signage",
+                "confidence": 0.6,
+                "notes": null
+              },
+              {
+                "name": "Under-construction glass-clad office building (left)",
+                "type": "building",
+                "confidence": 0.58,
+                "notes": "Glass façade with scaffolding; generic midtown construction site."
+              },
+              {
+                "name": "Yellow taxis on street",
+                "type": "infrastructure",
+                "confidence": 0.55,
+                "notes": "Common NYC street feature."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "Street-level view looking south along Sixth Avenue (Avenue of the Americas) in Midtown Manhattan toward the Empire State Building, which is centered in the distance with its Art Deco setbacks and stainless-steel spire. At left a tall glass tower is wrapped in blue‑green construction scaffolding; at right are modern reflective facades. Midground right shows the leafy canopy and kiosks of Bryant Park. The scene includes yellow taxis, pedestrians, a traffic light and pedestrian signal, a one-way sign, and a green street sign reading \"W 43 ST\" under a bright blue sky with scattered clouds.",
+            "photographer_location": [
+              {
+                "name": "W 43rd Street & 6th Avenue (Avenue of the Americas), Midtown Manhattan, New York City, New York, USA",
+                "confidence": 0.92
+              },
+              {
+                "name": "Bryant Park area, Midtown Manhattan, New York City, New York, USA",
+                "confidence": 0.9
+              },
+              {
+                "name": "Midtown Manhattan, New York City, New York, USA",
+                "confidence": 0.97
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Empire State Building, Midtown South, Manhattan, New York City, New York, USA",
+                "confidence": 0.97
+              },
+              {
+                "name": "Bryant Park, Manhattan, New York City, New York, USA",
+                "confidence": 0.9
+              }
+            ],
+            "entities": [
+              {
+                "name": "Empire State Building",
+                "type": "landmark",
+                "confidence": 0.99,
+                "notes": "Iconic Art Deco skyscraper completed in 1931; topped by a spire/antenna; 350 Fifth Avenue."
+              },
+              {
+                "name": "Empire State Building",
+                "type": "building",
+                "confidence": 0.98,
+                "notes": "Art Deco office tower with limestone cladding and tiered setbacks."
+              },
+              {
+                "name": "Art Deco",
+                "type": "architectural_style",
+                "confidence": 0.95,
+                "notes": "Style evident in the Empire State Building's setbacks, limestone facade, and stainless-steel spire."
+              },
+              {
+                "name": "Bryant Park",
+                "type": "public_space",
+                "confidence": 0.94,
+                "notes": "City park bounded by 40th–42nd Streets and 5th–6th Avenues."
+              },
+              {
+                "name": "Sixth Avenue (Avenue of the Americas)",
+                "type": "infrastructure",
+                "confidence": 0.93,
+                "notes": "Major north–south avenue in Manhattan."
+              },
+              {
+                "name": "W 43 ST street sign",
+                "type": "signage",
+                "confidence": 0.96,
+                "notes": "Green New York City street sign visible at the intersection."
+              },
+              {
+                "name": "Midtown Manhattan",
+                "type": "district",
+                "confidence": 0.98,
+                "notes": "Central business district of Manhattan where the scene is located."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "A street-level view in Midtown Manhattan featuring the Empire State Building centered in the frame, flanked by modern glass towers. A green-tinted glass building on the left appears to be under construction with scaffolding. Lower-rise brick and stone buildings line the street. Busy traffic including yellow taxis, pedestrians, traffic lights, and street signs are visible at street level. A row of green trees sits near the base of the tall buildings. A street sign shows W 43 St against a bright blue sky.",
+            "photographer_location": [
+              {
+                "name": "New York, New York, USA",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Midtown Manhattan, New York, USA",
+                "confidence": 0.92
+              }
+            ],
+            "entities": [
+              {
+                "name": "Empire State Building",
+                "type": "landmark",
+                "confidence": 0.95,
+                "notes": "Iconic Art Deco skyscraper; central focal point in the image."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A street-level urban landscape looking south down Avenue of the Americas (6th Avenue) in Midtown Manhattan, New York City. The central focal point is the Empire State Building, rising majestically in the distance against a bright blue sky with wispy clouds. The view is framed by tall skyscrapers in the foreground: on the left, a large building (identifiable as the W. R. Grace Building by location) is covered in blue safety netting and scaffolding, indicating renovation or maintenance; on the right, the modern glass facade with horizontal louvers belongs to the Bank of America Tower (One Bryant Park). In the middle ground, the green tree canopy of Bryant Park is visible on the left side of the avenue. Behind the trees and to the left of the Empire State Building stands 500 Fifth Avenue, a tan brick Art Deco skyscraper with setbacks. The street scene includes a green street sign reading \"W 43 St\" and \"Americas\", yellow traffic lights, pedestrians crossing the street, and vehicle traffic including a yellow taxi.",
+            "photographer_location": [
+              {
+                "name": "Intersection of West 43rd Street and Avenue of the Americas, New York, NY",
+                "confidence": 0.95
+              },
+              {
+                "name": "Midtown Manhattan, New York City, USA",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Empire State Building, 350 Fifth Avenue, New York, NY",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "Empire State Building",
+                "type": "landmark",
+                "confidence": 1.0,
+                "notes": "Art Deco skyscraper completed in 1931"
+              },
+              {
+                "name": "500 Fifth Avenue",
+                "type": "building",
+                "confidence": 0.95,
+                "notes": "Art Deco skyscraper visible to the left of the Empire State Building"
+              },
+              {
+                "name": "W. R. Grace Building",
+                "type": "building",
+                "confidence": 0.85,
+                "notes": "Located on the left (East) side; obscured by scaffolding and netting"
+              },
+              {
+                "name": "Bank of America Tower (One Bryant Park)",
+                "type": "building",
+                "confidence": 0.9,
+                "notes": "Located on the right (West) side; partial view of the glass facade"
+              },
+              {
+                "name": "Bryant Park",
+                "type": "public_space",
+                "confidence": 0.95,
+                "notes": "Visible as trees in the middle distance on the left"
+              },
+              {
+                "name": "Avenue of the Americas",
+                "type": "infrastructure",
+                "confidence": 0.95,
+                "notes": "Also known as 6th Avenue"
+              },
+              {
+                "name": "West 43rd Street",
+                "type": "infrastructure",
+                "confidence": 0.95,
+                "notes": "Identified by street sign"
+              },
+              {
+                "name": "Street Sign",
+                "type": "signage",
+                "confidence": 1.0,
+                "notes": "Reads 'W 43 St' and 'Americas'"
+              },
+              {
+                "name": "Yellow Taxi",
+                "type": "other",
+                "confidence": 0.9,
+                "notes": "Iconic NYC transport"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A vertical street-level photograph taken in Midtown Manhattan, New York City, looking south down Avenue of the Americas (6th Avenue) from the intersection with West 43rd Street. The iconic Art Deco spire of the Empire State Building dominates the center background, framed by urban architecture. To the left, a modern skyscraper with a green glass facade is partially covered in blue scaffolding. In the mid-ground, the lush green canopy of Bryant Park's trees is visible. On the right, the sleek, angular facade of the Bank of America Tower (1 Bryant Park) frames the edge of the frame. The street is busy with typical New York traffic, including yellow taxis and black SUVs. Pedestrians are seen on the sidewalk in the foreground. The sky is a clear blue with scattered light clouds, and the scene is illuminated by bright, direct daylight.",
+            "photographer_location": [
+              {
+                "name": "Intersection of West 43rd Street and Avenue of the Americas, Manhattan, New York City, NY, USA",
+                "confidence": 0.98
+              },
+              {
+                "name": "6th Avenue, New York City",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Empire State Building, Manhattan, New York City, NY, USA",
+                "confidence": 0.99
+              },
+              {
+                "name": "Bryant Park, Manhattan, New York City, NY, USA",
+                "confidence": 0.95
+              },
+              {
+                "name": "Midtown Manhattan, New York City",
+                "confidence": 0.95
+              }
+            ],
+            "entities": [
+              {
+                "name": "Empire State Building",
+                "type": "landmark",
+                "confidence": 1.0,
+                "notes": "Iconic Art Deco skyscraper designed by Shreve, Lamb & Harmon, completed in 1931."
+              },
+              {
+                "name": "Bryant Park",
+                "type": "public_space",
+                "confidence": 0.95,
+                "notes": "A 9.6-acre public park located in Midtown Manhattan."
+              },
+              {
+                "name": "Avenue of the Americas",
+                "type": "infrastructure",
+                "confidence": 0.98,
+                "notes": "Commonly known as Sixth Avenue."
+              },
+              {
+                "name": "Bank of America Tower",
+                "type": "building",
+                "confidence": 0.9,
+                "notes": "Located at 1 Bryant Park, visible on the right side of the image."
+              },
+              {
+                "name": "Art Deco",
+                "type": "architectural_style",
+                "confidence": 0.98,
+                "notes": "The architectural style of the Empire State Building."
+              },
+              {
+                "name": "Midtown Manhattan",
+                "type": "district",
+                "confidence": 0.98,
+                "notes": null
+              },
+              {
+                "name": "West 43rd Street",
+                "type": "infrastructure",
+                "confidence": 0.98,
+                "notes": "Street sign visible in the foreground."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "Bryant Park",
+                "type": "landmark",
+                "confidence": 0.3847202956676483,
+                "notes": null
+              },
+              {
+                "name": "Bryant Park Studios",
+                "type": "landmark",
+                "confidence": 0.25195419788360596,
+                "notes": null
+              },
+              {
+                "name": "Times Square",
+                "type": "landmark",
+                "confidence": 0.23078234493732452,
+                "notes": null
+              },
+              {
+                "name": "Stephen Sondheim Theatre",
+                "type": "landmark",
+                "confidence": 0.20391130447387695,
+                "notes": null
+              },
+              {
+                "name": "Car",
+                "type": "other",
+                "confidence": 0.718500018119812,
+                "notes": null
+              },
+              {
+                "name": "SUV",
+                "type": "other",
+                "confidence": 0.682914137840271,
+                "notes": null
+              },
+              {
+                "name": "Skyscraper",
+                "type": "other",
+                "confidence": 0.5408525466918945,
+                "notes": null
+              },
+              {
+                "name": "Apartment",
+                "type": "artwork",
+                "confidence": 0.5403871536254883,
+                "notes": null
+              },
+              {
+                "name": "Minivan",
+                "type": "other",
+                "confidence": 0.5354999899864197,
+                "notes": null
+              },
+              {
+                "name": "Lincoln MKS",
+                "type": "other",
+                "confidence": 0.5275952816009521,
+                "notes": null
+              },
+              {
+                "name": "High-rise building",
+                "type": "other",
+                "confidence": 0.464896559715271,
+                "notes": null
+              },
+              {
+                "name": "Corporate headquarters",
+                "type": "artwork",
+                "confidence": 0.39604827761650085,
+                "notes": null
+              },
+              {
+                "name": "Utility vehicle",
+                "type": "other",
+                "confidence": 0.3928999900817871,
+                "notes": null
+              },
+              {
+                "name": "Compact MPV",
+                "type": "other",
+                "confidence": 0.381352037191391,
+                "notes": null
+              },
+              {
+                "name": "Skyscraper",
+                "type": "other",
+                "confidence": 0.9878489375114441,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Building",
+                "type": "other",
+                "confidence": 0.9867550730705261,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Urban area",
+                "type": "other",
+                "confidence": 0.9825289249420166,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Daytime",
+                "type": "other",
+                "confidence": 0.981782078742981,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "City",
+                "type": "other",
+                "confidence": 0.9782901406288147,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Metropolitan area",
+                "type": "other",
+                "confidence": 0.9736484289169312,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "High-rise building",
+                "type": "other",
+                "confidence": 0.9703788757324219,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Commercial building",
+                "type": "other",
+                "confidence": 0.9441010355949402,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Tower",
+                "type": "other",
+                "confidence": 0.9433293342590332,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Metropolis",
+                "type": "other",
+                "confidence": 0.9405765533447266,
+                "notes": "Detected via label detection"
+              }
+            ],
+            "landmark_name": "Bryant Park"
+          }
+        }
+      ]
+    }
+  ]
+}

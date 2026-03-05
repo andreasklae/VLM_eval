@@ -1,0 +1,1102 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "92.heic",
+      "timestamp": "2026-01-28T07:24:57.740205",
+      "processing_time_seconds": 59.022987,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -33.859075000000004,
+        "gps_longitude": 151.20500277777776,
+        "location": {
+          "formatted_address": "Observatory Hill Park, 2 Watson Rd, Millers Point NSW 2000, Australia",
+          "city": "Millers Point",
+          "county": "Council of the City of Sydney",
+          "country": "Australia"
+        },
+        "datetime_original": "2024:09:14 10:32:25",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Sydney Harbour Bridge, Sydney, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive arch and pylons of the Sydney Harbour Bridge are clearly visible, making it easily identifiable. The location metadata supports this identification.",
+            "detailed_description": "The image prominently features the Sydney Harbour Bridge, an iconic steel arch bridge in Sydney, Australia. The bridge is known for its large arch and massive pylons, which are visible in the image. It spans Sydney Harbour and connects the central business district with the North Shore. The surrounding area includes residential buildings and waterfront structures, typical of the Millers Point neighborhood.",
+            "identification": {
+              "primary": [
+                "Sydney Harbour Bridge"
+              ],
+              "location": "Sydney, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Sydney Harbour Bridge",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "steel_arch_bridge",
+              "20th_century",
+              "Sydney",
+              "landmark"
+            ],
+            "location": "Sydney, Australia",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Sydney Harbour Bridge\"],\n        \"location\": \"Sydney, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Sydney Harbour Bridge\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"steel_arch_bridge\", \"20th_century\", \"Sydney\", \"landmark\"],\n    \"description\": \"The image prominently features the Sydney Harbour Bridge, an iconic steel arch bridge in Sydney, Australia. The bridge is known for its large arch and massive pylons, which are visible in the image. It spans Sydney Harbour and connects the central business district with the North Shore. The surrounding area includes residential buildings and waterfront structures, typical of the Millers Point neighborhood.\",\n    \"reasoning\": \"The distinctive arch and pylons of the Sydney Harbour Bridge are clearly visible, making it easily identifiable. The location metadata supports this identification.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "gps_coordinates": {
+              "latitude": -33.859075000000004,
+              "longitude": 151.20500277777776
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Observatory Hill Park, 2 Watson Rd, Millers Point NSW 2000, Australia",
+              "city": "Millers Point",
+              "county": "Council of the City of Sydney",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2024:09:14 10:32:25",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 12.067447185516357
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image prominently features a large steel arch bridge, which is a significant landmark. The bridge is characterized by its massive arch structure, composed of steel trusses, and is supported by substantial concrete pylons on either side. The bridge spans across a body of water, with the arch rising high above the waterline, providing clearance for maritime traffic. Flags are visible atop the pylons, adding a touch of national identity to the structure. In the background, a cityscape is visibl",
+            "description": "The image prominently features a large steel arch bridge, which is a significant landmark. The bridge is characterized by its massive arch structure, composed of steel trusses, and is supported by substantial concrete pylons on either side. The bridge spans across a body of water, with the arch rising high above the waterline, providing clearance for maritime traffic. Flags are visible atop the pylons, adding a touch of national identity to the structure. In the background, a cityscape is visibl",
+            "architectural_style": "Modern engineering with historical residential architecture",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": -33.859075000000004,
+              "longitude": 151.20500277777776
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Observatory Hill Park, 2 Watson Rd, Millers Point NSW 2000, Australia",
+              "city": "Millers Point",
+              "county": "Council of the City of Sydney",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2024:09:14 10:32:25",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 45.73663687705994
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Sydney Observatory (-33.8595, 151.2047)",
+          "confidence": 0.5346164703369141,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Sydney Observatory",
+            "coordinates": {
+              "latitude": -33.85953999999999,
+              "longitude": 151.2047413
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 4032
+              },
+              {
+                "x": 0,
+                "y": 4032
+              }
+            ],
+            "context_labels": [
+              "Bridge",
+              "City",
+              "Urban area",
+              "Tied-arch bridge",
+              "Metropolitan area"
+            ],
+            "context_objects": [
+              "Building",
+              "Building"
+            ],
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.5493584871292114
+              },
+              {
+                "name": "Apartment",
+                "score": 0.47992369532585144
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.4594378173351288
+              },
+              {
+                "name": "Tower",
+                "score": 0.4120999872684479
+              },
+              {
+                "name": "Building",
+                "score": 0.35530000925064087
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Sydney Observatory",
+                "score": 0.5346164703369141,
+                "location": {
+                  "lat": -33.85953999999999,
+                  "lng": 151.2047413
+                }
+              },
+              {
+                "name": "Observatory Hill Park",
+                "score": 0.48845645785331726,
+                "location": {
+                  "lat": -33.8589787,
+                  "lng": 151.20480369999999
+                }
+              },
+              {
+                "name": "Observatory Hill",
+                "score": 0.45518097281455994,
+                "location": {
+                  "lat": -33.8595307,
+                  "lng": 151.2048216
+                }
+              },
+              {
+                "name": "Bridgeclimb Sydney",
+                "score": 0.41339030861854553,
+                "location": {
+                  "lat": -33.857439,
+                  "lng": 151.2077747
+                }
+              }
+            ],
+            "processing_time_seconds": 16.628779888153076
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Millers Point, Council of the City of Sydney, Australia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Millers Point, Council of the City of Sydney, Australia",
+            "coordinates": {
+              "latitude": -33.859075000000004,
+              "longitude": 151.20500277777776
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Museum of Contemporary Art Australia",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "cafe",
+                    "museum",
+                    "point_of_interest",
+                    "store",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 9216,
+                  "vicinity": "140 George Street, The Rocks",
+                  "place_id": "ChIJ68aBlEKuEmsRHUA9oME5Zh0",
+                  "location": {
+                    "lat": -33.8599358,
+                    "lng": 151.2090295
+                  }
+                },
+                {
+                  "name": "Harbour View Hotel, The Rocks",
+                  "types": [
+                    "tourist_attraction",
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1898,
+                  "vicinity": "18 Lower Fort Street, The Rocks",
+                  "place_id": "ChIJV_wrHl2uEmsR92Q_ubhgXDI",
+                  "location": {
+                    "lat": -33.85659829999999,
+                    "lng": 151.2073426
+                  }
+                },
+                {
+                  "name": "Sydney Opera House",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 89331,
+                  "vicinity": "Bennelong Point, Sydney",
+                  "place_id": "ChIJ3S-JXmauEmsRUcIaWtf4MzE",
+                  "location": {
+                    "lat": -33.8567844,
+                    "lng": 151.2152967
+                  }
+                },
+                {
+                  "name": "Sydney Harbour Bridge",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 20593,
+                  "vicinity": "Sydney Harbour Bridge, Sydney",
+                  "place_id": "ChIJ49XqJV2uEmsRPsTAF7eOlGg",
+                  "location": {
+                    "lat": -33.8523063,
+                    "lng": 151.2107871
+                  }
+                },
+                {
+                  "name": "Museum of Sydney",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 3023,
+                  "vicinity": "Cnr Bridge Street &, Phillip Street, Sydney",
+                  "place_id": "ChIJ_1pC8mmuEmsRrvud0Ftcoyg",
+                  "location": {
+                    "lat": -33.8636288,
+                    "lng": 151.2114567
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Museum of Contemporary Art Australia",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "cafe",
+                    "museum",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 9216,
+                  "vicinity": "140 George Street, The Rocks",
+                  "place_id": "ChIJ68aBlEKuEmsRHUA9oME5Zh0",
+                  "location": {
+                    "lat": -33.8599358,
+                    "lng": 151.2090295
+                  }
+                },
+                {
+                  "name": "Museum of Sydney",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 3023,
+                  "vicinity": "Cnr Bridge Street &, Phillip Street, Sydney",
+                  "place_id": "ChIJ_1pC8mmuEmsRrvud0Ftcoyg",
+                  "location": {
+                    "lat": -33.8636288,
+                    "lng": 151.2114567
+                  }
+                },
+                {
+                  "name": "The National Opal Collection",
+                  "types": [
+                    "jewelry_store",
+                    "museum",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 59,
+                  "vicinity": "60 Pitt Street, Sydney",
+                  "place_id": "ChIJi7TJ7UGuEmsRmOcZ1bDj8C8",
+                  "location": {
+                    "lat": -33.8644004,
+                    "lng": 151.209079
+                  }
+                },
+                {
+                  "name": "ATTY Gallery",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "museum",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 311,
+                  "vicinity": "27 Playfair Street, The Rocks",
+                  "place_id": "ChIJ9fdIzEKuEmsRuaujDOdFkwU",
+                  "location": {
+                    "lat": -33.858382,
+                    "lng": 151.2082718
+                  }
+                },
+                {
+                  "name": "The Rocks Discovery Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 636,
+                  "vicinity": "2/8 Kendall Lane, The Rocks",
+                  "place_id": "ChIJ47iDxkKuEmsR_bma_SA7k1E",
+                  "location": {
+                    "lat": -33.8586281,
+                    "lng": 151.2086679
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Amora Hotel Jamison Sydney",
+                  "types": [
+                    "lodging",
+                    "spa",
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 2814,
+                  "vicinity": "11 Jamison Street, Sydney",
+                  "place_id": "ChIJa51FEUGuEmsRIXRtDjLFQXM",
+                  "location": {
+                    "lat": -33.864458,
+                    "lng": 151.2062952
+                  }
+                },
+                {
+                  "name": "Rendezvous Hotel Sydney The Rocks",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 624,
+                  "vicinity": "75 Harrington Street, The Rocks",
+                  "place_id": "ChIJyepG5EKuEmsRuCAtAGW_ygY",
+                  "location": {
+                    "lat": -33.8598478,
+                    "lng": 151.207803
+                  }
+                },
+                {
+                  "name": "Sydney Harbour Bed & Breakfast",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 117,
+                  "vicinity": "140-142 Cumberland Street, The Rocks",
+                  "place_id": "ChIJCfGaqEOuEmsRW8wvWsTgIyE",
+                  "location": {
+                    "lat": -33.8605708,
+                    "lng": 151.2066137
+                  }
+                },
+                {
+                  "name": "Pancakes On The Rocks",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 8707,
+                  "vicinity": "22 Playfair Street, The Rocks",
+                  "place_id": "ChIJD5xTal2uEmsRZNsPx8E2q-s",
+                  "location": {
+                    "lat": -33.8588323,
+                    "lng": 151.2083496
+                  }
+                },
+                {
+                  "name": "Steersons Steakhouse",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 957,
+                  "vicinity": "17 Lime Street, Sydney",
+                  "place_id": "ChIJWRxefkeuEmsRn2tDqHg6HQo",
+                  "location": {
+                    "lat": -33.8666848,
+                    "lng": 151.2015819
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Wynyard Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 793,
+                  "vicinity": "1001 York Street, Sydney",
+                  "place_id": "ChIJDRF76ECuEmsREAnz-Wh9AQ8",
+                  "location": {
+                    "lat": -33.8657009,
+                    "lng": 151.2061439
+                  }
+                },
+                {
+                  "name": "Barangaroo Reserve",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 4649,
+                  "vicinity": "Hickson Road, Barangaroo",
+                  "place_id": "ChIJs-MWMVuuEmsRN7STbIW1hv8",
+                  "location": {
+                    "lat": -33.857208,
+                    "lng": 151.201206
+                  }
+                },
+                {
+                  "name": "Ballaarat Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 177,
+                  "vicinity": "33 Darling Island Road, Pyrmont",
+                  "place_id": "ChIJCz9SQkiuEmsRsPTy-Wh9AQ8",
+                  "location": {
+                    "lat": -33.8640155,
+                    "lng": 151.1969722
+                  }
+                },
+                {
+                  "name": "Observatory Hill Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 2928,
+                  "vicinity": "1001 Upper Fort Street, Millers Point",
+                  "place_id": "ChIJZ6DWeEOuEmsRYO_x-Wh9AQ8",
+                  "location": {
+                    "lat": -33.8594047,
+                    "lng": 151.2048859
+                  }
+                },
+                {
+                  "name": "Macquarie Place Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 387,
+                  "vicinity": "36 Bridge Street, Sydney",
+                  "place_id": "ChIJ0yioCEKuEmsRkPHx-Wh9AQ8",
+                  "location": {
+                    "lat": -33.8630982,
+                    "lng": 151.2102112
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Saint Patrick's Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 639,
+                  "vicinity": "20 Grosvenor Street, The Rocks",
+                  "place_id": "ChIJiVLPZkGuEmsRQHR4WJMxPQI",
+                  "location": {
+                    "lat": -33.8631328,
+                    "lng": 151.2059914
+                  }
+                },
+                {
+                  "name": "Scots Presbyterian Church Sydney",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 74,
+                  "vicinity": "44 Margaret Street, Sydney",
+                  "place_id": "ChIJb0zSGEGuEmsR4yDcc9HXsQQ",
+                  "location": {
+                    "lat": -33.8649282,
+                    "lng": 151.2058338
+                  }
+                },
+                {
+                  "name": "St Philip's - Church Hill Anglican",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 111,
+                  "vicinity": "3 York Street, Sydney",
+                  "place_id": "ChIJtWxwN0GuEmsRM57zD74Dy-A",
+                  "location": {
+                    "lat": -33.86402890000001,
+                    "lng": 151.2052002
+                  }
+                },
+                {
+                  "name": "The Garrison Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 87,
+                  "vicinity": "60 Lower Fort Street, Millers Point",
+                  "place_id": "ChIJvVu_R0OuEmsRz5vofdGq6Ew",
+                  "location": {
+                    "lat": -33.8583615,
+                    "lng": 151.205693
+                  }
+                },
+                {
+                  "name": "Tullett Liberty Pty Ltd.",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "60 Margaret Street, Sydney",
+                  "place_id": "ChIJKQi9GkGuEmsRW6E3nLulsHw",
+                  "location": {
+                    "lat": -33.8648179,
+                    "lng": 151.2069186
+                  }
+                },
+                {
+                  "name": "Friday Prayer (Jumu'ah)",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "15A Argyle Place, Millers Point",
+                  "place_id": "ChIJc7o9aACvEmsR0VoHG4isfiU",
+                  "location": {
+                    "lat": -33.8589597,
+                    "lng": 151.2041605
+                  }
+                },
+                {
+                  "name": "Sydney CBD Masjid",
+                  "types": [
+                    "mosque",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 722,
+                  "vicinity": "56/56-60 Erskine Street, Sydney",
+                  "place_id": "ChIJpTpyTkeuEmsRyk375nNkMEI",
+                  "location": {
+                    "lat": -33.8666203,
+                    "lng": 151.2039743
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Museum of Contemporary Art Australia",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "cafe",
+                    "museum",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 9216,
+                  "vicinity": "140 George Street, The Rocks",
+                  "place_id": "ChIJ68aBlEKuEmsRHUA9oME5Zh0",
+                  "location": {
+                    "lat": -33.8599358,
+                    "lng": 151.2090295
+                  }
+                },
+                {
+                  "name": "Matt Pearson Gallery",
+                  "types": [
+                    "art_gallery",
+                    "home_goods_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 68,
+                  "vicinity": "The Rocks Centre, Enter via Jack Mundey Place, Shop 1 & 2 Argyle Street, The Rocks",
+                  "place_id": "ChIJL921igquEmsRqWfQFuOS7Lo",
+                  "location": {
+                    "lat": -33.85898889999999,
+                    "lng": 151.2082978
+                  }
+                },
+                {
+                  "name": "ATTY Gallery",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "museum",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 311,
+                  "vicinity": "27 Playfair Street, The Rocks",
+                  "place_id": "ChIJ9fdIzEKuEmsRuaujDOdFkwU",
+                  "location": {
+                    "lat": -33.858382,
+                    "lng": 151.2082718
+                  }
+                },
+                {
+                  "name": "Argyle Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 16,
+                  "vicinity": "21 Playfair Street, Sydney",
+                  "place_id": "ChIJMdpfzkKuEmsRj1jhV6Q-D7k",
+                  "location": {
+                    "lat": -33.85828119999999,
+                    "lng": 151.2082976
+                  }
+                },
+                {
+                  "name": "Gifts at the Quay",
+                  "types": [
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 129,
+                  "vicinity": "Shop 13/1A Macquarie Street, Sydney",
+                  "place_id": "ChIJD29DT0KuEmsRSpem4O51sGw",
+                  "location": {
+                    "lat": -33.8598453,
+                    "lng": 151.2131274
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Sydney",
+                  "types": [
+                    "colloquial_area",
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Sydney",
+                  "place_id": "ChIJP3Sa8ziYEmsRUKgyFmh9AQM",
+                  "location": {
+                    "lat": -33.8622503,
+                    "lng": 151.207684
+                  }
+                },
+                {
+                  "name": "YHA Sydney Harbour - The Rocks",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1476,
+                  "vicinity": "110 Cumberland Street, The Rocks",
+                  "place_id": "ChIJ7ROWBUOuEmsRxVKXiTS-KSo",
+                  "location": {
+                    "lat": -33.859953,
+                    "lng": 151.2069417
+                  }
+                },
+                {
+                  "name": "Harbour Rocks Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 696,
+                  "vicinity": "34 Harrington Street, The Rocks",
+                  "place_id": "ChIJ1Y1n70KuEmsRYn_K2GHfatw",
+                  "location": {
+                    "lat": -33.8596279,
+                    "lng": 151.2081405
+                  }
+                },
+                {
+                  "name": "The Sebel Quay West Suites Sydney",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1107,
+                  "vicinity": "98 Gloucester Street, The Rocks",
+                  "place_id": "ChIJu74YtEOuEmsRZVq9lNEs8vc",
+                  "location": {
+                    "lat": -33.8616007,
+                    "lng": 151.2069932
+                  }
+                },
+                {
+                  "name": "Four Seasons Hotel Sydney",
+                  "types": [
+                    "spa",
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 6009,
+                  "vicinity": "199 George Street, The Rocks",
+                  "place_id": "ChIJZ934S0KuEmsR_0lxV3PTR4M",
+                  "location": {
+                    "lat": -33.8615815,
+                    "lng": 151.2076503
+                  }
+                }
+              ]
+            },
+            "total_places_found": 37,
+            "photo_timestamp": "2024:09:14 10:32:25",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.7119219303131104
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/92.heic"
+    },
+    {
+      "image_filename": "92.heic",
+      "timestamp": "2026-01-28T07:25:56.798539",
+      "processing_time_seconds": 58.060751,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Sydney Harbour Bridge, Sydney, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive steel arch design and location near Sydney Harbour are characteristic of the Sydney Harbour Bridge, making identification confident.",
+            "detailed_description": "The image prominently features the Sydney Harbour Bridge, a large steel arch bridge known for its distinctive design and engineering significance. The bridge spans Sydney Harbour, connecting the Sydney central business district and the North Shore. Visible in the foreground are residential buildings and trees, typical of the urban landscape surrounding the harbor. The bridge is an iconic symbol of Sydney and is recognized for its massive arch and pylons.",
+            "identification": {
+              "primary": [
+                "Sydney Harbour Bridge"
+              ],
+              "location": "Sydney, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Sydney Harbour Bridge",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "bridge",
+              "steel_arch",
+              "20th_century",
+              "Sydney",
+              "landmark"
+            ],
+            "location": "Sydney, Australia",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Sydney Harbour Bridge\"],\n        \"location\": \"Sydney, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Sydney Harbour Bridge\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"bridge\", \"steel_arch\", \"20th_century\", \"Sydney\", \"landmark\"],\n    \"description\": \"The image prominently features the Sydney Harbour Bridge, a large steel arch bridge known for its distinctive design and engineering significance. The bridge spans Sydney Harbour, connecting the Sydney central business district and the North Shore. Visible in the foreground are residential buildings and trees, typical of the urban landscape surrounding the harbor. The bridge is an iconic symbol of Sydney and is recognized for its massive arch and pylons.\",\n    \"reasoning\": \"The distinctive steel arch design and location near Sydney Harbour are characteristic of the Sydney Harbour Bridge, making identification confident.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "processing_time_seconds": 11.011578798294067
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image prominently features a large steel arch bridge, characterized by its massive scale and engineering design. The bridge is constructed with riveted steel and has a distinctive arch shape that spans a wide body of water. The arch is supported by substantial concrete pylons, which are visible on either side of the bridge. Flags are positioned atop the bridge, adding a touch of color against the clear blue sky. In the background, a cityscape is visible, consisting of modern high-rise buildi",
+            "description": "The image prominently features a large steel arch bridge, characterized by its massive scale and engineering design. The bridge is constructed with riveted steel and has a distinctive arch shape that spans a wide body of water. The arch is supported by substantial concrete pylons, which are visible on either side of the bridge. Flags are positioned atop the bridge, adding a touch of color against the clear blue sky. In the background, a cityscape is visible, consisting of modern high-rise buildi",
+            "architectural_style": "Industrial",
+            "search_backends_used": [],
+            "processing_time_seconds": 46.80702209472656
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Sydney Observatory (-33.8595, 151.2047)",
+          "confidence": 0.5346991419792175,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Sydney Observatory",
+            "coordinates": {
+              "latitude": -33.85953999999999,
+              "longitude": 151.2047413
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 4032
+              },
+              {
+                "x": 0,
+                "y": 4032
+              }
+            ],
+            "context_labels": [
+              "Bridge",
+              "City",
+              "Urban area",
+              "Tied-arch bridge",
+              "Metropolitan area"
+            ],
+            "context_objects": [
+              "Building",
+              "Building"
+            ],
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.5441265106201172
+              },
+              {
+                "name": "Apartment",
+                "score": 0.47194743156433105
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.44104114174842834
+              },
+              {
+                "name": "Tower",
+                "score": 0.39629998803138733
+              },
+              {
+                "name": "Metropolitan area",
+                "score": 0.3616625666618347
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Sydney Observatory",
+                "score": 0.5346991419792175,
+                "location": {
+                  "lat": -33.85953999999999,
+                  "lng": 151.2047413
+                }
+              },
+              {
+                "name": "Observatory Hill Park",
+                "score": 0.48852860927581787,
+                "location": {
+                  "lat": -33.8589787,
+                  "lng": 151.20480369999999
+                }
+              },
+              {
+                "name": "Observatory Hill",
+                "score": 0.45474517345428467,
+                "location": {
+                  "lat": -33.8595307,
+                  "lng": 151.2048216
+                }
+              },
+              {
+                "name": "Bridgeclimb Sydney",
+                "score": 0.41341960430145264,
+                "location": {
+                  "lat": -33.857439,
+                  "lng": 151.2077747
+                }
+              }
+            ],
+            "processing_time_seconds": 17.71326184272766
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/92.heic"
+    }
+  ]
+}

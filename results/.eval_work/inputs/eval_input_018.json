@@ -1,0 +1,1359 @@
+{
+  "image_id": 18,
+  "filename": "18.jpg",
+  "ground_truth": {
+    "description": "Photo of iconic cable car in San Francisco. The cable car has a \"Powell and Market\" plaque on it (identifying the route/line). Alcatraz visible in background (not main motive). Marina with boats visible in background. Photo taken at Hyde St & Chestnut St intersection.",
+    "photographer_description": "A photo of the iconic Powell and Market cable car in San Francisco. The cable car has a \"Powell and Market\" plaque on it (identifying the route/line). Also visible in the background is Alcatraz, although this is not the main motive of the photo. A marina with boats is also visible in the background. Photo taken at Hyde St & Chestnut St intersection. It should easily get the cable car and San Fran both with and without metadata because it is very recognizable and the text on the car is very clear. It would be nice if it can also recognize Alcatraz, but it is not expected.",
+    "locations": [
+      {
+        "name": "Hyde St & Chestnut St (Russian Hill area), San Francisco, California, USA",
+        "hierarchy": {
+          "country": "USA",
+          "region": "California",
+          "city": "San Francisco",
+          "exact": "Hyde St & Chestnut St (Russian Hill area)"
+        }
+      }
+    ],
+    "entities": [
+      {
+        "name": "San fransisco Cable Car",
+        "type": "landmark",
+        "notes": "identified by \"Powell & Market\" plaque on car",
+        "max_specificity": 5,
+        "importance": "high"
+      },
+      {
+        "name": "Alcatraz Island",
+        "type": "landmark",
+        "notes": "background, bonus",
+        "max_specificity": 5,
+        "importance": "medium"
+      },
+      {
+        "name": "Russian Hill Park",
+        "type": "landmark",
+        "notes": "",
+        "max_specificity": 5,
+        "added_by": "human_evaluator",
+        "importance": "low"
+      },
+      {
+        "name": "Hyde Street Pier",
+        "type": "infrastructure",
+        "notes": "",
+        "max_specificity": 5,
+        "added_by": "human_evaluator",
+        "importance": "medium"
+      }
+    ],
+    "scene_type": [
+      "transportation",
+      "landmark",
+      "urban"
+    ],
+    "key_visual_elements": [
+      "Historic cable car",
+      "\"Powell & Market\" plaque/text on car (identifies route)",
+      "Alcatraz in background",
+      "Marina with boats in background",
+      "Steep street/hill"
+    ],
+    "max_specificity": "Specific",
+    "difficulty": "Very Easy (text clearly visible, iconic)",
+    "notes": "Should easily get cable car and SF. Nice bonus if recognizes Alcatraz.",
+    "gps_metadata": {
+      "gps_latitude": 37.803016666666664,
+      "gps_longitude": -122.4199,
+      "reverse_geocoded": {
+        "formatted_address": "Hyde St & Chestnut St, San Francisco, CA 94109, USA",
+        "city": "San Francisco",
+        "county": "San Francisco County",
+        "country": "United States"
+      }
+    },
+    "difficulty_with_gps": "easy",
+    "difficulty_without_gps": "medium",
+    "image_categories": [
+      "urban"
+    ]
+  },
+  "model_runs": [
+    {
+      "image_filename": "18.jpg",
+      "use_gps": true,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "A classic San Francisco cable car descends a steep, tree-lined street toward the waterfront on a clear day. The car has red-trimmed windows and exterior running boards with passengers standing, and signage indicating the Powell–Hyde route (Powell & Market to Hyde & Beach/Fisherman’s Wharf). Cable car tracks and the grooved cable slot are visible in the roadway. Residential buildings with stucco facades line the right side, while parked cars occupy the left curb. Beyond the hill, the marina and piers of the northern waterfront are visible, opening to San Francisco Bay with Alcatraz Island prominent in the mid-distance. Light is late-afternoon, casting long shadows and warm highlights.",
+            "photographer_location": [
+              {
+                "name": "Hyde Street at Lombard Street, Russian Hill, San Francisco, California, USA",
+                "confidence": 0.92
+              },
+              {
+                "name": "Russian Hill, San Francisco, California, USA",
+                "confidence": 0.95
+              },
+              {
+                "name": "San Francisco, California, United States",
+                "confidence": 0.99
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Hyde Street, Russian Hill, San Francisco, California, USA",
+                "confidence": 0.94
+              },
+              {
+                "name": "Powell–Hyde cable car line, San Francisco, California, USA",
+                "confidence": 0.93
+              },
+              {
+                "name": "Alcatraz Island, San Francisco Bay, California, USA",
+                "confidence": 0.98
+              },
+              {
+                "name": "Hyde Street Pier, San Francisco Maritime National Historical Park, San Francisco, California, USA",
+                "confidence": 0.7
+              },
+              {
+                "name": "Aquatic Park, San Francisco Maritime National Historical Park, San Francisco, California, USA",
+                "confidence": 0.7
+              }
+            ],
+            "entities": [
+              {
+                "name": "San Francisco cable car",
+                "type": "landmark",
+                "confidence": 0.98,
+                "notes": "Historic cable car with passengers on running boards; emblematic city transit"
+              },
+              {
+                "name": "Powell–Hyde cable car line",
+                "type": "infrastructure",
+                "confidence": 0.95,
+                "notes": "Route between Powell & Market and Hyde & Beach (Fisherman’s Wharf)"
+              },
+              {
+                "name": "Cable car No. 9",
+                "type": "infrastructure",
+                "confidence": 0.65,
+                "notes": "Fleet number ‘9’ appears on the rear of the car (subject to confirmation)"
+              },
+              {
+                "name": "Hyde Street",
+                "type": "infrastructure",
+                "confidence": 0.9,
+                "notes": "Steep Russian Hill street with cable car tracks"
+              },
+              {
+                "name": "Russian Hill",
+                "type": "district",
+                "confidence": 0.9,
+                "notes": "Hilly neighborhood providing this viewpoint"
+              },
+              {
+                "name": "Alcatraz Island",
+                "type": "landmark",
+                "confidence": 0.99,
+                "notes": "Former federal penitentiary in San Francisco Bay"
+              },
+              {
+                "name": "San Francisco Bay",
+                "type": "natural_feature",
+                "confidence": 1.0,
+                "notes": null
+              },
+              {
+                "name": "Hyde Street Pier",
+                "type": "infrastructure",
+                "confidence": 0.7,
+                "notes": "Piers and moored boats visible near the waterfront"
+              },
+              {
+                "name": "Aquatic Park",
+                "type": "public_space",
+                "confidence": 0.7,
+                "notes": "Cove and promenade area by the Maritime National Historical Park"
+              },
+              {
+                "name": "San Francisco Maritime National Historical Park",
+                "type": "cultural_site",
+                "confidence": 0.6,
+                "notes": "Waterfront historic area encompassing Hyde Street Pier and Aquatic Park"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "A steep, tree-lined San Francisco street slopes downward as a classic cable car ascends or descends the hill. The wooden-car-like vehicle is painted white with blue trim and red framing, carrying a few passengers on its open rear platform. On either side, parked cars align along the curb while beige residential buildings with balconies line the right side. Sunlight filters through the trees, casting dappled shadows on the facade and street. In the distance across the bay, the water is calm with distant landmasses visible, suggesting a vantage point high above the Marina/Russian Hill area.",
+            "photographer_location": [
+              {
+                "name": "San Francisco, California, United States",
+                "confidence": 0.95
+              },
+              {
+                "name": "Nob Hill, San Francisco, California, United States",
+                "confidence": 0.7
+              },
+              {
+                "name": "Russian Hill, San Francisco, California, United States",
+                "confidence": 0.7
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Powell Street, San Francisco, California, United States",
+                "confidence": 0.75
+              },
+              {
+                "name": "Powell-Hyde cable car line, San Francisco, California, United States",
+                "confidence": 0.7
+              },
+              {
+                "name": "Lombard Street area, San Francisco, California, United States",
+                "confidence": 0.5
+              }
+            ],
+            "entities": [
+              {
+                "name": "San Francisco cable car (Powell-Hyde line)",
+                "type": "infrastructure",
+                "confidence": 0.92,
+                "notes": "car number 9; visible passengers"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "A classic San Francisco cable car on the Powell–Hyde line descends the very steep Hyde Street toward the waterfront on a clear day. The car (number 9) carries passengers standing on the exterior running boards and displays route boards reading “Powell & Market” and “Hyde & Beach.” Parked cars line both sides of the hill and trees frame the view. Below are rooftops and piers at the edge of Fisherman’s Wharf/Aquatic Park, with the blue expanse of San Francisco Bay beyond and Alcatraz Island prominently visible in the distance.",
+            "photographer_location": [
+              {
+                "name": "Hyde St & Chestnut St, San Francisco, California, USA",
+                "confidence": 0.97
+              },
+              {
+                "name": "Russian Hill, San Francisco, California, USA",
+                "confidence": 0.92
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Hyde Street, Russian Hill, San Francisco, California, USA",
+                "confidence": 0.9
+              }
+            ],
+            "entities": [
+              {
+                "name": "Powell–Hyde cable car line",
+                "type": "infrastructure",
+                "confidence": 0.95,
+                "notes": "Historic San Francisco Municipal Railway cable car route; signage shows “Powell & Market” and “Hyde & Beach.”"
+              },
+              {
+                "name": "San Francisco cable car No. 9",
+                "type": "infrastructure",
+                "confidence": 0.88,
+                "notes": "Traditional open-sided cable car with passengers riding the running boards."
+              },
+              {
+                "name": "Hyde Street",
+                "type": "infrastructure",
+                "confidence": 0.86,
+                "notes": "Steep north–south street in the Russian Hill neighborhood."
+              },
+              {
+                "name": "Alcatraz Island",
+                "type": "landmark",
+                "confidence": 0.96,
+                "notes": "Former federal penitentiary on an island in San Francisco Bay, centered in the background."
+              },
+              {
+                "name": "San Francisco Bay",
+                "type": "natural_feature",
+                "confidence": 0.96,
+                "notes": "Large bay visible beyond the waterfront."
+              },
+              {
+                "name": "Fisherman’s Wharf",
+                "type": "district",
+                "confidence": 0.66,
+                "notes": "Waterfront tourist district at the base of Hyde Street."
+              },
+              {
+                "name": "Hyde Street Pier",
+                "type": "infrastructure",
+                "confidence": 0.62,
+                "notes": "Historic pier area likely visible near the waterfront below."
+              },
+              {
+                "name": "Aquatic Park Cove",
+                "type": "natural_feature",
+                "confidence": 0.6,
+                "notes": "Protected cove adjacent to Fisherman’s Wharf, seen near the base of the hill."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "A vintage San Francisco cable car with a white body and red window frames travels down a very steep residential street. The car, marked with route number 9, carries passengers along its side as it descends the hill on tracks embedded in the road. Parked cars line both sides of the street, and a canopy of trees frames the top of the scene. On the left is a light-colored SUV and on the right a silver car beside a modern building. The hillside neighborhood and Bay Area architecture are visible, with the blue water of the San Francisco Bay and distant landmasses visible in the background under a clear sky. The image captures San Francisco’s iconic steep topography and historic cable-car transport.",
+            "photographer_location": [
+              {
+                "name": "Hyde Street & Chestnut Street, San Francisco, California, USA",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Hyde Street, San Francisco, California, USA",
+                "confidence": 0.85
+              }
+            ],
+            "entities": [
+              {
+                "name": "San Francisco cable car",
+                "type": "infrastructure",
+                "confidence": 0.75,
+                "notes": "Powell-Hyde line; car number 9; vintage tram"
+              },
+              {
+                "name": "Powell-Hyde cable car line",
+                "type": "infrastructure",
+                "confidence": 0.6,
+                "notes": "transit route depicted"
+              },
+              {
+                "name": "Route 9 signage on cable car",
+                "type": "signage",
+                "confidence": 0.7,
+                "notes": "visible route number 9 on car body"
+              },
+              {
+                "name": "San Francisco Bay",
+                "type": "natural_feature",
+                "confidence": 0.65,
+                "notes": "distant water body framing the scene"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A street-level photograph looking north down the steep incline of Hyde Street in San Francisco's Russian Hill neighborhood. A historic San Francisco cable car, identified as Car No. 9 of the Powell-Hyde line, is ascending the hill towards the foreground, filled with passengers, some of whom are hanging off the side. The cable car features traditional livery with 'Powell and Market' and 'Hyde and Beach' signage. To the left, the view is framed by the dense foliage of trees, likely bordering George Sterling Park, and a parked dark grey Mercedes-Benz SUV (license plate partially visible). To the right, residential buildings with stucco facades and a parked silver sedan line the street. In the background, the street drops away to reveal a scenic view of the San Francisco Bay, the curved breakwater of Aquatic Park, and Alcatraz Island prominently positioned in the distance under a clear blue sky.",
+            "photographer_location": [
+              {
+                "name": "Hyde Street",
+                "confidence": 1.0
+              },
+              {
+                "name": "Russian Hill",
+                "confidence": 1.0
+              },
+              {
+                "name": "San Francisco",
+                "confidence": 1.0
+              },
+              {
+                "name": "near Greenwich Street",
+                "confidence": 0.85
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Hyde Street",
+                "confidence": 1.0
+              },
+              {
+                "name": "Russian Hill",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "San Francisco Cable Car",
+                "type": "landmark",
+                "confidence": 1.0,
+                "notes": "Car No. 9, Powell-Hyde line"
+              },
+              {
+                "name": "Alcatraz Island",
+                "type": "landmark",
+                "confidence": 1.0,
+                "notes": "Visible in the background"
+              },
+              {
+                "name": "San Francisco Bay",
+                "type": "natural_feature",
+                "confidence": 1.0,
+                "notes": null
+              },
+              {
+                "name": "Hyde Street",
+                "type": "infrastructure",
+                "confidence": 1.0,
+                "notes": "Steep incline with cable car tracks"
+              },
+              {
+                "name": "Aquatic Park Pier",
+                "type": "landmark",
+                "confidence": 0.9,
+                "notes": "Curved breakwater visible in the water"
+              },
+              {
+                "name": "George Sterling Park",
+                "type": "public_space",
+                "confidence": 0.8,
+                "notes": "Inferred from location of trees on the left"
+              },
+              {
+                "name": "Mercedes-Benz M-Class",
+                "type": "other",
+                "confidence": 0.95,
+                "notes": "SUV parked on the left"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A view looking north down a steep hill in San Francisco, featuring a classic Powell and Market cable car (number 9) descending the tracks. In the background, Alcatraz Island is clearly visible in the San Francisco Bay under a clear blue sky. The scene is framed by leafy green trees in the foreground. A silver Mercedes-Benz SUV is parked on the left side of the street, and other vehicles are visible further down the hill. The architecture consists of multi-story residential buildings typical of the Russian Hill neighborhood.",
+            "photographer_location": [
+              {
+                "name": "Hyde Street, San Francisco, California, United States",
+                "confidence": 0.95
+              },
+              {
+                "name": "Russian Hill, San Francisco, California, United States",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Hyde Street, San Francisco, California, United States",
+                "confidence": 0.95
+              },
+              {
+                "name": "Alcatraz Island, San Francisco Bay, California, United States",
+                "confidence": 1.0
+              },
+              {
+                "name": "San Francisco Bay",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "San Francisco Cable Car",
+                "type": "landmark",
+                "confidence": 1.0,
+                "notes": "Specifically a car from the Powell-Hyde line, numbered 9."
+              },
+              {
+                "name": "Alcatraz Island",
+                "type": "landmark",
+                "confidence": 1.0,
+                "notes": "Former federal prison located in the San Francisco Bay."
+              },
+              {
+                "name": "San Francisco Bay",
+                "type": "natural_feature",
+                "confidence": 1.0,
+                "notes": null
+              },
+              {
+                "name": "Russian Hill",
+                "type": "district",
+                "confidence": 0.95,
+                "notes": "The neighborhood where the photo was taken."
+              },
+              {
+                "name": "Hyde Street",
+                "type": "infrastructure",
+                "confidence": 0.95,
+                "notes": "The street the cable car is traveling on."
+              },
+              {
+                "name": "Powell-Hyde Cable Car Line",
+                "type": "infrastructure",
+                "confidence": 0.98,
+                "notes": "The specific cable car route depicted."
+              },
+              {
+                "name": "Mercedes-Benz M-Class",
+                "type": "other",
+                "confidence": 0.9,
+                "notes": "Silver SUV parked in the foreground."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "Russian Hill Park",
+                "type": "landmark",
+                "confidence": 0.4104715585708618,
+                "notes": null
+              },
+              {
+                "name": "Lombard Street",
+                "type": "landmark",
+                "confidence": 0.31607934832572937,
+                "notes": null
+              },
+              {
+                "name": "SUV",
+                "type": "other",
+                "confidence": 1.0,
+                "notes": null
+              },
+              {
+                "name": "Subcompact car",
+                "type": "other",
+                "confidence": 0.9205551147460938,
+                "notes": null
+              },
+              {
+                "name": "Car",
+                "type": "other",
+                "confidence": 0.782550036907196,
+                "notes": null
+              },
+              {
+                "name": "Volkswagen",
+                "type": "other",
+                "confidence": 0.7578890919685364,
+                "notes": null
+              },
+              {
+                "name": "Van",
+                "type": "other",
+                "confidence": 0.674308180809021,
+                "notes": null
+              },
+              {
+                "name": "Minivan",
+                "type": "other",
+                "confidence": 0.6498000025749207,
+                "notes": null
+              },
+              {
+                "name": "Compact car",
+                "type": "other",
+                "confidence": 0.6400499939918518,
+                "notes": null
+              },
+              {
+                "name": "Mercedes-Benz GLE",
+                "type": "other",
+                "confidence": 0.590399980545044,
+                "notes": null
+              },
+              {
+                "name": "Compact MPV",
+                "type": "other",
+                "confidence": 0.551547110080719,
+                "notes": null
+              },
+              {
+                "name": "Mini MPV",
+                "type": "other",
+                "confidence": 0.5447134375572205,
+                "notes": null
+              },
+              {
+                "name": "Mode of transport",
+                "type": "other",
+                "confidence": 0.9846630692481995,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Transport",
+                "type": "other",
+                "confidence": 0.9683945178985596,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Lane",
+                "type": "other",
+                "confidence": 0.8018149733543396,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Windshield",
+                "type": "other",
+                "confidence": 0.7973571419715881,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Travel",
+                "type": "other",
+                "confidence": 0.7891044616699219,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Public transport",
+                "type": "other",
+                "confidence": 0.7807052135467529,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Family car",
+                "type": "other",
+                "confidence": 0.7736207246780396,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Vehicle registration plate",
+                "type": "other",
+                "confidence": 0.759721577167511,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Automotive Mirror",
+                "type": "other",
+                "confidence": 0.7553538084030151,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Public utility",
+                "type": "other",
+                "confidence": 0.7462794184684753,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "6.JVS700",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "SPANG",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "POWELL",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "MARKET",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "HYDE",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "BEACH",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "FISHERMANS",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "WHARF",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "meet",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "BLENA",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "VISTA",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "coffee",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              }
+            ],
+            "landmark_name": "Russian Hill Park"
+          }
+        }
+      ]
+    },
+    {
+      "image_filename": "18.jpg",
+      "use_gps": false,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "A classic San Francisco cable car descends a steep, tree-lined street with cable tracks. Several riders stand on the running boards of the wood-bodied car with red-trimmed windows. Route signage on the rear reads “Powell & Market – Hyde & Beach,” identifying it as a Powell–Hyde line car. Parked cars line the hill. In the background is the San Francisco Bay with a clear view of Alcatraz Island. Below the hill are waterfront piers/marina structures near Aquatic Park/Fisherman’s Wharf. The lighting suggests late afternoon with long shadows across residential buildings on Russian Hill.",
+            "photographer_location": [
+              {
+                "name": "Hyde Street, Russian Hill, San Francisco, California, United States",
+                "confidence": 0.88
+              },
+              {
+                "name": "Lombard Street and Hyde Street, Russian Hill, San Francisco, California, United States",
+                "confidence": 0.75
+              },
+              {
+                "name": "San Francisco, California, United States",
+                "confidence": 0.99
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Hyde Street, Russian Hill, San Francisco, California, United States",
+                "confidence": 0.9
+              },
+              {
+                "name": "Alcatraz Island, San Francisco Bay, California, United States",
+                "confidence": 0.92
+              },
+              {
+                "name": "Fisherman’s Wharf, San Francisco, California, United States",
+                "confidence": 0.6
+              },
+              {
+                "name": "Hyde Street Pier, San Francisco Maritime National Historical Park, San Francisco, California, United States",
+                "confidence": 0.6
+              }
+            ],
+            "entities": [
+              {
+                "name": "San Francisco cable car",
+                "type": "landmark",
+                "confidence": 0.98,
+                "notes": "Historic Muni cable car with riders on running boards"
+              },
+              {
+                "name": "Powell–Hyde line",
+                "type": "infrastructure",
+                "confidence": 0.9,
+                "notes": "Route between Powell & Market and Hyde & Beach (Aquatic Park)"
+              },
+              {
+                "name": "Hyde Street",
+                "type": "infrastructure",
+                "confidence": 0.95,
+                "notes": "Steep street with cable car tracks in Russian Hill"
+              },
+              {
+                "name": "Russian Hill",
+                "type": "district",
+                "confidence": 0.85,
+                "notes": null
+              },
+              {
+                "name": "Alcatraz Island",
+                "type": "landmark",
+                "confidence": 0.96,
+                "notes": "Former federal penitentiary in San Francisco Bay"
+              },
+              {
+                "name": "San Francisco Bay",
+                "type": "natural_feature",
+                "confidence": 0.98,
+                "notes": null
+              },
+              {
+                "name": "Hyde Street Pier",
+                "type": "infrastructure",
+                "confidence": 0.6,
+                "notes": "Part of San Francisco Maritime National Historical Park"
+              },
+              {
+                "name": "San Francisco Maritime National Historical Park",
+                "type": "public_space",
+                "confidence": 0.6,
+                "notes": "Waterfront park around Aquatic Park and Hyde Street Pier"
+              },
+              {
+                "name": "Fisherman’s Wharf",
+                "type": "district",
+                "confidence": 0.6,
+                "notes": "Tourist waterfront district near the scene"
+              },
+              {
+                "name": "Cable car number 9 (uncertain)",
+                "type": "other",
+                "confidence": 0.55,
+                "notes": "Digit ‘9’ appears on rear panel but the exact car number is uncertain"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "A steep San Francisco street scene featuring a classic Powell Street cable car up the hill. The car is white with red framing (Cable Car No. 9) and open windows, with passengers standing along the exterior as it travels along tracks embedded in the road. Cars are parked on both sides of the narrow street, flanked by residential buildings with light facades on the right and overhanging trees casting shade. In the distance, the bay opens up to blue water with hills and a distant island, suggesting Alcatraz Island, under a clear blue sky.",
+            "photographer_location": [
+              {
+                "name": "Powell Street, San Francisco, California, USA",
+                "confidence": 0.92
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Powell Street Cable Car Line, San Francisco, California, USA",
+                "confidence": 0.88
+              }
+            ],
+            "entities": [
+              {
+                "name": "Powell-Hyde Cable Car (Cable Car No. 9)",
+                "type": "landmark",
+                "confidence": 0.85,
+                "notes": "Historic San Francisco cable car on the Powell-Hyde line, car number 9."
+              },
+              {
+                "name": "Alcatraz Island",
+                "type": "cultural_site",
+                "confidence": 0.6,
+                "notes": "Visible distant island in San Francisco Bay; historic federal prison."
+              },
+              {
+                "name": "Powell Street / Market Street Cable Car Stop Signage",
+                "type": "signage",
+                "confidence": 0.7,
+                "notes": "Signage indicating Powell Street and Market Street access for the cable car."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "A classic San Francisco cable car descends a steep, tree-lined residential street toward the waterfront. Several riders stand on the exterior running boards as the car travels on the dual steel tracks. The rear signage reads “Powell & Market” and “Hyde & Beach,” indicating the Powell–Hyde line. Parked cars, including a silver Mercedes SUV with a California plate, line the street. Below, rooftops and a marina with boats lead to the blue expanse of San Francisco Bay. Prominently offshore is a low rocky island with large pale buildings, recognizable as Alcatraz Island. Distant hazy hills frame the horizon. The late-afternoon light casts long shadows across the road and houses typical of San Francisco’s northern hills.",
+            "photographer_location": [
+              {
+                "name": "San Francisco, California, USA",
+                "confidence": 0.98
+              },
+              {
+                "name": "Russian Hill, San Francisco, California, USA",
+                "confidence": 0.9
+              },
+              {
+                "name": "Hyde Street, Russian Hill, San Francisco, California, USA",
+                "confidence": 0.86
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Hyde Street, Russian Hill, San Francisco, California, USA",
+                "confidence": 0.9
+              },
+              {
+                "name": "San Francisco, California, USA",
+                "confidence": 0.98
+              }
+            ],
+            "entities": [
+              {
+                "name": "Powell–Hyde line cable car",
+                "type": "infrastructure",
+                "confidence": 0.96,
+                "notes": "Historic San Francisco cable car; signage shows “Powell & Market” and “Hyde & Beach.”"
+              },
+              {
+                "name": "Alcatraz Island",
+                "type": "landmark",
+                "confidence": 0.95,
+                "notes": "Former prison island in San Francisco Bay, visible offshore."
+              },
+              {
+                "name": "San Francisco Bay",
+                "type": "natural_feature",
+                "confidence": 0.98,
+                "notes": "Large estuarine bay forming the backdrop of the scene."
+              },
+              {
+                "name": "Russian Hill",
+                "type": "district",
+                "confidence": 0.88,
+                "notes": "Hilly neighborhood where this stretch of Hyde Street is located."
+              },
+              {
+                "name": "Hyde Street",
+                "type": "infrastructure",
+                "confidence": 0.87,
+                "notes": "Steep north–south street carrying the Powell–Hyde cable car line."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "A steep city street in a residential neighborhood with trees framing the top of the image. On the right, multi-story houses line the curb, while a white and red cable car occupies the center of the roadway, moving downhill along rails that run down the middle of the street. Passengers are visible inside and at the doors. Parked cars line both sides, including a silver SUV in the foreground left. In the background, the San Francisco Bay is visible with boats and distant landforms, including a small island or promontory. The scene is lit by a clear blue sky and is framed by overhanging branches, giving depth to the view.",
+            "photographer_location": [
+              {
+                "name": "San Francisco, California, United States",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Powell Street, San Francisco, California, United States",
+                "confidence": 0.85
+              }
+            ],
+            "entities": [
+              {
+                "name": "San Francisco cable car",
+                "type": "infrastructure",
+                "confidence": 0.82,
+                "notes": "historic vehicle on steep street, central in frame"
+              },
+              {
+                "name": "San Francisco Bay",
+                "type": "natural_feature",
+                "confidence": 0.65,
+                "notes": "bay with boats and distant landforms"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A scenic, eye-level shot taken from a steep incline on Hyde Street in San Francisco, looking north toward the bay. The central subject is San Francisco Cable Car No. 9, operating on the Powell-Hyde line, descending the hill with passengers hanging off the side rails. The cable car is painted in traditional maroon and cream colors with signage reading 'Powell and Market' and 'Hyde & Beach Fisherman's Wharf'. To the left, a dark grey Mercedes-Benz SUV is parked parallel to the curb, displaying a California license plate. The street is flanked by trees and residential buildings, casting shadows across the foreground. In the background, the view opens up to the San Francisco Bay, featuring the curved Aquatic Park Pier (Muni Pier) and the iconic Alcatraz Island centered in the distance under a clear blue sky.",
+            "photographer_location": [
+              {
+                "name": "Hyde Street",
+                "confidence": 0.95
+              },
+              {
+                "name": "Russian Hill",
+                "confidence": 0.95
+              },
+              {
+                "name": "San Francisco",
+                "confidence": 1.0
+              },
+              {
+                "name": "California",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Hyde Street",
+                "confidence": 0.95
+              },
+              {
+                "name": "San Francisco Bay",
+                "confidence": 1.0
+              },
+              {
+                "name": "Alcatraz Island",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "San Francisco Cable Car",
+                "type": "transport_hub",
+                "confidence": 1.0,
+                "notes": "Car No. 9, Powell-Hyde Line"
+              },
+              {
+                "name": "Alcatraz Island",
+                "type": "landmark",
+                "confidence": 1.0,
+                "notes": "Former federal penitentiary"
+              },
+              {
+                "name": "San Francisco Bay",
+                "type": "natural_feature",
+                "confidence": 1.0,
+                "notes": null
+              },
+              {
+                "name": "Aquatic Park Pier",
+                "type": "infrastructure",
+                "confidence": 0.9,
+                "notes": "Also known as Muni Pier"
+              },
+              {
+                "name": "Hyde Street",
+                "type": "infrastructure",
+                "confidence": 0.95,
+                "notes": "Famous steep street segment"
+              },
+              {
+                "name": "Russian Hill",
+                "type": "district",
+                "confidence": 0.95,
+                "notes": "Neighborhood known for steep streets"
+              },
+              {
+                "name": "Mercedes-Benz M-Class",
+                "type": "other",
+                "confidence": 0.85,
+                "notes": "Parked SUV"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A high-angle shot looking north down a steep urban street, identified as Hyde Street in San Francisco. A traditional wooden cable car, painted white with red and blue accents and labeled 'Powell and Market', is descending the hill. Several passengers are visible, some standing on the exterior steps. The street has embedded tracks and yellow lane markings. In the background, the blue waters of the San Francisco Bay are visible, with Alcatraz Island and its historic prison buildings clearly identifiable on the horizon. To the left of the bay, a pier with various boats is seen. The foreground is dominated by a silver Mercedes-Benz SUV parked on the left. The street is lined with multi-story residential buildings and lush green trees that frame the top and sides of the image. The lighting is bright and direct, casting long shadows, suggesting a clear afternoon.",
+            "photographer_location": [
+              {
+                "name": "Hyde Street, San Francisco, California, USA",
+                "confidence": 0.95
+              },
+              {
+                "name": "Russian Hill, San Francisco, California, USA",
+                "confidence": 0.9
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Hyde Street, San Francisco, California, USA",
+                "confidence": 0.95
+              },
+              {
+                "name": "Alcatraz Island, San Francisco, California, USA",
+                "confidence": 0.99
+              },
+              {
+                "name": "San Francisco Bay, California, USA",
+                "confidence": 0.99
+              }
+            ],
+            "entities": [
+              {
+                "name": "San Francisco Cable Car",
+                "type": "landmark",
+                "confidence": 1.0,
+                "notes": "Powell-Hyde line, car number 9"
+              },
+              {
+                "name": "Alcatraz Island",
+                "type": "landmark",
+                "confidence": 1.0,
+                "notes": "Former federal prison in San Francisco Bay"
+              },
+              {
+                "name": "San Francisco Bay",
+                "type": "natural_feature",
+                "confidence": 1.0,
+                "notes": null
+              },
+              {
+                "name": "Hyde Street",
+                "type": "infrastructure",
+                "confidence": 0.95,
+                "notes": "Famous steep street in San Francisco"
+              },
+              {
+                "name": "Russian Hill",
+                "type": "district",
+                "confidence": 0.9,
+                "notes": "San Francisco neighborhood"
+              },
+              {
+                "name": "Mercedes-Benz M-Class",
+                "type": "other",
+                "confidence": 0.9,
+                "notes": "Silver SUV parked in the foreground"
+              },
+              {
+                "name": "Hyde Street Pier",
+                "type": "landmark",
+                "confidence": 0.85,
+                "notes": "Visible in the middle ground near the water"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "Russian Hill Park",
+                "type": "landmark",
+                "confidence": 0.40444043278694153,
+                "notes": null
+              },
+              {
+                "name": "Lombard Street",
+                "type": "landmark",
+                "confidence": 0.3147926926612854,
+                "notes": null
+              },
+              {
+                "name": "SUV",
+                "type": "other",
+                "confidence": 1.0,
+                "notes": null
+              },
+              {
+                "name": "Minivan",
+                "type": "other",
+                "confidence": 0.9784718751907349,
+                "notes": null
+              },
+              {
+                "name": "Subcompact car",
+                "type": "other",
+                "confidence": 0.907987654209137,
+                "notes": null
+              },
+              {
+                "name": "Car",
+                "type": "other",
+                "confidence": 0.775950014591217,
+                "notes": null
+              },
+              {
+                "name": "Volkswagen",
+                "type": "other",
+                "confidence": 0.7436212301254272,
+                "notes": null
+              },
+              {
+                "name": "Van",
+                "type": "other",
+                "confidence": 0.6959152817726135,
+                "notes": null
+              },
+              {
+                "name": "Compact car",
+                "type": "other",
+                "confidence": 0.6568499803543091,
+                "notes": null
+              },
+              {
+                "name": "Toyota",
+                "type": "other",
+                "confidence": 0.593250036239624,
+                "notes": null
+              },
+              {
+                "name": "Compact MPV",
+                "type": "other",
+                "confidence": 0.5638564229011536,
+                "notes": null
+              },
+              {
+                "name": "Mini MPV",
+                "type": "other",
+                "confidence": 0.5424695014953613,
+                "notes": null
+              },
+              {
+                "name": "Mode of transport",
+                "type": "other",
+                "confidence": 0.9846369028091431,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Transport",
+                "type": "other",
+                "confidence": 0.9685108661651611,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Lane",
+                "type": "other",
+                "confidence": 0.8062806725502014,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Windshield",
+                "type": "other",
+                "confidence": 0.7977591156959534,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Travel",
+                "type": "other",
+                "confidence": 0.792009711265564,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Public transport",
+                "type": "other",
+                "confidence": 0.7838273048400879,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Family car",
+                "type": "other",
+                "confidence": 0.7690199017524719,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Vehicle registration plate",
+                "type": "other",
+                "confidence": 0.7599340677261353,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Automotive Mirror",
+                "type": "other",
+                "confidence": 0.7550556063652039,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Public utility",
+                "type": "other",
+                "confidence": 0.7499423623085022,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "6.JVS700",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "SPANG",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "POWELL",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "MARKET",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "HYDE",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "BEACH",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "FISHERMANS",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "WHARF",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "meet",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "BLENA",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "VISTA",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "SONY",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              },
+              {
+                "name": "coffee",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              }
+            ],
+            "landmark_name": "Russian Hill Park"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "7.jpg",
+      "timestamp": "2026-01-28T06:39:42.944816",
+      "processing_time_seconds": 67.130572,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Burums building, Oslo, Norway",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The identification is based on the visible signage 'Burums' and the architectural style, which is consistent with modern urban commercial buildings in Oslo.",
+            "detailed_description": "The image shows a modern brick building with a commercial establishment named 'Burums'. The facade features red brickwork and multiple rectangular windows. The building is located in an urban setting, with tram tracks visible on the street. The architectural style is contemporary, with a focus on functional design typical of urban commercial buildings.",
+            "identification": {
+              "primary": [
+                "Burums building"
+              ],
+              "location": "Oslo, Norway",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Burums building",
+                "type": "building",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "brick",
+              "urban",
+              "commercial"
+            ],
+            "location": "Oslo, Norway",
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Burums building\"],\n        \"location\": \"Oslo, Norway\",\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Burums building\",\n            \"type\": \"building\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"brick\", \"urban\", \"commercial\"],\n    \"description\": \"The image shows a modern brick building with a commercial establishment named 'Burums'. The facade features red brickwork and multiple rectangular windows. The building is located in an urban setting, with tram tracks visible on the street. The architectural style is contemporary, with a focus on functional design typical of urban commercial buildings.\",\n    \"reasoning\": \"The identification is based on the visible signage 'Burums' and the architectural style, which is consistent with modern urban commercial buildings in Oslo.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "processing_time_seconds": 12.345887899398804
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts an urban street scene featuring a multi-story building with a facade primarily composed of red brick. The building has a modern architectural style, characterized by rectangular windows with black frames. The windows are arranged in a grid pattern, providing a symmetrical appearance. The ground floor hosts a commercial establishment with a green awning displaying the name 'BURUMS' in white lettering, accompanied by a decorative logo. The entrance is flanked by green columns and",
+            "description": "The image depicts an urban street scene featuring a multi-story building with a facade primarily composed of red brick. The building has a modern architectural style, characterized by rectangular windows with black frames. The windows are arranged in a grid pattern, providing a symmetrical appearance. The ground floor hosts a commercial establishment with a green awning displaying the name 'BURUMS' in white lettering, accompanied by a decorative logo. The entrance is flanked by green columns and",
+            "architectural_style": "Modern",
+            "search_backends_used": [],
+            "processing_time_seconds": 54.783143281936646
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Window",
+          "confidence": 0.9721292853355408,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Window",
+                "score": 0.9721292853355408
+              },
+              {
+                "source": "label",
+                "name": "Apartment",
+                "score": 0.8332988619804382
+              },
+              {
+                "source": "object",
+                "name": "Building",
+                "score": 0.5541192889213562
+              },
+              {
+                "source": "web",
+                "name": "ArchitectureM RIBA Chartered Practice",
+                "score": 0.3124000132083893
+              },
+              {
+                "source": "web",
+                "name": "Commercial property",
+                "score": 0.304500013589859
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "ArchitectureM RIBA Chartered Practice",
+                "score": 0.3124000132083893
+              },
+              {
+                "name": "Commercial property",
+                "score": 0.304500013589859
+              },
+              {
+                "name": "Commerce",
+                "score": 0.3005000054836273
+              },
+              {
+                "name": "Building",
+                "score": 0.2800999879837036
+              },
+              {
+                "name": "Architecture",
+                "score": 0.2734236419200897
+              }
+            ],
+            "objects": [
+              {
+                "name": "Building",
+                "score": 0.5541192889213562
+              }
+            ],
+            "labels": [
+              {
+                "name": "Wall",
+                "score": 0.9760168194770813
+              },
+              {
+                "name": "Building",
+                "score": 0.9746548533439636
+              },
+              {
+                "name": "Window",
+                "score": 0.9721292853355408
+              },
+              {
+                "name": "Apartment",
+                "score": 0.8332988619804382
+              },
+              {
+                "name": "Daylighting",
+                "score": 0.627422571182251
+              }
+            ],
+            "processing_time_seconds": 22.801452159881592
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/7.jpg"
+    }
+  ]
+}

@@ -1,0 +1,1047 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "135.heic",
+      "timestamp": "2026-01-28T02:04:04.867836",
+      "processing_time_seconds": 64.671139,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 13.759408333333333,
+        "gps_longitude": 100.49643611111111,
+        "location": {
+          "formatted_address": "80-84 Khaosan Rd, Khwaeng Talat Yot, Khet Phra Nakhon, Krung Thep Maha Nakhon 10200, Thailand",
+          "city": null,
+          "county": "Krung Thep Maha Nakhon",
+          "country": "Thailand"
+        },
+        "datetime_original": "2024:12:19 17:35:07",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Bangkok skyline, Wat Saket (Golden Mount), Bangkok, Thailand",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Bangkok, Thailand, and the skyline features recognizable elements such as Wat Saket and modern skyscrapers typical of the city. The temple's golden chedi is a distinctive feature that aids identification.",
+            "detailed_description": "The image shows a bustling street market in Bangkok with the city's skyline visible in the background. Prominent in the skyline is Wat Saket, also known as the Golden Mount, which is a historic Buddhist temple characterized by its golden chedi. The skyline includes a mix of modern skyscrapers, reflecting Bangkok's urban development. The foreground features market stalls and buildings typical of urban Thailand.",
+            "identification": {
+              "primary": [
+                "Bangkok skyline",
+                "Wat Saket (Golden Mount)"
+              ],
+              "location": "Bangkok, Thailand",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Bangkok skyline",
+                "type": "viewpoint",
+                "confidence": 0.95
+              },
+              {
+                "name": "Wat Saket (Golden Mount)",
+                "type": "landmark",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "urban",
+              "skyline",
+              "temple",
+              "modern_architecture",
+              "historical_landmark",
+              "Thailand"
+            ],
+            "location": "Bangkok, Thailand",
+            "type": "viewpoint",
+            "search_range_meters": 2000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Bangkok skyline\", \"Wat Saket (Golden Mount)\"],\n        \"location\": \"Bangkok, Thailand\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Bangkok skyline\",\n            \"type\": \"viewpoint\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Wat Saket (Golden Mount)\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.90\n        }\n    ],\n    \"tags\": [\"urban\", \"skyline\", \"temple\", \"modern_architecture\", \"historical_landmark\", \"Thailand\"],\n    \"description\": \"The image shows a bustling street market in Bangkok with the city's skyline visible in the background. Prominent in the skyline is Wat Saket, also known as the Golden Mount, which is a historic Buddhist temple characterized by its golden chedi. The skyline includes a mix of modern skyscrapers, reflecting Bangkok's urban development. The foreground features market stalls and buildings typical of urban Thailand.\",\n    \"reasoning\": \"The location metadata indicates Bangkok, Thailand, and the skyline features recognizable elements such as Wat Saket and modern skyscrapers typical of the city. The temple's golden chedi is a distinctive feature that aids identification.\",\n    \"type\": \"viewpoint\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 13.759408333333333,
+              "longitude": 100.49643611111111
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "80-84 Khaosan Rd, Khwaeng Talat Yot, Khet Phra Nakhon, Krung Thep Maha Nakhon 10200, Thailand",
+              "city": null,
+              "county": "Krung Thep Maha Nakhon",
+              "country": "Thailand"
+            },
+            "photo_timestamp": "2024:12:19 17:35:07",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 27.121999979019165
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([en.wikipedia.org]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 2,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image captures a bustling urban scene in Krung Thep Maha Nakhon, Thailand, with a view of a vibrant market street in the foreground and a city skyline in the background. The market street is lined with stalls covered by colorful canopies, creating a lively atmosphere. The buildings along the street have a modern architectural style with flat roofs and a mix of pastel colors, including pink and green. The skyline in the distance features a mix of modern skyscrapers and traditional architectur",
+            "description": "The image captures a bustling urban scene in Krung Thep Maha Nakhon, Thailand, with a view of a vibrant market street in the foreground and a city skyline in the background. The market street is lined with stalls covered by colorful canopies, creating a lively atmosphere. The buildings along the street have a modern architectural style with flat roofs and a mix of pastel colors, including pink and green. The skyline in the distance features a mix of modern skyscrapers and traditional architectur",
+            "architectural_style": "Modern with traditional elements",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 13.759408333333333,
+              "longitude": 100.49643611111111
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "80-84 Khaosan Rd, Khwaeng Talat Yot, Khet Phra Nakhon, Krung Thep Maha Nakhon 10200, Thailand",
+              "city": null,
+              "county": "Krung Thep Maha Nakhon",
+              "country": "Thailand"
+            },
+            "photo_timestamp": "2024:12:19 17:35:07",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 36.57614302635193
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Apartment (Thailand)",
+          "confidence": 0.5515919923782349,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Apartment",
+            "artist_name": null,
+            "museum_or_location": "Thailand",
+            "art_style": null,
+            "art_era": null,
+            "confidence": 0.5515919923782349,
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.5706791281700134
+              },
+              {
+                "name": "Apartment",
+                "score": 0.5515919923782349
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.45993271470069885
+              },
+              {
+                "name": "Tower",
+                "score": 0.4043999910354614
+              },
+              {
+                "name": "Metropolitan area",
+                "score": 0.3685688078403473
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 13.759408333333333,
+              "longitude": 100.49643611111111
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "80-84 Khaosan Rd, Khwaeng Talat Yot, Khet Phra Nakhon, Krung Thep Maha Nakhon 10200, Thailand",
+              "city": null,
+              "county": "Krung Thep Maha Nakhon",
+              "country": "Thailand"
+            },
+            "photo_timestamp": "2024:12:19 17:35:07",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 14.627401113510132
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Krung Thep Maha Nakhon, Thailand",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Krung Thep Maha Nakhon, Thailand",
+            "coordinates": {
+              "latitude": 13.759408333333333,
+              "longitude": 100.49643611111111
+            },
+            "search_range_meters": 2000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Pig Memorial",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 153,
+                  "vicinity": "PFXW+WFX, Bangkok",
+                  "place_id": "ChIJ1_9KLxCZ4jARNVFsNQSbq7k",
+                  "location": {
+                    "lat": 13.7498718,
+                    "lng": 100.4962242
+                  }
+                },
+                {
+                  "name": "Sanam Luang",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 26520,
+                  "vicinity": "QF4V+88R, Thanon Ratchadamnoen Klang, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon",
+                  "place_id": "ChIJ-WOptA2Z4jARRFoeZFcz_Gk",
+                  "location": {
+                    "lat": 13.7558693,
+                    "lng": 100.4932804
+                  }
+                },
+                {
+                  "name": "Statue of King Rama III",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 119,
+                  "vicinity": "2 Thanon Ratchadamnoen Klang, Wat Bowonniwet , 10200, Khet Phra Nakhon",
+                  "place_id": "ChIJU_CKrxWZ4jARAul-S3lTaX8",
+                  "location": {
+                    "lat": 13.7553847,
+                    "lng": 100.5049658
+                  }
+                },
+                {
+                  "name": "Thaworawatthu Building",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 97,
+                  "vicinity": "QF3R+PJH, Soi Na Phra That, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon",
+                  "place_id": "ChIJF1vCFwyZ4jAR5siCW5OAa0U",
+                  "location": {
+                    "lat": 13.7543168,
+                    "lng": 100.4915972
+                  }
+                },
+                {
+                  "name": "Silpa Bhirasri National Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 37,
+                  "vicinity": "192 Thanon Maha Rat, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon",
+                  "place_id": "ChIJ2ykyVwmZ4jARcEFoydkmn64",
+                  "location": {
+                    "lat": 13.7527,
+                    "lng": 100.49106
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Thaworawatthu Building",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 97,
+                  "vicinity": "QF3R+PJH, Soi Na Phra That, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon",
+                  "place_id": "ChIJF1vCFwyZ4jAR5siCW5OAa0U",
+                  "location": {
+                    "lat": 13.7543168,
+                    "lng": 100.4915972
+                  }
+                },
+                {
+                  "name": "Baan Mowaan Bamrungchat Satsana Yathai Pharmacy",
+                  "types": [
+                    "drugstore",
+                    "museum",
+                    "health",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 77,
+                  "vicinity": "9 Soi Thesa, แขวง วัดราชบพิธ, Khet Phra Nakhon",
+                  "place_id": "ChIJ4U0rFBGZ4jARGwxWWp_H4bM",
+                  "location": {
+                    "lat": 13.751431,
+                    "lng": 100.4999401
+                  }
+                },
+                {
+                  "name": "Silpa Bhirasri National Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 37,
+                  "vicinity": "192 Thanon Maha Rat, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon",
+                  "place_id": "ChIJ2ykyVwmZ4jARcEFoydkmn64",
+                  "location": {
+                    "lat": 13.7527,
+                    "lng": 100.49106
+                  }
+                },
+                {
+                  "name": "Rattanakosin Exhibition Hall",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 2453,
+                  "vicinity": "100 Thanon Ratchadamnoen Klang, Khwaeng Wat Bowon Niwet, Khet Phra Nakhon",
+                  "place_id": "ChIJGe2dNRSZ4jARXs-hTwCQmFI",
+                  "location": {
+                    "lat": 13.7558541,
+                    "lng": 100.5038224
+                  }
+                },
+                {
+                  "name": "Parasitology Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 28,
+                  "vicinity": "QF5M+GX7, Siriraj, Bangkok Noi",
+                  "place_id": "ChIJaXNzrAqZ4jARS7GMPo9a-zU",
+                  "location": {
+                    "lat": 13.7587886,
+                    "lng": 100.4849122
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Nouvo City Hotel",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 3807,
+                  "vicinity": "Banglamphu, 2 Samsen 2 Road, Phranakorn",
+                  "place_id": "ChIJxe-mTmyZ4jARWrqTyaeZmwY",
+                  "location": {
+                    "lat": 13.7627875,
+                    "lng": 100.4994304
+                  }
+                },
+                {
+                  "name": "Baan Dinso",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 221,
+                  "vicinity": "113 Trok Sin, Khwaeng Wat Bowon Niwet, Khet Phra Nakhon",
+                  "place_id": "ChIJo-W_hROZ4jARr6t7x3eHr4I",
+                  "location": {
+                    "lat": 13.7553341,
+                    "lng": 100.5010622
+                  }
+                },
+                {
+                  "name": "ไทยโคซี่เฮาส์ ร้านอาหาร",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 5,
+                  "vicinity": "111/1-3 ตานี Tani, Khwaeng Talat Yot, Khet Phra Nakhon",
+                  "place_id": "ChIJzQ2dF22Z4jARYUBibFBet_8",
+                  "location": {
+                    "lat": 13.7603477,
+                    "lng": 100.4984281
+                  }
+                },
+                {
+                  "name": "Baan Wang Lang Riverside",
+                  "types": [
+                    "cafe",
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "store",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 839,
+                  "vicinity": "ริมแม่น้ำกรุงเทพ, 342 Soi Trok Watrakhang, Khwaeng Siriraj, Khet Bangkok Noi",
+                  "place_id": "ChIJHWUWJQqZ4jARAtfHR_Zqabs",
+                  "location": {
+                    "lat": 13.7548,
+                    "lng": 100.4865068
+                  }
+                },
+                {
+                  "name": "The Deck by Arun Residence",
+                  "types": [
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 3466,
+                  "vicinity": "36-38 Soi Pratu Nokyung, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon",
+                  "place_id": "ChIJX3aTlQuZ4jARuBMJ5me3lUY",
+                  "location": {
+                    "lat": 13.7448231,
+                    "lng": 100.491302
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Sanam Luang",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 26520,
+                  "vicinity": "QF4V+88R, Thanon Ratchadamnoen Klang, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon",
+                  "place_id": "ChIJ-WOptA2Z4jARRFoeZFcz_Gk",
+                  "location": {
+                    "lat": 13.7558693,
+                    "lng": 100.4932804
+                  }
+                },
+                {
+                  "name": "Charan Pirom",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 37,
+                  "vicinity": "QFFR+X93, ซอย ศรีประชา, Khwaeng Bang Yi Khan, Khet Bang Phlat",
+                  "place_id": "ChIJaYdS3XuZ4jARv5Vj2VmHMlA",
+                  "location": {
+                    "lat": 13.7748948,
+                    "lng": 100.4909372
+                  }
+                },
+                {
+                  "name": "Santi Chai Prakan Park",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2861,
+                  "vicinity": "QF7W+J29, Thanon Phra Athit, Khwaeng Chana Songkhram, Khet Phra Nakhon",
+                  "place_id": "ChIJ_0J6BXKZ4jAREKhaPbMAAR0",
+                  "location": {
+                    "lat": 13.7640367,
+                    "lng": 100.4951096
+                  }
+                },
+                {
+                  "name": "Saranrom Park",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2800,
+                  "vicinity": "Between the intersection of New Road and Rajini, ถนน เจริญกรุง, Khet Phra Nakhon",
+                  "place_id": "ChIJ29xTHBCZ4jARW6fp8aK8I-Q",
+                  "location": {
+                    "lat": 13.7481302,
+                    "lng": 100.4955593
+                  }
+                },
+                {
+                  "name": "Banglamphu Square",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 6,
+                  "vicinity": "Wat Bowonniwet (Bowonniwet side, Khwaeng Wat Bowon Niwet, Khet Phra Nakhon",
+                  "place_id": "ChIJ6UgYKACZ4jARWWDjTlPfgu0",
+                  "location": {
+                    "lat": 13.7603044,
+                    "lng": 100.499191
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Baan Rak Teh / บ้านรักแท้",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 11,
+                  "vicinity": "59 Thanon Burana Sat, Khwaeng San Chao Pho Sua, Khet Phra Nakhon",
+                  "place_id": "ChIJo7ybFRKZ4jARExI9hRhJkdA",
+                  "location": {
+                    "lat": 13.7543598,
+                    "lng": 100.4973294
+                  }
+                },
+                {
+                  "name": "One Loaf Christian Centre ขนมปังหนึ่งก้อน ศูนย์คริสเตียน",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 5,
+                  "vicinity": "75 Thanon Burana Sat, Khwaeng San Chao Pho Sua, Khet Phra Nakhon",
+                  "place_id": "ChIJu7VcWgCZ4jAR4yfG5w-yvNQ",
+                  "location": {
+                    "lat": 13.7541058,
+                    "lng": 100.4973285
+                  }
+                },
+                {
+                  "name": "쁘란깐루암짜이",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "QG42+GPJ",
+                  "place_id": "ChIJbyOC80uZ4jARyyikwWK92vk",
+                  "location": {
+                    "lat": 13.7563309,
+                    "lng": 100.5017651
+                  }
+                },
+                {
+                  "name": "พระพุทธโสธร",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "QF2R+R7V, Phra Borom Maha Ratchawang, Phra Nakhon",
+                  "place_id": "ChIJkSPHfwCZ4jARKpA3hY1hloI",
+                  "location": {
+                    "lat": 13.7521342,
+                    "lng": 100.4907327
+                  }
+                },
+                {
+                  "name": "Niramit Mai Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "44 Thewet 3, Khwaeng Bang Khun Phrom, Khet Phra Nakhon",
+                  "place_id": "ChIJMxa5x2mZ4jARcYeIkigCIhg",
+                  "location": {
+                    "lat": 13.7663323,
+                    "lng": 100.5056865
+                  }
+                },
+                {
+                  "name": "Masjid Luang Ansari Sunnah",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 67,
+                  "vicinity": "60, 1 Soi Wat Mai Yai Paen, Khwaeng Arun Amarin, Khet Bangkok Noi",
+                  "place_id": "ChIJ6XDvcHWZ4jARUdSVzg_cy7k",
+                  "location": {
+                    "lat": 13.7618434,
+                    "lng": 100.4854058
+                  }
+                },
+                {
+                  "name": "Chakraphong Mosque",
+                  "types": [
+                    "mosque",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 327,
+                  "vicinity": "QF6W+PRJ, Talat Yot, Phra Nakhon",
+                  "place_id": "ChIJmWzanm2Z4jAR7qD3U67XeFk",
+                  "location": {
+                    "lat": 13.761844,
+                    "lng": 100.497008
+                  }
+                },
+                {
+                  "name": "Masjid Ban Tuk Din | مسجد",
+                  "types": [
+                    "mosque",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 156,
+                  "vicinity": "139 Soi Damnoen Klang Nuea, Khwaeng Wat Bowon Niwet, Khet Phra Nakhon",
+                  "place_id": "ChIJ2YHlSBOZ4jARKkU0Ggtlhk0",
+                  "location": {
+                    "lat": 13.7582632,
+                    "lng": 100.5003307
+                  }
+                },
+                {
+                  "name": "Muslim Prayer Room Siriraj Hospital ห้องละหมาด",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 4,
+                  "vicinity": "QF5P+RM2, Siriraj, Bangkok Noi",
+                  "place_id": "ChIJ5a1Q_tCZ4jARGR0pg45QFh4",
+                  "location": {
+                    "lat": 13.7595222,
+                    "lng": 100.4866378
+                  }
+                },
+                {
+                  "name": "Muslim Prayer Room China World ห้องละหมาด",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 15,
+                  "vicinity": "6th Floor, 221/10 Phahurat Road, Khwaeng Wang Burapha Phirom, Khet Phra Nakhon",
+                  "place_id": "ChIJ-83DWpOZ4jARMChLsc2VtBc",
+                  "location": {
+                    "lat": 13.7450268,
+                    "lng": 100.5015727
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "The Queen's Gallery",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 473,
+                  "vicinity": "101 Thanon Ratchadamnoen Klang, Khwaeng Wat Bowon Niwet, Khet Phra Nakhon",
+                  "place_id": "ChIJW6dIDhWZ4jARS2gURqMBgH4",
+                  "location": {
+                    "lat": 13.7565268,
+                    "lng": 100.5051546
+                  }
+                },
+                {
+                  "name": "Mural grafiti pequeña Tailandesa,Bestror🇹🇭",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "137/2 Thanon Khao San, Khwaeng Talat Yot, Khet Phra Nakhon",
+                  "place_id": "ChIJV5R9MACZ4jARY-CVK2apdo8",
+                  "location": {
+                    "lat": 13.7586976,
+                    "lng": 100.4980621
+                  }
+                },
+                {
+                  "name": "Mini lLs (LoveinLoves)",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "64 Thanon Phra Sumen, Khwaeng Chana Songkhram, Khet Phra Nakhon",
+                  "place_id": "ChIJewV7T-yZ4jARPJSdp4FO0r0",
+                  "location": {
+                    "lat": 13.7620322,
+                    "lng": 100.4968452
+                  }
+                },
+                {
+                  "name": "10 10 Art Space",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "The Standard X, 25/1 Bangkok Phra Arthit, Khwaeng Chana Songkhram, Khet Phra Nakhon",
+                  "place_id": "ChIJZUaKO4CZ4jARz9J75vycHys",
+                  "location": {
+                    "lat": 13.7623786,
+                    "lng": 100.4956669
+                  }
+                },
+                {
+                  "name": "10 10 Art Space",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 15,
+                  "vicinity": "The Standard X, Bangkok, 45/1 Thanon Phra Athit, Khwaeng Chana Songkhram, Khet Phra Nakhon",
+                  "place_id": "ChIJvR3_XACZ4jARUm03g4C3LS8",
+                  "location": {
+                    "lat": 13.7629775,
+                    "lng": 100.4944948
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Bangkok",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Bangkok",
+                  "place_id": "ChIJ82ENKDJgHTERIEjiXbIAAQE",
+                  "location": {
+                    "lat": 13.7563309,
+                    "lng": 100.5017651
+                  }
+                },
+                {
+                  "name": "Nouvo City Hotel",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 3807,
+                  "vicinity": "Banglamphu, 2 Samsen 2 Road, Phranakorn",
+                  "place_id": "ChIJxe-mTmyZ4jARWrqTyaeZmwY",
+                  "location": {
+                    "lat": 13.7627875,
+                    "lng": 100.4994304
+                  }
+                },
+                {
+                  "name": "Sleep Withinn Bangkok",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 856,
+                  "vicinity": "76 Soi Ram Buttri, Khwaeng Talat Yot, Khet Phra Nakhon",
+                  "place_id": "ChIJHTXcRm2Z4jAR2FPNEy-7G4c",
+                  "location": {
+                    "lat": 13.7601785,
+                    "lng": 100.4968799
+                  }
+                },
+                {
+                  "name": "Riva Surya Bangkok",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1366,
+                  "vicinity": "23 Thanon Phra Athit, Khwaeng Chana Songkhram, Khet Phra Nakhon",
+                  "place_id": "ChIJ25hTVXKZ4jAR69rn8EKnlVQ",
+                  "location": {
+                    "lat": 13.7621441,
+                    "lng": 100.493128
+                  }
+                },
+                {
+                  "name": "Dang Derm Khaosan",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.5,
+                  "user_ratings_total": 1502,
+                  "vicinity": "1 Thanon Khao San",
+                  "place_id": "ChIJKRfatRKZ4jARRKPcMt3t44A",
+                  "location": {
+                    "lat": 13.7594547,
+                    "lng": 100.4965204
+                  }
+                }
+              ]
+            },
+            "total_places_found": 40,
+            "photo_timestamp": "2024:12:19 17:35:07",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.4329988956451416
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/135.heic"
+    },
+    {
+      "image_filename": "135.heic",
+      "timestamp": "2026-01-28T02:05:09.576157",
+      "processing_time_seconds": 62.467363,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Bangkok skyline, Golden Mount (Wat Saket), Bangkok, Thailand",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive golden chedi of Wat Saket is recognizable, and the skyline matches the typical view of Bangkok with its mix of modern skyscrapers.",
+            "detailed_description": "The image shows a bustling urban scene in Bangkok, Thailand. In the foreground, there is a busy market street lined with stalls and people. The background features the Bangkok skyline with modern skyscrapers. Notably, the Golden Mount (Wat Saket) is visible, characterized by its golden chedi, which is a prominent landmark in Bangkok. The scene captures the contrast between traditional and modern architecture.",
+            "identification": {
+              "primary": [
+                "Bangkok skyline",
+                "Golden Mount (Wat Saket)"
+              ],
+              "location": "Bangkok, Thailand",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Golden Mount (Wat Saket)",
+                "type": "landmark",
+                "confidence": 0.9
+              },
+              {
+                "name": "Bangkok skyline",
+                "type": "viewpoint",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "urban",
+              "skyline",
+              "temple",
+              "modern_architecture",
+              "Thailand"
+            ],
+            "location": "Bangkok, Thailand",
+            "type": "viewpoint",
+            "search_range_meters": 2000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Bangkok skyline\", \"Golden Mount (Wat Saket)\"],\n        \"location\": \"Bangkok, Thailand\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Golden Mount (Wat Saket)\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Bangkok skyline\",\n            \"type\": \"viewpoint\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"urban\", \"skyline\", \"temple\", \"modern_architecture\", \"Thailand\"],\n    \"description\": \"The image shows a bustling urban scene in Bangkok, Thailand. In the foreground, there is a busy market street lined with stalls and people. The background features the Bangkok skyline with modern skyscrapers. Notably, the Golden Mount (Wat Saket) is visible, characterized by its golden chedi, which is a prominent landmark in Bangkok. The scene captures the contrast between traditional and modern architecture.\",\n    \"reasoning\": \"The distinctive golden chedi of Wat Saket is recognizable, and the skyline matches the typical view of Bangkok with its mix of modern skyscrapers.\",\n    \"type\": \"viewpoint\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 25.843127727508545
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL:* ([en.wikipedia.org]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 3,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts an urban scene with a bustling market street in the foreground, characterized by numerous stalls and colorful awnings. The market is lined with low-rise buildings featuring simple, modern architectural styles, with flat roofs and pastel-colored facades. Above these buildings, a large billboard is visible, displaying the logo 'NaRaYa,' which suggests a commercial area. In the background, a city skyline emerges, dominated by a mix of modern skyscrapers and traditional architectur",
+            "description": "The image depicts an urban scene with a bustling market street in the foreground, characterized by numerous stalls and colorful awnings. The market is lined with low-rise buildings featuring simple, modern architectural styles, with flat roofs and pastel-colored facades. Above these buildings, a large billboard is visible, displaying the logo 'NaRaYa,' which suggests a commercial area. In the background, a city skyline emerges, dominated by a mix of modern skyscrapers and traditional architectur",
+            "architectural_style": "Modern and traditional",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 36.399723052978516
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Apartment",
+          "confidence": 0.5539819002151489,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Apartment",
+            "artist_name": null,
+            "museum_or_location": null,
+            "art_style": null,
+            "art_era": null,
+            "confidence": 0.5539819002151489,
+            "web_entities": [
+              {
+                "name": "Apartment",
+                "score": 0.5539819002151489
+              },
+              {
+                "name": "Skyscraper",
+                "score": 0.5481273531913757
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.45571428537368774
+              },
+              {
+                "name": "Tower",
+                "score": 0.4002000093460083
+              },
+              {
+                "name": "Metropolitan area",
+                "score": 0.36906957626342773
+              }
+            ],
+            "processing_time_seconds": 14.885293960571289
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/135.heic"
+    }
+  ]
+}

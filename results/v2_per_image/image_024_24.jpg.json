@@ -1,0 +1,759 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "24.jpg",
+      "timestamp": "2026-01-28T05:05:23.346692",
+      "processing_time_seconds": 53.973951,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 67.5187611111111,
+        "gps_longitude": 14.757672222222222,
+        "location": {
+          "formatted_address": "Fv571 560, 8093 Kjerringøy, Norway",
+          "city": null,
+          "county": "Bodø",
+          "country": "Norway"
+        },
+        "datetime_original": "2022:06:10 22:37:21",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Landscapes of Bodø, Bodø, Norway",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Bodø, Norway, which is known for its stunning natural landscapes including mountains and coastal views. The visual characteristics match this description.",
+            "detailed_description": "The image depicts a serene coastal landscape in Bodø, Norway, featuring a prominent mountain range in the background. The mountains are reflected in the calm waters, creating a picturesque scene. The foreground includes lush greenery and small islands, contributing to the tranquil atmosphere. The sky is clear with scattered clouds, enhancing the overall beauty of the natural setting.",
+            "identification": {
+              "primary": [
+                "Landscapes of Bodø"
+              ],
+              "location": "Bodø, Norway",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Mountain range",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Coastal landscape",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "natural_landscape",
+              "mountains",
+              "coastline",
+              "reflection",
+              "Norway"
+            ],
+            "location": "Bodø, Norway",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Børvasstindan mountain range",
+                "specificity_level": "very_specific",
+                "confidence": 0.7,
+                "reasoning": "Børvasstindan is a well-known mountain range near Bodø, and the visual features resemble it."
+              },
+              {
+                "guess": "Norwegian coastal landscape",
+                "specificity_level": "general",
+                "confidence": 0.8,
+                "reasoning": "The image shows typical features of Norwegian coastal landscapes, such as mountains and water reflections."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Landscapes of Bodø\"],\n        \"location\": \"Bodø, Norway\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Mountain range\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Coastal landscape\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"natural_landscape\", \"mountains\", \"coastline\", \"reflection\", \"Norway\"],\n    \"description\": \"The image depicts a serene coastal landscape in Bodø, Norway, featuring a prominent mountain range in the background. The mountains are reflected in the calm waters, creating a picturesque scene. The foreground includes lush greenery and small islands, contributing to the tranquil atmosphere. The sky is clear with scattered clouds, enhancing the overall beauty of the natural setting.\",\n    \"reasoning\": \"The location metadata indicates Bodø, Norway, which is known for its stunning natural landscapes including mountains and coastal views. The visual characteristics match this description.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Børvasstindan mountain range\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"Børvasstindan is a well-known mountain range near Bodø, and the visual features resemble it.\"\n        },\n        {\n            \"guess\": \"Norwegian coastal landscape\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.8,\n            \"reasoning\": \"The image shows typical features of Norwegian coastal landscapes, such as mountains and water reflections.\"\n        }\n    ]\n}",
+            "gps_coordinates": {
+              "latitude": 67.5187611111111,
+              "longitude": 14.757672222222222
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Fv571 560, 8093 Kjerringøy, Norway",
+              "city": null,
+              "county": "Bodø",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2022:06:10 22:37:21",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 11.779399871826172
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image captures a serene landscape in Bodø, Norway, featuring a striking mountain range in the background. The mountains have jagged peaks, some of which are snow-capped, suggesting a high elevation. The range is silhouetted against a clear blue sky, with wispy clouds scattered across it, adding texture to the scene. In the foreground, a calm body of water reflects the mountains and sky, creating a mirror-like effect that enhances the tranquility of the setting. The water is bordered by lush ",
+            "description": "The image captures a serene landscape in Bodø, Norway, featuring a striking mountain range in the background. The mountains have jagged peaks, some of which are snow-capped, suggesting a high elevation. The range is silhouetted against a clear blue sky, with wispy clouds scattered across it, adding texture to the scene. In the foreground, a calm body of water reflects the mountains and sky, creating a mirror-like effect that enhances the tranquility of the setting. The water is bordered by lush ",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 67.5187611111111,
+              "longitude": 14.757672222222222
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Fv571 560, 8093 Kjerringøy, Norway",
+              "city": null,
+              "county": "Bodø",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2022:06:10 22:37:21",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 41.57309913635254
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Mountain",
+          "confidence": 0.9354406595230103,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Mountain",
+                "score": 0.9354406595230103
+              },
+              {
+                "source": "label",
+                "name": "Horizon",
+                "score": 0.931649923324585
+              },
+              {
+                "source": "label",
+                "name": "Coastal and oceanic landforms",
+                "score": 0.9242314100265503
+              },
+              {
+                "source": "label",
+                "name": "Sea",
+                "score": 0.8585505485534668
+              },
+              {
+                "source": "web",
+                "name": "Glacial lake",
+                "score": 0.5745981931686401
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Glacial lake",
+                "score": 0.5745981931686401
+              },
+              {
+                "name": "Tarn",
+                "score": 0.41979748010635376
+              },
+              {
+                "name": "Loch",
+                "score": 0.368500679731369
+              },
+              {
+                "name": "Glacier",
+                "score": 0.33500000834465027
+              },
+              {
+                "name": "Lake",
+                "score": 0.31119999289512634
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Water",
+                "score": 0.9807699918746948
+              },
+              {
+                "name": "Mountain",
+                "score": 0.9354406595230103
+              },
+              {
+                "name": "Horizon",
+                "score": 0.931649923324585
+              },
+              {
+                "name": "Coastal and oceanic landforms",
+                "score": 0.9242314100265503
+              },
+              {
+                "name": "Sea",
+                "score": 0.8585505485534668
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 67.5187611111111,
+              "longitude": 14.757672222222222
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Fv571 560, 8093 Kjerringøy, Norway",
+              "city": null,
+              "county": "Bodø",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2022:06:10 22:37:21",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 12.083924055099487
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Bodø, Norway",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Bodø, Norway",
+            "coordinates": {
+              "latitude": 67.5187611111111,
+              "longitude": 14.757672222222222
+            },
+            "search_range_meters": 5000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Kjerringoy trading",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 624,
+                  "vicinity": "Kjerringøyveien 1129, Kjerringøy",
+                  "place_id": "ChIJRVLqFqjh3kURwcZ3Z7IKZ9g",
+                  "location": {
+                    "lat": 67.5191353,
+                    "lng": 14.7539336
+                  }
+                },
+                {
+                  "name": "Kjerringøy church",
+                  "types": [
+                    "church",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 15,
+                  "vicinity": "Sekundær Fylkesvei 571 560, Kjerringøy",
+                  "place_id": "ChIJp_Jqzqnh3kURkkDRB877sz4",
+                  "location": {
+                    "lat": 67.5188786,
+                    "lng": 14.7587856
+                  }
+                },
+                {
+                  "name": "Barbruheia",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Kjerringøy",
+                  "place_id": "ChIJr09pOQDh3kURj0sBZzxiZY0",
+                  "location": {
+                    "lat": 67.484957,
+                    "lng": 14.7176829
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Kjerringoy trading",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "restaurant",
+                    "point_of_interest",
+                    "store",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 624,
+                  "vicinity": "Kjerringøyveien 1129, Kjerringøy",
+                  "place_id": "ChIJRVLqFqjh3kURwcZ3Z7IKZ9g",
+                  "location": {
+                    "lat": 67.5191353,
+                    "lng": 14.7539336
+                  }
+                },
+                {
+                  "name": "Karl Erik Harr Museet AS (Opening hours apply to high season)",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 6,
+                  "vicinity": "Sjyhaugen 5, Kjerringøy",
+                  "place_id": "ChIJw4GA7afh3kURLbuzhskbhLU",
+                  "location": {
+                    "lat": 67.51989549999999,
+                    "lng": 14.7637032
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Kjerringoy trading",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 624,
+                  "vicinity": "Kjerringøyveien 1129, Kjerringøy",
+                  "place_id": "ChIJRVLqFqjh3kURwcZ3Z7IKZ9g",
+                  "location": {
+                    "lat": 67.5191353,
+                    "lng": 14.7539336
+                  }
+                },
+                {
+                  "name": "Rojjana Restaurant og Take Away",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 95,
+                  "vicinity": "Kjerringøyveien 1149, Kjerringøy",
+                  "place_id": "ChIJYSt1Ac3h3kURpbhc1zFK2Xw",
+                  "location": {
+                    "lat": 67.51975879999999,
+                    "lng": 14.7629767
+                  }
+                },
+                {
+                  "name": "Kjerringøy Bryggehotell",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 260,
+                  "vicinity": "Kaiveien 135, Kjerringøy",
+                  "place_id": "ChIJR_zyOQfh3kUR8Njjkichg5Q",
+                  "location": {
+                    "lat": 67.5213802,
+                    "lng": 14.7622995
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Fjære",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Kjerringøy",
+                  "place_id": "ChIJ____P-vh3kUR20Azx2bGtDI",
+                  "location": {
+                    "lat": 67.4992785,
+                    "lng": 14.6997659
+                  }
+                },
+                {
+                  "name": "Fjære naturreservat",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 3,
+                  "vicinity": "Primær Fylkesvei 834, Kjerringøy",
+                  "place_id": "ChIJoyWu92rh3kURhD07_uwqcEo",
+                  "location": {
+                    "lat": 67.497702,
+                    "lng": 14.7022987
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Kjerringøy church",
+                  "types": [
+                    "church",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 15,
+                  "vicinity": "Sekundær Fylkesvei 571 560, Kjerringøy",
+                  "place_id": "ChIJp_Jqzqnh3kURkkDRB877sz4",
+                  "location": {
+                    "lat": 67.5188786,
+                    "lng": 14.7587856
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Zahlfjøsen",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 25,
+                  "vicinity": "Kjerringøy",
+                  "place_id": "ChIJh4FvQwfh3kURYIUbHA1kexI",
+                  "location": {
+                    "lat": 67.5203033,
+                    "lng": 14.7628606
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Kjerringøy",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Kjerringøy",
+                  "place_id": "ChIJ02-phanh3kURitoiNsBqFKw",
+                  "location": {
+                    "lat": 67.51701,
+                    "lng": 14.761825
+                  }
+                },
+                {
+                  "name": "Kjerringoy trading",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 624,
+                  "vicinity": "Kjerringøyveien 1129, Kjerringøy",
+                  "place_id": "ChIJRVLqFqjh3kURwcZ3Z7IKZ9g",
+                  "location": {
+                    "lat": 67.5191353,
+                    "lng": 14.7539336
+                  }
+                },
+                {
+                  "name": "Matkroken Kjerringøy",
+                  "types": [
+                    "grocery_or_supermarket",
+                    "supermarket",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 138,
+                  "vicinity": "Kjerringøyveien 1145, Kjerringøy",
+                  "place_id": "ChIJJ2eNZwfh3kURwFhMO3rkt3g",
+                  "location": {
+                    "lat": 67.52003909999999,
+                    "lng": 14.7619126
+                  }
+                },
+                {
+                  "name": "Kjerringøyopplevelser AS",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Rundveien 8, Kjerringøy",
+                  "place_id": "ChIJf0OElQDh3kURopqD-ae6IoQ",
+                  "location": {
+                    "lat": 67.5201206,
+                    "lng": 14.7687784
+                  }
+                },
+                {
+                  "name": "Minnebauta over de som har omkommet på havet",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Kjerringøy",
+                  "place_id": "ChIJ3wKreADh3kURmJ1qa_APVhY",
+                  "location": {
+                    "lat": 67.51907550000001,
+                    "lng": 14.7579324
+                  }
+                }
+              ]
+            },
+            "total_places_found": 17,
+            "photo_timestamp": "2022:06:10 22:37:21",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.39594602584838867
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/24.jpg"
+    },
+    {
+      "image_filename": "24.jpg",
+      "timestamp": "2026-01-28T05:06:17.397185",
+      "processing_time_seconds": 48.448893,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Mountain range",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The identification is based on the visible characteristics of the mountain range and the reflection in the water, which are typical features of a natural landscape.",
+            "detailed_description": "The image depicts a serene landscape featuring a mountain range in the background. The mountains have a rugged appearance with peaks that are partially covered in snow. In the foreground, there is a calm body of water reflecting the mountains and the sky. The scene is framed by greenery on either side, suggesting a natural setting. The sky is clear with some scattered clouds, contributing to the tranquil atmosphere.",
+            "identification": {
+              "primary": [
+                "Mountain range"
+              ],
+              "location": null,
+              "confidence": 0.8
+            },
+            "artifacts": [
+              {
+                "name": "Mountain range",
+                "type": "natural_feature",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "mountains",
+              "landscape",
+              "reflection",
+              "water"
+            ],
+            "location": null,
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Norwegian fjord landscape",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "The combination of mountains, water, and greenery is characteristic of fjord landscapes, which are common in Norway."
+              },
+              {
+                "guess": "Scandinavian mountain range",
+                "specificity_level": "general",
+                "confidence": 0.5,
+                "reasoning": "The style and features of the landscape suggest a Scandinavian setting, known for its mountainous terrain."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Mountain range\"],\n        \"location\": null,\n        \"confidence\": 0.8\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Mountain range\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"mountains\", \"landscape\", \"reflection\", \"water\"],\n    \"description\": \"The image depicts a serene landscape featuring a mountain range in the background. The mountains have a rugged appearance with peaks that are partially covered in snow. In the foreground, there is a calm body of water reflecting the mountains and the sky. The scene is framed by greenery on either side, suggesting a natural setting. The sky is clear with some scattered clouds, contributing to the tranquil atmosphere.\",\n    \"reasoning\": \"The identification is based on the visible characteristics of the mountain range and the reflection in the water, which are typical features of a natural landscape.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Norwegian fjord landscape\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The combination of mountains, water, and greenery is characteristic of fjord landscapes, which are common in Norway.\"\n        },\n        {\n            \"guess\": \"Scandinavian mountain range\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.5,\n            \"reasoning\": \"The style and features of the landscape suggest a Scandinavian setting, known for its mountainous terrain.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 10.123615980148315
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a serene landscape featuring a prominent mountain range in the background, set against a clear blue sky with scattered clouds. The mountains have a rugged, jagged appearance, with peaks that suggest a dramatic elevation. Some snow is visible on the upper sections, indicating a colder climate or higher altitude. In the foreground, a calm body of water reflects the mountains and the sky, creating a mirror-like effect. The water is bordered by lush greenery, including small trees ",
+            "description": "The image depicts a serene landscape featuring a prominent mountain range in the background, set against a clear blue sky with scattered clouds. The mountains have a rugged, jagged appearance, with peaks that suggest a dramatic elevation. Some snow is visible on the upper sections, indicating a colder climate or higher altitude. In the foreground, a calm body of water reflects the mountains and the sky, creating a mirror-like effect. The water is bordered by lush greenery, including small trees ",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "processing_time_seconds": 38.322625160217285
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Mountain",
+          "confidence": 0.9354406595230103,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Mountain",
+                "score": 0.9354406595230103
+              },
+              {
+                "source": "label",
+                "name": "Horizon",
+                "score": 0.931649923324585
+              },
+              {
+                "source": "label",
+                "name": "Coastal and oceanic landforms",
+                "score": 0.9242314100265503
+              },
+              {
+                "source": "label",
+                "name": "Sea",
+                "score": 0.8585505485534668
+              },
+              {
+                "source": "web",
+                "name": "Glacial lake",
+                "score": 0.5745981931686401
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Glacial lake",
+                "score": 0.5745981931686401
+              },
+              {
+                "name": "Tarn",
+                "score": 0.41979748010635376
+              },
+              {
+                "name": "Loch",
+                "score": 0.368500679731369
+              },
+              {
+                "name": "Glacier",
+                "score": 0.33500000834465027
+              },
+              {
+                "name": "Lake",
+                "score": 0.31119999289512634
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Water",
+                "score": 0.9807699918746948
+              },
+              {
+                "name": "Mountain",
+                "score": 0.9354406595230103
+              },
+              {
+                "name": "Horizon",
+                "score": 0.931649923324585
+              },
+              {
+                "name": "Coastal and oceanic landforms",
+                "score": 0.9242314100265503
+              },
+              {
+                "name": "Sea",
+                "score": 0.8585505485534668
+              }
+            ],
+            "processing_time_seconds": 12.177970886230469
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/24.jpg"
+    }
+  ]
+}

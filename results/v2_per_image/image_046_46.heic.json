@@ -1,0 +1,581 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "46.heic",
+      "timestamp": "2026-01-28T05:49:51.546805",
+      "processing_time_seconds": 54.050705,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -20.245722222222224,
+        "gps_longitude": 149.02066111111114,
+        "location": {
+          "formatted_address": "Q23C+P7 Whitsundays QLD, Australia",
+          "city": "Whitsundays",
+          "county": "Whitsunday Regional",
+          "country": "Australia"
+        },
+        "datetime_original": "2022:09:29 13:09:16",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Hill Inlet, Whitsundays, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Whitsundays, Australia, and the visual characteristics match those of Hill Inlet, a well-known natural feature in the region.",
+            "detailed_description": "The image shows Hill Inlet, a stunning natural feature located in the Whitsundays, Australia. It is characterized by its swirling patterns of turquoise water and white sand, creating a picturesque view. The inlet is surrounded by lush green hills and clear blue skies, contributing to its scenic beauty. This area is known for its unique tidal movements that shift the sand and water, forming beautiful patterns.",
+            "identification": {
+              "primary": [
+                "Hill Inlet"
+              ],
+              "location": "Whitsundays, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Hill Inlet",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "beach",
+              "Whitsundays",
+              "Australia",
+              "coastal"
+            ],
+            "location": "Whitsundays, Australia",
+            "type": "natural_feature",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Hill Inlet\"],\n        \"location\": \"Whitsundays, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Hill Inlet\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"beach\", \"Whitsundays\", \"Australia\", \"coastal\"],\n    \"description\": \"The image shows Hill Inlet, a stunning natural feature located in the Whitsundays, Australia. It is characterized by its swirling patterns of turquoise water and white sand, creating a picturesque view. The inlet is surrounded by lush green hills and clear blue skies, contributing to its scenic beauty. This area is known for its unique tidal movements that shift the sand and water, forming beautiful patterns.\",\n    \"reasoning\": \"The location metadata indicates Whitsundays, Australia, and the visual characteristics match those of Hill Inlet, a well-known natural feature in the region.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": -20.245722222222224,
+              "longitude": 149.02066111111114
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Q23C+P7 Whitsundays QLD, Australia",
+              "city": "Whitsundays",
+              "county": "Whitsunday Regional",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2022:09:29 13:09:16",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 7.55324912071228
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image captures a stunning coastal landscape in the Whitsundays, Australia. The foreground features vibrant turquoise waters that gently transition into deeper blues, suggesting varying depths. The water is calm, reflecting the clear sky above. In the middle distance, a sandy beach curves gracefully along the shoreline, its white sands contrasting sharply with the surrounding greenery. The beach appears almost untouched, adding to the pristine nature of the scene. Beyond the beach, lush, fore",
+            "description": "The image captures a stunning coastal landscape in the Whitsundays, Australia. The foreground features vibrant turquoise waters that gently transition into deeper blues, suggesting varying depths. The water is calm, reflecting the clear sky above. In the middle distance, a sandy beach curves gracefully along the shoreline, its white sands contrasting sharply with the surrounding greenery. The beach appears almost untouched, adding to the pristine nature of the scene. Beyond the beach, lush, fore",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": -20.245722222222224,
+              "longitude": 149.02066111111114
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Q23C+P7 Whitsundays QLD, Australia",
+              "city": "Whitsundays",
+              "county": "Whitsunday Regional",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2022:09:29 13:09:16",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 45.66991400718689
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Water resources",
+          "confidence": 0.9828586578369141,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Water resources",
+                "score": 0.9828586578369141
+              },
+              {
+                "source": "web",
+                "name": "sea-m",
+                "score": 0.4357999861240387
+              },
+              {
+                "source": "web",
+                "name": "Beach",
+                "score": 0.42408356070518494
+              },
+              {
+                "source": "web",
+                "name": "Skerry",
+                "score": 0.31947240233421326
+              },
+              {
+                "source": "web",
+                "name": "Lagoon",
+                "score": 0.31126391887664795
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "sea-m",
+                "score": 0.4357999861240387
+              },
+              {
+                "name": "Beach",
+                "score": 0.42408356070518494
+              },
+              {
+                "name": "Skerry",
+                "score": 0.31947240233421326
+              },
+              {
+                "name": "Lagoon",
+                "score": 0.31126391887664795
+              },
+              {
+                "name": "Loch",
+                "score": 0.2786753475666046
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.9899606108665466
+              },
+              {
+                "name": "Blue",
+                "score": 0.9894242882728577
+              },
+              {
+                "name": "Water",
+                "score": 0.9861999750137329
+              },
+              {
+                "name": "Water resources",
+                "score": 0.9828586578369141
+              },
+              {
+                "name": "Cloud",
+                "score": 0.9810882210731506
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": -20.245722222222224,
+              "longitude": 149.02066111111114
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Q23C+P7 Whitsundays QLD, Australia",
+              "city": "Whitsundays",
+              "county": "Whitsunday Regional",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2022:09:29 13:09:16",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 14.882374048233032
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Whitsundays, Whitsunday Regional, Australia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Whitsundays, Whitsunday Regional, Australia",
+            "coordinates": {
+              "latitude": -20.245722222222224,
+              "longitude": 149.02066111111114
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Hill inlet lookout",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 7,
+                  "vicinity": "Whitsunday Island, Whitsundays",
+                  "place_id": "ChIJ4ZDCJABX2GsRuoGUac_QnYc",
+                  "location": {
+                    "lat": -20.245764,
+                    "lng": 149.0204755
+                  }
+                },
+                {
+                  "name": "Lookout Beach",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "Whitsunday Island",
+                  "place_id": "ChIJexWvSQBX2GsRw02yd7NFAOI",
+                  "location": {
+                    "lat": -20.24356,
+                    "lng": 149.0225058
+                  }
+                },
+                {
+                  "name": "Handy Beach",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Whitsunday Island, Whitsundays",
+                  "place_id": "ChIJk_fHOQBX2GsR4dwFxwtGW80",
+                  "location": {
+                    "lat": -20.25089569999999,
+                    "lng": 149.0170607
+                  }
+                },
+                {
+                  "name": "Betty's Beach",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 30,
+                  "vicinity": "Whitsundays",
+                  "place_id": "ChIJg1qSz-pX2GsRuERBbUuofpQ",
+                  "location": {
+                    "lat": -20.2410023,
+                    "lng": 149.0254312
+                  }
+                },
+                {
+                  "name": "Tongue Bay",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 24,
+                  "vicinity": "Whitsundays",
+                  "place_id": "ChIJvT6AoVlX2GsRTQy4sHtzRXQ",
+                  "location": {
+                    "lat": -20.239729,
+                    "lng": 149.0176323
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Whitsundays",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Whitsundays",
+                  "place_id": "ChIJwX-zg-3D2GsRk9w2pBk0lmc",
+                  "location": {
+                    "lat": -20.0596009,
+                    "lng": 148.8809873
+                  }
+                },
+                {
+                  "name": "Hill inlet lookout",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 7,
+                  "vicinity": "Whitsunday Island, Whitsundays",
+                  "place_id": "ChIJ4ZDCJABX2GsRuoGUac_QnYc",
+                  "location": {
+                    "lat": -20.245764,
+                    "lng": 149.0204755
+                  }
+                },
+                {
+                  "name": "Lookout Beach",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "Whitsunday Island",
+                  "place_id": "ChIJexWvSQBX2GsRw02yd7NFAOI",
+                  "location": {
+                    "lat": -20.24356,
+                    "lng": 149.0225058
+                  }
+                },
+                {
+                  "name": "Hill Inlet Lookout Trailhead",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 4,
+                  "vicinity": "Whitsunday Island, Whitsundays",
+                  "place_id": "ChIJF_JAYgBX2GsRklK9NcQXQiE",
+                  "location": {
+                    "lat": -20.2412679,
+                    "lng": 149.0211739
+                  }
+                },
+                {
+                  "name": "Handy Beach",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Whitsunday Island, Whitsundays",
+                  "place_id": "ChIJk_fHOQBX2GsR4dwFxwtGW80",
+                  "location": {
+                    "lat": -20.25089569999999,
+                    "lng": 149.0170607
+                  }
+                }
+              ]
+            },
+            "total_places_found": 10,
+            "photo_timestamp": "2022:09:29 13:09:16",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.4247128963470459
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/46.heic"
+    },
+    {
+      "image_filename": "46.heic",
+      "timestamp": "2026-01-28T05:50:45.627112",
+      "processing_time_seconds": 48.847527,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Hill Inlet, Whitsunday Island, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive swirling patterns of sand and water are characteristic of Hill Inlet, a well-known landmark in the Whitsundays. The location and visual features match descriptions of this area.",
+            "detailed_description": "The image showcases Hill Inlet, a stunning natural feature located on Whitsunday Island, Australia. It is known for its swirling patterns of turquoise water and white sand, creating a picturesque and unique landscape. The inlet is surrounded by lush green hills and clear blue skies, contributing to its breathtaking beauty.",
+            "identification": {
+              "primary": [
+                "Hill Inlet"
+              ],
+              "location": "Whitsunday Island, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Hill Inlet",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "beach",
+              "ocean",
+              "Whitsunday_Island",
+              "Australia"
+            ],
+            "location": "Whitsunday Island, Australia",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Hill Inlet\"],\n        \"location\": \"Whitsunday Island, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Hill Inlet\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"beach\", \"ocean\", \"Whitsunday_Island\", \"Australia\"],\n    \"description\": \"The image showcases Hill Inlet, a stunning natural feature located on Whitsunday Island, Australia. It is known for its swirling patterns of turquoise water and white sand, creating a picturesque and unique landscape. The inlet is surrounded by lush green hills and clear blue skies, contributing to its breathtaking beauty.\",\n    \"reasoning\": \"The distinctive swirling patterns of sand and water are characteristic of Hill Inlet, a well-known landmark in the Whitsundays. The location and visual features match descriptions of this area.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 8.178756952285767
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a stunning coastal landscape characterized by vibrant turquoise waters and lush green islands. The scene is dominated by a large bay with clear, shallow waters that transition from deep blue to bright turquoise, indicating varying depths. The bay is surrounded by densely forested islands, with vegetation that appears to be tropical, suggesting a warm climate. The islands have gentle slopes and are covered in rich greenery, with some areas appearing more rugged and mountainous. ",
+            "description": "The image depicts a stunning coastal landscape characterized by vibrant turquoise waters and lush green islands. The scene is dominated by a large bay with clear, shallow waters that transition from deep blue to bright turquoise, indicating varying depths. The bay is surrounded by densely forested islands, with vegetation that appears to be tropical, suggesting a warm climate. The islands have gentle slopes and are covered in rich greenery, with some areas appearing more rugged and mountainous. ",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "processing_time_seconds": 40.4477858543396
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Water resources",
+          "confidence": 0.9828586578369141,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Water resources",
+                "score": 0.9828586578369141
+              },
+              {
+                "source": "web",
+                "name": "sea-m",
+                "score": 0.43459999561309814
+              },
+              {
+                "source": "web",
+                "name": "Beach",
+                "score": 0.4233326017856598
+              },
+              {
+                "source": "web",
+                "name": "Skerry",
+                "score": 0.31947240233421326
+              },
+              {
+                "source": "web",
+                "name": "Lagoon",
+                "score": 0.31126391887664795
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "sea-m",
+                "score": 0.43459999561309814
+              },
+              {
+                "name": "Beach",
+                "score": 0.4233326017856598
+              },
+              {
+                "name": "Skerry",
+                "score": 0.31947240233421326
+              },
+              {
+                "name": "Lagoon",
+                "score": 0.31126391887664795
+              },
+              {
+                "name": "Loch",
+                "score": 0.2786753475666046
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.9899606108665466
+              },
+              {
+                "name": "Blue",
+                "score": 0.9894242882728577
+              },
+              {
+                "name": "Water",
+                "score": 0.9861999750137329
+              },
+              {
+                "name": "Water resources",
+                "score": 0.9828586578369141
+              },
+              {
+                "name": "Cloud",
+                "score": 0.9810882210731506
+              }
+            ],
+            "processing_time_seconds": 14.966329097747803
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/46.heic"
+    }
+  ]
+}

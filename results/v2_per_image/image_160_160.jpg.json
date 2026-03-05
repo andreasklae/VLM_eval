@@ -1,0 +1,1055 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "160.jpg",
+      "timestamp": "2026-01-28T03:01:56.628002",
+      "processing_time_seconds": 62.037603,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 48.83952777777778,
+        "gps_longitude": 2.337,
+        "location": {
+          "formatted_address": "22 Bd de Port-Royal, 75014 Paris, France",
+          "city": "Paris",
+          "county": "Paris",
+          "country": "France"
+        },
+        "datetime_original": "2025:03:31 09:22:49",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Parisian street scene, Paris, France",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and urban setting are indicative of Paris, especially with the Haussmannian building style. The presence of street markings and a café awning further support the identification of a typical Parisian street scene.",
+            "detailed_description": "The image depicts a typical Parisian street scene featuring a Haussmannian-style building. The architecture is characterized by its uniform facade, mansard roofs, and stone construction, typical of 19th-century Paris. The building has multiple stories with large windows and decorative ironwork on balconies. The street includes markings for bus lanes and pedestrian crossings, and there is a red awning suggesting a café or restaurant, which is common in Paris.",
+            "identification": {
+              "primary": [
+                "Parisian street scene"
+              ],
+              "location": "Paris, France",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Parisian building",
+                "type": "building",
+                "confidence": 0.9
+              },
+              {
+                "name": "Street signage",
+                "type": "other",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "Haussmannian_architecture",
+              "19th_century",
+              "urban",
+              "Paris",
+              "street"
+            ],
+            "location": "Paris, France",
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Parisian street scene\"],\n        \"location\": \"Paris, France\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Parisian building\",\n            \"type\": \"building\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Street signage\",\n            \"type\": \"other\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"Haussmannian_architecture\", \"19th_century\", \"urban\", \"Paris\", \"street\"],\n    \"description\": \"The image depicts a typical Parisian street scene featuring a Haussmannian-style building. The architecture is characterized by its uniform facade, mansard roofs, and stone construction, typical of 19th-century Paris. The building has multiple stories with large windows and decorative ironwork on balconies. The street includes markings for bus lanes and pedestrian crossings, and there is a red awning suggesting a café or restaurant, which is common in Paris.\",\n    \"reasoning\": \"The architectural style and urban setting are indicative of Paris, especially with the Haussmannian building style. The presence of street markings and a café awning further support the identification of a typical Parisian street scene.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "gps_coordinates": {
+              "latitude": 48.83952777777778,
+              "longitude": 2.337
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "22 Bd de Port-Royal, 75014 Paris, France",
+              "city": "Paris",
+              "county": "Paris",
+              "country": "France"
+            },
+            "photo_timestamp": "2025:03:31 09:22:49",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 10.441244840621948
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([en.wikipedia.org]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a street scene in Paris, featuring a prominent corner building with classic Parisian architectural elements. The building is constructed from beige stone and has a symmetrical facade with multiple rows of windows. Each window is adorned with decorative ironwork, typical of Haussmann-style architecture, which is prevalent in Paris. The roof is steeply pitched and covered with slate tiles, featuring dormer windows that add to the traditional aesthetic. The ground floor hosts a ca",
+            "description": "The image depicts a street scene in Paris, featuring a prominent corner building with classic Parisian architectural elements. The building is constructed from beige stone and has a symmetrical facade with multiple rows of windows. Each window is adorned with decorative ironwork, typical of Haussmann-style architecture, which is prevalent in Paris. The roof is steeply pitched and covered with slate tiles, featuring dormer windows that add to the traditional aesthetic. The ground floor hosts a ca",
+            "architectural_style": "Haussmann-style architecture",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 48.83952777777778,
+              "longitude": 2.337
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "22 Bd de Port-Royal, 75014 Paris, France",
+              "city": "Paris",
+              "county": "Paris",
+              "country": "France"
+            },
+            "photo_timestamp": "2025:03:31 09:22:49",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 50.908284187316895
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Composite material",
+          "confidence": 0.8831575512886047,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Composite material",
+                "score": 0.8831575512886047
+              },
+              {
+                "source": "label",
+                "name": "Iron",
+                "score": 0.8258250951766968
+              },
+              {
+                "source": "label",
+                "name": "Engineering",
+                "score": 0.8090534210205078
+              },
+              {
+                "source": "label",
+                "name": "Metal",
+                "score": 0.8008867502212524
+              },
+              {
+                "source": "object",
+                "name": "Building",
+                "score": 0.709728479385376
+              }
+            ],
+            "web_entities": [],
+            "objects": [
+              {
+                "name": "Building",
+                "score": 0.709728479385376
+              },
+              {
+                "name": "Building",
+                "score": 0.5528128743171692
+              }
+            ],
+            "labels": [
+              {
+                "name": "Daytime",
+                "score": 0.9813030958175659
+              },
+              {
+                "name": "Composite material",
+                "score": 0.8831575512886047
+              },
+              {
+                "name": "Iron",
+                "score": 0.8258250951766968
+              },
+              {
+                "name": "Engineering",
+                "score": 0.8090534210205078
+              },
+              {
+                "name": "Metal",
+                "score": 0.8008867502212524
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 48.83952777777778,
+              "longitude": 2.337
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "22 Bd de Port-Royal, 75014 Paris, France",
+              "city": "Paris",
+              "county": "Paris",
+              "country": "France"
+            },
+            "photo_timestamp": "2025:03:31 09:22:49",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 22.450791120529175
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Paris, France",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Paris, France",
+            "coordinates": {
+              "latitude": 48.83952777777778,
+              "longitude": 2.337
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Catacombs of Paris",
+                  "types": [
+                    "cemetery",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 10247,
+                  "vicinity": "1 Avenue du Colonel Henri Rol-Tanguy, Paris",
+                  "place_id": "ChIJdbbQwbZx5kcRs7Qu5nPw18g",
+                  "location": {
+                    "lat": 48.8338325,
+                    "lng": 2.3324222
+                  }
+                },
+                {
+                  "name": "Jardin du Luxembourg",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 122807,
+                  "vicinity": "Paris",
+                  "place_id": "ChIJe2jeNttx5kcRi_mJsGHdkQc",
+                  "location": {
+                    "lat": 48.84661440000001,
+                    "lng": 2.336330900000001
+                  }
+                },
+                {
+                  "name": "Paris Observatory",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 193,
+                  "vicinity": "77 Avenue Denfert Rochereau, Paris",
+                  "place_id": "ChIJNytjRcdx5kcRkv2UHTLgd8k",
+                  "location": {
+                    "lat": 48.8364867,
+                    "lng": 2.3366319
+                  }
+                },
+                {
+                  "name": "Musée Zadkine",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1221,
+                  "vicinity": "100bis Rue d'Assas, Paris",
+                  "place_id": "ChIJfYAEu8Vx5kcRDJxTNef-cAA",
+                  "location": {
+                    "lat": 48.8430811,
+                    "lng": 2.333994
+                  }
+                },
+                {
+                  "name": "Montparnasse Cemetery",
+                  "types": [
+                    "cemetery",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 953,
+                  "vicinity": "3 Boulevard Edgar Quinet, Paris",
+                  "place_id": "ChIJKVs9a8lx5kcRbwBO8Z59G3k",
+                  "location": {
+                    "lat": 48.83821409999999,
+                    "lng": 2.3261471
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Musée Zadkine",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1221,
+                  "vicinity": "100bis Rue d'Assas, Paris",
+                  "place_id": "ChIJfYAEu8Vx5kcRDJxTNef-cAA",
+                  "location": {
+                    "lat": 48.8430811,
+                    "lng": 2.333994
+                  }
+                },
+                {
+                  "name": "The Liberation of Paris Museum - General Leclerc Museum - Jean Moulin Museum",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1647,
+                  "vicinity": "4 Avenue du Colonel Henri Rol-Tanguy, Paris",
+                  "place_id": "ChIJrf5sxzRw5kcRphvCP6opVyM",
+                  "location": {
+                    "lat": 48.8340313,
+                    "lng": 2.3318502
+                  }
+                },
+                {
+                  "name": "Lumière de l'œil",
+                  "types": [
+                    "store",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 20,
+                  "vicinity": "4 Rue Flatters, Paris",
+                  "place_id": "ChIJgz7KEetx5kcRdbObWogcTl8",
+                  "location": {
+                    "lat": 48.837823,
+                    "lng": 2.346605
+                  }
+                },
+                {
+                  "name": "Montparnasse Gallery",
+                  "types": [
+                    "art_gallery",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 116,
+                  "vicinity": "55 Rue du Montparnasse, Paris",
+                  "place_id": "ChIJc3MSEMxx5kcRlqLn_SAxkxY",
+                  "location": {
+                    "lat": 48.84212400000001,
+                    "lng": 2.3256953
+                  }
+                },
+                {
+                  "name": "Atelier Gustave",
+                  "types": [
+                    "art_gallery",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 45,
+                  "vicinity": "36 Rue Boissonade, Paris",
+                  "place_id": "ChIJf5YqM8Zx5kcRKsnYH1dY27w",
+                  "location": {
+                    "lat": 48.8389452,
+                    "lng": 2.3326542
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Belambra Hotel \"Magendie\"",
+                  "types": [
+                    "storage",
+                    "parking",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 977,
+                  "vicinity": "2-4 Rue Magendie, Paris",
+                  "place_id": "ChIJp7d38JRx5kcR_1RUyN2Lmfc",
+                  "location": {
+                    "lat": 48.83409,
+                    "lng": 2.346187
+                  }
+                },
+                {
+                  "name": "La Coupole",
+                  "types": [
+                    "cafe",
+                    "restaurant",
+                    "food",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 15321,
+                  "vicinity": "102 Boulevard du Montparnasse, Paris",
+                  "place_id": "ChIJYafZxs5x5kcRiDaXQXadCBY",
+                  "location": {
+                    "lat": 48.84225459999999,
+                    "lng": 2.327950599999999
+                  }
+                },
+                {
+                  "name": "UGC Montparnasse",
+                  "types": [
+                    "movie_theater",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 3361,
+                  "vicinity": "83 Boulevard du Montparnasse, Paris",
+                  "place_id": "ChIJieJ-N8xx5kcRmlJdbtu3WE8",
+                  "location": {
+                    "lat": 48.84352440000001,
+                    "lng": 2.325861500000001
+                  }
+                },
+                {
+                  "name": "La Closerie des Lilas",
+                  "types": [
+                    "cafe",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2807,
+                  "vicinity": "171 Boulevard du Montparnasse, Paris",
+                  "place_id": "ChIJD0MBxsZx5kcREfMy9IsrUTo",
+                  "location": {
+                    "lat": 48.8401436,
+                    "lng": 2.3360432
+                  }
+                },
+                {
+                  "name": "le Rosebud",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 313,
+                  "vicinity": "11 bis Rue Delambre, Paris",
+                  "place_id": "ChIJTRozzM5x5kcR9xYQMZZ5RAs",
+                  "location": {
+                    "lat": 48.84166050000001,
+                    "lng": 2.328278700000001
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Jardin du Luxembourg",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 122807,
+                  "vicinity": "Paris",
+                  "place_id": "ChIJe2jeNttx5kcRi_mJsGHdkQc",
+                  "location": {
+                    "lat": 48.84661440000001,
+                    "lng": 2.336330900000001
+                  }
+                },
+                {
+                  "name": "Gardens of the Observatory of Paris",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 342,
+                  "vicinity": "98 Boulevard Arago, Paris",
+                  "place_id": "ChIJSQhltrhx5kcRXkD9ElKEjcs",
+                  "location": {
+                    "lat": 48.8351504,
+                    "lng": 2.3365756
+                  }
+                },
+                {
+                  "name": "Square Yves Klein",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 20,
+                  "vicinity": "241 Boulevard Raspail, Paris",
+                  "place_id": "ChIJ_Xkphshx5kcRmM3x_KNjVeE",
+                  "location": {
+                    "lat": 48.83906529999999,
+                    "lng": 2.3310877
+                  }
+                },
+                {
+                  "name": "Suburb Train Air Vent",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3,
+                  "user_ratings_total": 2,
+                  "vicinity": "101 Boulevard Saint-Michel, Paris",
+                  "place_id": "ChIJ2dC4AABx5kcRe0H9WtgadzA",
+                  "location": {
+                    "lat": 48.8440091,
+                    "lng": 2.3392189
+                  }
+                },
+                {
+                  "name": "Esplanade Gaston Monnerville",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 68,
+                  "vicinity": "7 Place André Honnorat, Paris",
+                  "place_id": "ChIJ7dF6OIlx5kcRTuM7OOvYNC0",
+                  "location": {
+                    "lat": 48.84427789999999,
+                    "lng": 2.3375849
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Église Saint-Jacques du Haut Pas",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 244,
+                  "vicinity": "252 Rue Saint-Jacques, Paris",
+                  "place_id": "ChIJhzy7WMJx5kcR2c--N9XRzvU",
+                  "location": {
+                    "lat": 48.8436391,
+                    "lng": 2.3410397
+                  }
+                },
+                {
+                  "name": "Prètres Nôtre Dame Sion",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "68 Bis Rue Notre Dame des Champs, Paris",
+                  "place_id": "ChIJ1XGdZc9x5kcRfrqmO7J4lfw",
+                  "location": {
+                    "lat": 48.8430535,
+                    "lng": 2.3314175
+                  }
+                },
+                {
+                  "name": "Center Catholic Doctors French",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "hospital",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 1,
+                  "user_ratings_total": 1,
+                  "vicinity": "5 Avenue de l'Observatoire, Paris",
+                  "place_id": "ChIJf2BOfsRx5kcRZwfv4rWhYRI",
+                  "location": {
+                    "lat": 48.8437309,
+                    "lng": 2.337645
+                  }
+                },
+                {
+                  "name": "Communauté Catholique Coréenne à Paris",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 47,
+                  "vicinity": "15 Rue Boissonade, Paris",
+                  "place_id": "ChIJY_t9RcZx5kcRxprQUqMTbUo",
+                  "location": {
+                    "lat": 48.83944469999999,
+                    "lng": 2.3338102
+                  }
+                },
+                {
+                  "name": "Evangelical Church of St Marcel",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 70,
+                  "vicinity": "24 Rue Pierre Nicole, Paris",
+                  "place_id": "ChIJAezaY8Fx5kcR7_vUx-cj0wk",
+                  "location": {
+                    "lat": 48.8410247,
+                    "lng": 2.3393781
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Lilas Antiquités",
+                  "types": [
+                    "art_gallery",
+                    "home_goods_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 106,
+                  "vicinity": "72 Boulevard de Port-Royal, Paris",
+                  "place_id": "ChIJuQIh7upx5kcR6alaZ8kaDJ4",
+                  "location": {
+                    "lat": 48.8380323,
+                    "lng": 2.344732900000001
+                  }
+                },
+                {
+                  "name": "URBAN GALLERY",
+                  "types": [
+                    "art_gallery",
+                    "department_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 20,
+                  "vicinity": "163 Boulevard du Montparnasse, Paris",
+                  "place_id": "ChIJtSKHjsZx5kcRIc4obo_6_IU",
+                  "location": {
+                    "lat": 48.8403917,
+                    "lng": 2.3352438
+                  }
+                },
+                {
+                  "name": "Mind's Eye - Galerie Adrian Bondy",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "221 Rue Saint-Jacques, Paris",
+                  "place_id": "ChIJQeHW9MJx5kcRRKwCBSpt4fk",
+                  "location": {
+                    "lat": 48.8438668,
+                    "lng": 2.342054999999999
+                  }
+                },
+                {
+                  "name": "Isapocket",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 11,
+                  "vicinity": "12 Rue Froidevaux, Paris",
+                  "place_id": "ChIJu6OO-bJx5kcRKAvddyTaC1Y",
+                  "location": {
+                    "lat": 48.8352117,
+                    "lng": 2.330226
+                  }
+                },
+                {
+                  "name": "Galerie Delcenserie",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "218 Rue Saint-Jacques, Paris",
+                  "place_id": "ChIJ2873vsJx5kcRLUuwyL8VaJs",
+                  "location": {
+                    "lat": 48.8450799,
+                    "lng": 2.3423398
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Paris",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Paris",
+                  "place_id": "ChIJD7fiBh9u5kcRYJSMaMOCCwQ",
+                  "location": {
+                    "lat": 48.8575475,
+                    "lng": 2.3513765
+                  }
+                },
+                {
+                  "name": "Hôtel du Lion",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 440,
+                  "vicinity": "1 Avenue du Général Leclerc, Paris",
+                  "place_id": "ChIJffWJ0rlx5kcR366zaq60vk8",
+                  "location": {
+                    "lat": 48.8334006,
+                    "lng": 2.3319429
+                  }
+                },
+                {
+                  "name": "Villa Luxembourg",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.5,
+                  "user_ratings_total": 356,
+                  "vicinity": "121 Boulevard du Montparnasse, Paris",
+                  "place_id": "ChIJ85s-Ns9x5kcRkZOJ76q9gb0",
+                  "location": {
+                    "lat": 48.8418704,
+                    "lng": 2.330600199999999
+                  }
+                },
+                {
+                  "name": "Hôtel des Academies et des Arts - Paris 6",
+                  "types": [
+                    "lodging",
+                    "spa",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 204,
+                  "vicinity": "15 Rue de la Grande Chaumière, Paris",
+                  "place_id": "ChIJmyoMOs9x5kcRL6dNGlTJXrQ",
+                  "location": {
+                    "lat": 48.8420869,
+                    "lng": 2.3304265
+                  }
+                },
+                {
+                  "name": "Hôtel Aiglon - Boulevard Raspail Paris 14",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 704,
+                  "vicinity": "232 Boulevard Raspail, Paris",
+                  "place_id": "ChIJAfYhjchx5kcRGoCwm4BX99U",
+                  "location": {
+                    "lat": 48.8396655,
+                    "lng": 2.3300811
+                  }
+                }
+              ]
+            },
+            "total_places_found": 35,
+            "photo_timestamp": "2025:03:31 09:22:49",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.3958768844604492
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/160.jpg"
+    },
+    {
+      "image_filename": "160.jpg",
+      "timestamp": "2026-01-28T03:02:58.704339",
+      "processing_time_seconds": 59.663326,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Parisian street scene, Paris, France",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and urban setting strongly suggest a Parisian location, supported by the Haussmann-style building and typical street elements.",
+            "detailed_description": "The image depicts a typical Parisian street scene featuring a Haussmann-style building. This architectural style is characterized by its uniform facade, mansard roofs, and stone construction, common in Paris during the 19th century. The building has multiple stories with large windows and decorative balconies. A cafe with a red awning is visible on the ground floor, adding to the urban atmosphere. The street markings indicate a bus lane, typical of city traffic management.",
+            "identification": {
+              "primary": [
+                "Parisian street scene"
+              ],
+              "location": "Paris, France",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Haussmann-style building",
+                "type": "building",
+                "confidence": 0.9
+              },
+              {
+                "name": "Cafe with red awning",
+                "type": "other",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "Haussmann",
+              "19th_century",
+              "stone",
+              "Paris",
+              "urban"
+            ],
+            "location": "Paris, France",
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Parisian boulevard",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The architectural style and street layout are typical of Parisian boulevards."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Parisian street scene\"],\n        \"location\": \"Paris, France\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Haussmann-style building\",\n            \"type\": \"building\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Cafe with red awning\",\n            \"type\": \"other\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"Haussmann\", \"19th_century\", \"stone\", \"Paris\", \"urban\"],\n    \"description\": \"The image depicts a typical Parisian street scene featuring a Haussmann-style building. This architectural style is characterized by its uniform facade, mansard roofs, and stone construction, common in Paris during the 19th century. The building has multiple stories with large windows and decorative balconies. A cafe with a red awning is visible on the ground floor, adding to the urban atmosphere. The street markings indicate a bus lane, typical of city traffic management.\",\n    \"reasoning\": \"The architectural style and urban setting strongly suggest a Parisian location, supported by the Haussmann-style building and typical street elements.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Parisian boulevard\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The architectural style and street layout are typical of Parisian boulevards.\"\n        }\n    ]\n}",
+            "processing_time_seconds": 14.96215009689331
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Haussmannian building in Paris, Paris, France",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the typical features of Haussmannian architecture, which is prevalent in Paris. The search results strongly suggest a Parisian location, and the architectural style is consistent with the description. The presence of urban elements like bus lane signage and bicycle symbols further supports the identification of a bustling Paris street scene.",
+            "identification": {
+              "primary": [
+                "Haussmannian building in Paris"
+              ],
+              "location": "Paris, France",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Haussmannian building",
+                "type": "building",
+                "confidence": 0.95
+              },
+              {
+                "name": "Red awning indicating café or restaurant",
+                "type": "other",
+                "confidence": 0.85
+              },
+              {
+                "name": "Bus lane signage and bicycle symbols",
+                "type": "other",
+                "confidence": 0.8
+              },
+              {
+                "name": "Trees with fresh green foliage",
+                "type": "natural_feature",
+                "confidence": 0.75
+              }
+            ],
+            "tags": [
+              "Haussmannian",
+              "Parisian",
+              "urban",
+              "spring",
+              "architecture",
+              "street_scene"
+            ],
+            "sources_used": [
+              "en.wikipedia.org",
+              "paris-cap.fr",
+              "parisianism.com"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([paris-cap.fr]())",
+              "*URL*: ([thomasherremans.com]())",
+              "*URL*: ([parisianism.com]())"
+            ],
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a street scene dominated by a multi-story building with distinct architectural features. The building is characterized by its classic Parisian style, featuring a beige stone facade with symmetrical window arrangements and decorative ironwork on the balconies. The roof is steeply pitched, typical of Haussmannian architecture, with dormer windows and chimneys visible. The building's facade includes ornate detailing around the windows and cornices, adding to its elegant appearance",
+            "description": "The image depicts a street scene dominated by a multi-story building with distinct architectural features. The building is characterized by its classic Parisian style, featuring a beige stone facade with symmetrical window arrangements and decorative ironwork on the balconies. The roof is steeply pitched, typical of Haussmannian architecture, with dormer windows and chimneys visible. The building's facade includes ornate detailing around the windows and cornices, adding to its elegant appearance",
+            "architectural_style": "Haussmannian",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 44.69998288154602
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Apartment",
+          "confidence": 0.5717278718948364,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Apartment",
+            "artist_name": null,
+            "museum_or_location": null,
+            "art_style": null,
+            "art_era": null,
+            "confidence": 0.5717278718948364,
+            "web_entities": [
+              {
+                "name": "Apartment",
+                "score": 0.5717278718948364
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.43513402342796326
+              },
+              {
+                "name": "Building",
+                "score": 0.3467999994754791
+              },
+              {
+                "name": "Tower",
+                "score": 0.31290000677108765
+              },
+              {
+                "name": "ArchitectureM RIBA Chartered Practice",
+                "score": 0.30000001192092896
+              }
+            ],
+            "processing_time_seconds": 22.53383708000183
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/160.jpg"
+    }
+  ]
+}

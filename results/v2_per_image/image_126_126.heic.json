@@ -1,0 +1,745 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "126.heic",
+      "timestamp": "2026-01-28T01:42:54.860600",
+      "processing_time_seconds": 59.706009,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 20.859519444444445,
+        "gps_longitude": 107.08030833333333,
+        "location": {
+          "formatted_address": "V35J+MC",
+          "city": null,
+          "county": null,
+          "country": null
+        },
+        "datetime_original": "2024:12:13 07:55:15",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Ha Long Bay, Quang Ninh, Vietnam",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive limestone karsts and isles, along with the location metadata, strongly suggest this is Ha Long Bay, a well-known natural feature in Vietnam.",
+            "detailed_description": "The image depicts Ha Long Bay, a UNESCO World Heritage Site located in Quang Ninh Province, Vietnam. It is renowned for its emerald waters and thousands of towering limestone islands topped with rainforests. The bay is dotted with boats, indicating its popularity as a tourist destination. The karst landscape is characterized by steep cliffs and unique formations, creating a dramatic and picturesque view.",
+            "identification": {
+              "primary": [
+                "Ha Long Bay"
+              ],
+              "location": "Quang Ninh, Vietnam",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Limestone karsts and isles",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "limestone",
+              "bay",
+              "Vietnam",
+              "landscape"
+            ],
+            "location": "Quang Ninh, Vietnam",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Ha Long Bay\"],\n        \"location\": \"Quang Ninh, Vietnam\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Limestone karsts and isles\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"limestone\", \"bay\", \"Vietnam\", \"landscape\"],\n    \"description\": \"The image depicts Ha Long Bay, a UNESCO World Heritage Site located in Quang Ninh Province, Vietnam. It is renowned for its emerald waters and thousands of towering limestone islands topped with rainforests. The bay is dotted with boats, indicating its popularity as a tourist destination. The karst landscape is characterized by steep cliffs and unique formations, creating a dramatic and picturesque view.\",\n    \"reasoning\": \"The distinctive limestone karsts and isles, along with the location metadata, strongly suggest this is Ha Long Bay, a well-known natural feature in Vietnam.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 20.859519444444445,
+              "longitude": 107.08030833333333
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "V35J+MC",
+              "city": null,
+              "county": null,
+              "country": null
+            },
+            "photo_timestamp": "2024:12:13 07:55:15",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 19.026917695999146
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Ha Long Bay, Quang Ninh Province, Vietnam",
+          "confidence": 0.75,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the iconic features of Ha Long Bay, which is famous for its limestone karst formations rising from the water, lush vegetation, and numerous boats indicating a tourist destination. The location metadata suggests a viewpoint overlooking a bay, which aligns with typical views of Ha Long Bay.",
+            "identification": {
+              "primary": [
+                "Ha Long Bay"
+              ],
+              "location": "Quang Ninh Province, Vietnam",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Limestone karst formations",
+                "type": "natural_feature",
+                "confidence": 0.95
+              },
+              {
+                "name": "Boats in the bay",
+                "type": "other",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "karst_landscape",
+              "tourist_destination",
+              "natural_feature",
+              "Vietnam"
+            ],
+            "sources_used": [
+              "web"
+            ],
+            "all_candidates": [
+              "**Newsome Sinks Karst Area, Alabama**: A privately owned karst formation in Morgan County, Alabama, covering approximately 9,925 acres. It features over forty caves and is home to more than fifteen ra",
+              "**Woodville Karst Plain, Florida**: Located in the Big Bend region of Florida, this area includes features like sinkholes, swallets, and springs, including the extensive Leon Sinks Cave System. ([en.w",
+              "**Ashley Karst National Recreation and Geologic Area, Utah**: Situated in the eastern Uinta Mountains, this area encompasses 173,475 acres of karst terrain, including caves known for seasonal ice form",
+              "**Mitchell Plateau, Indiana**: A broad carbonate karst plateau developed on Mississippian carbonates, extending from eastern Owen County southward to the Ohio River in Harrison County. ([legacy.igws.i",
+              "**Southeastern Minnesota**: Counties like Fillmore, Houston, and Winona are known for their karst features, including caves, sinkholes, and disappearing streams. ([cse.umn.edu]())"
+            ],
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Phang Nga Bay",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "Phang Nga Bay in Thailand also features similar limestone karst formations and is a popular tourist destination, but the description more closely matches Ha Long Bay."
+              },
+              {
+                "guess": "Guilin Karst Landscape",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "Guilin in China is known for karst landscapes, but the presence of a bay and boats suggests Ha Long Bay is more likely."
+              },
+              {
+                "guess": "Karst formations in Southeast Asia",
+                "specificity_level": "very_general",
+                "confidence": 0.5,
+                "reasoning": "The description fits general characteristics of karst landscapes found in Southeast Asia, but specific features suggest Ha Long Bay."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image captures a breathtaking view of a bay, characterized by numerous limestone karst formations rising dramatically from the water. These formations are irregularly shaped, with steep cliffs and lush vegetation covering their surfaces, typical of karst landscapes. The bay is dotted with several boats, including small cruise ships and smaller vessels, indicating a popular tourist destination. The water is a muted greenish-blue, reflecting the overcast sky above. The sky is cloudy, creating ",
+            "description": "The image captures a breathtaking view of a bay, characterized by numerous limestone karst formations rising dramatically from the water. These formations are irregularly shaped, with steep cliffs and lush vegetation covering their surfaces, typical of karst landscapes. The bay is dotted with several boats, including small cruise ships and smaller vessels, indicating a popular tourist destination. The water is a muted greenish-blue, reflecting the overcast sky above. The sky is cloudy, creating ",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 20.859519444444445,
+              "longitude": 107.08030833333333
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "V35J+MC",
+              "city": null,
+              "county": null,
+              "country": null
+            },
+            "photo_timestamp": "2024:12:13 07:55:15",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 39.47323393821716
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Mountainous landforms",
+          "confidence": 0.9822186827659607,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Mountainous landforms",
+                "score": 0.9822186827659607
+              },
+              {
+                "source": "label",
+                "name": "Water resources",
+                "score": 0.9820836186408997
+              },
+              {
+                "source": "label",
+                "name": "Body of water",
+                "score": 0.9806437492370605
+              },
+              {
+                "source": "label",
+                "name": "Mountain",
+                "score": 0.9733220338821411
+              },
+              {
+                "source": "label",
+                "name": "Hill",
+                "score": 0.9607138633728027
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Sea",
+                "score": 0.8249295353889465
+              },
+              {
+                "name": "Cát Bà Island",
+                "score": 0.5529000163078308
+              },
+              {
+                "name": "Islet",
+                "score": 0.46198177337646484
+              },
+              {
+                "name": "Hạ Long Bay",
+                "score": 0.4160999655723572
+              },
+              {
+                "name": "Ocean",
+                "score": 0.4106000065803528
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Mountainous landforms",
+                "score": 0.9822186827659607
+              },
+              {
+                "name": "Water resources",
+                "score": 0.9820836186408997
+              },
+              {
+                "name": "Body of water",
+                "score": 0.9806437492370605
+              },
+              {
+                "name": "Mountain",
+                "score": 0.9733220338821411
+              },
+              {
+                "name": "Hill",
+                "score": 0.9607138633728027
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 20.859519444444445,
+              "longitude": 107.08030833333333
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "V35J+MC",
+              "city": null,
+              "county": null,
+              "country": null
+            },
+            "photo_timestamp": "2024:12:13 07:55:15",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 13.804584980010986
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "V35J+MC",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "V35J+MC",
+            "coordinates": {
+              "latitude": 20.859519444444445,
+              "longitude": 107.08030833333333
+            },
+            "search_range_meters": 5000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Ti Tốp Đỉnh núi Đảo",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1053,
+                  "vicinity": "20.859472, 107",
+                  "place_id": "ChIJR9FLCARbSjERIEID3uYCh3s",
+                  "location": {
+                    "lat": 20.8594895,
+                    "lng": 107.0803
+                  }
+                },
+                {
+                  "name": "Hang Luồn Cửa hàng Hải Phong",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 10,
+                  "vicinity": "V33V+FW",
+                  "place_id": "ChIJL-jh8IF7SjERac2SRu2Yl3c",
+                  "location": {
+                    "lat": 20.8536875,
+                    "lng": 107.0948125
+                  }
+                },
+                {
+                  "name": "Hang Luồn",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 2645,
+                  "vicinity": "",
+                  "place_id": "ChIJbY45ejNbSjERCoZ_Lt04fAg",
+                  "location": {
+                    "lat": 20.8534431,
+                    "lng": 107.0949746
+                  }
+                },
+                {
+                  "name": "Sung Sot Cave",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 11133,
+                  "vicinity": "Ha Long Bay, Halong City",
+                  "place_id": "ChIJL4jvm3xaSjERkLl09IYRBPk",
+                  "location": {
+                    "lat": 20.84397869999999,
+                    "lng": 107.0914838
+                  }
+                },
+                {
+                  "name": "Hòn đảo Nâchò",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1,
+                  "vicinity": "R3Q2+V9",
+                  "place_id": "ChIJP26kYABbSjERIImSAxfbUjU",
+                  "location": {
+                    "lat": 20.8396252,
+                    "lng": 107.050969
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Ngọc Trai",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 3,
+                  "vicinity": "R3RW+84X, Vịnh",
+                  "place_id": "ChIJ7YCDtCVbSjER2lMWkD4x8eM",
+                  "location": {
+                    "lat": 20.8408546,
+                    "lng": 107.0953616
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Sung Sot Cave",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 11133,
+                  "vicinity": "Ha Long Bay, Halong City",
+                  "place_id": "ChIJL4jvm3xaSjERkLl09IYRBPk",
+                  "location": {
+                    "lat": 20.84397869999999,
+                    "lng": 107.0914838
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Việt Hải",
+                  "types": [
+                    "sublocality_level_1",
+                    "sublocality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Việt Hải",
+                  "place_id": "ChIJ_2MdaS1bSjERxk7tdNfjkHs",
+                  "location": {
+                    "lat": 20.7837675,
+                    "lng": 107.0657549
+                  }
+                },
+                {
+                  "name": "Ti Tốp Đỉnh núi Đảo",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1053,
+                  "vicinity": "20.859472, 107",
+                  "place_id": "ChIJR9FLCARbSjERIEID3uYCh3s",
+                  "location": {
+                    "lat": 20.8594895,
+                    "lng": 107.0803
+                  }
+                },
+                {
+                  "name": "Ti Top Bar",
+                  "types": [
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 21,
+                  "vicinity": "V35J+MC",
+                  "place_id": "ChIJbUKqLHVbSjERdcpIwS3gEt8",
+                  "location": {
+                    "lat": 20.8591765,
+                    "lng": 107.081109
+                  }
+                },
+                {
+                  "name": "Statues of G.X.TI TOP",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 29,
+                  "vicinity": "V35J+MC",
+                  "place_id": "ChIJ43tDqXdbSjER1HGOxK5ynHw",
+                  "location": {
+                    "lat": 20.8590747,
+                    "lng": 107.0811231
+                  }
+                },
+                {
+                  "name": "Ancient temple",
+                  "types": [
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "R3XF+QP",
+                  "place_id": "ChIJxzK8cABbSjERvRGdLzyiazY",
+                  "location": {
+                    "lat": 20.8494055,
+                    "lng": 107.0743545
+                  }
+                }
+              ]
+            },
+            "total_places_found": 12,
+            "photo_timestamp": "2024:12:13 07:55:15",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.7999248504638672
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/126.heic"
+    },
+    {
+      "image_filename": "126.heic",
+      "timestamp": "2026-01-28T01:43:54.605515",
+      "processing_time_seconds": 60.004086,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Ha Long Bay, Quang Ninh Province, Vietnam",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive limestone karsts and isles are characteristic of Ha Long Bay, a well-known natural feature in Vietnam. The presence of boats and the bay's layout further confirm this identification.",
+            "detailed_description": "The image depicts Ha Long Bay, a UNESCO World Heritage Site located in Quang Ninh Province, Vietnam. It is renowned for its emerald waters and thousands of towering limestone islands topped with rainforests. The bay is characterized by its unique karst landscape, formed over millions of years. The image shows several boats navigating between the islands, highlighting the area's popularity as a tourist destination. The overcast sky adds a serene and tranquil atmosphere to the scene.",
+            "identification": {
+              "primary": [
+                "Ha Long Bay"
+              ],
+              "location": "Quang Ninh Province, Vietnam",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Limestone karsts and isles",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "limestone",
+              "bay",
+              "Vietnam",
+              "scenic"
+            ],
+            "location": "Quang Ninh Province, Vietnam",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Ha Long Bay\"],\n        \"location\": \"Quang Ninh Province, Vietnam\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Limestone karsts and isles\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"limestone\", \"bay\", \"Vietnam\", \"scenic\"],\n    \"description\": \"The image depicts Ha Long Bay, a UNESCO World Heritage Site located in Quang Ninh Province, Vietnam. It is renowned for its emerald waters and thousands of towering limestone islands topped with rainforests. The bay is characterized by its unique karst landscape, formed over millions of years. The image shows several boats navigating between the islands, highlighting the area's popularity as a tourist destination. The overcast sky adds a serene and tranquil atmosphere to the scene.\",\n    \"reasoning\": \"The distinctive limestone karsts and isles are characteristic of Ha Long Bay, a well-known natural feature in Vietnam. The presence of boats and the bay's layout further confirm this identification.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": []\n}",
+            "processing_time_seconds": 23.27326726913452
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Ha Long Bay, Quang Ninh Province, Vietnam",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the iconic features of Ha Long Bay, including the limestone karst formations and the presence of tour boats. Search results from National Geographic and Wikipedia strongly support this identification, and the location in Vietnam aligns with the tropical climate described.",
+            "identification": {
+              "primary": [
+                "Ha Long Bay"
+              ],
+              "location": "Quang Ninh Province, Vietnam",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Limestone karst formations",
+                "type": "natural_feature",
+                "confidence": 0.95
+              },
+              {
+                "name": "Tour boats",
+                "type": "other",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "karst",
+              "limestone",
+              "tropical",
+              "seascape",
+              "Vietnam"
+            ],
+            "sources_used": [
+              "education.nationalgeographic.org",
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "*Source*: ([education.nationalgeographic.org]())",
+              "*Source*: ([en.wikipedia.org]())",
+              "*Source*: ([en.wikipedia.org]())",
+              "*Source*: ([en.wikipedia.org]())",
+              "*Source*: ([ccd.org.vn]())"
+            ],
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Phang Nga Bay",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "Phang Nga Bay in Thailand also features limestone karst formations and is a popular tourist destination, but the description aligns more closely with Ha Long Bay."
+              },
+              {
+                "guess": "Guilin Karst Mountains",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "Guilin in China has similar karst formations, but the presence of boats and the seascape suggest Ha Long Bay is more likely."
+              },
+              {
+                "guess": "Krabi coastline",
+                "specificity_level": "general",
+                "confidence": 0.5,
+                "reasoning": "Krabi in Thailand has limestone formations, but the description of the bay and boats fits Ha Long Bay better."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 3,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a stunning seascape featuring a collection of limestone karst formations rising majestically from the water. These formations are characterized by their steep, rugged cliffs and lush vegetation covering their surfaces, indicative of a tropical or subtropical climate. The karsts vary in size and shape, creating a dramatic and picturesque landscape. The water surrounding these formations is a muted shade of green, typical of coastal areas with rich mineral content. Several boats ",
+            "description": "The image depicts a stunning seascape featuring a collection of limestone karst formations rising majestically from the water. These formations are characterized by their steep, rugged cliffs and lush vegetation covering their surfaces, indicative of a tropical or subtropical climate. The karsts vary in size and shape, creating a dramatic and picturesque landscape. The water surrounding these formations is a muted shade of green, typical of coastal areas with rich mineral content. Several boats ",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 36.51115584373474
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Mountainous landforms",
+          "confidence": 0.9822186827659607,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Mountainous landforms",
+                "score": 0.9822186827659607
+              },
+              {
+                "source": "label",
+                "name": "Water resources",
+                "score": 0.9820836186408997
+              },
+              {
+                "source": "label",
+                "name": "Body of water",
+                "score": 0.9806437492370605
+              },
+              {
+                "source": "label",
+                "name": "Mountain",
+                "score": 0.9733220338821411
+              },
+              {
+                "source": "label",
+                "name": "Hill",
+                "score": 0.9607138633728027
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Sea",
+                "score": 0.8364874720573425
+              },
+              {
+                "name": "Caspian Sea",
+                "score": 0.6080999970436096
+              },
+              {
+                "name": "Ocean",
+                "score": 0.5748999714851379
+              },
+              {
+                "name": "Coast",
+                "score": 0.5060501098632812
+              },
+              {
+                "name": "The Sea",
+                "score": 0.4855000078678131
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Mountainous landforms",
+                "score": 0.9822186827659607
+              },
+              {
+                "name": "Water resources",
+                "score": 0.9820836186408997
+              },
+              {
+                "name": "Body of water",
+                "score": 0.9806437492370605
+              },
+              {
+                "name": "Mountain",
+                "score": 0.9733220338821411
+              },
+              {
+                "name": "Hill",
+                "score": 0.9607138633728027
+              }
+            ],
+            "processing_time_seconds": 14.304605960845947
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/126.heic"
+    }
+  ]
+}

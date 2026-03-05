@@ -1,0 +1,977 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "106.heic",
+      "timestamp": "2026-01-28T00:56:55.632424",
+      "processing_time_seconds": 73.861812,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 11.998719444444443,
+        "gps_longitude": 120.20381944444445,
+        "location": {
+          "formatted_address": "X6X3+GH7, San Augustin street, Coron Town Proper, Coron, Palawan, Philippines",
+          "city": "Coron",
+          "county": "Palawan",
+          "country": "Philippines"
+        },
+        "datetime_original": "2024:11:21 12:16:56",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Street view in Coron, Coron, Palawan, Philippines",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Coron, and the visible elements such as the mountain range and street scene are consistent with typical views in this area.",
+            "detailed_description": "The image depicts a street scene in Coron, Palawan, Philippines. The street is lined with various small businesses, including a photography studio and a vegetarian restaurant. Motorcycles are parked along the sides, and people are visible walking and riding scooters. In the background, a mountain range is visible, providing a scenic backdrop to the urban setting.",
+            "identification": {
+              "primary": [
+                "Street view in Coron"
+              ],
+              "location": "Coron, Palawan, Philippines",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Mountain range in the background",
+                "type": "natural_feature",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "urban",
+              "street",
+              "mountains",
+              "Philippines"
+            ],
+            "location": "Coron, Palawan, Philippines",
+            "type": "viewpoint",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Street view in Coron\"],\n        \"location\": \"Coron, Palawan, Philippines\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Mountain range in the background\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"urban\", \"street\", \"mountains\", \"Philippines\"],\n    \"description\": \"The image depicts a street scene in Coron, Palawan, Philippines. The street is lined with various small businesses, including a photography studio and a vegetarian restaurant. Motorcycles are parked along the sides, and people are visible walking and riding scooters. In the background, a mountain range is visible, providing a scenic backdrop to the urban setting.\",\n    \"reasoning\": \"The location metadata indicates Coron, and the visible elements such as the mountain range and street scene are consistent with typical views in this area.\",\n    \"type\": \"viewpoint\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 11.998719444444443,
+              "longitude": 120.20381944444445
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "X6X3+GH7, San Augustin street, Coron Town Proper, Coron, Palawan, Philippines",
+              "city": "Coron",
+              "county": "Palawan",
+              "country": "Philippines"
+            },
+            "photo_timestamp": "2024:11:21 12:16:56",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 29.990542888641357
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "**San Agustin Church**: This charming church showcases Spanish colonial architectural influences, featuring a simple facade and bell tower. ([philippinesislandhopping.com]())",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a bustling street scene in Coron, Palawan, Philippines. The street is lined with various small businesses and shops, each with distinct signage and architectural features. On the left side, a building with a red facade stands out, adorned with a sign featuring cursive writing and decorative elements. Adjacent to it, a structure with a stone-like exterior and green plants adds a touch of nature to the urban setting. The right side of the street features a sign for 'AL3 Studio,' ",
+            "description": "The image depicts a bustling street scene in Coron, Palawan, Philippines. The street is lined with various small businesses and shops, each with distinct signage and architectural features. On the left side, a building with a red facade stands out, adorned with a sign featuring cursive writing and decorative elements. Adjacent to it, a structure with a stone-like exterior and green plants adds a touch of nature to the urban setting. The right side of the street features a sign for 'AL3 Studio,' ",
+            "architectural_style": "Contemporary local architecture",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 11.998719444444443,
+              "longitude": 120.20381944444445
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "X6X3+GH7, San Augustin street, Coron Town Proper, Coron, Palawan, Philippines",
+              "city": "Coron",
+              "county": "Palawan",
+              "country": "Philippines"
+            },
+            "photo_timestamp": "2024:11:21 12:16:56",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 42.86335110664368
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Mode of transport",
+          "confidence": 0.9808012247085571,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Mode of transport",
+                "score": 0.9808012247085571
+              },
+              {
+                "source": "label",
+                "name": "Road surface",
+                "score": 0.9722853302955627
+              },
+              {
+                "source": "label",
+                "name": "Town",
+                "score": 0.962990939617157
+              },
+              {
+                "source": "label",
+                "name": "Street",
+                "score": 0.9401638507843018
+              },
+              {
+                "source": "label",
+                "name": "Road",
+                "score": 0.9377850890159607
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "House",
+                "score": 0.4074000120162964
+              },
+              {
+                "name": "Public space",
+                "score": 0.4040619134902954
+              },
+              {
+                "name": "Public",
+                "score": 0.3490999937057495
+              },
+              {
+                "name": "Neighbourhood",
+                "score": 0.3064688742160797
+              },
+              {
+                "name": "Road",
+                "score": 0.2784999907016754
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.727814257144928
+              },
+              {
+                "name": "Motorcycle",
+                "score": 0.6945066452026367
+              },
+              {
+                "name": "Person",
+                "score": 0.660750150680542
+              },
+              {
+                "name": "Clothing",
+                "score": 0.5866172909736633
+              },
+              {
+                "name": "Person",
+                "score": 0.5753325819969177
+              }
+            ],
+            "labels": [
+              {
+                "name": "Mode of transport",
+                "score": 0.9808012247085571
+              },
+              {
+                "name": "Road surface",
+                "score": 0.9722853302955627
+              },
+              {
+                "name": "Town",
+                "score": 0.962990939617157
+              },
+              {
+                "name": "Street",
+                "score": 0.9401638507843018
+              },
+              {
+                "name": "Road",
+                "score": 0.9377850890159607
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 11.998719444444443,
+              "longitude": 120.20381944444445
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "X6X3+GH7, San Augustin street, Coron Town Proper, Coron, Palawan, Philippines",
+              "city": "Coron",
+              "county": "Palawan",
+              "country": "Philippines"
+            },
+            "photo_timestamp": "2024:11:21 12:16:56",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 22.756232261657715
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Coron, Palawan, Philippines",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Coron, Palawan, Philippines",
+            "coordinates": {
+              "latitude": 11.998719444444443,
+              "longitude": 120.20381944444445
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Luis Bay Travellers Lodge",
+                  "types": [
+                    "lodging",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 220,
+                  "vicinity": "X6W3+HFW, Caltex Road, Barangay 3, Coron",
+                  "place_id": "ChIJAd6u39IdujMR8VqOWBbsUaU",
+                  "location": {
+                    "lat": 11.9964335,
+                    "lng": 120.2037197
+                  }
+                },
+                {
+                  "name": "Neptune Dive Center",
+                  "types": [
+                    "travel_agency",
+                    "school",
+                    "tourist_attraction",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 127,
+                  "vicinity": "National Highway, Coron",
+                  "place_id": "ChIJSUvTpdQdujMRZHkq9n-U2nM",
+                  "location": {
+                    "lat": 11.999012,
+                    "lng": 120.204235
+                  }
+                },
+                {
+                  "name": "Lucky Day Tours",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "X6X3+5JR, San Agustin st, Poblacion, Coron",
+                  "place_id": "ChIJW5n3CAAdujMRq4XWcjgQ92k",
+                  "location": {
+                    "lat": 11.9979772,
+                    "lng": 120.204009
+                  }
+                },
+                {
+                  "name": "Cinco Niños Leisure Corp",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 29,
+                  "vicinity": "Barangay Poblacion 6 National Highway, Coron",
+                  "place_id": "ChIJuxq4VA31uTMRByXHChH8gdk",
+                  "location": {
+                    "lat": 11.9978265,
+                    "lng": 120.2042707
+                  }
+                },
+                {
+                  "name": "Tourism centre",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "X6W3+X4J, Coron Town Proper, Coron",
+                  "place_id": "ChIJvcOk714dujMRfAOk8Y-dn7E",
+                  "location": {
+                    "lat": 11.9975741,
+                    "lng": 120.2027008
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Demmy's Pokemon Plush Collection",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Bancuang Taas, Coron",
+                  "place_id": "ChIJkTFTw80dujMRtjwiuzq-bZs",
+                  "location": {
+                    "lat": 12.0008875,
+                    "lng": 120.2014108
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "ワニ食べれるKawayanan Grilling Station",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.6,
+                  "user_ratings_total": 604,
+                  "vicinity": "Real Street, Proper, Coron",
+                  "place_id": "ChIJ3fX8RdMdujMR4u0m29Ht4S4",
+                  "location": {
+                    "lat": 11.9982773,
+                    "lng": 120.2034399
+                  }
+                },
+                {
+                  "name": "One Averee Bay Hotel",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.6,
+                  "user_ratings_total": 168,
+                  "vicinity": "Don Pedro st, Poblacion 3, Coron, Palawan, 5316, Coron",
+                  "place_id": "ChIJOxUubdMdujMRRkdR5izbrWs",
+                  "location": {
+                    "lat": 11.997451,
+                    "lng": 120.203086
+                  }
+                },
+                {
+                  "name": "Amphibi-ko Resort and Dive Center",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 123,
+                  "vicinity": "Coron - Busuanga Road, Coron Town Proper, Coron",
+                  "place_id": "ChIJ3y8sBtMdujMRRunBDRcdqho",
+                  "location": {
+                    "lat": 11.9994377,
+                    "lng": 120.2016614
+                  }
+                },
+                {
+                  "name": "Big Kahuna Bar & Smokery",
+                  "types": [
+                    "restaurant",
+                    "cafe",
+                    "bar",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 233,
+                  "vicinity": "National Highway Barangay, 3, Coron",
+                  "place_id": "ChIJq_gs8IwdujMR5BQ9d_T93SI",
+                  "location": {
+                    "lat": 11.9987164,
+                    "lng": 120.2037049
+                  }
+                },
+                {
+                  "name": "Fresh Bites",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 123,
+                  "vicinity": "San Augustin Street, Pob, Coron",
+                  "place_id": "ChIJb7QogGIdujMRRQ1BjWlRmEw",
+                  "location": {
+                    "lat": 11.9986446,
+                    "lng": 120.2036919
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Coron Plaza Fountain",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 6,
+                  "vicinity": "X6X3+349, Coron Town Proper, Coron",
+                  "place_id": "ChIJRXRSWngdujMRuWJtpOEHQKk",
+                  "location": {
+                    "lat": 11.9976709,
+                    "lng": 120.2028661
+                  }
+                },
+                {
+                  "name": "Lualhati Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 324,
+                  "vicinity": "X6W2+9PC, Coron Town Proper, Coron",
+                  "place_id": "ChIJ_____ywcujMRoHX8JXI8hsc",
+                  "location": {
+                    "lat": 11.995936,
+                    "lng": 120.2017667
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Baptist Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "X6X3+JH6, San Augustin Street, Coron Town Proper, Coron",
+                  "place_id": "ChIJAQCwo9QdujMRToP9HfaArp4",
+                  "location": {
+                    "lat": 11.9990386,
+                    "lng": 120.2038922
+                  }
+                },
+                {
+                  "name": "The Church of Jesus Christ of Latter-day Saints",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "National Highway Cnr, Burgos Street, Brgy. Poblacion 4, Coron",
+                  "place_id": "ChIJsRy05fsdujMRCN1i_UPII4A",
+                  "location": {
+                    "lat": 11.9991531,
+                    "lng": 120.2048999
+                  }
+                },
+                {
+                  "name": "pentecostal missionary Church of Christ 4th watch Coron Local",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "X6X2+WX6, Nueva Street, Coron Town Proper, Coron",
+                  "place_id": "ChIJM62BBYwdujMRUHViar7rnaA",
+                  "location": {
+                    "lat": 11.9997871,
+                    "lng": 120.2023926
+                  }
+                },
+                {
+                  "name": "San Agustin Parish Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 101,
+                  "vicinity": "San Agustin Parish Church, Roxas Street, Coron Town Proper, Coron",
+                  "place_id": "ChIJraEtTyscujMRnOR1LFIMQd8",
+                  "location": {
+                    "lat": 11.9992833,
+                    "lng": 120.2056583
+                  }
+                },
+                {
+                  "name": "Members Church of God International (MCGI) - Locale Coron, Palawan",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 10,
+                  "vicinity": "Proper, Near Gv Homestay, 5 Coastal Road, Coron Town Proper, Coron",
+                  "place_id": "ChIJh23H8ugdujMRDncI63PBLmw",
+                  "location": {
+                    "lat": 12.0007082,
+                    "lng": 120.1999127
+                  }
+                },
+                {
+                  "name": "Masjid Coron",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 4,
+                  "vicinity": "X6W3+X4J, Proper, Coron",
+                  "place_id": "ChIJcfvDNgAdujMR_4YTMXxfzpM",
+                  "location": {
+                    "lat": 11.9970891,
+                    "lng": 120.2030941
+                  }
+                },
+                {
+                  "name": "Masjidul Asgar (Small Mosque)",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "LAMOD STREET, Coron - Busuanga Road, Coron",
+                  "place_id": "ChIJzwMAzzMdujMR-jifVXhOJoQ",
+                  "location": {
+                    "lat": 12.0012461,
+                    "lng": 120.1988799
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Coron",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Coron",
+                  "place_id": "ChIJddawJfIeujMRjpZeqLkahGg",
+                  "location": {
+                    "lat": 11.9989958,
+                    "lng": 120.2046888
+                  }
+                },
+                {
+                  "name": "Corto Del Mar Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 615,
+                  "vicinity": "Comiseria Street Barangay 1, Coron Town Proper, Palawan",
+                  "place_id": "ChIJITMNkCwcujMRPSjM422cjlw",
+                  "location": {
+                    "lat": 11.9972531,
+                    "lng": 120.2066838
+                  }
+                },
+                {
+                  "name": "Apartelle de Gabrielle",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 62,
+                  "vicinity": "National Highway, Barangay Poblacion 5, Coron, Palawan, Coron - Busuanga Road, Coron",
+                  "place_id": "ChIJ7YopkDEcujMRdQbKDdawljM",
+                  "location": {
+                    "lat": 12.0022848,
+                    "lng": 120.199506
+                  }
+                },
+                {
+                  "name": "Zuric Pension House",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 84,
+                  "vicinity": "X6X3+C4R, Coron - Busuanga Road, Coron Town Proper, Coron",
+                  "place_id": "ChIJA9H7fNMdujMREO_BuKkK9zg",
+                  "location": {
+                    "lat": 11.9986111,
+                    "lng": 120.2027778
+                  }
+                },
+                {
+                  "name": "Kalachuchi Hostel for Divers",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.6,
+                  "user_ratings_total": 63,
+                  "vicinity": "X6X5+FM6, Coron Town Proper, Coron",
+                  "place_id": "ChIJ8Z0NkiscujMRUlFLLzAv5Xc",
+                  "location": {
+                    "lat": 11.9986501,
+                    "lng": 120.2091562
+                  }
+                }
+              ]
+            },
+            "total_places_found": 25,
+            "photo_timestamp": "2024:11:21 12:16:56",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.5458970069885254
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/106.heic"
+    },
+    {
+      "image_filename": "106.heic",
+      "timestamp": "2026-01-28T00:58:09.678759",
+      "processing_time_seconds": 67.534812,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Street scene with mountain backdrop",
+          "confidence": 0.75,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The street scene with shops and signage is the primary focus, while the mountain range in the background is a significant secondary feature. The urban setting combined with the natural backdrop suggests a location near mountainous terrain.",
+            "detailed_description": "The image depicts a lively street scene with various shops and signage visible along the sides. The street is lined with motorcycles and pedestrians, contributing to a bustling atmosphere. In the background, a mountain range is visible, providing a scenic backdrop to the urban setting. The architecture is typical of small-town commercial areas, with a mix of modern and traditional elements. Vegetation is present, adding greenery to the scene.",
+            "identification": {
+              "primary": [
+                "Street scene with mountain backdrop"
+              ],
+              "location": null,
+              "confidence": 0.75
+            },
+            "artifacts": [
+              {
+                "name": "Street with shops and signage",
+                "type": "viewpoint",
+                "confidence": 0.8
+              },
+              {
+                "name": "Mountain range in the background",
+                "type": "natural_feature",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "urban",
+              "mountains",
+              "shops",
+              "street",
+              "vegetation"
+            ],
+            "location": null,
+            "type": "viewpoint",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Small town in a mountainous region",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The presence of mountains suggests a location near a mountainous area, possibly in a region known for such landscapes."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Street scene with mountain backdrop\"],\n        \"location\": null,\n        \"confidence\": 0.75\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Street with shops and signage\",\n            \"type\": \"viewpoint\",\n            \"confidence\": 0.8\n        },\n        {\n            \"name\": \"Mountain range in the background\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"urban\", \"mountains\", \"shops\", \"street\", \"vegetation\"],\n    \"description\": \"The image depicts a lively street scene with various shops and signage visible along the sides. The street is lined with motorcycles and pedestrians, contributing to a bustling atmosphere. In the background, a mountain range is visible, providing a scenic backdrop to the urban setting. The architecture is typical of small-town commercial areas, with a mix of modern and traditional elements. Vegetation is present, adding greenery to the scene.\",\n    \"reasoning\": \"The street scene with shops and signage is the primary focus, while the mountain range in the background is a significant secondary feature. The urban setting combined with the natural backdrop suggests a location near mountainous terrain.\",\n    \"type\": \"viewpoint\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Small town in a mountainous region\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The presence of mountains suggests a location near a mountainous area, possibly in a region known for such landscapes.\"\n        }\n    ]\n}",
+            "processing_time_seconds": 18.092496871948242
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Street scene in a tropical urban area",
+          "confidence": 0.5499999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches a typical street scene in a tropical or subtropical urban area, with utilitarian architecture and local businesses. The presence of lush greenery and mountains suggests a humid climate. Search results did not provide a specific location or landmark, but the description aligns with common features found in such regions.",
+            "identification": {
+              "primary": [
+                "Street scene in a tropical urban area"
+              ],
+              "location": null,
+              "confidence": 0.6
+            },
+            "artifacts": [
+              {
+                "name": "Vegetarian restaurant signage",
+                "type": "other",
+                "confidence": 0.7
+              },
+              {
+                "name": "Photography studio signage",
+                "type": "other",
+                "confidence": 0.7
+              },
+              {
+                "name": "Mountain backdrop",
+                "type": "natural_feature",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "utilitarian",
+              "tropical",
+              "urban",
+              "vegetation",
+              "commerce"
+            ],
+            "sources_used": [
+              "en.wikipedia.org",
+              "artsy.net"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([artsy.net]())",
+              "*URL*: ([gifitto.com]())",
+              "*URL*: ([stock.adobe.com]())"
+            ],
+            "type": "viewpoint",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Street scene in Southeast Asia",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.5,
+                "reasoning": "The description of the street scene with tropical vegetation and utilitarian architecture is common in Southeast Asian urban areas."
+              },
+              {
+                "guess": "Street scene in Central America",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.5,
+                "reasoning": "Central American cities often feature similar urban environments with lush greenery and modest construction."
+              },
+              {
+                "guess": "Street scene in a developing urban area",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The utilitarian architecture and local commerce are typical of developing urban areas in tropical climates."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.6,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a bustling street scene in a small urban area, possibly in a tropical or subtropical region given the lush greenery and bright sunlight. The street is lined with various small businesses and shops, including a photography studio and a vegetarian restaurant, as indicated by the signage. The buildings are modestly constructed, with some featuring corrugated metal roofs and simple facades. The architecture is utilitarian, with a mix of concrete and brick materials, typical of deve",
+            "description": "The image depicts a bustling street scene in a small urban area, possibly in a tropical or subtropical region given the lush greenery and bright sunlight. The street is lined with various small businesses and shops, including a photography studio and a vegetarian restaurant, as indicated by the signage. The buildings are modestly constructed, with some featuring corrugated metal roofs and simple facades. The architecture is utilitarian, with a mix of concrete and brick materials, typical of deve",
+            "architectural_style": "Utilitarian",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 45.500272035598755
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Mode of transport",
+          "confidence": 0.9808012247085571,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Mode of transport",
+                "score": 0.9808012247085571
+              },
+              {
+                "source": "label",
+                "name": "Road surface",
+                "score": 0.9722853302955627
+              },
+              {
+                "source": "label",
+                "name": "Town",
+                "score": 0.962990939617157
+              },
+              {
+                "source": "label",
+                "name": "Street",
+                "score": 0.9401638507843018
+              },
+              {
+                "source": "label",
+                "name": "Road",
+                "score": 0.9377850890159607
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "House",
+                "score": 0.4074000120162964
+              },
+              {
+                "name": "Public space",
+                "score": 0.4041464924812317
+              },
+              {
+                "name": "Public",
+                "score": 0.3490999937057495
+              },
+              {
+                "name": "Neighbourhood",
+                "score": 0.3069874942302704
+              },
+              {
+                "name": "Road",
+                "score": 0.2784999907016754
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.727814257144928
+              },
+              {
+                "name": "Motorcycle",
+                "score": 0.6945066452026367
+              },
+              {
+                "name": "Person",
+                "score": 0.660750150680542
+              },
+              {
+                "name": "Clothing",
+                "score": 0.5866172909736633
+              },
+              {
+                "name": "Person",
+                "score": 0.5753325819969177
+              }
+            ],
+            "labels": [
+              {
+                "name": "Mode of transport",
+                "score": 0.9808012247085571
+              },
+              {
+                "name": "Road surface",
+                "score": 0.9722853302955627
+              },
+              {
+                "name": "Town",
+                "score": 0.962990939617157
+              },
+              {
+                "name": "Street",
+                "score": 0.9401638507843018
+              },
+              {
+                "name": "Road",
+                "score": 0.9377850890159607
+              }
+            ],
+            "processing_time_seconds": 22.59414291381836
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/106.heic"
+    }
+  ]
+}

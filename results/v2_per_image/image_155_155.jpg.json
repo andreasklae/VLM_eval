@@ -1,0 +1,1129 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "155.jpg",
+      "timestamp": "2026-01-28T02:49:27.990568",
+      "processing_time_seconds": 65.479545,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 47.22096666666667,
+        "gps_longitude": -1.5436638888888887,
+        "location": {
+          "formatted_address": "Palmarium, All. des Serres, 44000 Nantes, France",
+          "city": "Nantes",
+          "county": "Loire-Atlantique",
+          "country": "France"
+        },
+        "datetime_original": "2025:03:27 16:55:49",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Greenhouse in Jardin des Plantes, Nantes, France",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The greenhouse's architectural style and materials, combined with the location metadata, suggest it is part of the Jardin des Plantes in Nantes, known for its historical greenhouses.",
+            "detailed_description": "The image shows a greenhouse located in the Jardin des Plantes in Nantes, France. The structure features a glass and iron construction typical of 19th-century botanical architecture. The greenhouse has a domed roof and ornate ironwork, surrounded by a well-maintained garden with various plants and flowers. The setting is a botanical garden, which is a popular attraction in Nantes.",
+            "identification": {
+              "primary": [
+                "Greenhouse in Jardin des Plantes"
+              ],
+              "location": "Nantes, France",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Greenhouse",
+                "type": "building",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "greenhouse",
+              "19th_century",
+              "glass",
+              "iron",
+              "botanical_garden",
+              "Nantes"
+            ],
+            "location": "Nantes, France",
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Greenhouse in Jardin des Plantes\"],\n        \"location\": \"Nantes, France\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Greenhouse\",\n            \"type\": \"building\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"greenhouse\", \"19th_century\", \"glass\", \"iron\", \"botanical_garden\", \"Nantes\"],\n    \"description\": \"The image shows a greenhouse located in the Jardin des Plantes in Nantes, France. The structure features a glass and iron construction typical of 19th-century botanical architecture. The greenhouse has a domed roof and ornate ironwork, surrounded by a well-maintained garden with various plants and flowers. The setting is a botanical garden, which is a popular attraction in Nantes.\",\n    \"reasoning\": \"The greenhouse's architectural style and materials, combined with the location metadata, suggest it is part of the Jardin des Plantes in Nantes, known for its historical greenhouses.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 47.22096666666667,
+              "longitude": -1.5436638888888887
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Palmarium, All. des Serres, 44000 Nantes, France",
+              "city": "Nantes",
+              "county": "Loire-Atlantique",
+              "country": "France"
+            },
+            "photo_timestamp": "2025:03:27 16:55:49",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 28.549275159835815
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Jardin des Plantes Greenhouse, Nantes, France",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the greenhouse at Jardin des Plantes in Nantes, known for its Art Nouveau style and garden setting. The location metadata supports this identification, and search results confirm the presence of such a structure in Nantes.",
+            "identification": {
+              "primary": [
+                "Jardin des Plantes Greenhouse"
+              ],
+              "location": "Nantes, France",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Jardin des Plantes Greenhouse",
+                "type": "building",
+                "confidence": 0.9
+              },
+              {
+                "name": "Modern buildings",
+                "type": "building",
+                "confidence": 0.7
+              }
+            ],
+            "tags": [
+              "Art Nouveau",
+              "greenhouse",
+              "ironwork",
+              "glass panels",
+              "garden",
+              "Nantes"
+            ],
+            "sources_used": [
+              "en.wikipedia.org",
+              "fr.wikipedia.org",
+              "eghn.org"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([fr.wikipedia.org]())",
+              "*URL*: ([eghn.org]())",
+              "*URL*: ([designboom.com]())",
+              "*URL*: ([fr.wikipedia.org]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Greenhouse in Jardin des Plantes, Paris",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "While the description matches the style, the location metadata indicates Nantes, making Paris less likely."
+              },
+              {
+                "guess": "Art Nouveau greenhouse in France",
+                "specificity_level": "general",
+                "confidence": 0.5,
+                "reasoning": "The style and description fit various greenhouses in France, but location metadata suggests Nantes."
+              },
+              {
+                "guess": "Conservatory in a public garden",
+                "specificity_level": "very_general",
+                "confidence": 0.4,
+                "reasoning": "The description fits many conservatories, but the specific location and style suggest a more precise identification."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.9,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image features a large greenhouse structure, likely a conservatory, situated within a garden setting. The greenhouse is characterized by its intricate ironwork and glass panels, forming a dome-like roof that arches elegantly over the building. The glass panels are segmented, creating a pattern that enhances the architectural beauty of the structure. The ironwork includes decorative elements such as scrolls and floral motifs, typical of late 19th to early 20th-century design, possibly influen",
+            "description": "The image features a large greenhouse structure, likely a conservatory, situated within a garden setting. The greenhouse is characterized by its intricate ironwork and glass panels, forming a dome-like roof that arches elegantly over the building. The glass panels are segmented, creating a pattern that enhances the architectural beauty of the structure. The ironwork includes decorative elements such as scrolls and floral motifs, typical of late 19th to early 20th-century design, possibly influen",
+            "architectural_style": "Art Nouveau",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 47.22096666666667,
+              "longitude": -1.5436638888888887
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Palmarium, All. des Serres, 44000 Nantes, France",
+              "city": "Nantes",
+              "county": "Loire-Atlantique",
+              "country": "France"
+            },
+            "photo_timestamp": "2025:03:27 16:55:49",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 36.11623501777649
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Sunlight",
+          "confidence": 0.8228395581245422,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Sunlight",
+                "score": 0.8228395581245422
+              },
+              {
+                "source": "web",
+                "name": "ArchitectureM RIBA Chartered Practice",
+                "score": 0.30219998955726624
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "ArchitectureM RIBA Chartered Practice",
+                "score": 0.30219998955726624
+              },
+              {
+                "name": "Architecture",
+                "score": 0.26050540804862976
+              },
+              {
+                "name": "House",
+                "score": 0.040004998445510864
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.9911878705024719
+              },
+              {
+                "name": "Blue",
+                "score": 0.9891386032104492
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9812076091766357
+              },
+              {
+                "name": "Cloud",
+                "score": 0.9025000333786011
+              },
+              {
+                "name": "Sunlight",
+                "score": 0.8228395581245422
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 47.22096666666667,
+              "longitude": -1.5436638888888887
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Palmarium, All. des Serres, 44000 Nantes, France",
+              "city": "Nantes",
+              "county": "Loire-Atlantique",
+              "country": "France"
+            },
+            "photo_timestamp": "2025:03:27 16:55:49",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 17.32322406768799
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Nantes, Loire-Atlantique, France",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Nantes, Loire-Atlantique, France",
+            "coordinates": {
+              "latitude": 47.22096666666667,
+              "longitude": -1.5436638888888887
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Château des ducs de Bretagne",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 24003,
+                  "vicinity": "4 Place Marc Elder, Nantes",
+                  "place_id": "ChIJJ1aA2qTuBUgREHFXS52q1Cg",
+                  "location": {
+                    "lat": 47.2162991,
+                    "lng": -1.5487716
+                  }
+                },
+                {
+                  "name": "Île de Versailles",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 8519,
+                  "vicinity": "Quai de Versailles, Nantes",
+                  "place_id": "ChIJUfIvub7uBUgR1B9_Uwv2LOM",
+                  "location": {
+                    "lat": 47.2257279,
+                    "lng": -1.5541976
+                  }
+                },
+                {
+                  "name": "Botanical Garden",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 17680,
+                  "vicinity": "Rue Stanislas Baudry, Nantes",
+                  "place_id": "ChIJhyWwcMzuBUgRM29jA-rqsCY",
+                  "location": {
+                    "lat": 47.2193911,
+                    "lng": -1.5425608
+                  }
+                },
+                {
+                  "name": "Dépodépo par C.Ponti",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 125,
+                  "vicinity": "5 Rue Ecorchard, Nantes",
+                  "place_id": "ChIJHygNKLzuBUgRJ3a194ThHhY",
+                  "location": {
+                    "lat": 47.2205263,
+                    "lng": -1.5448079
+                  }
+                },
+                {
+                  "name": "Chapel of the Immaculate Conception",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 120,
+                  "vicinity": "Rue Malherbe, Nantes",
+                  "place_id": "ChIJFVtVibvuBUgR12CYTtIReoA",
+                  "location": {
+                    "lat": 47.2181258,
+                    "lng": -1.5465604
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Château des ducs de Bretagne",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 24003,
+                  "vicinity": "4 Place Marc Elder, Nantes",
+                  "place_id": "ChIJJ1aA2qTuBUgREHFXS52q1Cg",
+                  "location": {
+                    "lat": 47.2162991,
+                    "lng": -1.5487716
+                  }
+                },
+                {
+                  "name": "Musée d'histoire de Nantes",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1306,
+                  "vicinity": "4 Place Marc Elder, Nantes",
+                  "place_id": "ChIJKebs2LruBUgRnW3hW-9l4W0",
+                  "location": {
+                    "lat": 47.2157787,
+                    "lng": -1.5497525
+                  }
+                },
+                {
+                  "name": "Musée d’arts de Nantes",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 5840,
+                  "vicinity": "10 Rue Georges Clemenceau, Nantes",
+                  "place_id": "ChIJ8YJNb7zuBUgRQlNKK6w8OiY",
+                  "location": {
+                    "lat": 47.21953449999999,
+                    "lng": -1.5474903
+                  }
+                },
+                {
+                  "name": "Musée des Sapeurs-pompiers de Loire Atlantique",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 19,
+                  "vicinity": "37 Rue Maréchal Joffre, Nantes",
+                  "place_id": "ChIJT-DDeOzvBUgRLBSOrp1bFKQ",
+                  "location": {
+                    "lat": 47.22187439999999,
+                    "lng": -1.5465146
+                  }
+                },
+                {
+                  "name": "Le Musée des Enfants de Nantes",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 16,
+                  "vicinity": "118 Rue Général Buat, Nantes",
+                  "place_id": "ChIJXymW5OXvBUgRRGYsUmCOUxc",
+                  "location": {
+                    "lat": 47.228589,
+                    "lng": -1.5413926
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Le Fou du Roi",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1207,
+                  "vicinity": "2 Rue Premion, Nantes",
+                  "place_id": "ChIJMa_bNLvuBUgRrOuLI_ZQvr0",
+                  "location": {
+                    "lat": 47.2170942,
+                    "lng": -1.5497562
+                  }
+                },
+                {
+                  "name": "Intermarché EXPRESS Nantes",
+                  "types": [
+                    "supermarket",
+                    "liquor_store",
+                    "bakery",
+                    "grocery_or_supermarket",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 642,
+                  "vicinity": "20 Rue Pitre Chevalier, Nantes",
+                  "place_id": "ChIJrSckBZjuBUgR4Cjm1FeQri0",
+                  "location": {
+                    "lat": 47.22395799999999,
+                    "lng": -1.55067
+                  }
+                },
+                {
+                  "name": "The Coffee House",
+                  "types": [
+                    "bar",
+                    "cafe",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1329,
+                  "vicinity": "4 Rue Lebrun, Nantes",
+                  "place_id": "ChIJE-5dzLzuBUgRasvIKddcfXI",
+                  "location": {
+                    "lat": 47.220316,
+                    "lng": -1.549559
+                  }
+                },
+                {
+                  "name": "La Reine Margot",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 639,
+                  "vicinity": "8 Rue de la Juiverie, Nantes",
+                  "place_id": "ChIJPfz_raXuBUgRpKgLRN7SGlA",
+                  "location": {
+                    "lat": 47.2157478,
+                    "lng": -1.553037
+                  }
+                },
+                {
+                  "name": "Félix",
+                  "types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 664,
+                  "vicinity": "1 Rue Lefèvre Utile, Nantes",
+                  "place_id": "ChIJt6QaA7ruBUgRfvAVaJfrVi8",
+                  "location": {
+                    "lat": 47.2143108,
+                    "lng": -1.5436197
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Nantes Boats",
+                  "types": [
+                    "restaurant",
+                    "park",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1963,
+                  "vicinity": "Place Waldeck Rousseau, Nantes",
+                  "place_id": "ChIJe7OX9JnuBUgRPihikvg1tZs",
+                  "location": {
+                    "lat": 47.22799999999999,
+                    "lng": -1.5516433
+                  }
+                },
+                {
+                  "name": "Île de Versailles",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 8519,
+                  "vicinity": "Quai de Versailles, Nantes",
+                  "place_id": "ChIJUfIvub7uBUgR1B9_Uwv2LOM",
+                  "location": {
+                    "lat": 47.2257279,
+                    "lng": -1.5541976
+                  }
+                },
+                {
+                  "name": "Botanical Garden",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 17680,
+                  "vicinity": "Rue Stanislas Baudry, Nantes",
+                  "place_id": "ChIJhyWwcMzuBUgRM29jA-rqsCY",
+                  "location": {
+                    "lat": 47.2193911,
+                    "lng": -1.5425608
+                  }
+                },
+                {
+                  "name": "Dépodépo par C.Ponti",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 125,
+                  "vicinity": "5 Rue Ecorchard, Nantes",
+                  "place_id": "ChIJHygNKLzuBUgRJ3a194ThHhY",
+                  "location": {
+                    "lat": 47.2205263,
+                    "lng": -1.5448079
+                  }
+                },
+                {
+                  "name": "Square Saint-François",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Rue Saint-François, Nantes",
+                  "place_id": "ChIJdz_U9rvuBUgRNtNt_uwPT9I",
+                  "location": {
+                    "lat": 47.2182031,
+                    "lng": -1.5454731
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Basilica of St. Donatian and St. Rogatian",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 215,
+                  "vicinity": "Place des Enfants Nantais, Nantes",
+                  "place_id": "ChIJcWQFhJPuBUgRJre3UbDoyXg",
+                  "location": {
+                    "lat": 47.2290568,
+                    "lng": -1.5425157
+                  }
+                },
+                {
+                  "name": "Cathédrale Saint-Pierre-et-Saint-Paul de Nantes",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 4156,
+                  "vicinity": "7 Impasse Saint-Laurent, Nantes",
+                  "place_id": "ChIJme3Jo6TuBUgRRRoTW5mk6a0",
+                  "location": {
+                    "lat": 47.2183213,
+                    "lng": -1.5506368
+                  }
+                },
+                {
+                  "name": "Chapelle du Christ Roi",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 18,
+                  "vicinity": "88 Rue d'Allonville, Nantes",
+                  "place_id": "ChIJp7DmncDuBUgR-cw5ymJZsVg",
+                  "location": {
+                    "lat": 47.2201014,
+                    "lng": -1.5394646
+                  }
+                },
+                {
+                  "name": "Chapel of the Immaculate Conception",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 120,
+                  "vicinity": "Rue Malherbe, Nantes",
+                  "place_id": "ChIJFVtVibvuBUgR12CYTtIReoA",
+                  "location": {
+                    "lat": 47.2181258,
+                    "lng": -1.5465604
+                  }
+                },
+                {
+                  "name": "Chapelle de l'Oratoire",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 21,
+                  "vicinity": "Place de l'Oratoire, Nantes",
+                  "place_id": "ChIJcSa3mLzuBUgRaKWA-HNUYvw",
+                  "location": {
+                    "lat": 47.2190568,
+                    "lng": -1.5485361
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Cercle Louis XVI",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 24,
+                  "vicinity": "2 Rue Chauvin, Nantes",
+                  "place_id": "ChIJX29hRKPuBUgRRTfLttOZ7hs",
+                  "location": {
+                    "lat": 47.219199,
+                    "lng": -1.55081
+                  }
+                },
+                {
+                  "name": "Galerie RDV",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 18,
+                  "vicinity": "16 Allée Commandant Charcot, Nantes",
+                  "place_id": "ChIJcwDmwLvuBUgRiuWCRVXful4",
+                  "location": {
+                    "lat": 47.21709729999999,
+                    "lng": -1.5457297
+                  }
+                },
+                {
+                  "name": "Mika et Delphine Cossais",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 7,
+                  "vicinity": "1 Rue Saint-Denis, Nantes",
+                  "place_id": "ChIJJzesgaDuBUgRUYrb-QH8yWg",
+                  "location": {
+                    "lat": 47.2175764,
+                    "lng": -1.5521113
+                  }
+                },
+                {
+                  "name": "L'Atelier",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 75,
+                  "vicinity": "1 Rue Châteaubriand, Nantes",
+                  "place_id": "ChIJtUKbhqHuBUgRWsB7DU9zWrI",
+                  "location": {
+                    "lat": 47.2212957,
+                    "lng": -1.5554628
+                  }
+                },
+                {
+                  "name": "L'autre lumière",
+                  "types": [
+                    "art_gallery",
+                    "general_contractor",
+                    "furniture_store",
+                    "home_goods_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 53,
+                  "vicinity": "2B Rue du Château, Nantes",
+                  "place_id": "ChIJcWtN2qTuBUgRLjJSKhz9yNo",
+                  "location": {
+                    "lat": 47.216381,
+                    "lng": -1.5510176
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Nantes",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Nantes",
+                  "place_id": "ChIJra6o8IHuBUgRMO0NHlI3DQQ",
+                  "location": {
+                    "lat": 47.218371,
+                    "lng": -1.553621
+                  }
+                },
+                {
+                  "name": "ibis Nantes Centre Gare Sud",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1424,
+                  "vicinity": "3 Allée Baco, Nantes",
+                  "place_id": "ChIJAYObjLruBUgRTpkaigLSRRc",
+                  "location": {
+                    "lat": 47.2147015,
+                    "lng": -1.5473043
+                  }
+                },
+                {
+                  "name": "Aparthotel Adagio Nantes Centre",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 1203,
+                  "vicinity": "19 Allée Commandant Charcot, Nantes",
+                  "place_id": "ChIJwbu7uLvuBUgRyzWuR_-3MZY",
+                  "location": {
+                    "lat": 47.2169641,
+                    "lng": -1.5462522
+                  }
+                },
+                {
+                  "name": "Appart'City Confort Nantes Cité des Congrès - Appart Hôtel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.6,
+                  "user_ratings_total": 556,
+                  "vicinity": "2 Rue Emile Masson, Nantes",
+                  "place_id": "ChIJ5ykm9LDuBUgRvxdY2bNLWug",
+                  "location": {
+                    "lat": 47.2141311,
+                    "lng": -1.5464577
+                  }
+                },
+                {
+                  "name": "The Originals City, Hôtel Novella, Nantes Centre Gare",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 462,
+                  "vicinity": "38 Rue de Richebourg, Nantes",
+                  "place_id": "ChIJ9zHwl7vuBUgRQ_Sswz_aISo",
+                  "location": {
+                    "lat": 47.2172884,
+                    "lng": -1.5465234
+                  }
+                }
+              ]
+            },
+            "total_places_found": 35,
+            "photo_timestamp": "2025:03:27 16:55:49",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.5067281723022461
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/155.jpg"
+    },
+    {
+      "image_filename": "155.jpg",
+      "timestamp": "2026-01-28T02:50:33.500712",
+      "processing_time_seconds": 65.252618,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Victorian-style greenhouse",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and materials, such as glass and iron, suggest a Victorian-era greenhouse, which is a common design for botanical conservatories from the 19th century.",
+            "detailed_description": "The image shows a Victorian-style greenhouse characterized by its glass and iron construction. The structure features a prominent dome and intricate ironwork, typical of 19th-century botanical conservatories. Surrounding the greenhouse is a well-maintained garden with various plants and flowers, adding to the botanical setting. The greenhouse likely serves as a space for plant cultivation and display, reflecting the architectural style and design commonly used in historical botanical gardens.",
+            "identification": {
+              "primary": [
+                "Victorian-style greenhouse"
+              ],
+              "location": null,
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Victorian-style greenhouse",
+                "type": "building",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "Victorian",
+              "greenhouse",
+              "glass",
+              "ironwork",
+              "botanical"
+            ],
+            "location": null,
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Botanical garden greenhouse",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.75,
+                "reasoning": "The setting and style are typical of greenhouses found in botanical gardens."
+              },
+              {
+                "guess": "Victorian conservatory",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The architectural features are consistent with Victorian conservatories used for plant cultivation."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Victorian-style greenhouse\"],\n        \"location\": null,\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Victorian-style greenhouse\",\n            \"type\": \"building\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"Victorian\", \"greenhouse\", \"glass\", \"ironwork\", \"botanical\"],\n    \"description\": \"The image shows a Victorian-style greenhouse characterized by its glass and iron construction. The structure features a prominent dome and intricate ironwork, typical of 19th-century botanical conservatories. Surrounding the greenhouse is a well-maintained garden with various plants and flowers, adding to the botanical setting. The greenhouse likely serves as a space for plant cultivation and display, reflecting the architectural style and design commonly used in historical botanical gardens.\",\n    \"reasoning\": \"The architectural style and materials, such as glass and iron, suggest a Victorian-era greenhouse, which is a common design for botanical conservatories from the 19th century.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Botanical garden greenhouse\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.75,\n            \"reasoning\": \"The setting and style are typical of greenhouses found in botanical gardens.\"\n        },\n        {\n            \"guess\": \"Victorian conservatory\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.70,\n            \"reasoning\": \"The architectural features are consistent with Victorian conservatories used for plant cultivation.\"\n        }\n    ]\n}",
+            "processing_time_seconds": 30.07206392288208
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Palm House, Kew Gardens, London, United Kingdom",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the architectural style and features of the Palm House at Kew Gardens, including the dome and intricate metalwork. The presence of modern buildings in the background aligns with its location in London. Search results strongly suggest this identification.",
+            "identification": {
+              "primary": [
+                "Palm House, Kew Gardens"
+              ],
+              "location": "London, United Kingdom",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Palm House",
+                "type": "greenhouse",
+                "confidence": 0.9
+              },
+              {
+                "name": "Modern buildings",
+                "type": "building",
+                "confidence": 0.7
+              },
+              {
+                "name": "Botanical garden",
+                "type": "garden",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "Victorian",
+              "glass",
+              "metalwork",
+              "botanical garden",
+              "London"
+            ],
+            "sources_used": [
+              "en.wikipedia.org",
+              "epicgreenhouses.com"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([epicgreenhouses.com]())",
+              "*URL*: ([whitecottage.co.uk]())"
+            ],
+            "type": "greenhouse",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Temperate House, Kew Gardens",
+                "specificity_level": "very_specific",
+                "confidence": 0.7,
+                "reasoning": "Another large Victorian greenhouse at Kew Gardens, similar in style but less likely due to the dome feature."
+              },
+              {
+                "guess": "Victorian greenhouse in a botanical garden",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The description fits many Victorian greenhouses, but the Palm House is the most iconic example."
+              },
+              {
+                "guess": "Edwardian conservatory in a botanical setting",
+                "specificity_level": "general",
+                "confidence": 0.5,
+                "reasoning": "The style could also fit Edwardian conservatories, though less likely given the description."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 3,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.9,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a large greenhouse structure, characterized by its ornate glass and metal design. The greenhouse features a prominent dome at its center, with intricate metalwork patterns visible on the glass panels. The structure appears to be made primarily of glass and wrought iron, showcasing an architectural style reminiscent of Victorian or Edwardian conservatories. The greenhouse is surrounded by a well-maintained garden, with vibrant green grass and a variety of flowering plants, inclu",
+            "description": "The image depicts a large greenhouse structure, characterized by its ornate glass and metal design. The greenhouse features a prominent dome at its center, with intricate metalwork patterns visible on the glass panels. The structure appears to be made primarily of glass and wrought iron, showcasing an architectural style reminiscent of Victorian or Edwardian conservatories. The greenhouse is surrounded by a well-maintained garden, with vibrant green grass and a variety of flowering plants, inclu",
+            "architectural_style": "Victorian/Edwardian",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 35.178215980529785
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Sunlight",
+          "confidence": 0.8228395581245422,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Sunlight",
+                "score": 0.8228395581245422
+              },
+              {
+                "source": "web",
+                "name": "ArchitectureM RIBA Chartered Practice",
+                "score": 0.30219998955726624
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "ArchitectureM RIBA Chartered Practice",
+                "score": 0.30219998955726624
+              },
+              {
+                "name": "Architecture",
+                "score": 0.2606585919857025
+              },
+              {
+                "name": "House",
+                "score": 0.040004998445510864
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.9911878705024719
+              },
+              {
+                "name": "Blue",
+                "score": 0.9891386032104492
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9812076091766357
+              },
+              {
+                "name": "Cloud",
+                "score": 0.9025000333786011
+              },
+              {
+                "name": "Sunlight",
+                "score": 0.8228395581245422
+              }
+            ],
+            "processing_time_seconds": 17.609986066818237
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/155.jpg"
+    }
+  ]
+}

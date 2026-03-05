@@ -1,0 +1,627 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "122.heic",
+      "timestamp": "2026-01-28T01:34:13.141509",
+      "processing_time_seconds": 65.75622,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 15.763005555555555,
+        "gps_longitude": 108.12419999999999,
+        "location": {
+          "formatted_address": "Q47F+7JP, Duy Hòa, Duy Xuyên District, Quảng Nam, Vietnam",
+          "city": null,
+          "county": "Duy Xuyên",
+          "country": "Vietnam"
+        },
+        "datetime_original": "2024:12:07 16:10:18",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "My Son Sanctuary, Duy Xuyên, Vietnam",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style, materials, and location in Duy Xuyên, Vietnam, strongly suggest this is the My Son Sanctuary, known for its Cham architecture and historical significance.",
+            "detailed_description": "The image depicts the My Son Sanctuary, a cluster of abandoned and partially ruined Hindu temples constructed between the 4th and 14th century AD by the Champa civilization. The temples are made primarily of red brick and stone, showcasing intricate carvings and architectural details typical of Cham architecture. The site is set in a lush, green landscape, contributing to its historical and cultural significance as a UNESCO World Heritage site.",
+            "identification": {
+              "primary": [
+                "My Son Sanctuary"
+              ],
+              "location": "Duy Xuyên, Vietnam",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "My Son Sanctuary",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Cham_architecture",
+              "Hindu_temple",
+              "ancient_ruins",
+              "Vietnam",
+              "brick_construction"
+            ],
+            "location": "Duy Xuyên, Vietnam",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"My Son Sanctuary\"],\n        \"location\": \"Duy Xuyên, Vietnam\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"My Son Sanctuary\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Cham_architecture\", \"Hindu_temple\", \"ancient_ruins\", \"Vietnam\", \"brick_construction\"],\n    \"description\": \"The image depicts the My Son Sanctuary, a cluster of abandoned and partially ruined Hindu temples constructed between the 4th and 14th century AD by the Champa civilization. The temples are made primarily of red brick and stone, showcasing intricate carvings and architectural details typical of Cham architecture. The site is set in a lush, green landscape, contributing to its historical and cultural significance as a UNESCO World Heritage site.\",\n    \"reasoning\": \"The architectural style, materials, and location in Duy Xuyên, Vietnam, strongly suggest this is the My Son Sanctuary, known for its Cham architecture and historical significance.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 15.763005555555555,
+              "longitude": 108.12419999999999
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Q47F+7JP, Duy Hòa, Duy Xuyên District, Quảng Nam, Vietnam",
+              "city": null,
+              "county": "Duy Xuyên",
+              "country": "Vietnam"
+            },
+            "photo_timestamp": "2024:12:07 16:10:18",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 22.132700204849243
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "My Son Sanctuary, Duy Xuyên, Vietnam",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the architectural style and materials typical of the My Son Sanctuary, a well-known site in Duy Xuyên, Vietnam. The search results strongly support this identification, with high confidence scores from multiple sources indicating the site's significance and relevance to the description.",
+            "identification": {
+              "primary": [
+                "My Son Sanctuary"
+              ],
+              "location": "Duy Xuyên, Vietnam",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "My Son Sanctuary",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Cham architecture",
+              "ancient ruins",
+              "red brick",
+              "Vietnam",
+              "temple complex"
+            ],
+            "sources_used": [
+              "vietnam.vn",
+              "vietnamtour.blog",
+              "vietnamnet.vn"
+            ],
+            "all_candidates": [
+              "*URL:* ([vietnam.vn]())",
+              "*URL:* ([vietnam.vn]())",
+              "*URL:* ([vietnamtour.blog]())",
+              "*URL:* ([vietnamnet.vn]())",
+              "*URL:* ([vinpearl.com]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts ancient temple ruins set amidst a lush, green landscape. The structures are primarily composed of weathered red brick and stone, showcasing intricate carvings and architectural details typical of ancient Southeast Asian temple architecture. The ruins include several partially intact buildings and walls, with visible columns and decorative elements. The bricks are darkened with age and covered in patches of moss and lichen, indicating the passage of time and exposure to the elem",
+            "description": "The image depicts ancient temple ruins set amidst a lush, green landscape. The structures are primarily composed of weathered red brick and stone, showcasing intricate carvings and architectural details typical of ancient Southeast Asian temple architecture. The ruins include several partially intact buildings and walls, with visible columns and decorative elements. The bricks are darkened with age and covered in patches of moss and lichen, indicating the passage of time and exposure to the elem",
+            "architectural_style": "Cham architecture",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 15.763005555555555,
+              "longitude": 108.12419999999999
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Q47F+7JP, Duy Hòa, Duy Xuyên District, Quảng Nam, Vietnam",
+              "city": null,
+              "county": "Duy Xuyên",
+              "country": "Vietnam"
+            },
+            "photo_timestamp": "2024:12:07 16:10:18",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 42.797645807266235
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "My Son Temple (15.7641, 108.1242)",
+          "confidence": 0.4248162508010864,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "My Son Temple",
+            "coordinates": {
+              "latitude": 15.7641087,
+              "longitude": 108.1242442
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 4032
+              },
+              {
+                "x": 0,
+                "y": 4032
+              }
+            ],
+            "context_labels": [
+              "Ruins",
+              "Ancient history",
+              "Archaeological site",
+              "Historic site",
+              "Maya city"
+            ],
+            "context_objects": [
+              "Bench"
+            ],
+            "web_entities": [
+              {
+                "name": "Mayan cities",
+                "score": 0.6141862273216248
+              },
+              {
+                "name": "World",
+                "score": 0.48089998960494995
+              },
+              {
+                "name": "World Heritage Site",
+                "score": 0.34165701270103455
+              },
+              {
+                "name": "Tree",
+                "score": 0.30508461594581604
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "My Son Temple",
+                "score": 0.4248162508010864,
+                "location": {
+                  "lat": 15.7641087,
+                  "lng": 108.1242442
+                }
+              },
+              {
+                "name": "Group K Tower",
+                "score": 0.4236755073070526,
+                "location": {
+                  "lat": 15.7676703,
+                  "lng": 108.12111259999999
+                }
+              },
+              {
+                "name": "The World Cultural Heritage My Son",
+                "score": 0.4039250612258911,
+                "location": {
+                  "lat": 15.764276800000001,
+                  "lng": 108.12448189999999
+                }
+              }
+            ],
+            "processing_time_seconds": 22.288625955581665
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Duy Xuyên, Vietnam",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Duy Xuyên, Vietnam",
+            "coordinates": {
+              "latitude": 15.763005555555555,
+              "longitude": 108.12419999999999
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "My Son",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 11640,
+                  "vicinity": "Duy Xuyên District",
+                  "place_id": "ChIJH1VVVYEAQjERe2ifm4aiugg",
+                  "location": {
+                    "lat": 15.7687821,
+                    "lng": 108.1193154
+                  }
+                },
+                {
+                  "name": "Cham Folk Art Performance Centre",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 47,
+                  "vicinity": "Q47F+QFC, Thánh địa Mỹ Sơn, Duy Xuyên",
+                  "place_id": "ChIJ4XTRvEwBQjERUy2ZeB-vcSs",
+                  "location": {
+                    "lat": 15.764433,
+                    "lng": 108.1236481
+                  }
+                },
+                {
+                  "name": "Group K Tower",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 500,
+                  "vicinity": "Q49C+3C9, Thánh địa Mỹ Sơn, Duy Xuyên",
+                  "place_id": "ChIJcTOqIQsBQjERiCpp7y7nkuo",
+                  "location": {
+                    "lat": 15.7676703,
+                    "lng": 108.1211126
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Hoa Tiên Mỹ Sơn Restaurant and Coffee",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 133,
+                  "vicinity": "Mỹ Sơn Sanctuary, Duy Xuyên",
+                  "place_id": "ChIJ0W6QQwABQjERzX2ij93pXx0",
+                  "location": {
+                    "lat": 15.7682334,
+                    "lng": 108.119209
+                  }
+                },
+                {
+                  "name": "안테카페",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Q499+CR, Thánh địa Mỹ Sơn, Duy Xuyên",
+                  "place_id": "ChIJuQ6aLAABQjERAuJ3XI5ueu4",
+                  "location": {
+                    "lat": 15.7686601,
+                    "lng": 108.1195964
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Duy Phú",
+                  "types": [
+                    "sublocality_level_1",
+                    "sublocality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Duy Phú",
+                  "place_id": "ChIJMws85I4AQjER3lH15kekso4",
+                  "location": {
+                    "lat": 15.7637643,
+                    "lng": 108.1013637
+                  }
+                },
+                {
+                  "name": "My Son",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 11640,
+                  "vicinity": "Duy Xuyên District",
+                  "place_id": "ChIJH1VVVYEAQjERe2ifm4aiugg",
+                  "location": {
+                    "lat": 15.7687821,
+                    "lng": 108.1193154
+                  }
+                },
+                {
+                  "name": "Nhóm tháp B",
+                  "types": [
+                    "hindu_temple",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 64,
+                  "vicinity": "Mỹ Sơn",
+                  "place_id": "ChIJveVQ7KMAQjERf1jl1Q7HQUI",
+                  "location": {
+                    "lat": 15.7630071,
+                    "lng": 108.1239894
+                  }
+                },
+                {
+                  "name": "Cham Performance Outdoor Stage",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Group A, Duy Hoà, Duy Xuyên",
+                  "place_id": "ChIJRdz7PAABQjERU9YnXB0oMxA",
+                  "location": {
+                    "lat": 15.7633234,
+                    "lng": 108.1249
+                  }
+                },
+                {
+                  "name": "Nhóm tháp A",
+                  "types": [
+                    "hindu_temple",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 37,
+                  "vicinity": "Group A, Duy Hoà, Duy Xuyên",
+                  "place_id": "ChIJrejzFVIBQjERHzzPUJSclCE",
+                  "location": {
+                    "lat": 15.7626443,
+                    "lng": 108.1251077
+                  }
+                }
+              ]
+            },
+            "total_places_found": 10,
+            "photo_timestamp": "2024:12:07 16:10:18",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.3299288749694824
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/122.heic"
+    },
+    {
+      "image_filename": "122.heic",
+      "timestamp": "2026-01-28T01:35:18.940901",
+      "processing_time_seconds": 64.531513,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "My Son Sanctuary, Quang Nam, Vietnam",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive red brick construction and architectural style are characteristic of the My Son Sanctuary, a well-known historical site in Vietnam. The presence of Hindu temple structures aligns with the Champa civilization's architectural style.",
+            "detailed_description": "The image shows the My Son Sanctuary, a cluster of abandoned and partially ruined Hindu temples constructed by the Champa civilization between the 4th and 14th centuries. The architecture features red brick construction with intricate carvings and decorative elements typical of Cham architecture. The temples are set in a lush, green landscape, which adds to the historical and cultural significance of the site.",
+            "identification": {
+              "primary": [
+                "My Son Sanctuary"
+              ],
+              "location": "Quang Nam, Vietnam",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "My Son Sanctuary",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Cham_architecture",
+              "Hindu_temple",
+              "ancient_ruins",
+              "Vietnam",
+              "brick_construction"
+            ],
+            "location": "Quang Nam, Vietnam",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"My Son Sanctuary\"],\n        \"location\": \"Quang Nam, Vietnam\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"My Son Sanctuary\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Cham_architecture\", \"Hindu_temple\", \"ancient_ruins\", \"Vietnam\", \"brick_construction\"],\n    \"description\": \"The image shows the My Son Sanctuary, a cluster of abandoned and partially ruined Hindu temples constructed by the Champa civilization between the 4th and 14th centuries. The architecture features red brick construction with intricate carvings and decorative elements typical of Cham architecture. The temples are set in a lush, green landscape, which adds to the historical and cultural significance of the site.\",\n    \"reasoning\": \"The distinctive red brick construction and architectural style are characteristic of the My Son Sanctuary, a well-known historical site in Vietnam. The presence of Hindu temple structures aligns with the Champa civilization's architectural style.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 21.56245183944702
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([en.wikipedia.org]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts ancient ruins set in a lush, green landscape. The structures are primarily composed of weathered brick and stone, showcasing a reddish-brown hue that contrasts with patches of white lichen and moss, indicating significant age and exposure to the elements. The architectural style is reminiscent of Southeast Asian temple complexes, characterized by intricate carvings and reliefs that adorn the surfaces. The ruins consist of several distinct structures, including a tower-like form",
+            "description": "The image depicts ancient ruins set in a lush, green landscape. The structures are primarily composed of weathered brick and stone, showcasing a reddish-brown hue that contrasts with patches of white lichen and moss, indicating significant age and exposure to the elements. The architectural style is reminiscent of Southeast Asian temple complexes, characterized by intricate carvings and reliefs that adorn the surfaces. The ruins consist of several distinct structures, including a tower-like form",
+            "architectural_style": "Southeast Asian temple architecture",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 42.71032190322876
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "My Son Temple (15.7641, 108.1242)",
+          "confidence": 0.42456525564193726,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "My Son Temple",
+            "coordinates": {
+              "latitude": 15.7641087,
+              "longitude": 108.1242442
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 4032
+              },
+              {
+                "x": 0,
+                "y": 4032
+              }
+            ],
+            "context_labels": [
+              "Ruins",
+              "Ancient history",
+              "Archaeological site",
+              "Historic site",
+              "Maya city"
+            ],
+            "context_objects": [
+              "Bench"
+            ],
+            "web_entities": [
+              {
+                "name": "Mayan cities",
+                "score": 0.6141862273216248
+              },
+              {
+                "name": "World",
+                "score": 0.48089998960494995
+              },
+              {
+                "name": "World Heritage Site",
+                "score": 0.34165701270103455
+              },
+              {
+                "name": "Tree",
+                "score": 0.30508461594581604
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "My Son Temple",
+                "score": 0.42456525564193726,
+                "location": {
+                  "lat": 15.7641087,
+                  "lng": 108.1242442
+                }
+              },
+              {
+                "name": "Group K Tower",
+                "score": 0.4233648180961609,
+                "location": {
+                  "lat": 15.7676703,
+                  "lng": 108.12111259999999
+                }
+              },
+              {
+                "name": "The World Cultural Heritage My Son",
+                "score": 0.403467059135437,
+                "location": {
+                  "lat": 15.764276800000001,
+                  "lng": 108.12448189999999
+                }
+              }
+            ],
+            "processing_time_seconds": 23.475011825561523
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/122.heic"
+    }
+  ]
+}

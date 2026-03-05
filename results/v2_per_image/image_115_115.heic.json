@@ -1,0 +1,845 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "115.heic",
+      "timestamp": "2026-01-28T01:17:25.755445",
+      "processing_time_seconds": 60.211422,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 10.412694444444444,
+        "gps_longitude": 119.1772,
+        "location": {
+          "formatted_address": "C57G+3X2, Port Barton, San Vicente, Palawan, Philippines",
+          "city": "San Vicente",
+          "county": "Palawan",
+          "country": "Philippines"
+        },
+        "datetime_original": "2024:11:27 17:40:25",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Beach at sunset, Traditional Filipino boats, San Vicente, Palawan, Philippines",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates San Vicente, Palawan, which is known for its beaches and traditional boats. The presence of bangka boats and the tropical setting align with this region.",
+            "detailed_description": "The image depicts a serene beach scene at sunset in San Vicente, Palawan, Philippines. The sky is painted with soft hues of blue and orange as the sun sets. Traditional Filipino boats, known as bangkas, are visible on the calm water. The silhouette of a palm tree is seen on the left, adding to the tropical ambiance. The shoreline is gently lapped by small waves, creating a peaceful and picturesque setting.",
+            "identification": {
+              "primary": [
+                "Beach at sunset",
+                "Traditional Filipino boats"
+              ],
+              "location": "San Vicente, Palawan, Philippines",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Beach",
+                "type": "natural_feature",
+                "confidence": 0.95
+              },
+              {
+                "name": "Bangka boats",
+                "type": "other",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "sunset",
+              "beach",
+              "boats",
+              "Philippines",
+              "natural_feature"
+            ],
+            "location": "San Vicente, Palawan, Philippines",
+            "type": "natural_feature",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Beach at sunset\", \"Traditional Filipino boats\"],\n        \"location\": \"San Vicente, Palawan, Philippines\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Beach\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Bangka boats\",\n            \"type\": \"other\",\n            \"confidence\": 0.90\n        }\n    ],\n    \"tags\": [\"sunset\", \"beach\", \"boats\", \"Philippines\", \"natural_feature\"],\n    \"description\": \"The image depicts a serene beach scene at sunset in San Vicente, Palawan, Philippines. The sky is painted with soft hues of blue and orange as the sun sets. Traditional Filipino boats, known as bangkas, are visible on the calm water. The silhouette of a palm tree is seen on the left, adding to the tropical ambiance. The shoreline is gently lapped by small waves, creating a peaceful and picturesque setting.\",\n    \"reasoning\": \"The location metadata indicates San Vicente, Palawan, which is known for its beaches and traditional boats. The presence of bangka boats and the tropical setting align with this region.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 10.412694444444444,
+              "longitude": 119.1772
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "C57G+3X2, Port Barton, San Vicente, Palawan, Philippines",
+              "city": "San Vicente",
+              "county": "Palawan",
+              "country": "Philippines"
+            },
+            "photo_timestamp": "2024:11:27 17:40:25",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 12.272538185119629
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "San Vicente Beach, Traditional Filipino outrigger boats, San Vicente, Palawan, Philippines",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches a typical coastal scene in San Vicente, Palawan, known for its beaches and traditional boats. The search results confirm the location and features described, such as the outrigger boats and tropical setting. The high confidence is due to the specific location and distinctive elements like the bangkas and palm tree, which are characteristic of the area.",
+            "identification": {
+              "primary": [
+                "San Vicente Beach",
+                "Traditional Filipino outrigger boats"
+              ],
+              "location": "San Vicente, Palawan, Philippines",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "San Vicente Beach",
+                "type": "natural_feature",
+                "confidence": 0.95
+              },
+              {
+                "name": "Traditional Filipino outrigger boats (bangkas)",
+                "type": "other",
+                "confidence": 0.9
+              },
+              {
+                "name": "Palm tree",
+                "type": "natural_feature",
+                "confidence": 0.85
+              },
+              {
+                "name": "Forest hillside",
+                "type": "natural_feature",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "coastal_scene",
+              "sunset",
+              "outrigger_boats",
+              "tropical",
+              "San Vicente",
+              "Palawan"
+            ],
+            "sources_used": [
+              "projectgora.com",
+              "seekinplaces.com"
+            ],
+            "all_candidates": [
+              "*URL*: ([booking.com]())",
+              "*URL*: ([projectgora.com]())",
+              "*URL*: ([seekinplaces.com]())",
+              "*URL*: ([booking.com]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "natural_feature",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image captures a serene coastal scene at sunset in San Vicente, Palawan, Philippines. The foreground features a sandy beach with gentle waves lapping at the shore, creating a peaceful atmosphere. In the midground, several traditional Filipino outrigger boats, known as 'bangkas,' are anchored in the calm waters. These boats are characterized by their narrow hulls and bamboo outriggers, which provide stability. The boats are silhouetted against the reflective surface of the water, which mirror",
+            "description": "The image captures a serene coastal scene at sunset in San Vicente, Palawan, Philippines. The foreground features a sandy beach with gentle waves lapping at the shore, creating a peaceful atmosphere. In the midground, several traditional Filipino outrigger boats, known as 'bangkas,' are anchored in the calm waters. These boats are characterized by their narrow hulls and bamboo outriggers, which provide stability. The boats are silhouetted against the reflective surface of the water, which mirror",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 10.412694444444444,
+              "longitude": 119.1772
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "C57G+3X2, Port Barton, San Vicente, Palawan, Philippines",
+              "city": "San Vicente",
+              "county": "Palawan",
+              "country": "Philippines"
+            },
+            "photo_timestamp": "2024:11:27 17:40:25",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 46.86545395851135
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Boat",
+          "confidence": 0.9833050966262817,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Boat",
+                "score": 0.9833050966262817
+              },
+              {
+                "source": "label",
+                "name": "Water resources",
+                "score": 0.9828057885169983
+              },
+              {
+                "source": "label",
+                "name": "Body of water",
+                "score": 0.9811805486679077
+              },
+              {
+                "source": "object",
+                "name": "Boat",
+                "score": 0.5486725568771362
+              },
+              {
+                "source": "web",
+                "name": "Babassu",
+                "score": 0.42412450909614563
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Babassu",
+                "score": 0.42412450909614563
+              },
+              {
+                "name": "sea-m",
+                "score": 0.4099999964237213
+              },
+              {
+                "name": "Beach",
+                "score": 0.3574311435222626
+              },
+              {
+                "name": "Sunset",
+                "score": 0.31827157735824585
+              },
+              {
+                "name": "Evening",
+                "score": 0.3094007670879364
+              }
+            ],
+            "objects": [
+              {
+                "name": "Boat",
+                "score": 0.5486725568771362
+              }
+            ],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9880744814872742
+              },
+              {
+                "name": "Water",
+                "score": 0.9850899577140808
+              },
+              {
+                "name": "Boat",
+                "score": 0.9833050966262817
+              },
+              {
+                "name": "Water resources",
+                "score": 0.9828057885169983
+              },
+              {
+                "name": "Body of water",
+                "score": 0.9811805486679077
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 10.412694444444444,
+              "longitude": 119.1772
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "C57G+3X2, Port Barton, San Vicente, Palawan, Philippines",
+              "city": "San Vicente",
+              "county": "Palawan",
+              "country": "Philippines"
+            },
+            "photo_timestamp": "2024:11:27 17:40:25",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 15.459934949874878
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "San Vicente, Palawan, Philippines",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "San Vicente, Palawan, Philippines",
+            "coordinates": {
+              "latitude": 10.412694444444444,
+              "longitude": 119.1772
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Marguerita Sunset Bar and Restaurant",
+                  "types": [
+                    "bar",
+                    "tourist_attraction",
+                    "travel_agency",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 138,
+                  "vicinity": "Port Barton - Roxas Road, Port Barton Town, San Vicente",
+                  "place_id": "ChIJa7HLbNPEtTMR3ZESyODV1xA",
+                  "location": {
+                    "lat": 10.4142044,
+                    "lng": 119.1783251
+                  }
+                },
+                {
+                  "name": "SanVication",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 1,
+                  "user_ratings_total": 1,
+                  "vicinity": "C56H+X66, Risal Street, Port Barton, San Vicente",
+                  "place_id": "ChIJ3fBQqfzFtTMRq26nbalshBg",
+                  "location": {
+                    "lat": 10.4124791,
+                    "lng": 119.1779847
+                  }
+                },
+                {
+                  "name": "SED Diy tour port barton",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Port Barton",
+                  "place_id": "ChIJ92din4bFtTMRaxJwEih0yak",
+                  "location": {
+                    "lat": 10.4136031,
+                    "lng": 119.1781539
+                  }
+                },
+                {
+                  "name": "RIDE BARTON",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 19,
+                  "vicinity": "C56H+VHH, Lona Street, Port Barton, San Vicente",
+                  "place_id": "ChIJDUM5JgDFtTMRxVnwaU77Wfc",
+                  "location": {
+                    "lat": 10.4121785,
+                    "lng": 119.1789941
+                  }
+                },
+                {
+                  "name": "Deep Moon Resort (Abandoned Hotel)",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 203,
+                  "vicinity": "C56G+499, Port Barton, San Vicente",
+                  "place_id": "ChIJT-bOCgDFtTMRI4fHD-sxvkM",
+                  "location": {
+                    "lat": 10.4102878,
+                    "lng": 119.1759975
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Ausan Beach Front Cottages and Restaurant",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 562,
+                  "vicinity": "Purok Pag-asa, Ballesteros Street, Port Barton, San Vicente",
+                  "place_id": "ChIJvX6uVf7WtTMRh6WRU6srGF0",
+                  "location": {
+                    "lat": 10.4124121,
+                    "lng": 119.1771937
+                  }
+                },
+                {
+                  "name": "Marguerita Sunset Bar and Restaurant",
+                  "types": [
+                    "bar",
+                    "tourist_attraction",
+                    "travel_agency",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 138,
+                  "vicinity": "Port Barton - Roxas Road, Port Barton Town, San Vicente",
+                  "place_id": "ChIJa7HLbNPEtTMR3ZESyODV1xA",
+                  "location": {
+                    "lat": 10.4142044,
+                    "lng": 119.1783251
+                  }
+                },
+                {
+                  "name": "Reef Café",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 140,
+                  "vicinity": "Bonifacio Street, Port Barton, San Vicente",
+                  "place_id": "ChIJy1dffNPEtTMRocmFi4xL4aw",
+                  "location": {
+                    "lat": 10.413676,
+                    "lng": 119.179513
+                  }
+                },
+                {
+                  "name": "Barton Bistro",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1525,
+                  "vicinity": "C57G+5WH, Port Barton, San Vicente",
+                  "place_id": "ChIJhWAoNADFtTMRqMaERqTX7hQ",
+                  "location": {
+                    "lat": 10.4128694,
+                    "lng": 119.1773332
+                  }
+                },
+                {
+                  "name": "Malaika Bar and Restaurant",
+                  "types": [
+                    "restaurant",
+                    "bar",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 82,
+                  "vicinity": "C57G+5WH, Port Barton, San Vicente",
+                  "place_id": "ChIJle-pC2XFtTMRIpGwUx4gxEE",
+                  "location": {
+                    "lat": 10.413105,
+                    "lng": 119.1774159
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "San Isidro Labrador Parish Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "C56H+J2C, Balesteros Port Barton - San Jose Road, Port Barton Town, San Vicente",
+                  "place_id": "ChIJGaMQbTnFtTMRQKNVZ-S8Npc",
+                  "location": {
+                    "lat": 10.4118237,
+                    "lng": 119.1775665
+                  }
+                },
+                {
+                  "name": "Albert mesias",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "C56H+H42, Port Barton, San Vicente",
+                  "place_id": "ChIJc636JADFtTMRToIuHpEeC0I",
+                  "location": {
+                    "lat": 10.411391,
+                    "lng": 119.1777744
+                  }
+                },
+                {
+                  "name": "Seventh-day Adventist Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1,
+                  "vicinity": "C56G+5QH, Bonifacio Street, Port Barton, San Vicente",
+                  "place_id": "ChIJ0yG0HHTFtTMRSfSJcmKFNKo",
+                  "location": {
+                    "lat": 10.4104385,
+                    "lng": 119.1769865
+                  }
+                },
+                {
+                  "name": "PORT BARTON FOURSQUARE GOSPEL CHURCH",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "C55J+XGM, Port Barton - San Jose Road, Port Barton, San Vicente",
+                  "place_id": "ChIJcS0SEk7FtTMRG7HE2Bsbf3o",
+                  "location": {
+                    "lat": 10.4097825,
+                    "lng": 119.1825692
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "San Vicente",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "San Vicente",
+                  "place_id": "ChIJxfAOpmTZtTMRfssqKeHhYow",
+                  "location": {
+                    "lat": 10.3616657,
+                    "lng": 119.1158017
+                  }
+                },
+                {
+                  "name": "Ausan Beach Front Cottages and Restaurant",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 562,
+                  "vicinity": "Purok Pag-asa, Ballesteros Street, Port Barton, San Vicente",
+                  "place_id": "ChIJvX6uVf7WtTMRh6WRU6srGF0",
+                  "location": {
+                    "lat": 10.4124121,
+                    "lng": 119.1771937
+                  }
+                },
+                {
+                  "name": "cubby's guesthouse",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 12,
+                  "vicinity": "Mabini Street, corner Bonifacio Street, Port Barton, San Vicente",
+                  "place_id": "ChIJDWa7nNPEtTMRg6LenYM5bH0",
+                  "location": {
+                    "lat": 10.4130263,
+                    "lng": 119.1789073
+                  }
+                },
+                {
+                  "name": "Tribal Xperience Guesthouse",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 75,
+                  "vicinity": "Roxas Road, Purok Masigla, San Vicente",
+                  "place_id": "ChIJazVj6bPXtTMRZUpEWKpEo1Q",
+                  "location": {
+                    "lat": 10.4131875,
+                    "lng": 119.1800625
+                  }
+                },
+                {
+                  "name": "Hashtag 2 Tourist Inn",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "C57H+57R, Risal Street, Port Barton, San Vicente",
+                  "place_id": "ChIJVXguotPEtTMRHyBAtNvTFXA",
+                  "location": {
+                    "lat": 10.412994,
+                    "lng": 119.1781533
+                  }
+                }
+              ]
+            },
+            "total_places_found": 19,
+            "photo_timestamp": "2024:11:27 17:40:25",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.5909566879272461
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/115.heic"
+    },
+    {
+      "image_filename": "115.heic",
+      "timestamp": "2026-01-28T01:18:26.290406",
+      "processing_time_seconds": 60.377528,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Beach at sunset",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of outrigger boats and palm trees suggests a tropical location, likely in Southeast Asia. The sunset and beach setting are typical of coastal regions in this area.",
+            "detailed_description": "The image depicts a serene beach scene at sunset. The sky is transitioning from light to dark, with hues of blue and orange. Several traditional outrigger boats are visible on the calm water, typical of Southeast Asian coastal areas. The silhouette of a palm tree is visible on the left side, adding to the tropical ambiance. The shoreline is gently lapped by small waves, and the background features a silhouette of hills or mountains.",
+            "identification": {
+              "primary": [
+                "Beach at sunset"
+              ],
+              "location": null,
+              "confidence": 0.8
+            },
+            "artifacts": [
+              {
+                "name": "Traditional outrigger boats",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "beach",
+              "sunset",
+              "boats",
+              "tropical",
+              "natural_feature"
+            ],
+            "location": null,
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "El Nido, Palawan, Philippines",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "El Nido is known for its beautiful beaches and traditional boats, fitting the scene depicted."
+              },
+              {
+                "guess": "Boracay, Philippines",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.5,
+                "reasoning": "Boracay is a popular beach destination with similar features."
+              },
+              {
+                "guess": "Bali, Indonesia",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.4,
+                "reasoning": "Bali also has beaches with outrigger boats and palm trees."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Beach at sunset\"],\n        \"location\": null,\n        \"confidence\": 0.8\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Traditional outrigger boats\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"beach\", \"sunset\", \"boats\", \"tropical\", \"natural_feature\"],\n    \"description\": \"The image depicts a serene beach scene at sunset. The sky is transitioning from light to dark, with hues of blue and orange. Several traditional outrigger boats are visible on the calm water, typical of Southeast Asian coastal areas. The silhouette of a palm tree is visible on the left side, adding to the tropical ambiance. The shoreline is gently lapped by small waves, and the background features a silhouette of hills or mountains.\",\n    \"reasoning\": \"The presence of outrigger boats and palm trees suggests a tropical location, likely in Southeast Asia. The sunset and beach setting are typical of coastal regions in this area.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"El Nido, Palawan, Philippines\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"El Nido is known for its beautiful beaches and traditional boats, fitting the scene depicted.\"\n        },\n        {\n            \"guess\": \"Boracay, Philippines\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.5,\n            \"reasoning\": \"Boracay is a popular beach destination with similar features.\"\n        },\n        {\n            \"guess\": \"Bali, Indonesia\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.4,\n            \"reasoning\": \"Bali also has beaches with outrigger boats and palm trees.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 15.063128232955933
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([pixabay.com]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image captures a serene beach scene during twilight, with the sky transitioning from light blue to deeper shades as the sun sets. The horizon is adorned with scattered clouds, creating a picturesque backdrop. In the foreground, gentle waves lap against the sandy shore, which appears smooth and slightly damp, reflecting the soft light of the setting sun. Several traditional outrigger boats, characterized by their slender hulls and bamboo outriggers for stability, are anchored in the calm wate",
+            "description": "The image captures a serene beach scene during twilight, with the sky transitioning from light blue to deeper shades as the sun sets. The horizon is adorned with scattered clouds, creating a picturesque backdrop. In the foreground, gentle waves lap against the sandy shore, which appears smooth and slightly damp, reflecting the soft light of the setting sun. Several traditional outrigger boats, characterized by their slender hulls and bamboo outriggers for stability, are anchored in the calm wate",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 44.8557071685791
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Boat",
+          "confidence": 0.9833050966262817,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Boat",
+                "score": 0.9833050966262817
+              },
+              {
+                "source": "label",
+                "name": "Water resources",
+                "score": 0.9828057885169983
+              },
+              {
+                "source": "label",
+                "name": "Body of water",
+                "score": 0.9811805486679077
+              },
+              {
+                "source": "object",
+                "name": "Boat",
+                "score": 0.5486725568771362
+              },
+              {
+                "source": "web",
+                "name": "Babassu",
+                "score": 0.4241427481174469
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Babassu",
+                "score": 0.4241427481174469
+              },
+              {
+                "name": "sea-m",
+                "score": 0.4075999855995178
+              },
+              {
+                "name": "Beach",
+                "score": 0.35561278462409973
+              },
+              {
+                "name": "Sunset",
+                "score": 0.31813693046569824
+              },
+              {
+                "name": "Evening",
+                "score": 0.30856484174728394
+              }
+            ],
+            "objects": [
+              {
+                "name": "Boat",
+                "score": 0.5486725568771362
+              }
+            ],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9880744814872742
+              },
+              {
+                "name": "Water",
+                "score": 0.9850899577140808
+              },
+              {
+                "name": "Boat",
+                "score": 0.9833050966262817
+              },
+              {
+                "name": "Water resources",
+                "score": 0.9828057885169983
+              },
+              {
+                "name": "Body of water",
+                "score": 0.9811805486679077
+              }
+            ],
+            "processing_time_seconds": 14.880866050720215
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/115.heic"
+    }
+  ]
+}

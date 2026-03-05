@@ -1,0 +1,827 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "59.heic",
+      "timestamp": "2026-01-28T06:16:28.521769",
+      "processing_time_seconds": 62.772494,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -31.98945,
+        "gps_longitude": 115.53934444444444,
+        "location": {
+          "formatted_address": "14 Kelly St, Rottnest Island WA 6161, Australia",
+          "city": "Rottnest Island",
+          "county": "City of Cockburn",
+          "country": "Australia"
+        },
+        "datetime_original": "2023:04:15 14:40:01",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Bathurst Lighthouse, Rottnest Island, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The lighthouse's location on Rottnest Island and its distinctive cylindrical shape and white stone construction match the known characteristics of Bathurst Lighthouse.",
+            "detailed_description": "The image features Bathurst Lighthouse, located on Rottnest Island, Australia. The lighthouse is situated on a rocky hill overlooking the beach and ocean. It is a cylindrical structure made of white stone, typical of late 19th-century lighthouse design. The surrounding landscape includes sandy beaches, rocky outcrops, and coastal vegetation, under a bright blue sky with scattered clouds.",
+            "identification": {
+              "primary": [
+                "Bathurst Lighthouse"
+              ],
+              "location": "Rottnest Island, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Bathurst Lighthouse",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "lighthouse",
+              "coastal",
+              "Rottnest Island",
+              "Australia",
+              "19th_century"
+            ],
+            "location": "Rottnest Island, Australia",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Bathurst Lighthouse\"],\n        \"location\": \"Rottnest Island, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Bathurst Lighthouse\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"lighthouse\", \"coastal\", \"Rottnest Island\", \"Australia\", \"19th_century\"],\n    \"description\": \"The image features Bathurst Lighthouse, located on Rottnest Island, Australia. The lighthouse is situated on a rocky hill overlooking the beach and ocean. It is a cylindrical structure made of white stone, typical of late 19th-century lighthouse design. The surrounding landscape includes sandy beaches, rocky outcrops, and coastal vegetation, under a bright blue sky with scattered clouds.\",\n    \"reasoning\": \"The lighthouse's location on Rottnest Island and its distinctive cylindrical shape and white stone construction match the known characteristics of Bathurst Lighthouse.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "gps_coordinates": {
+              "latitude": -31.98945,
+              "longitude": 115.53934444444444
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "14 Kelly St, Rottnest Island WA 6161, Australia",
+              "city": "Rottnest Island",
+              "county": "City of Cockburn",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2023:04:15 14:40:01",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 9.52676010131836
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image features a prominent lighthouse situated on a rocky hill overlooking a sandy beach. The lighthouse is cylindrical with a tapering design, constructed from light-colored stone or concrete, and topped with a lantern room that is encircled by a gallery. The structure is painted white, which contrasts sharply with the deep blue sky and the fluffy white clouds above. The lighthouse is elevated on a small hill covered with sparse vegetation, including low shrubs and grasses. A wooden stairca",
+            "description": "The image features a prominent lighthouse situated on a rocky hill overlooking a sandy beach. The lighthouse is cylindrical with a tapering design, constructed from light-colored stone or concrete, and topped with a lantern room that is encircled by a gallery. The structure is painted white, which contrasts sharply with the deep blue sky and the fluffy white clouds above. The lighthouse is elevated on a small hill covered with sparse vegetation, including low shrubs and grasses. A wooden stairca",
+            "architectural_style": "Functional maritime architecture",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": -31.98945,
+              "longitude": 115.53934444444444
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "14 Kelly St, Rottnest Island WA 6161, Australia",
+              "city": "Rottnest Island",
+              "county": "City of Cockburn",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2023:04:15 14:40:01",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 51.87811803817749
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Bathurst Lighthouse (-31.9894, 115.5407)",
+          "confidence": 0.5146018862724304,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Bathurst Lighthouse",
+            "coordinates": {
+              "latitude": -31.9893564,
+              "longitude": 115.54068240000001
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 4032
+              },
+              {
+                "x": 0,
+                "y": 4032
+              }
+            ],
+            "context_labels": [
+              "Lighthouse",
+              "Coast",
+              "Tower",
+              "Horizon",
+              "Sea"
+            ],
+            "context_objects": [
+              "Lighthouse"
+            ],
+            "web_entities": [
+              {
+                "name": "sea-m",
+                "score": 0.4375999867916107
+              },
+              {
+                "name": "Beach",
+                "score": 0.37034881114959717
+              },
+              {
+                "name": "Sand",
+                "score": 0.32232189178466797
+              },
+              {
+                "name": "Lighthouse",
+                "score": 0.31281715631484985
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Bathurst Lighthouse",
+                "score": 0.5146018862724304,
+                "location": {
+                  "lat": -31.9893564,
+                  "lng": 115.54068240000001
+                }
+              },
+              {
+                "name": "Pinky Beach",
+                "score": 0.4509744644165039,
+                "location": {
+                  "lat": -31.9893025,
+                  "lng": 115.53972399999999
+                }
+              }
+            ],
+            "processing_time_seconds": 20.92120385169983
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Rottnest Island, City of Cockburn, Australia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Rottnest Island, City of Cockburn, Australia",
+            "coordinates": {
+              "latitude": -31.98945,
+              "longitude": 115.53934444444444
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Whales Rock",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "513 Transit Road, Rottnest Island",
+                  "place_id": "ChIJeQwxLQBbLSoR_kihQ2BpsZ8",
+                  "location": {
+                    "lat": -31.991992,
+                    "lng": 115.5425671
+                  }
+                },
+                {
+                  "name": "Pilot Boathouse",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 6,
+                  "vicinity": "Rottnest Island",
+                  "place_id": "ChIJha7sum1aLSoRvfUyA75n9Aw",
+                  "location": {
+                    "lat": -31.9945442,
+                    "lng": 115.5406023
+                  }
+                },
+                {
+                  "name": "Wadjemup Museum for Children",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 5,
+                  "vicinity": "Somerville Drive, Rottnest Island",
+                  "place_id": "ChIJjy3tyG1aLSoR2C3TuJyfxt8",
+                  "location": {
+                    "lat": -31.9949361,
+                    "lng": 115.5397673
+                  }
+                },
+                {
+                  "name": "Rottnest Whale Statue",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 10,
+                  "vicinity": "1 Henderson Avenue, Rottnest Island",
+                  "place_id": "ChIJ_RYtgvRbLSoRSshx_E_er-o",
+                  "location": {
+                    "lat": -31.99549369999999,
+                    "lng": 115.5418034
+                  }
+                },
+                {
+                  "name": "Rottnest Island Visitor Centre",
+                  "types": [
+                    "tourist_attraction",
+                    "travel_agency",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1885,
+                  "vicinity": "1 Henderson Avenue, Rottnest Island",
+                  "place_id": "ChIJAdUoVmxaLSoR7FYF8FxFFew",
+                  "location": {
+                    "lat": -31.995644,
+                    "lng": 115.541353
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Pilot Boathouse",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 6,
+                  "vicinity": "Rottnest Island",
+                  "place_id": "ChIJha7sum1aLSoRvfUyA75n9Aw",
+                  "location": {
+                    "lat": -31.9945442,
+                    "lng": 115.5406023
+                  }
+                },
+                {
+                  "name": "Wadjemup Museum for Children",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 5,
+                  "vicinity": "Somerville Drive, Rottnest Island",
+                  "place_id": "ChIJjy3tyG1aLSoR2C3TuJyfxt8",
+                  "location": {
+                    "lat": -31.9949361,
+                    "lng": 115.5397673
+                  }
+                },
+                {
+                  "name": "Wadjemup Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 67,
+                  "vicinity": "Digby Drive, Rottnest Island",
+                  "place_id": "ChIJQfBYSGxaLSoRzy_-JLL5RI8",
+                  "location": {
+                    "lat": -31.9959867,
+                    "lng": 115.5401659
+                  }
+                },
+                {
+                  "name": "Rottnest Island Cemetery",
+                  "types": [
+                    "cemetery",
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 11,
+                  "vicinity": "Digby Drive, Rottnest Island",
+                  "place_id": "ChIJ68hcH2xaLSoRp_GDQ4AJsB0",
+                  "location": {
+                    "lat": -31.9971659,
+                    "lng": 115.5387111
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Subway",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 193,
+                  "vicinity": "Central Mall Thomson Bay, Rottnest Island",
+                  "place_id": "ChIJzUvZamxaLSoRvCvIbOcinUY",
+                  "location": {
+                    "lat": -31.9956129,
+                    "lng": 115.5406444
+                  }
+                },
+                {
+                  "name": "Pinky's Rottnest Island",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 3.6,
+                  "user_ratings_total": 667,
+                  "vicinity": "Strue Road, Rottnest Island",
+                  "place_id": "ChIJF0ySL29bLSoRImjO55Z7EYA",
+                  "location": {
+                    "lat": -31.9896289,
+                    "lng": 115.5390956
+                  }
+                },
+                {
+                  "name": "Havza",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 136,
+                  "vicinity": "The Basin, Rottnest Island",
+                  "place_id": "ChIJJburX7FbLSoR_QBgeoYsuz4",
+                  "location": {
+                    "lat": -31.9896678,
+                    "lng": 115.5352474
+                  }
+                },
+                {
+                  "name": "Frankie's on Rotto",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1189,
+                  "vicinity": "342 Somerville Drive, Rottnest Island",
+                  "place_id": "ChIJ7fEjTWxaLSoRTKWp8OclXa4",
+                  "location": {
+                    "lat": -31.9954001,
+                    "lng": 115.5405629
+                  }
+                },
+                {
+                  "name": "Dôme Café - Rottnest Island",
+                  "types": [
+                    "cafe",
+                    "restaurant",
+                    "point_of_interest",
+                    "store",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 3.2,
+                  "user_ratings_total": 878,
+                  "vicinity": "Colebatch Avenue, Rottnest Island",
+                  "place_id": "ChIJP_b_ZmxaLSoRNxkkHHf9Czs",
+                  "location": {
+                    "lat": -31.9969228,
+                    "lng": 115.5412291
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Zugang zur Pinky Beach, Fahrrad Parkplatz",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Rottnest Island",
+                  "place_id": "ChIJNReUFQBbLSoRtJgDPGK3mYA",
+                  "location": {
+                    "lat": -31.9898087,
+                    "lng": 115.5403999
+                  }
+                },
+                {
+                  "name": "Bayseeker",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "11022 Henderson Avenue, Rottnest Island",
+                  "place_id": "ChIJocisOwBbLSoRvX7IXqgRUQ4",
+                  "location": {
+                    "lat": -31.9962914,
+                    "lng": 115.5400356
+                  }
+                },
+                {
+                  "name": "Quokka habitat",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "11022 Henderson Avenue, Rottnest Island",
+                  "place_id": "ChIJb9kbRgBbLSoRuKqPupj3gvM",
+                  "location": {
+                    "lat": -31.9965609,
+                    "lng": 115.5405826
+                  }
+                },
+                {
+                  "name": "Outdoor Ping Pong Table by POPP",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "2 Henderson Avenue, Rottnest Island",
+                  "place_id": "ChIJJ8XdtYxbLSoRZIGmdBlnPQQ",
+                  "location": {
+                    "lat": -31.9972927,
+                    "lng": 115.5413824
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "The Chapel",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 6,
+                  "vicinity": "Rottnest Island",
+                  "place_id": "ChIJi8npvtxbLSoRPpogxMfCQeQ",
+                  "location": {
+                    "lat": -31.996044,
+                    "lng": 115.5397053
+                  }
+                },
+                {
+                  "name": "Holy Trinity Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 26,
+                  "vicinity": "Henderson Avenue, Rottnest Island",
+                  "place_id": "ChIJh0DSzTtaLSoRo3PF31vtR1o",
+                  "location": {
+                    "lat": -31.9974417,
+                    "lng": 115.5403386
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Rottnest Island",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Rottnest Island",
+                  "place_id": "ChIJ_bdmpVBXLSoRIFDfNbXwBAU",
+                  "location": {
+                    "lat": -31.9965027,
+                    "lng": 115.5398997
+                  }
+                },
+                {
+                  "name": "The Basin",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 575,
+                  "vicinity": "Rottnest Island",
+                  "place_id": "ChIJ0SkY33BaLSoRIAY6vwNweLw",
+                  "location": {
+                    "lat": -31.9895704,
+                    "lng": 115.5354016
+                  }
+                },
+                {
+                  "name": "Rottnest Dreaming",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 12,
+                  "vicinity": "Maley Street, Rottnest Island",
+                  "place_id": "ChIJUY6Bx21aLSoRAEqShyYDJvw",
+                  "location": {
+                    "lat": -31.9946426,
+                    "lng": 115.5399628
+                  }
+                },
+                {
+                  "name": "Simmo's",
+                  "types": [
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 115,
+                  "vicinity": "Central Mall Thomson Bay, Rottnest Island",
+                  "place_id": "ChIJNWnZamxaLSoRcHhJeo7fTN4",
+                  "location": {
+                    "lat": -31.9955728,
+                    "lng": 115.5405952
+                  }
+                },
+                {
+                  "name": "Rottnest Bakery",
+                  "types": [
+                    "bakery",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 607,
+                  "vicinity": "Maley Street, Rottnest Island",
+                  "place_id": "ChIJq9MJTGxaLSoR8djDyBAwtIc",
+                  "location": {
+                    "lat": -31.9956808,
+                    "lng": 115.5403821
+                  }
+                }
+              ]
+            },
+            "total_places_found": 25,
+            "photo_timestamp": "2023:04:15 14:40:01",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.884343147277832
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/59.heic"
+    },
+    {
+      "image_filename": "59.heic",
+      "timestamp": "2026-01-28T06:17:31.315411",
+      "processing_time_seconds": 64.113606,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Rottnest Island Lighthouse, Rottnest Island, Australia",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The lighthouse's design and location suggest it is the Rottnest Island Lighthouse, known for its distinctive cylindrical shape and coastal setting.",
+            "detailed_description": "The image features a lighthouse situated on a rocky coastal landscape, surrounded by sandy beaches and vegetation. The lighthouse is built in a traditional style with a cylindrical stone tower and a lantern room at the top. The setting is characterized by clear blue skies and ocean views, typical of Rottnest Island in Australia.",
+            "identification": {
+              "primary": [
+                "Rottnest Island Lighthouse"
+              ],
+              "location": "Rottnest Island, Australia",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Rottnest Island Lighthouse",
+                "type": "landmark",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "lighthouse",
+              "coastal",
+              "19th_century",
+              "stone",
+              "Australia"
+            ],
+            "location": "Rottnest Island, Australia",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Rottnest Island Lighthouse\"],\n        \"location\": \"Rottnest Island, Australia\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Rottnest Island Lighthouse\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"lighthouse\", \"coastal\", \"19th_century\", \"stone\", \"Australia\"],\n    \"description\": \"The image features a lighthouse situated on a rocky coastal landscape, surrounded by sandy beaches and vegetation. The lighthouse is built in a traditional style with a cylindrical stone tower and a lantern room at the top. The setting is characterized by clear blue skies and ocean views, typical of Rottnest Island in Australia.\",\n    \"reasoning\": \"The lighthouse's design and location suggest it is the Rottnest Island Lighthouse, known for its distinctive cylindrical shape and coastal setting.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 12.302925109863281
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image features a prominent lighthouse situated on a rocky hill overlooking a sandy beach. The lighthouse is cylindrical in shape and painted white, with a tapering design that culminates in a lantern room at the top. It has a classic maritime architecture style, characterized by its simplicity and functionality. The structure appears to be constructed from stone or concrete, providing durability against the coastal elements. Surrounding the lighthouse is a wooden fence and a staircase that l",
+            "description": "The image features a prominent lighthouse situated on a rocky hill overlooking a sandy beach. The lighthouse is cylindrical in shape and painted white, with a tapering design that culminates in a lantern room at the top. It has a classic maritime architecture style, characterized by its simplicity and functionality. The structure appears to be constructed from stone or concrete, providing durability against the coastal elements. Surrounding the lighthouse is a wooden fence and a staircase that l",
+            "architectural_style": "Maritime architecture",
+            "search_backends_used": [],
+            "processing_time_seconds": 51.56427001953125
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Bathurst Lighthouse (-31.9894, 115.5407)",
+          "confidence": 0.5146018862724304,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Bathurst Lighthouse",
+            "coordinates": {
+              "latitude": -31.9893564,
+              "longitude": 115.54068240000001
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 4032
+              },
+              {
+                "x": 0,
+                "y": 4032
+              }
+            ],
+            "context_labels": [
+              "Lighthouse",
+              "Coast",
+              "Tower",
+              "Horizon",
+              "Sea"
+            ],
+            "context_objects": [
+              "Lighthouse"
+            ],
+            "web_entities": [
+              {
+                "name": "sea-m",
+                "score": 0.4375999867916107
+              },
+              {
+                "name": "Beach",
+                "score": 0.3701604902744293
+              },
+              {
+                "name": "Sand",
+                "score": 0.32221245765686035
+              },
+              {
+                "name": "Lighthouse",
+                "score": 0.31167927384376526
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Bathurst Lighthouse",
+                "score": 0.5146018862724304,
+                "location": {
+                  "lat": -31.9893564,
+                  "lng": 115.54068240000001
+                }
+              },
+              {
+                "name": "Pinky Beach",
+                "score": 0.4509744644165039,
+                "location": {
+                  "lat": -31.9893025,
+                  "lng": 115.53972399999999
+                }
+              }
+            ],
+            "processing_time_seconds": 19.39984107017517
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/59.heic"
+    }
+  ]
+}

@@ -1,0 +1,1021 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "179.heic",
+      "timestamp": "2026-01-28T03:44:32.400905",
+      "processing_time_seconds": 61.100618,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -37.81978333333333,
+        "gps_longitude": 144.96519444444442,
+        "location": {
+          "formatted_address": "Evan Walker Bridge, Southbank VIC 3006, Australia",
+          "city": "Southbank",
+          "county": "Melbourne City",
+          "country": "Australia"
+        },
+        "datetime_original": "2025:06:30 12:31:34",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "St Paul's Cathedral, Modern skyscrapers, Melbourne, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive Gothic Revival architecture of St Paul's Cathedral is recognizable by its spires and stone facade. The modern skyscrapers are typical of Melbourne's cityscape, especially in the Southbank area.",
+            "detailed_description": "The image prominently features St Paul's Cathedral, a Gothic Revival structure characterized by its pointed spires and detailed stonework. The cathedral is set against a backdrop of modern skyscrapers, showcasing a contrast between historical and contemporary architecture. The skyscrapers are made of glass and steel, reflecting the urban development of Melbourne. The scene includes a riverside area with trees and a walkway, typical of the Southbank area.",
+            "identification": {
+              "primary": [
+                "St Paul's Cathedral",
+                "Modern skyscrapers"
+              ],
+              "location": "Melbourne, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "St Paul's Cathedral",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Modern skyscrapers",
+                "type": "building",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "Gothic_Revival",
+              "modern_architecture",
+              "19th_century",
+              "glass",
+              "Melbourne"
+            ],
+            "location": "Melbourne, Australia",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"St Paul's Cathedral\", \"Modern skyscrapers\"],\n        \"location\": \"Melbourne, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"St Paul's Cathedral\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Modern skyscrapers\",\n            \"type\": \"building\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"Gothic_Revival\", \"modern_architecture\", \"19th_century\", \"glass\", \"Melbourne\"],\n    \"description\": \"The image prominently features St Paul's Cathedral, a Gothic Revival structure characterized by its pointed spires and detailed stonework. The cathedral is set against a backdrop of modern skyscrapers, showcasing a contrast between historical and contemporary architecture. The skyscrapers are made of glass and steel, reflecting the urban development of Melbourne. The scene includes a riverside area with trees and a walkway, typical of the Southbank area.\",\n    \"reasoning\": \"The distinctive Gothic Revival architecture of St Paul's Cathedral is recognizable by its spires and stone facade. The modern skyscrapers are typical of Melbourne's cityscape, especially in the Southbank area.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": -37.81978333333333,
+              "longitude": 144.96519444444442
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Evan Walker Bridge, Southbank VIC 3006, Australia",
+              "city": "Southbank",
+              "county": "Melbourne City",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:06:30 12:31:34",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 20.069091796875
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([en.wikipedia.org]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a vibrant cityscape in Melbourne, Australia, featuring a mix of architectural styles. Prominently visible is a Gothic Revival church with a tall, pointed spire made of reddish-brown stone, adorned with intricate detailing typical of the Gothic style, including lancet windows and decorative pinnacles. Adjacent to the church is a building with a large green dome, possibly indicating a historical or civic structure. Surrounding these are modern skyscrapers, characterized by glass ",
+            "description": "The image depicts a vibrant cityscape in Melbourne, Australia, featuring a mix of architectural styles. Prominently visible is a Gothic Revival church with a tall, pointed spire made of reddish-brown stone, adorned with intricate detailing typical of the Gothic style, including lancet windows and decorative pinnacles. Adjacent to the church is a building with a large green dome, possibly indicating a historical or civic structure. Surrounding these are modern skyscrapers, characterized by glass ",
+            "architectural_style": "Gothic Revival and Modern",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": -37.81978333333333,
+              "longitude": 144.96519444444442
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Evan Walker Bridge, Southbank VIC 3006, Australia",
+              "city": "Southbank",
+              "county": "Melbourne City",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:06:30 12:31:34",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 40.09012818336487
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Apartment (Southbank, Australia)",
+          "confidence": 0.5445460677146912,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Apartment",
+            "artist_name": null,
+            "museum_or_location": "Southbank, Australia",
+            "art_style": null,
+            "art_era": null,
+            "confidence": 0.5445460677146912,
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.5957016944885254
+              },
+              {
+                "name": "Apartment",
+                "score": 0.5445460677146912
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.47768160700798035
+              },
+              {
+                "name": "Tower",
+                "score": 0.43246448040008545
+              },
+              {
+                "name": "Building",
+                "score": 0.35019999742507935
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": -37.81978333333333,
+              "longitude": 144.96519444444442
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Evan Walker Bridge, Southbank VIC 3006, Australia",
+              "city": "Southbank",
+              "county": "Melbourne City",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:06:30 12:31:34",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 16.807043075561523
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Southbank, Melbourne City, Australia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Southbank, Melbourne City, Australia",
+            "coordinates": {
+              "latitude": -37.81978333333333,
+              "longitude": 144.96519444444442
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Crown Melbourne",
+                  "types": [
+                    "casino",
+                    "tourist_attraction",
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 53794,
+                  "vicinity": "8 Whiteman Street, Southbank",
+                  "place_id": "ChIJiUWj1VJd1moRWJdOTqGV1-0",
+                  "location": {
+                    "lat": -37.8235301,
+                    "lng": 144.9580953
+                  }
+                },
+                {
+                  "name": "Melbourne Skydeck",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 17041,
+                  "vicinity": "7 Riverside Quay, Southbank",
+                  "place_id": "ChIJQffkhK1C1moR3Z0-w-t8SS8",
+                  "location": {
+                    "lat": -37.8213341,
+                    "lng": 144.9646982
+                  }
+                },
+                {
+                  "name": "Alexandra Gardens",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1721,
+                  "vicinity": "Alexandra Gardens Skate Park, 3 Boathouse Drive, Melbourne",
+                  "place_id": "ChIJc8A97rlC1moRUPD0CXZWBB0",
+                  "location": {
+                    "lat": -37.8204318,
+                    "lng": 144.9721339
+                  }
+                },
+                {
+                  "name": "Fed Square",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2922,
+                  "vicinity": "Swanston St & Flinders St, Melbourne",
+                  "place_id": "ChIJT8T86bZC1moRqw7W6kVH5zg",
+                  "location": {
+                    "lat": -37.8179789,
+                    "lng": 144.9690576
+                  }
+                },
+                {
+                  "name": "National Gallery of Victoria",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 24942,
+                  "vicinity": "180 Saint Kilda Road, Melbourne",
+                  "place_id": "ChIJuYNitLFC1moRVB5vMAKPcTM",
+                  "location": {
+                    "lat": -37.8225942,
+                    "lng": 144.9689278
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Immigration Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 3285,
+                  "vicinity": "400 Flinders Street, Melbourne",
+                  "place_id": "ChIJ1fB5g7ZC1moRIxI14Xd2bYs",
+                  "location": {
+                    "lat": -37.81924420000001,
+                    "lng": 144.9604547
+                  }
+                },
+                {
+                  "name": "ACMI",
+                  "types": [
+                    "art_gallery",
+                    "movie_theater",
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 6091,
+                  "vicinity": "Federation Square, Flinders Street, Melbourne",
+                  "place_id": "ChIJT8T86bZC1moRpBiRUC3lABM",
+                  "location": {
+                    "lat": -37.8175974,
+                    "lng": 144.9686881
+                  }
+                },
+                {
+                  "name": "Australian Centre for Contemporary Art",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 565,
+                  "vicinity": "111 Sturt Street, Southbank",
+                  "place_id": "ChIJCY-uHqxC1moRD3Tq9lMJbWo",
+                  "location": {
+                    "lat": -37.8267577,
+                    "lng": 144.9665853
+                  }
+                },
+                {
+                  "name": "Melbourne Electronic Sound Studio",
+                  "types": [
+                    "museum",
+                    "school",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 22,
+                  "vicinity": "The Atrium, Federation Square, Flinders Street, Melbourne",
+                  "place_id": "ChIJe6yxyDFd1moRGX82SgtqyWo",
+                  "location": {
+                    "lat": -37.8177224,
+                    "lng": 144.9694051
+                  }
+                },
+                {
+                  "name": "The National Opal Collection",
+                  "types": [
+                    "jewelry_store",
+                    "museum",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 181,
+                  "vicinity": "Lower Level/119 Swanston Street, Melbourne",
+                  "place_id": "ChIJ6-B3xLVC1moR7Jd_HuELveA",
+                  "location": {
+                    "lat": -37.8148714,
+                    "lng": 144.9660338
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Best Western Melbourne City Hotel",
+                  "types": [
+                    "cafe",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 1044,
+                  "vicinity": "16 Spencer Street, Melbourne",
+                  "place_id": "ChIJWXdjjVFd1moRh_LdkkyRy5s",
+                  "location": {
+                    "lat": -37.8206276,
+                    "lng": 144.9551461
+                  }
+                },
+                {
+                  "name": "La Camera, Italian Restaurant",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 1335,
+                  "vicinity": "MR2/3 Southgate Avenue, Southbank",
+                  "place_id": "ChIJ9f7HQrJC1moRwo_U9X7VL-E",
+                  "location": {
+                    "lat": -37.8200651,
+                    "lng": 144.9666394
+                  }
+                },
+                {
+                  "name": "Rendezvous Hotel Melbourne",
+                  "types": [
+                    "bar",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 2369,
+                  "vicinity": "328 Flinders Street, Melbourne",
+                  "place_id": "ChIJj9l7c7NC1moRts0rcsFU3dc",
+                  "location": {
+                    "lat": -37.8183324,
+                    "lng": 144.9635426
+                  }
+                },
+                {
+                  "name": "Oriental Teahouse Melbourne CBD",
+                  "types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1010,
+                  "vicinity": "378 Little Collins Street, Melbourne",
+                  "place_id": "ChIJd5kNx7RC1moR-pM_GKr9bKQ",
+                  "location": {
+                    "lat": -37.8155739,
+                    "lng": 144.9620832
+                  }
+                },
+                {
+                  "name": "Stamford Plaza Melbourne",
+                  "types": [
+                    "bar",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 1978,
+                  "vicinity": "111 Little Collins Street, Melbourne",
+                  "place_id": "ChIJc-7BSMhC1moRJadN_SH7-PM",
+                  "location": {
+                    "lat": -37.8135163,
+                    "lng": 144.9699388
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Alexandra Gardens",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1721,
+                  "vicinity": "Alexandra Gardens Skate Park, 3 Boathouse Drive, Melbourne",
+                  "place_id": "ChIJc8A97rlC1moRUPD0CXZWBB0",
+                  "location": {
+                    "lat": -37.8204318,
+                    "lng": 144.9721339
+                  }
+                },
+                {
+                  "name": "Birrarung Marr",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 3166,
+                  "vicinity": "Melbourne",
+                  "place_id": "ChIJIXktmrlC1moRQPgxBXZWBA8",
+                  "location": {
+                    "lat": -37.8187351,
+                    "lng": 144.9742624
+                  }
+                },
+                {
+                  "name": "Living Legacy Forest",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "f4/349 Collins Street, Melbourne",
+                  "place_id": "ChIJgRXO-rRC1moRWhgTu2bMh8o",
+                  "location": {
+                    "lat": -37.8169688,
+                    "lng": 144.9628399
+                  }
+                },
+                {
+                  "name": "Morton Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "7/388 Bourke Street, Melbourne",
+                  "place_id": "ChIJ50znJrVC1moRcr7Wpz_Tovo",
+                  "location": {
+                    "lat": -37.8143385,
+                    "lng": 144.9620968
+                  }
+                },
+                {
+                  "name": "Police Memorial",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 40,
+                  "vicinity": "Saint Kilda Road, Melbourne",
+                  "place_id": "ChIJ667YGLBC1moRaha6KH1T2ak",
+                  "location": {
+                    "lat": -37.8242633,
+                    "lng": 144.9709913
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "St Francis’ Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1125,
+                  "vicinity": "326 Lonsdale Street, Melbourne",
+                  "place_id": "ChIJF604vcpC1moREpFwYJGJbA8",
+                  "location": {
+                    "lat": -37.81165680000001,
+                    "lng": 144.9623958
+                  }
+                },
+                {
+                  "name": "ICC Melbourne",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 37,
+                  "vicinity": "156 Collins Street, Melbourne",
+                  "place_id": "ChIJsxcWIrZC1moRMuKBpgq2zbQ",
+                  "location": {
+                    "lat": -37.81458979999999,
+                    "lng": 144.9685261
+                  }
+                },
+                {
+                  "name": "Scots’ Church Melbourne",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 179,
+                  "vicinity": "77 Russell Street, Melbourne",
+                  "place_id": "ChIJsxcWIrZC1moRJ8W6FBQ_gO8",
+                  "location": {
+                    "lat": -37.8146546,
+                    "lng": 144.9686359
+                  }
+                },
+                {
+                  "name": "St Paul's Cathedral, Melbourne",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 3660,
+                  "vicinity": "200 Flinders Street, Melbourne",
+                  "place_id": "ChIJbVDLhrZC1moRV4a7bU8smmI",
+                  "location": {
+                    "lat": -37.817029,
+                    "lng": 144.967687
+                  }
+                },
+                {
+                  "name": "St. Michael's Uniting Church",
+                  "types": [
+                    "church",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 112,
+                  "vicinity": "120 Collins Street, Melbourne",
+                  "place_id": "ChIJXZeo0slC1moRlF6TvAzjn0k",
+                  "location": {
+                    "lat": -37.81432249999999,
+                    "lng": 144.9692778
+                  }
+                },
+                {
+                  "name": "RMIT international Campus Musalla",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 9,
+                  "vicinity": "3000/265 Bourke Street, Melbourne",
+                  "place_id": "ChIJ0WH297VC1moRCkzYEDSoTho",
+                  "location": {
+                    "lat": -37.8136194,
+                    "lng": 144.9659915
+                  }
+                },
+                {
+                  "name": "Melbourne City Musallah ( Mosque )",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "6th floor/28 Elizabeth Street, Melbourne",
+                  "place_id": "ChIJpxIqaQBD1moRs9MrOT8NZCY",
+                  "location": {
+                    "lat": -37.81736139999999,
+                    "lng": 144.9647384
+                  }
+                },
+                {
+                  "name": "Queen St Musallah (Mosque)",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 139,
+                  "vicinity": "Level 5/131 Queen Street, Melbourne",
+                  "place_id": "ChIJhWXdXzFd1moRxkzrWzOG2iE",
+                  "location": {
+                    "lat": -37.8154967,
+                    "lng": 144.9606158
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Fed Square",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2922,
+                  "vicinity": "Swanston St & Flinders St, Melbourne",
+                  "place_id": "ChIJT8T86bZC1moRqw7W6kVH5zg",
+                  "location": {
+                    "lat": -37.8179789,
+                    "lng": 144.9690576
+                  }
+                },
+                {
+                  "name": "National Gallery of Victoria",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 24942,
+                  "vicinity": "180 Saint Kilda Road, Melbourne",
+                  "place_id": "ChIJuYNitLFC1moRVB5vMAKPcTM",
+                  "location": {
+                    "lat": -37.8225942,
+                    "lng": 144.9689278
+                  }
+                },
+                {
+                  "name": "ACMI",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "museum",
+                    "movie_theater",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 6091,
+                  "vicinity": "Federation Square, Flinders Street, Melbourne",
+                  "place_id": "ChIJT8T86bZC1moRpBiRUC3lABM",
+                  "location": {
+                    "lat": -37.8175974,
+                    "lng": 144.9686881
+                  }
+                },
+                {
+                  "name": "Australian Centre for Contemporary Art",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 565,
+                  "vicinity": "111 Sturt Street, Southbank",
+                  "place_id": "ChIJCY-uHqxC1moRD3Tq9lMJbWo",
+                  "location": {
+                    "lat": -37.8267577,
+                    "lng": 144.9665853
+                  }
+                },
+                {
+                  "name": "The Ian Potter Centre: NGV Australia",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 2695,
+                  "vicinity": "Federation Square, Flinders St &, Russell Street, Melbourne",
+                  "place_id": "ChIJ1fB5g7ZC1moR10K4RhIg36U",
+                  "location": {
+                    "lat": -37.8170507,
+                    "lng": 144.9697357
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Melbourne",
+                  "types": [
+                    "colloquial_area",
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Melbourne",
+                  "place_id": "ChIJ90260rVG1moRkM2MIXVWBAQ",
+                  "location": {
+                    "lat": -37.8136276,
+                    "lng": 144.9630576
+                  }
+                },
+                {
+                  "name": "The Langham, Melbourne",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2945,
+                  "vicinity": "1 Southgate Avenue, Southbank",
+                  "place_id": "ChIJQ8ty17NC1moRVPjumQ0x3zw",
+                  "location": {
+                    "lat": -37.8205751,
+                    "lng": 144.9656601
+                  }
+                },
+                {
+                  "name": "DoubleTree by Hilton Hotel Melbourne - Flinders Street",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1605,
+                  "vicinity": "270 Flinders Street, Melbourne",
+                  "place_id": "ChIJH7lfCrRC1moR4otX7VVCr9Q",
+                  "location": {
+                    "lat": -37.8178819,
+                    "lng": 144.9654538
+                  }
+                },
+                {
+                  "name": "Novotel Melbourne on Collins",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 3017,
+                  "vicinity": "270 Collins Street, Melbourne",
+                  "place_id": "ChIJvV3BTrRC1moRdkk9WaX7b8Q",
+                  "location": {
+                    "lat": -37.8157663,
+                    "lng": 144.9648408
+                  }
+                },
+                {
+                  "name": "Oaks Melbourne on Market Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 1878,
+                  "vicinity": "60 Market Street, Melbourne",
+                  "place_id": "ChIJX0KgyExd1moRabD2oM7gO2w",
+                  "location": {
+                    "lat": -37.8177472,
+                    "lng": 144.9607539
+                  }
+                }
+              ]
+            },
+            "total_places_found": 38,
+            "photo_timestamp": "2025:06:30 12:31:34",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.4590189456939697
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/179.heic"
+    },
+    {
+      "image_filename": "179.heic",
+      "timestamp": "2026-01-28T03:45:33.525872",
+      "processing_time_seconds": 64.868895,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "St Paul's Cathedral, Modern skyscrapers, Melbourne, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The Gothic Revival style and spire are distinctive features of St Paul's Cathedral in Melbourne. The surrounding modern skyscrapers are typical of Melbourne's cityscape, confirming the location.",
+            "detailed_description": "The image features St Paul's Cathedral in Melbourne, Australia, characterized by its Gothic Revival architecture with a prominent spire. The cathedral is made of sandstone and has intricate detailing typical of the Gothic style. Surrounding the cathedral are modern skyscrapers with glass facades, reflecting contemporary architectural trends. The contrast between the historical and modern buildings is visually striking.",
+            "identification": {
+              "primary": [
+                "St Paul's Cathedral",
+                "Modern skyscrapers"
+              ],
+              "location": "Melbourne, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "St Paul's Cathedral",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Modern skyscrapers",
+                "type": "building",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "Gothic_Revival",
+              "modern_architecture",
+              "19th_century",
+              "contemporary",
+              "Melbourne"
+            ],
+            "location": "Melbourne, Australia",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"St Paul's Cathedral\", \"Modern skyscrapers\"],\n        \"location\": \"Melbourne, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"St Paul's Cathedral\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Modern skyscrapers\",\n            \"type\": \"building\",\n            \"confidence\": 0.90\n        }\n    ],\n    \"tags\": [\"Gothic_Revival\", \"modern_architecture\", \"19th_century\", \"contemporary\", \"Melbourne\"],\n    \"description\": \"The image features St Paul's Cathedral in Melbourne, Australia, characterized by its Gothic Revival architecture with a prominent spire. The cathedral is made of sandstone and has intricate detailing typical of the Gothic style. Surrounding the cathedral are modern skyscrapers with glass facades, reflecting contemporary architectural trends. The contrast between the historical and modern buildings is visually striking.\",\n    \"reasoning\": \"The Gothic Revival style and spire are distinctive features of St Paul's Cathedral in Melbourne. The surrounding modern skyscrapers are typical of Melbourne's cityscape, confirming the location.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 24.8173987865448
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([en.wikipedia.org]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a cityscape featuring a mix of architectural styles, dominated by modern skyscrapers and a prominent Gothic-style church. The church is characterized by its tall, pointed spire and intricate stonework, typical of Gothic architecture, with arched windows and detailed ornamentation. The spire is a reddish-brown color, contrasting with the surrounding modern buildings. Behind the church, several high-rise buildings with reflective glass facades are visible, showcasing contemporary",
+            "description": "The image depicts a cityscape featuring a mix of architectural styles, dominated by modern skyscrapers and a prominent Gothic-style church. The church is characterized by its tall, pointed spire and intricate stonework, typical of Gothic architecture, with arched windows and detailed ornamentation. The spire is a reddish-brown color, contrasting with the surrounding modern buildings. Behind the church, several high-rise buildings with reflective glass facades are visible, showcasing contemporary",
+            "architectural_style": "Gothic and Modern",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 39.869426012039185
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Apartment",
+          "confidence": 0.548809826374054,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Apartment",
+            "artist_name": null,
+            "museum_or_location": null,
+            "art_style": null,
+            "art_era": null,
+            "confidence": 0.548809826374054,
+            "web_entities": [
+              {
+                "name": "Skyscraper",
+                "score": 0.5961519479751587
+              },
+              {
+                "name": "Apartment",
+                "score": 0.548809826374054
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.4706254005432129
+              },
+              {
+                "name": "Tower",
+                "score": 0.4228784143924713
+              },
+              {
+                "name": "Building",
+                "score": 0.34700000286102295
+              }
+            ],
+            "processing_time_seconds": 17.30753207206726
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/179.heic"
+    }
+  ]
+}

@@ -1,0 +1,770 @@
+{
+  "image_id": 155,
+  "filename": "155.heic",
+  "ground_truth": {
+    "description": "Photo of Jardin des Plantes de Nantes. Should at least recognize greenhouse and garden, hopefully France. With metadata hopefully specific.",
+    "photographer_description": "A photo of Jardin des Plantes de Nantes. Without metadata, it should at least recognize a greenhouse and a garden, hopefully in France. Would be impressive if it got the specific one. With metadata, it can hopefully get the specific one. Daytime, spring.",
+    "locations": [
+      {
+        "name": "Jardin des Plantes, Nantes, Pays de la Loire, France",
+        "hierarchy": {
+          "country": "France",
+          "region": "Pays de la Loire",
+          "city": "Nantes",
+          "exact": "Jardin des Plantes"
+        }
+      }
+    ],
+    "entities": [
+      {
+        "name": "Jardin des Plantes de Nantes",
+        "type": "landmark",
+        "notes": null,
+        "importance": "high",
+        "max_specificity": 5
+      },
+      {
+        "name": "Grandes Serres (greenhouse) nantes",
+        "type": "landmark",
+        "notes": "",
+        "max_specificity": 5,
+        "importance": "high",
+        "added_by": "human_evaluator"
+      }
+    ],
+    "scene_type": [
+      "nature",
+      "architecture"
+    ],
+    "key_visual_elements": [
+      "Greenhouse structure",
+      "Botanical garden",
+      "French garden style"
+    ],
+    "max_specificity": "Specific",
+    "difficulty": "Medium (greenhouse), Hard (specific garden)",
+    "notes": "Daytime, spring.",
+    "gps_metadata": {
+      "gps_latitude": 47.22096666666667,
+      "gps_longitude": -1.5436638888888887,
+      "reverse_geocoded": {
+        "formatted_address": "Palmarium, All. des Serres, 44000 Nantes, France",
+        "city": "Nantes",
+        "county": "Loire-Atlantique",
+        "country": "France"
+      }
+    },
+    "image_categories": [
+      "landmark",
+      "urban"
+    ],
+    "difficulty_with_gps": "easy",
+    "difficulty_without_gps": "hard"
+  },
+  "model_runs": [
+    {
+      "image_filename": "155.jpg",
+      "use_gps": true,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "A historic glass-and-iron conservatory set within a botanical garden. The central pavilion has a domed, mansard-like glazed roof with decorative iron cresting and large fanlight windows; long greenhouse wings extend to either side. The structure sits on a low masonry base and features a small glazed entrance porch. In the foreground are neatly arranged, labeled planting beds with spring blooms (including daffodils) on a manicured lawn. A few palm trees frame the entrance, and modern buildings are visible beyond the garden. Lighting is bright under a clear blue sky, suggesting midday.",
+            "photographer_location": [
+              {
+                "name": "Jardin des Plantes de Nantes, parterre in front of the Grandes Serres",
+                "confidence": 0.88
+              },
+              {
+                "name": "Nantes, France",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Grandes Serres (Palmarium), Jardin des Plantes de Nantes",
+                "confidence": 0.93
+              },
+              {
+                "name": "Jardin des Plantes de Nantes (Nantes Botanical Garden)",
+                "confidence": 0.9
+              }
+            ],
+            "entities": [
+              {
+                "name": "Grandes Serres (Palmarium), Jardin des Plantes de Nantes",
+                "type": "building",
+                "confidence": 0.93,
+                "notes": "Late 19th-century cast-iron-and-glass conservatory with central pavilion and flanking wings."
+              },
+              {
+                "name": "Nantes Botanical Garden (Jardin des Plantes de Nantes)",
+                "type": "public_space",
+                "confidence": 0.95,
+                "notes": "Municipal botanical garden near the Gare de Nantes, featuring historic greenhouses and labeled plant collections."
+              },
+              {
+                "name": "Nantes Botanical Garden Greenhouses",
+                "type": "landmark",
+                "confidence": 0.88,
+                "notes": "Well-known feature within the Jardin des Plantes."
+              },
+              {
+                "name": "19th-century iron-and-glass greenhouse architecture",
+                "type": "architectural_style",
+                "confidence": 0.75,
+                "notes": "Beaux-Arts/Victorian-era conservatory design with metal framework, extensive glazing, and ornamental cresting."
+              },
+              {
+                "name": "Botanical garden",
+                "type": "cultural_site",
+                "confidence": 0.95,
+                "notes": "Living plant collections arranged in labeled beds for education and research."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "A bright day with a vivid blue sky frames a grand glasshouse conservatory set in a public botanical garden. The central pavilion features a large arched glass dome with intricate decorative metalwork and two flanking glass wings, all in a late-19th-century iron-and-glass architectural style. The structure sits on a solid base with tall glass walls, revealing a palm tree inside. In the foreground, a well-kept lawn hosts colorful flower beds with yellow, red, and white blooms, and a few palm shrubs near the entrance. A paved path leads to the entrance, and in the background are low-rise modern buildings, suggesting an urban park setting in Nantes, France.",
+            "photographer_location": [
+              {
+                "name": "Jardin des Plantes, Nantes, France",
+                "confidence": 0.8
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Serre principale du Jardin des Plantes de Nantes (conservatory)",
+                "confidence": 0.85
+              }
+            ],
+            "entities": [
+              {
+                "name": "Jardin des Plantes de Nantes",
+                "type": "public_space",
+                "confidence": 0.85,
+                "notes": "Public botanical garden surrounding the glasshouse."
+              },
+              {
+                "name": "Serre du Jardin des Plantes de Nantes",
+                "type": "building",
+                "confidence": 0.9,
+                "notes": "Ornate glasshouse conservatory with central dome and side pavilions; metal framework; palm tree visible inside."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "A historic iron-and-glass greenhouse complex with a central domed palm house (palmarium) and long lateral glasshouse wings, set within a formal botanical garden. In the foreground are gridded beds of labeled plants and spring flowers on a manicured lawn, with paths and a few visitors near the small entrance canopy. A palm tree stands by the doorway, and modern apartment buildings rise behind the garden under a clear blue sky.",
+            "photographer_location": [
+              {
+                "name": "Jardin des Plantes de Nantes, Allée des Serres, Nantes, France",
+                "confidence": 0.9
+              },
+              {
+                "name": "Nantes, Loire-Atlantique, France",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Palmarium (main greenhouse), Jardin des Plantes de Nantes",
+                "confidence": 0.92
+              },
+              {
+                "name": "Allée des Serres, 44000 Nantes, France",
+                "confidence": 0.88
+              }
+            ],
+            "entities": [
+              {
+                "name": "Palmarium, Jardin des Plantes de Nantes",
+                "type": "building",
+                "confidence": 0.92,
+                "notes": "Central domed palm house of the Nantes botanical garden; iron-and-glass conservatory with attached greenhouse wings."
+              },
+              {
+                "name": "Jardin des Plantes de Nantes (Nantes Botanical Garden)",
+                "type": "public_space",
+                "confidence": 0.9,
+                "notes": "Major urban botanical garden in Nantes with collections, labeled beds, and historic glasshouses."
+              },
+              {
+                "name": "Iron-and-glass greenhouse architecture (late 19th–early 20th century style)",
+                "type": "architectural_style",
+                "confidence": 0.7,
+                "notes": "Riveted metal frame with large glazed bays, typical of European conservatories of the era."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "A large glass-and-iron greenhouse with a central dome dominates the scene, identified as the Palmarium. The structure features tall glass walls, curved iron framework, and a rounded dome roof, typical of 19th-century palm houses. In the foreground, well-tended flower beds add splashes of color, while a clear blue sky and urban buildings provide a modern background. The Palmarium is set within Nantes' botanical garden area (Jardin des Plantes).",
+            "photographer_location": [
+              {
+                "name": "Palmarium, Allée des Serres, 44000 Nantes, France",
+                "confidence": 0.92
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Palmarium, Nantes, France",
+                "confidence": 0.92
+              }
+            ],
+            "entities": [
+              {
+                "name": "Palmarium (greenhouse) at Nantes",
+                "type": "building",
+                "confidence": 0.85,
+                "notes": "Glasshouse/palm house; iron-and-glass architecture; part of Nantes Botanical Garden (Jardin des Plantes de Nantes)."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A vibrant, sunny view of the Jardin des Plantes in Nantes, featuring the historic Palmarium greenhouse as the central subject. The greenhouse is a 19th-century structure constructed of glass and metal with a brick base, characterized by a high, curved central roof and flanking wings. Inside the glass, palm fronds are visible. In the foreground, a manicured green lawn is interspersed with rectangular flower beds filled with blooming yellow daffodils and red tulips, each marked with small slate botanical identification labels on metal stakes. To the right, a lower, longer greenhouse section extends. In the background, modern white and grey apartment or office buildings rise above the garden wall, contrasting with the historic architecture. The sky is a clear, deep blue.",
+            "photographer_location": [
+              {
+                "name": "Jardin des Plantes",
+                "confidence": 1.0
+              },
+              {
+                "name": "Nantes",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Jardin des Plantes",
+                "confidence": 1.0
+              },
+              {
+                "name": "Palmarium",
+                "confidence": 0.95
+              }
+            ],
+            "entities": [
+              {
+                "name": "Jardin des Plantes de Nantes",
+                "type": "cultural_site",
+                "confidence": 1.0,
+                "notes": "Botanical garden in Nantes"
+              },
+              {
+                "name": "Palmarium",
+                "type": "building",
+                "confidence": 0.95,
+                "notes": "Historic greenhouse built in 1896, housing tropical plants"
+              },
+              {
+                "name": "Greenhouses",
+                "type": "building",
+                "confidence": 0.95,
+                "notes": "Les Serres"
+              },
+              {
+                "name": "Tulips",
+                "type": "natural_feature",
+                "confidence": 0.9,
+                "notes": "Red flowers in foreground beds"
+              },
+              {
+                "name": "Daffodils",
+                "type": "natural_feature",
+                "confidence": 0.9,
+                "notes": "Yellow flowers in foreground beds"
+              },
+              {
+                "name": "Botanical labels",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Small signs identifying plants"
+              },
+              {
+                "name": "Modern apartment buildings",
+                "type": "building",
+                "confidence": 0.85,
+                "notes": "Visible in the background outside the park"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A vibrant daytime photograph of the Jardin des Plantes in Nantes, France. The central focus is a large, ornate 19th-century greenhouse (Palm House) constructed from glass and wrought iron, featuring a prominent domed roof with decorative metal cresting. In the foreground, a meticulously maintained lawn is dotted with various flower beds containing spring blooms like yellow daffodils and red tulips, each marked with small identification tags. To the left and right, additional smaller glass greenhouses are visible. The background shows modern multi-story residential or office buildings under a clear, deep blue sky. The lighting is bright and direct, casting soft shadows across the garden.",
+            "photographer_location": [
+              {
+                "name": "Jardin des Plantes de Nantes",
+                "confidence": 0.95
+              },
+              {
+                "name": "Nantes, France",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Grande Serre, Jardin des Plantes de Nantes",
+                "confidence": 0.95
+              },
+              {
+                "name": "Jardin des Plantes de Nantes",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "Jardin des Plantes de Nantes",
+                "type": "landmark",
+                "confidence": 1.0,
+                "notes": "A prominent botanical garden in Nantes, France, established in the early 19th century."
+              },
+              {
+                "name": "Grande Serre du Jardin des Plantes",
+                "type": "building",
+                "confidence": 0.95,
+                "notes": "The main palm house, a classic example of 19th-century glass and iron architecture."
+              },
+              {
+                "name": "19th-century glass and iron architecture",
+                "type": "architectural_style",
+                "confidence": 0.9,
+                "notes": "The style of the greenhouses, typical of the Victorian era botanical gardens."
+              },
+              {
+                "name": "Nantes",
+                "type": "district",
+                "confidence": 1.0,
+                "notes": null
+              },
+              {
+                "name": "Botanical Garden",
+                "type": "cultural_site",
+                "confidence": 1.0,
+                "notes": null
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [],
+            "landmark_name": null
+          }
+        }
+      ]
+    },
+    {
+      "image_filename": "155.jpg",
+      "use_gps": false,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "A historic iron-and-glass conservatory (palm house) with a tall central dome and ornate radial fanlight glazing, flanked by lower curved-roof wings. The greenhouse sits within a botanical garden featuring labeled planting beds, spring flowers, and a palm near the entrance. Behind it, on a higher terrace, are additional long glasshouses. The setting is urban, with apartment blocks beyond the garden walls. Lighting is bright with a clear blue sky.",
+            "photographer_location": [
+              {
+                "name": "Jardin des Plantes de Nantes, Nantes, France (lawn/parterre in front of the palm house)",
+                "confidence": 0.68
+              },
+              {
+                "name": "A French municipal botanical garden (general guess)",
+                "confidence": 0.9
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Grande serre (Palmarium), Jardin des Plantes de Nantes, Nantes, France",
+                "confidence": 0.66
+              },
+              {
+                "name": "19th‑century palm house within a European botanical garden (if not Nantes)",
+                "confidence": 0.9
+              }
+            ],
+            "entities": [
+              {
+                "name": "Grande serre (Palmarium), Jardin des Plantes de Nantes",
+                "type": "building",
+                "confidence": 0.66,
+                "notes": "Cast-iron and glass conservatory with central dome; late 19th–early 20th century municipal palm house."
+              },
+              {
+                "name": "Jardin des Plantes de Nantes",
+                "type": "public_space",
+                "confidence": 0.66,
+                "notes": "Historic municipal botanical garden opposite Nantes train station; features multiple greenhouses and terraced beds."
+              },
+              {
+                "name": "Victorian/Beaux‑Arts era iron-and-glass greenhouse architecture",
+                "type": "architectural_style",
+                "confidence": 0.88,
+                "notes": "Characteristic domed palm house with ornate ironwork and curved glazing typical of late 1800s European botanical gardens."
+              },
+              {
+                "name": "Terraced production/collection glasshouses (auxiliary greenhouses)",
+                "type": "infrastructure",
+                "confidence": 0.72,
+                "notes": "Long ridge‑and‑furrow glass structures situated on the terrace behind the main palm house."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "An ornate glass-and-iron conservatory dominates the scene, featuring a prominent dome-shaped glass roof and decorative latticework. The structure sits in a formal garden with neatly arranged plant beds and small signage labeling the flora. A modern white apartment block rises behind the greenhouse, contrasting with the historic greenhouse architecture. Inside the glass enclosure, a tall palm tree is visible through the panes. The sky above is clear and blue.",
+            "photographer_location": [
+              {
+                "name": "Public garden path in front of the conservatory (urban park setting)",
+                "confidence": 0.65
+              },
+              {
+                "name": "Botanical garden area with a glasshouse nearby",
+                "confidence": 0.4
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Conservatory / glasshouse (iron-and-glass structure)",
+                "confidence": 0.9
+              },
+              {
+                "name": "Garden in front of conservatory with plant beds",
+                "confidence": 0.5
+              }
+            ],
+            "entities": [
+              {
+                "name": "Conservatory / Glasshouse",
+                "type": "building",
+                "confidence": 0.92,
+                "notes": "Iron-and-glass greenhouse with a domed roof and ornate metal framework."
+              },
+              {
+                "name": "Dome-shaped glass roof",
+                "type": "architectural_style",
+                "confidence": 0.54,
+                "notes": "Prominent curved glass roof of the conservatory."
+              },
+              {
+                "name": "Palm tree inside conservatory",
+                "type": "natural_feature",
+                "confidence": 0.75,
+                "notes": "Tall indoor palm visible through glass panels."
+              },
+              {
+                "name": "Modern apartment building behind conservatory",
+                "type": "building",
+                "confidence": 0.6,
+                "notes": "White multi-story block with balconies in the background."
+              },
+              {
+                "name": "Ornate wrought-iron latticework",
+                "type": "architectural_style",
+                "confidence": 0.5,
+                "notes": "Decorative metal framework on the conservatory's exterior."
+              },
+              {
+                "name": "Plant labels / garden signage",
+                "type": "signage",
+                "confidence": 0.7,
+                "notes": "Small stakes labeling various plants in the garden beds."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "An ornate historic glass-and-iron conservatory with a central domed pavilion and lower flanking greenhouse wings stands within a botanical garden. The structure features curved glazing, decorative metalwork radiating across the dome, and a masonry base. In the foreground are organized planting beds with many plant labels and spring flowers such as daffodils and tulips, set in clipped lawns and a path. A small palm is near the entrance. Modern low-rise residential buildings are visible behind the greenhouse under a clear blue sky, with a few visitors by the doorway.",
+            "photographer_location": [
+              {
+                "name": "Path/lawn directly in front of a botanical garden greenhouse",
+                "confidence": 0.8
+              },
+              {
+                "name": "Jardin des Plantes, Nantes, France",
+                "confidence": 0.35
+              },
+              {
+                "name": "Parc du Thabor, Rennes, France",
+                "confidence": 0.2
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Historic palm house/conservatory in a botanical garden",
+                "confidence": 0.8
+              },
+              {
+                "name": "Jardin des Plantes, Nantes, France (palm house)",
+                "confidence": 0.35
+              },
+              {
+                "name": "Parc du Thabor, Rennes, France (greenhouse)",
+                "confidence": 0.2
+              }
+            ],
+            "entities": [
+              {
+                "name": "Historic glass-and-iron conservatory (palm house)",
+                "type": "building",
+                "confidence": 0.8,
+                "notes": "Central domed pavilion with flanking greenhouse wings; ornate metalwork and curved glazing typical of late 19th–early 20th century European conservatories."
+              },
+              {
+                "name": "Botanical garden",
+                "type": "public_space",
+                "confidence": 0.8,
+                "notes": "Labeled plant beds, seasonal flowering displays, and educational signage indicate a formal botanic collection."
+              },
+              {
+                "name": "Victorian/Beaux-Arts–era glasshouse architecture",
+                "type": "architectural_style",
+                "confidence": 0.7,
+                "notes": "Iron-and-glass construction with decorative cresting and a domed palm house."
+              },
+              {
+                "name": "Palm House, Jardin des Plantes de Nantes",
+                "type": "building",
+                "confidence": 0.35,
+                "notes": "Tentative identification based on the domed central pavilion and setting; 19th-century greenhouse near Nantes train station."
+              },
+              {
+                "name": "Greenhouse, Parc du Thabor (Rennes)",
+                "type": "building",
+                "confidence": 0.2,
+                "notes": "Alternative possibility sharing similar domed palm house characteristics."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "A large glass-and-iron conservatory or greenhouse with a rounded dome and ornate metal framework. The structure is set in a formal garden with well-maintained flower beds, small signs on stakes, and a modern building visible in the background. The sky is clear and blue.",
+            "photographer_location": [
+              {
+                "name": "Unknown vantage point near conservatory, unspecified city",
+                "confidence": 0.35
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Garden surrounding the glasshouse conservatory (public park/garden)",
+                "confidence": 0.6
+              }
+            ],
+            "entities": [
+              {
+                "name": "glasshouse conservatory",
+                "type": "building",
+                "confidence": 0.85,
+                "notes": "Iron-and-glass structure with a domed roof; Victorian-era architectural cues; central entrance visible."
+              },
+              {
+                "name": "garden",
+                "type": "public_space",
+                "confidence": 0.7,
+                "notes": "Formal garden with flower beds, signage on posts."
+              },
+              {
+                "name": "architectural_style",
+                "type": "architectural_style",
+                "confidence": 0.6,
+                "notes": "Victorian glasshouse / greenhouse style with ornate metalwork."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "The image is oriented sideways (rotated 90 degrees counter-clockwise), with the sky on the left and the ground on the right. When viewed upright, the scene depicts a sunny day in a botanical garden. The central subject is a historic 19th-century glasshouse, identified as the Serre de Bary, featuring a distinctive curved glass roof, intricate metal framework (likely iron), and a decorative ridge crest, all resting on a low brick base. A palm tree is visible near the structure. In the foreground, a green lawn is dotted with numerous small, rectangular plant identification labels on stakes, along with patches of spring flowers (daffodils and tulips). In the background, looming behind the historic greenhouse, is a contrasting modern, multi-story grey building with a flat roof, identified as the Institute of Botany. The sky is a clear, deep blue.",
+            "photographer_location": [
+              {
+                "name": "Jardin botanique de l'Université de Strasbourg",
+                "confidence": 1.0
+              },
+              {
+                "name": "Strasbourg",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Serre de Bary",
+                "confidence": 1.0
+              },
+              {
+                "name": "Jardin botanique de l'Université de Strasbourg",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "Serre de Bary",
+                "type": "landmark",
+                "confidence": 1.0,
+                "notes": "Historic greenhouse built in 1882 by architect Hermann de Bary; listed historic monument."
+              },
+              {
+                "name": "Jardin botanique de l'Université de Strasbourg",
+                "type": "cultural_site",
+                "confidence": 1.0,
+                "notes": "Botanical garden of the University of Strasbourg."
+              },
+              {
+                "name": "Institut de Botanique",
+                "type": "building",
+                "confidence": 0.95,
+                "notes": "Modern university building visible in the background."
+              },
+              {
+                "name": "Greenhouse",
+                "type": "building",
+                "confidence": 1.0,
+                "notes": "19th-century glass and iron architecture."
+              },
+              {
+                "name": "Plant labels",
+                "type": "signage",
+                "confidence": 1.0,
+                "notes": "Small metal stakes identifying plants in the systematic garden."
+              },
+              {
+                "name": "Lawn",
+                "type": "natural_feature",
+                "confidence": 1.0,
+                "notes": null
+              },
+              {
+                "name": "Palm tree",
+                "type": "natural_feature",
+                "confidence": 0.9,
+                "notes": null
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A vertical shot of the historic Palm House at the Botanical Garden of the University of Graz. The building features a prominent curved glass and iron roof with a decorative metal crest. In the foreground, a botanical display garden is visible, featuring patches of green grass, blooming yellow daffodils, and red tulips, each marked with small white identification labels. A palm tree stands near the entrance of the greenhouse. In the background, modern glass greenhouse structures and multi-story university buildings are visible under a clear, bright blue sky.",
+            "photographer_location": [
+              {
+                "name": "Botanical Garden of the University of Graz, Graz, Austria",
+                "confidence": 0.95
+              },
+              {
+                "name": "Schubertstraße, Graz",
+                "confidence": 0.85
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Botanical Garden of the University of Graz, Graz, Austria",
+                "confidence": 0.98
+              }
+            ],
+            "entities": [
+              {
+                "name": "Botanical Garden of the University of Graz",
+                "type": "cultural_site",
+                "confidence": 0.98,
+                "notes": "Botanischer Garten der Universität Graz"
+              },
+              {
+                "name": "Historic Palm House",
+                "type": "building",
+                "confidence": 0.95,
+                "notes": "Designed by architect Friedrich Ohmann, built between 1888 and 1889."
+              },
+              {
+                "name": "Modern Greenhouses of the Graz Botanical Garden",
+                "type": "building",
+                "confidence": 0.9,
+                "notes": "Designed by architect Volker Giencke, completed in 1995."
+              },
+              {
+                "name": "University of Graz",
+                "type": "landmark",
+                "confidence": 0.95,
+                "notes": "Karl-Franzens-Universität Graz"
+              },
+              {
+                "name": "Graz",
+                "type": "district",
+                "confidence": 1.0,
+                "notes": "Capital city of Styria, Austria"
+              },
+              {
+                "name": "Botanical Garden",
+                "type": "public_space",
+                "confidence": 1.0,
+                "notes": null
+              },
+              {
+                "name": "Greenhouse",
+                "type": "building",
+                "confidence": 1.0,
+                "notes": null
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [],
+            "landmark_name": null
+          }
+        }
+      ]
+    }
+  ]
+}

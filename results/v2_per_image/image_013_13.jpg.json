@@ -1,0 +1,206 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "13.jpg",
+      "timestamp": "2026-01-28T01:51:38.213217",
+      "processing_time_seconds": 116.935149,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Karl Johans gate, Royal Palace, Oslo, Norway",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive architecture and layout of the street, along with the visible Royal Palace, are iconic features of Oslo's Karl Johans gate. The neoclassical style and urban setting match known characteristics of this location.",
+            "detailed_description": "The image shows Karl Johans gate, a prominent street in Oslo, Norway, leading towards the Royal Palace. The street is bustling with people and lined with trees and buildings. The architecture visible on the right side of the image features neoclassical elements, typical of 19th-century design, with stone facades and decorative detailing. The Royal Palace is visible in the distance, characterized by its grand neoclassical style.",
+            "identification": {
+              "primary": [
+                "Karl Johans gate",
+                "Royal Palace"
+              ],
+              "location": "Oslo, Norway",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Karl Johans gate",
+                "type": "street",
+                "confidence": 0.95
+              },
+              {
+                "name": "Royal Palace",
+                "type": "landmark",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "neoclassical",
+              "19th_century",
+              "stone",
+              "Oslo",
+              "landmark"
+            ],
+            "location": "Oslo, Norway",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Karl Johans gate\", \"Royal Palace\"],\n        \"location\": \"Oslo, Norway\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Karl Johans gate\",\n            \"type\": \"street\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Royal Palace\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.90\n        }\n    ],\n    \"tags\": [\"neoclassical\", \"19th_century\", \"stone\", \"Oslo\", \"landmark\"],\n    \"description\": \"The image shows Karl Johans gate, a prominent street in Oslo, Norway, leading towards the Royal Palace. The street is bustling with people and lined with trees and buildings. The architecture visible on the right side of the image features neoclassical elements, typical of 19th-century design, with stone facades and decorative detailing. The Royal Palace is visible in the distance, characterized by its grand neoclassical style.\",\n    \"reasoning\": \"The distinctive architecture and layout of the street, along with the visible Royal Palace, are iconic features of Oslo's Karl Johans gate. The neoclassical style and urban setting match known characteristics of this location.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 22.681424140930176
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL:* ([en.wikipedia.org]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 2,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a bustling urban scene centered around a prominent building with distinct architectural features. The building on the right side of the image showcases a Neo-Gothic architectural style, characterized by pointed arches and intricate stonework. The facade is adorned with vertical columns and decorative elements, including detailed cornices and window tracery. The structure is constructed from light-colored stone or brick, which contrasts with the darker elements of the facade. Th",
+            "description": "The image depicts a bustling urban scene centered around a prominent building with distinct architectural features. The building on the right side of the image showcases a Neo-Gothic architectural style, characterized by pointed arches and intricate stonework. The facade is adorned with vertical columns and decorative elements, including detailed cornices and window tracery. The structure is constructed from light-colored stone or brick, which contrasts with the darker elements of the facade. Th",
+            "architectural_style": "Neo-Gothic",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 94.24581980705261
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Nationaltheatret (59.9144, 10.7341)",
+          "confidence": 0.270181268453598,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Nationaltheatret",
+            "coordinates": {
+              "latitude": 59.91442370000001,
+              "longitude": 10.734079
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 1365,
+                "y": 0
+              },
+              {
+                "x": 1365,
+                "y": 2048
+              },
+              {
+                "x": 0,
+                "y": 2048
+              }
+            ],
+            "context_labels": [
+              "City",
+              "Urban area",
+              "Road surface",
+              "Street",
+              "Road"
+            ],
+            "context_objects": [
+              "Person",
+              "Person",
+              "Person"
+            ],
+            "web_entities": [
+              {
+                "name": "Pedestrian",
+                "score": 0.4129008650779724
+              },
+              {
+                "name": "Mixed-use",
+                "score": 0.362314373254776
+              },
+              {
+                "name": "Sidewalk",
+                "score": 0.34185120463371277
+              },
+              {
+                "name": "Tourism",
+                "score": 0.3111000061035156
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Nationaltheatret",
+                "score": 0.270181268453598,
+                "location": {
+                  "lat": 59.91442370000001,
+                  "lng": 10.734079
+                }
+              },
+              {
+                "name": "Kullt",
+                "score": 0.25567466020584106,
+                "location": {
+                  "lat": 59.9111622,
+                  "lng": 10.7361348
+                }
+              },
+              {
+                "name": "Max Burgers",
+                "score": 0.16751858592033386,
+                "location": {
+                  "lat": 59.91268,
+                  "lng": 10.74157
+                }
+              },
+              {
+                "name": "The Royal Palace",
+                "score": 0.15352661907672882,
+                "location": {
+                  "lat": 59.917042800000004,
+                  "lng": 10.7273769
+                }
+              }
+            ],
+            "processing_time_seconds": 6.754667043685913
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/13.jpg"
+    }
+  ]
+}

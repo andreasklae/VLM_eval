@@ -1,0 +1,1146 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "93.heic",
+      "timestamp": "2026-01-28T07:26:54.892161",
+      "processing_time_seconds": 67.083258,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -33.86643611111111,
+        "gps_longitude": 151.2132111111111,
+        "location": {
+          "formatted_address": "1 Shakespeare Pl, Sydney NSW 2000, Australia",
+          "city": "Sydney",
+          "county": "Council of the City of Sydney",
+          "country": "Australia"
+        },
+        "datetime_original": "2024:09:14 12:11:24",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "State Library of New South Wales Reading Room, Sydney, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and layout, combined with the location metadata, strongly suggest this is the reading room of the State Library of New South Wales, a well-known landmark in Sydney.",
+            "detailed_description": "The image depicts the reading room of the State Library of New South Wales in Sydney, Australia. The room features a large, open space with rows of tables and chairs for study and reading. The walls are lined with bookshelves filled with books, and the ceiling is adorned with a series of skylights that allow natural light to illuminate the room. The architectural style is characterized by its grand scale and classical design elements, including decorative moldings and a patterned carpet.",
+            "identification": {
+              "primary": [
+                "State Library of New South Wales Reading Room"
+              ],
+              "location": "Sydney, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Reading Room",
+                "type": "building",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "library",
+              "architecture",
+              "Sydney",
+              "Australia",
+              "reading_room"
+            ],
+            "location": "Sydney, Australia",
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"State Library of New South Wales Reading Room\"],\n        \"location\": \"Sydney, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Reading Room\",\n            \"type\": \"building\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"library\", \"architecture\", \"Sydney\", \"Australia\", \"reading_room\"],\n    \"description\": \"The image depicts the reading room of the State Library of New South Wales in Sydney, Australia. The room features a large, open space with rows of tables and chairs for study and reading. The walls are lined with bookshelves filled with books, and the ceiling is adorned with a series of skylights that allow natural light to illuminate the room. The architectural style is characterized by its grand scale and classical design elements, including decorative moldings and a patterned carpet.\",\n    \"reasoning\": \"The architectural style and layout, combined with the location metadata, strongly suggest this is the reading room of the State Library of New South Wales, a well-known landmark in Sydney.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "gps_coordinates": {
+              "latitude": -33.86643611111111,
+              "longitude": 151.2132111111111
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "1 Shakespeare Pl, Sydney NSW 2000, Australia",
+              "city": "Sydney",
+              "county": "Council of the City of Sydney",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2024:09:14 12:11:24",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 12.078922033309937
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts an expansive library interior characterized by its grand architectural design and abundant natural light. The ceiling features large rectangular skylights, allowing sunlight to illuminate the space below. The ceiling is adorned with intricate geometric patterns, adding a sense of elegance and sophistication. The walls are lined with tall wooden bookshelves filled with numerous books, creating a rich and scholarly atmosphere. The bookshelves are framed by classical columns and d",
+            "description": "The image depicts an expansive library interior characterized by its grand architectural design and abundant natural light. The ceiling features large rectangular skylights, allowing sunlight to illuminate the space below. The ceiling is adorned with intricate geometric patterns, adding a sense of elegance and sophistication. The walls are lined with tall wooden bookshelves filled with numerous books, creating a rich and scholarly atmosphere. The bookshelves are framed by classical columns and d",
+            "architectural_style": "Classical",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": -33.86643611111111,
+              "longitude": 151.2132111111111
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "1 Shakespeare Pl, Sydney NSW 2000, Australia",
+              "city": "Sydney",
+              "county": "Council of the City of Sydney",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2024:09:14 12:11:24",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 53.474889039993286
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Ernie Pyle Public Library",
+          "confidence": 1.059000015258789,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "all_candidates": [
+              {
+                "source": "web",
+                "name": "Ernie Pyle Public Library",
+                "score": 1.059000015258789
+              },
+              {
+                "source": "label",
+                "name": "Furniture",
+                "score": 0.9177414178848267
+              },
+              {
+                "source": "object",
+                "name": "Chair",
+                "score": 0.864762008190155
+              },
+              {
+                "source": "web",
+                "name": "Phoenix Public Library",
+                "score": 0.8537999391555786
+              },
+              {
+                "source": "web",
+                "name": "Main Public Library",
+                "score": 0.8047499656677246
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Ernie Pyle Public Library",
+                "score": 1.059000015258789
+              },
+              {
+                "name": "Phoenix Public Library",
+                "score": 0.8537999391555786
+              },
+              {
+                "name": "Main Public Library",
+                "score": 0.8047499656677246
+              },
+              {
+                "name": "Public Library",
+                "score": 0.8036648035049438
+              },
+              {
+                "name": "Anderson Public Library",
+                "score": 0.7348999977111816
+              }
+            ],
+            "objects": [
+              {
+                "name": "Chair",
+                "score": 0.864762008190155
+              },
+              {
+                "name": "Person",
+                "score": 0.7496290802955627
+              },
+              {
+                "name": "Person",
+                "score": 0.7269694805145264
+              },
+              {
+                "name": "Clothing",
+                "score": 0.6941117644309998
+              },
+              {
+                "name": "Person",
+                "score": 0.6920992732048035
+              }
+            ],
+            "labels": [
+              {
+                "name": "Furniture",
+                "score": 0.9177414178848267
+              },
+              {
+                "name": "Hall",
+                "score": 0.7509881854057312
+              },
+              {
+                "name": "Varnish",
+                "score": 0.6824095249176025
+              },
+              {
+                "name": "Public library",
+                "score": 0.6591238975524902
+              },
+              {
+                "name": "Shelf",
+                "score": 0.6454957723617554
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": -33.86643611111111,
+              "longitude": 151.2132111111111
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "1 Shakespeare Pl, Sydney NSW 2000, Australia",
+              "city": "Sydney",
+              "county": "Council of the City of Sydney",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2024:09:14 12:11:24",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 24.350624084472656
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Sydney, Council of the City of Sydney, Australia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Sydney, Council of the City of Sydney, Australia",
+            "coordinates": {
+              "latitude": -33.86643611111111,
+              "longitude": 151.2132111111111
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Museum of Contemporary Art Australia",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "museum",
+                    "cafe",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 9216,
+                  "vicinity": "140 George Street, The Rocks",
+                  "place_id": "ChIJ68aBlEKuEmsRHUA9oME5Zh0",
+                  "location": {
+                    "lat": -33.8599358,
+                    "lng": 151.2090295
+                  }
+                },
+                {
+                  "name": "The Mint",
+                  "types": [
+                    "tourist_attraction",
+                    "cafe",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 412,
+                  "vicinity": "Level 1/10 Macquarie Street, Sydney",
+                  "place_id": "ChIJK70U2mquEmsRSlU92xtCn4c",
+                  "location": {
+                    "lat": -33.8689323,
+                    "lng": 151.2126165
+                  }
+                },
+                {
+                  "name": "St Mary's Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 8713,
+                  "vicinity": "St Marys Rd, Sydney",
+                  "place_id": "ChIJIfH_5hSuEmsR3jZ2qQd0ev4",
+                  "location": {
+                    "lat": -33.8711905,
+                    "lng": 151.2133254
+                  }
+                },
+                {
+                  "name": "Art Gallery of New South Wales",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 14982,
+                  "vicinity": "Art Gallery Road, Sydney",
+                  "place_id": "ChIJPVqlfGyuEmsRHPcnCX1X1OE",
+                  "location": {
+                    "lat": -33.8688037,
+                    "lng": 151.2174138
+                  }
+                },
+                {
+                  "name": "Museum of Sydney",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 3023,
+                  "vicinity": "Cnr Bridge Street &, Phillip Street, Sydney",
+                  "place_id": "ChIJ_1pC8mmuEmsRrvud0Ftcoyg",
+                  "location": {
+                    "lat": -33.8636288,
+                    "lng": 151.2114567
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Museum of Contemporary Art Australia",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "museum",
+                    "cafe",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 9216,
+                  "vicinity": "140 George Street, The Rocks",
+                  "place_id": "ChIJ68aBlEKuEmsRHUA9oME5Zh0",
+                  "location": {
+                    "lat": -33.8599358,
+                    "lng": 151.2090295
+                  }
+                },
+                {
+                  "name": "Art Gallery of New South Wales",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 14982,
+                  "vicinity": "Art Gallery Road, Sydney",
+                  "place_id": "ChIJPVqlfGyuEmsRHPcnCX1X1OE",
+                  "location": {
+                    "lat": -33.8688037,
+                    "lng": 151.2174138
+                  }
+                },
+                {
+                  "name": "Australian Museum",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 12823,
+                  "vicinity": "Level 4/1 William Street, Darlinghurst",
+                  "place_id": "ChIJlwsH0RWuEmsR3Cg3WEDw76I",
+                  "location": {
+                    "lat": -33.8743446,
+                    "lng": 151.2131667
+                  }
+                },
+                {
+                  "name": "Museum of Sydney",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 3023,
+                  "vicinity": "Cnr Bridge Street &, Phillip Street, Sydney",
+                  "place_id": "ChIJ_1pC8mmuEmsRrvud0Ftcoyg",
+                  "location": {
+                    "lat": -33.8636288,
+                    "lng": 151.2114567
+                  }
+                },
+                {
+                  "name": "Hyde Park Barracks",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 2108,
+                  "vicinity": "Queens Square, Macquarie Street, Sydney",
+                  "place_id": "ChIJv2Yr02quEmsRTqyo1N7vfeE",
+                  "location": {
+                    "lat": -33.8696036,
+                    "lng": 151.212585
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "QT Sydney",
+                  "types": [
+                    "bar",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 2041,
+                  "vicinity": "49 Market Street, Sydney",
+                  "place_id": "ChIJK6RwVT6uEmsRQ447JSUTGGI",
+                  "location": {
+                    "lat": -33.8709065,
+                    "lng": 151.2075485
+                  }
+                },
+                {
+                  "name": "Amora Hotel Jamison Sydney",
+                  "types": [
+                    "spa",
+                    "bar",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 2814,
+                  "vicinity": "11 Jamison Street, Sydney",
+                  "place_id": "ChIJa51FEUGuEmsRIXRtDjLFQXM",
+                  "location": {
+                    "lat": -33.864458,
+                    "lng": 151.2062952
+                  }
+                },
+                {
+                  "name": "Swissôtel Sydney",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 3350,
+                  "vicinity": "68 Market Street, Sydney",
+                  "place_id": "ChIJAddzqj-uEmsRO8NmIaLn1t0",
+                  "location": {
+                    "lat": -33.8702647,
+                    "lng": 151.2074559
+                  }
+                },
+                {
+                  "name": "Castlereagh Boutique Hotel, Ascend Hotel Collection",
+                  "types": [
+                    "bar",
+                    "cafe",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 816,
+                  "vicinity": "169 Castlereagh Street, Sydney",
+                  "place_id": "ChIJp2HsPT6uEmsRskGgtjLmnLc",
+                  "location": {
+                    "lat": -33.8725825,
+                    "lng": 151.2090734
+                  }
+                },
+                {
+                  "name": "Infinity at Sydney Tower",
+                  "types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 3805,
+                  "vicinity": "Westfield Sydney, Level 4/108 Market Street, Sydney",
+                  "place_id": "ChIJK4Tktz-uEmsR4wAu4Lf6dCg",
+                  "location": {
+                    "lat": -33.8704147,
+                    "lng": 151.2089691
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Hyde Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 17788,
+                  "vicinity": "Elizabeth Street, Sydney",
+                  "place_id": "ChIJDflB7BWuEmsRYPbx-Wh9AQ8",
+                  "location": {
+                    "lat": -33.8715202,
+                    "lng": 151.2116243
+                  }
+                },
+                {
+                  "name": "Royal Botanic Garden Sydney",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 25069,
+                  "vicinity": "Mrs Macquaries Road, Sydney",
+                  "place_id": "ChIJWaTdYGuuEmsRoOfx-Wh9AQ8",
+                  "location": {
+                    "lat": -33.8641859,
+                    "lng": 151.2165708
+                  }
+                },
+                {
+                  "name": "Wynyard Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 793,
+                  "vicinity": "1001 York Street, Sydney",
+                  "place_id": "ChIJDRF76ECuEmsREAnz-Wh9AQ8",
+                  "location": {
+                    "lat": -33.8657009,
+                    "lng": 151.2061439
+                  }
+                },
+                {
+                  "name": "The Domain Sydney",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1639,
+                  "vicinity": "Art Gallery Road, Sydney",
+                  "place_id": "ChIJS6MuAnCuEmsRjVr4zXUIQDc",
+                  "location": {
+                    "lat": -33.8684368,
+                    "lng": 151.2149869
+                  }
+                },
+                {
+                  "name": "Harbour View Lawn",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 135,
+                  "vicinity": "Mrs Macquaries Road, Sydney",
+                  "place_id": "ChIJq8ecvm-uEmsRsc9VYOUpyas",
+                  "location": {
+                    "lat": -33.8627292,
+                    "lng": 151.2201437
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "St Mary's Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 8713,
+                  "vicinity": "St Marys Rd, Sydney",
+                  "place_id": "ChIJIfH_5hSuEmsR3jZ2qQd0ev4",
+                  "location": {
+                    "lat": -33.8711905,
+                    "lng": 151.2133254
+                  }
+                },
+                {
+                  "name": "Wesley Mission HQ",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 96,
+                  "vicinity": "220 Pitt Street, Sydney",
+                  "place_id": "ChIJk5EPRT6uEmsRTu7sBZ3VZgA",
+                  "location": {
+                    "lat": -33.8717086,
+                    "lng": 151.2083294
+                  }
+                },
+                {
+                  "name": "Saint Patrick's Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 639,
+                  "vicinity": "20 Grosvenor Street, The Rocks",
+                  "place_id": "ChIJiVLPZkGuEmsRQHR4WJMxPQI",
+                  "location": {
+                    "lat": -33.8631328,
+                    "lng": 151.2059914
+                  }
+                },
+                {
+                  "name": "Scots Presbyterian Church Sydney",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 74,
+                  "vicinity": "44 Margaret Street, Sydney",
+                  "place_id": "ChIJb0zSGEGuEmsR4yDcc9HXsQQ",
+                  "location": {
+                    "lat": -33.8649282,
+                    "lng": 151.2058338
+                  }
+                },
+                {
+                  "name": "St. Stephen's Uniting Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 424,
+                  "vicinity": "197 Macquarie Street, Sydney",
+                  "place_id": "ChIJyczA82quEmsRvLCJONt7tiE",
+                  "location": {
+                    "lat": -33.8673595,
+                    "lng": 151.2120548
+                  }
+                },
+                {
+                  "name": "Sydney CBD Masjid",
+                  "types": [
+                    "mosque",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 722,
+                  "vicinity": "56/56-60 Erskine Street, Sydney",
+                  "place_id": "ChIJpTpyTkeuEmsRyk375nNkMEI",
+                  "location": {
+                    "lat": -33.8666203,
+                    "lng": 151.2039743
+                  }
+                },
+                {
+                  "name": "Castlereagh & Park St Musalla",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 40,
+                  "vicinity": "189 Castlereagh Street, Sydney",
+                  "place_id": "ChIJFfupdgCvEmsRvTbh0G2xw0Q",
+                  "location": {
+                    "lat": -33.8733666,
+                    "lng": 151.2090581
+                  }
+                },
+                {
+                  "name": "The Great Synagogue",
+                  "types": [
+                    "synagogue",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 95,
+                  "vicinity": "166 Castlereagh Street, Sydney",
+                  "place_id": "ChIJ7WLBIj6uEmsRfPcbl6D5UR8",
+                  "location": {
+                    "lat": -33.872612,
+                    "lng": 151.2093528
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Museum of Contemporary Art Australia",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "cafe",
+                    "museum",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 9216,
+                  "vicinity": "140 George Street, The Rocks",
+                  "place_id": "ChIJ68aBlEKuEmsRHUA9oME5Zh0",
+                  "location": {
+                    "lat": -33.8599358,
+                    "lng": 151.2090295
+                  }
+                },
+                {
+                  "name": "Art Gallery of New South Wales",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 14982,
+                  "vicinity": "Art Gallery Road, Sydney",
+                  "place_id": "ChIJPVqlfGyuEmsRHPcnCX1X1OE",
+                  "location": {
+                    "lat": -33.8688037,
+                    "lng": 151.2174138
+                  }
+                },
+                {
+                  "name": "Billich Art Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 95,
+                  "vicinity": "1 Martin Place, Sydney",
+                  "place_id": "ChIJ5UZ9tEKuEmsRdSFeRtkB3Jg",
+                  "location": {
+                    "lat": -33.8684026,
+                    "lng": 151.2081331
+                  }
+                },
+                {
+                  "name": "Sally Robinson",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "123-125 Macquarie Street, Sydney",
+                  "place_id": "ChIJtYmxmmmuEmsROdhbUNI35jk",
+                  "location": {
+                    "lat": -33.8638229,
+                    "lng": 151.2124831
+                  }
+                },
+                {
+                  "name": "AC Art Space",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "1/66 King Street, Sydney",
+                  "place_id": "ChIJdw4nZj-uEmsRhsHP5DxmE_k",
+                  "location": {
+                    "lat": -33.86848820000001,
+                    "lng": 151.2062538
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Sydney",
+                  "types": [
+                    "colloquial_area",
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Sydney",
+                  "place_id": "ChIJP3Sa8ziYEmsRUKgyFmh9AQM",
+                  "location": {
+                    "lat": -33.8622503,
+                    "lng": 151.207684
+                  }
+                },
+                {
+                  "name": "Sofitel Sydney Wentworth",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 4313,
+                  "vicinity": "Sofitel Sydney Wentworth 61, 101 Phillip Street, Sydney",
+                  "place_id": "ChIJOdOLbGquEmsR6oPJgVpzjxg",
+                  "location": {
+                    "lat": -33.8653817,
+                    "lng": 151.2111873
+                  }
+                },
+                {
+                  "name": "InterContinental Sydney by IHG",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 4649,
+                  "vicinity": "16 Phillip Street, Sydney",
+                  "place_id": "ChIJV2sXvWmuEmsRcr4eLuIQ8wc",
+                  "location": {
+                    "lat": -33.8629015,
+                    "lng": 151.2122407
+                  }
+                },
+                {
+                  "name": "QT Sydney",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 2041,
+                  "vicinity": "49 Market Street, Sydney",
+                  "place_id": "ChIJK6RwVT6uEmsRQ447JSUTGGI",
+                  "location": {
+                    "lat": -33.8709065,
+                    "lng": 151.2075485
+                  }
+                },
+                {
+                  "name": "The Grace Sydney",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 3214,
+                  "vicinity": "77 York Street, Sydney",
+                  "place_id": "ChIJnzcAQT-uEmsRHzT8I_C279w",
+                  "location": {
+                    "lat": -33.86896410000001,
+                    "lng": 151.2058908
+                  }
+                }
+              ]
+            },
+            "total_places_found": 38,
+            "photo_timestamp": "2024:09:14 12:11:24",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.9592452049255371
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/93.heic"
+    },
+    {
+      "image_filename": "93.heic",
+      "timestamp": "2026-01-28T07:28:02.014298",
+      "processing_time_seconds": 64.675478,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "State Library of New South Wales Reading Room, Sydney, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The identification is based on the distinctive architectural features and layout typical of the State Library of New South Wales, a well-known library in Sydney.",
+            "detailed_description": "The image depicts a large reading room within the State Library of New South Wales in Sydney, Australia. The room features high ceilings with a grid of skylights that allow natural light to illuminate the space. The walls are lined with bookshelves filled with books, and there are tables and chairs arranged for study and reading. The architectural style is characterized by its spaciousness and classical design elements, including decorative moldings and a patterned carpet.",
+            "identification": {
+              "primary": [
+                "State Library of New South Wales Reading Room"
+              ],
+              "location": "Sydney, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Reading Room",
+                "type": "library",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "library",
+              "architecture",
+              "reading_room",
+              "Sydney",
+              "Australia"
+            ],
+            "location": "Sydney, Australia",
+            "type": "library",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"State Library of New South Wales Reading Room\"],\n        \"location\": \"Sydney, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Reading Room\",\n            \"type\": \"library\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"library\", \"architecture\", \"reading_room\", \"Sydney\", \"Australia\"],\n    \"description\": \"The image depicts a large reading room within the State Library of New South Wales in Sydney, Australia. The room features high ceilings with a grid of skylights that allow natural light to illuminate the space. The walls are lined with bookshelves filled with books, and there are tables and chairs arranged for study and reading. The architectural style is characterized by its spaciousness and classical design elements, including decorative moldings and a patterned carpet.\",\n    \"reasoning\": \"The identification is based on the distinctive architectural features and layout typical of the State Library of New South Wales, a well-known library in Sydney.\",\n    \"type\": \"library\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "processing_time_seconds": 9.956771850585938
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a grand library interior characterized by a large, open reading room. The ceiling is adorned with a series of rectangular skylights, allowing natural light to flood the space. The skylights are framed by a grid-like structure, creating a pattern of light and shadow across the room. The walls are lined with extensive bookshelves, filled with a vast collection of books, reaching up to the ceiling. The shelves are framed by classical architectural elements, including columns and d",
+            "description": "The image depicts a grand library interior characterized by a large, open reading room. The ceiling is adorned with a series of rectangular skylights, allowing natural light to flood the space. The skylights are framed by a grid-like structure, creating a pattern of light and shadow across the room. The walls are lined with extensive bookshelves, filled with a vast collection of books, reaching up to the ceiling. The shelves are framed by classical architectural elements, including columns and d",
+            "architectural_style": "Classical with modern elements",
+            "search_backends_used": [],
+            "processing_time_seconds": 54.43623399734497
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Ernie Pyle Public Library",
+          "confidence": 1.0607999563217163,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "all_candidates": [
+              {
+                "source": "web",
+                "name": "Ernie Pyle Public Library",
+                "score": 1.0607999563217163
+              },
+              {
+                "source": "label",
+                "name": "Furniture",
+                "score": 0.9177414178848267
+              },
+              {
+                "source": "web",
+                "name": "Phoenix Public Library",
+                "score": 0.8659499883651733
+              },
+              {
+                "source": "object",
+                "name": "Chair",
+                "score": 0.864762008190155
+              },
+              {
+                "source": "web",
+                "name": "Public Library",
+                "score": 0.8057533502578735
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Ernie Pyle Public Library",
+                "score": 1.0607999563217163
+              },
+              {
+                "name": "Phoenix Public Library",
+                "score": 0.8659499883651733
+              },
+              {
+                "name": "Public Library",
+                "score": 0.8057533502578735
+              },
+              {
+                "name": "Anderson Public Library",
+                "score": 0.7276999950408936
+              },
+              {
+                "name": "Library",
+                "score": 0.7149999737739563
+              }
+            ],
+            "objects": [
+              {
+                "name": "Chair",
+                "score": 0.864762008190155
+              },
+              {
+                "name": "Person",
+                "score": 0.7496290802955627
+              },
+              {
+                "name": "Person",
+                "score": 0.7269694805145264
+              },
+              {
+                "name": "Clothing",
+                "score": 0.6941117644309998
+              },
+              {
+                "name": "Person",
+                "score": 0.6920992732048035
+              }
+            ],
+            "labels": [
+              {
+                "name": "Furniture",
+                "score": 0.9177414178848267
+              },
+              {
+                "name": "Hall",
+                "score": 0.7509881854057312
+              },
+              {
+                "name": "Varnish",
+                "score": 0.6824095249176025
+              },
+              {
+                "name": "Public library",
+                "score": 0.6591238975524902
+              },
+              {
+                "name": "Shelf",
+                "score": 0.6454957723617554
+              }
+            ],
+            "processing_time_seconds": 24.82017993927002
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/93.heic"
+    }
+  ]
+}

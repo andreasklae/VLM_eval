@@ -1,0 +1,902 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "71.jpg",
+      "timestamp": "2026-01-28T06:43:00.742243",
+      "processing_time_seconds": 61.294916,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 44.12948611111111,
+        "gps_longitude": 9.699002777777778,
+        "location": {
+          "formatted_address": "Località Prevo, 4, 19018 Vernazza SP, Italy",
+          "city": null,
+          "county": "Provincia della Spezia",
+          "country": "Italy"
+        },
+        "datetime_original": "2023:06:23 15:24:57",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Cinque Terre coastline, Provincia della Spezia, Italy",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Provincia della Spezia, Italy, which is home to the Cinque Terre. The distinctive coastline and Mediterranean setting align with this region.",
+            "detailed_description": "The image shows a stunning coastal landscape typical of the Cinque Terre region in Italy. The view includes rugged cliffs, lush greenery, and the deep blue waters of the Mediterranean Sea. The coastline is characterized by its dramatic cliffs and picturesque villages nestled along the shore. The area is known for its natural beauty and is a popular tourist destination.",
+            "identification": {
+              "primary": [
+                "Cinque Terre coastline"
+              ],
+              "location": "Provincia della Spezia, Italy",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Coastal landscape",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "coastline",
+              "Mediterranean",
+              "Italy",
+              "Cinque_Terre"
+            ],
+            "location": "Provincia della Spezia, Italy",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Liguria coastline",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The Liguria region has similar coastal features, and the Cinque Terre is part of this area."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Cinque Terre coastline\"],\n        \"location\": \"Provincia della Spezia, Italy\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Coastal landscape\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"coastline\", \"Mediterranean\", \"Italy\", \"Cinque_Terre\"],\n    \"description\": \"The image shows a stunning coastal landscape typical of the Cinque Terre region in Italy. The view includes rugged cliffs, lush greenery, and the deep blue waters of the Mediterranean Sea. The coastline is characterized by its dramatic cliffs and picturesque villages nestled along the shore. The area is known for its natural beauty and is a popular tourist destination.\",\n    \"reasoning\": \"The location metadata indicates Provincia della Spezia, Italy, which is home to the Cinque Terre. The distinctive coastline and Mediterranean setting align with this region.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Liguria coastline\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The Liguria region has similar coastal features, and the Cinque Terre is part of this area.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": 44.12948611111111,
+              "longitude": 9.699002777777778
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Località Prevo, 4, 19018 Vernazza SP, Italy",
+              "city": null,
+              "county": "Provincia della Spezia",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2023:06:23 15:24:57",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 10.106490135192871
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image captures a stunning coastal landscape in the Provincia della Spezia, Italy. The main visual subject is a rugged peninsula jutting into the sea, characterized by steep cliffs and dense vegetation. The cliffs are rocky and appear to be composed of grey stone, contrasting with the vibrant greenery that covers much of the landmass. The peninsula is surrounded by deep blue waters, with visible waves crashing against the rocky shoreline, creating white foam. To the left of the peninsula, the",
+            "description": "The image captures a stunning coastal landscape in the Provincia della Spezia, Italy. The main visual subject is a rugged peninsula jutting into the sea, characterized by steep cliffs and dense vegetation. The cliffs are rocky and appear to be composed of grey stone, contrasting with the vibrant greenery that covers much of the landmass. The peninsula is surrounded by deep blue waters, with visible waves crashing against the rocky shoreline, creating white foam. To the left of the peninsula, the",
+            "architectural_style": "Traditional Italian architecture",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 44.12948611111111,
+              "longitude": 9.699002777777778
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Località Prevo, 4, 19018 Vernazza SP, Italy",
+              "city": null,
+              "county": "Provincia della Spezia",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2023:06:23 15:24:57",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 50.60536479949951
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Terrain",
+          "confidence": 0.893753707408905,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Terrain",
+                "score": 0.893753707408905
+              },
+              {
+                "source": "label",
+                "name": "Coast",
+                "score": 0.7336793541908264
+              },
+              {
+                "source": "web",
+                "name": "sea-m",
+                "score": 0.4341999888420105
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "sea-m",
+                "score": 0.4341999888420105
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Terrain",
+                "score": 0.893753707408905
+              },
+              {
+                "name": "Coast",
+                "score": 0.7336793541908264
+              },
+              {
+                "name": "Cliff",
+                "score": 0.6552964448928833
+              },
+              {
+                "name": "Ridge",
+                "score": 0.5962132811546326
+              },
+              {
+                "name": "Bay",
+                "score": 0.5633832812309265
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 44.12948611111111,
+              "longitude": 9.699002777777778
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Località Prevo, 4, 19018 Vernazza SP, Italy",
+              "city": null,
+              "county": "Provincia della Spezia",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2023:06:23 15:24:57",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 18.91496205329895
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Provincia della Spezia, Italy",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Provincia della Spezia, Italy",
+            "coordinates": {
+              "latitude": 44.12948611111111,
+              "longitude": 9.699002777777778
+            },
+            "search_range_meters": 5000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Parco Nazionale delle Cinque Terre",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 46691,
+                  "vicinity": "SP",
+                  "place_id": "ChIJgQ0GVynw1BIRq9YuQlZ6PVI",
+                  "location": {
+                    "lat": 44.12810899999999,
+                    "lng": 9.7123907
+                  }
+                },
+                {
+                  "name": "Cantina Cheo",
+                  "types": [
+                    "tourist_attraction",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 115,
+                  "vicinity": "Via Brigate Partigiane, 1, Vernazza",
+                  "place_id": "ChIJd9kQRSnw1BIRJbOck8997Ao",
+                  "location": {
+                    "lat": 44.13606189999999,
+                    "lng": 9.684638299999998
+                  }
+                },
+                {
+                  "name": "Sentiero Monterosso - Vernazza",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1281,
+                  "vicinity": "Vernazza",
+                  "place_id": "ChIJdY-jN9Xx1BIRFJrmHxVp1tU",
+                  "location": {
+                    "lat": 44.1383538,
+                    "lng": 9.678099800000002
+                  }
+                },
+                {
+                  "name": "Agricultural Cooperative Society 5 Terre",
+                  "types": [
+                    "tourist_attraction",
+                    "liquor_store",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 142,
+                  "vicinity": "Via Piave, Vernazza",
+                  "place_id": "ChIJ26PPkDDs1BIRKBKtZv3--7w",
+                  "location": {
+                    "lat": 44.1153059,
+                    "lng": 9.7371292
+                  }
+                },
+                {
+                  "name": "Bel Mar Boat Tours - Cinque Terre Boat Tours",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "travel_agency",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 130,
+                  "vicinity": "Molo dei Pescatori, Monterosso al Mare",
+                  "place_id": "ChIJjbhuOR_u1BIR8JpgZWc15-o",
+                  "location": {
+                    "lat": 44.14461559999999,
+                    "lng": 9.654585899999999
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Mulino di Pié de Campu",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "Via Molini, Manarola",
+                  "place_id": "ChIJvc3PB5P71BIRkp8uzGJ6rnw",
+                  "location": {
+                    "lat": 44.10725799999999,
+                    "lng": 9.730523499999999
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Il Sorriso di Vernazza - Pensione Sorriso",
+                  "types": [
+                    "bar",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 139,
+                  "vicinity": "Via Gavino, 4, Vernazza",
+                  "place_id": "ChIJu4REVTY93BIRgNHVjbSARFU",
+                  "location": {
+                    "lat": 44.1353969,
+                    "lng": 9.685043199999999
+                  }
+                },
+                {
+                  "name": "Hotel Albergo Degli Amici",
+                  "types": [
+                    "bar",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 255,
+                  "vicinity": "Via Buranco, 36, Monterosso al Mare",
+                  "place_id": "ChIJ6x762xju1BIRRCPN7wqK3d8",
+                  "location": {
+                    "lat": 44.1473678,
+                    "lng": 9.654092400000001
+                  }
+                },
+                {
+                  "name": "Ristorante Pizzeria Da Ely",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 854,
+                  "vicinity": "Via Vittorio Emanuele, 15, Monterosso al Mare",
+                  "place_id": "ChIJ7V0yyRju1BIRYxZ0zZiyNTw",
+                  "location": {
+                    "lat": 44.14673059999999,
+                    "lng": 9.6547143
+                  }
+                },
+                {
+                  "name": "Belforte",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 1497,
+                  "vicinity": "Via Gerolamo Guidoni, 42, Vernazza",
+                  "place_id": "ChIJzd8fhivw1BIRnSS2YXHnks0",
+                  "location": {
+                    "lat": 44.1350185,
+                    "lng": 9.681528199999999
+                  }
+                },
+                {
+                  "name": "Ristorante La Torre",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 2089,
+                  "vicinity": "Loc. Preteccia, 1, Vernazza",
+                  "place_id": "ChIJO42Gti7w1BIRgB5GiBRHWH8",
+                  "location": {
+                    "lat": 44.1338689,
+                    "lng": 9.6853502
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Parco Nazionale delle Cinque Terre",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 46691,
+                  "vicinity": "SP",
+                  "place_id": "ChIJgQ0GVynw1BIRq9YuQlZ6PVI",
+                  "location": {
+                    "lat": 44.12810899999999,
+                    "lng": 9.7123907
+                  }
+                },
+                {
+                  "name": "Bordone Davide",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Vico Chiuso della Marina, 17, Riomaggiore",
+                  "place_id": "ChIJaSkAFoP61BIRRzP2JQTp_48",
+                  "location": {
+                    "lat": 44.1068851,
+                    "lng": 9.7279666
+                  }
+                },
+                {
+                  "name": "Bel Mar Boat Tours - Cinque Terre Boat Tours",
+                  "types": [
+                    "tourist_attraction",
+                    "travel_agency",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 130,
+                  "vicinity": "Molo dei Pescatori, Monterosso al Mare",
+                  "place_id": "ChIJjbhuOR_u1BIR8JpgZWc15-o",
+                  "location": {
+                    "lat": 44.14461559999999,
+                    "lng": 9.654585899999999
+                  }
+                },
+                {
+                  "name": "Ente Parco Area Marina Protetta delle Cinque Terre",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 162,
+                  "vicinity": "Via Antonio Discovolo, Manarola",
+                  "place_id": "ChIJH9YMU4P61BIR41cA4Y6DTC4",
+                  "location": {
+                    "lat": 44.1075878,
+                    "lng": 9.7300121
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Oratorio Mortis et Orationis - Confraternita dei Neri",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 89,
+                  "vicinity": "Piazza Don Giovanni Minzoni, 1, Monterosso al Mare",
+                  "place_id": "ChIJW4WQyBju1BIRHyEzdUomQMQ",
+                  "location": {
+                    "lat": 44.1467575,
+                    "lng": 9.6544944
+                  }
+                },
+                {
+                  "name": "Chiesa della Madonna di San Bernardino",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 23,
+                  "vicinity": "San Bernardino",
+                  "place_id": "ChIJWbDtu5_x1BIRhJXZnldRdGM",
+                  "location": {
+                    "lat": 44.13201309999999,
+                    "lng": 9.701795599999997
+                  }
+                },
+                {
+                  "name": "cappella dei flagellati corniglia",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 17,
+                  "vicinity": "Via Fieschi, 153, Corniglia",
+                  "place_id": "ChIJEaZFEhPw1BIRuwa-yEwQark",
+                  "location": {
+                    "lat": 44.1199008,
+                    "lng": 9.7080876
+                  }
+                },
+                {
+                  "name": "Chiesa Di San Pietro",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 167,
+                  "vicinity": "Via Fieschi, 19, Corniglia",
+                  "place_id": "ChIJtwsRVRLw1BIR14NjBNzcBls",
+                  "location": {
+                    "lat": 44.1206611,
+                    "lng": 9.709541799999998
+                  }
+                },
+                {
+                  "name": "Church of St. Margaret of Antioch",
+                  "types": [
+                    "church",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 425,
+                  "vicinity": "Via G M Pensa, 5, Vernazza",
+                  "place_id": "ChIJGWMglCvw1BIR_Rvl9M9avbo",
+                  "location": {
+                    "lat": 44.1354355,
+                    "lng": 9.682613199999997
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Susie Barrow Art Studio",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Località Muro, 3, Vernazza",
+                  "place_id": "ChIJZ6n2HnHx1BIRVqcL02nq2ps",
+                  "location": {
+                    "lat": 44.13711850000001,
+                    "lng": 9.702171000000003
+                  }
+                },
+                {
+                  "name": "Calandra Art Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 29,
+                  "vicinity": "Via Antonio Discovolo, 295, Manarola",
+                  "place_id": "ChIJY5ZZVJv61BIR5ca8eJp5vOk",
+                  "location": {
+                    "lat": 44.1067827,
+                    "lng": 9.728629499999998
+                  }
+                },
+                {
+                  "name": "Bottega Imago Photo Graphic Art Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Via Roma, 31, Monterosso al Mare",
+                  "place_id": "ChIJDZVRboXv1BIRwgthCCHg1Nk",
+                  "location": {
+                    "lat": 44.14803310000001,
+                    "lng": 9.654793399999999
+                  }
+                },
+                {
+                  "name": "Galleria D'Arte Sciaccheart Riomaggiore",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.4,
+                  "user_ratings_total": 16,
+                  "vicinity": "Via San Giacomo, 51, Riomaggiore",
+                  "place_id": "ChIJI4sIr4n61BIRqSa8bawiG2Q",
+                  "location": {
+                    "lat": 44.09898620000001,
+                    "lng": 9.7379488
+                  }
+                },
+                {
+                  "name": "Chiaressenza",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Salita Castello, 195, Riomaggiore",
+                  "place_id": "ChIJKzR_co_71BIRFftBphrcHEw",
+                  "location": {
+                    "lat": 44.0986783,
+                    "lng": 9.7373402
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Riomaggiore",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Riomaggiore",
+                  "place_id": "ChIJB4uscYn61BIRgGX4h7QPnhE",
+                  "location": {
+                    "lat": 44.1001801,
+                    "lng": 9.7376008
+                  }
+                },
+                {
+                  "name": "Hotel Gianni Franzi",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 187,
+                  "vicinity": "Via San Giovanni Battista, 41/47/49, Piazza Guglielmo Marconi, 1, Vernazza",
+                  "place_id": "ChIJg2M4VIfl1BIRJQdUcT_Aig4",
+                  "location": {
+                    "lat": 44.1348185,
+                    "lng": 9.6828443
+                  }
+                },
+                {
+                  "name": "Restaurant Hotel Porto Roca",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 436,
+                  "vicinity": "Via Corone, 1, Monterosso al Mare",
+                  "place_id": "ChIJzbTKkiHu1BIR7_ca-fZvY-M",
+                  "location": {
+                    "lat": 44.1449904,
+                    "lng": 9.658415999999999
+                  }
+                },
+                {
+                  "name": "Stella della Marina",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 205,
+                  "vicinity": "Via XX Settembre, 11, Monterosso al Mare",
+                  "place_id": "ChIJg9P-uBju1BIRWowQX6J1Gyk",
+                  "location": {
+                    "lat": 44.14706959999999,
+                    "lng": 9.6551685
+                  }
+                },
+                {
+                  "name": "Affittacamere Da Cesare",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 39,
+                  "vicinity": "Italy",
+                  "place_id": "ChIJkWPDJhnu1BIR-E-u6oFHNkQ",
+                  "location": {
+                    "lat": 44.1473389,
+                    "lng": 9.6534439
+                  }
+                }
+              ]
+            },
+            "total_places_found": 30,
+            "photo_timestamp": "2023:06:23 15:24:57",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.3665201663970947
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/71.jpg"
+    },
+    {
+      "image_filename": "71.jpg",
+      "timestamp": "2026-01-28T06:44:02.072160",
+      "processing_time_seconds": 59.594966,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Cinque Terre coastline, Liguria, Italy",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive coastline and the presence of a small settlement suggest the Cinque Terre area, which is famous for its rugged terrain and beautiful sea views.",
+            "detailed_description": "The image depicts a stunning coastal landscape, likely part of the Cinque Terre region in Liguria, Italy. The view includes rugged cliffs covered with vegetation, a deep blue sea, and a small settlement nestled along the coastline. The area is known for its dramatic scenery and picturesque villages.",
+            "identification": {
+              "primary": [
+                "Cinque Terre coastline"
+              ],
+              "location": "Liguria, Italy",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Coastal landscape with cliffs and sea",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "coastline",
+              "Mediterranean",
+              "natural_feature",
+              "Italy",
+              "landscape"
+            ],
+            "location": "Liguria, Italy",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Amalfi Coast",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "The landscape resembles other coastal areas in Italy, such as the Amalfi Coast, known for similar features."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Cinque Terre coastline\"],\n        \"location\": \"Liguria, Italy\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Coastal landscape with cliffs and sea\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"coastline\", \"Mediterranean\", \"natural_feature\", \"Italy\", \"landscape\"],\n    \"description\": \"The image depicts a stunning coastal landscape, likely part of the Cinque Terre region in Liguria, Italy. The view includes rugged cliffs covered with vegetation, a deep blue sea, and a small settlement nestled along the coastline. The area is known for its dramatic scenery and picturesque villages.\",\n    \"reasoning\": \"The distinctive coastline and the presence of a small settlement suggest the Cinque Terre area, which is famous for its rugged terrain and beautiful sea views.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Amalfi Coast\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The landscape resembles other coastal areas in Italy, such as the Amalfi Coast, known for similar features.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 9.922241926193237
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image captures a stunning coastal landscape featuring a rugged, mountainous peninsula jutting into the sea. The peninsula is covered with dense greenery, suggesting a mix of Mediterranean vegetation typical of coastal regions. The rocky cliffs are prominent, with some areas showing exposed stone surfaces, adding to the dramatic natural beauty. The sea is a vibrant shade of blue, with gentle waves creating white foam as they crash against the rocky shoreline. The coastline curves gently, lead",
+            "description": "The image captures a stunning coastal landscape featuring a rugged, mountainous peninsula jutting into the sea. The peninsula is covered with dense greenery, suggesting a mix of Mediterranean vegetation typical of coastal regions. The rocky cliffs are prominent, with some areas showing exposed stone surfaces, adding to the dramatic natural beauty. The sea is a vibrant shade of blue, with gentle waves creating white foam as they crash against the rocky shoreline. The coastline curves gently, lead",
+            "architectural_style": "Coastal village architecture",
+            "search_backends_used": [],
+            "processing_time_seconds": 49.671435832977295
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Terrain",
+          "confidence": 0.893753707408905,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Terrain",
+                "score": 0.893753707408905
+              },
+              {
+                "source": "label",
+                "name": "Coast",
+                "score": 0.7336793541908264
+              },
+              {
+                "source": "web",
+                "name": "sea-m",
+                "score": 0.4341999888420105
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "sea-m",
+                "score": 0.4341999888420105
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Terrain",
+                "score": 0.893753707408905
+              },
+              {
+                "name": "Coast",
+                "score": 0.7336793541908264
+              },
+              {
+                "name": "Cliff",
+                "score": 0.6552964448928833
+              },
+              {
+                "name": "Ridge",
+                "score": 0.5962132811546326
+              },
+              {
+                "name": "Bay",
+                "score": 0.5633832812309265
+              }
+            ],
+            "processing_time_seconds": 19.76720118522644
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/71.jpg"
+    }
+  ]
+}

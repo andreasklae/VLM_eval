@@ -1,0 +1,2387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Recognition Evaluation</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  html, body { height: 100%; margin: 0; }
+  .btn-group button { transition: all 0.1s; }
+  .btn-group button.selected { font-weight: 700; transform: scale(1.05); }
+  .btn-spec.selected { background: #2563eb; color: #fff; }
+  .btn-corr-pos.selected { background: #16a34a; color: #fff; }
+  .btn-corr-zero.selected { background: #9ca3af; color: #fff; }
+  .btn-corr-neg.selected { background: #dc2626; color: #fff; }
+  .btn-desc.selected { background: #7c3aed; color: #fff; }
+  .btn-na.selected { background: #6b7280; color: #fff; }
+  .btn-scene.selected { background: #0891b2; color: #fff; }
+  .claim-card.scene { border-left-color: #0891b2; }
+  .btn-bonus.selected { background: #ca8a04; color: #fff; }
+  .claim-card.bonus { border-left-color: #ca8a04; }
+  .btn-also-ent.selected { background: #7c3aed; color: #fff; }
+  .claim-card.also-entity { border-left-color: #7c3aed; }
+  .also-entity-controls { display: none; margin-top: 4px; }
+  .claim-card.also-entity .also-entity-controls { display: flex; }
+  .claim-card-incomplete { border-left: 3px solid #dc2626; background: #fef2f2; }
+  a.val-link { color: #b45309; cursor: pointer; }
+  a.val-link:hover { color: #92400e; }
+  .accordion-section-incomplete > button:first-child { border-left: 3px solid #dc2626; }
+  .btn-diff-easy.selected { background: #16a34a; color: #fff; }
+  .btn-diff-med.selected { background: #d97706; color: #fff; }
+  .btn-diff-hard.selected { background: #dc2626; color: #fff; }
+  .claim-card.na { opacity: 0.5; border-left-color: #9ca3af; }
+  .accordion-body { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+  .accordion-body.open { max-height: none; }
+  .claim-card { border-left: 4px solid #e5e7eb; }
+  .claim-card.scored { border-left-color: #2563eb; }
+  .claim-card.flagged { border-left-color: #f59e0b; }
+  #image-panel img { max-height: 50vh; object-fit: contain; }
+  .gt-badge { font-size: 0.7rem; padding: 1px 6px; border-radius: 9999px; }
+  .progress-fill { transition: width 0.3s; }
+  .unsaved-dot { width: 8px; height: 8px; border-radius: 50%; background: #f59e0b; display: inline-block; }
+  /* Modal */
+  .modal-bg { position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 50; display: none; align-items: center; justify-content: center; }
+  .modal-bg.show { display: flex; }
+</style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+<!-- Top bar -->
+<header class="bg-white border-b px-4 py-2 flex items-center justify-between sticky top-0 z-40 shadow-sm">
+  <div class="flex items-center gap-4">
+    <h1 class="text-lg font-bold">Evaluation UI</h1>
+    <span id="progress-text" class="text-sm text-gray-500">Loading...</span>
+    <span id="current-image-status" class="text-xs px-2 py-0.5 rounded"></span>
+  </div>
+  <div class="flex items-center gap-2">
+    <button onclick="showReference()" class="text-xs border rounded px-2 py-1 hover:bg-gray-100">Scoring Reference</button>
+    <select id="jump-select" onchange="jumpToImage(this.value)" class="border rounded px-2 py-1 text-sm"></select>
+    <button onclick="navigateImage(-1)" class="border rounded px-3 py-1 hover:bg-gray-100 font-mono">&lt; Prev</button>
+    <button onclick="navigateImage(1)" class="border rounded px-3 py-1 hover:bg-gray-100 font-mono">Next &gt;</button>
+  </div>
+</header>
+
+<!-- Progress bar -->
+<div class="w-full bg-gray-200 h-1.5">
+  <div id="progress-bar" class="progress-fill bg-blue-600 h-1.5" style="width:0%"></div>
+</div>
+
+<!-- Main layout -->
+<div class="flex" style="height: calc(100vh - 52px);">
+
+  <!-- Left panel: Image + Ground truth -->
+  <div id="left-panel" class="w-2/5 overflow-y-auto border-r bg-white p-4 flex flex-col gap-4">
+    <!-- Image -->
+    <div id="image-panel" class="flex flex-col items-center">
+      <div class="text-sm text-gray-500 mb-1" id="image-label">Image --/--</div>
+      <img id="main-image" src="" alt="Test image" class="rounded shadow max-w-full" />
+    </div>
+
+    <!-- Ground truth -->
+    <div id="gt-section">
+      <h2 class="font-semibold text-sm mb-1 flex items-center gap-2">
+        Ground Truth
+        <span id="gt-max-spec" class="gt-badge bg-blue-100 text-blue-800"></span>
+      </h2>
+      <p id="gt-description" class="text-xs text-gray-600 mb-2 italic"></p>
+      <div id="gt-difficulty-orig" class="text-xs text-gray-400 mb-1 italic"></div>
+      <div class="flex gap-4 mb-2">
+        <div class="flex items-center gap-1">
+          <span class="text-xs font-semibold text-gray-500">Difficulty (with GPS):</span>
+          <div class="btn-group flex gap-0.5" id="gt-diff-gps">
+            <button class="btn-diff-easy border rounded px-2 py-0 text-xs" data-val="easy" onclick="setDifficulty('with_gps',this)">Easy</button>
+            <button class="btn-diff-med border rounded px-2 py-0 text-xs" data-val="medium" onclick="setDifficulty('with_gps',this)">Medium</button>
+            <button class="btn-diff-hard border rounded px-2 py-0 text-xs" data-val="hard" onclick="setDifficulty('with_gps',this)">Hard</button>
+          </div>
+        </div>
+        <div class="flex items-center gap-1">
+          <span class="text-xs font-semibold text-gray-500">Difficulty (no GPS):</span>
+          <div class="btn-group flex gap-0.5" id="gt-diff-nogps">
+            <button class="btn-diff-easy border rounded px-2 py-0 text-xs" data-val="easy" onclick="setDifficulty('without_gps',this)">Easy</button>
+            <button class="btn-diff-med border rounded px-2 py-0 text-xs" data-val="medium" onclick="setDifficulty('without_gps',this)">Medium</button>
+            <button class="btn-diff-hard border rounded px-2 py-0 text-xs" data-val="hard" onclick="setDifficulty('without_gps',this)">Hard</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-1 mb-2">
+        <span class="text-xs font-semibold text-gray-500">Image category:</span>
+        <div class="btn-group flex gap-0.5 flex-wrap" id="gt-image-categories">
+          <button class="border rounded px-2 py-0 text-xs" data-val="landmark" onclick="toggleImageCategory(this)">Landmark / Monument</button>
+          <button class="border rounded px-2 py-0 text-xs" data-val="urban" onclick="toggleImageCategory(this)">Urban / Built Environment</button>
+          <button class="border rounded px-2 py-0 text-xs" data-val="nature" onclick="toggleImageCategory(this)">Nature / Landscape</button>
+          <button class="border rounded px-2 py-0 text-xs" data-val="art" onclick="toggleImageCategory(this)">Art</button>
+          <button class="border rounded px-2 py-0 text-xs" data-val="other" onclick="toggleImageCategory(this)">Other</button>
+        </div>
+      </div>
+
+      <div class="mb-2">
+        <div class="text-xs font-semibold text-gray-500 mb-0.5">Locations</div>
+        <div id="gt-locations" class="text-xs space-y-0.5"></div>
+      </div>
+      <div class="mb-2">
+        <div class="text-xs font-semibold text-gray-500 mb-0.5">Entities</div>
+        <div id="gt-entities" class="text-xs space-y-0.5"></div>
+      </div>
+      <div class="mb-2">
+        <div class="text-xs font-semibold text-gray-500 mb-0.5">GPS Metadata</div>
+        <div id="gt-gps" class="text-xs text-gray-600"></div>
+      </div>
+      <div class="mb-2">
+        <div class="text-xs font-semibold text-gray-500 mb-0.5">Scene / Key Elements</div>
+        <div id="gt-scene" class="text-xs text-gray-600"></div>
+      </div>
+
+      <div class="flex gap-2 mt-2">
+        <button onclick="openAddGTModal('location')" class="text-xs border rounded px-2 py-1 hover:bg-blue-50 text-blue-700 border-blue-300">+ Add GT Location</button>
+        <button onclick="openAddGTModal('entity')" class="text-xs border rounded px-2 py-1 hover:bg-blue-50 text-blue-700 border-blue-300">+ Add GT Entity</button>
+      </div>
+    </div>
+
+    <!-- Image-level controls -->
+    <div class="border-t pt-3">
+      <div class="mb-2">
+        <label class="text-xs font-semibold text-gray-500">Evaluator Notes</label>
+        <textarea id="evaluator-notes" rows="2" class="w-full border rounded px-2 py-1 text-xs mt-1" placeholder="Optional notes about this image..."></textarea>
+      </div>
+    </div>
+
+    <!-- Progress / validation overview -->
+    <div id="validation-overview" class="border-t pt-3 pb-2 text-xs border border-gray-200 rounded px-2">
+      <div id="validation-summary" class="font-semibold text-gray-600 mb-1">Progress</div>
+      <div id="validation-details" class="text-gray-500 max-h-32 overflow-y-auto"></div>
+    </div>
+
+    <!-- Submit -->
+    <div class="border-t pt-3 flex gap-2">
+      <button onclick="submitEvaluation()" class="flex-1 bg-blue-600 text-white rounded px-4 py-2 font-semibold hover:bg-blue-700 text-sm">
+        Submit &amp; Next
+      </button>
+      <button onclick="saveProgress()" class="border rounded px-4 py-2 text-sm hover:bg-gray-100">
+        Save Draft
+      </button>
+    </div>
+    <div class="flex justify-center mt-1">
+      <button onclick="skipImage()" class="text-xs text-gray-400 hover:text-red-500 hover:underline">Skip (exclude from evaluation)</button>
+    </div>
+    <div id="save-status" class="text-xs text-center text-gray-400"></div>
+  </div>
+
+  <!-- Right panel: Approach evaluations -->
+  <div id="right-panel" class="flex-1 overflow-y-auto p-4">
+    <div id="approaches-container"></div>
+  </div>
+</div>
+
+<!-- Scoring Reference Modal -->
+<div id="reference-modal" class="modal-bg" onclick="if(event.target===this)this.classList.remove('show')">
+  <div class="bg-white rounded-lg shadow-xl p-6 max-w-lg max-h-[80vh] overflow-y-auto">
+    <h2 class="font-bold text-lg mb-3">Scoring Reference</h2>
+    <div class="text-sm space-y-3">
+      <div>
+        <h3 class="font-semibold">Specificity (1-5)</h3>
+        <table class="text-xs w-full mt-1">
+          <tr><td class="pr-2 font-mono">1</td><td><b>Locations:</b> Continent / broad region &nbsp; <b>Entities:</b> Very generic</td></tr>
+          <tr><td class="pr-2 font-mono">2</td><td><b>Locations:</b> Country &nbsp; <b>Entities:</b> Type/category</td></tr>
+          <tr><td class="pr-2 font-mono">3</td><td><b>Locations:</b> Region/state/county &nbsp; <b>Entities:</b> Recognizable sub-type</td></tr>
+          <tr><td class="pr-2 font-mono">4</td><td><b>Locations:</b> City/town/area &nbsp; <b>Entities:</b> Named category/style</td></tr>
+          <tr><td class="pr-2 font-mono">5</td><td><b>Locations:</b> Exact place/landmark &nbsp; <b>Entities:</b> Exact named identity</td></tr>
+        </table>
+      </div>
+      <div>
+        <h3 class="font-semibold">Correctness</h3>
+        <table class="text-xs w-full mt-1">
+          <tr><td class="pr-2 font-mono text-green-700">+1.0</td><td>Fully correct at claimed specificity</td></tr>
+          <tr><td class="pr-2 font-mono text-green-600">+0.5</td><td>Core ID right but minor factual errors</td></tr>
+          <tr><td class="pr-2 font-mono text-gray-500">0.0</td><td>Cannot determine / ambiguous / non-committal</td></tr>
+          <tr><td class="pr-2 font-mono text-red-500">-0.5</td><td>Plausible but wrong (close geographically/semantically)</td></tr>
+          <tr><td class="pr-2 font-mono text-red-700">-1.0</td><td>Clearly incorrect (wrong country/continent/entity)</td></tr>
+        </table>
+        <p class="text-xs text-gray-500 mt-1">Correct ID at less specific level = 1.0 at that lower specificity, not 0.5.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold">Description Score (1-5)</h3>
+        <table class="text-xs w-full mt-1">
+          <tr><td class="pr-2 font-mono">1</td><td>Confidently wrong</td></tr>
+          <tr><td class="pr-2 font-mono">2</td><td>Misses main subject</td></tr>
+          <tr><td class="pr-2 font-mono">3</td><td>Correct direction, less specific than achievable</td></tr>
+          <tr><td class="pr-2 font-mono">4</td><td>Correct and as specific as image allows</td></tr>
+          <tr><td class="pr-2 font-mono">5</td><td>Identifies landmarks, context, key visual elements</td></tr>
+        </table>
+        <p class="text-xs text-gray-500 mt-1">null for Google Cloud Vision (index 6).</p>
+      </div>
+    </div>
+    <button onclick="document.getElementById('reference-modal').classList.remove('show')" class="mt-4 border rounded px-4 py-1 text-sm hover:bg-gray-100">Close</button>
+  </div>
+</div>
+
+<!-- Add Ground Truth Modal -->
+<div id="gt-modal" class="modal-bg" onclick="if(event.target===this)this.classList.remove('show')">
+  <div class="bg-white rounded-lg shadow-xl p-6 max-w-md">
+    <h2 class="font-bold text-lg mb-3" id="gt-modal-title">Add Ground Truth</h2>
+    <div id="gt-modal-body"></div>
+  </div>
+</div>
+
+<script>
+// ===================================================================
+// State
+// ===================================================================
+let allImages = [];         // [{image_id, filename, status}]
+let currentIndex = 0;       // index into allImages
+let currentData = null;     // {eval_input, existing_eval}
+let dirty = false;          // unsaved changes
+const ENTITY_CATEGORIES = [
+  "landmark","building","natural_feature","monument","religious_site",
+  "cultural_site","artwork","public_space","infrastructure",
+  "architectural_style","district","signage","viewpoint","transport_hub",
+  "establishment","other"
+];
+
+const DESC_SCORE_LABELS = {
+  1: "Confidently wrong — describes something clearly not in the image",
+  2: "Misses main subject or is irrelevant",
+  3: "Correct direction but significantly less specific than achievable",
+  4: "Correct and as specific as the image reasonably allows",
+  5: "Correctly identifies specific landmarks, context, and key visual elements"
+};
+
+const CORR_LABELS = {
+  "1":   "Fully correct at the claimed specificity level",
+  "0.5": "Core identification right but minor factual errors",
+  "0":   "Cannot determine; too ambiguous; non-committal",
+  "-0.5":"Plausible but wrong: geographically or semantically close",
+  "-1":  "Clearly incorrect: wrong country/continent, wrong entity, unrelated"
+};
+
+const SPEC_LABELS = {
+  location: {
+    1: "Continent or broad multi-country region",
+    2: "Country",
+    3: "Sub-country region, state, or county",
+    4: "City, town, or named area",
+    5: "Exact place, street, or landmark address"
+  },
+  entity: {
+    1: "Very generic descriptor",
+    2: "Type or category",
+    3: "Recognizable sub-type",
+    4: "Named category or style",
+    5: "Exact named identity"
+  }
+};
+
+const APPROACHES = [
+  "GPT Vision Direct (strong)",
+  "GPT Vision Direct (fast)",
+  "GPT Vision + Search (strong)",
+  "GPT Vision + Search (fast)",
+  "Gemini Vision (strong)",
+  "Gemini Vision (fast)",
+  "Google Cloud Vision"
+];
+
+// ===================================================================
+// Initialization
+// ===================================================================
+async function init() {
+  const res = await fetch("/api/images");
+  allImages = await res.json();
+  populateJumpSelect();
+  updateProgress();
+  // Jump to first unevaluated
+  const firstPending = allImages.findIndex(img => img.status !== "complete" && img.status !== "skipped");
+  currentIndex = firstPending >= 0 ? firstPending : 0;
+  await loadImage(currentIndex);
+}
+
+function populateJumpSelect() {
+  const sel = document.getElementById("jump-select");
+  sel.innerHTML = "";
+  allImages.forEach((img, i) => {
+    const opt = document.createElement("option");
+    opt.value = i;
+    const marker = img.status === "complete" ? " [done]" : img.status === "skipped" ? " [skip]" : img.status === "in_progress" ? " [draft]" : "";
+    opt.textContent = `#${img.image_id} ${img.filename}${marker}`;
+    sel.appendChild(opt);
+  });
+}
+
+async function updateProgress() {
+  const res = await fetch("/api/progress");
+  const prog = await res.json();
+  let text = `${prog.evaluated} / ${prog.total} evaluated`;
+  if (prog.skipped > 0) text += ` (${prog.skipped} skipped)`;
+  document.getElementById("progress-text").textContent = text;
+  const pct = prog.total > 0 ? ((prog.evaluated + prog.skipped) / prog.total * 100) : 0;
+  document.getElementById("progress-bar").style.width = pct + "%";
+}
+
+// ===================================================================
+// Navigation
+// ===================================================================
+function navigateImage(delta) {
+  if (dirty && !confirm("You have unsaved changes. Discard?")) return;
+  const newIdx = currentIndex + delta;
+  if (newIdx < 0 || newIdx >= allImages.length) return;
+  currentIndex = newIdx;
+  loadImage(currentIndex);
+}
+
+function jumpToImage(idx) {
+  idx = parseInt(idx);
+  if (dirty && !confirm("You have unsaved changes. Discard?")) return;
+  currentIndex = idx;
+  loadImage(currentIndex);
+}
+
+// ===================================================================
+// Load image
+// ===================================================================
+async function loadImage(idx) {
+  dirty = false;
+  const img = allImages[idx];
+  document.getElementById("jump-select").value = idx;
+  document.getElementById("image-label").textContent =
+    `Image ${idx + 1}/${allImages.length}: #${img.image_id} (${img.filename})`;
+  document.getElementById("main-image").src = `/api/image/${img.image_id}/photo`;
+  document.getElementById("save-status").textContent = "";
+
+  const res = await fetch(`/api/image/${img.image_id}`);
+  currentData = await res.json();
+  const evalInput = currentData.eval_input;
+  const existing = currentData.existing_eval;
+
+  renderGroundTruth(evalInput.ground_truth);
+  renderApproaches(evalInput);
+  restoreExisting(existing);
+  updateValidationOverview();
+  updateAllMissedGt();
+  updateCurrentImageStatus();
+  if (window._validationInterval) clearInterval(window._validationInterval);
+  window._validationInterval = setInterval(() => { if (dirty) { updateValidationOverview(); updateAllMissedGt(); } }, 1500);
+}
+
+// ===================================================================
+// Render Ground Truth
+// ===================================================================
+function renderGroundTruth(gt) {
+  document.getElementById("gt-description").textContent = gt.description || "";
+  document.getElementById("gt-difficulty-orig").textContent = gt.difficulty ? `Original: ${gt.difficulty}` : "";
+  document.getElementById("gt-max-spec").textContent = gt.max_specificity || "";
+
+  // Restore difficulty buttons from GT
+  const diffGps = gt.difficulty_with_gps || null;
+  const diffNoGps = gt.difficulty_without_gps || null;
+  restoreDifficultyBtn("gt-diff-gps", diffGps);
+  restoreDifficultyBtn("gt-diff-nogps", diffNoGps);
+
+  // Restore image categories
+  const cats = gt.image_categories || [];
+  const catGroup = document.getElementById("gt-image-categories");
+  if (catGroup) {
+    catGroup.querySelectorAll("button").forEach(b => {
+      if (cats.includes(b.dataset.val)) b.classList.add("selected");
+      else b.classList.remove("selected");
+    });
+  }
+
+  // --- Locations ---
+  const locDiv = document.getElementById("gt-locations");
+  locDiv.innerHTML = "";
+  if (gt.locations && gt.locations.length > 0) {
+    gt.locations.forEach((loc, i) => {
+      const d = document.createElement("div");
+      d.className = "bg-blue-50 rounded px-2 py-0.5 flex items-center gap-1";
+      let html = `<span class="font-mono text-blue-700">[${i}]</span> <span class="flex-1">${esc(loc.name)}`;
+      if (loc.hierarchy) {
+        const parts = [loc.hierarchy.country, loc.hierarchy.region, loc.hierarchy.city, loc.hierarchy.exact].filter(Boolean);
+        html += ` <span class="text-gray-400">(${esc(parts.join(" > "))})</span>`;
+      }
+      if (loc.added_by) html += ` <span class="gt-badge bg-amber-100 text-amber-700">added</span>`;
+      html += `</span>`;
+      html += `<button onclick="editGTLocation(${i})" class="text-xs border border-blue-300 text-blue-700 rounded px-1.5 py-0 hover:bg-blue-50" title="Edit">Edit</button>`;
+      html += `<button onclick="deleteGTEntry('location',${i})" class="text-xs border border-red-300 text-red-600 rounded px-1.5 py-0 hover:bg-red-50" title="Delete">&times;</button>`;
+      html += `<button onclick="copyLocationToEntity(${i})" class="text-xs border border-green-300 text-green-700 rounded px-1.5 py-0 hover:bg-green-50 whitespace-nowrap" title="Copy as GT entity">&#8594; Ent</button>`;
+      d.innerHTML = html;
+      locDiv.appendChild(d);
+    });
+  } else {
+    locDiv.innerHTML = '<span class="text-gray-400">None</span>';
+  }
+
+  // --- Entities ---
+  const entDiv = document.getElementById("gt-entities");
+  entDiv.innerHTML = "";
+  if (gt.entities && gt.entities.length > 0) {
+    gt.entities.forEach((ent, i) => {
+      const d = document.createElement("div");
+      d.className = "bg-green-50 rounded px-2 py-1 space-y-0.5";
+      // Row 1: name + type + notes + edit/delete buttons
+      let row1 = `<div class="flex items-center gap-1"><span class="font-mono text-green-700">[${i}]</span> <span class="flex-1">${esc(ent.name)} <span class="text-gray-400">(${esc(ent.type || "")})</span>`;
+      if (ent.notes) row1 += ` <span class="text-gray-400 italic">${esc(ent.notes)}</span>`;
+      if (ent.added_by) row1 += ` <span class="gt-badge bg-amber-100 text-amber-700">added</span>`;
+      row1 += `</span>`;
+      row1 += `<button onclick="editGTEntity(${i})" class="text-xs border border-green-400 text-green-700 rounded px-1.5 py-0 hover:bg-green-100" title="Edit">Edit</button>`;
+      row1 += `<button onclick="deleteGTEntry('entity',${i})" class="text-xs border border-red-300 text-red-600 rounded px-1.5 py-0 hover:bg-red-50" title="Delete">&times;</button>`;
+      row1 += `</div>`;
+      // Row 2: max_specificity buttons + description label
+      const curSpec = ent.max_specificity != null ? ent.max_specificity : null;
+      const curSpecLabel = curSpec ? (SPEC_LABELS.entity[curSpec] || "") : "";
+      let row2 = `<div><div class="flex items-center gap-1"><span class="text-xs text-gray-500">Max spec:</span>`;
+      row2 += `<div class="btn-group flex gap-0.5" id="gt-ent-spec-${i}">`;
+      for (let v = 1; v <= 5; v++) {
+        const sel = v === curSpec ? " selected" : "";
+        row2 += `<button class="btn-spec border rounded px-1.5 py-0 text-xs${sel}" data-val="${v}" onclick="setEntityMaxSpec(${i}, ${v})">${v}</button>`;
+      }
+      row2 += `</div>`;
+      if (curSpec == null) row2 += ` <span class="text-xs text-amber-600">not set</span>`;
+      row2 += `</div>`;
+      row2 += `<span class="text-xs text-gray-400 italic" id="gt-ent-spec-label-${i}">${curSpecLabel}</span>`;
+      row2 += `</div>`;
+      // Row 3: importance
+      const curImp = ent.importance || null;
+      let row3 = `<div class="flex items-center gap-1"><span class="text-xs text-gray-500">Importance:</span>`;
+      row3 += `<div class="btn-group flex gap-0.5" id="gt-ent-imp-${i}">`;
+      ["high","medium","low"].forEach(v => {
+        const sel = v === curImp ? " selected" : "";
+        const colors = { high: "text-red-700 border-red-300", medium: "text-amber-700 border-amber-300", low: "text-gray-600 border-gray-300" };
+        row3 += `<button class="border rounded px-1.5 py-0 text-xs ${colors[v]}${sel}" data-val="${v}" onclick="setEntityImportance(${i}, '${v}')">${v}</button>`;
+      });
+      row3 += `</div>`;
+      if (!curImp) row3 += ` <span class="text-xs text-amber-600">not set</span>`;
+      row3 += `</div>`;
+      d.innerHTML = row1 + row2 + row3;
+      entDiv.appendChild(d);
+    });
+  } else {
+    entDiv.innerHTML = '<span class="text-gray-400">None</span>';
+  }
+
+  // GPS
+  const gpsDiv = document.getElementById("gt-gps");
+  if (gt.gps_metadata && gt.gps_metadata.gps_latitude) {
+    const g = gt.gps_metadata;
+    let gpsHtml = `${g.gps_latitude.toFixed(5)}, ${g.gps_longitude.toFixed(5)}`;
+    if (g.reverse_geocoded) {
+      gpsHtml += ` &mdash; ${esc(g.reverse_geocoded.formatted_address || "")}`;
+    }
+    gpsDiv.innerHTML = gpsHtml;
+  } else {
+    gpsDiv.innerHTML = '<span class="text-gray-400">No GPS</span>';
+  }
+
+  // Scene
+  const sceneDiv = document.getElementById("gt-scene");
+  const parts = [];
+  if (gt.scene_type) parts.push("Scene: " + gt.scene_type.join(", "));
+  if (gt.key_visual_elements) parts.push("Elements: " + gt.key_visual_elements.join("; "));
+  sceneDiv.textContent = parts.join(" | ") || "N/A";
+}
+
+// ===================================================================
+// Build GT option lists for dropdowns
+// ===================================================================
+function gtEntityOptions() {
+  const gt = currentData.eval_input.ground_truth;
+  const opts = [{ value: "null", label: "-- None --" }];
+  (gt.entities || []).forEach((ent, i) => {
+    opts.push({ value: String(i), label: `[${i}] ${truncate(ent.name, 50)}` });
+  });
+  return opts;
+}
+
+// Cloud Vision does not use GPS; show it once from the no-GPS run, first and on its own.
+// Find GCV by name so we don't rely on a fixed index (in case approach order differs).
+const GCV_APPROACH_NAME = "Google Cloud Vision";
+
+function getDisplaySections(evalInput) {
+  const runs = evalInput.model_runs || [];
+  const sections = [];
+  const noGpsRunIdx = runs.findIndex(r => r.use_gps === false);
+  const gcvRunIdx = noGpsRunIdx >= 0 ? noGpsRunIdx : Math.max(0, runs.length - 1);
+  const gcvRun = runs[gcvRunIdx];
+  const gcvApproaches = gcvRun && (gcvRun.approaches || []);
+
+  // Single GCV section first: find by name in the no-GPS run
+  const gcvAppIdx = gcvApproaches.findIndex(a => (a && a.approach) === GCV_APPROACH_NAME);
+  if (gcvAppIdx >= 0) {
+    sections.push({ runIdx: gcvRunIdx, appIdx: gcvAppIdx });
+  }
+
+  // Then each run: all approaches except the one that is GCV (so GCV never appears under a run)
+  runs.forEach((run, runIdx) => {
+    const approaches = run.approaches || [];
+    approaches.forEach((approach, appIdx) => {
+      if (!approach) return;
+      if (approach.approach === GCV_APPROACH_NAME) return; // skip GCV here; it's shown standalone above
+      sections.push({ runIdx, appIdx });
+    });
+  });
+  return sections;
+}
+
+// ===================================================================
+// Render Approaches
+// ===================================================================
+function renderApproaches(evalInput) {
+  const container = document.getElementById("approaches-container");
+  container.innerHTML = "";
+
+  const runs = evalInput.model_runs || [];
+  if (runs.length === 0) {
+    container.innerHTML = '<p class="text-gray-500 text-sm">No model runs for this image.</p>';
+    return;
+  }
+
+  const displaySections = getDisplaySections(evalInput);
+  let lastRunIdx = -1;
+
+  displaySections.forEach(({ runIdx, appIdx }) => {
+    const run = runs[runIdx];
+    const approach = (run.approaches || [])[appIdx];
+    if (!approach) return;
+
+    const isGcvStandalone = approach.approach === GCV_APPROACH_NAME;
+    if (isGcvStandalone) {
+      const cvHeader = document.createElement("h2");
+      cvHeader.className = "text-base font-bold mt-4 mb-2 text-gray-700 border-b pb-1";
+      cvHeader.textContent = "Google Cloud Vision";
+      container.appendChild(cvHeader);
+    } else if (runIdx !== lastRunIdx) {
+      lastRunIdx = runIdx;
+      const gpsLabel = run.use_gps ? "With GPS" : "Without GPS";
+      const runHeader = document.createElement("h2");
+      runHeader.className = "text-base font-bold mt-4 mb-2 text-gray-700 border-b pb-1";
+      runHeader.textContent = `Run ${runIdx}: ${gpsLabel}`;
+      container.appendChild(runHeader);
+    }
+
+    const section = buildApproachSection(runIdx, appIdx, approach, evalInput.ground_truth);
+    container.appendChild(section);
+  });
+}
+
+function buildApproachSection(runIdx, appIdx, approach, gt) {
+  const details = approach.details || {};
+  const approachName = approach.approach || APPROACHES[appIdx] || `Approach ${appIdx}`;
+  const isCloudVision = approach.approach === GCV_APPROACH_NAME;
+  const sectionId = `approach-${runIdx}-${appIdx}`;
+
+  const wrapper = document.createElement("div");
+  wrapper.className = "mb-3 border rounded bg-white shadow-sm";
+  wrapper.id = sectionId;
+
+  // Accordion header
+  const header = document.createElement("button");
+  header.className = "w-full text-left px-3 py-2 flex justify-between items-center hover:bg-gray-50 text-sm font-semibold";
+  header.innerHTML = `<span>${esc(approachName)}</span><span class="text-gray-400 text-xs" id="${sectionId}-status">not scored</span>`;
+  header.onclick = () => toggleAccordion(sectionId + "-body");
+  wrapper.appendChild(header);
+
+  const body = document.createElement("div");
+  body.className = "accordion-body px-3 pb-3";
+  body.id = sectionId + "-body";
+
+  // Description
+  if (details.description) {
+    const descDiv = document.createElement("div");
+    descDiv.className = "text-xs text-gray-600 mb-2 bg-gray-50 rounded p-2 max-h-24 overflow-y-auto";
+    descDiv.textContent = details.description;
+    body.appendChild(descDiv);
+  }
+
+  // Description score
+  const descScoreDiv = document.createElement("div");
+  descScoreDiv.className = "mb-3";
+  descScoreDiv.innerHTML = `<label class="text-xs font-semibold text-gray-500">Description Score</label>`;
+  const descBtnGroup = document.createElement("div");
+  descBtnGroup.className = "btn-group flex gap-1 mt-0.5";
+  descBtnGroup.id = `${sectionId}-desc-score`;
+  const descScoreLabel = document.createElement("span");
+  descScoreLabel.className = "text-xs text-gray-400 italic block";
+  descScoreLabel.id = `${sectionId}-desc-score-label`;
+  if (isCloudVision) {
+    descBtnGroup.innerHTML = '<span class="text-xs text-gray-400">N/A (Cloud Vision)</span>';
+  } else {
+    [1,2,3,4,5].forEach(v => {
+      const btn = document.createElement("button");
+      btn.className = "btn-desc border rounded px-2.5 py-0.5 text-xs";
+      btn.dataset.val = v;
+      btn.textContent = v;
+      btn.onclick = () => { selectBtn(btn); descScoreLabel.textContent = DESC_SCORE_LABELS[v] || ""; dirty = true; };
+      descBtnGroup.appendChild(btn);
+    });
+  }
+  descScoreDiv.appendChild(descBtnGroup);
+  descScoreDiv.appendChild(descScoreLabel);
+
+  // Description reason
+  if (!isCloudVision) {
+    const descReasonInput = document.createElement("input");
+    descReasonInput.type = "text";
+    descReasonInput.className = "w-full border rounded px-2 py-0.5 text-xs mt-1";
+    descReasonInput.placeholder = "Description score reason...";
+    descReasonInput.id = `${sectionId}-desc-reason`;
+    descReasonInput.oninput = () => { dirty = true; };
+    descScoreDiv.appendChild(descReasonInput);
+  }
+  body.appendChild(descScoreDiv);
+
+  // --- Location Claims ---
+  const locHeader = document.createElement("h4");
+  locHeader.className = "text-xs font-bold text-gray-600 mb-1 mt-2";
+  locHeader.textContent = "Location Claims";
+  body.appendChild(locHeader);
+
+  const photographerLocs = details.photographer_location || [];
+  const subjectLocs = details.subject_location || [];
+
+  // Build combined list with source info
+  const allLocs = [];
+  photographerLocs.forEach((loc, i) => {
+    allLocs.push({ ...loc, source: "photographer_location", modelIndex: i });
+  });
+  subjectLocs.forEach((loc, i) => {
+    allLocs.push({ ...loc, source: "subject_location", modelIndex: i });
+  });
+
+  // Cloud Vision: landmark_name as location
+  if (isCloudVision && details.landmark_name) {
+    allLocs.push({
+      name: details.landmark_name,
+      confidence: null,
+      source: "subject_location",
+      modelIndex: 0
+    });
+  }
+
+  if (allLocs.length === 0) {
+    const noLoc = document.createElement("div");
+    noLoc.className = "text-xs text-gray-400 mb-2";
+    noLoc.textContent = "No location claims";
+    body.appendChild(noLoc);
+  } else {
+    allLocs.forEach((loc, locIdx) => {
+      const card = buildClaimCard({
+        sectionId,
+        claimType: "location",
+        claimIdx: locIdx,
+        text: loc.name,
+        confidence: loc.confidence,
+        source: loc.source,
+        modelIndex: loc.modelIndex,
+        gtOptions: null,
+        gtLinkMode: "location_ref",
+        showRefType: false
+      });
+      body.appendChild(card);
+    });
+  }
+
+  // --- Entity Claims ---
+  const entHeader = document.createElement("h4");
+  entHeader.className = "text-xs font-bold text-gray-600 mb-1 mt-3";
+  entHeader.textContent = "Entity Claims";
+  body.appendChild(entHeader);
+
+  const entities = details.entities || [];
+
+  // Cloud Vision: landmark_name as entity too
+  let entityList = [...entities];
+  if (isCloudVision && details.landmark_name && !entities.some(e => e.name === details.landmark_name)) {
+    entityList.unshift({ name: details.landmark_name, type: "landmark", confidence: null });
+  }
+
+  if (entityList.length === 0) {
+    const noEnt = document.createElement("div");
+    noEnt.className = "text-xs text-gray-400 mb-2";
+    noEnt.textContent = "No entity claims";
+    body.appendChild(noEnt);
+  } else {
+    entityList.forEach((ent, entIdx) => {
+      const card = buildClaimCard({
+        sectionId,
+        claimType: "entity",
+        claimIdx: entIdx,
+        text: ent.name,
+        confidence: ent.confidence,
+        entityType: ent.type,
+        modelIndex: entIdx,
+        gtOptions: gtEntityOptions(),
+        showRefType: false
+      });
+      body.appendChild(card);
+    });
+  }
+
+  // --- Missed GT Entities (dynamic) ---
+  const missedDiv = document.createElement("div");
+  missedDiv.className = "mt-3 pt-2 border-t border-gray-200";
+  missedDiv.id = `${sectionId}-missed-gt`;
+  const missedHeader = document.createElement("h4");
+  missedHeader.className = "text-xs font-bold text-gray-500 mb-1";
+  missedHeader.textContent = "Missed GT Entities";
+  missedDiv.appendChild(missedHeader);
+  const missedList = document.createElement("div");
+  missedList.className = "text-xs text-gray-500";
+  missedList.id = `${sectionId}-missed-gt-list`;
+  missedDiv.appendChild(missedList);
+  body.appendChild(missedDiv);
+
+  wrapper.appendChild(body);
+  return wrapper;
+}
+
+function updateMissedGt(sectionId) {
+  const listEl = document.getElementById(`${sectionId}-missed-gt-list`);
+  if (!listEl) return;
+  const gt = currentData.eval_input.ground_truth;
+  const gtEntities = gt.entities || [];
+  if (gtEntities.length === 0) { listEl.textContent = "No GT entities defined"; return; }
+
+  // Collect all GT indices linked by entity claims in this section
+  const linked = new Set();
+  // Regular entity claims
+  let entIdx = 0;
+  while (true) {
+    const cardId = `${sectionId}-entity-${entIdx}`;
+    const el = document.getElementById(cardId);
+    if (!el) break;
+    getGtMultiValues(`${cardId}-gt`).forEach(i => linked.add(i));
+    entIdx++;
+  }
+  // Also-entity from location claims
+  let locIdx = 0;
+  while (true) {
+    const cardId = `${sectionId}-location-${locIdx}`;
+    const el = document.getElementById(cardId);
+    if (!el) break;
+    const aeBtn = document.getElementById(`${cardId}-also-ent`);
+    if (aeBtn && aeBtn.classList.contains("selected")) {
+      getGtMultiValues(`${cardId}-ae-gt`).forEach(i => linked.add(i));
+    }
+    locIdx++;
+  }
+
+  const missed = gtEntities.map((ent, i) => ({ ...ent, idx: i })).filter(e => !linked.has(e.idx));
+  if (missed.length === 0) {
+    listEl.innerHTML = `<span class="text-green-600">All GT entities linked</span>`;
+  } else {
+    listEl.innerHTML = missed.map(e =>
+      `<span class="inline-block bg-red-50 text-red-700 border border-red-200 rounded px-1.5 py-0.5 mr-1 mb-0.5">[${e.idx}] ${esc(truncate(e.name, 40))}` +
+      (e.type ? ` <span class="text-red-400">${esc(e.type)}</span>` : "") +
+      `</span>`
+    ).join("");
+  }
+}
+
+function updateAllMissedGt() {
+  document.querySelectorAll("[id$='-missed-gt-list']").forEach(el => {
+    const sectionId = el.id.replace("-missed-gt-list", "");
+    updateMissedGt(sectionId);
+  });
+}
+
+function buildClaimCard({ sectionId, claimType, claimIdx, text, confidence, source, entityType, modelIndex, gtOptions, gtLinkMode, showRefType }) {
+  const cardId = `${sectionId}-${claimType}-${claimIdx}`;
+  const card = document.createElement("div");
+  card.className = "claim-card bg-gray-50 rounded p-2 mb-1.5 pl-3";
+  card.id = cardId;
+
+  // Claim text
+  let headerHtml = `<div class="text-xs font-medium mb-1">${esc(text || "(empty)")}`;
+  if (confidence != null) headerHtml += ` <span class="text-gray-400">(conf: ${confidence})</span>`;
+  if (source) headerHtml += ` <span class="gt-badge bg-blue-100 text-blue-700">${source.replace("_", " ")}</span>`;
+  if (entityType) headerHtml += ` <span class="gt-badge bg-green-100 text-green-700">${esc(entityType)}</span>`;
+  headerHtml += `</div>`;
+  card.innerHTML = headerHtml;
+
+  const controlsDiv = document.createElement("div");
+  controlsDiv.className = "flex flex-wrap items-center gap-x-3 gap-y-1";
+
+  // Ref type (locations only)
+  if (showRefType) {
+    const refTypeDiv = document.createElement("div");
+    refTypeDiv.className = "flex items-center gap-1";
+    refTypeDiv.innerHTML = `<span class="text-xs text-gray-500">Ref:</span>`;
+    const refSelect = document.createElement("select");
+    refSelect.className = "text-xs border rounded px-1 py-0.5";
+    refSelect.id = `${cardId}-ref-type`;
+    refSelect.onchange = () => { dirty = true; };
+    const defaultRef = source === "photographer_location" ? "photographer_position" : "depicted_subject";
+    ["photographer_position", "depicted_subject", "ambiguous_or_unspecified"].forEach(v => {
+      const opt = document.createElement("option");
+      opt.value = v;
+      opt.textContent = v.replace(/_/g, " ");
+      if (v === defaultRef) opt.selected = true;
+      refSelect.appendChild(opt);
+    });
+    refTypeDiv.appendChild(refSelect);
+    controlsDiv.appendChild(refTypeDiv);
+  }
+
+  // Specificity
+  const specWrapper = document.createElement("div");
+  const specDiv = document.createElement("div");
+  specDiv.className = "flex items-center gap-1";
+  specDiv.innerHTML = `<span class="text-xs text-gray-500">Spec:</span>`;
+  const specGroup = document.createElement("div");
+  specGroup.className = "btn-group flex gap-0.5";
+  specGroup.id = `${cardId}-spec`;
+  const specLabel = document.createElement("span");
+  specLabel.className = "text-xs text-gray-400 italic";
+  specLabel.id = `${cardId}-spec-label`;
+  const specLabels = SPEC_LABELS[claimType] || SPEC_LABELS.entity;
+  [1,2,3,4,5].forEach(v => {
+    const btn = document.createElement("button");
+    btn.className = "btn-spec border rounded px-1.5 py-0 text-xs";
+    btn.dataset.val = v;
+    btn.textContent = v;
+    btn.onclick = () => { selectBtn(btn); specLabel.textContent = specLabels[v] || ""; dirty = true; };
+    specGroup.appendChild(btn);
+  });
+  specDiv.appendChild(specGroup);
+  specWrapper.appendChild(specDiv);
+  specWrapper.appendChild(specLabel);
+  controlsDiv.appendChild(specWrapper);
+
+  // Correctness
+  const corrWrapper = document.createElement("div");
+  const corrDiv = document.createElement("div");
+  corrDiv.className = "flex items-center gap-1";
+  corrDiv.innerHTML = `<span class="text-xs text-gray-500">Corr:</span>`;
+  const corrGroup = document.createElement("div");
+  corrGroup.className = "btn-group flex gap-0.5";
+  corrGroup.id = `${cardId}-corr`;
+  const corrLabel = document.createElement("span");
+  corrLabel.className = "text-xs text-gray-400 italic";
+  corrLabel.id = `${cardId}-corr-label`;
+  [{v:-1, cls:"btn-corr-neg"}, {v:-0.5, cls:"btn-corr-neg"}, {v:0, cls:"btn-corr-zero"}, {v:0.5, cls:"btn-corr-pos"}, {v:1, cls:"btn-corr-pos"}].forEach(({v, cls}) => {
+    const btn = document.createElement("button");
+    btn.className = `${cls} border rounded px-1.5 py-0 text-xs`;
+    btn.dataset.val = v;
+    btn.textContent = v > 0 ? `+${v}` : v;
+    btn.onclick = () => { selectBtn(btn); corrLabel.textContent = CORR_LABELS[String(v)] || ""; dirty = true; };
+    corrGroup.appendChild(btn);
+  });
+  corrDiv.appendChild(corrGroup);
+  corrWrapper.appendChild(corrDiv);
+  corrWrapper.appendChild(corrLabel);
+  controlsDiv.appendChild(corrWrapper);
+
+  // GT Link
+  const gtDiv = document.createElement("div");
+  gtDiv.className = "flex items-center gap-1 relative";
+  gtDiv.innerHTML = `<span class="text-xs text-gray-500">GT:</span>`;
+  if (gtLinkMode === "location_ref") {
+    // Location claims: single select dropdown (ref type)
+    const gtSelect = document.createElement("select");
+    gtSelect.className = "text-xs border rounded px-1 py-0.5 max-w-[200px]";
+    gtSelect.id = `${cardId}-gt`;
+    gtSelect.onchange = () => { dirty = true; };
+    [
+      { value: "null", label: "-- None --" },
+      { value: "photographer_position", label: "Photographer position" },
+      { value: "depicted_subject", label: "Depicted subject" },
+      { value: "both", label: "Both" }
+    ].forEach(opt => {
+      const o = document.createElement("option");
+      o.value = opt.value;
+      o.textContent = opt.label;
+      if (source === "photographer_location" && opt.value === "photographer_position") o.selected = true;
+      else if (source === "subject_location" && opt.value === "depicted_subject") o.selected = true;
+      gtSelect.appendChild(o);
+    });
+    gtDiv.appendChild(gtSelect);
+  } else {
+    // Entity claims: multi-select checkboxes
+    const gtMulti = document.createElement("div");
+    gtMulti.className = "gt-multi-select";
+    gtMulti.id = `${cardId}-gt`;
+    const gtToggle = document.createElement("button");
+    gtToggle.type = "button";
+    gtToggle.className = "text-xs border rounded px-1.5 py-0.5 bg-white hover:bg-gray-50 min-w-[100px] text-left";
+    gtToggle.id = `${cardId}-gt-toggle`;
+    gtToggle.textContent = "-- None --";
+    const gtDropdown = document.createElement("div");
+    gtDropdown.className = "z-50 bg-white border rounded shadow-lg p-1 max-h-48 overflow-y-auto hidden";
+    gtDropdown.style.minWidth = "180px";
+    gtDropdown.style.position = "fixed";
+    gtDropdown.id = `${cardId}-gt-dropdown`;
+    gtDropdown.onclick = (e) => e.stopPropagation();
+    (gtOptions || []).forEach(opt => {
+      if (opt.value === "null") return; // skip "none" — unchecking all means none
+      const label = document.createElement("label");
+      label.className = "flex items-center gap-1 text-xs px-1 py-0.5 hover:bg-gray-100 rounded cursor-pointer whitespace-nowrap";
+      const cb = document.createElement("input");
+      cb.type = "checkbox";
+      cb.value = opt.value;
+      cb.className = "gt-cb";
+      cb.onchange = () => { updateGtMultiLabel(`${cardId}-gt`); dirty = true; };
+      label.appendChild(cb);
+      label.appendChild(document.createTextNode(opt.label));
+      gtDropdown.appendChild(label);
+    });
+    gtToggle.onclick = (e) => {
+      e.stopPropagation();
+      document.querySelectorAll("[id$='-gt-dropdown']").forEach(d => { if (d !== gtDropdown) d.classList.add("hidden"); });
+      gtDropdown.classList.toggle("hidden");
+      if (!gtDropdown.classList.contains("hidden")) positionDropdown(gtToggle, gtDropdown);
+    };
+    gtMulti.appendChild(gtToggle);
+    gtMulti.appendChild(gtDropdown);
+    gtDiv.appendChild(gtMulti);
+  }
+  controlsDiv.appendChild(gtDiv);
+
+  // Flag
+  const flagDiv = document.createElement("label");
+  flagDiv.className = "flex items-center gap-1 text-xs text-amber-700";
+  flagDiv.innerHTML = `<input type="checkbox" id="${cardId}-flag" onchange="dirty=true"> Flag`;
+  controlsDiv.appendChild(flagDiv);
+
+  // "Also Entity" button (location claims only)
+  if (claimType === "location") {
+    const alsoEntBtn = document.createElement("button");
+    alsoEntBtn.className = "btn-also-ent border rounded px-1.5 py-0 text-xs text-purple-700";
+    alsoEntBtn.textContent = "→ Ent";
+    alsoEntBtn.id = `${cardId}-also-ent`;
+    alsoEntBtn.title = "Also count as entity claim (location doubles as entity identification)";
+    alsoEntBtn.onclick = () => {
+      alsoEntBtn.classList.toggle("selected");
+      card.classList.toggle("also-entity", alsoEntBtn.classList.contains("selected"));
+      dirty = true;
+    };
+    controlsDiv.appendChild(alsoEntBtn);
+  }
+
+  // N/A, Scene, and Bonus buttons (entity claims only)
+  if (claimType === "entity") {
+    const naBtn = document.createElement("button");
+    naBtn.className = "btn-na border rounded px-1.5 py-0 text-xs text-gray-600";
+    naBtn.textContent = "N/A";
+    naBtn.id = `${cardId}-na`;
+    naBtn.onclick = () => {
+      naBtn.classList.toggle("selected");
+      card.classList.toggle("na", naBtn.classList.contains("selected"));
+      if (naBtn.classList.contains("selected")) {
+        const sceneBtn = document.getElementById(`${cardId}-scene`);
+        if (sceneBtn) { sceneBtn.classList.remove("selected"); card.classList.remove("scene"); }
+        const bonusBtn = document.getElementById(`${cardId}-bonus`);
+        if (bonusBtn) { bonusBtn.classList.remove("selected"); card.classList.remove("bonus"); }
+      }
+      dirty = true;
+    };
+    controlsDiv.appendChild(naBtn);
+
+    const sceneBtn = document.createElement("button");
+    sceneBtn.className = "btn-scene border rounded px-1.5 py-0 text-xs text-cyan-700";
+    sceneBtn.textContent = "Scene";
+    sceneBtn.id = `${cardId}-scene`;
+    sceneBtn.title = "Scene description — correct but doesn't need ground truth linking";
+    sceneBtn.onclick = () => {
+      sceneBtn.classList.toggle("selected");
+      card.classList.toggle("scene", sceneBtn.classList.contains("selected"));
+      if (sceneBtn.classList.contains("selected")) {
+        const naEl = document.getElementById(`${cardId}-na`);
+        if (naEl) { naEl.classList.remove("selected"); card.classList.remove("na"); }
+        const bonusBtn = document.getElementById(`${cardId}-bonus`);
+        if (bonusBtn) { bonusBtn.classList.remove("selected"); card.classList.remove("bonus"); }
+      }
+      dirty = true;
+    };
+    controlsDiv.appendChild(sceneBtn);
+
+    const bonusBtn = document.createElement("button");
+    bonusBtn.className = "btn-bonus border rounded px-1.5 py-0 text-xs text-amber-700";
+    bonusBtn.textContent = "Bonus";
+    bonusBtn.id = `${cardId}-bonus`;
+    bonusBtn.title = "Correct and scored, but not in GT — others not penalized for missing it";
+    bonusBtn.onclick = () => {
+      bonusBtn.classList.toggle("selected");
+      card.classList.toggle("bonus", bonusBtn.classList.contains("selected"));
+      if (bonusBtn.classList.contains("selected")) {
+        const naEl = document.getElementById(`${cardId}-na`);
+        if (naEl) { naEl.classList.remove("selected"); card.classList.remove("na"); }
+        const sceneBtn = document.getElementById(`${cardId}-scene`);
+        if (sceneBtn) { sceneBtn.classList.remove("selected"); card.classList.remove("scene"); }
+      }
+      dirty = true;
+    };
+    controlsDiv.appendChild(bonusBtn);
+
+    // "+ GT" button to quickly add this claim as ground truth entity
+    const addGtBtn = document.createElement("button");
+    addGtBtn.className = "text-xs border border-green-300 text-green-700 rounded px-1.5 py-0 hover:bg-green-50 whitespace-nowrap";
+    addGtBtn.textContent = "+ GT";
+    addGtBtn.title = "Add this claim as ground truth entity";
+    addGtBtn.onclick = () => {
+      openAddGTFromClaim(text || "", entityType || "");
+    };
+    controlsDiv.appendChild(addGtBtn);
+  }
+
+  card.appendChild(controlsDiv);
+
+  // Reason
+  const reasonInput = document.createElement("input");
+  reasonInput.type = "text";
+  reasonInput.className = "w-full border rounded px-2 py-0.5 text-xs mt-1";
+  reasonInput.placeholder = "Reason...";
+  reasonInput.id = `${cardId}-reason`;
+  reasonInput.oninput = () => { dirty = true; };
+  card.appendChild(reasonInput);
+
+  // Also-entity sub-controls (location claims only, shown when "→ Ent" is toggled)
+  if (claimType === "location") {
+    const aeControls = document.createElement("div");
+    aeControls.className = "also-entity-controls flex-wrap items-center gap-x-3 gap-y-1 text-xs";
+
+    // Entity specificity
+    const aeSpecDiv = document.createElement("div");
+    const aeSpecRow = document.createElement("div");
+    aeSpecRow.className = "flex items-center gap-1";
+    aeSpecRow.innerHTML = `<span class="text-gray-500">Ent Spec:</span>`;
+    const aeSpecGroup = document.createElement("div");
+    aeSpecGroup.className = "btn-group flex gap-0.5";
+    aeSpecGroup.id = `${cardId}-ae-spec`;
+    const aeSpecLabel = document.createElement("span");
+    aeSpecLabel.className = "text-xs text-gray-400 italic";
+    aeSpecLabel.id = `${cardId}-ae-spec-label`;
+    [1,2,3,4,5].forEach(v => {
+      const btn = document.createElement("button");
+      btn.className = "btn-spec border rounded px-1.5 py-0 text-xs";
+      btn.dataset.val = v;
+      btn.textContent = v;
+      btn.onclick = () => { selectBtn(btn); aeSpecLabel.textContent = SPEC_LABELS.entity[v] || ""; dirty = true; };
+      aeSpecGroup.appendChild(btn);
+    });
+    aeSpecRow.appendChild(aeSpecGroup);
+    aeSpecDiv.appendChild(aeSpecRow);
+    aeSpecDiv.appendChild(aeSpecLabel);
+    aeControls.appendChild(aeSpecDiv);
+
+    // Entity correctness
+    const aeCorrDiv = document.createElement("div");
+    const aeCorrRow = document.createElement("div");
+    aeCorrRow.className = "flex items-center gap-1";
+    aeCorrRow.innerHTML = `<span class="text-gray-500">Ent Corr:</span>`;
+    const aeCorrGroup = document.createElement("div");
+    aeCorrGroup.className = "btn-group flex gap-0.5";
+    aeCorrGroup.id = `${cardId}-ae-corr`;
+    const aeCorrLabel = document.createElement("span");
+    aeCorrLabel.className = "text-xs text-gray-400 italic";
+    aeCorrLabel.id = `${cardId}-ae-corr-label`;
+    [{v:-1, cls:"btn-corr-neg"}, {v:-0.5, cls:"btn-corr-neg"}, {v:0, cls:"btn-corr-zero"}, {v:0.5, cls:"btn-corr-pos"}, {v:1, cls:"btn-corr-pos"}].forEach(({v, cls}) => {
+      const btn = document.createElement("button");
+      btn.className = `${cls} border rounded px-1.5 py-0 text-xs`;
+      btn.dataset.val = v;
+      btn.textContent = v > 0 ? `+${v}` : v;
+      btn.onclick = () => { selectBtn(btn); aeCorrLabel.textContent = CORR_LABELS[String(v)] || ""; dirty = true; };
+      aeCorrGroup.appendChild(btn);
+    });
+    aeCorrRow.appendChild(aeCorrGroup);
+    aeCorrDiv.appendChild(aeCorrRow);
+    aeCorrDiv.appendChild(aeCorrLabel);
+    aeControls.appendChild(aeCorrDiv);
+
+    // Entity GT link (multi-select)
+    const aeGtDiv = document.createElement("div");
+    aeGtDiv.className = "flex items-center gap-1 relative";
+    aeGtDiv.innerHTML = `<span class="text-gray-500">Ent GT:</span>`;
+    const aeGtId = `${cardId}-ae-gt`;
+    const aeGtMulti = document.createElement("div");
+    aeGtMulti.className = "gt-multi-select";
+    aeGtMulti.id = aeGtId;
+    const aeGtToggle = document.createElement("button");
+    aeGtToggle.type = "button";
+    aeGtToggle.className = "text-xs border rounded px-1.5 py-0.5 bg-white hover:bg-gray-50 min-w-[100px] text-left";
+    aeGtToggle.id = `${aeGtId}-toggle`;
+    aeGtToggle.textContent = "-- None --";
+    const aeGtDropdown = document.createElement("div");
+    aeGtDropdown.className = "z-50 bg-white border rounded shadow-lg p-1 max-h-48 overflow-y-auto hidden";
+    aeGtDropdown.style.minWidth = "180px";
+    aeGtDropdown.style.position = "fixed";
+    aeGtDropdown.id = `${aeGtId}-dropdown`;
+    aeGtDropdown.onclick = (e) => e.stopPropagation();
+    (gtEntityOptions() || []).forEach(opt => {
+      if (opt.value === "null") return;
+      const label = document.createElement("label");
+      label.className = "flex items-center gap-1 text-xs px-1 py-0.5 hover:bg-gray-100 rounded cursor-pointer whitespace-nowrap";
+      const cb = document.createElement("input");
+      cb.type = "checkbox";
+      cb.value = opt.value;
+      cb.className = "gt-cb";
+      cb.onchange = () => { updateGtMultiLabel(aeGtId); dirty = true; };
+      label.appendChild(cb);
+      label.appendChild(document.createTextNode(opt.label));
+      aeGtDropdown.appendChild(label);
+    });
+    aeGtToggle.onclick = (e) => {
+      e.stopPropagation();
+      document.querySelectorAll("[id$='-gt-dropdown']").forEach(d => { if (d !== aeGtDropdown) d.classList.add("hidden"); });
+      aeGtDropdown.classList.toggle("hidden");
+      if (!aeGtDropdown.classList.contains("hidden")) positionDropdown(aeGtToggle, aeGtDropdown);
+    };
+    aeGtMulti.appendChild(aeGtToggle);
+    aeGtMulti.appendChild(aeGtDropdown);
+    aeGtDiv.appendChild(aeGtMulti);
+    aeControls.appendChild(aeGtDiv);
+
+    // Scene and Bonus tags for the entity aspect
+    const aeTagDiv = document.createElement("div");
+    aeTagDiv.className = "flex items-center gap-1";
+
+    const aeSceneBtn = document.createElement("button");
+    aeSceneBtn.className = "btn-scene border rounded px-1.5 py-0 text-xs text-cyan-700";
+    aeSceneBtn.textContent = "Scene";
+    aeSceneBtn.id = `${cardId}-ae-scene`;
+    aeSceneBtn.title = "Entity aspect is a scene description";
+    aeSceneBtn.onclick = () => {
+      aeSceneBtn.classList.toggle("selected");
+      const on = aeSceneBtn.classList.contains("selected");
+      if (on) {
+        const bb = document.getElementById(`${cardId}-ae-bonus`);
+        if (bb) bb.classList.remove("selected");
+      }
+      dirty = true;
+    };
+    aeTagDiv.appendChild(aeSceneBtn);
+
+    const aeBonusBtn = document.createElement("button");
+    aeBonusBtn.className = "btn-bonus border rounded px-1.5 py-0 text-xs text-yellow-700";
+    aeBonusBtn.textContent = "Bonus";
+    aeBonusBtn.id = `${cardId}-ae-bonus`;
+    aeBonusBtn.title = "Entity aspect is correct but not expected in GT (bonus)";
+    aeBonusBtn.onclick = () => {
+      aeBonusBtn.classList.toggle("selected");
+      const on = aeBonusBtn.classList.contains("selected");
+      if (on) {
+        const sb = document.getElementById(`${cardId}-ae-scene`);
+        if (sb) sb.classList.remove("selected");
+      }
+      dirty = true;
+    };
+    aeTagDiv.appendChild(aeBonusBtn);
+
+    aeControls.appendChild(aeTagDiv);
+
+    card.appendChild(aeControls);
+  }
+
+  return card;
+}
+
+// ===================================================================
+// GT multi-select helpers
+// ===================================================================
+function updateGtMultiLabel(prefix) {
+  const toggle = document.getElementById(`${prefix}-toggle`);
+  const dropdown = document.getElementById(`${prefix}-dropdown`);
+  if (!toggle || !dropdown) return;
+  const checked = [...dropdown.querySelectorAll("input.gt-cb:checked")];
+  if (checked.length === 0) {
+    toggle.textContent = "-- None --";
+  } else {
+    toggle.textContent = checked.map(cb => {
+      const lbl = cb.parentElement.textContent.trim();
+      return lbl.length > 25 ? lbl.slice(0, 22) + "..." : lbl;
+    }).join(", ");
+  }
+}
+function getGtMultiValues(prefix) {
+  const dropdown = document.getElementById(`${prefix}-dropdown`);
+  if (!dropdown) return [];
+  return [...dropdown.querySelectorAll("input.gt-cb:checked")].map(cb => parseInt(cb.value));
+}
+function setGtMultiValues(prefix, indices) {
+  const dropdown = document.getElementById(`${prefix}-dropdown`);
+  if (!dropdown) return;
+  dropdown.querySelectorAll("input.gt-cb").forEach(cb => {
+    cb.checked = indices.includes(parseInt(cb.value));
+  });
+  updateGtMultiLabel(prefix);
+}
+// Position dropdown using fixed positioning to avoid clipping by overflow parents
+function positionDropdown(toggle, dropdown) {
+  const rect = toggle.getBoundingClientRect();
+  dropdown.style.position = "fixed";
+  dropdown.style.left = rect.left + "px";
+  dropdown.style.width = "auto";
+  dropdown.style.minWidth = "180px";
+  // Check if there's enough space below (200px buffer)
+  const spaceBelow = window.innerHeight - rect.bottom;
+  if (spaceBelow < 200) {
+    // Open upwards
+    dropdown.style.bottom = (window.innerHeight - rect.top) + "px";
+    dropdown.style.top = "auto";
+  } else {
+    // Open downwards
+    dropdown.style.top = rect.bottom + "px";
+    dropdown.style.bottom = "auto";
+  }
+}
+// Close dropdowns on outside click
+document.addEventListener("click", () => {
+  document.querySelectorAll("[id$='-gt-dropdown']").forEach(d => d.classList.add("hidden"));
+});
+// Close dropdowns on scroll (since they're fixed position)
+document.getElementById("right-panel").addEventListener("scroll", () => {
+  document.querySelectorAll("[id$='-gt-dropdown']").forEach(d => d.classList.add("hidden"));
+});
+
+// ===================================================================
+// Button group selection
+// ===================================================================
+function selectBtn(btn) {
+  const group = btn.parentElement;
+  group.querySelectorAll("button").forEach(b => b.classList.remove("selected"));
+  btn.classList.add("selected");
+}
+
+function getSelectedVal(groupId) {
+  const group = document.getElementById(groupId);
+  if (!group) return null;
+  const sel = group.querySelector("button.selected");
+  return sel ? parseFloat(sel.dataset.val) : null;
+}
+
+function setSelectedVal(groupId, val) {
+  const group = document.getElementById(groupId);
+  if (!group) return;
+  group.querySelectorAll("button").forEach(b => {
+    if (parseFloat(b.dataset.val) === val) b.classList.add("selected");
+    else b.classList.remove("selected");
+  });
+}
+
+// ===================================================================
+// Accordion
+// ===================================================================
+function toggleAccordion(bodyId) {
+  const body = document.getElementById(bodyId);
+  body.classList.toggle("open");
+}
+
+// ===================================================================
+// Collect evaluation data from DOM
+// ===================================================================
+function collectEvaluation() {
+  const evalInput = currentData.eval_input;
+  const runs = evalInput.model_runs || [];
+  const evals = [];
+  const displaySections = getDisplaySections(evalInput);
+
+  displaySections.forEach(({ runIdx, appIdx }) => {
+    const run = runs[runIdx];
+    const approach = (run.approaches || [])[appIdx];
+    if (!run || !approach) return;
+    const sectionId = `approach-${runIdx}-${appIdx}`;
+    const isCloudVision = approach.approach === GCV_APPROACH_NAME;
+    const details = approach.details || {};
+
+      // Description score
+      let descScore = null;
+      let descReason = "";
+      if (!isCloudVision) {
+        descScore = getSelectedVal(`${sectionId}-desc-score`);
+        const descReasonEl = document.getElementById(`${sectionId}-desc-reason`);
+        descReason = descReasonEl ? descReasonEl.value : "";
+      }
+
+      // Location claims
+      const photographerLocs = details.photographer_location || [];
+      const subjectLocs = details.subject_location || [];
+      const allLocs = [];
+      photographerLocs.forEach((loc, i) => allLocs.push({ source: "photographer_location", modelIndex: i }));
+      subjectLocs.forEach((loc, i) => allLocs.push({ source: "subject_location", modelIndex: i }));
+      if (isCloudVision && details.landmark_name) {
+        allLocs.push({ source: "subject_location", modelIndex: 0 });
+      }
+
+      const locationClaims = allLocs.map((loc, locIdx) => {
+        const cardId = `${sectionId}-location-${locIdx}`;
+        const gtEl = document.getElementById(`${cardId}-gt`);
+        const gtVal = gtEl ? gtEl.value : "null";
+        const flagEl = document.getElementById(`${cardId}-flag`);
+        const reasonEl = document.getElementById(`${cardId}-reason`);
+        const srcArr = details[loc.source];
+        const modelItem = srcArr && srcArr[loc.modelIndex];
+        const confidence = modelItem && typeof modelItem.confidence === "number" ? modelItem.confidence : null;
+        const alsoEntEl = document.getElementById(`${cardId}-also-ent`);
+        const isAlsoEnt = alsoEntEl ? alsoEntEl.classList.contains("selected") : false;
+        const result = {
+          source: loc.source,
+          model_index: loc.modelIndex,
+          confidence,
+          gt_ref: gtVal === "null" ? null : gtVal,
+          specificity: getSelectedVal(`${cardId}-spec`),
+          correctness: getSelectedVal(`${cardId}-corr`),
+          reason: reasonEl ? reasonEl.value : "",
+          flag: flagEl ? flagEl.checked : false,
+          also_entity: isAlsoEnt
+        };
+        if (isAlsoEnt) {
+          const aeSceneEl = document.getElementById(`${cardId}-ae-scene`);
+          const aeBonusEl = document.getElementById(`${cardId}-ae-bonus`);
+          result.entity_scene = aeSceneEl ? aeSceneEl.classList.contains("selected") : false;
+          result.entity_bonus = aeBonusEl ? aeBonusEl.classList.contains("selected") : false;
+          result.entity_specificity = getSelectedVal(`${cardId}-ae-spec`);
+          result.entity_correctness = getSelectedVal(`${cardId}-ae-corr`);
+          result.entity_gt_indices = getGtMultiValues(`${cardId}-ae-gt`);
+        }
+        return result;
+      });
+
+      // Entity claims
+      let entityList = [...(details.entities || [])];
+      if (isCloudVision && details.landmark_name && !entityList.some(e => e.name === details.landmark_name)) {
+        entityList.unshift({ name: details.landmark_name, type: "landmark" });
+      }
+
+      const entityClaims = entityList.map((ent, entIdx) => {
+        const cardId = `${sectionId}-entity-${entIdx}`;
+        const gtEl = document.getElementById(`${cardId}-gt`);
+        const flagEl = document.getElementById(`${cardId}-flag`);
+        const naEl = document.getElementById(`${cardId}-na`);
+        const sceneEl = document.getElementById(`${cardId}-scene`);
+        const bonusEl = document.getElementById(`${cardId}-bonus`);
+        const reasonEl = document.getElementById(`${cardId}-reason`);
+        const isNA = naEl ? naEl.classList.contains("selected") : false;
+        const isScene = sceneEl ? sceneEl.classList.contains("selected") : false;
+        const isBonus = bonusEl ? bonusEl.classList.contains("selected") : false;
+        const confidence = ent && typeof ent.confidence === "number" ? ent.confidence : null;
+        return {
+          model_index: entIdx,
+          confidence,
+          not_applicable: isNA,
+          scene_description: isScene,
+          bonus: isBonus,
+          specificity: isNA ? null : getSelectedVal(`${cardId}-spec`),
+          correctness: isNA ? null : getSelectedVal(`${cardId}-corr`),
+          reason: reasonEl ? reasonEl.value : "",
+          gt_indices: (isNA || isScene || isBonus) ? [] : getGtMultiValues(`${cardId}-gt`),
+          flag: flagEl ? flagEl.checked : false
+        };
+      });
+
+      // Append also-entity location claims into entity_claims
+      locationClaims.forEach((lc, lcIdx) => {
+        if (!lc.also_entity) return;
+        entityClaims.push({
+          model_index: null,
+          from_location_claim: true,
+          location_claim_index: lcIdx,
+          location_source: lc.source,
+          location_model_index: lc.model_index,
+          confidence: lc.confidence,
+          not_applicable: false,
+          scene_description: lc.entity_scene || false,
+          bonus: lc.entity_bonus || false,
+          specificity: lc.entity_specificity,
+          correctness: lc.entity_correctness,
+          reason: lc.reason || "",
+          gt_indices: lc.entity_gt_indices || [],
+          flag: lc.flag || false
+        });
+      });
+
+      evals.push({
+        use_gps: run.use_gps === true,
+        approach_name: approach.approach || APPROACHES[appIdx] || `Approach ${appIdx}`,
+        approach_index: appIdx,
+        location_claims: locationClaims,
+        entity_claims: entityClaims,
+        missed_locations: [],
+        missed_entities: [],
+        desc_score: descScore,
+        desc_reason: descReason
+      });
+  });
+
+  const gt = evalInput.ground_truth || {};
+  const groundTruth = {
+    difficulty_with_gps: gt.difficulty_with_gps || null,
+    difficulty_without_gps: gt.difficulty_without_gps || null,
+    image_categories: gt.image_categories || null,
+    locations: (gt.locations || []).map(loc => ({
+      name: loc.name,
+      hierarchy: loc.hierarchy || null,
+      added_by: loc.added_by || null
+    })),
+    entities: (gt.entities || []).map(ent => ({
+      name: ent.name,
+      type: ent.type || null,
+      max_specificity: ent.max_specificity != null ? ent.max_specificity : null,
+      importance: ent.importance || null,
+      notes: ent.notes || null,
+      added_by: ent.added_by || null
+    }))
+  };
+
+  return {
+    status: "complete",
+    evaluator_notes: document.getElementById("evaluator-notes").value,
+    ground_truth: groundTruth,
+    evals
+  };
+}
+
+function parseGtIndex(val) {
+  if (val === "null" || val === "") return null;
+  return parseInt(val);
+}
+
+// ===================================================================
+// Validation: all claims processed, correct entities linked to GT
+// ===================================================================
+function validateEvaluation() {
+  const evalInput = currentData.eval_input;
+  const runs = evalInput.model_runs || [];
+  const errors = [];
+  const gtErrors = [];
+
+  // Validate GT properties
+  const gt = evalInput.ground_truth || {};
+  const diffGpsGroup = document.getElementById("gt-diff-gps");
+  const diffNoGpsGroup = document.getElementById("gt-diff-nogps");
+  const hasDiffGps = diffGpsGroup && diffGpsGroup.querySelector("button.selected");
+  const hasDiffNoGps = diffNoGpsGroup && diffNoGpsGroup.querySelector("button.selected");
+  if (!hasDiffGps) gtErrors.push({ msg: "Difficulty (with GPS) not set", target: "gt-diff-gps" });
+  if (!hasDiffNoGps) gtErrors.push({ msg: "Difficulty (no GPS) not set", target: "gt-diff-nogps" });
+
+  const imgCats = gt.image_categories;
+  if (!imgCats || imgCats.length === 0) {
+    gtErrors.push({ msg: "Image category not set", target: "gt-image-categories" });
+  }
+
+  const entities = gt.entities || [];
+  entities.forEach((ent, i) => {
+    if (ent.max_specificity == null) {
+      gtErrors.push({ msg: `Entity [${i}] "${ent.name}" missing max specificity`, target: `gt-ent-spec-${i}` });
+    }
+    if (!ent.importance) {
+      gtErrors.push({ msg: `Entity [${i}] "${ent.name}" missing importance`, target: `gt-ent-imp-${i}` });
+    }
+  });
+
+  const displaySections = getDisplaySections(evalInput);
+
+  displaySections.forEach(({ runIdx, appIdx }) => {
+    const run = runs[runIdx];
+    const approach = (run.approaches || [])[appIdx];
+    if (!run || !approach) return;
+    const sectionId = `approach-${runIdx}-${appIdx}`;
+    const approachName = approach.approach || APPROACHES[appIdx] || `Run ${runIdx} Approach ${appIdx}`;
+    const isCloudVision = approach.approach === GCV_APPROACH_NAME;
+    const details = approach.details || {};
+      const sectionErrors = { sectionId, approachName, locationMissing: [], entityMissingScores: [], entityNeedsGt: [], descMissing: false };
+
+      // Description score (required for non-CloudVision)
+      if (!isCloudVision) {
+        const descScore = getSelectedVal(`${sectionId}-desc-score`);
+        if (descScore == null) sectionErrors.descMissing = true;
+      }
+
+      // Location claims: need specificity and correctness
+      const photographerLocs = details.photographer_location || [];
+      const subjectLocs = details.subject_location || [];
+      const allLocs = [];
+      photographerLocs.forEach((loc, i) => allLocs.push({ source: "photographer_location", modelIndex: i }));
+      subjectLocs.forEach((loc, i) => allLocs.push({ source: "subject_location", modelIndex: i }));
+      if (isCloudVision && details.landmark_name) allLocs.push({ source: "subject_location", modelIndex: 0 });
+      allLocs.forEach((_, locIdx) => {
+        const cardId = `${sectionId}-location-${locIdx}`;
+        const spec = getSelectedVal(`${cardId}-spec`);
+        const corr = getSelectedVal(`${cardId}-corr`);
+        if (spec == null || corr == null) sectionErrors.locationMissing.push(locIdx);
+        // If also-entity is toggled, validate entity fields too
+        const aeBtn = document.getElementById(`${cardId}-also-ent`);
+        if (aeBtn && aeBtn.classList.contains("selected")) {
+          const aeSceneEl = document.getElementById(`${cardId}-ae-scene`);
+          const aeBonusEl = document.getElementById(`${cardId}-ae-bonus`);
+          const isAeScene = aeSceneEl && aeSceneEl.classList.contains("selected");
+          const isAeBonus = aeBonusEl && aeBonusEl.classList.contains("selected");
+          // Scene and Bonus bypass spec/corr/GT requirements
+          if (!isAeScene && !isAeBonus) {
+            const aeSpec = getSelectedVal(`${cardId}-ae-spec`);
+            const aeCorr = getSelectedVal(`${cardId}-ae-corr`);
+            if (aeSpec == null || aeCorr == null) {
+              if (!sectionErrors.locationMissing.includes(locIdx)) sectionErrors.locationMissing.push(locIdx);
+            } else if (aeCorr > 0) {
+              if (getGtMultiValues(`${cardId}-ae-gt`).length === 0) {
+                if (!sectionErrors.locationMissing.includes(locIdx)) sectionErrors.locationMissing.push(locIdx);
+              }
+            }
+          }
+        }
+      });
+
+      // Entity claims: N/A/Scene/Bonus or (spec + corr); if correct and not scene/bonus then need gt_indices
+      const entityList = [...(details.entities || [])];
+      if (isCloudVision && details.landmark_name && !entityList.some(e => e.name === details.landmark_name)) {
+        entityList.unshift({ name: details.landmark_name, type: "landmark" });
+      }
+      entityList.forEach((_, entIdx) => {
+        const cardId = `${sectionId}-entity-${entIdx}`;
+        const naEl = document.getElementById(`${cardId}-na`);
+        const sceneEl = document.getElementById(`${cardId}-scene`);
+        const bonusEl = document.getElementById(`${cardId}-bonus`);
+        const isNA = naEl && naEl.classList.contains("selected");
+        const isScene = sceneEl && sceneEl.classList.contains("selected");
+        const isBonus = bonusEl && bonusEl.classList.contains("selected");
+        const spec = getSelectedVal(`${cardId}-spec`);
+        const corr = getSelectedVal(`${cardId}-corr`);
+        if (isNA) return; // no other checks
+        if (isScene || isBonus) {
+          if (spec == null || corr == null) sectionErrors.entityMissingScores.push(entIdx);
+          return;
+        }
+        if (spec == null || corr == null) {
+          sectionErrors.entityMissingScores.push(entIdx);
+          return;
+        }
+        // Correct (corr > 0) but not scene/bonus => must have at least one GT link
+        if (corr > 0 && getGtMultiValues(`${cardId}-gt`).length === 0) sectionErrors.entityNeedsGt.push(entIdx);
+      });
+
+      const hasAny = sectionErrors.locationMissing.length > 0 || sectionErrors.entityMissingScores.length > 0 ||
+        sectionErrors.entityNeedsGt.length > 0 || sectionErrors.descMissing;
+      if (hasAny) errors.push(sectionErrors);
+  });
+
+  return { valid: errors.length === 0 && gtErrors.length === 0, errors, gtErrors };
+}
+
+let _validationTimer = null;
+function scheduleValidationUpdate() {
+  if (_validationTimer) clearTimeout(_validationTimer);
+  _validationTimer = setTimeout(() => {
+    _validationTimer = null;
+    updateValidationOverview();
+  }, 400);
+}
+
+function navigateToCard(targetId) {
+  const el = document.getElementById(targetId);
+  if (!el) return;
+  // Find the parent accordion section and open it if closed
+  const section = el.closest(".accordion-section") || el;
+  const body = section.querySelector ? section.querySelector(".accordion-body") : null;
+  if (body && !body.classList.contains("open")) {
+    body.classList.add("open");
+  }
+  // Also check if the target itself is inside an accordion body that's closed
+  let parent = el.parentElement;
+  while (parent) {
+    if (parent.classList && parent.classList.contains("accordion-body") && !parent.classList.contains("open")) {
+      parent.classList.add("open");
+    }
+    parent = parent.parentElement;
+  }
+  // Scroll into view with a small delay to let accordion open
+  setTimeout(() => {
+    el.scrollIntoView({ behavior: "smooth", block: "center" });
+    // Brief highlight flash
+    el.style.transition = "box-shadow 0.2s";
+    el.style.boxShadow = "0 0 0 3px #f59e0b";
+    setTimeout(() => { el.style.boxShadow = ""; }, 1500);
+  }, 100);
+}
+
+function updateValidationOverview() {
+  const result = validateEvaluation();
+  const summaryEl = document.getElementById("validation-summary");
+  const detailsEl = document.getElementById("validation-details");
+  const overview = document.getElementById("validation-overview");
+  if (!summaryEl || !detailsEl) return;
+
+  // Clear incomplete markers
+  document.querySelectorAll(".claim-card-incomplete").forEach(el => el.classList.remove("claim-card-incomplete"));
+  document.querySelectorAll(".accordion-section-incomplete").forEach(el => el.classList.remove("accordion-section-incomplete"));
+
+  const errorSectionIds = new Set(result.errors.map(e => e.sectionId));
+  const displaySections = getDisplaySections(currentData.eval_input || {});
+  displaySections.forEach(({ runIdx, appIdx }) => {
+    const sectionId = `approach-${runIdx}-${appIdx}`;
+    const statusEl = document.getElementById(`${sectionId}-status`);
+    if (statusEl) {
+      if (errorSectionIds.has(sectionId)) {
+        statusEl.textContent = "incomplete";
+        statusEl.className = "text-amber-600 text-xs font-medium";
+      } else {
+        statusEl.textContent = "scored";
+        statusEl.className = "text-green-600 text-xs font-medium";
+      }
+    }
+  });
+
+  if (result.valid) {
+    summaryEl.textContent = "Ready to submit";
+    summaryEl.className = "font-semibold text-green-700 mb-1";
+    detailsEl.innerHTML = "All claims processed. Ground truth complete. Entity claims with correctness &gt; 0 (not Scene/Bonus) are linked to ground truth.";
+    if (overview) overview.classList.remove("border-l-4", "border-amber-400", "bg-amber-50");
+  } else {
+    const totalIssues = result.errors.length + (result.gtErrors.length > 0 ? 1 : 0);
+    const issueLabels = [];
+    if (result.gtErrors.length > 0) issueLabels.push("ground truth incomplete");
+    if (result.errors.length > 0) issueLabels.push(`${result.errors.length} approach(es) need attention`);
+    summaryEl.textContent = issueLabels.join(" + ");
+    summaryEl.className = "font-semibold text-amber-700 mb-1";
+    const parts = [];
+    // GT errors first
+    if (result.gtErrors.length > 0) {
+      const gtMsgs = result.gtErrors.map(e =>
+        `<a href="#" class="val-link underline" data-target="${e.target}">${esc(e.msg)}</a>`
+      ).join("; ");
+      parts.push(`<div class="mb-1"><strong class="val-link cursor-pointer underline-offset-2 hover:underline" data-section="gt-section">Ground Truth</strong>: ${gtMsgs}</div>`);
+    }
+    result.errors.forEach(er => {
+      const sectionEl = document.getElementById(er.sectionId);
+      if (sectionEl) sectionEl.classList.add("accordion-section-incomplete");
+      const msgs = [];
+      if (er.descMissing) {
+        msgs.push(`<a href="#" class="val-link underline" data-target="${er.sectionId}-desc-score">description score (1–5)</a>`);
+      }
+      if (er.locationMissing.length) {
+        const links = er.locationMissing.map(i =>
+          `<a href="#" class="val-link underline" data-target="${er.sectionId}-location-${i}">${i}</a>`
+        ).join(", ");
+        msgs.push(`location [${links}] missing Spec/Corr`);
+      }
+      if (er.entityMissingScores.length) {
+        const links = er.entityMissingScores.map(i =>
+          `<a href="#" class="val-link underline" data-target="${er.sectionId}-entity-${i}">${i}</a>`
+        ).join(", ");
+        msgs.push(`entity [${links}] missing scores or N/A/Scene/Bonus tag`);
+      }
+      if (er.entityNeedsGt.length) {
+        const links = er.entityNeedsGt.map(i =>
+          `<a href="#" class="val-link underline" data-target="${er.sectionId}-entity-${i}">${i}</a>`
+        ).join(", ");
+        msgs.push(`entity [${links}] correctness &gt; 0 but no GT link`);
+      }
+      parts.push(`<div class="mb-0.5"><strong class="val-link cursor-pointer underline-offset-2 hover:underline" data-section="${er.sectionId}">${esc(er.approachName)}</strong>: ${msgs.join("; ")}</div>`);
+      er.locationMissing.forEach(locIdx => {
+        const card = document.getElementById(`${er.sectionId}-location-${locIdx}`);
+        if (card) card.classList.add("claim-card-incomplete");
+      });
+      er.entityMissingScores.forEach(entIdx => {
+        const card = document.getElementById(`${er.sectionId}-entity-${entIdx}`);
+        if (card) card.classList.add("claim-card-incomplete");
+      });
+      er.entityNeedsGt.forEach(entIdx => {
+        const card = document.getElementById(`${er.sectionId}-entity-${entIdx}`);
+        if (card) card.classList.add("claim-card-incomplete");
+      });
+    });
+    detailsEl.innerHTML = parts.join("");
+    // Attach click handlers for navigation links
+    detailsEl.querySelectorAll("a.val-link").forEach(link => {
+      link.onclick = (e) => {
+        e.preventDefault();
+        const targetId = link.dataset.target;
+        navigateToCard(targetId);
+      };
+    });
+    detailsEl.querySelectorAll("strong.val-link").forEach(el => {
+      el.onclick = () => {
+        const sId = el.dataset.section;
+        navigateToCard(sId);
+      };
+    });
+    if (overview) overview.classList.add("border-l-4", "border-amber-400", "bg-amber-50");
+  }
+}
+
+// ===================================================================
+// Restore existing evaluation
+// ===================================================================
+function restoreExisting(existing) {
+  // Always set notes per image (clear when no saved eval for this image)
+  const notesEl = document.getElementById("evaluator-notes");
+  if (notesEl) notesEl.value = (existing && existing.evaluator_notes) ? existing.evaluator_notes : "";
+
+  if (!existing) return;
+
+  // Evals
+  const evalInput = currentData.eval_input || {};
+  const runs = evalInput.model_runs || [];
+  (existing.evals || []).forEach(ev => {
+    // Find correct run by use_gps (new) or run_index (old)
+    const runIdx = ev.use_gps !== undefined
+      ? runs.findIndex(r => r.use_gps === ev.use_gps)
+      : (ev.run_index != null ? ev.run_index : 0);
+    if (runIdx < 0 || !runs[runIdx]) return;
+
+    // Find correct approach: by name first (since approach order varies), then by index
+    let appIdx = ev.approach_index;
+    if (ev.approach_name) {
+      const found = (runs[runIdx].approaches || []).findIndex(a => a && a.approach === ev.approach_name);
+      if (found >= 0) appIdx = found;
+    }
+    const sectionId = `approach-${runIdx}-${appIdx}`;
+    const approach = runs[runIdx]?.approaches?.[appIdx];
+    const isCloudVision = approach?.approach === GCV_APPROACH_NAME;
+
+    // Description score
+    if (!isCloudVision && ev.desc_score != null) {
+      setSelectedVal(`${sectionId}-desc-score`, ev.desc_score);
+      const dsl = document.getElementById(`${sectionId}-desc-score-label`);
+      if (dsl) dsl.textContent = DESC_SCORE_LABELS[ev.desc_score] || "";
+    }
+    const descReasonEl = document.getElementById(`${sectionId}-desc-reason`);
+    if (descReasonEl && ev.desc_reason) descReasonEl.value = ev.desc_reason;
+
+    // Location claims
+    (ev.location_claims || []).forEach((claim, locIdx) => {
+      const cardId = `${sectionId}-location-${locIdx}`;
+      if (claim.specificity != null) {
+        setSelectedVal(`${cardId}-spec`, claim.specificity);
+        const lbl = document.getElementById(`${cardId}-spec-label`);
+        if (lbl) lbl.textContent = (SPEC_LABELS.location[claim.specificity] || "");
+      }
+      if (claim.correctness != null) {
+        setSelectedVal(`${cardId}-corr`, claim.correctness);
+        const cl = document.getElementById(`${cardId}-corr-label`);
+        if (cl) cl.textContent = CORR_LABELS[String(claim.correctness)] || "";
+      }
+      const gtEl = document.getElementById(`${cardId}-gt`);
+      if (gtEl) gtEl.value = claim.gt_ref == null ? "null" : claim.gt_ref;
+      const flagEl = document.getElementById(`${cardId}-flag`);
+      if (flagEl) flagEl.checked = !!claim.flag;
+      const reasonEl = document.getElementById(`${cardId}-reason`);
+      if (reasonEl && claim.reason) reasonEl.value = claim.reason;
+      // Restore also-entity state
+      if (claim.also_entity) {
+        const aeBtn = document.getElementById(`${cardId}-also-ent`);
+        const cardEl = document.getElementById(cardId);
+        if (aeBtn) aeBtn.classList.add("selected");
+        if (cardEl) cardEl.classList.add("also-entity");
+        if (claim.entity_scene) {
+          const sb = document.getElementById(`${cardId}-ae-scene`);
+          if (sb) sb.classList.add("selected");
+        }
+        if (claim.entity_bonus) {
+          const bb = document.getElementById(`${cardId}-ae-bonus`);
+          if (bb) bb.classList.add("selected");
+        }
+        if (claim.entity_specificity != null) {
+          setSelectedVal(`${cardId}-ae-spec`, claim.entity_specificity);
+          const lbl = document.getElementById(`${cardId}-ae-spec-label`);
+          if (lbl) lbl.textContent = (SPEC_LABELS.entity[claim.entity_specificity] || "");
+        }
+        if (claim.entity_correctness != null) {
+          setSelectedVal(`${cardId}-ae-corr`, claim.entity_correctness);
+          const cl = document.getElementById(`${cardId}-ae-corr-label`);
+          if (cl) cl.textContent = CORR_LABELS[String(claim.entity_correctness)] || "";
+        }
+        // Restore also-entity GT links (backwards compat: old entity_gt_index → new entity_gt_indices)
+        let aeIndices = claim.entity_gt_indices || [];
+        if (aeIndices.length === 0 && claim.entity_gt_index != null) {
+          aeIndices = [claim.entity_gt_index];
+        }
+        if (aeIndices.length > 0) setGtMultiValues(`${cardId}-ae-gt`, aeIndices);
+      }
+    });
+
+    // Entity claims (skip from_location_claim entries — they're restored via location claim also_entity)
+    (ev.entity_claims || []).forEach((claim, entIdx) => {
+      if (claim.from_location_claim) return;
+      const cardId = `${sectionId}-entity-${entIdx}`;
+      // Restore N/A state
+      if (claim.not_applicable) {
+        const naEl = document.getElementById(`${cardId}-na`);
+        const cardEl = document.getElementById(cardId);
+        if (naEl) naEl.classList.add("selected");
+        if (cardEl) cardEl.classList.add("na");
+      }
+      // Restore Scene state
+      if (claim.scene_description) {
+        const sceneEl = document.getElementById(`${cardId}-scene`);
+        const cardEl = document.getElementById(cardId);
+        if (sceneEl) sceneEl.classList.add("selected");
+        if (cardEl) cardEl.classList.add("scene");
+      }
+      // Restore Bonus state
+      if (claim.bonus) {
+        const bonusEl = document.getElementById(`${cardId}-bonus`);
+        const cardEl = document.getElementById(cardId);
+        if (bonusEl) bonusEl.classList.add("selected");
+        if (cardEl) cardEl.classList.add("bonus");
+      }
+      if (claim.specificity != null) {
+        setSelectedVal(`${cardId}-spec`, claim.specificity);
+        const lbl = document.getElementById(`${cardId}-spec-label`);
+        if (lbl) lbl.textContent = (SPEC_LABELS.entity[claim.specificity] || "");
+      }
+      if (claim.correctness != null) {
+        setSelectedVal(`${cardId}-corr`, claim.correctness);
+        const cl = document.getElementById(`${cardId}-corr-label`);
+        if (cl) cl.textContent = CORR_LABELS[String(claim.correctness)] || "";
+      }
+      // Restore GT links (backwards compat: old gt_index → new gt_indices)
+      let indices = claim.gt_indices || [];
+      if (indices.length === 0 && claim.gt_index != null) {
+        indices = [claim.gt_index]; // migrate old single value
+      }
+      if (indices.length > 0) setGtMultiValues(`${cardId}-gt`, indices);
+      const flagEl = document.getElementById(`${cardId}-flag`);
+      if (flagEl) flagEl.checked = !!claim.flag;
+      const reasonEl = document.getElementById(`${cardId}-reason`);
+      if (reasonEl && claim.reason) reasonEl.value = claim.reason;
+    });
+
+  });
+}
+
+// ===================================================================
+// Submit / Save
+// ===================================================================
+async function submitEvaluation() {
+  updateValidationOverview();
+  const v = validateEvaluation();
+  if (!v.valid) {
+    document.getElementById("save-status").textContent = "Fix issues above before submitting.";
+    if (v.gtErrors && v.gtErrors.length > 0) {
+      navigateToCard(v.gtErrors[0].target);
+    } else {
+      const first = v.errors[0];
+      if (first) {
+        const section = document.getElementById(first.sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth", block: "nearest" });
+          const body = document.getElementById(first.sectionId + "-body");
+          if (body && !body.classList.contains("open")) toggleAccordion(first.sectionId + "-body");
+        }
+      }
+    }
+    return;
+  }
+  const data = collectEvaluation();
+  data.status = "complete";
+  const imageId = allImages[currentIndex].image_id;
+  const res = await fetch(`/api/image/${imageId}/evaluate`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data)
+  });
+  if (res.ok) {
+    dirty = false;
+    allImages[currentIndex].status = "complete";
+    populateJumpSelect();
+    document.getElementById("jump-select").value = currentIndex;
+    updateProgress();
+    updateCurrentImageStatus();
+    document.getElementById("save-status").textContent = "Saved!";
+    // Auto-advance
+    if (currentIndex < allImages.length - 1) {
+      currentIndex++;
+      await loadImage(currentIndex);
+    }
+  } else {
+    document.getElementById("save-status").textContent = "Error saving!";
+  }
+}
+
+async function saveProgress() {
+  updateValidationOverview();
+  const data = collectEvaluation();
+  data.status = "in_progress";
+  const imageId = allImages[currentIndex].image_id;
+  const res = await fetch(`/api/image/${imageId}/evaluate`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data)
+  });
+  if (res.ok) {
+    dirty = false;
+    document.getElementById("save-status").textContent = "Draft saved!";
+  } else {
+    document.getElementById("save-status").textContent = "Error saving draft!";
+  }
+}
+
+async function skipImage() {
+  if (!confirm("Skip this image? It will be excluded from evaluation analysis.")) return;
+  const imageId = allImages[currentIndex].image_id;
+  const payload = {
+    status: "skipped",
+    evaluator_notes: document.getElementById("evaluator-notes").value,
+    ground_truth: null,
+    evals: []
+  };
+  const res = await fetch(`/api/image/${imageId}/evaluate`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload)
+  });
+  if (res.ok) {
+    dirty = false;
+    allImages[currentIndex].status = "skipped";
+    populateJumpSelect();
+    document.getElementById("jump-select").value = currentIndex;
+    updateProgress();
+    updateCurrentImageStatus();
+    document.getElementById("save-status").textContent = "Skipped!";
+    if (currentIndex < allImages.length - 1) {
+      currentIndex++;
+      await loadImage(currentIndex);
+    }
+  } else {
+    document.getElementById("save-status").textContent = "Error skipping!";
+  }
+}
+
+function updateCurrentImageStatus() {
+  const el = document.getElementById("current-image-status");
+  if (!el || !allImages[currentIndex]) return;
+  const img = allImages[currentIndex];
+  const st = img.status;
+  if (st === "complete") {
+    el.textContent = "completed";
+    el.className = "text-xs px-2 py-0.5 rounded bg-green-100 text-green-700 font-medium";
+  } else if (st === "skipped") {
+    el.textContent = "skipped";
+    el.className = "text-xs px-2 py-0.5 rounded bg-red-100 text-red-600 font-medium";
+  } else if (st === "in_progress") {
+    el.textContent = "in progress";
+    el.className = "text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-700 font-medium";
+  } else {
+    el.textContent = "not started";
+    el.className = "text-xs px-2 py-0.5 rounded bg-gray-100 text-gray-500 font-medium";
+  }
+}
+
+// ===================================================================
+// Add Ground Truth Modal
+// ===================================================================
+function openAddGTModal(type) {
+  const modal = document.getElementById("gt-modal");
+  const title = document.getElementById("gt-modal-title");
+  const body = document.getElementById("gt-modal-body");
+
+  if (type === "location") {
+    title.textContent = "Add Ground Truth Location";
+    body.innerHTML = `
+      <div class="space-y-2 text-sm">
+        <div><label class="block text-xs font-semibold text-gray-500">Location Name</label>
+          <input type="text" id="gt-add-loc-name" class="w-full border rounded px-2 py-1" placeholder="e.g., Eiffel Tower, Paris, France"></div>
+        <div><label class="block text-xs font-semibold text-gray-500">Country</label>
+          <input type="text" id="gt-add-loc-country" class="w-full border rounded px-2 py-1"></div>
+        <div><label class="block text-xs font-semibold text-gray-500">Region</label>
+          <input type="text" id="gt-add-loc-region" class="w-full border rounded px-2 py-1"></div>
+        <div><label class="block text-xs font-semibold text-gray-500">City</label>
+          <input type="text" id="gt-add-loc-city" class="w-full border rounded px-2 py-1"></div>
+        <div><label class="block text-xs font-semibold text-gray-500">Exact</label>
+          <input type="text" id="gt-add-loc-exact" class="w-full border rounded px-2 py-1"></div>
+        <div class="flex gap-2 mt-3">
+          <button onclick="saveAddGT('location')" class="bg-blue-600 text-white rounded px-4 py-1 text-sm hover:bg-blue-700">Add</button>
+          <button onclick="document.getElementById('gt-modal').classList.remove('show')" class="border rounded px-4 py-1 text-sm hover:bg-gray-100">Cancel</button>
+        </div>
+      </div>`;
+  } else {
+    title.textContent = "Add Ground Truth Entity";
+    body.innerHTML = `
+      <div class="space-y-2 text-sm">
+        <div><label class="block text-xs font-semibold text-gray-500">Entity Name</label>
+          <input type="text" id="gt-add-ent-name" class="w-full border rounded px-2 py-1" placeholder="e.g., Eiffel Tower"></div>
+        <div><label class="block text-xs font-semibold text-gray-500">Category</label>
+          <select id="gt-add-ent-category" class="w-full border rounded px-2 py-1">
+            <option value="">-- Select --</option>
+            <option value="landmark">landmark</option>
+            <option value="building">building</option>
+            <option value="natural_feature">natural_feature</option>
+            <option value="monument">monument</option>
+            <option value="religious_site">religious_site</option>
+            <option value="cultural_site">cultural_site</option>
+            <option value="artwork">artwork</option>
+            <option value="public_space">public_space</option>
+            <option value="infrastructure">infrastructure</option>
+            <option value="architectural_style">architectural_style</option>
+            <option value="district">district</option>
+            <option value="signage">signage</option>
+            <option value="viewpoint">viewpoint</option>
+            <option value="transport_hub">transport_hub</option>
+            <option value="establishment">establishment</option>
+            <option value="other">other</option>
+          </select></div>
+        <div><label class="block text-xs font-semibold text-gray-500">Max Specificity (1-5)</label>
+          <select id="gt-add-ent-maxspec" class="w-full border rounded px-2 py-1">
+            <option value="">-- Not set --</option>
+            <option value="1">1 - Very generic</option>
+            <option value="2">2 - Type/category</option>
+            <option value="3">3 - Recognizable sub-type</option>
+            <option value="4">4 - Named category/style</option>
+            <option value="5">5 - Exact named identity</option>
+          </select></div>
+        <div><label class="block text-xs font-semibold text-gray-500">Importance</label>
+          <select id="gt-add-ent-importance" class="w-full border rounded px-2 py-1">
+            <option value="">-- Not set --</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select></div>
+        <div><label class="block text-xs font-semibold text-gray-500">Notes</label>
+          <input type="text" id="gt-add-ent-notes" class="w-full border rounded px-2 py-1"></div>
+        <div class="flex gap-2 mt-3">
+          <button onclick="saveAddGT('entity')" class="bg-blue-600 text-white rounded px-4 py-1 text-sm hover:bg-blue-700">Add</button>
+          <button onclick="document.getElementById('gt-modal').classList.remove('show')" class="border rounded px-4 py-1 text-sm hover:bg-gray-100">Cancel</button>
+        </div>
+      </div>`;
+  }
+  modal.classList.add("show");
+}
+
+async function saveAddGT(type) {
+  const imageId = allImages[currentIndex].image_id;
+  let payload;
+
+  if (type === "location") {
+    const data = {
+      name: document.getElementById("gt-add-loc-name").value,
+      hierarchy: {
+        country: document.getElementById("gt-add-loc-country").value,
+        region: document.getElementById("gt-add-loc-region").value,
+        city: document.getElementById("gt-add-loc-city").value,
+        exact: document.getElementById("gt-add-loc-exact").value
+      }
+    };
+    payload = { type: "location", data };
+  } else {
+    const addImpVal = document.getElementById("gt-add-ent-importance").value;
+    const data = {
+      name: document.getElementById("gt-add-ent-name").value,
+      type: document.getElementById("gt-add-ent-category").value,
+      notes: document.getElementById("gt-add-ent-notes").value,
+      max_specificity: parseInt(document.getElementById("gt-add-ent-maxspec").value) || null,
+      importance: addImpVal || null
+    };
+    payload = { type: "entity", data };
+  }
+
+  await fetch(`/api/image/${imageId}/ground-truth`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload)
+  });
+
+  document.getElementById("gt-modal").classList.remove("show");
+  // Reload image data from server to pick up the new GT entry
+  await reloadCurrentGT();
+  dirty = true;
+}
+
+// Delete a GT location or entity
+async function deleteGTEntry(type, idx) {
+  const gt = currentData.eval_input.ground_truth;
+  const entry = type === "location" ? (gt.locations || [])[idx] : (gt.entities || [])[idx];
+  const name = entry ? (entry.name || "unnamed") : "?";
+  if (!confirm(`Delete GT ${type} [${idx}]: "${name}"?`)) return;
+  const imageId = allImages[currentIndex].image_id;
+  await fetch(`/api/image/${imageId}/ground-truth/${type}/${idx}`, { method: "DELETE" });
+  await reloadCurrentGT();
+  dirty = true;
+}
+
+// Edit a GT location via modal
+function editGTLocation(idx) {
+  const gt = currentData.eval_input.ground_truth;
+  const loc = gt.locations[idx];
+  if (!loc) return;
+  const modal = document.getElementById("gt-modal");
+  const title = document.getElementById("gt-modal-title");
+  const body = document.getElementById("gt-modal-body");
+  title.textContent = `Edit GT Location [${idx}]`;
+  const h = loc.hierarchy || {};
+  body.innerHTML = `
+    <div class="space-y-2 text-sm">
+      <div><label class="block text-xs font-semibold text-gray-500">Location Name</label>
+        <input type="text" id="gt-edit-loc-name" class="w-full border rounded px-2 py-1" value="${escAttr(loc.name || "")}"></div>
+      <div><label class="block text-xs font-semibold text-gray-500">Country</label>
+        <input type="text" id="gt-edit-loc-country" class="w-full border rounded px-2 py-1" value="${escAttr(h.country || "")}"></div>
+      <div><label class="block text-xs font-semibold text-gray-500">Region</label>
+        <input type="text" id="gt-edit-loc-region" class="w-full border rounded px-2 py-1" value="${escAttr(h.region || "")}"></div>
+      <div><label class="block text-xs font-semibold text-gray-500">City</label>
+        <input type="text" id="gt-edit-loc-city" class="w-full border rounded px-2 py-1" value="${escAttr(h.city || "")}"></div>
+      <div><label class="block text-xs font-semibold text-gray-500">Exact</label>
+        <input type="text" id="gt-edit-loc-exact" class="w-full border rounded px-2 py-1" value="${escAttr(h.exact || "")}"></div>
+      <div class="flex gap-2 mt-3">
+        <button onclick="saveEditGTLocation(${idx})" class="bg-blue-600 text-white rounded px-4 py-1 text-sm hover:bg-blue-700">Save</button>
+        <button onclick="document.getElementById('gt-modal').classList.remove('show')" class="border rounded px-4 py-1 text-sm hover:bg-gray-100">Cancel</button>
+      </div>
+    </div>`;
+  modal.classList.add("show");
+}
+
+async function saveEditGTLocation(idx) {
+  const imageId = allImages[currentIndex].image_id;
+  const payload = {
+    name: document.getElementById("gt-edit-loc-name").value,
+    hierarchy: {
+      country: document.getElementById("gt-edit-loc-country").value,
+      region: document.getElementById("gt-edit-loc-region").value,
+      city: document.getElementById("gt-edit-loc-city").value,
+      exact: document.getElementById("gt-edit-loc-exact").value
+    }
+  };
+  await fetch(`/api/image/${imageId}/ground-truth/location/${idx}`, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload)
+  });
+  document.getElementById("gt-modal").classList.remove("show");
+  await reloadCurrentGT();
+  dirty = true;
+}
+
+// Edit a GT entity via modal
+function editGTEntity(idx) {
+  const gt = currentData.eval_input.ground_truth;
+  const ent = gt.entities[idx];
+  if (!ent) return;
+  const modal = document.getElementById("gt-modal");
+  const title = document.getElementById("gt-modal-title");
+  const body = document.getElementById("gt-modal-body");
+  title.textContent = `Edit GT Entity [${idx}]`;
+  let catOptions = '<option value="">-- Select --</option>';
+  ENTITY_CATEGORIES.forEach(c => {
+    const sel = c === (ent.type || "") ? " selected" : "";
+    catOptions += `<option value="${c}"${sel}>${c}</option>`;
+  });
+  let specOptions = '<option value="">-- Not set --</option>';
+  for (let v = 1; v <= 5; v++) {
+    const sel = v === ent.max_specificity ? " selected" : "";
+    specOptions += `<option value="${v}"${sel}>${v}</option>`;
+  }
+  body.innerHTML = `
+    <div class="space-y-2 text-sm">
+      <div><label class="block text-xs font-semibold text-gray-500">Entity Name</label>
+        <input type="text" id="gt-edit-ent-name" class="w-full border rounded px-2 py-1" value="${escAttr(ent.name || "")}"></div>
+      <div><label class="block text-xs font-semibold text-gray-500">Category</label>
+        <select id="gt-edit-ent-category" class="w-full border rounded px-2 py-1">${catOptions}</select></div>
+      <div><label class="block text-xs font-semibold text-gray-500">Max Specificity (1-5)</label>
+        <select id="gt-edit-ent-maxspec" class="w-full border rounded px-2 py-1">${specOptions}</select></div>
+      <div><label class="block text-xs font-semibold text-gray-500">Importance</label>
+        <select id="gt-edit-ent-importance" class="w-full border rounded px-2 py-1">
+          <option value=""${!ent.importance ? " selected" : ""}>-- Not set --</option>
+          <option value="high"${ ent.importance === "high" ? " selected" : ""}>High</option>
+          <option value="medium"${ent.importance === "medium" ? " selected" : ""}>Medium</option>
+          <option value="low"${ent.importance === "low" ? " selected" : ""}>Low</option>
+        </select></div>
+      <div><label class="block text-xs font-semibold text-gray-500">Notes</label>
+        <input type="text" id="gt-edit-ent-notes" class="w-full border rounded px-2 py-1" value="${escAttr(ent.notes || "")}"></div>
+      <div class="flex gap-2 mt-3">
+        <button onclick="saveEditGTEntity(${idx})" class="bg-blue-600 text-white rounded px-4 py-1 text-sm hover:bg-blue-700">Save</button>
+        <button onclick="document.getElementById('gt-modal').classList.remove('show')" class="border rounded px-4 py-1 text-sm hover:bg-gray-100">Cancel</button>
+      </div>
+    </div>`;
+  modal.classList.add("show");
+}
+
+async function saveEditGTEntity(idx) {
+  const imageId = allImages[currentIndex].image_id;
+  const specVal = document.getElementById("gt-edit-ent-maxspec").value;
+  const impVal = document.getElementById("gt-edit-ent-importance").value;
+  const payload = {
+    name: document.getElementById("gt-edit-ent-name").value,
+    type: document.getElementById("gt-edit-ent-category").value,
+    max_specificity: specVal ? parseInt(specVal) : null,
+    importance: impVal || null,
+    notes: document.getElementById("gt-edit-ent-notes").value
+  };
+  await fetch(`/api/image/${imageId}/ground-truth/entity/${idx}`, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload)
+  });
+  document.getElementById("gt-modal").classList.remove("show");
+  await reloadCurrentGT();
+  dirty = true;
+}
+
+// Open Add GT Entity modal pre-filled from a model claim (editable)
+function openAddGTFromClaim(claimName, claimType) {
+  openAddGTModal("entity");
+  setTimeout(() => {
+    document.getElementById("gt-add-ent-name").value = claimName;
+    // Try to match the claim type to a category
+    const catSelect = document.getElementById("gt-add-ent-category");
+    if (catSelect) {
+      // Check if the claimType matches an option
+      const matchOpt = Array.from(catSelect.options).find(o => o.value === claimType);
+      if (matchOpt) catSelect.value = claimType;
+      else catSelect.value = "other";
+    }
+  }, 50);
+}
+
+// Copy a GT location to a new GT entity (pre-fills and opens modal)
+function copyLocationToEntity(locIdx) {
+  const gt = currentData.eval_input.ground_truth;
+  const loc = gt.locations[locIdx];
+  if (!loc) return;
+  // Derive a sensible entity name: use 'exact' from hierarchy, or the full location name
+  const entityName = (loc.hierarchy && loc.hierarchy.exact) ? loc.hierarchy.exact : loc.name;
+  openAddGTModal("entity");
+  // Pre-fill after modal is rendered
+  setTimeout(() => {
+    document.getElementById("gt-add-ent-name").value = entityName;
+    document.getElementById("gt-add-ent-category").value = "landmark";
+  }, 50);
+}
+
+// --- Image category buttons (multi-select) ---
+async function toggleImageCategory(btn) {
+  btn.classList.toggle("selected");
+  const imageId = allImages[currentIndex].image_id;
+  const group = document.getElementById("gt-image-categories");
+  const selected = [];
+  group.querySelectorAll("button.selected").forEach(b => selected.push(b.dataset.val));
+  const gt = currentData.eval_input.ground_truth;
+  gt.image_categories = selected.length > 0 ? selected : null;
+  await fetch(`/api/image/${imageId}/ground-truth`, {
+    method: "PATCH",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ image_categories: gt.image_categories })
+  });
+  scheduleValidationUpdate();
+}
+
+// --- Difficulty buttons ---
+function restoreDifficultyBtn(containerId, value) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  container.querySelectorAll("button").forEach(b => {
+    if (value && b.dataset.val === value) b.classList.add("selected");
+    else b.classList.remove("selected");
+  });
+}
+
+async function setDifficulty(field, btn) {
+  const imageId = allImages[currentIndex].image_id;
+  const value = btn.dataset.val;
+  const containerId = field === "with_gps" ? "gt-diff-gps" : "gt-diff-nogps";
+  restoreDifficultyBtn(containerId, value);
+  dirty = true;
+  try {
+    const resp = await fetch(`/api/image/${imageId}/difficulty`, {
+      method: "PUT",
+      headers: {"Content-Type":"application/json"},
+      body: JSON.stringify({ field: `difficulty_${field}`, value })
+    });
+    if (!resp.ok) alert("Failed to save difficulty");
+  } catch(e) { alert("Error saving difficulty: " + e.message); }
+  scheduleValidationUpdate();
+}
+
+// Set max_specificity on an existing GT entity (saves to eval_input file)
+async function setEntityMaxSpec(entIdx, value) {
+  const imageId = allImages[currentIndex].image_id;
+  // Visually update buttons immediately
+  const group = document.getElementById(`gt-ent-spec-${entIdx}`);
+  if (group) {
+    group.querySelectorAll("button").forEach(b => {
+      if (parseInt(b.dataset.val) === value) b.classList.add("selected");
+      else b.classList.remove("selected");
+    });
+  }
+  // Update description label
+  const lbl = document.getElementById(`gt-ent-spec-label-${entIdx}`);
+  if (lbl) lbl.textContent = SPEC_LABELS.entity[value] || "";
+  // Save to backend
+  await fetch(`/api/image/${imageId}/ground-truth/entity/${entIdx}`, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ max_specificity: value })
+  });
+  // Update local data
+  currentData.eval_input.ground_truth.entities[entIdx].max_specificity = value;
+  scheduleValidationUpdate();
+}
+
+async function setEntityImportance(entIdx, value) {
+  const imageId = allImages[currentIndex].image_id;
+  const group = document.getElementById(`gt-ent-imp-${entIdx}`);
+  if (group) {
+    group.querySelectorAll("button").forEach(b => {
+      if (b.dataset.val === value) b.classList.add("selected");
+      else b.classList.remove("selected");
+    });
+  }
+  await fetch(`/api/image/${imageId}/ground-truth/entity/${entIdx}`, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ importance: value })
+  });
+  currentData.eval_input.ground_truth.entities[entIdx].importance = value;
+  scheduleValidationUpdate();
+}
+
+// Reload GT from server (after adding entries) and re-render
+async function reloadCurrentGT() {
+  const imageId = allImages[currentIndex].image_id;
+  const res = await fetch(`/api/image/${imageId}`);
+  const data = await res.json();
+  currentData.eval_input.ground_truth = data.eval_input.ground_truth;
+  renderGroundTruth(data.eval_input.ground_truth);
+  refreshGTDropdowns();
+}
+
+function refreshGTDropdowns() {
+  // Refresh entity GT link dropdowns (location ones are static reference types)
+  const entOpts = gtEntityOptions();
+
+  document.querySelectorAll("select[id$='-gt']").forEach(sel => {
+    if (sel.id.includes("-location-")) return; // skip location dropdowns
+    const currentVal = sel.value;
+    sel.innerHTML = "";
+    entOpts.forEach(opt => {
+      const o = document.createElement("option");
+      o.value = opt.value;
+      o.textContent = opt.label;
+      sel.appendChild(o);
+    });
+    sel.value = currentVal;
+  });
+}
+
+// ===================================================================
+// Reference modal
+// ===================================================================
+function showReference() {
+  document.getElementById("reference-modal").classList.add("show");
+}
+
+// ===================================================================
+// Utilities
+// ===================================================================
+function esc(s) {
+  if (!s) return "";
+  const div = document.createElement("div");
+  div.textContent = s;
+  return div.innerHTML;
+}
+
+function escAttr(s) {
+  if (!s) return "";
+  return s.replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+}
+
+function truncate(s, n) {
+  if (!s) return "";
+  return s.length > n ? s.substring(0, n) + "..." : s;
+}
+
+// Warn before leaving
+window.addEventListener("beforeunload", (e) => {
+  if (dirty) { e.preventDefault(); e.returnValue = ""; }
+});
+
+// Start
+init();
+</script>
+</body>
+</html>

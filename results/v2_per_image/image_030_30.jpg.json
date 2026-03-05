@@ -1,0 +1,1107 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "30.jpg",
+      "timestamp": "2026-01-28T05:18:43.152067",
+      "processing_time_seconds": 49.422215,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 43.76523888888889,
+        "gps_longitude": 11.24991111111111,
+        "location": {
+          "formatted_address": "Piazza de' Pitti, 1, 50125 Firenze FI, Italy",
+          "city": "Firenze",
+          "county": "Città Metropolitana di Firenze",
+          "country": "Italy"
+        },
+        "datetime_original": "2022:07:14 16:39:59",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Marble bust, Framed paintings, Florence, Italy",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The marble bust and framed paintings are typical of neoclassical and traditional European art styles, often found in historical buildings or museums in Florence.",
+            "detailed_description": "The image shows a marble bust displayed on an ornate pedestal, characteristic of neoclassical style. The bust is surrounded by framed paintings, which appear to be traditional artworks. The setting includes rich green wall coverings and decorative elements such as a wall-mounted candelabra and elaborate curtains, suggesting a luxurious interior typical of historical European settings.",
+            "identification": {
+              "primary": [
+                "Marble bust",
+                "Framed paintings"
+              ],
+              "location": "Florence, Italy",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Marble bust",
+                "type": "sculpture",
+                "confidence": 0.9
+              },
+              {
+                "name": "Framed paintings",
+                "type": "artwork",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "neoclassical",
+              "marble",
+              "painting",
+              "interior",
+              "Florence"
+            ],
+            "location": "Florence, Italy",
+            "type": "sculpture",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Palazzo Pitti interior",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "The style and opulence of the interior suggest a location like Palazzo Pitti, known for its rich art collections and historical decor."
+              },
+              {
+                "guess": "Uffizi Gallery",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "The presence of classical art and sculpture aligns with the collections found in the Uffizi Gallery."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Marble bust\", \"Framed paintings\"],\n        \"location\": \"Florence, Italy\",\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Marble bust\",\n            \"type\": \"sculpture\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Framed paintings\",\n            \"type\": \"artwork\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"neoclassical\", \"marble\", \"painting\", \"interior\", \"Florence\"],\n    \"description\": \"The image shows a marble bust displayed on an ornate pedestal, characteristic of neoclassical style. The bust is surrounded by framed paintings, which appear to be traditional artworks. The setting includes rich green wall coverings and decorative elements such as a wall-mounted candelabra and elaborate curtains, suggesting a luxurious interior typical of historical European settings.\",\n    \"reasoning\": \"The marble bust and framed paintings are typical of neoclassical and traditional European art styles, often found in historical buildings or museums in Florence.\",\n    \"type\": \"sculpture\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Palazzo Pitti interior\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The style and opulence of the interior suggest a location like Palazzo Pitti, known for its rich art collections and historical decor.\"\n        },\n        {\n            \"guess\": \"Uffizi Gallery\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The presence of classical art and sculpture aligns with the collections found in the Uffizi Gallery.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": 43.76523888888889,
+              "longitude": 11.24991111111111
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Piazza de' Pitti, 1, 50125 Firenze FI, Italy",
+              "city": "Firenze",
+              "county": "Città Metropolitana di Firenze",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2022:07:14 16:39:59",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 9.334584951400757
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts an ornate interior setting, characterized by rich decorative elements and classical artwork. Central to the composition is a marble bust, positioned on a gilded pedestal. The bust appears to be of a classical figure, possibly from Roman or Greek mythology, showcasing intricate detailing in the hair and drapery. The pedestal is elaborately decorated with gold leaf and intricate carvings, adding to the opulence of the setting. Surrounding the bust are two framed artworks. The pai",
+            "description": "The image depicts an ornate interior setting, characterized by rich decorative elements and classical artwork. Central to the composition is a marble bust, positioned on a gilded pedestal. The bust appears to be of a classical figure, possibly from Roman or Greek mythology, showcasing intricate detailing in the hair and drapery. The pedestal is elaborately decorated with gold leaf and intricate carvings, adding to the opulence of the setting. Surrounding the bust are two framed artworks. The pai",
+            "architectural_style": "Classical",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 43.76523888888889,
+              "longitude": 11.24991111111111
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Piazza de' Pitti, 1, 50125 Firenze FI, Italy",
+              "city": "Firenze",
+              "county": "Città Metropolitana di Firenze",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2022:07:14 16:39:59",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 39.346888065338135
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Picture frame",
+          "confidence": 0.8329890370368958,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "object",
+            "all_candidates": [
+              {
+                "source": "object",
+                "name": "Picture frame",
+                "score": 0.8329890370368958
+              },
+              {
+                "source": "object",
+                "name": "Picture frame",
+                "score": 0.8107535243034363
+              },
+              {
+                "source": "object",
+                "name": "Bust",
+                "score": 0.736023485660553
+              },
+              {
+                "source": "label",
+                "name": "Brass",
+                "score": 0.7235127091407776
+              },
+              {
+                "source": "label",
+                "name": "Antique",
+                "score": 0.7075109481811523
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Visual Arts",
+                "score": 0.41634297370910645
+              },
+              {
+                "name": "Art",
+                "score": 0.3472999930381775
+              }
+            ],
+            "objects": [
+              {
+                "name": "Picture frame",
+                "score": 0.8329890370368958
+              },
+              {
+                "name": "Picture frame",
+                "score": 0.8107535243034363
+              },
+              {
+                "name": "Bust",
+                "score": 0.736023485660553
+              },
+              {
+                "name": "Person",
+                "score": 0.7061542272567749
+              },
+              {
+                "name": "Lighting",
+                "score": 0.6739077568054199
+              }
+            ],
+            "labels": [
+              {
+                "name": "Brass",
+                "score": 0.7235127091407776
+              },
+              {
+                "name": "Antique",
+                "score": 0.7075109481811523
+              },
+              {
+                "name": "Picture frame",
+                "score": 0.7069552540779114
+              },
+              {
+                "name": "Light fixture",
+                "score": 0.604168176651001
+              },
+              {
+                "name": "Still life photography",
+                "score": 0.5864334106445312
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 43.76523888888889,
+              "longitude": 11.24991111111111
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Piazza de' Pitti, 1, 50125 Firenze FI, Italy",
+              "city": "Firenze",
+              "county": "Città Metropolitana di Firenze",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2022:07:14 16:39:59",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 12.618347883224487
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Firenze, Città Metropolitana di Firenze, Italy",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Firenze, Città Metropolitana di Firenze, Italy",
+            "coordinates": {
+              "latitude": 43.76523888888889,
+              "longitude": 11.24991111111111
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Ponte Vecchio",
+                  "types": [
+                    "tourist_attraction",
+                    "landmark",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 148019,
+                  "vicinity": "Ponte Vecchio, Firenze",
+                  "place_id": "ChIJZ7bcoqpWKhMR6ALnMOgKMUA",
+                  "location": {
+                    "lat": 43.76792500000001,
+                    "lng": 11.2531435
+                  }
+                },
+                {
+                  "name": "Hercules and Cacus",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 282,
+                  "vicinity": "Piazza della Signoria, Firenze",
+                  "place_id": "ChIJ0_VB8ABUKhMRj7sLt3AMUm0",
+                  "location": {
+                    "lat": 43.76920030000001,
+                    "lng": 11.2558834
+                  }
+                },
+                {
+                  "name": "Palazzo Guicciardini",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 69,
+                  "vicinity": "Via de' Guicciardini, 15, Firenze",
+                  "place_id": "ChIJCSCabFVRKhMR_A9KYbPCjNE",
+                  "location": {
+                    "lat": 43.76652559999999,
+                    "lng": 11.2511105
+                  }
+                },
+                {
+                  "name": "Fontana del Carciofo",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 79,
+                  "vicinity": "Piazza de' Pitti, 10R, Firenze",
+                  "place_id": "ChIJIQSPuFVRKhMRthYARbSk5Oc",
+                  "location": {
+                    "lat": 43.7646547,
+                    "lng": 11.2504654
+                  }
+                },
+                {
+                  "name": "Chiesa di San Pier Gattolino",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 22,
+                  "vicinity": "Via Romana, 42, Firenze",
+                  "place_id": "ChIJPaCadlFRKhMRGniRwI9BZLQ",
+                  "location": {
+                    "lat": 43.7631547,
+                    "lng": 11.2441617
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Uffizi Galleries",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 89990,
+                  "vicinity": "Piazzale degli Uffizi, 6, Firenze",
+                  "place_id": "ChIJgZDFjQBUKhMRzcTwm8i33s0",
+                  "location": {
+                    "lat": 43.7677856,
+                    "lng": 11.2553108
+                  }
+                },
+                {
+                  "name": "Palazzo Pitti",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 34164,
+                  "vicinity": "Piazza de' Pitti, 1, Firenze",
+                  "place_id": "ChIJ8ZnbQVRRKhMRKlDx5uTM0Fw",
+                  "location": {
+                    "lat": 43.7651533,
+                    "lng": 11.2500081
+                  }
+                },
+                {
+                  "name": "Museo Nazionale del Bargello",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 8618,
+                  "vicinity": "Via del Proconsolo, 4, Firenze",
+                  "place_id": "ChIJeSvB0gZUKhMR7CVehDqbPCE",
+                  "location": {
+                    "lat": 43.7703981,
+                    "lng": 11.2580078
+                  }
+                },
+                {
+                  "name": "Museo Galileo",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 8225,
+                  "vicinity": "Piazza dei Giudici, 1, Firenze",
+                  "place_id": "ChIJKXIhnQBUKhMR1uqaXhDXuhk",
+                  "location": {
+                    "lat": 43.7677337,
+                    "lng": 11.2559032
+                  }
+                },
+                {
+                  "name": "Basilica di Santo Spirito",
+                  "types": [
+                    "museum",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 4769,
+                  "vicinity": "Piazza Santo Spirito, 30, Firenze",
+                  "place_id": "ChIJS3aUglRRKhMRNB0QFOifHKE",
+                  "location": {
+                    "lat": 43.7670968,
+                    "lng": 11.2480356
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Hotel Lungarno",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 509,
+                  "vicinity": "Borgo San Iacopo, 14, Firenze",
+                  "place_id": "ChIJez8bNVVRKhMR6QTW0w89UGo",
+                  "location": {
+                    "lat": 43.76796720000001,
+                    "lng": 11.2515563
+                  }
+                },
+                {
+                  "name": "Hotel Silla",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 492,
+                  "vicinity": "Via dei Renai, 5, Firenze",
+                  "place_id": "ChIJla4f2fhTKhMRpZIgXdTqI6s",
+                  "location": {
+                    "lat": 43.7647399,
+                    "lng": 11.2602958
+                  }
+                },
+                {
+                  "name": "Brunelleschi Hotel",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1466,
+                  "vicinity": "Piazza Sant'Elisabetta, 3, Firenze",
+                  "place_id": "ChIJVYTq1xZLKhMR9hdzECEEL0Q",
+                  "location": {
+                    "lat": 43.771716,
+                    "lng": 11.25577
+                  }
+                },
+                {
+                  "name": "Hotel La Scaletta Florence",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1154,
+                  "vicinity": "Via de' Guicciardini, 13, Firenze",
+                  "place_id": "ChIJ41cyaFVRKhMRhTaveTyC2W4",
+                  "location": {
+                    "lat": 43.7667278,
+                    "lng": 11.2516018
+                  }
+                },
+                {
+                  "name": "Gallery Hotel Art",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 395,
+                  "vicinity": "Vicolo dell'Oro, 5, Firenze",
+                  "place_id": "ChIJqeAmEQBUKhMRvrAmRIBdaok",
+                  "location": {
+                    "lat": 43.76897679999999,
+                    "lng": 11.2532147
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Boboli Gardens",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 29315,
+                  "vicinity": "Florence",
+                  "place_id": "ChIJl05zkFZRKhMRstkDO_cCDAQ",
+                  "location": {
+                    "lat": 43.76249719999999,
+                    "lng": 11.2483996
+                  }
+                },
+                {
+                  "name": "Villa Bardini",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 3132,
+                  "vicinity": "Costa San Giorgio, 2, Firenze",
+                  "place_id": "ChIJiaZVj_5TKhMRKzngptMzaPk",
+                  "location": {
+                    "lat": 43.7639854,
+                    "lng": 11.2561705
+                  }
+                },
+                {
+                  "name": "Giardino della Scuderie Reali",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 155,
+                  "vicinity": "Piazzale di Porta Romana, 9, Firenze",
+                  "place_id": "ChIJw4SWFFBRKhMR7djXNOtg_Xg",
+                  "location": {
+                    "lat": 43.75974239999999,
+                    "lng": 11.2450143
+                  }
+                },
+                {
+                  "name": "Terzo Giardino",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 39,
+                  "vicinity": "Lungarno Serristori, 19, Firenze",
+                  "place_id": "ChIJlTPXRvhTKhMRMZafSyHgMYQ",
+                  "location": {
+                    "lat": 43.7654429,
+                    "lng": 11.2621001
+                  }
+                },
+                {
+                  "name": "Piazzetta dello Sprone",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1,
+                  "vicinity": "Piazzetta dello Sprone, Firenze",
+                  "place_id": "ChIJ4ey6UNJRKhMReX19b2QKmQU",
+                  "location": {
+                    "lat": 43.766796,
+                    "lng": 11.2507374
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Chiesa di San Pier Gattolino",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 22,
+                  "vicinity": "Via Romana, 42, Firenze",
+                  "place_id": "ChIJPaCadlFRKhMRGniRwI9BZLQ",
+                  "location": {
+                    "lat": 43.7631547,
+                    "lng": 11.2441617
+                  }
+                },
+                {
+                  "name": "Chiesa di Santa Maria Maggiore",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 743,
+                  "vicinity": "Vicolo di Santa Maria Maggiore, 1, Firenze",
+                  "place_id": "ChIJ65TGDwJUKhMR9MneTUcmw5s",
+                  "location": {
+                    "lat": 43.7733168,
+                    "lng": 11.2528428
+                  }
+                },
+                {
+                  "name": "Convento San Paolino",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 21,
+                  "vicinity": "Via di San Paolino, 8, Firenze",
+                  "place_id": "ChIJXW9A5atWKhMRdOHYvlwpimE",
+                  "location": {
+                    "lat": 43.77274889999999,
+                    "lng": 11.2478275
+                  }
+                },
+                {
+                  "name": "Basilica di Santo Spirito",
+                  "types": [
+                    "museum",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 4769,
+                  "vicinity": "Piazza Santo Spirito, 30, Firenze",
+                  "place_id": "ChIJS3aUglRRKhMRNB0QFOifHKE",
+                  "location": {
+                    "lat": 43.7670968,
+                    "lng": 11.2480356
+                  }
+                },
+                {
+                  "name": "Chiesa di Santa Maria del Carmine",
+                  "types": [
+                    "church",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1742,
+                  "vicinity": "Piazza del Carmine, 14, Firenze",
+                  "place_id": "ChIJPzLIKVNRKhMRRCBdw2__wbU",
+                  "location": {
+                    "lat": 43.7681418,
+                    "lng": 11.2438913
+                  }
+                },
+                {
+                  "name": "Old Synagogue, 1882",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 2.5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Via dell'Oche, 5, Firenze",
+                  "place_id": "ChIJYxgOar9VKhMR5tDQbwZH02Q",
+                  "location": {
+                    "lat": 43.77215949999999,
+                    "lng": 11.2563797
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Porcellino Gallery",
+                  "types": [
+                    "art_gallery",
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 119,
+                  "vicinity": "Piazza del Mercato Nuovo, 4, Firenze",
+                  "place_id": "ChIJPySQSgBUKhMRmbVaVAmBH0o",
+                  "location": {
+                    "lat": 43.7698936,
+                    "lng": 11.2539234
+                  }
+                },
+                {
+                  "name": "Art Gallery and Auction House Pananti",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 72,
+                  "vicinity": "Via Maggio, 28, Firenze",
+                  "place_id": "ChIJ6dTM5VRRKhMRJqXeg3GDFAE",
+                  "location": {
+                    "lat": 43.7667197,
+                    "lng": 11.2488507
+                  }
+                },
+                {
+                  "name": "Tornabuoni Arte Arte Antica",
+                  "types": [
+                    "art_gallery",
+                    "home_goods_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 5,
+                  "vicinity": "Via Maggio, 40r, Firenze",
+                  "place_id": "ChIJtcabXlRRKhMRXESB7SWFLhs",
+                  "location": {
+                    "lat": 43.76707429999999,
+                    "lng": 11.2490775
+                  }
+                },
+                {
+                  "name": "FLAIR FIRENZE",
+                  "types": [
+                    "art_gallery",
+                    "general_contractor",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 20,
+                  "vicinity": "Lungarno Corsini, 24r, Firenze",
+                  "place_id": "ChIJ1evSQKtWKhMRgrCLH6bniu8",
+                  "location": {
+                    "lat": 43.7699206,
+                    "lng": 11.2498315
+                  }
+                },
+                {
+                  "name": "San Jacopo Show",
+                  "types": [
+                    "art_gallery",
+                    "general_contractor",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 8,
+                  "vicinity": "Borgo San Iacopo, 66/red, Firenze",
+                  "place_id": "ChIJRbqSSlVRKhMREHwodSfSYOs",
+                  "location": {
+                    "lat": 43.7679546,
+                    "lng": 11.2510582
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Florence",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Florence",
+                  "place_id": "ChIJrdbSgKZWKhMRAyrH7xd51ZM",
+                  "location": {
+                    "lat": 43.7699685,
+                    "lng": 11.2576706
+                  }
+                },
+                {
+                  "name": "Ponte Vecchio",
+                  "types": [
+                    "tourist_attraction",
+                    "landmark",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 148019,
+                  "vicinity": "Ponte Vecchio, Firenze",
+                  "place_id": "ChIJZ7bcoqpWKhMR6ALnMOgKMUA",
+                  "location": {
+                    "lat": 43.76792500000001,
+                    "lng": 11.2531435
+                  }
+                },
+                {
+                  "name": "Hotel Torre Guelfa",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 589,
+                  "vicinity": "Borgo Santi Apostoli, 8, Firenze",
+                  "place_id": "ChIJRUvHPwBUKhMRgHxJpwt2iKI",
+                  "location": {
+                    "lat": 43.7692856,
+                    "lng": 11.2527253
+                  }
+                },
+                {
+                  "name": "Hotel Lungarno",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 509,
+                  "vicinity": "Borgo San Iacopo, 14, Firenze",
+                  "place_id": "ChIJez8bNVVRKhMR6QTW0w89UGo",
+                  "location": {
+                    "lat": 43.76796720000001,
+                    "lng": 11.2515563
+                  }
+                },
+                {
+                  "name": "Hotel NH Collection Firenze Porta Rossa",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 995,
+                  "vicinity": "Via Porta Rossa, 19, Firenze",
+                  "place_id": "ChIJYdW_LABUKhMRAUMUVqfxIZw",
+                  "location": {
+                    "lat": 43.7701176,
+                    "lng": 11.2519848
+                  }
+                }
+              ]
+            },
+            "total_places_found": 36,
+            "photo_timestamp": "2022:07:14 16:39:59",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.42826008796691895
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/30.jpg"
+    },
+    {
+      "image_filename": "30.jpg",
+      "timestamp": "2026-01-28T05:19:32.609730",
+      "processing_time_seconds": 51.721216,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Marble bust, Framed paintings",
+          "confidence": 0.75,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The marble bust and ornate pedestal suggest neoclassical influences, common in historical interiors. The paintings and decorative elements further support this context.",
+            "detailed_description": "The image shows a marble bust displayed on an ornate pedestal, likely in a neoclassical style. The pedestal is richly decorated with gold elements. The bust is accompanied by framed paintings on the wall, which appear to be classical in style. The room features elaborate wall sconces with candles and luxurious green drapery, suggesting a historical or opulent setting.",
+            "identification": {
+              "primary": [
+                "Marble bust",
+                "Framed paintings"
+              ],
+              "location": null,
+              "confidence": 0.75
+            },
+            "artifacts": [
+              {
+                "name": "Marble bust on ornate pedestal",
+                "type": "sculpture",
+                "confidence": 0.85
+              },
+              {
+                "name": "Framed paintings",
+                "type": "artwork",
+                "confidence": 0.75
+              },
+              {
+                "name": "Wall sconce with candles",
+                "type": "decorative element",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "neoclassical",
+              "marble",
+              "painting",
+              "interior",
+              "decorative"
+            ],
+            "location": null,
+            "type": "sculpture",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Neoclassical interior of a historical palace",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "The style and decor are typical of neoclassical interiors found in historical palaces."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Marble bust\", \"Framed paintings\"],\n        \"location\": null,\n        \"confidence\": 0.75\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Marble bust on ornate pedestal\",\n            \"type\": \"sculpture\",\n            \"confidence\": 0.85\n        },\n        {\n            \"name\": \"Framed paintings\",\n            \"type\": \"artwork\",\n            \"confidence\": 0.75\n        },\n        {\n            \"name\": \"Wall sconce with candles\",\n            \"type\": \"decorative element\",\n            \"confidence\": 0.80\n        }\n    ],\n    \"tags\": [\"neoclassical\", \"marble\", \"painting\", \"interior\", \"decorative\"],\n    \"description\": \"The image shows a marble bust displayed on an ornate pedestal, likely in a neoclassical style. The pedestal is richly decorated with gold elements. The bust is accompanied by framed paintings on the wall, which appear to be classical in style. The room features elaborate wall sconces with candles and luxurious green drapery, suggesting a historical or opulent setting.\",\n    \"reasoning\": \"The marble bust and ornate pedestal suggest neoclassical influences, common in historical interiors. The paintings and decorative elements further support this context.\",\n    \"type\": \"sculpture\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Neoclassical interior of a historical palace\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.70,\n            \"reasoning\": \"The style and decor are typical of neoclassical interiors found in historical palaces.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 9.739784955978394
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts an opulent interior setting characterized by rich green fabric walls and elaborate decorative elements. Central to the image is a marble bust placed on a gilded pedestal. The bust appears to be sculpted in a classical style, featuring intricate details such as drapery and possibly a figure or object resting on the shoulder. The pedestal is ornately decorated with gold leaf and intricate carvings, suggesting a Baroque or Rococo influence. Adjacent to the bust are two framed artw",
+            "description": "The image depicts an opulent interior setting characterized by rich green fabric walls and elaborate decorative elements. Central to the image is a marble bust placed on a gilded pedestal. The bust appears to be sculpted in a classical style, featuring intricate details such as drapery and possibly a figure or object resting on the shoulder. The pedestal is ornately decorated with gold leaf and intricate carvings, suggesting a Baroque or Rococo influence. Adjacent to the bust are two framed artw",
+            "architectural_style": "Baroque/Rococo",
+            "search_backends_used": [],
+            "processing_time_seconds": 41.97912883758545
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Picture frame",
+          "confidence": 0.8329890370368958,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "object",
+            "all_candidates": [
+              {
+                "source": "object",
+                "name": "Picture frame",
+                "score": 0.8329890370368958
+              },
+              {
+                "source": "object",
+                "name": "Picture frame",
+                "score": 0.8107535243034363
+              },
+              {
+                "source": "object",
+                "name": "Bust",
+                "score": 0.736023485660553
+              },
+              {
+                "source": "label",
+                "name": "Brass",
+                "score": 0.7235127091407776
+              },
+              {
+                "source": "label",
+                "name": "Antique",
+                "score": 0.7075109481811523
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Visual Arts",
+                "score": 0.41634297370910645
+              },
+              {
+                "name": "Art",
+                "score": 0.3472999930381775
+              }
+            ],
+            "objects": [
+              {
+                "name": "Picture frame",
+                "score": 0.8329890370368958
+              },
+              {
+                "name": "Picture frame",
+                "score": 0.8107535243034363
+              },
+              {
+                "name": "Bust",
+                "score": 0.736023485660553
+              },
+              {
+                "name": "Person",
+                "score": 0.7061542272567749
+              },
+              {
+                "name": "Lighting",
+                "score": 0.6739077568054199
+              }
+            ],
+            "labels": [
+              {
+                "name": "Brass",
+                "score": 0.7235127091407776
+              },
+              {
+                "name": "Antique",
+                "score": 0.7075109481811523
+              },
+              {
+                "name": "Picture frame",
+                "score": 0.7069552540779114
+              },
+              {
+                "name": "Light fixture",
+                "score": 0.604168176651001
+              },
+              {
+                "name": "Still life photography",
+                "score": 0.5864334106445312
+              }
+            ],
+            "processing_time_seconds": 12.295844078063965
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/30.jpg"
+    }
+  ]
+}

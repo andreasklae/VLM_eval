@@ -1,0 +1,621 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "69.heic",
+      "timestamp": "2026-01-28T06:38:02.578152",
+      "processing_time_seconds": 45.938342,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 24.896441666666668,
+        "gps_longitude": 55.654475,
+        "location": {
+          "formatted_address": "VMW3+HQ Margham - Dubai - United Arab Emirates",
+          "city": "Margham",
+          "county": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "datetime_original": "2023:06:21 18:54:37",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Desert landscape, Margham, Dubai, United Arab Emirates",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Margham, Dubai, which is known for its desert landscapes. The visible sand dunes and sparse vegetation are typical features of this region.",
+            "detailed_description": "The image depicts a desert landscape characterized by rolling sand dunes under a clear blue sky. The dunes are gently undulating, with sparse vegetation scattered across the sandy terrain. The scene captures the vastness and tranquility typical of desert environments, particularly in the Arabian Peninsula.",
+            "identification": {
+              "primary": [
+                "Desert landscape"
+              ],
+              "location": "Margham, Dubai, United Arab Emirates",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Sand dunes",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "desert",
+              "sand_dunes",
+              "natural_landscape",
+              "Dubai",
+              "United_Arab_Emirates"
+            ],
+            "location": "Margham, Dubai, United Arab Emirates",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Desert landscape\"],\n        \"location\": \"Margham, Dubai, United Arab Emirates\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Sand dunes\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"desert\", \"sand_dunes\", \"natural_landscape\", \"Dubai\", \"United_Arab_Emirates\"],\n    \"description\": \"The image depicts a desert landscape characterized by rolling sand dunes under a clear blue sky. The dunes are gently undulating, with sparse vegetation scattered across the sandy terrain. The scene captures the vastness and tranquility typical of desert environments, particularly in the Arabian Peninsula.\",\n    \"reasoning\": \"The location metadata indicates Margham, Dubai, which is known for its desert landscapes. The visible sand dunes and sparse vegetation are typical features of this region.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": []\n}",
+            "gps_coordinates": {
+              "latitude": 24.896441666666668,
+              "longitude": 55.654475
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "VMW3+HQ Margham - Dubai - United Arab Emirates",
+              "city": "Margham",
+              "county": "Dubai",
+              "country": "United Arab Emirates"
+            },
+            "photo_timestamp": "2023:06:21 18:54:37",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 8.129033327102661
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a vast desert landscape characterized by undulating sand dunes, typical of the Arabian Desert. The dunes vary in height and shape, creating a dynamic and textured terrain. The sand appears to be a warm golden color, with subtle variations in tone due to the interplay of light and shadow. Sparse vegetation, consisting of small tufts of grass and hardy desert plants, is scattered across the dunes, adding a touch of green to the otherwise monochromatic scene. The sky above is clea",
+            "description": "The image depicts a vast desert landscape characterized by undulating sand dunes, typical of the Arabian Desert. The dunes vary in height and shape, creating a dynamic and textured terrain. The sand appears to be a warm golden color, with subtle variations in tone due to the interplay of light and shadow. Sparse vegetation, consisting of small tufts of grass and hardy desert plants, is scattered across the dunes, adding a touch of green to the otherwise monochromatic scene. The sky above is clea",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 24.896441666666668,
+              "longitude": 55.654475
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "VMW3+HQ Margham - Dubai - United Arab Emirates",
+              "city": "Margham",
+              "county": "Dubai",
+              "country": "United Arab Emirates"
+            },
+            "photo_timestamp": "2023:06:21 18:54:37",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 37.001960039138794
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Natural environment",
+          "confidence": 0.9769858121871948,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Natural environment",
+                "score": 0.9769858121871948
+              },
+              {
+                "source": "label",
+                "name": "Desert",
+                "score": 0.9750386476516724
+              },
+              {
+                "source": "label",
+                "name": "Aeolian landform",
+                "score": 0.9669886231422424
+              },
+              {
+                "source": "label",
+                "name": "atmospheric phenomenon",
+                "score": 0.96268630027771
+              },
+              {
+                "source": "web",
+                "name": "Singing sand",
+                "score": 0.4682651162147522
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Singing sand",
+                "score": 0.4682651162147522
+              },
+              {
+                "name": "Sand",
+                "score": 0.3790000081062317
+              },
+              {
+                "name": "Erg",
+                "score": 0.27140000462532043
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.9912745356559753
+              },
+              {
+                "name": "Natural environment",
+                "score": 0.9769858121871948
+              },
+              {
+                "name": "Desert",
+                "score": 0.9750386476516724
+              },
+              {
+                "name": "Aeolian landform",
+                "score": 0.9669886231422424
+              },
+              {
+                "name": "atmospheric phenomenon",
+                "score": 0.96268630027771
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 24.896441666666668,
+              "longitude": 55.654475
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "VMW3+HQ Margham - Dubai - United Arab Emirates",
+              "city": "Margham",
+              "county": "Dubai",
+              "country": "United Arab Emirates"
+            },
+            "photo_timestamp": "2023:06:21 18:54:37",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 10.821118831634521
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Margham, Dubai, United Arab Emirates",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Margham, Dubai, United Arab Emirates",
+            "coordinates": {
+              "latitude": 24.896441666666668,
+              "longitude": 55.654475
+            },
+            "search_range_meters": 5000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Arabian Adventures Desert Camp",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 5,
+                  "vicinity": "VMV4+WX - Margham",
+                  "place_id": "ChIJa9slWQB59T4RguPnOZKdsAQ",
+                  "location": {
+                    "lat": 24.8947694,
+                    "lng": 55.6574655
+                  }
+                },
+                {
+                  "name": "Sahara Camp by Arabian Adventures - Desert Safari",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 51,
+                  "vicinity": "VMX5+QC - Margham",
+                  "place_id": "ChIJr1DXmhR_9T4Rb5yin525Y3g",
+                  "location": {
+                    "lat": 24.8994412,
+                    "lng": 55.6585774
+                  }
+                },
+                {
+                  "name": "Al Waha Oasis",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "VJQX+25",
+                  "place_id": "ChIJEcUpEQB59T4RfL0bIHbOWPo",
+                  "location": {
+                    "lat": 24.8875646,
+                    "lng": 55.64790609999999
+                  }
+                },
+                {
+                  "name": "NCS Tours",
+                  "types": [
+                    "tourist_attraction",
+                    "travel_agency",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Margham - Dubai",
+                  "place_id": "ChIJT7CvLzR59T4RojfsVf8OBu0",
+                  "location": {
+                    "lat": 24.90370420000001,
+                    "lng": 55.6273332
+                  }
+                },
+                {
+                  "name": "Ghaf Nizwa Conservation Reserve",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 3,
+                  "vicinity": "WJHR+PG - Margham",
+                  "place_id": "ChIJY6T0Pxp59T4Rt8ZD1IAY4fw",
+                  "location": {
+                    "lat": 24.9293109,
+                    "lng": 55.6412696
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "استراحة بن مرخان",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "WJQP+32 - Margham",
+                  "place_id": "ChIJfUKjIwB59T4RnInn32qY6XA",
+                  "location": {
+                    "lat": 24.9377333,
+                    "lng": 55.6350421
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "RASHID BIN GADHYA ZAIEEF MOSQUE",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "WJGF+83 - Margham",
+                  "place_id": "ChIJe6jgWQB59T4RQtQpUzb42aE",
+                  "location": {
+                    "lat": 24.9257748,
+                    "lng": 55.6226729
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Al Madam",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Al Madam",
+                  "place_id": "ChIJ1wEtqAl09T4RoyDC2iHei8U",
+                  "location": {
+                    "lat": 24.973654,
+                    "lng": 55.777229
+                  }
+                },
+                {
+                  "name": "Arabian Adventures Desert Camp",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 5,
+                  "vicinity": "VMV4+WX - Margham",
+                  "place_id": "ChIJa9slWQB59T4RguPnOZKdsAQ",
+                  "location": {
+                    "lat": 24.8947694,
+                    "lng": 55.6574655
+                  }
+                },
+                {
+                  "name": "Sahara Camp by Arabian Adventures - Desert Safari",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 51,
+                  "vicinity": "VMX5+QC - Margham",
+                  "place_id": "ChIJr1DXmhR_9T4Rb5yin525Y3g",
+                  "location": {
+                    "lat": 24.8994412,
+                    "lng": 55.6585774
+                  }
+                },
+                {
+                  "name": "Nujoum Overnight Camp with Signature Desert Safari",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "United Arab Emirates",
+                  "place_id": "ChIJ4euSf_t59T4RobzSdhV_2Lk",
+                  "location": {
+                    "lat": 24.8923797,
+                    "lng": 55.6633186
+                  }
+                },
+                {
+                  "name": "Al Waha Oasis",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "VJQX+25",
+                  "place_id": "ChIJEcUpEQB59T4RfL0bIHbOWPo",
+                  "location": {
+                    "lat": 24.8875646,
+                    "lng": 55.64790609999999
+                  }
+                }
+              ]
+            },
+            "total_places_found": 12,
+            "photo_timestamp": "2023:06:21 18:54:37",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.3686800003051758
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/69.heic"
+    },
+    {
+      "image_filename": "69.heic",
+      "timestamp": "2026-01-28T06:38:48.555264",
+      "processing_time_seconds": 54.340723,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Desert landscape",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of sand dunes and sparse vegetation suggests a desert environment. The image lacks specific landmarks or features that would allow for a more precise identification of the location.",
+            "detailed_description": "The image shows a desert landscape characterized by rolling sand dunes under a clear blue sky. The dunes have gentle slopes and are sparsely dotted with small patches of vegetation, indicating an arid environment. The scene is typical of many desert regions around the world, such as the Sahara, Arabian, or Mojave deserts.",
+            "identification": {
+              "primary": [
+                "Desert landscape"
+              ],
+              "location": null,
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Sand dunes",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "desert",
+              "sand_dunes",
+              "natural_landscape",
+              "arid"
+            ],
+            "location": null,
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Arabian Desert",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "The style of dunes and vegetation is consistent with the Arabian Desert, but without specific landmarks, this is speculative."
+              },
+              {
+                "guess": "Sahara Desert",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "The Sahara Desert also features similar landscapes, making it a plausible guess."
+              },
+              {
+                "guess": "Mojave Desert",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.5,
+                "reasoning": "The Mojave Desert has similar dune formations, though vegetation may differ."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Desert landscape\"],\n        \"location\": null,\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Sand dunes\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"desert\", \"sand_dunes\", \"natural_landscape\", \"arid\"],\n    \"description\": \"The image shows a desert landscape characterized by rolling sand dunes under a clear blue sky. The dunes have gentle slopes and are sparsely dotted with small patches of vegetation, indicating an arid environment. The scene is typical of many desert regions around the world, such as the Sahara, Arabian, or Mojave deserts.\",\n    \"reasoning\": \"The presence of sand dunes and sparse vegetation suggests a desert environment. The image lacks specific landmarks or features that would allow for a more precise identification of the location.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Arabian Desert\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The style of dunes and vegetation is consistent with the Arabian Desert, but without specific landmarks, this is speculative.\"\n        },\n        {\n            \"guess\": \"Sahara Desert\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The Sahara Desert also features similar landscapes, making it a plausible guess.\"\n        },\n        {\n            \"guess\": \"Mojave Desert\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.5,\n            \"reasoning\": \"The Mojave Desert has similar dune formations, though vegetation may differ.\"\n        }\n    ]\n}",
+            "processing_time_seconds": 11.16850209236145
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a vast desert landscape characterized by undulating sand dunes that stretch across the horizon. The dunes vary in height and shape, creating a dynamic and flowing pattern across the sandy terrain. The sand appears to be fine and smooth, with subtle ridges formed by the wind, indicating the presence of gentle breezes shaping the landscape. Sparse vegetation is visible, with small tufts of grass scattered intermittently across the sand, suggesting a semi-arid environment. The sky",
+            "description": "The image depicts a vast desert landscape characterized by undulating sand dunes that stretch across the horizon. The dunes vary in height and shape, creating a dynamic and flowing pattern across the sandy terrain. The sand appears to be fine and smooth, with subtle ridges formed by the wind, indicating the presence of gentle breezes shaping the landscape. Sparse vegetation is visible, with small tufts of grass scattered intermittently across the sand, suggesting a semi-arid environment. The sky",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "processing_time_seconds": 42.949342250823975
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Natural environment",
+          "confidence": 0.9769858121871948,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Natural environment",
+                "score": 0.9769858121871948
+              },
+              {
+                "source": "label",
+                "name": "Desert",
+                "score": 0.9750386476516724
+              },
+              {
+                "source": "label",
+                "name": "Aeolian landform",
+                "score": 0.9669886231422424
+              },
+              {
+                "source": "label",
+                "name": "atmospheric phenomenon",
+                "score": 0.96268630027771
+              },
+              {
+                "source": "web",
+                "name": "Singing sand",
+                "score": 0.4682651162147522
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Singing sand",
+                "score": 0.4682651162147522
+              },
+              {
+                "name": "Sand",
+                "score": 0.3790999948978424
+              },
+              {
+                "name": "Erg",
+                "score": 0.27140000462532043
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.9912745356559753
+              },
+              {
+                "name": "Natural environment",
+                "score": 0.9769858121871948
+              },
+              {
+                "name": "Desert",
+                "score": 0.9750386476516724
+              },
+              {
+                "name": "Aeolian landform",
+                "score": 0.9669886231422424
+              },
+              {
+                "name": "atmospheric phenomenon",
+                "score": 0.96268630027771
+              }
+            ],
+            "processing_time_seconds": 10.953903198242188
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/69.heic"
+    }
+  ]
+}

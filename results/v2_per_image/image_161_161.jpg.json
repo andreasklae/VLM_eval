@@ -1,0 +1,1131 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "161.jpg",
+      "timestamp": "2026-01-28T03:03:58.391711",
+      "processing_time_seconds": 61.734914,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 59.92194722222222,
+        "gps_longitude": 10.71813888888889,
+        "location": {
+          "formatted_address": "Eilert Sundts gate 28, 0259 Oslo, Norway",
+          "city": null,
+          "county": "Oslo",
+          "country": "Norway"
+        },
+        "datetime_original": "2025:04:02 19:39:42",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "St. Olaf's Church, Oslo, Norway",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and distinctive red brick construction suggest a Neo-Gothic church, and the location metadata indicates Oslo, where St. Olaf's Church is a known landmark.",
+            "detailed_description": "The image shows St. Olaf's Church, a Neo-Gothic style church located in Oslo, Norway. The church is characterized by its tall, slender spire and red brick construction, typical of the Neo-Gothic architectural style. The facade features pointed arches and decorative elements that are common in Gothic architecture. The surrounding buildings are typical of urban architecture, with detailed facades and multiple windows.",
+            "identification": {
+              "primary": [
+                "St. Olaf's Church"
+              ],
+              "location": "Oslo, Norway",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "St. Olaf's Church",
+                "type": "landmark",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "Neo-Gothic",
+              "19th_century",
+              "brick",
+              "Oslo",
+              "church"
+            ],
+            "location": "Oslo, Norway",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"St. Olaf's Church\"],\n        \"location\": \"Oslo, Norway\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"St. Olaf's Church\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"Neo-Gothic\", \"19th_century\", \"brick\", \"Oslo\", \"church\"],\n    \"description\": \"The image shows St. Olaf's Church, a Neo-Gothic style church located in Oslo, Norway. The church is characterized by its tall, slender spire and red brick construction, typical of the Neo-Gothic architectural style. The facade features pointed arches and decorative elements that are common in Gothic architecture. The surrounding buildings are typical of urban architecture, with detailed facades and multiple windows.\",\n    \"reasoning\": \"The architectural style and distinctive red brick construction suggest a Neo-Gothic church, and the location metadata indicates Oslo, where St. Olaf's Church is a known landmark.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 59.92194722222222,
+              "longitude": 10.71813888888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Eilert Sundts gate 28, 0259 Oslo, Norway",
+              "city": null,
+              "county": "Oslo",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:04:02 19:39:42",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 16.227294921875
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "St. Olaf's Church, Oslo, Norway",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the features of St. Olaf's Church in Oslo, which is known for its Gothic architecture, red brick construction, and tall spire. The location metadata supports this identification, and search results from visitnorway.com and en.wikipedia.org confirm the presence of such a church in Oslo.",
+            "identification": {
+              "primary": [
+                "St. Olaf's Church"
+              ],
+              "location": "Oslo, Norway",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "St. Olaf's Church",
+                "type": "landmark",
+                "confidence": 0.9
+              },
+              {
+                "name": "Residential buildings",
+                "type": "building",
+                "confidence": 0.75
+              }
+            ],
+            "tags": [
+              "Gothic",
+              "red brick",
+              "church",
+              "urban",
+              "Oslo"
+            ],
+            "sources_used": [
+              "visitnorway.com",
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "**URL**: ([visitnorway.com]())",
+              "**URL**: ([en.wikipedia.org]())",
+              "**URL**: ([en.wikipedia.org]())",
+              "**URL**: ([gpsmycity.com]())",
+              "**URL**: ([aroundus.com]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "St. Olaf's Church",
+                "specificity_level": "very_specific",
+                "confidence": 0.9,
+                "reasoning": "The description closely matches the known features of St. Olaf's Church in Oslo, including its Gothic style and red brick facade."
+              },
+              {
+                "guess": "Gothic church in Oslo",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.75,
+                "reasoning": "If not St. Olaf's Church, it could be another Gothic church in Oslo with similar architectural features."
+              },
+              {
+                "guess": "Gothic-style church",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The description fits a Gothic-style church, which could be found in various locations, but Oslo is the most likely given the metadata."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.9,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image prominently features a striking church with a tall, slender spire, characteristic of Gothic architectural style. The church is constructed from red brick, which is illuminated by the warm glow of the setting sun, giving it a vibrant appearance. The facade includes pointed arch windows and decorative stone elements typical of Gothic design. The spire is topped with a cross, and below it, a clock is visible on the tower, adding to its historical charm. Surrounding the church are resident",
+            "description": "The image prominently features a striking church with a tall, slender spire, characteristic of Gothic architectural style. The church is constructed from red brick, which is illuminated by the warm glow of the setting sun, giving it a vibrant appearance. The facade includes pointed arch windows and decorative stone elements typical of Gothic design. The spire is topped with a cross, and below it, a clock is visible on the tower, adding to its historical charm. Surrounding the church are resident",
+            "architectural_style": "Gothic",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 59.92194722222222,
+              "longitude": 10.71813888888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Eilert Sundts gate 28, 0259 Oslo, Norway",
+              "city": null,
+              "county": "Oslo",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:04:02 19:39:42",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 44.60469889640808
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Composite material",
+          "confidence": 0.8838748931884766,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Composite material",
+                "score": 0.8838748931884766
+              },
+              {
+                "source": "object",
+                "name": "Car",
+                "score": 0.8708313703536987
+              },
+              {
+                "source": "object",
+                "name": "Car",
+                "score": 0.8696820735931396
+              },
+              {
+                "source": "label",
+                "name": "Spire",
+                "score": 0.7138184905052185
+              },
+              {
+                "source": "object",
+                "name": "Building",
+                "score": 0.7056300044059753
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Architecture",
+                "score": 0.367387592792511
+              },
+              {
+                "name": "Façade",
+                "score": 0.32894644141197205
+              },
+              {
+                "name": "ArchitectureM RIBA Chartered Practice",
+                "score": 0.3052999973297119
+              }
+            ],
+            "objects": [
+              {
+                "name": "Car",
+                "score": 0.8708313703536987
+              },
+              {
+                "name": "Car",
+                "score": 0.8696820735931396
+              },
+              {
+                "name": "Building",
+                "score": 0.7056300044059753
+              },
+              {
+                "name": "Building",
+                "score": 0.688891589641571
+              },
+              {
+                "name": "Building",
+                "score": 0.622512698173523
+              }
+            ],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9885125756263733
+              },
+              {
+                "name": "Orange",
+                "score": 0.9135221838951111
+              },
+              {
+                "name": "Composite material",
+                "score": 0.8838748931884766
+              },
+              {
+                "name": "Spire",
+                "score": 0.7138184905052185
+              },
+              {
+                "name": "Symmetry",
+                "score": 0.6883788108825684
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 59.92194722222222,
+              "longitude": 10.71813888888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Eilert Sundts gate 28, 0259 Oslo, Norway",
+              "city": null,
+              "county": "Oslo",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:04:02 19:39:42",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 14.671372890472412
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Oslo, Norway",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Oslo, Norway",
+            "coordinates": {
+              "latitude": 59.92194722222222,
+              "longitude": 10.71813888888889
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "The Royal Palace",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 14218,
+                  "vicinity": "Slottsplassen 1, Oslo",
+                  "place_id": "ChIJezW6eddtQUYRHFnCrMk4cGc",
+                  "location": {
+                    "lat": 59.917148,
+                    "lng": 10.7275613
+                  }
+                },
+                {
+                  "name": "Frognerparken",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 22161,
+                  "vicinity": "Kirkeveien, Oslo",
+                  "place_id": "ChIJn5IXQ89tQUYRqXaN0mEtOw0",
+                  "location": {
+                    "lat": 59.92645829999999,
+                    "lng": 10.7034734
+                  }
+                },
+                {
+                  "name": "Oslo City Museum (Oslo Bymuseum)",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 630,
+                  "vicinity": "Halvdan Svartes gate 58, Oslo",
+                  "place_id": "ChIJGz5l5M5tQUYRLaB1udUWVJE",
+                  "location": {
+                    "lat": 59.92389429999999,
+                    "lng": 10.7030618
+                  }
+                },
+                {
+                  "name": "Dronning Sonja KunstStall",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 254,
+                  "vicinity": "Parkveien 50, Oslo",
+                  "place_id": "ChIJaxAHb9VtQUYRcH_1Z8DlvO8",
+                  "location": {
+                    "lat": 59.9161579,
+                    "lng": 10.7232231
+                  }
+                },
+                {
+                  "name": "Slottsplassen",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1688,
+                  "vicinity": "Karl Johans gate, Oslo",
+                  "place_id": "ChIJOSC1AH9uQUYRLR0Vf5KZsPI",
+                  "location": {
+                    "lat": 59.91684089999999,
+                    "lng": 10.7284998
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Oslo City Museum (Oslo Bymuseum)",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 630,
+                  "vicinity": "Halvdan Svartes gate 58, Oslo",
+                  "place_id": "ChIJGz5l5M5tQUYRLaB1udUWVJE",
+                  "location": {
+                    "lat": 59.92389429999999,
+                    "lng": 10.7030618
+                  }
+                },
+                {
+                  "name": "Dronning Sonja KunstStall",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 254,
+                  "vicinity": "Parkveien 50, Oslo",
+                  "place_id": "ChIJaxAHb9VtQUYRcH_1Z8DlvO8",
+                  "location": {
+                    "lat": 59.9161579,
+                    "lng": 10.7232231
+                  }
+                },
+                {
+                  "name": "GALLERI ASUR",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Uranienborgveien 13, Oslo",
+                  "place_id": "ChIJmWPAttdtQUYR9nVlDwRuAKY",
+                  "location": {
+                    "lat": 59.92143480000001,
+                    "lng": 10.7236396
+                  }
+                },
+                {
+                  "name": "Villa Gro-Gro",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Lallakroken 6, Oslo",
+                  "place_id": "ChIJ4QMRs0BtQUYR2n4je3EQ6Lc",
+                  "location": {
+                    "lat": 59.91909880000001,
+                    "lng": 10.7167808
+                  }
+                },
+                {
+                  "name": "Brundtland & Krosby",
+                  "types": [
+                    "art_gallery",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Odins gate 21, Oslo",
+                  "place_id": "ChIJkVbO5o9tQUYRU95BmEh8Vbs",
+                  "location": {
+                    "lat": 59.91993639999999,
+                    "lng": 10.7092049
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Jewel of India Restaurant",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1133,
+                  "vicinity": "Oscars gate 81, Oslo",
+                  "place_id": "ChIJOzAEv9RtQUYRTWGppDpLDwE",
+                  "location": {
+                    "lat": 59.91594559999999,
+                    "lng": 10.7168612
+                  }
+                },
+                {
+                  "name": "Alex Sushi",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1201,
+                  "vicinity": "Cort Adelers gate 2, Oslo",
+                  "place_id": "ChIJYdl0NNVtQUYR0d8C8HjwBSQ",
+                  "location": {
+                    "lat": 59.91468130000001,
+                    "lng": 10.7207069
+                  }
+                },
+                {
+                  "name": "Olivia Hegdehaugsveien",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 2271,
+                  "vicinity": "Hegdehaugsveien 34, Oslo",
+                  "place_id": "ChIJDbYuLdZtQUYRiIbC0KtC0iE",
+                  "location": {
+                    "lat": 59.92243819999999,
+                    "lng": 10.7263722
+                  }
+                },
+                {
+                  "name": "Lorry Restaurant",
+                  "types": [
+                    "bar",
+                    "cafe",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 3525,
+                  "vicinity": "Parkveien 12, Oslo",
+                  "place_id": "ChIJG6_3wHhuQUYRQNMA9X1UR5I",
+                  "location": {
+                    "lat": 59.92076890000001,
+                    "lng": 10.7288783
+                  }
+                },
+                {
+                  "name": "Natraj Tandoori Restaurant",
+                  "types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 277,
+                  "vicinity": "Bygdøy allé 8, Oslo",
+                  "place_id": "ChIJ6zGTRdNtQUYRnQxxN8GSWEc",
+                  "location": {
+                    "lat": 59.9158402,
+                    "lng": 10.7131427
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Frognerparken",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 22161,
+                  "vicinity": "Kirkeveien, Oslo",
+                  "place_id": "ChIJn5IXQ89tQUYRqXaN0mEtOw0",
+                  "location": {
+                    "lat": 59.92645829999999,
+                    "lng": 10.7034734
+                  }
+                },
+                {
+                  "name": "Dronningparken",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 28,
+                  "vicinity": "Oslo",
+                  "place_id": "ChIJORavp39uQUYREHEZM2mDw5I",
+                  "location": {
+                    "lat": 59.9161765,
+                    "lng": 10.7255013
+                  }
+                },
+                {
+                  "name": "Bislettbekken",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 6,
+                  "vicinity": "Pilestredet 44, Oslo",
+                  "place_id": "ChIJ1d9Vp3luQUYRU4WZOXvBx4w",
+                  "location": {
+                    "lat": 59.92212619999999,
+                    "lng": 10.7334413
+                  }
+                },
+                {
+                  "name": "Nordraaks plass",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 12,
+                  "vicinity": "Nordraaks gate, Oslo",
+                  "place_id": "ChIJ18-86n5uQUYRzPMDdv0aJJI",
+                  "location": {
+                    "lat": 59.9178015,
+                    "lng": 10.732052
+                  }
+                },
+                {
+                  "name": "Slottsparken",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 2929,
+                  "vicinity": "Slottsplassen 1, Oslo",
+                  "place_id": "ChIJgzu7EH9uQUYRwajtZJFSX70",
+                  "location": {
+                    "lat": 59.917625,
+                    "lng": 10.730332
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Mikaelkirken, Kristensamfunnet i Oslo",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 5,
+                  "vicinity": "Oscars gate 84, Oslo",
+                  "place_id": "ChIJcZ7i6tRtQUYRPJoSCyyhbU0",
+                  "location": {
+                    "lat": 59.91623000000001,
+                    "lng": 10.7181265
+                  }
+                },
+                {
+                  "name": "Den evangelisk lutherske frikirke Oslo Storbymenighet",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3,
+                  "user_ratings_total": 3,
+                  "vicinity": "Pilestredet 69, Oslo",
+                  "place_id": "ChIJC6qIbWFuQUYR4-JtsduNazI",
+                  "location": {
+                    "lat": 59.9248646,
+                    "lng": 10.730623
+                  }
+                },
+                {
+                  "name": "Den evangelisk lutherske frikirke - Frikirkens hovedkontor",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 5,
+                  "vicinity": "Pilestredet 69, Oslo",
+                  "place_id": "ChIJOUhEM3luQUYRzlhDBpcw7oE",
+                  "location": {
+                    "lat": 59.924865,
+                    "lng": 10.730623
+                  }
+                },
+                {
+                  "name": "Fagerborg Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 170,
+                  "vicinity": "Pilestredet 72, Oslo",
+                  "place_id": "ChIJw6hs2XduQUYR2g-9v17yeck",
+                  "location": {
+                    "lat": 59.92722219999999,
+                    "lng": 10.7297222
+                  }
+                },
+                {
+                  "name": "Uranienborg Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 377,
+                  "vicinity": "Holtegata 15, Oslo",
+                  "place_id": "ChIJZ4QFl9ZtQUYRuZUx8gcpUVY",
+                  "location": {
+                    "lat": 59.9212686,
+                    "lng": 10.7195053
+                  }
+                },
+                {
+                  "name": "Noor Mosque",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 9,
+                  "vicinity": "Frognerveien 53, Oslo",
+                  "place_id": "ChIJEY97DM5tQUYR8TUMp6eUOqc",
+                  "location": {
+                    "lat": 59.9218413,
+                    "lng": 10.7059876
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Ebba Bring",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Munthes gate 30, Oslo",
+                  "place_id": "ChIJf2Lfr9FtQUYRvMieoBENonI",
+                  "location": {
+                    "lat": 59.9231993,
+                    "lng": 10.7121553
+                  }
+                },
+                {
+                  "name": "Mari Slaattelid",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Ole Fladagers gate 8, Oslo",
+                  "place_id": "ChIJh4IJlNBtQUYRGVZy96LaC3Q",
+                  "location": {
+                    "lat": 59.92531119999999,
+                    "lng": 10.7160332
+                  }
+                },
+                {
+                  "name": "Oscars Gate 54",
+                  "types": [
+                    "art_gallery",
+                    "cafe",
+                    "clothing_store",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 29,
+                  "vicinity": "Oscars gate 54, Oslo",
+                  "place_id": "ChIJN4PQxdVtQUYRSCeRTXzPYQ8",
+                  "location": {
+                    "lat": 59.91907759999999,
+                    "lng": 10.722168
+                  }
+                },
+                {
+                  "name": "Danilo Ivanovic",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Balders gate 11C, Oslo",
+                  "place_id": "ChIJT0gyT9JtQUYRW-hY-eh77wg",
+                  "location": {
+                    "lat": 59.91922729999999,
+                    "lng": 10.710622
+                  }
+                },
+                {
+                  "name": "Det Gylne Snitt AS",
+                  "types": [
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 31,
+                  "vicinity": "Frognerveien 24, Oslo",
+                  "place_id": "ChIJY5PuqtNtQUYRpVds6VGlceo",
+                  "location": {
+                    "lat": 59.91820370000001,
+                    "lng": 10.7113554
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Oslo",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Oslo",
+                  "place_id": "ChIJOfBn8mFuQUYRmh4j019gkn4",
+                  "location": {
+                    "lat": 59.9121746,
+                    "lng": 10.7312704
+                  }
+                },
+                {
+                  "name": "Saga Hotel Oslo, WorldHotels Crafted",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 624,
+                  "vicinity": "Eilert Sundts gate 39, Oslo",
+                  "place_id": "ChIJnzMD3tZtQUYR5g-DxYlyek4",
+                  "location": {
+                    "lat": 59.9228764,
+                    "lng": 10.7204265
+                  }
+                },
+                {
+                  "name": "Thon Hotel Gyldenløve",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 785,
+                  "vicinity": "Bogstadveien 20, Oslo",
+                  "place_id": "ChIJd_PeZNdtQUYR6YpFWrraPJo",
+                  "location": {
+                    "lat": 59.9251776,
+                    "lng": 10.7223636
+                  }
+                },
+                {
+                  "name": "Sentrum Omsorgsbygg",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 93,
+                  "vicinity": "Holtegata 25, Oslo",
+                  "place_id": "ChIJ5ZLYAddtQUYRoPuJssiXYIY",
+                  "location": {
+                    "lat": 59.9229694,
+                    "lng": 10.7224111
+                  }
+                },
+                {
+                  "name": "Scandic Solli",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 1973,
+                  "vicinity": "Parkveien 68, Oslo",
+                  "place_id": "ChIJdyjvtSpsQUYRLPOCVf34sag",
+                  "location": {
+                    "lat": 59.91384469999999,
+                    "lng": 10.7211961
+                  }
+                }
+              ]
+            },
+            "total_places_found": 36,
+            "photo_timestamp": "2025:04:02 19:39:42",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.637092113494873
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/161.jpg"
+    },
+    {
+      "image_filename": "161.jpg",
+      "timestamp": "2026-01-28T03:05:00.180270",
+      "processing_time_seconds": 59.87106,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "St. John's Church, Bergen, Norway",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and materials, along with the location context, strongly suggest this is St. John's Church in Bergen. The distinctive red brick and Gothic elements are characteristic of this landmark.",
+            "detailed_description": "The image shows St. John's Church, a prominent Neo-Gothic structure located in Bergen, Norway. The church is characterized by its red brick construction, tall spire, and pointed arches typical of Gothic architecture. The facade features decorative elements and a clock on the tower. The surrounding buildings are typical of urban architecture, with detailed window frames and cornices.",
+            "identification": {
+              "primary": [
+                "St. John's Church"
+              ],
+              "location": "Bergen, Norway",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "St. John's Church",
+                "type": "landmark",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "Neo-Gothic",
+              "19th_century",
+              "brick",
+              "Bergen",
+              "church"
+            ],
+            "location": "Bergen, Norway",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"St. John's Church\"],\n        \"location\": \"Bergen, Norway\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"St. John's Church\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"Neo-Gothic\", \"19th_century\", \"brick\", \"Bergen\", \"church\"],\n    \"description\": \"The image shows St. John's Church, a prominent Neo-Gothic structure located in Bergen, Norway. The church is characterized by its red brick construction, tall spire, and pointed arches typical of Gothic architecture. The facade features decorative elements and a clock on the tower. The surrounding buildings are typical of urban architecture, with detailed window frames and cornices.\",\n    \"reasoning\": \"The architectural style and materials, along with the location context, strongly suggest this is St. John's Church in Bergen. The distinctive red brick and Gothic elements are characteristic of this landmark.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 19.71279287338257
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*Snippet*: The Cathedral Basilica of the Assumption in Covington, Kentucky—nicknamed \"America's Notre Dame\"—is undergoing a $7.8 million, two-year restoration to preserve its French Gothic-inspired ar",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image prominently features a striking church with a tall, slender spire that reaches into the clear blue sky. The church is constructed from red brick, which is illuminated by warm sunlight, giving it a vibrant appearance. The architectural style is Gothic Revival, characterized by pointed arches, detailed stonework, and vertical lines that emphasize height. The facade includes a large circular window, often referred to as a rose window, and a clock is visible on the tower, adding to the Got",
+            "description": "The image prominently features a striking church with a tall, slender spire that reaches into the clear blue sky. The church is constructed from red brick, which is illuminated by warm sunlight, giving it a vibrant appearance. The architectural style is Gothic Revival, characterized by pointed arches, detailed stonework, and vertical lines that emphasize height. The facade includes a large circular window, often referred to as a rose window, and a clock is visible on the tower, adding to the Got",
+            "architectural_style": "Gothic Revival",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 40.1557719707489
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Composite material",
+          "confidence": 0.8838748931884766,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Composite material",
+                "score": 0.8838748931884766
+              },
+              {
+                "source": "object",
+                "name": "Car",
+                "score": 0.8708313703536987
+              },
+              {
+                "source": "object",
+                "name": "Car",
+                "score": 0.8696820735931396
+              },
+              {
+                "source": "label",
+                "name": "Spire",
+                "score": 0.7138184905052185
+              },
+              {
+                "source": "object",
+                "name": "Building",
+                "score": 0.7056300044059753
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Architecture",
+                "score": 0.367387592792511
+              },
+              {
+                "name": "Façade",
+                "score": 0.32894644141197205
+              },
+              {
+                "name": "ArchitectureM RIBA Chartered Practice",
+                "score": 0.3052999973297119
+              }
+            ],
+            "objects": [
+              {
+                "name": "Car",
+                "score": 0.8708313703536987
+              },
+              {
+                "name": "Car",
+                "score": 0.8696820735931396
+              },
+              {
+                "name": "Building",
+                "score": 0.7056300044059753
+              },
+              {
+                "name": "Building",
+                "score": 0.688891589641571
+              },
+              {
+                "name": "Building",
+                "score": 0.622512698173523
+              }
+            ],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9885125756263733
+              },
+              {
+                "name": "Orange",
+                "score": 0.9135221838951111
+              },
+              {
+                "name": "Composite material",
+                "score": 0.8838748931884766
+              },
+              {
+                "name": "Spire",
+                "score": 0.7138184905052185
+              },
+              {
+                "name": "Symmetry",
+                "score": 0.6883788108825684
+              }
+            ],
+            "processing_time_seconds": 15.755404949188232
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/161.jpg"
+    }
+  ]
+}

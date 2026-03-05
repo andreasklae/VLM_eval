@@ -1,0 +1,1055 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "96.heic",
+      "timestamp": "2026-01-28T07:32:48.927525",
+      "processing_time_seconds": 62.84574,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -33.85836666666667,
+        "gps_longitude": 151.2137,
+        "location": {
+          "formatted_address": "Sydney Orbital Network, Milsons Point NSW 2061, Australia",
+          "city": "Milsons Point",
+          "county": "New South Wales",
+          "country": "Australia"
+        },
+        "datetime_original": "2024:09:15 16:19:47",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Sydney Opera House, Sydney, Australia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive sail-like design and location at Bennelong Point in Sydney make the identification of the Sydney Opera House certain.",
+            "detailed_description": "The image shows the Sydney Opera House, a renowned architectural landmark located in Sydney, Australia. It is characterized by its distinctive sail-like shells, which are made of precast concrete panels. The structure is an example of modern expressionist architecture and was designed by Danish architect Jørn Utzon. The Opera House is situated on Bennelong Point and is surrounded by water, with a promenade visible in the foreground where people are gathered.",
+            "identification": {
+              "primary": [
+                "Sydney Opera House"
+              ],
+              "location": "Sydney, Australia",
+              "confidence": 1.0
+            },
+            "artifacts": [
+              {
+                "name": "Sydney Opera House",
+                "type": "landmark",
+                "confidence": 1.0
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "20th_century",
+              "concrete",
+              "Sydney",
+              "landmark"
+            ],
+            "location": "Sydney, Australia",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Sydney Opera House\"],\n        \"location\": \"Sydney, Australia\",\n        \"confidence\": 1.0\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Sydney Opera House\",\n            \"type\": \"landmark\",\n            \"confidence\": 1.0\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"20th_century\", \"concrete\", \"Sydney\", \"landmark\"],\n    \"description\": \"The image shows the Sydney Opera House, a renowned architectural landmark located in Sydney, Australia. It is characterized by its distinctive sail-like shells, which are made of precast concrete panels. The structure is an example of modern expressionist architecture and was designed by Danish architect Jørn Utzon. The Opera House is situated on Bennelong Point and is surrounded by water, with a promenade visible in the foreground where people are gathered.\",\n    \"reasoning\": \"The distinctive sail-like design and location at Bennelong Point in Sydney make the identification of the Sydney Opera House certain.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": -33.85836666666667,
+              "longitude": 151.2137
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Sydney Orbital Network, Milsons Point NSW 2061, Australia",
+              "city": "Milsons Point",
+              "county": "New South Wales",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2024:09:15 16:19:47",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 12.641824960708618
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image prominently features a world-renowned architectural landmark characterized by its distinctive shell-like structures. These structures are composed of a series of white, sail-shaped shells that create a striking silhouette against the clear blue sky. The building is situated on the waterfront, with the water reflecting the sunlight, adding to the visual appeal. The shells are made of precast concrete panels covered with a glossy white ceramic tile finish, giving them a luminous quality.",
+            "description": "The image prominently features a world-renowned architectural landmark characterized by its distinctive shell-like structures. These structures are composed of a series of white, sail-shaped shells that create a striking silhouette against the clear blue sky. The building is situated on the waterfront, with the water reflecting the sunlight, adding to the visual appeal. The shells are made of precast concrete panels covered with a glossy white ceramic tile finish, giving them a luminous quality.",
+            "architectural_style": "Modern",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": -33.85836666666667,
+              "longitude": 151.2137
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Sydney Orbital Network, Milsons Point NSW 2061, Australia",
+              "city": "Milsons Point",
+              "county": "New South Wales",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2024:09:15 16:19:47",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 49.1521680355072
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Sydney Opera House (-33.8568, 151.2153)",
+          "confidence": 0.5375309586524963,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Sydney Opera House",
+            "coordinates": {
+              "latitude": -33.85678439999999,
+              "longitude": 151.21529669999998
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 4032
+              },
+              {
+                "x": 0,
+                "y": 4032
+              }
+            ],
+            "context_labels": [
+              "Opera house",
+              "Leisure",
+              "Travel",
+              "Vacation",
+              "Holiday"
+            ],
+            "context_objects": [
+              "Person",
+              "Person",
+              "Person"
+            ],
+            "web_entities": [
+              {
+                "name": "Tourism",
+                "score": 0.5231999754905701
+              },
+              {
+                "name": "sea-m",
+                "score": 0.41519999504089355
+              },
+              {
+                "name": "Tourist attractiveness",
+                "score": 0.40220001339912415
+              },
+              {
+                "name": "Beach",
+                "score": 0.3762952983379364
+              },
+              {
+                "name": "Sand",
+                "score": 0.3196025788784027
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Sydney Opera House",
+                "score": 0.5375309586524963,
+                "location": {
+                  "lat": -33.85678439999999,
+                  "lng": 151.21529669999998
+                }
+              },
+              {
+                "name": "Opera Bar",
+                "score": 0.5220681428909302,
+                "location": {
+                  "lat": -33.858221799999995,
+                  "lng": 151.2140619
+                }
+              }
+            ],
+            "processing_time_seconds": 17.889798879623413
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Milsons Point, New South Wales, Australia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Milsons Point, New South Wales, Australia",
+            "coordinates": {
+              "latitude": -33.85836666666667,
+              "longitude": 151.2137
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Sydney Opera House",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 89331,
+                  "vicinity": "Bennelong Point, Sydney",
+                  "place_id": "ChIJ3S-JXmauEmsRUcIaWtf4MzE",
+                  "location": {
+                    "lat": -33.8567844,
+                    "lng": 151.2152967
+                  }
+                },
+                {
+                  "name": "Museum of Contemporary Art Australia",
+                  "types": [
+                    "tourist_attraction",
+                    "cafe",
+                    "art_gallery",
+                    "museum",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 9216,
+                  "vicinity": "140 George Street, The Rocks",
+                  "place_id": "ChIJ68aBlEKuEmsRHUA9oME5Zh0",
+                  "location": {
+                    "lat": -33.8599358,
+                    "lng": 151.2090295
+                  }
+                },
+                {
+                  "name": "Sydney Harbour Bridge",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 20593,
+                  "vicinity": "Sydney Harbour Bridge, Sydney",
+                  "place_id": "ChIJ49XqJV2uEmsRPsTAF7eOlGg",
+                  "location": {
+                    "lat": -33.8523063,
+                    "lng": 151.2107871
+                  }
+                },
+                {
+                  "name": "Harbour View Hotel, The Rocks",
+                  "types": [
+                    "tourist_attraction",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1898,
+                  "vicinity": "18 Lower Fort Street, The Rocks",
+                  "place_id": "ChIJV_wrHl2uEmsR92Q_ubhgXDI",
+                  "location": {
+                    "lat": -33.85659829999999,
+                    "lng": 151.2073426
+                  }
+                },
+                {
+                  "name": "Museum of Sydney",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 3023,
+                  "vicinity": "Cnr Bridge Street &, Phillip Street, Sydney",
+                  "place_id": "ChIJ_1pC8mmuEmsRrvud0Ftcoyg",
+                  "location": {
+                    "lat": -33.8636288,
+                    "lng": 151.2114567
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Museum of Contemporary Art Australia",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "cafe",
+                    "museum",
+                    "point_of_interest",
+                    "store",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 9216,
+                  "vicinity": "140 George Street, The Rocks",
+                  "place_id": "ChIJ68aBlEKuEmsRHUA9oME5Zh0",
+                  "location": {
+                    "lat": -33.8599358,
+                    "lng": 151.2090295
+                  }
+                },
+                {
+                  "name": "Museum of Sydney",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 3023,
+                  "vicinity": "Cnr Bridge Street &, Phillip Street, Sydney",
+                  "place_id": "ChIJ_1pC8mmuEmsRrvud0Ftcoyg",
+                  "location": {
+                    "lat": -33.8636288,
+                    "lng": 151.2114567
+                  }
+                },
+                {
+                  "name": "The National Opal Collection",
+                  "types": [
+                    "jewelry_store",
+                    "museum",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 59,
+                  "vicinity": "60 Pitt Street, Sydney",
+                  "place_id": "ChIJi7TJ7UGuEmsRmOcZ1bDj8C8",
+                  "location": {
+                    "lat": -33.8644004,
+                    "lng": 151.209079
+                  }
+                },
+                {
+                  "name": "ATTY Gallery",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 311,
+                  "vicinity": "27 Playfair Street, The Rocks",
+                  "place_id": "ChIJ9fdIzEKuEmsRuaujDOdFkwU",
+                  "location": {
+                    "lat": -33.858382,
+                    "lng": 151.2082718
+                  }
+                },
+                {
+                  "name": "Justice and Police Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 661,
+                  "vicinity": "Cnr Phillip St &, Albert Street, Sydney",
+                  "place_id": "ChIJFRY_smmuEmsR_KsiZoS75Gw",
+                  "location": {
+                    "lat": -33.8621697,
+                    "lng": 151.2122838
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Rendezvous Hotel Sydney The Rocks",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 624,
+                  "vicinity": "75 Harrington Street, The Rocks",
+                  "place_id": "ChIJyepG5EKuEmsRuCAtAGW_ygY",
+                  "location": {
+                    "lat": -33.8598478,
+                    "lng": 151.207803
+                  }
+                },
+                {
+                  "name": "Pancakes On The Rocks",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 8707,
+                  "vicinity": "22 Playfair Street, The Rocks",
+                  "place_id": "ChIJD5xTal2uEmsRZNsPx8E2q-s",
+                  "location": {
+                    "lat": -33.8588323,
+                    "lng": 151.2083496
+                  }
+                },
+                {
+                  "name": "Amora Hotel Jamison Sydney",
+                  "types": [
+                    "spa",
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 2814,
+                  "vicinity": "11 Jamison Street, Sydney",
+                  "place_id": "ChIJa51FEUGuEmsRIXRtDjLFQXM",
+                  "location": {
+                    "lat": -33.864458,
+                    "lng": 151.2062952
+                  }
+                },
+                {
+                  "name": "Sydney Harbour Bed & Breakfast",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 117,
+                  "vicinity": "140-142 Cumberland Street, The Rocks",
+                  "place_id": "ChIJCfGaqEOuEmsRW8wvWsTgIyE",
+                  "location": {
+                    "lat": -33.8605708,
+                    "lng": 151.2066137
+                  }
+                },
+                {
+                  "name": "Rockpool Bar & Grill Sydney",
+                  "types": [
+                    "restaurant",
+                    "bar",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 3194,
+                  "vicinity": "66 Hunter Street, Sydney",
+                  "place_id": "ChIJV8rt1UGuEmsRf1fObMkd93M",
+                  "location": {
+                    "lat": -33.866098,
+                    "lng": 151.2102038
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Royal Botanic Garden Sydney",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 25069,
+                  "vicinity": "Mrs Macquaries Road, Sydney",
+                  "place_id": "ChIJWaTdYGuuEmsRoOfx-Wh9AQ8",
+                  "location": {
+                    "lat": -33.8641859,
+                    "lng": 151.2165708
+                  }
+                },
+                {
+                  "name": "Harbour View Lawn",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 135,
+                  "vicinity": "Mrs Macquaries Road, Sydney",
+                  "place_id": "ChIJq8ecvm-uEmsRsc9VYOUpyas",
+                  "location": {
+                    "lat": -33.8627292,
+                    "lng": 151.2201437
+                  }
+                },
+                {
+                  "name": "Mary Booth Lookout Reserve",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 658,
+                  "vicinity": "7 Waruda Street, Kirribilli",
+                  "place_id": "ChIJGyHH_mGuEmsRcWCxuY5YYAc",
+                  "location": {
+                    "lat": -33.8501504,
+                    "lng": 151.2158294
+                  }
+                },
+                {
+                  "name": "Macquarie Place Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 387,
+                  "vicinity": "36 Bridge Street, Sydney",
+                  "place_id": "ChIJ0yioCEKuEmsRkPHx-Wh9AQ8",
+                  "location": {
+                    "lat": -33.8630982,
+                    "lng": 151.2102112
+                  }
+                },
+                {
+                  "name": "Captain Henry Waterhouse Reserve",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 81,
+                  "vicinity": "2 Jeffreys Street, Kirribilli",
+                  "place_id": "ChIJQwQM2WGuEmsRvQS5Xn3tqYQ",
+                  "location": {
+                    "lat": -33.8498423,
+                    "lng": 151.2145338
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Saint Patrick's Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 639,
+                  "vicinity": "20 Grosvenor Street, The Rocks",
+                  "place_id": "ChIJiVLPZkGuEmsRQHR4WJMxPQI",
+                  "location": {
+                    "lat": -33.8631328,
+                    "lng": 151.2059914
+                  }
+                },
+                {
+                  "name": "The Garrison Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 87,
+                  "vicinity": "60 Lower Fort Street, Millers Point",
+                  "place_id": "ChIJvVu_R0OuEmsRz5vofdGq6Ew",
+                  "location": {
+                    "lat": -33.8583615,
+                    "lng": 151.205693
+                  }
+                },
+                {
+                  "name": "Tullett Liberty Pty Ltd.",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "60 Margaret Street, Sydney",
+                  "place_id": "ChIJKQi9GkGuEmsRW6E3nLulsHw",
+                  "location": {
+                    "lat": -33.8648179,
+                    "lng": 151.2069186
+                  }
+                },
+                {
+                  "name": "Travel Worship",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "95 Pitt Street, Sydney",
+                  "place_id": "ChIJXYn2vkGuEmsROez_dXCjgoE",
+                  "location": {
+                    "lat": -33.8649303,
+                    "lng": 151.2085408
+                  }
+                },
+                {
+                  "name": "St Brigid's Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 19,
+                  "vicinity": "14-16 Kent Street, Millers Point",
+                  "place_id": "ChIJaZ9cl0SuEmsRomzz5LlmyB0",
+                  "location": {
+                    "lat": -33.8585846,
+                    "lng": 151.2037981
+                  }
+                },
+                {
+                  "name": "Friday Prayer (Jumu'ah)",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "15A Argyle Place, Millers Point",
+                  "place_id": "ChIJc7o9aACvEmsR0VoHG4isfiU",
+                  "location": {
+                    "lat": -33.8589597,
+                    "lng": 151.2041605
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Museum of Contemporary Art Australia",
+                  "types": [
+                    "tourist_attraction",
+                    "cafe",
+                    "art_gallery",
+                    "museum",
+                    "store",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 9216,
+                  "vicinity": "140 George Street, The Rocks",
+                  "place_id": "ChIJ68aBlEKuEmsRHUA9oME5Zh0",
+                  "location": {
+                    "lat": -33.8599358,
+                    "lng": 151.2090295
+                  }
+                },
+                {
+                  "name": "Matt Pearson Gallery",
+                  "types": [
+                    "art_gallery",
+                    "home_goods_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 68,
+                  "vicinity": "The Rocks Centre, Enter via Jack Mundey Place, Shop 1 & 2 Argyle Street, The Rocks",
+                  "place_id": "ChIJL921igquEmsRqWfQFuOS7Lo",
+                  "location": {
+                    "lat": -33.85898889999999,
+                    "lng": 151.2082978
+                  }
+                },
+                {
+                  "name": "Gifts at the Quay",
+                  "types": [
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 129,
+                  "vicinity": "Shop 13/1A Macquarie Street, Sydney",
+                  "place_id": "ChIJD29DT0KuEmsRSpem4O51sGw",
+                  "location": {
+                    "lat": -33.8598453,
+                    "lng": 151.2131274
+                  }
+                },
+                {
+                  "name": "Argyle Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 16,
+                  "vicinity": "21 Playfair Street, Sydney",
+                  "place_id": "ChIJMdpfzkKuEmsRj1jhV6Q-D7k",
+                  "location": {
+                    "lat": -33.85828119999999,
+                    "lng": 151.2082976
+                  }
+                },
+                {
+                  "name": "ATTY Gallery",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "museum",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 311,
+                  "vicinity": "27 Playfair Street, The Rocks",
+                  "place_id": "ChIJ9fdIzEKuEmsRuaujDOdFkwU",
+                  "location": {
+                    "lat": -33.858382,
+                    "lng": 151.2082718
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Sydney",
+                  "types": [
+                    "colloquial_area",
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Sydney",
+                  "place_id": "ChIJP3Sa8ziYEmsRUKgyFmh9AQM",
+                  "location": {
+                    "lat": -33.8622503,
+                    "lng": 151.207684
+                  }
+                },
+                {
+                  "name": "InterContinental Sydney by IHG",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 4649,
+                  "vicinity": "16 Phillip Street, Sydney",
+                  "place_id": "ChIJV2sXvWmuEmsRcr4eLuIQ8wc",
+                  "location": {
+                    "lat": -33.8629015,
+                    "lng": 151.2122407
+                  }
+                },
+                {
+                  "name": "Harbour Rocks Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 696,
+                  "vicinity": "34 Harrington Street, The Rocks",
+                  "place_id": "ChIJ1Y1n70KuEmsRYn_K2GHfatw",
+                  "location": {
+                    "lat": -33.8596279,
+                    "lng": 151.2081405
+                  }
+                },
+                {
+                  "name": "YHA Sydney Harbour - The Rocks",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1476,
+                  "vicinity": "110 Cumberland Street, The Rocks",
+                  "place_id": "ChIJ7ROWBUOuEmsRxVKXiTS-KSo",
+                  "location": {
+                    "lat": -33.859953,
+                    "lng": 151.2069417
+                  }
+                },
+                {
+                  "name": "Four Seasons Hotel Sydney",
+                  "types": [
+                    "spa",
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 6009,
+                  "vicinity": "199 George Street, The Rocks",
+                  "place_id": "ChIJZ934S0KuEmsR_0lxV3PTR4M",
+                  "location": {
+                    "lat": -33.8615815,
+                    "lng": 151.2076503
+                  }
+                }
+              ]
+            },
+            "total_places_found": 36,
+            "photo_timestamp": "2024:09:15 16:19:47",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.5664870738983154
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/96.heic"
+    },
+    {
+      "image_filename": "96.heic",
+      "timestamp": "2026-01-28T07:33:51.814996",
+      "processing_time_seconds": 57.302679,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Sydney Opera House, Sydney, Australia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The unique shell-like design and waterfront location are unmistakable features of the Sydney Opera House, making identification certain.",
+            "detailed_description": "The image features the Sydney Opera House, a renowned architectural landmark located in Sydney, Australia. It is characterized by its distinctive shell-like design, composed of precast concrete panels. The structure is situated on Bennelong Point and overlooks Sydney Harbour. The design is an example of modern expressionist architecture, completed in the 20th century. The surrounding area includes a waterfront promenade with people enjoying the view.",
+            "identification": {
+              "primary": [
+                "Sydney Opera House"
+              ],
+              "location": "Sydney, Australia",
+              "confidence": 1.0
+            },
+            "artifacts": [
+              {
+                "name": "Sydney Opera House",
+                "type": "landmark",
+                "confidence": 1.0
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "20th_century",
+              "concrete",
+              "Sydney",
+              "landmark"
+            ],
+            "location": "Sydney, Australia",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Sydney Opera House\"],\n        \"location\": \"Sydney, Australia\",\n        \"confidence\": 1.0\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Sydney Opera House\",\n            \"type\": \"landmark\",\n            \"confidence\": 1.0\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"20th_century\", \"concrete\", \"Sydney\", \"landmark\"],\n    \"description\": \"The image features the Sydney Opera House, a renowned architectural landmark located in Sydney, Australia. It is characterized by its distinctive shell-like design, composed of precast concrete panels. The structure is situated on Bennelong Point and overlooks Sydney Harbour. The design is an example of modern expressionist architecture, completed in the 20th century. The surrounding area includes a waterfront promenade with people enjoying the view.\",\n    \"reasoning\": \"The unique shell-like design and waterfront location are unmistakable features of the Sydney Opera House, making identification certain.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 10.14355993270874
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image prominently features a world-renowned architectural landmark characterized by its unique sail-like design. The structure consists of multiple shell-like forms, each resembling a large, white sail, which are constructed from precast concrete panels covered with glossy ceramic tiles. These shells are arranged in a cluster, creating a dynamic and visually striking silhouette against the clear blue sky. The building is situated on the edge of a harbor, with water visible in the foreground,",
+            "description": "The image prominently features a world-renowned architectural landmark characterized by its unique sail-like design. The structure consists of multiple shell-like forms, each resembling a large, white sail, which are constructed from precast concrete panels covered with glossy ceramic tiles. These shells are arranged in a cluster, creating a dynamic and visually striking silhouette against the clear blue sky. The building is situated on the edge of a harbor, with water visible in the foreground,",
+            "architectural_style": "Modern Expressionist",
+            "search_backends_used": [],
+            "processing_time_seconds": 46.90830421447754
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Sydney Opera House (-33.8568, 151.2153)",
+          "confidence": 0.5375309586524963,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Sydney Opera House",
+            "coordinates": {
+              "latitude": -33.85678439999999,
+              "longitude": 151.21529669999998
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 4032
+              },
+              {
+                "x": 0,
+                "y": 4032
+              }
+            ],
+            "context_labels": [
+              "Opera house",
+              "Leisure",
+              "Travel",
+              "Vacation",
+              "Holiday"
+            ],
+            "context_objects": [
+              "Person",
+              "Person",
+              "Person"
+            ],
+            "web_entities": [
+              {
+                "name": "Tourism",
+                "score": 0.5231999754905701
+              },
+              {
+                "name": "sea-m",
+                "score": 0.41519999504089355
+              },
+              {
+                "name": "Tourist attractiveness",
+                "score": 0.40220001339912415
+              },
+              {
+                "name": "Beach",
+                "score": 0.3757498860359192
+              },
+              {
+                "name": "Sand",
+                "score": 0.31949862837791443
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Sydney Opera House",
+                "score": 0.5375309586524963,
+                "location": {
+                  "lat": -33.85678439999999,
+                  "lng": 151.21529669999998
+                }
+              },
+              {
+                "name": "Opera Bar",
+                "score": 0.5220681428909302,
+                "location": {
+                  "lat": -33.858221799999995,
+                  "lng": 151.2140619
+                }
+              }
+            ],
+            "processing_time_seconds": 17.06676983833313
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/96.heic"
+    }
+  ]
+}

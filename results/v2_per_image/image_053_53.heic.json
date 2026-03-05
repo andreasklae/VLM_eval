@@ -1,0 +1,1018 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "53.heic",
+      "timestamp": "2026-01-28T06:05:00.859200",
+      "processing_time_seconds": 60.506061,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 1.287611111111111,
+        "gps_longitude": 103.85240833333333,
+        "location": {
+          "formatted_address": "Fullerton Rd, Empress Place, Singapore",
+          "city": "Singapore",
+          "county": null,
+          "country": "Singapore"
+        },
+        "datetime_original": "2022:12:06 10:40:29",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Victoria Theatre and Concert Hall, Singapore, Singapore",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style, clock tower, and location metadata strongly suggest this is the Victoria Theatre and Concert Hall in Singapore. The neoclassical design and distinctive features match known images of this landmark.",
+            "detailed_description": "The image shows the Victoria Theatre and Concert Hall, a prominent cultural landmark in Singapore. The building features a neoclassical architectural style with a distinctive clock tower topped by a dome. The facade is characterized by white columns, arched windows, and decorative elements typical of 19th-century architecture. The structure is set against a clear blue sky, with a well-maintained lawn in the foreground.",
+            "identification": {
+              "primary": [
+                "Victoria Theatre and Concert Hall"
+              ],
+              "location": "Singapore, Singapore",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Victoria Theatre and Concert Hall",
+                "type": "building",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Neoclassical",
+              "19th_century",
+              "architecture",
+              "Singapore"
+            ],
+            "location": "Singapore, Singapore",
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Victoria Theatre and Concert Hall\"],\n        \"location\": \"Singapore, Singapore\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Victoria Theatre and Concert Hall\",\n            \"type\": \"building\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Neoclassical\", \"19th_century\", \"architecture\", \"Singapore\"],\n    \"description\": \"The image shows the Victoria Theatre and Concert Hall, a prominent cultural landmark in Singapore. The building features a neoclassical architectural style with a distinctive clock tower topped by a dome. The facade is characterized by white columns, arched windows, and decorative elements typical of 19th-century architecture. The structure is set against a clear blue sky, with a well-maintained lawn in the foreground.\",\n    \"reasoning\": \"The architectural style, clock tower, and location metadata strongly suggest this is the Victoria Theatre and Concert Hall in Singapore. The neoclassical design and distinctive features match known images of this landmark.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 1.287611111111111,
+              "longitude": 103.85240833333333
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Fullerton Rd, Empress Place, Singapore",
+              "city": "Singapore",
+              "county": null,
+              "country": "Singapore"
+            },
+            "photo_timestamp": "2022:12:06 10:40:29",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 12.161188840866089
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image features a prominent historical building characterized by its neoclassical architectural style. The structure is symmetrical, with a central clock tower that rises above the main facade. The tower is adorned with a domed roof, likely made of copper or a similar material, giving it a greenish hue. The clock face is large and clearly visible, set within a white, ornate frame. The building's facade is predominantly white, with intricate decorative elements such as pilasters, cornices, and",
+            "description": "The image features a prominent historical building characterized by its neoclassical architectural style. The structure is symmetrical, with a central clock tower that rises above the main facade. The tower is adorned with a domed roof, likely made of copper or a similar material, giving it a greenish hue. The clock face is large and clearly visible, set within a white, ornate frame. The building's facade is predominantly white, with intricate decorative elements such as pilasters, cornices, and",
+            "architectural_style": "Neoclassical",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 1.287611111111111,
+              "longitude": 103.85240833333333
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Fullerton Rd, Empress Place, Singapore",
+              "city": "Singapore",
+              "county": null,
+              "country": "Singapore"
+            },
+            "photo_timestamp": "2022:12:06 10:40:29",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 47.36078596115112
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Real Estate (Singapore, Singapore)",
+          "confidence": 0.7182999849319458,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Real Estate",
+            "artist_name": null,
+            "museum_or_location": "Singapore, Singapore",
+            "art_style": "Classical architecture",
+            "art_era": "Classical architecture",
+            "confidence": 0.7182999849319458,
+            "web_entities": [
+              {
+                "name": "Real Estate",
+                "score": 0.7182999849319458
+              },
+              {
+                "name": "House",
+                "score": 0.6696173548698425
+              },
+              {
+                "name": "Estate",
+                "score": 0.669245719909668
+              },
+              {
+                "name": "Mansion",
+                "score": 0.6583375334739685
+              },
+              {
+                "name": "Housing estate",
+                "score": 0.5209000110626221
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 1.287611111111111,
+              "longitude": 103.85240833333333
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Fullerton Rd, Empress Place, Singapore",
+              "city": "Singapore",
+              "county": null,
+              "country": "Singapore"
+            },
+            "photo_timestamp": "2022:12:06 10:40:29",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 17.495411157608032
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Singapore, Singapore",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Singapore, Singapore",
+            "coordinates": {
+              "latitude": 1.287611111111111,
+              "longitude": 103.85240833333333
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Anderson Bridge",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 383,
+                  "vicinity": "Fullerton Road",
+                  "place_id": "ChIJc5ptCgkZ2jERZvFy9OGf80c",
+                  "location": {
+                    "lat": 1.287296,
+                    "lng": 103.8529799
+                  }
+                },
+                {
+                  "name": "Cavenagh Bridge",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 863,
+                  "vicinity": "1 Fullerton Square",
+                  "place_id": "ChIJB-4wCgkZ2jERu_kFShkaBf4",
+                  "location": {
+                    "lat": 1.2865459,
+                    "lng": 103.8523588
+                  }
+                },
+                {
+                  "name": "Read Bridge",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 301,
+                  "vicinity": "1B Clarke Quay, Singapore",
+                  "place_id": "ChIJsV8nAaAZ2jERz9cGea4WVfI",
+                  "location": {
+                    "lat": 1.289203,
+                    "lng": 103.8451037
+                  }
+                },
+                {
+                  "name": "CQ @ Clarke Quay",
+                  "types": [
+                    "shopping_mall",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 45341,
+                  "vicinity": "3 River Valley Road",
+                  "place_id": "ChIJnXwAOKAZ2jERAs-MHs1aDgI",
+                  "location": {
+                    "lat": 1.2906024,
+                    "lng": 103.8464742
+                  }
+                },
+                {
+                  "name": "Lau Pa Sat",
+                  "types": [
+                    "tourist_attraction",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 36583,
+                  "vicinity": "18 Raffles Quay",
+                  "place_id": "ChIJ5Y6l4Q0Z2jERYL0KDIjT6v0",
+                  "location": {
+                    "lat": 1.2805121,
+                    "lng": 103.8503809
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "ArtScience Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 17828,
+                  "vicinity": "6 Bayfront Avenue",
+                  "place_id": "ChIJnWdQKQQZ2jERScXuKeFHyIE",
+                  "location": {
+                    "lat": 1.2862738,
+                    "lng": 103.8592663
+                  }
+                },
+                {
+                  "name": "Asian Civilisations Museum",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 6080,
+                  "vicinity": "1 Empress Place",
+                  "place_id": "ChIJoZOhmQkZ2jERehLfvKlsoCA",
+                  "location": {
+                    "lat": 1.2874969,
+                    "lng": 103.8513861
+                  }
+                },
+                {
+                  "name": "Peranakan Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2408,
+                  "vicinity": "39 Armenian Street, Singapore",
+                  "place_id": "ChIJWZX956MZ2jERIGdnbs_SgMw",
+                  "location": {
+                    "lat": 1.2943669,
+                    "lng": 103.8490391
+                  }
+                },
+                {
+                  "name": "National Gallery Singapore",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 16381,
+                  "vicinity": "",
+                  "place_id": "ChIJFQzeR6cZ2jERgM6--iWeY-U",
+                  "location": {
+                    "lat": 1.2902217,
+                    "lng": 103.8515167
+                  }
+                },
+                {
+                  "name": "Singapore Musical Box Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 430,
+                  "vicinity": "37A Circular Road",
+                  "place_id": "ChIJg4jcdA0Z2jERe0XPfVA08bU",
+                  "location": {
+                    "lat": 1.2865077,
+                    "lng": 103.8492213
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Swissôtel The Stamford Singapore",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 8860,
+                  "vicinity": "2 Stamford Road",
+                  "place_id": "ChIJfyNkh6YZ2jERjHsd_P-iL_M",
+                  "location": {
+                    "lat": 1.2936866,
+                    "lng": 103.8533912
+                  }
+                },
+                {
+                  "name": "Mandarin Oriental, Singapore",
+                  "types": [
+                    "spa",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 7398,
+                  "vicinity": "5 Raffles Avenue, Singapore",
+                  "place_id": "ChIJt7a1YKgZ2jER1U6XOjXyMCA",
+                  "location": {
+                    "lat": 1.2902058,
+                    "lng": 103.8580476
+                  }
+                },
+                {
+                  "name": "Paradox Singapore",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 4484,
+                  "vicinity": "20 Merchant Road",
+                  "place_id": "ChIJjS4cuwoZ2jERCTeN-k9LUIE",
+                  "location": {
+                    "lat": 1.2884308,
+                    "lng": 103.8458053
+                  }
+                },
+                {
+                  "name": "Fairmont Singapore",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 5912,
+                  "vicinity": "80 Bras Basah Road",
+                  "place_id": "ChIJ-Uph06UZ2jERjKQsyQgfltg",
+                  "location": {
+                    "lat": 1.2942639,
+                    "lng": 103.8537619
+                  }
+                },
+                {
+                  "name": "SKAI Bar",
+                  "types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1146,
+                  "vicinity": "2 Stamford Road, Level 70, #70-02 Swissôtel The Stamford",
+                  "place_id": "ChIJZ9ocfqYZ2jER_PEzCkShP_s",
+                  "location": {
+                    "lat": 1.2936866,
+                    "lng": 103.8533912
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "War Memorial Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 475,
+                  "vicinity": "Nicoll Highway, Stamford Road, &",
+                  "place_id": "ChIJx-khbKYZ2jERPU7H9VFoUlg",
+                  "location": {
+                    "lat": 1.2928957,
+                    "lng": 103.8546778
+                  }
+                },
+                {
+                  "name": "Esplanade Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 585,
+                  "vicinity": "Along Connaught Drive",
+                  "place_id": "ChIJLWy-d6cZ2jERxRto3g-f8vI",
+                  "location": {
+                    "lat": 1.289901,
+                    "lng": 103.8538653
+                  }
+                },
+                {
+                  "name": "Merlion Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 74010,
+                  "vicinity": "1 Fullerton Road",
+                  "place_id": "ChIJBTYg1g4Z2jERp_MBbu5erWY",
+                  "location": {
+                    "lat": 1.2867449,
+                    "lng": 103.8543872
+                  }
+                },
+                {
+                  "name": "Youth Olympic Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 376,
+                  "vicinity": "Raffles Avenue",
+                  "place_id": "ChIJs9ou2akZ2jERCq21-091JMk",
+                  "location": {
+                    "lat": 1.2891019,
+                    "lng": 103.8605555
+                  }
+                },
+                {
+                  "name": "The Lawn @ Marina Bay",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 565,
+                  "vicinity": "8A Marina Boulevard",
+                  "place_id": "ChIJYVWI5A8Z2jERLlmpK-mGy5w",
+                  "location": {
+                    "lat": 1.2803166,
+                    "lng": 103.8533528
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "New Covenant Sanctuary",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "OUB Centre, No.1 Raffles Place, #02-03 048616",
+                  "place_id": "ChIJ6S18VAkZ2jER7TkR8PYSxB0",
+                  "location": {
+                    "lat": 1.284527,
+                    "lng": 103.850948
+                  }
+                },
+                {
+                  "name": "Kingdomcity Singapore",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 67,
+                  "vicinity": "17 Stamford Road",
+                  "place_id": "ChIJ82ET6LoZ2jER6WE_z7a7eRA",
+                  "location": {
+                    "lat": 1.2934954,
+                    "lng": 103.8512532
+                  }
+                },
+                {
+                  "name": "All Saints Presbyterian Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "7 Armenian Street",
+                  "place_id": "ChIJyc61Y6EZ2jERVBHcF5vlxwc",
+                  "location": {
+                    "lat": 1.2935465,
+                    "lng": 103.8487076
+                  }
+                },
+                {
+                  "name": "Faith Bible Church Singapore",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "1 Raffles Boulevard, Singapore",
+                  "place_id": "ChIJV4ZsDgQEBBARn_QPFI-qJYQ",
+                  "location": {
+                    "lat": 1.2936911,
+                    "lng": 103.8572252
+                  }
+                },
+                {
+                  "name": "Armenian Apostolic Church of St. Gregory the Illuminator",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 289,
+                  "vicinity": "60 Hill Street, Singapore",
+                  "place_id": "ChIJqc0-Q6EZ2jERbzBEE3qq6p0",
+                  "location": {
+                    "lat": 1.2930717,
+                    "lng": 103.8494467
+                  }
+                },
+                {
+                  "name": "Masjid Omar Kampong Melaka",
+                  "types": [
+                    "mosque",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 660,
+                  "vicinity": "10 Keng Cheow Street",
+                  "place_id": "ChIJnyE2NnUZ2jERklFJj-63LC4",
+                  "location": {
+                    "lat": 1.2878575,
+                    "lng": 103.8441934
+                  }
+                },
+                {
+                  "name": "Masjid Moulana Mohamed Ali",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 431,
+                  "vicinity": "80 Raffles Place, #B1-01 I UOB Plaza",
+                  "place_id": "ChIJ4cy25wsZ2jERWgVcBzTz9r8",
+                  "location": {
+                    "lat": 1.2855981,
+                    "lng": 103.8500704
+                  }
+                },
+                {
+                  "name": "Prayer Room National Gallery Singapore",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "1 Saint Andrew's Road",
+                  "place_id": "ChIJy8tbXAAZ2jERReifTo9iLvs",
+                  "location": {
+                    "lat": 1.2912054,
+                    "lng": 103.8517827
+                  }
+                },
+                {
+                  "name": "Masjid Al-Burhani",
+                  "types": [
+                    "mosque",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 197,
+                  "vicinity": "39 Hill Street, Singapore",
+                  "place_id": "ChIJ_xY9UaEZ2jER_qN-U_DnsoI",
+                  "location": {
+                    "lat": 1.2934331,
+                    "lng": 103.8504508
+                  }
+                },
+                {
+                  "name": "Nagore Dargah",
+                  "types": [
+                    "mosque",
+                    "tourist_attraction",
+                    "museum",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 114,
+                  "vicinity": "140 Telok Ayer Street",
+                  "place_id": "ChIJ5Tu8pw0Z2jERvBUhK00QkT8",
+                  "location": {
+                    "lat": 1.28141,
+                    "lng": 103.8478714
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Artstag LLP",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "10 Anson Road, #26-10",
+                  "place_id": "ChIJk1ZwyKAZ2jERK5bPTA5EROM",
+                  "location": {
+                    "lat": 1.2903259,
+                    "lng": 103.84992
+                  }
+                },
+                {
+                  "name": "Ode To Art",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 341,
+                  "vicinity": "252 North Bridge Road, #01-36E F, Raffles City Shopping Centre",
+                  "place_id": "ChIJ3c9SiQYZ2jERWpVhrdJGeTc",
+                  "location": {
+                    "lat": 1.293672,
+                    "lng": 103.8537798
+                  }
+                },
+                {
+                  "name": "Dong Lee",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "90 Bras Basah Road, B1-41, 42, 43",
+                  "place_id": "ChIJE76FM5EZ2jERTQmV4K8mFJs",
+                  "location": {
+                    "lat": 1.2933803,
+                    "lng": 103.855429
+                  }
+                },
+                {
+                  "name": "Lionheart Studio",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 25,
+                  "vicinity": "Havelock 2 #03-08, 2 Havelock Road",
+                  "place_id": "ChIJH7ompnUZ2jERVn0MlClcHgM",
+                  "location": {
+                    "lat": 1.2870384,
+                    "lng": 103.8451052
+                  }
+                },
+                {
+                  "name": "Katia Verde Art Gallery 绿森林艺术坊",
+                  "types": [
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 39,
+                  "vicinity": "8 Club Street, B2-39 Mercure Icon Singapore City Centre",
+                  "place_id": "ChIJc3AsxLkZ2jERjtNBEyGJSEs",
+                  "location": {
+                    "lat": 1.2826673,
+                    "lng": 103.846435
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Singapore",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Singapore",
+                  "place_id": "ChIJyY4rtGcX2jERIKTarqz3AAQ",
+                  "location": {
+                    "lat": 1.2811866,
+                    "lng": 103.8503404
+                  }
+                },
+                {
+                  "name": "The Fullerton Hotel Singapore",
+                  "types": [
+                    "spa",
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 9100,
+                  "vicinity": "1 Fullerton Square",
+                  "place_id": "ChIJbxecDwkZ2jER0HC_ulAswUE",
+                  "location": {
+                    "lat": 1.2863532,
+                    "lng": 103.8530671
+                  }
+                },
+                {
+                  "name": "Anderson Bridge",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 383,
+                  "vicinity": "Fullerton Road",
+                  "place_id": "ChIJc5ptCgkZ2jERZvFy9OGf80c",
+                  "location": {
+                    "lat": 1.287296,
+                    "lng": 103.8529799
+                  }
+                },
+                {
+                  "name": "Cavenagh Bridge",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 863,
+                  "vicinity": "1 Fullerton Square",
+                  "place_id": "ChIJB-4wCgkZ2jERu_kFShkaBf4",
+                  "location": {
+                    "lat": 1.2865459,
+                    "lng": 103.8523588
+                  }
+                },
+                {
+                  "name": "Asian Civilisations Museum",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 6080,
+                  "vicinity": "1 Empress Place",
+                  "place_id": "ChIJoZOhmQkZ2jERehLfvKlsoCA",
+                  "location": {
+                    "lat": 1.2874969,
+                    "lng": 103.8513861
+                  }
+                }
+              ]
+            },
+            "total_places_found": 40,
+            "photo_timestamp": "2022:12:06 10:40:29",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.4950520992279053
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/53.heic"
+    },
+    {
+      "image_filename": "53.heic",
+      "timestamp": "2026-01-28T06:06:01.387594",
+      "processing_time_seconds": 56.448771,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Victoria Theatre and Concert Hall, Singapore",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive clock tower and architectural style are characteristic of the Victoria Theatre and Concert Hall in Singapore, allowing for confident identification.",
+            "detailed_description": "The image shows the Victoria Theatre and Concert Hall in Singapore, a prominent example of Neoclassical architecture. The building features a central clock tower with a dome, flanked by two wings with large windows and decorative facades. The structure is characterized by its white exterior, symmetrical design, and classical elements such as columns and pediments. The lawn in the foreground adds to the grandeur of the setting.",
+            "identification": {
+              "primary": [
+                "Victoria Theatre and Concert Hall"
+              ],
+              "location": "Singapore",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Victoria Theatre and Concert Hall",
+                "type": "building",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Neoclassical",
+              "19th_century",
+              "architecture",
+              "Singapore"
+            ],
+            "location": "Singapore",
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Victoria Theatre and Concert Hall\"],\n        \"location\": \"Singapore\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Victoria Theatre and Concert Hall\",\n            \"type\": \"building\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Neoclassical\", \"19th_century\", \"architecture\", \"Singapore\"],\n    \"description\": \"The image shows the Victoria Theatre and Concert Hall in Singapore, a prominent example of Neoclassical architecture. The building features a central clock tower with a dome, flanked by two wings with large windows and decorative facades. The structure is characterized by its white exterior, symmetrical design, and classical elements such as columns and pediments. The lawn in the foreground adds to the grandeur of the setting.\",\n    \"reasoning\": \"The distinctive clock tower and architectural style are characteristic of the Victoria Theatre and Concert Hall in Singapore, allowing for confident identification.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "processing_time_seconds": 9.964513063430786
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a grand, historic building characterized by its neoclassical architectural style. The structure features a prominent clock tower at its center, which is topped with a green dome. The facade of the building is symmetrically designed, with large arched windows on the lower level and rectangular windows on the upper level, framed by decorative moldings and pilasters. The building is predominantly white, with contrasting gray stonework at the base. Two large banners are visible on ",
+            "description": "The image depicts a grand, historic building characterized by its neoclassical architectural style. The structure features a prominent clock tower at its center, which is topped with a green dome. The facade of the building is symmetrically designed, with large arched windows on the lower level and rectangular windows on the upper level, framed by decorative moldings and pilasters. The building is predominantly white, with contrasting gray stonework at the base. Two large banners are visible on ",
+            "architectural_style": "Neoclassical",
+            "search_backends_used": [],
+            "processing_time_seconds": 46.24050211906433
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Real Estate",
+          "confidence": 0.718999981880188,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Real Estate",
+            "artist_name": null,
+            "museum_or_location": null,
+            "art_style": "Classical architecture",
+            "art_era": "Classical architecture",
+            "confidence": 0.718999981880188,
+            "web_entities": [
+              {
+                "name": "House",
+                "score": 0.8419392704963684
+              },
+              {
+                "name": "Real Estate",
+                "score": 0.718999981880188
+              },
+              {
+                "name": "Mansion",
+                "score": 0.6568029522895813
+              },
+              {
+                "name": "Housing estate",
+                "score": 0.61080002784729
+              },
+              {
+                "name": "Estate",
+                "score": 0.5541984438896179
+              }
+            ],
+            "processing_time_seconds": 17.982537031173706
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/53.heic"
+    }
+  ]
+}

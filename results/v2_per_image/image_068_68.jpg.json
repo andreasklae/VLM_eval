@@ -1,0 +1,934 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "68.jpg",
+      "timestamp": "2026-01-28T06:35:50.843817",
+      "processing_time_seconds": 66.52451,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 44.30267222222222,
+        "gps_longitude": 9.21396111111111,
+        "location": {
+          "formatted_address": "Parco Naturalistico, Via alla Penisola, 13, 16034 Portofino GE, Italy",
+          "city": null,
+          "county": "Città Metropolitana di Genova",
+          "country": "Italy"
+        },
+        "datetime_original": "2023:06:21 17:40:05",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Villa on the Ligurian Coast, Città Metropolitana di Genova, Italy",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and coastal setting suggest a Mediterranean villa, common in the Ligurian region of Italy. The location metadata supports this identification.",
+            "detailed_description": "The image depicts a villa situated on a cliff overlooking the Ligurian Sea. The villa features Mediterranean architectural elements, such as terracotta roof tiles and arched windows. It is surrounded by lush greenery and rocky cliffs. The coastline extends into the distance, with mountains visible in the background, typical of the Ligurian region.",
+            "identification": {
+              "primary": [
+                "Villa on the Ligurian Coast"
+              ],
+              "location": "Città Metropolitana di Genova, Italy",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Villa on the cliff",
+                "type": "building",
+                "confidence": 0.85
+              },
+              {
+                "name": "Ligurian coastline",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "Mediterranean_style",
+              "coastal",
+              "villa",
+              "Italy",
+              "landscape"
+            ],
+            "location": "Città Metropolitana di Genova, Italy",
+            "type": "landmark",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Villa Durazzo",
+                "specificity_level": "very_specific",
+                "confidence": 0.7,
+                "reasoning": "Villa Durazzo is a known villa in the region, but the specific architectural details are not distinct enough to confirm."
+              },
+              {
+                "guess": "Typical Ligurian villa",
+                "specificity_level": "general",
+                "confidence": 0.85,
+                "reasoning": "The style and location are consistent with villas found along the Ligurian coast."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Villa on the Ligurian Coast\"],\n        \"location\": \"Città Metropolitana di Genova, Italy\",\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Villa on the cliff\",\n            \"type\": \"building\",\n            \"confidence\": 0.85\n        },\n        {\n            \"name\": \"Ligurian coastline\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.90\n        }\n    ],\n    \"tags\": [\"Mediterranean_style\", \"coastal\", \"villa\", \"Italy\", \"landscape\"],\n    \"description\": \"The image depicts a villa situated on a cliff overlooking the Ligurian Sea. The villa features Mediterranean architectural elements, such as terracotta roof tiles and arched windows. It is surrounded by lush greenery and rocky cliffs. The coastline extends into the distance, with mountains visible in the background, typical of the Ligurian region.\",\n    \"reasoning\": \"The architectural style and coastal setting suggest a Mediterranean villa, common in the Ligurian region of Italy. The location metadata supports this identification.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Villa Durazzo\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.70,\n            \"reasoning\": \"Villa Durazzo is a known villa in the region, but the specific architectural details are not distinct enough to confirm.\"\n        },\n        {\n            \"guess\": \"Typical Ligurian villa\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.85,\n            \"reasoning\": \"The style and location are consistent with villas found along the Ligurian coast.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": 44.30267222222222,
+              "longitude": 9.21396111111111
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Parco Naturalistico, Via alla Penisola, 13, 16034 Portofino GE, Italy",
+              "city": null,
+              "county": "Città Metropolitana di Genova",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2023:06:21 17:40:05",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 15.902846097946167
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a picturesque coastal scene in the Città Metropolitana di Genova, Italy. The main subject is a grand villa perched on a rocky cliff overlooking the sea. The villa exhibits a blend of architectural styles, with elements reminiscent of Italianate and Gothic Revival architecture. It features a prominent tower with a steep, pointed roof and decorative arched windows. The facade is adorned with warm-toned stucco and intricate stone detailing, contributing to its elegant appearance. ",
+            "description": "The image depicts a picturesque coastal scene in the Città Metropolitana di Genova, Italy. The main subject is a grand villa perched on a rocky cliff overlooking the sea. The villa exhibits a blend of architectural styles, with elements reminiscent of Italianate and Gothic Revival architecture. It features a prominent tower with a steep, pointed roof and decorative arched windows. The facade is adorned with warm-toned stucco and intricate stone detailing, contributing to its elegant appearance. ",
+            "architectural_style": "Italianate and Gothic Revival",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 44.30267222222222,
+              "longitude": 9.21396111111111
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Parco Naturalistico, Via alla Penisola, 13, 16034 Portofino GE, Italy",
+              "city": null,
+              "county": "Città Metropolitana di Genova",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2023:06:21 17:40:05",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 49.729981899261475
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Coastal and oceanic landforms",
+          "confidence": 0.8917032480239868,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Coastal and oceanic landforms",
+                "score": 0.8917032480239868
+              },
+              {
+                "source": "label",
+                "name": "Coast",
+                "score": 0.8306465148925781
+              },
+              {
+                "source": "label",
+                "name": "Hill station",
+                "score": 0.7966267466545105
+              },
+              {
+                "source": "object",
+                "name": "House",
+                "score": 0.5074194669723511
+              },
+              {
+                "source": "web",
+                "name": "sea-m",
+                "score": 0.3993000090122223
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "sea-m",
+                "score": 0.3993000090122223
+              },
+              {
+                "name": "Outcrop",
+                "score": 0.312487930059433
+              }
+            ],
+            "objects": [
+              {
+                "name": "House",
+                "score": 0.5074194669723511
+              }
+            ],
+            "labels": [
+              {
+                "name": "Coastal and oceanic landforms",
+                "score": 0.8917032480239868
+              },
+              {
+                "name": "Coast",
+                "score": 0.8306465148925781
+              },
+              {
+                "name": "Hill station",
+                "score": 0.7966267466545105
+              },
+              {
+                "name": "Sound",
+                "score": 0.6820619106292725
+              },
+              {
+                "name": "Bay",
+                "score": 0.6531292796134949
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 44.30267222222222,
+              "longitude": 9.21396111111111
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Parco Naturalistico, Via alla Penisola, 13, 16034 Portofino GE, Italy",
+              "city": null,
+              "county": "Città Metropolitana di Genova",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2023:06:21 17:40:05",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 21.30215096473694
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Città Metropolitana di Genova, Italy",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Città Metropolitana di Genova, Italy",
+            "coordinates": {
+              "latitude": 44.30267222222222,
+              "longitude": 9.21396111111111
+            },
+            "search_range_meters": 2000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Baia Cannone",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 2444,
+                  "vicinity": "Via Duca degli Abruzzi, 54, Portofino",
+                  "place_id": "ChIJeU7Bq8Cf1BIR_kkAFtl6ack",
+                  "location": {
+                    "lat": 44.3050935,
+                    "lng": 9.2118571
+                  }
+                },
+                {
+                  "name": "Cervara Abbey",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 364,
+                  "vicinity": "Via Cervara, 10, Santa Margherita Ligure",
+                  "place_id": "ChIJeaIar5Sf1BIRczjrK7IH5Aw",
+                  "location": {
+                    "lat": 44.31355509999999,
+                    "lng": 9.2129139
+                  }
+                },
+                {
+                  "name": "Area Marina Protetta di Portofino",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 2282,
+                  "vicinity": "Santa Margherita Ligure Camogli Portofino, Santa Margherita Ligure",
+                  "place_id": "ChIJHTVT9xlg0xIRMjKr3Qvzr1U",
+                  "location": {
+                    "lat": 44.3028795,
+                    "lng": 9.2119424
+                  }
+                },
+                {
+                  "name": "Spiaggia dell'Olivetta",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 495,
+                  "vicinity": "Portofino",
+                  "place_id": "ChIJF2Ndsbmf1BIRciBNdElhfIA",
+                  "location": {
+                    "lat": 44.3019065,
+                    "lng": 9.2152108
+                  }
+                },
+                {
+                  "name": "View point",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 28,
+                  "vicinity": "Via Duca degli Abruzzi, 24, Portofino",
+                  "place_id": "ChIJ7zyZRKOf1BIR9bH0T8HjQOo",
+                  "location": {
+                    "lat": 44.30341079999999,
+                    "lng": 9.211165399999999
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Museo del Parco - Centro Internazionale di Scultura all'Aperto",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 129,
+                  "vicinity": "Molo Umberto I, Portofino",
+                  "place_id": "ChIJna2apcef1BIRaLON1gK1s-8",
+                  "location": {
+                    "lat": 44.3021351,
+                    "lng": 9.2105616
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Ristorante Lo Stella",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 720,
+                  "vicinity": "Molo Umberto I, 3, Portofino",
+                  "place_id": "ChIJX2vXrsef1BIRZXazPb0FepQ",
+                  "location": {
+                    "lat": 44.30268700000001,
+                    "lng": 9.210057
+                  }
+                },
+                {
+                  "name": "Eight Restaurant",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 49,
+                  "vicinity": "Via Paraggi a mare, 8, Santa Margherita Ligure",
+                  "place_id": "ChIJt3GKb-qf1BIRLsKzvq64GeU",
+                  "location": {
+                    "lat": 44.3111444,
+                    "lng": 9.2092935
+                  }
+                },
+                {
+                  "name": "Langosteria Paraggi",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1399,
+                  "vicinity": "Via Paraggi a mare, 1, Santa Margherita Ligure",
+                  "place_id": "ChIJq6raiuqf1BIRdkxbOzrAqtI",
+                  "location": {
+                    "lat": 44.3113236,
+                    "lng": 9.209476600000002
+                  }
+                },
+                {
+                  "name": "Trattoria Concordia",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 579,
+                  "vicinity": "Via del Fondaco, 5, Portofino",
+                  "place_id": "ChIJ4cowHMSf1BIRMbGlYcpAbJA",
+                  "location": {
+                    "lat": 44.3048513,
+                    "lng": 9.206428699999998
+                  }
+                },
+                {
+                  "name": "Ristorante Puny",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 309,
+                  "vicinity": "Piazza Martiri dell'Olivetta, 5, Portofino",
+                  "place_id": "ChIJI8pqAcef1BIRvA3th5fEVfE",
+                  "location": {
+                    "lat": 44.3033931,
+                    "lng": 9.209361
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Area Marina Protetta di Portofino",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 2282,
+                  "vicinity": "Santa Margherita Ligure Camogli Portofino, Santa Margherita Ligure",
+                  "place_id": "ChIJHTVT9xlg0xIRMjKr3Qvzr1U",
+                  "location": {
+                    "lat": 44.3028795,
+                    "lng": 9.2119424
+                  }
+                },
+                {
+                  "name": "Parco Naturalistico",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 6,
+                  "vicinity": "Via alla Penisola, 13, Portofino",
+                  "place_id": "ChIJ7SwP-8Cf1BIRA5qAIXRrtps",
+                  "location": {
+                    "lat": 44.3025154,
+                    "lng": 9.2138688
+                  }
+                },
+                {
+                  "name": "Parco del Castello Brown - ENTRANCE via Molo Umberto I",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 5,
+                  "vicinity": "Molo Umberto I, Portofino",
+                  "place_id": "ChIJdWVuX-qf1BIR8adUEmX50PY",
+                  "location": {
+                    "lat": 44.3021146,
+                    "lng": 9.213053499999997
+                  }
+                },
+                {
+                  "name": "Portofino Regional Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 141,
+                  "vicinity": "Portofino",
+                  "place_id": "ChIJUXRc4Hmf1BIRdq7fGDk9fjg",
+                  "location": {
+                    "lat": 44.3074467,
+                    "lng": 9.211784300000001
+                  }
+                },
+                {
+                  "name": "Via Mulini",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Paraggi",
+                  "place_id": "ChIJJRGbqcyf1BIRAsBsvtONJ8U",
+                  "location": {
+                    "lat": 44.3114389,
+                    "lng": 9.2069225
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Chiesa di San Giorgio",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 459,
+                  "vicinity": "Salita San Giorgio, Portofino",
+                  "place_id": "ChIJE0Fq6cef1BIRl7O-B-KMfq4",
+                  "location": {
+                    "lat": 44.3014332,
+                    "lng": 9.211438999999999
+                  }
+                },
+                {
+                  "name": "Портофино",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "Calata Marconi, 47-1, Portofino",
+                  "place_id": "ChIJ5xeFKgCf1BIRU9toNTrsouA",
+                  "location": {
+                    "lat": 44.30293140000001,
+                    "lng": 9.2104603
+                  }
+                },
+                {
+                  "name": "Chiesa Parrocchiale di San Martino",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 249,
+                  "vicinity": "Salita della Chiesa, Portofino",
+                  "place_id": "ChIJZ-I2G8ef1BIR4zlO2boUEQQ",
+                  "location": {
+                    "lat": 44.3037931,
+                    "lng": 9.2093962
+                  }
+                },
+                {
+                  "name": "Oratorio N. S. Assunta",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 5,
+                  "vicinity": "Via Roma, 20, Portofino",
+                  "place_id": "ChIJo-BhHgCf1BIR51I4M6Z4z3Y",
+                  "location": {
+                    "lat": 44.30352389999999,
+                    "lng": 9.208299499999997
+                  }
+                },
+                {
+                  "name": "Chapel",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Piazza della Libertà, 2, Portofino",
+                  "place_id": "ChIJ7-Z6SSKf1BIRhwxDKp8cHn4",
+                  "location": {
+                    "lat": 44.303975,
+                    "lng": 9.2075408
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Galleria d’arte Cascio",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 5,
+                  "vicinity": "Calata Marconi, 26, Portofino",
+                  "place_id": "ChIJpVaarsef1BIRaufTpPdee_E",
+                  "location": {
+                    "lat": 44.303467,
+                    "lng": 9.2113432
+                  }
+                },
+                {
+                  "name": "Mara Sanguineti Art Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 66,
+                  "vicinity": "Via Roma, 25, Portofino",
+                  "place_id": "ChIJE8Dowuef1BIRvNghgRhktEc",
+                  "location": {
+                    "lat": 44.3033341,
+                    "lng": 9.208809400000002
+                  }
+                },
+                {
+                  "name": "Galleria d'Arte San Giorgio (Portofino)",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Piazza della Libertà, 10, Portofino",
+                  "place_id": "ChIJF0AHxuGf1BIRN0mfTmBxKCE",
+                  "location": {
+                    "lat": 44.3041556,
+                    "lng": 9.207282200000002
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Portofino",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Portofino",
+                  "place_id": "ChIJBUxv_Maf1BIR2wEP8LWq2e8",
+                  "location": {
+                    "lat": 44.3031559,
+                    "lng": 9.2097879
+                  }
+                },
+                {
+                  "name": "Hotel Piccolo Portofino",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 440,
+                  "vicinity": "Via Duca degli Abruzzi, 31, Portofino",
+                  "place_id": "ChIJcZFwssCf1BIRobLXx_rBcFA",
+                  "location": {
+                    "lat": 44.30558449999999,
+                    "lng": 9.2112793
+                  }
+                },
+                {
+                  "name": "Hotel Argentina",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 220,
+                  "vicinity": "Via Paraggi a Monte, 56, Santa Margherita Ligure",
+                  "place_id": "ChIJl72XYeqf1BIR87DDE3u9Rys",
+                  "location": {
+                    "lat": 44.3112986,
+                    "lng": 9.208666699999998
+                  }
+                },
+                {
+                  "name": "Hotel Nazionale",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 86,
+                  "vicinity": "Vico Dritto, 3, Portofino",
+                  "place_id": "ChIJM1v-_saf1BIR7PXVkUa9U38",
+                  "location": {
+                    "lat": 44.3033502,
+                    "lng": 9.2092889
+                  }
+                },
+                {
+                  "name": "Hotel Eden",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 60,
+                  "vicinity": "Vico Dritto, 18/20, Portofino",
+                  "place_id": "ChIJO3hR-saf1BIRu0cF9JFlxJg",
+                  "location": {
+                    "lat": 44.3035402,
+                    "lng": 9.2085432
+                  }
+                }
+              ]
+            },
+            "total_places_found": 29,
+            "photo_timestamp": "2023:06:21 17:40:05",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.640347957611084
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/68.jpg"
+    },
+    {
+      "image_filename": "68.jpg",
+      "timestamp": "2026-01-28T06:36:57.409915",
+      "processing_time_seconds": 65.134937,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Villa on the Italian Riviera, Portofino, Italy",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and coastal setting suggest a location on the Italian Riviera, specifically Portofino, known for its scenic villas and Mediterranean landscape.",
+            "detailed_description": "The image shows a picturesque villa perched on a rocky cliff along the Mediterranean coastline, likely in Portofino, Italy. The villa features a traditional Italian architectural style with terracotta roofing and arched windows. The surrounding landscape includes lush greenery and the blue waters of the sea, typical of the Italian Riviera. In the background, there are distant mountains and more coastal structures visible.",
+            "identification": {
+              "primary": [
+                "Villa on the Italian Riviera"
+              ],
+              "location": "Portofino, Italy",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Villa on the cliff",
+                "type": "building",
+                "confidence": 0.85
+              },
+              {
+                "name": "Mediterranean coastline",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "Mediterranean",
+              "coastline",
+              "villa",
+              "Italian_Riviera",
+              "architecture"
+            ],
+            "location": "Portofino, Italy",
+            "type": "landmark",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Villa in Cinque Terre",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "The style and setting are similar to those found in Cinque Terre, another coastal region in Italy."
+              },
+              {
+                "guess": "Villa in Amalfi Coast",
+                "specificity_level": "general",
+                "confidence": 0.5,
+                "reasoning": "The Mediterranean architecture and coastal landscape could also match the Amalfi Coast."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Villa on the Italian Riviera\"],\n        \"location\": \"Portofino, Italy\",\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Villa on the cliff\",\n            \"type\": \"building\",\n            \"confidence\": 0.85\n        },\n        {\n            \"name\": \"Mediterranean coastline\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"Mediterranean\", \"coastline\", \"villa\", \"Italian_Riviera\", \"architecture\"],\n    \"description\": \"The image shows a picturesque villa perched on a rocky cliff along the Mediterranean coastline, likely in Portofino, Italy. The villa features a traditional Italian architectural style with terracotta roofing and arched windows. The surrounding landscape includes lush greenery and the blue waters of the sea, typical of the Italian Riviera. In the background, there are distant mountains and more coastal structures visible.\",\n    \"reasoning\": \"The architectural style and coastal setting suggest a location on the Italian Riviera, specifically Portofino, known for its scenic villas and Mediterranean landscape.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Villa in Cinque Terre\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The style and setting are similar to those found in Cinque Terre, another coastal region in Italy.\"\n        },\n        {\n            \"guess\": \"Villa in Amalfi Coast\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.5,\n            \"reasoning\": \"The Mediterranean architecture and coastal landscape could also match the Amalfi Coast.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 16.413596153259277
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a picturesque coastal scene featuring a prominent villa situated on a rocky cliff overlooking the sea. The villa exhibits a blend of architectural styles, with elements suggesting a Mediterranean influence. It is characterized by a warm, earthy color palette, with terracotta roofing and light-colored walls. The structure includes multiple levels, with arched windows and decorative stonework that adds to its charm. Surrounding the villa are lush green trees and shrubs, enhancing",
+            "description": "The image depicts a picturesque coastal scene featuring a prominent villa situated on a rocky cliff overlooking the sea. The villa exhibits a blend of architectural styles, with elements suggesting a Mediterranean influence. It is characterized by a warm, earthy color palette, with terracotta roofing and light-colored walls. The structure includes multiple levels, with arched windows and decorative stonework that adds to its charm. Surrounding the villa are lush green trees and shrubs, enhancing",
+            "architectural_style": "Mediterranean",
+            "search_backends_used": [],
+            "processing_time_seconds": 48.719945192337036
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Coastal and oceanic landforms",
+          "confidence": 0.8917032480239868,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Coastal and oceanic landforms",
+                "score": 0.8917032480239868
+              },
+              {
+                "source": "label",
+                "name": "Coast",
+                "score": 0.8306465148925781
+              },
+              {
+                "source": "label",
+                "name": "Hill station",
+                "score": 0.7966267466545105
+              },
+              {
+                "source": "object",
+                "name": "House",
+                "score": 0.5074194669723511
+              },
+              {
+                "source": "web",
+                "name": "sea-m",
+                "score": 0.399399995803833
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "sea-m",
+                "score": 0.399399995803833
+              },
+              {
+                "name": "Outcrop",
+                "score": 0.312487930059433
+              }
+            ],
+            "objects": [
+              {
+                "name": "House",
+                "score": 0.5074194669723511
+              }
+            ],
+            "labels": [
+              {
+                "name": "Coastal and oceanic landforms",
+                "score": 0.8917032480239868
+              },
+              {
+                "name": "Coast",
+                "score": 0.8306465148925781
+              },
+              {
+                "name": "Hill station",
+                "score": 0.7966267466545105
+              },
+              {
+                "name": "Sound",
+                "score": 0.6820619106292725
+              },
+              {
+                "name": "Bay",
+                "score": 0.6531292796134949
+              }
+            ],
+            "processing_time_seconds": 18.957764863967896
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/68.jpg"
+    }
+  ]
+}

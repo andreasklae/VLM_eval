@@ -1,0 +1,1084 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "38.jpg",
+      "timestamp": "2026-01-28T05:33:29.869423",
+      "processing_time_seconds": 56.102698,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 50.84353611111111,
+        "gps_longitude": 4.360794444444444,
+        "location": {
+          "formatted_address": "020 - PALAIS ROYAL / KONINKLIJK PALEIS, 1000 Bruxelles, Belgium",
+          "city": "Bruxelles",
+          "county": "Bruxelles",
+          "country": "Belgium"
+        },
+        "datetime_original": "2022:07:21 16:41:00",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Military parade, Brussels, Belgium",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of military vehicles and a crowd suggests a parade or public event. The architectural style of the building indicates a neoclassical design, common in Brussels.",
+            "detailed_description": "The image depicts a military parade in Brussels, Belgium. Several military vehicles are moving along a street lined with spectators. The vehicles are camouflaged and appear to be part of a formal procession. In the background, there is a historic building with neoclassical architectural features, including a triangular pediment and symmetrical windows. Flags are displayed on the building, adding to the ceremonial atmosphere.",
+            "identification": {
+              "primary": [
+                "Military parade"
+              ],
+              "location": "Brussels, Belgium",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Military vehicles",
+                "type": "vehicle",
+                "confidence": 0.9
+              },
+              {
+                "name": "Historic building",
+                "type": "building",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "military",
+              "parade",
+              "historic_building",
+              "Brussels"
+            ],
+            "location": "Brussels, Belgium",
+            "type": "event",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Belgian National Day parade",
+                "specificity_level": "very_specific",
+                "confidence": 0.7,
+                "reasoning": "The timing and location suggest it could be related to Belgian National Day celebrations."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Military parade\"],\n        \"location\": \"Brussels, Belgium\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Military vehicles\",\n            \"type\": \"vehicle\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Historic building\",\n            \"type\": \"building\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"military\", \"parade\", \"historic_building\", \"Brussels\"],\n    \"description\": \"The image depicts a military parade in Brussels, Belgium. Several military vehicles are moving along a street lined with spectators. The vehicles are camouflaged and appear to be part of a formal procession. In the background, there is a historic building with neoclassical architectural features, including a triangular pediment and symmetrical windows. Flags are displayed on the building, adding to the ceremonial atmosphere.\",\n    \"reasoning\": \"The presence of military vehicles and a crowd suggests a parade or public event. The architectural style of the building indicates a neoclassical design, common in Brussels.\",\n    \"type\": \"event\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Belgian National Day parade\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The timing and location suggest it could be related to Belgian National Day celebrations.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": 50.84353611111111,
+              "longitude": 4.360794444444444
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "020 - PALAIS ROYAL / KONINKLIJK PALEIS, 1000 Bruxelles, Belgium",
+              "city": "Bruxelles",
+              "county": "Bruxelles",
+              "country": "Belgium"
+            },
+            "photo_timestamp": "2022:07:21 16:41:00",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 9.05597996711731
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a public event taking place on a street in Brussels, Belgium. The main visual subject is a procession of military vehicles, specifically armored personnel carriers, moving along the road. These vehicles are covered with camouflage netting, blending them into the urban environment. The street is lined with spectators, indicating a parade or ceremonial occasion. The crowd is held back by barriers, and there are uniformed officers present, ensuring security and order. In the backg",
+            "description": "The image depicts a public event taking place on a street in Brussels, Belgium. The main visual subject is a procession of military vehicles, specifically armored personnel carriers, moving along the road. These vehicles are covered with camouflage netting, blending them into the urban environment. The street is lined with spectators, indicating a parade or ceremonial occasion. The crowd is held back by barriers, and there are uniformed officers present, ensuring security and order. In the backg",
+            "architectural_style": "Neoclassical",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 50.84353611111111,
+              "longitude": 4.360794444444444
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "020 - PALAIS ROYAL / KONINKLIJK PALEIS, 1000 Bruxelles, Belgium",
+              "city": "Bruxelles",
+              "county": "Bruxelles",
+              "country": "Belgium"
+            },
+            "photo_timestamp": "2022:07:21 16:41:00",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 46.34463286399841
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Pedestrian",
+          "confidence": 0.8680494427680969,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Pedestrian",
+                "score": 0.8680494427680969
+              },
+              {
+                "source": "object",
+                "name": "Clothing",
+                "score": 0.8009487390518188
+              },
+              {
+                "source": "object",
+                "name": "Clothing",
+                "score": 0.792278528213501
+              },
+              {
+                "source": "object",
+                "name": "Clothing",
+                "score": 0.787401020526886
+              },
+              {
+                "source": "label",
+                "name": "Leisure",
+                "score": 0.7845500111579895
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Tourism",
+                "score": 0.3377000093460083
+              }
+            ],
+            "objects": [
+              {
+                "name": "Clothing",
+                "score": 0.8009487390518188
+              },
+              {
+                "name": "Clothing",
+                "score": 0.792278528213501
+              },
+              {
+                "name": "Clothing",
+                "score": 0.787401020526886
+              },
+              {
+                "name": "Top",
+                "score": 0.7841010093688965
+              },
+              {
+                "name": "Clothing",
+                "score": 0.7795285582542419
+              }
+            ],
+            "labels": [
+              {
+                "name": "Daytime",
+                "score": 0.9812310934066772
+              },
+              {
+                "name": "Pedestrian",
+                "score": 0.8680494427680969
+              },
+              {
+                "name": "Crowd",
+                "score": 0.803005039691925
+              },
+              {
+                "name": "Leisure",
+                "score": 0.7845500111579895
+              },
+              {
+                "name": "Walking",
+                "score": 0.7433891296386719
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 50.84353611111111,
+              "longitude": 4.360794444444444
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "020 - PALAIS ROYAL / KONINKLIJK PALEIS, 1000 Bruxelles, Belgium",
+              "city": "Bruxelles",
+              "county": "Bruxelles",
+              "country": "Belgium"
+            },
+            "photo_timestamp": "2022:07:21 16:41:00",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 18.58403992652893
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Bruxelles, Belgium",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Bruxelles, Belgium",
+            "coordinates": {
+              "latitude": 50.84353611111111,
+              "longitude": 4.360794444444444
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Manneken Pis",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 80978,
+                  "vicinity": "Brussels",
+                  "place_id": "ChIJ0T1eGXnEw0cRH8GwIKZAuBc",
+                  "location": {
+                    "lat": 50.844993,
+                    "lng": 4.349989
+                  }
+                },
+                {
+                  "name": "Grand Place",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 171690,
+                  "vicinity": "Grote Markt, Brussel",
+                  "place_id": "ChIJ8fEURn_Ew0cRts_ij101PLA",
+                  "location": {
+                    "lat": 50.8467887,
+                    "lng": 4.352435600000001
+                  }
+                },
+                {
+                  "name": "Jeanneke Pis",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 11761,
+                  "vicinity": "Impasse de la Fidélité 10-12, Bruxelles",
+                  "place_id": "ChIJ9TXtl4DDw0cRcU_Z69sKwfE",
+                  "location": {
+                    "lat": 50.8484807,
+                    "lng": 4.354040599999998
+                  }
+                },
+                {
+                  "name": "Comics Art Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "library",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 3442,
+                  "vicinity": "Rue des Sables 20, Bruxelles",
+                  "place_id": "ChIJwQ0CZX_Dw0cRAgyG-NX_zKA",
+                  "location": {
+                    "lat": 50.85100629999999,
+                    "lng": 4.360131200000001
+                  }
+                },
+                {
+                  "name": "Brussels City Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2239,
+                  "vicinity": "Grote Markt van, Brussel",
+                  "place_id": "ChIJ003jlX3Dw0cRi0Hhp7GpQKo",
+                  "location": {
+                    "lat": 50.8469398,
+                    "lng": 4.3528752
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Comics Art Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "library",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 3442,
+                  "vicinity": "Rue des Sables 20, Bruxelles",
+                  "place_id": "ChIJwQ0CZX_Dw0cRAgyG-NX_zKA",
+                  "location": {
+                    "lat": 50.85100629999999,
+                    "lng": 4.360131200000001
+                  }
+                },
+                {
+                  "name": "Brussels City Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2239,
+                  "vicinity": "Grote Markt van, Brussel",
+                  "place_id": "ChIJ003jlX3Dw0cRi0Hhp7GpQKo",
+                  "location": {
+                    "lat": 50.8469398,
+                    "lng": 4.3528752
+                  }
+                },
+                {
+                  "name": "Magritte Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 8108,
+                  "vicinity": "Place Royale 1, Bruxelles",
+                  "place_id": "ChIJPYlgS4fEw0cRhva9IKvp0iQ",
+                  "location": {
+                    "lat": 50.84240570000001,
+                    "lng": 4.3586407
+                  }
+                },
+                {
+                  "name": "Royal Museums of Fine Arts of Belgium",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 9993,
+                  "vicinity": "Rue de la Régence 3, Bruxelles",
+                  "place_id": "ChIJa5YBW4fEw0cRXEdEmmrHNzM",
+                  "location": {
+                    "lat": 50.8416199,
+                    "lng": 4.3581793
+                  }
+                },
+                {
+                  "name": "Musical Instruments Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 6132,
+                  "vicinity": "Rue Montagne de la Cour 2, Bruxelles",
+                  "place_id": "ChIJz2gUtIDEw0cRY-bzLAHSISU",
+                  "location": {
+                    "lat": 50.8428875,
+                    "lng": 4.3590038
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "The Dominican",
+                  "types": [
+                    "night_club",
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2370,
+                  "vicinity": "Rue Léopold 9, Bruxelles",
+                  "place_id": "ChIJsXxX7IDDw0cRYzRU0IPZPBc",
+                  "location": {
+                    "lat": 50.8492581,
+                    "lng": 4.3547629
+                  }
+                },
+                {
+                  "name": "Bedford Hotel & Congress Centre",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 9314,
+                  "vicinity": "Rue du Midi 135, Bruxelles",
+                  "place_id": "ChIJOUvAlXnEw0cRm8QDtalvxKM",
+                  "location": {
+                    "lat": 50.8442326,
+                    "lng": 4.3474068
+                  }
+                },
+                {
+                  "name": "Hotel Mozart",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 3.1,
+                  "user_ratings_total": 1728,
+                  "vicinity": "Rue du Marché aux Fromages 23, Bruxelles",
+                  "place_id": "ChIJYX7nI3_Ew0cRcfG5trAuEtI",
+                  "location": {
+                    "lat": 50.84563129999999,
+                    "lng": 4.353133999999999
+                  }
+                },
+                {
+                  "name": "Novotel Brussels off Grand Place",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 2687,
+                  "vicinity": "Rue du Marché aux Herbes 120, Bruxelles",
+                  "place_id": "ChIJC-qRC3_Ew0cRWVWIukhlcxk",
+                  "location": {
+                    "lat": 50.84622649999999,
+                    "lng": 4.3550935
+                  }
+                },
+                {
+                  "name": "Leopold Hotel Brussels EU",
+                  "types": [
+                    "cafe",
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 1059,
+                  "vicinity": "Rue du Luxembourg 35, Ixelles",
+                  "place_id": "ChIJ81qhJ5vEw0cRg6N_52gDJSM",
+                  "location": {
+                    "lat": 50.8393021,
+                    "lng": 4.370539700000001
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Parc de Bruxelles",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 21377,
+                  "vicinity": "Brussels",
+                  "place_id": "ChIJ8bkYeoHEw0cRJWjmPRPA384",
+                  "location": {
+                    "lat": 50.8454323,
+                    "lng": 4.364190099999999
+                  }
+                },
+                {
+                  "name": "Square du Petit Sablon",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1532,
+                  "vicinity": "Place du Petit Sablon 12, Bruxelles",
+                  "place_id": "ChIJi1yFcH3Ew0cRMmuGFDc3PBo",
+                  "location": {
+                    "lat": 50.8395691,
+                    "lng": 4.3565988
+                  }
+                },
+                {
+                  "name": "MOA Paris",
+                  "types": [
+                    "jewelry_store",
+                    "park",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1026,
+                  "vicinity": "Carrefour de l'Europe 2, Bruxelles",
+                  "place_id": "ChIJAT8tFn7Ew0cRjfzJavXyqZo",
+                  "location": {
+                    "lat": 50.8454609,
+                    "lng": 4.357445
+                  }
+                },
+                {
+                  "name": "Egmont Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1218,
+                  "vicinity": "Boulevard de Waterloo 25, Bruxelles",
+                  "place_id": "ChIJKaJaNIbEw0cR6P45lpHsDA0",
+                  "location": {
+                    "lat": 50.8377957,
+                    "lng": 4.356373199999999
+                  }
+                },
+                {
+                  "name": "Regent Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Boulevard du Régent 35, Bruxelles",
+                  "place_id": "ChIJ57AG94LEw0cRuObCWL1gfcE",
+                  "location": {
+                    "lat": 50.8455382,
+                    "lng": 4.367861099999999
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "St. Michael & St. Gudula Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 23099,
+                  "vicinity": "Esplanade de la Sainte-Gudule, Bruxelles",
+                  "place_id": "ChIJvTZ4_3_Dw0cRzSOE0556hYQ",
+                  "location": {
+                    "lat": 50.8479083,
+                    "lng": 4.3601497
+                  }
+                },
+                {
+                  "name": "Église Notre-Dame de la Chapelle",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1886,
+                  "vicinity": "Place de la Chapelle, Bruxelles",
+                  "place_id": "ChIJh1fm9HvEw0cRo5ZZd3FdmyQ",
+                  "location": {
+                    "lat": 50.84156309999999,
+                    "lng": 4.351109500000001
+                  }
+                },
+                {
+                  "name": "Saint John and Saint Stephen Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 97,
+                  "vicinity": "Rue des Minimes 62, Bruxelles",
+                  "place_id": "ChIJwyh-7HzEw0cRvhmEeRKRr3c",
+                  "location": {
+                    "lat": 50.8391595,
+                    "lng": 4.3527619
+                  }
+                },
+                {
+                  "name": "Eglise et Tourisme Bruxelles ASBL",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1,
+                  "vicinity": "Rue du Bois Sauvage 15, Bruxelles",
+                  "place_id": "ChIJKf1_0X_Dw0cRJvq9AhjrlEs",
+                  "location": {
+                    "lat": 50.84808019999999,
+                    "lng": 4.361365
+                  }
+                },
+                {
+                  "name": "Curia",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Rue de la Loi 26, Bruxelles",
+                  "place_id": "ChIJeR-n6YLEw0cRG_Mze_uBtqc",
+                  "location": {
+                    "lat": 50.8456342,
+                    "lng": 4.369399899999999
+                  }
+                },
+                {
+                  "name": "Great Synagogue of Brussels",
+                  "types": [
+                    "synagogue",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 154,
+                  "vicinity": "Rue de la Régence 32, Bruxelles",
+                  "place_id": "ChIJWwdeFn3Ew0cRan8MRR0atUQ",
+                  "location": {
+                    "lat": 50.8387807,
+                    "lng": 4.355064200000001
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Mira",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Rue des Pierres 16, Bruxelles",
+                  "place_id": "ChIJ05F1hXjEw0cRbM4zpRAxA98",
+                  "location": {
+                    "lat": 50.8474675,
+                    "lng": 4.349756699999999
+                  }
+                },
+                {
+                  "name": "YellowKorner",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 73,
+                  "vicinity": "Place du Grand Sablon 43, Bruxelles",
+                  "place_id": "ChIJt89fMHzEw0cRBEEC4CdpFbY",
+                  "location": {
+                    "lat": 50.8412415,
+                    "lng": 4.3540331
+                  }
+                },
+                {
+                  "name": "Collectors' Gallery",
+                  "types": [
+                    "art_gallery",
+                    "jewelry_store",
+                    "home_goods_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 5,
+                  "vicinity": "Rue des Minimes 12, Bruxelles",
+                  "place_id": "ChIJS1fkgH7Ew0cRgC7yAcC3yeE",
+                  "location": {
+                    "lat": 50.841067,
+                    "lng": 4.353872
+                  }
+                },
+                {
+                  "name": "Ritter Studio",
+                  "types": [
+                    "art_gallery",
+                    "furniture_store",
+                    "home_goods_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 7,
+                  "vicinity": "Rue Ernest Allard 17, Bruxelles",
+                  "place_id": "ChIJ1f73qn3Ew0cRnwFwhCF_lq0",
+                  "location": {
+                    "lat": 50.840157,
+                    "lng": 4.354466599999999
+                  }
+                },
+                {
+                  "name": "Art4",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Rue des Minimes 3, Bruxelles",
+                  "place_id": "ChIJ88g1RnzEw0cR3i5bmzO_YY0",
+                  "location": {
+                    "lat": 50.8411868,
+                    "lng": 4.3536103
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Brussels",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Brussels",
+                  "place_id": "ChIJZ2jHc-2kw0cRpwJzeGY6i8E",
+                  "location": {
+                    "lat": 50.84770289999999,
+                    "lng": 4.357200100000001
+                  }
+                },
+                {
+                  "name": "Warwick Grand-Place Brussels",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 3307,
+                  "vicinity": "Rue Duquesnoy 5, Bruxelles",
+                  "place_id": "ChIJXYWCAn_Ew0cRFOhcq-heq0s",
+                  "location": {
+                    "lat": 50.8452508,
+                    "lng": 4.3544393
+                  }
+                },
+                {
+                  "name": "Hotel NH Brussels Carrefour de l'Europe",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1084,
+                  "vicinity": "Rue Marche aux Herbes, Rue du Marché aux Herbes 110, Bruxelles",
+                  "place_id": "ChIJKVwdoH_Ew0cRG19BpvA7MwI",
+                  "location": {
+                    "lat": 50.846384,
+                    "lng": 4.35532
+                  }
+                },
+                {
+                  "name": "Stanhope Hotel Brussels by Thon Hotels",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2988,
+                  "vicinity": "Rue du Commerce 9, Bruxelles",
+                  "place_id": "ChIJA1x0_YTEw0cRPg-F5GOerWg",
+                  "location": {
+                    "lat": 50.8396879,
+                    "lng": 4.367439399999999
+                  }
+                },
+                {
+                  "name": "The Hotel Brussels",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 4034,
+                  "vicinity": "Boulevard de Waterloo 38, Bruxelles",
+                  "place_id": "ChIJd1N_B4jEw0cR_1oJ_V3_FNU",
+                  "location": {
+                    "lat": 50.837402,
+                    "lng": 4.357461
+                  }
+                }
+              ]
+            },
+            "total_places_found": 36,
+            "photo_timestamp": "2022:07:21 16:41:00",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.451462984085083
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/38.jpg"
+    },
+    {
+      "image_filename": "38.jpg",
+      "timestamp": "2026-01-28T05:34:26.003546",
+      "processing_time_seconds": 54.582564,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Military parade with armored vehicles, Brussels, Belgium",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of armored vehicles and a large crowd indicates a military parade. The architectural style of the building and the flags suggest a location in Brussels, Belgium, known for such events.",
+            "detailed_description": "The image shows a military parade featuring armored vehicles moving along a street lined with spectators. The vehicles are camouflaged and appear to be part of a formal procession. In the background, there is a historic building with classical architectural features, including a pediment and flags, likely indicating a governmental or significant public building. The setting suggests a ceremonial event, possibly a national celebration or commemoration.",
+            "identification": {
+              "primary": [
+                "Military parade with armored vehicles"
+              ],
+              "location": "Brussels, Belgium",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Armored vehicles",
+                "type": "military_vehicle",
+                "confidence": 0.9
+              },
+              {
+                "name": "Historic building",
+                "type": "building",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "military",
+              "parade",
+              "historic_building",
+              "Belgium"
+            ],
+            "location": "Brussels, Belgium",
+            "type": "military_vehicle",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "National Day parade in Brussels",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.8,
+                "reasoning": "Brussels hosts national celebrations that include military parades."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Military parade with armored vehicles\"],\n        \"location\": \"Brussels, Belgium\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Armored vehicles\",\n            \"type\": \"military_vehicle\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Historic building\",\n            \"type\": \"building\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"military\", \"parade\", \"historic_building\", \"Belgium\"],\n    \"description\": \"The image shows a military parade featuring armored vehicles moving along a street lined with spectators. The vehicles are camouflaged and appear to be part of a formal procession. In the background, there is a historic building with classical architectural features, including a pediment and flags, likely indicating a governmental or significant public building. The setting suggests a ceremonial event, possibly a national celebration or commemoration.\",\n    \"reasoning\": \"The presence of armored vehicles and a large crowd indicates a military parade. The architectural style of the building and the flags suggest a location in Brussels, Belgium, known for such events.\",\n    \"type\": \"military_vehicle\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"National Day parade in Brussels\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.8,\n            \"reasoning\": \"Brussels hosts national celebrations that include military parades.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 9.339799165725708
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a military parade taking place in an urban setting. The main subjects are armored military vehicles moving along a street lined with spectators. These vehicles are covered in camouflage netting, suggesting a focus on concealment and military readiness. The street is bordered by a crowd of people, some of whom are taking photos or videos of the event. In the background, there is a prominent building with neoclassical architectural features, including symmetrical windows, a trian",
+            "description": "The image depicts a military parade taking place in an urban setting. The main subjects are armored military vehicles moving along a street lined with spectators. These vehicles are covered in camouflage netting, suggesting a focus on concealment and military readiness. The street is bordered by a crowd of people, some of whom are taking photos or videos of the event. In the background, there is a prominent building with neoclassical architectural features, including symmetrical windows, a trian",
+            "architectural_style": "Neoclassical",
+            "search_backends_used": [],
+            "processing_time_seconds": 45.24085307121277
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Pedestrian",
+          "confidence": 0.8680494427680969,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Pedestrian",
+                "score": 0.8680494427680969
+              },
+              {
+                "source": "object",
+                "name": "Clothing",
+                "score": 0.8009487390518188
+              },
+              {
+                "source": "object",
+                "name": "Clothing",
+                "score": 0.792278528213501
+              },
+              {
+                "source": "object",
+                "name": "Clothing",
+                "score": 0.787401020526886
+              },
+              {
+                "source": "label",
+                "name": "Leisure",
+                "score": 0.7845500111579895
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Tourism",
+                "score": 0.3377000093460083
+              }
+            ],
+            "objects": [
+              {
+                "name": "Clothing",
+                "score": 0.8009487390518188
+              },
+              {
+                "name": "Clothing",
+                "score": 0.792278528213501
+              },
+              {
+                "name": "Clothing",
+                "score": 0.787401020526886
+              },
+              {
+                "name": "Top",
+                "score": 0.7841010093688965
+              },
+              {
+                "name": "Clothing",
+                "score": 0.7795285582542419
+              }
+            ],
+            "labels": [
+              {
+                "name": "Daytime",
+                "score": 0.9812310934066772
+              },
+              {
+                "name": "Pedestrian",
+                "score": 0.8680494427680969
+              },
+              {
+                "name": "Crowd",
+                "score": 0.803005039691925
+              },
+              {
+                "name": "Leisure",
+                "score": 0.7845500111579895
+              },
+              {
+                "name": "Walking",
+                "score": 0.7433891296386719
+              }
+            ],
+            "processing_time_seconds": 18.22403883934021
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/38.jpg"
+    }
+  ]
+}

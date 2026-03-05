@@ -1,0 +1,692 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "148.jpg",
+      "timestamp": "2026-01-28T02:33:39.052471",
+      "processing_time_seconds": 60.99302,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 27.832797222222222,
+        "gps_longitude": 34.228230555555555,
+        "location": {
+          "formatted_address": "R6MH+G38, El Tor - Sharm El Sheikh Rd, Sharm El Sheikh 2, South Sinai Governorate 8750011, Egypt",
+          "city": null,
+          "county": "Sharm El Sheikh 2",
+          "country": "Egypt"
+        },
+        "datetime_original": "2025:02:17 17:24:59",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Sinai Mountains, Sharm El Sheikh, Egypt",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Sharm El Sheikh, Egypt, which is near the Sinai Peninsula. The distinctive rugged mountain range matches the typical appearance of the Sinai Mountains.",
+            "detailed_description": "The image shows the Sinai Mountains, characterized by rugged, jagged peaks and a desert landscape. The mountains are bathed in warm light, suggesting a sunset or sunrise. The foreground includes a telecommunications tower and small buildings, typical of infrastructure found in remote desert areas.",
+            "identification": {
+              "primary": [
+                "Sinai Mountains"
+              ],
+              "location": "Sharm El Sheikh, Egypt",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Sinai Mountains",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "mountains",
+              "desert",
+              "Egypt"
+            ],
+            "location": "Sharm El Sheikh, Egypt",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Sinai Mountains\"],\n        \"location\": \"Sharm El Sheikh, Egypt\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Sinai Mountains\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"mountains\", \"desert\", \"Egypt\"],\n    \"description\": \"The image shows the Sinai Mountains, characterized by rugged, jagged peaks and a desert landscape. The mountains are bathed in warm light, suggesting a sunset or sunrise. The foreground includes a telecommunications tower and small buildings, typical of infrastructure found in remote desert areas.\",\n    \"reasoning\": \"The location metadata indicates Sharm El Sheikh, Egypt, which is near the Sinai Peninsula. The distinctive rugged mountain range matches the typical appearance of the Sinai Mountains.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 27.832797222222222,
+              "longitude": 34.228230555555555
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "R6MH+G38, El Tor - Sharm El Sheikh Rd, Sharm El Sheikh 2, South Sinai Governorate 8750011, Egypt",
+              "city": null,
+              "county": "Sharm El Sheikh 2",
+              "country": "Egypt"
+            },
+            "photo_timestamp": "2025:02:17 17:24:59",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 19.391130208969116
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL:* ([en.wikipedia.org]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 2,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image captures a stunning desert landscape at sunset, featuring a rugged mountain range in the background. The mountains exhibit sharp, jagged peaks and ridges, illuminated by the warm glow of the setting sun, which casts a reddish hue over the rocky surfaces. The terrain is arid and barren, typical of desert environments, with sparse vegetation visible across the sandy expanse. In the foreground, there is a small structure, possibly a utility building, with a simple rectangular design and a",
+            "description": "The image captures a stunning desert landscape at sunset, featuring a rugged mountain range in the background. The mountains exhibit sharp, jagged peaks and ridges, illuminated by the warm glow of the setting sun, which casts a reddish hue over the rocky surfaces. The terrain is arid and barren, typical of desert environments, with sparse vegetation visible across the sandy expanse. In the foreground, there is a small structure, possibly a utility building, with a simple rectangular design and a",
+            "architectural_style": "Modern utility structure",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 27.832797222222222,
+              "longitude": 34.228230555555555
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "R6MH+G38, El Tor - Sharm El Sheikh Rd, Sharm El Sheikh 2, South Sinai Governorate 8750011, Egypt",
+              "city": null,
+              "county": "Sharm El Sheikh 2",
+              "country": "Egypt"
+            },
+            "photo_timestamp": "2025:02:17 17:24:59",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 40.936939001083374
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Mountainous landforms",
+          "confidence": 0.9782925844192505,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Mountainous landforms",
+                "score": 0.9782925844192505
+              },
+              {
+                "source": "label",
+                "name": "Mountain",
+                "score": 0.9564926624298096
+              },
+              {
+                "source": "label",
+                "name": "Ecoregion",
+                "score": 0.9241366982460022
+              }
+            ],
+            "web_entities": [],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.9909249544143677
+              },
+              {
+                "name": "Mountainous landforms",
+                "score": 0.9782925844192505
+              },
+              {
+                "name": "Mountain",
+                "score": 0.9564926624298096
+              },
+              {
+                "name": "Ecoregion",
+                "score": 0.9241366982460022
+              },
+              {
+                "name": "Landscape",
+                "score": 0.9234671592712402
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 27.832797222222222,
+              "longitude": 34.228230555555555
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "R6MH+G38, El Tor - Sharm El Sheikh Rd, Sharm El Sheikh 2, South Sinai Governorate 8750011, Egypt",
+              "city": null,
+              "county": "Sharm El Sheikh 2",
+              "country": "Egypt"
+            },
+            "photo_timestamp": "2025:02:17 17:24:59",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 9.078392744064331
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Sharm El Sheikh 2, Egypt",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Sharm El Sheikh 2, Egypt",
+            "coordinates": {
+              "latitude": 27.832797222222222,
+              "longitude": 34.228230555555555
+            },
+            "search_range_meters": 5000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "ميدان التمن دلافين",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 291,
+                  "vicinity": "R6JH+V2, Sharm El Sheikh 2",
+                  "place_id": "ChIJm5a77YE9UxQR7Kg7bLFuyTc",
+                  "location": {
+                    "lat": 27.8322019,
+                    "lng": 34.2275013
+                  }
+                },
+                {
+                  "name": "Osprey Ras Mohamed National Park visitor center - مركز زوار محمية راس محمد",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 133,
+                  "vicinity": "R7G9+GJ, Sharm El Sheikh 2",
+                  "place_id": "ChIJbzrsXEA7UxQR-E7MdCu_0Yc",
+                  "location": {
+                    "lat": 27.8263525,
+                    "lng": 34.2691053
+                  }
+                },
+                {
+                  "name": "Barriera corallina",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 5,
+                  "vicinity": "R7G9+GJ, Sharm El Sheikh 2",
+                  "place_id": "ChIJr9iJ_yA7UxQRi2_w6ozFJ18",
+                  "location": {
+                    "lat": 27.8252362,
+                    "lng": 34.2691245
+                  }
+                },
+                {
+                  "name": "Nautilus Catamaran",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 12,
+                  "vicinity": "V72C+MHW, Unnamed Road, Sharm El Sheikh 2",
+                  "place_id": "ChIJd0399AU7UxQRaogm7VJylUU",
+                  "location": {
+                    "lat": 27.8517421,
+                    "lng": 34.2714442
+                  }
+                },
+                {
+                  "name": "الجيش مجمع رحلات بحرية",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 3,
+                  "vicinity": "V73C+2CX, Sharm El Sheikh 2",
+                  "place_id": "ChIJ3Q3lRlg7UxQR_sfrDrOmzCk",
+                  "location": {
+                    "lat": 27.8526083,
+                    "lng": 34.2711079
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Osprey Ras Mohamed",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 23,
+                  "vicinity": "Ras Mohamed Natural Reserve, North",
+                  "place_id": "ChIJMfw9IbI7UxQRzIu287eYgQ0",
+                  "location": {
+                    "lat": 27.8265256,
+                    "lng": 34.2602392
+                  }
+                },
+                {
+                  "name": "Bedouin tent Sheikh Selim",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 67,
+                  "vicinity": "R7C7+PH2, شرم الشيخ،, Sharm El Sheikh 2",
+                  "place_id": "ChIJL3Hnhpg7UxQR6vLmmTP5QRI",
+                  "location": {
+                    "lat": 27.8217515,
+                    "lng": 34.2638988
+                  }
+                },
+                {
+                  "name": "Pirate",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 3,
+                  "vicinity": "V72C+WGH, Sharm El Sheikh 2",
+                  "place_id": "ChIJbcTuYPo7UxQRvqTk4rfidpY",
+                  "location": {
+                    "lat": 27.8523166,
+                    "lng": 34.2713554
+                  }
+                },
+                {
+                  "name": "Mania bistrot",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1,
+                  "vicinity": "V72C+HR, Sharm El Sheikh 2",
+                  "place_id": "ChIJrYrtgNM7UxQRvONXRTDgP6k",
+                  "location": {
+                    "lat": 27.8514264,
+                    "lng": 34.271911
+                  }
+                },
+                {
+                  "name": "Liberty Catamaran",
+                  "types": [
+                    "travel_agency",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 61,
+                  "vicinity": "Wataneya Port",
+                  "place_id": "ChIJHUTynbs7UxQRjywNZzKWNOo",
+                  "location": {
+                    "lat": 27.8514005,
+                    "lng": 34.2720892
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Ras Mohammed National Park (Ticket Office)",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 157,
+                  "vicinity": "R6MJ+FHR, Sharm Al Sheikh - Raas Mohammed, Sharm El Sheikh 2",
+                  "place_id": "ChIJ5QdgyDM9UxQRKfNF55wxfA0",
+                  "location": {
+                    "lat": 27.8337458,
+                    "lng": 34.23138100000001
+                  }
+                },
+                {
+                  "name": "وادى عواجة",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "V6GQ+FH, Sharm El Sheikh 2",
+                  "place_id": "ChIJdbsvJwA9UxQR2LtWlx6t0Zc",
+                  "location": {
+                    "lat": 27.8761955,
+                    "lng": 34.23895899999999
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "مسجد السقاله",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "V73C+4FW, Sharm El Sheikh 2",
+                  "place_id": "ChIJnewsYd87UxQRz7LgTM_2aFc",
+                  "location": {
+                    "lat": 27.8528576,
+                    "lng": 34.2712032
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "اسلام",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 1,
+                  "user_ratings_total": 1,
+                  "vicinity": "R6MH+G38, El Tor - Sharm El Sheikh Road, Sharm El Sheikh 2",
+                  "place_id": "ChIJc8rTVAA9UxQRfTOc17vsZx0",
+                  "location": {
+                    "lat": 27.8331306,
+                    "lng": 34.2279754
+                  }
+                },
+                {
+                  "name": "ميدان التمن دلافين",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 291,
+                  "vicinity": "R6JH+V2, Sharm El Sheikh 2",
+                  "place_id": "ChIJm5a77YE9UxQR7Kg7bLFuyTc",
+                  "location": {
+                    "lat": 27.8322019,
+                    "lng": 34.2275013
+                  }
+                },
+                {
+                  "name": "Ras Mohammed security checkpoint",
+                  "types": [
+                    "police",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "R6MH+G38, El Tor - Sharm El Sheikh Road, Sharm El Sheikh 2",
+                  "place_id": "ChIJj_Qi3wU9UxQRh2vX3gcC2rs",
+                  "location": {
+                    "lat": 27.8337861,
+                    "lng": 34.2277135
+                  }
+                },
+                {
+                  "name": "مدينة رأس محمد",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 13,
+                  "vicinity": "طريق الطور - شرم الشيخ، قسم شرم الشيخ، جنوب سيناء،، R6MH+G38، قسم شرم الشيخ، جنوب سيناء 8750011،",
+                  "place_id": "ChIJ64LWvmE9UxQRbYKNOkdzZsg",
+                  "location": {
+                    "lat": 27.834635,
+                    "lng": 34.2279533
+                  }
+                },
+                {
+                  "name": "Ras Mohammed National Park (Ticket Office)",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 157,
+                  "vicinity": "R6MJ+FHR, Sharm Al Sheikh - Raas Mohammed, Sharm El Sheikh 2",
+                  "place_id": "ChIJ5QdgyDM9UxQRKfNF55wxfA0",
+                  "location": {
+                    "lat": 27.8337458,
+                    "lng": 34.23138100000001
+                  }
+                }
+              ]
+            },
+            "total_places_found": 18,
+            "photo_timestamp": "2025:02:17 17:24:59",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.42562198638916016
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/148.jpg"
+    },
+    {
+      "image_filename": "148.jpg",
+      "timestamp": "2026-01-28T02:34:40.079839",
+      "processing_time_seconds": 61.271864,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Mountain range, Desert region, possibly Middle East or North Africa",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The mountain range is the most prominent feature, and the lighting suggests a desert environment. The presence of a communication tower and buildings indicates human activity in an otherwise natural setting.",
+            "detailed_description": "The image shows a rugged mountain range in a desert landscape, likely during sunset or sunrise, as indicated by the warm lighting on the peaks. The mountains are characterized by sharp, jagged peaks and a reddish hue. In the foreground, there is a communication tower and some small buildings, suggesting a remote or rural setting. The landscape is arid, with sparse vegetation and a flat, sandy terrain.",
+            "identification": {
+              "primary": [
+                "Mountain range"
+              ],
+              "location": "Desert region, possibly Middle East or North Africa",
+              "confidence": 0.8
+            },
+            "artifacts": [
+              {
+                "name": "Mountain range",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Communication tower",
+                "type": "structure",
+                "confidence": 0.7
+              }
+            ],
+            "tags": [
+              "mountain",
+              "desert",
+              "natural_feature",
+              "sunset",
+              "arid_landscape"
+            ],
+            "location": "Desert region, possibly Middle East or North Africa",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Sinai Mountains, Egypt",
+                "specificity_level": "very_specific",
+                "confidence": 0.6,
+                "reasoning": "The rugged terrain and desert setting are characteristic of the Sinai region."
+              },
+              {
+                "guess": "Hajar Mountains, Oman",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.5,
+                "reasoning": "The jagged peaks and desert environment are similar to the Hajar Mountains."
+              },
+              {
+                "guess": "Desert mountain range in Saudi Arabia",
+                "specificity_level": "general",
+                "confidence": 0.5,
+                "reasoning": "Saudi Arabia has several desert mountain ranges that fit this description."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Mountain range\"],\n        \"location\": \"Desert region, possibly Middle East or North Africa\",\n        \"confidence\": 0.8\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Mountain range\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Communication tower\",\n            \"type\": \"structure\",\n            \"confidence\": 0.7\n        }\n    ],\n    \"tags\": [\"mountain\", \"desert\", \"natural_feature\", \"sunset\", \"arid_landscape\"],\n    \"description\": \"The image shows a rugged mountain range in a desert landscape, likely during sunset or sunrise, as indicated by the warm lighting on the peaks. The mountains are characterized by sharp, jagged peaks and a reddish hue. In the foreground, there is a communication tower and some small buildings, suggesting a remote or rural setting. The landscape is arid, with sparse vegetation and a flat, sandy terrain.\",\n    \"reasoning\": \"The mountain range is the most prominent feature, and the lighting suggests a desert environment. The presence of a communication tower and buildings indicates human activity in an otherwise natural setting.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Sinai Mountains, Egypt\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The rugged terrain and desert setting are characteristic of the Sinai region.\"\n        },\n        {\n            \"guess\": \"Hajar Mountains, Oman\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.5,\n            \"reasoning\": \"The jagged peaks and desert environment are similar to the Hajar Mountains.\"\n        },\n        {\n            \"guess\": \"Desert mountain range in Saudi Arabia\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.5,\n            \"reasoning\": \"Saudi Arabia has several desert mountain ranges that fit this description.\"\n        }\n    ]\n}",
+            "processing_time_seconds": 24.183475017547607
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([en.wikipedia.org]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a rugged mountain range in the background, characterized by sharp, jagged peaks and a reddish-brown hue, likely due to the setting or rising sun casting warm light on the rocky surfaces. The mountains appear to be composed of sedimentary rock, typical of arid desert landscapes. The foreground features a flat, expansive desert terrain with sparse vegetation and scattered debris. A small structure, possibly a utility building, is visible, painted in light colors with a flat roof.",
+            "description": "The image depicts a rugged mountain range in the background, characterized by sharp, jagged peaks and a reddish-brown hue, likely due to the setting or rising sun casting warm light on the rocky surfaces. The mountains appear to be composed of sedimentary rock, typical of arid desert landscapes. The foreground features a flat, expansive desert terrain with sparse vegetation and scattered debris. A small structure, possibly a utility building, is visible, painted in light colors with a flat roof.",
+            "architectural_style": "Modern utility structure",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 37.08745193481445
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Mountainous landforms",
+          "confidence": 0.9782925844192505,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Mountainous landforms",
+                "score": 0.9782925844192505
+              },
+              {
+                "source": "label",
+                "name": "Mountain",
+                "score": 0.9564926624298096
+              },
+              {
+                "source": "label",
+                "name": "Ecoregion",
+                "score": 0.9241366982460022
+              }
+            ],
+            "web_entities": [],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.9909249544143677
+              },
+              {
+                "name": "Mountainous landforms",
+                "score": 0.9782925844192505
+              },
+              {
+                "name": "Mountain",
+                "score": 0.9564926624298096
+              },
+              {
+                "name": "Ecoregion",
+                "score": 0.9241366982460022
+              },
+              {
+                "name": "Landscape",
+                "score": 0.9234671592712402
+              }
+            ],
+            "processing_time_seconds": 9.106528043746948
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/148.jpg"
+    }
+  ]
+}

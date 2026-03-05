@@ -1,0 +1,198 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "1.jpg",
+      "timestamp": "2026-01-28T00:41:34.954342",
+      "processing_time_seconds": 44.616922,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Mountain landscape, Norway",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The combination of the cemetery and the distinctive mountain landscape suggests a location in Norway, known for its dramatic natural scenery. The style of the gravestones and the mountainous backdrop are typical of Norwegian landscapes.",
+            "detailed_description": "The image depicts a cemetery in the foreground with various gravestones and monuments. In the background, there is a prominent mountain landscape, characteristic of the rugged terrain found in Norway. The scene is bathed in warm, soft light, suggesting it might be taken during the early morning or late afternoon. The cemetery is surrounded by a white fence, and there are trees and a house visible, adding to the serene and picturesque setting.",
+            "identification": {
+              "primary": [
+                "Mountain landscape"
+              ],
+              "location": "Norway",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Cemetery",
+                "type": "landmark",
+                "confidence": 0.9
+              },
+              {
+                "name": "Mountain",
+                "type": "natural_feature",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "cemetery",
+              "landscape",
+              "Norway"
+            ],
+            "location": "Norway",
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Lofoten Islands",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.75,
+                "reasoning": "The mountainous terrain and coastal setting are characteristic of the Lofoten Islands in Norway."
+              },
+              {
+                "guess": "Tromsø",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.65,
+                "reasoning": "Tromsø is another area in Norway with similar natural features and landscapes."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Mountain landscape\"],\n        \"location\": \"Norway\",\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Cemetery\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Mountain\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"cemetery\", \"landscape\", \"Norway\"],\n    \"description\": \"The image depicts a cemetery in the foreground with various gravestones and monuments. In the background, there is a prominent mountain landscape, characteristic of the rugged terrain found in Norway. The scene is bathed in warm, soft light, suggesting it might be taken during the early morning or late afternoon. The cemetery is surrounded by a white fence, and there are trees and a house visible, adding to the serene and picturesque setting.\",\n    \"reasoning\": \"The combination of the cemetery and the distinctive mountain landscape suggests a location in Norway, known for its dramatic natural scenery. The style of the gravestones and the mountainous backdrop are typical of Norwegian landscapes.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Lofoten Islands\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.75,\n            \"reasoning\": \"The mountainous terrain and coastal setting are characteristic of the Lofoten Islands in Norway.\"\n        },\n        {\n            \"guess\": \"Tromsø\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.65,\n            \"reasoning\": \"Tromsø is another area in Norway with similar natural features and landscapes.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 9.66373085975647
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([designboom.com]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a serene cemetery scene set against a backdrop of striking mountains. The cemetery is characterized by a variety of gravestones and monuments, including traditional headstones and obelisks. The gravestones are made from materials such as granite and marble, with some featuring intricate carvings and inscriptions. The cemetery is enclosed by a white picket fence, adding a quaint and peaceful element to the setting. In the background, a mountain range rises prominently, with jagg",
+            "description": "The image depicts a serene cemetery scene set against a backdrop of striking mountains. The cemetery is characterized by a variety of gravestones and monuments, including traditional headstones and obelisks. The gravestones are made from materials such as granite and marble, with some featuring intricate carvings and inscriptions. The cemetery is enclosed by a white picket fence, adding a quaint and peaceful element to the setting. In the background, a mountain range rises prominently, with jagg",
+            "architectural_style": "Traditional residential architecture",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 34.947436809539795
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Grave",
+          "confidence": 0.8618772625923157,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Grave",
+                "score": 0.8618772625923157
+              },
+              {
+                "source": "label",
+                "name": "Headstone",
+                "score": 0.8603689074516296
+              },
+              {
+                "source": "label",
+                "name": "Cemetery",
+                "score": 0.8104405403137207
+              },
+              {
+                "source": "web",
+                "name": "Cemetery",
+                "score": 0.38938549160957336
+              },
+              {
+                "source": "web",
+                "name": "Tree",
+                "score": 0.36054274439811707
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Cemetery",
+                "score": 0.38938549160957336
+              },
+              {
+                "name": "Tree",
+                "score": 0.36054274439811707
+              },
+              {
+                "name": "Gravestone",
+                "score": 0.3236764967441559
+              },
+              {
+                "name": "M-tree",
+                "score": 0.2542000114917755
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Landscape",
+                "score": 0.9257569313049316
+              },
+              {
+                "name": "Grave",
+                "score": 0.8618772625923157
+              },
+              {
+                "name": "Headstone",
+                "score": 0.8603689074516296
+              },
+              {
+                "name": "Morning",
+                "score": 0.8370806574821472
+              },
+              {
+                "name": "Cemetery",
+                "score": 0.8104405403137207
+              }
+            ],
+            "processing_time_seconds": 11.49576187133789
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/1.jpg"
+    }
+  ]
+}

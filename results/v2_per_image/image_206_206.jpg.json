@@ -1,0 +1,1120 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "206.jpg",
+      "timestamp": "2026-01-28T04:48:52.234265",
+      "processing_time_seconds": 45.74732,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 46.00297222222222,
+        "gps_longitude": 8.951602777777778,
+        "location": {
+          "formatted_address": "Lugano-Centrale, 6900 Lugano, Switzerland",
+          "city": "Lugano",
+          "county": "Lugano",
+          "country": "Switzerland"
+        },
+        "datetime_original": "2025:12:16 16:24:41",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Monte Brè, Lake Lugano, Lugano, Switzerland",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Lugano, Switzerland, and the mountain's distinctive shape and position suggest it is Monte Brè. The presence of the lake aligns with Lake Lugano's known geography. The architectural style of the building suggests a historic European design, common in Lugano.",
+            "detailed_description": "The image shows Monte Brè, a prominent mountain overlooking Lugano, Switzerland. The mountain is partially shrouded in mist, adding a dramatic effect to the scene. Below the mountain, Lake Lugano is visible, providing a scenic backdrop. In the foreground, there is a historic building with an ornate facade, featuring arched windows and decorative elements typical of European architecture.",
+            "identification": {
+              "primary": [
+                "Monte Brè",
+                "Lake Lugano"
+              ],
+              "location": "Lugano, Switzerland",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Monte Brè",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Lake Lugano",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Historic building facade",
+                "type": "building",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "lake",
+              "mountain",
+              "architecture",
+              "historic_building",
+              "Switzerland"
+            ],
+            "location": "Lugano, Switzerland",
+            "type": "viewpoint",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Monte San Salvatore",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "Monte San Salvatore is another notable mountain in the Lugano area, but the shape and position are more consistent with Monte Brè."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Monte Brè\", \"Lake Lugano\"],\n        \"location\": \"Lugano, Switzerland\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Monte Brè\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Lake Lugano\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Historic building facade\",\n            \"type\": \"building\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"lake\", \"mountain\", \"architecture\", \"historic_building\", \"Switzerland\"],\n    \"description\": \"The image shows Monte Brè, a prominent mountain overlooking Lugano, Switzerland. The mountain is partially shrouded in mist, adding a dramatic effect to the scene. Below the mountain, Lake Lugano is visible, providing a scenic backdrop. In the foreground, there is a historic building with an ornate facade, featuring arched windows and decorative elements typical of European architecture.\",\n    \"reasoning\": \"The location metadata indicates Lugano, Switzerland, and the mountain's distinctive shape and position suggest it is Monte Brè. The presence of the lake aligns with Lake Lugano's known geography. The architectural style of the building suggests a historic European design, common in Lugano.\",\n    \"type\": \"viewpoint\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Monte San Salvatore\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"Monte San Salvatore is another notable mountain in the Lugano area, but the shape and position are more consistent with Monte Brè.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": 46.00297222222222,
+              "longitude": 8.951602777777778
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Lugano-Centrale, 6900 Lugano, Switzerland",
+              "city": "Lugano",
+              "county": "Lugano",
+              "country": "Switzerland"
+            },
+            "photo_timestamp": "2025:12:16 16:24:41",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 9.872216939926147
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image captures a scenic view of Lugano, Switzerland, featuring a prominent mountain in the background. The mountain is partially shrouded in mist, creating a serene and atmospheric effect. The slope is dotted with numerous buildings, likely residential, which are arranged in a scattered pattern across the hillside. These buildings are primarily light-colored, contrasting against the darker tones of the mountain and the mist. In the foreground, there is a waterfront area with a large, ornate ",
+            "description": "The image captures a scenic view of Lugano, Switzerland, featuring a prominent mountain in the background. The mountain is partially shrouded in mist, creating a serene and atmospheric effect. The slope is dotted with numerous buildings, likely residential, which are arranged in a scattered pattern across the hillside. These buildings are primarily light-colored, contrasting against the darker tones of the mountain and the mist. In the foreground, there is a waterfront area with a large, ornate ",
+            "architectural_style": "Classical architecture",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 46.00297222222222,
+              "longitude": 8.951602777777778
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Lugano-Centrale, 6900 Lugano, Switzerland",
+              "city": "Lugano",
+              "county": "Lugano",
+              "country": "Switzerland"
+            },
+            "photo_timestamp": "2025:12:16 16:24:41",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 35.098177909851074
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "atmospheric phenomenon",
+          "confidence": 0.9457350969314575,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "atmospheric phenomenon",
+                "score": 0.9457350969314575
+              },
+              {
+                "source": "label",
+                "name": "geological phenomenon",
+                "score": 0.7975381016731262
+              },
+              {
+                "source": "label",
+                "name": "Mountain range",
+                "score": 0.7876383066177368
+              },
+              {
+                "source": "label",
+                "name": "Fog",
+                "score": 0.7728197574615479
+              },
+              {
+                "source": "object",
+                "name": "Building",
+                "score": 0.6931031942367554
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Photography",
+                "score": 0.4101000130176544
+              },
+              {
+                "name": "Aerial photography",
+                "score": 0.38917794823646545
+              }
+            ],
+            "objects": [
+              {
+                "name": "Building",
+                "score": 0.6931031942367554
+              }
+            ],
+            "labels": [
+              {
+                "name": "atmospheric phenomenon",
+                "score": 0.9457350969314575
+              },
+              {
+                "name": "geological phenomenon",
+                "score": 0.7975381016731262
+              },
+              {
+                "name": "Mountain range",
+                "score": 0.7876383066177368
+              },
+              {
+                "name": "Fog",
+                "score": 0.7728197574615479
+              },
+              {
+                "name": "Haze",
+                "score": 0.6986606121063232
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 46.00297222222222,
+              "longitude": 8.951602777777778
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Lugano-Centrale, 6900 Lugano, Switzerland",
+              "city": "Lugano",
+              "county": "Lugano",
+              "country": "Switzerland"
+            },
+            "photo_timestamp": "2025:12:16 16:24:41",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 10.919673919677734
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Lugano, Switzerland",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Lugano, Switzerland",
+            "coordinates": {
+              "latitude": 46.00297222222222,
+              "longitude": 8.951602777777778
+            },
+            "search_range_meters": 2000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Museo d'arte della Svizzera italiana (MASI Lugano)",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 487,
+                  "vicinity": "Piazza Bernardino Luini 6, Lugano",
+                  "place_id": "ChIJA1Ncy40thEcR3QTpoDiCFNM",
+                  "location": {
+                    "lat": 45.999409,
+                    "lng": 8.947887300000001
+                  }
+                },
+                {
+                  "name": "FlyTicino - Paragliding Tandem Flights in Lugano & Locarno | Switzerland",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 214,
+                  "vicinity": "Booking only via Website, Lugano",
+                  "place_id": "ChIJfwCcG9PShUcRBvjYjzeboqc",
+                  "location": {
+                    "lat": 46.0056457,
+                    "lng": 8.9515937
+                  }
+                },
+                {
+                  "name": "TAG TheArtGallery",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 6,
+                  "vicinity": "Via Carlo Frasca 3, Lugano",
+                  "place_id": "ChIJpW0ZcYwthEcR5UYiQ70gUTE",
+                  "location": {
+                    "lat": 46.0062734,
+                    "lng": 8.9547443
+                  }
+                },
+                {
+                  "name": "LAC Lugano Arte e Cultura",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 4705,
+                  "vicinity": "Piazza Bernardino Luini 6, Lugano",
+                  "place_id": "ChIJHRmTGpEthEcReqLKfsyi9n0",
+                  "location": {
+                    "lat": 45.9992536,
+                    "lng": 8.948219000000002
+                  }
+                },
+                {
+                  "name": "Parco Panoramico Paradiso",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 360,
+                  "vicinity": "Via Guidino 20, Paradiso",
+                  "place_id": "ChIJMzyYKb8thEcRQ4zNHKh4xHk",
+                  "location": {
+                    "lat": 45.98835260000001,
+                    "lng": 8.9491552
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Museo d'arte della Svizzera italiana (MASI Lugano)",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 487,
+                  "vicinity": "Piazza Bernardino Luini 6, Lugano",
+                  "place_id": "ChIJA1Ncy40thEcR3QTpoDiCFNM",
+                  "location": {
+                    "lat": 45.999409,
+                    "lng": 8.947887300000001
+                  }
+                },
+                {
+                  "name": "TAG TheArtGallery",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 6,
+                  "vicinity": "Via Carlo Frasca 3, Lugano",
+                  "place_id": "ChIJpW0ZcYwthEcR5UYiQ70gUTE",
+                  "location": {
+                    "lat": 46.0062734,
+                    "lng": 8.9547443
+                  }
+                },
+                {
+                  "name": "LAC Lugano Arte e Cultura",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 4705,
+                  "vicinity": "Piazza Bernardino Luini 6, Lugano",
+                  "place_id": "ChIJHRmTGpEthEcReqLKfsyi9n0",
+                  "location": {
+                    "lat": 45.9992536,
+                    "lng": 8.948219000000002
+                  }
+                },
+                {
+                  "name": "Collezione Giancarlo e Danna Olgiati",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 36,
+                  "vicinity": "Riva Antonio Caccia 1, Lugano",
+                  "place_id": "ChIJAzjEIpEthEcRDdQCWWycEy4",
+                  "location": {
+                    "lat": 45.99881,
+                    "lng": 8.948341
+                  }
+                },
+                {
+                  "name": "Museo in Erba",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 85,
+                  "vicinity": "Central Park, Riva Antonio Caccia 1/Galleria 1o piano, Lugano",
+                  "place_id": "ChIJcQGL_jNKhEcRr82AV6bPLbw",
+                  "location": {
+                    "lat": 45.9985957,
+                    "lng": 8.948085299999999
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Hotel Splendide Royal Lugano",
+                  "types": [
+                    "bar",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1449,
+                  "vicinity": "Riva Antonio Caccia 7, Lugano",
+                  "place_id": "ChIJl7FFspcthEcRW-lctC1hIjg",
+                  "location": {
+                    "lat": 45.9949216,
+                    "lng": 8.9459271
+                  }
+                },
+                {
+                  "name": "Hotel Federale Lugano",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 795,
+                  "vicinity": "Via Paolo Regazzoni 8, Lugano",
+                  "place_id": "ChIJz4AlbI8thEcRQ4Gub6cuKyk",
+                  "location": {
+                    "lat": 46.00562530000001,
+                    "lng": 8.9478262
+                  }
+                },
+                {
+                  "name": "Hotel Pestalozzi",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1111,
+                  "vicinity": "Piazza Dell Indipendenza 9, Lugano",
+                  "place_id": "ChIJu8e0YYwthEcRnJfEpgSfRsY",
+                  "location": {
+                    "lat": 46.005693,
+                    "lng": 8.955051
+                  }
+                },
+                {
+                  "name": "Hotel Delfino Lugano",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 994,
+                  "vicinity": "Hotel Delfino Lugano, Via Cassarinetta 6, Lugano",
+                  "place_id": "ChIJLctjD5gthEcRLZZLEDYzAFY",
+                  "location": {
+                    "lat": 45.9936808,
+                    "lng": 8.942128499999999
+                  }
+                },
+                {
+                  "name": "Hotel Lido Seegarten",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 748,
+                  "vicinity": "Viale Castagnola 22, Lugano",
+                  "place_id": "ChIJJV650vAthEcRvSeozdvKtno",
+                  "location": {
+                    "lat": 46.005551,
+                    "lng": 8.967597
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Rivetta Tell",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 350,
+                  "vicinity": "Riva Giocondo Albertolli, Lugano",
+                  "place_id": "ChIJiTmMBY0thEcRQdXocnQq8Ds",
+                  "location": {
+                    "lat": 46.0036158,
+                    "lng": 8.955083199999999
+                  }
+                },
+                {
+                  "name": "Park Luna SA",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1,
+                  "vicinity": "Viale Stefano Franscini 1, Lugano",
+                  "place_id": "ChIJK9AXaIkthEcRE2JUsnT8jzA",
+                  "location": {
+                    "lat": 46.00808809999999,
+                    "lng": 8.9524861
+                  }
+                },
+                {
+                  "name": "Dog Park Tassino",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 108,
+                  "vicinity": "Lugano",
+                  "place_id": "ChIJH9CvG5AthEcRUraluPEGBJY",
+                  "location": {
+                    "lat": 46.0020821,
+                    "lng": 8.9465089
+                  }
+                },
+                {
+                  "name": "Parco Panoramico Paradiso",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 360,
+                  "vicinity": "Via Guidino 20, Paradiso",
+                  "place_id": "ChIJMzyYKb8thEcRQ4zNHKh4xHk",
+                  "location": {
+                    "lat": 45.98835260000001,
+                    "lng": 8.9491552
+                  }
+                },
+                {
+                  "name": "Parco San Michele",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 545,
+                  "vicinity": "Via San Michele, Lugano",
+                  "place_id": "ChIJIcyuzfsthEcRserVutjekE8",
+                  "location": {
+                    "lat": 46.0045042,
+                    "lng": 8.9734545
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Chiesa di Sant'Antonio Abate",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 61,
+                  "vicinity": "Piazza Alighieri Dante, Lugano",
+                  "place_id": "ChIJX1sAjY4thEcRAOYhzK8aRpU",
+                  "location": {
+                    "lat": 46.0050988,
+                    "lng": 8.951374699999999
+                  }
+                },
+                {
+                  "name": "Centro d'Aiuto Universale Svizzera - Lugano",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 16,
+                  "vicinity": "Via San Gottardo 32, Lugano",
+                  "place_id": "ChIJ-aq4KpYthEcRX3MaCAJk8AE",
+                  "location": {
+                    "lat": 46.00856449999999,
+                    "lng": 8.946976099999999
+                  }
+                },
+                {
+                  "name": "Living Word Christian Center",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Via Cabione 18, Lugano-Massagno",
+                  "place_id": "ChIJNam2fH8yhEcR-zJn3ym7TTI",
+                  "location": {
+                    "lat": 46.0127976,
+                    "lng": 8.9408035
+                  }
+                },
+                {
+                  "name": "Adventgemeinde",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Via Cabione 18, Massagno",
+                  "place_id": "ChIJTbM_fX8yhEcRhp-pzli6h7s",
+                  "location": {
+                    "lat": 46.0128257,
+                    "lng": 8.940792
+                  }
+                },
+                {
+                  "name": "Parrocchia Cattolica Romana Sacro Cuore",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 8,
+                  "vicinity": "Via Carlo Maderno 20, Lugano",
+                  "place_id": "ChIJbRGgaoothEcRIuVKwdSiTi4",
+                  "location": {
+                    "lat": 46.0103715,
+                    "lng": 8.9554446
+                  }
+                },
+                {
+                  "name": "La Lega dei Musulmani in Ticino",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 88,
+                  "vicinity": "Via Bottogno 12, Lugano",
+                  "place_id": "ChIJb5NZvAkyhEcRxawQpYsImNA",
+                  "location": {
+                    "lat": 46.0119948,
+                    "lng": 8.9682034
+                  }
+                },
+                {
+                  "name": "Qendra Kulturore Shqiptare \"Xhamia\" (Albanian cultural centre and Mosque)",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 90,
+                  "vicinity": "Viale Stefano Franscini 23, Lugano",
+                  "place_id": "ChIJCdkc9okthEcRXyD2Mk--sTA",
+                  "location": {
+                    "lat": 46.0106442,
+                    "lng": 8.954120300000001
+                  }
+                },
+                {
+                  "name": "Chabad House of Lugano",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 9,
+                  "vicinity": "Via Carlo Maderno 11, Lugano",
+                  "place_id": "ChIJb5tiLbcthEcRw56x055iMgY",
+                  "location": {
+                    "lat": 46.00987529999999,
+                    "lng": 8.9549115
+                  }
+                },
+                {
+                  "name": "Sinagoga di Lugano",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 9,
+                  "vicinity": "Via Carlo Maderno 11, Lugano",
+                  "place_id": "ChIJJV7nO4othEcROosH_Z149yk",
+                  "location": {
+                    "lat": 46.0098742,
+                    "lng": 8.954960400000001
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Ristorante Arté",
+                  "types": [
+                    "restaurant",
+                    "art_gallery",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 301,
+                  "vicinity": "Rivetta Alfonsina Storni 1, Lugano",
+                  "place_id": "ChIJ1dTaVPcthEcROC5SY6C8MHU",
+                  "location": {
+                    "lat": 46.0051213,
+                    "lng": 8.970360300000001
+                  }
+                },
+                {
+                  "name": "IMAGO Art Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 10,
+                  "vicinity": "Via Nassa 46, Lugano",
+                  "place_id": "ChIJaRW3C70thEcRaHh3ag72bK0",
+                  "location": {
+                    "lat": 46.0017162,
+                    "lng": 8.949440400000002
+                  }
+                },
+                {
+                  "name": "Buchmann Galerie",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 4,
+                  "vicinity": "Via della Posta 4, Lugano",
+                  "place_id": "ChIJ70FGnfAshEcRCpLfte6UvWM",
+                  "location": {
+                    "lat": 46.0044676,
+                    "lng": 8.9529878
+                  }
+                },
+                {
+                  "name": "PRIMAE NOCTIS ART GALLERY",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Via Pasquale Lucchini 10, Lugano",
+                  "place_id": "ChIJH6OS2JEthEcRYExtzimRdxU",
+                  "location": {
+                    "lat": 46.00715009999999,
+                    "lng": 8.9574939
+                  }
+                },
+                {
+                  "name": "Galleria Allegra Ravizza",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 2.7,
+                  "user_ratings_total": 3,
+                  "vicinity": "Piazza Cioccaro 11, Lugano",
+                  "place_id": "ChIJOWSuao4thEcRj6VY7wqHn_s",
+                  "location": {
+                    "lat": 46.004578,
+                    "lng": 8.9494654
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Lugano",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Lugano",
+                  "place_id": "ChIJ8RFCavcthEcR4PihLiEEjO8",
+                  "location": {
+                    "lat": 46.0036778,
+                    "lng": 8.951051999999999
+                  }
+                },
+                {
+                  "name": "Hotel Splendide Royal Lugano",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1449,
+                  "vicinity": "Riva Antonio Caccia 7, Lugano",
+                  "place_id": "ChIJl7FFspcthEcRW-lctC1hIjg",
+                  "location": {
+                    "lat": 45.9949216,
+                    "lng": 8.9459271
+                  }
+                },
+                {
+                  "name": "Hostel Montarina",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 561,
+                  "vicinity": "Via Montarina 1, Lugano",
+                  "place_id": "ChIJqfwC9I8thEcRr8SIHFlBy-M",
+                  "location": {
+                    "lat": 46.0033757,
+                    "lng": 8.946363999999999
+                  }
+                },
+                {
+                  "name": "Hotel Federale Lugano",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 795,
+                  "vicinity": "Via Paolo Regazzoni 8, Lugano",
+                  "place_id": "ChIJz4AlbI8thEcRQ4Gub6cuKyk",
+                  "location": {
+                    "lat": 46.00562530000001,
+                    "lng": 8.9478262
+                  }
+                },
+                {
+                  "name": "Hotel Nassa",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 401,
+                  "vicinity": "Via Nassa 60, Lugano",
+                  "place_id": "ChIJuXa5uJEthEcRHev0sOZ8bqQ",
+                  "location": {
+                    "lat": 46.0010466,
+                    "lng": 8.9492666
+                  }
+                }
+              ]
+            },
+            "total_places_found": 39,
+            "photo_timestamp": "2025:12:16 16:24:41",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.5354347229003906
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/206.jpg"
+    },
+    {
+      "image_filename": "206.jpg",
+      "timestamp": "2026-01-28T04:49:38.013401",
+      "processing_time_seconds": 55.744464,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Lake Como, Monte Brè, Lugano, Switzerland",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of Lake Como and Monte Brè, along with the architectural style of the buildings, suggests the location is Lugano, Switzerland. The misty mountain and lake are characteristic of this region.",
+            "detailed_description": "The image shows a view of Lake Como with Monte Brè in the background. The mountain is partially covered in mist, and the slopes are dotted with numerous buildings. In the foreground, there is a historic building with a classical architectural style, featuring columns and decorative elements typical of 19th-century European architecture. The scene is set during twilight, with lights illuminating parts of the area.",
+            "identification": {
+              "primary": [
+                "Lake Como",
+                "Monte Brè"
+              ],
+              "location": "Lugano, Switzerland",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Lake Como",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Monte Brè",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Historic building",
+                "type": "building",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "mountain",
+              "lake",
+              "historic_building",
+              "Switzerland"
+            ],
+            "location": "Lugano, Switzerland",
+            "type": "viewpoint",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Lake Lugano",
+                "specificity_level": "very_specific",
+                "confidence": 0.7,
+                "reasoning": "The scene resembles views typical of Lake Lugano, which is also in the region."
+              },
+              {
+                "guess": "Swiss Alps",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The mountainous landscape is characteristic of the Swiss Alps."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Lake Como\", \"Monte Brè\"],\n        \"location\": \"Lugano, Switzerland\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Lake Como\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Monte Brè\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Historic building\",\n            \"type\": \"building\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"mountain\", \"lake\", \"historic_building\", \"Switzerland\"],\n    \"description\": \"The image shows a view of Lake Como with Monte Brè in the background. The mountain is partially covered in mist, and the slopes are dotted with numerous buildings. In the foreground, there is a historic building with a classical architectural style, featuring columns and decorative elements typical of 19th-century European architecture. The scene is set during twilight, with lights illuminating parts of the area.\",\n    \"reasoning\": \"The presence of Lake Como and Monte Brè, along with the architectural style of the buildings, suggests the location is Lugano, Switzerland. The misty mountain and lake are characteristic of this region.\",\n    \"type\": \"viewpoint\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Lake Lugano\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The scene resembles views typical of Lake Lugano, which is also in the region.\"\n        },\n        {\n            \"guess\": \"Swiss Alps\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The mountainous landscape is characteristic of the Swiss Alps.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 10.22635531425476
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a scenic view of a mountainous area, with a densely populated hillside covered in numerous buildings. The mountain rises steeply, creating a dramatic backdrop against the sky, which appears overcast and slightly misty, suggesting a cool or damp atmosphere. The buildings on the hillside are primarily residential, with a mix of modern and traditional architectural styles, characterized by white and light-colored facades. The structures are tightly packed, following the contour of",
+            "description": "The image depicts a scenic view of a mountainous area, with a densely populated hillside covered in numerous buildings. The mountain rises steeply, creating a dramatic backdrop against the sky, which appears overcast and slightly misty, suggesting a cool or damp atmosphere. The buildings on the hillside are primarily residential, with a mix of modern and traditional architectural styles, characterized by white and light-colored facades. The structures are tightly packed, following the contour of",
+            "architectural_style": "Classical and modern residential architecture",
+            "search_backends_used": [],
+            "processing_time_seconds": 45.5168559551239
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "atmospheric phenomenon",
+          "confidence": 0.9457350969314575,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "atmospheric phenomenon",
+                "score": 0.9457350969314575
+              },
+              {
+                "source": "label",
+                "name": "geological phenomenon",
+                "score": 0.7975381016731262
+              },
+              {
+                "source": "label",
+                "name": "Mountain range",
+                "score": 0.7876383066177368
+              },
+              {
+                "source": "label",
+                "name": "Fog",
+                "score": 0.7728197574615479
+              },
+              {
+                "source": "object",
+                "name": "Building",
+                "score": 0.6931031942367554
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Photography",
+                "score": 0.4101000130176544
+              },
+              {
+                "name": "Aerial photography",
+                "score": 0.38883572816848755
+              }
+            ],
+            "objects": [
+              {
+                "name": "Building",
+                "score": 0.6931031942367554
+              }
+            ],
+            "labels": [
+              {
+                "name": "atmospheric phenomenon",
+                "score": 0.9457350969314575
+              },
+              {
+                "name": "geological phenomenon",
+                "score": 0.7975381016731262
+              },
+              {
+                "name": "Mountain range",
+                "score": 0.7876383066177368
+              },
+              {
+                "name": "Fog",
+                "score": 0.7728197574615479
+              },
+              {
+                "name": "Haze",
+                "score": 0.6986606121063232
+              }
+            ],
+            "processing_time_seconds": 11.71587610244751
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/206.jpg"
+    }
+  ]
+}

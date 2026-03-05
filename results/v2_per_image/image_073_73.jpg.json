@@ -1,0 +1,436 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "73.jpg",
+      "timestamp": "2026-01-28T06:47:10.642528",
+      "processing_time_seconds": 61.16868,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 61.85653333333333,
+        "gps_longitude": 9.775111111111112,
+        "location": {
+          "formatted_address": "Tjønnbakkvegen, 2670 Otta, Norway",
+          "city": null,
+          "county": "Sel",
+          "country": "Norway"
+        },
+        "datetime_original": "2023:09:09 11:06:02",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Rondane National Park, Sel, Norway",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Sel, Norway, which is near Rondane National Park. The landscape's distinctive mountainous terrain and tundra-like vegetation are characteristic of this region.",
+            "detailed_description": "The image depicts a vast, rugged landscape characteristic of Rondane National Park in Norway. The scene features the Rondane Mountains, known for their distinctive peaks and barren, rocky terrain. The foreground shows a tundra-like landscape with patches of vegetation and small bodies of water, typical of the park's subalpine environment. The sky is clear with some scattered clouds, enhancing the dramatic view of the mountain range.",
+            "identification": {
+              "primary": [
+                "Rondane National Park"
+              ],
+              "location": "Sel, Norway",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Rondane Mountains",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "natural_landscape",
+              "mountains",
+              "Norway",
+              "national_park"
+            ],
+            "location": "Sel, Norway",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Rondane National Park\"],\n        \"location\": \"Sel, Norway\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Rondane Mountains\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"natural_landscape\", \"mountains\", \"Norway\", \"national_park\"],\n    \"description\": \"The image depicts a vast, rugged landscape characteristic of Rondane National Park in Norway. The scene features the Rondane Mountains, known for their distinctive peaks and barren, rocky terrain. The foreground shows a tundra-like landscape with patches of vegetation and small bodies of water, typical of the park's subalpine environment. The sky is clear with some scattered clouds, enhancing the dramatic view of the mountain range.\",\n    \"reasoning\": \"The location metadata indicates Sel, Norway, which is near Rondane National Park. The landscape's distinctive mountainous terrain and tundra-like vegetation are characteristic of this region.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 61.85653333333333,
+              "longitude": 9.775111111111112
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Tjønnbakkvegen, 2670 Otta, Norway",
+              "city": null,
+              "county": "Sel",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2023:09:09 11:06:02",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 10.501381874084473
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a vast and rugged mountainous landscape in Sel, Norway. The scene is dominated by a range of peaks with varying elevations, some of which are dusted with patches of snow, indicating a higher altitude or recent snowfall. The mountains exhibit a mix of sharp and rounded forms, typical of glacially sculpted terrain. The foreground is characterized by a tundra-like environment with sparse vegetation, including mosses and low shrubs, displaying autumnal hues of red, orange, and brow",
+            "description": "The image depicts a vast and rugged mountainous landscape in Sel, Norway. The scene is dominated by a range of peaks with varying elevations, some of which are dusted with patches of snow, indicating a higher altitude or recent snowfall. The mountains exhibit a mix of sharp and rounded forms, typical of glacially sculpted terrain. The foreground is characterized by a tundra-like environment with sparse vegetation, including mosses and low shrubs, displaying autumnal hues of red, orange, and brow",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 61.85653333333333,
+              "longitude": 9.775111111111112
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Tjønnbakkvegen, 2670 Otta, Norway",
+              "city": null,
+              "county": "Sel",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2023:09:09 11:06:02",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 50.15440893173218
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Mountainous landforms",
+          "confidence": 0.9729445576667786,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Mountainous landforms",
+                "score": 0.9729445576667786
+              },
+              {
+                "source": "label",
+                "name": "Mountain",
+                "score": 0.9628246426582336
+              },
+              {
+                "source": "label",
+                "name": "Highland",
+                "score": 0.9422871470451355
+              },
+              {
+                "source": "web",
+                "name": "Alps",
+                "score": 0.4615541100502014
+              },
+              {
+                "source": "web",
+                "name": "Road",
+                "score": 0.3038293719291687
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Alps",
+                "score": 0.4615541100502014
+              },
+              {
+                "name": "Road",
+                "score": 0.3038293719291687
+              },
+              {
+                "name": "Wadi",
+                "score": 0.3036642074584961
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.9909428358078003
+              },
+              {
+                "name": "Cloud",
+                "score": 0.9787460565567017
+              },
+              {
+                "name": "Mountainous landforms",
+                "score": 0.9729445576667786
+              },
+              {
+                "name": "Mountain",
+                "score": 0.9628246426582336
+              },
+              {
+                "name": "Highland",
+                "score": 0.9422871470451355
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 61.85653333333333,
+              "longitude": 9.775111111111112
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Tjønnbakkvegen, 2670 Otta, Norway",
+              "city": null,
+              "county": "Sel",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2023:09:09 11:06:02",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 23.22500514984131
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Sel, Norway",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Sel, Norway",
+            "coordinates": {
+              "latitude": 61.85653333333333,
+              "longitude": 9.775111111111112
+            },
+            "search_range_meters": 5000,
+            "nearby_places": {
+              "viewpoints": [
+                {
+                  "name": "DNT Rondvassbu",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 289,
+                  "vicinity": "Rondvassbu, Otta",
+                  "place_id": "ChIJP9uDU6Uva0YRRp9Ryib6y4U",
+                  "location": {
+                    "lat": 61.8788057,
+                    "lng": 9.796426499999999
+                  }
+                },
+                {
+                  "name": "Ula River Put In",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Unnamed Rd, Otta",
+                  "place_id": "ChIJ0U4fy8Uua0YR8Era_PaxxAY",
+                  "location": {
+                    "lat": 61.8392681,
+                    "lng": 9.731666899999997
+                  }
+                }
+              ]
+            },
+            "total_places_found": 2,
+            "photo_timestamp": "2023:09:09 11:06:02",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.29718780517578125
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/73.jpg"
+    },
+    {
+      "image_filename": "73.jpg",
+      "timestamp": "2026-01-28T06:48:11.853637",
+      "processing_time_seconds": 63.084152,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Dovrefjell mountain range, Dovrefjell, Norway",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The visual characteristics of the mountain range, combined with the landscape style, suggest it is the Dovrefjell region in Norway, known for its distinctive terrain.",
+            "detailed_description": "The image depicts the Dovrefjell mountain range in Norway, characterized by its rugged terrain and expansive views. The landscape features rolling hills and peaks with sparse vegetation, typical of the Scandinavian highlands. The sky is clear with some scattered clouds, adding to the dramatic scenery.",
+            "identification": {
+              "primary": [
+                "Dovrefjell mountain range"
+              ],
+              "location": "Dovrefjell, Norway",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Dovrefjell mountain range",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "mountains",
+              "Norway",
+              "landscape"
+            ],
+            "location": "Dovrefjell, Norway",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Norwegian highlands",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The landscape is typical of highland regions in Norway, with similar terrain and vegetation."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Dovrefjell mountain range\"],\n        \"location\": \"Dovrefjell, Norway\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Dovrefjell mountain range\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"mountains\", \"Norway\", \"landscape\"],\n    \"description\": \"The image depicts the Dovrefjell mountain range in Norway, characterized by its rugged terrain and expansive views. The landscape features rolling hills and peaks with sparse vegetation, typical of the Scandinavian highlands. The sky is clear with some scattered clouds, adding to the dramatic scenery.\",\n    \"reasoning\": \"The visual characteristics of the mountain range, combined with the landscape style, suggest it is the Dovrefjell region in Norway, known for its distinctive terrain.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Norwegian highlands\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The landscape is typical of highland regions in Norway, with similar terrain and vegetation.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 11.140336036682129
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a vast mountainous landscape characterized by rolling hills and rugged peaks. The mountains in the background are covered with patches of snow, indicating a high altitude and possibly a colder climate. The peaks vary in height, with some appearing more jagged and others smoother, suggesting a range of geological formations. The foreground features a tundra-like terrain with a mixture of grasses and shrubs, displaying autumnal colors of red, orange, and brown. This vegetation co",
+            "description": "The image depicts a vast mountainous landscape characterized by rolling hills and rugged peaks. The mountains in the background are covered with patches of snow, indicating a high altitude and possibly a colder climate. The peaks vary in height, with some appearing more jagged and others smoother, suggesting a range of geological formations. The foreground features a tundra-like terrain with a mixture of grasses and shrubs, displaying autumnal colors of red, orange, and brown. This vegetation co",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "processing_time_seconds": 51.94215202331543
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Mountainous landforms",
+          "confidence": 0.9729445576667786,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Mountainous landforms",
+                "score": 0.9729445576667786
+              },
+              {
+                "source": "label",
+                "name": "Mountain",
+                "score": 0.9628246426582336
+              },
+              {
+                "source": "label",
+                "name": "Highland",
+                "score": 0.9422871470451355
+              },
+              {
+                "source": "web",
+                "name": "Alps",
+                "score": 0.439569890499115
+              },
+              {
+                "source": "web",
+                "name": "Wadi",
+                "score": 0.30365753173828125
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Alps",
+                "score": 0.439569890499115
+              },
+              {
+                "name": "Wadi",
+                "score": 0.30365753173828125
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.9909428358078003
+              },
+              {
+                "name": "Cloud",
+                "score": 0.9787460565567017
+              },
+              {
+                "name": "Mountainous landforms",
+                "score": 0.9729445576667786
+              },
+              {
+                "name": "Mountain",
+                "score": 0.9628246426582336
+              },
+              {
+                "name": "Highland",
+                "score": 0.9422871470451355
+              }
+            ],
+            "processing_time_seconds": 22.3838951587677
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/73.jpg"
+    }
+  ]
+}

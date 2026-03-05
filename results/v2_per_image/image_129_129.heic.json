@@ -1,0 +1,827 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "129.heic",
+      "timestamp": "2026-01-28T01:49:21.616980",
+      "processing_time_seconds": 72.798416,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 20.248925,
+        "gps_longitude": 105.91851111111112,
+        "location": {
+          "formatted_address": "6WX9+HC Hoa Lư District, Ninh Bình, Vietnam",
+          "city": null,
+          "county": "Hoa Lư District",
+          "country": "Vietnam"
+        },
+        "datetime_original": "2024:12:16 16:22:11",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Karst landscape, Hoa Lư District, Vietnam",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive karst formations and lush greenery are characteristic of the Hoa Lư District in Vietnam, a region known for its natural beauty and limestone mountains.",
+            "detailed_description": "The image depicts a serene karst landscape typical of northern Vietnam, characterized by steep limestone mountains and lush greenery. The scene includes a river with small boats, surrounded by dense vegetation and towering karst formations. The karst mountains are covered in foliage, and the river reflects the natural beauty of the area. This type of landscape is common in regions like Ninh Bình, known for its dramatic limestone cliffs and tranquil waterways.",
+            "identification": {
+              "primary": [
+                "Karst landscape"
+              ],
+              "location": "Hoa Lư District, Vietnam",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Karst formations",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "karst",
+              "natural_landscape",
+              "Vietnam",
+              "river",
+              "mountains"
+            ],
+            "location": "Hoa Lư District, Vietnam",
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Karst landscape\"],\n        \"location\": \"Hoa Lư District, Vietnam\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Karst formations\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"karst\", \"natural_landscape\", \"Vietnam\", \"river\", \"mountains\"],\n    \"description\": \"The image depicts a serene karst landscape typical of northern Vietnam, characterized by steep limestone mountains and lush greenery. The scene includes a river with small boats, surrounded by dense vegetation and towering karst formations. The karst mountains are covered in foliage, and the river reflects the natural beauty of the area. This type of landscape is common in regions like Ninh Bình, known for its dramatic limestone cliffs and tranquil waterways.\",\n    \"reasoning\": \"The distinctive karst formations and lush greenery are characteristic of the Hoa Lư District in Vietnam, a region known for its natural beauty and limestone mountains.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 20.248925,
+              "longitude": 105.91851111111112
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "6WX9+HC Hoa Lư District, Ninh Bình, Vietnam",
+              "city": null,
+              "county": "Hoa Lư District",
+              "country": "Vietnam"
+            },
+            "photo_timestamp": "2024:12:16 16:22:11",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 30.680219888687134
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Trang An Landscape Complex, Hoa Lư District, Vietnam",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the typical scenery of the Trang An Landscape Complex, a UNESCO World Heritage site known for its karst formations and tranquil water bodies. The location metadata supports this identification, and search results confirm the presence of these features in Hoa Lư District.",
+            "identification": {
+              "primary": [
+                "Trang An Landscape Complex"
+              ],
+              "location": "Hoa Lư District, Vietnam",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Limestone karst formations",
+                "type": "natural_feature",
+                "confidence": 0.95
+              },
+              {
+                "name": "Calm river or lake",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Small boats",
+                "type": "other",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "karst",
+              "natural_landscape",
+              "Vietnam",
+              "Hoa Lư District",
+              "water",
+              "vegetation"
+            ],
+            "sources_used": [
+              "whc.unesco.org",
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "*URL*: ([whc.unesco.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([fr.wikipedia.org]())",
+              "*URL*: ([whc.unesco.org]())",
+              "*URL*: ([en.vietnamplus.vn]())"
+            ],
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Tam Coc-Bich Dong",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "Tam Coc-Bich Dong is another area in Hoa Lư District with similar karst formations and waterways, making it a plausible alternative."
+              },
+              {
+                "guess": "Ninh Binh Province landscape",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The entire Ninh Binh Province is known for its karst landscapes, so the image could depict a general view from this region."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a serene landscape in Hoa Lư District, Vietnam, characterized by lush greenery and towering limestone karst formations. The karst mountains rise dramatically from the landscape, showcasing rugged, steep slopes covered with dense vegetation. These formations are typical of the region, known for its picturesque scenery and geological features. The foreground features a calm river or lake with a reflective surface, adding to the tranquil atmosphere. Small boats are visible on the ",
+            "description": "The image depicts a serene landscape in Hoa Lư District, Vietnam, characterized by lush greenery and towering limestone karst formations. The karst mountains rise dramatically from the landscape, showcasing rugged, steep slopes covered with dense vegetation. These formations are typical of the region, known for its picturesque scenery and geological features. The foreground features a calm river or lake with a reflective surface, adding to the tranquil atmosphere. Small boats are visible on the ",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 20.248925,
+              "longitude": 105.91851111111112
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "6WX9+HC Hoa Lư District, Ninh Bình, Vietnam",
+              "city": null,
+              "county": "Hoa Lư District",
+              "country": "Vietnam"
+            },
+            "photo_timestamp": "2024:12:16 16:22:11",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 41.0299711227417
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Mountainous landforms",
+          "confidence": 0.9805952310562134,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Mountainous landforms",
+                "score": 0.9805952310562134
+              },
+              {
+                "source": "label",
+                "name": "Body of water",
+                "score": 0.9790669679641724
+              },
+              {
+                "source": "label",
+                "name": "Boat",
+                "score": 0.9781290292739868
+              },
+              {
+                "source": "label",
+                "name": "Mountain",
+                "score": 0.9695917367935181
+              },
+              {
+                "source": "label",
+                "name": "Watercraft",
+                "score": 0.9604364633560181
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Boat",
+                "score": 0.37929999828338623
+              },
+              {
+                "name": "Skiff",
+                "score": 0.3766680955886841
+              },
+              {
+                "name": "Mountain",
+                "score": 0.345781534910202
+              },
+              {
+                "name": "Loch",
+                "score": 0.3359450101852417
+              },
+              {
+                "name": "Boating",
+                "score": 0.3287505805492401
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Mountainous landforms",
+                "score": 0.9805952310562134
+              },
+              {
+                "name": "Body of water",
+                "score": 0.9790669679641724
+              },
+              {
+                "name": "Boat",
+                "score": 0.9781290292739868
+              },
+              {
+                "name": "Mountain",
+                "score": 0.9695917367935181
+              },
+              {
+                "name": "Watercraft",
+                "score": 0.9604364633560181
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 20.248925,
+              "longitude": 105.91851111111112
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "6WX9+HC Hoa Lư District, Ninh Bình, Vietnam",
+              "city": null,
+              "county": "Hoa Lư District",
+              "country": "Vietnam"
+            },
+            "photo_timestamp": "2024:12:16 16:22:11",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 22.4759259223938
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Hoa Lư District, Vietnam",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Hoa Lư District, Vietnam",
+            "coordinates": {
+              "latitude": 20.248925,
+              "longitude": 105.91851111111112
+            },
+            "search_range_meters": 2000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Trang An",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 14470,
+                  "vicinity": "Tràng An, Hoa Lư",
+                  "place_id": "ChIJL9TQ1GJ5NjERctWf-ezAU2Q",
+                  "location": {
+                    "lat": 20.2526659,
+                    "lng": 105.9182585
+                  }
+                },
+                {
+                  "name": "Phim Trường Kong Skull Island Ninh Bình",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 1081,
+                  "vicinity": "Tràng An, Hoa Lư",
+                  "place_id": "ChIJDcS9-M17NjER4PsFAv7gXg4",
+                  "location": {
+                    "lat": 20.2481635,
+                    "lng": 105.9175677
+                  }
+                },
+                {
+                  "name": "Aussichtspunkt Teh Coc",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 6,
+                  "vicinity": "6WW9+MWW, Ninh Nhất",
+                  "place_id": "ChIJy7-uJwB7NjERAs8YGSqweh0",
+                  "location": {
+                    "lat": 20.2467288,
+                    "lng": 105.9198141
+                  }
+                },
+                {
+                  "name": "Tràng An Landscape Complex",
+                  "types": [
+                    "tourist_attraction",
+                    "travel_agency",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 13113,
+                  "vicinity": "Tràng An, Hoa Lư",
+                  "place_id": "ChIJn9cZWcp7NjER_tFgRmNFgwU",
+                  "location": {
+                    "lat": 20.252551,
+                    "lng": 105.9183742
+                  }
+                },
+                {
+                  "name": "Mẫu (Mother Goddess) Temple",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "6WW7+WPJ, Ninh Nhất, Hoa Lư District",
+                  "place_id": "ChIJGVXdFAB7NjERMEWNEozmcww",
+                  "location": {
+                    "lat": 20.2477986,
+                    "lng": 105.9145308
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Nhà hàng Xuân Thắng",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 298,
+                  "vicinity": "Tràng An",
+                  "place_id": "ChIJwSmtddN7NjERHN3NFx3gCDk",
+                  "location": {
+                    "lat": 20.2525185,
+                    "lng": 105.9202218
+                  }
+                },
+                {
+                  "name": "NHÀ HÀNG PHỐ XƯA (Ẩm thực tràng an)",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 472,
+                  "vicinity": "VN, Ninh Bình",
+                  "place_id": "ChIJyypvdfh7NjERyDwX_lLhQPw",
+                  "location": {
+                    "lat": 20.2544896,
+                    "lng": 105.9193795
+                  }
+                },
+                {
+                  "name": "Cơm phở",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Chợ đầu mối, Hoa Lư",
+                  "place_id": "ChIJFW27cAB7NjERee2Y35jLwdM",
+                  "location": {
+                    "lat": 20.248813,
+                    "lng": 105.9112424
+                  }
+                },
+                {
+                  "name": "Dũng Phố Núi",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2228,
+                  "vicinity": "Ninh Nhất, Hoa Lư District",
+                  "place_id": "ChIJB_zHYix6NjERhB-xIkqSZI4",
+                  "location": {
+                    "lat": 20.2526987,
+                    "lng": 105.9262752
+                  }
+                },
+                {
+                  "name": "NHÀ HÀNG HANG CỌ",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 186,
+                  "vicinity": "Ninh XUÂN _ HOA LƯ _",
+                  "place_id": "ChIJ6Zx0eyx6NjERjXamSL1yQik",
+                  "location": {
+                    "lat": 20.2519674,
+                    "lng": 105.9275194
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Thung Hang Vạng",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 140,
+                  "vicinity": "6WV6+2FQ, Hoa Lư District",
+                  "place_id": "ChIJ52DIrUl7NjERygXesDRrTco",
+                  "location": {
+                    "lat": 20.2425948,
+                    "lng": 105.911224
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Hoa Lư",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Hoa Lư",
+                  "place_id": "ChIJwcgQb6twNjERzOXbToh5iog",
+                  "location": {
+                    "lat": 20.2506149,
+                    "lng": 105.9744536
+                  }
+                },
+                {
+                  "name": "Ninh Binh Valley Homestay",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 210,
+                  "vicinity": "Đồng cùng-Khê Thượng, Ninh Nhật, Hoa Lư",
+                  "place_id": "ChIJa8TS0jR6NjERNjbRKa1uB3U",
+                  "location": {
+                    "lat": 20.2405527,
+                    "lng": 105.9240924
+                  }
+                },
+                {
+                  "name": "Ninh Binh Panorama",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 88,
+                  "vicinity": "thôn Khê Thượng, Hoa Lư",
+                  "place_id": "ChIJuStMuDN6NjER9WV5Pk6lJjs",
+                  "location": {
+                    "lat": 20.241134,
+                    "lng": 105.9310816
+                  }
+                },
+                {
+                  "name": "Limestone View Homestay -Boutique Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 139,
+                  "vicinity": "Khu Phố, Xuan Thanh Road, Khu Phố Phường, Xuân Áng Nội, Hoa Lư",
+                  "place_id": "ChIJZ5f-xSV6NjERce-qT7gpBiQ",
+                  "location": {
+                    "lat": 20.2512272,
+                    "lng": 105.9369608
+                  }
+                },
+                {
+                  "name": "Trang An",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 14470,
+                  "vicinity": "Tràng An, Hoa Lư",
+                  "place_id": "ChIJL9TQ1GJ5NjERctWf-ezAU2Q",
+                  "location": {
+                    "lat": 20.2526659,
+                    "lng": 105.9182585
+                  }
+                }
+              ]
+            },
+            "total_places_found": 16,
+            "photo_timestamp": "2024:12:16 16:22:11",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.6043140888214111
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/129.heic"
+    },
+    {
+      "image_filename": "129.heic",
+      "timestamp": "2026-01-28T01:50:34.452354",
+      "processing_time_seconds": 63.707655,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Limestone karst formations, Ninh Binh, Vietnam",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive limestone karst formations and the presence of boats on a river are characteristic of the Ninh Binh region in Vietnam, known for its scenic landscapes and natural beauty.",
+            "detailed_description": "The image depicts a serene river landscape surrounded by limestone karst formations, typical of the Ninh Binh region in Vietnam. The karst formations are characterized by steep, rugged cliffs covered with vegetation. The river is calm, with small boats visible, suggesting a popular area for tourism and exploration. The scene is lush and green, indicating a tropical climate.",
+            "identification": {
+              "primary": [
+                "Limestone karst formations"
+              ],
+              "location": "Ninh Binh, Vietnam",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Limestone karst formations",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "karst",
+              "limestone",
+              "Vietnam",
+              "river"
+            ],
+            "location": "Ninh Binh, Vietnam",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Tam Coc-Bich Dong area",
+                "specificity_level": "very_specific",
+                "confidence": 0.8,
+                "reasoning": "Tam Coc-Bich Dong is a well-known area in Ninh Binh with similar karst formations and river scenery."
+              },
+              {
+                "guess": "Trang An Scenic Landscape Complex",
+                "specificity_level": "very_specific",
+                "confidence": 0.7,
+                "reasoning": "Trang An is another UNESCO World Heritage site in Ninh Binh with similar landscapes."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Limestone karst formations\"],\n        \"location\": \"Ninh Binh, Vietnam\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Limestone karst formations\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"karst\", \"limestone\", \"Vietnam\", \"river\"],\n    \"description\": \"The image depicts a serene river landscape surrounded by limestone karst formations, typical of the Ninh Binh region in Vietnam. The karst formations are characterized by steep, rugged cliffs covered with vegetation. The river is calm, with small boats visible, suggesting a popular area for tourism and exploration. The scene is lush and green, indicating a tropical climate.\",\n    \"reasoning\": \"The distinctive limestone karst formations and the presence of boats on a river are characteristic of the Ninh Binh region in Vietnam, known for its scenic landscapes and natural beauty.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Tam Coc-Bich Dong area\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.8,\n            \"reasoning\": \"Tam Coc-Bich Dong is a well-known area in Ninh Binh with similar karst formations and river scenery.\"\n        },\n        {\n            \"guess\": \"Trang An Scenic Landscape Complex\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"Trang An is another UNESCO World Heritage site in Ninh Binh with similar landscapes.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 22.391590118408203
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Limestone karst formations in Southeast Asia, Southeast Asia",
+          "confidence": 0.7999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches typical features of tropical karst landscapes found in Southeast Asia, such as the steep, rugged limestone formations covered in vegetation and a calm river reflecting the scenery. Search results from sources like National Geographic and Britannica support the identification of karst landscapes in this region.",
+            "identification": {
+              "primary": [
+                "Limestone karst formations in Southeast Asia"
+              ],
+              "location": "Southeast Asia",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Limestone karst formations",
+                "type": "natural_feature",
+                "confidence": 0.85
+              },
+              {
+                "name": "Calm river",
+                "type": "natural_feature",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "karst_landscape",
+              "tropical",
+              "limestone",
+              "river",
+              "vegetation"
+            ],
+            "sources_used": [
+              "nps.gov",
+              "britannica.com",
+              "education.nationalgeographic.org"
+            ],
+            "all_candidates": [
+              "*URL:* ([nps.gov]())",
+              "*URL:* ([britannica.com]())",
+              "*URL:* ([nps.gov]())",
+              "*URL:* ([education.nationalgeographic.org]())",
+              "*URL:* ([karstwaters.org]())"
+            ],
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Phong Nha-Ke Bang National Park, Vietnam",
+                "specificity_level": "very_specific",
+                "confidence": 0.7,
+                "reasoning": "Phong Nha-Ke Bang is known for its karst landscapes and could match the description, but the image description does not specify any unique features exclusive to this location."
+              },
+              {
+                "guess": "Guilin, China",
+                "specificity_level": "very_specific",
+                "confidence": 0.65,
+                "reasoning": "Guilin is famous for its karst mountains and rivers, fitting the description, but without specific landmarks mentioned, this remains a guess."
+              },
+              {
+                "guess": "Tropical karst landscape",
+                "specificity_level": "general",
+                "confidence": 0.85,
+                "reasoning": "The description matches the general characteristics of tropical karst landscapes found in Southeast Asia, supported by search results."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.85,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a serene landscape featuring a river surrounded by lush greenery and towering limestone karst formations. The karst mountains are characterized by their steep, rugged profiles and are covered with dense vegetation, giving them a rich green appearance. These formations are typical of tropical karst landscapes, often found in Southeast Asia. The river, which occupies the foreground, is calm and reflects the surrounding scenery, creating a tranquil atmosphere. The water is a deep ",
+            "description": "The image depicts a serene landscape featuring a river surrounded by lush greenery and towering limestone karst formations. The karst mountains are characterized by their steep, rugged profiles and are covered with dense vegetation, giving them a rich green appearance. These formations are typical of tropical karst landscapes, often found in Southeast Asia. The river, which occupies the foreground, is calm and reflects the surrounding scenery, creating a tranquil atmosphere. The water is a deep ",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 41.06407308578491
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Mountainous landforms",
+          "confidence": 0.9805952310562134,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Mountainous landforms",
+                "score": 0.9805952310562134
+              },
+              {
+                "source": "label",
+                "name": "Body of water",
+                "score": 0.9790669679641724
+              },
+              {
+                "source": "label",
+                "name": "Boat",
+                "score": 0.9781290292739868
+              },
+              {
+                "source": "label",
+                "name": "Mountain",
+                "score": 0.9695917367935181
+              },
+              {
+                "source": "label",
+                "name": "Watercraft",
+                "score": 0.9604364633560181
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Boat",
+                "score": 0.37929999828338623
+              },
+              {
+                "name": "Skiff",
+                "score": 0.37618955969810486
+              },
+              {
+                "name": "Mountain",
+                "score": 0.345781534910202
+              },
+              {
+                "name": "Loch",
+                "score": 0.3358810245990753
+              },
+              {
+                "name": "Boating",
+                "score": 0.3288249969482422
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Mountainous landforms",
+                "score": 0.9805952310562134
+              },
+              {
+                "name": "Body of water",
+                "score": 0.9790669679641724
+              },
+              {
+                "name": "Boat",
+                "score": 0.9781290292739868
+              },
+              {
+                "name": "Mountain",
+                "score": 0.9695917367935181
+              },
+              {
+                "name": "Watercraft",
+                "score": 0.9604364633560181
+              }
+            ],
+            "processing_time_seconds": 23.40368103981018
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/129.heic"
+    }
+  ]
+}

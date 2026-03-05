@@ -1,0 +1,1194 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "182.heic",
+      "timestamp": "2026-01-28T03:53:07.401962",
+      "processing_time_seconds": 78.682463,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": -37.80693055555555,
+        "gps_longitude": 144.97100833333334,
+        "location": {
+          "formatted_address": "Carlton Gardens/Victoria St, Carlton VIC 3053, Australia",
+          "city": "Carlton",
+          "county": "Melbourne City",
+          "country": "Australia"
+        },
+        "datetime_original": "2025:06:30 16:52:05",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Royal Exhibition Building, Melbourne, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and location metadata strongly suggest the Royal Exhibition Building, a well-known landmark in Melbourne. The distinctive dome and facade match known images of this building.",
+            "detailed_description": "The image shows the Royal Exhibition Building in Melbourne, Australia, a prominent example of Victorian architecture from the 19th century. The building features a large dome and intricate facade details typical of the era. In front of the building, there is a decorative fountain surrounded by landscaped gardens. The scene is framed by a row of trees with autumn foliage, creating a picturesque setting.",
+            "identification": {
+              "primary": [
+                "Royal Exhibition Building"
+              ],
+              "location": "Melbourne, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Royal Exhibition Building",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Fountain",
+                "type": "monument",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "Victorian_architecture",
+              "19th_century",
+              "heritage",
+              "Melbourne",
+              "landmark"
+            ],
+            "location": "Melbourne, Australia",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Royal Exhibition Building\"],\n        \"location\": \"Melbourne, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Royal Exhibition Building\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Fountain\",\n            \"type\": \"monument\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"Victorian_architecture\", \"19th_century\", \"heritage\", \"Melbourne\", \"landmark\"],\n    \"description\": \"The image shows the Royal Exhibition Building in Melbourne, Australia, a prominent example of Victorian architecture from the 19th century. The building features a large dome and intricate facade details typical of the era. In front of the building, there is a decorative fountain surrounded by landscaped gardens. The scene is framed by a row of trees with autumn foliage, creating a picturesque setting.\",\n    \"reasoning\": \"The architectural style and location metadata strongly suggest the Royal Exhibition Building, a well-known landmark in Melbourne. The distinctive dome and facade match known images of this building.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": -37.80693055555555,
+              "longitude": 144.97100833333334
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Carlton Gardens/Victoria St, Carlton VIC 3053, Australia",
+              "city": "Carlton",
+              "county": "Melbourne City",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:06:30 16:52:05",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 29.169199228286743
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Royal Exhibition Building, Melbourne, Australia",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The Royal Exhibition Building in Melbourne matches the description of a grand, historical structure with Victorian architectural elements, including a symmetrical facade and ornate detailing. The presence of a decorative fountain and gardens aligns with the known features of the building's surroundings. The location metadata supports this identification, as the building is situated in Carlton, Melbourne.",
+            "identification": {
+              "primary": [
+                "Royal Exhibition Building"
+              ],
+              "location": "Melbourne, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Royal Exhibition Building",
+                "type": "building",
+                "confidence": 0.95
+              },
+              {
+                "name": "Decorative fountain",
+                "type": "fountain",
+                "confidence": 0.85
+              },
+              {
+                "name": "Arched window with tracery",
+                "type": "architectural_feature",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "Victorian architecture",
+              "historical building",
+              "Melbourne",
+              "fountain",
+              "garden"
+            ],
+            "sources_used": [
+              "whc.unesco.org",
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "*URL*: ([whc.unesco.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 2,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image features a grand building with a prominent architectural style, characterized by its symmetrical facade and ornate detailing. The building is likely a historical structure, as indicated by its elaborate design elements. The central feature of the facade is a large, arched window with intricate tracery, reminiscent of Renaissance or Victorian architecture. Below the window, there is a decorative fountain, adding to the elegance of the setting. The fountain is multi-tiered, with water ca",
+            "description": "The image features a grand building with a prominent architectural style, characterized by its symmetrical facade and ornate detailing. The building is likely a historical structure, as indicated by its elaborate design elements. The central feature of the facade is a large, arched window with intricate tracery, reminiscent of Renaissance or Victorian architecture. Below the window, there is a decorative fountain, adding to the elegance of the setting. The fountain is multi-tiered, with water ca",
+            "architectural_style": "Victorian or Renaissance Revival",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": -37.80693055555555,
+              "longitude": 144.97100833333334
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Carlton Gardens/Victoria St, Carlton VIC 3053, Australia",
+              "city": "Carlton",
+              "county": "Melbourne City",
+              "country": "Australia"
+            },
+            "photo_timestamp": "2025:06:30 16:52:05",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 48.637380838394165
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Royal Exhibition Building (-37.8047, 144.9717)",
+          "confidence": 0.5242805480957031,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Royal Exhibition Building",
+            "coordinates": {
+              "latitude": -37.8046891,
+              "longitude": 144.9716502
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 4032
+              },
+              {
+                "x": 0,
+                "y": 4032
+              }
+            ],
+            "context_labels": [
+              "Branch",
+              "Leaf",
+              "Tree",
+              "Twig",
+              "Trunk"
+            ],
+            "context_objects": [],
+            "web_entities": [
+              {
+                "name": "Tree",
+                "score": 0.36487677693367004
+              },
+              {
+                "name": "Lawn",
+                "score": 0.32996588945388794
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Royal Exhibition Building",
+                "score": 0.5242805480957031,
+                "location": {
+                  "lat": -37.8046891,
+                  "lng": 144.9716502
+                }
+              },
+              {
+                "name": "Parliament Gardens",
+                "score": 0.18201901018619537,
+                "location": {
+                  "lat": -37.8095207,
+                  "lng": 144.973526
+                }
+              }
+            ],
+            "processing_time_seconds": 28.73909091949463
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Carlton, Melbourne City, Australia",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Carlton, Melbourne City, Australia",
+            "coordinates": {
+              "latitude": -37.80693055555555,
+              "longitude": 144.97100833333334
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Shot Tower Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 153,
+                  "vicinity": "Melbourne Central/211 La Trobe Street, Melbourne",
+                  "place_id": "ChIJx18s48pC1moRPwB-wTgc7kg",
+                  "location": {
+                    "lat": -37.8103869,
+                    "lng": 144.9629577
+                  }
+                },
+                {
+                  "name": "Melbourne Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 18783,
+                  "vicinity": "11 Nicholson Street, Carlton",
+                  "place_id": "ChIJn97JQNpC1moRIcJsVMEQLI8",
+                  "location": {
+                    "lat": -37.803273,
+                    "lng": 144.9717408
+                  }
+                },
+                {
+                  "name": "Saint Patrick's Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 3992,
+                  "vicinity": "1 Cathedral Place, East Melbourne",
+                  "place_id": "ChIJq5z0TsRC1moRoPbHvgub8is",
+                  "location": {
+                    "lat": -37.8100833,
+                    "lng": 144.9764167
+                  }
+                },
+                {
+                  "name": "State Library Victoria",
+                  "types": [
+                    "tourist_attraction",
+                    "library",
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 4067,
+                  "vicinity": "328 Swanston Street, Melbourne",
+                  "place_id": "ChIJ6RxLlctC1moReA6DqUtnh_E",
+                  "location": {
+                    "lat": -37.8097255,
+                    "lng": 144.9654504
+                  }
+                },
+                {
+                  "name": "Old Melbourne Gaol",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 3628,
+                  "vicinity": "377 Russell Street, Melbourne",
+                  "place_id": "ChIJYUcwasxC1moResepeNQs7Z0",
+                  "location": {
+                    "lat": -37.807832,
+                    "lng": 144.9653171
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Shot Tower Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 153,
+                  "vicinity": "Melbourne Central/211 La Trobe Street, Melbourne",
+                  "place_id": "ChIJx18s48pC1moRPwB-wTgc7kg",
+                  "location": {
+                    "lat": -37.8103869,
+                    "lng": 144.9629577
+                  }
+                },
+                {
+                  "name": "Melbourne Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 18783,
+                  "vicinity": "11 Nicholson Street, Carlton",
+                  "place_id": "ChIJn97JQNpC1moRIcJsVMEQLI8",
+                  "location": {
+                    "lat": -37.803273,
+                    "lng": 144.9717408
+                  }
+                },
+                {
+                  "name": "Old Melbourne Gaol",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 3628,
+                  "vicinity": "377 Russell Street, Melbourne",
+                  "place_id": "ChIJYUcwasxC1moResepeNQs7Z0",
+                  "location": {
+                    "lat": -37.807832,
+                    "lng": 144.9653171
+                  }
+                },
+                {
+                  "name": "Old Treasury Building",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1508,
+                  "vicinity": "20 Spring Street, East Melbourne",
+                  "place_id": "ChIJQ9RYXMZC1moRO66tYKgPofI",
+                  "location": {
+                    "lat": -37.8131726,
+                    "lng": 144.9743922
+                  }
+                },
+                {
+                  "name": "Museum of Chinese Australian History",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 357,
+                  "vicinity": "level 1/22 Cohen Place, Melbourne",
+                  "place_id": "ChIJt7zSJ8lC1moRIqMuY1-bRIk",
+                  "location": {
+                    "lat": -37.8107775,
+                    "lng": 144.969144
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Stamford Plaza Melbourne",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 1978,
+                  "vicinity": "111 Little Collins Street, Melbourne",
+                  "place_id": "ChIJc-7BSMhC1moRJadN_SH7-PM",
+                  "location": {
+                    "lat": -37.8135163,
+                    "lng": 144.9699388
+                  }
+                },
+                {
+                  "name": "Ginza Teppanyaki",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1489,
+                  "vicinity": "Level 1/139 Little Bourke Street, Melbourne",
+                  "place_id": "ChIJ5XpydclC1moR7UUgWI3KRTI",
+                  "location": {
+                    "lat": -37.8117282,
+                    "lng": 144.9684233
+                  }
+                },
+                {
+                  "name": "Flower Drum Restaurant Melbourne",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1413,
+                  "vicinity": "17 Market Lane, Melbourne",
+                  "place_id": "ChIJr1N1BMlC1moR6aJLe1nHgPQ",
+                  "location": {
+                    "lat": -37.8118772,
+                    "lng": 144.9692458
+                  }
+                },
+                {
+                  "name": "Ants Bistro",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 3.5,
+                  "user_ratings_total": 339,
+                  "vicinity": "7 Corrs Lane, Melbourne",
+                  "place_id": "ChIJ06dOEslC1moR5wrZnqexW94",
+                  "location": {
+                    "lat": -37.8113496,
+                    "lng": 144.968293
+                  }
+                },
+                {
+                  "name": "Japanese Teppanyaki Inn",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 468,
+                  "vicinity": "182 Collins Street, Melbourne",
+                  "place_id": "ChIJ4zzLEbZC1moRzkG67FkQbt8",
+                  "location": {
+                    "lat": -37.8149706,
+                    "lng": 144.9674068
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "The Nature Conservancy",
+                  "types": [
+                    "point_of_interest",
+                    "park",
+                    "establishment"
+                  ],
+                  "rating": 3.1,
+                  "user_ratings_total": 7,
+                  "vicinity": "The 60L Green Building, Leicester Street, Carlton",
+                  "place_id": "ChIJjV4jJDNd1moRRw0GV7FTvfk",
+                  "location": {
+                    "lat": -37.80491840000001,
+                    "lng": 144.9603597
+                  }
+                },
+                {
+                  "name": "Luminova",
+                  "types": [
+                    "electronics_store",
+                    "home_goods_store",
+                    "store",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "140 Bourke Street, Melbourne",
+                  "place_id": "ChIJX0nYqMlC1moR3JaU1CqoS1w",
+                  "location": {
+                    "lat": -37.8122757,
+                    "lng": 144.9689195
+                  }
+                },
+                {
+                  "name": "King William Reserve",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 14,
+                  "vicinity": "King William Street, Melbourne",
+                  "place_id": "ChIJKxu6P9lC1moR0tasDLtySg8",
+                  "location": {
+                    "lat": -37.8020716,
+                    "lng": 144.9764232
+                  }
+                },
+                {
+                  "name": "Burton Reserve",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "1A Victoria Parade, Carlton",
+                  "place_id": "ChIJ__-_ic9C1moR5UJsjs8ehQM",
+                  "location": {
+                    "lat": -37.8078361,
+                    "lng": 144.9721117
+                  }
+                },
+                {
+                  "name": "College Of Surgeons Gardens",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "East Melbourne",
+                  "place_id": "ChIJ____fsVC1moRr-CWsegnwWU",
+                  "location": {
+                    "lat": -37.8085807,
+                    "lng": 144.9723699
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Saint Patrick's Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 3992,
+                  "vicinity": "1 Cathedral Place, East Melbourne",
+                  "place_id": "ChIJq5z0TsRC1moRoPbHvgub8is",
+                  "location": {
+                    "lat": -37.8100833,
+                    "lng": 144.9764167
+                  }
+                },
+                {
+                  "name": "St Francis’ Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1125,
+                  "vicinity": "326 Lonsdale Street, Melbourne",
+                  "place_id": "ChIJF604vcpC1moREpFwYJGJbA8",
+                  "location": {
+                    "lat": -37.81165680000001,
+                    "lng": 144.9623958
+                  }
+                },
+                {
+                  "name": "ICC Melbourne",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 37,
+                  "vicinity": "156 Collins Street, Melbourne",
+                  "place_id": "ChIJsxcWIrZC1moRMuKBpgq2zbQ",
+                  "location": {
+                    "lat": -37.81458979999999,
+                    "lng": 144.9685261
+                  }
+                },
+                {
+                  "name": "James Goold House",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 7,
+                  "vicinity": "228 Victoria Parade, East Melbourne",
+                  "place_id": "ChIJVcl9NMNC1moR812jzPAaVq8",
+                  "location": {
+                    "lat": -37.8089923,
+                    "lng": 144.9794402
+                  }
+                },
+                {
+                  "name": "Scots’ Church Melbourne",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 179,
+                  "vicinity": "77 Russell Street, Melbourne",
+                  "place_id": "ChIJsxcWIrZC1moRJ8W6FBQ_gO8",
+                  "location": {
+                    "lat": -37.8146546,
+                    "lng": 144.9686359
+                  }
+                },
+                {
+                  "name": "Melbourne Madinah",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 172,
+                  "vicinity": "359 Exhibition Street, Melbourne",
+                  "place_id": "ChIJ-_oYIrJC1moRQh_iqGoc-k4",
+                  "location": {
+                    "lat": -37.8074,
+                    "lng": 144.9682305
+                  }
+                },
+                {
+                  "name": "BSN Central Mosque",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 262,
+                  "vicinity": "144 Fitzroy Street, Fitzroy",
+                  "place_id": "ChIJHT11ldtC1moR50j6VlaRn8I",
+                  "location": {
+                    "lat": -37.8043736,
+                    "lng": 144.9764185
+                  }
+                },
+                {
+                  "name": "RMIT international Campus Musalla",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 9,
+                  "vicinity": "3000/265 Bourke Street, Melbourne",
+                  "place_id": "ChIJ0WH297VC1moRCkzYEDSoTho",
+                  "location": {
+                    "lat": -37.8136194,
+                    "lng": 144.9659915
+                  }
+                },
+                {
+                  "name": "Muslimin.Melbourne Mosques",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 52,
+                  "vicinity": "17 Victoria Street, Melbourne",
+                  "place_id": "ChIJnZ0lyM5D1moRYs3O-d1MCK8",
+                  "location": {
+                    "lat": -37.8074272,
+                    "lng": 144.9680903
+                  }
+                },
+                {
+                  "name": "East Melbourne Hebrew Congregation",
+                  "types": [
+                    "synagogue",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 57,
+                  "vicinity": "488 Albert Street, East Melbourne",
+                  "place_id": "ChIJSf2_B8VC1moRE9uJb5NE9bA",
+                  "location": {
+                    "lat": -37.80906239999999,
+                    "lng": 144.974214
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "State Library Victoria",
+                  "types": [
+                    "tourist_attraction",
+                    "art_gallery",
+                    "library",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 4067,
+                  "vicinity": "328 Swanston Street, Melbourne",
+                  "place_id": "ChIJ6RxLlctC1moReA6DqUtnh_E",
+                  "location": {
+                    "lat": -37.8097255,
+                    "lng": 144.9654504
+                  }
+                },
+                {
+                  "name": "RMIT Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 96,
+                  "vicinity": "344 Swanston Street, Melbourne",
+                  "place_id": "ChIJ-_AvCstC1moRc13Bm9kOaRg",
+                  "location": {
+                    "lat": -37.8090356,
+                    "lng": 144.9639658
+                  }
+                },
+                {
+                  "name": "ACU Melbourne Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 9,
+                  "vicinity": "26 Brunswick Street, Fitzroy",
+                  "place_id": "ChIJBRf-ZttC1moRtus9D9RqWRw",
+                  "location": {
+                    "lat": -37.8068039,
+                    "lng": 144.9771819
+                  }
+                },
+                {
+                  "name": "Croft Alley Graffiti",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 47,
+                  "vicinity": "Paynes Place, Melbourne",
+                  "place_id": "ChIJG9xkBclC1moRUbOTxseYD-s",
+                  "location": {
+                    "lat": -37.8117049,
+                    "lng": 144.9687145
+                  }
+                },
+                {
+                  "name": "Project Space / Spare Room",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "Room 1, Level 2, Building 94, 23–27 Cardigan Street, Carlton",
+                  "place_id": "ChIJQ25PU8xC1moRi2NAL5Eue_M",
+                  "location": {
+                    "lat": -37.8061441,
+                    "lng": 144.9642834
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Melbourne",
+                  "types": [
+                    "colloquial_area",
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Melbourne",
+                  "place_id": "ChIJ90260rVG1moRkM2MIXVWBAQ",
+                  "location": {
+                    "lat": -37.8136276,
+                    "lng": 144.9630576
+                  }
+                },
+                {
+                  "name": "Hotel Grand Chancellor Melbourne",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 1474,
+                  "vicinity": "131 Lonsdale Street, Melbourne",
+                  "place_id": "ChIJ53vEPslC1moRaeD68DDwOfk",
+                  "location": {
+                    "lat": -37.8107074,
+                    "lng": 144.9684061
+                  }
+                },
+                {
+                  "name": "Mantra on Russell Melbourne",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1177,
+                  "vicinity": "222 Russell Street, Melbourne",
+                  "place_id": "ChIJXccYcclC1moRFzEzURPX3m8",
+                  "location": {
+                    "lat": -37.8112795,
+                    "lng": 144.9679488
+                  }
+                },
+                {
+                  "name": "Park Hyatt Melbourne",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 2525,
+                  "vicinity": "1 Parliament Square, off, Parliament Place, Melbourne",
+                  "place_id": "ChIJN92GPsRC1moRORPubhGOXn8",
+                  "location": {
+                    "lat": -37.81135259999999,
+                    "lng": 144.9755666
+                  }
+                },
+                {
+                  "name": "ibis Melbourne - Hotel & Apartments",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1978,
+                  "vicinity": "15-21 Therry Street, Melbourne",
+                  "place_id": "ChIJiaMVrcxC1moRvEVeeAq_JSM",
+                  "location": {
+                    "lat": -37.8069565,
+                    "lng": 144.9613627
+                  }
+                }
+              ]
+            },
+            "total_places_found": 40,
+            "photo_timestamp": "2025:06:30 16:52:05",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.3799750804901123
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/182.heic"
+    },
+    {
+      "image_filename": "182.heic",
+      "timestamp": "2026-01-28T03:54:26.119379",
+      "processing_time_seconds": 60.749284,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Royal Exhibition Building, Melbourne, Australia",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and distinctive dome are characteristic of the Royal Exhibition Building, a UNESCO World Heritage site in Melbourne. The setting and design elements match known images of this landmark.",
+            "detailed_description": "The image shows the Royal Exhibition Building in Melbourne, Australia, a prominent example of Victorian architecture from the 19th century. The building features a large dome and intricate facade details typical of the era. In front of the building is a decorative fountain, surrounded by a well-maintained garden and a pathway lined with trees displaying autumn foliage.",
+            "identification": {
+              "primary": [
+                "Royal Exhibition Building"
+              ],
+              "location": "Melbourne, Australia",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Royal Exhibition Building",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Fountain",
+                "type": "monument",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "Victorian_architecture",
+              "19th_century",
+              "heritage",
+              "Melbourne",
+              "landmark"
+            ],
+            "location": "Melbourne, Australia",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Royal Exhibition Building\"],\n        \"location\": \"Melbourne, Australia\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Royal Exhibition Building\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Fountain\",\n            \"type\": \"monument\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"Victorian_architecture\", \"19th_century\", \"heritage\", \"Melbourne\", \"landmark\"],\n    \"description\": \"The image shows the Royal Exhibition Building in Melbourne, Australia, a prominent example of Victorian architecture from the 19th century. The building features a large dome and intricate facade details typical of the era. In front of the building is a decorative fountain, surrounded by a well-maintained garden and a pathway lined with trees displaying autumn foliage.\",\n    \"reasoning\": \"The architectural style and distinctive dome are characteristic of the Royal Exhibition Building, a UNESCO World Heritage site in Melbourne. The setting and design elements match known images of this landmark.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 11.275234699249268
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Victorian building with ornate facade, Multi-tiered fountain",
+          "confidence": 0.55,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The search results suggest a Victorian architectural style, which matches the description of the building's ornate features such as the large central arch and sunburst pattern. The presence of a multi-tiered fountain in a garden setting further supports this identification. However, no specific landmark or location was confirmed by the search results, leading to a moderately confident identification based on style and features.",
+            "identification": {
+              "primary": [
+                "Victorian building with ornate facade",
+                "Multi-tiered fountain"
+              ],
+              "location": null,
+              "confidence": 0.75
+            },
+            "artifacts": [
+              {
+                "name": "Victorian building with ornate facade",
+                "type": "building",
+                "confidence": 0.75
+              },
+              {
+                "name": "Multi-tiered fountain",
+                "type": "fountain",
+                "confidence": 0.75
+              }
+            ],
+            "tags": [
+              "Victorian",
+              "ornate",
+              "architecture",
+              "fountain",
+              "garden",
+              "park"
+            ],
+            "sources_used": [
+              "britannica.com",
+              "hgtv.com",
+              "architecturelab.net"
+            ],
+            "all_candidates": [
+              "*URL*: ([britannica.com]())",
+              "*URL*: ([hgtv.com]())",
+              "*URL*: ([architecturelab.net]())",
+              "*URL*: ([masterclass.com]())",
+              "*URL*: ([english-heritage.org.uk]())"
+            ],
+            "type": "building",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Victorian-era public building in a park",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "The architectural style and garden setting suggest a public building from the Victorian era, possibly located in a park."
+              },
+              {
+                "guess": "Victorian mansion with garden",
+                "specificity_level": "general",
+                "confidence": 0.65,
+                "reasoning": "The ornate architectural details and garden setting could indicate a Victorian mansion."
+              },
+              {
+                "guess": "Historic building with fountain",
+                "specificity_level": "very_general",
+                "confidence": 0.6,
+                "reasoning": "The description fits a historic building with a fountain, but lacks specific identifying features."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.75,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a grand building in the background, characterized by its ornate architectural style. The building features a large central arch with intricate fan-like detailing, surrounded by smaller arches and rectangular windows. Above the central arch, there is a decorative element that resembles a sunburst pattern, contributing to the building's elaborate facade. The structure is predominantly white, with contrasting shadows that highlight its architectural details. In front of the buildi",
+            "description": "The image depicts a grand building in the background, characterized by its ornate architectural style. The building features a large central arch with intricate fan-like detailing, surrounded by smaller arches and rectangular windows. Above the central arch, there is a decorative element that resembles a sunburst pattern, contributing to the building's elaborate facade. The structure is predominantly white, with contrasting shadows that highlight its architectural details. In front of the buildi",
+            "architectural_style": "Victorian",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 49.21053218841553
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Royal Exhibition Building (-37.8047, 144.9717)",
+          "confidence": 0.5242805480957031,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Royal Exhibition Building",
+            "coordinates": {
+              "latitude": -37.8046891,
+              "longitude": 144.9716502
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 4032
+              },
+              {
+                "x": 0,
+                "y": 4032
+              }
+            ],
+            "context_labels": [
+              "Branch",
+              "Leaf",
+              "Tree",
+              "Twig",
+              "Trunk"
+            ],
+            "context_objects": [],
+            "web_entities": [
+              {
+                "name": "Tree",
+                "score": 0.3646683990955353
+              },
+              {
+                "name": "Lawn",
+                "score": 0.3298393785953522
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Royal Exhibition Building",
+                "score": 0.5242805480957031,
+                "location": {
+                  "lat": -37.8046891,
+                  "lng": 144.9716502
+                }
+              },
+              {
+                "name": "Parliament Gardens",
+                "score": 0.18201901018619537,
+                "location": {
+                  "lat": -37.8095207,
+                  "lng": 144.973526
+                }
+              }
+            ],
+            "processing_time_seconds": 27.04306197166443
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/182.heic"
+    }
+  ]
+}

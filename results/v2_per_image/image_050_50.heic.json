@@ -1,0 +1,849 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "50.heic",
+      "timestamp": "2026-01-28T05:59:12.366735",
+      "processing_time_seconds": 65.229388,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 1.2811166666666667,
+        "gps_longitude": 103.86411388888888,
+        "location": {
+          "formatted_address": "7VJ7+CJ Singapore",
+          "city": "Singapore",
+          "county": null,
+          "country": "Singapore"
+        },
+        "datetime_original": "2022:12:06 09:49:09",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Supertree Grove, Marina Bay Sands, Singapore, Singapore",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive design of the Supertrees and the recognizable structure of Marina Bay Sands are iconic features of Singapore, making identification straightforward.",
+            "detailed_description": "The image shows the Supertree Grove at Gardens by the Bay in Singapore. These vertical gardens are designed with large tree-like structures that serve as environmental engines for the park. They are covered with plants and have a distinctive lattice design at the top. In the background, the Marina Bay Sands hotel is visible, known for its unique architecture featuring three towers connected by a sky park.",
+            "identification": {
+              "primary": [
+                "Supertree Grove",
+                "Marina Bay Sands"
+              ],
+              "location": "Singapore, Singapore",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Supertree Grove",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Marina Bay Sands",
+                "type": "building",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "urban_landscape",
+              "Singapore",
+              "Supertree",
+              "Marina_Bay_Sands"
+            ],
+            "location": "Singapore, Singapore",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Supertree Grove\", \"Marina Bay Sands\"],\n        \"location\": \"Singapore, Singapore\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Supertree Grove\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Marina Bay Sands\",\n            \"type\": \"building\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"urban_landscape\", \"Singapore\", \"Supertree\", \"Marina_Bay_Sands\"],\n    \"description\": \"The image shows the Supertree Grove at Gardens by the Bay in Singapore. These vertical gardens are designed with large tree-like structures that serve as environmental engines for the park. They are covered with plants and have a distinctive lattice design at the top. In the background, the Marina Bay Sands hotel is visible, known for its unique architecture featuring three towers connected by a sky park.\",\n    \"reasoning\": \"The distinctive design of the Supertrees and the recognizable structure of Marina Bay Sands are iconic features of Singapore, making identification straightforward.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 1.2811166666666667,
+              "longitude": 103.86411388888888
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "7VJ7+CJ Singapore",
+              "city": "Singapore",
+              "county": null,
+              "country": "Singapore"
+            },
+            "photo_timestamp": "2022:12:06 09:49:09",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 10.947861909866333
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image prominently features a group of large, tree-like structures known as Supertrees, located in a garden setting. These structures are characterized by their towering height and distinctive design, resembling futuristic trees. Each Supertree has a trunk covered with vertical gardens, consisting of various plant species that create a lush, green appearance. The top of each structure is adorned with a wide canopy made of metal, resembling branches that spread out in intricate patterns. The c",
+            "description": "The image prominently features a group of large, tree-like structures known as Supertrees, located in a garden setting. These structures are characterized by their towering height and distinctive design, resembling futuristic trees. Each Supertree has a trunk covered with vertical gardens, consisting of various plant species that create a lush, green appearance. The top of each structure is adorned with a wide canopy made of metal, resembling branches that spread out in intricate patterns. The c",
+            "architectural_style": "Contemporary",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 1.2811166666666667,
+              "longitude": 103.86411388888888
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "7VJ7+CJ Singapore",
+              "city": "Singapore",
+              "county": null,
+              "country": "Singapore"
+            },
+            "photo_timestamp": "2022:12:06 09:49:09",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 53.3967068195343
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Supertree Grove (1.2820, 103.8639)",
+          "confidence": 0.5124794840812683,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Supertree Grove",
+            "coordinates": {
+              "latitude": 1.2819616999999999,
+              "longitude": 103.86390569999999
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 3024
+              },
+              {
+                "x": 0,
+                "y": 3024
+              }
+            ],
+            "context_labels": [
+              "Garden",
+              "Tourist attraction",
+              "Botanical garden",
+              "Park",
+              "Skyscraper"
+            ],
+            "context_objects": [
+              "Building"
+            ],
+            "web_entities": [
+              {
+                "name": "Tree",
+                "score": 0.37068840861320496
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Supertree Grove",
+                "score": 0.5124794840812683,
+                "location": {
+                  "lat": 1.2819616999999999,
+                  "lng": 103.86390569999999
+                }
+              },
+              {
+                "name": "Gardens By The Bay",
+                "score": 0.4911785125732422,
+                "location": {
+                  "lat": 1.2815683,
+                  "lng": 103.86361320000002
+                }
+              },
+              {
+                "name": "Ocbc Skyway",
+                "score": 0.4436582624912262,
+                "location": {
+                  "lat": 1.2823413,
+                  "lng": 103.8641645
+                }
+              }
+            ],
+            "processing_time_seconds": 26.096774101257324
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Singapore, Singapore",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Singapore, Singapore",
+            "coordinates": {
+              "latitude": 1.2811166666666667,
+              "longitude": 103.86411388888888
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Singapore Flyer",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 23883,
+                  "vicinity": "30 Raffles Avenue",
+                  "place_id": "ChIJzVHFNqkZ2jERboLN2YrltH8",
+                  "location": {
+                    "lat": 1.2892988,
+                    "lng": 103.8631368
+                  }
+                },
+                {
+                  "name": "Gardens by the Bay",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 154711,
+                  "vicinity": "18 Marina Gardens Drive",
+                  "place_id": "ChIJMxZ-kwQZ2jERdsqftXeWCWI",
+                  "location": {
+                    "lat": 1.2815683,
+                    "lng": 103.8636132
+                  }
+                },
+                {
+                  "name": "ArtScience Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 17828,
+                  "vicinity": "6 Bayfront Avenue",
+                  "place_id": "ChIJnWdQKQQZ2jERScXuKeFHyIE",
+                  "location": {
+                    "lat": 1.2862738,
+                    "lng": 103.8592663
+                  }
+                },
+                {
+                  "name": "Flight Experience Singapore - Boeing 737 Simulator",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 422,
+                  "vicinity": "30 Raffles Avenue, #02-06 Singapore Flyer",
+                  "place_id": "ChIJdaP5-6kZ2jERwRa6IqcXDow",
+                  "location": {
+                    "lat": 1.2892961,
+                    "lng": 103.8628871
+                  }
+                },
+                {
+                  "name": "Supertree Grove",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 52447,
+                  "vicinity": "18 Marina Gardens Drive",
+                  "place_id": "ChIJT4lHCgMZ2jERloDE6WmkdMk",
+                  "location": {
+                    "lat": 1.2819617,
+                    "lng": 103.8639057
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "ArtScience Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 17828,
+                  "vicinity": "6 Bayfront Avenue",
+                  "place_id": "ChIJnWdQKQQZ2jERScXuKeFHyIE",
+                  "location": {
+                    "lat": 1.2862738,
+                    "lng": 103.8592663
+                  }
+                },
+                {
+                  "name": "Sustainable Singapore Gallery",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 240,
+                  "vicinity": "8 Marina Gardens Drive, #01-03 Marina Barrage, Singapore",
+                  "place_id": "ChIJUaiuK-MY2jERdA3DpNZiblI",
+                  "location": {
+                    "lat": 1.2802738,
+                    "lng": 103.8711395
+                  }
+                },
+                {
+                  "name": "Red Dot Design Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "cafe",
+                    "point_of_interest",
+                    "store",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 5728,
+                  "vicinity": "11 Marina Boulevard, Red Dot Design, Singapore",
+                  "place_id": "ChIJq1KHxhIZ2jER7fOxY9pR-vo",
+                  "location": {
+                    "lat": 1.2801289,
+                    "lng": 103.8562179
+                  }
+                },
+                {
+                  "name": "teamLab Future World",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 998,
+                  "vicinity": "6 Bayfront Avenue, Singapore",
+                  "place_id": "ChIJt5kkVgYZ2jERk2FtbA63gIY",
+                  "location": {
+                    "lat": 1.2862784,
+                    "lng": 103.8592687
+                  }
+                },
+                {
+                  "name": "ArtScience Laboratory",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 11,
+                  "vicinity": "6 Bayfront Avenue, Singapore",
+                  "place_id": "ChIJe_HXcgAZ2jERpDQOFrGDsog",
+                  "location": {
+                    "lat": 1.2863771,
+                    "lng": 103.8592491
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Satay by the Bay",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 6516,
+                  "vicinity": "18 Marina Gardens Drive, #01-19 Gardens by the Bay",
+                  "place_id": "ChIJp6HV3hwZ2jERvuwjdrUPNRg",
+                  "location": {
+                    "lat": 1.2821346,
+                    "lng": 103.8688728
+                  }
+                },
+                {
+                  "name": "CUT by Wolfgang Puck",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1876,
+                  "vicinity": "10 Bayfront Avenue, B1-71 The Shoppes, Marina Bay Sands",
+                  "place_id": "ChIJnWdQKQQZ2jERxH3g-HsHchE",
+                  "location": {
+                    "lat": 1.2850908,
+                    "lng": 103.8598243
+                  }
+                },
+                {
+                  "name": "Myeongdong Bunsik",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 38,
+                  "vicinity": "2 Bayfront Avenue, #B2-49A/50/51/52/53, The Shoppes, at, Marina Bay Sands, Singapore",
+                  "place_id": "ChIJnWdQKQQZ2jERV2i98X0w0Uk",
+                  "location": {
+                    "lat": 1.2860173,
+                    "lng": 103.8600816
+                  }
+                },
+                {
+                  "name": "McDonald's Gardens By The Bay",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 4082,
+                  "vicinity": "18 Marina Gardens Drive, #02-04 Garden By The Bay",
+                  "place_id": "ChIJuQ0wDQMZ2jERWb6Fcfn6-Aw",
+                  "location": {
+                    "lat": 1.2827813,
+                    "lng": 103.865414
+                  }
+                },
+                {
+                  "name": "CÉ LA VI Singapore",
+                  "types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 9808,
+                  "vicinity": "1 Bayfront Avenue, Hotel, Tower 3 Marina Bay Sands",
+                  "place_id": "ChIJmTXpQAQZ2jERZmXslyMqczQ",
+                  "location": {
+                    "lat": 1.2846705,
+                    "lng": 103.860986
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Gardens by the Bay",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 154711,
+                  "vicinity": "18 Marina Gardens Drive",
+                  "place_id": "ChIJMxZ-kwQZ2jERdsqftXeWCWI",
+                  "location": {
+                    "lat": 1.2815683,
+                    "lng": 103.8636132
+                  }
+                },
+                {
+                  "name": "Youth Olympic Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 376,
+                  "vicinity": "Raffles Avenue",
+                  "place_id": "ChIJs9ou2akZ2jERCq21-091JMk",
+                  "location": {
+                    "lat": 1.2891019,
+                    "lng": 103.8605555
+                  }
+                },
+                {
+                  "name": "Fruits and Flowers",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "",
+                  "place_id": "ChIJ__8_PQMZ2jERgnQghCOMmlw",
+                  "location": {
+                    "lat": 1.2807149,
+                    "lng": 103.8642902
+                  }
+                },
+                {
+                  "name": "Understorey",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "",
+                  "place_id": "ChIJq6q6HgMZ2jERVHx9J5NWYKk",
+                  "location": {
+                    "lat": 1.2810411,
+                    "lng": 103.8647885
+                  }
+                },
+                {
+                  "name": "Web of Life",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1,
+                  "vicinity": "",
+                  "place_id": "ChIJVVWVOAMZ2jERGBPt6HrU8M4",
+                  "location": {
+                    "lat": 1.2804255,
+                    "lng": 103.8637466
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Sustainable Singapore Gallery",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 240,
+                  "vicinity": "8 Marina Gardens Drive, #01-03 Marina Barrage, Singapore",
+                  "place_id": "ChIJUaiuK-MY2jERdA3DpNZiblI",
+                  "location": {
+                    "lat": 1.2802738,
+                    "lng": 103.8711395
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Singapore",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Singapore",
+                  "place_id": "ChIJyY4rtGcX2jERIKTarqz3AAQ",
+                  "location": {
+                    "lat": 1.2811866,
+                    "lng": 103.8503404
+                  }
+                },
+                {
+                  "name": "Singapore Flyer",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 23883,
+                  "vicinity": "30 Raffles Avenue",
+                  "place_id": "ChIJzVHFNqkZ2jERboLN2YrltH8",
+                  "location": {
+                    "lat": 1.2892988,
+                    "lng": 103.8631368
+                  }
+                },
+                {
+                  "name": "Gardens by the Bay",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 154711,
+                  "vicinity": "18 Marina Gardens Drive",
+                  "place_id": "ChIJMxZ-kwQZ2jERdsqftXeWCWI",
+                  "location": {
+                    "lat": 1.2815683,
+                    "lng": 103.8636132
+                  }
+                },
+                {
+                  "name": "SWAROVSKI Store Marina Bay Sands",
+                  "types": [
+                    "jewelry_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 33,
+                  "vicinity": "2 Bayfront Avenue, #B2 - 88, Singapore",
+                  "place_id": "ChIJlWem0AUZ2jER0PKokMeZV-o",
+                  "location": {
+                    "lat": 1.2835967,
+                    "lng": 103.8590668
+                  }
+                },
+                {
+                  "name": "TUMI Marina Bay Sands",
+                  "types": [
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 66,
+                  "vicinity": "2 Bayfront Avenue, #B2 - 41 THE SHOPPES AT MARINA BAY SANDS",
+                  "place_id": "ChIJx4wPggYZ2jERIHa0tNIbluQ",
+                  "location": {
+                    "lat": 1.2855821,
+                    "lng": 103.8593102
+                  }
+                }
+              ]
+            },
+            "total_places_found": 26,
+            "photo_timestamp": "2022:12:06 09:49:09",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.4013638496398926
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/50.heic"
+    },
+    {
+      "image_filename": "50.heic",
+      "timestamp": "2026-01-28T06:00:17.626339",
+      "processing_time_seconds": 68.796857,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Supertree Grove, Marina Bay Sands, Singapore",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive tree-like structures and the iconic Marina Bay Sands hotel are well-known landmarks in Singapore, making identification straightforward.",
+            "detailed_description": "The image features the Supertree Grove, a collection of large, tree-like structures that dominate the Gardens by the Bay in Singapore. These vertical gardens are known for their unique design, incorporating sustainable technology and lush greenery. In the background, the Marina Bay Sands hotel is visible, characterized by its three towers and the distinctive SkyPark on top, which resembles a ship. The scene captures the innovative and futuristic architectural style of Singapore.",
+            "identification": {
+              "primary": [
+                "Supertree Grove",
+                "Marina Bay Sands"
+              ],
+              "location": "Singapore",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Supertree Grove",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Marina Bay Sands",
+                "type": "landmark",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "urban_landscape",
+              "Singapore",
+              "gardens",
+              "hotel"
+            ],
+            "location": "Singapore",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Supertree Grove\", \"Marina Bay Sands\"],\n        \"location\": \"Singapore\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Supertree Grove\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Marina Bay Sands\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.90\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"urban_landscape\", \"Singapore\", \"gardens\", \"hotel\"],\n    \"description\": \"The image features the Supertree Grove, a collection of large, tree-like structures that dominate the Gardens by the Bay in Singapore. These vertical gardens are known for their unique design, incorporating sustainable technology and lush greenery. In the background, the Marina Bay Sands hotel is visible, characterized by its three towers and the distinctive SkyPark on top, which resembles a ship. The scene captures the innovative and futuristic architectural style of Singapore.\",\n    \"reasoning\": \"The distinctive tree-like structures and the iconic Marina Bay Sands hotel are well-known landmarks in Singapore, making identification straightforward.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "processing_time_seconds": 12.332767009735107
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image features a collection of towering structures known as 'Supertrees,' which are part of a futuristic garden landscape. These structures are characterized by their large, tree-like form with a wide canopy at the top, resembling a crown. The Supertrees are constructed with a network of metal frames that support vertical gardens, showcasing a variety of plants climbing up the trunks. The canopies are formed by intricate latticework, creating a web-like pattern that is both decorative and fu",
+            "description": "The image features a collection of towering structures known as 'Supertrees,' which are part of a futuristic garden landscape. These structures are characterized by their large, tree-like form with a wide canopy at the top, resembling a crown. The Supertrees are constructed with a network of metal frames that support vertical gardens, showcasing a variety of plants climbing up the trunks. The canopies are formed by intricate latticework, creating a web-like pattern that is both decorative and fu",
+            "architectural_style": "Futuristic",
+            "search_backends_used": [],
+            "processing_time_seconds": 56.199342012405396
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Supertree Grove (1.2820, 103.8639)",
+          "confidence": 0.5124794840812683,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Supertree Grove",
+            "coordinates": {
+              "latitude": 1.2819616999999999,
+              "longitude": 103.86390569999999
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 3024
+              },
+              {
+                "x": 0,
+                "y": 3024
+              }
+            ],
+            "context_labels": [
+              "Garden",
+              "Tourist attraction",
+              "Botanical garden",
+              "Park",
+              "Skyscraper"
+            ],
+            "context_objects": [
+              "Building"
+            ],
+            "web_entities": [
+              {
+                "name": "Tree",
+                "score": 0.3708834648132324
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Supertree Grove",
+                "score": 0.5124794840812683,
+                "location": {
+                  "lat": 1.2819616999999999,
+                  "lng": 103.86390569999999
+                }
+              },
+              {
+                "name": "Gardens By The Bay",
+                "score": 0.4911785125732422,
+                "location": {
+                  "lat": 1.2815683,
+                  "lng": 103.86361320000002
+                }
+              },
+              {
+                "name": "Ocbc Skyway",
+                "score": 0.4436582624912262,
+                "location": {
+                  "lat": 1.2823413,
+                  "lng": 103.8641645
+                }
+              }
+            ],
+            "processing_time_seconds": 25.01655912399292
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/50.heic"
+    }
+  ]
+}

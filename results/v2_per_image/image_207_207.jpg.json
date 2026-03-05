@@ -1,0 +1,1059 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "207.jpg",
+      "timestamp": "2026-01-28T04:50:33.794273",
+      "processing_time_seconds": 57.770219,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 45.70384166666667,
+        "gps_longitude": 9.662594444444444,
+        "location": {
+          "formatted_address": "Piazza Vecchia, 4, 24129 Bergamo BG, Italy",
+          "city": "Bergamo",
+          "county": "Provincia di Bergamo",
+          "country": "Italy"
+        },
+        "datetime_original": "2025:12:17 14:39:11",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Palazzo della Ragione, Bergamo, Italy",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and location in Bergamo suggest this is the Palazzo della Ragione, a well-known landmark in the city. The Renaissance features and the building's prominence in the square align with this identification.",
+            "detailed_description": "The image shows the Palazzo della Ragione, a historical building located in Bergamo, Italy. It features Renaissance architectural style with symmetrical facades, arched windows, and decorative elements typical of the period. The building is situated in a public square, surrounded by cobblestone paving and adjacent structures that complement its historical context.",
+            "identification": {
+              "primary": [
+                "Palazzo della Ragione"
+              ],
+              "location": "Bergamo, Italy",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Palazzo della Ragione",
+                "type": "building",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "Renaissance",
+              "architecture",
+              "Italy",
+              "historical_building"
+            ],
+            "location": "Bergamo, Italy",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Palazzo Nuovo",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "The architectural style and location could also suggest Palazzo Nuovo, another significant building in Bergamo."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Palazzo della Ragione\"],\n        \"location\": \"Bergamo, Italy\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Palazzo della Ragione\",\n            \"type\": \"building\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"Renaissance\", \"architecture\", \"Italy\", \"historical_building\"],\n    \"description\": \"The image shows the Palazzo della Ragione, a historical building located in Bergamo, Italy. It features Renaissance architectural style with symmetrical facades, arched windows, and decorative elements typical of the period. The building is situated in a public square, surrounded by cobblestone paving and adjacent structures that complement its historical context.\",\n    \"reasoning\": \"The architectural style and location in Bergamo suggest this is the Palazzo della Ragione, a well-known landmark in the city. The Renaissance features and the building's prominence in the square align with this identification.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Palazzo Nuovo\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The architectural style and location could also suggest Palazzo Nuovo, another significant building in Bergamo.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": 45.70384166666667,
+              "longitude": 9.662594444444444
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Piazza Vecchia, 4, 24129 Bergamo BG, Italy",
+              "city": "Bergamo",
+              "county": "Provincia di Bergamo",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2025:12:17 14:39:11",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 9.306400060653687
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a prominent building located in Bergamo, Italy, characterized by its classical architectural style. The structure is a multi-story edifice with a symmetrical facade, featuring a series of evenly spaced arches on the ground floor, likely serving as entrances or windows. Above these arches, the building displays a row of rectangular windows, each framed with decorative moldings, contributing to the classical aesthetic. The facade is predominantly white, accentuated by intricate s",
+            "description": "The image depicts a prominent building located in Bergamo, Italy, characterized by its classical architectural style. The structure is a multi-story edifice with a symmetrical facade, featuring a series of evenly spaced arches on the ground floor, likely serving as entrances or windows. Above these arches, the building displays a row of rectangular windows, each framed with decorative moldings, contributing to the classical aesthetic. The facade is predominantly white, accentuated by intricate s",
+            "architectural_style": "Classical",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 45.70384166666667,
+              "longitude": 9.662594444444444
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Piazza Vecchia, 4, 24129 Bergamo BG, Italy",
+              "city": "Bergamo",
+              "county": "Provincia di Bergamo",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2025:12:17 14:39:11",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 47.74807906150818
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Urban design",
+          "confidence": 0.8908358812332153,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Urban design",
+                "score": 0.8908358812332153
+              },
+              {
+                "source": "label",
+                "name": "Composite material",
+                "score": 0.8902541995048523
+              },
+              {
+                "source": "label",
+                "name": "Iron",
+                "score": 0.87689608335495
+              },
+              {
+                "source": "object",
+                "name": "Building",
+                "score": 0.7851206064224243
+              },
+              {
+                "source": "web",
+                "name": "Skyscraper",
+                "score": 0.7500618100166321
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Architecture",
+                "score": 1.2128233909606934
+              },
+              {
+                "name": "Skyscraper",
+                "score": 0.7500618100166321
+              },
+              {
+                "name": "Design",
+                "score": 0.7105000019073486
+              },
+              {
+                "name": "Architect",
+                "score": 0.6899999976158142
+              },
+              {
+                "name": "Estúdio Gustavo Utrabo",
+                "score": 0.5979999899864197
+              }
+            ],
+            "objects": [
+              {
+                "name": "Building",
+                "score": 0.7851206064224243
+              },
+              {
+                "name": "Building",
+                "score": 0.6345055103302002
+              },
+              {
+                "name": "Building",
+                "score": 0.6281326413154602
+              },
+              {
+                "name": "Building",
+                "score": 0.5947887897491455
+              }
+            ],
+            "labels": [
+              {
+                "name": "Daytime",
+                "score": 0.9815186858177185
+              },
+              {
+                "name": "Wall",
+                "score": 0.9786352515220642
+              },
+              {
+                "name": "Urban design",
+                "score": 0.8908358812332153
+              },
+              {
+                "name": "Composite material",
+                "score": 0.8902541995048523
+              },
+              {
+                "name": "Iron",
+                "score": 0.87689608335495
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 45.70384166666667,
+              "longitude": 9.662594444444444
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Piazza Vecchia, 4, 24129 Bergamo BG, Italy",
+              "city": "Bergamo",
+              "county": "Provincia di Bergamo",
+              "country": "Italy"
+            },
+            "photo_timestamp": "2025:12:17 14:39:11",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 17.692332983016968
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Bergamo, Provincia di Bergamo, Italy",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Bergamo, Provincia di Bergamo, Italy",
+            "coordinates": {
+              "latitude": 45.70384166666667,
+              "longitude": 9.662594444444444
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Basilica di Santa Maria Maggiore",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 6739,
+                  "vicinity": "Piazza Duomo, 1, Bergamo",
+                  "place_id": "ChIJnQ_MURVRgUcROMakLwTJmQ8",
+                  "location": {
+                    "lat": 45.7034217,
+                    "lng": 9.6623216
+                  }
+                },
+                {
+                  "name": "Luogo Pio Colleoni",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 23,
+                  "vicinity": "Via Bartolomeo Colleoni, 11, Bergamo",
+                  "place_id": "ChIJ04gtH0BRgUcR6fnNVhZXPG4",
+                  "location": {
+                    "lat": 45.70477449999999,
+                    "lng": 9.6618322
+                  }
+                },
+                {
+                  "name": "Palazzo Roncalli",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 31,
+                  "vicinity": "Piazza Lorenzo Mascheroni, 3, Bergamo",
+                  "place_id": "ChIJK957M0BRgUcRm4gKtgABMdg",
+                  "location": {
+                    "lat": 45.7051563,
+                    "lng": 9.659723999999999
+                  }
+                },
+                {
+                  "name": "Campanone",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 1212,
+                  "vicinity": "Piazza Vecchia, 8A, Bergamo",
+                  "place_id": "ChIJ-d15rWpRgUcRyQ5hPhBntWc",
+                  "location": {
+                    "lat": 45.70400739999999,
+                    "lng": 9.662305600000002
+                  }
+                },
+                {
+                  "name": "Chiesa di San Salvatore",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 37,
+                  "vicinity": "Via San Salvatore, 9, Bergamo",
+                  "place_id": "ChIJE2vDl2pRgUcR4L4kLvE9LXs",
+                  "location": {
+                    "lat": 45.70397320000001,
+                    "lng": 9.660769
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Tour nella Torre della Meridiana",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 31,
+                  "vicinity": "Via Gombito, 17/A, Bergamo",
+                  "place_id": "ChIJr6c3bhVRgUcRqO9TnGPQZPM",
+                  "location": {
+                    "lat": 45.7034909,
+                    "lng": 9.6644626
+                  }
+                },
+                {
+                  "name": "Luogo Pio Colleoni",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 23,
+                  "vicinity": "Via Bartolomeo Colleoni, 11, Bergamo",
+                  "place_id": "ChIJ04gtH0BRgUcR6fnNVhZXPG4",
+                  "location": {
+                    "lat": 45.70477449999999,
+                    "lng": 9.6618322
+                  }
+                },
+                {
+                  "name": "Rocca di Bergamo",
+                  "types": [
+                    "museum",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1464,
+                  "vicinity": "Piazzale Brigata Legnano, 16, Bergamo",
+                  "place_id": "ChIJMavm9hVRgUcRWTL1SUK1eJk",
+                  "location": {
+                    "lat": 45.70389429999999,
+                    "lng": 9.666690599999999
+                  }
+                },
+                {
+                  "name": "Palazzo del Podestà - resti del Foro Romano e Museo del Cinquecento",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 137,
+                  "vicinity": "Piazza Vecchia, 7, Bergamo",
+                  "place_id": "ChIJa9EyrWpRgUcR2WHhXDzDsuo",
+                  "location": {
+                    "lat": 45.7038138,
+                    "lng": 9.662429999999999
+                  }
+                },
+                {
+                  "name": "Campanone",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 1212,
+                  "vicinity": "Piazza Vecchia, 8A, Bergamo",
+                  "place_id": "ChIJ-d15rWpRgUcRyQ5hPhBntWc",
+                  "location": {
+                    "lat": 45.70400739999999,
+                    "lng": 9.662305600000002
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Il Sole",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1792,
+                  "vicinity": "Via Bartolomeo Colleoni, 1, Bergamo",
+                  "place_id": "ChIJ-2HL_z9RgUcR9rPfY1Ku7jw",
+                  "location": {
+                    "lat": 45.7044902,
+                    "lng": 9.662880199999998
+                  }
+                },
+                {
+                  "name": "Ristorante Pizzeria 900 Strati",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1346,
+                  "vicinity": "Via dello Statuto, 23, Bergamo",
+                  "place_id": "ChIJAbEGlm5RgUcR3w28jIho7jo",
+                  "location": {
+                    "lat": 45.6992773,
+                    "lng": 9.653894000000001
+                  }
+                },
+                {
+                  "name": "Polentone",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1182,
+                  "vicinity": "Piazza Mercato delle Scarpe, 1, Bergamo",
+                  "place_id": "ChIJTUsCA0BRgUcRjyeE0MdkiqQ",
+                  "location": {
+                    "lat": 45.7030685,
+                    "lng": 9.6650341
+                  }
+                },
+                {
+                  "name": "Al Donizetti",
+                  "types": [
+                    "bar",
+                    "cafe",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 1798,
+                  "vicinity": "Via Gombito, 17a, Bergamo",
+                  "place_id": "ChIJr6c3bhVRgUcRpdH42YNirVc",
+                  "location": {
+                    "lat": 45.70342650000001,
+                    "lng": 9.664764900000002
+                  }
+                },
+                {
+                  "name": "Da Mimmo Bergamo Alta",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 6631,
+                  "vicinity": "Via Bartolomeo Colleoni, 17, Bergamo",
+                  "place_id": "ChIJ6cOgGEBRgUcRqTAys8Dx7MI",
+                  "location": {
+                    "lat": 45.7051267,
+                    "lng": 9.660936
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Rocca di Bergamo",
+                  "types": [
+                    "museum",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1464,
+                  "vicinity": "Piazzale Brigata Legnano, 16, Bergamo",
+                  "place_id": "ChIJMavm9hVRgUcRWTL1SUK1eJk",
+                  "location": {
+                    "lat": 45.70389429999999,
+                    "lng": 9.666690599999999
+                  }
+                },
+                {
+                  "name": "Palazzo e Giardini Moroni",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1682,
+                  "vicinity": "Via Porta Dipinta, 12, Bergamo",
+                  "place_id": "ChIJyZ1Z6RVRgUcRCsNoOEna8WU",
+                  "location": {
+                    "lat": 45.70331179999999,
+                    "lng": 9.6677979
+                  }
+                },
+                {
+                  "name": "Parco della Pace",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 339,
+                  "vicinity": "Via Alla Rocca, 16, Bergamo",
+                  "place_id": "ChIJGQDCGT5RgUcR8AtpXwhKhL0",
+                  "location": {
+                    "lat": 45.7041705,
+                    "lng": 9.6666087
+                  }
+                },
+                {
+                  "name": "Giardino La Crotta",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 93,
+                  "vicinity": "Città Alta, Bergamo",
+                  "place_id": "ChIJDX2L6kFRgUcROz4cZ0AJuik",
+                  "location": {
+                    "lat": 45.70589059999999,
+                    "lng": 9.6586738
+                  }
+                },
+                {
+                  "name": "Parco della Rocca e Fauna Orobica",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Piazzale Brigata Legnano, 12, Bergamo",
+                  "place_id": "ChIJAQAAFz5RgUcRfJ5kzPPqRhE",
+                  "location": {
+                    "lat": 45.70479350000001,
+                    "lng": 9.6673992
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Basilica di Santa Maria Maggiore",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 6739,
+                  "vicinity": "Piazza Duomo, 1, Bergamo",
+                  "place_id": "ChIJnQ_MURVRgUcROMakLwTJmQ8",
+                  "location": {
+                    "lat": 45.7034217,
+                    "lng": 9.6623216
+                  }
+                },
+                {
+                  "name": "Archivio Storico Diocesano di Bergamo",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 5,
+                  "vicinity": "Piazza Duomo, 5, Bergamo",
+                  "place_id": "ChIJ14LYShVRgUcRvXdjYxrM5eI",
+                  "location": {
+                    "lat": 45.7033523,
+                    "lng": 9.6617467
+                  }
+                },
+                {
+                  "name": "Chiesa di San Salvatore",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 37,
+                  "vicinity": "Via San Salvatore, 9, Bergamo",
+                  "place_id": "ChIJE2vDl2pRgUcR4L4kLvE9LXs",
+                  "location": {
+                    "lat": 45.70397320000001,
+                    "lng": 9.660769
+                  }
+                },
+                {
+                  "name": "Chiesa di Santa Grata in via Arena",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 15,
+                  "vicinity": "Via Arena, 18, Bergamo",
+                  "place_id": "ChIJRfmJ6mpRgUcRUaLCZ5yzURI",
+                  "location": {
+                    "lat": 45.7034029,
+                    "lng": 9.6605857
+                  }
+                },
+                {
+                  "name": "Chiesa di Sant'Agata nel Carmine",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 182,
+                  "vicinity": "Via Bartolomeo Colleoni, 29, Bergamo",
+                  "place_id": "ChIJhZS_MUBRgUcRRSjbeWTKa2w",
+                  "location": {
+                    "lat": 45.70542909999999,
+                    "lng": 9.6606198
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "BACO (Base Arte Contemporanea Odierna)",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 9,
+                  "vicinity": "Via Arena, 9, Bergamo",
+                  "place_id": "ChIJSb-n6mpRgUcRbnsGlLQZtj4",
+                  "location": {
+                    "lat": 45.7034768,
+                    "lng": 9.66073
+                  }
+                },
+                {
+                  "name": "Promotionart",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Via Bartolomeo Colleoni, 3/f, Bergamo",
+                  "place_id": "ChIJi5oxFlNRgUcR2bbBxzxVEVs",
+                  "location": {
+                    "lat": 45.70456619999999,
+                    "lng": 9.6625379
+                  }
+                },
+                {
+                  "name": "Galleria D'Arte Gli Angeli",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 4,
+                  "vicinity": "Via Gombito, 14A, Bergamo",
+                  "place_id": "ChIJF6kMrKdRgUcROTjrhizjHhc",
+                  "location": {
+                    "lat": 45.7037628,
+                    "lng": 9.664330899999998
+                  }
+                },
+                {
+                  "name": "PEARL ART FOUNDATION",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Via San Pancrazio, 3/5, Bergamo",
+                  "place_id": "ChIJHSHzbxVRgUcRQJ3ApP1Wfcg",
+                  "location": {
+                    "lat": 45.7036677,
+                    "lng": 9.6645228
+                  }
+                },
+                {
+                  "name": "Spazio Volta",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 6,
+                  "vicinity": "Piazza Mercato delle Scarpe, Bergamo",
+                  "place_id": "ChIJP5elkGRRgUcR91Av9-0jIZY",
+                  "location": {
+                    "lat": 45.7032371,
+                    "lng": 9.6652689
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Bergamo",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Bergamo",
+                  "place_id": "ChIJc65ivBFRgUcR0aTlC4_LL9M",
+                  "location": {
+                    "lat": 45.6941966,
+                    "lng": 9.6707462
+                  }
+                },
+                {
+                  "name": "Hotel Piazza Vecchia",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 193,
+                  "vicinity": "Via Bartolomeo Colleoni, 3, Bergamo",
+                  "place_id": "ChIJ-akzAkBRgUcRDKtOsHi0opM",
+                  "location": {
+                    "lat": 45.7046588,
+                    "lng": 9.662169300000002
+                  }
+                },
+                {
+                  "name": "GombitHotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 186,
+                  "vicinity": "Via Mario Lupo, 6, Bergamo",
+                  "place_id": "ChIJMfhPQhVRgUcRN_gwUghE39Y",
+                  "location": {
+                    "lat": 45.70368149999999,
+                    "lng": 9.663828299999997
+                  }
+                },
+                {
+                  "name": "Entro le Mura",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 180,
+                  "vicinity": "Via San Lorenzo, 26, Bergamo",
+                  "place_id": "ChIJl2xOwj9RgUcRTFl4OarHbsE",
+                  "location": {
+                    "lat": 45.705158,
+                    "lng": 9.664427999999997
+                  }
+                },
+                {
+                  "name": "Tour nella Torre della Meridiana",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 31,
+                  "vicinity": "Via Gombito, 17/A, Bergamo",
+                  "place_id": "ChIJr6c3bhVRgUcRqO9TnGPQZPM",
+                  "location": {
+                    "lat": 45.7034909,
+                    "lng": 9.6644626
+                  }
+                }
+              ]
+            },
+            "total_places_found": 35,
+            "photo_timestamp": "2025:12:17 14:39:11",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.478381872177124
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/207.jpg"
+    },
+    {
+      "image_filename": "207.jpg",
+      "timestamp": "2026-01-28T04:51:31.595705",
+      "processing_time_seconds": 56.872012,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Palazzo della Ragione, Bergamo, Italy",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and location suggest the Palazzo della Ragione in Bergamo, known for its Renaissance design and historical significance.",
+            "detailed_description": "The image shows the Palazzo della Ragione, a historical building located in Bergamo, Italy. It features Renaissance architectural elements, including symmetrical facades, arched windows, and decorative stonework. The building is situated in a plaza with cobblestone paving, surrounded by other historical structures. The facade is characterized by its elegant proportions and classical detailing.",
+            "identification": {
+              "primary": [
+                "Palazzo della Ragione"
+              ],
+              "location": "Bergamo, Italy",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Palazzo della Ragione",
+                "type": "building",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "Renaissance",
+              "architecture",
+              "stone",
+              "Italy",
+              "historical_building"
+            ],
+            "location": "Bergamo, Italy",
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Palazzo della Ragione\"],\n        \"location\": \"Bergamo, Italy\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Palazzo della Ragione\",\n            \"type\": \"building\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"Renaissance\", \"architecture\", \"stone\", \"Italy\", \"historical_building\"],\n    \"description\": \"The image shows the Palazzo della Ragione, a historical building located in Bergamo, Italy. It features Renaissance architectural elements, including symmetrical facades, arched windows, and decorative stonework. The building is situated in a plaza with cobblestone paving, surrounded by other historical structures. The facade is characterized by its elegant proportions and classical detailing.\",\n    \"reasoning\": \"The architectural style and location suggest the Palazzo della Ragione in Bergamo, known for its Renaissance design and historical significance.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "processing_time_seconds": 9.197612047195435
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a large, prominent building situated in a public square, characterized by its classical architectural style. The building features a symmetrical facade with multiple levels, each adorned with arched windows and decorative elements. The ground floor showcases a series of large arches, creating a colonnade effect, while the upper floors have rectangular windows framed by pilasters. The facade is predominantly white, with intricate detailing around the windows and cornices. A towe",
+            "description": "The image depicts a large, prominent building situated in a public square, characterized by its classical architectural style. The building features a symmetrical facade with multiple levels, each adorned with arched windows and decorative elements. The ground floor showcases a series of large arches, creating a colonnade effect, while the upper floors have rectangular windows framed by pilasters. The facade is predominantly white, with intricate detailing around the windows and cornices. A towe",
+            "architectural_style": "Classical",
+            "search_backends_used": [],
+            "processing_time_seconds": 47.67199492454529
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Urban design",
+          "confidence": 0.8908358812332153,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Urban design",
+                "score": 0.8908358812332153
+              },
+              {
+                "source": "label",
+                "name": "Composite material",
+                "score": 0.8902541995048523
+              },
+              {
+                "source": "label",
+                "name": "Iron",
+                "score": 0.87689608335495
+              },
+              {
+                "source": "object",
+                "name": "Building",
+                "score": 0.7851206064224243
+              },
+              {
+                "source": "web",
+                "name": "Skyscraper",
+                "score": 0.7350461483001709
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Architecture",
+                "score": 1.1818164587020874
+              },
+              {
+                "name": "Skyscraper",
+                "score": 0.7350461483001709
+              },
+              {
+                "name": "Architect",
+                "score": 0.7121000289916992
+              },
+              {
+                "name": "Design",
+                "score": 0.708299994468689
+              },
+              {
+                "name": "Estúdio Gustavo Utrabo",
+                "score": 0.5917999744415283
+              }
+            ],
+            "objects": [
+              {
+                "name": "Building",
+                "score": 0.7851206064224243
+              },
+              {
+                "name": "Building",
+                "score": 0.6345055103302002
+              },
+              {
+                "name": "Building",
+                "score": 0.6281326413154602
+              },
+              {
+                "name": "Building",
+                "score": 0.5947887897491455
+              }
+            ],
+            "labels": [
+              {
+                "name": "Daytime",
+                "score": 0.9815186858177185
+              },
+              {
+                "name": "Wall",
+                "score": 0.9786352515220642
+              },
+              {
+                "name": "Urban design",
+                "score": 0.8908358812332153
+              },
+              {
+                "name": "Composite material",
+                "score": 0.8902541995048523
+              },
+              {
+                "name": "Iron",
+                "score": 0.87689608335495
+              }
+            ],
+            "processing_time_seconds": 19.141420125961304
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/207.jpg"
+    }
+  ]
+}

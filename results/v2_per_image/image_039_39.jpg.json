@@ -1,0 +1,1193 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "39.jpg",
+      "timestamp": "2026-01-28T05:35:20.625210",
+      "processing_time_seconds": 59.989567,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 50.84688055555556,
+        "gps_longitude": 4.352452777777778,
+        "location": {
+          "formatted_address": "Grand Place 30, 1000 Bruxelles, Belgium",
+          "city": "Bruxelles",
+          "county": "Bruxelles",
+          "country": "Belgium"
+        },
+        "datetime_original": "2022:07:21 20:17:41",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Grand Place, Brussels, Belgium",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive architectural style and the location metadata strongly indicate the Grand Place in Brussels, known for its historical significance and architectural beauty.",
+            "detailed_description": "The image shows the Grand Place in Brussels, Belgium, a UNESCO World Heritage site known for its opulent guildhalls and the Town Hall. The buildings exhibit Baroque architecture with ornate facades, intricate stonework, and gilded decorations. The square is paved with cobblestones and surrounded by richly decorated buildings, showcasing a blend of Gothic and Baroque styles.",
+            "identification": {
+              "primary": [
+                "Grand Place"
+              ],
+              "location": "Brussels, Belgium",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Guildhalls",
+                "type": "building",
+                "confidence": 0.9
+              },
+              {
+                "name": "Town Hall",
+                "type": "building",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "Baroque",
+              "architecture",
+              "historical",
+              "Brussels",
+              "landmark"
+            ],
+            "location": "Brussels, Belgium",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Grote Markt",
+                "specificity_level": "very_specific",
+                "confidence": 0.8,
+                "reasoning": "The architectural style and layout resemble other central squares in European cities, but the location in Brussels makes Grand Place the most likely identification."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Grand Place\"],\n        \"location\": \"Brussels, Belgium\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Guildhalls\",\n            \"type\": \"building\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Town Hall\",\n            \"type\": \"building\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"Baroque\", \"architecture\", \"historical\", \"Brussels\", \"landmark\"],\n    \"description\": \"The image shows the Grand Place in Brussels, Belgium, a UNESCO World Heritage site known for its opulent guildhalls and the Town Hall. The buildings exhibit Baroque architecture with ornate facades, intricate stonework, and gilded decorations. The square is paved with cobblestones and surrounded by richly decorated buildings, showcasing a blend of Gothic and Baroque styles.\",\n    \"reasoning\": \"The distinctive architectural style and the location metadata strongly indicate the Grand Place in Brussels, known for its historical significance and architectural beauty.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Grote Markt\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.8,\n            \"reasoning\": \"The architectural style and layout resemble other central squares in European cities, but the location in Brussels makes Grand Place the most likely identification.\"\n        }\n    ]\n}",
+            "gps_coordinates": {
+              "latitude": 50.84688055555556,
+              "longitude": 4.352452777777778
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Grand Place 30, 1000 Bruxelles, Belgium",
+              "city": "Bruxelles",
+              "county": "Bruxelles",
+              "country": "Belgium"
+            },
+            "photo_timestamp": "2022:07:21 20:17:41",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 9.545494079589844
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a grand architectural ensemble located in a large, open square. The central focus is a series of ornate buildings characterized by their elaborate facades, typical of Baroque architecture. These buildings feature intricate stonework, gilded decorations, and numerous windows arranged symmetrically across multiple stories. The roofs are adorned with decorative gables and spires, contributing to the opulent appearance. The facades are richly detailed with columns, pilasters, and s",
+            "description": "The image depicts a grand architectural ensemble located in a large, open square. The central focus is a series of ornate buildings characterized by their elaborate facades, typical of Baroque architecture. These buildings feature intricate stonework, gilded decorations, and numerous windows arranged symmetrically across multiple stories. The roofs are adorned with decorative gables and spires, contributing to the opulent appearance. The facades are richly detailed with columns, pilasters, and s",
+            "architectural_style": "Baroque",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 50.84688055555556,
+              "longitude": 4.352452777777778
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Grand Place 30, 1000 Bruxelles, Belgium",
+              "city": "Bruxelles",
+              "county": "Bruxelles",
+              "country": "Belgium"
+            },
+            "photo_timestamp": "2022:07:21 20:17:41",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 49.81878900527954
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Grand Place (50.8468, 4.3524)",
+          "confidence": 0.29451242089271545,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Grand Place",
+            "coordinates": {
+              "latitude": 50.8467887,
+              "longitude": 4.3524356
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 3024
+              },
+              {
+                "x": 0,
+                "y": 3024
+              }
+            ],
+            "context_labels": [
+              "Leisure",
+              "Travel",
+              "Vacation",
+              "Walking"
+            ],
+            "context_objects": [
+              "Person",
+              "Person",
+              "Person"
+            ],
+            "web_entities": [
+              {
+                "name": "Alex Honnold",
+                "score": 14.67300033569336
+              },
+              {
+                "name": "Skyscraper",
+                "score": 1.0544999837875366
+              },
+              {
+                "name": "Skyscraper",
+                "score": 0.7718102931976318
+              },
+              {
+                "name": "Dwayne Johnson",
+                "score": 0.7132499814033508
+              },
+              {
+                "name": "Free Solo",
+                "score": 0.5609999895095825
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Grand Place",
+                "score": 0.29451242089271545,
+                "location": {
+                  "lat": 50.8467887,
+                  "lng": 4.3524356
+                }
+              },
+              {
+                "name": "Le Roy D'espagne",
+                "score": 0.2729807496070862,
+                "location": {
+                  "lat": 50.8471895,
+                  "lng": 4.3520905
+                }
+              },
+              {
+                "name": "Grand Place",
+                "score": 0.2466842383146286,
+                "location": {
+                  "lat": 50.846700572230844,
+                  "lng": 4.352530119522346
+                }
+              },
+              {
+                "name": "Starbucks",
+                "score": 0.24353232979774475,
+                "location": {
+                  "lat": 50.8470385,
+                  "lng": 4.3518962
+                }
+              }
+            ],
+            "processing_time_seconds": 20.055471897125244
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Bruxelles, Belgium",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Bruxelles, Belgium",
+            "coordinates": {
+              "latitude": 50.84688055555556,
+              "longitude": 4.352452777777778
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Saint Catherine Catholic Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2136,
+                  "vicinity": "Place Sainte-Catherine 50, Bruxelles",
+                  "place_id": "ChIJXWfZ84bDw0cRzmrmGD0mF1A",
+                  "location": {
+                    "lat": 50.85077039999999,
+                    "lng": 4.348129699999999
+                  }
+                },
+                {
+                  "name": "Manneken Pis",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 80978,
+                  "vicinity": "Brussels",
+                  "place_id": "ChIJ0T1eGXnEw0cRH8GwIKZAuBc",
+                  "location": {
+                    "lat": 50.844993,
+                    "lng": 4.349989
+                  }
+                },
+                {
+                  "name": "Grand Place",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 171690,
+                  "vicinity": "Grote Markt, Brussel",
+                  "place_id": "ChIJ8fEURn_Ew0cRts_ij101PLA",
+                  "location": {
+                    "lat": 50.8467887,
+                    "lng": 4.352435600000001
+                  }
+                },
+                {
+                  "name": "Grand Casino Brussels VIAGE",
+                  "types": [
+                    "casino",
+                    "tourist_attraction",
+                    "cafe",
+                    "night_club",
+                    "bakery",
+                    "bar",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 1811,
+                  "vicinity": "Boulevard Anspach 30, Bruxelles",
+                  "place_id": "ChIJLSxvO4fDw0cRgKIEPINh93w",
+                  "location": {
+                    "lat": 50.84967750000001,
+                    "lng": 4.351323900000001
+                  }
+                },
+                {
+                  "name": "Jeanneke Pis",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 11761,
+                  "vicinity": "Impasse de la Fidélité 10-12, Bruxelles",
+                  "place_id": "ChIJ9TXtl4DDw0cRcU_Z69sKwfE",
+                  "location": {
+                    "lat": 50.8484807,
+                    "lng": 4.354040599999998
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Comics Art Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "library",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 3442,
+                  "vicinity": "Rue des Sables 20, Bruxelles",
+                  "place_id": "ChIJwQ0CZX_Dw0cRAgyG-NX_zKA",
+                  "location": {
+                    "lat": 50.85100629999999,
+                    "lng": 4.360131200000001
+                  }
+                },
+                {
+                  "name": "Brussels City Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2239,
+                  "vicinity": "Grote Markt van, Brussel",
+                  "place_id": "ChIJ003jlX3Dw0cRi0Hhp7GpQKo",
+                  "location": {
+                    "lat": 50.8469398,
+                    "lng": 4.3528752
+                  }
+                },
+                {
+                  "name": "Magritte Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 8108,
+                  "vicinity": "Place Royale 1, Bruxelles",
+                  "place_id": "ChIJPYlgS4fEw0cRhva9IKvp0iQ",
+                  "location": {
+                    "lat": 50.84240570000001,
+                    "lng": 4.3586407
+                  }
+                },
+                {
+                  "name": "Royal Museums of Fine Arts of Belgium",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 9993,
+                  "vicinity": "Rue de la Régence 3, Bruxelles",
+                  "place_id": "ChIJa5YBW4fEw0cRXEdEmmrHNzM",
+                  "location": {
+                    "lat": 50.8416199,
+                    "lng": 4.3581793
+                  }
+                },
+                {
+                  "name": "Musical Instruments Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 6132,
+                  "vicinity": "Rue Montagne de la Cour 2, Bruxelles",
+                  "place_id": "ChIJz2gUtIDEw0cRY-bzLAHSISU",
+                  "location": {
+                    "lat": 50.8428875,
+                    "lng": 4.3590038
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "The Dominican",
+                  "types": [
+                    "bar",
+                    "night_club",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2370,
+                  "vicinity": "Rue Léopold 9, Bruxelles",
+                  "place_id": "ChIJsXxX7IDDw0cRYzRU0IPZPBc",
+                  "location": {
+                    "lat": 50.8492581,
+                    "lng": 4.3547629
+                  }
+                },
+                {
+                  "name": "Bedford Hotel & Congress Centre",
+                  "types": [
+                    "bar",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 9314,
+                  "vicinity": "Rue du Midi 135, Bruxelles",
+                  "place_id": "ChIJOUvAlXnEw0cRm8QDtalvxKM",
+                  "location": {
+                    "lat": 50.8442326,
+                    "lng": 4.3474068
+                  }
+                },
+                {
+                  "name": "Hotel Le Plaza Brussels",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 3475,
+                  "vicinity": "Boulevard Adolphe Max 118/126, Bruxelles",
+                  "place_id": "ChIJfZTZSoLDw0cRM7OPLhLDSLQ",
+                  "location": {
+                    "lat": 50.85452220000001,
+                    "lng": 4.356221100000001
+                  }
+                },
+                {
+                  "name": "Novotel Brussels City Centre",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 3674,
+                  "vicinity": "Rue de la Vierge Noire 32, Bruxelles",
+                  "place_id": "ChIJtd6f_IbDw0cRRSEu3pVdiCk",
+                  "location": {
+                    "lat": 50.8506706,
+                    "lng": 4.3498257
+                  }
+                },
+                {
+                  "name": "Hotel Mozart",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.1,
+                  "user_ratings_total": 1728,
+                  "vicinity": "Rue du Marché aux Fromages 23, Bruxelles",
+                  "place_id": "ChIJYX7nI3_Ew0cRcfG5trAuEtI",
+                  "location": {
+                    "lat": 50.84563129999999,
+                    "lng": 4.353133999999999
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Parc de Bruxelles",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 21377,
+                  "vicinity": "Brussels",
+                  "place_id": "ChIJ8bkYeoHEw0cRJWjmPRPA384",
+                  "location": {
+                    "lat": 50.8454323,
+                    "lng": 4.364190099999999
+                  }
+                },
+                {
+                  "name": "Square du Petit Sablon",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 1532,
+                  "vicinity": "Place du Petit Sablon 12, Bruxelles",
+                  "place_id": "ChIJi1yFcH3Ew0cRMmuGFDc3PBo",
+                  "location": {
+                    "lat": 50.8395691,
+                    "lng": 4.3565988
+                  }
+                },
+                {
+                  "name": "MOA Paris",
+                  "types": [
+                    "park",
+                    "jewelry_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1026,
+                  "vicinity": "Carrefour de l'Europe 2, Bruxelles",
+                  "place_id": "ChIJAT8tFn7Ew0cRjfzJavXyqZo",
+                  "location": {
+                    "lat": 50.8454609,
+                    "lng": 4.357445
+                  }
+                },
+                {
+                  "name": "Esquisse du Jardin",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Rue de la Chapelle, Bruxelles",
+                  "place_id": "ChIJ6_8N8XvEw0cR_xOZurn4tok",
+                  "location": {
+                    "lat": 50.8419915,
+                    "lng": 4.3511041
+                  }
+                },
+                {
+                  "name": "Square de la putterie",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 2.9,
+                  "user_ratings_total": 14,
+                  "vicinity": "Square de la Putterie, 1000, Bruxelles",
+                  "place_id": "ChIJQfzMg4zFw0cRYNJuOubwCGI",
+                  "location": {
+                    "lat": 50.845159,
+                    "lng": 4.3558168
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Saint Catherine Catholic Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2136,
+                  "vicinity": "Place Sainte-Catherine 50, Bruxelles",
+                  "place_id": "ChIJXWfZ84bDw0cRzmrmGD0mF1A",
+                  "location": {
+                    "lat": 50.85077039999999,
+                    "lng": 4.348129699999999
+                  }
+                },
+                {
+                  "name": "St. Michael & St. Gudula Cathedral",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 23099,
+                  "vicinity": "Esplanade de la Sainte-Gudule, Bruxelles",
+                  "place_id": "ChIJvTZ4_3_Dw0cRzSOE0556hYQ",
+                  "location": {
+                    "lat": 50.8479083,
+                    "lng": 4.3601497
+                  }
+                },
+                {
+                  "name": "Église Notre-Dame de la Chapelle",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1886,
+                  "vicinity": "Place de la Chapelle, Bruxelles",
+                  "place_id": "ChIJh1fm9HvEw0cRo5ZZd3FdmyQ",
+                  "location": {
+                    "lat": 50.84156309999999,
+                    "lng": 4.351109500000001
+                  }
+                },
+                {
+                  "name": "Saint John and Saint Stephen Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 97,
+                  "vicinity": "Rue des Minimes 62, Bruxelles",
+                  "place_id": "ChIJwyh-7HzEw0cRvhmEeRKRr3c",
+                  "location": {
+                    "lat": 50.8391595,
+                    "lng": 4.3527619
+                  }
+                },
+                {
+                  "name": "Notre Dame aux Riches-Claires",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 115,
+                  "vicinity": "Rue des Riches Claires 23, Bruxelles",
+                  "place_id": "ChIJt3FMGXjEw0cRgJXs0g4njVQ",
+                  "location": {
+                    "lat": 50.84709969999999,
+                    "lng": 4.3466646
+                  }
+                },
+                {
+                  "name": "Pakistan Islamic Centre",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 126,
+                  "vicinity": "Rue de la Buanderie 6, Bruxelles",
+                  "place_id": "ChIJ3YN0UXbEw0cRFDv3FXDHlDE",
+                  "location": {
+                    "lat": 50.84613219999999,
+                    "lng": 4.342184499999999
+                  }
+                },
+                {
+                  "name": "Mosquée Al-Jadid",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 119,
+                  "vicinity": "Boulevard Maurice Lemonnier 181, Bruxelles",
+                  "place_id": "ChIJzxqZ4XDEw0cRsf3NCT-HuwU",
+                  "location": {
+                    "lat": 50.8415638,
+                    "lng": 4.342213399999999
+                  }
+                },
+                {
+                  "name": "DIOGONDIRAL ET HOORE GOOGA",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 5,
+                  "vicinity": "Rue d'Anderlecht 30, Bruxelles",
+                  "place_id": "ChIJB54uaQDFw0cRtD-NhSh7_Jc",
+                  "location": {
+                    "lat": 50.8453424,
+                    "lng": 4.344737199999999
+                  }
+                },
+                {
+                  "name": "Pakistan Sunni Cultural Center Asbl",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 16,
+                  "vicinity": "Rue de la Buanderie 6, Bruxelles",
+                  "place_id": "ChIJOfh3UXbEw0cREmF1qkUWm6c",
+                  "location": {
+                    "lat": 50.84618800000001,
+                    "lng": 4.342265899999999
+                  }
+                },
+                {
+                  "name": "Mosquée Ettawhid",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 191,
+                  "vicinity": "Rue Terre-Neuve 123, Bruxelles",
+                  "place_id": "ChIJ74gwenDEw0cRjiG2AUtDkwk",
+                  "location": {
+                    "lat": 50.83988410000001,
+                    "lng": 4.344400900000001
+                  }
+                },
+                {
+                  "name": "Great Synagogue of Brussels",
+                  "types": [
+                    "synagogue",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 154,
+                  "vicinity": "Rue de la Régence 32, Bruxelles",
+                  "place_id": "ChIJWwdeFn3Ew0cRan8MRR0atUQ",
+                  "location": {
+                    "lat": 50.8387807,
+                    "lng": 4.355064200000001
+                  }
+                },
+                {
+                  "name": "Beth Israel",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Avenue de Stalingrad 74, Bruxelles",
+                  "place_id": "ChIJubFKo9vFw0cRkj89UVd6Gmo",
+                  "location": {
+                    "lat": 50.8406286,
+                    "lng": 4.3435156
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Mira",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Rue des Pierres 16, Bruxelles",
+                  "place_id": "ChIJ05F1hXjEw0cRbM4zpRAxA98",
+                  "location": {
+                    "lat": 50.8474675,
+                    "lng": 4.349756699999999
+                  }
+                },
+                {
+                  "name": "YellowKorner",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 73,
+                  "vicinity": "Place du Grand Sablon 43, Bruxelles",
+                  "place_id": "ChIJt89fMHzEw0cRBEEC4CdpFbY",
+                  "location": {
+                    "lat": 50.8412415,
+                    "lng": 4.3540331
+                  }
+                },
+                {
+                  "name": "Greta Meert Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 36,
+                  "vicinity": "Rue du Canal 13, Bruxelles",
+                  "place_id": "ChIJ3W5SQYTDw0cRlkdUH7_DfOU",
+                  "location": {
+                    "lat": 50.8547614,
+                    "lng": 4.3514952
+                  }
+                },
+                {
+                  "name": "Collectors' Gallery",
+                  "types": [
+                    "art_gallery",
+                    "jewelry_store",
+                    "home_goods_store",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 5,
+                  "vicinity": "Rue des Minimes 12, Bruxelles",
+                  "place_id": "ChIJS1fkgH7Ew0cRgC7yAcC3yeE",
+                  "location": {
+                    "lat": 50.841067,
+                    "lng": 4.353872
+                  }
+                },
+                {
+                  "name": "Art4",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Rue des Minimes 3, Bruxelles",
+                  "place_id": "ChIJ88g1RnzEw0cR3i5bmzO_YY0",
+                  "location": {
+                    "lat": 50.8411868,
+                    "lng": 4.3536103
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Brussels",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Brussels",
+                  "place_id": "ChIJZ2jHc-2kw0cRpwJzeGY6i8E",
+                  "location": {
+                    "lat": 50.84770289999999,
+                    "lng": 4.357200100000001
+                  }
+                },
+                {
+                  "name": "Hotel Floris Arlequin Grand Place",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 1658,
+                  "vicinity": "Rue de la Fourche 17/19, Bruxelles",
+                  "place_id": "ChIJaeKKqIDDw0cRPHsrdUp26hc",
+                  "location": {
+                    "lat": 50.84809229999999,
+                    "lng": 4.353150299999999
+                  }
+                },
+                {
+                  "name": "Hotel NH Brussels Carrefour de l'Europe",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 1084,
+                  "vicinity": "Rue Marche aux Herbes, Rue du Marché aux Herbes 110, Bruxelles",
+                  "place_id": "ChIJKVwdoH_Ew0cRG19BpvA7MwI",
+                  "location": {
+                    "lat": 50.846384,
+                    "lng": 4.35532
+                  }
+                },
+                {
+                  "name": "Warwick Grand-Place Brussels",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 3307,
+                  "vicinity": "Rue Duquesnoy 5, Bruxelles",
+                  "place_id": "ChIJXYWCAn_Ew0cRFOhcq-heq0s",
+                  "location": {
+                    "lat": 50.8452508,
+                    "lng": 4.3544393
+                  }
+                },
+                {
+                  "name": "The Dominican",
+                  "types": [
+                    "night_club",
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2370,
+                  "vicinity": "Rue Léopold 9, Bruxelles",
+                  "place_id": "ChIJsXxX7IDDw0cRYzRU0IPZPBc",
+                  "location": {
+                    "lat": 50.8492581,
+                    "lng": 4.3547629
+                  }
+                }
+              ]
+            },
+            "total_places_found": 42,
+            "photo_timestamp": "2022:07:21 20:17:41",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.3431251049041748
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/39.jpg"
+    },
+    {
+      "image_filename": "39.jpg",
+      "timestamp": "2026-01-28T05:36:20.634559",
+      "processing_time_seconds": 55.540678,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Grand Place, Brussels, Belgium",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and layout are distinctive of the Grand Place, a famous square in Brussels. The ornate guildhalls and cobblestone square are characteristic features.",
+            "detailed_description": "The image shows the Grand Place in Brussels, Belgium, a UNESCO World Heritage site known for its ornate guildhalls. The buildings exhibit Baroque architecture with elaborate facades, gold detailing, and gabled roofs. The square is paved with cobblestones and surrounded by historic structures, including the Town Hall and the King's House.",
+            "identification": {
+              "primary": [
+                "Grand Place"
+              ],
+              "location": "Brussels, Belgium",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Guildhalls",
+                "type": "building",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "Baroque",
+              "17th_century",
+              "stone",
+              "Brussels",
+              "landmark"
+            ],
+            "location": "Brussels, Belgium",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Grand Place\"],\n        \"location\": \"Brussels, Belgium\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Guildhalls\",\n            \"type\": \"building\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"Baroque\", \"17th_century\", \"stone\", \"Brussels\", \"landmark\"],\n    \"description\": \"The image shows the Grand Place in Brussels, Belgium, a UNESCO World Heritage site known for its ornate guildhalls. The buildings exhibit Baroque architecture with elaborate facades, gold detailing, and gabled roofs. The square is paved with cobblestones and surrounded by historic structures, including the Town Hall and the King's House.\",\n    \"reasoning\": \"The architectural style and layout are distinctive of the Grand Place, a famous square in Brussels. The ornate guildhalls and cobblestone square are characteristic features.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "processing_time_seconds": 8.044498205184937
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a grand square surrounded by ornate buildings, showcasing an architectural style typical of the Baroque period. The central building features elaborate facades with intricate detailing, including gilded decorations and statues. The facade is characterized by a symmetrical arrangement of windows and decorative pilasters, with a prominent central gable adorned with golden embellishments. The roofs are steeply pitched and topped with decorative spires and domes, adding to the gran",
+            "description": "The image depicts a grand square surrounded by ornate buildings, showcasing an architectural style typical of the Baroque period. The central building features elaborate facades with intricate detailing, including gilded decorations and statues. The facade is characterized by a symmetrical arrangement of windows and decorative pilasters, with a prominent central gable adorned with golden embellishments. The roofs are steeply pitched and topped with decorative spires and domes, adding to the gran",
+            "architectural_style": "Baroque",
+            "search_backends_used": [],
+            "processing_time_seconds": 47.49306535720825
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Grand Place (50.8468, 4.3524)",
+          "confidence": 0.29451242089271545,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Grand Place",
+            "coordinates": {
+              "latitude": 50.8467887,
+              "longitude": 4.3524356
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 0
+              },
+              {
+                "x": 4032,
+                "y": 3024
+              },
+              {
+                "x": 0,
+                "y": 3024
+              }
+            ],
+            "context_labels": [
+              "Leisure",
+              "Travel",
+              "Vacation",
+              "Walking"
+            ],
+            "context_objects": [
+              "Person",
+              "Person",
+              "Person"
+            ],
+            "web_entities": [
+              {
+                "name": "Alex Honnold",
+                "score": 14.749499320983887
+              },
+              {
+                "name": "Skyscraper",
+                "score": 1.0565999746322632
+              },
+              {
+                "name": "Dwayne Johnson",
+                "score": 0.8257499933242798
+              },
+              {
+                "name": "Skyscraper",
+                "score": 0.7719184160232544
+              },
+              {
+                "name": "Free Solo",
+                "score": 0.6957000494003296
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Grand Place",
+                "score": 0.29451242089271545,
+                "location": {
+                  "lat": 50.8467887,
+                  "lng": 4.3524356
+                }
+              },
+              {
+                "name": "Le Roy D'espagne",
+                "score": 0.2729807496070862,
+                "location": {
+                  "lat": 50.8471895,
+                  "lng": 4.3520905
+                }
+              },
+              {
+                "name": "Grand Place",
+                "score": 0.2466842383146286,
+                "location": {
+                  "lat": 50.846700572230844,
+                  "lng": 4.352530119522346
+                }
+              },
+              {
+                "name": "Starbucks",
+                "score": 0.24353232979774475,
+                "location": {
+                  "lat": 50.8470385,
+                  "lng": 4.3518962
+                }
+              }
+            ],
+            "processing_time_seconds": 19.457423210144043
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/39.jpg"
+    }
+  ]
+}

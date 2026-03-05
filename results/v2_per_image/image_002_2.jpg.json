@@ -1,0 +1,243 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "2.jpg",
+      "timestamp": "2026-01-28T04:34:05.889646",
+      "processing_time_seconds": 83.509518,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Milan Cathedral, Milan, Italy",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive Gothic architectural style, combined with the recognizable facade and spires, strongly indicates that this is the Milan Cathedral. The location in Milan, Italy, further supports this identification.",
+            "detailed_description": "The image shows the Milan Cathedral, a prominent example of Gothic architecture located in Milan, Italy. The cathedral is characterized by its intricate facade, numerous spires, and detailed stone carvings. The structure features pointed arches, ribbed vaults, and flying buttresses typical of Gothic design. The warm lighting highlights the detailed stonework and the vertical emphasis of the architecture.",
+            "identification": {
+              "primary": [
+                "Milan Cathedral"
+              ],
+              "location": "Milan, Italy",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Milan Cathedral",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Gothic",
+              "19th_century",
+              "stone",
+              "Italy",
+              "cathedral"
+            ],
+            "location": "Milan, Italy",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Milan Cathedral\"],\n        \"location\": \"Milan, Italy\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Milan Cathedral\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Gothic\", \"19th_century\", \"stone\", \"Italy\", \"cathedral\"],\n    \"description\": \"The image shows the Milan Cathedral, a prominent example of Gothic architecture located in Milan, Italy. The cathedral is characterized by its intricate facade, numerous spires, and detailed stone carvings. The structure features pointed arches, ribbed vaults, and flying buttresses typical of Gothic design. The warm lighting highlights the detailed stonework and the vertical emphasis of the architecture.\",\n    \"reasoning\": \"The distinctive Gothic architectural style, combined with the recognizable facade and spires, strongly indicates that this is the Milan Cathedral. The location in Milan, Italy, further supports this identification.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 27.033046007156372
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Cathedral Basilica of the Assumption, Covington, Kentucky, USA",
+          "confidence": 0.6499999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the architectural features of the Cathedral Basilica of the Assumption, which is noted for its French Gothic style and detailed stonework. The search results strongly suggest this identification, given the nickname 'America's Notre Dame' and the ongoing restoration efforts, which align with the grandeur described.",
+            "identification": {
+              "primary": [
+                "Cathedral Basilica of the Assumption"
+              ],
+              "location": "Covington, Kentucky, USA",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Cathedral Basilica of the Assumption",
+                "type": "landmark",
+                "confidence": 0.85
+              },
+              {
+                "name": "Stained glass windows",
+                "type": "artwork",
+                "confidence": 0.8
+              },
+              {
+                "name": "Stone carvings and statues",
+                "type": "artwork",
+                "confidence": 0.75
+              }
+            ],
+            "tags": [
+              "Gothic",
+              "architecture",
+              "cathedral",
+              "stone",
+              "Covington"
+            ],
+            "sources_used": [
+              "apnews.com",
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "*Snippet:* The Cathedral Basilica of the Assumption in Covington, Kentucky—nicknamed \"America's Notre Dame\"—is undergoing a $7.8 million, two-year restoration to preserve its French Gothic-inspired ar",
+              "*URL:* ([apnews.com]())",
+              "*Snippet:* The Primatial Metropolitan Cathedral of Saint Mary of the Assumption is a Roman Catholic cathedral in Toledo, Spain. It is the seat of the Metropolitan Archdiocese of Toledo and is consider",
+              "*URL:* ([en.wikipedia.org]())",
+              "*Snippet:* Magdeburg Cathedral, officially called the Cathedral of Saints Maurice and Catherine, is a Lutheran cathedral in Germany and the oldest Gothic cathedral in the country. It is the principal "
+            ],
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Primatial Metropolitan Cathedral of Saint Mary of the Assumption",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "This cathedral in Toledo, Spain, is a prominent Gothic structure, but the description aligns more closely with the Covington cathedral."
+              },
+              {
+                "guess": "Magdeburg Cathedral",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "As the oldest Gothic cathedral in Germany, it fits the style but lacks the specific architectural details described."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.85,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a grand Gothic cathedral, characterized by its intricate architectural details and soaring spires. The facade is adorned with elaborate stone carvings, including pointed arches and tracery, typical of the Gothic style. The cathedral features numerous pinnacles and flying buttresses, adding to its vertical emphasis and grandeur. The facade is constructed from light-colored stone, which catches the warm glow of the setting sun, highlighting the delicate carvings and ornate detail",
+            "description": "The image depicts a grand Gothic cathedral, characterized by its intricate architectural details and soaring spires. The facade is adorned with elaborate stone carvings, including pointed arches and tracery, typical of the Gothic style. The cathedral features numerous pinnacles and flying buttresses, adding to its vertical emphasis and grandeur. The facade is constructed from light-colored stone, which catches the warm glow of the setting sun, highlighting the delicate carvings and ornate detail",
+            "architectural_style": "Gothic",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 56.473403215408325
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Spire",
+          "confidence": 0.9385775923728943,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Spire",
+                "score": 0.9385775923728943
+              },
+              {
+                "source": "label",
+                "name": "Place of worship",
+                "score": 0.9080190062522888
+              },
+              {
+                "source": "label",
+                "name": "Church",
+                "score": 0.9020929932594299
+              },
+              {
+                "source": "label",
+                "name": "Medieval architecture",
+                "score": 0.8819015622138977
+              },
+              {
+                "source": "web",
+                "name": "Gothic architecture",
+                "score": 0.6620903611183167
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Gothic architecture",
+                "score": 0.6620903611183167
+              },
+              {
+                "name": "Spire",
+                "score": 0.5938000082969666
+              },
+              {
+                "name": "",
+                "score": 0.5938000082969666
+              },
+              {
+                "name": "Medieval architecture",
+                "score": 0.5837762951850891
+              },
+              {
+                "name": "Architecture",
+                "score": 0.5270000100135803
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Spire",
+                "score": 0.9385775923728943
+              },
+              {
+                "name": "Landmark",
+                "score": 0.9299407601356506
+              },
+              {
+                "name": "Place of worship",
+                "score": 0.9080190062522888
+              },
+              {
+                "name": "Church",
+                "score": 0.9020929932594299
+              },
+              {
+                "name": "Medieval architecture",
+                "score": 0.8819015622138977
+              }
+            ],
+            "processing_time_seconds": 31.533189296722412
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/2.jpg"
+    }
+  ]
+}

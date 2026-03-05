@@ -1,0 +1,563 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "143.jpg",
+      "timestamp": "2026-01-28T02:23:02.502417",
+      "processing_time_seconds": 59.713536,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 30.108258333333335,
+        "gps_longitude": 30.887077777777776,
+        "location": {
+          "formatted_address": "Sphinx International Airport, ابوغالب ،, إمبابة, Kerdasa, Giza Governorate, Egypt",
+          "city": null,
+          "county": "Kerdasa",
+          "country": "Egypt"
+        },
+        "datetime_original": "2025:02:15 15:23:26",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Sphinx International Airport, Kerdasa, Egypt",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The identification is based on the visible signage that clearly states 'Sphinx International Airport,' along with the architectural style and location metadata.",
+            "detailed_description": "The image shows the entrance of Sphinx International Airport, located in Kerdasa, Egypt. The building features a modern architectural style with a facade that includes large columns and a prominent sign displaying the airport's name in both English and Arabic. The design incorporates contemporary elements with a clean, structured appearance. The surrounding area includes a paved road and landscaped greenery.",
+            "identification": {
+              "primary": [
+                "Sphinx International Airport"
+              ],
+              "location": "Kerdasa, Egypt",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Sphinx International Airport",
+                "type": "building",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "airport",
+              "Egypt"
+            ],
+            "location": "Kerdasa, Egypt",
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Sphinx International Airport\"],\n        \"location\": \"Kerdasa, Egypt\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Sphinx International Airport\",\n            \"type\": \"building\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"airport\", \"Egypt\"],\n    \"description\": \"The image shows the entrance of Sphinx International Airport, located in Kerdasa, Egypt. The building features a modern architectural style with a facade that includes large columns and a prominent sign displaying the airport's name in both English and Arabic. The design incorporates contemporary elements with a clean, structured appearance. The surrounding area includes a paved road and landscaped greenery.\",\n    \"reasoning\": \"The identification is based on the visible signage that clearly states 'Sphinx International Airport,' along with the architectural style and location metadata.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "gps_coordinates": {
+              "latitude": 30.108258333333335,
+              "longitude": 30.887077777777776
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Sphinx International Airport, ابوغالب ،, إمبابة, Kerdasa, Giza Governorate, Egypt",
+              "city": null,
+              "county": "Kerdasa",
+              "country": "Egypt"
+            },
+            "photo_timestamp": "2025:02:15 15:23:26",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 16.947599172592163
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Sphinx International Airport, Kerdasa, Egypt",
+          "confidence": 0.75,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the architectural style and features of Sphinx International Airport, confirmed by search results and location metadata. The name 'Sphinx International Airport' is prominently displayed, supporting the identification.",
+            "identification": {
+              "primary": [
+                "Sphinx International Airport"
+              ],
+              "location": "Kerdasa, Egypt",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Sphinx International Airport entrance",
+                "type": "building",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "contemporary",
+              "modern",
+              "airport",
+              "Egypt",
+              "urban"
+            ],
+            "sources_used": [
+              "builderonline.com",
+              "ecgsa.com",
+              "english.ahram.org.eg"
+            ],
+            "all_candidates": [
+              "*URL*: ([builderonline.com]())",
+              "*URL*: ([ecgsa.com]())",
+              "*URL*: ([english.ahram.org.eg]())"
+            ],
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 3,
+              "unique_titles": 3,
+              "avg_score": 0.9,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts the entrance of a modern airport building, prominently featuring the name 'Sphinx International Airport' in bold, white lettering across the facade. The architectural style is contemporary, characterized by clean lines and a minimalist design. The entrance is marked by a series of tall, cylindrical columns with a smooth finish, reminiscent of classical architectural elements, but integrated into a modern context. The columns support a flat, overhanging roof structure that provi",
+            "description": "The image depicts the entrance of a modern airport building, prominently featuring the name 'Sphinx International Airport' in bold, white lettering across the facade. The architectural style is contemporary, characterized by clean lines and a minimalist design. The entrance is marked by a series of tall, cylindrical columns with a smooth finish, reminiscent of classical architectural elements, but integrated into a modern context. The columns support a flat, overhanging roof structure that provi",
+            "architectural_style": "Contemporary",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 30.108258333333335,
+              "longitude": 30.887077777777776
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Sphinx International Airport, ابوغالب ،, إمبابة, Kerdasa, Giza Governorate, Egypt",
+              "city": null,
+              "county": "Kerdasa",
+              "country": "Egypt"
+            },
+            "photo_timestamp": "2025:02:15 15:23:26",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 41.68667912483215
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Automotive Parking Light",
+          "confidence": 0.9042203426361084,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Automotive Parking Light",
+                "score": 0.9042203426361084
+              },
+              {
+                "source": "label",
+                "name": "Automotive lighting",
+                "score": 0.8961713910102844
+              },
+              {
+                "source": "object",
+                "name": "Car",
+                "score": 0.8805723786354065
+              },
+              {
+                "source": "label",
+                "name": "Automotive Side-View Mirror",
+                "score": 0.8203802108764648
+              },
+              {
+                "source": "label",
+                "name": "Luxury vehicle",
+                "score": 0.7971979379653931
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "ArchitectureM RIBA Chartered Practice",
+                "score": 0.3052000105381012
+              },
+              {
+                "name": "Architecture",
+                "score": 0.25200390815734863
+              }
+            ],
+            "objects": [
+              {
+                "name": "Car",
+                "score": 0.8805723786354065
+              }
+            ],
+            "labels": [
+              {
+                "name": "Automotive Parking Light",
+                "score": 0.9042203426361084
+              },
+              {
+                "name": "Automotive lighting",
+                "score": 0.8961713910102844
+              },
+              {
+                "name": "Automotive Side-View Mirror",
+                "score": 0.8203802108764648
+              },
+              {
+                "name": "Luxury vehicle",
+                "score": 0.7971979379653931
+              },
+              {
+                "name": "Engineering",
+                "score": 0.7678192853927612
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 30.108258333333335,
+              "longitude": 30.887077777777776
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Sphinx International Airport, ابوغالب ،, إمبابة, Kerdasa, Giza Governorate, Egypt",
+              "city": null,
+              "county": "Kerdasa",
+              "country": "Egypt"
+            },
+            "photo_timestamp": "2025:02:15 15:23:26",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 19.479217052459717
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Kerdasa, Egypt",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Kerdasa, Egypt",
+            "coordinates": {
+              "latitude": 30.108258333333335,
+              "longitude": 30.887077777777776
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "restaurants": [
+                {
+                  "name": "The Food Hall",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 2.7,
+                  "user_ratings_total": 43,
+                  "vicinity": "4V5Q+6HJ, Al Giza Desert",
+                  "place_id": "ChIJ5ZmfZAD3WBQRy9vFqM983eg",
+                  "location": {
+                    "lat": 30.1080924,
+                    "lng": 30.8888977
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Airport mosque",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 36,
+                  "vicinity": "30°06'25. 30°53'13., 5 6, Ash Sharabayah",
+                  "place_id": "ChIJ22w5pxn2WBQRhVO5iAKlzm4",
+                  "location": {
+                    "lat": 30.10714200000001,
+                    "lng": 30.8870181
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Avis Budget Rent a Car | Sphinx Airport",
+                  "types": [
+                    "car_rental",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 12,
+                  "vicinity": "Cairo - Alexandria Desert Road, Kerdasa",
+                  "place_id": "ChIJh1KMeO9bWBQRiTWrQYY00BE",
+                  "location": {
+                    "lat": 30.1083326,
+                    "lng": 30.8870269
+                  }
+                },
+                {
+                  "name": "Car Parking Space",
+                  "types": [
+                    "parking",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 76,
+                  "vicinity": "4V5P+6GF, First 6th of October, Kerdasa",
+                  "place_id": "ChIJE_ADGD_3WBQRcx68QcTGBbc",
+                  "location": {
+                    "lat": 30.108056,
+                    "lng": 30.8863066
+                  }
+                },
+                {
+                  "name": "Sixt Rent a Car - Giza Sphinx Airport",
+                  "types": [
+                    "car_rental",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 130,
+                  "vicinity": "Sphinx Airport",
+                  "place_id": "ChIJmaiYpZ_3WBQRH3dqu2dttgA",
+                  "location": {
+                    "lat": 30.1076049,
+                    "lng": 30.8878135
+                  }
+                },
+                {
+                  "name": "Yelo | يلو",
+                  "types": [
+                    "car_rental",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "El Sheikh Zayed City",
+                  "place_id": "ChIJvUPAV_H3WBQRUHHAP_xF0iI",
+                  "location": {
+                    "lat": 30.108185,
+                    "lng": 30.888243
+                  }
+                },
+                {
+                  "name": "الفيروز ليموزين",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 8,
+                  "vicinity": "4V4P+QM, First 6th of October",
+                  "place_id": "ChIJN8vKawD3WBQRvbmHFZ5CyNY",
+                  "location": {
+                    "lat": 30.1071678,
+                    "lng": 30.8871709
+                  }
+                }
+              ]
+            },
+            "total_places_found": 7,
+            "photo_timestamp": "2025:02:15 15:23:26",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.7707493305206299
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/143.jpg"
+    },
+    {
+      "image_filename": "143.jpg",
+      "timestamp": "2026-01-28T02:24:02.257340",
+      "processing_time_seconds": 61.942939,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Sphinx International Airport, Cairo, Egypt",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The identification is based on the visible signage that reads 'Sphinx International Airport,' along with architectural features typical of modern airport design.",
+            "detailed_description": "The image shows the entrance of Sphinx International Airport, located in Cairo, Egypt. The building features modern architectural elements with a prominent entrance supported by columns. The facade is a combination of glass and stone materials, creating a contemporary look. The name of the airport is clearly visible on the building.",
+            "identification": {
+              "primary": [
+                "Sphinx International Airport"
+              ],
+              "location": "Cairo, Egypt",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Sphinx International Airport",
+                "type": "building",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "modern_architecture",
+              "airport",
+              "Egypt"
+            ],
+            "location": "Cairo, Egypt",
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Sphinx International Airport\"],\n        \"location\": \"Cairo, Egypt\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Sphinx International Airport\",\n            \"type\": \"building\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"modern_architecture\", \"airport\", \"Egypt\"],\n    \"description\": \"The image shows the entrance of Sphinx International Airport, located in Cairo, Egypt. The building features modern architectural elements with a prominent entrance supported by columns. The facade is a combination of glass and stone materials, creating a contemporary look. The name of the airport is clearly visible on the building.\",\n    \"reasoning\": \"The identification is based on the visible signage that reads 'Sphinx International Airport,' along with architectural features typical of modern airport design.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 21.666799068450928
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([en.wikipedia.org]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts the entrance of a modern airport building. The structure features a series of tall, cylindrical columns with a classical design, reminiscent of ancient architectural styles. These columns are evenly spaced and support a flat, overhanging roof, which provides shade and shelter to the entrance area. The facade of the building is composed of light-colored stone or concrete, giving it a clean and contemporary appearance. Above the entrance, there is prominent signage displaying the",
+            "description": "The image depicts the entrance of a modern airport building. The structure features a series of tall, cylindrical columns with a classical design, reminiscent of ancient architectural styles. These columns are evenly spaced and support a flat, overhanging roof, which provides shade and shelter to the entrance area. The facade of the building is composed of light-colored stone or concrete, giving it a clean and contemporary appearance. Above the entrance, there is prominent signage displaying the",
+            "architectural_style": "Modern with classical elements",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 40.27446389198303
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Automotive Parking Light",
+          "confidence": 0.9042203426361084,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Automotive Parking Light",
+                "score": 0.9042203426361084
+              },
+              {
+                "source": "label",
+                "name": "Automotive lighting",
+                "score": 0.8961713910102844
+              },
+              {
+                "source": "object",
+                "name": "Car",
+                "score": 0.8805723786354065
+              },
+              {
+                "source": "label",
+                "name": "Automotive Side-View Mirror",
+                "score": 0.8203802108764648
+              },
+              {
+                "source": "label",
+                "name": "Luxury vehicle",
+                "score": 0.7971979379653931
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "ArchitectureM RIBA Chartered Practice",
+                "score": 0.3052000105381012
+              },
+              {
+                "name": "Architecture",
+                "score": 0.25200390815734863
+              }
+            ],
+            "objects": [
+              {
+                "name": "Car",
+                "score": 0.8805723786354065
+              }
+            ],
+            "labels": [
+              {
+                "name": "Automotive Parking Light",
+                "score": 0.9042203426361084
+              },
+              {
+                "name": "Automotive lighting",
+                "score": 0.8961713910102844
+              },
+              {
+                "name": "Automotive Side-View Mirror",
+                "score": 0.8203802108764648
+              },
+              {
+                "name": "Luxury vehicle",
+                "score": 0.7971979379653931
+              },
+              {
+                "name": "Engineering",
+                "score": 0.7678192853927612
+              }
+            ],
+            "processing_time_seconds": 18.87350583076477
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/143.jpg"
+    }
+  ]
+}

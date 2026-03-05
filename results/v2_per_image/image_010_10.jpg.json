@@ -1,0 +1,218 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "10.jpg",
+      "timestamp": "2026-01-28T00:42:19.642116",
+      "processing_time_seconds": 136.981294,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Brick building, Waterfall",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and materials suggest a historical building, possibly an old factory or institutional structure. The presence of the waterfall and greenery indicates a location where urban and natural environments intersect.",
+            "detailed_description": "The image shows a brick building with a steep gabled roof and multiple windows, characteristic of late 19th to early 20th-century architecture. Adjacent to the building is a waterfall surrounded by lush greenery, creating a contrast between the urban structure and natural elements. The building's facade features decorative brickwork and arched windows, typical of industrial or institutional buildings from that era.",
+            "identification": {
+              "primary": [
+                "Brick building",
+                "Waterfall"
+              ],
+              "location": null,
+              "confidence": 0.8
+            },
+            "artifacts": [
+              {
+                "name": "Brick building",
+                "type": "building",
+                "confidence": 0.8
+              },
+              {
+                "name": "Waterfall",
+                "type": "natural_feature",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "brick_architecture",
+              "natural_feature",
+              "waterfall",
+              "urban_nature"
+            ],
+            "location": null,
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Old factory building near a river",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "The architectural style and proximity to water suggest an industrial heritage site."
+              },
+              {
+                "guess": "Institutional building with landscaped surroundings",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The building's design and setting could indicate a school or similar institution."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Brick building\", \"Waterfall\"],\n        \"location\": null,\n        \"confidence\": 0.8\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Brick building\",\n            \"type\": \"building\",\n            \"confidence\": 0.8\n        },\n        {\n            \"name\": \"Waterfall\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"brick_architecture\", \"natural_feature\", \"waterfall\", \"urban_nature\"],\n    \"description\": \"The image shows a brick building with a steep gabled roof and multiple windows, characteristic of late 19th to early 20th-century architecture. Adjacent to the building is a waterfall surrounded by lush greenery, creating a contrast between the urban structure and natural elements. The building's facade features decorative brickwork and arched windows, typical of industrial or institutional buildings from that era.\",\n    \"reasoning\": \"The architectural style and materials suggest a historical building, possibly an old factory or institutional structure. The presence of the waterfall and greenery indicates a location where urban and natural environments intersect.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Old factory building near a river\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The architectural style and proximity to water suggest an industrial heritage site.\"\n        },\n        {\n            \"guess\": \"Institutional building with landscaped surroundings\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The building's design and setting could indicate a school or similar institution.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 38.31354212760925
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Falls of Clyde, New Lanark Mill, New Lanark, Scotland",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the Falls of Clyde, known for its cascading water and proximity to the New Lanark Mill, which features late 19th-century industrial architecture. The search results strongly suggest this location based on the combination of natural and architectural elements described.",
+            "identification": {
+              "primary": [
+                "Falls of Clyde",
+                "New Lanark Mill"
+              ],
+              "location": "New Lanark, Scotland",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Falls of Clyde",
+                "type": "natural_feature",
+                "confidence": 0.95
+              },
+              {
+                "name": "New Lanark Mill",
+                "type": "building",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "industrial_architecture",
+              "waterfall",
+              "19th_century",
+              "red_brick",
+              "Scotland",
+              "nature"
+            ],
+            "sources_used": [
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Falls of Clyde, New Lanark Mill",
+                "specificity_level": "very_specific",
+                "confidence": 0.9,
+                "reasoning": "The combination of a waterfall and industrial architecture strongly suggests this location in Scotland."
+              },
+              {
+                "guess": "Industrial site with waterfall",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "If not New Lanark, it could be another industrial site with similar features."
+              },
+              {
+                "guess": "Historic mill near natural feature",
+                "specificity_level": "very_general",
+                "confidence": 0.6,
+                "reasoning": "Describes the general type of location without specifying New Lanark."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.9,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image features a striking combination of natural and architectural elements. The main subject is a waterfall cascading over rugged rocks, surrounded by lush greenery. The waterfall is characterized by its white, frothy water, which contrasts with the dark, wet stones and the vibrant green foliage. Adjacent to the waterfall is a large, historic building with a distinct architectural style. The building is constructed from red brick and features multiple windows with white frames. It has a ste",
+            "description": "The image features a striking combination of natural and architectural elements. The main subject is a waterfall cascading over rugged rocks, surrounded by lush greenery. The waterfall is characterized by its white, frothy water, which contrasts with the dark, wet stones and the vibrant green foliage. Adjacent to the waterfall is a large, historic building with a distinct architectural style. The building is constructed from red brick and features multiple windows with white frames. It has a ste",
+            "architectural_style": "Industrial architecture",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 98.66174101829529
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Apartment",
+          "confidence": 0.5291818976402283,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Apartment",
+            "artist_name": null,
+            "museum_or_location": null,
+            "art_style": null,
+            "art_era": null,
+            "confidence": 0.5291818976402283,
+            "web_entities": [
+              {
+                "name": "Apartment",
+                "score": 0.5291818976402283
+              },
+              {
+                "name": "Middle Ages",
+                "score": 0.49410000443458557
+              },
+              {
+                "name": "Medieval architecture",
+                "score": 0.45451655983924866
+              },
+              {
+                "name": "Architecture",
+                "score": 0.41040000319480896
+              },
+              {
+                "name": "High-rise building",
+                "score": 0.38380739092826843
+              }
+            ],
+            "processing_time_seconds": 9.626035928726196
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/10.jpg"
+    }
+  ]
+}

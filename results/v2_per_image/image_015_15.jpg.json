@@ -1,0 +1,176 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "15.jpg",
+      "timestamp": "2026-01-28T02:37:41.411223",
+      "processing_time_seconds": 59.963374,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Fraternal Kiss mural, Berlin, Germany",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The mural is a well-known piece of street art located on the East Side Gallery, a section of the Berlin Wall that features various murals. The distinctive style and historical context make it recognizable.",
+            "detailed_description": "This image shows the 'Fraternal Kiss' mural, a famous artwork on the East Side Gallery in Berlin, Germany. The mural depicts a stylized version of a photograph showing a fraternal kiss between two political leaders. It is part of the Berlin Wall, which has been transformed into a gallery of murals by various artists. The artwork is known for its bold colors and political symbolism, capturing a moment from the Cold War era.",
+            "identification": {
+              "primary": [
+                "Fraternal Kiss mural"
+              ],
+              "location": "Berlin, Germany",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Fraternal Kiss mural",
+                "type": "artwork",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "mural",
+              "Berlin_Wall",
+              "Cold_War",
+              "political_art",
+              "street_art"
+            ],
+            "location": "Berlin, Germany",
+            "type": "artwork",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Fraternal Kiss mural\"],\n        \"location\": \"Berlin, Germany\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Fraternal Kiss mural\",\n            \"type\": \"artwork\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"mural\", \"Berlin_Wall\", \"Cold_War\", \"political_art\", \"street_art\"],\n    \"description\": \"This image shows the 'Fraternal Kiss' mural, a famous artwork on the East Side Gallery in Berlin, Germany. The mural depicts a stylized version of a photograph showing a fraternal kiss between two political leaders. It is part of the Berlin Wall, which has been transformed into a gallery of murals by various artists. The artwork is known for its bold colors and political symbolism, capturing a moment from the Cold War era.\",\n    \"reasoning\": \"The mural is a well-known piece of street art located on the East Side Gallery, a section of the Berlin Wall that features various murals. The distinctive style and historical context make it recognizable.\",\n    \"type\": \"artwork\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 23.337496995925903
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "'My God, Help Me to Survive This Deadly Love' mural by Dmitry Vrubel, Berlin, Germany",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The search results strongly identify the mural as 'My God, Help Me to Survive This Deadly Love' by Dmitry Vrubel, a well-known artwork on the Berlin Wall. The description matches the mural's features, including the text in Russian and German and the artist's signature. Wikipedia confirms the mural's location and details, supporting a high confidence identification.",
+            "identification": {
+              "primary": [
+                "'My God, Help Me to Survive This Deadly Love' mural by Dmitry Vrubel"
+              ],
+              "location": "Berlin, Germany",
+              "confidence": 1.0
+            },
+            "artifacts": [
+              {
+                "name": "'My God, Help Me to Survive This Deadly Love' mural",
+                "type": "artwork",
+                "confidence": 1.0
+              }
+            ],
+            "tags": [
+              "realistic_style",
+              "urban_art",
+              "mural",
+              "Berlin",
+              "Dmitry_Vrubel"
+            ],
+            "sources_used": [
+              "en.wikipedia.org",
+              "prnewswire.com"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([prnewswire.com]())",
+              "*URL*: ([oaklandmurals.com]())",
+              "*URL*: ([obeygiant.com]())",
+              "*URL*: ([elpaseogarden.org]())"
+            ],
+            "type": "artwork",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a large mural painted on a section of a wall, featuring a vivid and striking representation of two individuals engaged in a close embrace. The mural is characterized by its bold use of color and realistic style, capturing the detailed features of the figures. The background is a solid light blue, contrasting with the darker tones used for the clothing and hair of the figures. The artwork includes text in two languages at the bottom, with the Russian text in red and the German t",
+            "description": "The image depicts a large mural painted on a section of a wall, featuring a vivid and striking representation of two individuals engaged in a close embrace. The mural is characterized by its bold use of color and realistic style, capturing the detailed features of the figures. The background is a solid light blue, contrasting with the darker tones used for the clothing and hair of the figures. The artwork includes text in two languages at the bottom, with the Russian text in red and the German t",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 36.624037981033325
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "East Side Gallery",
+          "confidence": 1.0198485851287842,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "East Side Gallery",
+            "artist_name": null,
+            "museum_or_location": null,
+            "art_style": null,
+            "art_era": null,
+            "confidence": 1.0198485851287842,
+            "web_entities": [
+              {
+                "name": "Berlin Wall",
+                "score": 1.3140599727630615
+              },
+              {
+                "name": "Leonid Brezhnev",
+                "score": 1.092750072479248
+              },
+              {
+                "name": "East Side Gallery",
+                "score": 1.0198485851287842
+              },
+              {
+                "name": "East Germany",
+                "score": 0.9369000196456909
+              },
+              {
+                "name": "Cold War",
+                "score": 0.8887499570846558
+              }
+            ],
+            "processing_time_seconds": 4.664077043533325
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/15.jpg"
+    }
+  ]
+}

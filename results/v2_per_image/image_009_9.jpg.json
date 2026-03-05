@@ -1,0 +1,141 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "9.jpg",
+      "timestamp": "2026-01-28T07:19:37.266834",
+      "processing_time_seconds": 45.606252,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Unconditional Surrender Statue, San Diego, USA",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The statue's distinctive pose and style are well-known, and its location near the USS Midway Museum in San Diego is a popular landmark.",
+            "detailed_description": "The image shows the 'Unconditional Surrender' statue, a large sculpture depicting a sailor kissing a nurse, inspired by a famous photograph taken at the end of World War II. The statue is located near the USS Midway Museum in San Diego, USA. The sculpture is characterized by its realistic style and large scale, capturing a moment of celebration and relief. The USS Midway, an aircraft carrier museum, is visible in the background, adding context related to naval history.",
+            "identification": {
+              "primary": [
+                "Unconditional Surrender Statue"
+              ],
+              "location": "San Diego, USA",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Unconditional Surrender Statue",
+                "type": "statue",
+                "confidence": 0.95
+              },
+              {
+                "name": "USS Midway Museum",
+                "type": "museum",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "sculpture",
+              "20th_century",
+              "public_art",
+              "San_Diego",
+              "naval_history"
+            ],
+            "location": "San Diego, USA",
+            "type": "statue",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Unconditional Surrender Statue\"],\n        \"location\": \"San Diego, USA\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Unconditional Surrender Statue\",\n            \"type\": \"statue\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"USS Midway Museum\",\n            \"type\": \"museum\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"sculpture\", \"20th_century\", \"public_art\", \"San_Diego\", \"naval_history\"],\n    \"description\": \"The image shows the 'Unconditional Surrender' statue, a large sculpture depicting a sailor kissing a nurse, inspired by a famous photograph taken at the end of World War II. The statue is located near the USS Midway Museum in San Diego, USA. The sculpture is characterized by its realistic style and large scale, capturing a moment of celebration and relief. The USS Midway, an aircraft carrier museum, is visible in the background, adding context related to naval history.\",\n    \"reasoning\": \"The statue's distinctive pose and style are well-known, and its location near the USS Midway Museum in San Diego is a popular landmark.\",\n    \"type\": \"statue\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 9.305851936340332
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image features a large sculpture depicting a sailor passionately kissing a nurse. The sculpture is highly detailed, capturing the folds of the sailor's dark uniform and the nurse's white dress, which is lifted slightly as she leans backward. The sailor's hat is visible, and the nurse is wearing white high-heeled shoes. The sculpture is mounted on a circular pedestal, which is set on a paved area with engraved text visible on the ground. In the background, there is a large naval ship docked i",
+            "description": "The image features a large sculpture depicting a sailor passionately kissing a nurse. The sculpture is highly detailed, capturing the folds of the sailor's dark uniform and the nurse's white dress, which is lifted slightly as she leans backward. The sailor's hat is visible, and the nurse is wearing white high-heeled shoes. The sculpture is mounted on a circular pedestal, which is set on a paved area with engraved text visible on the ground. In the background, there is a large naval ship docked i",
+            "architectural_style": "Realist",
+            "search_backends_used": [],
+            "processing_time_seconds": 36.29100799560547
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Statue",
+          "confidence": 0.8907828330993652,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "art_detection",
+            "artwork_name": "Statue",
+            "artist_name": null,
+            "museum_or_location": null,
+            "art_style": null,
+            "art_era": null,
+            "confidence": 0.8907828330993652,
+            "web_entities": [
+              {
+                "name": "John Seward Johnson II",
+                "score": 9.680999755859375
+              },
+              {
+                "name": "Unconditional Surrender",
+                "score": 1.0918500423431396
+              },
+              {
+                "name": "Statue",
+                "score": 0.8907828330993652
+              },
+              {
+                "name": "V-J Day in Times Square",
+                "score": 0.721500039100647
+              },
+              {
+                "name": "Sculpture",
+                "score": 0.6370999813079834
+              }
+            ],
+            "processing_time_seconds": 8.453064918518066
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/9.jpg"
+    }
+  ]
+}

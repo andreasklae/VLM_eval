@@ -1,0 +1,859 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "128.heic",
+      "timestamp": "2026-01-28T01:47:14.586806",
+      "processing_time_seconds": 62.771049,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 20.229333333333333,
+        "gps_longitude": 105.93425,
+        "location": {
+          "formatted_address": "6WHP+W3C, Ninh Nhất, Hoa Lư District, Ninh Bình, Vietnam",
+          "city": null,
+          "county": "Hoa Lư District",
+          "country": "Vietnam"
+        },
+        "datetime_original": "2024:12:16 11:03:16",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Hang Múa Peak, Hoa Lư District, Vietnam",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive limestone formations and the presence of a pagoda at the peak are characteristic of Hang Múa Peak, a well-known tourist destination in Hoa Lư District, Vietnam.",
+            "detailed_description": "The image shows Hang Múa Peak, a popular viewpoint located in Hoa Lư District, Vietnam. The peak is characterized by steep limestone formations and a staircase leading to the top, where a small pagoda is visible. The surrounding landscape includes lush greenery and distant karst mountains, typical of the region's natural beauty.",
+            "identification": {
+              "primary": [
+                "Hang Múa Peak"
+              ],
+              "location": "Hoa Lư District, Vietnam",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Hang Múa Peak",
+                "type": "natural_feature",
+                "confidence": 0.95
+              },
+              {
+                "name": "Pagoda",
+                "type": "monument",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "limestone",
+              "pagoda",
+              "Vietnam",
+              "viewpoint"
+            ],
+            "location": "Hoa Lư District, Vietnam",
+            "type": "natural_feature",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Hang Múa Peak\"],\n        \"location\": \"Hoa Lư District, Vietnam\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Hang Múa Peak\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Pagoda\",\n            \"type\": \"monument\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"limestone\", \"pagoda\", \"Vietnam\", \"viewpoint\"],\n    \"description\": \"The image shows Hang Múa Peak, a popular viewpoint located in Hoa Lư District, Vietnam. The peak is characterized by steep limestone formations and a staircase leading to the top, where a small pagoda is visible. The surrounding landscape includes lush greenery and distant karst mountains, typical of the region's natural beauty.\",\n    \"reasoning\": \"The distinctive limestone formations and the presence of a pagoda at the peak are characteristic of Hang Múa Peak, a well-known tourist destination in Hoa Lư District, Vietnam.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 20.229333333333333,
+              "longitude": 105.93425
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "6WHP+W3C, Ninh Nhất, Hoa Lư District, Ninh Bình, Vietnam",
+              "city": null,
+              "county": "Hoa Lư District",
+              "country": "Vietnam"
+            },
+            "photo_timestamp": "2024:12:16 11:03:16",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 24.275288820266724
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Hang Mua Peak, Pagoda-like structure, Hoa Lư District, Vietnam",
+          "confidence": 0.75,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "Search results strongly suggest Hang Mua Peak as the location due to its distinctive limestone formations and the presence of a stone staircase leading to a pagoda-like structure. The description matches the known features of Hang Mua Peak, which is a popular tourist destination in Hoa Lư District. The GPS location supports this identification, and multiple sources confirm the visual characteristics described.",
+            "identification": {
+              "primary": [
+                "Hang Mua Peak",
+                "Pagoda-like structure"
+              ],
+              "location": "Hoa Lư District, Vietnam",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Hang Mua Peak",
+                "type": "natural_feature",
+                "confidence": 0.95
+              },
+              {
+                "name": "Pagoda-like structure",
+                "type": "monument",
+                "confidence": 0.9
+              },
+              {
+                "name": "Stone staircase",
+                "type": "other",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "traditional_vietnamese",
+              "limestone",
+              "pagoda",
+              "karst",
+              "natural_feature",
+              "Hoa Lư District"
+            ],
+            "sources_used": [
+              "vietnamtreasure.com",
+              "connectingtraveller.com",
+              "vietlandholiday.com"
+            ],
+            "all_candidates": [
+              "*URL*: ([vietnamtreasure.com]())",
+              "*URL*: ([connectingtraveller.com]())",
+              "*URL*: ([vietlandholiday.com]())",
+              "*URL*: ([ph.trip.com]())",
+              "*URL*: ([wtp.travel]())"
+            ],
+            "type": "natural_feature",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a dramatic limestone mountain landscape in Hoa Lư District, Vietnam. The central focus is a steep, rocky hill with a winding stone staircase leading to the summit. The staircase is constructed from light-colored stone, contrasting with the dark, rugged limestone formations. At the top of the hill, there is a pagoda-like structure, characterized by multiple tiers and a pointed roof, typical of traditional Vietnamese architecture. The pagoda is made from stone and appears to be a",
+            "description": "The image depicts a dramatic limestone mountain landscape in Hoa Lư District, Vietnam. The central focus is a steep, rocky hill with a winding stone staircase leading to the summit. The staircase is constructed from light-colored stone, contrasting with the dark, rugged limestone formations. At the top of the hill, there is a pagoda-like structure, characterized by multiple tiers and a pointed roof, typical of traditional Vietnamese architecture. The pagoda is made from stone and appears to be a",
+            "architectural_style": "Traditional Vietnamese",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 20.229333333333333,
+              "longitude": 105.93425
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "6WHP+W3C, Ninh Nhất, Hoa Lư District, Ninh Bình, Vietnam",
+              "city": null,
+              "county": "Hoa Lư District",
+              "country": "Vietnam"
+            },
+            "photo_timestamp": "2024:12:16 11:03:16",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 37.67749524116516
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Mountainous landforms",
+          "confidence": 0.9762845039367676,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Mountainous landforms",
+                "score": 0.9762845039367676
+              },
+              {
+                "source": "label",
+                "name": "Mountain",
+                "score": 0.9703375101089478
+              },
+              {
+                "source": "label",
+                "name": "Rock",
+                "score": 0.9409013986587524
+              },
+              {
+                "source": "label",
+                "name": "Highland",
+                "score": 0.9397106766700745
+              },
+              {
+                "source": "web",
+                "name": "Crop",
+                "score": 0.895799994468689
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Crop",
+                "score": 0.895799994468689
+              },
+              {
+                "name": "create",
+                "score": 0.3452000021934509
+              },
+              {
+                "name": "Agriculture",
+                "score": 0.3197000026702881
+              },
+              {
+                "name": "just",
+                "score": 0.30480000376701355
+              },
+              {
+                "name": "Urban agriculture",
+                "score": 0.29989999532699585
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.9903060793876648
+              },
+              {
+                "name": "Mountainous landforms",
+                "score": 0.9762845039367676
+              },
+              {
+                "name": "Mountain",
+                "score": 0.9703375101089478
+              },
+              {
+                "name": "Rock",
+                "score": 0.9409013986587524
+              },
+              {
+                "name": "Highland",
+                "score": 0.9397106766700745
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 20.229333333333333,
+              "longitude": 105.93425
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "6WHP+W3C, Ninh Nhất, Hoa Lư District, Ninh Bình, Vietnam",
+              "city": null,
+              "county": "Hoa Lư District",
+              "country": "Vietnam"
+            },
+            "photo_timestamp": "2024:12:16 11:03:16",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 18.103119134902954
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Hoa Lư District, Vietnam",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Hoa Lư District, Vietnam",
+            "coordinates": {
+              "latitude": 20.229333333333333,
+              "longitude": 105.93425
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Birds view",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "6WVX+4H, Hoa Lư District",
+                  "place_id": "ChIJW2g6RQB7NjERBYPgRXC5leY",
+                  "location": {
+                    "lat": 20.2318849,
+                    "lng": 105.9342098
+                  }
+                },
+                {
+                  "name": "Hang Cả",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "6WHJ+526, Ninh Hải, Hoa Lư",
+                  "place_id": "ChIJHSfCFAB7NjERmcF4QHrpSCQ",
+                  "location": {
+                    "lat": 20.228101,
+                    "lng": 105.9311397
+                  }
+                },
+                {
+                  "name": "零人到達過的田",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "6WVX+4H, Ninh Nhất, Hoa Lư District",
+                  "place_id": "ChIJP-bScAB7NjERbRT_S2rFIao",
+                  "location": {
+                    "lat": 20.2327975,
+                    "lng": 105.9333331
+                  }
+                },
+                {
+                  "name": "Hang Múa",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 2612,
+                  "vicinity": "6WJQ+C43, Ninh Nhất, Hoa Lư District",
+                  "place_id": "ChIJB89j-xp7NjERo9aySQ7Ikh0",
+                  "location": {
+                    "lat": 20.2310125,
+                    "lng": 105.9377969
+                  }
+                },
+                {
+                  "name": "Làng Hương Cố Đô",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 15,
+                  "vicinity": "Làng Hương Cố Đô, Thôn, Khê Hạ, Hoa Lư",
+                  "place_id": "ChIJf3NV6Yd7NjER7J6jifIGoG8",
+                  "location": {
+                    "lat": 20.2315739,
+                    "lng": 105.9393553
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "The Coop By Chookie's",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1191,
+                  "vicinity": "Khê Hạ, Hoa Lư",
+                  "place_id": "ChIJgRqHblV3NjERpx4RXIDdQSA",
+                  "location": {
+                    "lat": 20.2321988,
+                    "lng": 105.9407227
+                  }
+                },
+                {
+                  "name": "Lạc Hồng Terrace",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 194,
+                  "vicinity": "Hang Múa, Khê Hạ, Hoa Lư",
+                  "place_id": "ChIJJ4YYnYZ7NjERNIDZvKfTd48",
+                  "location": {
+                    "lat": 20.2304071,
+                    "lng": 105.9366401
+                  }
+                },
+                {
+                  "name": "Bai Gui Xe Hang Mua",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 1.8,
+                  "user_ratings_total": 10,
+                  "vicinity": "6WJQ+HMJ, Khê Hạ, Hoa Lư",
+                  "place_id": "ChIJ2b5WyTl7NjERCDvFOtx97Ts",
+                  "location": {
+                    "lat": 20.2310176,
+                    "lng": 105.9384373
+                  }
+                },
+                {
+                  "name": "Lotus Garden Restaurant",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 164,
+                  "vicinity": "Ninh Hải, Hoa Lư",
+                  "place_id": "ChIJA1wqUkB7NjERLJz5DwniilI",
+                  "location": {
+                    "lat": 20.2258949,
+                    "lng": 105.9312133
+                  }
+                },
+                {
+                  "name": "Monalisa Bar & Restaurant",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 538,
+                  "vicinity": "Hang Múa, Ninh Nhật, Hoa Lư",
+                  "place_id": "ChIJycdFinp7NjERv0wGqxrktWc",
+                  "location": {
+                    "lat": 20.2313171,
+                    "lng": 105.938957
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Khu du lịch Hang Múa",
+                  "types": [
+                    "park",
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 2140,
+                  "vicinity": "Khê Hạ, Hoa Lư",
+                  "place_id": "ChIJZdqCQkZ6NjERoHfeAj-b6bs",
+                  "location": {
+                    "lat": 20.23096,
+                    "lng": 105.9376337
+                  }
+                },
+                {
+                  "name": "Wietnam",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "6WJP+27, Ninh Nhất, Hoa Lư District",
+                  "place_id": "ChIJo_PePQB7NjERDGpZ8gDtDgQ",
+                  "location": {
+                    "lat": 20.230336,
+                    "lng": 105.935809
+                  }
+                },
+                {
+                  "name": "Hang Mua Eco Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 29,
+                  "vicinity": "6WJJ+JWX, Khê Hạ, Hoa Lư",
+                  "place_id": "ChIJUVbsdQB7NjERckAB2RfYul0",
+                  "location": {
+                    "lat": 20.2316216,
+                    "lng": 105.9323598
+                  }
+                },
+                {
+                  "name": "Kleiner Rastplatz",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "6WFJ+VXQ, Bến Thánh, Ninh Hải, Hoa Lư",
+                  "place_id": "ChIJqaAS2NV7NjERo41rVfOaMFU",
+                  "location": {
+                    "lat": 20.2249232,
+                    "lng": 105.9324396
+                  }
+                },
+                {
+                  "name": "Bến Thánh",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 201,
+                  "vicinity": "6WFJ+VXQ, Ninh Hải, Hoa Lư",
+                  "place_id": "ChIJZYxEz096NjERAAa8w0mKWSg",
+                  "location": {
+                    "lat": 20.2247165,
+                    "lng": 105.9324798
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Hoa Lư",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Hoa Lư",
+                  "place_id": "ChIJwcgQb6twNjERzOXbToh5iog",
+                  "location": {
+                    "lat": 20.2506149,
+                    "lng": 105.9744536
+                  }
+                },
+                {
+                  "name": "Happiness Homestay",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 24,
+                  "vicinity": "6WJQ+HMM, Khe Ha village, Ninh Xuan commune, Hoa Lu district, Ninh Binh province, Viet Nam, Hoa Lư",
+                  "place_id": "ChIJkbIu3kZ6NjERPTOtnXHnOSc",
+                  "location": {
+                    "lat": 20.2314639,
+                    "lng": 105.9391862
+                  }
+                },
+                {
+                  "name": "Khu du lịch Hang Múa",
+                  "types": [
+                    "park",
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 2140,
+                  "vicinity": "Khê Hạ, Hoa Lư",
+                  "place_id": "ChIJZdqCQkZ6NjERoHfeAj-b6bs",
+                  "location": {
+                    "lat": 20.23096,
+                    "lng": 105.9376337
+                  }
+                },
+                {
+                  "name": "Nguyen Shack Homestay",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 178,
+                  "vicinity": "Hang Mua Road, Khe Ha Village, Ninh Xuan Commune, Hoa Lu District",
+                  "place_id": "ChIJyeFNkkZ6NjERY5madmuusZw",
+                  "location": {
+                    "lat": 20.229275,
+                    "lng": 105.939001
+                  }
+                },
+                {
+                  "name": "The Coop By Chookie's",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1191,
+                  "vicinity": "Khê Hạ, Hoa Lư",
+                  "place_id": "ChIJgRqHblV3NjERpx4RXIDdQSA",
+                  "location": {
+                    "lat": 20.2321988,
+                    "lng": 105.9407227
+                  }
+                }
+              ]
+            },
+            "total_places_found": 20,
+            "photo_timestamp": "2024:12:16 11:03:16",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.4302811622619629
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/128.heic"
+    },
+    {
+      "image_filename": "128.heic",
+      "timestamp": "2026-01-28T01:48:17.393763",
+      "processing_time_seconds": 64.173447,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Mua Cave Viewpoint, Ninh Binh, Vietnam",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive limestone formations and the presence of the pagoda are characteristic of the Mua Cave Viewpoint in Ninh Binh, Vietnam. The landscape and architectural style match known images of this location.",
+            "detailed_description": "The image shows a rocky limestone mountain with a staircase leading to the top, where a small pagoda is situated. This is the Mua Cave Viewpoint in Ninh Binh, Vietnam, known for its panoramic views of the surrounding karst landscape and rice fields. The mountain is characterized by steep, rugged rock formations and lush greenery. The pagoda at the summit adds a cultural element to the natural scenery.",
+            "identification": {
+              "primary": [
+                "Mua Cave Viewpoint"
+              ],
+              "location": "Ninh Binh, Vietnam",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Pagoda on mountain",
+                "type": "landmark",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "viewpoint",
+              "Vietnam",
+              "limestone",
+              "pagoda"
+            ],
+            "location": "Ninh Binh, Vietnam",
+            "type": "viewpoint",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Mua Cave Viewpoint\"],\n        \"location\": \"Ninh Binh, Vietnam\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Pagoda on mountain\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"viewpoint\", \"Vietnam\", \"limestone\", \"pagoda\"],\n    \"description\": \"The image shows a rocky limestone mountain with a staircase leading to the top, where a small pagoda is situated. This is the Mua Cave Viewpoint in Ninh Binh, Vietnam, known for its panoramic views of the surrounding karst landscape and rice fields. The mountain is characterized by steep, rugged rock formations and lush greenery. The pagoda at the summit adds a cultural element to the natural scenery.\",\n    \"reasoning\": \"The distinctive limestone formations and the presence of the pagoda are characteristic of the Mua Cave Viewpoint in Ninh Binh, Vietnam. The landscape and architectural style match known images of this location.\",\n    \"type\": \"viewpoint\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "processing_time_seconds": 28.022114992141724
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Hang Mua Peak, Ninh Binh, Vietnam",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches Hang Mua Peak, known for its limestone formations and stone staircase leading to a pagoda-like structure. The search results strongly support this identification, with high confidence scores indicating a match with the described features.",
+            "identification": {
+              "primary": [
+                "Hang Mua Peak"
+              ],
+              "location": "Ninh Binh, Vietnam",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Hang Mua Peak",
+                "type": "natural_feature",
+                "confidence": 0.95
+              },
+              {
+                "name": "Stone staircase",
+                "type": "landmark",
+                "confidence": 0.9
+              },
+              {
+                "name": "Pagoda-like structure",
+                "type": "building",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "traditional East Asian architecture",
+              "limestone formations",
+              "natural landscape",
+              "Vietnam",
+              "cultural element"
+            ],
+            "sources_used": [
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a striking natural landscape dominated by a rugged limestone mountain, characterized by steep, jagged rock formations. A prominent feature is a stone staircase that winds its way up the mountain, providing access to the summit. The stairs are constructed from the same gray stone as the mountain, blending seamlessly into the rocky terrain. At the peak, there is a small pagoda-like structure, which adds a cultural element to the scene. This structure is tiered, with multiple laye",
+            "description": "The image depicts a striking natural landscape dominated by a rugged limestone mountain, characterized by steep, jagged rock formations. A prominent feature is a stone staircase that winds its way up the mountain, providing access to the summit. The stairs are constructed from the same gray stone as the mountain, blending seamlessly into the rocky terrain. At the peak, there is a small pagoda-like structure, which adds a cultural element to the scene. This structure is tiered, with multiple laye",
+            "architectural_style": "Traditional East Asian",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 35.95913887023926
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Mountainous landforms",
+          "confidence": 0.9762845039367676,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Mountainous landforms",
+                "score": 0.9762845039367676
+              },
+              {
+                "source": "label",
+                "name": "Mountain",
+                "score": 0.9703375101089478
+              },
+              {
+                "source": "label",
+                "name": "Rock",
+                "score": 0.9409013986587524
+              },
+              {
+                "source": "label",
+                "name": "Highland",
+                "score": 0.9397106766700745
+              },
+              {
+                "source": "web",
+                "name": "Crop",
+                "score": 0.9104999899864197
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Crop",
+                "score": 0.9104999899864197
+              },
+              {
+                "name": "create",
+                "score": 0.36820000410079956
+              },
+              {
+                "name": "Agriculture",
+                "score": 0.323199987411499
+              },
+              {
+                "name": "just",
+                "score": 0.304500013589859
+              },
+              {
+                "name": "Bumper crop",
+                "score": 0.296999990940094
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Sky",
+                "score": 0.9903060793876648
+              },
+              {
+                "name": "Mountainous landforms",
+                "score": 0.9762845039367676
+              },
+              {
+                "name": "Mountain",
+                "score": 0.9703375101089478
+              },
+              {
+                "name": "Rock",
+                "score": 0.9409013986587524
+              },
+              {
+                "name": "Highland",
+                "score": 0.9397106766700745
+              }
+            ],
+            "processing_time_seconds": 18.39930009841919
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/128.heic"
+    }
+  ]
+}

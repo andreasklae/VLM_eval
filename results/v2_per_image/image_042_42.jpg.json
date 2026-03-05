@@ -1,0 +1,1146 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "42.jpg",
+      "timestamp": "2026-01-28T05:42:13.199486",
+      "processing_time_seconds": 56.669932,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 52.35725,
+        "gps_longitude": 4.919683333333333,
+        "location": {
+          "formatted_address": "Derde Oosterparkstraat 150I, 1092 ED Amsterdam, Netherlands",
+          "city": "Amsterdam",
+          "county": "Amsterdam",
+          "country": "Netherlands"
+        },
+        "datetime_original": "2022:07:29 17:57:02",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Residential street in Amsterdam, Amsterdam, Netherlands",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and materials are indicative of traditional Amsterdam residential buildings, commonly found in the city. The location metadata supports this identification.",
+            "detailed_description": "The image shows a typical residential street in Amsterdam, characterized by traditional Dutch architecture. The buildings are made of brick and feature decorative elements such as arched windows and ornate facades. The street is lined with parked cars and bicycles, and there is a classic street lamp visible. The architecture suggests a 19th-century style common in Amsterdam, with narrow, tall buildings and large windows.",
+            "identification": {
+              "primary": [
+                "Residential street in Amsterdam"
+              ],
+              "location": "Amsterdam, Netherlands",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Traditional Amsterdam buildings",
+                "type": "building",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "architectural_style",
+              "19th_century",
+              "brick",
+              "Amsterdam",
+              "urban"
+            ],
+            "location": "Amsterdam, Netherlands",
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Residential street in Amsterdam\"],\n        \"location\": \"Amsterdam, Netherlands\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Traditional Amsterdam buildings\",\n            \"type\": \"building\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"architectural_style\", \"19th_century\", \"brick\", \"Amsterdam\", \"urban\"],\n    \"description\": \"The image shows a typical residential street in Amsterdam, characterized by traditional Dutch architecture. The buildings are made of brick and feature decorative elements such as arched windows and ornate facades. The street is lined with parked cars and bicycles, and there is a classic street lamp visible. The architecture suggests a 19th-century style common in Amsterdam, with narrow, tall buildings and large windows.\",\n    \"reasoning\": \"The architectural style and materials are indicative of traditional Amsterdam residential buildings, commonly found in the city. The location metadata supports this identification.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 52.35725,
+              "longitude": 4.919683333333333
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Derde Oosterparkstraat 150I, 1092 ED Amsterdam, Netherlands",
+              "city": "Amsterdam",
+              "county": "Amsterdam",
+              "country": "Netherlands"
+            },
+            "photo_timestamp": "2022:07:29 17:57:02",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 10.259658098220825
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a typical Amsterdam street scene characterized by rows of traditional Dutch buildings. These buildings exhibit classic architectural features such as red brick facades, white stone detailing, and large rectangular windows. The facades are adorned with decorative elements including ornate cornices and wrought iron railings. The buildings are multi-story, reflecting the urban residential style common in Amsterdam. The street is lined with parked cars and bicycles, indicating the ",
+            "description": "The image depicts a typical Amsterdam street scene characterized by rows of traditional Dutch buildings. These buildings exhibit classic architectural features such as red brick facades, white stone detailing, and large rectangular windows. The facades are adorned with decorative elements including ornate cornices and wrought iron railings. The buildings are multi-story, reflecting the urban residential style common in Amsterdam. The street is lined with parked cars and bicycles, indicating the ",
+            "architectural_style": "Dutch residential architecture",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 52.35725,
+              "longitude": 4.919683333333333
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Derde Oosterparkstraat 150I, 1092 ED Amsterdam, Netherlands",
+              "city": "Amsterdam",
+              "county": "Amsterdam",
+              "country": "Netherlands"
+            },
+            "photo_timestamp": "2022:07:29 17:57:02",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 45.70841312408447
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Car",
+          "confidence": 0.9381488561630249,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "object",
+            "all_candidates": [
+              {
+                "source": "object",
+                "name": "Car",
+                "score": 0.9381488561630249
+              },
+              {
+                "source": "object",
+                "name": "Car",
+                "score": 0.9238519072532654
+              },
+              {
+                "source": "label",
+                "name": "Automotive Parking Light",
+                "score": 0.9003583788871765
+              },
+              {
+                "source": "label",
+                "name": "Composite material",
+                "score": 0.8757754564285278
+              },
+              {
+                "source": "object",
+                "name": "Car",
+                "score": 0.8733876347541809
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "House",
+                "score": 0.04012500122189522
+              }
+            ],
+            "objects": [
+              {
+                "name": "Car",
+                "score": 0.9381488561630249
+              },
+              {
+                "name": "Car",
+                "score": 0.9238519072532654
+              },
+              {
+                "name": "Car",
+                "score": 0.8733876347541809
+              },
+              {
+                "name": "Car",
+                "score": 0.8052133917808533
+              },
+              {
+                "name": "Car",
+                "score": 0.7291232943534851
+              }
+            ],
+            "labels": [
+              {
+                "name": "Daytime",
+                "score": 0.9811121821403503
+              },
+              {
+                "name": "Automotive Parking Light",
+                "score": 0.9003583788871765
+              },
+              {
+                "name": "Composite material",
+                "score": 0.8757754564285278
+              },
+              {
+                "name": "Urban design",
+                "score": 0.8733103275299072
+              },
+              {
+                "name": "Family car",
+                "score": 0.8411775827407837
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 52.35725,
+              "longitude": 4.919683333333333
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Derde Oosterparkstraat 150I, 1092 ED Amsterdam, Netherlands",
+              "city": "Amsterdam",
+              "county": "Amsterdam",
+              "country": "Netherlands"
+            },
+            "photo_timestamp": "2022:07:29 17:57:02",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 18.67039704322815
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Amsterdam, Netherlands",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Amsterdam, Netherlands",
+            "coordinates": {
+              "latitude": 52.35725,
+              "longitude": 4.919683333333333
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Wereldmuseum Amsterdam",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 5761,
+                  "vicinity": "Linnaeusstraat 2, Amsterdam",
+                  "place_id": "ChIJO_40qnUJxkcRN_Opi2ibQN0",
+                  "location": {
+                    "lat": 52.36278489999999,
+                    "lng": 4.922711
+                  }
+                },
+                {
+                  "name": "ARTIS",
+                  "types": [
+                    "zoo",
+                    "tourist_attraction",
+                    "aquarium",
+                    "museum",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 35535,
+                  "vicinity": "Plantage Kerklaan 38-40, Amsterdam",
+                  "place_id": "ChIJYQCs26EJxkcRPUqKm3hTaA4",
+                  "location": {
+                    "lat": 52.3660003,
+                    "lng": 4.9165321
+                  }
+                },
+                {
+                  "name": "National Slavery Monument",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 141,
+                  "vicinity": "Oosterpark 9, Amsterdam",
+                  "place_id": "ChIJw8rNvJ0JxkcRyiZjcbys2bs",
+                  "location": {
+                    "lat": 52.3586624,
+                    "lng": 4.9178383
+                  }
+                },
+                {
+                  "name": "Trouwen voor 1 Dag",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 50,
+                  "vicinity": "Tweede Oosterparkstraat 180, Amsterdam",
+                  "place_id": "ChIJ31AJrIAJxkcRlX0DhSKj4f8",
+                  "location": {
+                    "lat": 52.3579051,
+                    "lng": 4.9201944
+                  }
+                },
+                {
+                  "name": "De Schreeuw",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 86,
+                  "vicinity": "Oosterpark 64HS, Amsterdam",
+                  "place_id": "ChIJw-jpb3YJxkcRw_-_0QafQoI",
+                  "location": {
+                    "lat": 52.35948689999999,
+                    "lng": 4.922219999999999
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Wereldmuseum Amsterdam",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 5761,
+                  "vicinity": "Linnaeusstraat 2, Amsterdam",
+                  "place_id": "ChIJO_40qnUJxkcRN_Opi2ibQN0",
+                  "location": {
+                    "lat": 52.36278489999999,
+                    "lng": 4.922711
+                  }
+                },
+                {
+                  "name": "ARTIS",
+                  "types": [
+                    "zoo",
+                    "aquarium",
+                    "tourist_attraction",
+                    "park",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 35535,
+                  "vicinity": "Plantage Kerklaan 38-40, Amsterdam",
+                  "place_id": "ChIJYQCs26EJxkcRPUqKm3hTaA4",
+                  "location": {
+                    "lat": 52.3660003,
+                    "lng": 4.9165321
+                  }
+                },
+                {
+                  "name": "Beltsazar",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "President Brandstraat 51, Amsterdam",
+                  "place_id": "ChIJu1KHuYIJxkcR7PxBwocLCJM",
+                  "location": {
+                    "lat": 52.35427089999999,
+                    "lng": 4.9176434
+                  }
+                },
+                {
+                  "name": "Gerbrandy Art History",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Linnaeuskade 24b, Amsterdam",
+                  "place_id": "ChIJb3G-PHAJxkcRYOyEETioaq4",
+                  "location": {
+                    "lat": 52.3560897,
+                    "lng": 4.9315843
+                  }
+                },
+                {
+                  "name": "Marian Duff",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Eerste Van Swindenstraat 391-3hg, Amsterdam",
+                  "place_id": "ChIJ0xBbcXMJxkcRVc9XDHHQGV8",
+                  "location": {
+                    "lat": 52.36310929999999,
+                    "lng": 4.929083899999999
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Hotel Arena",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 3087,
+                  "vicinity": "'s-Gravesandestraat 55, Amsterdam",
+                  "place_id": "ChIJ7_I7j54JxkcRJmoGAFRdW2M",
+                  "location": {
+                    "lat": 52.360958,
+                    "lng": 4.916336200000001
+                  }
+                },
+                {
+                  "name": "The Manor Amsterdam",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1886,
+                  "vicinity": "Linnaeusstraat 89, Amsterdam",
+                  "place_id": "ChIJ_bBss3YJxkcRFejJ1Asz9dM",
+                  "location": {
+                    "lat": 52.3591453,
+                    "lng": 4.926360699999999
+                  }
+                },
+                {
+                  "name": "Hotel Casa Amsterdam",
+                  "types": [
+                    "parking",
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 5136,
+                  "vicinity": "Eerste Ringdijkstraat 4, Amsterdam",
+                  "place_id": "ChIJu8I6s3gJxkcRK2EhPaiZBVs",
+                  "location": {
+                    "lat": 52.3499527,
+                    "lng": 4.918603899999999
+                  }
+                },
+                {
+                  "name": "Volkshotel",
+                  "types": [
+                    "gym",
+                    "cafe",
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "health",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 4796,
+                  "vicinity": "Wibautstraat 150, Amsterdam",
+                  "place_id": "ChIJFVeMnoQJxkcRXJh3rOeqmzM",
+                  "location": {
+                    "lat": 52.35384089999999,
+                    "lng": 4.911496
+                  }
+                },
+                {
+                  "name": "Rijsel",
+                  "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 638,
+                  "vicinity": "Marcusstraat 52, Amsterdam",
+                  "place_id": "ChIJBYd4kYMJxkcRSbBh-PQYSY0",
+                  "location": {
+                    "lat": 52.3515689,
+                    "lng": 4.9129392
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "ARTIS",
+                  "types": [
+                    "zoo",
+                    "aquarium",
+                    "tourist_attraction",
+                    "park",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 35535,
+                  "vicinity": "Plantage Kerklaan 38-40, Amsterdam",
+                  "place_id": "ChIJYQCs26EJxkcRPUqKm3hTaA4",
+                  "location": {
+                    "lat": 52.3660003,
+                    "lng": 4.9165321
+                  }
+                },
+                {
+                  "name": "Oosterpark",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 6750,
+                  "vicinity": "Oosterpark, Amsterdam",
+                  "place_id": "ChIJV7MaFnYJxkcRRsotO9L0WOI",
+                  "location": {
+                    "lat": 52.36008229999999,
+                    "lng": 4.920490700000001
+                  }
+                },
+                {
+                  "name": "Wibautpark",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 35,
+                  "vicinity": "Wibautstraat, Amsterdam",
+                  "place_id": "ChIJQT2nDIMJxkcRnFCIZI2S-_4",
+                  "location": {
+                    "lat": 52.3529034,
+                    "lng": 4.913747999999999
+                  }
+                },
+                {
+                  "name": "Dappertuin",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Pieter Nieuwlandstraat 74-84, Amsterdam",
+                  "place_id": "ChIJCZZRpXMJxkcRksluTII5dLI",
+                  "location": {
+                    "lat": 52.3619412,
+                    "lng": 4.929357700000002
+                  }
+                },
+                {
+                  "name": "Krugerplein",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 5,
+                  "vicinity": "Krugerplein, Amsterdam",
+                  "place_id": "ChIJ2bDAChAJxkcRLyjt2OiCWYg",
+                  "location": {
+                    "lat": 52.3542137,
+                    "lng": 4.919963999999999
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Oosterparkkerk⛪",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 24,
+                  "vicinity": "Oosterpark 4, Amsterdam",
+                  "place_id": "ChIJUd3VKJwJxkcRKSLZBumFezM",
+                  "location": {
+                    "lat": 52.3600515,
+                    "lng": 4.915747200000001
+                  }
+                },
+                {
+                  "name": "Stichting Holy",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Wibautstraat 150, Amsterdam",
+                  "place_id": "ChIJkTb9noQJxkcRS4lYbu9J0zE",
+                  "location": {
+                    "lat": 52.3537225,
+                    "lng": 4.9119402
+                  }
+                },
+                {
+                  "name": "Koninkrijkszaal van Jehovah's Getuigen",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 15,
+                  "vicinity": "Simon Stevinstraat 1, Amsterdam",
+                  "place_id": "ChIJ3ZpIZXoJxkcRhSEn5Srzqe4",
+                  "location": {
+                    "lat": 52.3538738,
+                    "lng": 4.9280146
+                  }
+                },
+                {
+                  "name": "JESUS IS LORD CHURCH",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.5,
+                  "user_ratings_total": 4,
+                  "vicinity": "Atlantisplein 1, Amsterdam",
+                  "place_id": "ChIJWR8HkqMJxkcRQZQnTK4ORoE",
+                  "location": {
+                    "lat": 52.3576206,
+                    "lng": 4.930395700000001
+                  }
+                },
+                {
+                  "name": "Inspire Amsterdam",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 14,
+                  "vicinity": "James Wattstraat 73, Amsterdam",
+                  "place_id": "ChIJ_f1yi_EJxkcR14tFLDG6a5U",
+                  "location": {
+                    "lat": 52.3495806,
+                    "lng": 4.9222663
+                  }
+                },
+                {
+                  "name": "Mosque Al-Karama",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 84,
+                  "vicinity": "Pontanusstraat 278A, Amsterdam",
+                  "place_id": "ChIJRaO1zHMJxkcRF-ylRTFhxOE",
+                  "location": {
+                    "lat": 52.3607816,
+                    "lng": 4.9299978
+                  }
+                },
+                {
+                  "name": "Yeni, Stichting Islamitisch Centrum Amsterdam",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 19,
+                  "vicinity": "Tweede van Swindenstraat 208, Amsterdam",
+                  "place_id": "ChIJX3eBqXMJxkcR1qnUaLEJzm4",
+                  "location": {
+                    "lat": 52.36254049999999,
+                    "lng": 4.9298167
+                  }
+                },
+                {
+                  "name": "Moskee Al-Kabir",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 236,
+                  "vicinity": "Weesperzijde 76, Amsterdam",
+                  "place_id": "ChIJ5zHS8YQJxkcRkDmBGmyxK9g",
+                  "location": {
+                    "lat": 52.35341280000001,
+                    "lng": 4.909984100000001
+                  }
+                },
+                {
+                  "name": "Eyup Sultancamii",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 56,
+                  "vicinity": "Joubertstraat 15, Amsterdam",
+                  "place_id": "ChIJcwxu7YIJxkcRzMAZAsMawiI",
+                  "location": {
+                    "lat": 52.3534196,
+                    "lng": 4.917246800000001
+                  }
+                },
+                {
+                  "name": "Moskee Al Fath Al Mobien",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 8,
+                  "vicinity": "Joubertstraat 15B, Amsterdam",
+                  "place_id": "ChIJwb2ZBQAJxkcR5NfEfBSUgvE",
+                  "location": {
+                    "lat": 52.3533185,
+                    "lng": 4.917174999999999
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Planetart Amsterdam",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Wibautstraat 150, Amsterdam",
+                  "place_id": "ChIJkTb9noQJxkcR5kLrUq2Z3Pw",
+                  "location": {
+                    "lat": 52.35383809999999,
+                    "lng": 4.9119584
+                  }
+                },
+                {
+                  "name": "Arti Plus",
+                  "types": [
+                    "art_gallery",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 14,
+                  "vicinity": "Beukenplein 15 H, Amsterdam",
+                  "place_id": "ChIJp3Ohcp0JxkcR0-zKdcqrlDg",
+                  "location": {
+                    "lat": 52.35724200000001,
+                    "lng": 4.918439999999999
+                  }
+                },
+                {
+                  "name": "Gallery Fermate",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Vrolikstraat 286-H, Amsterdam",
+                  "place_id": "ChIJ3WyEz3YJxkcROVWQYIpiWZI",
+                  "location": {
+                    "lat": 52.3581946,
+                    "lng": 4.9254919
+                  }
+                },
+                {
+                  "name": "SUSAN SCHOEMAKER brons | schilderijen",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Populierenweg 17A, Amsterdam",
+                  "place_id": "ChIJdynYaWDixUcRngHcp9b4Bmw",
+                  "location": {
+                    "lat": 52.3553046,
+                    "lng": 4.916567699999999
+                  }
+                },
+                {
+                  "name": "Bradwolff Projects",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 19,
+                  "vicinity": "Oetewalerstraat 73, Amsterdam",
+                  "place_id": "ChIJMwMhZbIVxkcR2A_0BquR3u0",
+                  "location": {
+                    "lat": 52.35934710000001,
+                    "lng": 4.927440799999999
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Amsterdam",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Amsterdam",
+                  "place_id": "ChIJVXealLU_xkcRja_At0z9AGY",
+                  "location": {
+                    "lat": 52.3675734,
+                    "lng": 4.9041389
+                  }
+                },
+                {
+                  "name": "Hotel Arena",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 3087,
+                  "vicinity": "'s-Gravesandestraat 55, Amsterdam",
+                  "place_id": "ChIJ7_I7j54JxkcRJmoGAFRdW2M",
+                  "location": {
+                    "lat": 52.360958,
+                    "lng": 4.916336200000001
+                  }
+                },
+                {
+                  "name": "The Manor Amsterdam",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1886,
+                  "vicinity": "Linnaeusstraat 89, Amsterdam",
+                  "place_id": "ChIJ_bBss3YJxkcRFejJ1Asz9dM",
+                  "location": {
+                    "lat": 52.3591453,
+                    "lng": 4.926360699999999
+                  }
+                },
+                {
+                  "name": "Hotel Casa Amsterdam",
+                  "types": [
+                    "parking",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 5136,
+                  "vicinity": "Eerste Ringdijkstraat 4, Amsterdam",
+                  "place_id": "ChIJu8I6s3gJxkcRK2EhPaiZBVs",
+                  "location": {
+                    "lat": 52.3499527,
+                    "lng": 4.918603899999999
+                  }
+                },
+                {
+                  "name": "Amsterdam Tropen Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 803,
+                  "vicinity": "Linnaeusstraat 2C, Amsterdam",
+                  "place_id": "ChIJae_oUnQJxkcRJvJFD3V8kzk",
+                  "location": {
+                    "lat": 52.3617399,
+                    "lng": 4.9225656
+                  }
+                }
+              ]
+            },
+            "total_places_found": 40,
+            "photo_timestamp": "2022:07:29 17:57:02",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.45069003105163574
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/42.jpg"
+    },
+    {
+      "image_filename": "42.jpg",
+      "timestamp": "2026-01-28T05:43:09.899566",
+      "processing_time_seconds": 59.783479,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Residential street with traditional architecture, Amsterdam, Netherlands",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and materials, such as brick and gabled roofs, are indicative of traditional Dutch residential buildings commonly found in Amsterdam. The presence of bicycles and the street layout further suggest a location in the Netherlands.",
+            "detailed_description": "The image shows a residential street lined with traditional Dutch buildings, characterized by their brick facades and decorative elements. The architecture suggests a late 19th-century style, typical of Amsterdam. The buildings feature large windows, ornate cornices, and gabled roofs. The street is lined with parked cars and bicycles, and there is a classic street lamp visible, adding to the urban setting.",
+            "identification": {
+              "primary": [
+                "Residential street with traditional architecture"
+              ],
+              "location": "Amsterdam, Netherlands",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Traditional Dutch residential buildings",
+                "type": "building",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "Dutch_architecture",
+              "19th_century",
+              "brick",
+              "urban",
+              "residential"
+            ],
+            "location": "Amsterdam, Netherlands",
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Residential street in another Dutch city",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "The architectural style is typical of Dutch cities, so it could be another city with similar architecture."
+              },
+              {
+                "guess": "Residential area in a European city with similar architecture",
+                "specificity_level": "general",
+                "confidence": 0.5,
+                "reasoning": "The style is common in several European cities, not just Amsterdam."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Residential street with traditional architecture\"],\n        \"location\": \"Amsterdam, Netherlands\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Traditional Dutch residential buildings\",\n            \"type\": \"building\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"Dutch_architecture\", \"19th_century\", \"brick\", \"urban\", \"residential\"],\n    \"description\": \"The image shows a residential street lined with traditional Dutch buildings, characterized by their brick facades and decorative elements. The architecture suggests a late 19th-century style, typical of Amsterdam. The buildings feature large windows, ornate cornices, and gabled roofs. The street is lined with parked cars and bicycles, and there is a classic street lamp visible, adding to the urban setting.\",\n    \"reasoning\": \"The architectural style and materials, such as brick and gabled roofs, are indicative of traditional Dutch residential buildings commonly found in Amsterdam. The presence of bicycles and the street layout further suggest a location in the Netherlands.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Residential street in another Dutch city\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The architectural style is typical of Dutch cities, so it could be another city with similar architecture.\"\n        },\n        {\n            \"guess\": \"Residential area in a European city with similar architecture\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.5,\n            \"reasoning\": \"The style is common in several European cities, not just Amsterdam.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 13.076297998428345
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a residential street lined with traditional European-style buildings. The architecture features red brick facades with white stone accents, typical of late 19th to early 20th-century urban design. The buildings are multi-story, with large rectangular windows framed by decorative stone lintels and sills. Some windows have wrought iron railings, adding to the ornamental detail. The roofs are steeply pitched with dormer windows, and some sections have red clay tiles visible. The s",
+            "description": "The image depicts a residential street lined with traditional European-style buildings. The architecture features red brick facades with white stone accents, typical of late 19th to early 20th-century urban design. The buildings are multi-story, with large rectangular windows framed by decorative stone lintels and sills. Some windows have wrought iron railings, adding to the ornamental detail. The roofs are steeply pitched with dormer windows, and some sections have red clay tiles visible. The s",
+            "architectural_style": "Late 19th to early 20th-century European urban architecture",
+            "search_backends_used": [],
+            "processing_time_seconds": 46.70520997047424
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Car",
+          "confidence": 0.9381488561630249,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "object",
+            "all_candidates": [
+              {
+                "source": "object",
+                "name": "Car",
+                "score": 0.9381488561630249
+              },
+              {
+                "source": "object",
+                "name": "Car",
+                "score": 0.9238519072532654
+              },
+              {
+                "source": "label",
+                "name": "Automotive Parking Light",
+                "score": 0.9003583788871765
+              },
+              {
+                "source": "label",
+                "name": "Composite material",
+                "score": 0.8757754564285278
+              },
+              {
+                "source": "object",
+                "name": "Car",
+                "score": 0.8733876347541809
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "House",
+                "score": 0.04012500122189522
+              }
+            ],
+            "objects": [
+              {
+                "name": "Car",
+                "score": 0.9381488561630249
+              },
+              {
+                "name": "Car",
+                "score": 0.9238519072532654
+              },
+              {
+                "name": "Car",
+                "score": 0.8733876347541809
+              },
+              {
+                "name": "Car",
+                "score": 0.8052133917808533
+              },
+              {
+                "name": "Car",
+                "score": 0.7291232943534851
+              }
+            ],
+            "labels": [
+              {
+                "name": "Daytime",
+                "score": 0.9811121821403503
+              },
+              {
+                "name": "Automotive Parking Light",
+                "score": 0.9003583788871765
+              },
+              {
+                "name": "Composite material",
+                "score": 0.8757754564285278
+              },
+              {
+                "name": "Urban design",
+                "score": 0.8733103275299072
+              },
+              {
+                "name": "Family car",
+                "score": 0.8411775827407837
+              }
+            ],
+            "processing_time_seconds": 19.267887830734253
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/42.jpg"
+    }
+  ]
+}

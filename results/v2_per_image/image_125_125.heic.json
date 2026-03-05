@@ -1,0 +1,908 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "125.heic",
+      "timestamp": "2026-01-28T01:40:52.843141",
+      "processing_time_seconds": 60.939627,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 22.295925,
+        "gps_longitude": 103.8985888888889,
+        "location": {
+          "formatted_address": "7VWX+9C Sa Pa, Lao Cai, Vietnam",
+          "city": null,
+          "county": "Sa Pa",
+          "country": "Vietnam"
+        },
+        "datetime_original": "2024:12:11 10:04:25",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Terraced Rice Fields, Sa Pa, Vietnam",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The stepped pattern and location metadata strongly indicate terraced rice fields, a distinctive feature of Sa Pa, Vietnam.",
+            "detailed_description": "The image depicts terraced rice fields in Sa Pa, Vietnam. These terraces are carved into the hillsides and are a common agricultural practice in mountainous regions to maximize arable land. The fields are characterized by their stepped appearance, which helps in managing water flow and preventing soil erosion. The landscape is lush and green, with patches of bamboo and other vegetation visible. The sky is overcast, adding a dramatic backdrop to the scene.",
+            "identification": {
+              "primary": [
+                "Terraced Rice Fields"
+              ],
+              "location": "Sa Pa, Vietnam",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Terraced Rice Fields",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "agriculture",
+              "terraced_fields",
+              "Vietnam",
+              "landscape",
+              "natural_feature"
+            ],
+            "location": "Sa Pa, Vietnam",
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Terraced Rice Fields\"],\n        \"location\": \"Sa Pa, Vietnam\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Terraced Rice Fields\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"agriculture\", \"terraced_fields\", \"Vietnam\", \"landscape\", \"natural_feature\"],\n    \"description\": \"The image depicts terraced rice fields in Sa Pa, Vietnam. These terraces are carved into the hillsides and are a common agricultural practice in mountainous regions to maximize arable land. The fields are characterized by their stepped appearance, which helps in managing water flow and preventing soil erosion. The landscape is lush and green, with patches of bamboo and other vegetation visible. The sky is overcast, adding a dramatic backdrop to the scene.\",\n    \"reasoning\": \"The stepped pattern and location metadata strongly indicate terraced rice fields, a distinctive feature of Sa Pa, Vietnam.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": []\n}",
+            "gps_coordinates": {
+              "latitude": 22.295925,
+              "longitude": 103.8985888888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "7VWX+9C Sa Pa, Lao Cai, Vietnam",
+              "city": null,
+              "county": "Sa Pa",
+              "country": "Vietnam"
+            },
+            "photo_timestamp": "2024:12:11 10:04:25",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 13.407463312149048
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Muong Hoa Valley, Sa Pa, Vietnam",
+          "confidence": 0.75,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description of terraced rice fields in Sa Pa, Vietnam, matches the search result for Muong Hoa Valley, which is known for its extensive and scenic terraced fields. The location metadata supports this identification, as Muong Hoa Valley is a prominent feature near Sa Pa. Other search results mention similar features but with lower confidence scores.",
+            "identification": {
+              "primary": [
+                "Muong Hoa Valley"
+              ],
+              "location": "Sa Pa, Vietnam",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Terraced rice fields",
+                "type": "natural_feature",
+                "confidence": 1.0
+              },
+              {
+                "name": "Bamboo clusters",
+                "type": "natural_feature",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "terraced_fields",
+              "natural_landscape",
+              "Sa Pa",
+              "Vietnam",
+              "rural"
+            ],
+            "sources_used": [
+              "sapa-tour.vn",
+              "izitour.com"
+            ],
+            "all_candidates": [
+              "*Description*: As Sa Pa's largest and most scenic valley, Muong Hoa Valley is home to 749.58 hectares of terraced fields winding endlessly along the mountainside, forming a natural masterpiece at the ",
+              "*URL*: ([sapa-tour.vn]())",
+              "*Description*: Approximately 7 kilometers southwest of Sa Pa town, Y Linh Ho is renowned for its wild and poetic beauty, with terraced rice fields cascading down the slopes, interspersed with streams ",
+              "*URL*: ([izitour.com]())",
+              "*Description*: Located about 8 kilometers from Sa Pa town, Lao Chai is a H’Mông village boasting rolling terraces. The 8-kilometer trek here offers unforgettable views of the rice fields. ([travelviet"
+            ],
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Y Linh Ho",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.8,
+                "reasoning": "Y Linh Ho is known for its terraced rice fields and is located near Sa Pa, making it a plausible alternative."
+              },
+              {
+                "guess": "Lao Chai",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.6,
+                "reasoning": "Lao Chai features rolling terraces and is a known location for rice fields near Sa Pa, though less likely than Muong Hoa Valley."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a series of terraced rice fields situated on a hillside in Sa Pa, Vietnam. These terraces are meticulously carved into the landscape, creating a stepped appearance that follows the natural contours of the hill. The terraces are primarily covered with grass, indicating a period outside the main growing season, as they lack the vibrant green typical of planted rice. The fields are bordered by small ridges that help in retaining water during the growing season. Scattered throughou",
+            "description": "The image depicts a series of terraced rice fields situated on a hillside in Sa Pa, Vietnam. These terraces are meticulously carved into the landscape, creating a stepped appearance that follows the natural contours of the hill. The terraces are primarily covered with grass, indicating a period outside the main growing season, as they lack the vibrant green typical of planted rice. The fields are bordered by small ridges that help in retaining water during the growing season. Scattered throughou",
+            "architectural_style": null,
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 22.295925,
+              "longitude": 103.8985888888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "7VWX+9C Sa Pa, Lao Cai, Vietnam",
+              "city": null,
+              "county": "Sa Pa",
+              "country": "Vietnam"
+            },
+            "photo_timestamp": "2024:12:11 10:04:25",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 46.38104486465454
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Highland",
+          "confidence": 0.927859365940094,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Highland",
+                "score": 0.927859365940094
+              },
+              {
+                "source": "label",
+                "name": "Terrace",
+                "score": 0.9018151760101318
+              },
+              {
+                "source": "label",
+                "name": "Plantation",
+                "score": 0.8652271628379822
+              },
+              {
+                "source": "label",
+                "name": "Field",
+                "score": 0.8510133624076843
+              },
+              {
+                "source": "label",
+                "name": "Hill station",
+                "score": 0.840060830116272
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "5SG",
+                "score": 0.3147999942302704
+              },
+              {
+                "name": "Tree",
+                "score": 0.3030177354812622
+              },
+              {
+                "name": "M-tree",
+                "score": 0.25440001487731934
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Highland",
+                "score": 0.927859365940094
+              },
+              {
+                "name": "Terrace",
+                "score": 0.9018151760101318
+              },
+              {
+                "name": "Plantation",
+                "score": 0.8652271628379822
+              },
+              {
+                "name": "Field",
+                "score": 0.8510133624076843
+              },
+              {
+                "name": "Hill station",
+                "score": 0.840060830116272
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 22.295925,
+              "longitude": 103.8985888888889
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "7VWX+9C Sa Pa, Lao Cai, Vietnam",
+              "city": null,
+              "county": "Sa Pa",
+              "country": "Vietnam"
+            },
+            "photo_timestamp": "2024:12:11 10:04:25",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 15.854050874710083
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Sa Pa, Vietnam",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Sa Pa, Vietnam",
+            "coordinates": {
+              "latitude": 22.295925,
+              "longitude": 103.8985888888889
+            },
+            "search_range_meters": 2000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Farm house of the Tavan valley",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 4,
+                  "vicinity": "8V2X+57, Sa Pa",
+                  "place_id": "ChIJVaITIaxHzTYRS-LN1dMiWBU",
+                  "location": {
+                    "lat": 22.29994749999999,
+                    "lng": 103.8992522
+                  }
+                },
+                {
+                  "name": "Sissi's Batik & Trekking",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "7WX3+5G7, Giàng Tả Chải - Tả Van, Tả Van, Sa Pa",
+                  "place_id": "ChIJa5pqdQBHzTYRSvNBRbvqOuo",
+                  "location": {
+                    "lat": 22.2979248,
+                    "lng": 103.903792
+                  }
+                },
+                {
+                  "name": "Bamboo Forest",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 99,
+                  "vicinity": "7VVR+WXM, Giàng Tả Chải - Tả Van, Tả Van, Sa Pa",
+                  "place_id": "ChIJf2Fv0XRHzTYRcuR-_GI_8jo",
+                  "location": {
+                    "lat": 22.2948258,
+                    "lng": 103.8924168
+                  }
+                },
+                {
+                  "name": "Suối Mường Hoa",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 13,
+                  "vicinity": "8V2W+W7W, Ta Van, Sa Pa",
+                  "place_id": "ChIJa7hqKgNBzTYR-gC_73m99z0",
+                  "location": {
+                    "lat": 22.302352,
+                    "lng": 103.8957159
+                  }
+                },
+                {
+                  "name": "Water fall",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 247,
+                  "vicinity": "7WV4+76Q, Unnamed Road, Tả Van, Sa Pa",
+                  "place_id": "ChIJ4Uacv8JHzTYRBS_n4WX9Ux0",
+                  "location": {
+                    "lat": 22.2932124,
+                    "lng": 103.9055941
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Museum Sa Pa",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 7,
+                  "vicinity": "8V3X+JCC, Mường Hoa, Sa Pa",
+                  "place_id": "ChIJx51dDbNAzTYR0vtajqy9LLc",
+                  "location": {
+                    "lat": 22.3040511,
+                    "lng": 103.8985284
+                  }
+                },
+                {
+                  "name": "Đá cổ thư pháp View",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 9,
+                  "vicinity": "TL152, Bản Pho, Sa Pa",
+                  "place_id": "ChIJBVL9shxBzTYRkg1xKDP7P6c",
+                  "location": {
+                    "lat": 22.3051803,
+                    "lng": 103.8959865
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Lá Dao Spa - Home - Restaurant",
+                  "types": [
+                    "cafe",
+                    "spa",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1411,
+                  "vicinity": "Ta Van, Sa Pa",
+                  "place_id": "ChIJ5a82VjVHzTYRQd2ViSbx9Bk",
+                  "location": {
+                    "lat": 22.3019014,
+                    "lng": 103.8911872
+                  }
+                },
+                {
+                  "name": "After Service by Mai - Brunch & Fine Food",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Ta Van, Giáy 1, Sa Pa",
+                  "place_id": "ChIJi9xGwkBHzTYRwe6zUc5CF-o",
+                  "location": {
+                    "lat": 22.2998336,
+                    "lng": 103.8962369
+                  }
+                },
+                {
+                  "name": "Tree Vegan Kitchen",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 350,
+                  "vicinity": "Ta Van, Giáy 1, Sa Pa",
+                  "place_id": "ChIJEcYJAR9HzTYRlVMusL430z8",
+                  "location": {
+                    "lat": 22.2994457,
+                    "lng": 103.8951901
+                  }
+                },
+                {
+                  "name": "DE MONG SAPA",
+                  "types": [
+                    "cafe",
+                    "lodging",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 349,
+                  "vicinity": "Thôn Giàng Tả Chải, Sa Pa",
+                  "place_id": "ChIJb6GmyatHzTYRXo7x15lhmpg",
+                  "location": {
+                    "lat": 22.2986691,
+                    "lng": 103.9028244
+                  }
+                },
+                {
+                  "name": "Pavi garden",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 226,
+                  "vicinity": "Thôn Giàng Tả Chải - Tả Van, Tả Van, Sa Pa",
+                  "place_id": "ChIJRyyVvjBHzTYRNLxB5F-dfZg",
+                  "location": {
+                    "lat": 22.2998292,
+                    "lng": 103.9025229
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Hội Thánh Tin Lành Cầu Mây",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "7WW3+XMV, Mường Hoa, Sa Pa",
+                  "place_id": "ChIJ99NiegBHzTYRm6e07xpr_Og",
+                  "location": {
+                    "lat": 22.2982139,
+                    "lng": 103.9044703
+                  }
+                },
+                {
+                  "name": "Ta Van Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 5,
+                  "vicinity": "7VQV+PC4, Ta Van - Seo My Ty, Tả Van, Sa Pa",
+                  "place_id": "ChIJrxgJj7ZHzTYRlICyjLekuLQ",
+                  "location": {
+                    "lat": 22.2892701,
+                    "lng": 103.8935657
+                  }
+                },
+                {
+                  "name": "Kirche",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "8W34+PPG, Mường Hoa, Sa Pa",
+                  "place_id": "ChIJpS0-JQBBzTYRKST0W5cplIE",
+                  "location": {
+                    "lat": 22.304313,
+                    "lng": 103.9068387
+                  }
+                },
+                {
+                  "name": "Giáo điểm Thào Hồng Dến Sapa",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "8W53+7RX, Thôn Thào Hồng Dến, Sa Pa",
+                  "place_id": "ChIJ9bFzXABBzTYRtscPcVEWcnE",
+                  "location": {
+                    "lat": 22.3082481,
+                    "lng": 103.9046003
+                  }
+                },
+                {
+                  "name": "Nhà thờ Tả Van",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 6,
+                  "vicinity": "8V2M+JQR, Thôn Tả Van Mông, Tả Van",
+                  "place_id": "ChIJBwNu_x1HzTYRnqiVo8ukVI8",
+                  "location": {
+                    "lat": 22.3016249,
+                    "lng": 103.8844048
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Mường Hoa",
+                  "types": [
+                    "sublocality_level_1",
+                    "sublocality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Mường Hoa",
+                  "place_id": "ChIJ424K8bVAzTYRwuPa-r7gD8I",
+                  "location": {
+                    "lat": 22.3002992,
+                    "lng": 103.9038129
+                  }
+                },
+                {
+                  "name": "Hoang Kim Homestay",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 48,
+                  "vicinity": "Ta Van Day 1",
+                  "place_id": "ChIJsyIMU7VAzTYR6pozdm5VUWs",
+                  "location": {
+                    "lat": 22.2995218,
+                    "lng": 103.8936898
+                  }
+                },
+                {
+                  "name": "Trek King Kong House",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 24,
+                  "vicinity": "8V3P+5R3, Ta Van, Dzáy Sapa",
+                  "place_id": "ChIJj0cKHktHzTYR6MrvVoyKMcs",
+                  "location": {
+                    "lat": 22.3028914,
+                    "lng": 103.8870604
+                  }
+                },
+                {
+                  "name": "Tavan Paradise Homestay",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 28,
+                  "vicinity": "Sapa, Ta Van, Tả Van, Sa Pa",
+                  "place_id": "ChIJPUBnJEtHzTYRsrwFn3s4T4U",
+                  "location": {
+                    "lat": 22.3014658,
+                    "lng": 103.8949206
+                  }
+                },
+                {
+                  "name": "Cuong Phuong homestay",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 6,
+                  "vicinity": "Ta Van, Giay 1 Village, Sa Pa",
+                  "place_id": "ChIJLRqGIUtHzTYReur6LJ4TaKc",
+                  "location": {
+                    "lat": 22.3007743,
+                    "lng": 103.8945145
+                  }
+                }
+              ]
+            },
+            "total_places_found": 22,
+            "photo_timestamp": "2024:12:11 10:04:25",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.7609291076660156
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/125.heic"
+    },
+    {
+      "image_filename": "125.heic",
+      "timestamp": "2026-01-28T01:41:53.830607",
+      "processing_time_seconds": 60.995724,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Terraced Rice Fields, Northern Vietnam",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive terraced formation and lush greenery are characteristic of rice fields in Northern Vietnam, particularly in areas like Sapa. The agricultural style and landscape features align with this region.",
+            "detailed_description": "The image depicts terraced rice fields, a common agricultural practice in mountainous regions. These terraces are carved into the hillsides to maximize arable land and manage water flow. The landscape is lush and green, with trees scattered throughout the area. The sky is overcast, suggesting a cloudy day. This type of landscape is typical in Northern Vietnam, where rice cultivation is prevalent.",
+            "identification": {
+              "primary": [
+                "Terraced Rice Fields"
+              ],
+              "location": "Northern Vietnam",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Terraced Rice Fields",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "agriculture",
+              "landscape",
+              "terraces",
+              "Vietnam",
+              "natural_feature"
+            ],
+            "location": "Northern Vietnam",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Terraced Rice Fields in Sapa",
+                "specificity_level": "very_specific",
+                "confidence": 0.85,
+                "reasoning": "Sapa is known for its iconic terraced rice fields, which match the visual characteristics seen in the image."
+              },
+              {
+                "guess": "Terraced Fields in Southeast Asia",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "Terraced fields are common in various parts of Southeast Asia, including Vietnam, Thailand, and Indonesia."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Terraced Rice Fields\"],\n        \"location\": \"Northern Vietnam\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Terraced Rice Fields\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"agriculture\", \"landscape\", \"terraces\", \"Vietnam\", \"natural_feature\"],\n    \"description\": \"The image depicts terraced rice fields, a common agricultural practice in mountainous regions. These terraces are carved into the hillsides to maximize arable land and manage water flow. The landscape is lush and green, with trees scattered throughout the area. The sky is overcast, suggesting a cloudy day. This type of landscape is typical in Northern Vietnam, where rice cultivation is prevalent.\",\n    \"reasoning\": \"The distinctive terraced formation and lush greenery are characteristic of rice fields in Northern Vietnam, particularly in areas like Sapa. The agricultural style and landscape features align with this region.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Terraced Rice Fields in Sapa\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.85,\n            \"reasoning\": \"Sapa is known for its iconic terraced rice fields, which match the visual characteristics seen in the image.\"\n        },\n        {\n            \"guess\": \"Terraced Fields in Southeast Asia\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"Terraced fields are common in various parts of Southeast Asia, including Vietnam, Thailand, and Indonesia.\"\n        }\n    ]\n}",
+            "processing_time_seconds": 18.19754195213318
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Terraced rice fields in Japan, Japan",
+          "confidence": 0.7999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches typical features of Japanese terraced rice fields, such as the meticulous carving into slopes and the presence of bamboo. Search results suggest Japan as a plausible location, with high scores from sources related to Japanese landscapes.",
+            "identification": {
+              "primary": [
+                "Terraced rice fields in Japan"
+              ],
+              "location": "Japan",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Terraced rice fields",
+                "type": "natural_feature",
+                "confidence": 0.85
+              },
+              {
+                "name": "Bamboo clusters",
+                "type": "natural_feature",
+                "confidence": 0.75
+              }
+            ],
+            "tags": [
+              "agricultural_landscape",
+              "terraced_fields",
+              "bamboo",
+              "Japan",
+              "natural_environment"
+            ],
+            "sources_used": [
+              "en.wikipedia.org",
+              "kankou-shimane.com"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([kankou-shimane.com]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([visitnara.jp]())"
+            ],
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Terraced rice fields in Southeast Asia",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "Terraced rice fields are common in Southeast Asia, and the description could fit regions like Vietnam or Thailand."
+              },
+              {
+                "guess": "Terraced agricultural landscape",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The description fits any terraced agricultural landscape in mountainous regions, not limited to rice fields."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 3,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.85,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a series of terraced rice fields on a hillside, characteristic of agricultural landscapes in mountainous regions. The terraces are meticulously carved into the slope, creating a stepped appearance that follows the natural contours of the land. Each terrace is bordered by earthen walls, which help retain water and soil, essential for rice cultivation. The fields are predominantly green, indicating active cultivation, although some areas show patches of bare earth or waterlogged ",
+            "description": "The image depicts a series of terraced rice fields on a hillside, characteristic of agricultural landscapes in mountainous regions. The terraces are meticulously carved into the slope, creating a stepped appearance that follows the natural contours of the land. Each terrace is bordered by earthen walls, which help retain water and soil, essential for rice cultivation. The fields are predominantly green, indicating active cultivation, although some areas show patches of bare earth or waterlogged ",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 42.61736297607422
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Highland",
+          "confidence": 0.927859365940094,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Highland",
+                "score": 0.927859365940094
+              },
+              {
+                "source": "label",
+                "name": "Terrace",
+                "score": 0.9018151760101318
+              },
+              {
+                "source": "label",
+                "name": "Plantation",
+                "score": 0.8652271628379822
+              },
+              {
+                "source": "label",
+                "name": "Field",
+                "score": 0.8510133624076843
+              },
+              {
+                "source": "label",
+                "name": "Hill station",
+                "score": 0.840060830116272
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "5SG",
+                "score": 0.3147999942302704
+              },
+              {
+                "name": "Tree",
+                "score": 0.3031649887561798
+              },
+              {
+                "name": "M-tree",
+                "score": 0.25440001487731934
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Highland",
+                "score": 0.927859365940094
+              },
+              {
+                "name": "Terrace",
+                "score": 0.9018151760101318
+              },
+              {
+                "name": "Plantation",
+                "score": 0.8652271628379822
+              },
+              {
+                "name": "Field",
+                "score": 0.8510133624076843
+              },
+              {
+                "name": "Hill station",
+                "score": 0.840060830116272
+              }
+            ],
+            "processing_time_seconds": 15.93254017829895
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/125.heic"
+    }
+  ]
+}

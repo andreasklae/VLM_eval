@@ -1,0 +1,1132 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "18.jpg",
+      "timestamp": "2026-01-28T03:46:38.412937",
+      "processing_time_seconds": 60.10632,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 37.803016666666664,
+        "gps_longitude": -122.4199,
+        "location": {
+          "formatted_address": "Hyde St & Chestnut St, San Francisco, CA 94109, USA",
+          "city": "San Francisco",
+          "county": "San Francisco County",
+          "country": "United States"
+        },
+        "datetime_original": "2017:07:18 18:33:33",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 6s"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "San Francisco Cable Car, Alcatraz Island, San Francisco, United States",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The cable car is a well-known symbol of San Francisco, and its presence along with the view of Alcatraz Island confirms the location. The steep street and bay view are characteristic of the city.",
+            "detailed_description": "The image shows a classic San Francisco cable car descending a steep street, a characteristic feature of the city's transportation system. In the background, Alcatraz Island is visible across the bay, known for its historic prison. The scene captures the iconic blend of urban and natural landscapes typical of San Francisco, with the bay and distant hills providing a scenic backdrop.",
+            "identification": {
+              "primary": [
+                "San Francisco Cable Car",
+                "Alcatraz Island"
+              ],
+              "location": "San Francisco, United States",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "San Francisco Cable Car",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Alcatraz Island",
+                "type": "landmark",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "transportation",
+              "historic",
+              "landmark",
+              "San_Francisco",
+              "bay_view"
+            ],
+            "location": "San Francisco, United States",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"San Francisco Cable Car\", \"Alcatraz Island\"],\n        \"location\": \"San Francisco, United States\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"San Francisco Cable Car\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Alcatraz Island\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.90\n        }\n    ],\n    \"tags\": [\"transportation\", \"historic\", \"landmark\", \"San_Francisco\", \"bay_view\"],\n    \"description\": \"The image shows a classic San Francisco cable car descending a steep street, a characteristic feature of the city's transportation system. In the background, Alcatraz Island is visible across the bay, known for its historic prison. The scene captures the iconic blend of urban and natural landscapes typical of San Francisco, with the bay and distant hills providing a scenic backdrop.\",\n    \"reasoning\": \"The cable car is a well-known symbol of San Francisco, and its presence along with the view of Alcatraz Island confirms the location. The steep street and bay view are characteristic of the city.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 37.803016666666664,
+              "longitude": -122.4199
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Hyde St & Chestnut St, San Francisco, CA 94109, USA",
+              "city": "San Francisco",
+              "county": "San Francisco County",
+              "country": "United States"
+            },
+            "photo_timestamp": "2017:07:18 18:33:33",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 6s"
+            },
+            "processing_time_seconds": 21.197668075561523
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "San Francisco cable car, Alcatraz Island, San Francisco, United States",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the iconic San Francisco cable car, known for its open sides and historical significance. The presence of Alcatraz Island in the background further confirms the location as San Francisco Bay. The search results from cablecarmuseum.org and en.wikipedia.org support the identification of the cable car and its historical context.",
+            "identification": {
+              "primary": [
+                "San Francisco cable car",
+                "Alcatraz Island"
+              ],
+              "location": "San Francisco, United States",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "San Francisco cable car",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Alcatraz Island",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "traditional",
+              "transportation",
+              "urban",
+              "San Francisco",
+              "historical"
+            ],
+            "sources_used": [
+              "cablecarmuseum.org",
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "*URL:* ([cablecarmuseum.org]())",
+              "*URL:* ([en.wikipedia.org]())",
+              "*URL:* ([streetcar.org]())",
+              "*URL:* ([streetcar.org]())",
+              "*URL:* ([smithsonianmag.com]())"
+            ],
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image prominently features a classic San Francisco cable car, an iconic mode of transportation in the city. The cable car is painted in a traditional style with a combination of red and white colors, and it is ascending a steep street, characteristic of San Francisco's hilly terrain. The cable car has open sides where passengers can stand, a distinctive feature of these vehicles. Visible signage on the cable car includes route information, enhancing the historical and cultural significance o",
+            "description": "The image prominently features a classic San Francisco cable car, an iconic mode of transportation in the city. The cable car is painted in a traditional style with a combination of red and white colors, and it is ascending a steep street, characteristic of San Francisco's hilly terrain. The cable car has open sides where passengers can stand, a distinctive feature of these vehicles. Visible signage on the cable car includes route information, enhancing the historical and cultural significance o",
+            "architectural_style": "Traditional San Francisco streetcar design",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 37.803016666666664,
+              "longitude": -122.4199
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Hyde St & Chestnut St, San Francisco, CA 94109, USA",
+              "city": "San Francisco",
+              "county": "San Francisco County",
+              "country": "United States"
+            },
+            "photo_timestamp": "2017:07:18 18:33:33",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 6s"
+            },
+            "processing_time_seconds": 38.08597803115845
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Russian Hill Park (37.8044, -122.4208)",
+          "confidence": 0.4098145663738251,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Russian Hill Park",
+            "coordinates": {
+              "latitude": 37.8043581,
+              "longitude": -122.42084999999999
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 3567,
+                "y": 0
+              },
+              {
+                "x": 3567,
+                "y": 2673
+              },
+              {
+                "x": 0,
+                "y": 2673
+              }
+            ],
+            "context_labels": [
+              "Mode of transport",
+              "Transport",
+              "Lane",
+              "Windshield",
+              "Travel"
+            ],
+            "context_objects": [
+              "Car",
+              "Car",
+              "Car"
+            ],
+            "web_entities": [
+              {
+                "name": "SUV",
+                "score": 1.0243948698043823
+              },
+              {
+                "name": "Subcompact car",
+                "score": 0.8879562020301819
+              },
+              {
+                "name": "Car",
+                "score": 0.7681499719619751
+              },
+              {
+                "name": "Volkswagen",
+                "score": 0.7288440465927124
+              },
+              {
+                "name": "Minivan",
+                "score": 0.6571500301361084
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Russian Hill Park",
+                "score": 0.4098145663738251,
+                "location": {
+                  "lat": 37.8043581,
+                  "lng": -122.42084999999999
+                }
+              },
+              {
+                "name": "Lombard Street",
+                "score": 0.3155818283557892,
+                "location": {
+                  "lat": 37.802139,
+                  "lng": -122.41874
+                }
+              }
+            ],
+            "processing_time_seconds": 9.485938787460327
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "San Francisco, San Francisco County, United States",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "San Francisco, San Francisco County, United States",
+            "coordinates": {
+              "latitude": 37.803016666666664,
+              "longitude": -122.4199
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Lombard Street",
+                  "types": [
+                    "landmark",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 35681,
+                  "vicinity": "Lombard Street, San Francisco",
+                  "place_id": "ChIJgQ-3a-aAhYARmRLswQrO0xA",
+                  "location": {
+                    "lat": 37.802139,
+                    "lng": -122.41874
+                  }
+                },
+                {
+                  "name": "Fisherman's Wharf",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 12049,
+                  "vicinity": "505 Beach Street, San Francisco",
+                  "place_id": "ChIJIbjkBuOAhYAR3OzY8Djb7Kc",
+                  "location": {
+                    "lat": 37.8084354,
+                    "lng": -122.4157509
+                  }
+                },
+                {
+                  "name": "Cartoon Art Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 411,
+                  "vicinity": "781 Beach Street, San Francisco",
+                  "place_id": "ChIJWwSkVn2AhYARUQfWE_EJ9ZQ",
+                  "location": {
+                    "lat": 37.8063311,
+                    "lng": -122.4217929
+                  }
+                },
+                {
+                  "name": "Musée Mécanique",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 8016,
+                  "vicinity": "Pier 45, San Francisco",
+                  "place_id": "ChIJCQAzVOKAhYARuOpiALmomu0",
+                  "location": {
+                    "lat": 37.8093037,
+                    "lng": -122.4159684
+                  }
+                },
+                {
+                  "name": "Saints Peter and Paul Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 879,
+                  "vicinity": "666 Filbert Street, San Francisco",
+                  "place_id": "ChIJR72bU_CAhYAR7Kzo-OE5GyQ",
+                  "location": {
+                    "lat": 37.8014041,
+                    "lng": -122.4101623
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Cartoon Art Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 411,
+                  "vicinity": "781 Beach Street, San Francisco",
+                  "place_id": "ChIJWwSkVn2AhYARUQfWE_EJ9ZQ",
+                  "location": {
+                    "lat": 37.8063311,
+                    "lng": -122.4217929
+                  }
+                },
+                {
+                  "name": "Musée Mécanique",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 8016,
+                  "vicinity": "Pier 45, San Francisco",
+                  "place_id": "ChIJCQAzVOKAhYARuOpiALmomu0",
+                  "location": {
+                    "lat": 37.8093037,
+                    "lng": -122.4159684
+                  }
+                },
+                {
+                  "name": "USS Pampanito Museum and Memorial",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 2395,
+                  "vicinity": "45 Pier, San Francisco",
+                  "place_id": "ChIJ60RjV-KAhYARZTyNwVT1AWo",
+                  "location": {
+                    "lat": 37.80998989999999,
+                    "lng": -122.4164381
+                  }
+                },
+                {
+                  "name": "San Francisco Maritime National Historical Park",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 5011,
+                  "vicinity": "San Francisco",
+                  "place_id": "ChIJ7bPtqOGAhYARlc1YRlOfGrc",
+                  "location": {
+                    "lat": 37.806437,
+                    "lng": -122.4239199
+                  }
+                },
+                {
+                  "name": "Maritime Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 245,
+                  "vicinity": "900 Beach Street, San Francisco",
+                  "place_id": "ChIJ7bPtqOGAhYAR0PehdroyYdw",
+                  "location": {
+                    "lat": 37.8063433,
+                    "lng": -122.4238931
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "In-N-Out Burger",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 12293,
+                  "vicinity": "333 Jefferson Street, San Francisco",
+                  "place_id": "ChIJcUlD0eOAhYARucGJj8eN9I8",
+                  "location": {
+                    "lat": 37.8077951,
+                    "lng": -122.4185119
+                  }
+                },
+                {
+                  "name": "Franciscan Crab Restaurant",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 5250,
+                  "vicinity": "Pier 43 1/2, 43 1/2 The Embarcadero, San Francisco",
+                  "place_id": "ChIJERGFHOOAhYARFYtaHpvXbyc",
+                  "location": {
+                    "lat": 37.8090575,
+                    "lng": -122.4146196
+                  }
+                },
+                {
+                  "name": "Gary Danko",
+                  "types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 2098,
+                  "vicinity": "800 North Point Street, San Francisco",
+                  "place_id": "ChIJq342JeGAhYARwdtH9tlX7gg",
+                  "location": {
+                    "lat": 37.80586510000001,
+                    "lng": -122.4206043
+                  }
+                },
+                {
+                  "name": "McCormick & Kuleto's Seafood & Steaks",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 1958,
+                  "vicinity": "900 North Point Street, San Francisco",
+                  "place_id": "ChIJnSe7xOCAhYARuiPFvpIguFA",
+                  "location": {
+                    "lat": 37.8062331,
+                    "lng": -122.4227769
+                  }
+                },
+                {
+                  "name": "Bobo's",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 803,
+                  "vicinity": "1450 Lombard Street, San Francisco",
+                  "place_id": "ChIJgYQEod2AhYARB-mbuMUyGhw",
+                  "location": {
+                    "lat": 37.80134200000001,
+                    "lng": -122.4256888
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Washington Square",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 5279,
+                  "vicinity": "Filbert St & Stockton Street, San Francisco",
+                  "place_id": "ChIJoYiOqfGAhYAR8J-KiogVyCQ",
+                  "location": {
+                    "lat": 37.8007752,
+                    "lng": -122.4102464
+                  }
+                },
+                {
+                  "name": "Joe DiMaggio Playground Park",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 547,
+                  "vicinity": "651 Lombard Street, San Francisco",
+                  "place_id": "ChIJxyJ1BfCAhYARSZU6k5EBy8M",
+                  "location": {
+                    "lat": 37.8024356,
+                    "lng": -122.4124463
+                  }
+                },
+                {
+                  "name": "George Sterling Park",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 359,
+                  "vicinity": "2299 Hyde Street, San Francisco",
+                  "place_id": "ChIJv2XFGeaAhYARR0dmTGoXhvE",
+                  "location": {
+                    "lat": 37.8013965,
+                    "lng": -122.420459
+                  }
+                },
+                {
+                  "name": "Patrick's Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 68,
+                  "vicinity": "Fort Mason, San Francisco",
+                  "place_id": "ChIJpWno7d6AhYAR1RaO0mTI8SQ",
+                  "location": {
+                    "lat": 37.8043691,
+                    "lng": -122.4276775
+                  }
+                },
+                {
+                  "name": "Ina Coolbrith Park",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 1607,
+                  "vicinity": "Vallejo & Taylor, Vallejo Street, San Francisco",
+                  "place_id": "ChIJdx6kBe6AhYARsPFmpUAvvcY",
+                  "location": {
+                    "lat": 37.7982745,
+                    "lng": -122.4134592
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Saints Peter and Paul Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 879,
+                  "vicinity": "666 Filbert Street, San Francisco",
+                  "place_id": "ChIJR72bU_CAhYAR7Kzo-OE5GyQ",
+                  "location": {
+                    "lat": 37.8014041,
+                    "lng": -122.4101623
+                  }
+                },
+                {
+                  "name": "Holy Trinity Orthodox Cathedral",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 29,
+                  "vicinity": "1520 Green Street, San Francisco",
+                  "place_id": "ChIJDyOYnsKAhYAR_isEbcuyiVg",
+                  "location": {
+                    "lat": 37.79774219999999,
+                    "lng": -122.4241782
+                  }
+                },
+                {
+                  "name": "Revive San Francisco",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 24,
+                  "vicinity": "1630 Stockton Street, San Francisco",
+                  "place_id": "ChIJFSc8sp-AhYAR-5eBKLlEwr0",
+                  "location": {
+                    "lat": 37.80086269999999,
+                    "lng": -122.4090076
+                  }
+                },
+                {
+                  "name": "deafeasy",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "health",
+                    "school",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "1510 Pacific Avenue, San Francisco",
+                  "place_id": "ChIJKUBn2euAhYARRVaspCxGEz8",
+                  "location": {
+                    "lat": 37.795384,
+                    "lng": -122.420274
+                  }
+                },
+                {
+                  "name": "Svenska kyrkan",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 6,
+                  "vicinity": "2454 Hyde Street, San Francisco",
+                  "place_id": "ChIJKUfpkuaAhYARYituZFDAfZM",
+                  "location": {
+                    "lat": 37.8036613,
+                    "lng": -122.4197824
+                  }
+                },
+                {
+                  "name": "Diocese of the West",
+                  "types": [
+                    "synagogue",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "1520 Green Street, San Francisco",
+                  "place_id": "ChIJDyOYnsKAhYAR2grN6yCIq9Y",
+                  "location": {
+                    "lat": 37.7977056,
+                    "lng": -122.4243548
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Hackett Mill",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 5,
+                  "vicinity": "521 Francisco Street, San Francisco",
+                  "place_id": "ChIJ_zb6GImAhYARnCHGCkCaRjw",
+                  "location": {
+                    "lat": 37.80450829999999,
+                    "lng": -122.4138896
+                  }
+                },
+                {
+                  "name": "Clay By The Bay Pottery Studios",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 185,
+                  "vicinity": "747 Beach Street, San Francisco",
+                  "place_id": "ChIJ8a9y6_KAhYARAEtwMDh2ano",
+                  "location": {
+                    "lat": 37.8063785,
+                    "lng": -122.4211097
+                  }
+                },
+                {
+                  "name": "Eden Fine Art",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 51,
+                  "vicinity": "223 Jefferson Street, San Francisco",
+                  "place_id": "ChIJv8RRpeOAhYAR7ridCBs7LYY",
+                  "location": {
+                    "lat": 37.80807049999999,
+                    "lng": -122.4162088
+                  }
+                },
+                {
+                  "name": "Real Old Paper",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 34,
+                  "vicinity": "777 Beach Street, San Francisco",
+                  "place_id": "ChIJiVB2---AhYARSVRnCOKNjh0",
+                  "location": {
+                    "lat": 37.8063718,
+                    "lng": -122.4215446
+                  }
+                },
+                {
+                  "name": "Busacca Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 7,
+                  "vicinity": "2010 Hyde Street, San Francisco",
+                  "place_id": "ChIJPeT9yOiAhYARRxpykPevqpM",
+                  "location": {
+                    "lat": 37.7994705,
+                    "lng": -122.4189456
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "San Francisco",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "San Francisco",
+                  "place_id": "ChIJIQBpAG2ahYAR_6128GcTUEo",
+                  "location": {
+                    "lat": 37.7749295,
+                    "lng": -122.4194155
+                  }
+                },
+                {
+                  "name": "San Francisco Marriott Fisherman's Wharf",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 1942,
+                  "vicinity": "1250 Columbus Avenue, San Francisco",
+                  "place_id": "ChIJxS5qD-SAhYARTQg2CebPURY",
+                  "location": {
+                    "lat": 37.8055409,
+                    "lng": -122.4175288
+                  }
+                },
+                {
+                  "name": "Hyatt Centric Fisherman's Wharf San Francisco",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 2995,
+                  "vicinity": "555 North Point Street, San Francisco",
+                  "place_id": "ChIJpVWaeeSAhYARu4S3Sa4Jc20",
+                  "location": {
+                    "lat": 37.8059613,
+                    "lng": -122.4164395
+                  }
+                },
+                {
+                  "name": "Courtyard by Marriott San Francisco Fisherman's Wharf",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 747,
+                  "vicinity": "580 Beach Street, San Francisco",
+                  "place_id": "ChIJvbDoZuGAhYAR10jR-hk-tIc",
+                  "location": {
+                    "lat": 37.8070536,
+                    "lng": -122.4182555
+                  }
+                },
+                {
+                  "name": "Comfort Inn By the Bay",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 1588,
+                  "vicinity": "2775 Van Ness Avenue, San Francisco",
+                  "place_id": "ChIJt1ZrdN2AhYARcMIPcroeRwg",
+                  "location": {
+                    "lat": 37.800934,
+                    "lng": -122.424905
+                  }
+                }
+              ]
+            },
+            "total_places_found": 36,
+            "photo_timestamp": "2017:07:18 18:33:33",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 6s"
+            },
+            "processing_time_seconds": 0.4808158874511719
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/18.jpg"
+    },
+    {
+      "image_filename": "18.jpg",
+      "timestamp": "2026-01-28T03:47:38.548732",
+      "processing_time_seconds": 62.461218,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "San Francisco Cable Car, Alcatraz Island, San Francisco, USA",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The cable car is a distinctive feature of San Francisco, and the view of Alcatraz Island across the bay is a recognizable landmark. The combination of these elements strongly indicates the location.",
+            "detailed_description": "The image shows a classic San Francisco cable car on a steep street, a well-known mode of transportation in the city. In the background, Alcatraz Island is visible across the bay, known for its historic prison. The scene captures the urban landscape with trees and residential buildings, typical of San Francisco's hilly terrain.",
+            "identification": {
+              "primary": [
+                "San Francisco Cable Car",
+                "Alcatraz Island"
+              ],
+              "location": "San Francisco, USA",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "San Francisco Cable Car",
+                "type": "landmark",
+                "confidence": 0.95
+              },
+              {
+                "name": "Alcatraz Island",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "transportation",
+              "historical",
+              "urban",
+              "bay",
+              "island"
+            ],
+            "location": "San Francisco, USA",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"San Francisco Cable Car\", \"Alcatraz Island\"],\n        \"location\": \"San Francisco, USA\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"San Francisco Cable Car\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        },\n        {\n            \"name\": \"Alcatraz Island\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.90\n        }\n    ],\n    \"tags\": [\"transportation\", \"historical\", \"urban\", \"bay\", \"island\"],\n    \"description\": \"The image shows a classic San Francisco cable car on a steep street, a well-known mode of transportation in the city. In the background, Alcatraz Island is visible across the bay, known for its historic prison. The scene captures the urban landscape with trees and residential buildings, typical of San Francisco's hilly terrain.\",\n    \"reasoning\": \"The cable car is a distinctive feature of San Francisco, and the view of Alcatraz Island across the bay is a recognizable landmark. The combination of these elements strongly indicates the location.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 24.64980983734131
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "San Francisco Cable Car, Alcatraz Island, San Francisco, USA",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches the iconic San Francisco Cable Cars, known for their vintage design and open sides. The mention of a bay with an island featuring a notable structure aligns with the view of Alcatraz Island from San Francisco. Search results strongly support this identification, with high confidence scores from sources related to San Francisco's cable cars and landmarks.",
+            "identification": {
+              "primary": [
+                "San Francisco Cable Car",
+                "Alcatraz Island"
+              ],
+              "location": "San Francisco, USA",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "San Francisco Cable Car",
+                "type": "historic_transportation",
+                "confidence": 0.95
+              },
+              {
+                "name": "Alcatraz Island",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "historic_transportation",
+              "vintage_design",
+              "urban_landscape",
+              "coastal_city",
+              "bay_view"
+            ],
+            "sources_used": [
+              "en.wikipedia.org",
+              "cablecarmuseum.org"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([cablecarmuseum.org]())"
+            ],
+            "type": "historic_transportation",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 2,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a classic streetcar, commonly known as a cable car, traveling up a steep hill in an urban setting. The cable car is painted in a traditional style, featuring a combination of red and white colors with wooden accents. It has a distinct vintage design, characterized by its open sides where passengers can stand and hold onto rails. The cable car is marked with signage indicating its route, and it appears to be part of a historic transportation system. In the background, a scenic v",
+            "description": "The image depicts a classic streetcar, commonly known as a cable car, traveling up a steep hill in an urban setting. The cable car is painted in a traditional style, featuring a combination of red and white colors with wooden accents. It has a distinct vintage design, characterized by its open sides where passengers can stand and hold onto rails. The cable car is marked with signage indicating its route, and it appears to be part of a historic transportation system. In the background, a scenic v",
+            "architectural_style": "Historic transportation design",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 37.80926179885864
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Russian Hill Park (37.8044, -122.4208)",
+          "confidence": 0.4098145663738251,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "Russian Hill Park",
+            "coordinates": {
+              "latitude": 37.8043581,
+              "longitude": -122.42084999999999
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 3567,
+                "y": 0
+              },
+              {
+                "x": 3567,
+                "y": 2673
+              },
+              {
+                "x": 0,
+                "y": 2673
+              }
+            ],
+            "context_labels": [
+              "Mode of transport",
+              "Transport",
+              "Lane",
+              "Windshield",
+              "Travel"
+            ],
+            "context_objects": [
+              "Car",
+              "Car",
+              "Car"
+            ],
+            "web_entities": [
+              {
+                "name": "SUV",
+                "score": 1.0287851095199585
+              },
+              {
+                "name": "Subcompact car",
+                "score": 0.9094638824462891
+              },
+              {
+                "name": "Car",
+                "score": 0.7714499831199646
+              },
+              {
+                "name": "Volkswagen",
+                "score": 0.721979022026062
+              },
+              {
+                "name": "Minivan",
+                "score": 0.7073999643325806
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "Russian Hill Park",
+                "score": 0.4098145663738251,
+                "location": {
+                  "lat": 37.8043581,
+                  "lng": -122.42084999999999
+                }
+              },
+              {
+                "name": "Lombard Street",
+                "score": 0.3155818283557892,
+                "location": {
+                  "lat": 37.802139,
+                  "lng": -122.41874
+                }
+              }
+            ],
+            "processing_time_seconds": 9.909249782562256
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/18.jpg"
+    }
+  ]
+}

@@ -1,0 +1,557 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "138.jpg",
+      "timestamp": "2026-01-28T02:10:31.475014",
+      "processing_time_seconds": 61.946651,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 59.850655555555555,
+        "gps_longitude": 8.65555,
+        "location": {
+          "formatted_address": "VM24+76 Gaustatoppen Turisthytte, Norway",
+          "city": "Gaustatoppen Turisthytte",
+          "county": "Telemark",
+          "country": "Norway"
+        },
+        "datetime_original": "2025:01:04 13:24:21",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Gaustatoppen Mountain, Telemark, Norway",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The location metadata indicates Gaustatoppen Turisthytte, and the visual features match the typical winter landscape seen from Gaustatoppen Mountain, known for its panoramic views.",
+            "detailed_description": "The image shows a stunning winter landscape from Gaustatoppen Mountain in Telemark, Norway. The scene is dominated by snow-covered peaks and valleys, with the sun setting or rising, casting a warm glow over the snow. The sky is clear with a few clouds, and the sunlight creates a beautiful contrast with the icy terrain. The view captures the vastness and beauty of the Norwegian winter landscape.",
+            "identification": {
+              "primary": [
+                "Gaustatoppen Mountain"
+              ],
+              "location": "Telemark, Norway",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Gaustatoppen Mountain",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "mountain",
+              "winter",
+              "snow",
+              "Norway",
+              "landscape"
+            ],
+            "location": "Telemark, Norway",
+            "type": "natural_feature",
+            "search_range_meters": 2000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Gaustatoppen Mountain\"],\n        \"location\": \"Telemark, Norway\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Gaustatoppen Mountain\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"mountain\", \"winter\", \"snow\", \"Norway\", \"landscape\"],\n    \"description\": \"The image shows a stunning winter landscape from Gaustatoppen Mountain in Telemark, Norway. The scene is dominated by snow-covered peaks and valleys, with the sun setting or rising, casting a warm glow over the snow. The sky is clear with a few clouds, and the sunlight creates a beautiful contrast with the icy terrain. The view captures the vastness and beauty of the Norwegian winter landscape.\",\n    \"reasoning\": \"The location metadata indicates Gaustatoppen Turisthytte, and the visual features match the typical winter landscape seen from Gaustatoppen Mountain, known for its panoramic views.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 59.850655555555555,
+              "longitude": 8.65555
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "VM24+76 Gaustatoppen Turisthytte, Norway",
+              "city": "Gaustatoppen Turisthytte",
+              "county": "Telemark",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:01:04 13:24:21",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 25.166361093521118
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Gaustatoppen mountain range, Telemark, Norway",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description and location metadata strongly suggest the image is of the Gaustatoppen mountain range, a well-known natural feature in Telemark, Norway. The search results from sources like Flickr and Gausta.com confirm the visual match with the described winter landscape, including the snow-covered mountains and sunlight effects.",
+            "identification": {
+              "primary": [
+                "Gaustatoppen mountain range"
+              ],
+              "location": "Telemark, Norway",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Gaustatoppen mountain range",
+                "type": "natural_feature",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "winter_landscape",
+              "snow-covered_mountains",
+              "sunlight",
+              "Norwegian_nature",
+              "Telemark"
+            ],
+            "sources_used": [
+              "flickr.com",
+              "gausta.com"
+            ],
+            "all_candidates": [
+              "URL:* ([flickr.com]())",
+              "URL:* ([flickr.com]())",
+              "URL:* ([gausta.com]())",
+              "URL:* ([commons.wikimedia.org]())",
+              "URL:* ([mountain-forecast.com]())"
+            ],
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Norwegian winter landscape",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The description matches typical features of a Norwegian winter landscape, which could include various mountain ranges in Norway."
+              },
+              {
+                "guess": "Mountain view from Gaustatoppen Turisthytte",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.85,
+                "reasoning": "Given the vantage point from Gaustatoppen Turisthytte, the view likely includes the surrounding mountain range, which is a prominent feature in Telemark."
+              },
+              {
+                "guess": "Telemark mountain range",
+                "specificity_level": "very_general",
+                "confidence": 0.6,
+                "reasoning": "The image could depict any part of the Telemark mountain range, known for its winter landscapes."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image captures a breathtaking winter landscape viewed from a high vantage point, likely from Gaustatoppen Turisthytte in Telemark, Norway. The scene is dominated by a vast expanse of snow-covered mountains and valleys, creating a serene and majestic atmosphere. The snow appears thick and pristine, covering the rugged terrain with a blanket of white. The sunlight is a prominent feature, positioned near the center of the image, casting a warm glow across the landscape. The sun's rays illuminat",
+            "description": "The image captures a breathtaking winter landscape viewed from a high vantage point, likely from Gaustatoppen Turisthytte in Telemark, Norway. The scene is dominated by a vast expanse of snow-covered mountains and valleys, creating a serene and majestic atmosphere. The snow appears thick and pristine, covering the rugged terrain with a blanket of white. The sunlight is a prominent feature, positioned near the center of the image, casting a warm glow across the landscape. The sun's rays illuminat",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 59.850655555555555,
+              "longitude": 8.65555
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "VM24+76 Gaustatoppen Turisthytte, Norway",
+              "city": "Gaustatoppen Turisthytte",
+              "county": "Telemark",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:01:04 13:24:21",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 36.220704078674316
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Astronomical object",
+          "confidence": 0.9127023816108704,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Astronomical object",
+                "score": 0.9127023816108704
+              },
+              {
+                "source": "label",
+                "name": "Winter",
+                "score": 0.8118559122085571
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Sunlight",
+                "score": 0.27723950147628784
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Astronomical object",
+                "score": 0.9127023816108704
+              },
+              {
+                "name": "Winter",
+                "score": 0.8118559122085571
+              },
+              {
+                "name": "Sun",
+                "score": 0.6961440443992615
+              },
+              {
+                "name": "Glacial landform",
+                "score": 0.6885814070701599
+              },
+              {
+                "name": "Alps",
+                "score": 0.6247051954269409
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 59.850655555555555,
+              "longitude": 8.65555
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "VM24+76 Gaustatoppen Turisthytte, Norway",
+              "city": "Gaustatoppen Turisthytte",
+              "county": "Telemark",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:01:04 13:24:21",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 15.95975399017334
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Gaustatoppen Turisthytte, Telemark, Norway",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Gaustatoppen Turisthytte, Telemark, Norway",
+            "coordinates": {
+              "latitude": 59.850655555555555,
+              "longitude": 8.65555
+            },
+            "search_range_meters": 2000,
+            "nearby_places": {
+              "restaurants": [
+                {
+                  "name": "Gaustatoppen Turisthytte",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 2030,
+                  "vicinity": "Rjukan",
+                  "place_id": "ChIJC2K-w7heP0YR-EbCBjLcKz8",
+                  "location": {
+                    "lat": 59.8505081,
+                    "lng": 8.6557328
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Gausdalen",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Rjukan",
+                  "place_id": "ChIJ____P65eP0YRbd4AF3esZpo",
+                  "location": {
+                    "lat": 59.8427631,
+                    "lng": 8.635482099999999
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Gaustatoppen Turisthytte",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Gaustatoppen Turisthytte",
+                  "place_id": "ChIJaTclb7heP0YRycCH_NaIj6w",
+                  "location": {
+                    "lat": 59.8497431,
+                    "lng": 8.6564414
+                  }
+                },
+                {
+                  "name": "Gaustabanen",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 1282,
+                  "vicinity": "Rjukan",
+                  "place_id": "ChIJXdM9BPteP0YRwqSc9taBlHI",
+                  "location": {
+                    "lat": 59.85381779999999,
+                    "lng": 8.684730799999997
+                  }
+                },
+                {
+                  "name": "Gaustatoppen Turisthytte",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 2030,
+                  "vicinity": "Rjukan",
+                  "place_id": "ChIJC2K-w7heP0YR-EbCBjLcKz8",
+                  "location": {
+                    "lat": 59.8505081,
+                    "lng": 8.6557328
+                  }
+                },
+                {
+                  "name": "Gaustatoppen tårnet",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 11,
+                  "vicinity": "Gaustatoppen Turisthytte",
+                  "place_id": "ChIJlaztXgBfP0YRaNZp4HdVJqM",
+                  "location": {
+                    "lat": 59.85097620000001,
+                    "lng": 8.655537799999998
+                  }
+                },
+                {
+                  "name": "Gaustatoppen",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 38,
+                  "vicinity": "Gaustatoppen Turisthytte",
+                  "place_id": "ChIJJdgKPBxfP0YRJ7J6O61l8po",
+                  "location": {
+                    "lat": 59.8531525,
+                    "lng": 8.6524022
+                  }
+                }
+              ]
+            },
+            "total_places_found": 7,
+            "photo_timestamp": "2025:01:04 13:24:21",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.33899998664855957
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/138.jpg"
+    },
+    {
+      "image_filename": "138.jpg",
+      "timestamp": "2026-01-28T02:11:33.460545",
+      "processing_time_seconds": 63.729517,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Mountain landscape with snow",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The presence of snow and the sun near the horizon suggest a winter setting during either sunset or sunrise. The rugged terrain indicates a mountainous region.",
+            "detailed_description": "The image depicts a stunning mountain landscape covered in snow, with the sun either setting or rising, casting a warm glow over the scene. The sky is clear, with a few clouds visible near the horizon. The snow appears to be fresh, and the mountains have a rugged, majestic appearance. The lighting creates a serene and picturesque atmosphere.",
+            "identification": {
+              "primary": [
+                "Mountain landscape with snow"
+              ],
+              "location": null,
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Snow-covered mountains",
+                "type": "natural_feature",
+                "confidence": 0.9
+              },
+              {
+                "name": "Sunset or sunrise",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "mountains",
+              "snow",
+              "sunset",
+              "natural_landscape",
+              "winter"
+            ],
+            "location": null,
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Alps",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The snow-covered mountains and the lighting are characteristic of alpine regions."
+              },
+              {
+                "guess": "Rocky Mountains",
+                "specificity_level": "general",
+                "confidence": 0.5,
+                "reasoning": "The rugged terrain and snow are typical of the Rocky Mountains."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Mountain landscape with snow\"],\n        \"location\": null,\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Snow-covered mountains\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Sunset or sunrise\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"mountains\", \"snow\", \"sunset\", \"natural_landscape\", \"winter\"],\n    \"description\": \"The image depicts a stunning mountain landscape covered in snow, with the sun either setting or rising, casting a warm glow over the scene. The sky is clear, with a few clouds visible near the horizon. The snow appears to be fresh, and the mountains have a rugged, majestic appearance. The lighting creates a serene and picturesque atmosphere.\",\n    \"reasoning\": \"The presence of snow and the sun near the horizon suggest a winter setting during either sunset or sunrise. The rugged terrain indicates a mountainous region.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Alps\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The snow-covered mountains and the lighting are characteristic of alpine regions.\"\n        },\n        {\n            \"guess\": \"Rocky Mountains\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.5,\n            \"reasoning\": \"The rugged terrain and snow are typical of the Rocky Mountains.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 27.875667095184326
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*Source*: ([unsplash.com]())",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image captures a breathtaking winter landscape at sunset. The foreground features a snow-covered mountain slope, with the snow appearing pristine and untouched, creating a textured surface that reflects the sunlight. The sun is positioned near the horizon, casting a warm golden glow across the scene. This light creates a striking contrast between the bright sky and the darker, shadowed areas of the mountains. The sky is a deep blue, transitioning into lighter shades near the horizon, with sc",
+            "description": "The image captures a breathtaking winter landscape at sunset. The foreground features a snow-covered mountain slope, with the snow appearing pristine and untouched, creating a textured surface that reflects the sunlight. The sun is positioned near the horizon, casting a warm golden glow across the scene. This light creates a striking contrast between the bright sky and the darker, shadowed areas of the mountains. The sky is a deep blue, transitioning into lighter shades near the horizon, with sc",
+            "architectural_style": "N/A",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 35.84160876274109
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Astronomical object",
+          "confidence": 0.9127023816108704,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Astronomical object",
+                "score": 0.9127023816108704
+              },
+              {
+                "source": "label",
+                "name": "Winter",
+                "score": 0.8118559122085571
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Sunlight",
+                "score": 0.27714911103248596
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Astronomical object",
+                "score": 0.9127023816108704
+              },
+              {
+                "name": "Winter",
+                "score": 0.8118559122085571
+              },
+              {
+                "name": "Sun",
+                "score": 0.6961440443992615
+              },
+              {
+                "name": "Glacial landform",
+                "score": 0.6885814070701599
+              },
+              {
+                "name": "Alps",
+                "score": 0.6247051954269409
+              }
+            ],
+            "processing_time_seconds": 16.382285118103027
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/138.jpg"
+    }
+  ]
+}

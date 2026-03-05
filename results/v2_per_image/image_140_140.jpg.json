@@ -1,0 +1,989 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "140.jpg",
+      "timestamp": "2026-01-28T02:16:49.858092",
+      "processing_time_seconds": 60.390954,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 52.49291111111111,
+        "gps_longitude": 13.492716666666666,
+        "location": {
+          "formatted_address": "Köpenicker Ch 47-49, 10317 Berlin, Germany",
+          "city": "Berlin",
+          "county": "Berlin",
+          "country": "Germany"
+        },
+        "datetime_original": "2025:02:05 18:33:32",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Kinetic Sculpture, Berlin, Germany",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The arrangement and suspension of spheres suggest a kinetic sculpture, a common form of modern art installation. The location metadata indicates Berlin, where such contemporary artworks are often displayed.",
+            "detailed_description": "The image shows a kinetic sculpture composed of numerous spheres suspended in the air, likely attached to wires or rods. The spheres are arranged in a dynamic pattern, creating a sense of movement and fluidity. The background features a bright, illuminated panel, which contrasts with the dark spheres, enhancing their visual impact. The setting suggests a modern art installation, possibly in a gallery or museum in Berlin.",
+            "identification": {
+              "primary": [
+                "Kinetic Sculpture"
+              ],
+              "location": "Berlin, Germany",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Kinetic Sculpture",
+                "type": "artwork",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "modern_art",
+              "installation",
+              "Berlin",
+              "sculpture"
+            ],
+            "location": "Berlin, Germany",
+            "type": "artwork",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Art installation in a Berlin museum",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.8,
+                "reasoning": "Berlin is known for its contemporary art scene, and this type of installation is typical in modern art museums."
+              },
+              {
+                "guess": "Contemporary art gallery installation",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The style and presentation are consistent with contemporary art galleries."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Kinetic Sculpture\"],\n        \"location\": \"Berlin, Germany\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Kinetic Sculpture\",\n            \"type\": \"artwork\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"modern_art\", \"installation\", \"Berlin\", \"sculpture\"],\n    \"description\": \"The image shows a kinetic sculpture composed of numerous spheres suspended in the air, likely attached to wires or rods. The spheres are arranged in a dynamic pattern, creating a sense of movement and fluidity. The background features a bright, illuminated panel, which contrasts with the dark spheres, enhancing their visual impact. The setting suggests a modern art installation, possibly in a gallery or museum in Berlin.\",\n    \"reasoning\": \"The arrangement and suspension of spheres suggest a kinetic sculpture, a common form of modern art installation. The location metadata indicates Berlin, where such contemporary artworks are often displayed.\",\n    \"type\": \"artwork\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Art installation in a Berlin museum\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.8,\n            \"reasoning\": \"Berlin is known for its contemporary art scene, and this type of installation is typical in modern art museums.\"\n        },\n        {\n            \"guess\": \"Contemporary art gallery installation\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The style and presentation are consistent with contemporary art galleries.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": 52.49291111111111,
+              "longitude": 13.492716666666666
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Köpenicker Ch 47-49, 10317 Berlin, Germany",
+              "city": "Berlin",
+              "county": "Berlin",
+              "country": "Germany"
+            },
+            "photo_timestamp": "2025:02:05 18:33:32",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 12.359081029891968
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Abstract installation of suspended spheres, Berlin, Germany",
+          "confidence": 0.7,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches an abstract installation, likely an artistic exploration of space and form. The location in Berlin suggests it could be part of a modern art exhibit or installation space. The search results did not provide a specific name, but the visual description aligns with known modern art installations in Berlin.",
+            "identification": {
+              "primary": [
+                "Abstract installation of suspended spheres"
+              ],
+              "location": "Berlin, Germany",
+              "confidence": 0.75
+            },
+            "artifacts": [
+              {
+                "name": "Suspended spherical objects",
+                "type": "artwork",
+                "confidence": 0.85
+              },
+              {
+                "name": "Large rectangular window with horizontal lines",
+                "type": "building",
+                "confidence": 0.7
+              }
+            ],
+            "tags": [
+              "modern",
+              "abstract",
+              "installation",
+              "spheres",
+              "Berlin"
+            ],
+            "sources_used": [
+              "visitberlin.de"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([visitberlin.de]())"
+            ],
+            "type": "artwork",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Modern art installation in Berlin",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "Berlin is known for its modern art scene, and the description fits installations that could be found in galleries or museums there."
+              },
+              {
+                "guess": "Conceptual art installation",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The abstract nature and modern aesthetic suggest a conceptual art piece, possibly exploring themes of space and form."
+              },
+              {
+                "guess": "Art installation at a Berlin museum",
+                "specificity_level": "very_specific",
+                "confidence": 0.5,
+                "reasoning": "Berlin has several museums that host modern art installations, but without a specific name, this is speculative."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 2,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.75,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts an abstract installation consisting of numerous spherical objects suspended in space. These spheres vary in size and are arranged in a seemingly random pattern, creating a dynamic visual effect. The spheres are connected by thin wires or rods, which are barely visible, giving the impression that they are floating. The background features a large, rectangular window with horizontal lines, allowing light to filter through and illuminate the spheres from behind. This backlighting ",
+            "description": "The image depicts an abstract installation consisting of numerous spherical objects suspended in space. These spheres vary in size and are arranged in a seemingly random pattern, creating a dynamic visual effect. The spheres are connected by thin wires or rods, which are barely visible, giving the impression that they are floating. The background features a large, rectangular window with horizontal lines, allowing light to filter through and illuminate the spheres from behind. This backlighting ",
+            "architectural_style": "Modern",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 52.49291111111111,
+              "longitude": 13.492716666666666
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Köpenicker Ch 47-49, 10317 Berlin, Germany",
+              "city": "Berlin",
+              "county": "Berlin",
+              "country": "Germany"
+            },
+            "photo_timestamp": "2025:02:05 18:33:32",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 47.37325835227966
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Monochrome photography",
+          "confidence": 0.967012882232666,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Monochrome photography",
+                "score": 0.967012882232666
+              },
+              {
+                "source": "label",
+                "name": "Monochrome",
+                "score": 0.8920420408248901
+              },
+              {
+                "source": "label",
+                "name": "Black and white",
+                "score": 0.8687145113945007
+              },
+              {
+                "source": "web",
+                "name": "Ретрофити ShadowM",
+                "score": 0.30309998989105225
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Light",
+                "score": 0.31171780824661255
+              },
+              {
+                "name": "Ретрофити ShadowM",
+                "score": 0.30309998989105225
+              },
+              {
+                "name": "ArchitectureM RIBA Chartered Practice",
+                "score": 0.29899999499320984
+              },
+              {
+                "name": "Architecture",
+                "score": 0.2640257179737091
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "White",
+                "score": 0.9692245125770569
+              },
+              {
+                "name": "Monochrome photography",
+                "score": 0.967012882232666
+              },
+              {
+                "name": "Black",
+                "score": 0.9081025719642639
+              },
+              {
+                "name": "Monochrome",
+                "score": 0.8920420408248901
+              },
+              {
+                "name": "Black and white",
+                "score": 0.8687145113945007
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 52.49291111111111,
+              "longitude": 13.492716666666666
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Köpenicker Ch 47-49, 10317 Berlin, Germany",
+              "city": "Berlin",
+              "county": "Berlin",
+              "country": "Germany"
+            },
+            "photo_timestamp": "2025:02:05 18:33:32",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 15.276381969451904
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Berlin, Germany",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Berlin, Germany",
+            "coordinates": {
+              "latitude": 52.49291111111111,
+              "longitude": 13.492716666666666
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Spreepark",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 2701,
+                  "vicinity": "Kiehnwerderallee 1-3, Berlin-Bezirk Treptow-Köpenick",
+                  "place_id": "ChIJo8NAJSRPqEcRUZxTK-spns0",
+                  "location": {
+                    "lat": 52.4840998,
+                    "lng": 13.4910951
+                  }
+                },
+                {
+                  "name": "Winterlights in Rummelsburg",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 2.7,
+                  "user_ratings_total": 47,
+                  "vicinity": "Köpenicker Chaussee 46, Berlin",
+                  "place_id": "ChIJXZzPV59PqEcRI-vjt6hS1mM",
+                  "location": {
+                    "lat": 52.49274570000001,
+                    "lng": 13.4927064
+                  }
+                },
+                {
+                  "name": "UFO Hausboot - Futuro 13",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 9,
+                  "vicinity": "Zur alten Flussbadeanstalt 1, Berlin-Bezirk Lichtenberg",
+                  "place_id": "ChIJw-Oaa15PqEcRBDLhKU4_B7A",
+                  "location": {
+                    "lat": 52.4897868,
+                    "lng": 13.4911238
+                  }
+                },
+                {
+                  "name": "Gepflegter Audi",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3,
+                  "user_ratings_total": 3,
+                  "vicinity": "Georg-Löwenstein-Straße 28, Berlin",
+                  "place_id": "ChIJK_T2dwBPqEcRuSHU0CcUoU8",
+                  "location": {
+                    "lat": 52.4943432,
+                    "lng": 13.4861841
+                  }
+                },
+                {
+                  "name": "Spreepark Spreeblitz",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 14,
+                  "vicinity": "12435, Berlin",
+                  "place_id": "ChIJ3cG_C75PqEcRi_gjVKErs6c",
+                  "location": {
+                    "lat": 52.4863412,
+                    "lng": 13.4897485
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Gedenkort Rummelsburg",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 30,
+                  "vicinity": "Friedrich-Jacobs-Promenade 3, Berlin-Bezirk Lichtenberg",
+                  "place_id": "ChIJ6covRudOqEcR-ZokFF8xDTw",
+                  "location": {
+                    "lat": 52.4964147,
+                    "lng": 13.4859164
+                  }
+                },
+                {
+                  "name": "DARK MATTER",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 5856,
+                  "vicinity": "Köpenicker Chaussee 46, Berlin-Bezirk Lichtenberg",
+                  "place_id": "ChIJqc2JIkRPqEcRLdpX7ohXL0U",
+                  "location": {
+                    "lat": 52.49274140000001,
+                    "lng": 13.4926954
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Hafenküche Berlin - Hafenjungs Berlin GmbH",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1930,
+                  "vicinity": "Zur alten Flussbadeanstalt 5, Berlin-Bezirk Lichtenberg",
+                  "place_id": "ChIJXVK-dN9OqEcRM7o4xzSv0Y4",
+                  "location": {
+                    "lat": 52.4915742,
+                    "lng": 13.4894231
+                  }
+                },
+                {
+                  "name": "Marco Polo Uno",
+                  "types": [
+                    "bar",
+                    "meal_takeaway",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 2255,
+                  "vicinity": "Dolgenseestraße 9 G, Berlin-Bezirk Lichtenberg",
+                  "place_id": "ChIJ5_IBTdFOqEcRfyAOo3_lS_4",
+                  "location": {
+                    "lat": 52.49289460000001,
+                    "lng": 13.5069314
+                  }
+                },
+                {
+                  "name": "Pizza Toscana Berlin",
+                  "types": [
+                    "meal_delivery",
+                    "meal_takeaway",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 310,
+                  "vicinity": "Lückstraße 45, Berlin",
+                  "place_id": "ChIJW6SzJsNOqEcRW5qZmVvzroU",
+                  "location": {
+                    "lat": 52.5008206,
+                    "lng": 13.4940704
+                  }
+                },
+                {
+                  "name": "Il Bufalo",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 692,
+                  "vicinity": "Rummelsburger Straße 84, Berlin-Bezirk Lichtenberg",
+                  "place_id": "ChIJFcHcXsNOqEcRL-sgebYOm6s",
+                  "location": {
+                    "lat": 52.5010095,
+                    "lng": 13.4975335
+                  }
+                },
+                {
+                  "name": "Spreedeck - Hafenküche",
+                  "types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 7,
+                  "vicinity": "Zur Alten Flussbadeanstalt, Am Wasser 5, Berlin",
+                  "place_id": "ChIJi8UbKoJPqEcR9u5HUJt1JHg",
+                  "location": {
+                    "lat": 52.4915406,
+                    "lng": 13.4893694
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Spreepark",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 2701,
+                  "vicinity": "Kiehnwerderallee 1-3, Berlin-Bezirk Treptow-Köpenick",
+                  "place_id": "ChIJo8NAJSRPqEcRUZxTK-spns0",
+                  "location": {
+                    "lat": 52.4840998,
+                    "lng": 13.4910951
+                  }
+                },
+                {
+                  "name": "Hundeplatz Rummelsburg",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 974,
+                  "vicinity": "Berlin",
+                  "place_id": "ChIJ4QF-LddOqEcRiIe_bRBYvVo",
+                  "location": {
+                    "lat": 52.4931336,
+                    "lng": 13.5031525
+                  }
+                },
+                {
+                  "name": "Rummelsburger Ufer",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1035,
+                  "vicinity": "Charlotte-Salomon-Hain 14, Berlin-Bezirk Lichtenberg",
+                  "place_id": "ChIJOxwZT-FOqEcRM0_EKcDkDg8",
+                  "location": {
+                    "lat": 52.49574819999999,
+                    "lng": 13.4807993
+                  }
+                },
+                {
+                  "name": "Medaillonplatz",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Berlin-Lichtenberg",
+                  "place_id": "ChIJVVVVzuZOqEcRldnw_L60j_k",
+                  "location": {
+                    "lat": 52.4965901,
+                    "lng": 13.4825648
+                  }
+                },
+                {
+                  "name": "Stralauer Spitze",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 46,
+                  "vicinity": "Tunnelstraße 29, Berlin",
+                  "place_id": "ChIJDRW4I95PqEcRkGEZquvg_5g",
+                  "location": {
+                    "lat": 52.4886552,
+                    "lng": 13.4824944
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Dorfkirche Stralau",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 31,
+                  "vicinity": "Tunnelstraße 5-11, Berlin-Bezirk Friedrichshain-Kreuzberg",
+                  "place_id": "ChIJMyl-8eFOqEcRSW2ExJcmS2M",
+                  "location": {
+                    "lat": 52.4912234,
+                    "lng": 13.4791321
+                  }
+                },
+                {
+                  "name": "Kapelle",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Friedrichshain, Berlin",
+                  "place_id": "ChIJ-Qer3FtPqEcRYJ_A_O_R8Ps",
+                  "location": {
+                    "lat": 52.49138749999999,
+                    "lng": 13.4783041
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "krautART ARTspace",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Lückstraße 11 Front, Lückstraße 11/building, ground floor, Berlin",
+                  "place_id": "ChIJS0paGehOqEcRABIgpCZ2C4I",
+                  "location": {
+                    "lat": 52.50168970000001,
+                    "lng": 13.4895216
+                  }
+                },
+                {
+                  "name": "Rummelburger Kunst",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Tunnelstraße 36, Berlin",
+                  "place_id": "ChIJY5NxAQBPqEcR58Gf_yn6j_c",
+                  "location": {
+                    "lat": 52.492176,
+                    "lng": 13.483133
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Berlin",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Berlin",
+                  "place_id": "ChIJAVkDPzdOqEcRcDteW0YgIQQ",
+                  "location": {
+                    "lat": 52.52000659999999,
+                    "lng": 13.404954
+                  }
+                },
+                {
+                  "name": "Ostbloc Boulderhalle",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2123,
+                  "vicinity": "Hauptstraße 13, Berlin-Bezirk Lichtenberg",
+                  "place_id": "ChIJH76SlthNqEcR1q_R0RJTV1Y",
+                  "location": {
+                    "lat": 52.4912363,
+                    "lng": 13.4883836
+                  }
+                },
+                {
+                  "name": "Hafenküche Berlin - Hafenjungs Berlin GmbH",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 1930,
+                  "vicinity": "Zur alten Flussbadeanstalt 5, Berlin-Bezirk Lichtenberg",
+                  "place_id": "ChIJXVK-dN9OqEcRM7o4xzSv0Y4",
+                  "location": {
+                    "lat": 52.4915742,
+                    "lng": 13.4894231
+                  }
+                },
+                {
+                  "name": "Spreepark",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 2701,
+                  "vicinity": "Kiehnwerderallee 1-3, Berlin-Bezirk Treptow-Köpenick",
+                  "place_id": "ChIJo8NAJSRPqEcRUZxTK-spns0",
+                  "location": {
+                    "lat": 52.4840998,
+                    "lng": 13.4910951
+                  }
+                },
+                {
+                  "name": "Friedrich-List-Schule (OSZ Büromanagement und Wirtschaftssprachen), Filiale Fischerstraße",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 2.6,
+                  "user_ratings_total": 36,
+                  "vicinity": "Fischerstraße 32, Berlin-Bezirk Lichtenberg",
+                  "place_id": "ChIJofoCYN1OqEcRfxrN6Cv61vk",
+                  "location": {
+                    "lat": 52.49899689999999,
+                    "lng": 13.4895099
+                  }
+                }
+              ]
+            },
+            "total_places_found": 26,
+            "photo_timestamp": "2025:02:05 18:33:32",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.3693881034851074
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/140.jpg"
+    },
+    {
+      "image_filename": "140.jpg",
+      "timestamp": "2026-01-28T02:17:50.294855",
+      "processing_time_seconds": 60.880187,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Suspended spherical installation",
+          "confidence": 0.75,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The installation's abstract nature and use of geometric shapes suggest it is a modern artwork. The arrangement and suspension of spheres are characteristic of contemporary installation art.",
+            "detailed_description": "The image shows an abstract installation composed of numerous spherical objects suspended in space. These spheres are arranged in a seemingly random pattern, creating a dynamic visual effect. The installation is set against a backdrop of a bright, vertically striped window, which contrasts with the dark surroundings. The artwork appears to be modern and abstract, utilizing simple geometric forms to create an engaging visual experience.",
+            "identification": {
+              "primary": [
+                "Suspended spherical installation"
+              ],
+              "location": null,
+              "confidence": 0.75
+            },
+            "artifacts": [
+              {
+                "name": "Suspended spherical installation",
+                "type": "artwork",
+                "confidence": 0.75
+              }
+            ],
+            "tags": [
+              "installation_art",
+              "modern_art",
+              "spheres",
+              "suspended",
+              "abstract"
+            ],
+            "location": null,
+            "type": "artwork",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Contemporary art installation in a gallery",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The style and presentation are typical of modern art installations found in galleries."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Suspended spherical installation\"],\n        \"location\": null,\n        \"confidence\": 0.75\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Suspended spherical installation\",\n            \"type\": \"artwork\",\n            \"confidence\": 0.75\n        }\n    ],\n    \"tags\": [\"installation_art\", \"modern_art\", \"spheres\", \"suspended\", \"abstract\"],\n    \"description\": \"The image shows an abstract installation composed of numerous spherical objects suspended in space. These spheres are arranged in a seemingly random pattern, creating a dynamic visual effect. The installation is set against a backdrop of a bright, vertically striped window, which contrasts with the dark surroundings. The artwork appears to be modern and abstract, utilizing simple geometric forms to create an engaging visual experience.\",\n    \"reasoning\": \"The installation's abstract nature and use of geometric shapes suggest it is a modern artwork. The arrangement and suspension of spheres are characteristic of contemporary installation art.\",\n    \"type\": \"artwork\",\n    \"search_range_meters\": 2000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Contemporary art installation in a gallery\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The style and presentation are typical of modern art installations found in galleries.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 14.652931213378906
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Modern art installation with suspended spheres",
+          "confidence": 0.7,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches a modern art installation with suspended spheres, which is a common theme in contemporary art. The search results suggest this is a known installation but do not provide a specific name or location. The visual features described align with typical modern art settings, emphasizing minimalism and abstract composition.",
+            "identification": {
+              "primary": [
+                "Modern art installation with suspended spheres"
+              ],
+              "location": null,
+              "confidence": 0.75
+            },
+            "artifacts": [
+              {
+                "name": "Suspended spherical objects",
+                "type": "artwork",
+                "confidence": 0.85
+              },
+              {
+                "name": "Large rectangular window with vertical blinds",
+                "type": "building",
+                "confidence": 0.7
+              }
+            ],
+            "tags": [
+              "modern",
+              "art installation",
+              "spheres",
+              "minimalist",
+              "diffused lighting"
+            ],
+            "sources_used": [
+              "en.wikipedia.org",
+              "apnews.com",
+              "wallpaper.com"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([apnews.com]())",
+              "*URL*: ([wallpaper.com]())",
+              "*URL*: ([wallpaper.com]())",
+              "*URL*: ([axios.com]())"
+            ],
+            "type": "artwork",
+            "search_range_meters": 2000,
+            "educated_guesses": [
+              {
+                "guess": "Contemporary art installation in a gallery",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.7,
+                "reasoning": "The description suggests a gallery setting, which is common for such installations."
+              },
+              {
+                "guess": "Modern art installation by a known artist",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "While the search results indicate a known installation, they do not specify the artist or title."
+              },
+              {
+                "guess": "Abstract art installation with lighting effects",
+                "specificity_level": "very_general",
+                "confidence": 0.5,
+                "reasoning": "The description focuses on the abstract nature and lighting effects, which are typical in modern art."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.75,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image depicts a modern art installation featuring numerous spherical objects suspended in mid-air. These spheres vary in size and are arranged in a seemingly random pattern, creating a dynamic and visually engaging composition. The spheres are connected to thin, barely visible wires, giving the impression of floating. The installation is set against a backdrop of a large, rectangular window, which is the primary light source in the scene. The window is covered with vertical blinds, allowing ",
+            "description": "The image depicts a modern art installation featuring numerous spherical objects suspended in mid-air. These spheres vary in size and are arranged in a seemingly random pattern, creating a dynamic and visually engaging composition. The spheres are connected to thin, barely visible wires, giving the impression of floating. The installation is set against a backdrop of a large, rectangular window, which is the primary light source in the scene. The window is covered with vertical blinds, allowing ",
+            "architectural_style": "Modern",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 46.22447323799133
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Monochrome photography",
+          "confidence": 0.967012882232666,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Monochrome photography",
+                "score": 0.967012882232666
+              },
+              {
+                "source": "label",
+                "name": "Monochrome",
+                "score": 0.8920420408248901
+              },
+              {
+                "source": "label",
+                "name": "Black and white",
+                "score": 0.8687145113945007
+              },
+              {
+                "source": "web",
+                "name": "Ретрофити ShadowM",
+                "score": 0.30309998989105225
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Light",
+                "score": 0.31171780824661255
+              },
+              {
+                "name": "Ретрофити ShadowM",
+                "score": 0.30309998989105225
+              },
+              {
+                "name": "ArchitectureM RIBA Chartered Practice",
+                "score": 0.29899999499320984
+              },
+              {
+                "name": "Architecture",
+                "score": 0.2640257179737091
+              }
+            ],
+            "objects": [],
+            "labels": [
+              {
+                "name": "White",
+                "score": 0.9692245125770569
+              },
+              {
+                "name": "Monochrome photography",
+                "score": 0.967012882232666
+              },
+              {
+                "name": "Black",
+                "score": 0.9081025719642639
+              },
+              {
+                "name": "Monochrome",
+                "score": 0.8920420408248901
+              },
+              {
+                "name": "Black and white",
+                "score": 0.8687145113945007
+              }
+            ],
+            "processing_time_seconds": 15.624634265899658
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/140.jpg"
+    }
+  ]
+}

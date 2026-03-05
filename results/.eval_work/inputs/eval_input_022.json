@@ -1,0 +1,1214 @@
+{
+  "image_id": 22,
+  "filename": "22.jpg",
+  "ground_truth": {
+    "description": "Photo from ferry from south port of Manhattan. Manhattan skyline visible, specifically financial district. New World Trade Center visible.",
+    "photographer_description": "Photo taken from the ferry that goes from the south port of Manhattan. The Manhattan skyline, specifically the financial district is visible. It should be able to get this, and hopefully some specific buildings like the new World Trade Center. It is daytime but cloudy.",
+    "locations": [
+      {
+        "name": "Manhattan (Financial District) from harbor, New York City, New York, USA",
+        "hierarchy": {
+          "country": "USA",
+          "region": "New York",
+          "city": "New York City",
+          "exact": "Manhattan (Financial District) from harbor"
+        }
+      },
+      {
+        "name": "Staten island ferry",
+        "hierarchy": {
+          "country": "USA",
+          "region": "New York",
+          "city": "New York",
+          "exact": ""
+        },
+        "added_by": "human_evaluator"
+      }
+    ],
+    "entities": [
+      {
+        "name": "One World Trade Center",
+        "type": "landmark",
+        "notes": null,
+        "max_specificity": 5,
+        "importance": "high"
+      },
+      {
+        "name": "Manhattan Financial District skyline",
+        "type": "district",
+        "notes": "",
+        "max_specificity": 5,
+        "importance": "high"
+      },
+      {
+        "name": "Brookfield Place (World Financial Center)",
+        "type": "building",
+        "notes": "",
+        "max_specificity": 5,
+        "added_by": "human_evaluator",
+        "importance": "medium"
+      },
+      {
+        "name": "Pier A Harbor House / ferry",
+        "type": "transport_hub",
+        "notes": "",
+        "max_specificity": 5,
+        "added_by": "human_evaluator",
+        "importance": "medium"
+      },
+      {
+        "name": "Brooklyn Bridge",
+        "type": "landmark",
+        "notes": "",
+        "max_specificity": 5,
+        "added_by": "human_evaluator",
+        "importance": "low"
+      }
+    ],
+    "scene_type": [
+      "cityscape",
+      "skyline"
+    ],
+    "key_visual_elements": [
+      "Manhattan skyline",
+      "One World Trade Center",
+      "Harbor/water (water in foreground, waterfront view)",
+      "Financial district buildings"
+    ],
+    "max_specificity": "Specific",
+    "difficulty": "Easy-Medium",
+    "notes": "Should recognize skyline, hopefully specific buildings like WTC. Daytime, cloudy.",
+    "gps_metadata": {
+      "gps_latitude": 40.68326944444444,
+      "gps_longitude": -74.03484722222223,
+      "reverse_geocoded": {
+        "formatted_address": "MXM8+83 New York, NY, USA",
+        "city": "New York",
+        "county": "New York",
+        "country": "United States"
+      }
+    },
+    "difficulty_with_gps": "medium",
+    "difficulty_without_gps": "medium",
+    "image_categories": [
+      "landmark",
+      "urban"
+    ]
+  },
+  "model_runs": [
+    {
+      "image_filename": "22.jpg",
+      "use_gps": true,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "A wide, overcast dusk view across open water toward the Lower Manhattan skyline in New York City. The foreground shows the choppy surface of Upper New York Bay and the edge of an orange metal safety barrier at the bottom of the frame, suggesting the photo was taken from a boat. Dominating the skyline near center-left is One World Trade Center with its illuminated spire. Around it are the glass-and-steel towers of the Financial District and Battery Park City, including several buildings with greenish pyramid roofs typical of the Brookfield Place complex. Along the right side are dense waterfront office towers at the southern tip of Manhattan; low-lying land and piers extend toward the far right, likely the Battery/Governors Island area. City lights are beginning to appear under a thick gray cloud deck, giving the scene a cool, twilight ambiance.",
+            "photographer_location": [
+              {
+                "name": "Upper New York Bay, New York Harbor, New York, United States",
+                "confidence": 0.92
+              },
+              {
+                "name": "Liberty Island, New York, United States",
+                "confidence": 0.65
+              },
+              {
+                "name": "Governors Island, New York, United States",
+                "confidence": 0.6
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Lower Manhattan, New York, United States",
+                "confidence": 0.98
+              },
+              {
+                "name": "Financial District, Manhattan, New York, United States",
+                "confidence": 0.95
+              },
+              {
+                "name": "Battery Park City, Manhattan, New York, United States",
+                "confidence": 0.8
+              }
+            ],
+            "entities": [
+              {
+                "name": "One World Trade Center (Freedom Tower)",
+                "type": "building",
+                "confidence": 0.99,
+                "notes": "Tallest building with illuminated spire; principal tower of the rebuilt World Trade Center complex."
+              },
+              {
+                "name": "Lower Manhattan skyline",
+                "type": "district",
+                "confidence": 0.97,
+                "notes": "View toward the southern tip of Manhattan."
+              },
+              {
+                "name": "Financial District, Manhattan",
+                "type": "district",
+                "confidence": 0.94,
+                "notes": "Dense cluster of office towers at the island’s tip."
+              },
+              {
+                "name": "Battery Park City",
+                "type": "district",
+                "confidence": 0.82,
+                "notes": "West-of-One WTC waterfront neighborhood; includes Brookfield Place."
+              },
+              {
+                "name": "Brookfield Place (World Financial Center)",
+                "type": "building",
+                "confidence": 0.78,
+                "notes": "Complex with distinctive green-pyramid roofs west of One WTC."
+              },
+              {
+                "name": "200 Vesey Street (One World Financial Center)",
+                "type": "building",
+                "confidence": 0.72,
+                "notes": "Part of Brookfield Place; green pyramidal roof visible."
+              },
+              {
+                "name": "Upper New York Bay",
+                "type": "natural_feature",
+                "confidence": 0.96,
+                "notes": "Foreground waterbody of New York Harbor."
+              },
+              {
+                "name": "New York Harbor",
+                "type": "natural_feature",
+                "confidence": 0.9,
+                "notes": "Broader harbor encompassing Upper New York Bay."
+              },
+              {
+                "name": "Battery Park",
+                "type": "public_space",
+                "confidence": 0.7,
+                "notes": "Waterfront park at Manhattan’s southern tip along the right-center shoreline."
+              },
+              {
+                "name": "Pier A Harbor House",
+                "type": "building",
+                "confidence": 0.56,
+                "notes": "Historic pier with a small tower/green roof at Battery Park; likely among the waterfront structures."
+              },
+              {
+                "name": "Governors Island",
+                "type": "natural_feature",
+                "confidence": 0.62,
+                "notes": "Low-lying land mass off the right edge/foreground vicinity."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "A harbor-view of the Manhattan skyline across a gray, overcast harbor. The foreground shows choppy dark water and a hint of orange ferry railing along the lower edge, suggesting the photo was taken from a boat or ferry. The skyline features a dense cluster of mid- to high-rise buildings with One World Trade Center standing tall toward the left of center, characteristic of Lower Manhattan. The overall scene is moody and urban, with the skyline occupying the horizon and the water in the foreground.",
+            "photographer_location": [
+              {
+                "name": "New York, United States",
+                "confidence": 0.95
+              },
+              {
+                "name": "Liberty Island, New York, United States",
+                "confidence": 0.65
+              },
+              {
+                "name": "Governors Island, New York, United States",
+                "confidence": 0.6
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Lower Manhattan, New York, United States",
+                "confidence": 0.9
+              },
+              {
+                "name": "Manhattan Island, New York, United States",
+                "confidence": 0.75
+              },
+              {
+                "name": "New York County, New York, United States",
+                "confidence": 0.55
+              }
+            ],
+            "entities": [
+              {
+                "name": "One World Trade Center",
+                "type": "building",
+                "confidence": 0.92,
+                "notes": "Tallest building in the NYC skyline; spire visible."
+              },
+              {
+                "name": "Lower Manhattan",
+                "type": "district",
+                "confidence": 0.85,
+                "notes": null
+              },
+              {
+                "name": "Manhattan skyline",
+                "type": "viewpoint",
+                "confidence": 0.68,
+                "notes": null
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "Overcast, dusk view across Upper New York Bay toward the Lower Manhattan skyline. The foreground shows choppy harbor water and the edge of a boat or ferry railing. Center-left rises the illuminated One World Trade Center with its spire, surrounded by the dense cluster of Financial District and Battery Park City skyscrapers. Jersey City towers are faint at the far right. City lights are beginning to glow under a low, gray cloud deck.",
+            "photographer_location": [
+              {
+                "name": "Upper New York Bay, New York, USA",
+                "confidence": 0.93
+              },
+              {
+                "name": "Near Governors Island, New York, USA",
+                "confidence": 0.88
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Lower Manhattan, New York, NY, USA",
+                "confidence": 0.96
+              },
+              {
+                "name": "Financial District, Manhattan, New York, NY, USA",
+                "confidence": 0.92
+              }
+            ],
+            "entities": [
+              {
+                "name": "One World Trade Center",
+                "type": "building",
+                "confidence": 0.98,
+                "notes": "Also known as the Freedom Tower; tallest building in the scene with a spire."
+              },
+              {
+                "name": "Lower Manhattan skyline",
+                "type": "district",
+                "confidence": 0.97,
+                "notes": null
+              },
+              {
+                "name": "World Trade Center complex",
+                "type": "landmark",
+                "confidence": 0.86,
+                "notes": null
+              },
+              {
+                "name": "Upper New York Bay (New York Harbor)",
+                "type": "natural_feature",
+                "confidence": 0.95,
+                "notes": "Harbor waters in the foreground."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "A harbor panorama of Lower Manhattan's skyline taken from the water on an overcast day. In the foreground, choppy gray water and an orange railing along the bottom edge suggest the photo was taken from a boat or ferry. The middle ground shows a dense cluster of skyscrapers along the southern Manhattan shoreline, with One World Trade Center standing prominently near the left-center as a tall, spired tower. The rest of the skyline comprises mid- to high-rise buildings with glass and masonry facades, under a muted gray sky.",
+            "photographer_location": [
+              {
+                "name": "New York City, New York, USA",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Lower Manhattan, New York City, New York, USA",
+                "confidence": 0.85
+              }
+            ],
+            "entities": [
+              {
+                "name": "One World Trade Center",
+                "type": "landmark",
+                "confidence": 0.84,
+                "notes": "Iconic tallest building on the Manhattan skyline with a distinctive spire."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A wide, eye-level shot capturing the skyline of Lower Manhattan from the water on a heavily overcast day. The scene is dominated by the skyscrapers of the Financial District and Battery Park City, with the One World Trade Center standing as the tallest and most prominent landmark in the center-left, its spire piercing the grey sky. To its left, the glass façade of the Goldman Sachs Tower (200 West Street) and the complex of Brookfield Place are visible. To the right, the dense cluster of the Financial District includes 4 World Trade Center. The sky is filled with dark, textured grey clouds, and the city lights are beginning to twinkle, suggesting dusk or low-light conditions. The foreground consists of the choppy, dark grey waters of the Upper New York Bay. At the very bottom edge of the frame, a distinct yellow railing with circular details is visible, characteristic of the Staten Island Ferry.",
+            "photographer_location": [
+              {
+                "name": "Upper New York Bay",
+                "confidence": 0.95
+              },
+              {
+                "name": "Staten Island Ferry",
+                "confidence": 0.9
+              },
+              {
+                "name": "New York",
+                "confidence": 0.99
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Lower Manhattan",
+                "confidence": 0.99
+              },
+              {
+                "name": "Financial District",
+                "confidence": 0.95
+              },
+              {
+                "name": "New York",
+                "confidence": 0.99
+              }
+            ],
+            "entities": [
+              {
+                "name": "One World Trade Center",
+                "type": "landmark",
+                "confidence": 0.99,
+                "notes": "Also known as Freedom Tower"
+              },
+              {
+                "name": "Lower Manhattan Skyline",
+                "type": "district",
+                "confidence": 0.99,
+                "notes": null
+              },
+              {
+                "name": "Upper New York Bay",
+                "type": "natural_feature",
+                "confidence": 0.95,
+                "notes": null
+              },
+              {
+                "name": "4 World Trade Center",
+                "type": "building",
+                "confidence": 0.9,
+                "notes": null
+              },
+              {
+                "name": "Brookfield Place",
+                "type": "building",
+                "confidence": 0.85,
+                "notes": "Formerly World Financial Center"
+              },
+              {
+                "name": "200 West Street",
+                "type": "building",
+                "confidence": 0.85,
+                "notes": "Goldman Sachs Tower"
+              },
+              {
+                "name": "Staten Island Ferry",
+                "type": "transport_hub",
+                "confidence": 0.9,
+                "notes": "Identified by the yellow railing in foreground"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A wide-angle, eye-level photograph of the Lower Manhattan skyline as seen from the Upper New York Bay under a thick, grey overcast sky. The prominent One World Trade Center with its tall spire stands out on the left side of the main skyscraper cluster. Other notable buildings of the Financial District, including 40 Wall Street and 28 Liberty Street, are visible. To the right, the Brooklyn Bridge spans the East River, with the Brooklyn skyline appearing on the far right. The foreground consists of the dark, slightly choppy waters of the harbor. At the very bottom edge, a yellow metal railing suggests the photo was taken from a boat or ferry.",
+            "photographer_location": [
+              {
+                "name": "Upper New York Bay, New York, NY",
+                "confidence": 0.95
+              },
+              {
+                "name": "Staten Island Ferry",
+                "confidence": 0.85
+              },
+              {
+                "name": "New York Harbor",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Lower Manhattan, New York, NY",
+                "confidence": 1.0
+              },
+              {
+                "name": "Financial District, Manhattan, New York, NY",
+                "confidence": 0.95
+              }
+            ],
+            "entities": [
+              {
+                "name": "One World Trade Center",
+                "type": "landmark",
+                "confidence": 1.0,
+                "notes": "Designed by David Childs of SOM, completed in 2014."
+              },
+              {
+                "name": "Lower Manhattan Skyline",
+                "type": "landmark",
+                "confidence": 1.0,
+                "notes": null
+              },
+              {
+                "name": "Brooklyn Bridge",
+                "type": "landmark",
+                "confidence": 0.9,
+                "notes": "Suspension bridge connecting Manhattan and Brooklyn."
+              },
+              {
+                "name": "40 Wall Street",
+                "type": "building",
+                "confidence": 0.9,
+                "notes": "Also known as the Trump Building."
+              },
+              {
+                "name": "28 Liberty Street",
+                "type": "building",
+                "confidence": 0.85,
+                "notes": "Formerly One Chase Manhattan Plaza."
+              },
+              {
+                "name": "Upper New York Bay",
+                "type": "natural_feature",
+                "confidence": 0.95,
+                "notes": null
+              },
+              {
+                "name": "Financial District",
+                "type": "district",
+                "confidence": 1.0,
+                "notes": null
+              },
+              {
+                "name": "8 Spruce Street",
+                "type": "building",
+                "confidence": 0.8,
+                "notes": "Also known as New York by Gehry."
+              },
+              {
+                "name": "Woolworth Building",
+                "type": "building",
+                "confidence": 0.85,
+                "notes": "Early 20th-century neo-Gothic skyscraper."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "Skyscraper",
+                "type": "other",
+                "confidence": 0.5020307898521423,
+                "notes": null
+              },
+              {
+                "name": "Water",
+                "type": "other",
+                "confidence": 0.47040000557899475,
+                "notes": null
+              },
+              {
+                "name": "Birds",
+                "type": "other",
+                "confidence": 0.44429999589920044,
+                "notes": null
+              },
+              {
+                "name": "sea-m",
+                "type": "other",
+                "confidence": 0.424699991941452,
+                "notes": null
+              },
+              {
+                "name": "High-rise building",
+                "type": "other",
+                "confidence": 0.3615587055683136,
+                "notes": null
+              },
+              {
+                "name": "Water bird",
+                "type": "other",
+                "confidence": 0.3605000078678131,
+                "notes": null
+              },
+              {
+                "name": "Cityscape",
+                "type": "other",
+                "confidence": 0.3576214909553528,
+                "notes": null
+              },
+              {
+                "name": "Building",
+                "type": "other",
+                "confidence": 0.3402000069618225,
+                "notes": null
+              },
+              {
+                "name": "Metropolitan area",
+                "type": "cultural_site",
+                "confidence": 0.3328612148761749,
+                "notes": null
+              },
+              {
+                "name": "Urban area",
+                "type": "other",
+                "confidence": 0.2842999994754791,
+                "notes": null
+              },
+              {
+                "name": "Sky",
+                "type": "other",
+                "confidence": 0.9932429194450378,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Skyscraper",
+                "type": "other",
+                "confidence": 0.9882510304450989,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Water resources",
+                "type": "other",
+                "confidence": 0.9819936156272888,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Daytime",
+                "type": "other",
+                "confidence": 0.9819731116294861,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Body of water",
+                "type": "other",
+                "confidence": 0.9790822267532349,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Building",
+                "type": "other",
+                "confidence": 0.9777870774269104,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "City",
+                "type": "other",
+                "confidence": 0.9777040481567383,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Urban area",
+                "type": "other",
+                "confidence": 0.9763112664222717,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Cloud",
+                "type": "other",
+                "confidence": 0.9737001061439514,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Horizon",
+                "type": "other",
+                "confidence": 0.9683344960212708,
+                "notes": "Detected via label detection"
+              }
+            ],
+            "landmark_name": null
+          }
+        }
+      ]
+    },
+    {
+      "image_filename": "22.jpg",
+      "use_gps": false,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "Wide view of the Lower Manhattan skyline seen across open water at dusk under overcast skies. The most prominent feature is One World Trade Center with its illuminated spire, surrounded by dense clusters of modern glass-and-steel skyscrapers of the Financial District and Battery Park City. Building lights are on, reflecting a twilight setting. In the far right distance, a single tall rectangular tower with a glowing crown consistent with the Goldman Sachs Tower in Jersey City is visible. The foreground shows choppy harbor water and a small portion of an orange ferry barrier at the bottom edge, suggesting the photo was taken from a ferry in New York Harbor.",
+            "photographer_location": [
+              {
+                "name": "New York Harbor, New York City, New York, USA",
+                "confidence": 0.9
+              },
+              {
+                "name": "Upper New York Bay, New York City, New York, USA",
+                "confidence": 0.85
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Lower Manhattan, Manhattan, New York City, New York, USA",
+                "confidence": 0.97
+              },
+              {
+                "name": "Financial District, Manhattan, New York City, New York, USA",
+                "confidence": 0.9
+              },
+              {
+                "name": "World Trade Center site, Manhattan, New York City, New York, USA",
+                "confidence": 0.88
+              }
+            ],
+            "entities": [
+              {
+                "name": "One World Trade Center (Freedom Tower)",
+                "type": "building",
+                "confidence": 0.98,
+                "notes": "Skidmore, Owings & Merrill (David Childs); opened 2014; 541 m including spire."
+              },
+              {
+                "name": "World Trade Center complex",
+                "type": "landmark",
+                "confidence": 0.9,
+                "notes": "Redeveloped site including One WTC and adjacent towers in Lower Manhattan."
+              },
+              {
+                "name": "Lower Manhattan skyline",
+                "type": "district",
+                "confidence": 0.96,
+                "notes": "Financial District and Battery Park City cluster of skyscrapers."
+              },
+              {
+                "name": "Financial District (FiDi)",
+                "type": "district",
+                "confidence": 0.9,
+                "notes": null
+              },
+              {
+                "name": "Battery Park City",
+                "type": "district",
+                "confidence": 0.7,
+                "notes": null
+              },
+              {
+                "name": "Brookfield Place (World Financial Center)",
+                "type": "building",
+                "confidence": 0.65,
+                "notes": "Office and retail complex with green-pyramid rooflines in Battery Park City."
+              },
+              {
+                "name": "New York Harbor / Upper New York Bay",
+                "type": "natural_feature",
+                "confidence": 0.95,
+                "notes": "Body of water in the foreground."
+              },
+              {
+                "name": "Goldman Sachs Tower (30 Hudson Street), Jersey City",
+                "type": "building",
+                "confidence": 0.72,
+                "notes": "Pei Cobb Freed & Partners; completed 2004; tall rectangular tower with illuminated crown on the Jersey City waterfront."
+              },
+              {
+                "name": "Staten Island Ferry (viewpoint inference)",
+                "type": "infrastructure",
+                "confidence": 0.6,
+                "notes": "Orange barrier at the bottom edge suggests the photo was taken from a Staten Island Ferry vessel."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "A wide-angle view across the Hudson River showing the Manhattan skyline on a gray, overcast day. In the foreground is choppy water with a yellow railing at the bottom edge, indicating the photo was taken from a ferry or boat. The skyline features One World Trade Center as the dominant tall tower among a dense cluster of glass-and-steel skyscrapers, with other midrise and high-rise buildings forming a continuous waterfront façade. Lights begin to appear in the windows, giving a dim evening glow to the city.",
+            "photographer_location": [
+              {
+                "name": "Jersey City, New Jersey, USA",
+                "confidence": 0.8
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Manhattan, New York, USA",
+                "confidence": 0.95
+              }
+            ],
+            "entities": [
+              {
+                "name": "One World Trade Center",
+                "type": "building",
+                "confidence": 0.92,
+                "notes": "Also known as Freedom Tower; tallest building in New York City."
+              },
+              {
+                "name": "Lower Manhattan skyline",
+                "type": "district",
+                "confidence": 0.7,
+                "notes": "Concentration of skyscrapers including the World Trade Center complex."
+              },
+              {
+                "name": "Hudson River",
+                "type": "natural_feature",
+                "confidence": 0.85,
+                "notes": null
+              },
+              {
+                "name": "Manhattan skyline",
+                "type": "landmark",
+                "confidence": 0.65,
+                "notes": "Overall skyline of the borough."
+              },
+              {
+                "name": "Brooklyn Bridge",
+                "type": "infrastructure",
+                "confidence": 0.4,
+                "notes": "Possible distant bridge silhouette on the right; not a clear view."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "Dusk view across choppy waters of New York Harbor toward the dense Lower Manhattan skyline under low gray clouds. The tallest, glass-clad tower with an illuminated spire near left-of-center is One World Trade Center, surrounded by a mix of newer glass high‑rises and older office blocks forming the Financial District. Building windows glow in a grid, and waterfront terminals and piers are lit along the right side of the shore. Orange/yellow safety fittings along the bottom edge indicate the photo was taken from a ferry or boat in the harbor.",
+            "photographer_location": [
+              {
+                "name": "New York Harbor, New York City, New York, USA",
+                "confidence": 0.92
+              },
+              {
+                "name": "Upper New York Bay, New York City, New York, USA",
+                "confidence": 0.88
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Lower Manhattan, New York City, New York, USA",
+                "confidence": 0.96
+              },
+              {
+                "name": "Financial District, Manhattan, New York City, New York, USA",
+                "confidence": 0.92
+              }
+            ],
+            "entities": [
+              {
+                "name": "One World Trade Center",
+                "type": "building",
+                "confidence": 0.98,
+                "notes": "Tallest building in the scene with illuminated spire; centerpiece of the World Trade Center complex."
+              },
+              {
+                "name": "Lower Manhattan skyline",
+                "type": "district",
+                "confidence": 0.95,
+                "notes": "Concentration of skyscrapers including the Financial District and Battery Park City."
+              },
+              {
+                "name": "Financial District (Manhattan)",
+                "type": "district",
+                "confidence": 0.92,
+                "notes": "Primary cluster of office towers at the south end of Manhattan."
+              },
+              {
+                "name": "Upper New York Bay",
+                "type": "natural_feature",
+                "confidence": 0.9,
+                "notes": "Foreground body of water in New York Harbor."
+              },
+              {
+                "name": "Staten Island Ferry (onboard vantage)",
+                "type": "infrastructure",
+                "confidence": 0.7,
+                "notes": "Orange/yellow deck fittings at the bottom edge suggest the photo was taken from a ferry."
+              },
+              {
+                "name": "Whitehall Terminal (Staten Island Ferry)",
+                "type": "transport_hub",
+                "confidence": 0.6,
+                "notes": "Brightly lit terminal area along the right Manhattan waterfront."
+              },
+              {
+                "name": "Goldman Sachs Tower (30 Hudson Street), Jersey City",
+                "type": "building",
+                "confidence": 0.6,
+                "notes": "Isolated rectangular tower with illuminated crown visible to the far right across the water."
+              },
+              {
+                "name": "Battery Park",
+                "type": "public_space",
+                "confidence": 0.5,
+                "notes": "Green/park area at Manhattan’s southern tip likely within the waterfront strip visible near the right side."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "A wide view of the Manhattan skyline across the Hudson River. In the foreground a choppy body of water with a yellow/orange railing along the bottom edge suggests a pier or boat deck. The sky is overcast with thick gray clouds, giving a moody, late-day or early-evening atmosphere. The skyline features a dense cluster of high-rise buildings, including a tall, spire-topped skyscraper near the center-left (One World Trade Center). Buildings display a mix of glass and concrete facades, with interior lights creating a speckled glow.",
+            "photographer_location": [
+              {
+                "name": "New Jersey, United States",
+                "confidence": 0.7
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Manhattan, New York, United States",
+                "confidence": 0.85
+              }
+            ],
+            "entities": [
+              {
+                "name": "One World Trade Center",
+                "type": "landmark",
+                "confidence": 0.85,
+                "notes": "Tall spire-topped skyscraper near center-left in the Manhattan skyline"
+              },
+              {
+                "name": "Hudson River",
+                "type": "natural_feature",
+                "confidence": 0.6,
+                "notes": "Body of water in the foreground"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A panoramic view of the Lower Manhattan skyline in New York City, taken from the water of the Upper New York Bay under a heavy, overcast grey sky. The scene is dominated by the skyscrapers of the Financial District and Battery Park City, with One World Trade Center standing prominently as the tallest structure, featuring its distinctive spire. To the left of One WTC, the curved facade of the Goldman Sachs headquarters (200 West Street) is visible. To the right, the dense cluster of downtown buildings includes 4 World Trade Center. On the far right edge, a tall, slender residential tower (likely One Manhattan Square) stands somewhat apart near the East River, with the lights of a bridge (Brooklyn or Manhattan Bridge) faintly visible nearby. The water in the foreground is choppy and grey. A yellow painted metal railing is visible at the very bottom of the frame, strongly suggesting the photograph was taken from the deck of the Staten Island Ferry.",
+            "photographer_location": [
+              {
+                "name": "Upper New York Bay",
+                "confidence": 0.95
+              },
+              {
+                "name": "Staten Island Ferry",
+                "confidence": 0.9
+              },
+              {
+                "name": "New York City",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Lower Manhattan",
+                "confidence": 0.95
+              },
+              {
+                "name": "Financial District",
+                "confidence": 0.9
+              },
+              {
+                "name": "New York City",
+                "confidence": 1.0
+              },
+              {
+                "name": "Manhattan",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "One World Trade Center",
+                "type": "landmark",
+                "confidence": 1.0,
+                "notes": "Also known as the Freedom Tower"
+              },
+              {
+                "name": "Lower Manhattan Skyline",
+                "type": "district",
+                "confidence": 1.0,
+                "notes": null
+              },
+              {
+                "name": "Upper New York Bay",
+                "type": "natural_feature",
+                "confidence": 0.95,
+                "notes": null
+              },
+              {
+                "name": "200 West Street",
+                "type": "building",
+                "confidence": 0.9,
+                "notes": "Goldman Sachs Headquarters"
+              },
+              {
+                "name": "4 World Trade Center",
+                "type": "building",
+                "confidence": 0.85,
+                "notes": null
+              },
+              {
+                "name": "One Manhattan Square",
+                "type": "building",
+                "confidence": 0.75,
+                "notes": "Tall tower on the far right edge"
+              },
+              {
+                "name": "Staten Island Ferry",
+                "type": "transport_hub",
+                "confidence": 0.9,
+                "notes": "Inferred from the yellow railing in foreground"
+              },
+              {
+                "name": "Brooklyn Bridge",
+                "type": "infrastructure",
+                "confidence": 0.6,
+                "notes": "Lights visible on the far right"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A wide-angle shot of the Lower Manhattan skyline in New York City, taken from across the water under a heavy, overcast grey sky. The most prominent feature is One World Trade Center with its distinct spire, surrounded by numerous other skyscrapers of the Financial District and Battery Park City. To the right, the Brooklyn Bridge is partially visible in the distance. The foreground consists of the choppy grey water of the harbor, with a small portion of a yellow railing visible at the very bottom, suggesting the photo was taken from a boat or ferry.",
+            "photographer_location": [
+              {
+                "name": "Upper New York Bay",
+                "confidence": 0.95
+              },
+              {
+                "name": "New York Harbor",
+                "confidence": 0.95
+              },
+              {
+                "name": "Staten Island Ferry",
+                "confidence": 0.85
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Lower Manhattan, New York City",
+                "confidence": 1.0
+              },
+              {
+                "name": "Financial District, Manhattan",
+                "confidence": 0.98
+              },
+              {
+                "name": "Battery Park City, Manhattan",
+                "confidence": 0.95
+              }
+            ],
+            "entities": [
+              {
+                "name": "One World Trade Center",
+                "type": "landmark",
+                "confidence": 1.0,
+                "notes": "The tallest building in the Western Hemisphere, designed by David Childs of SOM."
+              },
+              {
+                "name": "Lower Manhattan Skyline",
+                "type": "district",
+                "confidence": 1.0,
+                "notes": null
+              },
+              {
+                "name": "Brookfield Place",
+                "type": "building",
+                "confidence": 0.95,
+                "notes": "Formerly known as the World Financial Center, identifiable by its green-domed roofs."
+              },
+              {
+                "name": "Brooklyn Bridge",
+                "type": "infrastructure",
+                "confidence": 0.9,
+                "notes": "Visible in the distance on the right side of the image."
+              },
+              {
+                "name": "7 World Trade Center",
+                "type": "building",
+                "confidence": 0.9,
+                "notes": "The glass skyscraper located just north of the main WTC site."
+              },
+              {
+                "name": "Financial District",
+                "type": "district",
+                "confidence": 0.98,
+                "notes": null
+              },
+              {
+                "name": "Battery Park City",
+                "type": "district",
+                "confidence": 0.95,
+                "notes": null
+              },
+              {
+                "name": "Upper New York Bay",
+                "type": "natural_feature",
+                "confidence": 0.95,
+                "notes": null
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "Water",
+                "type": "other",
+                "confidence": 0.4721999764442444,
+                "notes": null
+              },
+              {
+                "name": "Skyscraper",
+                "type": "other",
+                "confidence": 0.4715482294559479,
+                "notes": null
+              },
+              {
+                "name": "Birds",
+                "type": "other",
+                "confidence": 0.4444499909877777,
+                "notes": null
+              },
+              {
+                "name": "sea-m",
+                "type": "other",
+                "confidence": 0.4260999858379364,
+                "notes": null
+              },
+              {
+                "name": "Tower",
+                "type": "other",
+                "confidence": 0.3675999939441681,
+                "notes": null
+              },
+              {
+                "name": "Water bird",
+                "type": "other",
+                "confidence": 0.36059999465942383,
+                "notes": null
+              },
+              {
+                "name": "Cityscape",
+                "type": "other",
+                "confidence": 0.35824280977249146,
+                "notes": null
+              },
+              {
+                "name": "High-rise building",
+                "type": "other",
+                "confidence": 0.34919244050979614,
+                "notes": null
+              },
+              {
+                "name": "Metropolitan area",
+                "type": "cultural_site",
+                "confidence": 0.3358696699142456,
+                "notes": null
+              },
+              {
+                "name": "Building",
+                "type": "other",
+                "confidence": 0.3050999939441681,
+                "notes": null
+              },
+              {
+                "name": "Sky",
+                "type": "other",
+                "confidence": 0.9932089447975159,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Skyscraper",
+                "type": "other",
+                "confidence": 0.9883360266685486,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Water resources",
+                "type": "other",
+                "confidence": 0.9822032451629639,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Daytime",
+                "type": "other",
+                "confidence": 0.9819684028625488,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Body of water",
+                "type": "other",
+                "confidence": 0.979155957698822,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Building",
+                "type": "other",
+                "confidence": 0.9778040647506714,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "City",
+                "type": "other",
+                "confidence": 0.9775230884552002,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Urban area",
+                "type": "other",
+                "confidence": 0.9761998653411865,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Cloud",
+                "type": "other",
+                "confidence": 0.9725738763809204,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Horizon",
+                "type": "other",
+                "confidence": 0.9680048227310181,
+                "notes": "Detected via label detection"
+              }
+            ],
+            "landmark_name": null
+          }
+        }
+      ]
+    }
+  ]
+}

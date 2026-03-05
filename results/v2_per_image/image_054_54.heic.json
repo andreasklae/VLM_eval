@@ -1,0 +1,1185 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "54.heic",
+      "timestamp": "2026-01-28T06:06:57.884685",
+      "processing_time_seconds": 61.305099,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 1.294472222222222,
+        "gps_longitude": 103.85490555555555,
+        "location": {
+          "formatted_address": "Esplanade Stn Exit F, Singapore 189768",
+          "city": "Singapore",
+          "county": null,
+          "country": "Singapore"
+        },
+        "datetime_original": "2022:12:06 12:45:05",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Raffles Hotel, Singapore, Singapore",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and visible signage identify the building as Raffles Hotel, a famous landmark in Singapore known for its colonial architecture.",
+            "detailed_description": "The image shows the Raffles Hotel, a renowned colonial-style building in Singapore. The hotel features a white facade with decorative elements such as arches and columns, typical of 19th-century colonial architecture. The building is adorned with festive decorations, including red garlands. The entrance is marked by a covered driveway and landscaped gardens, enhancing its grand appearance.",
+            "identification": {
+              "primary": [
+                "Raffles Hotel"
+              ],
+              "location": "Singapore, Singapore",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Raffles Hotel",
+                "type": "building",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Colonial_architecture",
+              "19th_century",
+              "hotel",
+              "Singapore"
+            ],
+            "location": "Singapore, Singapore",
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Raffles Hotel\"],\n        \"location\": \"Singapore, Singapore\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Raffles Hotel\",\n            \"type\": \"building\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Colonial_architecture\", \"19th_century\", \"hotel\", \"Singapore\"],\n    \"description\": \"The image shows the Raffles Hotel, a renowned colonial-style building in Singapore. The hotel features a white facade with decorative elements such as arches and columns, typical of 19th-century colonial architecture. The building is adorned with festive decorations, including red garlands. The entrance is marked by a covered driveway and landscaped gardens, enhancing its grand appearance.\",\n    \"reasoning\": \"The architectural style and visible signage identify the building as Raffles Hotel, a famous landmark in Singapore known for its colonial architecture.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "gps_coordinates": {
+              "latitude": 1.294472222222222,
+              "longitude": 103.85490555555555
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Esplanade Stn Exit F, Singapore 189768",
+              "city": "Singapore",
+              "county": null,
+              "country": "Singapore"
+            },
+            "photo_timestamp": "2022:12:06 12:45:05",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 12.053912878036499
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a grand colonial-style building, characterized by its symmetrical facade and elegant architectural details. The structure is predominantly white, with three main stories and a central pediment that features the name 'Raffles Hotel.' The facade is adorned with numerous windows, each framed by decorative moldings. The windows on the second and third floors are arched, adding to the classical aesthetic. The building is embellished with festive red and green garlands, suggesting a ",
+            "description": "The image depicts a grand colonial-style building, characterized by its symmetrical facade and elegant architectural details. The structure is predominantly white, with three main stories and a central pediment that features the name 'Raffles Hotel.' The facade is adorned with numerous windows, each framed by decorative moldings. The windows on the second and third floors are arched, adding to the classical aesthetic. The building is embellished with festive red and green garlands, suggesting a ",
+            "architectural_style": "Colonial",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 1.294472222222222,
+              "longitude": 103.85490555555555
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Esplanade Stn Exit F, Singapore 189768",
+              "city": "Singapore",
+              "county": null,
+              "country": "Singapore"
+            },
+            "photo_timestamp": "2022:12:06 12:45:05",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 48.19342589378357
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "The Grand Lobby (1.2947, 103.8546)",
+          "confidence": 0.3829757273197174,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "The Grand Lobby",
+            "coordinates": {
+              "latitude": 1.2947130999999998,
+              "longitude": 103.8545594
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 4032
+              },
+              {
+                "x": 0,
+                "y": 4032
+              }
+            ],
+            "context_labels": [
+              "Mansion",
+              "Palace",
+              "Official residence",
+              "Presidential palace",
+              "Historic house"
+            ],
+            "context_objects": [
+              "Car",
+              "Building",
+              "Tire"
+            ],
+            "web_entities": [
+              {
+                "name": "Palace",
+                "score": 0.8627403378486633
+              },
+              {
+                "name": "Hotel",
+                "score": 0.7943097949028015
+              },
+              {
+                "name": "Bishop’s Palace",
+                "score": 0.6487500071525574
+              },
+              {
+                "name": "The Palace Company",
+                "score": 0.6322000026702881
+              },
+              {
+                "name": "Munich Residence",
+                "score": 0.5787000060081482
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "The Grand Lobby",
+                "score": 0.3829757273197174,
+                "location": {
+                  "lat": 1.2947130999999998,
+                  "lng": 103.8545594
+                }
+              },
+              {
+                "name": "Skai",
+                "score": 0.31969910860061646,
+                "location": {
+                  "lat": 1.2933597,
+                  "lng": 103.8531036
+                }
+              },
+              {
+                "name": "Raffles Courtyard",
+                "score": 0.2821042239665985,
+                "location": {
+                  "lat": 1.2951682,
+                  "lng": 103.8542871
+                }
+              },
+              {
+                "name": "South Beach Tower",
+                "score": 0.2787483334541321,
+                "location": {
+                  "lat": 1.2957395,
+                  "lng": 103.85661359999999
+                }
+              },
+              {
+                "name": "The Providore (Raffles City Shopping Centre)",
+                "score": 0.2604111433029175,
+                "location": {
+                  "lat": 1.2945258,
+                  "lng": 103.8535656
+                }
+              }
+            ],
+            "processing_time_seconds": 19.36739706993103
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Singapore, Singapore",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Singapore, Singapore",
+            "coordinates": {
+              "latitude": 1.294472222222222,
+              "longitude": 103.85490555555555
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Anderson Bridge",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 383,
+                  "vicinity": "Fullerton Road",
+                  "place_id": "ChIJc5ptCgkZ2jERZvFy9OGf80c",
+                  "location": {
+                    "lat": 1.287296,
+                    "lng": 103.8529799
+                  }
+                },
+                {
+                  "name": "Cavenagh Bridge",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 863,
+                  "vicinity": "1 Fullerton Square",
+                  "place_id": "ChIJB-4wCgkZ2jERu_kFShkaBf4",
+                  "location": {
+                    "lat": 1.2865459,
+                    "lng": 103.8523588
+                  }
+                },
+                {
+                  "name": "CHIJMES",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 12707,
+                  "vicinity": "30 Victoria Street",
+                  "place_id": "ChIJNfw8b6QZ2jEREbGYft7-Q4A",
+                  "location": {
+                    "lat": 1.2952923,
+                    "lng": 103.8517863
+                  }
+                },
+                {
+                  "name": "Esplanade - Theatres on the Bay, Singapore",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 19976,
+                  "vicinity": "1 Esplanade Drive",
+                  "place_id": "ChIJSeUa7KcZ2jERNVg2CvmlVbk",
+                  "location": {
+                    "lat": 1.2897934,
+                    "lng": 103.8558166
+                  }
+                },
+                {
+                  "name": "St. Joseph’s Church (Victoria Street)",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 783,
+                  "vicinity": "143 Victoria Street",
+                  "place_id": "ChIJnaOoLLsZ2jER5wDxYYi6Rl4",
+                  "location": {
+                    "lat": 1.2984116,
+                    "lng": 103.8530476
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Peranakan Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2408,
+                  "vicinity": "39 Armenian Street, Singapore",
+                  "place_id": "ChIJWZX956MZ2jERIGdnbs_SgMw",
+                  "location": {
+                    "lat": 1.2943669,
+                    "lng": 103.8490391
+                  }
+                },
+                {
+                  "name": "Asian Civilisations Museum",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 6080,
+                  "vicinity": "1 Empress Place",
+                  "place_id": "ChIJoZOhmQkZ2jERehLfvKlsoCA",
+                  "location": {
+                    "lat": 1.2874969,
+                    "lng": 103.8513861
+                  }
+                },
+                {
+                  "name": "MINT Museum of Toys",
+                  "types": [
+                    "art_gallery",
+                    "museum",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1608,
+                  "vicinity": "26 Seah Street",
+                  "place_id": "ChIJW7B7zRIZ2jERINTI_uV1O-A",
+                  "location": {
+                    "lat": 1.2963208,
+                    "lng": 103.8546329
+                  }
+                },
+                {
+                  "name": "Friends of the Museums",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 18,
+                  "vicinity": "61 Stamford Road, #02-06",
+                  "place_id": "ChIJpdG78KMZ2jERX_GCFCgEA04",
+                  "location": {
+                    "lat": 1.2943555,
+                    "lng": 103.8502032
+                  }
+                },
+                {
+                  "name": "National Heritage Board",
+                  "types": [
+                    "museum",
+                    "local_government_office",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.8,
+                  "user_ratings_total": 12,
+                  "vicinity": "150 Beach Road, #36-08 Gateway West",
+                  "place_id": "ChIJm5Hr_KMZ2jERj8CLGpDZ8ZA",
+                  "location": {
+                    "lat": 1.293942,
+                    "lng": 103.849996
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Swissôtel The Stamford Singapore",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 8860,
+                  "vicinity": "2 Stamford Road",
+                  "place_id": "ChIJfyNkh6YZ2jERjHsd_P-iL_M",
+                  "location": {
+                    "lat": 1.2936866,
+                    "lng": 103.8533912
+                  }
+                },
+                {
+                  "name": "Mandarin Oriental, Singapore",
+                  "types": [
+                    "spa",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 7398,
+                  "vicinity": "5 Raffles Avenue, Singapore",
+                  "place_id": "ChIJt7a1YKgZ2jER1U6XOjXyMCA",
+                  "location": {
+                    "lat": 1.2902058,
+                    "lng": 103.8580476
+                  }
+                },
+                {
+                  "name": "Fairmont Singapore",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 5912,
+                  "vicinity": "80 Bras Basah Road",
+                  "place_id": "ChIJ-Uph06UZ2jERjKQsyQgfltg",
+                  "location": {
+                    "lat": 1.2942639,
+                    "lng": 103.8537619
+                  }
+                },
+                {
+                  "name": "SKAI Bar",
+                  "types": [
+                    "bar",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1146,
+                  "vicinity": "2 Stamford Road, Level 70, #70-02 Swissôtel The Stamford",
+                  "place_id": "ChIJZ9ocfqYZ2jER_PEzCkShP_s",
+                  "location": {
+                    "lat": 1.2936866,
+                    "lng": 103.8533912
+                  }
+                },
+                {
+                  "name": "SUSHI TEI",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1059,
+                  "vicinity": "252 North Bridge Road, #03 - 13 / 14 Raffles City Shopping Centre",
+                  "place_id": "ChIJp4zYJ6QZ2jERV-ihx9DPoNs",
+                  "location": {
+                    "lat": 1.2942831,
+                    "lng": 103.8529487
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "War Memorial Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 475,
+                  "vicinity": "Nicoll Highway, Stamford Road, &",
+                  "place_id": "ChIJx-khbKYZ2jERPU7H9VFoUlg",
+                  "location": {
+                    "lat": 1.2928957,
+                    "lng": 103.8546778
+                  }
+                },
+                {
+                  "name": "Esplanade Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 585,
+                  "vicinity": "Along Connaught Drive",
+                  "place_id": "ChIJLWy-d6cZ2jERxRto3g-f8vI",
+                  "location": {
+                    "lat": 1.289901,
+                    "lng": 103.8538653
+                  }
+                },
+                {
+                  "name": "Merlion Park",
+                  "types": [
+                    "park",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 74010,
+                  "vicinity": "1 Fullerton Road",
+                  "place_id": "ChIJBTYg1g4Z2jERp_MBbu5erWY",
+                  "location": {
+                    "lat": 1.2867449,
+                    "lng": 103.8543872
+                  }
+                },
+                {
+                  "name": "Youth Olympic Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 376,
+                  "vicinity": "Raffles Avenue",
+                  "place_id": "ChIJs9ou2akZ2jERCq21-091JMk",
+                  "location": {
+                    "lat": 1.2891019,
+                    "lng": 103.8605555
+                  }
+                },
+                {
+                  "name": "SKY GARDEN @ Suntec City",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Suntec City",
+                  "place_id": "ChIJxz0sOgAZ2jERA4jVw6oybfY",
+                  "location": {
+                    "lat": 1.2950324,
+                    "lng": 103.8583015
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "St. Joseph’s Church (Victoria Street)",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 783,
+                  "vicinity": "143 Victoria Street",
+                  "place_id": "ChIJnaOoLLsZ2jER5wDxYYi6Rl4",
+                  "location": {
+                    "lat": 1.2984116,
+                    "lng": 103.8530476
+                  }
+                },
+                {
+                  "name": "Church of Saints Peter & Paul",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 818,
+                  "vicinity": "225A Queen Street",
+                  "place_id": "ChIJH5zWr6QZ2jEReT47mH8mgVA",
+                  "location": {
+                    "lat": 1.2977722,
+                    "lng": 103.8514144
+                  }
+                },
+                {
+                  "name": "Orchard Road Presbyterian Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 203,
+                  "vicinity": "3 Orchard Road",
+                  "place_id": "ChIJe2PiJ6MZ2jERi-nhBEPco9c",
+                  "location": {
+                    "lat": 1.298007,
+                    "lng": 103.8474052
+                  }
+                },
+                {
+                  "name": "Wesley Methodist Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 442,
+                  "vicinity": "5 Fort Canning Road",
+                  "place_id": "ChIJ8aDrIaMZ2jERqA167p17JHk",
+                  "location": {
+                    "lat": 1.29735,
+                    "lng": 103.847447
+                  }
+                },
+                {
+                  "name": "Grace (S.C.C.) Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 25,
+                  "vicinity": "14 Queen Street",
+                  "place_id": "ChIJkUH0xaQZ2jERNM1uMH5ImSQ",
+                  "location": {
+                    "lat": 1.2978365,
+                    "lng": 103.8523447
+                  }
+                },
+                {
+                  "name": "Sultan Mosque",
+                  "types": [
+                    "mosque",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 13390,
+                  "vicinity": "3 Muscat Street",
+                  "place_id": "ChIJb6xq2bAZ2jERE1P6sVKtofw",
+                  "location": {
+                    "lat": 1.3022854,
+                    "lng": 103.8589636
+                  }
+                },
+                {
+                  "name": "Prayer Room National Gallery Singapore",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "1 Saint Andrew's Road",
+                  "place_id": "ChIJy8tbXAAZ2jERReifTo9iLvs",
+                  "location": {
+                    "lat": 1.2912054,
+                    "lng": 103.8517827
+                  }
+                },
+                {
+                  "name": "Masjid Al-Burhani",
+                  "types": [
+                    "mosque",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 197,
+                  "vicinity": "39 Hill Street, Singapore",
+                  "place_id": "ChIJ_xY9UaEZ2jER_qN-U_DnsoI",
+                  "location": {
+                    "lat": 1.2934331,
+                    "lng": 103.8504508
+                  }
+                },
+                {
+                  "name": "Musollah@Suntec",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 62,
+                  "vicinity": "3 Temasek Boulevard Suntec City Mall, Tower 3",
+                  "place_id": "ChIJWU5eELMZ2jEROndCLLukO-U",
+                  "location": {
+                    "lat": 1.2949097,
+                    "lng": 103.8597979
+                  }
+                },
+                {
+                  "name": "Masjid Bencoolen",
+                  "types": [
+                    "mosque",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 765,
+                  "vicinity": "51 Bencoolen Street",
+                  "place_id": "ChIJa39LprwZ2jERSc3XYzYKTUg",
+                  "location": {
+                    "lat": 1.2994205,
+                    "lng": 103.8505094
+                  }
+                },
+                {
+                  "name": "Jacob Ballas Centre",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 43,
+                  "vicinity": "24 Waterloo Street",
+                  "place_id": "ChIJc3Wuq6QZ2jERk26pXTmyctY",
+                  "location": {
+                    "lat": 1.2980868,
+                    "lng": 103.8506017
+                  }
+                },
+                {
+                  "name": "Maghain Aboth Synagogue",
+                  "types": [
+                    "synagogue",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 127,
+                  "vicinity": "24/26 Waterloo Street",
+                  "place_id": "ChIJc3Wuq6QZ2jERYH1Op8S-DL0",
+                  "location": {
+                    "lat": 1.2982149,
+                    "lng": 103.8508071
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "MINT Museum of Toys",
+                  "types": [
+                    "art_gallery",
+                    "museum",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1608,
+                  "vicinity": "26 Seah Street",
+                  "place_id": "ChIJW7B7zRIZ2jERINTI_uV1O-A",
+                  "location": {
+                    "lat": 1.2963208,
+                    "lng": 103.8546329
+                  }
+                },
+                {
+                  "name": "Si Bao Zhai Arts Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.7,
+                  "user_ratings_total": 3,
+                  "vicinity": "231 Bain Street, #02-45, Singapore",
+                  "place_id": "ChIJPaWdBKUZ2jERWUrSnleiLzg",
+                  "location": {
+                    "lat": 1.2968097,
+                    "lng": 103.8538795
+                  }
+                },
+                {
+                  "name": "Dong Lee",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "90 Bras Basah Road, B1-41, 42, 43",
+                  "place_id": "ChIJE76FM5EZ2jERTQmV4K8mFJs",
+                  "location": {
+                    "lat": 1.2933803,
+                    "lng": 103.855429
+                  }
+                },
+                {
+                  "name": "Ode To Art",
+                  "types": [
+                    "art_gallery",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 341,
+                  "vicinity": "252 North Bridge Road, #01-36E F, Raffles City Shopping Centre",
+                  "place_id": "ChIJ3c9SiQYZ2jERWpVhrdJGeTc",
+                  "location": {
+                    "lat": 1.293672,
+                    "lng": 103.8537798
+                  }
+                },
+                {
+                  "name": "Art Gallery 3",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "231 Bain Street, #02-89",
+                  "place_id": "ChIJWSC-H6UZ2jERaLwWgcBRA5c",
+                  "location": {
+                    "lat": 1.2971515,
+                    "lng": 103.8536166
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Singapore",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Singapore",
+                  "place_id": "ChIJyY4rtGcX2jERIKTarqz3AAQ",
+                  "location": {
+                    "lat": 1.2811866,
+                    "lng": 103.8503404
+                  }
+                },
+                {
+                  "name": "Swissôtel The Stamford Singapore",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 8860,
+                  "vicinity": "2 Stamford Road",
+                  "place_id": "ChIJfyNkh6YZ2jERjHsd_P-iL_M",
+                  "location": {
+                    "lat": 1.2936866,
+                    "lng": 103.8533912
+                  }
+                },
+                {
+                  "name": "Carlton Hotel Singapore",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 7553,
+                  "vicinity": "76 Bras Basah Road",
+                  "place_id": "ChIJoeV2WKQZ2jERvqFd1_XG4jg",
+                  "location": {
+                    "lat": 1.2955565,
+                    "lng": 103.8530862
+                  }
+                },
+                {
+                  "name": "Mandarin Oriental, Singapore",
+                  "types": [
+                    "spa",
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 7398,
+                  "vicinity": "5 Raffles Avenue, Singapore",
+                  "place_id": "ChIJt7a1YKgZ2jER1U6XOjXyMCA",
+                  "location": {
+                    "lat": 1.2902058,
+                    "lng": 103.8580476
+                  }
+                },
+                {
+                  "name": "The Ritz-Carlton, Millenia Singapore",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 6240,
+                  "vicinity": "7 Raffles Avenue, Marina Bay",
+                  "place_id": "ChIJOek7q6kZ2jERX8_FX0BTcq4",
+                  "location": {
+                    "lat": 1.2909392,
+                    "lng": 103.8599895
+                  }
+                }
+              ]
+            },
+            "total_places_found": 42,
+            "photo_timestamp": "2022:12:06 12:45:05",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.5430347919464111
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/54.heic"
+    },
+    {
+      "image_filename": "54.heic",
+      "timestamp": "2026-01-28T06:07:59.220649",
+      "processing_time_seconds": 60.480675,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Raffles Hotel, Singapore",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive colonial architecture and the visible signage 'Raffles Hotel' confirm the identification. The style and design are consistent with the historical significance of this landmark in Singapore.",
+            "detailed_description": "The image shows Raffles Hotel, a renowned colonial-style building located in Singapore. The hotel is characterized by its white facade, symmetrical design, and decorative elements such as arches and columns. The building features multiple stories with large windows and is adorned with festive decorations. The architectural style reflects the late 19th-century colonial era, with influences of neoclassical design.",
+            "identification": {
+              "primary": [
+                "Raffles Hotel"
+              ],
+              "location": "Singapore",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Raffles Hotel",
+                "type": "building",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Colonial_architecture",
+              "19th_century",
+              "hotel",
+              "Singapore"
+            ],
+            "location": "Singapore",
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Raffles Hotel\"],\n        \"location\": \"Singapore\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Raffles Hotel\",\n            \"type\": \"building\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Colonial_architecture\", \"19th_century\", \"hotel\", \"Singapore\"],\n    \"description\": \"The image shows Raffles Hotel, a renowned colonial-style building located in Singapore. The hotel is characterized by its white facade, symmetrical design, and decorative elements such as arches and columns. The building features multiple stories with large windows and is adorned with festive decorations. The architectural style reflects the late 19th-century colonial era, with influences of neoclassical design.\",\n    \"reasoning\": \"The distinctive colonial architecture and the visible signage 'Raffles Hotel' confirm the identification. The style and design are consistent with the historical significance of this landmark in Singapore.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}",
+            "processing_time_seconds": 13.546643018722534
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a grand colonial-style building, characterized by its white facade and symmetrical design. The structure is three stories high, with a central section flanked by two wings. The facade features multiple arched windows with decorative moldings, enhancing the building's elegant appearance. A prominent feature is the central pediment, which bears the name 'Raffles Hotel' in bold lettering. The roof is adorned with intricate ironwork balustrades, adding to the building's ornate char",
+            "description": "The image depicts a grand colonial-style building, characterized by its white facade and symmetrical design. The structure is three stories high, with a central section flanked by two wings. The facade features multiple arched windows with decorative moldings, enhancing the building's elegant appearance. A prominent feature is the central pediment, which bears the name 'Raffles Hotel' in bold lettering. The roof is adorned with intricate ironwork balustrades, adding to the building's ornate char",
+            "architectural_style": "Colonial",
+            "search_backends_used": [],
+            "processing_time_seconds": 46.68737506866455
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "The Grand Lobby (1.2947, 103.8546)",
+          "confidence": 0.3829757273197174,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "landmark_detection",
+            "landmark_name": "The Grand Lobby",
+            "coordinates": {
+              "latitude": 1.2947130999999998,
+              "longitude": 103.8545594
+            },
+            "bounding_poly": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 0
+              },
+              {
+                "x": 3024,
+                "y": 4032
+              },
+              {
+                "x": 0,
+                "y": 4032
+              }
+            ],
+            "context_labels": [
+              "Mansion",
+              "Palace",
+              "Official residence",
+              "Presidential palace",
+              "Historic house"
+            ],
+            "context_objects": [
+              "Car",
+              "Building",
+              "Tire"
+            ],
+            "web_entities": [
+              {
+                "name": "Palace",
+                "score": 0.8691918849945068
+              },
+              {
+                "name": "Hotel",
+                "score": 0.6647831797599792
+              },
+              {
+                "name": "Bishop’s Palace",
+                "score": 0.628350019454956
+              },
+              {
+                "name": "Castle",
+                "score": 0.6238999962806702
+              },
+              {
+                "name": "Munich Residence",
+                "score": 0.5979000329971313
+              }
+            ],
+            "all_landmarks": [
+              {
+                "name": "The Grand Lobby",
+                "score": 0.3829757273197174,
+                "location": {
+                  "lat": 1.2947130999999998,
+                  "lng": 103.8545594
+                }
+              },
+              {
+                "name": "Skai",
+                "score": 0.31969910860061646,
+                "location": {
+                  "lat": 1.2933597,
+                  "lng": 103.8531036
+                }
+              },
+              {
+                "name": "Raffles Courtyard",
+                "score": 0.2821042239665985,
+                "location": {
+                  "lat": 1.2951682,
+                  "lng": 103.8542871
+                }
+              },
+              {
+                "name": "South Beach Tower",
+                "score": 0.2787483334541321,
+                "location": {
+                  "lat": 1.2957395,
+                  "lng": 103.85661359999999
+                }
+              },
+              {
+                "name": "The Providore (Raffles City Shopping Centre)",
+                "score": 0.2604111433029175,
+                "location": {
+                  "lat": 1.2945258,
+                  "lng": 103.8535656
+                }
+              }
+            ],
+            "processing_time_seconds": 19.02645778656006
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/54.heic"
+    }
+  ]
+}

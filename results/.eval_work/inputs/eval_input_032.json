@@ -1,0 +1,980 @@
+{
+  "image_id": 32,
+  "filename": "32.jpg",
+  "ground_truth": {
+    "description": "Photo of painting \"The Battle of Legnano\" by Cassioli. Located in Pitti Palace.",
+    "photographer_description": "Photo of the painting \"The Battle of Legnano\" by Cassioli. It should be able to describe the painting, impressive if it gets the specific one. If it has location metadata, it should be able to get the specific museum at least (Pitti Palace).",
+    "locations": [
+      {
+        "name": "Galleria d'arte moderna, Palazzo Pitti, Florence, Tuscany, Italy",
+        "hierarchy": {
+          "country": "Italy",
+          "region": "Tuscany",
+          "city": "Florence",
+          "exact": "Palazzo Pitti"
+        }
+      }
+    ],
+    "entities": [
+      {
+        "name": "\"The Battle of Legnano\" by Cassioli painting",
+        "type": "artwork",
+        "notes": "",
+        "importance": "high",
+        "max_specificity": 5
+      },
+      {
+        "name": "Galleria d'arte moderna",
+        "type": "artwork",
+        "notes": "",
+        "max_specificity": 5,
+        "importance": "medium",
+        "added_by": "human_evaluator"
+      },
+      {
+        "name": "Painting of Jesus",
+        "type": "artwork",
+        "notes": "",
+        "max_specificity": 4,
+        "importance": "low",
+        "added_by": "human_evaluator"
+      }
+    ],
+    "scene_type": [
+      "art",
+      "painting"
+    ],
+    "key_visual_elements": [
+      "Battle scene painting",
+      "Historical/military subject",
+      "Large canvas",
+      "Ornate gold frame",
+      "Figures on horseback",
+      "Flags visible"
+    ],
+    "max_specificity": "Specific",
+    "difficulty": "Hard (specific painting impressive)",
+    "notes": "Should describe painting. With metadata, should get museum.",
+    "gps_metadata": {
+      "gps_latitude": 43.76506111111111,
+      "gps_longitude": 11.250202777777778,
+      "reverse_geocoded": {
+        "formatted_address": "Piazza de' Pitti, 1, 50125 Firenze FI, Italy",
+        "city": "Firenze",
+        "county": "Città Metropolitana di Firenze",
+        "country": "Italy"
+      }
+    },
+    "difficulty_with_gps": "hard",
+    "difficulty_without_gps": "hard",
+    "image_categories": [
+      "art"
+    ]
+  },
+  "model_runs": [
+    {
+      "image_filename": "32.jpg",
+      "use_gps": true,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "Interior of a museum gallery with an ornate white stucco vaulted ceiling and cornice. A very large 19th‑century academic history painting in a gilded frame dominates the wall, lit from above by track lights. The canvas depicts a chaotic medieval cavalry battle with fallen horses and soldiers in the foreground, banners and lances, and at the top center a raised platform with a standard/cross—suggestive of a carroccio—amid swirling smoke and clouds. Smaller framed works hang to the right, including a dark-toned devotional scene, and a rope barrier with a red carpet keeps visitors back from the painting. Walls are neutral light gray; the floor is terracotta with stone insets.",
+            "photographer_location": [
+              {
+                "name": "Florence, Tuscany, Italy",
+                "confidence": 0.98
+              },
+              {
+                "name": "Palazzo Pitti, Florence, Italy",
+                "confidence": 0.96
+              },
+              {
+                "name": "Galleria d'Arte Moderna, Palazzo Pitti, Florence, Italy",
+                "confidence": 0.88
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Palazzo Pitti, Florence, Italy",
+                "confidence": 0.92
+              },
+              {
+                "name": "Galleria d'Arte Moderna, Palazzo Pitti, Florence, Italy",
+                "confidence": 0.85
+              }
+            ],
+            "entities": [
+              {
+                "name": "Battle of Legnano (La Battaglia di Legnano)",
+                "type": "artwork",
+                "confidence": 0.64,
+                "notes": "Oil on canvas by Amos Cassioli (1832–1891), c. 1860s–1870s; depicts the 1176 victory of the Lombard League with the carroccio at center; housed in Palazzo Pitti's Galleria d'Arte Moderna."
+              },
+              {
+                "name": "Palazzo Pitti",
+                "type": "building",
+                "confidence": 0.95,
+                "notes": "Renaissance palace in Florence that contains multiple museums including the Palatine Gallery and the Gallery of Modern Art."
+              },
+              {
+                "name": "Galleria d'Arte Moderna, Palazzo Pitti",
+                "type": "cultural_site",
+                "confidence": 0.86,
+                "notes": "Museum dedicated to 18th–20th century Italian art; galleries with neoclassical interiors."
+              },
+              {
+                "name": "Neoclassical interior detailing",
+                "type": "architectural_style",
+                "confidence": 0.62,
+                "notes": "White stucco vault with coffering and ornate cornice; typical of refurbished palace galleries for museum display."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "An interior view of a classical Florence gallery. The room features a white, arched ceiling with decorative mouldings and a soft, focused lighting scheme. On the wall hangs a large, wide-format historical battle painting in a heavy gilded frame, depicting a chaotic mêlée of soldiers, banners, and horses under smoky skies. A red carpeted platform or walkway leads toward the canvas, protected by a rope barrier. To the right, a smaller framed work shows a figure, and a small display case sits beneath it. The walls are neutral-toned, and the overall ambiance is that of a traditional European museum or palace gallery, with other ornate frames visible along adjacent walls.",
+            "photographer_location": [
+              {
+                "name": "Palazzo Pitti, Florence, Italy",
+                "confidence": 0.92
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Italy",
+                "confidence": 0.4
+              }
+            ],
+            "entities": [
+              {
+                "name": "Galleria Palatina, Palazzo Pitti",
+                "type": "building",
+                "confidence": 0.85,
+                "notes": "Room within Palazzo Pitti housing palace-level art galleries in Florence"
+              },
+              {
+                "name": "Large historical battle painting (oil on canvas)",
+                "type": "artwork",
+                "confidence": 0.78,
+                "notes": "Central, expansive battle scene; likely 19th-century academic style; artist unknown"
+              },
+              {
+                "name": "Small secondary painting (right wall)",
+                "type": "artwork",
+                "confidence": 0.5,
+                "notes": "Smaller framed work with a figure; attribution not identified"
+              },
+              {
+                "name": "Palazzo Pitti",
+                "type": "building",
+                "confidence": 0.85,
+                "notes": "Historic Florentine palace complex housing the gallery display"
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "Interior of a museum gallery with a high white coffered ceiling and ornate cornices. A very large gold-framed 19th‑century academic history painting dominates the wall, showing a chaotic medieval battle with armored knights on horseback, fallen soldiers, banners, and an elevated war wagon with a cross and figures above the fray. Velvet ropes and a red runner keep visitors back. Two smaller framed paintings hang to the right.",
+            "photographer_location": [
+              {
+                "name": "Palazzo Pitti, Florence, Italy",
+                "confidence": 0.96
+              },
+              {
+                "name": "Piazza de' Pitti, Florence, Italy",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Galleria d’Arte Moderna, Palazzo Pitti, Florence, Italy",
+                "confidence": 0.85
+              },
+              {
+                "name": "Palazzo Pitti, Florence, Italy",
+                "confidence": 0.92
+              }
+            ],
+            "entities": [
+              {
+                "name": "La battaglia di Legnano (Battle of Legnano)",
+                "type": "artwork",
+                "confidence": 0.7,
+                "notes": "Amos Cassioli, oil on canvas, late 19th century; housed in the Gallery of Modern Art at Palazzo Pitti."
+              },
+              {
+                "name": "Galleria d’Arte Moderna di Palazzo Pitti",
+                "type": "cultural_site",
+                "confidence": 0.86,
+                "notes": "19th–20th century art museum within Palazzo Pitti."
+              },
+              {
+                "name": "Palazzo Pitti",
+                "type": "building",
+                "confidence": 0.97,
+                "notes": "Renaissance palace in Florence, Italy."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "A gallery interior in Florence features a dominant large horizontal canvas with a heavy gilded frame depicting a chaotic historical battle. The scene shows numerous soldiers in period armor and clothing clashing on a battlefield, with mounted figures and swordplay; the palette includes blues, reds, and metallic tones. In the background a hazy landscape and a raised central platform with figures add depth. To the right, smaller works are visible (a square piece and a tiny framed piece). A low rope barrier fronts the paintings; the floor features a red carpet path leading toward the wall. The ceiling is a curved arch with decorative plasterwork; the walls are light-toned, contributing to a classical gallery ambiance.",
+            "photographer_location": [
+              {
+                "name": "Florence",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Italy",
+                "confidence": 0.85
+              }
+            ],
+            "entities": [
+              {
+                "name": "Historical battle painting",
+                "type": "artwork",
+                "confidence": 0.6,
+                "notes": "Dominant large canvas in a Florence gallery; likely 17th–19th century European academic style."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "An interior view of a grand museum gallery featuring a massive 19th-century oil painting in a gilded frame dominating the central wall. The artwork depicts a chaotic medieval battle scene, specifically the Battle of Legnano, featuring a 'Carroccio' (ox-drawn altar wagon) in the background with trumpeters, and a melee of soldiers and horses in the foreground, including a prominent white horse falling. To the left, the edge of another large framed painting is visible. To the right, two smaller framed paintings hang vertically; the upper one depicts a religious scene with a figure supporting a limp body (resembling a Deposition or Pietà). The room has high vaulted ceilings with white decorative molding, track lighting, and a tiled floor with a red carpet runner and rope stanchions protecting the art.",
+            "photographer_location": [
+              {
+                "name": "Galleria d'arte moderna",
+                "confidence": 0.95
+              },
+              {
+                "name": "Palazzo Pitti",
+                "confidence": 1.0
+              },
+              {
+                "name": "Florence",
+                "confidence": 1.0
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Galleria d'arte moderna",
+                "confidence": 0.95
+              },
+              {
+                "name": "Palazzo Pitti",
+                "confidence": 1.0
+              }
+            ],
+            "entities": [
+              {
+                "name": "The Battle of Legnano",
+                "type": "artwork",
+                "confidence": 0.99,
+                "notes": "Oil painting by Amos Cassioli (1860-1870)"
+              },
+              {
+                "name": "Palazzo Pitti",
+                "type": "building",
+                "confidence": 1.0,
+                "notes": "Renaissance palace housing the museum"
+              },
+              {
+                "name": "Galleria d'arte moderna",
+                "type": "cultural_site",
+                "confidence": 0.95,
+                "notes": "Museum section within Palazzo Pitti"
+              },
+              {
+                "name": "Carroccio",
+                "type": "other",
+                "confidence": 0.9,
+                "notes": "Depicted in the painting; a medieval war altar wagon"
+              },
+              {
+                "name": "The Expulsion of the Duke of Athens",
+                "type": "artwork",
+                "confidence": 0.85,
+                "notes": "Painting by Stefano Ussi (partially visible on the left)"
+              },
+              {
+                "name": "rope barrier",
+                "type": "infrastructure",
+                "confidence": 0.95,
+                "notes": "Stanchions protecting the artwork"
+              },
+              {
+                "name": "vaulted ceiling",
+                "type": "architectural_style",
+                "confidence": 0.9,
+                "notes": null
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A large-scale 19th-century oil painting titled 'The Battle of Legnano' by Amos Cassioli is displayed in a grand gallery room. The painting depicts a chaotic battle scene with knights on horseback and soldiers in combat, with a raised platform in the background featuring figures and banners. The artwork is housed in a heavy gilded frame. The room features a white vaulted ceiling with decorative stucco work and recessed panels. To the right, two smaller paintings are hung vertically; the upper one appears to be a religious scene. A red carpet runner leads toward the main painting, which is protected by a brass stanchion and rope barrier. The floor is made of polished stone or terrazzo.",
+            "photographer_location": [
+              {
+                "name": "Palazzo Pitti, Florence, Italy",
+                "confidence": 0.98
+              },
+              {
+                "name": "Galleria d'Arte Moderna, Florence, Italy",
+                "confidence": 0.95
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Palazzo Pitti, Florence, Italy",
+                "confidence": 0.98
+              },
+              {
+                "name": "Galleria d'Arte Moderna, Florence, Italy",
+                "confidence": 0.95
+              }
+            ],
+            "entities": [
+              {
+                "name": "The Battle of Legnano",
+                "type": "artwork",
+                "confidence": 0.99,
+                "notes": "Oil on canvas by Amos Cassioli, painted between 1862 and 1870."
+              },
+              {
+                "name": "Amos Cassioli",
+                "type": "other",
+                "confidence": 0.99,
+                "notes": "Italian painter of the Macchiaioli period, known for historical subjects."
+              },
+              {
+                "name": "Palazzo Pitti",
+                "type": "landmark",
+                "confidence": 0.99,
+                "notes": "A vast, mainly Renaissance, palace in Florence, Italy."
+              },
+              {
+                "name": "Galleria d'Arte Moderna",
+                "type": "cultural_site",
+                "confidence": 0.95,
+                "notes": "The Gallery of Modern Art located on the second floor of the Pitti Palace."
+              },
+              {
+                "name": "Neoclassical architecture",
+                "type": "architectural_style",
+                "confidence": 0.85,
+                "notes": "Visible in the vaulted ceiling and stucco decorations of the gallery room."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "Art",
+                "type": "artwork",
+                "confidence": 0.5394212603569031,
+                "notes": null
+              },
+              {
+                "name": "Painting",
+                "type": "artwork",
+                "confidence": 0.4860617518424988,
+                "notes": null
+              },
+              {
+                "name": "Design",
+                "type": "other",
+                "confidence": 0.414900004863739,
+                "notes": null
+              },
+              {
+                "name": "Interior design",
+                "type": "other",
+                "confidence": 0.4137801229953766,
+                "notes": null
+              },
+              {
+                "name": "Picture Frame",
+                "type": "other",
+                "confidence": 0.37720000743865967,
+                "notes": null
+              },
+              {
+                "name": "Vernissage",
+                "type": "other",
+                "confidence": 0.3305659294128418,
+                "notes": null
+              },
+              {
+                "name": "Image",
+                "type": "other",
+                "confidence": 0.32910001277923584,
+                "notes": null
+              },
+              {
+                "name": "Art",
+                "type": "other",
+                "confidence": 0.939602255821228,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Visual arts",
+                "type": "other",
+                "confidence": 0.9391054511070251,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Picture frame",
+                "type": "other",
+                "confidence": 0.9206531047821045,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Painting",
+                "type": "other",
+                "confidence": 0.8611044883728027,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Art museum",
+                "type": "other",
+                "confidence": 0.8577388525009155,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Modern art",
+                "type": "other",
+                "confidence": 0.8078917860984802,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Exhibition",
+                "type": "other",
+                "confidence": 0.7952850461006165,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Museum",
+                "type": "other",
+                "confidence": 0.7830178737640381,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Art Paint",
+                "type": "other",
+                "confidence": 0.7646130919456482,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Art exhibition",
+                "type": "other",
+                "confidence": 0.7172176837921143,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "AAAAAAAAANNN",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              }
+            ],
+            "landmark_name": null
+          }
+        }
+      ]
+    },
+    {
+      "image_filename": "32.jpg",
+      "use_gps": false,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct (strong)",
+          "details": {
+            "approach": "GPT Vision Direct (strong)",
+            "description": "Interior of a museum gallery with an ornate neoclassical vaulted ceiling and moulded cornices. Dominating the room is a monumental panoramic oil painting in a heavy gilded frame depicting a ferocious medieval cavalry battle: fallen horses and armored knights, lances and standards, and at the top a raised platform with standard-bearers/clerics by a war banner. Two smaller framed paintings hang on the right wall. A rope barrier and red carpet keep visitors at a distance from the main canvas.",
+            "photographer_location": [
+              {
+                "name": "Galleria d’Arte Moderna, Palazzo Pitti, Florence, Tuscany, Italy",
+                "confidence": 0.68
+              },
+              {
+                "name": "Palazzo Pitti, Florence, Tuscany, Italy",
+                "confidence": 0.72
+              },
+              {
+                "name": "Florence, Tuscany, Italy",
+                "confidence": 0.8
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Galleria d’Arte Moderna, Palazzo Pitti, Florence, Tuscany, Italy",
+                "confidence": 0.66
+              },
+              {
+                "name": "Palazzo Pitti, Florence, Tuscany, Italy",
+                "confidence": 0.7
+              }
+            ],
+            "entities": [
+              {
+                "name": "The Battle of Legnano (Battaglia di Legnano) – Amos Cassioli",
+                "type": "artwork",
+                "confidence": 0.64,
+                "notes": "Large 19th‑century academic history painting (oil on canvas, c. 1860s–1870s) depicting the 1176 victory of the Lombard League over Frederick I Barbarossa; collection of the Galleria d’Arte Moderna, Palazzo Pitti, Florence."
+              },
+              {
+                "name": "Palazzo Pitti",
+                "type": "building",
+                "confidence": 0.7,
+                "notes": "Renaissance palace in Florence housing multiple museums."
+              },
+              {
+                "name": "Galleria d’Arte Moderna di Palazzo Pitti",
+                "type": "cultural_site",
+                "confidence": 0.66,
+                "notes": "Museum of 19th–20th century Italian art located in Palazzo Pitti."
+              },
+              {
+                "name": "Neoclassical/stucco museum gallery interior",
+                "type": "architectural_style",
+                "confidence": 0.6,
+                "notes": "Vaulted ceiling with coffers, ornate cornices, and gilded frames typical of 18th–19th century gallery design."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision Direct (fast)",
+          "details": {
+            "approach": "GPT Vision Direct (fast)",
+            "description": "A museum gallery featuring a dominant large oil painting on the central wall depicting a chaotic Napoleonic-era battle: numerous soldiers and cavalry clash with raised swords and flags, many figures in vivid uniforms, smoke and action filling the scene, and a dramatic light source from the left. The painting is set in a broad, ornate gold frame. To the right hangs a secondary artwork showing a classical scene with a reclining or partially nude female figure surrounded by others, in a similarly ornate frame. A smaller dark-framed piece is mounted below it. On the far left, part of another painting is visible. The room has white plaster walls with decorative molding and a coffered, curved ceiling. The floor includes a beige surface with a red carpet pathway in front of the main painting and a rope barrier, plus a small display case nearby with an information placard. The overall lighting is warm and museum-like, emphasizing the artworks.",
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "Large 19th-century battle painting (Napoleonic era)",
+                "type": "artwork",
+                "confidence": 0.85,
+                "notes": "Romantic/academic history painting with chaotic melee, cavalry, flags, and smoky atmosphere; heavy gilded frame."
+              },
+              {
+                "name": "Right-side painting with a reclining female figure and attendants",
+                "type": "artwork",
+                "confidence": 0.7,
+                "notes": "Classical/neoclassical figure study; dramatic lighting and drapery."
+              },
+              {
+                "name": "Small dark-framed auxiliary artwork",
+                "type": "artwork",
+                "confidence": 0.55,
+                "notes": "Miniature framed piece mounted to the wall beneath the right-hand painting."
+              },
+              {
+                "name": "Neoclassical museum arch and ornate plasterwork",
+                "type": "architectural_style",
+                "confidence": 0.6,
+                "notes": "Coffered arched ceiling with decorative molding characteristic of grand 19th-century European galleries."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (strong)",
+          "details": {
+            "approach": "GPT Vision + Search (strong)",
+            "description": "Interior view of a museum gallery with a vaulted, stucco‑decorated ceiling and neutral walls. At center hangs a monumental 19th‑century academic history painting in a large gilded frame depicting a chaotic medieval battle with cavalry, fallen soldiers, and, on a raised platform in the distance, a standard and cross (suggestive of a carroccio). Smaller framed paintings hang to the right. A red carpet runner and rope barrier keep visitors back from the artwork.",
+            "photographer_location": [
+              {
+                "name": "Florence, Italy",
+                "confidence": 0.68
+              },
+              {
+                "name": "Palazzo Pitti, Florence, Italy",
+                "confidence": 0.62
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Galleria d’Arte Moderna, Palazzo Pitti, Florence, Italy",
+                "confidence": 0.58
+              },
+              {
+                "name": "Palazzo Pitti, Florence, Italy",
+                "confidence": 0.6
+              },
+              {
+                "name": "Florence, Italy",
+                "confidence": 0.7
+              }
+            ],
+            "entities": [
+              {
+                "name": "La battaglia di Legnano (Battle of Legnano)",
+                "type": "artwork",
+                "confidence": 0.62,
+                "notes": "Likely the large canvas by Amos Cassioli (oil on canvas, c. 1860s–1870s), a Romantic/academic depiction of the 1176 battle with the Lombard League’s carroccio visible in the background."
+              },
+              {
+                "name": "Galleria d’Arte Moderna di Palazzo Pitti",
+                "type": "cultural_site",
+                "confidence": 0.58,
+                "notes": "Museum collection within Palazzo Pitti in Florence."
+              },
+              {
+                "name": "Palazzo Pitti",
+                "type": "building",
+                "confidence": 0.6,
+                "notes": "Historic palace complex housing multiple museums in Florence."
+              },
+              {
+                "name": "Neoclassical interior detailing",
+                "type": "architectural_style",
+                "confidence": 0.4,
+                "notes": "Vaulted ceiling with coffers and stucco ornament typical of neoclassical refurbishments in museum galleries."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "GPT Vision + Search (fast)",
+          "details": {
+            "approach": "GPT Vision + Search (fast)",
+            "description": "A very large framed canvas in a museum gallery depicting a chaotic battlefield. Foreground shows fallen soldiers and combat with swords and bayonets; mounted figures clash and ride through the mêlée. The middle ground is crowded with soldiers, banners, and dynamic action. A hazy, smoky background features a raised platform or monument with figures near it, lending a heroic or commemorative tone. The far background reveals a pale sky. To the right, another smaller painting hangs on the wall; the gallery has decorative molding and a roped-off central display area.",
+            "photographer_location": [
+              {
+                "name": "France",
+                "confidence": 0.65
+              },
+              {
+                "name": "Europe",
+                "confidence": 0.4
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "France",
+                "confidence": 0.6
+              },
+              {
+                "name": "Europe",
+                "confidence": 0.4
+              }
+            ],
+            "entities": [
+              {
+                "name": "Large 19th-century history painting",
+                "type": "artwork",
+                "confidence": 0.75,
+                "notes": "Canvas depicting a chaotic battlefield with cavalry and infantry; stylistic cues suggest Napoleonic-era or Romantic-era painting."
+              },
+              {
+                "name": "Museum interior",
+                "type": "public_space",
+                "confidence": 0.5,
+                "notes": "Roped-off display area, decorative molding, secondary paintings visible on wall."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (strong)",
+          "details": {
+            "approach": "Gemini Vision (strong)",
+            "description": "A view inside a museum gallery featuring large-scale 19th-century oil paintings in ornate gold frames. The central focus is a massive horizontal canvas depicting a chaotic historical battle scene, identified as 'The Battle of Legnano,' featuring knights on horseback in the foreground and figures blowing trumpets on a raised platform in the background. To the right, a smaller vertical painting depicts a religious scene of a body being carried, identified as 'The Transport of Christ to the Sepulcher.' A portion of another large painting is visible on the far left. The room features high, white arched ceilings with decorative molding, light grey walls, a red carpet runner on the floor, and rope stanchions separating the viewers from the artwork.",
+            "photographer_location": [
+              {
+                "name": "Gallery of Modern Art",
+                "confidence": 0.95
+              },
+              {
+                "name": "Palazzo Pitti",
+                "confidence": 0.99
+              },
+              {
+                "name": "Florence",
+                "confidence": 0.99
+              },
+              {
+                "name": "Italy",
+                "confidence": 0.99
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Gallery of Modern Art",
+                "confidence": 0.95
+              },
+              {
+                "name": "Palazzo Pitti",
+                "confidence": 0.99
+              }
+            ],
+            "entities": [
+              {
+                "name": "The Battle of Legnano",
+                "type": "artwork",
+                "confidence": 0.98,
+                "notes": "Oil painting by Amos Cassioli (1860-1870), depicting the 1176 battle."
+              },
+              {
+                "name": "The Transport of Christ to the Sepulcher",
+                "type": "artwork",
+                "confidence": 0.95,
+                "notes": "Oil painting by Antonio Ciseri (1883)."
+              },
+              {
+                "name": "Palazzo Pitti",
+                "type": "building",
+                "confidence": 0.99,
+                "notes": "Renaissance palace housing the Gallery of Modern Art."
+              },
+              {
+                "name": "Gallery of Modern Art",
+                "type": "cultural_site",
+                "confidence": 0.95,
+                "notes": "Museum section within Palazzo Pitti."
+              },
+              {
+                "name": "The Expulsion of the Duke of Athens",
+                "type": "artwork",
+                "confidence": 0.7,
+                "notes": "Likely the painting partially visible on the left, by Stefano Ussi, which hangs in this room."
+              },
+              {
+                "name": "Gold Frames",
+                "type": "other",
+                "confidence": 0.95,
+                "notes": "Ornate gilded frames surrounding the paintings."
+              },
+              {
+                "name": "Rope Stanchions",
+                "type": "infrastructure",
+                "confidence": 0.9,
+                "notes": "Barriers protecting the art."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Gemini Vision (fast)",
+          "details": {
+            "approach": "Gemini Vision (fast)",
+            "description": "A wide-angle shot of a gallery room within the Gallery of Modern Art in Palazzo Pitti, Florence. The central focus is a monumental oil painting titled 'The Battle of Legnano' (La battaglia di Legnano) by Amos Cassioli, housed in an ornate gold frame. The painting depicts a chaotic 12th-century battle scene with the Lombard League's Carroccio (sacred war wagon) visible in the background. To the right, two smaller paintings are hung vertically: the upper one is a religious scene depicting the body of Christ, and the lower one is a small dark landscape or interior. The room features a white vaulted ceiling with coffered details and a decorative frieze. A red carpet runner and a brass rope barrier protect the main artwork. The lighting is soft and even, typical of a museum environment.",
+            "photographer_location": [
+              {
+                "name": "Galleria d'Arte Moderna, Palazzo Pitti, Florence, Italy",
+                "confidence": 0.95
+              },
+              {
+                "name": "Florence, Italy",
+                "confidence": 0.99
+              }
+            ],
+            "subject_location": [
+              {
+                "name": "Galleria d'Arte Moderna, Palazzo Pitti, Florence, Italy",
+                "confidence": 0.95
+              }
+            ],
+            "entities": [
+              {
+                "name": "The Battle of Legnano",
+                "type": "artwork",
+                "confidence": 0.98,
+                "notes": "Painting by Amos Cassioli, 1860-1870, depicting the 1176 battle between the Lombard League and Frederick Barbarossa."
+              },
+              {
+                "name": "Amos Cassioli",
+                "type": "other",
+                "confidence": 0.95,
+                "notes": "Italian painter known for historical and battle scenes."
+              },
+              {
+                "name": "Galleria d'Arte Moderna",
+                "type": "cultural_site",
+                "confidence": 0.95,
+                "notes": "The Gallery of Modern Art located on the top floor of the Pitti Palace."
+              },
+              {
+                "name": "Palazzo Pitti",
+                "type": "building",
+                "confidence": 0.98,
+                "notes": "A vast, mainly Renaissance, palace in Florence, Italy."
+              },
+              {
+                "name": "Romanticism",
+                "type": "architectural_style",
+                "confidence": 0.8,
+                "notes": "The artistic style of the central historical painting."
+              },
+              {
+                "name": "Carroccio",
+                "type": "other",
+                "confidence": 0.9,
+                "notes": "The symbolic war wagon of the medieval Italian communes, depicted in the background of the main painting."
+              }
+            ],
+            "landmark_name": null
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "details": {
+            "approach": "Google Cloud Vision",
+            "description": null,
+            "photographer_location": [],
+            "subject_location": [],
+            "entities": [
+              {
+                "name": "Art",
+                "type": "artwork",
+                "confidence": 0.5373718738555908,
+                "notes": null
+              },
+              {
+                "name": "Painting",
+                "type": "artwork",
+                "confidence": 0.4770074784755707,
+                "notes": null
+              },
+              {
+                "name": "Interior design",
+                "type": "other",
+                "confidence": 0.4169091582298279,
+                "notes": null
+              },
+              {
+                "name": "Design",
+                "type": "other",
+                "confidence": 0.414900004863739,
+                "notes": null
+              },
+              {
+                "name": "Picture Frame",
+                "type": "other",
+                "confidence": 0.37720000743865967,
+                "notes": null
+              },
+              {
+                "name": "Vernissage",
+                "type": "other",
+                "confidence": 0.3310774266719818,
+                "notes": null
+              },
+              {
+                "name": "Image",
+                "type": "other",
+                "confidence": 0.3303000032901764,
+                "notes": null
+              },
+              {
+                "name": "Art",
+                "type": "other",
+                "confidence": 0.9387521743774414,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Visual arts",
+                "type": "other",
+                "confidence": 0.9366846680641174,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Picture frame",
+                "type": "other",
+                "confidence": 0.9117675423622131,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Art museum",
+                "type": "other",
+                "confidence": 0.8470819592475891,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Painting",
+                "type": "other",
+                "confidence": 0.8439294695854187,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Modern art",
+                "type": "other",
+                "confidence": 0.7958441376686096,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Exhibition",
+                "type": "other",
+                "confidence": 0.7892729043960571,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Museum",
+                "type": "other",
+                "confidence": 0.7817791104316711,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Collection",
+                "type": "other",
+                "confidence": 0.7195084691047668,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "Art Paint",
+                "type": "other",
+                "confidence": 0.7037999033927917,
+                "notes": "Detected via label detection"
+              },
+              {
+                "name": "AAAAAAAAANNN",
+                "type": "signage",
+                "confidence": 0.9,
+                "notes": "Detected via OCR"
+              }
+            ],
+            "landmark_name": null
+          }
+        }
+      ]
+    }
+  ]
+}

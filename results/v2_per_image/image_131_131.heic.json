@@ -1,0 +1,1221 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "131.heic",
+      "timestamp": "2026-01-28T01:55:36.325907",
+      "processing_time_seconds": 62.254956,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 13.745249999999999,
+        "gps_longitude": 100.49162222222222,
+        "location": {
+          "formatted_address": "354 Maha Rat Rd, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon, Krung Thep Maha Nakhon 10200, Thailand",
+          "city": null,
+          "county": "Krung Thep Maha Nakhon",
+          "country": "Thailand"
+        },
+        "datetime_original": "2024:12:17 18:12:13",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Wat Arun, Bangkok, Thailand",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive architectural style and location in Bangkok strongly suggest that the structure is Wat Arun, a well-known landmark in the city.",
+            "detailed_description": "The image prominently features Wat Arun, a renowned Buddhist temple located in Bangkok, Thailand. Known as the Temple of Dawn, it is distinguished by its central prang (spire) which is intricately decorated with colorful porcelain and seashells. The temple is an iconic example of Thai architecture from the Rattanakosin era, characterized by its ornate design and riverside location along the Chao Phraya River. The surrounding urban environment includes various signs and buildings, indicating a bustling city setting.",
+            "identification": {
+              "primary": [
+                "Wat Arun"
+              ],
+              "location": "Bangkok, Thailand",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Wat Arun",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Thai_architecture",
+              "Buddhist_temple",
+              "Rattanakosin_era",
+              "Bangkok",
+              "landmark"
+            ],
+            "location": "Bangkok, Thailand",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Wat Arun\"],\n        \"location\": \"Bangkok, Thailand\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Wat Arun\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Thai_architecture\", \"Buddhist_temple\", \"Rattanakosin_era\", \"Bangkok\", \"landmark\"],\n    \"description\": \"The image prominently features Wat Arun, a renowned Buddhist temple located in Bangkok, Thailand. Known as the Temple of Dawn, it is distinguished by its central prang (spire) which is intricately decorated with colorful porcelain and seashells. The temple is an iconic example of Thai architecture from the Rattanakosin era, characterized by its ornate design and riverside location along the Chao Phraya River. The surrounding urban environment includes various signs and buildings, indicating a bustling city setting.\",\n    \"reasoning\": \"The distinctive architectural style and location in Bangkok strongly suggest that the structure is Wat Arun, a well-known landmark in the city.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "gps_coordinates": {
+              "latitude": 13.745249999999999,
+              "longitude": 100.49162222222222
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "354 Maha Rat Rd, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon, Krung Thep Maha Nakhon 10200, Thailand",
+              "city": null,
+              "county": "Krung Thep Maha Nakhon",
+              "country": "Thailand"
+            },
+            "photo_timestamp": "2024:12:17 18:12:13",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 17.28640627861023
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Wat Arun, Bangkok, Thailand",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The description matches Wat Arun, a well-known temple in Bangkok featuring a tall prang with intricate carvings and mosaic tiles. The location metadata supports this identification, as Wat Arun is a significant cultural landmark in Bangkok. The search results strongly suggest Wat Arun as the subject, given the architectural style and features described.",
+            "identification": {
+              "primary": [
+                "Wat Arun"
+              ],
+              "location": "Bangkok, Thailand",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Wat Arun",
+                "type": "temple",
+                "confidence": 0.95
+              },
+              {
+                "name": "Prang",
+                "type": "architectural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "traditional_thai",
+              "temple",
+              "prang",
+              "bangkok",
+              "cultural_heritage"
+            ],
+            "sources_used": [
+              "en.wikipedia.org",
+              "thailandcarsrentals.com"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([thailandcarsrentals.com]())",
+              "*URL*: ([tripsavvy.com]())",
+              "*URL*: ([newasiatours.com]())"
+            ],
+            "type": "temple",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Wat Pho",
+                "specificity_level": "very_specific",
+                "confidence": 0.7,
+                "reasoning": "Wat Pho is another famous temple in Bangkok with traditional Thai architecture, but the description of the prang is more closely associated with Wat Arun."
+              },
+              {
+                "guess": "Traditional Thai temple in Bangkok",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The description fits a typical Thai temple, but without specific identification, it could be any temple in Bangkok with similar architectural features."
+              }
+            ],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image prominently features a view of a distinctive temple structure in the background, likely a significant cultural or religious landmark in Bangkok, Thailand. The temple showcases traditional Thai architectural elements, characterized by a tall, intricately decorated spire known as a prang. This prang is adorned with detailed carvings and possibly mosaic tiles, typical of Thai temple architecture, reflecting a rich cultural heritage. The structure is illuminated, highlighting its ornate de",
+            "description": "The image prominently features a view of a distinctive temple structure in the background, likely a significant cultural or religious landmark in Bangkok, Thailand. The temple showcases traditional Thai architectural elements, characterized by a tall, intricately decorated spire known as a prang. This prang is adorned with detailed carvings and possibly mosaic tiles, typical of Thai temple architecture, reflecting a rich cultural heritage. The structure is illuminated, highlighting its ornate de",
+            "architectural_style": "Traditional Thai",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 13.745249999999999,
+              "longitude": 100.49162222222222
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "354 Maha Rat Rd, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon, Krung Thep Maha Nakhon 10200, Thailand",
+              "city": null,
+              "county": "Krung Thep Maha Nakhon",
+              "country": "Thailand"
+            },
+            "photo_timestamp": "2024:12:17 18:12:13",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 44.1210458278656
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Urban area",
+          "confidence": 0.9459564089775085,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Urban area",
+                "score": 0.9459564089775085
+              },
+              {
+                "source": "label",
+                "name": "Street",
+                "score": 0.8984174728393555
+              },
+              {
+                "source": "label",
+                "name": "Metropolitan area",
+                "score": 0.8940329551696777
+              },
+              {
+                "source": "label",
+                "name": "Pedestrian",
+                "score": 0.8765491843223572
+              },
+              {
+                "source": "label",
+                "name": "Electricity",
+                "score": 0.8451343774795532
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Car",
+                "score": 0.5902500152587891
+              },
+              {
+                "name": "Pedestrian",
+                "score": 0.4236786961555481
+              },
+              {
+                "name": "Traffic",
+                "score": 0.40753933787345886
+              },
+              {
+                "name": "Sidewalk",
+                "score": 0.40162456035614014
+              },
+              {
+                "name": "Family car",
+                "score": 0.38379529118537903
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.7715051770210266
+              },
+              {
+                "name": "Car",
+                "score": 0.7660759091377258
+              },
+              {
+                "name": "Top",
+                "score": 0.7581602334976196
+              },
+              {
+                "name": "Clothing",
+                "score": 0.7555959224700928
+              },
+              {
+                "name": "Person",
+                "score": 0.7365871667861938
+              }
+            ],
+            "labels": [
+              {
+                "name": "Urban area",
+                "score": 0.9459564089775085
+              },
+              {
+                "name": "Street",
+                "score": 0.8984174728393555
+              },
+              {
+                "name": "Metropolitan area",
+                "score": 0.8940329551696777
+              },
+              {
+                "name": "Pedestrian",
+                "score": 0.8765491843223572
+              },
+              {
+                "name": "Electricity",
+                "score": 0.8451343774795532
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 13.745249999999999,
+              "longitude": 100.49162222222222
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "354 Maha Rat Rd, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon, Krung Thep Maha Nakhon 10200, Thailand",
+              "city": null,
+              "county": "Krung Thep Maha Nakhon",
+              "country": "Thailand"
+            },
+            "photo_timestamp": "2024:12:17 18:12:13",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 11.659579038619995
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Krung Thep Maha Nakhon, Thailand",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Krung Thep Maha Nakhon, Thailand",
+            "coordinates": {
+              "latitude": 13.745249999999999,
+              "longitude": 100.49162222222222
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Pig Memorial",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 153,
+                  "vicinity": "PFXW+WFX, Bangkok",
+                  "place_id": "ChIJ1_9KLxCZ4jARNVFsNQSbq7k",
+                  "location": {
+                    "lat": 13.7498718,
+                    "lng": 100.4962242
+                  }
+                },
+                {
+                  "name": "Santa Cruz Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 771,
+                  "vicinity": "112 Soi Kudeejeen, Khwaeng Wat Kanlaya, Khet Thon Buri",
+                  "place_id": "ChIJNbw0_QKZ4jARWPgw6sUx4hs",
+                  "location": {
+                    "lat": 13.7391169,
+                    "lng": 100.4938326
+                  }
+                },
+                {
+                  "name": "Silpa Bhirasri National Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 37,
+                  "vicinity": "192 Thanon Maha Rat, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon",
+                  "place_id": "ChIJ2ykyVwmZ4jARcEFoydkmn64",
+                  "location": {
+                    "lat": 13.7527,
+                    "lng": 100.49106
+                  }
+                },
+                {
+                  "name": "Territorial Defense Command",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.3,
+                  "user_ratings_total": 23,
+                  "vicinity": "Territorial Defense Command, Military Reserve General Headquarter, 2 ถนน เจริญกรุง, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon",
+                  "place_id": "ChIJLfRRXAWZ4jARqRiQcNqWOas",
+                  "location": {
+                    "lat": 13.7470802,
+                    "lng": 100.4952257
+                  }
+                },
+                {
+                  "name": "The Temple of the Emerald Buddha",
+                  "types": [
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 41548,
+                  "vicinity": "Na Phra Lan Road, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon",
+                  "place_id": "ChIJ5Wl37g6Z4jARiP4itarBPDQ",
+                  "location": {
+                    "lat": 13.7516435,
+                    "lng": 100.4927041
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Silpa Bhirasri National Museum",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 37,
+                  "vicinity": "192 Thanon Maha Rat, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon",
+                  "place_id": "ChIJ2ykyVwmZ4jARcEFoydkmn64",
+                  "location": {
+                    "lat": 13.7527,
+                    "lng": 100.49106
+                  }
+                },
+                {
+                  "name": "Territorial Defense Command",
+                  "types": [
+                    "tourist_attraction",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.3,
+                  "user_ratings_total": 23,
+                  "vicinity": "Territorial Defense Command, Military Reserve General Headquarter, 2 ถนน เจริญกรุง, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon",
+                  "place_id": "ChIJLfRRXAWZ4jARqRiQcNqWOas",
+                  "location": {
+                    "lat": 13.7470802,
+                    "lng": 100.4952257
+                  }
+                },
+                {
+                  "name": "Baan Kudichin Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 511,
+                  "vicinity": "271 Thanon Thetsaban Sai 1, Khwaeng Wat Kanlaya, Khet Thon Buri",
+                  "place_id": "ChIJ-V9rqgOZ4jARjvFHGX8Q3fk",
+                  "location": {
+                    "lat": 13.739346,
+                    "lng": 100.4929733
+                  }
+                },
+                {
+                  "name": "The Pavilion of Regalia Royal Decorations and Coins",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 25,
+                  "vicinity": "The Grand Palace, Na Phra Lan Road, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon",
+                  "place_id": "ChIJSVOcJA-Z4jAR4CCMqH58uDU",
+                  "location": {
+                    "lat": 13.7516435,
+                    "lng": 100.4927041
+                  }
+                },
+                {
+                  "name": "Royal Dockyard Museum Commemorating 84 Years",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 29,
+                  "vicinity": "2 Thanon Arun Amarin, Khwaeng Siriraj, Khet Bangkok Noi",
+                  "place_id": "ChIJu2p1Q6CZ4jARBW_iMKfv2m4",
+                  "location": {
+                    "lat": 13.7500015,
+                    "lng": 100.4863016
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "The Deck by Arun Residence",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 3466,
+                  "vicinity": "36-38 Soi Pratu Nokyung, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon",
+                  "place_id": "ChIJX3aTlQuZ4jARuBMJ5me3lUY",
+                  "location": {
+                    "lat": 13.7448231,
+                    "lng": 100.491302
+                  }
+                },
+                {
+                  "name": "sala rattanakosin Bangkok",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 1849,
+                  "vicinity": "39 Thanon Maha Rat, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon",
+                  "place_id": "ChIJGfUu0gWZ4jARv_y-6ikKmIA",
+                  "location": {
+                    "lat": 13.7452707,
+                    "lng": 100.4909116
+                  }
+                },
+                {
+                  "name": "Mug jee",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 298,
+                  "vicinity": "1st Floor, INN A DAY, Maharaj - Tha Tien",
+                  "place_id": "ChIJX9YxzQWZ4jAR979U2GAvemk",
+                  "location": {
+                    "lat": 13.7450498,
+                    "lng": 100.4911197
+                  }
+                },
+                {
+                  "name": "Thong Heng Lee Restaurant",
+                  "types": [
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 1334,
+                  "vicinity": "192, 194 Thanon Maha Rat, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon",
+                  "place_id": "ChIJqda0RQmZ4jAR861kobU9SaE",
+                  "location": {
+                    "lat": 13.7526785,
+                    "lng": 100.4893907
+                  }
+                },
+                {
+                  "name": "Lat Ya Isan Food",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 29,
+                  "vicinity": "PFQR+4C9, Thanon Arun Amarin, Khwaeng Wat Kanlaya, Khet Thon Buri",
+                  "place_id": "ChIJQ4rUFwKZ4jARHbTHvuOt7Ms",
+                  "location": {
+                    "lat": 13.7377778,
+                    "lng": 100.4911111
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Saranrom Park",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 2800,
+                  "vicinity": "Between the intersection of New Road and Rajini, ถนน เจริญกรุง, Khet Phra Nakhon",
+                  "place_id": "ChIJ29xTHBCZ4jARW6fp8aK8I-Q",
+                  "location": {
+                    "lat": 13.7481302,
+                    "lng": 100.4955593
+                  }
+                },
+                {
+                  "name": "King Rama II Statue",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 13,
+                  "vicinity": "34 Thanon Wang Doem, Khwaeng Wat Arun, Khet Bangkok Yai",
+                  "place_id": "ChIJr7m2w86Z4jARL73ADeN5UfI",
+                  "location": {
+                    "lat": 13.744476,
+                    "lng": 100.4892067
+                  }
+                },
+                {
+                  "name": "Phan Loha Fountain",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 17,
+                  "vicinity": "PFXW+35M, Phra Borom Maha Ratchawang, Phra Nakhon",
+                  "place_id": "ChIJCbH39dSZ4jAR31qa_XfuaAQ",
+                  "location": {
+                    "lat": 13.7477162,
+                    "lng": 100.4954107
+                  }
+                },
+                {
+                  "name": "The Grand Palace",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 75436,
+                  "vicinity": "Phra Borom Maha Ratchawang, Phra Nakhon",
+                  "place_id": "ChIJPzZsMU6Z4jARQUzvk913bCo",
+                  "location": {
+                    "lat": 13.7498558,
+                    "lng": 100.4915765
+                  }
+                },
+                {
+                  "name": "Saranrom Park Office",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "ป้ายรถประจำทาง วังสรานรมย์, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon",
+                  "place_id": "ChIJi4e5WFKZ4jARctS8pGz0Ta8",
+                  "location": {
+                    "lat": 13.7475088,
+                    "lng": 100.4958859
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Santa Cruz Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 771,
+                  "vicinity": "112 Soi Kudeejeen, Khwaeng Wat Kanlaya, Khet Thon Buri",
+                  "place_id": "ChIJNbw0_QKZ4jARWPgw6sUx4hs",
+                  "location": {
+                    "lat": 13.7391169,
+                    "lng": 100.4938326
+                  }
+                },
+                {
+                  "name": "สำนักปฏิบัติธรรมวัดโพธิ์",
+                  "types": [
+                    "health",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 15,
+                  "vicinity": "น.23 Thanon Sanam Chai, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon",
+                  "place_id": "ChIJq0LzpdaZ4jARsyleFmXcpC4",
+                  "location": {
+                    "lat": 13.7456287,
+                    "lng": 100.4922022
+                  }
+                },
+                {
+                  "name": "พาหุง",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "8 Soi Wang Doem 4, Khwaeng Wat Arun, Khet Bangkok Yai",
+                  "place_id": "ChIJi6Y-cwCZ4jARhOFn0FnwgMQ",
+                  "location": {
+                    "lat": 13.741587,
+                    "lng": 100.4856821
+                  }
+                },
+                {
+                  "name": "พระพุทธโสธร",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "QF2R+R7V, Phra Borom Maha Ratchawang, Phra Nakhon",
+                  "place_id": "ChIJkSPHfwCZ4jARKpA3hY1hloI",
+                  "location": {
+                    "lat": 13.7521342,
+                    "lng": 100.4907327
+                  }
+                },
+                {
+                  "name": "Masjid Phadungtham Islam",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 15,
+                  "vicinity": "43 Thanon Itsaraphap, Khwaeng Wat Arun, Khet Bangkok Yai",
+                  "place_id": "ChIJn5i1NgCZ4jARl65KVKampi0",
+                  "location": {
+                    "lat": 13.7376082,
+                    "lng": 100.4869172
+                  }
+                },
+                {
+                  "name": "Ton Son Jami Mosque Wat Arun",
+                  "types": [
+                    "mosque",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 461,
+                  "vicinity": "447 Thanon Arun Amarin, Khwaeng Wat Arun, Khet Bangkok Yai",
+                  "place_id": "ChIJezNTCwGZ4jARsZux4erypHA",
+                  "location": {
+                    "lat": 13.7399892,
+                    "lng": 100.4887602
+                  }
+                },
+                {
+                  "name": "مساجد الصادق",
+                  "types": [
+                    "mosque",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "4 Thanon Arun Amarin, Khwaeng Wat Arun, Khet Bangkok Yai",
+                  "place_id": "ChIJw78JIgCZ4jARHNNGtd4LxNc",
+                  "location": {
+                    "lat": 13.7437248,
+                    "lng": 100.488943
+                  }
+                },
+                {
+                  "name": "Masjid Bang Luang",
+                  "types": [
+                    "mosque",
+                    "tourist_attraction",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 189,
+                  "vicinity": "สถานอบรมศาสนาอิสลาม, 151 Thanon Arun Amarin, Khwaeng Wat Kanlaya, Khet Thon Buri",
+                  "place_id": "ChIJPWuskwGZ4jAR3MceUP9sfNc",
+                  "location": {
+                    "lat": 13.7380325,
+                    "lng": 100.4893406
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "โล้วเฮียบเส็ง / LOU HIEB SENG",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 12,
+                  "vicinity": "5 Soi Pratu Nokyung, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon",
+                  "place_id": "ChIJueowtQWZ4jARHgxHYZ1fEfk",
+                  "location": {
+                    "lat": 13.7449402,
+                    "lng": 100.4917963
+                  }
+                },
+                {
+                  "name": "Misty Maison by FLOWERS IN THE MIST",
+                  "types": [
+                    "art_gallery",
+                    "florist",
+                    "cafe",
+                    "point_of_interest",
+                    "store",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 48,
+                  "vicinity": "174 Thanon Atsadang, Khwaeng Wang Burapha Phirom, Khet Phra Nakhon",
+                  "place_id": "ChIJOwW0xPWZ4jARDbrG5yDAwbc",
+                  "location": {
+                    "lat": 13.7438551,
+                    "lng": 100.4962963
+                  }
+                },
+                {
+                  "name": "Graffiti Alley",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "298 Thanon Ban Mo, Khwaeng Wang Burapha Phirom, Khet Phra Nakhon",
+                  "place_id": "ChIJJz82RACZ4jARsANURSfpxPo",
+                  "location": {
+                    "lat": 13.7430593,
+                    "lng": 100.496859
+                  }
+                },
+                {
+                  "name": "Art Centre, Silpakorn University",
+                  "types": [
+                    "art_gallery",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 65,
+                  "vicinity": "31 Na Phra Lan Road, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon",
+                  "place_id": "ChIJsQW2s6CZ4jARKCwV_40G50c",
+                  "location": {
+                    "lat": 13.752794,
+                    "lng": 100.4899753
+                  }
+                },
+                {
+                  "name": "PAG Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "QF3R+897, Tha Chang - Wat Rakang, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon",
+                  "place_id": "ChIJScPeBQCZ4jARK1TzotztaH8",
+                  "location": {
+                    "lat": 13.7532539,
+                    "lng": 100.4909788
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Bangkok",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Bangkok",
+                  "place_id": "ChIJ82ENKDJgHTERIEjiXbIAAQE",
+                  "location": {
+                    "lat": 13.7563309,
+                    "lng": 100.5017651
+                  }
+                },
+                {
+                  "name": "The Deck by Arun Residence",
+                  "types": [
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 3466,
+                  "vicinity": "36-38 Soi Pratu Nokyung, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon",
+                  "place_id": "ChIJX3aTlQuZ4jARuBMJ5me3lUY",
+                  "location": {
+                    "lat": 13.7448231,
+                    "lng": 100.491302
+                  }
+                },
+                {
+                  "name": "Sala Arun Hotel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 414,
+                  "vicinity": "47-49 Soi Tha Tian, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon",
+                  "place_id": "ChIJlWjc0QWZ4jAR4XXBTQTrNhw",
+                  "location": {
+                    "lat": 13.745267,
+                    "lng": 100.4909589
+                  }
+                },
+                {
+                  "name": "INN A DAY อิน อะ เดย์",
+                  "types": [
+                    "lodging",
+                    "clothing_store",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 425,
+                  "vicinity": "61 Thanon Maha Rat, Khet Phra Nakhon",
+                  "place_id": "ChIJPeRZzQWZ4jARS-HOvDlcOI0",
+                  "location": {
+                    "lat": 13.745043,
+                    "lng": 100.491178
+                  }
+                },
+                {
+                  "name": "sala rattanakosin Bangkok",
+                  "types": [
+                    "lodging",
+                    "bar",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 1849,
+                  "vicinity": "39 Thanon Maha Rat, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon",
+                  "place_id": "ChIJGfUu0gWZ4jARv_y-6ikKmIA",
+                  "location": {
+                    "lat": 13.7452707,
+                    "lng": 100.4909116
+                  }
+                }
+              ]
+            },
+            "total_places_found": 38,
+            "photo_timestamp": "2024:12:17 18:12:13",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.39542508125305176
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/131.heic"
+    },
+    {
+      "image_filename": "131.heic",
+      "timestamp": "2026-01-28T01:56:38.621764",
+      "processing_time_seconds": 59.263273,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Wat Arun, Bangkok, Thailand",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The distinctive architectural style and location suggest Wat Arun, a well-known landmark in Bangkok. The temple's unique prang and decorative elements are characteristic of this site.",
+            "detailed_description": "The image features Wat Arun, a prominent Buddhist temple located in Bangkok, Thailand. Known as the Temple of Dawn, it is renowned for its stunning riverside location and distinctive Khmer-style architecture. The temple's central prang (tower) is intricately decorated with colorful porcelain and seashells, creating a striking visual effect. The surrounding urban environment includes various signs and buildings, indicating a bustling area with shops and restaurants.",
+            "identification": {
+              "primary": [
+                "Wat Arun"
+              ],
+              "location": "Bangkok, Thailand",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Wat Arun",
+                "type": "landmark",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "Buddhist_architecture",
+              "temple",
+              "Bangkok",
+              "Thailand",
+              "cultural"
+            ],
+            "location": "Bangkok, Thailand",
+            "type": "landmark",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Wat Arun\"],\n        \"location\": \"Bangkok, Thailand\",\n        \"confidence\": 0.95\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Wat Arun\",\n            \"type\": \"landmark\",\n            \"confidence\": 0.95\n        }\n    ],\n    \"tags\": [\"Buddhist_architecture\", \"temple\", \"Bangkok\", \"Thailand\", \"cultural\"],\n    \"description\": \"The image features Wat Arun, a prominent Buddhist temple located in Bangkok, Thailand. Known as the Temple of Dawn, it is renowned for its stunning riverside location and distinctive Khmer-style architecture. The temple's central prang (tower) is intricately decorated with colorful porcelain and seashells, creating a striking visual effect. The surrounding urban environment includes various signs and buildings, indicating a bustling area with shops and restaurants.\",\n    \"reasoning\": \"The distinctive architectural style and location suggest Wat Arun, a well-known landmark in Bangkok. The temple's unique prang and decorative elements are characteristic of this site.\",\n    \"type\": \"landmark\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": []\n}\n```",
+            "processing_time_seconds": 19.894253969192505
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "Wat Arun, Bangkok, Thailand",
+          "confidence": 0.8999999999999999,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The search results strongly suggest Wat Arun due to its distinctive tiered design, pointed spire, and ornate decorations typical of Southeast Asian architecture. The presence of English and Thai signs in a bustling urban area supports the identification of Bangkok, where Wat Arun is located.",
+            "identification": {
+              "primary": [
+                "Wat Arun"
+              ],
+              "location": "Bangkok, Thailand",
+              "confidence": 0.95
+            },
+            "artifacts": [
+              {
+                "name": "Wat Arun",
+                "type": "temple",
+                "confidence": 0.95
+              }
+            ],
+            "tags": [
+              "traditional_southeast_asian",
+              "temple",
+              "tiered_design",
+              "ornate_decorations",
+              "Bangkok",
+              "Thailand"
+            ],
+            "sources_used": [
+              "en.wikipedia.org"
+            ],
+            "all_candidates": [
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())",
+              "*URL*: ([en.wikipedia.org]())"
+            ],
+            "type": "temple",
+            "search_range_meters": 1000,
+            "educated_guesses": [],
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 0.95,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image features a prominent architectural structure in the background, which appears to be a large, intricately designed temple or pagoda. The structure is characterized by its tiered design, with multiple levels that taper upwards, culminating in a pointed spire. The facade is adorned with detailed carvings and ornate decorations, typical of traditional Southeast Asian architecture. The temple is illuminated, highlighting its golden hue against the twilight sky, creating a striking contrast.",
+            "description": "The image features a prominent architectural structure in the background, which appears to be a large, intricately designed temple or pagoda. The structure is characterized by its tiered design, with multiple levels that taper upwards, culminating in a pointed spire. The facade is adorned with detailed carvings and ornate decorations, typical of traditional Southeast Asian architecture. The temple is illuminated, highlighting its golden hue against the twilight sky, creating a striking contrast.",
+            "architectural_style": "Traditional Southeast Asian",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 39.21047782897949
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Urban area",
+          "confidence": 0.9459564089775085,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Urban area",
+                "score": 0.9459564089775085
+              },
+              {
+                "source": "label",
+                "name": "Street",
+                "score": 0.8984174728393555
+              },
+              {
+                "source": "label",
+                "name": "Metropolitan area",
+                "score": 0.8940329551696777
+              },
+              {
+                "source": "label",
+                "name": "Pedestrian",
+                "score": 0.8765491843223572
+              },
+              {
+                "source": "label",
+                "name": "Electricity",
+                "score": 0.8451343774795532
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Car",
+                "score": 0.5902500152587891
+              },
+              {
+                "name": "Pedestrian",
+                "score": 0.4236786961555481
+              },
+              {
+                "name": "Traffic",
+                "score": 0.40744686126708984
+              },
+              {
+                "name": "Sidewalk",
+                "score": 0.4015916585922241
+              },
+              {
+                "name": "Family car",
+                "score": 0.3839884102344513
+              }
+            ],
+            "objects": [
+              {
+                "name": "Person",
+                "score": 0.7715051770210266
+              },
+              {
+                "name": "Car",
+                "score": 0.7660759091377258
+              },
+              {
+                "name": "Top",
+                "score": 0.7581602334976196
+              },
+              {
+                "name": "Clothing",
+                "score": 0.7555959224700928
+              },
+              {
+                "name": "Person",
+                "score": 0.7365871667861938
+              }
+            ],
+            "labels": [
+              {
+                "name": "Urban area",
+                "score": 0.9459564089775085
+              },
+              {
+                "name": "Street",
+                "score": 0.8984174728393555
+              },
+              {
+                "name": "Metropolitan area",
+                "score": 0.8940329551696777
+              },
+              {
+                "name": "Pedestrian",
+                "score": 0.8765491843223572
+              },
+              {
+                "name": "Electricity",
+                "score": 0.8451343774795532
+              }
+            ],
+            "processing_time_seconds": 12.192192077636719
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/131.heic"
+    }
+  ]
+}

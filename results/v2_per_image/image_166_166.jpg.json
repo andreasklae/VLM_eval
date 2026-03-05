@@ -1,0 +1,968 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "166.jpg",
+      "timestamp": "2026-01-28T03:14:36.177022",
+      "processing_time_seconds": 63.55245,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 38.96357777777778,
+        "gps_longitude": -9.417430555555555,
+        "location": {
+          "formatted_address": "R. de Santo António 1B, 2655-290 Ericeira, Portugal",
+          "city": "Ericeira",
+          "county": "Mafra",
+          "country": "Portugal"
+        },
+        "datetime_original": "2025:06:04 14:14:09",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Historic building facade, Ericeira, Portugal",
+          "confidence": 0.85,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The architectural style and decorative elements suggest a traditional Portuguese building, likely from the late 19th or early 20th century. The presence of stucco work and wrought iron details are characteristic of this region.",
+            "detailed_description": "The image shows a historic building facade in Ericeira, Portugal. The building features ornate decorative elements typical of traditional Portuguese architecture, including intricate stucco work and a statue at the top of the pediment. The facade is adorned with detailed moldings and wrought iron balconies, reflecting a blend of classical and local styles. The color scheme includes white and blue, which is common in Portuguese coastal architecture.",
+            "identification": {
+              "primary": [
+                "Historic building facade"
+              ],
+              "location": "Ericeira, Portugal",
+              "confidence": 0.85
+            },
+            "artifacts": [
+              {
+                "name": "Decorative facade with statue",
+                "type": "building",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "architectural_style",
+              "decorative_elements",
+              "historic_building",
+              "Portugal"
+            ],
+            "location": "Ericeira, Portugal",
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Local municipal building or cultural center",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.75,
+                "reasoning": "The ornate facade and central location suggest it could be a municipal or cultural building."
+              },
+              {
+                "guess": "Historic residential building",
+                "specificity_level": "general",
+                "confidence": 0.65,
+                "reasoning": "The decorative elements are typical of historic residential architecture in the area."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Historic building facade\"],\n        \"location\": \"Ericeira, Portugal\",\n        \"confidence\": 0.85\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Decorative facade with statue\",\n            \"type\": \"building\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"architectural_style\", \"decorative_elements\", \"historic_building\", \"Portugal\"],\n    \"description\": \"The image shows a historic building facade in Ericeira, Portugal. The building features ornate decorative elements typical of traditional Portuguese architecture, including intricate stucco work and a statue at the top of the pediment. The facade is adorned with detailed moldings and wrought iron balconies, reflecting a blend of classical and local styles. The color scheme includes white and blue, which is common in Portuguese coastal architecture.\",\n    \"reasoning\": \"The architectural style and decorative elements suggest a traditional Portuguese building, likely from the late 19th or early 20th century. The presence of stucco work and wrought iron details are characteristic of this region.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Local municipal building or cultural center\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.75,\n            \"reasoning\": \"The ornate facade and central location suggest it could be a municipal or cultural building.\"\n        },\n        {\n            \"guess\": \"Historic residential building\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.65,\n            \"reasoning\": \"The decorative elements are typical of historic residential architecture in the area.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": 38.96357777777778,
+              "longitude": -9.417430555555555
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "R. de Santo António 1B, 2655-290 Ericeira, Portugal",
+              "city": "Ericeira",
+              "county": "Mafra",
+              "country": "Portugal"
+            },
+            "photo_timestamp": "2025:06:04 14:14:09",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 20.47816514968872
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([pt.wikipedia.org]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 1,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image features a prominent building facade in Ericeira, Mafra, Portugal, showcasing a blend of architectural styles. The building is characterized by its ornate detailing and decorative elements. The facade includes a triangular pediment adorned with intricate relief work, featuring floral motifs and a central sculpted face. Atop the pediment stands a statue, possibly representing a historical or cultural figure, adding a vertical emphasis to the structure. The facade is painted in white, wi",
+            "description": "The image features a prominent building facade in Ericeira, Mafra, Portugal, showcasing a blend of architectural styles. The building is characterized by its ornate detailing and decorative elements. The facade includes a triangular pediment adorned with intricate relief work, featuring floral motifs and a central sculpted face. Atop the pediment stands a statue, possibly representing a historical or cultural figure, adding a vertical emphasis to the structure. The facade is painted in white, wi",
+            "architectural_style": "Eclectic with Classical elements",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 38.96357777777778,
+              "longitude": -9.417430555555555
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "R. de Santo António 1B, 2655-290 Ericeira, Portugal",
+              "city": "Ericeira",
+              "county": "Mafra",
+              "country": "Portugal"
+            },
+            "photo_timestamp": "2025:06:04 14:14:09",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 42.378453969955444
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Composite material",
+          "confidence": 0.8753427267074585,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Composite material",
+                "score": 0.8753427267074585
+              },
+              {
+                "source": "label",
+                "name": "Iron",
+                "score": 0.8562111854553223
+              },
+              {
+                "source": "label",
+                "name": "Metal",
+                "score": 0.8246541619300842
+              },
+              {
+                "source": "object",
+                "name": "Window",
+                "score": 0.583097517490387
+              },
+              {
+                "source": "object",
+                "name": "Window",
+                "score": 0.5817252993583679
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Mixed-use",
+                "score": 0.3173506557941437
+              },
+              {
+                "name": "ArchitectureM RIBA Chartered Practice",
+                "score": 0.2847999930381775
+              },
+              {
+                "name": "Architecture",
+                "score": 0.282568097114563
+              },
+              {
+                "name": "Molar concentration",
+                "score": 0.2290000021457672
+              }
+            ],
+            "objects": [
+              {
+                "name": "Window",
+                "score": 0.583097517490387
+              },
+              {
+                "name": "Window",
+                "score": 0.5817252993583679
+              },
+              {
+                "name": "Building",
+                "score": 0.5788857936859131
+              },
+              {
+                "name": "Window",
+                "score": 0.560467004776001
+              }
+            ],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9885017275810242
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9810246229171753
+              },
+              {
+                "name": "Composite material",
+                "score": 0.8753427267074585
+              },
+              {
+                "name": "Iron",
+                "score": 0.8562111854553223
+              },
+              {
+                "name": "Metal",
+                "score": 0.8246541619300842
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 38.96357777777778,
+              "longitude": -9.417430555555555
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "R. de Santo António 1B, 2655-290 Ericeira, Portugal",
+              "city": "Ericeira",
+              "county": "Mafra",
+              "country": "Portugal"
+            },
+            "photo_timestamp": "2025:06:04 14:14:09",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 16.89134693145752
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Ericeira, Mafra, Portugal",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Ericeira, Mafra, Portugal",
+            "coordinates": {
+              "latitude": 38.96357777777778,
+              "longitude": -9.417430555555555
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Praia de São Sebastião",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 2890,
+                  "vicinity": "N247 779",
+                  "place_id": "ChIJG4iKegUnHw0RahECIl2s8G8",
+                  "location": {
+                    "lat": 38.9713167,
+                    "lng": -9.4205443
+                  }
+                },
+                {
+                  "name": "Miradouro Largo das Ribas",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Largo das Ribas 5, Ericeira",
+                  "place_id": "ChIJ2f6hfgAnHw0RwnHOg0NGQi0",
+                  "location": {
+                    "lat": 38.9637936,
+                    "lng": -9.4180958
+                  }
+                },
+                {
+                  "name": "Ericeira light",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 4,
+                  "vicinity": "Rua de Santo António 16 40, Ericeira",
+                  "place_id": "ChIJ3f_pZgAnHw0RMQbE6B6UfNA",
+                  "location": {
+                    "lat": 38.9641815,
+                    "lng": -9.4176824
+                  }
+                },
+                {
+                  "name": "Estátua - Jagoz do Mar",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "Rua de Santo António 34, Ericeira",
+                  "place_id": "ChIJWZXmUgAnHw0RgWe8i8tKyBo",
+                  "location": {
+                    "lat": 38.96436620000001,
+                    "lng": -9.4179215
+                  }
+                },
+                {
+                  "name": "Discoteca Ouriço wall paint",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Rua Capitão João Lopes 14, Ericeira",
+                  "place_id": "ChIJ1yPMVwAnHw0RuucvcYJFRPs",
+                  "location": {
+                    "lat": 38.96257180000001,
+                    "lng": -9.418608700000002
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Casa de Cultura Jaime Lobo e Silva",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.9,
+                  "user_ratings_total": 12,
+                  "vicinity": "Rua Mendes Leal 13, Ericeira",
+                  "place_id": "ChIJfbjTOwAnHw0Re_8pieHOAtY",
+                  "location": {
+                    "lat": 38.9630823,
+                    "lng": -9.417609
+                  }
+                },
+                {
+                  "name": "Fonte de São Sebastião",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 6,
+                  "vicinity": "Ericeira",
+                  "place_id": "ChIJwSgvXsAnHw0Rg6TMBn8qEUo",
+                  "location": {
+                    "lat": 38.9707876,
+                    "lng": -9.420455500000001
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Uni Sushi",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 531,
+                  "vicinity": "Largo dos Condes da Ericeira 5, Ericeira",
+                  "place_id": "ChIJHUQ5hgsnHw0RBlUT3qdEdRE",
+                  "location": {
+                    "lat": 38.9638889,
+                    "lng": -9.4169444
+                  }
+                },
+                {
+                  "name": "Pátio dos Marialvas",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.9,
+                  "user_ratings_total": 517,
+                  "vicinity": "Rua Doutor Eduardo Burnay 69, Ericeira",
+                  "place_id": "ChIJb0JVewsnHw0RIs0kzm38BVQ",
+                  "location": {
+                    "lat": 38.96289120000001,
+                    "lng": -9.417070200000001
+                  }
+                },
+                {
+                  "name": "Pedra Dura",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 1947,
+                  "vicinity": "Rua Doutor Eduardo Burnay 36 A, Ericeira",
+                  "place_id": "ChIJQ3LMaQsnHw0RZWwPO1KPN_8",
+                  "location": {
+                    "lat": 38.9621647,
+                    "lng": -9.416386899999997
+                  }
+                },
+                {
+                  "name": "O Caniço",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 1203,
+                  "vicinity": "Largo Santa Marta 4, Ericeira",
+                  "place_id": "ChIJ65P5ugwnHw0RWHy285MhFrI",
+                  "location": {
+                    "lat": 38.961483,
+                    "lng": -9.418129700000001
+                  }
+                },
+                {
+                  "name": "Brunch me",
+                  "types": [
+                    "restaurant",
+                    "bar",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 656,
+                  "vicinity": "Praça dos Navegantes 8, Ericeira",
+                  "place_id": "ChIJCQ5pCgwnHw0RgxbyATpUwa8",
+                  "location": {
+                    "lat": 38.9607989,
+                    "lng": -9.4164693
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Largo do Jogo da Bola",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 320,
+                  "vicinity": "Praça da República, Ericeira",
+                  "place_id": "ChIJjVB1fwsnHw0RJ1E-io5wYRo",
+                  "location": {
+                    "lat": 38.9633516,
+                    "lng": -9.4171383
+                  }
+                },
+                {
+                  "name": "Parque de jogo e recreio",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 1,
+                  "user_ratings_total": 1,
+                  "vicinity": "Ericeira",
+                  "place_id": "ChIJj0meS2gnHw0RlHdeZkw39Tg",
+                  "location": {
+                    "lat": 38.9631887,
+                    "lng": -9.4154877
+                  }
+                },
+                {
+                  "name": "Parque de Santa Marta",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 806,
+                  "vicinity": "Largo Santa Marta, Ericeira",
+                  "place_id": "ChIJK2SQxgwnHw0Rezg38UUygGE",
+                  "location": {
+                    "lat": 38.9615884,
+                    "lng": -9.418844299999998
+                  }
+                },
+                {
+                  "name": "Parque das Abelhas",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Rua Dom Manuel II 18, Ericeira",
+                  "place_id": "ChIJQbUegRInHw0RXhuxu5R6Xpk",
+                  "location": {
+                    "lat": 38.9645756,
+                    "lng": -9.4127197
+                  }
+                },
+                {
+                  "name": "Parque do Rego",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 3,
+                  "vicinity": "Rua Nelson Gomes Salvador, Ericeira",
+                  "place_id": "ChIJFeKQkk0nHw0RoAqhqmzx5U4",
+                  "location": {
+                    "lat": 38.96757890000001,
+                    "lng": -9.4154773
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Chapel of Nossa Senhora da Boa Viagem",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 37,
+                  "vicinity": "Rua de Santo António 26, Ericeira",
+                  "place_id": "ChIJzYrWEwwnHw0RQ_NDqs1LDpM",
+                  "location": {
+                    "lat": 38.964855,
+                    "lng": -9.4181676
+                  }
+                },
+                {
+                  "name": "Igreja de Santa Marta",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 43,
+                  "vicinity": "Largo Santa Marta 21, Ericeira",
+                  "place_id": "ChIJQbPfvQwnHw0RpF_6-LGaFl4",
+                  "location": {
+                    "lat": 38.9618577,
+                    "lng": -9.418303499999999
+                  }
+                },
+                {
+                  "name": "Igreja da Misericórdia",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 19,
+                  "vicinity": "Ericeira",
+                  "place_id": "ChIJiWJZ6xInHw0RxF4N072y2oE",
+                  "location": {
+                    "lat": 38.9654691,
+                    "lng": -9.417824800000002
+                  }
+                },
+                {
+                  "name": "Assembleia de Deus Ericeira",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Rua da Câmara 4, Ericeira",
+                  "place_id": "ChIJc7R3GQAnHw0Rl0KqiB9CRfQ",
+                  "location": {
+                    "lat": 38.96565409999999,
+                    "lng": -9.4177574
+                  }
+                },
+                {
+                  "name": "Salão do Reino das Testemunhas de Jeová",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 4,
+                  "vicinity": "Travessa do Toquim 4A, Ericeira",
+                  "place_id": "ChIJr-RaXW0nHw0Rs6RKEf2MQF0",
+                  "location": {
+                    "lat": 38.9620519,
+                    "lng": -9.4147035
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Hélder Alfaiate Galeria de Arte",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 9,
+                  "vicinity": "Rua da Fonte do Cabo 40 A, Ericeira",
+                  "place_id": "ChIJtay1fwsnHw0RxjWo9lBdZ6Y",
+                  "location": {
+                    "lat": 38.963185,
+                    "lng": -9.416710999999998
+                  }
+                },
+                {
+                  "name": "Pointless Gallery",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Rua da Fonte do Cabo 54, Ericeira",
+                  "place_id": "ChIJxYTPQ1UnHw0Rt8XCNnMM84k",
+                  "location": {
+                    "lat": 38.9642242,
+                    "lng": -9.417107800000002
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Ericeira",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Ericeira",
+                  "place_id": "ChIJl2_9rQ4nHw0RTKoQDGEMLHQ",
+                  "location": {
+                    "lat": 38.9681277,
+                    "lng": -9.4073004
+                  }
+                },
+                {
+                  "name": "Hotel Vila Galé Ericeira",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 3592,
+                  "vicinity": "Largo dos Navegantes 1, Ericeira",
+                  "place_id": "ChIJs9rXhZ00GQ0Rn7_PLu5XG3Q",
+                  "location": {
+                    "lat": 38.960474,
+                    "lng": -9.417036999999999
+                  }
+                },
+                {
+                  "name": "Blue Buddha Beach Rooms & Suites",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 99,
+                  "vicinity": "Rua Florêncio Granate 19, Ericeira",
+                  "place_id": "ChIJ1d7Q5A4nHw0RObrAgNSm1s0",
+                  "location": {
+                    "lat": 38.9678717,
+                    "lng": -9.4193818
+                  }
+                },
+                {
+                  "name": "70's Hostel",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 68,
+                  "vicinity": "Rua de São Félix 1, Ericeira",
+                  "place_id": "ChIJV-zCzw4nHw0RPX6jVc2svJU",
+                  "location": {
+                    "lat": 38.9672536,
+                    "lng": -9.4179175
+                  }
+                },
+                {
+                  "name": "Arthouse Bed and Breakfast",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 44,
+                  "vicinity": "Rua do Moinho Velho 9, Ericeira",
+                  "place_id": "ChIJ4UGx7wgnHw0RIqPPuSFEnXs",
+                  "location": {
+                    "lat": 38.9694202,
+                    "lng": -9.415424800000002
+                  }
+                }
+              ]
+            },
+            "total_places_found": 29,
+            "photo_timestamp": "2025:06:04 14:14:09",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.4419529438018799
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/166.jpg"
+    },
+    {
+      "image_filename": "166.jpg",
+      "timestamp": "2026-01-28T03:15:39.770285",
+      "processing_time_seconds": 61.801895,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Decorative building facade",
+          "confidence": 0.75,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The identification is based on the visible architectural features and decorative elements, which suggest a classical style. The presence of sculptural details and ornate relief work indicates a focus on aesthetic embellishment.",
+            "detailed_description": "The image shows a building facade with ornate decorative elements. The facade features sculptural details, including a statue at the top of the pediment and intricate relief work. The building has a classical architectural style, with symmetrical windows and wrought iron balconies. The facade is painted in white with blue accents, and the sculptural elements add a sense of grandeur to the structure.",
+            "identification": {
+              "primary": [
+                "Decorative building facade"
+              ],
+              "location": null,
+              "confidence": 0.75
+            },
+            "artifacts": [
+              {
+                "name": "Decorative building facade with sculptural elements",
+                "type": "building",
+                "confidence": 0.75
+              }
+            ],
+            "tags": [
+              "architectural_style",
+              "decorative_elements",
+              "sculpture",
+              "facade"
+            ],
+            "location": null,
+            "type": "building",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Neoclassical building facade",
+                "specificity_level": "general",
+                "confidence": 0.65,
+                "reasoning": "The decorative elements and symmetry are characteristic of neoclassical architecture."
+              },
+              {
+                "guess": "Baroque building facade",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The ornate sculptural details could suggest a Baroque influence."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Decorative building facade\"],\n        \"location\": null,\n        \"confidence\": 0.75\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Decorative building facade with sculptural elements\",\n            \"type\": \"building\",\n            \"confidence\": 0.75\n        }\n    ],\n    \"tags\": [\"architectural_style\", \"decorative_elements\", \"sculpture\", \"facade\"],\n    \"description\": \"The image shows a building facade with ornate decorative elements. The facade features sculptural details, including a statue at the top of the pediment and intricate relief work. The building has a classical architectural style, with symmetrical windows and wrought iron balconies. The facade is painted in white with blue accents, and the sculptural elements add a sense of grandeur to the structure.\",\n    \"reasoning\": \"The identification is based on the visible architectural features and decorative elements, which suggest a classical style. The presence of sculptural details and ornate relief work indicates a focus on aesthetic embellishment.\",\n    \"type\": \"building\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Neoclassical building facade\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.65,\n            \"reasoning\": \"The decorative elements and symmetry are characteristic of neoclassical architecture.\"\n        },\n        {\n            \"guess\": \"Baroque building facade\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.60,\n            \"reasoning\": \"The ornate sculptural details could suggest a Baroque influence.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 20.493112087249756
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*URL*: ([britannica.com]())",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 5,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.2,
+              "reasons": [
+                "All search results have different titles (contradictory)",
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.2,
+            "detailed_description": "The image depicts a building with a richly decorated facade, showcasing elements characteristic of Baroque architecture. The structure features an ornate pediment adorned with intricate relief work, including floral motifs and scrolls. Atop the pediment stands a statue, possibly of a classical figure, adding to the grandeur of the design. The facade is painted in white with blue accents, providing a striking contrast. The windows are framed with decorative moldings and wrought iron railings, typ",
+            "description": "The image depicts a building with a richly decorated facade, showcasing elements characteristic of Baroque architecture. The structure features an ornate pediment adorned with intricate relief work, including floral motifs and scrolls. Atop the pediment stands a statue, possibly of a classical figure, adding to the grandeur of the design. The facade is painted in white with blue accents, providing a striking contrast. The windows are framed with decorative moldings and wrought iron railings, typ",
+            "architectural_style": "Baroque",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 41.301596879959106
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Composite material",
+          "confidence": 0.8753427267074585,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Composite material",
+                "score": 0.8753427267074585
+              },
+              {
+                "source": "label",
+                "name": "Iron",
+                "score": 0.8562111854553223
+              },
+              {
+                "source": "label",
+                "name": "Metal",
+                "score": 0.8246541619300842
+              },
+              {
+                "source": "object",
+                "name": "Window",
+                "score": 0.583097517490387
+              },
+              {
+                "source": "object",
+                "name": "Window",
+                "score": 0.5817252993583679
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Mixed-use",
+                "score": 0.3169909715652466
+              },
+              {
+                "name": "ArchitectureM RIBA Chartered Practice",
+                "score": 0.2847999930381775
+              },
+              {
+                "name": "Architecture",
+                "score": 0.2822396159172058
+              },
+              {
+                "name": "Molar concentration",
+                "score": 0.2290000021457672
+              }
+            ],
+            "objects": [
+              {
+                "name": "Window",
+                "score": 0.583097517490387
+              },
+              {
+                "name": "Window",
+                "score": 0.5817252993583679
+              },
+              {
+                "name": "Building",
+                "score": 0.5788857936859131
+              },
+              {
+                "name": "Window",
+                "score": 0.560467004776001
+              }
+            ],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9885017275810242
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9810246229171753
+              },
+              {
+                "name": "Composite material",
+                "score": 0.8753427267074585
+              },
+              {
+                "name": "Iron",
+                "score": 0.8562111854553223
+              },
+              {
+                "name": "Metal",
+                "score": 0.8246541619300842
+              }
+            ],
+            "processing_time_seconds": 15.408986806869507
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/166.jpg"
+    }
+  ]
+}

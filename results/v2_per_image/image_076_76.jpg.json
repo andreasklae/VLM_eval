@@ -1,0 +1,452 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "76.jpg",
+      "timestamp": "2026-01-28T06:54:00.518766",
+      "processing_time_seconds": 57.875049,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 61.914852777777774,
+        "gps_longitude": 9.851269444444444,
+        "location": {
+          "formatted_address": "9FHFWV72+WG",
+          "city": null,
+          "county": null,
+          "country": null
+        },
+        "datetime_original": "2023:09:09 16:43:38",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 13 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Mountain landscape, Norway",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The rocky terrain and steep mountain slopes are indicative of Scandinavian landscapes, particularly in Norway. The GPS coordinates suggest a location in Norway, supporting this identification.",
+            "detailed_description": "The image depicts a rugged mountain landscape with rocky terrain in the foreground. The sky is partly cloudy, with patches of blue visible. The mountains are characterized by steep slopes and rocky surfaces, typical of Scandinavian mountain ranges. The view suggests a high-altitude location, possibly in Norway, given the photo's metadata.",
+            "identification": {
+              "primary": [
+                "Mountain landscape"
+              ],
+              "location": "Norway",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Mountain range",
+                "type": "natural_feature",
+                "confidence": 0.9
+              }
+            ],
+            "tags": [
+              "natural_feature",
+              "mountain",
+              "landscape",
+              "Norway"
+            ],
+            "location": "Norway",
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Scandinavian mountain range",
+                "specificity_level": "general",
+                "confidence": 0.8,
+                "reasoning": "The landscape features are typical of Scandinavian mountain ranges, which are known for their rugged terrain."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Mountain landscape\"],\n        \"location\": \"Norway\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Mountain range\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.9\n        }\n    ],\n    \"tags\": [\"natural_feature\", \"mountain\", \"landscape\", \"Norway\"],\n    \"description\": \"The image depicts a rugged mountain landscape with rocky terrain in the foreground. The sky is partly cloudy, with patches of blue visible. The mountains are characterized by steep slopes and rocky surfaces, typical of Scandinavian mountain ranges. The view suggests a high-altitude location, possibly in Norway, given the photo's metadata.\",\n    \"reasoning\": \"The rocky terrain and steep mountain slopes are indicative of Scandinavian landscapes, particularly in Norway. The GPS coordinates suggest a location in Norway, supporting this identification.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Scandinavian mountain range\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.8,\n            \"reasoning\": \"The landscape features are typical of Scandinavian mountain ranges, which are known for their rugged terrain.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": 61.914852777777774,
+              "longitude": 9.851269444444444
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "9FHFWV72+WG",
+              "city": null,
+              "county": null,
+              "country": null
+            },
+            "photo_timestamp": "2023:09:09 16:43:38",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 12.862773180007935
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a rugged mountain landscape, characterized by steep, rocky terrain and expansive views. The foreground features a rocky surface composed of large, angular stones, suggesting a high-altitude environment. The rocks are predominantly gray, with patches of lichen adding subtle hints of green and yellow. A wooden post is visible, possibly serving as a trail marker or signpost, adding a human-made element to the natural setting. In the background, a dramatic mountain range extends ac",
+            "description": "The image depicts a rugged mountain landscape, characterized by steep, rocky terrain and expansive views. The foreground features a rocky surface composed of large, angular stones, suggesting a high-altitude environment. The rocks are predominantly gray, with patches of lichen adding subtle hints of green and yellow. A wooden post is visible, possibly serving as a trail marker or signpost, adding a human-made element to the natural setting. In the background, a dramatic mountain range extends ac",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "gps_coordinates": {
+              "latitude": 61.914852777777774,
+              "longitude": 9.851269444444444
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "9FHFWV72+WG",
+              "city": null,
+              "county": null,
+              "country": null
+            },
+            "photo_timestamp": "2023:09:09 16:43:38",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 44.503262996673584
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Composite material",
+          "confidence": 0.8752900958061218,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Composite material",
+                "score": 0.8752900958061218
+              },
+              {
+                "source": "label",
+                "name": "Cumulus",
+                "score": 0.8408367037773132
+              }
+            ],
+            "web_entities": [],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9893109798431396
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9816414713859558
+              },
+              {
+                "name": "Cloud",
+                "score": 0.9510672688484192
+              },
+              {
+                "name": "Composite material",
+                "score": 0.8752900958061218
+              },
+              {
+                "name": "Cumulus",
+                "score": 0.8408367037773132
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 61.914852777777774,
+              "longitude": 9.851269444444444
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "9FHFWV72+WG",
+              "city": null,
+              "county": null,
+              "country": null
+            },
+            "photo_timestamp": "2023:09:09 16:43:38",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 18.092618942260742
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "9FHFWV72+WG",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "9FHFWV72+WG",
+            "coordinates": {
+              "latitude": 61.914852777777774,
+              "longitude": 9.851269444444444
+            },
+            "search_range_meters": 5000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Rondane National Park",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 1139,
+                  "vicinity": "Norway",
+                  "place_id": "ChIJH2qOR7Qva0YRmWXSEGVHfqE",
+                  "location": {
+                    "lat": 61.9315164,
+                    "lng": 9.788880899999999
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Rondane National Park",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 1139,
+                  "vicinity": "Norway",
+                  "place_id": "ChIJH2qOR7Qva0YRmWXSEGVHfqE",
+                  "location": {
+                    "lat": 61.9315164,
+                    "lng": 9.788880899999999
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "DNT Rondvassbu",
+                  "types": [
+                    "lodging",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 289,
+                  "vicinity": "Rondvassbu, Otta",
+                  "place_id": "ChIJP9uDU6Uva0YRRp9Ryib6y4U",
+                  "location": {
+                    "lat": 61.8788057,
+                    "lng": 9.796426499999999
+                  }
+                },
+                {
+                  "name": "Rondane National Park",
+                  "types": [
+                    "tourist_attraction",
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 1139,
+                  "vicinity": "Norway",
+                  "place_id": "ChIJH2qOR7Qva0YRmWXSEGVHfqE",
+                  "location": {
+                    "lat": 61.9315164,
+                    "lng": 9.788880899999999
+                  }
+                },
+                {
+                  "name": "Storronden",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Rondane National Park, Otta",
+                  "place_id": "ChIJi0OWLXQla0YRi8hs7_7PSoo",
+                  "location": {
+                    "lat": 61.89167490000001,
+                    "lng": 9.8619928
+                  }
+                }
+              ]
+            },
+            "total_places_found": 5,
+            "photo_timestamp": "2023:09:09 16:43:38",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 13 Pro"
+            },
+            "processing_time_seconds": 0.27384519577026367
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/76.jpg"
+    },
+    {
+      "image_filename": "76.jpg",
+      "timestamp": "2026-01-28T06:54:58.412516",
+      "processing_time_seconds": 62.257317,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Mountain landscape",
+          "confidence": 0.8,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The rocky terrain and steep mountain slopes indicate a mountainous region. The presence of clouds and the expansive view suggest a high-altitude location.",
+            "detailed_description": "The image depicts a rugged mountain landscape with rocky terrain in the foreground. The sky is partly cloudy, with patches of blue visible. The mountains in the background are steep and covered with rock formations, suggesting a high-altitude environment. The scene conveys a sense of vastness and natural beauty.",
+            "identification": {
+              "primary": [
+                "Mountain landscape"
+              ],
+              "location": null,
+              "confidence": 0.8
+            },
+            "artifacts": [
+              {
+                "name": "Mountain range",
+                "type": "natural_feature",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "mountain",
+              "landscape",
+              "natural_feature",
+              "outdoors"
+            ],
+            "location": null,
+            "type": "natural_feature",
+            "search_range_meters": 5000,
+            "educated_guesses": [
+              {
+                "guess": "Alpine mountain range",
+                "specificity_level": "general",
+                "confidence": 0.6,
+                "reasoning": "The rocky terrain and steep slopes are characteristic of alpine regions."
+              },
+              {
+                "guess": "Scandinavian mountains",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.5,
+                "reasoning": "The landscape could resemble Scandinavian mountain ranges based on the rocky features."
+              }
+            ],
+            "raw_response": "{\n    \"identification\": {\n        \"primary\": [\"Mountain landscape\"],\n        \"location\": null,\n        \"confidence\": 0.8\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Mountain range\",\n            \"type\": \"natural_feature\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"mountain\", \"landscape\", \"natural_feature\", \"outdoors\"],\n    \"description\": \"The image depicts a rugged mountain landscape with rocky terrain in the foreground. The sky is partly cloudy, with patches of blue visible. The mountains in the background are steep and covered with rock formations, suggesting a high-altitude environment. The scene conveys a sense of vastness and natural beauty.\",\n    \"reasoning\": \"The rocky terrain and steep mountain slopes indicate a mountainous region. The presence of clouds and the expansive view suggest a high-altitude location.\",\n    \"type\": \"natural_feature\",\n    \"search_range_meters\": 5000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Alpine mountain range\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.6,\n            \"reasoning\": \"The rocky terrain and steep slopes are characteristic of alpine regions.\"\n        },\n        {\n            \"guess\": \"Scandinavian mountains\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.5,\n            \"reasoning\": \"The landscape could resemble Scandinavian mountain ranges based on the rocky features.\"\n        }\n    ]\n}",
+            "processing_time_seconds": 13.755173921585083
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": null,
+          "confidence": null,
+          "success": false,
+          "error": null,
+          "details": {
+            "message": "No search results found",
+            "search_quality": {
+              "total_results": 0,
+              "unique_titles": 0,
+              "avg_score": 0.0,
+              "top_score": 0.0,
+              "sources_count": 0,
+              "penalty": 0.3,
+              "reasons": [
+                "No search results found"
+              ]
+            },
+            "detailed_description": "The image depicts a rugged mountainous landscape with a rocky foreground. The terrain is composed of large, jagged rocks and boulders, which appear to be gray with patches of lichen, indicating a high-altitude environment. In the background, a vast expanse of mountains stretches across the horizon, with peaks shrouded in clouds. The sky is predominantly blue with scattered clouds, creating a dramatic and expansive atmosphere. A wooden post with a sign is visible in the foreground, suggesting a m",
+            "description": "The image depicts a rugged mountainous landscape with a rocky foreground. The terrain is composed of large, jagged rocks and boulders, which appear to be gray with patches of lichen, indicating a high-altitude environment. In the background, a vast expanse of mountains stretches across the horizon, with peaks shrouded in clouds. The sky is predominantly blue with scattered clouds, creating a dramatic and expansive atmosphere. A wooden post with a sign is visible in the foreground, suggesting a m",
+            "architectural_style": "N/A",
+            "search_backends_used": [],
+            "processing_time_seconds": 48.50025415420532
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Composite material",
+          "confidence": 0.8752900958061218,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Composite material",
+                "score": 0.8752900958061218
+              },
+              {
+                "source": "label",
+                "name": "Cumulus",
+                "score": 0.8408367037773132
+              }
+            ],
+            "web_entities": [],
+            "objects": [],
+            "labels": [
+              {
+                "name": "Blue",
+                "score": 0.9893109798431396
+              },
+              {
+                "name": "Daytime",
+                "score": 0.9816414713859558
+              },
+              {
+                "name": "Cloud",
+                "score": 0.9510672688484192
+              },
+              {
+                "name": "Composite material",
+                "score": 0.8752900958061218
+              },
+              {
+                "name": "Cumulus",
+                "score": 0.8408367037773132
+              }
+            ],
+            "processing_time_seconds": 19.505144834518433
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/76.jpg"
+    }
+  ]
+}

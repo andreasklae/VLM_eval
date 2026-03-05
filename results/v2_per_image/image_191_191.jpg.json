@@ -1,0 +1,1092 @@
+{
+  "test_run": {
+    "date": "2026-01-28",
+    "date_readable": "January 28, 2026",
+    "timestamp": "2026-01-28T07:41:24.870880",
+    "server_url": "http://localhost:8000",
+    "test_directory": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images",
+    "total_images": 210,
+    "images_with_gps": 194,
+    "images_without_gps": 16,
+    "total_tests": 404,
+    "approaches_used": [
+      "GPT Vision Direct",
+      "GPT Vision + Search",
+      "Google Cloud Vision",
+      "Google Maps Places"
+    ],
+    "metadata_testing": "Images with GPS tested twice (with/without metadata). Images without GPS tested once (metadata=off only, since only location metadata is relevant).",
+    "merge_note": "Google Cloud Vision results for 6 images (3, 5, 10, 12, 13, 14) updated from retry_results_2026-01-28_14-31-10.json on 2026-01-28T14:33:00.307605"
+  },
+  "results": [
+    {
+      "image_filename": "191.jpg",
+      "timestamp": "2026-01-28T04:15:19.540364",
+      "processing_time_seconds": 69.105169,
+      "use_metadata": true,
+      "metadata": {
+        "gps_latitude": 59.92904166666666,
+        "gps_longitude": 10.749149999999998,
+        "location": {
+          "formatted_address": "Uelands gate 32B, 0457 Oslo, Norway",
+          "city": null,
+          "county": "Oslo",
+          "country": "Norway"
+        },
+        "datetime_original": "2025:10:12 13:39:51",
+        "camera_make": "Apple",
+        "camera_model": "iPhone 17 Pro"
+      },
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Vintage car, Oslo, Norway",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The car's design suggests it is a vintage model, recognizable by its classic shape and styling. The urban setting and architectural style of the buildings are consistent with Oslo's residential areas.",
+            "detailed_description": "The image features a vintage car, likely a classic model, parked on a street in an urban area. The car is green and has a distinctive retro design. Surrounding the car are residential buildings typical of urban architecture, with a mix of brick and plaster facades. The buildings display a combination of modern and traditional architectural elements, including balconies and large windows.",
+            "identification": {
+              "primary": [
+                "Vintage car"
+              ],
+              "location": "Oslo, Norway",
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Vintage car",
+                "type": "vehicle",
+                "confidence": 0.9
+              },
+              {
+                "name": "Residential buildings",
+                "type": "building",
+                "confidence": 0.85
+              }
+            ],
+            "tags": [
+              "vintage_car",
+              "residential_building",
+              "urban",
+              "Oslo"
+            ],
+            "location": "Oslo, Norway",
+            "type": "vehicle",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Porsche 911",
+                "specificity_level": "very_specific",
+                "confidence": 0.8,
+                "reasoning": "The car resembles the classic Porsche 911 model, known for its distinctive shape and design."
+              },
+              {
+                "guess": "Urban residential area in Oslo",
+                "specificity_level": "moderately_specific",
+                "confidence": 0.85,
+                "reasoning": "The architectural style and urban setting are typical of Oslo's residential neighborhoods."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Vintage car\"],\n        \"location\": \"Oslo, Norway\",\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Vintage car\",\n            \"type\": \"vehicle\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Residential buildings\",\n            \"type\": \"building\",\n            \"confidence\": 0.85\n        }\n    ],\n    \"tags\": [\"vintage_car\", \"residential_building\", \"urban\", \"Oslo\"],\n    \"description\": \"The image features a vintage car, likely a classic model, parked on a street in an urban area. The car is green and has a distinctive retro design. Surrounding the car are residential buildings typical of urban architecture, with a mix of brick and plaster facades. The buildings display a combination of modern and traditional architectural elements, including balconies and large windows.\",\n    \"reasoning\": \"The car's design suggests it is a vintage model, recognizable by its classic shape and styling. The urban setting and architectural style of the buildings are consistent with Oslo's residential areas.\",\n    \"type\": \"vehicle\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Porsche 911\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.8,\n            \"reasoning\": \"The car resembles the classic Porsche 911 model, known for its distinctive shape and design.\"\n        },\n        {\n            \"guess\": \"Urban residential area in Oslo\",\n            \"specificity_level\": \"moderately_specific\",\n            \"confidence\": 0.85,\n            \"reasoning\": \"The architectural style and urban setting are typical of Oslo's residential neighborhoods.\"\n        }\n    ]\n}\n```",
+            "gps_coordinates": {
+              "latitude": 59.92904166666666,
+              "longitude": 10.749149999999998
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Uelands gate 32B, 0457 Oslo, Norway",
+              "city": null,
+              "county": "Oslo",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:10:12 13:39:51",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 17 Pro"
+            },
+            "processing_time_seconds": 13.793925762176514
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "**Website**: ([visitnorway.com]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 2,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image features a classic green sports car prominently positioned in the foreground. The car has a sleek, aerodynamic design typical of vintage models from the mid-20th century, characterized by its rounded headlights, low profile, and smooth curves. The car's body is painted in a deep green color, and it has chrome detailing around the windows and bumpers. The wheels are classic silver alloys, complementing the car's retro aesthetic. Behind the car, the urban setting includes residential bui",
+            "description": "The image features a classic green sports car prominently positioned in the foreground. The car has a sleek, aerodynamic design typical of vintage models from the mid-20th century, characterized by its rounded headlights, low profile, and smooth curves. The car's body is painted in a deep green color, and it has chrome detailing around the windows and bumpers. The wheels are classic silver alloys, complementing the car's retro aesthetic. Behind the car, the urban setting includes residential bui",
+            "architectural_style": "Modern and early 20th-century European",
+            "search_backends_used": [
+              "web"
+            ],
+            "gps_coordinates": {
+              "latitude": 59.92904166666666,
+              "longitude": 10.749149999999998
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Uelands gate 32B, 0457 Oslo, Norway",
+              "city": null,
+              "county": "Oslo",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:10:12 13:39:51",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 17 Pro"
+            },
+            "processing_time_seconds": 54.6483256816864
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Car",
+          "confidence": 0.9657573699951172,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Car",
+                "score": 0.9657573699951172
+              },
+              {
+                "source": "label",
+                "name": "Automotive Exterior",
+                "score": 0.9439981579780579
+              },
+              {
+                "source": "object",
+                "name": "Car",
+                "score": 0.9209927320480347
+              },
+              {
+                "source": "label",
+                "name": "Automotive lighting",
+                "score": 0.8902764320373535
+              },
+              {
+                "source": "label",
+                "name": "Bumper",
+                "score": 0.8034377098083496
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Car",
+                "score": 0.6552000045776367
+              },
+              {
+                "name": "Antique car",
+                "score": 0.4539617896080017
+              },
+              {
+                "name": "Performance car",
+                "score": 0.4167243540287018
+              },
+              {
+                "name": "Coupe",
+                "score": 0.3918727934360504
+              },
+              {
+                "name": "Apartment",
+                "score": 0.33129942417144775
+              }
+            ],
+            "objects": [
+              {
+                "name": "Car",
+                "score": 0.9209927320480347
+              },
+              {
+                "name": "Building",
+                "score": 0.6649554967880249
+              },
+              {
+                "name": "Building",
+                "score": 0.6419690847396851
+              },
+              {
+                "name": "Tire",
+                "score": 0.6128563284873962
+              },
+              {
+                "name": "Wheel",
+                "score": 0.6054976582527161
+              }
+            ],
+            "labels": [
+              {
+                "name": "Car",
+                "score": 0.9657573699951172
+              },
+              {
+                "name": "Automotive Exterior",
+                "score": 0.9439981579780579
+              },
+              {
+                "name": "Automotive lighting",
+                "score": 0.8902764320373535
+              },
+              {
+                "name": "Bumper",
+                "score": 0.8034377098083496
+              },
+              {
+                "name": "Porsche",
+                "score": 0.7891184091567993
+              }
+            ],
+            "gps_coordinates": {
+              "latitude": 59.92904166666666,
+              "longitude": 10.749149999999998
+            },
+            "reverse_geocoded_location": {
+              "formatted_address": "Uelands gate 32B, 0457 Oslo, Norway",
+              "city": null,
+              "county": "Oslo",
+              "country": "Norway"
+            },
+            "photo_timestamp": "2025:10:12 13:39:51",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 17 Pro"
+            },
+            "processing_time_seconds": 21.36550211906433
+          }
+        },
+        {
+          "approach": "Google Maps Places",
+          "identified": "Oslo, Norway",
+          "confidence": 1.0,
+          "success": true,
+          "error": null,
+          "details": {
+            "location_name": "Oslo, Norway",
+            "coordinates": {
+              "latitude": 59.92904166666666,
+              "longitude": 10.749149999999998
+            },
+            "search_range_meters": 1000,
+            "nearby_places": {
+              "landmarks": [
+                {
+                  "name": "Labour Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 94,
+                  "vicinity": "Sagveien 28, Oslo",
+                  "place_id": "ChIJZ8TCRWxuQUYRcpLZ4-G5sww",
+                  "location": {
+                    "lat": 59.9308971,
+                    "lng": 10.7557825
+                  }
+                },
+                {
+                  "name": "Old Aker Church",
+                  "types": [
+                    "tourist_attraction",
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 245,
+                  "vicinity": "Akersbakken 26, Oslo",
+                  "place_id": "ChIJ74oDVWVuQUYRI6AnDZRSvd4",
+                  "location": {
+                    "lat": 59.92377149999999,
+                    "lng": 10.7472223
+                  }
+                },
+                {
+                  "name": "Our Savior's Cemetery",
+                  "types": [
+                    "cemetery",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 115,
+                  "vicinity": "Akersbakken 32, Oslo",
+                  "place_id": "ChIJoaBly3puQUYRVDeWweXTkh4",
+                  "location": {
+                    "lat": 59.92164549999999,
+                    "lng": 10.7442256
+                  }
+                },
+                {
+                  "name": "Ourobusos",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Ila, Oslo",
+                  "place_id": "ChIJKbtcIABvQUYR0Pjve8RmXDQ",
+                  "location": {
+                    "lat": 59.92810949999999,
+                    "lng": 10.7497621
+                  }
+                },
+                {
+                  "name": "J. L. Amundsens benk",
+                  "types": [
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 3,
+                  "vicinity": "WPGR+W7, Oslo",
+                  "place_id": "ChIJ7ztuAQBvQUYR1p3lqh6cxdo",
+                  "location": {
+                    "lat": 59.9272845,
+                    "lng": 10.7406696
+                  }
+                }
+              ],
+              "museums": [
+                {
+                  "name": "Labour Museum",
+                  "types": [
+                    "museum",
+                    "tourist_attraction",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 94,
+                  "vicinity": "Sagveien 28, Oslo",
+                  "place_id": "ChIJZ8TCRWxuQUYRcpLZ4-G5sww",
+                  "location": {
+                    "lat": 59.9308971,
+                    "lng": 10.7557825
+                  }
+                },
+                {
+                  "name": "Akersberget (sølvgruve)",
+                  "types": [
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.3,
+                  "user_ratings_total": 4,
+                  "vicinity": "Maridalsveien 28, Oslo",
+                  "place_id": "ChIJYX8PzL1vQUYRi-PvAbTmMUo",
+                  "location": {
+                    "lat": 59.92459599999999,
+                    "lng": 10.750303
+                  }
+                },
+                {
+                  "name": "Galleri Ramfjord",
+                  "types": [
+                    "art_gallery",
+                    "museum",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 74,
+                  "vicinity": "Schwensens gate 1, Oslo",
+                  "place_id": "ChIJV43mI3puQUYRKyvgMGArevI",
+                  "location": {
+                    "lat": 59.9229209,
+                    "lng": 10.7376159
+                  }
+                }
+              ],
+              "restaurants": [
+                {
+                  "name": "Scandic Vulkan",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 1044,
+                  "vicinity": "Vulkan, Maridalsveien 13A, Oslo",
+                  "place_id": "ChIJMRa1nmVuQUYRZTOT-OABges",
+                  "location": {
+                    "lat": 59.9222391,
+                    "lng": 10.7510158
+                  }
+                },
+                {
+                  "name": "Mathallen Oslo",
+                  "types": [
+                    "store",
+                    "restaurant",
+                    "food",
+                    "bar",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 9689,
+                  "vicinity": "Vulkan 5, Oslo",
+                  "place_id": "ChIJLSeTf2VuQUYRw9V12gQwpqU",
+                  "location": {
+                    "lat": 59.9222297,
+                    "lng": 10.7520516
+                  }
+                },
+                {
+                  "name": "Villa Paradiso Grünerløkka",
+                  "types": [
+                    "restaurant",
+                    "meal_takeaway",
+                    "meal_delivery",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.2,
+                  "user_ratings_total": 2784,
+                  "vicinity": "Olaf Ryes plass 8, Oslo",
+                  "place_id": "ChIJBdEVpGhuQUYRJpvUC3sbzcw",
+                  "location": {
+                    "lat": 59.9235486,
+                    "lng": 10.7575466
+                  }
+                },
+                {
+                  "name": "Jonoe Ringnes Park",
+                  "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 321,
+                  "vicinity": "Thorvald Meyers gate 14, Oslo",
+                  "place_id": "ChIJwaC24mtuQUYR36r9Di7o0jI",
+                  "location": {
+                    "lat": 59.9287516,
+                    "lng": 10.7594668
+                  }
+                },
+                {
+                  "name": "Nam Fah Thai",
+                  "types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 375,
+                  "vicinity": "Maridalsveien 21, Oslo",
+                  "place_id": "ChIJe6mHFYhuQUYRsWh0wTADgyE",
+                  "location": {
+                    "lat": 59.9230892,
+                    "lng": 10.7511753
+                  }
+                }
+              ],
+              "parks": [
+                {
+                  "name": "Treningsparken St. Hanshaugen",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.6,
+                  "user_ratings_total": 109,
+                  "vicinity": "Geitmyrsveien 20, Oslo",
+                  "place_id": "ChIJQZOdAnFuQUYRJtu7dMhjGJE",
+                  "location": {
+                    "lat": 59.9273171,
+                    "lng": 10.7424446
+                  }
+                },
+                {
+                  "name": "Beierbakken",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.7,
+                  "user_ratings_total": 20,
+                  "vicinity": "Thorvald Meyers gate 1, Oslo",
+                  "place_id": "ChIJyS26c2xuQUYRKetY76iYMFg",
+                  "location": {
+                    "lat": 59.9305661,
+                    "lng": 10.7581844
+                  }
+                },
+                {
+                  "name": "Vøienvolden Park",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4,
+                  "user_ratings_total": 24,
+                  "vicinity": "Griffenfeldts gate, Oslo",
+                  "place_id": "ChIJKeebI21uQUYRyooNuLW5dZk",
+                  "location": {
+                    "lat": 59.93381460000001,
+                    "lng": 10.7548454
+                  }
+                },
+                {
+                  "name": "Parkens Grøde Urban garden",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.8,
+                  "user_ratings_total": 5,
+                  "vicinity": "Griffenfeldts gate, Oslo",
+                  "place_id": "ChIJuUVMJm1uQUYRrdAgbXSEiAg",
+                  "location": {
+                    "lat": 59.93407260000001,
+                    "lng": 10.7554784
+                  }
+                },
+                {
+                  "name": "Grünerhagen",
+                  "types": [
+                    "park",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 273,
+                  "vicinity": "Marselis' gate 24, Oslo",
+                  "place_id": "ChIJ77xEVm9uQUYRFfcmkVcN7cA",
+                  "location": {
+                    "lat": 59.9214753,
+                    "lng": 10.7549671
+                  }
+                }
+              ],
+              "religious_sites": [
+                {
+                  "name": "Oslo Cathedral High School",
+                  "types": [
+                    "secondary_school",
+                    "church",
+                    "place_of_worship",
+                    "school",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Ullevålsveien 31, Oslo",
+                  "place_id": "ChIJMZ2VA3tuQUYRW5mvOfQxpDo",
+                  "location": {
+                    "lat": 59.9209234,
+                    "lng": 10.7414822
+                  }
+                },
+                {
+                  "name": "Sagene",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 3.5,
+                  "user_ratings_total": 2,
+                  "vicinity": "Søren Jaabæks gate 5, Oslo",
+                  "place_id": "ChIJKQRTDW1uQUYRv-FSJMfS78A",
+                  "location": {
+                    "lat": 59.9329092,
+                    "lng": 10.7529459
+                  }
+                },
+                {
+                  "name": "Ila Church",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 31,
+                  "vicinity": "Søren Jaabæks gate 5, Oslo",
+                  "place_id": "ChIJIec1DW1uQUYRvpHDKaItdSk",
+                  "location": {
+                    "lat": 59.9328226,
+                    "lng": 10.7530025
+                  }
+                },
+                {
+                  "name": "Vake kirkelig ressurssenter mot vold og seksuelle overgrep",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Lovisenberggata 15C, Oslo",
+                  "place_id": "ChIJe6XppHNuQUYRGk6BxNC-PNA",
+                  "location": {
+                    "lat": 59.9326562,
+                    "lng": 10.747255
+                  }
+                },
+                {
+                  "name": "Kirketorget Oslo",
+                  "types": [
+                    "church",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Akersbakken 32, Oslo",
+                  "place_id": "ChIJZYItZl9uQUYRPkPzNMWrYhk",
+                  "location": {
+                    "lat": 59.9230087,
+                    "lng": 10.7445801
+                  }
+                },
+                {
+                  "name": "Oslo Synagogue",
+                  "types": [
+                    "synagogue",
+                    "place_of_worship",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.4,
+                  "user_ratings_total": 62,
+                  "vicinity": "Bergstien 13, Oslo",
+                  "place_id": "ChIJ77r6ZHBuQUYRcc4kk4p6AIs",
+                  "location": {
+                    "lat": 59.92567869999999,
+                    "lng": 10.7431674
+                  }
+                }
+              ],
+              "art_galleries": [
+                {
+                  "name": "Åslaug Krokann Berg",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Markveien 7, Oslo",
+                  "place_id": "ChIJEcoJ025uQUYRJmOKzaTJ7A0",
+                  "location": {
+                    "lat": 59.9264914,
+                    "lng": 10.7569203
+                  }
+                },
+                {
+                  "name": "Galleri Seilet, Kunst i Skolen",
+                  "types": [
+                    "art_gallery",
+                    "school",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Fossveien 24 Inngang fra, Steenstrups gate, Oslo",
+                  "place_id": "ChIJC3MHhYhuQUYRtCBRnjgGhS0",
+                  "location": {
+                    "lat": 59.92612210000001,
+                    "lng": 10.7558493
+                  }
+                },
+                {
+                  "name": "Kari Steihaug",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Uelands gate 59J, Oslo",
+                  "place_id": "ChIJEYIqcXJuQUYRM7CUX33372w",
+                  "location": {
+                    "lat": 59.9315895,
+                    "lng": 10.7493884
+                  }
+                },
+                {
+                  "name": "Josefine Lyche",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Darres gate 12, Oslo",
+                  "place_id": "ChIJufOgi25uQUYRSrAb_Xxuri4",
+                  "location": {
+                    "lat": 59.9274385,
+                    "lng": 10.7534005
+                  }
+                },
+                {
+                  "name": "Moa Håkansson",
+                  "types": [
+                    "art_gallery",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Markveien 27, Oslo",
+                  "place_id": "ChIJVz9ctmhuQUYRubZqcz2WkfI",
+                  "location": {
+                    "lat": 59.9244093,
+                    "lng": 10.7570433
+                  }
+                }
+              ],
+              "viewpoints": [
+                {
+                  "name": "Oslo",
+                  "types": [
+                    "locality",
+                    "political"
+                  ],
+                  "rating": null,
+                  "user_ratings_total": null,
+                  "vicinity": "Oslo",
+                  "place_id": "ChIJOfBn8mFuQUYRmh4j019gkn4",
+                  "location": {
+                    "lat": 59.9121746,
+                    "lng": 10.7312704
+                  }
+                },
+                {
+                  "name": "Scandic Vulkan",
+                  "types": [
+                    "lodging",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.1,
+                  "user_ratings_total": 1044,
+                  "vicinity": "Vulkan, Maridalsveien 13A, Oslo",
+                  "place_id": "ChIJMRa1nmVuQUYRZTOT-OABges",
+                  "location": {
+                    "lat": 59.9222391,
+                    "lng": 10.7510158
+                  }
+                },
+                {
+                  "name": "Ringen Kino (Nordisk Film)",
+                  "types": [
+                    "movie_theater",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 3593,
+                  "vicinity": "Sannergata 6D, Oslo",
+                  "place_id": "ChIJSV_JYWluQUYRRz6qWzF-n84",
+                  "location": {
+                    "lat": 59.9286586,
+                    "lng": 10.7607812
+                  }
+                },
+                {
+                  "name": "Mathallen Oslo",
+                  "types": [
+                    "bar",
+                    "store",
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 4.5,
+                  "user_ratings_total": 9689,
+                  "vicinity": "Vulkan 5, Oslo",
+                  "place_id": "ChIJLSeTf2VuQUYRw9V12gQwpqU",
+                  "location": {
+                    "lat": 59.9222297,
+                    "lng": 10.7520516
+                  }
+                },
+                {
+                  "name": "AS Collettsgate 13",
+                  "types": [
+                    "point_of_interest",
+                    "establishment"
+                  ],
+                  "rating": 5,
+                  "user_ratings_total": 1,
+                  "vicinity": "Colletts gate 13B, Oslo",
+                  "place_id": "ChIJAS9cWnduQUYR5jBvN_ol6yM",
+                  "location": {
+                    "lat": 59.92531820000001,
+                    "lng": 10.7364709
+                  }
+                }
+              ]
+            },
+            "total_places_found": 34,
+            "photo_timestamp": "2025:10:12 13:39:51",
+            "camera": {
+              "make": "Apple",
+              "model": "iPhone 17 Pro"
+            },
+            "processing_time_seconds": 0.4144020080566406
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/191.jpg"
+    },
+    {
+      "image_filename": "191.jpg",
+      "timestamp": "2026-01-28T04:16:28.684662",
+      "processing_time_seconds": 62.997448,
+      "use_metadata": false,
+      "metadata": null,
+      "approaches": [
+        {
+          "approach": "GPT Vision Direct",
+          "identified": "Classic car",
+          "confidence": 0.9,
+          "success": true,
+          "error": null,
+          "details": {
+            "reasoning": "The car's design suggests it is a classic model, likely from the mid-20th century. The buildings exhibit typical urban residential architecture, with a mix of modern and traditional styles.",
+            "detailed_description": "The image features a classic green car, possibly a vintage model, parked on a street. The car has a distinctive design typical of mid-20th century sports cars, with rounded headlights and a sleek body. In the background, there are residential buildings with a mix of architectural styles. The building on the left is modern with a white facade and small balconies, while the building on the right has a more traditional design with a white facade and rectangular windows.",
+            "identification": {
+              "primary": [
+                "Classic car"
+              ],
+              "location": null,
+              "confidence": 0.9
+            },
+            "artifacts": [
+              {
+                "name": "Classic green car",
+                "type": "vehicle",
+                "confidence": 0.9
+              },
+              {
+                "name": "Residential buildings",
+                "type": "building",
+                "confidence": 0.8
+              }
+            ],
+            "tags": [
+              "classic_car",
+              "residential_building",
+              "urban",
+              "architecture"
+            ],
+            "location": null,
+            "type": "vehicle",
+            "search_range_meters": 1000,
+            "educated_guesses": [
+              {
+                "guess": "Porsche 911",
+                "specificity_level": "very_specific",
+                "confidence": 0.85,
+                "reasoning": "The car's design closely resembles that of a classic Porsche 911, known for its distinctive shape and features."
+              },
+              {
+                "guess": "European urban street",
+                "specificity_level": "general",
+                "confidence": 0.7,
+                "reasoning": "The architectural style of the buildings and the urban setting suggest a European city environment."
+              }
+            ],
+            "raw_response": "```json\n{\n    \"identification\": {\n        \"primary\": [\"Classic car\"],\n        \"location\": null,\n        \"confidence\": 0.9\n    },\n    \"artifacts\": [\n        {\n            \"name\": \"Classic green car\",\n            \"type\": \"vehicle\",\n            \"confidence\": 0.9\n        },\n        {\n            \"name\": \"Residential buildings\",\n            \"type\": \"building\",\n            \"confidence\": 0.8\n        }\n    ],\n    \"tags\": [\"classic_car\", \"residential_building\", \"urban\", \"architecture\"],\n    \"description\": \"The image features a classic green car, possibly a vintage model, parked on a street. The car has a distinctive design typical of mid-20th century sports cars, with rounded headlights and a sleek body. In the background, there are residential buildings with a mix of architectural styles. The building on the left is modern with a white facade and small balconies, while the building on the right has a more traditional design with a white facade and rectangular windows.\",\n    \"reasoning\": \"The car's design suggests it is a classic model, likely from the mid-20th century. The buildings exhibit typical urban residential architecture, with a mix of modern and traditional styles.\",\n    \"type\": \"vehicle\",\n    \"search_range_meters\": 1000,\n    \"educated_guesses\": [\n        {\n            \"guess\": \"Porsche 911\",\n            \"specificity_level\": \"very_specific\",\n            \"confidence\": 0.85,\n            \"reasoning\": \"The car's design closely resembles that of a classic Porsche 911, known for its distinctive shape and features.\"\n        },\n        {\n            \"guess\": \"European urban street\",\n            \"specificity_level\": \"general\",\n            \"confidence\": 0.7,\n            \"reasoning\": \"The architectural style of the buildings and the urban setting suggest a European city environment.\"\n        }\n    ]\n}\n```",
+            "processing_time_seconds": 10.632214069366455
+          }
+        },
+        {
+          "approach": "GPT Vision + Search",
+          "identified": "*Source*: ([grclassics.com]())",
+          "confidence": 0.95,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "web",
+            "search_range_meters": 1000,
+            "search_quality": {
+              "total_results": 5,
+              "unique_titles": 4,
+              "avg_score": 0.8,
+              "top_score": 1.0,
+              "sources_count": 1,
+              "penalty": 0.05,
+              "reasons": [
+                "Results from single source only"
+              ]
+            },
+            "original_confidence": 1.0,
+            "confidence_penalty_applied": 0.05,
+            "detailed_description": "The image features a classic green car prominently positioned in the foreground, likely a vintage model from the mid-20th century. The car exhibits a sleek, aerodynamic design typical of sports cars from that era, with rounded headlights and a low profile. The body is painted in a deep green color, complemented by chrome accents around the windows and bumpers. The wheels are simple, with silver hubcaps that match the car’s classic aesthetic. In the background, there are two distinct buildings. T",
+            "description": "The image features a classic green car prominently positioned in the foreground, likely a vintage model from the mid-20th century. The car exhibits a sleek, aerodynamic design typical of sports cars from that era, with rounded headlights and a low profile. The body is painted in a deep green color, complemented by chrome accents around the windows and bumpers. The wheels are simple, with silver hubcaps that match the car’s classic aesthetic. In the background, there are two distinct buildings. T",
+            "architectural_style": "Early 20th-century residential",
+            "search_backends_used": [
+              "web"
+            ],
+            "processing_time_seconds": 52.362879276275635
+          }
+        },
+        {
+          "approach": "Google Cloud Vision",
+          "identified": "Car",
+          "confidence": 0.9657573699951172,
+          "success": true,
+          "error": null,
+          "details": {
+            "source": "label",
+            "all_candidates": [
+              {
+                "source": "label",
+                "name": "Car",
+                "score": 0.9657573699951172
+              },
+              {
+                "source": "label",
+                "name": "Automotive Exterior",
+                "score": 0.9439981579780579
+              },
+              {
+                "source": "object",
+                "name": "Car",
+                "score": 0.9209927320480347
+              },
+              {
+                "source": "label",
+                "name": "Automotive lighting",
+                "score": 0.8902764320373535
+              },
+              {
+                "source": "label",
+                "name": "Bumper",
+                "score": 0.8034377098083496
+              }
+            ],
+            "web_entities": [
+              {
+                "name": "Car",
+                "score": 0.7234500050544739
+              },
+              {
+                "name": "Antique car",
+                "score": 0.46494248509407043
+              },
+              {
+                "name": "Performance car",
+                "score": 0.42306745052337646
+              },
+              {
+                "name": "Coupe",
+                "score": 0.39850977063179016
+              },
+              {
+                "name": "Apartment",
+                "score": 0.33026811480522156
+              }
+            ],
+            "objects": [
+              {
+                "name": "Car",
+                "score": 0.9209927320480347
+              },
+              {
+                "name": "Building",
+                "score": 0.6649554967880249
+              },
+              {
+                "name": "Building",
+                "score": 0.6419690847396851
+              },
+              {
+                "name": "Tire",
+                "score": 0.6128563284873962
+              },
+              {
+                "name": "Wheel",
+                "score": 0.6054976582527161
+              }
+            ],
+            "labels": [
+              {
+                "name": "Car",
+                "score": 0.9657573699951172
+              },
+              {
+                "name": "Automotive Exterior",
+                "score": 0.9439981579780579
+              },
+              {
+                "name": "Automotive lighting",
+                "score": 0.8902764320373535
+              },
+              {
+                "name": "Bumper",
+                "score": 0.8034377098083496
+              },
+              {
+                "name": "Porsche",
+                "score": 0.7891184091567993
+              }
+            ],
+            "processing_time_seconds": 20.874419927597046
+          }
+        }
+      ],
+      "image_path": "/Users/andreas/Documents/Dokumenter – MacBook Air/UIO/master/Thesis/Project/testing/Image_search/test_images/191.jpg"
+    }
+  ]
+}
